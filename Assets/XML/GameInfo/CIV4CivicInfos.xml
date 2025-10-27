@@ -24,6 +24,7 @@
 			<Description>TXT_KEY_CIVIC_CHIEF</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CHIEF_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CHIEF_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_CHIEF_HELP</Help>
 			<Button>,Art/Interface/Buttons/Civics/Chiefdom.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -85,6 +86,10 @@
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_MARKET</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_COMPOUND</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
@@ -211,7 +216,7 @@
 			<Description>TXT_KEY_CIVIC_TRIBAL_CONFEDERACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_TRIBAL_CONFEDERACY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_TRIBAL_CONFEDERACY_NATIVE_STRATEGY</Strategy>
-			<TechPrereq>TECH_CODICES</TechPrereq>
+			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/ConfederacyNative.dds</Button>
 			<iAnarchyLength>0</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -302,6 +307,7 @@
 			<Description>TXT_KEY_CIVIC_SUBSISTANCE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_SUBSISTANCE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_SUBSISTANCE_STRATEGY</Strategy>
+			<TechPrereq>TECH_CULTIVATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/SubsistanceNative.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -557,7 +563,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_RAIDING_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_RAIDING_NATIVE_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_RAIDING_NATIVE_HELP</Help>
-			<TechPrereq>TECH_ALLOYS</TechPrereq>
+			<TechPrereq>TECH_SMELTING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/PlunderNative.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -648,7 +654,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_HARMONY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HARMONY_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_HARMONY_HELP</Help>
-			<TechPrereq>TECH_MYTHOLOGY</TechPrereq>
+			<TechPrereq>TECH_LOCALIZATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Harmony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iExtraHealth>2</iExtraHealth>

@@ -2546,16 +2546,18 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 
 		if(iNewX < 0 || iNewX >= EARTH_X || iNewY < 0 || iNewY >= EARTH_Y) return false;
 
-		// Make sure the player is moving to a valid tile. 6 criteria:
-		//   the tile is owned by the migrating player
+		// Make sure the player is moving to a valid tile. 6 criteria (MacAurther TODO: Wow this is messy, maybe clean up):
 		CvPlot* pNewPlot = GC.getMap().plot(iNewX, iNewY);
-		if (pNewPlot->getOwner() != getOwner()) return false;
 		//   the tile is not impassible
 		if (pNewPlot->isImpassable()) return false;
 		//   the tile is not water
 		if (pNewPlot->isWater()) return false;
-		//   the tile does not contain a feature other than Flood Plains or Canyon
-		if (pNewPlot->getFeatureType() != NO_FEATURE && pNewPlot->getFeatureType() != FEATURE_FLOOD_PLAINS && pNewPlot->getFeatureType() != FEATURE_CANYON) return false;
+		//   the tile is owned by the migrating player AND not owned by the Indigenous player and the migrating player has Chief
+		bool bChiefAbility = GET_PLAYER(getOwner()).hasCivic(CIVIC_CHIEF_NATIVE) && pNewPlot->getOwner() != NO_PLAYER && GET_PLAYER(pNewPlot->getOwner()).getCivilizationType() == INDIGENOUS;
+		if (!bChiefAbility && pNewPlot->getOwner() != getOwner()) return false;
+		//   the tile does not contain a feature other than Flood Plains or Canyon AND the migrating player doesn't have Harmony
+		bool bHarmonyAbility = GET_PLAYER(getOwner()).hasCivic(CIVIC_HARMONY_NATIVE) && pNewPlot->getFeatureType() != FEATURE_BOG && pNewPlot->getFeatureType() != FEATURE_JUNGLE;
+		if (!bHarmonyAbility && pNewPlot->getFeatureType() != NO_FEATURE && pNewPlot->getFeatureType() != FEATURE_FLOOD_PLAINS && pNewPlot->getFeatureType() != FEATURE_CANYON) return false;
 		//   the terrain is suitable for founding
 		bool bFound = false;
 		if (GC.getTerrainInfo(pNewPlot->getTerrainType()).isFound()) bFound = true;

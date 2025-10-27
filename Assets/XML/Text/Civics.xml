@@ -211,6 +211,14 @@
 		<Spanish>Extra [ICON_FOOD] converted to [ICON_PRODUCTION]; fewer trade routes</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CHIEF_HELP</Tag>
+		<English>[ICON_BULLET]Tribes do not block city migration[NEWLINE][ICON_BULLET]+1 Population after migrating to a Tribe</English>
+		<French>[ICON_BULLET]Tribes do not block city migration[NEWLINE][ICON_BULLET]+1 Population after migrating to a Tribe</French>
+		<German>[ICON_BULLET]Tribes do not block city migration[NEWLINE][ICON_BULLET]+1 Population after migrating to a Tribe</German>
+		<Italian>[ICON_BULLET]Tribes do not block city migration[NEWLINE][ICON_BULLET]+1 Population after migrating to a Tribe</Italian>
+		<Spanish>[ICON_BULLET]Tribes do not block city migration[NEWLINE][ICON_BULLET]+1 Population after migrating to a Tribe</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MONARCH</Tag>
 		<English>Monarch</English>
 		<French>Monarch</French>
@@ -838,11 +846,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ARISTOCRATS_STRATEGY</Tag>
-		<English>Extra [ICON_COMMERCE] yields in capital; faster production of Market</English>
-		<French>Extra [ICON_COMMERCE] yields in capital; faster production of Market</French>
-		<German>Extra [ICON_COMMERCE] yields in capital; faster production of Market</German>
-		<Italian>Extra [ICON_COMMERCE] yields in capital; faster production of Market</Italian>
-		<Spanish>Extra [ICON_COMMERCE] yields in capital; faster production of Market</Spanish>
+		<English>Extra [ICON_COMMERCE] yields in capital; faster production of Market, Compound</English>
+		<French>Extra [ICON_COMMERCE] yields in capital; faster production of Market, Compound</French>
+		<German>Extra [ICON_COMMERCE] yields in capital; faster production of Market, Compound</German>
+		<Italian>Extra [ICON_COMMERCE] yields in capital; faster production of Market, Compound</Italian>
+		<Spanish>Extra [ICON_COMMERCE] yields in capital; faster production of Market, Compound</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_VICEROYS</Tag>
@@ -1534,19 +1542,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NOMADS_STRATEGY</Tag>
-		<English>Military units are built with [ICON_FOOD]; cities can migrate</English>
-		<French>Military units are built with [ICON_FOOD]; cities can migrate</French>
-		<German>Military units are built with [ICON_FOOD]; cities can migrate</German>
-		<Italian>Military units are built with [ICON_FOOD]; cities can migrate</Italian>
-		<Spanish>Military units are built with [ICON_FOOD]; cities can migrate</Spanish>
+		<English>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</English>
+		<French>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</French>
+		<German>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</German>
+		<Italian>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</Italian>
+		<Spanish>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NOMADS_HELP</Tag>
-		<English>[ICON_BULLET]Cities can migrate</English>
-		<French>[ICON_BULLET]Cities can migrate</French>
-		<German>[ICON_BULLET]Cities can migrate</German>
-		<Italian>[ICON_BULLET]Cities can migrate</Italian>
-		<Spanish>[ICON_BULLET]Cities can migrate</Spanish>
+		<English>[ICON_BULLET]Cities can migrate[NEWLINE][ICON_BULLET]Gain [ICON_FOOD] after migrating</English>
+		<French>[ICON_BULLET]Cities can migrate[NEWLINE][ICON_BULLET]Gain [ICON_FOOD] after migrating</French>
+		<German>[ICON_BULLET]Cities can migrate[NEWLINE][ICON_BULLET]Gain [ICON_FOOD] after migrating</German>
+		<Italian>[ICON_BULLET]Cities can migrate[NEWLINE][ICON_BULLET]Gain [ICON_FOOD] after migrating</Italian>
+		<Spanish>[ICON_BULLET]Cities can migrate[NEWLINE][ICON_BULLET]Gain [ICON_FOOD] after migrating</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INTEGRATION</Tag>

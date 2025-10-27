@@ -4233,6 +4233,22 @@
 		<Spanish>Local tribespeople have taken up arms against your aggression!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TRIBE_INTEGRATED</Tag>
+		<English>Local tribespeople have joined your band of nomads in %s1!</English>
+		<French>Local tribespeople have joined your band of nomads in %s1!</French>
+		<German>Local tribespeople have joined your band of nomads in %s1!</German>
+		<Italian>Local tribespeople have joined your band of nomads in %s1!</Italian>
+		<Spanish>Local tribespeople have joined your band of nomads in %s1!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MIGRATION_FOOD</Tag>
+		<English>Our hunters have found plentiful game in %s1's new location, giving the villagers %d2 [ICON_FOOD]!</English>
+		<French>Our hunters have found plentiful game in %s1's new location, giving the villagers %d2 [ICON_FOOD]!</French>
+		<German>Our hunters have found plentiful game in %s1's new location, giving the villagers %d2 [ICON_FOOD]!</German>
+		<Italian>Our hunters have found plentiful game in %s1's new location, giving the villagers %d2 [ICON_FOOD]!</Italian>
+		<Spanish>Our hunters have found plentiful game in %s1's new location, giving the villagers %d2 [ICON_FOOD]!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CULTURE_GROUP_NATIVE</Tag>
 		<English>[COLOR_PLAYER_ORANGE]Can only be used by Natives[COLOR_REVERT]</English>
 		<French>[COLOR_PLAYER_ORANGE]Can only be used by Natives[COLOR_REVERT]</French>

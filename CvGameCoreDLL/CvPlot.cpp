@@ -6491,6 +6491,11 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 		if (eOldImprovement == IMPROVEMENT_TRIBE || eOldImprovement == IMPROVEMENT_CONTACTED_TRIBE || eNewValue == IMPROVEMENT_TRIBE || eNewValue == IMPROVEMENT_CONTACTED_TRIBE)
 		{
 			updateCulture(true, false);
+			// Remove any stored units
+			if (eOldImprovement == IMPROVEMENT_TRIBE || eOldImprovement == IMPROVEMENT_CONTACTED_TRIBE)
+			{
+				setTribeStoredUnits(0);
+			}
 		}
 
 		if (getImprovementType() != NO_IMPROVEMENT)

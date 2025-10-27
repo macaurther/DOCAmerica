@@ -397,7 +397,6 @@ def extractionAbility(iGameTurn, iPlayer):
 # Migration
 @handler("projectBuilt")
 def detectMigrateCity(pCity, iProject):
-	# MacAurther TODO: Better way than just copying every field?
 	if iProject in [iMigrateN, iMigrateNE, iMigrateE, iMigrateSE, iMigrateS, iMigrateSW, iMigrateW, iMigrateNW]:		
 		# Calculate new plot
 		iX = pCity.getX()
@@ -435,91 +434,52 @@ def lMigrateCities(iGameTurn):
 	if data.lMigrateCities == []:
 		return
 	
-	for iIndex, pCity in enumerate(data.lMigrateCities):
+	for iIndex, pOldCity in enumerate(data.lMigrateCities):
 		iXNew = data.lMigrateX[iIndex]
 		iYNew = data.lMigrateY[iIndex]
 		
-		iPlayer = pCity.getOwner()
-		iCiv = civ(iPlayer)
+		iPlayer = pOldCity.getOwner()
 		pPlayer = player(iPlayer)
-		
-		# Store temp city data
-		# Don't get things like GameTurnFounded or GameTurnAcquired, we want to reset those
-		iPopulation = pCity.getPopulation()
-		iNumCityBuildings = pCity.getNumBuildings()
-		lBuildings = []
-		for i in range(iNumBuildingsPaganTemples):
-			if pCity.hasBuilding(i):
-				lBuildings.append(i)
-				if len(lBuildings) == iNumCityBuildings + 1:
-					break
-		iCulture = pCity.getCulture(pCity.getOwner())
-		
-		# Get free specialists
-		dFreeSpecialists = {}
-		for iSpecialist in range(iNumSpecialists):
-			iCount = pCity.getFreeSpecialistCount(iSpecialist)
-			if iCount > 0:
-				dFreeSpecialists[iSpecialist] = iCount
-		
-		# Get local temp unhappiness
-		iHurryAngerTimer = pCity.getHurryAngerTimer()
-		iConscriptAngerTimer = pCity.getConscriptAngerTimer()
-		iDefyAngerTimer = pCity.getDefyResolutionAngerTimer()
-		
-		# Copy religions
-		lReligions = []
-		for iReligion in range(iNumReligions):
-			if pCity.isHasReligion(iReligion):
-				lReligions.append(iReligion)
-		
-		#sName = pCity.getName()	# Actually, don't copy name, let it take the name from the city name manager
 
-		# Remove old city
-		pPlayer.disband(pCity)
-		pCity.plot().setRouteType(-1)
-		pCity.plot().setImprovementType(-1)
-		
-		# Found city
-		plot(iXNew, iYNew).setOwner(iPlayer)
-		pPlayer.found(iXNew, iYNew)
-		pNewCity = city(iXNew, iYNew)
-		if pNewCity:
-			#pNewCity.setName(sName, False)	# Actually, don't copy name, let it take the name from the city name manager
-			pNewCity.setPopulation(iPopulation + 1)
+		pOldPlot = pOldCity.plot()
+		pNewPlot = gc.getMap().plot(iXNew, iYNew)
 
-			# Assign buildings to new city
-			for iBuilding in lBuildings:
-				if not pNewCity.isHasRealBuilding(iBuilding):
-					print("Setting building in New City: " + str(iBuilding))
-					pNewCity.setHasRealBuilding(iBuilding, True)
-				# If capital was migrated, make sure Palace didn't end up in another city (janky, but how else to do it?)
-				if iBuilding in [iPalace, iChieftansHut, iGovernorsMansion, iCapitol]:
-					for pOtherCity in cities.owner(iPlayer):
-						if pOtherCity.isHasRealBuilding(iBuilding) and not (pOtherCity.getX() == pNewCity.getX() and pOtherCity.getY() == pNewCity.getY()):
-							pOtherCity.setHasRealBuilding(iBuilding, False)
+		# Nomads effect: If there was a tribe on the tile previously, add a population
+		bMovedToTribe = False
+		if pNewPlot.getImprovementType() in [iTribe, iContactedTribe]:
+			bMovedToTribe = True
 		
-			# Assign culture to new city
-			if civ(iPlayer) == iLakota:
-				iCulture += scale(10)
-			pNewCity.setCulture(iPlayer, iCulture, True)
+		# Mostly copied from CvPlatyBuilderScreen
+		if pNewPlot.isCity(): return
+		if pOldCity:
+			x, y = location(pNewPlot)
+			pNewCity = pPlayer.initCity(x, y)
+			sName = pOldCity.getName()
+			pOldCity.setName("ToBeRazed", False)
+			pNewCity.setName(sName, True)
+			copyCityStats(pOldCity, pNewCity, True)
+			pOldPlot = pOldCity.plot()
+			pOldCity.kill()
+			pOldPlot.setImprovementType(-1)
+			# Also move any units fortified on the plot
+			for i in range(pOldPlot.getNumUnits()-1, -1, -1):
+				pUnit = pOldPlot.getUnit(i)
+				if pUnit.isWaiting():
+					move(pUnit, pNewPlot)
 			
-			# Assign free specialists
-			for iSpecialist in dFreeSpecialists:
-				pNewCity.setFreeSpecialistCount(iSpecialist, dFreeSpecialists[iSpecialist]) 
-			
-			# Assign local temp unhappiness
-			pNewCity.changeHurryAngerTimer(iHurryAngerTimer)
-			pNewCity.changeConscriptAngerTimer(iConscriptAngerTimer)
-			pNewCity.changeDefyResolutionAngerTimer(iDefyAngerTimer)
-			
-			# Assign religions
-			for iReligion in lReligions:
-				pNewCity.setHasReligion(iReligion, True, False, False)
-			
-			
-		else:
-			print("WARNING - Migration failed for iPlayer: " + str(iPlayer))
+			if bMovedToTribe:
+				pNewCity.changePopulation(1)
+				message(iPlayer, 'TXT_KEY_TRIBE_INTEGRATED', sName, sound='AS2D_UNITGIFTED', event=1, button=infos.improvement(iTribe).getButton(), color=8, location=pNewPlot)
+
+
+		# Nomads effect: give food based off yields of plots surrounding new city (even if migration failed for whatever reason)
+		iMovedFood = 0
+		for iI in range(-1, 2):
+			for iJ in range(-1, 2):
+				iMovedFood += min(gc.getMap().plot(iXNew + iI, iYNew + iJ).getYield(YieldTypes.YIELD_FOOD), 1)	# Add 1 food for each tile that has food
+		if iMovedFood > 0:
+			pNewCity.changeFood(scale(iMovedFood))
+			message(iPlayer, 'TXT_KEY_MIGRATION_FOOD', sName, scale(iMovedFood), sound='AS2D_WELOVEKING', event=1, button=infos.tech(iHunting).getButton(), color=8, location=pNewPlot)
 		
 		events.fireEvent("migration", iPlayer, 1)
 
@@ -527,6 +487,80 @@ def lMigrateCities(iGameTurn):
 	data.lMigrateCities = []
 	data.lMigrateX = []
 	data.lMigrateY = []
+
+# MacAurther: Copied from CvPlatyBuilderScreen
+def copyCityStats(pOldCity, pNewCity, bMove):
+		pNewCity.setPopulation(pOldCity.getPopulation())
+		for iBuilding in xrange(gc.getNumBuildingInfos()):
+			pNewCity.setBuildingProduction(iBuilding, pOldCity.getBuildingProduction(iBuilding))
+			if gc.getBuildingInfo(iBuilding).isCapital() and not bMove: continue
+			pNewCity.setNumRealBuilding(iBuilding, pOldCity.getNumRealBuilding(iBuilding))
+		for iClass in xrange(gc.getNumBuildingClassInfos()):
+			for iCommerce in xrange(CommerceTypes.NUM_COMMERCE_TYPES):
+				pNewCity.setBuildingCommerceChange(iClass, iCommerce, pOldCity.getBuildingCommerceChange(iClass, iCommerce))
+			for iYield in xrange(YieldTypes.NUM_YIELD_TYPES):
+				pNewCity.setBuildingYieldChange(iClass, iYield, pOldCity.getBuildingYieldChange(iClass, iYield))
+	##		pNewCity.setBuildingHappyChange(iClass, pOldCity.getBuildingHappyChange(iClass))
+	##		pNewCity.setBuildingHealthChange(iClass, pOldCity.getBuildingHealthChange(iClass))
+		for iPlayerX in xrange(gc.getMAX_PLAYERS()):
+			pNewCity.setCultureTimes100(iPlayerX, pOldCity.getCultureTimes100(iPlayerX), False)
+		for iReligion in xrange(gc.getNumReligionInfos()):
+			pNewCity.setHasReligion(iReligion, pOldCity.isHasReligion(iReligion), False, False)
+			if bMove and pOldCity.isHolyCityByType(iReligion):
+				CyGame().setHolyCity(iReligion, pNewCity, False)
+			pNewCity.changeReligionInfluence(iReligion, pOldCity.getReligionInfluence(iReligion) - pNewCity.getReligionInfluence(iReligion))
+			pNewCity.changeStateReligionHappiness(iReligion, pOldCity.getStateReligionHappiness(iReligion) - pNewCity.getStateReligionHappiness(iReligion))
+		for iCorporation in xrange(gc.getNumCorporationInfos()):
+			pNewCity.setHasCorporation(iCorporation, pOldCity.isHasCorporation(iCorporation), False, False)
+			if bMove and pOldCity.isHeadquartersByType(iCorporation):
+				CyGame().setHeadquarters(iCorporation, pNewCity, False)
+		for iImprovement in xrange(gc.getNumImprovementInfos()):
+			pNewCity.changeImprovementFreeSpecialists(iImprovement, pOldCity.getImprovementFreeSpecialists(iImprovement) - pNewCity.getImprovementFreeSpecialists(iImprovement))
+		for iSpecialist in xrange(gc.getNumSpecialistInfos()):
+			pNewCity.setFreeSpecialistCount(iSpecialist, pOldCity.getFreeSpecialistCount(iSpecialist))
+			pNewCity.setForceSpecialistCount(iSpecialist, pOldCity.getForceSpecialistCount(iSpecialist))
+		for iUnit in xrange(gc.getNumUnitInfos()):
+			pNewCity.setUnitProduction(iUnit, pOldCity.getUnitProduction(iUnit))
+			pNewCity.setGreatPeopleUnitProgress(iUnit, pOldCity.getGreatPeopleUnitProgress(iUnit))
+		#for iCommerce in xrange(CommerceTypes.NUM_COMMERCE_TYPES):
+		#	pNewCity.changeSpecialistCommerce(iCommerce, pOldCity.getSpecialistCommerce(iCommerce) - pNewCity.getSpecialistCommerce(iCommerce))
+		for iBonus in xrange(gc.getNumBonusInfos()):
+			pNewCity.changeFreeBonus(iBonus, pOldCity.getFreeBonus(iBonus) - pNewCity.getFreeBonus(iBonus))
+			while pOldCity.isNoBonus(iBonus) != pNewCity.isNoBonus(iBonus):
+				if pOldCity.isNoBonus(iBonus):
+					pNewCity.changeNoBonusCount(iBonus, 1)
+				else:
+					pNewCity.changeNoBonusCount(iBonus, -1)
+		for iOrder in xrange(pOldCity.getOrderQueueLength()):
+			OrderData = pOldCity.getOrderFromQueue(iOrder)
+			pNewCity.pushOrder(OrderData.eOrderType, OrderData.iData1, OrderData.iData2, OrderData.bSave, False, True, False)
+		pNewCity.changeBaseGreatPeopleRate(pOldCity.getBaseGreatPeopleRate() - pNewCity.getBaseGreatPeopleRate())
+		pNewCity.changeConscriptAngerTimer(pOldCity.getConscriptAngerTimer() - pNewCity.getConscriptAngerTimer())
+		pNewCity.changeDefenseDamage(pOldCity.getDefenseDamage() - pNewCity.getDefenseDamage())
+		pNewCity.changeDefyResolutionAngerTimer(pOldCity.getDefyResolutionAngerTimer() - pNewCity.getDefyResolutionAngerTimer())
+		pNewCity.changeEspionageHappinessCounter(pOldCity.getEspionageHappinessCounter() - pNewCity.getEspionageHappinessCounter())
+		pNewCity.changeEspionageHealthCounter(pOldCity.getEspionageHealthCounter() - pNewCity.getEspionageHealthCounter())
+		pNewCity.changeExtraHappiness(pOldCity.getExtraHappiness() - pNewCity.getExtraHappiness())
+		pNewCity.changeExtraHealth(pOldCity.getExtraHealth() - pNewCity.getExtraHealth())
+		pNewCity.changeExtraTradeRoutes(pOldCity.getExtraTradeRoutes() - pNewCity.getExtraTradeRoutes())
+		pNewCity.changeGreatPeopleProgress(pOldCity.getGreatPeopleProgress() - pNewCity.getGreatPeopleProgress())
+		pNewCity.changeHappinessTimer(pOldCity.getHappinessTimer() - pNewCity.getHappinessTimer())
+		pNewCity.changeHurryAngerTimer(pOldCity.getHurryAngerTimer() - pNewCity.getHurryAngerTimer())
+		pNewCity.setAirliftTargeted(pOldCity.isAirliftTargeted())
+		pNewCity.setBombarded(pOldCity.isBombarded())
+		pNewCity.setCitizensAutomated(pOldCity.isCitizensAutomated())
+		pNewCity.setDrafted(pOldCity.isDrafted())
+		pNewCity.setFeatureProduction(pOldCity.getFeatureProduction())
+		pNewCity.setFood(pOldCity.getFood())
+		pNewCity.setHighestPopulation(pOldCity.getHighestPopulation())
+		pNewCity.setNeverLost(pOldCity.isNeverLost())
+		pNewCity.setOccupationTimer(pOldCity.getOccupationTimer())
+		pNewCity.setOverflowProduction(pOldCity.getOverflowProduction())
+		pNewCity.setPlundered(pOldCity.isPlundered())
+		pNewCity.setProduction(pOldCity.getProduction())
+		pNewCity.setProductionAutomated(pOldCity.isProductionAutomated())
+		pNewCity.setScriptData(pOldCity.getScriptData())
+		pNewCity.setWallOverride(pOldCity.isWallOverride())
 
 ### IMPLEMENTATIONS ###
 

@@ -5,7 +5,7 @@
 <!-- TODO: admin flavor -->
 	
 <!-- #1 -->
-<!-- Cost 400, iAsset 4 -->
+<!-- Cost 40, iAsset 4 -->
 
 		<TechInfo>
 			<Type>TECH_HUNTING</Type>
@@ -13,7 +13,7 @@
 			<Civilopedia>TXT_KEY_TECH_HUNTING_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_HUNTING_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iCost>400</iCost>
+			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -44,7 +44,7 @@
 			<Description>TXT_KEY_TECH_LANDMARKS</Description>
 			<Civilopedia>TXT_KEY_TECH_LANDMARKS_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<iCost>400</iCost>
+			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -71,7 +71,7 @@
 			<Description>TXT_KEY_TECH_IRRIGATION</Description>
 			<Civilopedia>TXT_KEY_TECH_IRRIGATION_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<iCost>400</iCost>
+			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -98,7 +98,7 @@
 			<Description>TXT_KEY_TECH_CULTIVATION</Description>
 			<Civilopedia>TXT_KEY_TECH_CULTIVATION_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<iCost>400</iCost>
+			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -126,7 +126,7 @@
 			<Civilopedia>TXT_KEY_TECH_LINGUISTICS_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_LINGUISTICS_HELP</Help>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
-			<iCost>400</iCost>
+			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -153,7 +153,7 @@
 			<Description>TXT_KEY_TECH_KNAPPING</Description>
 			<Civilopedia>TXT_KEY_TECH_KNAPPING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iCost>400</iCost>
+			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -180,7 +180,7 @@
 			<Description>TXT_KEY_TECH_DIVING</Description>
 			<Civilopedia>TXT_KEY_TECH_DIVING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<iCost>400</iCost>
+			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -207,14 +207,14 @@
 		</TechInfo>
 
 <!-- #2 -->
-<!-- Cost 600, iAsset 4 -->
+<!-- Cost 60, iAsset 4 -->
 
 		<TechInfo>
 			<Type>TECH_TRAPPING</Type>
 			<Description>TXT_KEY_TECH_TRAPPING</Description>
 			<Civilopedia>TXT_KEY_TECH_TRAPPING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iCost>600</iCost>
+			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -249,7 +249,7 @@
 			<Civilopedia>TXT_KEY_TECH_PATHFINDING_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_PATHFINDING_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<iCost>600</iCost>
+			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -284,7 +284,7 @@
 			<Description>TXT_KEY_TECH_EARTHWORKS</Description>
 			<Civilopedia>TXT_KEY_TECH_EARTHWORKS_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<iCost>600</iCost>
+			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -319,7 +319,7 @@
 			<Description>TXT_KEY_TECH_COMPANION_PLANTING</Description>
 			<Civilopedia>TXT_KEY_TECH_COMPANION_PLANTING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<iCost>600</iCost>
+			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -351,7 +351,7 @@
 			<Civilopedia>TXT_KEY_TECH_LOCALIZATION_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_LOCALIZATION_HELP</Help>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
-			<iCost>600</iCost>
+			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -381,7 +381,7 @@
 			<Description>TXT_KEY_TECH_HERBALISM</Description>
 			<Civilopedia>TXT_KEY_TECH_HERBALISM_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iCost>600</iCost>
+			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -415,7 +415,7 @@
 			<Description>TXT_KEY_TECH_FISHING</Description>
 			<Civilopedia>TXT_KEY_TECH_FISHING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<iCost>600</iCost>
+			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -603,9 +603,6 @@
 					<iFlavor>3</iFlavor>
 				</Flavor>
 			</Flavors>
-			<AndPreReqs>
-				<PrereqTech>TECH_LOCALIZATION</PrereqTech>
-			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_PASTORALISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>

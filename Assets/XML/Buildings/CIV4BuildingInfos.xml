@@ -273,7 +273,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SMOKEHOUSE</ArtDefineTag>
 			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
-			<PrereqTech>TECH_TANNING</PrereqTech>
+			<PrereqTech>TECH_PASTORALISM</PrereqTech>
 			<ObsoleteTech>TECH_CHEMISTRY</ObsoleteTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -316,7 +316,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HAWAIIAN_LUAU</ArtDefineTag>
 			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
-			<PrereqTech>TECH_TANNING</PrereqTech>
+			<PrereqTech>TECH_PASTORALISM</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -379,8 +379,8 @@
 			<Help>TXT_KEY_BUILDING_LAKOTA_TIPI_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_LAKOTA_TIPI</ArtDefineTag>
-			<FreeStartEra>ERA_EXPLORATION</FreeStartEra>
-			<PrereqTech>TECH_TANNING</PrereqTech>
+			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
+			<PrereqTech>TECH_PASTORALISM</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1669,7 +1669,7 @@
 			<Strategy>TXT_KEY_BUILDING_ALTAR_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_SACRIFICIAL_ALTAR</ArtDefineTag>
-			<PrereqTech>TECH_DIVINATION</PrereqTech>
+			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -7726,7 +7726,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PUEBLO_BONITO</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_MINING</PrereqTech>
+			<PrereqTech>TECH_PATHFINDING</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
@@ -8046,7 +8046,7 @@
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GREAT_GEOGLYPH</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
-			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+			<PrereqTech>TECH_EARTHWORKS</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>

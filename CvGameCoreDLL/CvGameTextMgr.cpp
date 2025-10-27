@@ -7198,21 +7198,24 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 		szHelpText.append(GC.getCivicInfo(eCivic).getDescription());
 	}
 
-	// MacAurther: Culture groups
-	if (GC.getCivicInfo(eCivic).getCultureGroup() == CULTURE_GROUP_NATIVE)
+	// MacAurther: Culture groups (only show either when no player context, or the active player isn't the right culture group
+	if (!bPlayerContext || (bPlayerContext && GC.getGameINLINE().getActivePlayer() != NO_PLAYER && (GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCultureGroup() != GC.getCivicInfo(eCivic).getCultureGroup())))
 	{
-		szHelpText.append(NEWLINE);
-		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_CULTURE_GROUP_NATIVE"));
-	}
-	else if (GC.getCivicInfo(eCivic).getCultureGroup() == CULTURE_GROUP_COLONY)
-	{
-		szHelpText.append(NEWLINE);
-		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_CULTURE_GROUP_COLONY"));
-	}
-	else if (GC.getCivicInfo(eCivic).getCultureGroup() == CULTURE_GROUP_NATION)
-	{
-		szHelpText.append(NEWLINE);
-		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_CULTURE_GROUP_NATION"));
+		if (GC.getCivicInfo(eCivic).getCultureGroup() == CULTURE_GROUP_NATIVE)
+		{
+			szHelpText.append(NEWLINE);
+			szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_CULTURE_GROUP_NATIVE"));
+		}
+		else if (GC.getCivicInfo(eCivic).getCultureGroup() == CULTURE_GROUP_COLONY)
+		{
+			szHelpText.append(NEWLINE);
+			szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_CULTURE_GROUP_COLONY"));
+		}
+		else if (GC.getCivicInfo(eCivic).getCultureGroup() == CULTURE_GROUP_NATION)
+		{
+			szHelpText.append(NEWLINE);
+			szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_CULTURE_GROUP_NATION"));
+		}
 	}
 
 	if (!bCivilopediaText)
