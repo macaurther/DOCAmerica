@@ -2718,7 +2718,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 
 	for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
 	{
-		if (calculateNatureYield(((YieldTypes)iI), eTeam, bIgnoreFeature) < GC.getImprovementInfo(eImprovement).getPrereqNatureYield(iI))
+		if (calculateNatureYield(((YieldTypes)iI), eTeam, bIgnoreFeature) < GC.getImprovementInfo(eImprovement).getPrereqNatureYield(iI) && (!bTerrace && iI == YIELD_FOOD))	// MacAurther Andes RP
 		{
 			return false;
 		}
@@ -5657,9 +5657,13 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 
 PlotTypes CvPlot::getPlotType() const
 {
+	// MacAurther: Andes RP
+	if (m_ePlotType == PLOT_PEAK && getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES)
+	{
+		return PLOT_HILLS;
+	}
 	return (PlotTypes)m_ePlotType;
 }
-
 
 bool CvPlot::isWater() const
 {
@@ -7088,15 +7092,6 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 		if (eBonus != NO_BONUS)
 		{
 			iYield += GC.getImprovementInfo(eImprovement).getImprovementBonusYield(eBonus, eYield);
-		}
-	}
-
-	// MacAurther: Andes RP: +1 Food on Farms on Hills
-	if (ePlayer != NO_PLAYER && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_ANDES)
-	{
-		if (eYield == YIELD_FOOD && isHills() && eImprovement == IMPROVEMENT_FARM)
-		{
-			iYield += 1;
 		}
 	}
 

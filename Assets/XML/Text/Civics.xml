@@ -484,11 +484,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_STRATEGY</Tag>
-		<English>No foreign trade routes; increased [ICON_CULTURE] in all cities; extra [ICON_FOOD] from trade routes and tribes</English>
-		<French>No foreign trade routes; increased [ICON_CULTURE] in all cities; extra [ICON_FOOD] from trade routes and tribes</French>
-		<German>No foreign trade routes; increased [ICON_CULTURE] in all cities; extra [ICON_FOOD] from trade routes and tribes</German>
-		<Italian>No foreign trade routes; increased [ICON_CULTURE] in all cities; extra [ICON_FOOD] from trade routes and tribes</Italian>
-		<Spanish>No foreign trade routes; increased [ICON_CULTURE] in all cities; extra [ICON_FOOD] from trade routes and tribes</Spanish>
+		<English>No foreign trade routes; increased [ICON_ESPIONAGE] in all cities; extra [ICON_FOOD] from trade routes and tribes</English>
+		<French>No foreign trade routes; increased [ICON_ESPIONAGE] in all cities; extra [ICON_FOOD] from trade routes and tribes</French>
+		<German>No foreign trade routes; increased [ICON_ESPIONAGE] in all cities; extra [ICON_FOOD] from trade routes and tribes</German>
+		<Italian>No foreign trade routes; increased [ICON_ESPIONAGE] in all cities; extra [ICON_FOOD] from trade routes and tribes</Italian>
+		<Spanish>No foreign trade routes; increased [ICON_ESPIONAGE] in all cities; extra [ICON_FOOD] from trade routes and tribes</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_HELP</Tag>

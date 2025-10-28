@@ -1784,7 +1784,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_POLITICS</PrereqTech>
+			<PrereqTech>TECH_WRITING</PrereqTech>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
@@ -1834,7 +1834,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
+			<PrereqTech>TECH_WRITING</PrereqTech>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_ESPIONAGE</FlavorType>

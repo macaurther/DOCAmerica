@@ -9270,19 +9270,16 @@ BeginPlot
 	x=14,y=60
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=14,y=61
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=14,y=62
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=14,y=63
@@ -9927,7 +9924,6 @@ BeginPlot
 	x=15,y=60
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=15,y=61
@@ -9938,7 +9934,6 @@ BeginPlot
 	x=15,y=62
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=15,y=63
@@ -10594,19 +10589,16 @@ BeginPlot
 	x=16,y=60
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=16,y=61
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=16,y=62
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=16,y=63
@@ -17342,13 +17334,13 @@ BeginPlot
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=26,y=66
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=26,y=67
@@ -17356,26 +17348,26 @@ BeginPlot
 	BonusVarietyType=BONUS_GEMS_TURQUOISE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=26,y=68
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=26,y=69
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=26,y=70
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=26,y=71
@@ -18020,7 +18012,7 @@ BeginPlot
 	RiverWEDirection=3
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
-	TeamReveal=1,27,
+	TeamReveal=1,28,
 EndPlot
 BeginPlot
 	x=27,y=66
@@ -18029,17 +18021,15 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=27,
-	Player27Culture=1, (Barbarian)
-	Player31Culture=1, (Barbarian)
+	TeamReveal=28,
+	Player28Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=27,y=67
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
-	TeamReveal=27,
-	Player27Culture=1, (Barbarian)
-	Player31Culture=1, (Barbarian)
+	TeamReveal=28,
+	Player28Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=27,y=68
@@ -18047,9 +18037,8 @@ BeginPlot
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=27,
-	Player27Culture=1, (Barbarian)
-	Player31Culture=1, (Barbarian)
+	TeamReveal=28,
+	Player28Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=27,y=69
@@ -18057,14 +18046,14 @@ BeginPlot
 	BonusVarietyType=BONUS_SPICES_VANILLA
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=27,y=70
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=27,y=71
@@ -18705,7 +18694,7 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=1,27,
+	TeamReveal=1,28,
 EndPlot
 BeginPlot
 	x=28,y=66
@@ -18714,9 +18703,8 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=27,
-	Player27Culture=1, (Barbarian)
-	Player31Culture=1, (Barbarian)
+	TeamReveal=28,
+	Player28Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=28,y=67
@@ -18730,15 +18718,14 @@ BeginPlot
 	x=28,y=68
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=27,
-	Player27Culture=1, (Barbarian)
-	Player31Culture=1, (Barbarian)
+	TeamReveal=28,
+	Player28Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=28,y=69
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=28,y=70
@@ -19375,7 +19362,7 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,27,
+	TeamReveal=1,28,
 EndPlot
 BeginPlot
 	x=29,y=66
@@ -19383,33 +19370,30 @@ BeginPlot
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=27,
-	Player27Culture=1, (Barbarian)
-	Player31Culture=1, (Barbarian)
+	TeamReveal=28,
+	Player28Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=29,y=67
 	FeatureType=FEATURE_REEF, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=27,
-	Player27Culture=1, (Barbarian)
-	Player31Culture=1, (Barbarian)
+	TeamReveal=28,
+	Player28Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=29,y=68
 	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=27,
-	Player27Culture=1, (Barbarian)
-	Player31Culture=1, (Barbarian)
+	TeamReveal=28,
+	Player28Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=29,y=69
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=29,y=70
@@ -20043,31 +20027,31 @@ BeginPlot
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=30,y=66
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=30,y=67
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=30,y=68
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=30,y=69
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=30,y=70
@@ -20718,7 +20702,7 @@ BeginPlot
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=27,
+	TeamReveal=28,
 EndPlot
 BeginPlot
 	x=31,y=66
@@ -20727,7 +20711,7 @@ BeginPlot
 	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,27,
+	TeamReveal=0,28,
 EndPlot
 BeginPlot
 	x=31,y=67
@@ -26679,7 +26663,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=43
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -28018,7 +28002,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=42
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -28029,17 +28013,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=44
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=42,y=45
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=42,y=46
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -28680,27 +28664,27 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=39
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=43,y=40
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=43,y=41
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=43,y=42
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=43,y=43
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -28713,7 +28697,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=45
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -28725,7 +28709,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=47
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -29200,7 +29184,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=5
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -29369,17 +29353,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=37
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=44,y=38
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=44,y=39
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -29415,7 +29399,7 @@ BeginPlot
 	x=44,y=44
 	isNOfRiver
 	RiverWEDirection=1
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -29430,7 +29414,7 @@ BeginPlot
 	x=44,y=46
 	isNOfRiver
 	RiverWEDirection=1
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -29441,7 +29425,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=48
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -29476,7 +29460,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=54
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -29904,17 +29888,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=5
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=45,y=6
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=45,y=7
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30069,12 +30053,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=35
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=45,y=36
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30105,12 +30089,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=41
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=45,y=42
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30137,7 +30121,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=46
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30150,12 +30134,12 @@ BeginPlot
 	x=45,y=48
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=45,y=49
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30172,21 +30156,21 @@ BeginPlot
 	x=45,y=51
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=45,y=52
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=45,y=53
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30200,7 +30184,7 @@ BeginPlot
 	x=45,y=55
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30646,12 +30630,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=8
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=46,y=9
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30783,7 +30767,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=34
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30803,7 +30787,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=37
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30817,14 +30801,14 @@ BeginPlot
 	x=46,y=39
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=46,y=40
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30872,7 +30856,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=47
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30894,7 +30878,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=50
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -31368,17 +31352,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=10
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=47,y=11
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=47,y=12
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -31492,17 +31476,17 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=47,y=34
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=47,y=35
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -31516,14 +31500,14 @@ BeginPlot
 	x=47,y=37
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=47,y=38
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -31594,7 +31578,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=48
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -31618,17 +31602,17 @@ BeginPlot
 	x=47,y=51
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=47,y=52
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=47,y=53
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -31651,7 +31635,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=56
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -31662,7 +31646,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=58
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -32091,7 +32075,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=11
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -32101,12 +32085,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=13
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=48,y=14
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -32212,7 +32196,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=33
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -32311,7 +32295,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=49
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -32355,7 +32339,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=55
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -32809,27 +32793,27 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=13
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=14
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=15
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=16
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=17
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -32839,12 +32823,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=19
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=20
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -32908,7 +32892,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=32
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -32919,7 +32903,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=34
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -32930,12 +32914,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=36
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=37
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -33020,27 +33004,27 @@ BeginPlot
 	x=49,y=50
 	isNOfRiver
 	RiverWEDirection=1
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=51
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=52
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=53
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=54
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -33515,7 +33499,7 @@ BeginPlot
 	x=50,y=16
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -33530,36 +33514,36 @@ BeginPlot
 	x=50,y=18
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=50,y=19
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=50,y=20
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=50,y=21
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=50,y=22
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=50,y=23
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -33604,7 +33588,7 @@ BeginPlot
 	x=50,y=31
 	isNOfRiver
 	RiverWEDirection=3
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -33626,7 +33610,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=35
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -33736,12 +33720,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=51
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=50,y=52
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -33756,12 +33740,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=54
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=50,y=55
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -34237,12 +34221,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=21
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=51,y=22
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -34253,12 +34237,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=24
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=51,y=25
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -34280,12 +34264,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=29
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=51,y=30
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -34312,7 +34296,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=35
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -34458,7 +34442,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=56
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -34937,14 +34921,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=22
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=52,y=23
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -34954,22 +34938,22 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=25
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=52,y=26
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=52,y=27
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=52,y=28
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -35009,7 +34993,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=34
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -35663,14 +35647,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=24
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=53,y=25
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -35714,7 +35698,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=33
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -35723,7 +35707,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -36387,14 +36371,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=26
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=54,y=27
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -36412,7 +36396,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=30
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -36422,12 +36406,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=32
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=54,y=33
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -37107,29 +37091,29 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=28
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=55,y=29
 	isNOfRiver
 	RiverWEDirection=1
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=55,y=30
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=55,y=31
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=55,y=32
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -37836,7 +37820,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=31
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -53627,13 +53611,13 @@ BeginPlot
 	x=80,y=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
-	Player28Culture=1, (Barbarian)
+	Player29Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=80,y=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
-	Player28Culture=1, (Barbarian)
+	Player29Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=80,y=2
@@ -54250,21 +54234,21 @@ BeginPlot
 	x=81,y=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
-	TeamReveal=28,
-	Player28Culture=22, (Barbarian)
+	TeamReveal=29,
+	Player29Culture=22, (Barbarian)
 EndPlot
 BeginPlot
 	x=81,y=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
-	TeamReveal=28,
-	Player28Culture=22, (Barbarian)
+	TeamReveal=29,
+	Player29Culture=22, (Barbarian)
 EndPlot
 BeginPlot
 	x=81,y=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
-	Player28Culture=1, (Barbarian)
+	Player29Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=81,y=3
@@ -54880,14 +54864,14 @@ BeginPlot
 	x=82,y=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
-	TeamReveal=28,
-	Player28Culture=22, (Barbarian)
+	TeamReveal=29,
+	Player29Culture=22, (Barbarian)
 EndPlot
 BeginPlot
 	x=82,y=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
-	Player28Culture=1, (Barbarian)
+	Player29Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=82,y=3
