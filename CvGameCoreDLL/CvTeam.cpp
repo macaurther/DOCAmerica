@@ -5116,8 +5116,8 @@ int CvTeam::getObsoleteBuildingCount(BuildingTypes eIndex) const
 
 bool CvTeam::isObsoleteBuilding(BuildingTypes eIndex) const				
 {
-	// MacAurther: Mexican and Peru UP
-	if (GET_PLAYER(GET_TEAM(getID()).getLeaderID()).getCivilizationType() == MEXICO || GET_PLAYER(GET_TEAM(getID()).getLeaderID()).getCivilizationType() == PERU)
+	// MacAurther: Latin America RP
+	if (GET_PLAYER(GET_TEAM(getID()).getLeaderID()).getRegionPowers() == RP_LATIN_AMERICA)
 	{
 		return false;
 	}

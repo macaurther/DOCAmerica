@@ -240,7 +240,7 @@ iRussia: 1743,
 iAmerica : 1775,
 iHaiti : 1804,
 iArgentina : 1810,
-iMexico : 1810,
+iMexico : -450,#1810,
 iColombia : 1810,
 iPeru : 1822,
 iBrazil : 1822,
@@ -663,13 +663,13 @@ rMesoamerica,   rCaribbean, 	rHawaii, 		rColombia, 		rEcuador,		rVenezuela, 	rGu
 rPara,          rBahia,         rMinasGerais,   rMatoGrosso,    rParana,        rChile, 		rParaguay, 		rUruguay, 		rChaco,         rCuyo,          
 rPampas, 		rPatagonia, 	rOldWorld		) = range(iNumRegions)
 
-iNumWaterRegions = 43
+iNumWaterRegions = 44
 # 0				1				2				3				4				5				6				7				8				9
 (rArcticO,		rBaffinB,		rNorthwestPassage,rHudsonB,		rLabradorS,		rNorthAtlanticO,rGOfMexico,		rCaribbeanS,	rSouthAtlanticO,rSouthPacificO,
 rNorthPacificO,	rGOfCalifornia,rGOfAlaska,		rBeringS,		rGreatBearL,	rGreatSlaveL,	rLAthabasca,	rLWinnipegosis,	rLWinnipeg,		rGOfStLawrence,
 rLOntario,		rLErie,			rLHuron,		rLSuperior,		rLMichigan,		rPugetSound,	rGreatSaltL,	rLTahoe,		rLOkeechobee,	rLTexcoco,		
 rLMaracaibo,	rLTiticaca,		rSmallLake,		rStLawrenceR,	rColumbiaR,		rMississippiR,	rMissouriR,		rOhioR,			rAmazonR,		rXinguR,		
-rTocantinsR,	rAtlanticO,		rPacificO,
+rTocantinsR,	rAtlanticO,		rPacificO,		rDeepOcean,		
  ) = range(100, 100 + iNumWaterRegions)
 
 lCanadaAtlanticCoast = [rQuebec, rNewFoundland]

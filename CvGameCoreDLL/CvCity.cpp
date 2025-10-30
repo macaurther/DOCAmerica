@@ -4308,8 +4308,8 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 	UnitTypes eGreatPeopleUnit;
 	int iI, iJ;
 
-	// Macaurther: Mexican and Peru UP
-	if (GET_PLAYER(getOwner()).getCivilizationType() == MEXICO || GET_PLAYER(getOwner()).getCivilizationType() == PERU) bObsolete = false;
+	// Macaurther: Latin America RP
+	if (GET_PLAYER(getOwner()).getRegionPowers() == RP_LATIN_AMERICA) bObsolete = false;
 
 	if (!(GET_TEAM(getTeam()).isObsoleteBuilding(eBuilding)) || bObsolete)
 	{
@@ -4363,12 +4363,6 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		if (GC.getBuildingInfo(eBuilding).getHappiness() > 0)
 		{
 			changeBuildingGoodHappiness(GC.getBuildingInfo(eBuilding).getHappiness() * iChange);
-			
-			// Latin America RP
-			if(getOwner() != -1 && (RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_LATIN_AMERICA && eBuilding == getUniqueBuilding(getCivilizationType(), (BuildingTypes)BUILDING_CATHOLIC_TEMPLE))
-			{
-				changeBuildingGoodHappiness(3 * iChange);
-			}
 		}
 		else
 		{
@@ -10242,6 +10236,12 @@ int CvCity::getBuildingCommerceByBuilding(CommerceTypes eIndex, BuildingTypes eB
 				if (eBuilding == (BuildingTypes)BUILDING_GUADALUPE_BASILICA && eIndex == COMMERCE_GOLD)
 				{
 					iCommerce += std::min(iShrineLimit, GC.getMap().getArea(getArea())->countHasReligion(CATHOLICISM));
+				}
+
+				// MacAurther: Mexico UP - +1 Gold from State Religion Buildlings
+				if (GET_PLAYER(getOwner()).getCivilizationType() == MEXICO && eIndex == COMMERCE_GOLD && GC.getBuildingInfo(eBuilding).getReligionType() == GET_PLAYER(getOwner()).getStateReligion())
+				{
+					iCommerce += 1;
 				}
 
 				if (GC.getBuildingInfo(eBuilding).getGlobalCorporationCommerce() != NO_CORPORATION)

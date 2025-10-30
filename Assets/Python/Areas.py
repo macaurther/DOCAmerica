@@ -32,7 +32,7 @@ iRussia :		 (11, 108), # Novo-Arkhangelsk
 iAmerica :		 (46, 90), # Philadelphia
 iHaiti :		 (54, 67), # Port-au-Prince
 iArgentina :	 (58, 15), # Buenos Aires
-iMexico :		 (54, 67), # Mexico City
+iMexico :		 (24, 67), # Mexico City
 iColombia :		 (48, 50), # Bogota
 iPeru :			 (44, 36), # Lima
 iBrazil :		 (73, 27), # Rio de Janeiro

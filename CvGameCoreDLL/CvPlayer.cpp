@@ -8241,7 +8241,15 @@ void CvPlayer::revolution(CivicTypes* paeNewCivics, bool bForce)
 
 	if (iAnarchyLength > 0)
 	{
-		changeAnarchyTurns(iAnarchyLength);
+		// MacAurther: Peru UP: get Golden Age instead of Anarchy
+		if (getCivilizationType() == PERU)
+		{
+			changeGoldenAgeTurns(iAnarchyLength);
+		}
+		else
+		{
+			changeAnarchyTurns(iAnarchyLength);
+		}
 
 		for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
 		{
@@ -24310,8 +24318,8 @@ bool CvPlayer::isHasBuilding(BuildingTypes eIndex) const
 
 bool CvPlayer::isHasBuildingEffect(BuildingTypes eIndex) const
 {
-	// MacAurther: Mexican UP and Peru UP
-	bool bObsolete = (getCivilizationType() != MEXICO && getCivilizationType() != PERU) && (GC.getBuildingInfo(eIndex).getObsoleteTech() == NO_TECH || !GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getBuildingInfo(eIndex).getObsoleteTech()));
+	// MacAurther: Latin American RP
+	bool bObsolete = getRegionPowers() != RP_LATIN_AMERICA && (GC.getBuildingInfo(eIndex).getObsoleteTech() == NO_TECH || !GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getBuildingInfo(eIndex).getObsoleteTech()));
 	return (isHasBuilding(eIndex) && bObsolete);
 }
 

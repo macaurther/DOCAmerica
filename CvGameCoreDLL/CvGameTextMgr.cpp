@@ -10463,12 +10463,6 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 			iHappiness = kBuilding.getHappiness();
 		}
 
-		// MacAurther: Latin America RP
-		if(ePlayer != -1 && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_LATIN_AMERICA && eBuilding == getUniqueBuilding(GET_PLAYER(ePlayer).getCivilizationType(), (BuildingTypes)BUILDING_CATHOLIC_TEMPLE))
-		{
-			iHappiness += 3;
-		}
-
 		if (iHappiness != 0)
 		{
 			szTempBuffer.Format(L", +%d%c", abs(iHappiness), ((iHappiness > 0) ? gDLL->getSymbolID(HAPPY_CHAR) : gDLL->getSymbolID(UNHAPPY_CHAR)));
@@ -14188,22 +14182,6 @@ void CvGameTextMgr::setReligionHelp(CvWStringBuffer &szBuffer, ReligionTypes eRe
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_RELIGION_CANNOT_CONVERT_UNLESS_HOLY_CITY"));
-	}
-
-	if (eReligion == PROTESTANTISM)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_RELIGION_REFORMATION"));
-	}
-	else if (eReligion == CATHOLICISM)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_RELIGION_FOUND_CATHOLICISM"));
-	}
-	else if (eReligion == BUDDHISM)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_RELIGION_FOUND_BUDDHISM"));
 	}
 }
 

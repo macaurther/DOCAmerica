@@ -111,19 +111,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_LAT_TITLE</Tag>
-		<English>Latin America - The Power of Fueros:</English>
-		<French>Latin America - The Power of Fueros:</French>
-		<German>Latin America - The Power of Fueros:</German>
-		<Italian>Latin America - The Power of Fueros:</Italian>
-		<Spanish>Latin America - The Power of Fueros:</Spanish>
+		<English>Latin America - The Power of Indigenismo:</English>
+		<French>Latin America - The Power of Indigenismo:</French>
+		<German>Latin America - The Power of Indigenismo:</German>
+		<Italian>Latin America - The Power of Indigenismo:</Italian>
+		<Spanish>Latin America - The Power of Indigenismo:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_LAT</Tag>
-		<English>+3[ICON_HAPPY] from Catholic Church</English>
-		<French>+3[ICON_HAPPY] from Catholic Church</French>
-		<German>+3[ICON_HAPPY] from Catholic Church</German>
-		<Italian>+3[ICON_HAPPY] from Catholic Church</Italian>
-		<Spanish>+3[ICON_HAPPY] from Catholic Church</Spanish>
+		<English>Buildings are not obsoleted</English>
+		<French>Buildings are not obsoleted</French>
+		<German>Buildings are not obsoleted</German>
+		<Italian>Buildings are not obsoleted</Italian>
+		<Spanish>Buildings are not obsoleted</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_MES_TITLE</Tag>
@@ -216,11 +216,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ARG</Tag>
-		<English>Great Generals can start Golden Ages</English>
-		<French>Les g&#233;n&#233;raux illustres peuvent d&#233;clencher un &#226;ge d'or</French>
-		<German>Gro&#223;e Gener&#228;le k&#246;nnen Goldene Zeitalter ausl&#246;sen</German>
-		<Italian>Great Generals can start Golden Ages</Italian>
-		<Spanish>Great Generals can start Golden Ages</Spanish>
+		<English>Great Generals can start [ICON_GOLDENAGE]</English>
+		<French>Great Generals can start [ICON_GOLDENAGE]</French>
+		<German>Great Generals can start [ICON_GOLDENAGE]</German>
+		<Italian>Great Generals can start [ICON_GOLDENAGE]</Italian>
+		<Spanish>Great Generals can start [ICON_GOLDENAGE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_AZT_TITLE</Tag>
@@ -472,19 +472,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MEX_TITLE</Tag>
-		<English>The Power of Indigenismo:</English>
-		<French>The Power of Indigenismo:</French>
-		<German>The Power of Indigenismo:</German>
-		<Italian>The Power of Indigenismo:</Italian>
-		<Spanish>The Power of Indigenismo:</Spanish>
+		<English>The Power of Fueros:</English>
+		<French>The Power of Fueros:</French>
+		<German>The Power of Fueros:</German>
+		<Italian>The Power of Fueros:</Italian>
+		<Spanish>The Power of Fueros:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MEX</Tag>
-		<English>Buildings are not obsoleted</English>
-		<French>Buildings are not obsoleted</French>
-		<German>Buildings are not obsoleted</German>
-		<Italian>Buildings are not obsoleted</Italian>
-		<Spanish>Buildings are not obsoleted</Spanish>
+		<English>+1 [ICON_GOLD] from State [ICON_RELIGION] buildings</English>
+		<French>+1 [ICON_GOLD] from State [ICON_RELIGION] buildings</French>
+		<German>+1 [ICON_GOLD] from State [ICON_RELIGION] buildings</German>
+		<Italian>+1 [ICON_GOLD] from State [ICON_RELIGION] buildings</Italian>
+		<Spanish>+1 [ICON_GOLD] from State [ICON_RELIGION] buildings</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MIS_TITLE</Tag>
@@ -536,19 +536,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_PER_TITLE</Tag>
-		<English>The Power of Indigenismo:</English>
-		<French>The Power of Indigenismo:</French>
-		<German>The Power of Indigenismo:</German>
-		<Italian>The Power of Indigenismo:</Italian>
-		<Spanish>The Power of Indigenismo:</Spanish>
+		<English>The Power of Syncretism:</English>
+		<French>The Power of Syncretism:</French>
+		<German>The Power of Syncretism:</German>
+		<Italian>The Power of Syncretism:</Italian>
+		<Spanish>The Power of Syncretism:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_PER</Tag>
-		<English>Buildings are not obsoleted</English>
-		<French>Buildings are not obsoleted</French>
-		<German>Buildings are not obsoleted</German>
-		<Italian>Buildings are not obsoleted</Italian>
-		<Spanish>Buildings are not obsoleted</Spanish>
+		<English>When changing religion or civics, experience a [ICON_GOLDENAGE] instead of anarchy</English>
+		<French>When changing religion or civics, experience a [ICON_GOLDENAGE] instead of anarchy</French>
+		<German>When changing religion or civics, experience a [ICON_GOLDENAGE] instead of anarchy</German>
+		<Italian>When changing religion or civics, experience a [ICON_GOLDENAGE] instead of anarchy</Italian>
+		<Spanish>When changing religion or civics, experience a [ICON_GOLDENAGE] instead of anarchy</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_POR_TITLE</Tag>
