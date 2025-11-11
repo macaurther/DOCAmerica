@@ -10804,7 +10804,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	    iValue /= 10;
 	}
 
-	if (eCivic == CIVIC_ROYAL_COLONY_COLONY && getCivilizationType() == NETHERLANDS)
+	if (eCivic == CIVIC_ROYAL_COLONY && getCivilizationType() == NETHERLANDS)
 	{
 		iValue /= 2;
 	}

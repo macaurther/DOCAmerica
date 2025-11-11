@@ -1855,14 +1855,6 @@
 		<Spanish>Statesman</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_SPECIALIST_SHARECROPPER</Tag>
-		<English>Sharecropper</English>
-		<French>Sharecropper</French>
-		<German>Sharecropper</German>
-		<Italian>Sharecropper</Italian>
-		<Spanish>Sharecropper</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_SPECIALIST_IMMIGRANT</Tag>
 		<English>Immigrant</English>
 		<French>Immigrant</French>
@@ -4250,27 +4242,43 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CULTURE_GROUP_NATIVE</Tag>
-		<English>[COLOR_PLAYER_ORANGE]Can only be used by Natives[COLOR_REVERT]</English>
-		<French>[COLOR_PLAYER_ORANGE]Can only be used by Natives[COLOR_REVERT]</French>
-		<German>[COLOR_PLAYER_ORANGE]Can only be used by Natives[COLOR_REVERT]</German>
-		<Italian>[COLOR_PLAYER_ORANGE]Can only be used by Natives[COLOR_REVERT]</Italian>
-		<Spanish>[COLOR_PLAYER_ORANGE]Can only be used by Natives[COLOR_REVERT]</Spanish>
+		<English>[COLOR_PLAYER_ORANGE]Can only be adopted by Natives[COLOR_REVERT]</English>
+		<French>[COLOR_PLAYER_ORANGE]Can only be adopted by Natives[COLOR_REVERT]</French>
+		<German>[COLOR_PLAYER_ORANGE]Can only be adopted by Natives[COLOR_REVERT]</German>
+		<Italian>[COLOR_PLAYER_ORANGE]Can only be adopted by Natives[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_PLAYER_ORANGE]Can only be adopted by Natives[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CULTURE_GROUP_COLONY</Tag>
-		<English>[COLOR_PLAYER_ORANGE]Can only be used by Colonies[COLOR_REVERT]</English>
-		<French>[COLOR_PLAYER_ORANGE]Can only be used by Colonies[COLOR_REVERT]</French>
-		<German>[COLOR_PLAYER_ORANGE]Can only be used by Colonies[COLOR_REVERT]</German>
-		<Italian>[COLOR_PLAYER_ORANGE]Can only be used by Colonies[COLOR_REVERT]</Italian>
-		<Spanish>[COLOR_PLAYER_ORANGE]Can only be used by Colonies[COLOR_REVERT]</Spanish>
+		<English>[COLOR_PLAYER_ORANGE]Can only be adopted by Colonies[COLOR_REVERT]</English>
+		<French>[COLOR_PLAYER_ORANGE]Can only be adopted by Colonies[COLOR_REVERT]</French>
+		<German>[COLOR_PLAYER_ORANGE]Can only be adopted by Colonies[COLOR_REVERT]</German>
+		<Italian>[COLOR_PLAYER_ORANGE]Can only be adopted by Colonies[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_PLAYER_ORANGE]Can only be adopted by Colonies[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CULTURE_GROUP_NATION</Tag>
-		<English>[COLOR_PLAYER_ORANGE]Can only be used by Nations[COLOR_REVERT]</English>
-		<French>[COLOR_PLAYER_ORANGE]Can only be used by Nations[COLOR_REVERT]</French>
-		<German>[COLOR_PLAYER_ORANGE]Can only be used by Nations[COLOR_REVERT]</German>
-		<Italian>[COLOR_PLAYER_ORANGE]Can only be used by Nations[COLOR_REVERT]</Italian>
-		<Spanish>[COLOR_PLAYER_ORANGE]Can only be used by Nations[COLOR_REVERT]</Spanish>
+		<English>[COLOR_PLAYER_ORANGE]Can only be adopted by Nations[COLOR_REVERT]</English>
+		<French>[COLOR_PLAYER_ORANGE]Can only be adopted by Nations[COLOR_REVERT]</French>
+		<German>[COLOR_PLAYER_ORANGE]Can only be adopted by Nations[COLOR_REVERT]</German>
+		<Italian>[COLOR_PLAYER_ORANGE]Can only be adopted by Nations[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_PLAYER_ORANGE]Can only be adopted by Nations[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HURRY_POPULATION</Tag>
+		<English>Can Sacrifice Population or Slaves to Finish Production in a City</English>
+		<French>Can Sacrifice Population or Slaves to Finish Production in a City</French>
+		<German>Can Sacrifice Population or Slaves to Finish Production in a City</German>
+		<Italian>Can Sacrifice Population or Slaves to Finish Production in a City</Italian>
+		<Spanish>Can Sacrifice Population or Slaves to Finish Production in a City</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_FREED_SLAVES</Tag>
+		<English>%d1 slaves have been freed in %s2!</English>
+		<French>%d1 slaves have been freed in %s2!</French>
+		<German>%d1 slaves have been freed in %s2!</German>
+		<Italian>%d1 slaves have been freed in %s2!</Italian>
+		<Spanish>%d1 slaves have been freed in %s2!</Spanish>
 	</TEXT>
 	
 	

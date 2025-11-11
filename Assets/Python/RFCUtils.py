@@ -444,7 +444,7 @@ def freeSlaves(city, iPlayer):
 		createRoleUnit(iPlayer, city, iSkirmish, iNumSlaves, 0)
 	
 	# Emancipation Civic
-	if player(iPlayer).getCivics(iCivicsSociety) in [iEmancipation2, iEmancipation3]:
+	if player(iPlayer).getCivics(iCivicsSociety) in [iEmancipation, iEmancipation3]:
 		city.changePopulation(iNumSlaves)
 
 	events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
@@ -983,8 +983,8 @@ def enslaveUnit(pWinningUnit, pLosingUnit=None):
 def getSlaveCaptureChance(iPlayer, iUnit=None):
 	pPlayer = player(iPlayer)
 	iChance = 0
-	if pPlayer.getCivics(iCivicsLabor) in [iTlacotin1, iEncomienda2]: iChance += 25
-	if pPlayer.getCivics(iCivicsSociety) in [iSacrifice1]: iChance += 25
+	if pPlayer.getCivics(iCivicsLabor) in [iTlacotin, iEncomienda]: iChance += 25
+	if pPlayer.getCivics(iCivicsSociety) in [iSacrifice]: iChance += 25
 	if civ(iPlayer) in dCivGroups[iCivGroupMesoamerica]: iChance += 25	# MacAurther: Mesoamerican RP
 	if iUnit in [iAztecJaguar]: iChance += 25
 	if iUnit in [iBandeirante]: iChance += 50

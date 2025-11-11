@@ -605,7 +605,7 @@ class Birth(object):
 			lRegionList = lEuropeanRevealed1850AD
 		
 		if lRegionList:
-			revealed += plots.regions(*lRegionList).expand(1).unique()
+			revealed += plots.regions(*lRegionList)
 		
 		# reveal tiles
 		for plot in revealed:

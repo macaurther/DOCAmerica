@@ -1,31 +1,21 @@
 ### Areas ###
 
 # Colonists
-# The first tuple is where the player will spawn, the second is where the AI will spawn
+# The first tuple is where the player will spawn, the second is where the AI will spawn  # MacAurther TODO: Get AI to actually work so separate locations aren't needed
 #  Norse
-tColonistReykjavik = 	((58, 117), (55, 114))
+tColonistReykjavik = 	((68, 118), (64, 117))
 #  Spain
-tColonistCaribbean = 	((47, 57), (40, 54))
-tColonistCuba = 		((37, 62), (30, 62))
-tColonistBermuda = 		((40, 69), (32, 70))
-tColonistArgentina = 	((30, 5), (23, 10))
+tColonistCaribbean = 	((65, 71), (58, 66))
 #  Portugal
-tColonistBrazil1 = 		((42, 11), (39, 16))
-tColonistBrazil2 = 		((58, 21), (55, 24))
+tColonistBrazil1 = 		((77, 23), (69, 26))
 #  England
-tColonistVirginia = 	((46, 77), (38, 77))
-tColonistMassachusetts = ((36, 51), (44, 85))
-tColonistNovaScotia = 	((56, 85), (49, 87))
-tColonistCarolina = 	((44, 71), (36, 73))
-tColonistPennsylvania = ((44, 79), (40, 81))
+tColonistVirginia = 	((55, 87), (48, 86))
 #  France
-tColonistQuebec = 		((55, 95), (46, 92)) #(x2)
-tColonistLouisiana = 	((27, 67), (25, 72))
+tColonistQuebec = 		((59, 96), (49, 99))
 #  Netherlands
-tColonistNewNetherlands =((49, 79), (42, 83))
-tColonistSuriname = 	((52, 45), (47, 40))
+tColonistNewNetherlands =((58, 91), (48, 91))
 #  Russia
-tColonistAlaska = 		((4, 106), (12, 108))
+tColonistAlaska = 		((4, 106), (11, 108))
 
 # Companies
 

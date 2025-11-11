@@ -6,7 +6,7 @@ lCivilizations = [
 	Civilization(
 		iMaya,
 		iGold=75,
-		lCivics=[iTlacotin1],
+		lCivics=[iTlacotin],
 		techs=techs.column(2).including(iAgriculture, iMythology, iMining),
 		extraTechs=techs.column(0).including(iLandmarks, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting),
 	),

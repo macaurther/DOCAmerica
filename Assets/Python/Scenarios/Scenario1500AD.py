@@ -9,63 +9,63 @@ lCivilizations = [
 	Civilization(
 		iZapotec,
 		iGold=550,
-		lCivics=[iAristocrats1, iBureaucracy1, iCraftsmen1, iRedistribution1, iHarmony1, iIntegration1],
+		lCivics=[iAristocrats, iBureaucracy, iCraftsmen, iRedistribution, iHarmony, iIntegration],
 		techs=techs.column(7).including(iArtisanry)
 	),
 	Civilization(
 		iMuisca,
 		iGold=175,
-		lCivics=[iAristocrats1, iBureaucracy1, iCraftsmen1, iRedistribution1, iHarmony1, iIntegration1],
+		lCivics=[iAristocrats, iBureaucracy, iCraftsmen, iRedistribution, iHarmony, iIntegration],
 		techs=techs.column(7).including(iArtisanry, iLaw).without(iNavigation, iTrapping, iEarthworks, iLinguistics, iLocalization, iDiving, iFishing)
 	),
 	Civilization(
 		iNorse,
 		iGold=75,
 		iImmigration=300,
-		lCivics=[iViceroys2, iEncomienda2, iPlunder2, iConquest2],
+		lCivics=[iViceroys, iEncomienda, iPlunder, iImperialism],
 		techs=techs.column(10).without(iCartography, iLandmarks, iIrrigation, iLinguistics, iCultivation, iKnapping, iDiving, iTrapping, iPathfinding, iEarthworks, iLocalization, iCompanionPlanting, iHerbalism, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
 	),
 	Civilization(
 		iInuit,
 		iGold=50,
-		lCivics=[iDespot1, iHarmony1, iSacrifice1],
+		lCivics=[iDespot, iHarmony, iSacrifice],
 		techs=techs.column(4).including(iCeremony, iSeafaring).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iLinguistics, iLocalization, iCultivation, iCompanionPlanting, iHerbalism)
 	),
 	Civilization(
 		iInca,
 		iGold=1000,
-		lCivics=[iGodKing1, iClans1, iMita1, iRedistribution1, iCosmopolitans1, iConquest1],
+		lCivics=[iGodKing, iClans, iMita, iRedistribution, iCosmopolitans, iConquest],
 		techs=techs.column(7)
 	),
 	Civilization(
 		iPurepecha,
 		iGold=450,
-		lCivics=[iAristocrats1, iClans1, iCraftsmen1, iRedistribution1, iCosmopolitans1, iConquest1],
+		lCivics=[iAristocrats, iClans, iCraftsmen, iRedistribution, iCosmopolitans, iConquest],
 		techs=techs.column(7).without(iTrapping)
 	),
 	Civilization(
 		iAztecs,
 		iGold=600,
-		lCivics=[iAristocrats1, iClans1, iTlacotin1, iRaiding1, iOrganizedReligion1, iSacrifice1],
+		lCivics=[iAristocrats, iClans, iTlacotin, iRaiding, iOrganizedReligion, iSacrifice],
 		techs=techs.column(7).including(iNobility).without(iAstronomy, iScholarship, iNavigation)
 	),
 	Civilization(
 		iHaudenosaunee,
 		iGold=300,
-		lCivics=[iChief1, iTribalConfederacy1, iCalpulli1, iHarmony1, iIntegration1],
+		lCivics=[iChief, iTribalConfederacy, iCalpulli, iHarmony, iIntegration],
 		techs=techs.column(4).including(iProperty, iCeremony).without(iEarthworks, iIrrigation, iPathfinding)
 	),
 	Civilization(
 		iLakota,
 		iGold=100,
-		lCivics=[iChief1, iHarmony1, iNomads1],
+		lCivics=[iChief, iHarmony, iNomads],
 		techs=techs.column(4).including(iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks)
 	),
 	Civilization(
 		iSpain,
 		iGold=500,
 		iStateReligion=iCatholicism,
-		lCivics=[iCaptains2, iExpedition2, iSerfdom2, iPlunder2, iJesuits2, iConquest2],
+		lCivics=[iCaptains, iExpedition, iSerfdom, iPlunder, iJesuits, iImperialism],
 		techs=techs.column(9).including(iGunpowder, iCompanies, iCartography, iEvangelism).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
 	),
 	Civilization(

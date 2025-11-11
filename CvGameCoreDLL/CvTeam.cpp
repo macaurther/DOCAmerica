@@ -2978,7 +2978,7 @@ int CvTeam::getSpreadResearchModifier(TechTypes eTech) const
 int CvTeam::getModernizationResearchModifier(TechTypes eTech) const
 {
 	// MacAurther: Only get modernization if has the Dependency civic
-	if (!GET_PLAYER(getLeaderID()).hasCivic(CIVIC_DEPENDENCY_NATIVE)) return 0;
+	if (!GET_PLAYER(getLeaderID()).hasCivic(CIVIC_DEPENDENCY)) return 0;
 
 	int iCount = 0;
 

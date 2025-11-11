@@ -750,11 +750,11 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			return "TXT_KEY_CIV_NETHERLANDS_UNITED_KINGDOM_OF"
 	
 	elif iCiv == iCanada:
-		if civic.iExecutive == iTradingCompany2:
+		if civic.iExecutive == iTradingCompany:
 			return "TXT_KEY_CIV_CANADA_RUPERTS"
 	
 	elif iCiv == iAmerica:
-		if civic.iLabor == iSlavery3:
+		if civic.iLabor == iBondage:
 			# Capital has to be in the South
 			if tCapitalCoords[1] < 79:
 				return "TXT_KEY_CIV_AMERICA_CSA"
@@ -778,7 +778,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			return "TXT_KEY_CIV_ARGENTINA_CONFEDERATION"
 	
 	elif iCiv == iMexico:
-		if bEmpire or iDespot1 in civic:
+		if bEmpire or iDespot in civic:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
 	elif iCiv == iBrazil:

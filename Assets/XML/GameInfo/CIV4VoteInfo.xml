@@ -162,7 +162,7 @@
 			<bAssignCity>0</bAssignCity>
 			<ForceCivics>
 				<ForceCivic>
-					<CivicType>CIVIC_REPRESENTATIVES_NATION</CivicType>
+					<CivicType>CIVIC_REPRESENTATIVES</CivicType>
 					<bForce>1</bForce>
 				</ForceCivic>
 			</ForceCivics>
@@ -194,7 +194,7 @@
 			<bAssignCity>0</bAssignCity>
 			<ForceCivics>
 				<ForceCivic>
-					<CivicType>CIVIC_PUBLIC_WELFARE_NATION</CivicType>
+					<CivicType>CIVIC_PUBLIC_WELFARE</CivicType>
 					<bForce>1</bForce>
 				</ForceCivic>
 			</ForceCivics>
@@ -226,7 +226,7 @@
 			<bAssignCity>0</bAssignCity>
 			<ForceCivics>
 				<ForceCivic>
-					<CivicType>CIVIC_EGALITARIANISM_NATION</CivicType>
+					<CivicType>CIVIC_EGALITARIANISM</CivicType>
 					<bForce>1</bForce>
 				</ForceCivic>
 			</ForceCivics>

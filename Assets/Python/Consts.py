@@ -230,17 +230,17 @@ iPurepecha : 1150,
 iAztecs : 1250,
 iHaudenosaunee : 1450,
 iLakota : 1475,
-iSpain : 1492,
+iSpain : -450,#1492,
 iPortugal : 1532,
 iEngland : 1607,
 iFrance : 1608,
 iNetherlands : 1625,
 iHawaii : 1650,
 iRussia: 1743,
-iAmerica : 1775,
+iAmerica : -450,#1775,
 iHaiti : 1804,
 iArgentina : 1810,
-iMexico : -450,#1810,
+iMexico : 1810,
 iColombia : 1810,
 iPeru : 1822,
 iBrazil : 1822,
@@ -442,7 +442,7 @@ iSiberiaAccess, iFreeMarket,	iAutonomy,		iAcademia, 		iModernization,	iIndepende
 iReplaceableParts,iNewspapers,	iMeteorology,	iSociology,		iSurveying,		iRepresentation,iHeritage,
 iMetallurgy,	iPostalService,	iHydrology,		iPhysics,		iPioneering,	iArchitecture, 	iHumanities,
 iMachineTools, 	iThermodynamics, iEngineeing, 	iChemistry, 	iGeology,		iNationalism, 	iCivilLiberties,
-iMeasurement, 	iEngine, 		iRailroad, 		iElectricity, 	iConservation, 	iImperialism, 	iEmancipation,
+iMeasurement, 	iEngine, 		iRailroad, 		iElectricity, 	iConservation, 	iDoctrine, 		iEmancipation,
 iBallistics,	iAssemblyLine,	iCombustion,	iTelegraph,		iBiology,		iLaborUnions,	iJournalism,
 iFlight,		iMacroeconomics,iInfrastructure,iRadio,			iEcology,		iPowerProjection,iPsychology,
 iAviation,		iGlobalism,		iFission,		iSynthetics,	iSocialServices,iCivilRights,	iTelevision,
@@ -598,26 +598,26 @@ iNumBuildingsPaganTemples = iNumBuildingsPlague + iNumPaganTemples
 iNumCivics = 126
 #				2				3				4				5				6				7				
 # Native (Culture Group 1)
-(iElders1,		iChief1,		iDespot1,		iMonarchy1,		iAristocrats1,	iGodKing1,		iCouncil1,		
-iDecentralization1,iClans1,		iCityStates1,	iTribalConfederacy1,iBureaucracy1,iVassalage1,	iFirstNation1,
-iTraditionalism1,iSubsistance1,	iTlacotin1,		iMita1,			iCraftsmen1,	iCasteSystem1,	iGuilds1,	
-iReciprocity1,	iCalpulli1,		iRedistribution1,iMindalaes1,	iRaiding1,		iDependency1,	iTourism1,
-iAnimism1,		iHarmony1,		iSacrifice1,	iOrganizedReligion1,iCosmopolitans1,iAcculturation1,iGhostDance1,
-iSettlement1,	iNomads1,		iIsolationism1,	iConquest1,		iIntegration1,	iTributaries1,	iAncestralLands1,
+(iElders,		iChief,			iDespot,		iMonarch,		iAristocrats,	iGodKing,		iCouncil,		
+iDecentralization,iClans,		iCityStates,	iTribalConfederacy,iBureaucracy,iVassalage,		iFirstNation,
+iTraditionalism,iSubsistance,	iTlacotin,		iMita,			iCraftsmen,		iCasteSystem,	iGuilds,	
+iReciprocity,	iCalpulli,		iRedistribution,iMindalaes,		iRaiding,		iDependency,	iTourism,
+iAnimism,		iHarmony,		iSacrifice,		iOrganizedReligion,iCosmopolitans,iAcculturation,iGhostDance,
+iSettlement,	iNomads,		iIsolationism,	iConquest,		iIntegration,	iTributaries,	iAncestralLands,
 # Colony
-iCaptains2,		iProprietors2,	iViceroys2,		iTrustees2,		iGovernors2,	iColonialAssembly2,iHomeRule2,
-iExpedition2,	iAdmiralty2,	iCharterColony2,iTradingCompany2,iRoyalColony2,	iCommonLaw2,	iProvinces2,
-iSerfdom2,		iEncomienda2,	iIndenturedServitude2,iSlavery2,iPenalColony2,	iIndustrialism2,iImmigrantLabor2,
-iGoldRush2,		iPlunder2,		iFactory2,		iMercantilism2,	iCustomsUnion2,	iConsumerism2,	iPublicWelfare2,
-iDivineRight2,	iJesuits2,		iZealotry2,		iHaven2,		iProfiteering2,	iOpportunity2,	iEmancipation2,
-iClaims2,		iConquest2,		iProvidence2,	iOutposts2,		iHomesteads2,	iIntervention2,	iCommonwealth2,
+iCaptains,		iProprietors,	iViceroys,		iTrustees,		iGovernors,		iColonialAssembly,iHomeRule,
+iExpedition,	iAdmiralty,		iCharterColony,	iTradeCompany,	iRoyalColony,	iSecretariate,	iCommonwealth,	
+iSerfdom,		iEncomienda,	iIndenturedServitude,iSlavery,	iConscription,	iPenalColony,	iApprenticeship,
+iGoldRush,		iPlunder,		iExtraction,	iFactoryCivic,	iPlantationCivic,iMercantilism,	iCustomsUnion,
+iDivineRight,	iJesuits,		iPatronato,		iHaven,			iCastas,		iCreolism,		iEmancipation,
+iClaims,		iImperialism,	iProvidence,	iOutposts,		iGrants,		iIntervention,	iDependencies,
 # Nation
-iStrongman3,	iJunta3,		iSovereign3,	iPlutocrats3,	iRepresentatives3,iDictator3,	iStateParty3,
-iMinarchy3,		iCommonLaw3,	iConfederacy3,	iKleptocracy3,	iFederalism3,	iMandate3,		iPoliceState3,
-iTraditionalism3,iSubsistance3,	iApprenticeship3,iSlavery3,		iIndustrialism3,iImmigrantLabor3,iLaborUnions3,
-iLaissezFaire3,	iAgrarianism3,	iExtraction3,	iFreeEnterprise3,iProtectionism3,iConsumerism3,	iPublicWelfare3,
-iRevolution3,	iLibertarianism3,iProfiteering3,iOpportunity3,	iEmancipation3,	iNativism3,		iEgalitarianism3,
-iDisplacement3,	iHomesteads3,	iAssimilation3,	iManifestDestiny3,iDecolonization3,iNationhood3,iHegemony3) = range(iNumCivics)
+iStrongman,		iJunta,			iSovereign,		iPlutocrats,	iRepresentatives,iDictator,		iStateParty,
+iMinarchy,		iMartialLaw,	iConfederacy,	iFederalism,	iKleptocracy,	iUnitary,		iPoliceState,
+iRuralism,		iBondage,		iSharecropping,	iIndustrialism,	iImmigrantLabor,iLaborUnions,	iMechanization,
+iLaissezFaire,	iAgrarianism,	iFreeEnterprise,iProtectionism,	iConsumerism,	iDefenseComplex,iPublicWelfare,
+iRevolution,	iLibertarianism,iProfiteering,	iOpportunity,	iSegregation,	iNativism,		iEgalitarianism,
+iDisplacement,	iHomesteads,	iAssimilation,	iManifestDestiny,iDecolonization,iNationhood,	iHegemony) = range(iNumCivics)
 
 iNumCivicCategories = 6
 (iCivicsExecutive, iCivicsAdministration, iCivicsLabor, iCivicsEconomy, iCivicsSociety, iCivicsExpansion) = range(iNumCivicCategories)
@@ -626,12 +626,12 @@ iNumCivicsPerCategory = 7
 
 
 #Specialists
-iNumSpecialists = 18
+iNumSpecialists = 17
 #				            2				            3				            4				            5
 (iSpecialistCitizen,        iSpecialistPriest,          iSpecialistArtist,          iSpecialistScientist,       iSpecialistMerchant,
 iSpecialistEngineer,        iSpecialistStatesman,       iSpecialistGreatProphet,    iSpecialistGreatArtist,     iSpecialistGreatScientist, 
 iSpecialistGreatMerchant,   iSpecialistGreatEngineer,   iSpecialistGreatStatesman,  iSpecialistGreatGeneral,    iSpecialistGreatSpy,
-iSpecialistSlave,			iSpecialistSharecropper,	iSpecialistImmigrant) = range(iNumSpecialists)
+iSpecialistSlave,			iSpecialistImmigrant) = range(iNumSpecialists)
 
 lGreatSpecialists = [iSpecialistGreatProphet, iSpecialistGreatArtist, iSpecialistGreatScientist, iSpecialistGreatMerchant, iSpecialistGreatEngineer, iSpecialistGreatStatesman, iSpecialistGreatGeneral, iSpecialistGreatSpy]
 

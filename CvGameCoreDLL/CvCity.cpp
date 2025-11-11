@@ -271,7 +271,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	{
 		if (pPlot->getFeatureType() != NO_FEATURE && pPlot->getFeatureType() != FEATURE_FLOOD_PLAINS && pPlot->getFeatureType() != FEATURE_CANYON) //Leoreth: flood plains are not removed by cities -> MacAurther: neither are Canyons
 		{
-			if (!GET_PLAYER(eOwner).hasCivic(CIVIC_HARMONY_NATIVE))	// MacAurther: Harmony civic
+			if (!GET_PLAYER(eOwner).hasCivic(CIVIC_HARMONY))	// MacAurther: Harmony civic
 			{
 				pPlot->setFeatureType(NO_FEATURE);
 			}
@@ -2508,7 +2508,7 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 		if(!GET_PLAYER(getOwner()).isHuman()) return false;
 
 		// Make sure player has the right civic
-		if(!GET_PLAYER(getOwner()).hasCivic(CIVIC_NOMADS_NATIVE)) return false;
+		if(!GET_PLAYER(getOwner()).hasCivic(CIVIC_NOMADS)) return false;
 
 		int iNewX = getX();
 		int iNewY = getY();
@@ -2553,10 +2553,10 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 		//   the tile is not water
 		if (pNewPlot->isWater()) return false;
 		//   the tile is owned by the migrating player AND not owned by the Indigenous player and the migrating player has Chief
-		bool bChiefAbility = GET_PLAYER(getOwner()).hasCivic(CIVIC_CHIEF_NATIVE) && pNewPlot->getOwner() != NO_PLAYER && GET_PLAYER(pNewPlot->getOwner()).getCivilizationType() == INDIGENOUS;
+		bool bChiefAbility = GET_PLAYER(getOwner()).hasCivic(CIVIC_CHIEF) && pNewPlot->getOwner() != NO_PLAYER && GET_PLAYER(pNewPlot->getOwner()).getCivilizationType() == INDIGENOUS;
 		if (!bChiefAbility && pNewPlot->getOwner() != getOwner()) return false;
 		//   the tile does not contain a feature other than Flood Plains or Canyon AND the migrating player doesn't have Harmony
-		bool bHarmonyAbility = GET_PLAYER(getOwner()).hasCivic(CIVIC_HARMONY_NATIVE) && pNewPlot->getFeatureType() != FEATURE_BOG && pNewPlot->getFeatureType() != FEATURE_JUNGLE;
+		bool bHarmonyAbility = GET_PLAYER(getOwner()).hasCivic(CIVIC_HARMONY) && pNewPlot->getFeatureType() != FEATURE_BOG && pNewPlot->getFeatureType() != FEATURE_JUNGLE;
 		if (!bHarmonyAbility && pNewPlot->getFeatureType() != NO_FEATURE && pNewPlot->getFeatureType() != FEATURE_FLOOD_PLAINS && pNewPlot->getFeatureType() != FEATURE_CANYON) return false;
 		//   the terrain is suitable for founding
 		bool bFound = false;
@@ -13830,10 +13830,10 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 
 			pUnit->finishMoves();
 
-			// Leoreth: if unit was hurried, apply the mercenary promotion, and reset the hurry memory
+			// Leoreth: if unit was hurried, apply the mercenary promotion, and reset the hurry memory -> MacAurther: No Mercenary promotion
 			if (isUnitHurried(eTrainUnit))
 			{
-				pUnit->setHasPromotion((PromotionTypes)GC.getInfoTypeForString("PROMOTION_MERCENARY"), true);
+				//pUnit->setHasPromotion((PromotionTypes)GC.getInfoTypeForString("PROMOTION_MERCENARY"), true);
 				setUnitHurried(eTrainUnit, false);
 			}
 
@@ -17468,7 +17468,7 @@ bool CvCity::isAutoRaze() const
 			break;
 		}
 	}
-	if (ePreviousPlayer != NO_PLAYER && GET_PLAYER(ePreviousPlayer).hasCivic(CIVIC_HARMONY_NATIVE))
+	if (ePreviousPlayer != NO_PLAYER && GET_PLAYER(ePreviousPlayer).hasCivic(CIVIC_HARMONY))
 	{
 		return true;
 	}

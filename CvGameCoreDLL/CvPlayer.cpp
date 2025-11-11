@@ -5710,7 +5710,7 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 				receiveGoody(pPlot, eGoody, pUnit);
 
 				// MacAurther: Native Confederacy Power
-				if (hasCivic(CIVIC_TRIBAL_CONFEDERACY_NATIVE))
+				if (hasCivic(CIVIC_TRIBAL_CONFEDERACY))
 				{
 					pPlot->improveTile();
 				}
@@ -7475,7 +7475,7 @@ int CvPlayer::calculateUnitCost(int& iFreeUnits, int& iFreeMilitaryUnits, int& i
 	iMilitaryCost = iPaidMilitaryUnits * getGoldPerMilitaryUnit();
 
 	// MacAurther: Proprietaries Civic
-	iExtraCost = hasCivic(CIVIC_PROPRIETORS_COLONY) ? 0 : getExtraUnitCost();
+	iExtraCost = hasCivic(CIVIC_PROPRIETORS) ? 0 : getExtraUnitCost();
 
 	iSupport = iMilitaryCost + iBaseUnitCost + iExtraCost;
 
@@ -8131,7 +8131,7 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 	// Haudenosaunee UP: starts with Confederacy
 	if (getCivilizationType() == HAUDENOSAUNEE)
 	{
-		if (eCivic == CIVIC_TRIBAL_CONFEDERACY_NATIVE)
+		if (eCivic == CIVIC_TRIBAL_CONFEDERACY)
 		{
 			return true;
 		}
@@ -8687,7 +8687,7 @@ int CvPlayer::getCivicAnarchyLength(CivicTypes* paeNewCivics) const
 	}
 
 	// MacAurther: God King Civic
-	if (hasCivic(CIVIC_GOD_KING_NATIVE) || hasCivic(CIVIC_CONFEDERACY_NATION)) return 0;
+	if (hasCivic(CIVIC_GOD_KING) || hasCivic(CIVIC_CONFEDERACY)) return 0;
 
 	//Rhye - start comment
 	/*if (isGoldenAge())
@@ -25493,7 +25493,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 {
 	if (getCurrentEra() >= ERA_INDUSTRIAL)
 	{
-		if (eCivic == CIVIC_ISOLATIONISM_NATIVE)
+		if (eCivic == CIVIC_ISOLATIONISM)
 		{
 			return true;
 		}
@@ -25501,7 +25501,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_INDUSTRIAL)
 	{
-		if (eCivic == CIVIC_SLAVERY_COLONY || eCivic == CIVIC_SLAVERY_NATION || eCivic == CIVIC_CASTE_SYSTEM_NATIVE)
+		if (eCivic == CIVIC_SLAVERY || eCivic == CIVIC_BONDAGE || eCivic == CIVIC_CASTE_SYSTEM)
 		{
 			return true;
 		}
@@ -25509,7 +25509,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_INDUSTRIAL)
 	{
-		if (eCivic == CIVIC_ADMIRALTY_COLONY || eCivic == CIVIC_INDENTURED_SERVITUDE_COLONY || eCivic == CIVIC_MERCANTILISM_COLONY)
+		if (eCivic == CIVIC_ADMIRALTY || eCivic == CIVIC_INDENTURED_SERVITUDE || eCivic == CIVIC_MERCANTILISM)
 		{
 			return true;
 		}
@@ -25517,7 +25517,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_REVOLUTIONARY)
 	{
-		if (eCivic == CIVIC_ANIMISM_NATIVE || eCivic == CIVIC_CHIEF_NATIVE || eCivic == CIVIC_TRADITIONALISM_NATIVE)
+		if (eCivic == CIVIC_ANIMISM || eCivic == CIVIC_CHIEF || eCivic == CIVIC_TRADITIONALISM)
 		{
 			return true;
 		}
@@ -25525,7 +25525,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)ECONOMICS))
 	{
-		if (eCivic == CIVIC_RECIPROCITY_NATIVE || eCivic == CIVIC_MINDALAES_NATIVE || eCivic == CIVIC_CRAFTSMEN_NATIVE)
+		if (eCivic == CIVIC_RECIPROCITY || eCivic == CIVIC_MINDALAES || eCivic == CIVIC_CRAFTSMEN)
 		{
 			return true;
 		}
@@ -25533,7 +25533,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)CIVIL_RIGHTS))
 	{
-		if (eCivic == CIVIC_SLAVERY_COLONY || eCivic == CIVIC_SLAVERY_NATION || eCivic == CIVIC_CASTE_SYSTEM_NATIVE)
+		if (eCivic == CIVIC_SLAVERY || eCivic == CIVIC_BONDAGE || eCivic == CIVIC_CASTE_SYSTEM)
 		{
 			return true;
 		}
@@ -25541,7 +25541,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)NATIONALISM))
 	{
-		if (eCivic == CIVIC_CONQUEST_NATIVE || eCivic == CIVIC_CONQUEST_COLONY || eCivic == CIVIC_TRIBUTARIES_NATIVE)
+		if (eCivic == CIVIC_CONQUEST || eCivic == CIVIC_IMPERIALISM || eCivic == CIVIC_TRIBUTARIES)
 		{
 			return true;
 		}
@@ -25549,7 +25549,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)EVANGELISM))
 	{
-		if (eCivic == CIVIC_ANIMISM_NATIVE || eCivic == CIVIC_COUNCIL_NATIVE)
+		if (eCivic == CIVIC_ANIMISM || eCivic == CIVIC_COUNCIL)
 		{
 			return true;
 		}

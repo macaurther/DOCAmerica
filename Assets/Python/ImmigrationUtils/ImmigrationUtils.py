@@ -62,21 +62,30 @@ class ImmigrationUtils:
 	
 	def getImmigrationThreshold(self, iPlayer, iHomeland):
 		iCiv = civ(iPlayer)
-		return int(self.calculateBaseImmigrationThreshold(iCiv) * self.getHomelandImmigrationThresholdModifier(iCiv, iHomeland))
+		return int(self.calculateBaseImmigrationThreshold(iPlayer) * self.getHomelandImmigrationThresholdModifier(iPlayer, iHomeland))
 
-	def getHomelandImmigrationThresholdModifier(self, iCiv, iHomeland):
+	def getHomelandImmigrationThresholdModifier(self, iPlayer, iHomeland):
 		iModifier = 0
 		
 		# Civics
-		iModifier += 0	# MacAurther TODO
+		if iPlayer == -1:
+			bPenalColony = False
+			bDecolonization = False
+		else:
+			# Get the actual current player object
+			civics = Civics.player(iPlayer)
+			bPenalColony = iPenalColony in civics
+			bDecolonization = iDecolonization in civics
+		if bPenalColony: iModifier -= 50
+		if bDecolonization: iModifier += 25
 
 		# Saturation
-		iModifier += data.civs[iCiv].lNumImmigrantsEared[iHomeland] ** 1.1
+		iModifier += data.civs[civ(iPlayer)].lNumImmigrantsEared[iHomeland] ** 1.1
 
 		return max(100 + iModifier, 20) / 100
 
-	def calculateBaseImmigrationThreshold(self, iCiv):
-		return 10 + (data.civs[iCiv].numImmigrations ** 1.1)
+	def calculateBaseImmigrationThreshold(self, iPlayer):
+		return 10 + (data.civs[civ(iPlayer)].numImmigrations ** 1.1)
 
 	def canEarnImmigrants(self, iPlayer, iHomeland=-1):
 		pPlayer = player(iPlayer)
@@ -442,7 +451,7 @@ class ImmigrationUtils:
 		lCategoryDesire[iTransportsCat] = min(iNumCities / 2, 5) - lNumUnitsInCategories[iTransportsCat]	# Want 1 Transport per 2 cities, max 5
 		
 		# Slave Category
-		if iGuilds1 in civics or iSlavery2 in civics or iSlavery3 in civics:
+		if iGuilds in civics or iSlavery in civics or iBondage in civics:
 			# Get excess happiness in cities that can have slaves
 			iExcessHappiness = 0
 			for pCity in lCities:
@@ -462,7 +471,7 @@ class ImmigrationUtils:
 		lCategoryDesire[iColonistsCat] = min(iExcessHappiness, 2) - lNumUnitsInCategories[iColonistsCat]	# Max at 2 at any given time
 		
 		# Migrant Worker Category
-		if iImmigrantLabor2 in civics or iImmigrantLabor3 in civics:
+		if iApprenticeship in civics or iImmigrantLabor in civics:
 			lCategoryDesire[iTrackmanCat] = 3 - lNumUnitsInCategories[iTrackmanCat]	# Max at 3 at any given time
 		
 		# Explorers Category

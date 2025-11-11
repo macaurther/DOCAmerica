@@ -106,11 +106,11 @@ def getCityValue(city, iCompany):
 	ownerTeam = team(city)
 
 	# Trade Company Civic increases likeliness for trading company
-	if iCompany == iTradingCompany and has_civic(owner, iTradingCompany2):
+	if iCompany == iTradingCompany and has_civic(owner, iTradingCompany):
 		iValue += 100
 
 	# Free Enterprise increases likeliness for all companies
-	if has_civic(owner, iFreeEnterprise3):
+	if has_civic(owner, iFreeEnterprise):
 		iValue += 1
 
 	# Dutch UP

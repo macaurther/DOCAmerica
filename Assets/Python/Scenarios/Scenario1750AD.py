@@ -10,25 +10,25 @@ lCivilizations = [
 		iNorse,
 		iGold=75,
 		iImmigration=300,
-		lCivics=[iGovernors2, iAdmiralty2, iIndenturedServitude2, iFactory2, iHaven2, iOutposts2],
+		lCivics=[iGovernors, iAdmiralty, iIndenturedServitude, iFactoryCivic, iHaven, iOutposts],
 		techs=techs.column(13).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
 	),
 	Civilization(
 		iInuit,
 		iGold=50,
-		lCivics=[iDespot1, iHarmony1, iSacrifice1],
+		lCivics=[iDespot, iHarmony, iSacrifice],
 		techs=techs.column(7).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iAsiaAccess)
 	),
 	Civilization(
 		iHaudenosaunee,
 		iGold=300,
-		lCivics=[iCouncil1, iTribalConfederacy1, iTlacotin1, iMindalaes1, iAcculturation1, iIntegration1],
+		lCivics=[iCouncil, iTribalConfederacy, iTlacotin, iMindalaes, iAcculturation, iIntegration],
 		techs=techs.column(7),
 	),
 	Civilization(
 		iLakota,
 		iGold=100,
-		lCivics=[iChief1, iClans1, iTlacotin1, iMindalaes1, iHarmony1, iNomads1],
+		lCivics=[iChief, iClans, iTlacotin, iMindalaes, iHarmony, iNomads],
 		techs=techs.column(7),
 	),
 	Civilization(
@@ -37,7 +37,7 @@ lCivilizations = [
 		iGold=400,
 		iImmigration=300,
 		iStateReligion=iCatholicism,
-		lCivics=[iViceroys2, iRoyalColony2, iEncomienda2, iPlunder2, iJesuits2, iConquest2],
+		lCivics=[iViceroys, iRoyalColony, iEncomienda, iPlunder, iJesuits, iImperialism],
 		techs=techs.column(15).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iPortugal: 2}
 	),
@@ -47,7 +47,7 @@ lCivilizations = [
 		iGold=450,
 		iImmigration=300,
 		iStateReligion=iCatholicism,
-		lCivics=[iProprietors2, iAdmiralty2, iSlavery2, iFactory2, iProfiteering2, iHomesteads2],
+		lCivics=[iProprietors, iAdmiralty, iSlavery, iFactoryCivic, iExtraction, iGrants],
 		techs=techs.column(15).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iSpain: 2, iEngland: 2, iNetherlands: -2}
 	),
@@ -57,7 +57,7 @@ lCivilizations = [
 		iGold=600,
 		iImmigration=300,
 		iStateReligion=iProtestantism,
-		lCivics=[iGovernors2, iCommonLaw2, iSlavery2, iMercantilism2, iHaven2, iProvidence2],
+		lCivics=[iGovernors, iCommonwealth, iSlavery, iMercantilism, iHaven, iProvidence],
 		techs=techs.column(15).including(iMeteorology, iSurveying, iPhysics).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iFrance: -4, iPortugal: 2}
 	),
@@ -67,7 +67,7 @@ lCivilizations = [
 		iGold=400,
 		iImmigration=300,
 		iStateReligion=iCatholicism,
-		lCivics=[iGovernors2, iCharterColony2, iSlavery2, iFactory2, iHaven2, iOutposts2],
+		lCivics=[iGovernors, iCharterColony, iSlavery, iFactoryCivic, iHaven, iOutposts],
 		techs=techs.column(15).including(iMeteorology, iSurveying, iPhysics).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iEngland: -4, iNetherlands: 2}
 	),
@@ -77,14 +77,14 @@ lCivilizations = [
 		iGold=800,
 		iImmigration=200,
 		iStateReligion=iProtestantism,
-		lCivics=[iTrustees2, iTradingCompany2, iSlavery2, iMercantilism2, iProfiteering2, iOutposts2],
+		lCivics=[iTrustees, iTradingCompany, iSlavery, iMercantilism, iExtraction, iOutposts],
 		techs=techs.column(15).including(iMeteorology).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iFrance: 2, iPortugal: -2}
 	),
 	Civilization(
 		iHawaii,
 		iGold=150,
-		lCivics=[iMonarchy1, iClans1, iTlacotin1, iMindalaes1, iIsolationism1, iConquest1],
+		lCivics=[iMonarch, iClans, iTlacotin, iMindalaes, iIsolationism, iConquest],
 		techs=techs.column(7).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess),
 	),
 	Civilization(
@@ -92,7 +92,7 @@ lCivilizations = [
 		iGold=200,
 		iImmigration=100,
 		iStateReligion=iOrthodoxy,
-		lCivics=[iTrustees2, iTradingCompany2, iIndenturedServitude2, iFactory2, iProfiteering2, iOutposts2],
+		lCivics=[iTrustees, iTradingCompany, iIndenturedServitude, iFactoryCivic, iExtraction, iOutposts],
 		techs=techs.column(14).without(iLandmarks, iCultivation, iHerbalism).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iAsiaAccess),
 	),
 	Civilization(

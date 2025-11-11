@@ -2585,7 +2585,7 @@ class CvMainInterface:
 					
 					# Leoreth: Aztec UP: sacrifice slaves -> MacAurther: Sacrifice Civic
 					iPlayer = pUnit.getOwner()
-					if pUnit.getUnitType() in lSlaveUnits and player(iPlayer).getCivics(iCivicsSociety) == iSacrifice1 and pUnit.movesLeft() > 0:
+					if pUnit.getUnitType() in lSlaveUnits and player(iPlayer).getCivics(iCivicsSociety) == iSacrifice and pUnit.movesLeft() > 0:
 						city = city_(pUnit)
 						if city:
 							if civ(city) == civ(iPlayer) and city.isCapital():
@@ -2600,8 +2600,8 @@ class CvMainInterface:
 							screen.show("BottomButtonContainer")
 							iCount = iCount + 1
 					
-					# MacAurther: Despotism Civic
-					if pUnit.getUnitType() in lSlaveUnits and player(iPlayer).getCivics(iCivicsExecutive) == iDespot1 and pUnit.movesLeft() > 0:
+					# MacAurther: Hurry population can also hurry slaves
+					if pUnit.getUnitType() in lSlaveUnits and player(iPlayer).canHurry(0) and pUnit.movesLeft() > 0:	# Hurry type 0: population
 						city = city_(pUnit)
 						if city:
 							if civ(city) == civ(iPlayer) and city.isProductionBuilding():

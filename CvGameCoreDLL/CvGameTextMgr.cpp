@@ -8158,8 +8158,8 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 		}
 	}
 
-	// Leoreth: hurrying units with gold also allows to bribe barbarians
-	if (GC.getCivicInfo(eCivic).isHurry(HURRY_GOLD_UNITS))
+	// Leoreth: hurrying units with gold also allows to bribe barbarians -> MacAurther: Bribe-ability is now independent from being able to hurry units with gold
+	if (eCivic == CIVIC_TRIBAL_CONFEDERACY || eCivic == CIVIC_IMPERIALISM || eCivic == CIVIC_ASSIMILATION)
 	{
 		szHelpText.append(gDLL->getText("TXT_KEY_BRIBE_UNITS_EFFECT"));
 	}

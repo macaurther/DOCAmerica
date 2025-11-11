@@ -96,12 +96,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_STRONGMAN</CivicType>
 				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
-				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
-				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
-				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
+				<CivicType>CIVIC_RURALISM</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE</CivicType>
+				<CivicType>CIVIC_REVOLUTION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -224,12 +224,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_STRONGMAN</CivicType>
 				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
-				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
-				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
-				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
+				<CivicType>CIVIC_RURALISM</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE</CivicType>
+				<CivicType>CIVIC_REVOLUTION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -351,12 +351,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -447,12 +447,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_STRONGMAN</CivicType>
 				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
-				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
-				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
-				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
+				<CivicType>CIVIC_RURALISM</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE</CivicType>
+				<CivicType>CIVIC_REVOLUTION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -567,12 +567,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_STRONGMAN</CivicType>
 				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
-				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
-				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
-				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
+				<CivicType>CIVIC_RURALISM</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE</CivicType>
+				<CivicType>CIVIC_REVOLUTION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -660,12 +660,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -756,12 +756,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_STRONGMAN</CivicType>
 				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
-				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
-				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
-				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
+				<CivicType>CIVIC_RURALISM</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE</CivicType>
+				<CivicType>CIVIC_REVOLUTION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -864,12 +864,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
-				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
-				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
-				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
-				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
-				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
+				<CivicType>CIVIC_CAPTAINS</CivicType>
+				<CivicType>CIVIC_EXPEDITION</CivicType>
+				<CivicType>CIVIC_SERFDOM</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT</CivicType>
+				<CivicType>CIVIC_CLAIMS</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1075,12 +1075,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
-				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
-				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
-				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
-				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
-				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
+				<CivicType>CIVIC_CAPTAINS</CivicType>
+				<CivicType>CIVIC_EXPEDITION</CivicType>
+				<CivicType>CIVIC_SERFDOM</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT</CivicType>
+				<CivicType>CIVIC_CLAIMS</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1188,12 +1188,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_STRONGMAN</CivicType>
 				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
-				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
-				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
-				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
+				<CivicType>CIVIC_RURALISM</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE</CivicType>
+				<CivicType>CIVIC_REVOLUTION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1332,12 +1332,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1435,12 +1435,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1534,12 +1534,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1648,12 +1648,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1748,12 +1748,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1864,12 +1864,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1963,12 +1963,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_STRONGMAN</CivicType>
 				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
-				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
-				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
-				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
+				<CivicType>CIVIC_RURALISM</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE</CivicType>
+				<CivicType>CIVIC_REVOLUTION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2092,12 +2092,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2182,12 +2182,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2333,12 +2333,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
-				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
-				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
-				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
-				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
-				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
+				<CivicType>CIVIC_CAPTAINS</CivicType>
+				<CivicType>CIVIC_EXPEDITION</CivicType>
+				<CivicType>CIVIC_SERFDOM</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT</CivicType>
+				<CivicType>CIVIC_CLAIMS</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2484,12 +2484,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
-				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
-				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
-				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
-				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
-				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
+				<CivicType>CIVIC_CAPTAINS</CivicType>
+				<CivicType>CIVIC_EXPEDITION</CivicType>
+				<CivicType>CIVIC_SERFDOM</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT</CivicType>
+				<CivicType>CIVIC_CLAIMS</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2584,12 +2584,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_STRONGMAN</CivicType>
 				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
-				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
-				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
-				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
+				<CivicType>CIVIC_RURALISM</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE</CivicType>
+				<CivicType>CIVIC_REVOLUTION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2703,12 +2703,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
-				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
-				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
-				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
-				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
-				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
+				<CivicType>CIVIC_CAPTAINS</CivicType>
+				<CivicType>CIVIC_EXPEDITION</CivicType>
+				<CivicType>CIVIC_SERFDOM</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT</CivicType>
+				<CivicType>CIVIC_CLAIMS</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2795,12 +2795,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2881,12 +2881,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3016,12 +3016,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
-				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
-				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
-				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
-				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
-				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
+				<CivicType>CIVIC_CAPTAINS</CivicType>
+				<CivicType>CIVIC_EXPEDITION</CivicType>
+				<CivicType>CIVIC_SERFDOM</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT</CivicType>
+				<CivicType>CIVIC_CLAIMS</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3126,12 +3126,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
-				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
-				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
-				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
-				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
-				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
+				<CivicType>CIVIC_CAPTAINS</CivicType>
+				<CivicType>CIVIC_EXPEDITION</CivicType>
+				<CivicType>CIVIC_SERFDOM</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT</CivicType>
+				<CivicType>CIVIC_CLAIMS</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3247,12 +3247,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3336,12 +3336,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3428,12 +3428,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_STRONGMAN</CivicType>
 				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
-				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
-				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
-				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
+				<CivicType>CIVIC_RURALISM</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE</CivicType>
+				<CivicType>CIVIC_REVOLUTION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3516,12 +3516,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3627,12 +3627,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3824,12 +3824,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3966,12 +3966,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -4101,12 +4101,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -4286,12 +4286,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -4358,12 +4358,12 @@
 			</FreeTechs>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -4528,12 +4528,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>

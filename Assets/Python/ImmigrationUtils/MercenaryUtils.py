@@ -88,13 +88,13 @@ class Mercenary:
 		iExp = 0
 		# Conquest and Zealotry Civic
 		if self.getUnitInfo().getDomainType() == DomainTypes.DOMAIN_LAND and not self.getUnitInfo().getUnitCombatType() in [UnitCombatTypes.NO_UNITCOMBAT, UnitCombatTypes.UNITCOMBAT_SPY]:
-			if iConquest1 in civics or iConquest2 in civics:
+			if iConquest in civics or iImperialism in civics:
 				iExp += 2
 			if iZealotry2 in civics:
 				iExp += 2
 		
 		# Admiralty Civic
-		if iAdmiralty2 in civics and self.getUnitInfo().getDomainType() == DomainTypes.DOMAIN_SEA:
+		if iAdmiralty in civics and self.getUnitInfo().getDomainType() == DomainTypes.DOMAIN_SEA:
 			iExp += 4
 		
 		if iExp > 0:
@@ -130,43 +130,32 @@ class Mercenary:
 	def getHireCost(self, iPlayer):
 		' iHireCost - the cost to hire the mercenary'
 		
-		# if iPlayer == -1:
-		# 	iCurrentImmigration = 0
-		# 	bDecolonization = False
-		# 	bIntervention = False
-		# 	bProprietaries = False
-		# 	bIndenturedServitude = False
-		# 	bPenalColony = False
-		# 	bEuropeanRP = False
-		# else:
-		# 	# Get the actual current player object
-		# 	player = gc.getPlayer(iPlayer)
-		# 	civics = Civics.player(iPlayer)
-		# 	iCurrentImmigration = player.getImmigration()
-		# 	bDecolonization = iDecolonization3 in civics
-		# 	bIntervention = iIntervention2 in civics
-		# 	bProprietaries = iProprietors2 in civics
-		# 	bIndenturedServitude = iIndenturedServitude2 in civics
-		# 	bPenalColony = iPenalColony2 in civics
-		# 	bEuropeanRP = civ(iPlayer) in dCivGroups[iCivGroupEurope]
+		if iPlayer == -1:
+			bProprietaries = False
+			bIndenturedServitude = False
+		else:
+			# Get the actual current player object
+			civics = Civics.player(iPlayer)
+			bProprietaries = iProprietors in civics
+			bIndenturedServitude = iIndenturedServitude in civics
 		
 		iImmigrationCost = 0
 		iGoldCost = 0
 		
 		# Set Immigration costs
 		if self.iUnitID in [iSettler, iDogSled]:
-			iImmigrationCost = 6
-		elif self.iUnitID == iPioneer:
-			iImmigrationCost = 10
-		elif self.iUnitID in [iWorker, iPromyshlenniki]:
-			iImmigrationCost = 3
-		elif self.iUnitID == iLaborer:
 			iImmigrationCost = 4
-		elif self.iUnitID == iTrackman:
+		elif self.iUnitID == iPioneer:
+			iImmigrationCost = 6
+		elif self.iUnitID in [iWorker, iPromyshlenniki]:
 			iImmigrationCost = 2
+		elif self.iUnitID == iLaborer:
+			iImmigrationCost = 3
+		elif self.iUnitID == iTrackman:
+			iImmigrationCost = 1
 		elif self.iUnitID in [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]:
 			iImmigrationCost = 1
-			iGoldCost = scale(20)
+			iGoldCost = scale(10)
 		elif self.getUnitId() in lGreatPeople:
 			iImmigrationCost = 1
 			iGoldCost = scale(500)
@@ -176,6 +165,9 @@ class Mercenary:
 			if gc.getUnitClassInfo(self.getUnitInfo().getUnitClassType()).getDefaultUnitIndex() != self.iUnitID:
 				iGoldCost *= 2
 
+		# Apply effects
+		if bIndenturedServitude and self.iUnitID in [iWorker, iPromyshlenniki, iLaborer]: iImmigrationCost -= 1
+		if bProprietaries: iGoldCost /= 2
 		
 		return (iImmigrationCost, iGoldCost)
 			

@@ -78,17 +78,6 @@ def nativeCityConquered(iOldOwner, iNewOwner, pCity, bConquest, bTrade):
 	
 	if len(lPossibleTechs) > 0:
 		team(iNewOwner).setHasTech(random.choice(lPossibleTechs), true, iNewOwner, False, True)
-		
-	# If the conquerer has the Plunder Civic, give some Immigration for conquerer
-	if player(iNewOwner).hasCivic(iPlunder2):
-		iConquerImmigration = scale(20 + pCity.getPopulation() * 5)
-		
-		# England UP
-		if civ(iNewOwner) == iEngland:
-			iConquerImmigration *= 2
-		
-		gc.getPlayer(iNewOwner).changeImmigration(iConquerImmigration)
-		message(iNewOwner, "TXT_KEY_CONQUER_IMMIGRATION", iConquerImmigration)
 	
 	# Check for any slave capturing
 	# Need to somehow get conquering unit, just get the first unit on the plot and hope it's right?
@@ -152,14 +141,14 @@ def pioneeringAbility(city):
 # Providence and Manifest Destiny civics
 def extraCultureOnFound(city):
 	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
-	if iExpansionCivic in [iProvidence2, iManifestDestiny3]:
+	if iExpansionCivic in [iProvidence, iManifestDestiny]:
 		city.changeCulture(city.getOwner(), scale(50), True)
 
 @handler("cityBuilt")
 # Homestead civics
 def extraCultureOnFound(city):
 	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
-	if iExpansionCivic in [iHomesteads2, iHomesteads3]:
+	if iExpansionCivic in [iGrants, iHomesteads]:
 		iSettleImmigration = scale(50)
 		
 		# England UP
@@ -257,9 +246,11 @@ def validateSlaves(iPlayer):
 			iNumSlaves = city.getFreeSpecialistCount(iSpecialistSlave)
 			city.setFreeSpecialistCount(iSpecialistSlave, 0)
 			
-			# Emancipation Civic
-			if player(iPlayer).getCivics(iCivicsSociety) in [iEmancipation2, iEmancipation3]:
-				city.changePopulation(iNumSlaves)
+			# Freed slaves turn into population and add temorary unhappiness
+			city.changePopulation(iNumSlaves)
+			city.changeHurryAngerTimer(turns(iNumSlaves * 3))
+			message(city.getOwner(), "TXT_KEY_MESSAGE_FREED_SLAVES", iNumSlaves, city.getName(), color=iGreen, location=city, button=infos.unit(iSlave).getButton())
+
 				
 		for slave in units.owner(iPlayer).where(lambda unit: base_unit(unit) in [iSlave, iChattleSlave]):
 			slave.kill(False, iPlayer)
@@ -363,34 +354,6 @@ def updateLastTurnAlive(iPlayer, bAlive):
 		data.civs[iPlayer].iLastTurnAlive = game.getGameTurn()
 
 ### END PLAYER TURN ###
-
-@handler("EndPlayerTurn")
-# Chance to remove worked feature/bonus is totalPop / 100 (if player has more than 100 pop, it's 1 loss every turn)
-def extractionAbility(iGameTurn, iPlayer):
-	pPlayer = player(iPlayer)
-	iEconomyCivic = pPlayer.getCivics(iCivicsEconomy)
-	if iEconomyCivic == iExtraction3:
-		iPopulation = pPlayer.getTotalPopulation()
-		if iPopulation > rand(100):
-			# Search for a random city to check
-			iCityNum = rand(pPlayer.getNumCities() - 1)
-			if iCityNum < 1: return
-			
-			pCity = cities.owner(iPlayer)[iCityNum]
-			if pCity == None: return
-			
-			for i in range(gc.getNUM_CITY_PLOTS()):
-				pPlot = pCity.getCityIndexPlot(i)
-				if pPlot and not pPlot.isNone() and pPlot.hasYield():
-					if pCity.isWorkingPlot(pPlot):
-						if not pPlot.getFeatureType() in [FeatureTypes.NO_FEATURE, iJungle, iRainforest, iSwamp, iFallout, iCenote]:
-							message(iPlayer, 'TXT_KEY_EXTRACTION_FEATURE', sound='SND_REVOLTEND', event=1, button=infos.feature(pPlot.getFeatureType()).getButton(), color=iRed, location=pPlot)
-							pPlot.setFeatureType(FeatureTypes.NO_FEATURE, 0)
-							return
-						elif not pPlot.getBonusType(pPlayer.getTeam()) in [BonusTypes.NO_BONUS]:
-							message(iPlayer, 'TXT_KEY_EXTRACTION_BONUS', sound='SND_REVOLTEND', event=1, button=infos.bonus(pPlot.getBonusType(pPlayer.getTeam())).getButton(), color=iRed, location=pPlot)
-							pPlot.setBonusType(BonusTypes.NO_BONUS)
-							return
 
 ### PROJECT BUILT ###
 
@@ -587,6 +550,9 @@ def getPossibleBribes(iPlayer, location):
 def canBribeUnits(spy):
 	if not player(spy).canHurry(1):
 		return False
+	# MacAurther: Bribe-ability is now independent from being able to hurry units with gold
+	if not (player(spy).hasCivic(iTribalConfederacy) or player(spy).hasCivic(iImperialism) or player(spy).hasCivic(iAssimilation)):
+		return False
 	
 	if plot(spy).isOwned() and plot(spy).getOwner() != spy.getOwner():
 		return False
@@ -628,7 +594,7 @@ def doUnitBribes(spy):
 
 @handler("civicChanged")
 def onCivicChanged(iPlayer, iOldCivic, iNewCivic):
-	if iNewCivic == iTribalConfederacy1:
+	if iNewCivic == iTribalConfederacy:
 		for pPlot in plots.all().owner(iPlayer):
 			# Convert Tribes to Allied Tribe
 			if pPlot.getImprovementType() == iTribe:

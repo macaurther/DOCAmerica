@@ -302,62 +302,6 @@
 						<LateArtDefineTag>ART_DEF_UNIT_MOUNTED_BRAVE</LateArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
-				<!--<StyleUnit>
-					<UnitType>UNIT_GREAT_ARTIST</UnitType>
-					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_GREAT_ARTIST_NATIVE</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_GREAT_ARTIST_NATIVE</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_GREAT_ARTIST_NATIVE</LateArtDefineTag>
-					</UnitMeshGroup>
-				</StyleUnit>
-				<StyleUnit>
-					<UnitType>UNIT_GREAT_ENGINEER</UnitType>
-					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_GREAT_ENGINEER_NATIVE</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_GREAT_ENGINEER_NATIVE</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_GREAT_ENGINEER_NATIVE</LateArtDefineTag>
-					</UnitMeshGroup>
-				</StyleUnit>
-				<StyleUnit>
-					<UnitType>UNIT_GREAT_GENERAL</UnitType>
-					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL_NATIVE</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL_NATIVE</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL_NATIVE</LateArtDefineTag>
-					</UnitMeshGroup>
-				</StyleUnit>
-				<StyleUnit>
-					<UnitType>UNIT_GREAT_MERCHANT</UnitType>
-					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_GREAT_MERCHANT_NATIVE</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_GREAT_MERCHANT_NATIVE</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_GREAT_MERCHANT_NATIVE</LateArtDefineTag>
-					</UnitMeshGroup>
-				</StyleUnit>
-				<StyleUnit>
-					<UnitType>UNIT_GREAT_PROPHET</UnitType>
-					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_GREAT_PROPHET_NATIVE</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_GREAT_PROPHET_NATIVE</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_GREAT_PROPHET_NATIVE</LateArtDefineTag>
-					</UnitMeshGroup>
-				</StyleUnit>
-				<StyleUnit>
-					<UnitType>UNIT_GREAT_SCIENTIST</UnitType>
-					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_GREAT_SCIENTIST_NATIVE</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_GREAT_SCIENTIST_NATIVE</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_GREAT_SCIENTIST_NATIVE</LateArtDefineTag>
-					</UnitMeshGroup>
-				</StyleUnit>
-				<StyleUnit>
-					<UnitType>UNIT_GREAT_STATESMAN</UnitType>
-					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_GREAT_STATESMAN_NATIVE</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_GREAT_STATESMAN_NATIVE</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_GREAT_STATESMAN_NATIVE</LateArtDefineTag>
-					</UnitMeshGroup>
-				</StyleUnit>-->
 			</StyleUnits>
 		</UnitArtStyleTypeInfo>
 		<UnitArtStyleTypeInfo>

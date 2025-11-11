@@ -3557,7 +3557,7 @@ PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 					{
 						case 1:
 							// Ancestral Lands civic
-							if(GET_PLAYER((PlayerTypes)iI).hasCivic(CIVIC_ANCESTRAL_LANDS_NATIVE))
+							if(GET_PLAYER((PlayerTypes)iI).hasCivic(CIVIC_ANCESTRAL_LANDS))
 							{
 								iCulture *= 16;
 							}
@@ -5578,7 +5578,7 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 			if (isOwned())
 			{
 				// MacAurther Tribe Update: Huts are not removed by territory anymore / Native Confederacy Power
-				if (isGoody() && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_TRIBAL_CONFEDERACY_NATIVE))
+				if (isGoody() && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_TRIBAL_CONFEDERACY))
 				{
 					GET_PLAYER(getOwnerINLINE()).doGoody(this, NULL);
 				}
