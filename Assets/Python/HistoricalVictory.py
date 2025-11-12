@@ -201,7 +201,7 @@ dGoals = {
 	iInuit: (
 		CityCount(
 			(plots.rectangle(tKivalliq).named(KIVALLIQ), 1),										# Western Hudson Bay
-			(plots.rectangle(tQikiqtaaluk).without(lQikiqtaalukExceptions).named(QIKIQTAALUK), 1),	# Baffin Island and islands
+			(plots.rectangle(tQikiqtaaluk).named(QIKIQTAALUK), 1),	# Baffin Island and islands
 			(plots.rectangle(tNunavik).named(NUNAVIK), 1),											# Northern Quebec/ Eastern Hudson Bay
 			(plots.region(rGreenland).named(KALAALLIT), 1),										# Greenland
 			by=1500
@@ -239,11 +239,11 @@ dGoals = {
 	iHaudenosaunee: (
 		All(ContactTribe(5), by=1550),
 		Control(
-            (plots.rectangle(tLakeSuperior).without(lLakeSuperiorExceptions) + plots.of(lLakeSuperiorAdditional)).named(LAKE_SUPERIOR),
-            (plots.rectangle(tLakeMichigan).without(lLakeSuperiorExceptions) + plots.of(lLakeMichiganAdditional)).named(LAKE_MICHIGAN),
-            (plots.rectangle(tLakeHuron).without(lLakeHuronExceptions) + plots.of(lLakeHuronAdditional)).named(LAKE_HURON),
-            (plots.rectangle(tLakeErie) + plots.of(lLakeErieAdditional)).named(LAKE_ERIE),
-            (plots.rectangle(tLakeOntario).without(lLakeOntarioExceptions) + plots.of(lLakeOntarioAdditional)).named(LAKE_ONTARIO),
+            (plots.of(lLakeSuperior)).named(LAKE_SUPERIOR),
+            (plots.of(lLakeMichigan)).named(LAKE_MICHIGAN),
+            (plots.of(lLakeHuron)).named(LAKE_HURON),
+            (plots.of(lLakeErie)).named(LAKE_ERIE),
+            (plots.of(lLakeOntario)).named(LAKE_ONTARIO),
 			at=1650),
 		ControlledResourceCount(iFur, 10, by=1700),
 	),

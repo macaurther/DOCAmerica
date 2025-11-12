@@ -309,7 +309,7 @@ def showVictoryScreen():
 # < Immigration Manager Start >
 immigrationManager = CvImmigrationManager.CvImmigrationManager(IMMIGRATION_MANAGER)
 def showImmigrationManager():
-	immigrationManager.interfaceScreen()	
+	immigrationManager.interfaceScreen()
 # < Immigration Manager End   >
 
 import CvPediaMain

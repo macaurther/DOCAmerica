@@ -127,7 +127,7 @@ def giveAINativeTechs(iGameTurn):
 
 @handler("cityAcquiredAndKept")
 def convertOnCityAcquired(iPlayer, pCity):
-	if player(iPlayer).hasCivic(iZealotry2):
+	if player(iPlayer).hasCivic(iPatronato):
 		if player(iPlayer).getStateReligion() != -1:
 			pCity.spreadReligion(player(iPlayer).getStateReligion())
 

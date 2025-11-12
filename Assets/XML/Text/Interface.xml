@@ -912,19 +912,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FIRST_CONTACT_OLDWORLD</Tag>
-		<English>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</English>
-		<French>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</French>
-		<German>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</German>
-		<Italian>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</Italian>
-		<Spanish>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CONQUER_IMMIGRATION</Tag>
-		<English>The conquest of a wealthy city inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</English>
-		<French>The conquest of a wealthy city inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</French>
-		<German>The conquest of a wealthy city inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</German>
-		<Italian>The conquest of a wealthy city inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</Italian>
-		<Spanish>The conquest of a wealthy city inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</Spanish>
+		<English>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner!</English>
+		<French>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner!</French>
+		<German>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner!</German>
+		<Italian>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner!</Italian>
+		<Spanish>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FIRST_CONTACT_NEWWORLD</Tag>

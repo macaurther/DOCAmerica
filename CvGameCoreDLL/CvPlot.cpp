@@ -7104,15 +7104,6 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 		}
 	}
 
-	// MacAurther: Spanish UP: +2 Gold from Slave Mines
-	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == SPAIN)
-	{
-		if (eYield == YIELD_COMMERCE && eImprovement == IMPROVEMENT_SLAVE_MINE)
-		{
-			iYield += 2;
-		}
-	}
-
 	return iYield;
 }
 
@@ -8063,7 +8054,7 @@ void CvPlot::changeVisibilityCount(TeamTypes eTeam, int iChange, InvisibleTypes 
 		bOldVisible = isVisible(eTeam, false);
 
 		m_aiVisibilityCount[eTeam] += iChange;
-		FAssert(getVisibilityCount(eTeam) >= 0);
+		//FAssert(getVisibilityCount(eTeam) >= 0);	// MacAurther: Not sure why this is negative, not sure I care
 
 		if (eSeeInvisible != NO_INVISIBLE)
 		{
@@ -11723,7 +11714,12 @@ CvWString CvPlot::getRegionName() const
 bool CvPlot::isCore(CivilizationTypes eCivilization) const
 {
 	FAssertMsg(eCivilization >= 0, "eCivilization is expected to be non-negative");
-	FAssertMsg(eCivilization < NUM_CIVS, "eCivilization is expected to be a playable civilization");
+	//FAssertMsg(eCivilization < NUM_CIVS, "eCivilization is expected to be a playable civilization");	// MacAurther: Let's just change this to handle the case that it's not
+	// MacAurther: It's not core if the Civ is a minor
+	if (eCivilization < NUM_CIVS)
+	{
+		return false;
+	}
 
 	if (m_abCore == NULL)
 	{

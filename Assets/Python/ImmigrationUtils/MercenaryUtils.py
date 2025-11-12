@@ -90,7 +90,7 @@ class Mercenary:
 		if self.getUnitInfo().getDomainType() == DomainTypes.DOMAIN_LAND and not self.getUnitInfo().getUnitCombatType() in [UnitCombatTypes.NO_UNITCOMBAT, UnitCombatTypes.UNITCOMBAT_SPY]:
 			if iConquest in civics or iImperialism in civics:
 				iExp += 2
-			if iZealotry2 in civics:
+			if iPatronato in civics:
 				iExp += 2
 		
 		# Admiralty Civic

@@ -108,7 +108,7 @@ class CvImmigrationManager:
 		screen.showScreen(PopupStates.POPUPSTATE_IMMEDIATE, False)
 
 		self.nWidgetCount = 0
-	
+
 		self.iActivePlayer = gc.getGame().getActivePlayer()
 		
 		screen = self.getScreen()
@@ -413,9 +413,13 @@ class CvImmigrationManager:
 		fThreshold = float(objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
 		fRate = gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION)
 		fFirst = gc.getActivePlayer().getImmigration()
-		iTurns = int((fThreshold - fFirst) / fRate)
+		szText = u""
+		if fRate > 0: 
+			iTurns = int((fThreshold - fFirst) / fRate)
+			szText = u"%c in %d Turns" %(CyTranslator().getText("[ICON_IMMIGRANT]", ()), iTurns)
+		else:
+			szText = u"%c in - Turns" %(CyTranslator().getText("[ICON_IMMIGRANT]", ()))
 
-		szText = u"%c in %d Turns" %(CyTranslator().getText("[ICON_IMMIGRANT]", ()), iTurns)
 		szText = u"<font=20>%s</font>" % (szText)
 		screen.setLabel("ImmigrationProgressBarText", "", szText, CvUtil.FONT_CENTER_JUSTIFY | CvUtil.FONT_CENTER_VERTICALLY, self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_X], self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_Y], 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_IMMIGRATION_PROGRESS_BAR, -1, -1)
 
@@ -510,14 +514,18 @@ class CvImmigrationManager:
 		
 		return strGoldText + strDelta
 	
+	# Useful method for use outside of Immigration Manager land as well
+	def hireMercenary(self, iMercenary, iPlayer, iHomeland):
+		objImmigrationUtils.hireMercenary(iMercenary, iPlayer, iHomeland)
+
 	# Hires a mercenary for a player
-	def hireMercenary(self, screen, iMercenary, iHomeland):
+	def hireMercenaryOnScreen(self, screen, iMercenary, iHomeland):
 
 		# Get the active player ID
 		iPlayer = gc.getGame().getActivePlayer()
 
 		# Hire the mercenary for the player
-		objImmigrationUtils.hireMercenary(iMercenary, iPlayer, iHomeland)
+		self.hireMercenary(iMercenary, iPlayer, iHomeland)
 
 		# Draw the gold information for the screen
 		self.drawGoldInformation(screen)
@@ -663,7 +671,7 @@ class CvImmigrationManager:
 				
 			# If the function was hire, then hire the mercenary
 			if(function == "HireButton"):
-				self.hireMercenary(screen, iMercenary, data.iCurrentImmigrationManagerTab) 
+				self.hireMercenaryOnScreen(screen, iMercenary, data.iCurrentImmigrationManagerTab) 
 
 				# Populate the mercenary information panel if small screen
 				if self.bSmallScreen:

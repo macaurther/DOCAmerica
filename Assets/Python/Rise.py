@@ -5,6 +5,8 @@ from Locations import *
 from RFCUtils import *
 from Slots import *
 from Scenarios import *
+from Files import *
+from Periods import *
 
 from Events import events, handler
 from Collapse import completeCollapse
@@ -90,6 +92,17 @@ def initCamera():
 def checkBirths():
 	for birth in data.births:
 		birth.check()
+
+
+@handler("playerCivAssigned")
+def updateMapsOnActive(iPlayer, iCivilization):
+	if iCivilization in lBirthOrder:
+		applyMaps(iCivilization)
+
+
+@handler("periodChange")
+def updateMapsOnPeriodChange(iCivilization, iPeriod):
+	applyMaps(iCivilization, iPeriod)
 
 
 @handler("changeWar")
@@ -318,6 +331,39 @@ def preserveCivilizationAttributes(iPlayer):
 	data.civs[iPlayer].iGreatPeopleCreated = player(iPlayer).getGreatPeopleCreated()
 	data.civs[iPlayer].iGreatSpiesCreated = player(iPlayer).getGreatSpiesCreated()
 	data.civs[iPlayer].iNumUnitGoldenAges = player(iPlayer).getNumUnitGoldenAges()
+
+
+### MAPS ###
+
+
+def applyMaps(iCivilization, iPeriod=-1):
+	for p in plots.all().land():
+		p.setSettlerValue(iCivilization, 0)
+		p.setWarValue(iCivilization, 0)
+
+	for (x, y), iValue in FileMap.read("Settler/%s.csv" % civ_name(iCivilization)):
+		if iValue and not plot(x, y).isWater():
+			plot(x, y).setSettlerValue(iCivilization, iValue)
+
+	for (x, y), iValue in FileMap.read("War/%s.csv" % civ_name(iCivilization)):
+		if iValue and not plot(x, y).isWater():
+			plot(x, y).setWarValue(iCivilization, iValue)
+	
+	if iPeriod != -1:
+		for (x, y), iValue in FileMap.read("Settler/Period/%s.csv" % dPeriodNames[iPeriod], bIgnoreMissing=True):
+			if not plot(x, y).isWater():
+				plot(x, y).setSettlerValue(iCivilization, iValue)
+				
+		for (x, y), iValue in FileMap.read("War/Period/%s.csv" % dPeriodNames[iPeriod], bIgnoreMissing=True):
+			if not plot(x, y).isWater():
+				plot(x, y).setWarValue(iCivilization, iValue)
+		
+def initMaps():
+	for iCivilization in lBirthOrder:
+		applyMaps(iCivilization)
+
+
+### BIRTH ###
 
 
 def getBirth(iCiv):
@@ -753,7 +799,7 @@ class Birth(object):
 			return False
 		
 		if autoplay():
-			if infos.civ(self.iCiv).getImpact() <= iImpactLimited:
+			if getImpact(self.iCiv) <= iImpactLimited:
 				if year(dBirth[active()]) > year(dFall[self.iCiv]) + turns(20):
 					return False
 		
@@ -898,10 +944,9 @@ class Birth(object):
 				target, attacker_closest = expansionCities.where(is_minor).where_surrounding(lambda city: not units.at(city).owner(self.iPlayer)).where_maximum(lambda city: plot_(city).getPlayerWarValue(self.iPlayer)).closest_pair(cities.owner(self.iPlayer))
 				
 				if target:
-					defender_closest = cities.owner(target.getOwner()).where(lambda city: distance(city, target) <= distance(target, attacker_closest)).closest(attacker_closest)
-					spawn = possibleSpawnsBetween(attacker_closest, defender_closest, 1).closest(defender_closest)
+					spawn = possibleSpawnsBetween(attacker_closest, target, 1).closest(target)
 		
-					createExpansionUnits(self.iPlayer, target.getOwner(), spawn, defender_closest, iExtraAI=0, iExtraTargets=0)
+					createExpansionUnits(self.iPlayer, target.getOwner(), spawn, target, iExtraAI=0, iExtraTargets=0)
 				
 					self.iExpansionDelay = 2
 				
@@ -935,6 +980,9 @@ class Birth(object):
 			return False
 	
 		if game.getAIAutoPlay() > 0:
+			return False
+		
+		if scenarioStart():
 			return False
 		
 		if civ() in dNeighbours[self.iPlayer] and since(year(dBirth[active()])) < turns(25):
@@ -1062,6 +1110,10 @@ class Birth(object):
 			self.bFlip = True
 	
 	def flippedArea(self):
+		if self.iCiv == iEngland and not self.isHuman():
+			area = plots.birth(self.iPlayer) + plots.region(rBritain).where(lambda p: not p.isOwned() or is_minor(p.getOwner()))
+			return area.unique()
+		
 		return self.isIndependence() and self.area or plots.birth(self.iPlayer)
 	
 	def flip(self):
@@ -1087,6 +1139,9 @@ class Birth(object):
 		convertSurroundingPlotCulture(self.iPlayer, flippedPlots.land())
 		convertSurroundingPlotCulture(self.iPlayer, flippedPlots.water().where(lambda p: p.getPlayerCityRadiusCount(self.iPlayer) > 0))
 		
+		if self.player.getCurrentEra() <= iColonialEra:
+			downgradeAreaCottages(self.iPlayer, flippedPlots.land())
+			
 		# MacAurther: Flip forts
 		for plot in flippedPlots:
 			if plot.getImprovementType() == iFort:

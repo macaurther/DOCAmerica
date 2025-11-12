@@ -5,6 +5,7 @@ from Locations import *
 from Stability import *
 from Popups import popup
 from Scenarios import SCENARIOS
+import CvScreensInterface
 
 
 dRelocatedCapitals = CivDict({
@@ -299,7 +300,7 @@ def conquistadors(iTeamX, iHasMetTeamY):
 		iNewWorldCiv = civ(iNewWorldPlayer)
 		iOldWorldCiv = civ(iOldWorldPlayer)
 		
-		# No Immigration for Norse, it makes it too easy for them! And the AI might steal Spain's contact Immigration
+		# Don't count the Norse (they might discover natives very early)
 		if iOldWorldCiv == iNorse:
 			return
 		
@@ -309,32 +310,19 @@ def conquistadors(iTeamX, iHasMetTeamY):
 		if bAlreadyContacted:
 			return
 		
-		# MacAurther: The European contactor no longer gets a bunch a free units; instead, they get a bunch of Immigration points they can use to buy units from Europe			
-		# Generate Immigration based on this formula:
-		#   Immigration = 25 * numCities + 2 * numPops
-		iContactImmigration = 0
-		pNewWorldPlayer = player(iNewWorldPlayer)
-		
-		(pCity, iter) = pNewWorldPlayer.firstCity(false)
-		while(pCity):
-			iContactImmigration += pCity.getPopulation() * 5
-			iContactImmigration += 20
-			(pCity, iter) = pNewWorldPlayer.nextCity(iter, false)
-		
-		iContactImmigration = scale(iContactImmigration)
-		
-		# England UP
-		if civ(iOldWorldPlayer) == iEngland:
-			iContactImmigration *= 2
+		# MacAurther: Spain UP: Get free units when discovering Natives
+		if iOldWorldCiv == iSpain:
+			# Holy mole I don't know how to write code
+			CvScreensInterface.immigrationManager.hireMercenary(iConquistador, iOldWorldPlayer, iHomelandSouthEurope)
+
+			message(iNewWorldPlayer, "TXT_KEY_FIRST_CONTACT_NEWWORLD")
+			message(iOldWorldPlayer, "TXT_KEY_FIRST_CONTACT_OLDWORLD")
+
+			# Inform the player that the mercenaries have arrived.
+			strMessage = "Conquistadors are waiting on the docks of South Europe!"
+			CyInterface().addMessage(iOldWorldPlayer, False, 20, strMessage, "AS2D_IMMIGRANTEARNED", InterfaceMessageTypes.MESSAGE_TYPE_INFO, "", gc.getInfoTypeForString("COLOR_YELLOW"), -1, -1, False, False) 
 		
 		data.dFirstContactConquerors[iNewWorldCiv] = True
-		
-		events.fireEvent("conquerors", iOldWorldPlayer, iNewWorldPlayer)
-		
-		gc.getPlayer(iOldWorldPlayer).changeImmigration(iContactImmigration)
-
-		message(iNewWorldPlayer, "TXT_KEY_FIRST_CONTACT_NEWWORLD")
-		message(iOldWorldPlayer, "TXT_KEY_FIRST_CONTACT_OLDWORLD", iContactImmigration)
 
 ### TECH ACQUIRED ###
 
