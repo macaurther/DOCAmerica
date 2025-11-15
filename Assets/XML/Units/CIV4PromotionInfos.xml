@@ -13,10 +13,6 @@
 			<iCombatPercent>10</iCombatPercent>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -25,7 +21,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -63,10 +63,6 @@
 			<iCombatPercent>10</iCombatPercent>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -75,7 +71,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -113,10 +113,6 @@
 			<iCombatPercent>10</iCombatPercent>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -125,7 +121,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -164,10 +164,6 @@
 			<iCombatPercent>10</iCombatPercent>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -176,7 +172,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -216,10 +216,6 @@
 			<iCombatPercent>10</iCombatPercent>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -228,7 +224,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -267,10 +267,6 @@
 			<iCombatPercent>25</iCombatPercent>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -279,7 +275,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -351,7 +351,7 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -380,7 +380,11 @@
 			</UnitCombatMods>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -403,15 +407,15 @@
 			<Button>,Art/Interface/Buttons/Promotions/Pinch.dds,Art/Interface/Buttons/Promotions_Atlas.dds,3,5</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_GUERILLA</Type>
-			<Description>TXT_KEY_PROMOTION_GUERILLA</Description>
+			<Type>PROMOTION_FORMATION</Type>
+			<Description>TXT_KEY_PROMOTION_FORMATION</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT2</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_DRILL2</PromotionPrereqOr2>
 			<TechPrereq>TECH_TACTICS</TechPrereq>
 			<UnitCombatMods>
 				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
@@ -421,7 +425,7 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -433,7 +437,7 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Art/Interface/Buttons/Promotions/Skirmish.dds</Button>
+			<Button>,Art/Interface/Buttons/Promotions/Formation.dds,Art/Interface/Buttons/Promotions_Atlas.dds,1,2</Button>
 		</PromotionInfo>
 		<PromotionInfo>
 			<Type>PROMOTION_CHARGE</Type>
@@ -448,7 +452,11 @@
 			</UnitCombatMods>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -467,15 +475,15 @@
 			<Button>,Art/Interface/Buttons/Promotions/Charge.dds,Art/Interface/Buttons/Promotions_Atlas.dds,1,5</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_FLANKING</Type>
-			<Description>TXT_KEY_PROMOTION_FLANKING</Description>
+			<Type>PROMOTION_AMBUSH</Type>
+			<Description>TXT_KEY_PROMOTION_AMBUSH</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT2</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_DRILL2</PromotionPrereqOr2>
 			<TechPrereq>TECH_TACTICS</TechPrereq>
 			<UnitCombatMods>
 				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
@@ -501,7 +509,36 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>,Art/Interface/Buttons/Promotions/Guerilla.dds,Art/Interface/Buttons/Promotions_Atlas.dds,1,2</Button>
+			<Button>,Art/Interface/Buttons/Promotions/Ambush.dds,Art/Interface/Buttons/Promotions_Atlas.dds,2,1</Button>
+		</PromotionInfo>
+		<PromotionInfo>
+			<Type>PROMOTION_SKIRMISH</Type>
+			<Description>TXT_KEY_PROMOTION_SKIRMISH</Description>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROMOTION_COMBAT1</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_DRILL1</PromotionPrereqOr2>
+			<TechPrereq>TECH_RIDING</TechPrereq>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<iUnitCombatMod>25</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/Skirmish.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>
 			<Type>PROMOTION_AMPHIBIOUS</Type>
@@ -522,7 +559,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -549,10 +590,6 @@
 			<bAlwaysHeal>1</bAlwaysHeal>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -561,7 +598,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -588,7 +629,11 @@
 			<bBlitz>1</bBlitz>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -623,7 +668,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -650,10 +699,6 @@
 			<iSameTileHealChange>10</iSameTileHealChange>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -662,7 +707,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -693,10 +742,6 @@
 			<iAdjacentTileHealChange>10</iAdjacentTileHealChange>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -705,7 +750,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -738,10 +787,6 @@
 			<iAdjacentTileHealChange>15</iAdjacentTileHealChange>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -750,7 +795,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -773,15 +822,11 @@
 			<Button>,Art/Interface/Buttons/Promotions/Combat5.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,8,16</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_MOUNTAINEER1</Type>
-			<Description>TXT_KEY_PROMOTION_MOUNTAINEER1</Description>
+			<Type>PROMOTION_GUERILLA1</Type>
+			<Description>TXT_KEY_PROMOTION_GUERILLA1</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<iHillsDefense>20</iHillsDefense>
 			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -798,28 +843,24 @@
 			<Button>,Art/Interface/Buttons/Promotions/Guerilla1.dds,Art/Interface/Buttons/Promotions_Atlas.dds,5,5</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_MOUNTAINEER2</Type>
-			<Description>TXT_KEY_PROMOTION_MOUNTAINEER2</Description>
+			<Type>PROMOTION_GUERILLA2</Type>
+			<Description>TXT_KEY_PROMOTION_GUERILLA2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_MOUNTAINEER1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_GUERILLA1</PromotionPrereqOr1>
 			<TechPrereq>TECH_LANDMARKS</TechPrereq>
 			<bHillsDoubleMove>1</bHillsDoubleMove>
 			<iHillsDefense>30</iHillsDefense>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -830,28 +871,20 @@
 			<Button>,Art/Interface/Buttons/Promotions/Guerilla2.dds,Art/Interface/Buttons/Promotions_Atlas.dds,6,5</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_MOUNTAINEER3</Type>
-			<Description>TXT_KEY_PROMOTION_MOUNTAINEER3</Description>
+			<Type>PROMOTION_GUERILLA3</Type>
+			<Description>TXT_KEY_PROMOTION_GUERILLA3</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_MOUNTAINEER2</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_GUERILLA2</PromotionPrereqOr1>
 			<TechPrereq>TECH_PATHFINDING</TechPrereq>
 			<iWithdrawalChange>50</iWithdrawalChange>
 			<iHillsAttack>25</iHillsAttack>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -880,10 +913,6 @@
 				</FeatureDefense>
 			</FeatureDefenses>
 			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -935,10 +964,6 @@
 			</FeatureDoubleMoves>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -977,14 +1002,6 @@
 			</FeatureAttacks>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -996,15 +1013,19 @@
 			<Button>,Art/Interface/Buttons/Promotions/Woodsman2.dds,Art/Interface/Buttons/Promotions_Atlas.dds,8,6</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_FORMATION1</Type>
-			<Description>TXT_KEY_PROMOTION_FORMATION1</Description>
+			<Type>PROMOTION_FLANKING1</Type>
+			<Description>TXT_KEY_PROMOTION_FLANKING1</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT1</PromotionPrereqOr1>
-			<PromotionPrereqOr2>PROMOTION_FEINT1</PromotionPrereqOr2>
+			<PromotionPrereqOr2>PROMOTION_DISENGAGE1</PromotionPrereqOr2>
 			<iPlainsAttack>20</iPlainsAttack>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -1019,15 +1040,19 @@
 			<Button>Art/Interface/Buttons/Promotions/Flanking1.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_FORMATION2</Type>
-			<Description>TXT_KEY_PROMOTION_FORMATION2</Description>
+			<Type>PROMOTION_FLANKING2</Type>
+			<Description>TXT_KEY_PROMOTION_FLANKING2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_FORMATION1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_FLANKING1</PromotionPrereqOr1>
 			<TechPrereq>TECH_IRRIGATION</TechPrereq>
 			<iPlainsAttack>20</iPlainsAttack>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -1042,16 +1067,20 @@
 			<Button>Art/Interface/Buttons/Promotions/Flanking2.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_FORMATION3</Type>
-			<Description>TXT_KEY_PROMOTION_FORMATION3</Description>
+			<Type>PROMOTION_FLANKING3</Type>
+			<Description>TXT_KEY_PROMOTION_FLANKING3</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_FORMATION2</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_FLANKING2</PromotionPrereqOr1>
 			<TechPrereq>TECH_EARTHWORKS</TechPrereq>
 			<iWithdrawalChange>25</iWithdrawalChange>
 			<iPlainsDefense>25</iPlainsDefense>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -1066,8 +1095,8 @@
 			<Button>Art/Interface/Buttons/Promotions/Flanking3.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_RAIDER1</Type>
-			<Description>TXT_KEY_PROMOTION_RAIDER1</Description>
+			<Type>PROMOTION_CITY_RAIDER1</Type>
+			<Description>TXT_KEY_PROMOTION_CITYRAIDER1</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<iCityAttack>20</iCityAttack>
 			<UnitCombats>
@@ -1084,13 +1113,13 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>,Art/Interface/Buttons/Promotions/RAIDER1.dds,Art/Interface/Buttons/Promotions_Atlas.dds,5,2</Button>
+			<Button>,Art/Interface/Buttons/Promotions/CityRaider1.dds,Art/Interface/Buttons/Promotions_Atlas.dds,5,2</Button>
 		</PromotionInfo>
 		<PromotionInfo>
 			<Type>PROMOTION_CITY_RAIDER2</Type>
 			<Description>TXT_KEY_PROMOTION_CITYRAIDER2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_RAIDER1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_CITY_RAIDER1</PromotionPrereqOr1>
 			<iCityAttack>25</iCityAttack>
 			<UnitCombats>
 				<UnitCombat>
@@ -1110,7 +1139,7 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
@@ -1146,22 +1175,18 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
 			<Button>,Art/Interface/Buttons/Promotions/CityRaider3.dds,Art/Interface/Buttons/Promotions_Atlas.dds,7,2</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_GARRISON1</Type>
+			<Type>PROMOTION_CITY_GARRISON1</Type>
 			<Description>TXT_KEY_PROMOTION_GARRISON1</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<iCityDefense>20</iCityDefense>
 			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -1174,16 +1199,12 @@
 			<Button>,Art/Interface/Buttons/Promotions/CityGarrison1.dds,Art/Interface/Buttons/Promotions_Atlas.dds,2,2</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_GARRISON2</Type>
+			<Type>PROMOTION_CITY_GARRISON2</Type>
 			<Description>TXT_KEY_PROMOTION_GARRISON2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_GARRISON1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_CITY_GARRISON1</PromotionPrereqOr1>
 			<iCityDefense>25</iCityDefense>
 			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -1196,10 +1217,10 @@
 			<Button>,Art/Interface/Buttons/Promotions/CityGarrison2.dds,Art/Interface/Buttons/Promotions_Atlas.dds,3,2</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_GARRISON3</Type>
+			<Type>PROMOTION_CITY_GARRISON3</Type>
 			<Description>TXT_KEY_PROMOTION_GARRISON3</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_GARRISON2</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_CITY_GARRISON2</PromotionPrereqOr1>
 			<TechPrereq>TECH_FORTIFICATION</TechPrereq>
 			<iCityDefense>30</iCityDefense>
 			<UnitCombatMods>
@@ -1209,10 +1230,6 @@
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -1336,7 +1353,7 @@
 			<iCollateralDamageProtection>20</iCollateralDamageProtection>
 			<UnitCombatMods>
 				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<iUnitCombatMod>10</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
@@ -1449,7 +1466,7 @@
 			<Type>PROMOTION_ACCURACY</Type>
 			<Description>TXT_KEY_PROMOTION_ACCURACY</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_RAIDER1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_CITY_RAIDER1</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_BARRAGE1</PromotionPrereqOr2>
 			<iBombardRateChange>8</iBombardRateChange>
 			<UnitCombats>
@@ -1461,13 +1478,21 @@
 			<Button>,Art/Interface/Buttons/Promotions/Accuracy.dds,Art/Interface/Buttons/Promotions_Atlas.dds,1,1</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_FEINT1</Type>
-			<Description>TXT_KEY_PROMOTION_FEINT1</Description>
+			<Type>PROMOTION_DISENGAGE1</Type>
+			<Description>TXT_KEY_PROMOTION_DISENGAGE1</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<iWithdrawalChange>10</iWithdrawalChange>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -1486,15 +1511,23 @@
 			<Button>,Art/Interface/Buttons/Promotions/Flanking1.dds,Art/Interface/Buttons/Promotions_Atlas.dds,6,3</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_FEINT2</Type>
-			<Description>TXT_KEY_PROMOTION_FEINT2</Description>
+			<Type>PROMOTION_DISENGAGE2</Type>
+			<Description>TXT_KEY_PROMOTION_DISENGAGE2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_FEINT1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_DISENGAGE1</PromotionPrereqOr1>
 			<bImmuneToFirstStrikes>1</bImmuneToFirstStrikes>
 			<iWithdrawalChange>20</iWithdrawalChange>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -1523,8 +1556,9 @@
 			<Type>PROMOTION_SENTRY</Type>
 			<Description>TXT_KEY_PROMOTION_SENTRY</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_FEINT1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_DISENGAGE1</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_COMBAT3</PromotionPrereqOr2>
+			<TechPrereq>TECH_OPTICS</TechPrereq>
 			<iVisibilityChange>1</iVisibilityChange>
 			<UnitCombats>
 				<UnitCombat>
@@ -1532,7 +1566,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -1550,11 +1588,15 @@
 			<Type>PROMOTION_MOBILITY</Type>
 			<Description>TXT_KEY_PROMOTION_MOBILITY</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_FEINT2</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_DISENGAGE2</PromotionPrereqOr1>
 			<iMoveDiscountChange>1</iMoveDiscountChange>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -1568,7 +1610,7 @@
 			<Type>PROMOTION_NAVIGATION1</Type>
 			<Description>TXT_KEY_PROMOTION_NAVIGATION1</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_FEINT1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_DISENGAGE1</PromotionPrereqOr1>
 			<iMovesChange>1</iMovesChange>
 			<UnitCombats>
 				<UnitCombat>
@@ -1582,7 +1624,7 @@
 			<Type>PROMOTION_NAVIGATION2</Type>
 			<Description>TXT_KEY_PROMOTION_NAVIGATION2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereq>PROMOTION_FEINT1</PromotionPrereq>
+			<PromotionPrereq>PROMOTION_DISENGAGE1</PromotionPrereq>
 			<PromotionPrereqOr1>PROMOTION_NAVIGATION1</PromotionPrereqOr1>
 			<iMovesChange>1</iMovesChange>
 			<UnitCombats>
@@ -1993,7 +2035,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -2039,7 +2085,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -2085,7 +2135,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -2132,7 +2186,11 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>

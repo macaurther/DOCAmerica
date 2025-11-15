@@ -1898,38 +1898,6 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is cheaper and has extra strength when defending in hills.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_LIGHT_CANNON</Tag>
-		<English>Light Cannon</English>
-		<French>Light Cannon</French>
-		<German>Light Cannon</German>
-		<Italian>Light Cannon</Italian>
-		<Spanish>Light Cannon</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_LIGHT_CANNON_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Light Cannon[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Light Cannon[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Light Cannon[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Light Cannon[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Light Cannon[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_FIELD_GUN</Tag>
-		<English>Field Gun</English>
-		<French>Field Gun</French>
-		<German>Field Gun</German>
-		<Italian>Field Gun</Italian>
-		<Spanish>Field Gun</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_FIELD_GUN_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Field Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Field Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Field Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Field Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Field Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_GATLING_GUN</Tag>
 		<English>Gatling Gun</English>
 		<French>Gatling Gun</French>
@@ -2279,11 +2247,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PUREPECHA_MACANA_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger but does not have a bonus versus Melee.</English>
-		<French>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger but does not have a bonus versus Melee.</French>
-		<German>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger but does not have a bonus versus Melee.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger but does not have a bonus versus Melee.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger but does not have a bonus versus Melee.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</English>
+		<French>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</French>
+		<German>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHT_SWORDSMAN_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Swordsmen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] for the Classical Era.</English>
+		<French>[COLOR_UNIT_TEXT]Swordsmen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] for the Classical Era.</French>
+		<German>[COLOR_UNIT_TEXT]Swordsmen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] for the Classical Era.</German>
+		<Italian>[COLOR_UNIT_TEXT]Swordsmen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] for the Classical Era.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Swordsmen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] for the Classical Era.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_IMMIGRANT</Tag>

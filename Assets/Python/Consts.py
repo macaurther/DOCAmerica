@@ -230,7 +230,7 @@ iPurepecha : 1150,
 iAztecs : 1250,
 iHaudenosaunee : 1450,
 iLakota : 1475,
-iSpain : -450,#1492,
+iSpain : 1492,
 iPortugal : 1532,
 iEngland : 1607,
 iFrance : 1608,
@@ -457,20 +457,19 @@ lImmigraitonTechs = [iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSib
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 151
-# Land Units (101)
+iNumUnits = 150
+# Land Units (100)
 # 0				1				2				3				4				5				6				7				8				9
 (iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote,		iClawdius,		iSettler, 		iDogSled,		
 iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iTrackman,		iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       iAgent,			
 iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iImmigrant,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,
 iRanger,		iFactor,		iParatrooper,	iMilitiaSpearman,iFalconDancer,	iMilitiaPikeman,iMilitiaArquebusier,iMilitiaMusketman,iMinuteman,iMilitiaRifleman,		
-iMilitiaInfantry,iWarrior, 		iKoa,			iMohawk,		iMaceman,		iAucac,			iAztecJaguar,	iMacana,		iArquebusier,	iArmedSlave,	
-iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iSpearman,		iSuchucChiqui,	
-iLightningWarrior,iPikeman,		iEagle,			iPikeAndShot,	iLineInfantry,	iRedcoat,		iAntiTank,		iArcher,		iPicta,			iGuecha,		
-iCrossbowman,	iGatlingGun,	iMachineGun,	iAtlatlist,		iHolkan,		iSlinger,		iLongbowman,	iSkirmisher,	iGrenadier,		iCacos,			
-iAlbionLegion,	iMarine,		iHorseArcher,	iSwiftArrow,	iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		iGrenadierCavalry,
-iRural,			iLightTank,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iLightCannon,	iRifledCannon,	iFieldGun,		iArtillery,		
-iAAGun,		
+iMilitiaInfantry,iWarrior, 		iKoa,			iMohawk,		iSwordsman,		iAztecJaguar,	iMaceman,		iAucac,			iMacana,		iArquebusier,	
+iArmedSlave,	iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iSpearman,		
+iSuchucChiqui,	iLightningWarrior,iPikeman,		iEagle,			iPikeAndShot,	iLineInfantry,	iRedcoat,		iAntiTank,		iArcher,		iPicta,			
+iGuecha,		iCrossbowman,	iGatlingGun,	iMachineGun,	iAtlatlist,		iHolkan,		iSlinger,		iLongbowman,	iSkirmisher,	iGrenadier,		
+iCacos,			iAlbionLegion,	iMarine,		iHorseArcher,	iSwiftArrow,	iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		
+iGrenadierCavalry,iRural,		iLightTank,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iAAGun,		
 
 # Naval Units (27)
 # 0				1				2				3				4				5				6				7				8				9
@@ -504,22 +503,20 @@ iGreatSpy : iFeGreatSpy,
 }
 
 
-iNumUnitRoles = 23
+iNumUnitRoles = 25
 # 0				1				2				3				4				5				6				7				8				9
-(iSettle,		iWork,			iRecon,			iMissionary,	iMilitia,		iBase,			iCounter,		iDefend,		iSkirmish,		iCav,			
-iSiege,			iSiegeCity,		iWorkSea,		iFerrySea,		iEscortSea,		iHarassSea,		iCapitalSea,	iColonistSettle,iColonistSupport,iColonistExplore, 
-iColonistConquer,iColonistDefend,iColonistSlave) = range(iNumUnitRoles)
+(iBase, 		iDefend, 		iAttack, 		iCounter, 		iShock, 		iHarass, 		iCityAttack, 	iWorkerSea, 	iSettle, 		iSettleSea, 
+iAttackSea, 	iAssaultSea, 	iWorkSea,		iMissionarySea,	iFerry, 		iEscort, 		iExplore, 		iShockCity, 	iSiege, 		iCitySiege, 	
+iExploreSea, 	iSkirmish, 		iLightEscort, 	iWork, 			iMissionary) = range(iNumUnitRoles)
 
-lColonistRoles = [iColonistSettle, iColonistSupport, iColonistExplore, iColonistConquer, iColonistDefend, iColonistSlave]
-
-iNumPromotions = 85
+iNumPromotions = 86
 # 0				1				2				3				4				5				6				7				8				9
-(iCombat1,		iCombat2,		iCombat3,		iCombat4,		iCombat5,		iCombat6,		iCover,			iShock,			iPinch,			iGuerilla,
-iCharge,		iFlanking,		iAmphibious,	iMarch,			iBlitz,			iCommando,		iMedic1,		iMedic2,		iMedic3,		iMountaineer1,
-iMountaineer2,	iMountaineer3,	iWoodsman1,		iWoodsman2,		iWoodsman3,		iFormation1,	iFormation2,	iFormation3,	iRaider1,		iRaider2,
-iRaider3,		iGarrison1,		iGarrison2,		iGarrison3,		iDrill1,		iDrill2,		iDrill3,		iDrill4,		iBarrage1,		iBarrage2,
-iBarrage3,		iAccuracy,		iFeint1,		iFeint2,		iRiverCombat,	iSentry,		iMobility,		iNavigation1,	iNavigation2,	iRange1,
-iRange2,		iInterception1,	iInterception2,	iAce,			iLogistics1,	iLogistics2,	iLogistics3,	iDeception1,	iDeception2,	iDeception3,
+(iCombat1,		iCombat2,		iCombat3,		iCombat4,		iCombat5,		iCombat6,		iCover,			iShockPromo,	iPinch,			iFormation,
+iCharge,		iAmbush,		iSkirmish,		iAmphibious,	iMarch,			iBlitz,			iCommando,		iMedic1,		iMedic2,		iMedic3,		
+iGuerilla1,		iGuerilla2,		iGuerilla3,		iWoodsman1,		iWoodsman2,		iWoodsman3,		iFlanking1,		iFlanking2,		iFlanking3,		iCityRaider1,		
+iCityRaider2,	iCityRaider3,	iCityGarrison1,	iCityGarrison2,	iCityGarrison3,	iDrill1,		iDrill2,		iDrill3,		iDrill4,		iBarrage1,		
+iBarrage2,		iBarrage3,		iAccuracy,		iDisengage1,	iDisengage2,	iRiverCombat,	iSentry,		iMobility,		iNavigation1,	iNavigation2,	
+iRange1,		iRange2,		iInterception1,	iInterception2,	iAce,			iLogistics1,	iLogistics2,	iLogistics3,	iDeception1,	iDeception2,	iDeception3,
 iSecurity1,		iSecurity2,		iSecurity3,		iImprovise1,	iImprovise2,	iImprovise3,	iImprovise4,	iImprovise5,	iLoyalty,		iInstigator1,
 iInsitgator2,	iInstigator3,	iAlchemist1,	iAlchemist2,	iEscape1,		iEscape2,		iLeader,		iLeadership,	iTactics,		iMorale,
 iMercenary,		iDesertAdaptation,iPrairieAdaptation,iVolunteer,iReconnaissance) = range(iNumPromotions)
@@ -832,7 +829,7 @@ lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger, iFactor]
 lMilitia = [iMilitiaPikeman, iMilitiaArquebusier, iMilitiaMusketman, iMilitiaRifleman, iMilitiaInfantry]
 lMainlineMercs = [iArquebusier, iMusketman, iCompagnies, iFusilier, iRifleman, iInfantry]
 lEliteMercs = [iPikeman, iPikeAndShot, iLineInfantry, iRedcoat, iAntiTank]
-lCollateralMercs = [iCrossbowman, iLightCannon, iFieldGun, iGatlingGun, iMachineGun]
+lCollateralMercs = [iCrossbowman, iGatlingGun, iMachineGun]
 lSkirmishMercs = [iSkirmisher, iGrenadier, iMarine]
 lCavalryMercs = [iCuirassier, iConquistador, iDragoon, iCavalry, iLightTank, iTank]
 lSiegeMercs = [iBombard, iCannon, iHeavyCannon, iRifledCannon, iArtillery]
@@ -958,9 +955,7 @@ iTank : 				[(1940, iEndDate), 	lHomelandsEuropePlus],
 iBombard : 				[(1500, 1600), 		lHomelandsEurope],
 iCannon : 				[(1600, 1700), 		lHomelandsEurope],
 iHeavyCannon : 			[(1700, 1850), 		lHomelandsEuropePlus],
-iLightCannon : 			[(1700, 1850), 		lHomelandsEuropePlus],
 iRifledCannon : 		[(1850, 1900), 		lHomelandsEuropePlus],
-iFieldGun : 			[(1850, 1900), 		lHomelandsEuropePlus],
 iArtillery : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
 iAAGun : 				[(1930, iEndDate), 	lHomelandsEuropePlus],
 iLongship : 			[(700,  1450), 		[iHomelandNorthEurope]],

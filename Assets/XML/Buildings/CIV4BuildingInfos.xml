@@ -2117,7 +2117,11 @@
 			<ConstructSound>AS2D_BUILD_STABLE</ConstructSound>
 			<UnitCombatFreeExperiences>
 				<UnitCombatFreeExperience>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<iExperience>2</iExperience>
+				</UnitCombatFreeExperience>
+				<UnitCombatFreeExperience>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<iExperience>2</iExperience>
 				</UnitCombatFreeExperience>
 			</UnitCombatFreeExperiences>
@@ -2743,7 +2747,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HAITIAN_CITADELLE</ArtDefineTag>
 			<PrereqTech>TECH_URBAN_PLANNING</PrereqTech>
-			<FreePromotion>PROMOTION_GARRISON1</FreePromotion>
+			<FreePromotion>PROMOTION_CITY_GARRISON1</FreePromotion>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>150</iCost>
 			<iConquestProb>100</iConquestProb>
@@ -4222,11 +4226,11 @@
 			</BonusHappinessChanges>
 			<UnitCombatFreeExperiences>
 				<UnitCombatFreeExperience>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
 					<iExperience>2</iExperience>
 				</UnitCombatFreeExperience>
 				<UnitCombatFreeExperience>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<iExperience>2</iExperience>
 				</UnitCombatFreeExperience>
 			</UnitCombatFreeExperiences>
@@ -7794,7 +7798,7 @@
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_CEMENT</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_TACTICS</ObsoleteTech>
-			<FreePromotion>PROMOTION_MOUNTAINEER2</FreePromotion>
+			<FreePromotion>PROMOTION_GUERILLA2</FreePromotion>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -10008,7 +10012,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEOTL_STEP_PYRAMID</ArtDefineTag>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
-			<FreePromotion>PROMOTION_RAIDER1</FreePromotion>
+			<FreePromotion>PROMOTION_CITY_RAIDER1</FreePromotion>
 			<bCenterInCity>1</bCenterInCity>
 			<bPagan>1</bPagan>
 			<iCost>30</iCost>
@@ -10213,7 +10217,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INTI_TEMPLE</ArtDefineTag>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
-			<FreePromotion>PROMOTION_MOUNTAINEER1</FreePromotion>
+			<FreePromotion>PROMOTION_GUERILLA1</FreePromotion>
 			<bCenterInCity>1</bCenterInCity>
 			<bPagan>1</bPagan>
 			<iCost>30</iCost>
@@ -10380,7 +10384,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_KACHINA_PITHOUSE</ArtDefineTag>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
-			<FreePromotion>PROMOTION_MOUNTAINEER1</FreePromotion>
+			<FreePromotion>PROMOTION_GUERILLA1</FreePromotion>
 			<bPagan>1</bPagan>
 			<iCost>30</iCost>
 			<iConquestProb>50</iConquestProb>

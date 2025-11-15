@@ -8906,8 +8906,12 @@
 			<UnitName/>
 			<UnitCombatPromotions>
 				<UnitCombatPromotion>
-					<UnitCombat>UNITCOMBAT_CAVALRY</UnitCombat>
-					<UnitPromotion>PROMOTION_FEINT1</UnitPromotion>
+					<UnitCombat>UNITCOMBAT_LIGHT_CAVALRY</UnitCombat>
+					<UnitPromotion>PROMOTION_DISENGAGE1</UnitPromotion>
+				</UnitCombatPromotion>
+				<UnitCombatPromotion>
+					<UnitCombat>UNITCOMBAT_HEAVY_CAVALRY</UnitCombat>
+					<UnitPromotion>PROMOTION_DISENGAGE1</UnitPromotion>
 				</UnitCombatPromotion>
 			</UnitCombatPromotions>
 			<UnitClassPromotions/>
@@ -13166,7 +13170,11 @@
 			<UnitName/>
 			<UnitCombatPromotions>
 				<UnitCombatPromotion>
-					<UnitCombat>UNITCOMBAT_CAVALRY</UnitCombat>
+					<UnitCombat>UNITCOMBAT_LIGHT_CAVALRY</UnitCombat>
+					<UnitPromotion>PROMOTION_SENTRY</UnitPromotion>
+				</UnitCombatPromotion>
+				<UnitCombatPromotion>
+					<UnitCombat>UNITCOMBAT_HEAVY_CAVALRY</UnitCombat>
 					<UnitPromotion>PROMOTION_SENTRY</UnitPromotion>
 				</UnitCombatPromotion>
 			</UnitCombatPromotions>

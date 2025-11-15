@@ -42,9 +42,9 @@ def getHoverText(eWidgetType, iData1, iData2, bOption):
 	iRate = gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION)
 	szText = BugUtil.getText("TXT_KEY_MISC_IMMIGRATION", (int(iProgress), int(iThreshold)))
 	if (iRate > 0):
-		iTurns = (iThreshold - iProgress) / iRate
+		iTurns = math.ceil(iThreshold - iProgress) / iRate
 		szText += u"\n%d%c%s " % (int(iRate), gc.getCommerceInfo(CommerceTypes.COMMERCE_IMMIGRATION).getChar(), BugUtil.getPlainText("TXT_KEY_PER_TURN"))
-		szText += BugUtil.getText("INTERFACE_CITY_TURNS", (int(iTurns),))
+		szText += BugUtil.getText("INTERFACE_CITY_TURNS", (iTurns,))
 	
 	return szText
 
@@ -415,7 +415,7 @@ class CvImmigrationManager:
 		fFirst = gc.getActivePlayer().getImmigration()
 		szText = u""
 		if fRate > 0: 
-			iTurns = int((fThreshold - fFirst) / fRate)
+			iTurns = math.ceil((fThreshold - fFirst) / fRate)
 			szText = u"%c in %d Turns" %(CyTranslator().getText("[ICON_IMMIGRANT]", ()), iTurns)
 		else:
 			szText = u"%c in - Turns" %(CyTranslator().getText("[ICON_IMMIGRANT]", ()))

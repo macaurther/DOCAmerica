@@ -148,7 +148,7 @@ class MinorCity(object):
 		for iRole, iNumUnits in self.units.items():
 			for iUnit, iUnitAI in getUnitsForRole(iUnitCiv, iRole, bUnique=bUnique):
 				if iUnit is None:
-					iUnit = iMilitia
+					iUnit = iBase
 				
 				if not bUnique:
 					iUnit = base_unit(iUnit)
@@ -461,12 +461,12 @@ class Barbarians(object):
 
 # MacAurther TODO: Flush this out
 minor_cities = [
-	MinorCity(-450, iIndigenous, (19, 60), "Palenque", iPopulation=2, iCiv=iMaya, units={iMilitia: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MAYAN"),			# Maya (Founded 432 BCE) - moved up founding for gameplay
-	MinorCity(-400, iIndigenous, (22, 56), "Copan", iPopulation=2, iCiv=iMaya, units={iMilitia: 3}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MAYAN"),				# Maya (Founded 410 CE) - moved up founding for gameplay
-	MinorCity(-250, iIndigenous, (24, 62), "Chichen Itza", iPopulation=2, iCiv=iMaya, units={iMilitia: 4}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MAYAN"),		# Maya (Founded 600 CE) - moved up founding for gameplay
-	MinorCity(450, iIndigenous, (22, 28), "Nazca", iPopulation=1, iCiv=iTiwanaku, units={iMilitia: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_NAZCAN"),			# Nazca
-	MinorCity(950, iIndigenous, (16, 15), "Mapuches", iPopulation=1, iCiv=iInca, units={iMilitia: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MAPUCHE"),			# Mapuche
-	MinorCity(1836, iIndependent2, (33, 70), "Houston", iPopulation=3, iCiv=iAmerica, units={iMilitia: 4}, iCulture=25, adjective="TXT_KEY_ADJECTIVE_TEXAN"),	# Republic of Texas
+	MinorCity(-450, iIndigenous, (19, 60), "Palenque", iPopulation=2, iCiv=iMaya, units={iBase: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MAYAN"),			# Maya (Founded 432 BCE) - moved up founding for gameplay
+	MinorCity(-400, iIndigenous, (22, 56), "Copan", iPopulation=2, iCiv=iMaya, units={iBase: 3}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MAYAN"),				# Maya (Founded 410 CE) - moved up founding for gameplay
+	MinorCity(-250, iIndigenous, (24, 62), "Chichen Itza", iPopulation=2, iCiv=iMaya, units={iBase: 4}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MAYAN"),		# Maya (Founded 600 CE) - moved up founding for gameplay
+	MinorCity(450, iIndigenous, (22, 28), "Nazca", iPopulation=1, iCiv=iTiwanaku, units={iBase: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_NAZCAN"),			# Nazca
+	MinorCity(950, iIndigenous, (16, 15), "Mapuches", iPopulation=1, iCiv=iInca, units={iBase: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MAPUCHE"),			# Mapuche
+	MinorCity(1836, iIndependent2, (33, 70), "Houston", iPopulation=3, iCiv=iAmerica, units={iBase: 4}, iCulture=25, adjective="TXT_KEY_ADJECTIVE_TEXAN"),	# Republic of Texas
 ]
 
 # MacAurther TODO: Flush this out

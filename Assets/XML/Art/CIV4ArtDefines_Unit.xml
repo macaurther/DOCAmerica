@@ -3725,40 +3725,6 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_FIELD_GUN</Type>
-			<Button>Art/Interface/Buttons/Units/Early_Artillery.dds</Button>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Early_Artillery/cannon.nif</NIF>
-			<KFM>Art/Units/Cannon/Cannon.kfm</KFM>
-			<SHADERNIF>Art/Units/Early_Artillery/cannon_fx.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/ArtilleryShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_ARTILLERY</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_ARTILLERY</AudioRunTypeEnd>
-			</AudioRunSounds>
-			<SelectionSound>AS3D_UN_ARTILLERY_FORT</SelectionSound>
-			<ActionSound>AS3D_UN_ARTILLERY_FORT</ActionSound>
-		</UnitArtInfo>
-		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_DRAGOON</Type>
 			<Button>Art/Interface/Buttons/Units/Dragoon.dds</Button>
 			<fScale>0.42</fScale>
@@ -5993,38 +5959,6 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_LIGHT_CANNON</Type>
-			<Button>Art/Interface/Buttons/Units/LightCannon.dds</Button>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/12_pounder_napoleon/Cannon.nif</NIF>
-			<KFM>Art/Units/Cannon/Cannon.kfm</KFM>
-			<SHADERNIF>Art/Units/12_pounder_napoleon/Cannon_fx.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/CannonShadow.nif</ShadowNIF>
-				<ShadowAttachNode/>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_SKIRMISHER</Type>
 			<Button>Art/Units/Militia Grenadier/Militia Grenadier.dds</Button>
 			<fScale>0.44</fScale>
@@ -6894,6 +6828,54 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_LIGHT_SWORDSMAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Spearman.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,3,11</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Light_Swordsman/European/warrior.nif</NIF>
+			<KFM>Art/Units/Light_Swordsman/Ottoman/LightSwordsman.kfm</KFM>
+			<SHADERNIF>Art/Units/Light_Swordsman/European/warrior_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_LIGHT_SWORDSMAN_SOUTH_AMERICAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Spearman.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,3,11</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Light_Swordsman/Aztec/shortswordsman.nif</NIF>
+			<KFM>Art/Units/Light_Swordsman/Ottoman/LightSwordsman.kfm</KFM>
+			<SHADERNIF>Art/Units/Light_Swordsman/Aztec/shortswordsman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
 		</UnitArtInfo>
 	</UnitArtInfos>
 </Civ4ArtDefines>

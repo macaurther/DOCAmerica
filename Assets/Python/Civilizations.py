@@ -7,7 +7,7 @@ import GreatPeople as gp
 ### Unit spawn functions ###
 
 def getStartingUnits(iPlayer):
-	return [(iRole, iAmount) for iRole, iAmount in dStartingUnits[iPlayer].items() if iRole != iWork]
+	return [(iRole, iAmount) for iRole, iAmount in dStartingUnits[iPlayer].items() if (iRole != iWork or civ(iPlayer) in dSeaSpawns.keys())]	# MacAurther: Do give worker to civs that spawn at sea
 
 def getAIStartingUnits(iPlayer):
 	return dExtraAIUnits[iPlayer].items()
@@ -103,10 +103,10 @@ class Civilization(object):
 		self.iImmigration = kwargs.get("iImmigration")
 		self.iStateReligion = kwargs.get("iStateReligion")
 		self.iAdvancedStartPoints = kwargs.get("iAdvancedStartPoints")
-		
+
 		self.lCivics = kwargs.get("lCivics", [])
 		self.lEnemies = kwargs.get("lEnemies", []) + [iBarbarian]	# MacAurther: Inidigenous player is not automatically an enemy
-		#self.iMasterCiv = kwargs.get("iMasterCiv")
+		#self.iMasterCiv = kwargs.get("iMasterCiv")		# MacAurther: Attempt to have master on spawn. Kind of worked
 		
 		self.dAttitudes = kwargs.get("dAttitudes", {})
 		
@@ -451,55 +451,55 @@ dStartingUnits = CivDict({
 	iTeotihuacan: {
 		iSettle: 1,
 		iWork: 1,
-		iMilitia: 2,
+		iBase: 2,
 	},
 	iTiwanaku: {
 		iSettle: 1,
 		iWork: 1,
-		iMilitia: 2,
+		iBase: 2,
 	},
 	iWari: {
 		iSettle: 2,
 		iWork: 2,
-		iMilitia: 2,
-		iBase: 1,
+		iBase: 2,
+		iAttack: 1,
 		iDefend: 1,
 	},
 	iMississippi: {
 		iSettle: 2,
 		iWork: 1,
-		iMilitia: 1,
+		iBase: 1,
 		iDefend: 1,
 	},
 	iPuebloan: {
 		iSettle: 1,
 		iWork: 2,
-		iMilitia: 2,
-		iRecon: 1,
+		iBase: 2,
+		iExplore: 1,
 	},
 	iMuisca: {
 		iSettle: 1,
 		iWork: 1,
-		iMilitia: 2,
-		iBase: 1,
+		iBase: 2,
+		iAttack: 1,
 	},
 	iNorse: {
 	},
 	iChimu: {
 		iSettle: 2,
 		iWork: 1,
-		iMilitia: 2,
 		iBase: 2,
+		iAttack: 2,
 	},
 	iInuit: {
 		iSettle: 2,
-		iMilitia: 2,
+		iBase: 2,
 	},
 	iInca: {
 		iSettle: 1,
 		iWork: 2,
-		iMilitia: 4,
-		iBase: 12,
+		iBase: 4,
+		iAttack: 12,
 		iDefend: 4,
 		iSkirmish: 4,
 		# if not human: 1 Settler
@@ -507,33 +507,36 @@ dStartingUnits = CivDict({
 	iPurepecha: {
 		iSettle: 2,
 		iWork: 2,
-		iMilitia: 3,
-		iBase: 4,
+		iBase: 3,
+		iAttack: 4,
 		iSkirmish: 1,
 		iDefend: 1,
 	},
 	iAztecs: {
 		iSettle: 1,
 		iWork: 3,
-		iMilitia: 3,
-		iBase: 10,
+		iBase: 3,
+		iAttack: 10,
 		iSkirmish: 3,
 		iDefend: 3,
 	},
 	iHaudenosaunee: {
 		iSettle: 1,
 		iWork: 1,
-		iMilitia: 1,
-		iBase: 2,
+		iBase: 1,
+		iAttack: 2,
 		iSkirmish: 1,
 	},
 	iLakota: {
 		iSettle: 2,
-		iMilitia: 2,
-		iBase: 3,
+		iBase: 2,
+		iAttack: 3,
 		iSkirmish: 1,
 	},
 	iSpain: {
+		iSettleSea: 1,
+		iWorkSea: 1,
+		iMissionarySea: 1,
 	},
 	iPortugal: {
 	},
@@ -546,123 +549,123 @@ dStartingUnits = CivDict({
 	iHawaii: {
 		iSettle: 2,
 		iWork: 1,
-		iMilitia: 2,
 		iBase: 2,
-		iFerrySea: 1,
+		iAttack: 2,
+		iFerry: 1,
 	},
 	iRussia: {
 	},
 	iAmerica: {
 		iSettle: 8,
 		iWork: 5,
-		iMilitia: 8,
-		iBase: 4,
+		iBase: 8,
+		iAttack: 4,
 		iSkirmish: 4,
 		iSiege: 2,
-		iSiegeCity: 2,
-		iFerrySea: 2,
-		iEscortSea: 1,
+		iCitySiege: 2,
+		iFerry: 2,
+		iEscort: 1,
 	},
 	iHaiti: {
 		iSettle: 1,
 		iWork: 2,
-		iMilitia: 3,
-		iBase: 2,
+		iBase: 3,
+		iAttack: 2,
 		iSkirmish: 4,
 	},
 	iArgentina: {
 		iSettle: 5,
 		iWork: 4,
-		iMilitia: 3,
-		iBase: 7,
+		iBase: 3,
+		iAttack: 7,
 		iSiege: 2,
-		iCav: 2,
-		iSiegeCity: 1,
-		iFerrySea: 1,
-		iEscortSea: 2,
+		iShock: 2,
+		iCitySiege: 1,
+		iFerry: 1,
+		iEscort: 2,
 	},
 	iMexico: {
 		iSettle: 8,
 		iWork: 3,
-		iMilitia: 4,
-		iBase: 8,
+		iBase: 4,
+		iAttack: 8,
 		iSkirmish: 2,
-		iCav: 2,
-		iSiegeCity: 3,
+		iShock: 2,
+		iCitySiege: 3,
 	},
 	iColombia: {
 		iSettle: 4,
 		iWork: 3,
-		iMilitia: 3,
-		iBase: 7,
+		iBase: 3,
+		iAttack: 7,
 		iSiege: 2,
-		iCav: 4,
-		iSiegeCity: 3,
+		iShock: 4,
+		iCitySiege: 3,
 	},
 	iPeru: {
 		iSettle: 3,
 		iWork: 3,
-		iMilitia: 3,
-		iBase: 7,
+		iBase: 3,
+		iAttack: 7,
 		iSiege: 1,
-		iSiegeCity: 2,
-		iFerrySea: 1,
-		iEscortSea: 1,
+		iCitySiege: 2,
+		iFerry: 1,
+		iEscort: 1,
 	},
 	iBrazil: {
 		iSettle: 8,
 		iWork: 3,
-		iMilitia: 4,
-		iBase: 3,
+		iBase: 4,
+		iAttack: 3,
 		iSkirmish: 3,
 		iSiege: 1,
-		iSiegeCity: 2,
-		iWorkSea: 2,
-		iFerrySea: 2,
-		iEscortSea: 3,
+		iCitySiege: 2,
+		iWorkerSea: 2,
+		iFerry: 2,
+		iEscort: 3,
 	},
 	iVenezuela: {
 		iSettle: 3,
 		iWork: 2,
-		iMilitia: 3,
-		iBase: 6,
+		iBase: 3,
+		iAttack: 6,
 		iSiege: 1,
-		iSiegeCity: 1,
-		iFerrySea: 1,
-		iEscortSea: 1,
+		iCitySiege: 1,
+		iFerry: 1,
+		iEscort: 1,
 	},
 	iCanada: {
 		iSettle: 8,
 		iWork: 3,
-		iMilitia: 6,
-		iBase: 8,
-		iCav: 2,
+		iBase: 6,
+		iAttack: 8,
+		iShock: 2,
 	},
 }, {})
 
 # Extra units for AI
 dExtraAIUnits = CivDict({
 	iAmerica: {
-		iMilitia: 4,
-		iBase: 8,
+		iBase: 4,
+		iAttack: 8,
 		iSkirmish: 3,
-		iCav: 4,
+		iShock: 4,
 		iSiege: 2,
-		iFerrySea: 1,
-		iEscortSea: 3,
+		iFerry: 1,
+		iEscort: 3,
 	},
 	iArgentina: {
-		iMilitia: 3,
-		iBase: 5,
+		iBase: 3,
+		iAttack: 5,
 		iSkirmish: 3,
-		iCav: 4,
+		iShock: 4,
 		iSiege: 3,
-		iFerrySea: 1,
-		iEscortSea: 1,
+		iFerry: 1,
+		iEscort: 1,
 	},
 	iAztecs: {
-		iMilitia: 4,
-		iBase: 6,
+		iBase: 4,
+		iAttack: 6,
 		iSkirmish: 2,
 		iDefend: 2,
 	},
@@ -674,7 +677,7 @@ dExtraAIUnits = CivDict({
 	},
 	iMexico: {
 		iBase: 4,
-		iCav: 4,
+		iShock: 4,
 		iSiege: 1,
 	},
 }, {})
@@ -694,53 +697,53 @@ dAdditionalUnits = CivDict({
 		iBase: 3,
 		iSkirmish: 3,
 		iSiege: 2,
-		iSiegeCity: 1,
+		iCitySiege: 1,
 	},
 	iArgentina: {
 		iBase: 2,
-		iCav: 4,
+		iShock: 4,
 	},
 	iMexico: {
 		iBase: 4,
 		iSiege: 1,
-		iSiegeCity: 1,
+		iCitySiege: 1,
 	},
 	iColombia: {
 		iBase: 4,
 		iSkirmish: 4,
 		iSiege: 1,
-		iSiegeCity: 1,
+		iCitySiege: 1,
 	},
 	iBrazil: {
 		iBase: 3,
 		iSkirmish: 2,
 		iSiege: 1,
-		iSiegeCity: 1,
+		iCitySiege: 1,
 	},
 	iCanada: {
 		iBase: 4,
-		iCav: 2,
+		iShock: 2,
 		iSiege: 1,
-		iSiegeCity: 1,
+		iCitySiege: 1,
 	},
 }, {})
 
 dStartingExperience = CivDict({
 	iArgentina: {
-		iCav: 2,
+		iShock: 2,
 		iBase: 4,
 		iSiege: 2,
 	},
 	iMexico: {
 		iBase: 4,
-		iCav: 2,
+		iShock: 2,
 		iSkirmish: 2,
 	},
 	iColombia: {
 		iBase: 2,
 		iSkirmish: 2,
 		iSiege: 1,
-		iSiegeCity: 1,
+		iCitySiege: 1,
 	},
 }, {})
 
@@ -759,6 +762,16 @@ dAIAlwaysTrain = CivDict({
 
 dNeverTrain = CivDict({
 }, [])
+
+dSeaSpawns = CivDict({
+	iNorse:	      (68, 118),#  Norse
+	iSpain:	      (65, 71),	#  Spain
+	iPortugal:	  (77, 23),	#  Portugal
+	iEngland:	  (55, 87),	#  England
+	iFrance:	  (59, 96),	#  France
+	iNetherlands: (58, 91),	#  Netherlands
+	iRussia:	  (4, 106),	#  Russia
+})
 
 def createSpecificUnits(iPlayer, tile):
 	iCiv = civ(iPlayer)

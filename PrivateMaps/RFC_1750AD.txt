@@ -6185,10 +6185,6 @@ BeginPlot
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_LIGHT_CANNON
-		UnitOwner=CIVILIZATION_NORSE
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_MILITIA_PIKEMAN
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
@@ -6814,14 +6810,6 @@ BeginPlot
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_PIKE_AND_SHOT
-		UnitOwner=CIVILIZATION_NORSE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_LIGHT_CANNON
-		UnitOwner=CIVILIZATION_NORSE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_LIGHT_CANNON
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginUnit

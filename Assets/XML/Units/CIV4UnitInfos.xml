@@ -2202,7 +2202,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_FEINT1</PromotionType>
+					<PromotionType>PROMOTION_DISENGAGE1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
@@ -2273,7 +2273,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_FEINT1</PromotionType>
+					<PromotionType>PROMOTION_DISENGAGE1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
@@ -2370,7 +2370,7 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_MOUNTAINEER1</PromotionType>
+					<PromotionType>PROMOTION_GUERILLA1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
@@ -2485,7 +2485,7 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_MOUNTAINEER1</PromotionType>
+					<PromotionType>PROMOTION_GUERILLA1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
@@ -2493,7 +2493,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_FEINT1</PromotionType>
+					<PromotionType>PROMOTION_DISENGAGE1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
@@ -2597,7 +2597,7 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_MOUNTAINEER1</PromotionType>
+					<PromotionType>PROMOTION_GUERILLA1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
@@ -2702,7 +2702,7 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_MOUNTAINEER1</PromotionType>
+					<PromotionType>PROMOTION_GUERILLA1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
@@ -2810,7 +2810,7 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_MOUNTAINEER1</PromotionType>
+					<PromotionType>PROMOTION_GUERILLA1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
@@ -2886,7 +2886,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_MILITIA_SPEARMAN</Class>
 			<Type>UNIT_MILITIA_SPEARMAN</Type>
-			<Combat>UNITCOMBAT_MILITIA</Combat>
+			<Combat>UNITCOMBAT_MELEE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MILITIA_SPEARMAN</Description>
@@ -2986,7 +2986,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_MILITIA_SPEARMAN</Class>
 			<Type>UNIT_MISSISSIPPI_FALCON_DANCER</Type>
-			<Combat>UNITCOMBAT_MILITIA</Combat>
+			<Combat>UNITCOMBAT_MELEE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MISSISSIPPI_FALCON_DANCER</Description>
@@ -3087,7 +3087,7 @@
 		<UnitInfo>
 			<Class>MILITIA_PIKEMAN</Class>
 			<Type>UNIT_MILITIA_PIKEMAN</Type>
-			<Combat>UNITCOMBAT_MILITIA</Combat>
+			<Combat>UNITCOMBAT_MELEE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MILITIA_PIKEMAN</Description>
@@ -3180,7 +3180,7 @@
 		<UnitInfo>
 			<Class>MILITIA_ARQUEBUSIER</Class>
 			<Type>UNIT_MILITIA_ARQUEBUSIER</Type>
-			<Combat>UNITCOMBAT_MILITIA</Combat>
+			<Combat>UNITCOMBAT_GUN</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MILITIA_ARQUEBUSIER</Description>
@@ -3274,7 +3274,7 @@
 		<UnitInfo>
 			<Class>MILITIA_MUSKETMAN</Class>
 			<Type>UNIT_MILITIA_MUSKETMAN</Type>
-			<Combat>UNITCOMBAT_MILITIA</Combat>
+			<Combat>UNITCOMBAT_GUN</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MILITIA_MUSKETMAN</Description>
@@ -3368,7 +3368,7 @@
 		<UnitInfo>
 			<Class>MILITIA_MUSKETMAN</Class>
 			<Type>UNIT_AMERICAN_MINUTEMAN</Type>
-			<Combat>UNITCOMBAT_MILITIA</Combat>
+			<Combat>UNITCOMBAT_GUN</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_AMERICAN_MINUTEMAN</Description>
@@ -3461,7 +3461,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_MOUNTAINEER1</PromotionType>
+					<PromotionType>PROMOTION_GUERILLA1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
@@ -3473,7 +3473,7 @@
 		<UnitInfo>
 			<Class>MILITIA_RIFLEMAN</Class>
 			<Type>UNIT_MILITIA_RIFLEMAN</Type>
-			<Combat>UNITCOMBAT_MILITIA</Combat>
+			<Combat>UNITCOMBAT_GUN</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MILITIA_RIFLEMAN</Description>
@@ -3575,7 +3575,7 @@
 		<UnitInfo>
 			<Class>MILITIA_INFANTRY</Class>
 			<Type>UNIT_MILITIA_INFANTRY</Type>
-			<Combat>UNITCOMBAT_MILITIA</Combat>
+			<Combat>UNITCOMBAT_GUN</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MILITIA_INFANTRY</Description>
@@ -3676,7 +3676,7 @@
 			<bPillage>1</bPillage>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MACEMAN</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_SWORDSMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 				<UnitClassUpgrade>
@@ -3779,7 +3779,7 @@
 			<bPillage>1</bPillage>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MACEMAN</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_SWORDSMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 				<UnitClassUpgrade>
@@ -3886,7 +3886,7 @@
 			<bPillage>1</bPillage>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MACEMAN</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_SWORDSMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 				<UnitClassUpgrade>
@@ -3988,6 +3988,212 @@
 			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
+			<Class>UNITCLASS_SWORDSMAN</Class>
+			<Type>UNIT_SWORDSMAN</Type>
+			<Combat>UNITCOMBAT_MELEE</Combat>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SWORDSMAN</Description>
+			<Civilopedia>TXT_KEY_UNIT_LIGHT_SWORDSMAN_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_LIGHT_SWORDSMAN_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<UnitClassUpgrades>
+				<UnitClassUpgrade>
+					<UnitClassUpgradeType>UNITCLASS_MACEMAN</UnitClassUpgradeType>
+					<bUnitClassUpgrade>1</bUnitClassUpgrade>
+				</UnitClassUpgrade>
+			</UnitClassUpgrades>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_COUNTER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_CITY_COUNTER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqTech>TECH_ALLOYS</PrereqTech>
+			<PrereqBonuses>
+				<BonusType>BONUS_COPPER</BonusType>
+				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_OBSIDIAN</BonusType>
+			</PrereqBonuses>
+			<iCost>35</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>2</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
+			<FeatureImpassables>
+				<FeatureImpassable>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<bFeatureImpassable>1</bFeatureImpassable>
+				</FeatureImpassable>
+				<FeatureImpassable>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<bFeatureImpassable>1</bFeatureImpassable>
+				</FeatureImpassable>
+				<FeatureImpassable>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<bFeatureImpassable>1</bFeatureImpassable>
+				</FeatureImpassable>
+				<FeatureImpassable>
+					<FeatureType>FEATURE_BOG</FeatureType>
+					<bFeatureImpassable>1</bFeatureImpassable>
+				</FeatureImpassable>
+			</FeatureImpassables>
+			<iCombat>5</iCombat>
+			<iCombatLimit>100</iCombatLimit>
+			<iXPValueAttack>4</iXPValueAttack>
+			<iXPValueDefense>2</iXPValueDefense>
+			<iConscription>2</iConscription>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>2</iAsset>
+			<iPower>5</iPower>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_LIGHT_SWORDSMAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_LIGHT_SWORDSMAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_LIGHT_SWORDSMAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+		</UnitInfo>
+		<UnitInfo>
+			<Class>UNITCLASS_SWORDSMAN</Class>
+			<Type>UNIT_AZTEC_JAGUAR</Type>
+			<Combat>UNITCOMBAT_MELEE</Combat>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_AZTEC_JAGUAR</Description>
+			<Civilopedia>TXT_KEY_UNIT_AZTEC_JAGUAR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_AZTEC_JAGUAR_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_AZTEC_JAGUAR_HELP</Help>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<UnitClassUpgrades>
+				<UnitClassUpgrade>
+					<UnitClassUpgradeType>UNITCLASS_ARQUEBUSIER</UnitClassUpgradeType>
+					<bUnitClassUpgrade>1</bUnitClassUpgrade>
+				</UnitClassUpgrade>
+			</UnitClassUpgrades>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqTech>TECH_ALLOYS</PrereqTech>
+			<BonusType>BONUS_OBSIDIAN</BonusType>
+			<iCost>35</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>2</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
+			<FeatureImpassables>
+				<FeatureImpassable>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<bFeatureImpassable>1</bFeatureImpassable>
+				</FeatureImpassable>
+				<FeatureImpassable>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<bFeatureImpassable>1</bFeatureImpassable>
+				</FeatureImpassable>
+				<FeatureImpassable>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<bFeatureImpassable>1</bFeatureImpassable>
+				</FeatureImpassable>
+				<FeatureImpassable>
+					<FeatureType>FEATURE_BOG</FeatureType>
+					<bFeatureImpassable>1</bFeatureImpassable>
+				</FeatureImpassable>
+			</FeatureImpassables>
+			<iCombat>5</iCombat>
+			<iCombatLimit>100</iCombatLimit>
+			<iXPValueAttack>4</iXPValueAttack>
+			<iXPValueDefense>2</iXPValueDefense>
+			<iCityAttack>25</iCityAttack>
+			<iConscription>1</iConscription>
+			<iCultureGarrison>5</iCultureGarrison>
+			<iAsset>2</iAsset>
+			<iPower>6</iPower>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>3</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_AZTEC_JAGUAR</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+		</UnitInfo>
+		<UnitInfo>
 			<Class>UNITCLASS_MACEMAN</Class>
 			<Type>UNIT_MACEMAN</Type>
 			<Combat>UNITCOMBAT_MELEE</Combat>
@@ -4073,6 +4279,7 @@
 			<iCombatLimit>100</iCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
+			<iCityAttack>10</iCityAttack>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
@@ -4182,7 +4389,7 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>5</iCombat>
+			<iCombat>6</iCombat>
 			<iCombatLimit>100</iCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
@@ -4230,14 +4437,13 @@
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MACEMAN</Class>
-			<Type>UNIT_AZTEC_JAGUAR</Type>
+			<Type>UNIT_PUREPECHA_MACANA</Type>
 			<Combat>UNITCOMBAT_MELEE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_AZTEC_JAGUAR</Description>
-			<Civilopedia>TXT_KEY_UNIT_AZTEC_JAGUAR_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_AZTEC_JAGUAR_STRATEGY</Strategy>
-			<Help>TXT_KEY_UNIT_AZTEC_JAGUAR_HELP</Help>
+			<Description>TXT_KEY_UNIT_PUREPECHA_MACANA</Description>
+			<Civilopedia>TXT_KEY_UNIT_PUREPECHA_MACANA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_PUREPECHA_MACANA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitarySupport>1</bMilitarySupport>
@@ -4265,7 +4471,10 @@
 			</UnitAIs>
 			<PrereqTech>TECH_ALLOYS</PrereqTech>
 			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
-			<BonusType>BONUS_OBSIDIAN</BonusType>
+			<PrereqBonuses>
+				<BonusType>BONUS_COPPER</BonusType>
+				<BonusType>BONUS_IRON</BonusType>
+			</PrereqBonuses>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4307,115 +4516,18 @@
 			<iCombatLimit>100</iCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<UnitCombatMods>
-				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-					<iUnitCombatMod>25</iUnitCombatMod>
-				</UnitCombatMod>
-			</UnitCombatMods>
-			<iCityAttack>25</iCityAttack>
-			<iConscription>1</iConscription>
-			<iCultureGarrison>5</iCultureGarrison>
-			<iAsset>2</iAsset>
-			<iPower>6</iPower>
-			<UnitMeshGroups>
-				<iGroupSize>3</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>3</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>3</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_AZTEC_JAGUAR</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_MACEMAN</Class>
-			<Type>UNIT_PUREPECHA_MACANA</Type>
-			<Combat>UNITCOMBAT_MELEE</Combat>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_PUREPECHA_MACANA</Description>
-			<Civilopedia>TXT_KEY_UNIT_PUREPECHA_MACANA_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_PUREPECHA_MACANA_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<bMilitaryHappiness>1</bMilitaryHappiness>
-			<bMilitarySupport>1</bMilitarySupport>
-			<bMilitaryProduction>1</bMilitaryProduction>
-			<bPillage>1</bPillage>
-			<UnitClassUpgrades>
-				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_ARQUEBUSIER</UnitClassUpgradeType>
-					<bUnitClassUpgrade>1</bUnitClassUpgrade>
-				</UnitClassUpgrade>
-			</UnitClassUpgrades>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_RESERVE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<PrereqTech>TECH_ALLOYS</PrereqTech>
-			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
-			<PrereqBonuses>
-				<BonusType>BONUS_COPPER</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
-			</PrereqBonuses>
-			<iCost>60</iCost>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_TUNDRA</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_SNOW</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
-			<FeatureImpassables>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_BOG</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-			</FeatureImpassables>
-			<iCombat>7</iCombat>
-			<iCombatLimit>100</iCombatLimit>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
+			<iCityAttack>10</iCityAttack>
+			<iCityDefense>10</iCityDefense>
 			<iConscription>1</iConscription>
 			<iCultureGarrison>5</iCultureGarrison>
 			<iAsset>2</iAsset>
 			<iPower>7</iPower>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GUERILLA1</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>
@@ -4968,11 +5080,11 @@
 			<iNukeRange>-1</iNukeRange>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_GARRISON1</PromotionType>
+					<PromotionType>PROMOTION_CITY_GARRISON1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_GARRISON2</PromotionType>
+					<PromotionType>PROMOTION_CITY_GARRISON2</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
@@ -5491,7 +5603,7 @@
 			<iPlainsDefense>25</iPlainsDefense>
 			<UnitCombatMods>
 				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
@@ -5612,7 +5724,7 @@
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
@@ -5718,7 +5830,7 @@
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
@@ -5823,7 +5935,7 @@
 					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
@@ -5936,7 +6048,7 @@
 					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
@@ -6050,7 +6162,7 @@
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
@@ -6160,7 +6272,7 @@
 			<iPlainsDefense>25</iPlainsDefense>
 			<UnitCombatMods>
 				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
@@ -6266,7 +6378,7 @@
 			<iPlainsDefense>25</iPlainsDefense>
 			<UnitCombatMods>
 				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
@@ -7910,7 +8022,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_HORSE_ARCHER</Class>
 			<Type>UNIT_HORSE_ARCHER</Type>
-			<Combat>UNITCOMBAT_CAVALRY</Combat>
+			<Combat>UNITCOMBAT_LIGHT_CAVALRY</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_HORSE_ARCHER</Description>
@@ -8017,7 +8129,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_HORSE_ARCHER</Class>
 			<Type>UNIT_LAKOTA_SWIFT_ARROW</Type>
-			<Combat>UNITCOMBAT_CAVALRY</Combat>
+			<Combat>UNITCOMBAT_LIGHT_CAVALRY</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_LAKOTA_SWIFT_ARROW</Description>
@@ -8130,7 +8242,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_CUIRASSIER</Class>
 			<Type>UNIT_CUIRASSIER</Type>
-			<Combat>UNITCOMBAT_CAVALRY</Combat>
+			<Combat>UNITCOMBAT_HEAVY_CAVALRY</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_CUIRASSIER</Description>
@@ -8237,7 +8349,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_CUIRASSIER</Class>
 			<Type>UNIT_SPANISH_CONQUISTADOR</Type>
-			<Combat>UNITCOMBAT_CAVALRY</Combat>
+			<Combat>UNITCOMBAT_HEAVY_CAVALRY</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_SPANISH_CONQUISTADOR</Description>
@@ -8351,7 +8463,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_DRAGOON</Class>
 			<Type>UNIT_DRAGOON</Type>
-			<Combat>UNITCOMBAT_CAVALRY</Combat>
+			<Combat>UNITCOMBAT_HEAVY_CAVALRY</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_DRAGOON</Description>
@@ -8382,10 +8494,6 @@
 				</FlankingStrike>
 				<FlankingStrike>
 					<FlankingStrikeUnitClass>UNITCLASS_HEAVY_CANNON</FlankingStrikeUnitClass>
-					<iFlankingStrength>100</iFlankingStrength>
-				</FlankingStrike>
-				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_LIGHT_CANNON</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 			</FlankingStrikes>
@@ -8472,7 +8580,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_DRAGOON</Class>
 			<Type>UNIT_COLOMBIAN_LLANERO</Type>
-			<Combat>UNITCOMBAT_CAVALRY</Combat>
+			<Combat>UNITCOMBAT_LIGHT_CAVALRY</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_COLOMBIAN_LLANERO</Description>
@@ -8502,10 +8610,6 @@
 				</FlankingStrike>
 				<FlankingStrike>
 					<FlankingStrikeUnitClass>UNITCLASS_HEAVY_CANNON</FlankingStrikeUnitClass>
-					<iFlankingStrength>100</iFlankingStrength>
-				</FlankingStrike>
-				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_LIGHT_CANNON</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 			</FlankingStrikes>
@@ -8608,7 +8712,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_CAVALRY</Class>
 			<Type>UNIT_CAVALRY</Type>
-			<Combat>UNITCOMBAT_CAVALRY</Combat>
+			<Combat>UNITCOMBAT_HEAVY_CAVALRY</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_CAVALRY</Description>
@@ -8642,15 +8746,7 @@
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_LIGHT_CANNON</FlankingStrikeUnitClass>
-					<iFlankingStrength>100</iFlankingStrength>
-				</FlankingStrike>
-				<FlankingStrike>
 					<FlankingStrikeUnitClass>UNITCLASS_RIFLED_CANNON</FlankingStrikeUnitClass>
-					<iFlankingStrength>100</iFlankingStrength>
-				</FlankingStrike>
-				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_FIELD_GUN</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 			</FlankingStrikes>
@@ -8738,7 +8834,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_CAVALRY</Class>
 			<Type>UNIT_ARGENTINE_MOUNTED_GRENADIER</Type>
-			<Combat>UNITCOMBAT_CAVALRY</Combat>
+			<Combat>UNITCOMBAT_HEAVY_CAVALRY</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_ARGENTINE_MOUNTED_GRENADIER</Description>
@@ -8772,15 +8868,7 @@
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_LIGHT_CANNON</FlankingStrikeUnitClass>
-					<iFlankingStrength>100</iFlankingStrength>
-				</FlankingStrike>
-				<FlankingStrike>
 					<FlankingStrikeUnitClass>UNITCLASS_RIFLED_CANNON</FlankingStrikeUnitClass>
-					<iFlankingStrength>100</iFlankingStrength>
-				</FlankingStrike>
-				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_FIELD_GUN</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 			</FlankingStrikes>
@@ -8874,7 +8962,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_CAVALRY</Class>
 			<Type>UNIT_MEXICAN_RURAL</Type>
-			<Combat>UNITCOMBAT_CAVALRY</Combat>
+			<Combat>UNITCOMBAT_LIGHT_CAVALRY</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MEXICAN_RURAL</Description>
@@ -8907,15 +8995,7 @@
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_LIGHT_CANNON</FlankingStrikeUnitClass>
-					<iFlankingStrength>100</iFlankingStrength>
-				</FlankingStrike>
-				<FlankingStrike>
 					<FlankingStrikeUnitClass>UNITCLASS_RIFLED_CANNON</FlankingStrikeUnitClass>
-					<iFlankingStrength>100</iFlankingStrength>
-				</FlankingStrike>
-				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_FIELD_GUN</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 			</FlankingStrikes>
@@ -9038,15 +9118,7 @@
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_LIGHT_CANNON</FlankingStrikeUnitClass>
-					<iFlankingStrength>100</iFlankingStrength>
-				</FlankingStrike>
-				<FlankingStrike>
 					<FlankingStrikeUnitClass>UNITCLASS_RIFLED_CANNON</FlankingStrikeUnitClass>
-					<iFlankingStrength>100</iFlankingStrength>
-				</FlankingStrike>
-				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_FIELD_GUN</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
@@ -9166,15 +9238,7 @@
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_LIGHT_CANNON</FlankingStrikeUnitClass>
-					<iFlankingStrength>100</iFlankingStrength>
-				</FlankingStrike>
-				<FlankingStrike>
 					<FlankingStrikeUnitClass>UNITCLASS_RIFLED_CANNON</FlankingStrikeUnitClass>
-					<iFlankingStrength>100</iFlankingStrength>
-				</FlankingStrike>
-				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_FIELD_GUN</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
@@ -9589,107 +9653,6 @@
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_LIGHT_CANNON</Class>
-			<Type>UNIT_LIGHT_CANNON</Type>
-			<Combat>UNITCOMBAT_SIEGE</Combat>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_LIGHT_CANNON</Description>
-			<Civilopedia>TXT_KEY_UNIT_LIGHT_CANNON_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_LIGHT_CANNON_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<bMilitaryHappiness>1</bMilitaryHappiness>
-			<bMilitarySupport>1</bMilitarySupport>
-			<bMilitaryProduction>1</bMilitaryProduction>
-			<bPillage>1</bPillage>
-			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
-			<UnitClassUpgrades>
-				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_FIELD_GUN</UnitClassUpgradeType>
-					<bUnitClassUpgrade>1</bUnitClassUpgrade>
-				</UnitClassUpgrade>
-			</UnitClassUpgrades>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_COLLATERAL</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
-			<iCost>140</iCost>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iAirRange>1</iAirRange>
-			<iNukeRange>-1</iNukeRange>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_TUNDRA</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_SNOW</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
-			<FeatureImpassables>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_BOG</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-			</FeatureImpassables>
-			<iCombat>6</iCombat>
-			<iCombatLimit>50</iCombatLimit>
-			<iAirCombat>10</iAirCombat>
-			<iAirCombatLimit>50</iAirCombatLimit>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
-			<iCollateralDamage>100</iCollateralDamage>
-			<iCollateralDamageLimit>50</iCollateralDamageLimit>
-			<iCollateralDamageMaxUnits>3</iCollateralDamageMaxUnits>
-			<UnitCombatCollateralImmunes>
-				<UnitCombatCollateralImmune>
-					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-					<iUnitCombatCollateralImmune>1</iUnitCombatCollateralImmune>
-				</UnitCombatCollateralImmune>
-			</UnitCombatCollateralImmunes>
-			<iCultureGarrison>7</iCultureGarrison>
-			<iAsset>3</iAsset>
-			<iPower>13</iPower>
-			<UnitMeshGroups>
-				<iGroupSize>3</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>3</iMeleeWaveSize>
-				<iRangedWaveSize>3</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>3</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_LIGHT_CANNON</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
 			<Class>UNITCLASS_RIFLED_CANNON</Class>
 			<Type>UNIT_RIFLED_CANNON</Type>
 			<Combat>UNITCOMBAT_SIEGE</Combat>
@@ -9796,107 +9759,6 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_FIELD_GUN</Class>
-			<Type>UNIT_FIELD_GUN</Type>
-			<Combat>UNITCOMBAT_GUN</Combat>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_FIELD_GUN</Description>
-			<Civilopedia>TXT_KEY_UNIT_FIELD_GUN_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_FIELD_GUN_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<bMilitaryHappiness>1</bMilitaryHappiness>
-			<bMilitarySupport>1</bMilitarySupport>
-			<bMilitaryProduction>1</bMilitaryProduction>
-			<bPillage>1</bPillage>
-			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
-			<UnitClassUpgrades>
-				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_ARTILLERY</UnitClassUpgradeType>
-					<bUnitClassUpgrade>1</bUnitClassUpgrade>
-				</UnitClassUpgrade>
-			</UnitClassUpgrades>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_COLLATERAL</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<PrereqTech>TECH_THERMODYNAMICS</PrereqTech>
-			<iCost>160</iCost>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iAirRange>1</iAirRange>
-			<iNukeRange>-1</iNukeRange>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_TUNDRA</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_SNOW</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
-			<FeatureImpassables>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_BOG</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-			</FeatureImpassables>
-			<iCombat>8</iCombat>
-			<iCombatLimit>50</iCombatLimit>
-			<iAirCombat>14</iAirCombat>
-			<iAirCombatLimit>50</iAirCombatLimit>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
-			<iCollateralDamage>100</iCollateralDamage>
-			<iCollateralDamageLimit>50</iCollateralDamageLimit>
-			<iCollateralDamageMaxUnits>4</iCollateralDamageMaxUnits>
-			<UnitCombatCollateralImmunes>
-				<UnitCombatCollateralImmune>
-					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-					<iUnitCombatCollateralImmune>1</iUnitCombatCollateralImmune>
-				</UnitCombatCollateralImmune>
-			</UnitCombatCollateralImmunes>
-			<iCultureGarrison>7</iCultureGarrison>
-			<iAsset>3</iAsset>
-			<iPower>16</iPower>
-			<UnitMeshGroups>
-				<iGroupSize>3</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>3</iMeleeWaveSize>
-				<iRangedWaveSize>3</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>3</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_FIELD_GUN</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARTILLERY</Class>
@@ -10362,7 +10224,7 @@
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_FEINT1</PromotionType>
+					<PromotionType>PROMOTION_DISENGAGE1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>

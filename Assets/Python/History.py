@@ -237,15 +237,15 @@ def expeditionaryForce(iGameTurn):
 		team(iExpeditionaryPlayer).declareWar(iRevolutionaryPlayer, True, WarPlanTypes.WARPLAN_TOTAL)
 		
 		dExpeditionSeaUnits = {
-			iEscortSea: 6 + iModifier1 + iModifier2,
-			iFerrySea: 4 + iModifier1 + iModifier2,
+			iEscort: 6 + iModifier1 + iModifier2,
+			iFerry: 4 + iModifier1 + iModifier2,
 		}
 		
 		dExpeditionUnits = {
 			iBase: 6 + iModifier2,
 			iCounter: 4 + iModifier1,
 			iSkirmish: 4 + iModifier1 + iModifier2,
-			iSiegeCity: 4 + iModifier1,
+			iCitySiege: 4 + iModifier1,
 		}
 		
 		seaUnits = createRoleUnits(iExpeditionaryPlayer, tExpeditionarySpawn, dExpeditionSeaUnits.items())
@@ -346,7 +346,7 @@ def americanWesternSettlement(iTech, iTeam, iPlayer):
 			plot = plots.surrounding(city).without(city).land().passable().no_enemies(iPlayer).random()
 			if plot:
 				createRoleUnit(iPlayer, plot, iBase, 3)
-				createRoleUnit(iPlayer, plot, iSiegeCity, 2)
+				createRoleUnit(iPlayer, plot, iCitySiege, 2)
 				
 				message(city.getOwner(), "TXT_KEY_MESSAGE_AMERICAN_WEST_COAST_CONQUERORS", adjective(iPlayer), city.getName(), color=iRed, location=city, button=infos.unit(iMinuteman).getButton())
 				

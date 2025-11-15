@@ -332,14 +332,14 @@ dGreatPeople = {
 		iGreatArtist : (
 			"Aleijadinho",                # 18th – master sculptor and architect of Minas Gerais baroque churches
 			"Manuel da Costa Ataíde",     # 18th – painter of vivid baroque ceiling frescos
-			"fBárbara Heliodora",         # 18th – poet and playwright of Minas Gerais’ literary circles
+			"fBárbara Heliodora",         # 18th – poet and playwright of Minas Gerais' literary circles
 			"Gregório de Matos",          # 17th – satirical poet of colonial Bahia
 			"Manuel Botelho de Oliveira", # 17th – early Brazilian baroque poet and musician
 		),
 		iGreatScientist : (
 			"Alexandre Rodrigues Ferreira", # 18th – naturalist, led Amazon and Maranhão expeditions
 			"José Bonifácio de Andrada e Silva", # 18th – mineralogist and natural scientist (pre-independence career)
-			"Domingos Vandelli",             # 18th – Italian-born naturalist directing studies on Brazil’s flora
+			"Domingos Vandelli",             # 18th – Italian-born naturalist directing studies on Brazil's flora
 			"Francisco de Melo Franco",      # 18th – physician and Enlightenment writer in colonial Brazil
 			"João Manso Pereira",            # 18th – inventor and early chemist in Bahia
 		),
@@ -367,7 +367,7 @@ dGreatPeople = {
 		iGreatGeneral : (
 			"Estácio de Sá",               # 16th – founded Rio de Janeiro, fought French invaders
 			"Francisco Barreto",           # 16th – led military expeditions in Brazil and Angola
-			"Salvador Correia de Sá e Benevides", # 17th – expelled the Dutch from Luanda and supported Brazil’s defense
+			"Salvador Correia de Sá e Benevides", # 17th – expelled the Dutch from Luanda and supported Brazil's defense
 			"Matias de Albuquerque",       # 17th – commander during Dutch invasions
 			"Francisco Xavier de Mendonça Furtado", # 18th – colonial governor and military administrator in the Amazon
 		),
@@ -403,7 +403,7 @@ dGreatPeople = {
 		),
 		iGreatEngineer : (
 			"John Harrison",              # 18th – horologist whose inventions aided colonial navigation
-			"Peter Harrison",             # 18th – architect of colonial public buildings, e.g., Newport and King’s Chapel
+			"Peter Harrison",             # 18th – architect of colonial public buildings, e.g., Newport and King's Chapel
 			"Benjamin Henry Latrobe",     # 18th – British-born architect active in colonial America
 			"Robert Livingston",          # 18th – engineer and land developer in New York colonies
 			"William Strickland",         # 18th – architect of early colonial buildings
@@ -419,7 +419,7 @@ dGreatPeople = {
 			"John Smith",                 # 17th – soldier, explorer, leader of Jamestown Colony
 			"Miles Standish",             # 17th – military officer for Plymouth Colony
 			"Edward Braddock",            # 18th – British commander in North America during the French and Indian War
-			"James Wolfe",                # 18th – captured Quebec in the Seven Years’ War
+			"James Wolfe",                # 18th – captured Quebec in the Seven Years' War
 			"William Shirley",            # 18th – governor and commander-in-chief during French and Indian War
 		),
 	},
@@ -427,15 +427,15 @@ dGreatPeople = {
 		iGreatProphet : (
 			"Paul Le Jeune",              # 17th – Jesuit missionary, early chronicler of New France
 			"Jean de Brébeuf",            # 17th – Jesuit missionary, martyr among the Huron
-			"fMarie de l’Incarnation",    # 17th – Ursuline nun, founder of the first girls’ school in New France
+			"fMarie de l'Incarnation",    # 17th – Ursuline nun, founder of the first girls' school in New France
 			"François de Laval",          # 17th – first bishop of Quebec, organized the colonial church
 			"Antoine Daniel",             # 17th – Jesuit missionary, early convert educator
 		),
 		iGreatArtist : (
-			"Pierre Le Moyne d’Iberville",# 17th – explorer and writer, founder of Louisiana settlements
+			"Pierre Le Moyne d'Iberville",# 17th – explorer and writer, founder of Louisiana settlements
 			"Claude François",            # 18th – painter and map illustrator in New France
 			"fÉlisabeth Bégon",           # 18th – letter writer offering vivid accounts of colonial life
-			"fMarie-Catherine d’Aulnoy",  # 17th – author of travel-inspired stories about the New World
+			"fMarie-Catherine d'Aulnoy",  # 17th – author of travel-inspired stories about the New World
 			"fJeanne Le Ber",             # 17th – Montreal recluse and patron of religious art
 		),
 		iGreatScientist : (
@@ -449,15 +449,15 @@ dGreatPeople = {
 			"Samuel de Champlain",        # 17th – founder of Quebec, geographer, and fur trade organizer
 			"Charles Aubert de La Chesnaye", # 17th – leading fur trader and entrepreneur in New France
 			"René Auguste Chouteau",      # 18th – co-founder of St. Louis, trader in Louisiana
-			"fBarbe Céléron",             # 18th – businesswoman in Montreal’s fur trade networks
+			"fBarbe Céléron",             # 18th – businesswoman in Montreal's fur trade networks
 			"Jean Talon",                 # 17th – intendant of New France, promoted commerce and population growth
 		),
 		iGreatEngineer : (
-			"Sébastien Le Prestre de Vauban", # 17th – France’s chief engineer, whose fortification models influenced Quebec
+			"Sébastien Le Prestre de Vauban", # 17th – France's chief engineer, whose fortification models influenced Quebec
 			"Gaspard-Joseph Chaussegros de Léry", # 18th – chief engineer of New France, designed Quebec fortifications
 			"Louis de Buade de Frontenac",  # 17th – governor and builder of defensive works
-			"François de Chenneville",      # 18th – engineer for Montreal’s early defenses
-			"fMarguerite d’Youville",       # 18th – founder of Grey Nuns, improved colonial hospitals and social works
+			"François de Chenneville",      # 18th – engineer for Montreal's early defenses
+			"fMarguerite d'Youville",       # 18th – founder of Grey Nuns, improved colonial hospitals and social works
 		),
 		iGreatStatesman : (
 			"Jean Talon",                  # 17th – first intendant, established industry and census
@@ -468,8 +468,8 @@ dGreatPeople = {
 		),
 		iGreatGeneral : (
 			"Charles de Montmagny",        # 17th – first governor of New France, established fortifications
-			"Louis-Joseph de Montcalm",    # 18th – commander at Quebec during Seven Years’ War
-			"Pierre Le Moyne d’Iberville", # 17th – naval officer, founder of Louisiana settlements
+			"Louis-Joseph de Montcalm",    # 18th – commander at Quebec during Seven Years' War
+			"Pierre Le Moyne d'Iberville", # 17th – naval officer, founder of Louisiana settlements
 			"Jean-Baptiste Le Moyne de Bienville", # 18th – co-founder and governor of New Orleans
 			"Daniel de Rémy de Courcelle",  # 17th – governor and military leader against Iroquois
 		),
@@ -478,7 +478,7 @@ dGreatPeople = {
 		iGreatProphet : (
 			"Johannes Megapolensis",      # 17th – Reformed minister in New Netherland, mediator with Native peoples
 			"Franciscus Gomarus",         # 17th – theologian whose followers influenced colonial clergy
-			"fMaria Sibylla Merian",      # 17th–18th – naturalist and illustrator who studied Suriname’s insects
+			"fMaria Sibylla Merian",      # 17th–18th – naturalist and illustrator who studied Suriname's insects
 			"Willem Usselincx",           # 17th – founder of the Dutch West India Company, Protestant visionary for colonization
 			"Abraham Calovius",           # 17th – theologian whose writings circulated in Dutch colonial missions
 		),
@@ -504,7 +504,7 @@ dGreatPeople = {
 			"Cornelis Lampsins",          # 17th – Zeeland shipowner, colonial trader, governor of Tobago
 		),
 		iGreatEngineer : (
-			"Johan Maurits van Nassau-Siegen", # 17th – governor of Dutch Brazil, built Recife’s fortifications
+			"Johan Maurits van Nassau-Siegen", # 17th – governor of Dutch Brazil, built Recife's fortifications
 			"Hendrick van Reede tot Drakenstein", # 17th – colonial official and engineer-naturalist
 			"Dirck Corneliszoon Rijk",     # 17th – naval architect for colonial fleets
 			"Jacob Binckes",               # 17th – naval officer, rebuilt forts in Suriname and Tobago
@@ -515,7 +515,7 @@ dGreatPeople = {
 			"Johan Maurits van Nassau-Siegen", # 17th – governor of Dutch Brazil, enlightened administrator
 			"Laurens Reael",               # 17th – governor of Dutch possessions, advocated fair treatment of natives
 			"Cornelis van Aerssen van Sommelsdijck", # 17th – governor of Suriname, reorganized colony
-			"Isaac Lamoureux",             # 17th – merchant-politician in New Netherland’s council
+			"Isaac Lamoureux",             # 17th – merchant-politician in New Netherland's council
 		),
 		iGreatGeneral : (
 			"Piet Pieterszoon Hein",       # 17th – naval commander, captured Spanish treasure fleet in Caribbean

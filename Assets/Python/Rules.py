@@ -189,7 +189,7 @@ def captureWeapons(pWinningUnit, pLosingUnit):
 	# Upgrade melee and archery units when winning against horses and guns
 	if infos.unit(pWinningUnit).getUnitCombatType() in [UnitCombatTypes.UNITCOMBAT_MELEE, UnitCombatTypes.UNITCOMBAT_ARCHER]:
 		pNewUnit = None
-		if infos.unit(pLosingUnit).getUnitCombatType() in [UnitCombatTypes.UNITCOMBAT_CAVALRY]:
+		if infos.unit(pLosingUnit).getUnitCombatType() in [UnitCombatTypes.UNITCOMBAT_HEAVY_CAVALRY, UnitCombatTypes.UNITCOMBAT_LIGHT_CAVALRY]:
 			if civ(pWinningUnit.getOwner()) in dCivGroups[iCivGroupNative]:
 				pNewUnit = captureUnit(pLosingUnit, pWinningUnit, iHorseArcher, 50)
 			else:

@@ -13,7 +13,6 @@ from Collapse import completeCollapse
 from Popups import popup
 
 import Logging as log
-import history
 
 import BugCore
 import CvScreensInterface
@@ -300,6 +299,11 @@ def endExpansionOnCollapse(iPlayer):
 @handler("firstCity")
 def createStartingWorkers(city):
 	iPlayer = city.getOwner()
+
+	# MacAurther: Don't give extra starting worker to civs that spawn at sea
+	if civ(iPlayer) in dSeaSpawns.keys():	
+		return
+	
 	iNumStartingWorkers = dStartingUnits[iPlayer].get(iWork, 0)
 	
 	if iNumStartingWorkers > 0:
@@ -368,43 +372,6 @@ def initMaps():
 
 def getBirth(iCiv):
 	return next(birth for birth in data.births if birth.iCiv == iCiv)
-
-
-# MacAurther TODO: Clean this up, maybe make AI able to spawn at sea
-# Colonists - Europeans spawn at sea
-dColonistSpawns = CivDict({
-iNorse :		[dBirth[iNorse], tColonistReykjavik, [iColonistSettle]],
-iSpain : 		[dBirth[iSpain], tColonistCaribbean, [iColonistSettle, iColonistSupport, iColonistExplore]], 
-iPortugal : 	[dBirth[iPortugal], tColonistBrazil1, [iColonistSettle, iColonistSettle, iColonistExplore]],
-iEngland : 		[dBirth[iEngland], tColonistVirginia, [iColonistSettle, iColonistSupport]], 
-iFrance :		[dBirth[iFrance], tColonistQuebec, [iColonistSettle, iColonistSupport]],
-iNetherlands : 	[dBirth[iNetherlands], tColonistNewNetherlands, [iColonistSettle, iColonistSupport]],
-iRussia : 		[dBirth[iRussia], tColonistAlaska, [iColonistSettle, iColonistSupport]],
-})
-
-def giveColonists(iPlayer):
-	pPlayer = player(iPlayer)
-	pTeam = team(iPlayer)
-	iCiv = civ(iPlayer)
-	
-	# MacAurther: This covers starting European colonists and later colonists as well
-	if (pPlayer.isAlive() or (year() <= year(dBirth[iCiv]) + 1 and year() >= year(dBirth[iCiv]) - 1)) and iCiv in dColonistSpawns:
-		if pPlayer.isHuman():
-			tPlot = dColonistSpawns[iCiv][1][0]
-		else:
-			# MacAurther: Unfortunately, the AI has a hard time with spawning at sea. So they get to spawn on land
-			tPlot = dColonistSpawns[iCiv][1][1]
-		
-		# European starter units spawn on edge of map at Capital's Y value (Not Using because AI can't handle it on spawn)
-		'''tPlotX = iWorldX - 1
-		if iCiv == iRussia:
-			tPlotX = 0
-		tPlotY = dCapitals[iCiv][1]
-		tPlot = (tPlotX, tPlotY)'''
-		
-		for iRole in dColonistSpawns[iCiv][2]:
-			units = createRoleUnit(iPlayer, tPlot, iRole, 1)
-			#units.promotion(infos.type("PROMOTION_MERCENARY"))
 	
 
 class Birth(object):
@@ -656,11 +623,14 @@ class Birth(object):
 		# reveal tiles
 		for plot in revealed:
 			plot.setRevealed(self.team.getID(), True, False, -1)
-	
+	# MacAurther TODO: Europeans spawning at sea
 	def createUnits(self):
 		bInvasionCiv = self.iCiv in lInvasionCivs
 		
-		createRoleUnits(self.iPlayer, self.location, getStartingUnits(self.iPlayer), bCreateSettlers=not bInvasionCiv)
+		# MacAurther: Civs that spawn at sea spawn on a different plot
+		tPlot = self.location
+		if self.iCiv in dSeaSpawns.keys(): tPlot = dSeaSpawns[self.iCiv]
+		createRoleUnits(self.iPlayer, tPlot, getStartingUnits(self.iPlayer), bCreateSettlers=not bInvasionCiv)
 		
 		# if invader but no cities in birth, still grant a settler now
 		if bInvasionCiv and not cities.birth(self.iPlayer):
@@ -670,11 +640,8 @@ class Birth(object):
 		if self.iPlayer == active():
 			createSpecificUnits(self.iPlayer, self.location)
 		
-		# MacAurther: Europeans spawn at sea
-		if self.iCiv in dCivGroups[iCivGroupEurope]:
-			giveColonists(self.iPlayer)
 		# select a settler if available
-		elif self.isHuman():
+		if self.isHuman():
 			settler = units.at(self.location).owner(self.iPlayer).where(lambda unit: unit.isFound()).last()
 			if settler:
 				interface.selectUnit(settler, True, False, False)

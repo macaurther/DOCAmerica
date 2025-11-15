@@ -348,12 +348,12 @@ def spawnConquerors(iPlayer, iPreferredTarget, tTL, tBR, iNumTargets, iYear, iIn
 		
 		dConquestUnits = {
 			iBase: 2 + iExtra,
-			iSiegeCity: 1 + 2*iExtra,
+			iCitySiege: 1 + 2*iExtra,
 		}
 		units = createRoleUnits(iPlayer, tPlot, dConquestUnits.items())
 		
 		if iCiv == iSpain:
-			createRoleUnit(iPlayer, tPlot, iCav, 2*iExtra)
+			createRoleUnit(iPlayer, tPlot, iShock, 2*iExtra)
 		
 		units.promotion(iVolunteer)
 

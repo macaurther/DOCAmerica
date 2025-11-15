@@ -5381,11 +5381,11 @@ void CvUnitAI::AI_settlerSeaMove()
 {
 	PROFILE_FUNC();
 
-	// Leoreth: otherwise they try to found the capital
-	if (GET_PLAYER(getOwnerINLINE()).getNumCities() == 0)
+	// Leoreth: otherwise they try to found the capital -> MacAurther: This is desirable behavior for spawn-at-sea civs
+	/*if (GET_PLAYER(getOwnerINLINE()).getNumCities() == 0)
 	{
 		return;
-	}
+	}*/
 
 	bool bEmpty = !getGroup()->hasCargo();
 	if (bEmpty)

@@ -45,7 +45,7 @@ def isDefenderUnit(unit):
 		return True
 		
 	# Melee units with mounted modifiers
-	if pUnitInfo.getUnitCombatType() == infos.type('UNITCOMBAT_MELEE') and pUnitInfo.getUnitCombatModifier(infos.type('UNITCOMBAT_CAVALRY')) > 0:
+	if pUnitInfo.getUnitCombatType() == infos.type('UNITCOMBAT_MELEE') and pUnitInfo.getUnitCombatModifier(infos.type('UNITCOMBAT_HEAVY_CAVALRY')) > 0:
 		return True
 		
 	# Conscriptable gunpowder units
@@ -69,7 +69,7 @@ def restorePeaceAI(iMinorCiv, bOpenBorders):
 			if checkUnitsInEnemyTerritory(iMinorCiv, iPlayer):
 				continue
 				
-			if cities.owner(iMinorCiv).any(lambda city: plot(city).getExpansion() == iPlayer):
+			if cities.owner(iMinorCiv).any(lambda city: plot(city).getExpansion() == iPlayer or plot(city).getPlayerWarValue(iPlayer) >= 2):
 				continue
 				
 			teamMinor.makePeace(iPlayer)
@@ -95,7 +95,7 @@ def minorWars(iMinorCiv):
 	teamMinor = team(iMinorCiv)
 	for city in cities.owner(iMinorCiv):
 		for iPlayer in players.major().existing().ai():
-			if plot(city).getPlayerSettlerValue(iPlayer) > 0 or plot(city).getPlayerSettlerValue(iPlayer) >= 3:
+			if plot(city).getPlayerSettlerValue(iPlayer) > 0 or plot(city).getPlayerWarValue(iPlayer) >= 3:
 				if not teamMinor.isAtWar(iPlayer):
 					team(iPlayer).declareWar(player(iMinorCiv).getTeam(), False, WarPlanTypes.WARPLAN_LIMITED)
 
@@ -271,7 +271,7 @@ def relocateSeaGarrisons(tCityPlot, iOldOwner):
 
 # used: Congresses, RFCUtils, Rules
 def createGarrisons(tCityPlot, iNewOwner, iNumUnits):
-	createRoleUnit(iNewOwner, tCityPlot, iMilitia, iNumUnits)
+	createRoleUnit(iNewOwner, tCityPlot, iBase, iNumUnits)
 
 # used: Rise, Stability
 def clearPlague(iPlayer):
@@ -319,8 +319,8 @@ def colonialConquest(iPlayer, tPlot):
 	iExperience = not player(iPlayer).isHuman() and 2 or 0
 	
 	dConquerorUnits = {
-		iBase: 2*iNumUnits,
-		iSiegeCity: iNumUnits,
+		iAttack: 2*iNumUnits,
+		iSiege: iNumUnits,
 	}
 	createRoleUnits(iPlayer, targetPlot, dConquerorUnits.items(), iExperience=iExperience)
 
@@ -353,7 +353,7 @@ def colonialAcquisition(iPlayer, tPlot):
 		player(iPlayer).forcePeace(plot.getOwner())
 		
 	makeUnits(iPlayer, iWorker, tPlot, iNumUnits)
-	createRoleUnit(iPlayer, plot, iMilitia, iNumUnits)
+	createRoleUnit(iPlayer, plot, iAttack, iNumUnits)
 		
 	iMissionary = missionary(player(iPlayer).getStateReligion())
 	if iMissionary:
@@ -458,7 +458,7 @@ def replace(unit, iUnitType):
 
 # used: RFCUtils
 def getRoleDomain(iRole):
-	if iRole in [iWorkSea, iFerrySea, iEscortSea, iHarassSea, iCapitalSea]:
+	if iRole in [iWorkerSea, iSettleSea, iAttackSea, iAssaultSea, iWorkSea, iMissionarySea, iFerry, iEscort, iExploreSea, iLightEscort]:
 		return DomainTypes.DOMAIN_SEA
 	return DomainTypes.DOMAIN_LAND
 
@@ -473,36 +473,36 @@ def getRoleLocation(iRole, location):
 
 # used: RFCUtils
 def getRoleAI(iRole):
-	if iRole in [iMilitia]:
+	if iRole in [iBase, iDefend]:
 		return UnitAITypes.UNITAI_CITY_DEFENSE
-	elif iRole in [iBase, iCav]:
+	elif iRole in [iAttack, iShock]:
 		return UnitAITypes.UNITAI_ATTACK
-	elif iRole in [iSiegeCity]:
+	elif iRole in [iCityAttack, iShockCity, iCitySiege]:
 		return UnitAITypes.UNITAI_ATTACK_CITY
 	elif iRole == iCounter:
 		return UnitAITypes.UNITAI_COUNTER
-	elif iRole == iWorkSea:
+	elif iRole == iWorkerSea:
 		return UnitAITypes.UNITAI_WORKER_SEA
 	elif iRole == iSettle:
 		return UnitAITypes.UNITAI_SETTLE
-	elif iRole in [iFerrySea, iColonistSettle, iColonistSupport, iColonistDefend, iColonistSlave]:
+	elif iRole in [iSettleSea, iWorkSea]:
 		return UnitAITypes.UNITAI_SETTLER_SEA
-	elif iRole == iCapitalSea:
+	elif iRole == iAttackSea:
 		return UnitAITypes.UNITAI_ATTACK_SEA
-	elif iRole in [iHarassSea, iColonistConquer]:
+	elif iRole == iMissionarySea:
+		return UnitAITypes.UNITAI_MISSIONARY_SEA
+	elif iRole in [iAssaultSea, iFerry]:
 		return UnitAITypes.UNITAI_ASSAULT_SEA
-	elif iRole == iEscortSea:
+	elif iRole == iEscort:
 		return UnitAITypes.UNITAI_ESCORT_SEA
-	elif iRole == iColonistExplore:
+	elif iRole == iExploreSea:
 		return UnitAITypes.UNITAI_EXPLORE_SEA
-	elif iRole == iRecon:
+	elif iRole == iExplore:
 		return UnitAITypes.UNITAI_EXPLORE
-	elif iRole in [iSkirmish, iSiege]:
+	elif iRole == iSkirmish:
 		return UnitAITypes.UNITAI_COLLATERAL
 	elif iRole == iWork:
 		return UnitAITypes.UNITAI_WORKER
-	elif iRole == iMissionary:
-		return UnitAITypes.UNITAI_MISSIONARY
 
 	return UnitAITypes.NO_UNITAI
 
@@ -512,40 +512,36 @@ def isUnitOfRole(iUnit, iRole):
 	iCombatType = unit.getUnitCombatType()
 	iDomainType = unit.getDomainType()
 
-	if iRole == iSettle:
-		return base_unit(iUnit) in [iSettler, iPioneer]
-	elif iRole == iWork:
-		return base_unit(iUnit) in [iWorker, iLaborer]
-	elif iRole == iRecon:
-		return base_unit(iUnit) in [iScout, iExplorer, iRanger]
-	elif iRole == iMissionary:
-		return base_unit(iUnit) in [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
-	elif iRole == iMilitia:
+	if iRole == iBase:
 		return base_unit(iUnit) in [iMilitiaSpearman, iMilitiaPikeman, iMilitiaArquebusier, iMilitiaMusketman, iMilitiaRifleman, iMilitiaInfantry]
-	elif iRole == iBase:
-		return base_unit(iUnit) in [iWarrior, iMaceman, iArquebusier, iMusketman, iFusilier, iRifleman, iInfantry]
-	elif iRole == iCounter:
-		return base_unit(iUnit) in [iSpearman, iPikeman, iPikeAndShot, iLineInfantry]
 	elif iRole == iDefend:
-		return base_unit(iUnit) in [iArcher, iCrossbowman, iGatlingGun, iMachineGun]
+		return (iCombatType == UnitCombatTypes.UNITCOMBAT_ARCHER and unit.getCityDefenseModifier() > 0) or iCombatType == UnitCombatTypes.UNITCOMBAT_GUN
+	elif iRole in [iAttack, iCityAttack]:
+		return iCombatType in [UnitCombatTypes.UNITCOMBAT_MELEE, UnitCombatTypes.UNITCOMBAT_GUN]
+	elif iRole == iCounter:
+		return iCombatType == UnitCombatTypes.UNITCOMBAT_MELEE and unit.getUnitCombatModifier(UnitCombatTypes.UNITCOMBAT_HEAVY_CAVALRY) > 0
+	elif iRole in [iShock, iShockCity]:
+		return iCombatType == UnitCombatTypes.UNITCOMBAT_HEAVY_CAVALRY
+	elif iRole == iHarass:
+		return iCombatType == UnitCombatTypes.UNITCOMBAT_LIGHT_CAVALRY
+	elif iRole == iWorkerSea:
+		return iDomainType == DomainTypes.DOMAIN_SEA and unit.getCombat() == 0
+	elif iRole == iSettle:
+		return unit.isFound()
+	elif iRole in [iSettleSea, iAssaultSea, iWorkSea, iMissionarySea, iFerry]:
+		return unit.getCargoSpace() > 0
+	elif iRole in [iAttackSea, iEscort, iExploreSea]:
+		return iDomainType == DomainTypes.DOMAIN_SEA
+	elif iRole == iExplore:
+		return iCombatType == UnitCombatTypes.UNITCOMBAT_RECON
+	elif iRole in [iSiege, iCitySiege]:
+		return iCombatType == UnitCombatTypes.UNITCOMBAT_SIEGE
 	elif iRole == iSkirmish:
-		return base_unit(iUnit) in [iAtlatlist, iLongbowman, iSkirmisher, iGrenadier, iMarine]
-	elif iRole == iCav:
-		return base_unit(iUnit) in [iHorseArcher, iCuirassier, iDragoon, iCavalry, iLightTank, iTank]
-	elif iRole == iSiege:
-		return base_unit(iUnit) in [iLightCannon, iFieldGun, iAAGun]
-	elif iRole == iSiegeCity:
-		return base_unit(iUnit) in [iBombard, iCannon, iHeavyCannon, iRifledCannon, iArtillery]
-	elif iRole == iWorkSea:
-		return base_unit(iUnit) in [iWorkboat]
-	elif iRole in [iFerrySea, iColonistSettle, iColonistSupport, iColonistExplore, iColonistConquer, iColonistDefend, iColonistSlave]:
-		return base_unit(iUnit) in [iCanoe, iCaravel, iIndiaman, iBrigantine, iSteamship, iTransport]
-	elif iRole == iEscortSea:
-		return base_unit(iUnit) in [iSloop, iFrigate, iIronclad, iDestroyer]
-	elif iRole == iHarassSea:
-		return base_unit(iUnit) in [iPrivateer, iMonitor, iSubmarine]
-	elif iRole == iCapitalSea:
-		return base_unit(iUnit) in [iBarque, iShipOfTheLine, iCruiser, iBattleship, iCarrier]
+		return iCombatType in [UnitCombatTypes.UNITCOMBAT_ARCHER, UnitCombatTypes.UNITCOMBAT_GUN] and unit.getCollateralDamage() > 0
+	elif iRole == iLightEscort:
+		return iDomainType == DomainTypes.DOMAIN_SEA and unit.getWithdrawalProbability() > 0
+	elif iRole == iWork:
+		return unit.getWorkRate() > 0 and unit.getCombat() == 0 and not unit.isSlave()
 	
 	raise Exception("Unexpected unit role: %d" % iRole)
 	
@@ -577,48 +573,24 @@ def getUnitsForRole(iPlayer, iRole, bUnique=True):
 	iUnit, iUnitAI = getUnitForRole(iPlayer, iRole, bUnique=bUnique)
 	units = [(iUnit, iUnitAI)]
 	
-	if iRole in lColonistRoles:
-		iCargoSpace = infos.unit(iUnit).getCargoSpace()
-		
-		if iRole == iColonistSettle:	# Settler + Ferry + Defender + Worker + N-3 Defenders
-			units.append(getUnitForRole(iPlayer, iSettle))
-			if iCargoSpace > 1:
-				tDefend = getUnitForRole(iPlayer, iMilitia)
-				units.append(tDefend)
-				if iCargoSpace > 2:
-					units.append(getUnitForRole(iPlayer, iWork))
-					if iCargoSpace > 3:
-						for _ in range(iCargoSpace - 3):
-							units.append(tDefend)
-		
-		elif iRole == iColonistSupport:	# Work + Ferry + Missionary + N-2 Defenders
-			units.append(getUnitForRole(iPlayer, iWork))
-			if iCargoSpace > 1:
-				units.append(getUnitForRole(iPlayer, iMissionary))
-				tDefend = getUnitForRole(iPlayer, iMilitia)
-				for _ in range(iCargoSpace - 2):
-					units.append(tDefend)
-		
-		elif iRole == iColonistExplore:	# Recon + Ferry + N-1 Missionaries
-			units.append(getUnitForRole(iPlayer, iRecon))
-			tMissionary = getUnitForRole(iPlayer, iMissionary)
-			for _ in range(iCargoSpace - 1):
-				units.append(tMissionary)
-		
-		elif iRole == iColonistConquer:	# SiegeCity + Ferry + N-1 Base
-			units.append(getUnitForRole(iPlayer, iSiegeCity))
-			tBase = getUnitForRole(iPlayer, iBase)
-			for _ in range(iCargoSpace - 1):
-				units.append(tBase)
-		
-		elif iRole == iColonistDefend:	# Ferry + N Defend
-			tDefend = getUnitForRole(iPlayer, iMilitia)
-			for _ in range(iCargoSpace):
-				units.append(tDefend)
-		
-		elif iRole == iColonistSlave:	# Ferry + N Slaves
-			for _ in range(iCargoSpace):
-				units.append([iSlave, UnitAITypes.UNITAI_WORKER])
+	if iRole == iSettleSea:
+		units.append(getUnitForRole(iPlayer, iSettle, bUnique=bUnique))
+		for _ in range(infos.unit(iUnit).getCargoSpace()-1):
+			units.append(getUnitForRole(iPlayer, iBase, bUnique=bUnique))
+	
+	elif iRole == iAssaultSea:
+		for _ in range(infos.unit(iUnit).getCargoSpace()):
+			units.append(getUnitForRole(iPlayer, iAttack, bUnique=bUnique))
+
+	elif iRole == iWorkSea:
+		units.append(getUnitForRole(iPlayer, iWork, bUnique=bUnique))
+		for _ in range(infos.unit(iUnit).getCargoSpace()-1):
+			units.append(getUnitForRole(iPlayer, iDefend, bUnique=bUnique))
+
+	elif iRole == iMissionarySea:
+		units.append(getUnitForRole(iPlayer, iExplore, bUnique=bUnique))
+		# for _ in range(infos.unit(iUnit).getCargoSpace()-1):
+		# 	units.append(getUnitForRole(iPlayer, iMissionary, bUnique=bUnique))
 	
 	return units
 
@@ -634,7 +606,7 @@ def createRoleUnits(iPlayer, location, units, iExperience=0, bCreateSettlers=Tru
 def createRoleUnit(iPlayer, location, iRole, iAmount=1, iExperience=0):
 	created = CreatedUnits.none()
 	location = getRoleLocation(iRole, location)
-	if iRole == iSettle:
+	if iRole == iSettle and not civ(iPlayer) in dSeaSpawns.keys():	# MacAurther: Don't place settlers at capital if a sea spawn
 		created += createSettlers(iPlayer, iAmount)
 	elif iRole == iMissionary:
 		created += createMissionaries(iPlayer, iAmount)
@@ -1044,7 +1016,7 @@ def flipOrCreateDefenders(iNewOwner, units, tPlot, iNumDefenders):
 		flipUnit(unit, iNewOwner, tPlot)
 
 	if len(units) < iNumDefenders and active() != iNewOwner:
-		createRoleUnit(iNewOwner, tPlot, iMilitia, iNumDefenders - len(units))
+		createRoleUnit(iNewOwner, tPlot, iDefend, iNumDefenders - len(units))
 		
 # used: Congresses, Stability
 def killUnits(lUnits):
@@ -1054,9 +1026,9 @@ def killUnits(lUnits):
 			
 # used: RFCUtils, Rise
 def ensureDefenders(iPlayer, tPlot, iNumDefenders):
-	defenders = units.at(tPlot).owner(iPlayer).where(lambda unit: isUnitOfRole(unit, iMilitia))
+	defenders = units.at(tPlot).owner(iPlayer).where(lambda unit: isUnitOfRole(unit, iDefend))
 	iNumRequired = max(0, iNumDefenders - defenders.count())
-	return createRoleUnit(iPlayer, tPlot, iMilitia, iNumRequired)
+	return createRoleUnit(iPlayer, tPlot, iDefend, iNumRequired)
 	
 # used: CvDawnOfMan
 def getDawnOfManText(iPlayer):
@@ -1248,3 +1220,10 @@ def downgradeCityCottages(city):
 					plot.setImprovementType(-1)
 				
 				plot.setUpgradeProgress(0)
+
+
+# used: DynamicCivs, Periods
+def getColumn(iPlayer):
+	lTechs = [infos.tech(iTech).getGridX() for iTech in range(iNumTechs) if team(iPlayer).isHasTech(iTech)]
+	if not lTechs: return 0
+	return max(lTechs)

@@ -239,6 +239,14 @@
 			<DefaultUnit>UNIT_WARRIOR</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_SWORDSMAN</Type>
+			<Description>TXT_KEY_UNIT_SWORDSMAN</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_SWORDSMAN</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_MACEMAN</Type>
 			<Description>TXT_KEY_UNIT_MACEMAN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -471,28 +479,12 @@
 			<DefaultUnit>UNIT_HEAVY_CANNON</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_LIGHT_CANNON</Type>
-			<Description>TXT_KEY_UNIT_LIGHT_CANNON</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_LIGHT_CANNON</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_RIFLED_CANNON</Type>
 			<Description>TXT_KEY_UNIT_RIFLED_CANNON</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_RIFLED_CANNON</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_FIELD_GUN</Type>
-			<Description>TXT_KEY_UNIT_FIELD_GUN</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_FIELD_GUN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_ARTILLERY</Type>
