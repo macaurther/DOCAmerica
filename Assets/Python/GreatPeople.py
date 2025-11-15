@@ -1,6 +1,7 @@
 # coding: utf-8
 
 from RFCUtils import *
+import RFCUtils as RFCU
 from Events import handler
 from Core import *
 
@@ -27,7 +28,7 @@ def assignGreatPersonName(unit, iPlayer, city, bAnnounceBirth = True):
 		# Leoreth: replace graphics for female GP names
 		if sName[0] == "f":
 			sName = sName[1:]
-			unit = replace(unit, dFemaleGreatPeople[base_unit(unit)])
+			unit = RFCU.replace(unit, dFemaleGreatPeople[base_unit(unit)])
 		
 		unit.setName(sName)
 		

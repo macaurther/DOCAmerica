@@ -69,16 +69,6 @@ def nativeCityConquered(iOldOwner, iNewOwner, pCity, bConquest, bTrade):
 	if not civ(iOldOwner) in lNativeCivs:
 		return
 	
-	# MacAurther TODO: Rework
-	# Give a Native Tech
-	lPossibleTechs = []
-	for iTech in lNativeTechs:
-		if not team(iNewOwner).isHasTech(iTech):
-			lPossibleTechs.append(iTech)
-	
-	if len(lPossibleTechs) > 0:
-		team(iNewOwner).setHasTech(random.choice(lPossibleTechs), true, iNewOwner, False, True)
-	
 	# Check for any slave capturing
 	# Need to somehow get conquering unit, just get the first unit on the plot and hope it's right?
 	# MacAurther TODO: Improve this?
