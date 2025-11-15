@@ -542,6 +542,8 @@ def isUnitOfRole(iUnit, iRole):
 		return iDomainType == DomainTypes.DOMAIN_SEA and unit.getWithdrawalProbability() > 0
 	elif iRole == iWork:
 		return unit.getWorkRate() > 0 and unit.getCombat() == 0 and not unit.isSlave()
+	elif iRole == iMissionary:		# MacAurther: had to add this to be able to spawn missionaries
+		return unit.getReligionType() != -1
 	
 	raise Exception("Unexpected unit role: %d" % iRole)
 	
@@ -559,6 +561,11 @@ def canCreateUnit(iPlayer, iUnit):
 
 # used: RFCUtils, Rise
 def getUnitForRole(iPlayer, iRole, bUnique=True):
+	# MacAurther : Adding this so can spawn missionaries
+	iReligion = player(iPlayer).getStateReligion()
+	if iRole == iMissionary and iReligion != -1:
+		return (missionary(iReligion), getRoleAI(iRole))
+
 	roleMetric = lambda unit: (infos.unit(unit).getCombat(), infos.unit(unit).getCityAttackModifier(), bUnique == (base_unit(unit) != unit))
 	possibleUnits = infos.units().where(lambda unit: canCreateUnit(iPlayer, unit)).where(lambda unit: isUnitOfRole(unit, iRole))
 	
@@ -589,8 +596,8 @@ def getUnitsForRole(iPlayer, iRole, bUnique=True):
 
 	elif iRole == iMissionarySea:
 		units.append(getUnitForRole(iPlayer, iExplore, bUnique=bUnique))
-		# for _ in range(infos.unit(iUnit).getCargoSpace()-1):
-		# 	units.append(getUnitForRole(iPlayer, iMissionary, bUnique=bUnique))
+		for _ in range(infos.unit(iUnit).getCargoSpace()-1):
+			units.append(getUnitForRole(iPlayer, iMissionary, bUnique=bUnique))
 	
 	return units
 

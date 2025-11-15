@@ -616,11 +616,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRIBAL_CONFEDERACY_STRATEGY</Tag>
-		<English>Lower maintenance costs from number of cities; increased war weariness; spies can bribe Natives</English>
-		<French>Lower maintenance costs from number of cities; increased war weariness; spies can bribe Natives</French>
-		<German>Lower maintenance costs from number of cities; increased war weariness; spies can bribe Natives</German>
-		<Italian>Lower maintenance costs from number of cities; increased war weariness; spies can bribe Natives</Italian>
-		<Spanish>Lower maintenance costs from number of cities; increased war weariness; spies can bribe Natives</Spanish>
+		<English>Lower maintenance costs from number of cities; increased war weariness; spies can bribe Indigenous units</English>
+		<French>Lower maintenance costs from number of cities; increased war weariness; spies can bribe Indigenous units</French>
+		<German>Lower maintenance costs from number of cities; increased war weariness; spies can bribe Indigenous units</German>
+		<Italian>Lower maintenance costs from number of cities; increased war weariness; spies can bribe Indigenous units</Italian>
+		<Spanish>Lower maintenance costs from number of cities; increased war weariness; spies can bribe Indigenous units</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY</Tag>
@@ -2214,14 +2214,6 @@
 		<German>Reduced unrest on city conquest; can bribe Indigenous units with spies; extra experience for land units</German>
 		<Italian>Reduced unrest on city conquest; can bribe Indigenous units with spies; extra experience for land units</Italian>
 		<Spanish>Reduced unrest on city conquest; can bribe Indigenous units with spies; extra experience for land units</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_IMPERIALISM_HELP</Tag>
-		<English>[ICON_BULLET]Spies can bribe Indigenous units</English>
-		<French>[ICON_BULLET]Spies can bribe Indigenous units</French>
-		<German>[ICON_BULLET]Spies can bribe Indigenous units</German>
-		<Italian>[ICON_BULLET]Spies can bribe Indigenous units</Italian>
-		<Spanish>[ICON_BULLET]Spies can bribe Indigenous units</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GRANTS</Tag>

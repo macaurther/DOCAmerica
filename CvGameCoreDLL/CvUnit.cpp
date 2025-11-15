@@ -2542,9 +2542,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 	if (pPlot->isImpassable())
 	{
-		// Tiwanaku UU: Sisqeno
-		bool bCanEnterPeaks = pPlot->isPeak() && getUnitType() == UNIT_TIWANAKU_SISQENO;
-		if (!canMoveImpassable() && !bCanEnterPeaks)
+		if (!canMoveImpassable())
 		{
 			return false;
 		}

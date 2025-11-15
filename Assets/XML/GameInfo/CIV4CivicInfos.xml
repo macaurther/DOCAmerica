@@ -1685,7 +1685,6 @@
 			<Description>TXT_KEY_CIVIC_IMPERIALISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_IMPERIALISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_IMPERIALISM_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_IMPERIALISM_HELP</Help>
 			<TechPrereq>TECH_GUNPOWDER</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Imperialism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>

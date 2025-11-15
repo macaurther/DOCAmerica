@@ -2657,7 +2657,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 		return false;
 	}
 
-	if (GC.getImprovementInfo(eImprovement).isHillsMakesValid() && isHills())
+	if (GC.getImprovementInfo(eImprovement).isHillsMakesValid() && (isHills() || isPeak()))	// Andes RP
 	{
 		bValid = true;
 	}
@@ -2718,7 +2718,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 
 	for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
 	{
-		if (calculateNatureYield(((YieldTypes)iI), eTeam, bIgnoreFeature) < GC.getImprovementInfo(eImprovement).getPrereqNatureYield(iI) && (!bTerrace && iI == YIELD_FOOD))	// MacAurther Andes RP
+		if (calculateNatureYield(((YieldTypes)iI), eTeam, bIgnoreFeature) < GC.getImprovementInfo(eImprovement).getPrereqNatureYield(iI))
 		{
 			return false;
 		}
@@ -3315,7 +3315,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 	{
 		iRegularCost = ((getFeatureType() == NO_FEATURE) ? GC.getTerrainInfo(getTerrainType()).getMovementCost() : GC.getFeatureInfo(getFeatureType()).getMovementCost());
 
-		if (isHills())
+		if (isHills() || isPeak())	// MacAurther: Andes RP: Peaks are as expensive as hills to move into
 		{
 			iRegularCost += GC.getHILLS_EXTRA_MOVEMENT();
 		}
@@ -4469,7 +4469,7 @@ bool CvPlot::isValidDomainForAction(const CvUnit& unit) const
 
 bool CvPlot::isImpassable() const
 {
-	if (isPeak())
+	if (isPeak() && !(getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES))	// Andes RP
 	{
 		return true;
 	}
@@ -5657,11 +5657,6 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 
 PlotTypes CvPlot::getPlotType() const
 {
-	// MacAurther: Andes RP
-	if (m_ePlotType == PLOT_PEAK && getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES)
-	{
-		return PLOT_HILLS;
-	}
 	return (PlotTypes)m_ePlotType;
 }
 
@@ -6931,12 +6926,12 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 
 	iYield = GC.getTerrainInfo(getTerrainType()).getYield(eYield);
 
-	if (isHills())
+	if (isHills() || (isPeak() && getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES))	// MacAurther: Andes RP: Peaks are treated as hills within borders
 	{
 		iYield += GC.getYieldInfo(eYield).getHillsChange();
 	}
 
-	if (isPeak())
+	if (isPeak() && !(getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES))	// MacAurther: Andes RP: If ever peaks get a yield, don't give it when they're treated like hills
 	{
 		iYield += GC.getYieldInfo(eYield).getPeakChange();
 	}

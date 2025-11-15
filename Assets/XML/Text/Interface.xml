@@ -3706,11 +3706,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BRIBE_UNITS_EFFECT</Tag>
-		<English>[NEWLINE][ICON_BULLET]Spies can bribe Native units</English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>[NEWLINE][ICON_BULLET]Spies can bribe Indigenous units</English>
+		<French>[NEWLINE][ICON_BULLET]Spies can bribe Indigenous units</French>
+		<German>[NEWLINE][ICON_BULLET]Spies can bribe Indigenous units</German>
+		<Italian>[NEWLINE][ICON_BULLET]Spies can bribe Indigenous units</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Spies can bribe Indigenous units</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_FOOD_TO_PRODUCTION_MODIFIER</Tag>
