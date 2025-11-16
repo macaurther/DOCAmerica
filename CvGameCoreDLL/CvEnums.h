@@ -1268,37 +1268,76 @@ enum LeaderHeadTypes			// Exposed to Python
 	LEADER_NATIVE,
 	LEADER_INDEPENDENT,
 
-	// America
-	WASHINGTON,
-	JACKSON,
-	LINCOLN,
-	ROOSEVELT,
-	FDR,
-	KENNEDY,
-	REAGAN,
-	OBAMA,
-	// Too many for America you say? Nonsense
+	// Maya
+	PACAL,
 
-	// Argentina
-	SAN_MARTIN,
-	PERON,
+	// Zapotec
+	COSIJOEZA,
+	
+	// Teotihuacan
+	ATLATL_CAUAC,
+	
+	// Tiwanaku
+	MALKU_HUYUSTUS,
+	
+	// Wari
+	WARI_CAPAC,
 
-	// Aztec
-	MONTEZUMA,
+	// Mississippi
+	UWAHCIL,
+	TUSKALOOSA,
+	
+	// Puebloan
+	KOCHININAKO,
+	POPAY,
 
-	// Brazil
-	DOM_PEDRO,
-	VARGAS,
+	// Muisca
+	SAGUAMANCHICA,
 
-	// Canada
-	MACDONALD,
-	TRUDEAU,
+	// Norse
+	LEIF_ERIKSON,
+	GUSTAV,
+	GERHARDSEN,
 
 	// Chimu
 	TACAYNAMO,
 
-	// Colombia
-	BOLIVAR,
+	// Toletc
+	TOPILTZIN,
+
+	// Inuit
+	AUA,
+
+	// Arawak
+	AGUEYBANA,
+
+	// Inca
+	PACHACUTI,
+	HUAYNA_CAPAC,
+
+	// Purepecha
+	ERENDIRA,
+
+	// Aztec
+	MONTEZUMA,
+
+	// Haudenosaunee
+	HIAWATHA,
+
+	// Lakota
+	SITTING_BULL,
+
+	// Spanish
+	ISABELLA,
+	PHILIP,
+	FRANCO,
+
+	// Cherokee
+	OCONOSTOTA,
+
+	// Portugal
+	JOAO,
+	MARIA,
 
 	// England
 	ELIZABETH,
@@ -1309,86 +1348,58 @@ enum LeaderHeadTypes			// Exposed to Python
 	LOUIS,
 	NAPOLEON,
 	DE_GAULLE,
-	
-	// Haiti
-	LOUVERTURE,
-
-	// Hawaii
-	KAMEHAMEHA,
-
-	// Inca
-	HUAYNA_CAPAC,
-	PACHACUTI,
-
-	// Inuit
-	AUA,
-
-	// Haudenosaunee
-	HIAWATHA,
-
-	// Maya
-	PACAL,
-
-	// Mexico
-	JUAREZ,
-	SANTA_ANNA,
-	CARDENAS,
-
-	// Mississippi
-	RED_HORN,
-
-	// Muisca
-	SAGUAMANCHICA,
 
 	// Netherlands
 	WILLEM,
 	WILLIAM,
 
-	// Norse
-	RAGNAR,
-	GUSTAV,
-	GERHARDSEN,
-
-	// Peru
-	CASTILLA,
-
-	// Portugal
-	JOAO,
-	MARIA,
-	
-	// Puebloan
-	ITZUKUMA,
+	// Hawaii
+	KAMEHAMEHA,
 
 	// Russia
 	CATHERINE,
 	ALEXANDER_I,
 	STALIN,
 
-	// Spanish
-	ISABELLA,
-	PHILIP,
-	FRANCO,
+	// America
+	WASHINGTON,
+	JACKSON,
+	LINCOLN,
+	ROOSEVELT,
+	FDR,
+	KENNEDY,
+	REAGAN,
+	OBAMA,
+	// Too many for America you say? Nonsense
 	
-	// Teotihuacan
-	ATLATL_CAUAC,
-	
-	// Tiwanaku
-	MALKU_HUYUSTUS,
+	// Haiti
+	LOUVERTURE,
+
+	// Argentina
+	SAN_MARTIN,
+	PERON,
+
+	// Mexico
+	JUAREZ,
+	SANTA_ANNA,
+	CARDENAS,
+
+	// Colombia
+	BOLIVAR,
+
+	// Peru
+	CASTILLA,
+
+	// Brazil
+	DOM_PEDRO,
+	VARGAS,
 	
 	// Venezuela
 	CHAVEZ,
-	
-	// Wari
-	WARI_CAPAC,
 
-	// Zapotec
-	COSIJOEZA,
-
-	// Purepecha
-	TARIACURI,
-
-	// Lakota
-	LEADER_SITTING_BULL,
+	// Canada
+	MACDONALD,
+	TRUDEAU,
 
 	NUM_LEADERHEADS
 };

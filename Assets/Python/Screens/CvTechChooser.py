@@ -666,7 +666,7 @@ class CvTechChooser:
 					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_MOUNTAINPASS").getPath()
 					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
 				# Linguistics, Localization: Tribe contact discount
-				elif (TechInfo.getGridX() == 1 and TechInfo.getGridY() == 7) or (TechInfo.getGridX() == 2 and TechInfo.getGridY() == 7):
+				elif (TechInfo.getGridX() == 1 and TechInfo.getGridY() == 9) or (TechInfo.getGridX() == 2 and TechInfo.getGridY() == 9):
 					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CHEAP_CONTACT").getPath()
 					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
 				# Community, Civil Liberties, Globalism: Extra population on city founding

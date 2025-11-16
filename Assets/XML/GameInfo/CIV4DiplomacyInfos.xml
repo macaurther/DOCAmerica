@@ -511,14 +511,14 @@
 					<Civilizations/>
 					<Leaders>
 						<Leader>
-							<LeaderType>LEADER_TARIACURI</LeaderType>
+							<LeaderType>LEADER_ERENDIRA</LeaderType>
 							<bLeaderType>1</bLeaderType>
 						</Leader>
 					</Leaders>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_TARIACURI_1</Text>
+						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_ERENDIRA_1</Text>
 					</DiplomacyText>
 				</Response>
 				<Response>
@@ -561,7 +561,7 @@
 							<bLeaderType>1</bLeaderType>
 						</Leader>
 						<Leader>
-							<LeaderType>LEADER_MALKU_HUYUSTUS</LeaderType>
+							<LeaderType>LEADER_AGUEYBANA</LeaderType>
 							<bLeaderType>1</bLeaderType>
 						</Leader>
 						<Leader>
@@ -621,7 +621,7 @@
 							<bLeaderType>1</bLeaderType>
 						</Leader>
 						<Leader>
-							<LeaderType>LEADER_ITZUKUMA</LeaderType>
+							<LeaderType>LEADER_MALKU_HUYUSTUS</LeaderType>
 							<bLeaderType>1</bLeaderType>
 						</Leader>
 						<Leader>
@@ -629,7 +629,7 @@
 							<bLeaderType>1</bLeaderType>
 						</Leader>
 						<Leader>
-							<LeaderType>LEADER_RED_HORN</LeaderType>
+							<LeaderType>LEADER_UWAHCIL</LeaderType>
 							<bLeaderType>1</bLeaderType>
 						</Leader>
 						<Leader>

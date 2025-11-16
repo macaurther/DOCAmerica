@@ -351,7 +351,7 @@
 			<BackgroundKFM>Art/Leaderheads/Pachacuti/justinian_background.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
-			<Type>ART_DEF_LEADER_MALKU_HUYUSTUS</Type>
+			<Type>ART_DEF_LEADER_AGUEYBANA</Type>
 			<Button>Art/Leaderheads/Tuskaloosa/Button_Tuskaloosa.dds</Button>
 			<NIF>Art/Leaderheads/Tuskaloosa/Arawak.nif</NIF>
 			<KFM>Art/Leaderheads/Tuskaloosa/Arawak.kfm</KFM>
@@ -359,7 +359,7 @@
 			<BackgroundKFM>Art/Leaderheads/Tuskaloosa/Arawak_BG.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
-			<Type>ART_DEF_LEADER_WARI_CAPAC</Type>
+			<Type>ART_DEF_LEADER_ATLATL_CAUAC</Type>
 			<Button>Art/Leaderheads/Atlatl Cauac/Button_Atlatl_Cauac.dds</Button>
 			<NIF>Art/Leaderheads/Atlatl Cauac/Arawak.nif</NIF>
 			<KFM>Art/Leaderheads/Atlatl Cauac/Arawak.kfm</KFM>
@@ -367,7 +367,7 @@
 			<BackgroundKFM>Art/Leaderheads/Atlatl Cauac/Hannibal_BG.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
-			<Type>ART_DEF_LEADER_TACAYNAMO</Type>
+			<Type>ART_DEF_LEADER_WARI_CAPAC</Type>
 			<Button>Art/Leaderheads/Jasaw/Button_Jasaw.dds</Button>
 			<NIF>Art/Leaderheads/Jasaw/tachnechobrus.nif</NIF>
 			<KFM>Art/Leaderheads/Jasaw/tachnechobrus.kfm</KFM>
@@ -375,7 +375,7 @@
 			<BackgroundKFM>Art/Leaderheads/Jasaw/tachnechobrus_background.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
-			<Type>ART_DEF_LEADER_RED_HORN</Type>
+			<Type>ART_DEF_LEADER_UWAHCIL</Type>
 			<Button>Art/Leaderheads/Uwahci'l/Button_Uwahci'l.dds</Button>
 			<NIF>Art/Leaderheads/Uwahci'l/shaka.nif</NIF>
 			<KFM>Art/Leaderheads/Uwahci'l/shaka.kfm</KFM>
@@ -399,12 +399,12 @@
 			<BackgroundKFM>Art/Leaderheads/Smoke Jaguar/Gilgamesh_Backgrnd.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
-			<Type>ART_DEF_LEADER_ATLATL_CAUAC</Type>
-			<Button>art/LeaderHeads/Topiltzin/topiltzin.dds</Button>
-			<NIF>art/LeaderHeads/Topiltzin/pacal.nif</NIF>
-			<KFM>art/LeaderHeads/Topiltzin/pacal.kfm</KFM>
-			<NoShaderNIF>art/LeaderHeads/Topiltzin/pacal_nonshader.nif</NoShaderNIF>
-			<BackgroundKFM>art/LeaderHeads/Topiltzin/pacal_bg.kfm</BackgroundKFM>
+			<Type>ART_DEF_LEADER_TOPILTZIN</Type>
+			<Button>Art/Leaderheads/Topiltzin/topiltzin.dds</Button>
+			<NIF>Art/Leaderheads/Topiltzin/pacal.nif</NIF>
+			<KFM>Art/Leaderheads/Topiltzin/pacal.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Topiltzin/pacal.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Topiltzin/pacal_bg.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_JACKSON</Type>
@@ -479,7 +479,7 @@
 			<BackgroundKFM>art/LeaderHeads/Chavez/josef_stalin_BG.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
-			<Type>ART_DEF_LEADER_ITZUKUMA</Type>
+			<Type>ART_DEF_LEADER_MALKU_HUYUSTUS</Type>
 			<Button>art/LeaderHeads/Itzukuma/Itzukuma.dds</Button>
 			<NIF>art/LeaderHeads/Itzukuma/Suryavarman.nif</NIF>
 			<KFM>art/LeaderHeads/Itzukuma/Suryavarman.kfm</KFM>
@@ -502,13 +502,85 @@
 			<NoShaderNIF>art/LeaderHeads/Zapotec/Cosijoeza/akhenaten.nif</NoShaderNIF>
 			<BackgroundKFM>art/LeaderHeads/Cosijoeza/Gilgamesh_Backgrndkfm.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
+        <LeaderheadArtInfo>
+            <Type>ART_DEF_LEADER_ERENDIRA</Type>
+            <Button>,Art/leaderheads/Erindira/Erendira.dds</Button>
+            <NIF>Art/leaderheads/Erindira/Atotoztli.nif</NIF>
+            <KFM>Art/leaderheads/Erindira/Atotoztli.kfm</KFM>
+			<NoShaderNIF>Art/leaderheads/Erindira/Atotoztli.nif</NoShaderNIF>
+            <BackgroundKFM>Art/leaderheads/Erindira/Atotoztli_BG.kfm</BackgroundKFM>
+        </LeaderheadArtInfo>
+        <LeaderheadArtInfo>
+            <Type>ART_DEF_LEADER_OCONOSTOTA</Type>
+            <Button>,Art/Colonization_Civilizations_Leaders.dds,3,2</Button>
+            <NIF>art/LeaderHeads/Cunne_Shote/Cunne_Shote.nif</NIF>
+            <KFM>art/LeaderHeads/Cunne_Shote/Cunne_Shote.kfm</KFM>
+			<NoShaderNIF>art/LeaderHeads/Cunne_Shote/Cunne_Shote.nif</NoShaderNIF>
+            <BackgroundKFM>Art/LeaderHeads/Cunne_Shote/Cunne_Shote_BG.kfm</BackgroundKFM>
+        </LeaderheadArtInfo>
 		<LeaderheadArtInfo>
-			<Type>ART_DEF_LEADER_TARIACURI</Type>
-			<Button>Art/Leaderheads/Tezcatlipoca/Itzcoatl.dds</Button>
-			<NIF>Art/Leaderheads/Tezcatlipoca/Arawak.nif</NIF>
-			<KFM>Art/Leaderheads/Tezcatlipoca/Arawak.kfm</KFM>
-			<NoShaderNIF>Art/Leaderheads/Tezcatlipoca/Arawak.nif</NoShaderNIF>
-			<BackgroundKFM>Art/Leaderheads/Tezcatlipoca/Arawak_BG.kfm</BackgroundKFM>
+			<Type>ART_DEF_LEADER_LEIF_ERIKSON</Type>
+			<Button>Art/Leaderheads/Canute/Knut.dds</Button>
+			<NIF>Art/Leaderheads/Canute/ragnar_lodbrok.nif</NIF>
+			<KFM>Art/Leaderheads/Canute/ragnar_lodbrok.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Canute/ragnar_lodbrok_noshader.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Canute/brennus_BG.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_TACAYNAMO</Type>
+			<Button>Art/Leaderheads/Nancempinco/btn_lh_nancempinco.dds</Button>
+			<NIF>Art/Leaderheads/Nancempinco/pacal.nif</NIF>
+			<KFM>Art/Leaderheads/Nancempinco/pacal2.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Nancempinco/pacal.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Nancempinco/pacal_bg2.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_XOC</Type>
+			<Button>Art/Leaderheads/Xoc/Button_Xoc.dds</Button>
+			<NIF>Art/Leaderheads/Xoc/Yohl.nif</NIF>
+			<KFM>Art/Leaderheads/Xoc/Yohl.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Xoc/Yohl.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Xoc/Yohl_bg.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_TUSKALOOSA</Type>
+			<Button>Art/Leaderheads/Thayendanegea/Button_Thayendanegea.dds</Button>
+			<NIF>Art/Leaderheads/Thayendanegea/Tachnechobrus.nif</NIF>
+			<KFM>Art/Leaderheads/Thayendanegea/Tachnechobrus.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Thayendanegea/Tachnechobrus.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Thayendanegea/Tachnechobrus_Background.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_KOCHININAKO</Type>
+			<Button>Art/Leaderheads/Kochininako/Button_Kochininako.dds</Button>
+			<NIF>Art/Leaderheads/Kochininako/Awiakta.nif</NIF>
+			<KFM>Art/Leaderheads/Kochininako/Awiakta.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Kochininako/Awiakta.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Kochininako/zenobia_BG.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_POPAY</Type>
+			<Button>Art/Leaderheads/Popay/Button_Popay.dds</Button>
+			<NIF>Art/Leaderheads/Popay/Brotherhood.nif</NIF>
+			<KFM>Art/Leaderheads/Popay/ramassesii.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Popay/Brotherhood.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Popay/kublai_khan_bg.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_MANGAS_COLORADAS</Type>
+			<Button>Art/Leaderheads/Crazy Horse/Crazy Horse.dds</Button>
+			<NIF>Art/Leaderheads/Crazy Horse/Cochise.nif</NIF>
+			<KFM>Art/Leaderheads/Crazy Horse/cochise.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Crazy Horse/Cochise.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Crazy Horse/cochise_bg.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_CUNHAMBEBE</Type>
+			<Button>Art/LeaderHeads/Cunhambebe/Button_Cunhambebe.dds</Button>
+			<NIF>Art/LeaderHeads/Cunhambebe/Cunhambebe.nif</NIF>
+			<KFM>Art/LeaderHeads/Cunhambebe/Cunhambebe.kfm</KFM>
+			<NoShaderNIF>Art/LeaderHeads/Cunhambebe/Cunhambebe.nif</NoShaderNIF>
+			<BackgroundKFM>Art/LeaderHeads/Cunhambebe/Cunhambebe_BG.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

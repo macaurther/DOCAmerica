@@ -15,34 +15,37 @@ START_HISTORY = -500
 
 LEADER_DATES = {
 	# Maya
-	iPacal: 100,
+	iPacal: 600,
+	iXoc: 750,
 	# Zapotec
-	iCosijoeza: 300,
+	iCosijoeza: 1450,
 	# Teotihuacan
-	iAtlatlCauac: -100,
+	iAtlatlCauac: 350,
 	# Tiwanaku
 	iMalkuHuyustus: 110,
 	# Wari
 	iWariCapac: 500,
 	# Mississippi
-	iRedHorn: 500,
+	iUwahcil: 1000,
+	iTuskaloosa: 1500,
 	# Puebloan
-	iItzukuma: 750,
+	iKochininako: 750,
+	iPopay: 1650,
 	# Muisca
-	iSaguamanchica: 750,
+	iSaguamanchica: 1450,
 	# Norse
-	iRagnar: 1000,
+	iLiefErickson: 1000,
 	iGustav: 1600,
 	iGerhardsen: 1940,
 	# Chimu
-	iTacaynamo: 1000,
+	iTacaynamo: 800,
 	# Inuit
 	iAua: 1000,
 	# Inca
-	iHuaynaCapac: 1400,
-	iPachacuti: 1500,
+	iPachacuti: 1400,
+	iHuaynaCapac: 1500,
 	# Purepecha
-	iTariacuri: 1150,
+	iErendira: 1150,
 	# Aztecs
 	iMontezuma: 1440,
 	# Iroquois
@@ -81,28 +84,32 @@ LEADER_DATES = {
 	iKennedy: 1960,
 	iReagan: 1980,
 	iObama: 2000,
+
 	# Haiti
 	iLOuverture: 1800,
-	# Bolivia
 	
 	# Argentina
 	iSanMartin: 1820,
 	iPeron: 1950,
+
 	# Mexico
 	iJuarez: 1860,
 	iSantaAnna: 1850,
 	iCardenas: 1940,
+
 	# Colombia
 	iBolivar: 1820,
-	# Chile
 	
 	# Peru
 	iCastilla: 1820,
+
 	# Venezuela
 	iChavez: 1980,
+	
 	# Brazil
 	iPedro: 1840,
 	iVargas: 1930,
+	
 	# Canada
 	iMacDonald: 1870,
 	iTrudeau: 1970,

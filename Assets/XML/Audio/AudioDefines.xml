@@ -1631,244 +1631,6 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>DIPLO_ASOKA_EARLY_INTRO</SoundID>
-			<Filename>Sounds/Diplomacy/Asoka_Early_Intro</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_ASOKA_EARLY_LP</SoundID>
-			<Filename>Sounds/Diplomacy/Asoka_Early_Lp</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_ASOKA_MIDDLE_INTRO</SoundID>
-			<Filename>Sounds/Diplomacy/Asoka_Middle_Intro</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_ASOKA_MIDDLE_LP</SoundID>
-			<Filename>Sounds/Diplomacy/Asoka_Middle_Lp</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_ASOKA_LATE_INTRO</SoundID>
-			<Filename>Sounds/Diplomacy/Asoka_Late_Intro</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_ASOKA_LATE_LP</SoundID>
-			<Filename>Sounds/Diplomacy/Asoka_Late_Lp</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_GANDHI_EARLY_INTRO</SoundID>
-			<Filename>Sounds/Diplomacy/Gandhi_Early_Intro</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_GANDHI_EARLY_LP</SoundID>
-			<Filename>Sounds/Diplomacy/Gandhi_Early_Lp</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_GANDHI_MIDDLE</SoundID>
-			<Filename>Sounds/Diplomacy/Gandhi_Middle</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_GANDHI_LATE</SoundID>
-			<Filename>Sounds/Diplomacy/Gandhi_Late</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_TOKUGAWA_EARLY_INTRO</SoundID>
-			<Filename>Sounds/Diplomacy/Tokugawa_Early_Intro</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_TOKUGAWA_EARLY_LP</SoundID>
-			<Filename>Sounds/Diplomacy/Tokugawa_Early_Lp</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_TOKUGAWA_MIDDLE</SoundID>
-			<Filename>Sounds/Diplomacy/Tokugawa_Middle</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_TOKUGAWA_LATE</SoundID>
-			<Filename>Sounds/Diplomacy/Tokugawa_Late</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_MANSAMUSA_EARLY</SoundID>
-			<Filename>Sounds/Diplomacy/MansaMusa_Early</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_MANSAMUSA_MIDDLE</SoundID>
-			<Filename>Sounds/Diplomacy/MansaMusa_Middle</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_MANSAMUSA_LATE</SoundID>
-			<Filename>Sounds/Diplomacy/MansaMusa_Late</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_GENGHISKHAN_EARLY_INTRO</SoundID>
-			<Filename>Sounds/Diplomacy/GenghisKahn_Early_Intro</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_GENGHISKHAN_EARLY_LP</SoundID>
-			<Filename>Sounds/Diplomacy/GenghisKahn_Early_Lp</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_GENGHISKHAN_MIDDLE</SoundID>
-			<Filename>Sounds/Diplomacy/GenghisKahn_Middle</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_GENGHISKHAN_LATE_INTRO</SoundID>
-			<Filename>Sounds/Diplomacy/GenghisKahn_Late_Intro</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_GENGHISKHAN_LATE_LP</SoundID>
-			<Filename>Sounds/Diplomacy/GenghisKahn_Late_Lp</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_KUBLAIKHAN_EARLY_INTRO</SoundID>
-			<Filename>Sounds/Diplomacy/GenghisKahn_Early_Intro</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_KUBLAIKHAN_EARLY_LP</SoundID>
-			<Filename>Sounds/Diplomacy/GenghisKahn_Early_Lp</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_KUBLAIKHAN_MIDDLE</SoundID>
-			<Filename>Sounds/Diplomacy/GenghisKahn_Middle</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_KUBLAIKHAN_LATE_INTRO</SoundID>
-			<Filename>Sounds/Diplomacy/GenghisKahn_Late_Intro</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_KUBLAIKHAN_LATE_LP</SoundID>
-			<Filename>Sounds/Diplomacy/GenghisKahn_Late_Lp</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_CYRUS_EARLY</SoundID>
-			<Filename>Sounds/Diplomacy/Cyrus_Early</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_CYRUS_MIDDLE</SoundID>
-			<Filename>Sounds/Diplomacy/Cyrus_Middle</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_CYRUS_LATE_INTRO</SoundID>
-			<Filename>Sounds/Diplomacy/Cyrus_Late_Intro</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_CYRUS_LATE_LP</SoundID>
-			<Filename>Sounds/Diplomacy/Cyrus_Late_Lp</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_CAESAR_EARLY</SoundID>
-			<Filename>Sounds/Diplomacy/Caesar_Early</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_CAESAR_MIDDLE</SoundID>
-			<Filename>Sounds/Diplomacy/Caesar_Middle</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_CAESAR_LATE</SoundID>
-			<Filename>Sounds/Diplomacy/Caesar_Late</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
 			<SoundID>DIPLO_PETER_EARLY_INTRO</SoundID>
 			<Filename>Sounds/Diplomacy/Peter_Early_Intro</Filename>
 			<LoadType>STREAMED</LoadType>
@@ -1997,41 +1759,6 @@
 		<SoundData>
 			<SoundID>DIPLO_HANNIBAL_EARLY</SoundID>
 			<Filename>Sounds/Diplomacy/Hannibal_Early</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_HANNIBAL_MIDDLE</SoundID>
-			<Filename>Sounds/Diplomacy/Hannibal_Middle</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_HANNIBAL_LATE</SoundID>
-			<Filename>Sounds/Diplomacy/Hannibal_Late</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_BRENNUS_EARLY</SoundID>
-			<Filename>Sounds/Diplomacy/Brennus_Early</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_BRENNUS_MIDDLE</SoundID>
-			<Filename>Sounds/Diplomacy/Brennus_Middle</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>DIPLO_BRENNUS_LATE</SoundID>
-			<Filename>Sounds/Diplomacy/Brennus_Late</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
@@ -10164,7 +9891,7 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>DIPLO_PUEBLOAN</SoundID>
+			<SoundID>DIPLO_MAGNAS_COLORADAS</SoundID>
 			<Filename>Sounds/Diplomacy/MangasColoradas</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
@@ -10199,14 +9926,42 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>DIPLO_TOLTEC</SoundID>
+			<Filename>Sounds/Diplomacy/Algonquian</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>DIPLO_TIWANAKU</SoundID>
-			<Filename>Sounds/Diplomacy/Cunhambebe</Filename>
+			<Filename>Sounds/Diplomacy/Navajo</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
 			<SoundID>DIPLO_WARI</SoundID>
+			<Filename>Sounds/Diplomacy/Machiparo</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_CUNHAMBEBE</SoundID>
+			<Filename>Sounds/Diplomacy/Cunhambebe</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_AGUEYBANA</SoundID>
+			<Filename>Sounds/Diplomacy/Agueybana</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_OCONOSTOTA</SoundID>
 			<Filename>Sounds/Diplomacy/Oconostota</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
@@ -10234,8 +9989,43 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>DIPLO_MISSISSIPPI</SoundID>
-			<Filename>Sounds/Diplomacy/Huron</Filename>
+			<SoundID>DIPLO_MISSISSIPPI_EARLY</SoundID>
+			<Filename>Sounds/Diplomacy/tuskaloosa_early</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_MISSISSIPPI_MIDDLE</SoundID>
+			<Filename>Sounds/Diplomacy/tuskaloosa_middle</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_MISSISSIPPI_LATE</SoundID>
+			<Filename>Sounds/Diplomacy/tuskaloosa_late</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_PUEBLO_EARLY</SoundID>
+			<Filename>Sounds/Diplomacy/popay_early</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_PUEBLO_MIDDLE</SoundID>
+			<Filename>Sounds/Diplomacy/popay_middle</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_PUEBLO_LATE</SoundID>
+			<Filename>Sounds/Diplomacy/popay_late</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>

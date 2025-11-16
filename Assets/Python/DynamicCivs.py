@@ -160,14 +160,14 @@ dStartingLeaders = [
 	iTeotihuacan : iAtlatlCauac,
 	iTiwanaku : iMalkuHuyustus,
 	iWari : iWariCapac,
-	iMississippi : iRedHorn,
-	iPuebloan : iItzukuma,
+	iMississippi : iUwahcil,
+	iPuebloan : iKochininako,
 	iMuisca : iSaguamanchica,
-	iNorse : iRagnar,
+	iNorse : iLiefErickson,
 	iChimu : iTacaynamo,
 	iInuit : iAua,
-	iInca : iHuaynaCapac,
-	iPurepecha : iTariacuri,
+	iInca : iPachacuti,
+	iPurepecha : iErendira,
 	iAztecs : iMontezuma,
 	iHaudenosaunee : iHiawatha,
 	iLakota : iSittingBull,
@@ -190,14 +190,20 @@ dStartingLeaders = [
 },
 # 1500 AD
 {
+	iMaya : iXoc,
+	iMississippi : iTuskaloosa,
+	iPuebloan : iPopay,
+	iNorse : iGustav,
+	iInca : iHuaynaCapac,
 },
 # 1750 AD
 {
+	iNorse : iGerhardsen,
 	iSpain : iPhilip,
-	iFrance : iLouis,
+	iPortugal : iMaria,
 	iEngland : iVictoria,
+	iFrance : iNapoleon,
 	iNetherlands : iWilliam,
-	iPortugal : iJoao,
 }]
 
 ### Event handlers

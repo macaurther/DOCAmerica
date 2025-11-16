@@ -328,7 +328,7 @@ class CvPediaTech(CvPediaScreen.CvPediaScreen):
 		if TechInfo.getGridX() == 2 and TechInfo.getGridY() == 3:
 			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_MOUNTAINPASS").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 		# Linguistics, Localization: Tribe contact discount
-		elif (TechInfo.getGridX() == 1 and TechInfo.getGridY() == 7) or (TechInfo.getGridX() == 2 and TechInfo.getGridY() == 7):
+		elif (TechInfo.getGridX() == 1 and TechInfo.getGridY() == 9) or (TechInfo.getGridX() == 2 and TechInfo.getGridY() == 9):
 			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CHEAP_CONTACT").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 		# Community, Civil Liberties, Globalism: Extra population on city founding
 		elif (TechInfo.getGridX() == 12 and TechInfo.getGridY() == 9) or (TechInfo.getGridX() == 17 and TechInfo.getGridY() == 13) or (TechInfo.getGridX() == 21 and TechInfo.getGridY() == 11):

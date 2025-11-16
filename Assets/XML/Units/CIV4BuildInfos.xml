@@ -181,7 +181,7 @@
 		<BuildInfo>
 			<Type>BUILD_FISHING_BOATS</Type>
 			<Description>TXT_KEY_BUILD_FISHING_BOATS</Description>
-			<PrereqTech>TECH_SEAFARING</PrereqTech>
+			<PrereqTech>TECH_NAVIGATION</PrereqTech>
 			<iTime>0</iTime>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
