@@ -1,0 +1,215 @@
+Platy Builder
+Version=11
+BeginGame
+	Calendar=CALENDAR_DEFAULT
+	Option=GAMEOPTION_AGGRESSIVE_AI
+	Option=GAMEOPTION_NO_TECH_BROKERING
+	GameTurn=0
+	StartYear=0
+	Description=TXT_KEY_RHYES_WB_DESC
+	ModPath=Mods\DOCAmerica
+EndGame
+
+BeginMap
+EndMap
+
+BeginPlot
+	x=32,y=65
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDEPENDENT1
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_INDEPENDENT1
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_INDEPENDENT1
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_INDEPENDENT1
+		CityName=Palenque
+		CityPopulation=2
+		YearFounded=-450
+		BeginCulture
+			Civilization=CIVILIZATION_INDEPENDENT1, Culture=10
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=35,y=62
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDEPENDENT1
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_INDEPENDENT1
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_INDEPENDENT1
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_INDEPENDENT1
+		CityName=Copan
+		CityPopulation=2
+		YearFounded=-400
+		BeginCulture
+			Civilization=CIVILIZATION_INDEPENDENT1, Culture=10
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=36,y=69
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDEPENDENT1
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_INDEPENDENT1
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_INDEPENDENT1
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_INDEPENDENT1
+		CityName=Chichen Itza
+		CityPopulation=1
+		YearFounded=-250
+		BeginCulture
+			Civilization=CIVILIZATION_INDEPENDENT1, Culture=10
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=25,y=69
+	BeginUnit
+		UnitType=UNIT_WARRIOR
+		UnitOwner=CIVILIZATION_TEOTIHUACAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_TEOTIHUACAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_TEOTIHUACAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_TEOTIHUACAN_ARTISAN
+		UnitOwner=CIVILIZATION_TEOTIHUACAN
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_TEOTIHUACAN
+		CityName=Teotihuacan
+		CityPopulation=3
+		YearFounded=-200
+		BuildingType=BUILDING_PALACE
+		BeginCulture
+			Civilization=CIVILIZATION_TEOTIHUACAN, Culture=10
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=28,y=64
+	BeginUnit
+		UnitType=UNIT_WARRIOR
+		UnitOwner=CIVILIZATION_ZAPOTEC
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_ZAPOTEC
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_ZAPOTEC
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_ZAPOTEC
+		CityName=Danibaan
+		CityPopulation=2
+		YearFounded=-500
+		BuildingType=BUILDING_PALACE
+		BeginCulture
+			Civilization=CIVILIZATION_ZAPOTEC, Culture=50
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=28,y=67
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_INDIGENOUS
+		CityName=La Venta
+		CityPopulation=1
+		YearFounded=-1800
+		BeginCulture
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=10
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=34,y=65
+	BeginUnit
+		UnitType=UNIT_WARRIOR
+		UnitOwner=CIVILIZATION_MAYA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_MAYA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_MAYA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitOwner=CIVILIZATION_MAYA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MAYA
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_MAYA
+		CityName=Tikal
+		CityPopulation=4
+		YearFounded=-1000
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_TEOTL_STEP_PYRAMID
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_KILN
+		BeginCulture
+			Civilization=CIVILIZATION_MAYA, Culture=100
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=82,y=0
+	BeginCity
+		CityOwner=CIVILIZATION_INDEPENDENT3
+		CityName=Holy City
+		CityPopulation=1
+		BuildingType=BUILDING_CAPITOL
+		YearFounded=-3000
+		YearAcquired=-3000
+		PreviousOwner=CIVILIZATION_INDEPENDENT3
+		HolyCityReligionType=RELIGION_JUDAISM
+		HolyCityReligionType=RELIGION_HINDUISM
+		HolyCityReligionType=RELIGION_BUDDHISM
+		BeginCulture
+			Civilization=CIVILIZATION_INDEPENDENT3, Culture=10
+		EndCulture
+	EndCity
+EndPlot

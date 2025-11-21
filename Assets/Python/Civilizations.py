@@ -210,13 +210,6 @@ class Civilization(object):
 
 lCivilizations = [
 	Civilization(
-		iTeotihuacan,
-		iGold=50,
-		lCivics=[iTlacotin, iRedistribution],
-		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iMining, iSmelting, iMythology),
-		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting),
-	),
-	Civilization(
 		iTiwanaku,
 		iGold=50,
 		techs=techs.column(2).including(iAgriculture, iPottery, iPastoralism, iMythology, iArithmetics, iMining, iMasonry),

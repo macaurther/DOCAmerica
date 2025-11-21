@@ -469,7 +469,7 @@ def scenarioStartTurn():
 
 
 def scenarioStartYear():
-	lStartYears = [-500, 1500, 1750]
+	lStartYears = [0, 1500, 1750]
 	return lStartYears[scenario()]
 
 
@@ -1742,7 +1742,7 @@ class PlayerFactory:
 		return self.civs(*dCivGroups[iGroup])
 		
 	def independent(self):
-		return self.civs(iIndependent, iIndependent2, iIndependent3)
+		return self.civs(iIndependent1, iIndependent2, iIndependent3)
 		
 	def barbarian(self):
 		return self.civs(iBarbarian)

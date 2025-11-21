@@ -38,33 +38,6 @@
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>,Art/Interface/Buttons/TechTree/Hunting.dds,Art/Interface/Buttons/TechTree_Atlas.dds,7,4</Button>
 		</TechInfo>
-
-		<TechInfo>
-			<Type>TECH_LANDMARKS</Type>
-			<Description>TXT_KEY_TECH_LANDMARKS</Description>
-			<Civilopedia>TXT_KEY_TECH_LANDMARKS_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<iCost>40</iCost>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_ANCIENT</Era>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
-			<iCultureGroup>0</iCultureGroup>
-			<bTrade>1</bTrade>
-			<bGoodyTech>1</bGoodyTech>
-			<iGridX>1</iGridX>
-			<iGridY>3</iGridY>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-					<iFlavor>4</iFlavor>
-				</Flavor>
-			</Flavors>
-			<Quote>TXT_KEY_TECH_LANDMARKS_QUOTE</Quote>
-			<Sound>AS2D_TECH_GENERIC</Sound>
-			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Landmarks.dds</Button>
-		</TechInfo>
 		
 		<TechInfo>
 			<Type>TECH_IRRIGATION</Type>
@@ -80,7 +53,7 @@
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>1</iGridX>
-			<iGridY>5</iGridY>
+			<iGridY>3</iGridY>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -91,6 +64,37 @@
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>,Art/Interface/Buttons/TechTree/Irrigation.dds,Art/Interface/Buttons/mem_techtree_atlas.dds,3,2</Button>
+		</TechInfo>
+
+		<TechInfo>
+			<Type>TECH_HERBALISM</Type>
+			<Description>TXT_KEY_TECH_HERBALISM</Description>
+			<Civilopedia>TXT_KEY_TECH_HERBALISM_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<iCost>60</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<Era>ERA_ANCIENT</Era>
+			<iAsset>4</iAsset>
+			<iPower>4</iPower>
+			<iCultureGroup>0</iCultureGroup>
+			<bTrade>1</bTrade>
+			<bGoodyTech>1</bGoodyTech>
+			<iGridX>1</iGridX>
+			<iGridY>5</iGridY>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>4</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+			</Flavors>
+			<Quote>TXT_KEY_TECH_HERBALISM_QUOTE</Quote>
+			<Sound>AS2D_TECH_GENERIC</Sound>
+			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
+			<Button>Art/Interface/Buttons/TechTree/Herbalism.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -149,10 +153,10 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_KNAPPING</Type>
-			<Description>TXT_KEY_TECH_KNAPPING</Description>
-			<Civilopedia>TXT_KEY_TECH_KNAPPING_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Type>TECH_LANDMARKS</Type>
+			<Description>TXT_KEY_TECH_LANDMARKS</Description>
+			<Civilopedia>TXT_KEY_TECH_LANDMARKS_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -165,14 +169,14 @@
 			<iGridY>11</iGridY>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
-			<Quote>TXT_KEY_TECH_KNAPPING_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_LANDMARKS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Knapping.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Landmarks.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -244,12 +248,11 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_PATHFINDING</Type>
-			<Description>TXT_KEY_TECH_PATHFINDING</Description>
-			<Civilopedia>TXT_KEY_TECH_PATHFINDING_PEDIA</Civilopedia>
-			<Help>TXT_KEY_TECH_PATHFINDING_HELP</Help>
-			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<iCost>60</iCost>
+			<Type>TECH_KNAPPING</Type>
+			<Description>TXT_KEY_TECH_KNAPPING</Description>
+			<Civilopedia>TXT_KEY_TECH_KNAPPING_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
@@ -261,22 +264,14 @@
 			<iGridY>3</iGridY>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
 					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
-			<AndPreReqs>
-				<PrereqTech>TECH_HUNTING</PrereqTech>
-				<PrereqTech>TECH_LANDMARKS</PrereqTech>
-			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_PATHFINDING_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_KNAPPING_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Pathfinding.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Knapping.dds</Button>
 		</TechInfo>
 		
 		<TechInfo>
@@ -306,7 +301,6 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_IRRIGATION</PrereqTech>
-				<PrereqTech>TECH_LANDMARKS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_EARTHWORKS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -336,7 +330,7 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_IRRIGATION</PrereqTech>
+				<PrereqTech>TECH_HERBALISM</PrereqTech>
 				<PrereqTech>TECH_CULTIVATION</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_COMPANION_PLANTING_QUOTE</Quote>
@@ -377,10 +371,11 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_HERBALISM</Type>
-			<Description>TXT_KEY_TECH_HERBALISM</Description>
-			<Civilopedia>TXT_KEY_TECH_HERBALISM_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Type>TECH_PATHFINDING</Type>
+			<Description>TXT_KEY_TECH_PATHFINDING</Description>
+			<Civilopedia>TXT_KEY_TECH_PATHFINDING_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_PATHFINDING_HELP</Help>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -394,20 +389,23 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>4</iFlavor>
+					<iFlavor>2</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-					<iFlavor>2</iFlavor>
+					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
+			<OrPreReqs>
+				<PrereqTech>TECH_HUNTING</PrereqTech>
+			</OrPreReqs>
 			<AndPreReqs>
-				<PrereqTech>TECH_KNAPPING</PrereqTech>
+				<PrereqTech>TECH_LANDMARKS</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_HERBALISM_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_PATHFINDING_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Herbalism.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Pathfinding.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -468,9 +466,12 @@
 					<iFlavor>2</iFlavor>
 				</Flavor>
 			</Flavors>
+			<OrPreReqs>
+				<PrereqTech>TECH_PATHFINDING</PrereqTech>
+			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_TRAPPING</PrereqTech>
-				<PrereqTech>TECH_PATHFINDING</PrereqTech>
+				<PrereqTech>TECH_KNAPPING</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_TANNING_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -502,9 +503,12 @@
 					<iFlavor>2</iFlavor>
 				</Flavor>
 			</Flavors>
-			<AndPreReqs>
+			<OrPreReqs>
 				<PrereqTech>TECH_PATHFINDING</PrereqTech>
+			</OrPreReqs>
+			<AndPreReqs>
 				<PrereqTech>TECH_EARTHWORKS</PrereqTech>
+				<PrereqTech>TECH_KNAPPING</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_MINING_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -603,6 +607,9 @@
 					<iFlavor>3</iFlavor>
 				</Flavor>
 			</Flavors>
+			<AndPreReqs>
+				<PrereqTech>TECH_PATHFINDING</PrereqTech>
+			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_PASTORALISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
@@ -633,10 +640,9 @@
 					<iFlavor>3</iFlavor>
 				</Flavor>
 			</Flavors>
-			<AndPreReqs>
-				<PrereqTech>TECH_LOCALIZATION</PrereqTech>
+			<OrPreReqs>
 				<PrereqTech>TECH_HERBALISM</PrereqTech>
-			</AndPreReqs>
+			</OrPreReqs>
 			<Quote>TXT_KEY_TECH_MYTHOLOGY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
@@ -670,6 +676,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_FISHING</PrereqTech>
+				<PrereqTech>TECH_PATHFINDING</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_DUGOUTS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -828,7 +835,6 @@
 				<PrereqTech>TECH_POTTERY</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs>
-				<PrereqTech>TECH_PASTORALISM</PrereqTech>
 				<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_ARITHMETICS_QUOTE</Quote>
@@ -871,7 +877,6 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
-				<PrereqTech>TECH_PASTORALISM</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_CEREMONY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -942,9 +947,6 @@
 					<iFlavor>3</iFlavor>
 				</Flavor>
 			</Flavors>
-			<OrPreReqs>
-				<PrereqTech>TECH_PATHFINDING</PrereqTech>
-			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_DUGOUTS</PrereqTech>
 			</AndPreReqs>

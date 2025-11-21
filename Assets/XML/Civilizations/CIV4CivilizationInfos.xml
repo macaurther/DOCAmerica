@@ -1780,7 +1780,7 @@
 			<Identifier>MAY</Identifier>
 			<Region>MES</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>-500</StartingYear>
+			<StartingYear>1</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -3178,7 +3178,7 @@
 			<Identifier>TEO</Identifier>
 			<Region>MES</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>-200</StartingYear>
+			<StartingYear>1</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>5</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -3560,7 +3560,7 @@
 			<Identifier>ZAP</Identifier>
 			<Region>MES</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>-500</StartingYear>
+			<StartingYear>1</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -3657,14 +3657,15 @@
 			<CivilizationActionSound>AS3D_AZTEC_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
-			<Type>CIVILIZATION_INDEPENDENT</Type>
+			<Type>CIVILIZATION_INDEPENDENT1</Type>	<!-- Used for urban independent natives -->
 			<Description>TXT_KEY_CIV_INDEPENDENT_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_INDEPENDENT_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_INDEPENDENT_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_INDEPENDENT_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY1</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_INDEPENDENT</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE_AMERICA</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<Identifier>MIN</Identifier>
 			<Region>MIN</Region>
 			<StartingYear>0</StartingYear>
@@ -3849,12 +3850,12 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_INDEPENDENT2</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_INDIGENOUS</DerivativeCiv>
 			<CivilizationSelectionSound/>
 			<CivilizationActionSound/>
 		</CivilizationInfo>
 		<CivilizationInfo>
-			<Type>CIVILIZATION_INDEPENDENT2</Type>
+			<Type>CIVILIZATION_INDEPENDENT2</Type>	<!-- Used for independent colonies/nations -->
 			<Description>TXT_KEY_CIV_INDEPENDENT_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_INDEPENDENT_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_INDEPENDENT_ADJECTIVE</Adjective>
@@ -3991,12 +3992,12 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_INDEPENDENT</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_INDEPENDENT3</DerivativeCiv>
 			<CivilizationSelectionSound/>
 			<CivilizationActionSound/>
 		</CivilizationInfo>
 		<CivilizationInfo>
-			<Type>CIVILIZATION_INDEPENDENT3</Type>
+			<Type>CIVILIZATION_INDEPENDENT3</Type>	<!-- Used for Holy City -->
 			<Description>TXT_KEY_CIV_INDEPENDENT_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_INDEPENDENT_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_INDEPENDENT_ADJECTIVE</Adjective>
@@ -4126,12 +4127,12 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_INDEPENDENT</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_INDEPENDENT2</DerivativeCiv>
 			<CivilizationSelectionSound/>
 			<CivilizationActionSound/>
 		</CivilizationInfo>
 		<CivilizationInfo>
-			<Type>CIVILIZATION_INDIGENOUS</Type>
+			<Type>CIVILIZATION_INDIGENOUS</Type>	<!-- Used for non-urban independent natives -->
 			<Description>TXT_KEY_CIV_NATIVE_AMERICA_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_INDIGENOUS_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_INDIGENOUS_ADJECTIVE</Adjective>

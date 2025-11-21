@@ -35,12 +35,8 @@
 			<iVictoryDelayPercent>300</iVictoryDelayPercent>
 			<GameTurnInfos>
 				<GameTurnInfo>
-					<iMonthIncrement>80</iMonthIncrement>
-					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 1000 -->
-				</GameTurnInfo>
-				<GameTurnInfo>
 					<iMonthIncrement>40</iMonthIncrement>
-					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 500 -->
+					<iTurnsPerIncrement>300</iTurnsPerIncrement> <!-- 300 = 1000 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>20</iMonthIncrement>
@@ -48,17 +44,17 @@
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>8</iMonthIncrement>
-					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 100 -->
+					<iTurnsPerIncrement>300</iTurnsPerIncrement> <!-- 300 = 200 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>6</iMonthIncrement>
-					<iTurnsPerIncrement>600</iTurnsPerIncrement> <!-- 600 = 300 -->
+					<iTurnsPerIncrement>300</iTurnsPerIncrement> <!-- 300 = 150 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>4</iMonthIncrement>
-					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 50 -->
+					<iTurnsPerIncrement>300</iTurnsPerIncrement> <!-- 300 = 100 -->
 				</GameTurnInfo>
-				<!-- 1500 turns = 2450 years -->
+				<!-- 1500 turns = 1950 years -->
 			</GameTurnInfos>
 		</GameSpeedInfo>
 		<GameSpeedInfo>
@@ -89,12 +85,8 @@
 			<iVictoryDelayPercent>150</iVictoryDelayPercent>
 			<GameTurnInfos>
 				<GameTurnInfo>
-					<iMonthIncrement>160</iMonthIncrement>
-					<iTurnsPerIncrement>75</iTurnsPerIncrement> <!-- 75 = 1000 -->
-				</GameTurnInfo>
-				<GameTurnInfo>
 					<iMonthIncrement>80</iMonthIncrement>
-					<iTurnsPerIncrement>75</iTurnsPerIncrement> <!-- 75 = 500 -->
+					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 1000 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>40</iMonthIncrement>
@@ -102,17 +94,17 @@
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>16</iMonthIncrement>
-					<iTurnsPerIncrement>75</iTurnsPerIncrement> <!-- 75 = 100 -->
+					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 200 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>300</iTurnsPerIncrement> <!-- 300 = 300 -->
+					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 150 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>8</iMonthIncrement>
-					<iTurnsPerIncrement>75</iTurnsPerIncrement> <!-- 75 = 50 -->
+					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 100 -->
 				</GameTurnInfo>
-				<!-- 750 turns = 2450 years -->
+				<!-- 750 turns = 1950 years -->
 			</GameTurnInfos>
 		</GameSpeedInfo>
 		<GameSpeedInfo>
@@ -143,12 +135,8 @@
 			<iVictoryDelayPercent>100</iVictoryDelayPercent>
 			<GameTurnInfos>
 				<GameTurnInfo>
-					<iMonthIncrement>240</iMonthIncrement>
-					<iTurnsPerIncrement>50</iTurnsPerIncrement> <!-- 50 = 1000 -->
-				</GameTurnInfo>
-				<GameTurnInfo>
 					<iMonthIncrement>120</iMonthIncrement>
-					<iTurnsPerIncrement>50</iTurnsPerIncrement> <!-- 50 = 500 -->
+					<iTurnsPerIncrement>100</iTurnsPerIncrement> <!-- 100 = 1000 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>60</iMonthIncrement>
@@ -156,17 +144,17 @@
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>24</iMonthIncrement>
-					<iTurnsPerIncrement>50</iTurnsPerIncrement> <!-- 50 = 100 -->
+					<iTurnsPerIncrement>100</iTurnsPerIncrement> <!-- 100 = 200 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>18</iMonthIncrement>
-					<iTurnsPerIncrement>200</iTurnsPerIncrement> <!-- 200 = 300 -->
+					<iTurnsPerIncrement>100</iTurnsPerIncrement> <!-- 100 = 150 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>50</iTurnsPerIncrement> <!-- 50 = 50 -->
+					<iTurnsPerIncrement>100</iTurnsPerIncrement> <!-- 200 = 100 -->
 				</GameTurnInfo>
-				<!-- 500 turns = 2450 years -->
+				<!-- 500 turns = 1950 years -->
 			</GameTurnInfos>
 		</GameSpeedInfo>
 	</GameSpeedInfos>

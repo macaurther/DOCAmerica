@@ -2427,7 +2427,7 @@ int getScenarioStartYear(ScenarioTypes eScenario)
 		eScenario = getScenario();
 	}
 
-	if (eScenario == SCENARIO_500BC) return -500;
+	if (eScenario == SCENARIO_1AD) return 0;
 	else if (eScenario == SCENARIO_1500AD) return 1500;
 	else return 1750;
 }

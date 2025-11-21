@@ -1469,8 +1469,8 @@ BeginPlot
 			Civilization=CIVILIZATION_ZAPOTEC, Culture=407
 			Civilization=CIVILIZATION_INDIGENOUS, Culture=742
 		EndCulture
-		YearFounded=-500
-		YearAcquired=1495
+		YearFounded=-400
+		YearAcquired=1100
 		PreviousOwner=CIVILIZATION_MAYA
 		PreviousOwner=CIVILIZATION_INDIGENOUS
 	EndCity
@@ -3490,8 +3490,8 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_INDEPENDENT3, Culture=1627
 		EndCulture
-		YearFounded=-500
-		YearAcquired=-500
+		YearFounded=1
+		YearAcquired=1
 		PreviousOwner=CIVILIZATION_INDEPENDENT3
 	EndCity
 EndPlot

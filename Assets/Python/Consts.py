@@ -18,7 +18,7 @@ iNumCivs = 38
 (iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iEngland, 		iFrance, 		iHaiti,			
 iHaudenosaunee,	iHawaii,		iInca,			iInuit,			iLakota,		iMaya,			iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	
 iNorse,			iPeru,			iPortugal, 		iPuebloan,		iPurepecha,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		
-iWari,			iZapotec,		iIndependent, 	iIndependent2, 	iIndependent3,	iIndigenous,	iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+iWari,			iZapotec,		iIndependent1, 	iIndependent2, 	iIndependent3,	iIndigenous,	iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 lBirthOrder = [
 	iMaya,
@@ -56,7 +56,7 @@ lBirthOrder = [
 ]
 
 lCivOrder = lBirthOrder + [
-	iIndependent,
+	iIndependent1,
 	iIndependent2,
 	iIndependent3,
 	iIndigenous,
@@ -214,9 +214,9 @@ lInfluences = [
 ]
 
 dBirth = CivDict({
-iMaya : -500,
-iZapotec : -500,
-iTeotihuacan : -200,
+iMaya : 0,
+iZapotec : 0,
+iTeotihuacan : 0,
 iTiwanaku : 110,
 iWari : 500,
 iMississippi : 600,
@@ -246,7 +246,7 @@ iPeru : 1822,
 iBrazil : 1822,
 iVenezuela : 1831,
 iCanada : 1867,
-}, -500)
+}, 0)
 
 lBirthCivs = dBirth.keys()
 
@@ -269,7 +269,7 @@ iSpain : 1850,
 iPortugal : 1850,
 iFrance : 1850,
 iLakota : 1875,
-}, 2000)
+}, 1950)
 
 # Leoreth: determine neighbour lists from pairwise neighbours for easier lookup
 dNeighbours = dictFromEdges(lBirthCivs, lNeighbours)
@@ -283,13 +283,13 @@ dResurrections = CivDict({
 dEnemyCivsOnSpawn = CivDict({
 iAztecs : [iTeotihuacan],
 iInca : [iTiwanaku, iWari],
-iAmerica : [iEngland, iHaudenosaunee, iIndependent, iIndependent2, iIndigenous],
+iAmerica : [iEngland, iHaudenosaunee, iIndependent1, iIndependent2, iIndigenous],
 iHaiti : [iFrance],
-iArgentina : [iSpain, iIndependent, iIndependent2],
-iMexico : [iSpain, iIndependent, iIndependent2],
-iColombia : [iSpain, iIndependent, iIndependent2],
-iPeru : [iSpain, iIndependent, iIndependent2],
-iBrazil : [iIndependent, iIndependent2],
+iArgentina : [iSpain, iIndependent1, iIndependent2],
+iMexico : [iSpain, iIndependent1, iIndependent2],
+iColombia : [iSpain, iIndependent1, iIndependent2],
+iPeru : [iSpain, iIndependent1, iIndependent2],
+iBrazil : [iIndependent1, iIndependent2],
 iVenezuela : [iColombia],
 }, [])
 
@@ -425,8 +425,8 @@ iNumCorporations = 8
 
 iNumTechs = 153
 #				2				3				4				5				6				7
-(iHunting,		iLandmarks,		iIrrigation,	iCultivation,	iLinguistics,	iKnapping,		iDiving,
-iTrapping,      iPathfinding,   iEarthworks,    iCompanionPlanting,iLocalization, iHerbalism,  	iFishing,
+(iHunting,		iIrrigation,	iHerbalism,  	iCultivation,	iLinguistics,	iLandmarks,		iDiving,
+iTrapping,      iKnapping,		iEarthworks,    iCompanionPlanting,iLocalization,iPathfinding,  iFishing,
 iTanning, 		iMining, 		iPottery, 		iAgriculture, 	iPastoralism, 	iMythology, 	iDugouts,
 iSmelting,      iMasonry,       iProperty,      iArithmetics,   iCeremony,      iDivination,    iNavigation,
 iGeneralship,	iConstruction,  iMathematics,   iAstronomy,     iWriting,       iPriesthood,    iTradeRoutes,

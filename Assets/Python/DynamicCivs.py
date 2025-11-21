@@ -151,7 +151,7 @@ dAdjectiveChanges = {
 dStartingLeaders = [
 # 500 BC
 {
-	iIndependent : iIndependentLeader,
+	iIndependent1 : iIndependentLeader,
 	iIndependent2 : iIndependentLeader,
 	iIndependent3 : iIndependentLeader,
 	iIndigenous : iNativeLeader,

@@ -23,7 +23,7 @@ typedef list<char*> LISTCHAR;
 #define BUILDINGCLASS_PALACE	  ((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_PALACE"))				// MacAurther
 
 #define UNIT_IMMIGRANT			  ((UnitTypes)GC.getInfoTypeForString("UNIT_IMMIGRANT"))							// MacAurther
-#define UNIT_TIWANAKU_SISQENO	  ((UnitTypes)GC.getInfoTypeForString("UNIT_TIWANAKU_SISQENO"))						// MacAurther
+#define UNIT_TIWANAKU_SISQENO	  ((UnitTypes)GC.getInfoTypeForString("UNIT_TIWANAKU_SISQENO"))						// MacAurther Todo: Not needed?
 #define UNIT_HAWAIIAN_WAA_KAULUA  ((UnitTypes)GC.getInfoTypeForString("UNIT_HAWAIIAN_WAA_KAULUA"))					// MacAurther
 #define UNIT_AMERICAN_AGENT		  ((UnitTypes)GC.getInfoTypeForString("UNIT_AMERICAN_AGENT"))						// MacAurther
 #define UNIT_CANNON				  ((UnitTypes)GC.getInfoTypeForString("UNIT_CANNON"))								// MacAurther

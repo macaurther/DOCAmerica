@@ -7,7 +7,7 @@ BeginGame
 	Option=GAMEOPTION_NO_TECH_BROKERING
 	Option=GAMEOPTION_ADVANCED_START
 	GameTurn=0
-	StartYear=-500
+	StartYear=0
 	Description=TXT_KEY_RHYES_WB_DESC
 	ModPath=Mods\DOCAmerica
 EndGame
@@ -29484,7 +29484,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=73
-	FeatureType=FEATURE_REEF, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -32363,7 +32362,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=72
-	FeatureType=FEATURE_REEF, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -40075,7 +40073,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=59,y=67
-	FeatureType=FEATURE_REEF, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -40761,7 +40758,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=60,y=67
-	FeatureType=FEATURE_REEF, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot

@@ -15,7 +15,7 @@ dPeriods1500AD = {
 dPeriods1750AD = {
 }
 dScenarioPeriods = {
-	-500: {},
+	0: {},
 	1500: dPeriods1500AD,
 	1750: dPeriods1750AD,
 }

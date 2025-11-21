@@ -11,7 +11,7 @@ from Parsers import *
 
 import CityNames as cn
 
-START_HISTORY = -500
+START_HISTORY = 0
 
 LEADER_DATES = {
 	# Maya

@@ -1172,7 +1172,7 @@ def possibleSpawnsBetween(origin, target, iDistance):
 def resetRevealedOwner(iPlayer):
 	for plot in plots.all():
 		if plot.getRevealedOwner(game.getActiveTeam(), False) == iPlayer:
-			plot.setRevealedOwner(game.getActiveTeam(), slot(iIndependent))
+			plot.setRevealedOwner(game.getActiveTeam(), slot(iIndependent1))
 
 
 # used: Minors

@@ -1,12 +1,12 @@
 from Core import *
 
-from scenario500BC import scenario500BC
+from scenario1AD import scenario1AD
 from Scenario1500AD import scenario1500AD
 from Scenario1750AD import scenario1750AD
 
 
 SCENARIOS = {
-	i500BC: scenario500BC,
+	i500BC: scenario1AD,
 	i1500AD: scenario1500AD,
 	i1750AD: scenario1750AD,
 }

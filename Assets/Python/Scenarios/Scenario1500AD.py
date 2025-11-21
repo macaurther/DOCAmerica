@@ -69,7 +69,7 @@ lCivilizations = [
 		techs=techs.column(9).including(iGunpowder, iCompanies, iCartography, iEvangelism).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
 	),
 	Civilization(
-		iIndependent,
+		iIndependent1,
 		iGold=100,
 		techs=techs.column(6)
 	),

@@ -14,7 +14,7 @@ iNumCivs = 38
 (iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iEngland, 		iFrance, 		iHaiti,			
 iHaudenosaunee,	iHawaii,		iInca,			iInuit,			iLakota,		iMaya,			iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	
 iNorse,			iPeru,			iPortugal, 		iPuebloan,		iPurepecha,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		
-iWari,			iZapotec,		iIndependent, 	iIndependent2, 	iIndependent3,	iIndigenous,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+iWari,			iZapotec,		iIndependent1, 	iIndependent2, 	iIndependent3,	iIndigenous,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 iNumRegions = 52
 # 0				1				2				3				4				5				6				7				8				9

@@ -908,7 +908,7 @@ def onEndPlayerTurn(iGameTurn, iPlayer):
 		objImmigrationUtils.processImmigration(iPlayer)
 
 		# if the player is not human and not independent then run the think method
-		if not pPlayer.isHuman() and civ(iPlayer) < iIndependent:
+		if not pPlayer.isHuman() and civ(iPlayer) < iIndependent1:
 			if pPlayer.isAlive():
 				if iPlayer % (g_bAIThinkPeriod) == iGameTurn % (g_bAIThinkPeriod):
 					print("Turn: " + str(iGameTurn) + " AI thinking about Immigrants, iPlayer: " + str(iPlayer))
