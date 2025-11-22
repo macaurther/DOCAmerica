@@ -296,7 +296,7 @@
 			<Description>TXT_KEY_CIVIC_SUBSISTANCE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_SUBSISTANCE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_SUBSISTANCE_STRATEGY</Strategy>
-			<TechPrereq>TECH_CULTIVATION</TechPrereq>
+			<TechPrereq>TECH_COMPANION_PLANTING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/SubsistanceNative.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>

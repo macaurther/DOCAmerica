@@ -230,12 +230,6 @@ lCivilizations = [
 		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iDiving, iFishing),
 	),
 	Civilization(
-		iPuebloan,
-		iGold=50,
-		techs=techs.column(3).including(iMasonry),
-		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting),
-	),
-	Civilization(
 		iMuisca,
 		iGold=200,
 		techs=techs.column(3).including(iMasonry, iSmelting),
@@ -256,6 +250,20 @@ lCivilizations = [
 		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iCultivation, iCompanionPlanting, iDiving, iFishing),
 	),
 	Civilization(
+		iPueblo,
+		iGold=50,
+		lCivics=[iSubsistance],
+		techs=techs.column(2).including(iTanning, iMining, iPottery, iAgriculture, iMythology),
+		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCompanionPlanting),
+	),
+	Civilization(
+		iPurepecha,
+		iGold=500,
+		lCivics=[iDespot, iTlacotin, iRedistribution],
+		techs=techs.column(4).including(iConstruction, iMathematics, iWriting),
+		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iCompanionPlanting, iKnapping, iDiving, iFishing),
+	),
+	Civilization(
 		iInuit,
 		iGold=25,
 		lCivics=[iHarmony],
@@ -271,13 +279,6 @@ lCivilizations = [
 		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting, iLinguistics, iLocalization),
 	),
 	Civilization(
-		iPurepecha,
-		iGold=500,
-		lCivics=[iDespot, iTlacotin, iRedistribution],
-		techs=techs.column(4).including(iConstruction, iMathematics, iWriting),
-		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iCompanionPlanting, iKnapping, iDiving, iFishing),
-	),
-	Civilization(
 		iAztecs,
 		iGold=600,
 		lCivics=[iDespot, iTlacotin, iRaiding, iOrganizedReligion],
@@ -291,13 +292,6 @@ lCivilizations = [
 		lCivics=[iChief, iTribalConfederacy, iHarmony, iIntegration],
 		techs=techs.column(3).including(iProperty, iCeremony),
 		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iLinguistics, iLocalization, iFishing),
-	),
-	Civilization(
-		iLakota,
-		iGold=100,
-		lCivics=[iSubsistance, iHarmony, iNomads],
-		techs=techs.column(3).including(iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks),
-		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iLinguistics, iLocalization),
 	),
 	Civilization(
 		iSpain,
@@ -342,6 +336,13 @@ lCivilizations = [
 		lCivics=[iTrustees, iTradingCompany, iSerfdom, iFactoryCivic, iDivineRight, iOutposts],
 		techs=techs.column(10).including(iFortification, iEconomics, iShipbuilding, iEducation),
 		extraTechs=techs.column(0).including(iNorthEuropeAccess),
+	),
+	Civilization(
+		iLakota,
+		iGold=100,
+		lCivics=[iSubsistance, iHarmony, iNomads],
+		techs=techs.column(3).including(iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iLinguistics, iLocalization),
 	),
 	Civilization(
 		iHawaii,
@@ -464,10 +465,11 @@ dStartingUnits = CivDict({
 		iBase: 1,
 		iDefend: 1,
 	},
-	iPuebloan: {
-		iSettle: 1,
-		iWork: 2,
+	iPueblo: {
+		iSettle: 2,
+		iWork: 1,
 		iBase: 2,
+		iDefend: 2,
 		iExplore: 1,
 	},
 	iMuisca: {
@@ -959,14 +961,6 @@ dBuildingPreferences = {
 		iMachuPicchu: -40,
 		iSacsayhuaman: -40,
 	},
-	iPuebloan : {
-		iPuebloBonito: 40,
-		iSerpentMound: -40,
-		iGateOfTheSun: -80,
-		iPyramidOfTheSun: -80,
-		iMachuPicchu: -40,
-		iSacsayhuaman: -40,
-	},
 	iMuisca : {
 		iSerpentMound: -40,
 		iGateOfTheSun: -80,
@@ -975,6 +969,14 @@ dBuildingPreferences = {
 		iSacsayhuaman: -40,
 	},
 	iChimu : {
+		iSerpentMound: -40,
+		iGateOfTheSun: -80,
+		iPyramidOfTheSun: -80,
+		iMachuPicchu: -40,
+		iSacsayhuaman: -40,
+	},
+	iPueblo : {
+		iPuebloBonito: 40,
 		iSerpentMound: -40,
 		iGateOfTheSun: -80,
 		iPyramidOfTheSun: -80,

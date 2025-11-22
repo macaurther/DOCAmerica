@@ -1621,13 +1621,13 @@
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_PLAZA</BuildingClass>
-			<Type>BUILDING_PUEBLOAN_KIVA</Type>
-			<Description>TXT_KEY_BUILDING_PUEBLOAN_KIVA</Description>
-			<Civilopedia>TXT_KEY_BUILDING_PUEBLOAN_KIVA_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_PUEBLOAN_KIVA_STRATEGY</Strategy>
+			<Type>BUILDING_PUEBLO_KIVA</Type>
+			<Description>TXT_KEY_BUILDING_PUEBLO_KIVA</Description>
+			<Civilopedia>TXT_KEY_BUILDING_PUEBLO_KIVA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PUEBLO_KIVA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_PUEBLOAN_KIVA</ArtDefineTag>
-			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<ArtDefineTag>ART_DEF_BUILDING_PUEBLO_KIVA</ArtDefineTag>
+			<PrereqTech>TECH_EARTHWORKS</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>

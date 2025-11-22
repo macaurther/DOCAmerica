@@ -37,7 +37,7 @@ def mayanPower(iTech, iTeam, iPlayer):
 @handler("cityBuilt")
 # Desert RP
 def puebloanPower(pCity):
-	if civ(pCity.getOwner()) in [iPuebloan]:
+	if civ(pCity.getOwner()) in [iPueblo]:
 		lFreeBuildings = [iGranary, iMarket, iStoneworks]
 		for iBuilding in lFreeBuildings:
 			if not pCity.isHasRealBuilding(iBuilding):

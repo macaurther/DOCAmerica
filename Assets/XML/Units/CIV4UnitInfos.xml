@@ -2209,14 +2209,14 @@
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SCOUT</Class>
-			<Type>UNIT_PUEBLOAN_PATHFINDER</Type>
+			<Type>UNIT_PUEBLO_PATHFINDER</Type>
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Combat>UNITCOMBAT_RECON</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_PUEBLOAN_PATHFINDER</Description>
-			<Civilopedia>TXT_KEY_UNIT_PUEBLOAN_PATHFINDER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_PUEBLOAN_PATHFINDER_STRATEGY</Strategy>
+			<Description>TXT_KEY_UNIT_PUEBLO_PATHFINDER</Description>
+			<Civilopedia>TXT_KEY_UNIT_PUEBLO_PATHFINDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_PUEBLO_PATHFINDER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -2263,7 +2263,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>2</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_PUEBLOAN_PATHFINDER</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_PUEBLO_PATHFINDER</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>

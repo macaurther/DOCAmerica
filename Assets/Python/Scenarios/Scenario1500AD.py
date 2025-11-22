@@ -124,7 +124,7 @@ scenario1500AD = Scenario(
 		# MacAurther TODO
 	},
 	
-	lAllGoalsFailed = [iMaya, iZapotec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iChimu],
+	lAllGoalsFailed = [iMaya, iZapotec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iChimu],
 	setupGoals = setupGoals,
 	
 	createStartingUnits = createStartingUnits,

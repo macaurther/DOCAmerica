@@ -1,7 +1,6 @@
 from Definitions import *
 from Locations import *
 
-
 lHappinessResources = [iResource for iResource in infos.bonuses() if infos.bonus(iResource).getHappiness() > 0]
 # second Portuguese goal: acquire 20 plantation resources by 1650 AD
 #lColonialResources = [iBanana, iSpices, iSugar, iCoffee, iTea, iTobacco, iCocoa, iSalt, iCitrus]
@@ -166,19 +165,6 @@ dGoals = {
 			by=1400,
 		),
 	),
-	iPuebloan: (
-		All(
-			CultureAmount(500, at=1200),
-			BuildingCount(iKiva, 5),
-			by=1200,
-		),
-		All(
-			TradeConnection(),
-			SpecialistCount(iSpecialistGreatMerchant, 4),
-			by=1400,
-		),
-		UnitCount(iHorseArcher, 1, by=1680),
-	),
 	iMuisca: (
 		ControlledResourceCount(iGold, 3, at=1150),
 		AveragePopulation(10, at=1300),
@@ -197,6 +183,32 @@ dGoals = {
 		BuildingCount((iKancha, 3), by=1100),
 		Control(plots.region(rPeru).named(PERU), subject=VASSALS, at=1400),
 		CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatArtist, 3, by=1500),
+	),
+	iPueblo: (
+		All(
+			CultureAmount(500, at=1200),
+			BuildingCount(iKiva, 5),
+			by=1200,
+		),
+		All(
+			TradeConnection(),
+			SpecialistCount(iSpecialistGreatMerchant, 4),
+			by=1400,
+		),
+		UnitCount(iHorseArcher, 1, by=1680),
+	),
+	iPurepecha: (
+		ControlledResourceCount(iFish, 2, by=1300),
+		All(
+			UnitLevelCount(3, 10),
+			UnitCount(sum(iMacana, iArcher), 25),
+			by=1500,
+		),
+		All(
+			NoCityLost(),
+			Control(plots.region(rBajio).named(BAJIO)),
+			at=1600,
+		)
 	),
 	iInuit: (
 		CityCount(
@@ -218,19 +230,6 @@ dGoals = {
 		GoldAmount(2500, by=1500),
 		AreaPopulationPercent(plots.regions(*lAndes).named(ANDES), 100, at=1550),
 	),
-	iPurepecha: (
-		ControlledResourceCount(iFish, 2, by=1300),
-		All(
-			UnitLevelCount(3, 10),
-			UnitCount(sum(iMacana, iArcher), 25),
-			by=1500,
-		),
-		All(
-			NoCityLost(),
-			Control(plots.region(rBajio).named(BAJIO)),
-			at=1600,
-		)
-	),
 	iAztecs: (
 		All(VassalCount(1), Control(plots.region(rBajio).named(BAJIO), subject=VASSALS), by=1450),
 		CityPopulation(start(iAztecs).named(TENOCHTITLAN), 20, at=1500),
@@ -246,11 +245,6 @@ dGoals = {
             (plots.of(lLakeOntario)).named(LAKE_ONTARIO),
 			at=1650),
 		ControlledResourceCount(iFur, 10, by=1700),
-	),
-	iLakota: (
-		Migrations(30, by=1700),
-		AverageCultureAmount(500, by=1750),
-		AllowNone(group(iCivGroupAmerica).named(EUROPEAN), plots.regions([rNorthPlains, rGreatPlains]).named(GREAT_PLAINS), at=1890),
 	),
 	iSpain: (
 		RaidGold(3000, by=1600),
@@ -301,6 +295,11 @@ dGoals = {
 			by=1700,
 		),
 		TradeGold(5000, by=1800),
+	),
+	iLakota: (
+		Migrations(30, by=1700),
+		AverageCultureAmount(500, by=1750),
+		AllowNone(group(iCivGroupAmerica).named(EUROPEAN), plots.regions([rNorthPlains, rGreatPlains]).named(GREAT_PLAINS), at=1890),
 	),
 	iHawaii: (
 		UnitCount(iCannon, 1, by=1790),

@@ -5980,7 +5980,7 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_PUEBLOAN_PATHFINDER</Type>
+			<Type>ART_DEF_UNIT_PUEBLO_PATHFINDER</Type>
 			<Button>Art/Interface/Buttons/Units/Pathfinder.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>

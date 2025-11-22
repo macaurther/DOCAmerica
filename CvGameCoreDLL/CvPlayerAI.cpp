@@ -1323,7 +1323,7 @@ void CvPlayerAI::AI_conquerCity(CvCity* pCity, CivilizationTypes ePreviousCiv, P
 			}
 
 			// 1SDAN?: Minor Players always Raze Mississippian and Puebloan Cities
-			if (isMinorCiv() && (pCity->getPreviousCiv() == MISSISSIPPI || pCity->getPreviousCiv() == PUEBLOAN))
+			if (isMinorCiv() && (pCity->getPreviousCiv() == MISSISSIPPI || pCity->getPreviousCiv() == PUEBLO))
 			{
 				iRazeValue = 100;
 			}

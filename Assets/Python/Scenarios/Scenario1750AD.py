@@ -176,7 +176,7 @@ scenario1750AD = Scenario(
 	lInitialWars = [
 	],
 	
-	lAllGoalsFailed = [iMaya, iZapotec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iChimu, iPortugal, iEngland, iFrance, iNetherlands],
+	lAllGoalsFailed = [iMaya, iZapotec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iChimu, iPortugal, iEngland, iFrance, iNetherlands],
 	lGoalsSucceeded = [],
 	setupGoals = setupGoals,
 	

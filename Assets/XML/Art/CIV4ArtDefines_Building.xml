@@ -1988,14 +1988,14 @@
 			<Button>Art/Interface/Buttons/Buildings/Kallanka.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_PUEBLOAN_KIVA</Type>
+			<Type>ART_DEF_BUILDING_PUEBLO_KIVA</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>0.85</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Edubba/Edubba.nif</NIF>
+			<fScale>8.0</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Kiva/Kiva.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/Kiva.dds</Button>
+			<Button>Art/Structures/Buildings/Kiva/Button_Kiva.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_HAUDENOSAUNEE_LONGHOUSE</Type>
@@ -2079,13 +2079,13 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_PUEBLO_BONITO</Type>
-			<LSystem>LSYSTEM_4x4</LSystem>
+			<LSystem>LSYSTEM_4x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/AlKhazneh/Petra.nif</NIF>
+			<fScale>0.7</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Cliff Palace/mesaverde10.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Wonders/PuebloBonito.dds</Button>
+			<Button>Art/Structures/Buildings/Cliff Palace/Button_Cliff_Palace.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GREAT_GEOGLYPH</Type>

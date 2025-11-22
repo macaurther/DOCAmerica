@@ -662,7 +662,7 @@ class CvTechChooser:
 					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_ANIMAL_HUNTING").getPath()
 					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
 				# Pathfinding: Mountain Pass
-				elif TechInfo.getGridX() == 2 and TechInfo.getGridY() == 3:
+				elif TechInfo.getGridX() == 2 and TechInfo.getGridY() == 11:
 					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_MOUNTAINPASS").getPath()
 					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
 				# Linguistics, Localization: Tribe contact discount

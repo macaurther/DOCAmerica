@@ -11360,12 +11360,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=81
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=82
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -12735,6 +12736,7 @@ BeginPlot
 	x=19,y=83
 	RiverNSDirection=2
 	isWOfRiver
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -13412,7 +13414,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=83
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -13439,7 +13441,7 @@ BeginPlot
 	x=20,y=86
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot

@@ -24347,7 +24347,7 @@ EraTypes CvPlayer::getSoundtrackEra()
 				case INCA:
 					return (EraTypes)ERA_ANDES;
 				case MISSISSIPPI:
-				case PUEBLOAN:
+				case PUEBLO:
 				case HAUDENOSAUNEE:
 				case INUIT:
 				case LAKOTA:
@@ -24382,7 +24382,7 @@ EraTypes CvPlayer::getSoundtrackEra()
 				case CHIMU:
 				case MUISCA:
 				case INCA:
-				case PUEBLOAN:
+				case PUEBLO:
 					return (EraTypes)ERA_LATIN;
 			}
 		}
@@ -25657,7 +25657,7 @@ int CvPlayer::getRegionPowers() const
 		return RP_MESOAMERICA;
 	case HAWAII:
 		return RP_PACIFIC;
-	case PUEBLOAN:
+	case PUEBLO:
 		return RP_DESERT;
 	case HAUDENOSAUNEE:
 	case MISSISSIPPI:

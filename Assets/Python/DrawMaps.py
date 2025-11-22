@@ -13,7 +13,7 @@ iNumCivs = 38
 # 0				1				2				3				4				5				6				7				8				9
 (iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iEngland, 		iFrance, 		iHaiti,			
 iHaudenosaunee,	iHawaii,		iInca,			iInuit,			iLakota,		iMaya,			iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	
-iNorse,			iPeru,			iPortugal, 		iPuebloan,		iPurepecha,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		
+iNorse,			iPeru,			iPortugal, 		iPueblo,		iPurepecha,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		
 iWari,			iZapotec,		iIndependent1, 	iIndependent2, 	iIndependent3,	iIndigenous,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 iNumRegions = 52
@@ -56,7 +56,7 @@ dCivNames = {
 	iNorse: "Norse",
 	iPeru: "Peru",
 	iPortugal: "Portugal",
-	iPuebloan: "Puebloan",
+	iPueblo: "Puebloan",
 	iPurepecha: "Purepehca",
 	iRussia: "Russia",
 	iSpain: "Spain",
@@ -100,7 +100,7 @@ iTeotihuacan :  ((13, 65),	(15, 67)),
 iTiwanaku :	    ((25, 22),	(28, 26)),
 iWari :		    ((22, 32),	(24, 35)),
 iMississippi :  ((27, 81),	(35, 85)),
-iPuebloan :		((12, 85),	(18, 88)),
+iPueblo :		((12, 85),	(18, 88)),
 iMuisca :		((30, 41),	(33, 44)),
 iNorse :		((0, 0), 	(0, 0)),	# No core for Europeans
 iChimu :		((19, 35),	(22, 38)),
@@ -132,7 +132,7 @@ iCanada :		((35, 86),	(51, 94)),
 dCoreAreaExceptions = CivDict({
 iChimu :		[(22, 35)],
 iMississippi :  [(33, 85), (32, 85), (30, 85), (32, 84), (30, 84), (34, 85), (35, 84), (34, 84), (35, 85), (31, 84), (31, 85), (33, 84)],
-iPuebloan :	    [(19, 80)],
+iPueblo :	    [(19, 80)],
 iInca :		    [(27, 31)],
 iHaudenosaunee :	    [(37, 86), (36, 87), (37, 87), (38, 87), (36, 86)],
 iAmerica :	    [(35, 88), (40, 88), (39, 88), (37, 89), (38, 89), (36, 88), (37, 86), (41, 88), (40, 89), (35, 87), (44, 89), (37, 88), (42, 88), (37, 79), (36, 89), (38, 87), (38, 88), (35, 86), (42, 89), (43, 89), (35, 89), (36, 87), (39, 89), (36, 86), (37, 87), (41, 89)],

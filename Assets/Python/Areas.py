@@ -12,21 +12,21 @@ iTeotihuacan :	 (25, 69), # Teotihuacan
 iTiwanaku :		 (52, 32), # Tiwanaku
 iWari :			 (45, 39), # Huari
 iMississippi :	 (44, 87), # Cahokia
-iPuebloan :		 (20, 83), # Chaco Canyon
 iMuisca :		 (48, 50), # Bacata
 iNorse :		 (64, 117), # Reykjavik
 iChimu :		 (41, 41), # Chan Chan
+iPueblo :		 (20, 83), # Chaco Canyon
+iPurepecha :	 (20, 69), # Tzintzuntzan
 iInuit :		 (9, 118), # North Alaska
 iInca :			 (48, 35), # Cuzco
-iPurepecha :	 (20, 69), # Tzintzuntzan
 iAztecs :		 (24, 67), # Tenochtitlan
 iHaudenosaunee : (45, 93), # Onondaga
-iLakota :		 (30, 95), # Southern Minnesota
 iSpain :		 (58, 66), # Santo Domingo
 iPortugal :		 (69, 26), # Sao Paulo
 iEngland :		 (45, 86), # Jamestown
 iFrance :		 (49, 99), # Quebec
 iNetherlands :	 (48, 91), # New Amsterdam
+iLakota :		 (30, 95), # Southern Minnesota
 iHawaii :		 (15, 48), # Hilo
 iRussia :		 (11, 108), # Novo-Arkhangelsk
 iAmerica :		 (46, 90), # Philadelphia
@@ -60,21 +60,21 @@ iTeotihuacan :  ((24, 68),	(26, 70)),
 iTiwanaku :	    ((51, 31),	(53, 33)),
 iWari :		    ((44, 37),	(46, 42)),
 iMississippi :  ((31, 84),	(36, 88)),
-iPuebloan :		((18, 80),	(21, 86)),
 iMuisca :		((47, 49),	(49, 54)),
 iNorse :		((61, 117),	(65, 120)),
 iChimu :		((40, 39),	(42, 43)),
+iPueblo :		((18, 80),	(21, 86)),
+iPurepecha :	((18, 66),	(21, 70)),
 iInuit :		((7, 117),	(15, 120)),
 iInca :		    ((46, 34),	(49, 37)),
-iPurepecha :	((18, 66),	(21, 70)),
 iAztecs :		((23, 66),	(25, 68)),
 iHaudenosaunee :((43, 92),	(46, 94)),
-iLakota :		((26, 93),	(31, 97)),
 iSpain :		((57, 65),	(59, 67)),
 iPortugal :	    ((68, 25),	(70, 27)),
 iEngland :	    ((44, 85),	(46, 87)),
 iFrance :		((48, 98),	(50, 100)),
 iNetherlands :  ((47, 90),	(49, 92)),
+iLakota :		((26, 93),	(31, 97)),
 iHawaii :		((12, 46),	(15, 50)),
 iRussia :		((10, 107),	(12, 109)),
 iAmerica :	    ((40, 80),	(51, 97)),
@@ -114,21 +114,21 @@ iTeotihuacan :  ((25, 69),	(25, 69)),
 iTiwanaku :	    ((52, 32),	(52, 32)),
 iWari :		    ((44, 39),	(45, 40)),
 iMississippi :  ((31, 83),	(36, 88)),
-iPuebloan :		((19, 82),	(21, 86)),
 iMuisca :		((48, 50),	(49, 53)),
 iNorse :		((0, 0), 	(0, 0)),	# No core for Europeans
 iChimu :		((40, 41),	(42, 43)),
+iPueblo :		((19, 82),	(21, 86)),
+iPurepecha :	((19, 68),	(21, 69)),
 iInuit :		((7, 117),	(15, 120)),
 iInca :		    ((46, 34),	(49, 37)),
-iPurepecha :	((19, 68),	(21, 69)),
 iAztecs :		((24, 67),	(24, 67)),
 iHaudenosaunee :((43, 92),	(46, 94)),
-iLakota :		((27, 94),	(30, 97)),
 iSpain : 		((0, 0), 	(0, 0)),	# No core for Europeans
 iPortugal : 	((0, 0), 	(0, 0)),	# No core for Europeans
 iEngland : 		((0, 0), 	(0, 0)),	# No core for Europeans
 iFrance : 		((0, 0), 	(0, 0)),	# No core for Europeans
 iNetherlands :	((0, 0), 	(0, 0)),	# No core for Europeans
+iLakota :		((27, 94),	(30, 97)),
 iHawaii :		((12, 46),	(15, 50)),
 iRussia :		((0, 0), 	(0, 0)),	# No core for Europeans
 iAmerica :	    ((45, 88),	(50, 94)),

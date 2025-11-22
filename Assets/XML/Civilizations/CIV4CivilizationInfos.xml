@@ -1467,7 +1467,7 @@
 			<Identifier>INC</Identifier>
 			<Region>AND</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>1100</StartingYear>
+			<StartingYear>1200</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>20</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -1570,7 +1570,7 @@
 			<Identifier>INU</Identifier>
 			<Region>ARC</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>950</StartingYear>
+			<StartingYear>1200</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>15</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -1680,7 +1680,7 @@
 			<Identifier>LAK</Identifier>
 			<Region>PLA</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>1475</StartingYear>
+			<StartingYear>1625</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>25</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -2733,13 +2733,13 @@
 			<CivilizationActionSound>AS3D_PORTUGAL_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
-			<Type>CIVILIZATION_PUEBLOAN</Type>
-			<Description>TXT_KEY_CIV_PUEBLOAN_DESC</Description>
-			<ShortDescription>TXT_KEY_CIV_PUEBLOAN_SHORT_DESC</ShortDescription>
-			<Adjective>TXT_KEY_CIV_PUEBLOAN_ADJECTIVE</Adjective>
-			<Civilopedia>TXT_KEY_CIV_PUEBLOAN_PEDIA</Civilopedia>
+			<Type>CIVILIZATION_PUEBLO</Type>
+			<Description>TXT_KEY_CIV_PUEBLO_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_PUEBLO_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_PUEBLO_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_PUEBLO_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_ORANGE</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_PUEBLOAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_PUEBLO</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_KACHINA</PaganReligion>
@@ -2747,7 +2747,7 @@
 			<Identifier>PUE</Identifier>
 			<Region>DES</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>750</StartingYear>
+			<StartingYear>950</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -2763,19 +2763,34 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Bandelier</City>
+				<City>Chaco Canyon</City>
+				<City>Mesa Verde</City>
+				<City>Gila</City>
 				<City>Casa Rinconada</City>
 				<City>Kayenta</City>
 				<City>Hovenweep</City>
 				<City>Keresans</City>
 				<City>Hopi</City>
 				<City>Tanoans</City>
-				<City>Mogollon</City>
+				<City>Acoma</City>
+				<City>Taos</City>
+				<City>Zuni</City>
+				<City>Zia</City>
+				<City>Laguna</City>
+				<City>Isleta</City>
+				<City>Sandia</City>
+				<City>Tesuque</City>
+				<City>Cochiti</City>
+				<City>Picuris</City>
+				<City>Jemez</City>
+				<City>Pojoaque</City>
+				<City>Nambe</City>
+				<City>Bandelier</City>
 			</Cities>
 			<Buildings>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PLAZA</BuildingClassType>
-					<BuildingType>BUILDING_PUEBLOAN_KIVA</BuildingType>
+					<BuildingType>BUILDING_PUEBLO_KIVA</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
@@ -2785,7 +2800,7 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_SCOUT</UnitClassType>
-					<UnitType>UNIT_PUEBLOAN_PATHFINDER</UnitType>
+					<UnitType>UNIT_PUEBLO_PATHFINDER</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>

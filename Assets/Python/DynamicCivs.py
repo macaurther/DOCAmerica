@@ -58,7 +58,7 @@ dSpecificVassalTitles = deepdict({
 		iAmerica : "TXT_KEY_CIV_ENGLISH_AMERICA",
 		iHaudenosaunee : "TXT_KEY_CIV_ENGLISH_HAUDENOSAUNEE",
 		iLakota : "TXT_KEY_CIV_ENGLISH_LAKOTA",
-		iPuebloan : "TXT_KEY_CIV_ENGLISH_PUEBLOAN",
+		iPueblo : "TXT_KEY_CIV_ENGLISH_PUEBLO",
 	},
 	iNetherlands : {
 		iAmerica : "TXT_KEY_CIV_DUTCH_AMERICA",
@@ -75,7 +75,7 @@ dSpecificVassalTitles = deepdict({
 		iMaya : "TXT_KEY_CIV_AMERICAN_MAYA",
 		iHaudenosaunee : "TXT_KEY_CIV_AMERICAN_HAUDENOSAUNEE",
 		iLakota : "TXT_KEY_CIV_AMERICAN_LAKOTA",
-		iPuebloan : "TXT_KEY_CIV_AMERICAN_PUEBLOAN",		
+		iPueblo : "TXT_KEY_CIV_AMERICAN_PUEBLO",		
 	},
 	iBrazil : {
 		iArgentina : "TXT_KEY_CIV_BRAZILIAN_ARGENTINA",
@@ -161,7 +161,7 @@ dStartingLeaders = [
 	iTiwanaku : iMalkuHuyustus,
 	iWari : iWariCapac,
 	iMississippi : iUwahcil,
-	iPuebloan : iKochininako,
+	iPueblo : iKochininako,
 	iMuisca : iSaguamanchica,
 	iNorse : iLiefErickson,
 	iChimu : iTacaynamo,
@@ -192,7 +192,7 @@ dStartingLeaders = [
 {
 	iMaya : iXoc,
 	iMississippi : iTuskaloosa,
-	iPuebloan : iPopay,
+	iPueblo : iPopay,
 	iNorse : iGustav,
 	iInca : iHuaynaCapac,
 },

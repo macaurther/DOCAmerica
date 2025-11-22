@@ -914,7 +914,6 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
-				<PrereqTech>TECH_DUGOUTS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_DIVINATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>

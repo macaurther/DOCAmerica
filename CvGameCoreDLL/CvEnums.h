@@ -1239,7 +1239,7 @@ enum CivilizationTypes		// Exposed to Python
 	NORSE,
 	PERU,
 	PORTUGAL,
-	PUEBLOAN,
+	PUEBLO,
 	PUREPECHA,
 	RUSSIA,
 	SPAIN,

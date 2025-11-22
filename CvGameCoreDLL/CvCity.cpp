@@ -8555,7 +8555,7 @@ bool CvCity::isBombardable(const CvUnit* pUnit) const
 int CvCity::getNaturalDefense() const
 {
 	int iExtraDefense = 0;
-	if (GET_PLAYER(getOwner()).getCivilizationType() == PUEBLOAN && plot()->isHills()) iExtraDefense = 20;	// MacAurther: Puebloan UP
+	if (GET_PLAYER(getOwner()).getCivilizationType() == PUEBLO && plot()->isHills()) iExtraDefense = 20;	// MacAurther: Puebloan UP
 
 	if (getCultureLevel() == NO_CULTURELEVEL)
 	{

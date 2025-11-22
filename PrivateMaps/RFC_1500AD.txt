@@ -306,18 +306,18 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_PUEBLOAN
+		CityOwner=CIVILIZATION_PUEBLO
 		CityName=Mohave
 		CityPopulation=2
 		BuildingType=BUILDING_GRANARY
@@ -327,11 +327,11 @@ BeginPlot
 		BuildingType=BUILDING_WALLS
 		BuildingType=BUILDING_KACHINA_PITHOUSE
 		BeginCulture
-			Civilization=CIVILIZATION_PUEBLOAN, Culture=35
+			Civilization=CIVILIZATION_PUEBLO, Culture=35
 		EndCulture
 		YearFounded=1285
 		YearAcquired=1285
-		PreviousOwner=CIVILIZATION_PUEBLOAN
+		PreviousOwner=CIVILIZATION_PUEBLO
 	EndCity
 EndPlot
 BeginPlot
@@ -564,7 +564,7 @@ BeginPlot
 	x=13,y=88
 	BeginUnit
 		UnitType=UNIT_WARRIOR
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 EndPlot
 BeginPlot
@@ -633,8 +633,8 @@ EndPlot
 BeginPlot
 	x=14,y=82
 	BeginUnit
-		UnitType=UNIT_PUEBLOAN_PATHFINDER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitType=UNIT_PUEBLO_PATHFINDER
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 EndPlot
 BeginPlot
@@ -791,11 +791,11 @@ BeginPlot
 	x=15,y=79
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 EndPlot
 BeginPlot
@@ -812,7 +812,7 @@ BeginPlot
 	x=15,y=87
 	BeginUnit
 		UnitType=UNIT_SETTLER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 EndPlot
 BeginPlot
@@ -891,7 +891,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_WARRIOR
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 EndPlot
 BeginPlot
@@ -899,58 +899,58 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_WARRIOR
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PUEBLOAN_PATHFINDER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitType=UNIT_PUEBLO_PATHFINDER
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PUEBLOAN_PATHFINDER
-		UnitOwner=CIVILIZATION_PUEBLOAN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitType=UNIT_PUEBLO_PATHFINDER
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_PUEBLOAN
+		CityOwner=CIVILIZATION_PUEBLO
 		CityName=Chaco Canyon
 		CityPopulation=3
 		BuildingType=BUILDING_CHIEFTANS_HUT
@@ -960,16 +960,16 @@ BeginPlot
 		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_BARRACKS
 		BuildingType=BUILDING_WALLS
-		BuildingType=BUILDING_PUEBLOAN_KIVA
+		BuildingType=BUILDING_PUEBLO_KIVA
 		BuildingType=BUILDING_SMOKEHOUSE
 		BuildingType=BUILDING_PUEBLO_BONITO
 		BuildingType=BUILDING_KACHINA_PITHOUSE
 		BeginCulture
-			Civilization=CIVILIZATION_PUEBLOAN, Culture=631
+			Civilization=CIVILIZATION_PUEBLO, Culture=631
 		EndCulture
 		YearFounded=750
 		YearAcquired=750
-		PreviousOwner=CIVILIZATION_PUEBLOAN
+		PreviousOwner=CIVILIZATION_PUEBLO
 	EndCity
 EndPlot
 BeginPlot
@@ -1015,7 +1015,7 @@ BeginPlot
 	x=17,y=80
 	BeginUnit
 		UnitType=UNIT_GREAT_MERCHANT
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 EndPlot
 BeginPlot
@@ -1050,8 +1050,8 @@ EndPlot
 BeginPlot
 	x=18,y=83
 	BeginUnit
-		UnitType=UNIT_PUEBLOAN_PATHFINDER
-		UnitOwner=CIVILIZATION_PUEBLOAN
+		UnitType=UNIT_PUEBLO_PATHFINDER
+		UnitOwner=CIVILIZATION_PUEBLO
 	EndUnit
 EndPlot
 BeginPlot

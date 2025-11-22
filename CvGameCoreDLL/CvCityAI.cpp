@@ -2443,7 +2443,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_SETTLE] *= 4;
 		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
-	case PUEBLOAN:
+	case PUEBLO:
 		aiUnitAIVal[UNITAI_EXPLORE] *= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 3;
 		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;

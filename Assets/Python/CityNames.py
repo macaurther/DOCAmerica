@@ -22,21 +22,21 @@ dBaseLanguages = {
 	iTiwanaku: (iNative,),
 	iWari: (iNative,),
 	iMississippi: (iMississippi,),
-	iPuebloan: (iNative,),
 	iMuisca: (iNative,),
 	iNorse: (iNordic, iSwedish,),
 	iChimu: (iNative,),
+	iPueblo: (iNative,),
+	iPurepecha: (iNative,),
 	iInuit: (iNative,),
 	iInca: (iQuechua,),
-	iPurepecha: (iNative,),
 	iAztecs: (iNahuatl,),
 	iHaudenosaunee: (iNative,),
-	iLakota: (iNative,),
 	iSpain: (iSpanish,),
 	iPortugal: (iPortuguese,),
 	iEngland: (iEnglish,),
 	iFrance: (iFrench,),
 	iNetherlands: (iDutch,),
+	iLakota: (iNative,),
 	iHawaii: (iNative,),
 	iRussia: (iRussian,),
 	iAmerica: (iAmerican, iEnglish),
@@ -134,9 +134,16 @@ def setupScenario():
 def getPrimaryLanguages(identifier):
 	iCiv = civ(identifier)
 		
-	if iCiv in [iMaya, iAztecs]: # MacAurther TODO: Other natives here
+	if iCiv in [iMaya, iAztecs, iInca, iWari, iTeotihuacan, iZapotec, iPurepecha, iPueblo, iChimu, iMuisca, iTiwanaku]:
 		if player(identifier).getStateReligion() in [iOrthodoxy, iCatholicism, iProtestantism] or team(identifier).isAVassal():
 			return (iSpanish,) + dBaseLanguages.get(iCiv, tuple())
+	elif iCiv in [iLakota, iHaudenosaunee, iInuit]:
+		if player(identifier).getStateReligion() == iProtestantism or team(identifier).isAVassal():
+			return (iEnglish,) + dBaseLanguages.get(iCiv, tuple())
+		if player(identifier).getStateReligion() == iCatholicism:
+			return (iFrench,) + dBaseLanguages.get(iCiv, tuple())
+		if player(identifier).getStateReligion() == iOrthodoxy:
+			return (iRussian,) + dBaseLanguages.get(iCiv, tuple())
 	
 	return dBaseLanguages.get(iCiv, tuple())
 
@@ -362,8 +369,8 @@ def applyName(city, translation, bNotify=False):
 		applyRenaming(city, translation)
 		return
 	
-	# MacAurther: If there is no map name, just use current name
-	if translation.name is None:
+	# MacAurther: If there is no map name, or Civ is a transient civ, just use current name
+	if translation.name is None or civ(city.getOwner()) in lTransientCivs:
 		translation.name = current_name
 		
 	city.setName(translation.name, False)

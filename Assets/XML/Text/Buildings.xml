@@ -2194,7 +2194,7 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Taverns[COLOR_REVERT] increase a city's happiness and wealth.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PUEBLOAN_KIVA</Tag>
+		<Tag>TXT_KEY_BUILDING_PUEBLO_KIVA</Tag>
 		<English>Kiva</English>
 		<French>Kiva</French>
 		<German>Kiva</German>
@@ -2202,7 +2202,7 @@
 		<Spanish>Kiva</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PUEBLOAN_KIVA_STRATEGY</Tag>
+		<Tag>TXT_KEY_BUILDING_PUEBLO_KIVA_STRATEGY</Tag>
 		<English>The [COLOR_BUILDING_TEXT]Kiva[COLOR_REVERT], the Puebloan replacement for the [COLOR_BUILDING_TEXT]Common[COLOR_REVERT], provides a greater cultural bonus and increases a city's defenses against pre-gunpowder units.</English>
 		<French>The [COLOR_BUILDING_TEXT]Kiva[COLOR_REVERT], the Puebloan replacement for the [COLOR_BUILDING_TEXT]Common[COLOR_REVERT], provides a greater cultural bonus and increases a city's defenses against pre-gunpowder units.</French>
 		<German>The [COLOR_BUILDING_TEXT]Kiva[COLOR_REVERT], the Puebloan replacement for the [COLOR_BUILDING_TEXT]Common[COLOR_REVERT], provides a greater cultural bonus and increases a city's defenses against pre-gunpowder units.</German>

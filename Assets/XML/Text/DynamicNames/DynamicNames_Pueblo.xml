@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Puebloan -->
+<!-- Pueblo -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_DESC</Tag>
-		<English>The Puebloans</English>
-		<French>The Puebloans</French>
-		<German>The Puebloans</German>
-		<Italian>The Puebloans</Italian>
-		<Spanish>The Puebloans</Spanish>
+		<Tag>TXT_KEY_CIV_PUEBLO_DESC</Tag>
+		<English>The Pueblo</English>
+		<French>The Pueblo</French>
+		<German>The Pueblo</German>
+		<Italian>The Pueblo</Italian>
+		<Spanish>The Pueblo</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_PEOPLES</Tag>
+		<Tag>TXT_KEY_CIV_PUEBLO_PEOPLES</Tag>
 		<English>Hohokam Peoples</English>
 		<French>Hohokam Peoples</French>
 		<German>Hohokam Peoples</German>
@@ -18,7 +18,7 @@
 		<Spanish>Hohokam Peoples</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_DEFAULT</Tag>
+		<Tag>TXT_KEY_CIV_PUEBLO_DEFAULT</Tag>
 		<English>Kingdom of %s1</English>
 		<French>
 			<Text>Royaume d'%s1</Text>
@@ -42,7 +42,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_COMMUNIST</Tag>
+		<Tag>TXT_KEY_CIV_PUEBLO_COMMUNIST</Tag>
 		<English>Republic of %s1</English>
 		<French>
 			<Text>R&#233;publique d'%s1</Text>
@@ -66,7 +66,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_FASCIST</Tag>
+		<Tag>TXT_KEY_CIV_PUEBLO_FASCIST</Tag>
 		<English>%s2 State</English>
 		<French>
 			<Text>&#201;tat %s2</Text>
@@ -90,7 +90,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_ADJECTIVE</Tag>
+		<Tag>TXT_KEY_CIV_PUEBLO_ADJECTIVE</Tag>
 		<English>Puebloan</English>
 		<French>Puebloan</French>
 		<German>Puebloan</German>
@@ -98,11 +98,11 @@
 		<Spanish>Puebloan</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_SHORT_DESC</Tag>
-		<English>Puebloan</English>
-		<French>Puebloan</French>
-		<German>Puebloan</German>
-		<Italian>Puebloan</Italian>
-		<Spanish>Puebloan</Spanish>
+		<Tag>TXT_KEY_CIV_PUEBLO_SHORT_DESC</Tag>
+		<English>Pueblo</English>
+		<French>Pueblo</French>
+		<German>Pueblo</German>
+		<Italian>Pueblo</Italian>
+		<Spanish>Pueblo</Spanish>
 	</TEXT>
 </Civ4GameText>

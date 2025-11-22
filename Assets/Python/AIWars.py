@@ -82,7 +82,7 @@ iConquestNum, tConquestSpainInca = processConquest(iConquestNum, iSpain, iInca, 
 iConquestNum, tConquestSpainWari = processConquest(iConquestNum, iSpain, iWari, tSpainWariTL, tSpainWariBR, 2, iSpainWariYear, 10)
 iConquestNum, tConquestSpainChimu = processConquest(iConquestNum, iSpain, iChimu, tSpainChimuTL, tSpainChimuBR, 2, iSpainChimuYear, 10)
 iConquestNum, tConquestSpainMuisca = processConquest(iConquestNum, iSpain, iMuisca, tSpainMuiscaTL, tSpainMuiscaBR, 2, iSpainMuiscaYear, 10)
-iConquestNum, tConquestSpainPueblo = processConquest(iConquestNum, iSpain, iPuebloan, tSpainPuebloTL, tSpainPuebloBR, 2, iSpainPuebloYear, 10)
+iConquestNum, tConquestSpainPueblo = processConquest(iConquestNum, iSpain, iPueblo, tSpainPuebloTL, tSpainPuebloBR, 2, iSpainPuebloYear, 10)
 iConquestNum, tConquestSpainMaya = processConquest(iConquestNum, iSpain, iMaya, tSpainMayaTL, tSpainMayaBR, 2, iSpainMayaYear, 10)
 
 # England ------------------------------------------------------------------------------------------------------------------------

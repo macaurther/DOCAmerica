@@ -325,7 +325,7 @@ class CvPediaTech(CvPediaScreen.CvPediaScreen):
 		if TechInfo.getGridX() == 1 and TechInfo.getGridY() == 1:
 			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_ANIMAL_HUNTING").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 		# Pathfinding: Mountain Pass
-		if TechInfo.getGridX() == 2 and TechInfo.getGridY() == 3:
+		if TechInfo.getGridX() == 2 and TechInfo.getGridY() == 11:
 			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_MOUNTAINPASS").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 		# Linguistics, Localization: Tribe contact discount
 		elif (TechInfo.getGridX() == 1 and TechInfo.getGridY() == 9) or (TechInfo.getGridX() == 2 and TechInfo.getGridY() == 9):

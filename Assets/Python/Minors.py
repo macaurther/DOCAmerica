@@ -132,8 +132,7 @@ class MinorCity(object):
 			founded.setName(self.name, False)
 			founded.setPopulation(self.iPopulation)
 			
-			if plot(x, y).getRegionID() not in lAfrica:
-				founded.setCulture(founded.getOwner(), scale(self.iCulture) + iTechEra * scale(100), True)
+			founded.setCulture(founded.getOwner(), scale(self.iCulture) + iTechEra * scale(100), True)
 			
 			self.add_buildings()
 			self.create_units()
