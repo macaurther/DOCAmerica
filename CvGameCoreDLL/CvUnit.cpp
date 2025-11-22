@@ -2585,6 +2585,10 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 			// Leoreth: impassable feature with improvement can be entered
 			bImpassableFeature = m_pUnitInfo->getFeatureImpassable(pPlot->getFeatureType()) && pPlot->getImprovementType() == NO_IMPROVEMENT;
 
+			// MacAurther: Swamp Fox1, 3 allow moving into specific impassible features
+			if ((pPlot->getFeatureType() == FEATURE_SWAMP || pPlot->getFeatureType() == FEATURE_RAINFOREST) && isHasPromotion(PROMOTION_SWAMP_FOX1)) bImpassableFeature = false;
+			else if ((pPlot->getFeatureType() == FEATURE_BOG || pPlot->getFeatureType() == FEATURE_JUNGLE) && isHasPromotion(PROMOTION_SWAMP_FOX3)) bImpassableFeature = false;
+
 			// Leoreth: attacks on impassable tiles are possible now
 			if (bImpassableFeature && !bAttack)
 			{

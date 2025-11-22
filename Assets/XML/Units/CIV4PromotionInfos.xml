@@ -824,8 +824,15 @@
 		<PromotionInfo>
 			<Type>PROMOTION_GUERILLA1</Type>
 			<Description>TXT_KEY_PROMOTION_GUERILLA1</Description>
+			<Help>TXT_KEY_PROMOTION_GUERILLA1_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<iHillsDefense>20</iHillsDefense>
+			<FeatureDefenses>
+				<FeatureDefense>
+					<FeatureType>FEATURE_CANYON</FeatureType>
+					<iFeatureDefense>20</iFeatureDefense>
+				</FeatureDefense>
+			</FeatureDefenses>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
@@ -850,6 +857,12 @@
 			<TechPrereq>TECH_LANDMARKS</TechPrereq>
 			<bHillsDoubleMove>1</bHillsDoubleMove>
 			<iHillsDefense>30</iHillsDefense>
+			<FeatureDefenses>
+				<FeatureDefense>
+					<FeatureType>FEATURE_CANYON</FeatureType>
+					<iFeatureDefense>30</iFeatureDefense>
+				</FeatureDefense>
+			</FeatureDefenses>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
@@ -878,6 +891,12 @@
 			<TechPrereq>TECH_PATHFINDING</TechPrereq>
 			<iWithdrawalChange>50</iWithdrawalChange>
 			<iHillsAttack>25</iHillsAttack>
+			<FeatureAttacks>
+				<FeatureAttack>
+					<FeatureType>FEATURE_CANYON</FeatureType>
+					<iFeatureAttack>25</iFeatureAttack>
+				</FeatureAttack>
+			</FeatureAttacks>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -900,7 +919,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<FeatureDefenses>
 				<FeatureDefense>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
 					<iFeatureDefense>20</iFeatureDefense>
 				</FeatureDefense>
 				<FeatureDefense>
@@ -908,7 +927,7 @@
 					<iFeatureDefense>20</iFeatureDefense>
 				</FeatureDefense>
 				<FeatureDefense>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<iFeatureDefense>20</iFeatureDefense>
 				</FeatureDefense>
 			</FeatureDefenses>
@@ -936,7 +955,7 @@
 			<TechPrereq>TECH_HUNTING</TechPrereq>
 			<FeatureDefenses>
 				<FeatureDefense>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
 					<iFeatureDefense>30</iFeatureDefense>
 				</FeatureDefense>
 				<FeatureDefense>
@@ -944,13 +963,13 @@
 					<iFeatureDefense>30</iFeatureDefense>
 				</FeatureDefense>
 				<FeatureDefense>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<iFeatureDefense>30</iFeatureDefense>
 				</FeatureDefense>
 			</FeatureDefenses>
 			<FeatureDoubleMoves>
 				<FeatureDoubleMove>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
 					<bFeatureDoubleMove>1</bFeatureDoubleMove>
 				</FeatureDoubleMove>
 				<FeatureDoubleMove>
@@ -958,7 +977,7 @@
 					<bFeatureDoubleMove>1</bFeatureDoubleMove>
 				</FeatureDoubleMove>
 				<FeatureDoubleMove>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<bFeatureDoubleMove>1</bFeatureDoubleMove>
 				</FeatureDoubleMove>
 			</FeatureDoubleMoves>
@@ -988,7 +1007,7 @@
 			<iSameTileHealChange>15</iSameTileHealChange>
 			<FeatureAttacks>
 				<FeatureAttack>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
 					<iFeatureAttack>50</iFeatureAttack>
 				</FeatureAttack>
 				<FeatureAttack>
@@ -996,7 +1015,7 @@
 					<iFeatureAttack>50</iFeatureAttack>
 				</FeatureAttack>
 				<FeatureAttack>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<iFeatureAttack>50</iFeatureAttack>
 				</FeatureAttack>
 			</FeatureAttacks>
@@ -1010,7 +1029,7 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>,Art/Interface/Buttons/Promotions/Woodsman2.dds,Art/Interface/Buttons/Promotions_Atlas.dds,8,6</Button>
+			<Button>,Art/Interface/Buttons/Promotions/Woodsman3.dds,Art/Interface/Buttons/Promotions_Atlas.dds,8,6</Button>
 		</PromotionInfo>
 		<PromotionInfo>
 			<Type>PROMOTION_FLANKING1</Type>
@@ -2274,6 +2293,133 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Reconnaissance.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>
+			<Type>PROMOTION_SWAMP_FOX1</Type>
+			<Description>TXT_KEY_PROMOTION_SWAMP_FOX1</Description>
+			<Help>TXT_KEY_PROMOTION_SWAMP_FOX1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<FeatureDefenses>
+				<FeatureDefense>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<iFeatureDefense>20</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<iFeatureDefense>20</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<iFeatureDefense>20</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_BOG</FeatureType>
+					<iFeatureDefense>20</iFeatureDefense>
+				</FeatureDefense>
+			</FeatureDefenses>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>,Art/Interface/Buttons/Promotions/SwampFox1.dds,Art/Interface/Buttons/Promotions_Colonization_Atlas.dds,8,9</Button>
+		</PromotionInfo>
+		<PromotionInfo>
+			<Type>PROMOTION_SWAMP_FOX2</Type>
+			<Description>TXT_KEY_PROMOTION_SWAMP_FOX2</Description>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROMOTION_SWAMP_FOX1</PromotionPrereqOr1>
+			<TechPrereq>TECH_HUNTING</TechPrereq>
+			<FeatureDefenses>
+				<FeatureDefense>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<iFeatureDefense>30</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<iFeatureDefense>30</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<iFeatureDefense>30</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_BOG</FeatureType>
+					<iFeatureDefense>30</iFeatureDefense>
+				</FeatureDefense>
+			</FeatureDefenses>
+			<FeatureDoubleMoves>
+				<FeatureDoubleMove>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<bFeatureDoubleMove>1</bFeatureDoubleMove>
+				</FeatureDoubleMove>
+				<FeatureDoubleMove>
+					<FeatureType>FEATURE_BOG</FeatureType>
+					<bFeatureDoubleMove>1</bFeatureDoubleMove>
+				</FeatureDoubleMove>
+			</FeatureDoubleMoves>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>,Art/Interface/Buttons/Promotions/SwampFox2.dds,Art/Interface/Buttons/Promotions_Colonization_Atlas.dds,1,10</Button>
+		</PromotionInfo>
+		<PromotionInfo>
+			<Type>PROMOTION_SWAMP_FOX3</Type>
+			<Description>TXT_KEY_PROMOTION_SWAMP_FOX3</Description>
+			<Help>TXT_KEY_PROMOTION_SWAMP_FOX3_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROMOTION_SWAMP_FOX2</PromotionPrereqOr1>
+			<TechPrereq>TECH_TRAPPING</TechPrereq>
+			<bAlwaysHeal>1</bAlwaysHeal>
+			<FeatureAttacks>
+				<FeatureAttack>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<iFeatureAttack>50</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<iFeatureAttack>50</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<iFeatureAttack>50</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_BOG</FeatureType>
+					<iFeatureAttack>50</iFeatureAttack>
+				</FeatureAttack>
+			</FeatureAttacks>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>,Art/Interface/Buttons/Promotions/SwampFox3.dds,Art/Interface/Buttons/Promotions_Colonization_Atlas.dds,2,10</Button>
 		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

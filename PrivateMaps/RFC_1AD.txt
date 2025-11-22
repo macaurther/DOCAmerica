@@ -33,7 +33,7 @@ BeginPlot
 		CityPopulation=2
 		YearFounded=-450
 		BeginCulture
-			Civilization=CIVILIZATION_INDEPENDENT1, Culture=10
+			Civilization=CIVILIZATION_INDEPENDENT1, Culture=20
 		EndCulture
 	EndCity
 EndPlot

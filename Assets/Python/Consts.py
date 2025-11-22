@@ -561,7 +561,7 @@ iNumUnitRoles = 25
 iAttackSea, 	iAssaultSea, 	iWorkSea,		iMissionarySea,	iFerry, 		iEscort, 		iExplore, 		iShockCity, 	iSiege, 		iCitySiege, 	
 iExploreSea, 	iSkirmish, 		iLightEscort, 	iWork, 			iMissionary) = range(iNumUnitRoles)
 
-iNumPromotions = 86
+iNumPromotions = 89
 # 0				1				2				3				4				5				6				7				8				9
 (iCombat1,		iCombat2,		iCombat3,		iCombat4,		iCombat5,		iCombat6,		iCover,			iShockPromo,	iPinch,			iFormation,
 iCharge,		iAmbush,		iSkirmish,		iAmphibious,	iMarch,			iBlitz,			iCommando,		iMedic1,		iMedic2,		iMedic3,		
@@ -571,7 +571,7 @@ iBarrage2,		iBarrage3,		iAccuracy,		iDisengage1,	iDisengage2,	iRiverCombat,	iSen
 iRange1,		iRange2,		iInterception1,	iInterception2,	iAce,			iLogistics1,	iLogistics2,	iLogistics3,	iDeception1,	iDeception2,	iDeception3,
 iSecurity1,		iSecurity2,		iSecurity3,		iImprovise1,	iImprovise2,	iImprovise3,	iImprovise4,	iImprovise5,	iLoyalty,		iInstigator1,
 iInsitgator2,	iInstigator3,	iAlchemist1,	iAlchemist2,	iEscape1,		iEscape2,		iLeader,		iLeadership,	iTactics,		iMorale,
-iMercenary,		iDesertAdaptation,iPrairieAdaptation,iVolunteer,iReconnaissance) = range(iNumPromotions)
+iMercenary,		iDesertAdaptation,iPrairieAdaptation,iVolunteer,iReconnaissance,iSwampFox1,		iSwampFox2,		iSwampFox3) = range(iNumPromotions)
 
 # initialise bonuses variables to bonuses IDs from WBS
 iNumBonuses = 49

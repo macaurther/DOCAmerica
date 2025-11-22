@@ -197,4 +197,52 @@
 		<Italian>[ICON_BULLET]Can cross straits</Italian>
 		<Spanish>[ICON_BULLET]Can cross straits</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SWAMP_FOX1_HELP</Tag>
+		<English>[ICON_BULLET]Can enter Rainforest, Swamp</English>
+		<French>[ICON_BULLET]Can enter Rainforest, Swamp</French>
+		<German>[ICON_BULLET]Can enter Rainforest, Swamp</German>
+		<Italian>[ICON_BULLET]Can enter Rainforest, Swamp</Italian>
+		<Spanish>[ICON_BULLET]Can enter Rainforest, Swamp</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SWAMP_FOX3_HELP</Tag>
+		<English>[ICON_BULLET]Can enter Jungle, Bog</English>
+		<French>[ICON_BULLET]Can enter Jungle, Bog</French>
+		<German>[ICON_BULLET]Can enter Jungle, Bog</German>
+		<Italian>[ICON_BULLET]Can enter Jungle, Bog</Italian>
+		<Spanish>[ICON_BULLET]Can enter Jungle, Bog</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GUERILLA1_HELP</Tag>
+		<English>[ICON_BULLET]Can cross Canyon</English>
+		<French>[ICON_BULLET]Can cross Canyon</French>
+		<German>[ICON_BULLET]Can cross Canyon</German>
+		<Italian>[ICON_BULLET]Can cross Canyon</Italian>
+		<Spanish>[ICON_BULLET]Can cross Canyon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SWAMP_FOX1</Tag>
+		<English>Swamp Fox I</English>
+		<French>Swamp Fox I</French>
+		<German>Swamp Fox I</German>
+		<Italian>Swamp Fox I</Italian>
+		<Spanish>Swamp Fox I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SWAMP_FOX2</Tag>
+		<English>Swamp Fox II</English>
+		<French>Swamp Fox II</French>
+		<German>Swamp Fox II</German>
+		<Italian>Swamp Fox II</Italian>
+		<Spanish>Swamp Fox II</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SWAMP_FOX3</Tag>
+		<English>Swamp Fox III</English>
+		<French>Swamp Fox III</French>
+		<German>Swamp Fox III</German>
+		<Italian>Swamp Fox III</Italian>
+		<Spanish>Swamp Fox III</Spanish>
+	</TEXT>
 </Civ4GameText>

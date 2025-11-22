@@ -36,12 +36,19 @@ def mayanPower(iTech, iTeam, iPlayer):
 
 @handler("cityBuilt")
 # Desert RP
-def puebloanPower(pCity):
+def desertPower(pCity):
 	if civ(pCity.getOwner()) in [iPueblo]:
 		lFreeBuildings = [iGranary, iMarket, iStoneworks]
 		for iBuilding in lFreeBuildings:
 			if not pCity.isHasRealBuilding(iBuilding):
 				pCity.setHasRealBuilding(iBuilding, True)
+
+@handler("buildingBuilt")
+# Pueblo UP
+def puebloPower(pCity, iBuilding):
+	if iBuilding == iStoneworks and civ(pCity.getOwner()) == iPueblo:
+		iNumPeakCanyons = plots.city_radius(pCity).where(lambda plot: plot.isPeak() or plot.getFeatureType() == iCanyon).count()
+		pCity.setBuildingCommerceChange(infos.building(iStoneworks).getBuildingClassType(), CommerceTypes.COMMERCE_CULTURE, iNumPeakCanyons)
 
 @handler("cityAcquiredAndKept")
 # Chimu UP

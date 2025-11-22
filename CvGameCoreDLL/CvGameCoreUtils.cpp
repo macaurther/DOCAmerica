@@ -1872,8 +1872,8 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 					return false;
 				}
 			}
-			// MacAurther: Canyons: Can't cross a river with a canyon
-			if (pFromPlot->getFeatureType() == FEATURE_CANYON || pToPlot->getFeatureType() == FEATURE_CANYON)
+			// MacAurther: Canyons: Can't cross a river with a canyon, unless has Guerilla1
+			if ((pFromPlot->getFeatureType() == FEATURE_CANYON || pToPlot->getFeatureType() == FEATURE_CANYON) && !pSelectionGroup->getHeadUnit()->isHasPromotion(PROMOTION_GUERILLA1))
 			{
 				const DirectionTypes eDir = directionXY(pFromPlot, pToPlot);
 				if(pFromPlot->isRiverCrossing(eDir))

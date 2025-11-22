@@ -11711,7 +11711,7 @@ bool CvPlot::isCore(CivilizationTypes eCivilization) const
 	FAssertMsg(eCivilization >= 0, "eCivilization is expected to be non-negative");
 	//FAssertMsg(eCivilization < NUM_CIVS, "eCivilization is expected to be a playable civilization");	// MacAurther: Let's just change this to handle the case that it's not
 	// MacAurther: It's not core if the Civ is a minor
-	if (eCivilization < NUM_CIVS)
+	if (eCivilization >= NUM_CIVS)
 	{
 		return false;
 	}
