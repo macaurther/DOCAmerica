@@ -11,7 +11,7 @@ iWorldY = 122
 # MacAurther TODO: Update this alongside Consts
 iNumCivs = 38
 # 0				1				2				3				4				5				6				7				8				9
-(iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iEngland, 		iFrance, 		iHaiti,			
+(iAmerica, 		iArgentina, 	iAztec, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iEngland, 		iFrance, 		iHaiti,			
 iHaudenosaunee,	iHawaii,		iInca,			iInuit,			iLakota,		iMaya,			iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	
 iNorse,			iPeru,			iPortugal, 		iPueblo,		iPurepecha,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		
 iWari,			iZapotec,		iIndependent1, 	iIndependent2, 	iIndependent3,	iIndigenous,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
@@ -35,7 +35,7 @@ iNumReligionMapTypes = 5
 dCivNames = {
 	iAmerica: "America",
 	iArgentina: "Argentina",
-	iAztecs: "Aztecs",
+	iAztec: "Aztecs",
 	iBrazil: "Brazil",
 	iCanada: "Canada",
 	iChimu: "Chimu",
@@ -107,7 +107,7 @@ iChimu :		((19, 35),	(22, 38)),
 iInuit :		((10, 117),	(19, 121)),
 iInca :		    ((20, 27),	(27, 31)),
 iPurepecha :	((8, 66),	(11, 69)),
-iAztecs :		((12, 63),	(16, 66)),
+iAztec :		((12, 63),	(16, 66)),
 iHaudenosaunee :	    ((36, 84),	(40, 87)),
 iLakota :		((25, 89),	(28, 92)),
 iSpain : 		((0, 0), 	(0, 0)),	# No core for Europeans

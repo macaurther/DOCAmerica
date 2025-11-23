@@ -279,7 +279,7 @@ lCivilizations = [
 		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting, iLinguistics, iLocalization),
 	),
 	Civilization(
-		iAztecs,
+		iAztec,
 		iGold=600,
 		lCivics=[iDespot, iTlacotin, iRaiding, iOrganizedReligion],
 		lEnemies=[iTeotihuacan],
@@ -508,7 +508,7 @@ dStartingUnits = CivDict({
 		iSkirmish: 1,
 		iDefend: 1,
 	},
-	iAztecs: {
+	iAztec: {
 		iSettle: 1,
 		iWork: 3,
 		iBase: 3,
@@ -674,7 +674,7 @@ dExtraAIUnits = CivDict({
 		iFerry: 1,
 		iEscort: 1,
 	},
-	iAztecs: {
+	iAztec: {
 		iBase: 4,
 		iAttack: 6,
 		iSkirmish: 2,
@@ -701,7 +701,7 @@ dAdditionalUnits = CivDict({
 	iInca: {
 		iBase: 8,
 	},
-	iAztecs: {
+	iAztec: {
 		iBase: 3,
 	},
 	iAmerica: {
@@ -759,7 +759,7 @@ dStartingExperience = CivDict({
 }, {})
 
 dAlwaysTrain = CivDict({
-	iAztecs: [iAztecJaguar],
+	iAztec: [iAztecJaguar],
 	iMexico: [iGrenadier],
 	iColombia: [iAlbionLegion],
 	iBrazil: [iGrenadier],
@@ -868,7 +868,7 @@ dTechPreferences = {
 		iCalendar: 40,
 		iGunpowder: -20,
 	},
-	iAztecs : {
+	iAztec : {
 		iConstruction: 40,
 		iGunpowder: -20,
 	},
@@ -988,7 +988,7 @@ dBuildingPreferences = {
 		iSacsayhuaman: 40,
 		iSerpentMound: -40,
 	},
-	iAztecs : {
+	iAztec : {
 		iFloatingGardens: 40,
 		iHueyTeocalli: 30,
 		iMachuPicchu: -40,

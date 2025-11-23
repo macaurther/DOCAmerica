@@ -29,7 +29,7 @@ dBaseLanguages = {
 	iPurepecha: (iNative,),
 	iInuit: (iNative,),
 	iInca: (iQuechua,),
-	iAztecs: (iNahuatl,),
+	iAztec: (iNahuatl,),
 	iHaudenosaunee: (iNative,),
 	iSpain: (iSpanish,),
 	iPortugal: (iPortuguese,),
@@ -134,7 +134,7 @@ def setupScenario():
 def getPrimaryLanguages(identifier):
 	iCiv = civ(identifier)
 		
-	if iCiv in [iMaya, iAztecs, iInca, iWari, iTeotihuacan, iZapotec, iPurepecha, iPueblo, iChimu, iMuisca, iTiwanaku]:
+	if iCiv in [iMaya, iAztec, iInca, iWari, iTeotihuacan, iZapotec, iPurepecha, iPueblo, iChimu, iMuisca, iTiwanaku]:
 		if player(identifier).getStateReligion() in [iOrthodoxy, iCatholicism, iProtestantism] or team(identifier).isAVassal():
 			return (iSpanish,) + dBaseLanguages.get(iCiv, tuple())
 	elif iCiv in [iLakota, iHaudenosaunee, iInuit]:

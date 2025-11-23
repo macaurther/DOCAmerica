@@ -127,7 +127,7 @@ RELIGION_FOUNDING_DATES = {
 
 WONDER_ORIGINAL_BUILDERS = {
 	iTempleOfKukulkan : (iMaya, 800),
-	iFloatingGardens : (iAztecs, 1350),
+	iFloatingGardens : (iAztec, 1350),
 }
 
 DEFAULT_CIV_DESCRIPTIONS = {}

@@ -53,8 +53,8 @@ lInvasionCivs = [
 ]
 
 dClearedForBirth = {
-	iAztecs: iTeotihuacan,
-	iMexico: iAztecs,
+	iAztec: iTeotihuacan,
+	iMexico: iAztec,
 }
 
 lAlwaysClear = [
@@ -772,7 +772,7 @@ class Birth(object):
 		
 		# Mexico requires Aztecs to be dead
 		if self.iCiv == iMexico:
-			if player(iAztecs).isExisting():
+			if player(iAztec).isExisting():
 				return False
 	
 		# independence civs require all players controlling cities in their area to be stable or worse -> MacAurther: Nope. America wasn't spawning, can't have that.
@@ -860,7 +860,7 @@ class Birth(object):
 		if distance(plot, self.location) > 32:
 			return False
 		
-		return (plot.getRegionID() in lNewWorld) == (self.spawn.getRegionID() in lNewWorld)
+		return True	# MacAurther: All is New World now
 	
 	def checkExpansion(self):
 		if not self.player.isExisting():

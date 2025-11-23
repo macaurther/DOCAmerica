@@ -10461,7 +10461,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
 			<BonusType>BONUS_TIMBER</BonusType>
-			<iCost>60</iCost>
+			<iCost>75</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>6</iMoves>

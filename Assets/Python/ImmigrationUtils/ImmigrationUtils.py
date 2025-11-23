@@ -205,7 +205,7 @@ class ImmigrationUtils:
 	
 	# This method acts as a proxy to the hire method in the Mercenary class. It will
 	# get the mercenary object in the global mercenary pool
-	def hireMercenary(self, iUnit, iPlayer, iHomeland):
+	def hireMercenary(self, iUnit, iPlayer, iHomeland, bPay=True):
 		' returns true if the objMercenary was successfully hired'
 		
 		# Get the player
@@ -237,9 +237,10 @@ class ImmigrationUtils:
 				return False
         
 		# Subtract cost to hire from player current cash
-		(iImmigrantCost, iGoldCost) = immigrant.getHireCost(iPlayer)
-		self.changeImmigrants(iPlayer, iHomeland, iImmigrant, -iImmigrantCost)
-		pPlayer.setGold(pPlayer.getGold() - iGoldCost)
+		if bPay:
+			(iImmigrantCost, iGoldCost) = immigrant.getHireCost(iPlayer)
+			self.changeImmigrants(iPlayer, iHomeland, iImmigrant, -iImmigrantCost)
+			pPlayer.setGold(pPlayer.getGold() - iGoldCost)
 		
 		# Place immediately if ship, otherwise add to earned Immigrants
 		if immigrant.isShip():

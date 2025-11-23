@@ -161,9 +161,6 @@ class Mercenary:
 			iGoldCost = scale(500)
 		else:
 			iGoldCost = self.getUnitInfo().getProductionCost() / 2
-			# Double price if unique unit
-			if gc.getUnitClassInfo(self.getUnitInfo().getUnitClassType()).getDefaultUnitIndex() != self.iUnitID:
-				iGoldCost *= 2
 
 		# Apply effects
 		if bIndenturedServitude and self.iUnitID in [iWorker, iPromyshlenniki, iLaborer]: iImmigrationCost -= 1
@@ -294,18 +291,14 @@ class Mercenary:
 	# Get the tile where hire mercenary ships appear
 	def getShipPlacementPlot(self, iPlayer, iHomeland):
 		iCiv = civ(iPlayer)
+		
+		for x in range(iWorldX):
+			pLoopPlot = plot(x, dCapitals[iCiv][1])
+			if pLoopPlot.getFeatureType() - iTradeWindsStart == iHomeland:
+				return pLoopPlot
 
-		x = dHomelandArea[iHomeland][0][0][0]
-		y = dHomelandArea[iHomeland][0][0][1]
-
-		lHomelandYs = []
-		for segment in dHomelandArea[iHomeland]:
-			lHomelandYs += range(segment[0][1], segment[1][1])
-		for hly in lHomelandYs:
-			if abs(dCapitals[iCiv][1] - hly) < abs(dCapitals[iCiv][1] - y):
-				y = hly
-
-		return gc.getMap().plot(x, y)
+		# If no plots were found that matched the given homeland at the latitude of the player's capital, return default
+		return plot(dHomelandDefaultUnitSpawn[iHomeland])
 	
 	# Is Ship?
 	def isShip(self):

@@ -1,6 +1,6 @@
 from Core import *
 
-lCityStatesStart = [iMaya, iAztecs]
+lCityStatesStart = [iMaya, iAztec]
 
 
 class Civics(object):

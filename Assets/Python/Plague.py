@@ -144,7 +144,7 @@ def newWorldPlague(iTeamX, iHasMetTeamY):
 	if data.bNoPlagues:
 		return
 		
-	if year() <= year(dBirth[iAztecs]):
+	if year() <= year(dBirth[iAztec]):
 		return
 	
 	if year() >= year(1800):
@@ -301,7 +301,7 @@ def killUnitsByPlague(city, pPlot, baseValue, iDamage, iPreserveDefenders):
 					iDamage /= 4
 				
 			if data.players[city.getOwner()].bFirstContactPlague:
-				if civ(unit) not in lNewWorld and not is_minor(unit):
+				if civ(unit) not in lBioNewWorld and not is_minor(unit):
 					iDamage /= 2
 					
 			if rand(100) > iThreshold:

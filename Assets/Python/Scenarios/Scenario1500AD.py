@@ -44,7 +44,7 @@ lCivilizations = [
 		techs=techs.column(7).without(iTrapping)
 	),
 	Civilization(
-		iAztecs,
+		iAztec,
 		iGold=600,
 		lCivics=[iAristocrats, iClans, iTlacotin, iRaiding, iOrganizedReligion, iSacrifice],
 		techs=techs.column(7).including(iNobility).without(iAstronomy, iScholarship, iNavigation)

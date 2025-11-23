@@ -75,7 +75,7 @@ tSpainMayaTL = (20, 58)
 tSpainMayaBR = (25, 63)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
-iConquestNum, tConquestSpainAztecs = processConquest(iConquestNum, iSpain, iAztecs, tSpainAztecsTL, tSpainAztecsBR, 2, iSpainAztecsYear, 10)
+iConquestNum, tConquestSpainAztecs = processConquest(iConquestNum, iSpain, iAztec, tSpainAztecsTL, tSpainAztecsBR, 2, iSpainAztecsYear, 10)
 iConquestNum, tConquestSpainPurepechans = processConquest(iConquestNum, iSpain, iPurepecha, tSpainPurepechansTL, tSpainPurepechansBR, 2, iSpainPurepechansYear, 10)
 iConquestNum, tConquestSpainZapotec = processConquest(iConquestNum, iSpain, iZapotec, tSpainZapotecTL, tSpainZapotecBR, 2, iSpainZapotecYear, 10)
 iConquestNum, tConquestSpainInca = processConquest(iConquestNum, iSpain, iInca, tSpainIncaTL, tSpainIncaBR, 3, iSpainIncaYear, 10)

@@ -226,9 +226,9 @@ dGoals = {
 		GoldAmount(2500, by=1500),
 		AreaPopulationPercent(plots.regions(*lAndes).named(ANDES), 100, at=1550),
 	),
-	iAztecs: (
+	iAztec: (
 		All(VassalCount(1), Control(plots.region(rBajio).named(BAJIO), subject=VASSALS), by=1450),
-		CityPopulation(start(iAztecs).named(TENOCHTITLAN), 20, at=1500),
+		CityPopulation(start(iAztec).named(TENOCHTITLAN), 20, at=1500),
 		EnslaveCount(50, by=1550),
 	),
 	iHaudenosaunee: (

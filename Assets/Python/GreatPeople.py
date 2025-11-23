@@ -225,7 +225,7 @@ dGreatPeople = {
 			"fJuana Azurduy de Padilla", # 19th
 		),
 	},
-	iAztecs : {
+	iAztec : {
 		iGreatProphet : (
 			"Tenoch", # 14th
 			"Tlacateotl", # 15th

@@ -42,7 +42,7 @@ def getHoverText(eWidgetType, iData1, iData2, bOption):
 	fRate = float(gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION))
 	szText = BugUtil.getText("TXT_KEY_MISC_IMMIGRATION", (int(fProgress), int(fThreshold)))
 	if (fRate > 0):
-		iTurns = math.ceil(fThreshold - fProgress) / fRate
+		iTurns = math.ceil((fThreshold - fProgress) / fRate)
 		if iTurns < 0: iTurns = 0
 		szText += u"\n%d%c%s " % (int(fRate), gc.getCommerceInfo(CommerceTypes.COMMERCE_IMMIGRATION).getChar(), BugUtil.getPlainText("TXT_KEY_PER_TURN"))
 		szText += BugUtil.getText("INTERFACE_CITY_TURNS", (iTurns,))
@@ -82,6 +82,8 @@ class CvImmigrationManager:
 		self.iActivePlayer = -1
 		
 		self.currentScreen = IMMIGRATION_MANAGER
+
+		self.bScreenDataCalculated = False
 		
 	# Returns the instance of the immigration manager screen.						
 	def getScreen(self):
@@ -110,13 +112,12 @@ class CvImmigrationManager:
 		screen.showScreen(PopupStates.POPUPSTATE_IMMEDIATE, False)
 
 		self.nWidgetCount = 0
-
-		self.iActivePlayer = gc.getGame().getActivePlayer()
-		
+	
 		screen = self.getScreen()
 
-		# Calculate all of the screen position data
-		self.calculateScreenWidgetData(screen)
+		# Calculate all of the screen position data if necessary
+		if not self.bScreenDataCalculated:
+			self.calculateScreenWidgetData(screen)
 		
 		if(self.currentScreen == IMMIGRATION_MANAGER):
 			self.drawMercenaryScreenContent(screen)
@@ -517,9 +518,14 @@ class CvImmigrationManager:
 		
 		return strGoldText + strDelta
 	
+	# Hire list of mercenaries
+	def grantMercenaries(self, lMercenaries, iPlayer, iHomeland):
+		for iMercenary in lMercenaries:
+			self.hireMercenary(iMercenary, iPlayer, iHomeland, False)
+
 	# Useful method for use outside of Immigration Manager land as well
-	def hireMercenary(self, iMercenary, iPlayer, iHomeland):
-		objImmigrationUtils.hireMercenary(iMercenary, iPlayer, iHomeland)
+	def hireMercenary(self, iMercenary, iPlayer, iHomeland, bPay = True):
+		objImmigrationUtils.hireMercenary(iMercenary, iPlayer, iHomeland, bPay)
 
 	# Hires a mercenary for a player
 	def hireMercenaryOnScreen(self, screen, iMercenary, iHomeland):
@@ -614,6 +620,10 @@ class CvImmigrationManager:
 		# Get the instance of the screen
 		screen = self.getScreen()
 
+		# Calculate all of the screen position data if necessary
+		if not self.bScreenDataCalculated:
+			self.calculateScreenWidgetData(screen)
+
 		# Debug code - start
 		if g_bDebug:
 			screen.setText( "TopPanelDebugMsg", "TopPanel", inputClass.getFunctionName()
@@ -698,9 +708,6 @@ class CvImmigrationManager:
 				# Return immediately if we still couldn't get the mercenary information
 				if(mercenary == None):
 					return
-					
-				# Calculate the screen information
-				#self.calculateScreenWidgetData(screen)
 
 				# Populate the mercenary information panel
 				self.populateMercenaryInformation(screen, mercenary)
@@ -720,6 +727,7 @@ class CvImmigrationManager:
 	# Calculates the screens widgets positions, dimensions, text, etc.
 	def calculateScreenWidgetData(self, screen):
 		' Calculates the screens widgets positions, dimensions, text, etc. '
+		self.iActivePlayer = gc.getGame().getActivePlayer()
 		
 		# The border width should not be a hard coded number
 		self.screenWidgetData[BORDER_WIDTH] = 4
@@ -880,6 +888,8 @@ class CvImmigrationManager:
 		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_Y] = self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_WIDTH] = self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*2)
 		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_HEIGHT] = self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*2)
+
+		self.bScreenDataCalculated = True
 
 @handler("GameStart")
 def onGameStart():

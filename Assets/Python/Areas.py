@@ -11,7 +11,7 @@ iZapotec :		 (28, 64), # Danibaan
 iTeotihuacan :	 (25, 69), # Teotihuacan
 iTiwanaku :		 (52, 32), # Tiwanaku
 iWari :			 (45, 39), # Huari
-iMississippi :	 (32, 87), # Cahokia
+iMississippi :	 (44, 87), # Cahokia
 iMuisca :		 (48, 50), # Bacata
 iNorse :		 (64, 117), # Reykjavik
 iChimu :		 (41, 41), # Chan Chan
@@ -19,7 +19,7 @@ iPueblo :		 (20, 83), # Chaco Canyon
 iPurepecha :	 (20, 69), # Tzintzuntzan
 iInuit :		 (9, 118), # North Alaska
 iInca :			 (48, 35), # Cuzco
-iAztecs :		 (24, 67), # Tenochtitlan
+iAztec :		 (24, 67), # Tenochtitlan
 iHaudenosaunee : (45, 93), # Onondaga
 iSpain :		 (58, 66), # Santo Domingo
 iPortugal :		 (69, 26), # Sao Paulo
@@ -67,7 +67,7 @@ iPueblo :		((18, 80),	(21, 86)),
 iPurepecha :	((18, 66),	(21, 70)),
 iInuit :		((7, 117),	(15, 120)),
 iInca :		    ((46, 34),	(49, 37)),
-iAztecs :		((23, 66),	(25, 68)),
+iAztec :		((23, 66),	(25, 68)),
 iHaudenosaunee :((43, 92),	(46, 94)),
 iSpain :		((57, 65),	(59, 67)),
 iPortugal :	    ((68, 25),	(70, 27)),
@@ -121,7 +121,7 @@ iPueblo :		((19, 82),	(21, 86)),
 iPurepecha :	((19, 68),	(21, 69)),
 iInuit :		((7, 117),	(15, 120)),
 iInca :		    ((46, 34),	(49, 37)),
-iAztecs :		((24, 67),	(24, 67)),
+iAztec :		((24, 67),	(24, 67)),
 iHaudenosaunee :((43, 92),	(46, 94)),
 iSpain : 		((0, 0), 	(0, 0)),	# No core for Europeans
 iPortugal : 	((0, 0), 	(0, 0)),	# No core for Europeans
@@ -169,12 +169,10 @@ dRespawnArea = CivDict({
 dRespawnAreaExceptions = CivDict({
 }, [])
 
-### MacAurther TODO: Outmoded, replace:
-
-dHomelandArea = dict({
-    iHomelandNorthEurope : [((58, 71), (58, 121))],
-    iHomelandSouthEurope : [((58, 48), (58, 70))],
-    iHomelandAfrica : [((58, 7), (58, 21)), ((58, 32), (58, 47))],
-    iHomelandSiberia : [((0, 99), (0, 114)), ((0, 116), (0, 121))],
-    iHomelandAsia : [((0, 10), (0, 98))],
+dHomelandDefaultUnitSpawn = dict({
+    iHomelandNorthEurope : (68, 93),
+    iHomelandSouthEurope : (71, 73),
+    iHomelandAfrica : (82, 53),
+    iHomelandSiberia : (0, 102),
+    iHomelandAsia : (0, 63),
 })

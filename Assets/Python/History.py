@@ -320,8 +320,12 @@ def conquistadors(iTeamX, iHasMetTeamY):
 		
 		# MacAurther: Spain UP: Get free units when discovering Natives
 		if iOldWorldCiv == iSpain:
+			lMercenaries = [iConquistador, iCatholicMiss]
+			if iNewWorldCiv in [iAztec, iInca, iMaya]:
+				lMercenaries += [iArquebusier, iBombard, iPikeman, iExplorer]
+
 			# Holy mole I don't know how to write code
-			CvScreensInterface.immigrationManager.hireMercenary(iConquistador, iOldWorldPlayer, iHomelandSouthEurope)
+			CvScreensInterface.immigrationManager.grantMercenaries(lMercenaries, iOldWorldPlayer, iHomelandSouthEurope)
 
 			message(iNewWorldPlayer, "TXT_KEY_FIRST_CONTACT_NEWWORLD")
 			message(iOldWorldPlayer, "TXT_KEY_FIRST_CONTACT_OLDWORLD")

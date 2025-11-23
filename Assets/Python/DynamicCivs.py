@@ -31,7 +31,7 @@ dSpecificVassalTitles = deepdict({
 	iSpain : {
 		iMaya : "TXT_KEY_CIV_SPANISH_MAYA",
 		iInca : "TXT_KEY_CIV_SPANISH_INCA",
-		iAztecs : "TXT_KEY_CIV_SPANISH_AZTECS",
+		iAztec : "TXT_KEY_CIV_SPANISH_AZTECS",
 		iFrance : "TXT_KEY_CIV_SPANISH_FRANCE",
 		iNetherlands : "TXT_KEY_ADJECTIVE_TITLE",
 		iPortugal : "TXT_KEY_CIV_SPANISH_PORTUGAL",
@@ -45,7 +45,7 @@ dSpecificVassalTitles = deepdict({
 		iNetherlands : "TXT_KEY_CIV_FRENCH_NETHERLANDS",
 		iPortugal : "TXT_KEY_CIV_FRANCE_DEPARTEMENTS_OF",
 		iInca : "TXT_KEY_CIV_FRENCH_INCA",
-		iAztecs : "TXT_KEY_CIV_FRENCH_AZTECS",
+		iAztec : "TXT_KEY_CIV_FRENCH_AZTECS",
 		iAmerica : "TXT_KEY_CIV_FRENCH_AMERICA",
 		iHaiti : "TXT_KEY_CIV_FRENCH_HAITI",
 		iHaudenosaunee : "TXT_KEY_CIV_FRENCH_HAUDENOSAUNEE",
@@ -71,7 +71,7 @@ dSpecificVassalTitles = deepdict({
 		iEngland : "TXT_KEY_CIV_AMERICAN_ENGLAND",
 		iFrance : "TXT_KEY_CIV_AMERICAN_FRANCE",
 		iNetherlands : "TXT_KEY_CIV_AMERICAN_NETHERLANDS",
-		iAztecs : "TXT_KEY_CIV_AMERICAN_MEXICO",
+		iAztec : "TXT_KEY_CIV_AMERICAN_MEXICO",
 		iMaya : "TXT_KEY_CIV_AMERICAN_MAYA",
 		iHaudenosaunee : "TXT_KEY_CIV_AMERICAN_HAUDENOSAUNEE",
 		iLakota : "TXT_KEY_CIV_AMERICAN_LAKOTA",
@@ -107,7 +107,7 @@ dForeignAdjectives = deepdict({
 
 dForeignNames = deepdict({
 	iSpain : {
-		iAztecs : "TXT_KEY_CIV_SPANISH_NAME_AZTECS",
+		iAztec : "TXT_KEY_CIV_SPANISH_NAME_AZTECS",
 	},
 	iFrance : {
 	},
@@ -116,10 +116,10 @@ dForeignNames = deepdict({
 })
 
 lRepublicOf = [iVenezuela]
-lRepublicAdj = [iSpain, iFrance, iPortugal, iInca, iAztecs, iArgentina]
+lRepublicAdj = [iSpain, iFrance, iPortugal, iInca, iAztec, iArgentina]
 
 lSocialistRepublicOf = [iBrazil, iColombia]
-lSocialistRepublicAdj = [iAztecs, iArgentina]
+lSocialistRepublicAdj = [iAztec, iArgentina]
 
 lPeoplesRepublicOf = []
 lPeoplesRepublicAdj = []
@@ -132,19 +132,19 @@ dEmpireThreshold = {
 
 lChristianity = [iCatholicism, iOrthodoxy, iProtestantism]
 
-lRespawnNameChanges = [iInca, iAztecs] # TODO: this should be covered by period
-lVassalNameChanges = [iInca, iAztecs] # TODO: this should be covered by period
-lChristianityNameChanges = [iInca, iAztecs] # TODO: this should be covered by period
+lRespawnNameChanges = [iInca, iAztec] # TODO: this should be covered by period
+lVassalNameChanges = [iInca, iAztec] # TODO: this should be covered by period
+lChristianityNameChanges = [iInca, iAztec] # TODO: this should be covered by period
 
-lColonies = [iAztecs, iInca, iMaya] # TODO: could be covered by more granular continental regions
+lColonies = [iAztec, iInca, iMaya] # TODO: could be covered by more granular continental regions
 
 dNameChanges = { # TODO: this should be covered by period
-	iAztecs : "TXT_KEY_CIV_MEXICO_SHORT_DESC",
+	iAztec : "TXT_KEY_CIV_MEXICO_SHORT_DESC",
 	iInca : "TXT_KEY_CIV_PERU_SHORT_DESC",
 }
 
 dAdjectiveChanges = {
-	iAztecs : "TXT_KEY_CIV_MEXICO_ADJECTIVE",
+	iAztec : "TXT_KEY_CIV_MEXICO_ADJECTIVE",
 	iInca : "TXT_KEY_CIV_PERU_ADJECTIVE",
 }
 
@@ -168,7 +168,7 @@ dStartingLeaders = [
 	iInuit : iAua,
 	iInca : iPachacuti,
 	iPurepecha : iErendira,
-	iAztecs : iMontezuma,
+	iAztec : iMontezuma,
 	iHaudenosaunee : iHiawatha,
 	iLakota : iSittingBull,
 	iSpain : iIsabella,
@@ -714,7 +714,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			if bEmpire:
 				return "TXT_KEY_CIV_INCA_FOUR_REGIONS"
 				
-	elif iCiv == iAztecs:
+	elif iCiv == iAztec:
 		if bEmpire:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
