@@ -910,6 +910,8 @@ void CvPlot::updateFog()
 
 	if (isRevealed(GC.getGameINLINE().getActiveTeam(), false))
 	{
+		showTradewindOverlay();	// MacAurther: Update tradewind overlay
+
 		if (gDLL->getInterfaceIFace()->isBareMapMode())
 		{
 			gDLL->getEngineIFace()->LightenVisibility(getFOWIndex());
@@ -8569,43 +8571,6 @@ void CvPlot::setRevealed(TeamTypes eTeam, bool bNewValue, bool bTerrainOnly, Tea
 
 			gDLL->getInterfaceIFace()->setDirty(MinimapSection_DIRTY_BIT, true);
 			gDLL->getInterfaceIFace()->setDirty(GlobeLayer_DIRTY_BIT, true);
-
-
-			// MacAurther: Immigration: Update Tradewinds for active player if needed
-			// MacAurther TODO: XML-ize this?
-			NiColorA color;
-			AreaBorderLayers layer;
-			bool bTradewind = true;
-					
-			switch (getFeatureType())
-			{
-				case FEATURE_TRADEWINDS_NORTH_EUROPE:
-					color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_LIGHT_PURPLE")).getColor();
-					layer = AREA_BORDER_LAYER_NORTH_EUROPE_ACCESS;
-					break;
-				case FEATURE_TRADEWINDS_SOUTH_EUROPE:
-					color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_DARK_YELLOW")).getColor();
-					layer = AREA_BORDER_LAYER_SOUTH_EUROPE_ACCESS;
-					break;
-				case FEATURE_TRADEWINDS_AFRICA:
-					color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_LIME")).getColor();
-					layer = AREA_BORDER_LAYER_AFRICA_ACCESS;
-					break;
-				case FEATURE_TRADEWINDS_SIBERIA:
-					color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_VERYDARK_RED")).getColor();
-					layer = AREA_BORDER_LAYER_SIBERIA_ACCESS;
-					break;
-				case FEATURE_TRADEWINDS_ASIA:
-					color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_BLUEISH_PURPLE")).getColor();
-					layer = AREA_BORDER_LAYER_ASIA_ACCESS;
-					break;
-				default:
-					bTradewind = false;
-			}
-			if(bTradewind)
-			{
-				gDLL->getEngineIFace()->fillAreaBorderPlot(getX(), getY(), color, layer);
-			}
 		}
 
 		if (isRevealed(eTeam, false))
@@ -12451,4 +12416,43 @@ int CvPlot::getTribeThreatenTurn()
 void CvPlot::setTribeThreatenTurn(int iTurn)
 {
 	m_iTribeThreatenTurn = iTurn;
+}
+
+void CvPlot::showTradewindOverlay()
+{
+	// MacAurther: Immigration: Update Tradewinds for active player if needed
+	// MacAurther TODO: XML-ize this?
+	NiColorA color;
+	AreaBorderLayers layer;
+	bool bTradewind = true;
+					
+	switch (getFeatureType())
+	{
+		case FEATURE_TRADEWINDS_NORTH_EUROPE:
+			color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_LIGHT_PURPLE")).getColor();
+			layer = AREA_BORDER_LAYER_NORTH_EUROPE_ACCESS;
+			break;
+		case FEATURE_TRADEWINDS_SOUTH_EUROPE:
+			color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_DARK_YELLOW")).getColor();
+			layer = AREA_BORDER_LAYER_SOUTH_EUROPE_ACCESS;
+			break;
+		case FEATURE_TRADEWINDS_AFRICA:
+			color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_LIME")).getColor();
+			layer = AREA_BORDER_LAYER_AFRICA_ACCESS;
+			break;
+		case FEATURE_TRADEWINDS_SIBERIA:
+			color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_VERYDARK_RED")).getColor();
+			layer = AREA_BORDER_LAYER_SIBERIA_ACCESS;
+			break;
+		case FEATURE_TRADEWINDS_ASIA:
+			color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_BLUEISH_PURPLE")).getColor();
+			layer = AREA_BORDER_LAYER_ASIA_ACCESS;
+			break;
+		default:
+			bTradewind = false;
+	}
+	if(bTradewind)
+	{
+		gDLL->getEngineIFace()->fillAreaBorderPlot(getX(), getY(), color, layer);
+	}
 }

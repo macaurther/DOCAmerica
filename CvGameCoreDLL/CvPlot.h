@@ -605,6 +605,7 @@ public:
 	DllExport void setTribeStoredUnits(int iNumUnits);				// Exposed to Python
 	DllExport int getTribeThreatenTurn();							// Exposed to Python
 	void setTribeThreatenTurn(int iTurn);
+	void showTradewindOverlay();
 
 	// Leoreth: graphics paging
 	static void EvictGraphicsIfNecessary();
