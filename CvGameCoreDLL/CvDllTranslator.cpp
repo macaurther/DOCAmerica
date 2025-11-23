@@ -35,6 +35,7 @@ void CvDllTranslator::initializeTags(CvWString& szTagStartIcon, CvWString& szTag
 	aIconMap[L"[ICON_MAP]"] = std::wstring(1, (wchar)gDLL->getSymbolID(MAP_CHAR));
 	aIconMap[L"[ICON_OCCUPATION]"] = std::wstring(1, (wchar)gDLL->getSymbolID(OCCUPATION_CHAR));
 	aIconMap[L"[ICON_POWER]"] = std::wstring(1, (wchar)gDLL->getSymbolID(POWER_CHAR));
+	aIconMap[L"[ICON_GENERAL]"] = std::wstring(1, (wchar)gDLL->getSymbolID(GENERAL_CHAR));	// MacAurther
 	aIconMap[L"[ICON_CLEAN_POWER]"] = std::wstring(1, (wchar)gDLL->getSymbolID(CLEAN_POWER_CHAR));
 	aIconMap[L"[ICON_SCALES]"] = std::wstring(1, (wchar)gDLL->getSymbolID(SCALES_CHAR));
 	aIconMap[L"[ICON_MILITARY]"] = std::wstring(1, (wchar)gDLL->getSymbolID(MILITARY_CHAR));

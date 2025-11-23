@@ -434,6 +434,12 @@ def lMigrateCities(iGameTurn):
 			pNewCity.changeFood(scale(iMovedFood))
 			message(iPlayer, 'TXT_KEY_MIGRATION_FOOD', sName, scale(iMovedFood), sound='AS2D_WELOVEKING', event=1, button=infos.tech(iHunting).getButton(), color=8, location=pNewPlot)
 		
+		# Lakota UP: Great General points for migration
+		if civ(iPlayer) == iLakota:
+			iExp = scale(2)
+			pPlayer.changeCombatExperience(iExp)
+			message(iPlayer, 'TXT_KEY_MIGRATION_GREAT_GENERAL', sName, iExp, sound='AS2D_WELOVEKING', event=1, button=infos.tech(iHunting).getButton(), color=8, location=pNewPlot)
+		
 		events.fireEvent("migration", iPlayer, 1)
 
 	# Clear migration data

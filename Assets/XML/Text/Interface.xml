@@ -4233,6 +4233,14 @@
 		<Spanish>Our hunters have found plentiful game in %s1's new location, giving the villagers %d2 [ICON_FOOD]!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MIGRATION_GREAT_GENERAL</Tag>
+		<English>The logistics of the villagers' recent migration to %s1's new location has given them +%d2 [ICON_GENERAL] points!</English>
+		<French>The logistics of the villagers' recent migration to %s1's new location has given them +%d2 [ICON_GENERAL] points!</French>
+		<German>The logistics of the villagers' recent migration to %s1's new location has given them +%d2 [ICON_GENERAL] points!</German>
+		<Italian>The logistics of the villagers' recent migration to %s1's new location has given them +%d2 [ICON_GENERAL] points!</Italian>
+		<Spanish>The logistics of the villagers' recent migration to %s1's new location has given them +%d2 [ICON_GENERAL] points!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CULTURE_GROUP_NATIVE</Tag>
 		<English>[COLOR_PLAYER_ORANGE]Can only be adopted by Natives[COLOR_REVERT]</English>
 		<French>[COLOR_PLAYER_ORANGE]Can only be adopted by Natives[COLOR_REVERT]</French>
