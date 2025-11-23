@@ -2359,6 +2359,14 @@
 			</FeatureDefenses>
 			<FeatureDoubleMoves>
 				<FeatureDoubleMove>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<bFeatureDoubleMove>1</bFeatureDoubleMove>
+				</FeatureDoubleMove>
+				<FeatureDoubleMove>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<bFeatureDoubleMove>1</bFeatureDoubleMove>
+				</FeatureDoubleMove>
+				<FeatureDoubleMove>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
 					<bFeatureDoubleMove>1</bFeatureDoubleMove>
 				</FeatureDoubleMove>

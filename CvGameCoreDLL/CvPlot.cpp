@@ -1950,6 +1950,12 @@ bool CvPlot::isRiver() const
 	{
 		return true;
 	}
+	// MacAurther: You're a river if you're a Wide River
+	if (getTerrainType() == TERRAIN_WIDE_RIVER)
+	{
+		return true;
+	}
+
 	// MacAurther: Check if adjacent to a Wide River terrain plot; if so, you're next to a river too
 	CvPlot* pLoopPlot;
 	int iI;
@@ -7216,6 +7222,15 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 					}
 				}
 			}
+			
+			// MacAurther: Mississippi UP: Power of Mshi-Ziibi - Extra Commerce on river tiles with at least 2 Commerce
+			if (getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getCivilizationType() == MISSISSIPPI)
+			{
+				if (eYield == YIELD_COMMERCE && iYield >= 2)
+				{
+					iYield += 1;
+				}
+			}
 		}
 
 		// Leoreth: additional yield from certain improved bonuses from buildings
@@ -7280,15 +7295,6 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 		if (iAppliedImprovement != -1)
 		{
 			iYield += calculateImprovementYieldChange((ImprovementTypes)iAppliedImprovement, eYield, ePlayer);
-		}
-
-		// MacAurther: Mississippi UP: Power of Mshi-Ziibi - Extra Commerce for Cities along Rivers
-		if (GET_PLAYER(ePlayer).getCivilizationType() == MISSISSIPPI)
-		{
-			if (eYield == YIELD_COMMERCE && isRiver())
-			{
-				iYield += 2;
-			}
 		}
 	}
 

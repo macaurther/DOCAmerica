@@ -289,7 +289,7 @@ lCivilizations = [
 	Civilization(
 		iHaudenosaunee,
 		iGold=200,
-		lCivics=[iChief, iTribalConfederacy, iHarmony, iIntegration],
+		lCivics=[iCouncil, iTribalConfederacy, iHarmony, iIntegration],
 		techs=techs.column(3).including(iProperty, iCeremony),
 		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iLinguistics, iLocalization, iFishing),
 	),
