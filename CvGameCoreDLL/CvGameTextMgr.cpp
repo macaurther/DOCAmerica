@@ -14674,7 +14674,7 @@ void CvGameTextMgr::setCorporationHelpCity(CvWStringBuffer &szBuffer, Corporatio
 		if (bActive)
 		{
 			//iCommerce += (kCorporation.getCommerceProduced(i) * iNumResources * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100;
-			iCommerce = std::min(25, pCity->getCorporationCommerceByCorporation(((CommerceTypes)i), eCorporation)); // Merijn: also includes Dutch and Brazilian UP, Rhye - corporation cap
+			iCommerce = std::min(25, pCity->getCorporationCommerceByCorporation(((CommerceTypes)i), eCorporation)); // Merijn: also includes Dutch UP Rhye - corporation cap
 		}
 
 		if (iCommerce != 0)

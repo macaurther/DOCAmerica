@@ -113,12 +113,8 @@ def getCityValue(city, iCompany):
 	if has_civic(owner, iFreeEnterprise):
 		iValue += 1
 
-	# Dutch UP
-	if iOwnerCiv == iNetherlands:
-		if iCompany == iTradingCompany:
-			iValue += 5
-		else:
-			iValue += 3
+	if iCompany == iTradingCompany:
+		iValue += 3
 			
 	elif iCompany == iTradingCompany:
 		if city in cities.region(rCaribbean):
@@ -201,11 +197,10 @@ def getCityValue(city, iCompany):
 	iValue += iTempValue
 	
 	# competition
-	if not iOwnerCiv == iNetherlands:	# Netherlands UP
-		if iCompany == iCerealIndustry and city.isHasCorporation(iFishingIndustry): iValue /= 2
-		elif iCompany == iFishingIndustry and city.isHasCorporation(iCerealIndustry): iValue /= 2
-		elif iCompany == iSteelIndustry and city.isHasCorporation(iTextileIndustry): iValue /= 2
-		elif iCompany == iTextileIndustry and city.isHasCorporation(iSteelIndustry): iValue /= 2
+	if iCompany == iCerealIndustry and city.isHasCorporation(iFishingIndustry): iValue /= 2
+	elif iCompany == iFishingIndustry and city.isHasCorporation(iCerealIndustry): iValue /= 2
+	elif iCompany == iSteelIndustry and city.isHasCorporation(iTextileIndustry): iValue /= 2
+	elif iCompany == iTextileIndustry and city.isHasCorporation(iSteelIndustry): iValue /= 2
 	
 	# threshold
 	if iValue < 4:

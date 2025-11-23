@@ -10696,17 +10696,9 @@ int CvCity::getCorporationYieldByCorporation(YieldTypes eIndex, CorporationTypes
 			iNumBonuses += getNumBonuses(eBonus);
 		}
 		
-		// Merijn: Oil Industry doesn't provide yield, so Brazil UP not required here
-		
 		if (iNumBonuses > 0)
 		{
 			iYield = (GC.getCorporationInfo(eCorporation).getYieldProduced(eIndex) * std::min(GC.getCorporationInfo(eCorporation).getMaxConsumableBonuses(), iNumBonuses) * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100; //Rhye - corporation cap
-			
-			// Dutch UP: double yield from trading company
-			if (getCivilizationType() == NETHERLANDS && eCorporation == (CorporationTypes)1)
-			{
-				iYield *= 2;
-			}
 		}
 	}
 
@@ -10742,9 +10734,9 @@ int CvCity::getCorporationCommerceByCorporation(CommerceTypes eIndex, Corporatio
 			iCommerce = (GC.getCorporationInfo(eCorporation).getCommerceProduced(eIndex) * std::min(GC.getCorporationInfo(eCorporation).getMaxConsumableBonuses(), iNumBonuses) * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100; //Rhye - corporation cap
 			
 			// Dutch UP: double commerce from trading company
-			if (getCivilizationType() == NETHERLANDS && eCorporation == (CorporationTypes)1)
+			if (getCivilizationType() == NETHERLANDS && eIndex == COMMERCE_IMMIGRATION)
 			{
-				iCommerce *= 2;
+				iCommerce += 2;
 			}
 		}
 	}

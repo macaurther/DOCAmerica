@@ -87,11 +87,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_EUR</Tag>
-		<English>No Core area, receive free stability, and can hire European military units with [ICON_IMMIGRATION]</English>
-		<French>No Core area, receive free stability, and can hire European military units with [ICON_IMMIGRATION]</French>
-		<German>No Core area, receive free stability, and can hire European military units with [ICON_IMMIGRATION]</German>
-		<Italian>No Core area, receive free stability, and can hire European military units with [ICON_IMMIGRATION]</Italian>
-		<Spanish>No Core area, receive free stability, and can hire European military units with [ICON_IMMIGRATION]</Spanish>
+		<English>No Core area and receive free stability</English>
+		<French>No Core area and receive free stability</French>
+		<German>No Core area and receive free stability</German>
+		<Italian>No Core area and receive free stability</Italian>
+		<Spanish>No Core area and receive free stability</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_LAK_TITLE</Tag>
@@ -392,19 +392,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HOL_TITLE</Tag>
-		<English>The Power of Joint Stock:</English>
-		<French>The Power of Joint Stock:</French>
-		<German>The Power of Joint Stock:</German>
-		<Italian>The Power of Joint Stock:</Italian>
-		<Spanish>The Power of Joint Stock:</Spanish>
+		<English>The Power of Patroonships:</English>
+		<French>The Power of Patroonships:</French>
+		<German>The Power of Patroonships:</German>
+		<Italian>The Power of Patroonships:</Italian>
+		<Spanish>The Power of Patroonships:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HOL</Tag>
-		<English>More likely to attract Corporations and Corporations in the same city do not compete with each other</English>
-		<French>More likely to attract Corporations and Corporations in the same city do not compete with each other</French>
-		<German>More likely to attract Corporations and Corporations in the same city do not compete with each other</German>
-		<Italian>More likely to attract Corporations and Corporations in the same city do not compete with each other</Italian>
-		<Spanish>More likely to attract Corporations and Corporations in the same city do not compete with each other</Spanish>
+		<English>+2 [ICON_IMMIGRATION] from Corporations</English>
+		<French>+2 [ICON_IMMIGRATION] from Corporations</French>
+		<German>+2 [ICON_IMMIGRATION] from Corporations</German>
+		<Italian>+2 [ICON_IMMIGRATION] from Corporations</Italian>
+		<Spanish>+2 [ICON_IMMIGRATION] from Corporations</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_INC_TITLE</Tag>
@@ -448,11 +448,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_LAK</Tag>
-		<English>Recieve [ICON_GENERAL] after nomadic city migration</English>
-		<French>Recieve [ICON_GENERAL] after nomadic city migration</French>
-		<German>Recieve [ICON_GENERAL] after nomadic city migration</German>
-		<Italian>Recieve [ICON_GENERAL] after nomadic city migration</Italian>
-		<Spanish>Recieve [ICON_GENERAL] after nomadic city migration</Spanish>
+		<English>Recieve [ICON_GENERAL] points after nomadic city migration</English>
+		<French>Recieve [ICON_GENERAL] points after nomadic city migration</French>
+		<German>Recieve [ICON_GENERAL] points after nomadic city migration</German>
+		<Italian>Recieve [ICON_GENERAL] points after nomadic city migration</Italian>
+		<Spanish>Recieve [ICON_GENERAL] points after nomadic city migration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MAY_TITLE</Tag>

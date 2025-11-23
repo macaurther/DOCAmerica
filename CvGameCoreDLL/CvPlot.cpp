@@ -2839,8 +2839,10 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		{
 			if (GET_PLAYER(ePlayer).getTeam() != getTeam())
 			{
+				// MacAurther: Tribe contact can be done in Indigenous' borders
+				if (eImprovement == IMPROVEMENT_CONTACTED_TRIBE);
 				//outside borders can't be built in other's culture
-				if (GC.getImprovementInfo(eImprovement).isOutsideBorders())
+				else if (GC.getImprovementInfo(eImprovement).isOutsideBorders())
 				{
 					if (getTeam() != NO_TEAM)
 					{

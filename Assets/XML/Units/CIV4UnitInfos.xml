@@ -2220,7 +2220,6 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
-			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
 			<bRivalTerritory>1</bRivalTerritory>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
@@ -2293,7 +2292,6 @@
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
-			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
 			<bRivalTerritory>1</bRivalTerritory>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
@@ -2370,11 +2368,11 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_GUERILLA1</PromotionType>
+					<PromotionType>PROMOTION_RECONNAISSANCE</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_WOODSMAN1</PromotionType>
+					<PromotionType>PROMOTION_DISENGAGE1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
@@ -2396,7 +2394,6 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
-			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
 			<bRivalTerritory>1</bRivalTerritory>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
@@ -2485,11 +2482,7 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_GUERILLA1</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_WOODSMAN1</PromotionType>
+					<PromotionType>PROMOTION_RECONNAISSANCE</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
@@ -2512,7 +2505,6 @@
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
-			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
 			<bRivalTerritory>1</bRivalTerritory>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
@@ -2597,11 +2589,11 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_GUERILLA1</PromotionType>
+					<PromotionType>PROMOTION_RECONNAISSANCE</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_WOODSMAN1</PromotionType>
+					<PromotionType>PROMOTION_DISENGAGE1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
@@ -2620,7 +2612,6 @@
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
-			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
 			<bRivalTerritory>1</bRivalTerritory>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
@@ -2702,11 +2693,11 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_GUERILLA1</PromotionType>
+					<PromotionType>PROMOTION_RECONNAISSANCE</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_WOODSMAN1</PromotionType>
+					<PromotionType>PROMOTION_DISENGAGE1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
@@ -2725,7 +2716,6 @@
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
-			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
 			<bRivalTerritory>1</bRivalTerritory>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
@@ -2810,11 +2800,11 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_GUERILLA1</PromotionType>
+					<PromotionType>PROMOTION_RECONNAISSANCE</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_WOODSMAN1</PromotionType>
+					<PromotionType>PROMOTION_DISENGAGE1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>

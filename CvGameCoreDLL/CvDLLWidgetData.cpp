@@ -2959,7 +2959,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 						{
 							if (GC.getImprovementInfo(eImprovement).isOutsideBorders())
 							{
-								if (pMissionPlot->getTeam() != NO_TEAM)
+								if (pMissionPlot->getTeam() != NO_TEAM && eImprovement != IMPROVEMENT_CONTACTED_TRIBE)
 								{
 									szBuffer.append(NEWLINE);
 									szBuffer.append(gDLL->getText("TXT_KEY_ACTION_NEEDS_OUT_RIVAL_CULTURE_BORDER"));

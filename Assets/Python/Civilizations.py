@@ -333,7 +333,7 @@ lCivilizations = [
 		iGold=600,
 		iImmigration=15,
 		iStateReligion=iProtestantism,
-		lCivics=[iTrustees, iTradingCompany, iSerfdom, iFactoryCivic, iDivineRight, iOutposts],
+		lCivics=[iTrustees, iTradeCompany, iSerfdom, iFactoryCivic, iDivineRight, iOutposts],
 		techs=techs.column(10).including(iFortification, iEconomics, iShipbuilding, iEducation),
 		extraTechs=techs.column(0).including(iNorthEuropeAccess),
 	),

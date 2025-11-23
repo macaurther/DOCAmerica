@@ -37,14 +37,16 @@ g_bDebug = false
 g_bAIThinkPeriod = 1 #Rhye (5 in Warlords, 4 in vanilla)
 
 def getHoverText(eWidgetType, iData1, iData2, bOption):
-	iThreshold = objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab)
-	iProgress = gc.getActivePlayer().getImmigration()
-	iRate = gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION)
-	szText = BugUtil.getText("TXT_KEY_MISC_IMMIGRATION", (int(iProgress), int(iThreshold)))
-	if (iRate > 0):
-		iTurns = math.ceil(iThreshold - iProgress) / iRate
-		szText += u"\n%d%c%s " % (int(iRate), gc.getCommerceInfo(CommerceTypes.COMMERCE_IMMIGRATION).getChar(), BugUtil.getPlainText("TXT_KEY_PER_TURN"))
+	fThreshold = float(objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
+	fProgress = float(gc.getActivePlayer().getImmigration())
+	fRate = float(gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION))
+	szText = BugUtil.getText("TXT_KEY_MISC_IMMIGRATION", (int(fProgress), int(fThreshold)))
+	if (fRate > 0):
+		iTurns = math.ceil(fThreshold - fProgress) / fRate
+		if iTurns < 0: iTurns = 0
+		szText += u"\n%d%c%s " % (int(fRate), gc.getCommerceInfo(CommerceTypes.COMMERCE_IMMIGRATION).getChar(), BugUtil.getPlainText("TXT_KEY_PER_TURN"))
 		szText += BugUtil.getText("INTERFACE_CITY_TURNS", (iTurns,))
+
 	
 	return szText
 
@@ -411,11 +413,12 @@ class CvImmigrationManager:
 		screen.setStackedBarColors( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY") )
 		
 		fThreshold = float(objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
-		fRate = gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION)
-		fFirst = gc.getActivePlayer().getImmigration()
+		fRate = float(gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION))
+		fFirst = float(gc.getActivePlayer().getImmigration())
 		szText = u""
 		if fRate > 0: 
 			iTurns = math.ceil((fThreshold - fFirst) / fRate)
+			if iTurns < 0: iTurns = 0
 			szText = u"%c in %d Turns" %(CyTranslator().getText("[ICON_IMMIGRANT]", ()), iTurns)
 		else:
 			szText = u"%c in - Turns" %(CyTranslator().getText("[ICON_IMMIGRANT]", ()))
