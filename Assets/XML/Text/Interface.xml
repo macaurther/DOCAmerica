@@ -4272,6 +4272,14 @@
 		<Italian>%d1 slaves have been freed in %s2!</Italian>
 		<Spanish>%d1 slaves have been freed in %s2!</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TEOTIHUACAN_UP_EFFECT</Tag>
+		<English>The people are inspired by your sacrifice! +%d1 [ICON_CULTURE] in %s2.</English>
+		<French>The people are inspired by your sacrifice! +%d1 [ICON_CULTURE] in %s2.</French>
+		<German>The people are inspired by your sacrifice! +%d1 [ICON_CULTURE] in %s2.</German>
+		<Italian>The people are inspired by your sacrifice! +%d1 [ICON_CULTURE] in %s2.</Italian>
+		<Spanish>The people are inspired by your sacrifice! +%d1 [ICON_CULTURE] in %s2.</Spanish>
+	</TEXT>
 	
 	
 	<TEXT>

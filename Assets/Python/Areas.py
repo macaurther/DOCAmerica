@@ -11,7 +11,7 @@ iZapotec :		 (28, 64), # Danibaan
 iTeotihuacan :	 (25, 69), # Teotihuacan
 iTiwanaku :		 (52, 32), # Tiwanaku
 iWari :			 (45, 39), # Huari
-iMississippi :	 (44, 87), # Cahokia
+iMississippi :	 (32, 87), # Cahokia
 iMuisca :		 (48, 50), # Bacata
 iNorse :		 (64, 117), # Reykjavik
 iChimu :		 (41, 41), # Chan Chan

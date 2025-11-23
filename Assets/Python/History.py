@@ -19,6 +19,14 @@ def updateCulture():
 	for plot in plots.all():
 		plot.updateCulture()
 
+# Debug Prints
+@handler("GameStart")
+def debugPrints():
+	if False:
+		for iBuilding in range(iNumBuildings):
+			print("iBuilding " + str(iBuilding) + " corresponds to XML entry: " + unicode(gc.getBuildingInfo(iBuilding).getDescription()))
+
+
 @handler("GameStart")
 def placeTribes():
 	iScore = 0

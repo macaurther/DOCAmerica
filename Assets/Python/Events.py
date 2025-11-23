@@ -84,6 +84,7 @@ events.addEvent("migration")
 events.addEvent("combatResult")
 events.addEvent("immigrationSpent")
 events.addEvent("tribeAttacked")
+events.addEvent("slaveExpended")
 
 
 @handler("buildingBuilt")

@@ -7282,15 +7282,6 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			iYield += calculateImprovementYieldChange((ImprovementTypes)iAppliedImprovement, eYield, ePlayer);
 		}
 
-		// 1SDAN & MacAurther: Tiwanaku UP: Extra Production in Cities on Hills
-		if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == TIWANAKU)
-		{
-			if (eYield == YIELD_PRODUCTION && isHills())
-			{
-				iYield += 1;
-			}
-		}
-
 		// MacAurther: Mississippi UP: Power of Mshi-Ziibi - Extra Commerce for Cities along Rivers
 		if (GET_PLAYER(ePlayer).getCivilizationType() == MISSISSIPPI)
 		{

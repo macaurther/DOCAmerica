@@ -38,10 +38,9 @@ PERU = "TXT_KEY_VICTORY_NAME_PERU"
 SOUTH_AMERICA = "TXT_KEY_VICTORY_NAME_SOUTH_AMERICA"
 SOUTH_CENTRAL_AMERICA = "TXT_KEY_VICTORY_NAME_SOUTH_CENTRAL_AMERICA"
 MESOAMERICA = "TXT_KEY_VICTORY_NAME_MESOAMERICA"
-YUCATAN = "TXT_KEY_VICTORY_NAME_YUCATAN"
-BAJIO = "TXT_KEY_VICTORY_NAME_BAJIO"
 MISSISSIPPI_RIVER = "TXT_KEY_VICTORY_NAME_MISSISSIPPI_RIVER"
 OHIO_RIVER = "TXT_KEY_VICTORY_NAME_OHIO_RIVER"
+BAJIO = "TXT_KEY_VICTORY_NAME_BAJIO"
 GREENLAND = "TXT_KEY_VICTORY_NAME_GREENLAND"
 VINLAND = "TXT_KEY_VICTORY_NAME_VINLAND"
 DELAWARE = "TXT_KEY_VICTORY_NAME_DELAWARE"
@@ -110,6 +109,7 @@ dGoals = {
 			ControlledResourceCount(iObsidian, 1),
 			ControlledResourceCount(iGold, 1),
 			ControlledResourceCount(iSilver, 1),
+			BuildingCount(iJeweller, 3),
 			by=1000
 		),
 		All(
@@ -121,13 +121,9 @@ dGoals = {
 		),
 	),
 	iTeotihuacan: (
-		BuildingCount(wonders(), 1, by=500),
-		GoldenAges(1, by=850),
-		Control(
-			plots.region(rBajio).named(BAJIO),
-			plots.region(rYucatan).named(YUCATAN),
-			at=1000,
-		),
+		BuildingCount(wonders(), 1, by=450),
+		GoldenAges(1, by=600),
+		CultureAmount(1500, at=650),
 	),
 	iTiwanaku: (
 		CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatProphet, 1, by=700),

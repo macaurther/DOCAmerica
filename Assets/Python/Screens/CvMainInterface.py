@@ -5834,7 +5834,7 @@ class CvMainInterface:
 				MainOpt.setFieldOfView(self.iField_View)
 # BUG - field of view slider - end
 			
-		# Leoreth: sacrifice Aztec slaves -> MacAurther: Mesoamerican RP
+		# Leoreth: sacrifice Aztec slaves -> MacAurther: Sacrifice Civic
 		if (inputClass.getNotifyCode() == 11 and inputClass.getData1() == 10000 and inputClass.getData2() == 10000):
 			self.pPushedButtonUnit = g_pSelectedUnit
 			iX = self.pPushedButtonUnit.getX()
@@ -5847,6 +5847,7 @@ class CvMainInterface:
 			self.pPushedButtonUnit.kill(False, city.getOwner())
 			
 			events.fireEvent("sacrificeGoldenAge", city.getOwner(), city)
+			events.fireEvent("slaveExpended", city)
 		
 		# Leoreth: start Byzantine UP
 		if inputClass.getNotifyCode() == 11 and inputClass.getData1() == 10001:
@@ -5865,6 +5866,7 @@ class CvMainInterface:
 			city.changeHurryAngerTimer(turns(10))
 			
 			self.pPushedButtonUnit.kill(False, city.getOwner())
+			events.fireEvent("slaveExpended", city)
 		# MacAurther: end
 
 		return 0

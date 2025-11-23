@@ -34,6 +34,23 @@ def mayanPower(iTech, iTeam, iPlayer):
 				
 				message(iPlayer, 'TXT_KEY_MAYA_UP_EFFECT', infos.tech(iTech).getText(), iFood)
 
+@handler("cityHurry")
+# Teotihuacan UP
+def teotihuacanPowerHurry(pCity, iHurry):
+	# MacAurther TODO: Update this if more population hurry types are added
+	if iHurry == iHurryPopulation and civ(pCity) == iTeotihuacan:
+		doTeotihuacanPower(pCity)
+
+@handler("slaveExpended")
+# Teotihuacan UP
+def teotihuacanPowerSlave(pCity):
+	if civ(pCity) == iTeotihuacan:
+		doTeotihuacanPower(pCity)
+
+def doTeotihuacanPower(pCity):
+	pCity.changeCulture(pCity.getOwner(), scale(20), False)
+	message(pCity.getOwner(), 'TXT_KEY_TEOTIHUACAN_UP_EFFECT', scale(20), pCity.getName(), sound='AS2D_WELOVEKING', event=1, button=infos.building(iAltar).getButton(), color=8, location=(pCity.getX(), pCity.getY()))
+
 @handler("cityBuilt")
 # Desert RP
 def desertPower(pCity):

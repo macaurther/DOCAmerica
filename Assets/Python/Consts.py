@@ -865,6 +865,11 @@ bullet = "[ICON_BULLET]"
 event_bullet = "INTERFACE_EVENT_BULLET"
 event_cancel = "INTERFACE_BUTTONS_CANCEL"
 
+
+# MacAurther TODO: Update this if more population hurry types are added
+iNumHurries = 3
+(iHurryPopulation,	iHurryGoldUnits, iHurryGoldBuilding) = range(iNumHurries)
+
 # Immigration
 iNumImmigrantCategories = 28
 # 0				1				2				3				4				5				6				7				8				9

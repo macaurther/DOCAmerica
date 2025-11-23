@@ -4423,13 +4423,6 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
 		{
 			changeMaxSpecialistCount(((SpecialistTypes)iI), GC.getBuildingInfo(eBuilding).getSpecialistCount(iI) * iChange);
-
-			// 1SDAN?: Tiwanaku UP: +1 Priest Slot from Pagan Temples.
-			if (getCivilizationType() == TIWANAKU && (SpecialistTypes)iI == SPECIALIST_PRIEST && eBuilding == getUniqueBuilding(getCivilizationType(), (BuildingTypes)BUILDING_PAGAN_TEMPLE))
-			{
-				changeMaxSpecialistCount(((SpecialistTypes)iI), iChange);
-			}
-
 			changeFreeSpecialistCount(((SpecialistTypes)iI), GC.getBuildingInfo(eBuilding).getFreeSpecialistCount(iI) * iChange);
 		}
 
@@ -4537,6 +4530,15 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		changeBuildingDefense(GC.getBuildingInfo(eBuilding).getDefenseModifier() * iChange);
 		changeBuildingBombardDefense(GC.getBuildingInfo(eBuilding).getBombardDefenseModifier() * iChange);
 		changeBuildingUnignorableBombardDefense(GC.getBuildingInfo(eBuilding).getUnignorableBombardDefenseModifier() * iChange);
+
+		// Leoreth: Mount Athos effect -> MacAurther: Tiwanaku UP
+		if (GC.getBuildingInfo(eBuilding).getGreatPeopleRateChange() > 0)
+		{
+			if (GET_PLAYER(getOwnerINLINE()).getCivilizationType() == TIWANAKU)
+			{
+				changeBuildingGreatPeopleRateChange((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), iChange * GC.getBuildingInfo(eBuilding).getGreatPeopleRateChange());
+			}
+		}
 
 		changeBaseGreatPeopleRate(GC.getBuildingInfo(eBuilding).getGreatPeopleRateChange() * iChange);
 
