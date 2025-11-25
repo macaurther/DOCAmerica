@@ -1329,7 +1329,7 @@ void CvCity::doTurn()
 		{
 			FAssert(getBuildingCommerce((CommerceTypes)iI) >= 0);
 			int iSpecialistCommerce = getSpecialistCommerce((CommerceTypes)iI);
-			FAssert(getSpecialistCommerce((CommerceTypes)iI) >= 0);
+			// FAssert(getSpecialistCommerce((CommerceTypes)iI) >= 0);	// MacAurther: You can have negative specialist yields with Immigrants
 			FAssert(getReligionCommerce((CommerceTypes)iI) >= 0);
 			FAssert(getCorporationCommerce((CommerceTypes)iI) >= 0);
 			FAssert(GET_PLAYER(getOwnerINLINE()).getFreeCityCommerce((CommerceTypes)iI) >= 0);

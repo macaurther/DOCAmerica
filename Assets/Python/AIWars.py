@@ -21,16 +21,16 @@ iConquestNum = 0
 
 # Inca ------------------------------------------------------------------------------------------------------------------------
 iIncaWariYear = 1200
-tIncaWariTL = (21, 31)
-tIncaWariBR = (24, 35)
+tIncaWariTL = (42, 35)
+tIncaWariBR = (46, 43)
 
 iIncaTiwanakuYear = 1438
-tIncaTiwanakuTL = (25, 22)
-tIncaTiwanakuBR = (28, 26)
+tIncaTiwanakuTL = (49, 30)
+tIncaTiwanakuBR = (53, 34)
 
 iIncaChimuYear = 1450
-tIncaChimuTL = (20, 36)
-tIncaChimuBR = (23, 40)
+tIncaChimuTL = (40, 39)
+tIncaChimuBR = (42, 43)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
 iConquestNum, tConquestIncaWari = processConquest(iConquestNum, iInca, iWari, tIncaWariTL, tIncaWariBR, 3, iIncaWariYear, 10)
@@ -39,40 +39,40 @@ iConquestNum, tConquestIncaChimu = processConquest(iConquestNum, iInca, iChimu, 
 
 # Spain ------------------------------------------------------------------------------------------------------------------------
 iSpainAztecsYear = 1519
-tSpainAztecsTL = (11, 63)
-tSpainAztecsBR = (16, 69)
+tSpainAztecsTL = (22, 23)
+tSpainAztecsBR = (28, 70)
 
 iSpainPurepechansYear = 1522
-tSpainPurepechansTL = (8, 66)
-tSpainPurepechansBR = (11, 70)
+tSpainPurepechansTL = (18, 66)
+tSpainPurepechansBR = (21, 69)
 
 iSpainZapotecYear = 1527
-tSpainZapotecTL = (12, 60)
-tSpainZapotecBR = (17, 62)
+tSpainZapotecTL = (24, 63)
+tSpainZapotecBR = (29, 65)
 
 iSpainIncaYear = 1532
-tSpainIncaTL = (20, 24)
-tSpainIncaBR = (28, 33)
+tSpainIncaTL = (39, 31)
+tSpainIncaBR = (53, 42)
 
 iSpainWariYear = 1532
-tSpainWariTL = (20, 24)
-tSpainWariBR = (28, 33)
+tSpainWariTL = (39, 31)
+tSpainWariBR = (53, 42)
 
 iSpainChimuYear = 1532
-tSpainChimuTL = (20, 24)
-tSpainChimuBR = (28, 33)
+tSpainChimuTL = (39, 31)
+tSpainChimuBR = (53, 42)
 
 iSpainMuiscaYear = 1537
-tSpainMuiscaTL = (22, 41)
-tSpainMuiscaBR = (34, 45)
+tSpainMuiscaTL = (47, 49)
+tSpainMuiscaBR = (50, 54)
 
 iSpainPuebloYear = 1598
-tSpainPuebloTL = (12, 83)
-tSpainPuebloBR = (19, 89)
+tSpainPuebloTL = (16, 81)
+tSpainPuebloBR = (22, 86)
 
 iSpainMayaYear = 1697
-tSpainMayaTL = (20, 58)
-tSpainMayaBR = (25, 63)
+tSpainMayaTL = (32, 64)
+tSpainMayaBR = (38, 70)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
 iConquestNum, tConquestSpainAztecs = processConquest(iConquestNum, iSpain, iAztec, tSpainAztecsTL, tSpainAztecsBR, 2, iSpainAztecsYear, 10)
@@ -87,20 +87,20 @@ iConquestNum, tConquestSpainMaya = processConquest(iConquestNum, iSpain, iMaya, 
 
 # England ------------------------------------------------------------------------------------------------------------------------
 iEnglandNetherlandsYear = 1670
-tEnglandNetherlandsTL = (39, 78)
-tEnglandNetherlandsBR = (43, 86)
+tEnglandNetherlandsTL = (47, 90)
+tEnglandNetherlandsBR = (49, 92)
 
 iEnglandQuebecYear = 1758
-tEnglandQuebecTL = (42, 89)
-tEnglandQuebecBR = (47, 93)
+tEnglandQuebecTL = (54, 45)
+tEnglandQuebecBR = (53, 101)
 
 iEnglandAmerica1812WashingtonYear = 1814
-tEnglandAmerica1812WashingtonTL = (38, 76)
-tEnglandAmerica1812WashingtonBR = (14, 81)
+tEnglandAmerica1812WashingtonTL = (44, 85)
+tEnglandAmerica1812WashingtonBR = (47, 89)
 
 iEnglandAmerica1812NewOrleansYear = 1815
-tEnglandAmerica1812NewOrleansTL = (23, 72)
-tEnglandAmerica1812NewOrleansBR = (29, 73)
+tEnglandAmerica1812NewOrleansTL = (32, 78)
+tEnglandAmerica1812NewOrleansBR = (35, 80)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
 iConquestNum, tConquestEnglandNetherlands = processConquest(iConquestNum, iEngland, iNetherlands, tEnglandNetherlandsTL, tEnglandNetherlandsBR, 2, iEnglandNetherlandsYear, 10)
@@ -110,36 +110,36 @@ iConquestNum, tConquestEngland1812NewOrleans = processConquest(iConquestNum, iEn
 
 # France ------------------------------------------------------------------------------------------------------------------------
 iFranceMexicoYear = 1861
-tFranceMexicoTL = (12, 60)
-tFranceMexicoBR = (19, 70)
+tFranceMexicoTL = (23, 66)
+tFranceMexicoBR = (28, 71)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
 iConquestNum, tConquestFranceMexico = processConquest(iConquestNum, iFrance, iMexico, tFranceMexicoTL, tFranceMexicoBR, 3, iFranceMexicoYear, 10)
 
 # Netherlands --------------------------------------------------------------------------------------------------------------------
 iNetherlandsNorseYear = 1655
-tNetherlandsNorseTL = (39, 78)
-tNetherlandsNorseBR = (41, 82)
+tNetherlandsNorseTL = (45, 88)
+tNetherlandsNorseBR = (48, 92)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
 iConquestNum, tConquestNetherlandsNorse = processConquest(iConquestNum, iEngland, iNetherlands, tNetherlandsNorseTL, tNetherlandsNorseBR, 1, iNetherlandsNorseYear, 10)
 
 # America ------------------------------------------------------------------------------------------------------------------------
 iAmericaCanadaYear = 1812
-tAmericaCanadaTL = (35, 86)
-tAmericaCanadaBR = (45, 92)
+tAmericaCanadaTL = (40, 93)
+tAmericaCanadaBR = (51, 100)
 
 iAmericaMexicoYear = 1846
-tAmericaMexicoTL = (14, 72)
-tAmericaMexicoBR = (25, 80)
+tAmericaMexicoTL = (16, 79)
+tAmericaMexicoBR = (25, 89)
 
 iAmericaLakotkaYear = 1875
-tAmericaLakotkaTL = (19, 89)
-tAmericaLakotkaBR = (31, 95)
+tAmericaLakotkaTL = (21, 92)
+tAmericaLakotkaBR = (30, 99)
 
 iAmericaCubaYear = 1898
-tAmericaCubaTL = (27, 58)
-tAmericaCubaBR = (36, 63)
+tAmericaCubaTL = (40, 68)
+tAmericaCubaBR = (51, 72)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
 iConquestNum, tConquestAmericaCanada = processConquest(iConquestNum, iAmerica, iCanada, tAmericaCanadaTL, tAmericaCanadaBR, 2, iAmericaCanadaYear, 10)
@@ -149,8 +149,8 @@ iConquestNum, tConquestAmericaCuba = processConquest(iConquestNum, iAmerica, iSp
 
 # Canada ------------------------------------------------------------------------------------------------------------------------
 iCanadaLakotaYear = 1880
-tCanadaLakotaTL = (19, 96)
-tCanadaLakotaBR = (28, 101)
+tCanadaLakotaTL = (18, 99)
+tCanadaLakotaBR = (30, 105)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
 iConquestNum, tConquestCanadaLakota = processConquest(iConquestNum, iCanada, iLakota, tCanadaLakotaTL, tCanadaLakotaBR, 2, iCanadaLakotaYear, 10)

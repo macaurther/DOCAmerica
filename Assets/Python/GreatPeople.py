@@ -1,7 +1,7 @@
 # coding: utf-8
 
 from RFCUtils import *
-import RFCUtils as RFCU
+#import RFCUtils as RFCU	# MacAurther TODO: Unneeded?
 from Events import handler
 from Core import *
 
@@ -28,7 +28,8 @@ def assignGreatPersonName(unit, iPlayer, city, bAnnounceBirth = True):
 		# Leoreth: replace graphics for female GP names
 		if sName[0] == "f":
 			sName = sName[1:]
-			unit = RFCU.replace(unit, dFemaleGreatPeople[base_unit(unit)])
+			unit = replace(unit, dFemaleGreatPeople[base_unit(unit)])
+			#unit = RFCU.replace(unit, dFemaleGreatPeople[base_unit(unit)])	# MacAurther TODO: Unneeded?
 		
 		unit.setName(sName)
 		
@@ -272,105 +273,105 @@ dGreatPeople = {
 	},
 	iSpain : {
 		iGreatProphet : (
-			"Juan de Zumárraga",   # 16th – first bishop of Mexico, protector of indigenous peoples
+			u"Juan de Zumárraga",   # 16th – first bishop of Mexico, protector of indigenous peoples
 			"Pedro de Gante",       # 16th – Franciscan missionary, educator of natives
 			"Toribio de Benavente Motolinia", # 16th – early missionary chronicler
-			"fJuana Inés de la Cruz", # 17th – nun, theologian, and poet-scholar
-			"Alonso de Montúfar",    # 16th – Archbishop of Mexico, promoted Marian devotion (Our Lady of Guadalupe)
+			u"fJuana Inés de la Cruz", # 17th – nun, theologian, and poet-scholar
+			u"Alonso de Montúfar",    # 16th – Archbishop of Mexico, promoted Marian devotion (Our Lady of Guadalupe)
 		),
 		iGreatArtist : (
-			"Sebastián López de Arteaga",  # 17th – painter of early colonial Mexico
-			"Cristóbal de Villalpando",    # 17th – major baroque painter in New Spain
+			u"Sebastián López de Arteaga",  # 17th – painter of early colonial Mexico
+			u"Cristóbal de Villalpando",    # 17th – major baroque painter in New Spain
 			"Miguel Cabrera",              # 18th – leading painter, known for casta paintings
-			"Manuel Tolsá",                # 18th–19th – sculptor and architect of the Mexico City cathedral façade
+			u"Manuel Tolsá",                # 18th–19th – sculptor and architect of the Mexico City cathedral façade
 			"Juan Correa",                 # 17th – Afro-Mexican painter of religious works
 		),
 		iGreatScientist : (
-			"Carlos de Sigüenza y Góngora", # 17th – polymath, astronomer, cartographer
-			"José Antonio Alzate",          # 18th – naturalist, physicist, and journalist
-			"Francisco Hernández de Toledo",# 16th – royal physician, documented New World plants
-			"Andrés Manuel del Río",        # 18th – mineralogist, discovered vanadium in Mexico
-			"José Longinos Martínez",       # 18th – naturalist who catalogued flora and fauna of New Spain
+			u"Carlos de Sigüenza y Góngora", # 17th – polymath, astronomer, cartographer
+			u"José Antonio Alzate",          # 18th – naturalist, physicist, and journalist
+			u"Francisco Hernández de Toledo",# 16th – royal physician, documented New World plants
+			u"Andrés Manuel del Río",        # 18th – mineralogist, discovered vanadium in Mexico
+			u"José Longinos Martínez",       # 18th – naturalist who catalogued flora and fauna of New Spain
 		),
 		iGreatMerchant : (
-			"Simón de Haro",               # 16th – early merchant in Veracruz trade
+			u"Simón de Haro",               # 16th – early merchant in Veracruz trade
 			"Juan de la Torre",            # 17th – Mexico City merchant tied to Manila Galleons
-			"Manuel Fernández de Jáuregui",# 18th – prominent colonial entrepreneur
+			u"Manuel Fernández de Jáuregui",# 18th – prominent colonial entrepreneur
 			"Antonio de Ulloa",            # 18th – explorer and administrator involved in colonial commerce
-			"Tomás de la Barrera",         # 18th – mine owner and silver trader
+			u"Tomás de la Barrera",         # 18th – mine owner and silver trader
 		),
 		iGreatEngineer : (
-			"Enrico Martínez",             # 17th – hydraulic engineer, drained Mexico Valley lakes
-			"Manuel Tolsá",                # 18th–19th – also as architect/engineer, built Palacio de Minería
-			"José de la Cruz",             # 18th – fortifications engineer in New Spain
-			"Agustín de Betancourt",       # 18th – Spanish engineer involved in colonial projects
-			"Lorenzo Rodríguez",           # 18th – architect of the Sagrario Metropolitano
+			u"Enrico Martínez",             # 17th – hydraulic engineer, drained Mexico Valley lakes
+			u"Manuel Tolsá",                # 18th–19th – also as architect/engineer, built Palacio de Minería
+			u"José de la Cruz",             # 18th – fortifications engineer in New Spain
+			u"Agustín de Betancourt",       # 18th – Spanish engineer involved in colonial projects
+			u"Lorenzo Rodríguez",           # 18th – architect of the Sagrario Metropolitano
 		),
 		iGreatStatesman : (
 			"Antonio de Mendoza",          # 16th – first viceroy of New Spain
 			"Luis de Velasco",             # 16th – viceroy, advocate for indigenous welfare
-			"José de Gálvez",              # 18th – reformer, Bourbon administrative overhaul
+			u"José de Gálvez",              # 18th – reformer, Bourbon administrative overhaul
 			"Juan de Palafox y Mendoza",   # 17th – bishop and viceroy, reformer of colonial church and state
 			"Francisco Javier de Lizana y Beaumont", # 19th – viceroy during Napoleonic crisis
 		),
 		iGreatGeneral : (
-			"Hernán Cortés",               # 16th – conqueror and first governor of New Spain
+			u"Hernán Cortés",               # 16th – conqueror and first governor of New Spain
 			"Pedro de Alvarado",           # 16th – conquistador in Mexico and Guatemala
 			"Gonzalo de Sandoval",         # 16th – key commander under Cortés
-			"Nuño de Guzmán",              # 16th – conqueror of western Mexico
+			u"Nuño de Guzmán",              # 16th – conqueror of western Mexico
 			"Antonio de Leyva",            # 16th – Spanish general linked to colonial defense
 			"Melchor Portocarrero",        # 17th – viceroy and military commander
 		),
 	},
 	iPortugal : {
 		iGreatProphet : (
-			"José de Anchieta",           # 16th – Jesuit missionary, co-founder of São Paulo and Rio de Janeiro
-			"Manuel da Nóbrega",          # 16th – Jesuit provincial, early defender of indigenous rights
-			"Antônio Vieira",             # 17th – Jesuit priest, orator, and royal adviser advocating for native and Afro-Brazilian peoples
-			"fMaria do Céu",              # 17th – Portuguese nun-writer whose works circulated in Brazil
+			u"José de Anchieta",           # 16th – Jesuit missionary, co-founder of São Paulo and Rio de Janeiro
+			u"Manuel da Nóbrega",          # 16th – Jesuit provincial, early defender of indigenous rights
+			u"Antônio Vieira",             # 17th – Jesuit priest, orator, and royal adviser advocating for native and Afro-Brazilian peoples
+			u"fMaria do Céu",              # 17th – Portuguese nun-writer whose works circulated in Brazil
 			"Frei Vicente do Salvador",   # 17th – Franciscan historian and theologian of colonial Brazil
 		),
 		iGreatArtist : (
 			"Aleijadinho",                # 18th – master sculptor and architect of Minas Gerais baroque churches
-			"Manuel da Costa Ataíde",     # 18th – painter of vivid baroque ceiling frescos
-			"fBárbara Heliodora",         # 18th – poet and playwright of Minas Gerais' literary circles
-			"Gregório de Matos",          # 17th – satirical poet of colonial Bahia
+			u"Manuel da Costa Ataíde",     # 18th – painter of vivid baroque ceiling frescos
+			u"fBárbara Heliodora",         # 18th – poet and playwright of Minas Gerais' literary circles
+			u"Gregório de Matos",          # 17th – satirical poet of colonial Bahia
 			"Manuel Botelho de Oliveira", # 17th – early Brazilian baroque poet and musician
 		),
 		iGreatScientist : (
 			"Alexandre Rodrigues Ferreira", # 18th – naturalist, led Amazon and Maranhão expeditions
-			"José Bonifácio de Andrada e Silva", # 18th – mineralogist and natural scientist (pre-independence career)
+			u"José Bonifácio de Andrada e Silva", # 18th – mineralogist and natural scientist (pre-independence career)
 			"Domingos Vandelli",             # 18th – Italian-born naturalist directing studies on Brazil's flora
 			"Francisco de Melo Franco",      # 18th – physician and Enlightenment writer in colonial Brazil
-			"João Manso Pereira",            # 18th – inventor and early chemist in Bahia
+			u"João Manso Pereira",            # 18th – inventor and early chemist in Bahia
 		),
 		iGreatMerchant : (
-			"Fernão Cardim",               # 16th – Jesuit chronicler involved in trade logistics for missions
+			u"Fernão Cardim",               # 16th – Jesuit chronicler involved in trade logistics for missions
 			"Francisco Pinheiro",          # 17th – Lisbon-Bahia merchant financier
-			"João Fernandes Vieira",       # 17th – sugar planter and administrator (also soldier against Dutch)
-			"Antônio Rodrigues Bravo",     # 18th – Rio de Janeiro merchant in the transatlantic trade
-			"Sebastião Ferreira Santos",   # 18th – Minas Gerais mine operator and trader
+			u"João Fernandes Vieira",       # 17th – sugar planter and administrator (also soldier against Dutch)
+			u"Antônio Rodrigues Bravo",     # 18th – Rio de Janeiro merchant in the transatlantic trade
+			u"Sebastião Ferreira Santos",   # 18th – Minas Gerais mine operator and trader
 		),
 		iGreatEngineer : (
-			"Francisco França e Silva",    # 18th – engineer of colonial fortifications in Bahia
-			"José Fernandes Pinto Alpoim", # 18th – military engineer, architect of royal buildings in Rio
+			u"Francisco França e Silva",    # 18th – engineer of colonial fortifications in Bahia
+			u"José Fernandes Pinto Alpoim", # 18th – military engineer, architect of royal buildings in Rio
 			"Manuel Pereira Ramos",        # 18th – designer of bridges and aqueducts in Minas Gerais
 			"Vicente Gomes Ferreira",      # 18th – hydraulic engineer of Recife improvements
-			"Antônio Landim",              # 18th – architect-builder in Salvador
+			u"Antônio Landim",              # 18th – architect-builder in Salvador
 		),
 		iGreatStatesman : (
-			"Tomé de Sousa",               # 16th – first governor-general of Brazil, founded Salvador
-			"Mem de Sá",                   # 16th – third governor-general, consolidated Portuguese control
-			"Marquês de Pombal",           # 18th – reformer whose policies transformed colonial administration
+			u"Tomé de Sousa",               # 16th – first governor-general of Brazil, founded Salvador
+			u"Mem de Sá",                   # 16th – third governor-general, consolidated Portuguese control
+			u"Marquês de Pombal",           # 18th – reformer whose policies transformed colonial administration
 			"Luís de Vasconcelos e Sousa", # 18th – viceroy of Brazil, improved defenses and infrastructure
 			"Conde de Resende",            # 18th – last viceroy of colonial Brazil before independence
 		),
 		iGreatGeneral : (
-			"Estácio de Sá",               # 16th – founded Rio de Janeiro, fought French invaders
+			u"Estácio de Sá",               # 16th – founded Rio de Janeiro, fought French invaders
 			"Francisco Barreto",           # 16th – led military expeditions in Brazil and Angola
-			"Salvador Correia de Sá e Benevides", # 17th – expelled the Dutch from Luanda and supported Brazil's defense
+			u"Salvador Correia de Sá e Benevides", # 17th – expelled the Dutch from Luanda and supported Brazil's defense
 			"Matias de Albuquerque",       # 17th – commander during Dutch invasions
-			"Francisco Xavier de Mendonça Furtado", # 18th – colonial governor and military administrator in the Amazon
+			u"Francisco Xavier de Mendonça Furtado", # 18th – colonial governor and military administrator in the Amazon
 		),
 	},
 	iEngland : {
@@ -427,37 +428,37 @@ dGreatPeople = {
 	iFrance : {
 		iGreatProphet : (
 			"Paul Le Jeune",              # 17th – Jesuit missionary, early chronicler of New France
-			"Jean de Brébeuf",            # 17th – Jesuit missionary, martyr among the Huron
+			u"Jean de Brébeuf",            # 17th – Jesuit missionary, martyr among the Huron
 			"fMarie de l'Incarnation",    # 17th – Ursuline nun, founder of the first girls' school in New France
-			"François de Laval",          # 17th – first bishop of Quebec, organized the colonial church
+			u"François de Laval",          # 17th – first bishop of Quebec, organized the colonial church
 			"Antoine Daniel",             # 17th – Jesuit missionary, early convert educator
 		),
 		iGreatArtist : (
 			"Pierre Le Moyne d'Iberville",# 17th – explorer and writer, founder of Louisiana settlements
-			"Claude François",            # 18th – painter and map illustrator in New France
-			"fÉlisabeth Bégon",           # 18th – letter writer offering vivid accounts of colonial life
+			u"Claude François",            # 18th – painter and map illustrator in New France
+			u"fÉlisabeth Bégon",           # 18th – letter writer offering vivid accounts of colonial life
 			"fMarie-Catherine d'Aulnoy",  # 17th – author of travel-inspired stories about the New World
 			"fJeanne Le Ber",             # 17th – Montreal recluse and patron of religious art
 		),
 		iGreatScientist : (
-			"Pierre Gaultier de Varennes et de La Vérendrye", # 18th – explorer and cartographer of western Canada
+			u"Pierre Gaultier de Varennes et de La Vérendrye", # 18th – explorer and cartographer of western Canada
 			"Michel Sarrazin",            # 17th–18th – physician and naturalist, described Canadian flora and fauna
 			"Charles-Marie de La Condamine", # 18th – explorer and geodesist, studied the Amazon and equator
 			"Louis Nicolas",              # 17th – missionary-naturalist, compiled early Canadian fauna illustrations
-			"Joseph-François Lafitau",    # 18th – Jesuit ethnographer, described Iroquois society
+			u"Joseph-François Lafitau",    # 18th – Jesuit ethnographer, described Iroquois society
 		),
 		iGreatMerchant : (
 			"Samuel de Champlain",        # 17th – founder of Quebec, geographer, and fur trade organizer
 			"Charles Aubert de La Chesnaye", # 17th – leading fur trader and entrepreneur in New France
-			"René Auguste Chouteau",      # 18th – co-founder of St. Louis, trader in Louisiana
-			"fBarbe Céléron",             # 18th – businesswoman in Montreal's fur trade networks
+			u"René Auguste Chouteau",      # 18th – co-founder of St. Louis, trader in Louisiana
+			u"fBarbe Céléron",             # 18th – businesswoman in Montreal's fur trade networks
 			"Jean Talon",                 # 17th – intendant of New France, promoted commerce and population growth
 		),
 		iGreatEngineer : (
-			"Sébastien Le Prestre de Vauban", # 17th – France's chief engineer, whose fortification models influenced Quebec
+			u"Sébastien Le Prestre de Vauban", # 17th – France's chief engineer, whose fortification models influenced Quebec
 			"Gaspard-Joseph Chaussegros de Léry", # 18th – chief engineer of New France, designed Quebec fortifications
 			"Louis de Buade de Frontenac",  # 17th – governor and builder of defensive works
-			"François de Chenneville",      # 18th – engineer for Montreal's early defenses
+			u"François de Chenneville",      # 18th – engineer for Montreal's early defenses
 			"fMarguerite d'Youville",       # 18th – founder of Grey Nuns, improved colonial hospitals and social works
 		),
 		iGreatStatesman : (
@@ -465,7 +466,7 @@ dGreatPeople = {
 			"Louis de Buade de Frontenac", # 17th – governor and defender of New France
 			"Pierre de Rigaud de Vaudreuil", # 18th – last governor of New France
 			"Charles de la Boische de Beauharnois", # 18th – long-serving governor, supported exploration
-			"Roland-Michel Barrin de La Galissonière", # 18th – naval officer, acted as governor of New France
+			u"Roland-Michel Barrin de La Galissonière", # 18th – naval officer, acted as governor of New France
 		),
 		iGreatGeneral : (
 			"Charles de Montmagny",        # 17th – first governor of New France, established fortifications

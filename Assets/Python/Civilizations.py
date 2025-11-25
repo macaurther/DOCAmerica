@@ -304,7 +304,6 @@ lCivilizations = [
 	Civilization(
 		iPortugal,
 		iGold=300,
-		iImmigration=10,
 		iStateReligion=iCatholicism,
 		lCivics=[iProprietors, iAdmiralty, iSlavery],
 		techs=techs.column(8).including(iGunpowder, iCompanies, iFinance, iCartography, iExchange, iExploration, iOptics, iTriangularTrade),

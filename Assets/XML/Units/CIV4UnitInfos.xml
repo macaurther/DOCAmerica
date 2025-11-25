@@ -2389,12 +2389,10 @@
 			<Strategy>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
-			<bRivalTerritory>1</bRivalTerritory>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
 					<UnitClassUpgradeType>UNITCLASS_RANGER</UnitClassUpgradeType>
@@ -2454,6 +2452,10 @@
 					<iFeatureAttack>50</iFeatureAttack>
 				</FeatureAttack>
 				<FeatureAttack>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<iFeatureAttack>50</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<iFeatureAttack>50</iFeatureAttack>
 				</FeatureAttack>
@@ -2463,6 +2465,14 @@
 				</FeatureAttack>
 				<FeatureAttack>
 					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<iFeatureAttack>50</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_BOG</FeatureType>
+					<iFeatureAttack>50</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
 					<iFeatureAttack>50</iFeatureAttack>
 				</FeatureAttack>
 			</FeatureAttacks>
@@ -8353,7 +8363,7 @@
 			<PrereqBonuses>
 				<BonusType>BONUS_IRON</BonusType>
 			</PrereqBonuses>
-			<iCost>120</iCost>
+			<iCost>130</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>3</iMoves>

@@ -581,23 +581,32 @@ def getUnitsForRole(iPlayer, iRole, bUnique=True):
 	units = [(iUnit, iUnitAI)]
 	
 	if iRole == iSettleSea:
-		units.append(getUnitForRole(iPlayer, iSettle, bUnique=bUnique))
-		for _ in range(infos.unit(iUnit).getCargoSpace()-1):
-			units.append(getUnitForRole(iPlayer, iBase, bUnique=bUnique))
+		# Half base, half settlers
+		for _ in range(infos.unit(iUnit).getCargoSpace()):
+			if _ % 2 == 0:
+				units.append(getUnitForRole(iPlayer, iBase, bUnique=bUnique))
+			else:
+				units.append(getUnitForRole(iPlayer, iSettle, bUnique=bUnique))
 	
 	elif iRole == iAssaultSea:
 		for _ in range(infos.unit(iUnit).getCargoSpace()):
 			units.append(getUnitForRole(iPlayer, iAttack, bUnique=bUnique))
 
 	elif iRole == iWorkSea:
-		units.append(getUnitForRole(iPlayer, iWork, bUnique=bUnique))
-		for _ in range(infos.unit(iUnit).getCargoSpace()-1):
-			units.append(getUnitForRole(iPlayer, iDefend, bUnique=bUnique))
+		# Half workers, half defenders 
+		for _ in range(infos.unit(iUnit).getCargoSpace()):
+			if _ % 2 == 0:
+				units.append(getUnitForRole(iPlayer, iWork, bUnique=bUnique))
+			else:
+				units.append(getUnitForRole(iPlayer, iDefend, bUnique=bUnique))
 
 	elif iRole == iMissionarySea:
-		units.append(getUnitForRole(iPlayer, iExplore, bUnique=bUnique))
-		for _ in range(infos.unit(iUnit).getCargoSpace()-1):
-			units.append(getUnitForRole(iPlayer, iMissionary, bUnique=bUnique))
+		# Half Missionaries, half Explorers
+		for _ in range(infos.unit(iUnit).getCargoSpace()):
+			if _ % 2 == 0:
+				units.append(getUnitForRole(iPlayer, iExplore, bUnique=bUnique))
+			else:
+				units.append(getUnitForRole(iPlayer, iMissionary, bUnique=bUnique))
 	
 	return units
 

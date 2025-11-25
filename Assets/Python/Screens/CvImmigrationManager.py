@@ -37,16 +37,18 @@ g_bDebug = false
 g_bAIThinkPeriod = 1 #Rhye (5 in Warlords, 4 in vanilla)
 
 def getHoverText(eWidgetType, iData1, iData2, bOption):
-	fThreshold = float(objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
-	fProgress = float(gc.getActivePlayer().getImmigration())
-	fRate = float(gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION))
-	szText = BugUtil.getText("TXT_KEY_MISC_IMMIGRATION", (int(fProgress), int(fThreshold)))
-	if (fRate > 0):
-		iTurns = math.ceil((fThreshold - fProgress) / fRate)
-		if iTurns < 0: iTurns = 0
-		szText += u"\n%d%c%s " % (int(fRate), gc.getCommerceInfo(CommerceTypes.COMMERCE_IMMIGRATION).getChar(), BugUtil.getPlainText("TXT_KEY_PER_TURN"))
-		szText += BugUtil.getText("INTERFACE_CITY_TURNS", (iTurns,))
-
+	if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab):
+		fThreshold = float(objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
+		fProgress = float(gc.getActivePlayer().getImmigration())
+		fRate = float(gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION))
+		szText = BugUtil.getText("TXT_KEY_MISC_IMMIGRATION", (int(fProgress), int(fThreshold)))
+		if (fRate > 0):
+			iTurns = math.ceil((fThreshold - fProgress) / fRate)
+			if iTurns < 0: iTurns = 0
+			szText += u"\n%d%c%s " % (int(fRate), gc.getCommerceInfo(CommerceTypes.COMMERCE_IMMIGRATION).getChar(), BugUtil.getPlainText("TXT_KEY_PER_TURN"))
+			szText += BugUtil.getText("INTERFACE_CITY_TURNS", (iTurns,))
+	else:
+		szText = "Cannot earn immigrants here"
 	
 	return szText
 
@@ -399,10 +401,8 @@ class CvImmigrationManager:
 	def drawTab(self, eTab, tabID, sTabText, xLink):
 		if (data.iCurrentImmigrationManagerTab == eTab):
 			szText = u"<font=4>" + localText.getColorText(sTabText, (), gc.getInfoTypeForString("COLOR_YELLOW")).upper() + "</font>"
-		elif objImmigrationUtils.canEarnImmigrants(self.iActivePlayer, eTab):
-			szText = u"<font=4>" + localText.getText(sTabText, ()).upper() + "</font>"
 		else:
-			szText = u"<font=4>" + localText.getColorText(sTabText, (), gc.getInfoTypeForString("COLOR_GREY")).upper() + "</font>"
+			szText = u"<font=4>" + localText.getText(sTabText, ()).upper() + "</font>"
 		self.getScreen().setText(tabID, "", szText, CvUtil.FONT_LEFT_JUSTIFY, xLink, self.screenWidgetData[SCREEN_HEIGHT] - 42, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		return xLink + CyInterface().determineWidth(szText) + self.screenWidgetData[SPACING]
 
@@ -413,30 +413,29 @@ class CvImmigrationManager:
 		screen.setStackedBarColors( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE_EXTRA, gc.getInfoTypeForString("COLOR_EMPTY") )
 		screen.setStackedBarColors( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY") )
 		
-		fThreshold = float(objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
-		fRate = float(gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION))
-		fFirst = float(gc.getActivePlayer().getImmigration())
-		szText = u""
-		if fRate > 0: 
-			iTurns = math.ceil((fThreshold - fFirst) / fRate)
-			if iTurns < 0: iTurns = 0
-			szText = u"%c in %d Turns" %(CyTranslator().getText("[ICON_IMMIGRANT]", ()), iTurns)
-		else:
-			szText = u"%c in - Turns" %(CyTranslator().getText("[ICON_IMMIGRANT]", ()))
+		if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab):
+			fThreshold = float(objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
+			fRate = float(gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION))
+			fFirst = float(gc.getActivePlayer().getImmigration())
+			szText = u""
+			if fRate > 0: 
+				iTurns = math.ceil((fThreshold - fFirst) / fRate)
+				if iTurns < 0: iTurns = 0
+				szText = u"%c in %d Turns" %(CyTranslator().getText("[ICON_IMMIGRANT]", ()), iTurns)
+			else:
+				szText = u"%c in - Turns" %(CyTranslator().getText("[ICON_IMMIGRANT]", ()))
 
-		szText = u"<font=20>%s</font>" % (szText)
-		screen.setLabel("ImmigrationProgressBarText", "", szText, CvUtil.FONT_CENTER_JUSTIFY | CvUtil.FONT_CENTER_VERTICALLY, self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_X], self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_Y], 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_IMMIGRATION_PROGRESS_BAR, -1, -1)
+			szText = u"<font=20>%s</font>" % (szText)
+			screen.setLabel("ImmigrationProgressBarText", "", szText, CvUtil.FONT_CENTER_JUSTIFY | CvUtil.FONT_CENTER_VERTICALLY, self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_X], self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_Y], 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_IMMIGRATION_PROGRESS_BAR, -1, -1)
 
-		fFirstPercent = fFirst / fThreshold
-		screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_STORED, fFirstPercent )
-		if ( fFirstPercent == 1 ):
-			screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE, fRate / fThreshold )
-		else:
-			screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE, fRate / fThreshold / ( 1 - fFirstPercent ) )
+			fFirstPercent = fFirst / fThreshold
+			screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_STORED, fFirstPercent )
+			if ( fFirstPercent == 1 ):
+				screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE, fRate / fThreshold )
+			else:
+				screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE, fRate / fThreshold / ( 1 - fFirstPercent ) )
 
-		screen.show( IMMIGRATION_PROGRESS_BAR )
-		
-
+			screen.show( IMMIGRATION_PROGRESS_BAR )
 
 		#screen.setText( "ImmigrationProgressBarText", "Background", szText, CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_X], self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_Y], -0.4, FontTypes.GAME_FONT, WidgetTypes.WIDGET_IMMIGRATION_PROGRESS_BAR, -1, -1 )
 		#screen.show( "ImmigrationProgressBarText" )
@@ -653,15 +652,15 @@ class CvImmigrationManager:
 		# Handle tab switching
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
 			bTabClicked = True
-			if inputClass.getFunctionName() == self.TAB_NORTH_EUROPE_ID and objImmigrationUtils.canEarnImmigrants(self.iActivePlayer, iHomelandNorthEurope):
+			if inputClass.getFunctionName() == self.TAB_NORTH_EUROPE_ID:
 				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_NORTH_EUROPE
-			elif inputClass.getFunctionName() == self.TAB_SOUTH_EUROPE_ID and objImmigrationUtils.canEarnImmigrants(self.iActivePlayer, iHomelandSouthEurope):
+			elif inputClass.getFunctionName() == self.TAB_SOUTH_EUROPE_ID:
 				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_SOUTH_EUROPE
-			elif inputClass.getFunctionName() == self.TAB_AFRICA_ID and objImmigrationUtils.canEarnImmigrants(self.iActivePlayer, iHomelandAfrica):
+			elif inputClass.getFunctionName() == self.TAB_AFRICA_ID:
 				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_AFRICA
-			elif inputClass.getFunctionName() == self.TAB_SIBERIA_ID and objImmigrationUtils.canEarnImmigrants(self.iActivePlayer, iHomelandSiberia):
+			elif inputClass.getFunctionName() == self.TAB_SIBERIA_ID:
 				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_SIBERIA
-			elif inputClass.getFunctionName() == self.TAB_ASIA_ID and objImmigrationUtils.canEarnImmigrants(self.iActivePlayer, iHomelandAsia):
+			elif inputClass.getFunctionName() == self.TAB_ASIA_ID:
 				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_ASIA
 			else:
 				bTabClicked = False
