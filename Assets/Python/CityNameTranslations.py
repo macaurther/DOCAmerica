@@ -268,42 +268,203 @@ _ = object()
 name_translations = {
 
 	### A ###
+	"Aniak": {
+		iLocal: _,
+		iNative: "Anyaraq",
+		iAmerican: "Bethel",
+	},
+	"Apatzingan": {
+		iLocal: _,
+		iSpanish: "Puerto Vallarta",
+	},
+	"Atqasuk": {
+		iLocal: _,
+		iAmerican: "Barrow",
+	},
 
 	### B ###
+	"Baltimore": {
+		iEnglish: _,
+		iAmerican: "Washington",
+	},
+	"Bogota": {
+		iLocal: _,
+		iSpanish: u"Bogotá",
+	},
 
 	### C ###
+	"Cahal Pech": {
+		iMayan: _,
+		iSpanish: u"Belmopán",
+		iEnglish: "Belmopan",
+	},
+	"Caral": {
+		iLocal: _,
+		iQuechua: "Pachacamac",
+		iSpanish: "Lima",
+	},
+	"Chalchuapa": {
+		iMayan: _,
+		iSpanish: "San Miguel",
+	},
+	"Catarpe": {
+		iQuechua: _,
+		iSpanish: "San Pedro de Atacama",
+	},
+	"Chan Chan": {
+		iQuechua: _,
+		iSpanish: "Trujillo",
+	},
+	"Chena Pukara": {
+		iLocal: _,
+		iSpanish: "Santiago",
+	},
+	"Chichen Itza": {
+		iMayan: _,
+		iSpanish: "Merida",
+	},
+	"Cholula": {
+		iLocal: _,
+		iSpanish: "Puebla",
+	},
+	"Coba": {
+		iMayan: _,
+		iSpanish: u"Cancún",
+	},
+	"Copan": {
+		iMayan: _,
+		iSpanish: "Coban",
+	},
+	"Cuello": {
+		iMayan: _,
+		iSpanish: "Ciudad de Belice",
+		iEnglish: "Belize City",
+	},
 
 	### D ###
+	"Danibaan": {
+		iLocal: _,
+		iSpanish: "Oaxaca",
+	},
 
 	### E ###
 
 	### F ###
+	"Fort Christina": {
+		iNordic: _,
+		iEnglish: "Wilmington",
+		iAmerican: "Wilmington",
+	},
 
 	### G ###
 
 	### H ###
+	"Hatun Canar": {
+		iQuechua: _,
+		iSpanish: "Ingapirca",
+	},
+	"Huari": {
+		iQuechua: _,
+		iSpanish: "Huaraz",
+	},
 
 	### I ###
+	"Iximche": {
+		iMayan: _,
+		iSpanish: "San Salvador",
+	},
+	"Izamal": {
+		iMayan: _,
+		iSpanish: "Progreso",
+	},
 
 	### J ###
+	"Jamestown": {
+		iEnglish: _,
+		iAmerican: "Richmond",
+	},
 
 	### K ###
+	"Kitu": {
+		iQuechua: _,
+		iSpanish: "Quito",
+	},
 
 	### L ###
+	"L'Anse aux Meadows": {
+		iNordic: _,
+		iEnglish: "St. Anthony",
+	},
 
 	### M ###
+	"Marcahuamachuco": {
+		iQuechua: _,
+		iSpanish: "Cajamarca",
+	},
+	"Medellin": {
+		iLocal: _,
+		iSpanish: u"Medellín",
+	},
 
 	### N ###
+	"Naco": {
+		iMayan: _,
+		iSpanish: "San Pedro Sula",
+	},
+	"Nanasqa": {
+		iQuechua: _,
+		iSpanish: "Nazca",
+	},
+	"New Amsterdam": {
+		iDutch: "Nieuw-Amsterdam",
+		iEnglish: "New York",
+		iAmerican: "New York",
+		iFrench: u"La Nouvelle-Angoulême",
+		iRussian: "Nowy Jork",
+	},
 
 	### O ###
 
 	### P ###
+	"Palenque": {
+		iMayan: _,
+		iSpanish: "Villahermosa",
+	},
+	"Porco": {
+		iLocal: _,
+		iSpanish: "Sucre",
+	},
 
 	### Q ###
+	"Quirigua": {
+		iMayan: _,
+		iSpanish: "Puerto Barrios",
+	},
+	"Qosqo": {
+		iQuechua: _,
+		iSpanish: "Cusco",
+	},
 
 	### R ###
 
 	### S ###
+	"Sagwon": {
+		iLocal: _,
+		iAmerican: "Prudhoe Bay",
+	},
+	"San Lorenzo": {
+		iLocal: _,
+		iSpanish: "Coatzacoalcos",
+	},
+	"Sitka": {
+		iRussian: _,
+		iAmerican: "Juneau",
+	},
+	"St. Augustine": {
+		iSpanish: _,
+		iEnglish: "Jacksonville",
+		iAmerican: "Jacksonville",
+	},
 
 	### T ###
 	"Tenochtitlan": {
@@ -318,9 +479,51 @@ name_translations = {
 	"Teotihuacan": {
 		iLocal: _,
 		iMayan: "Puh",
+		iSpanish: "Texcoco"
+	},
+	"Tiahuanaco": {
+		iLocal: _,
+		iQuechua: "Chuqiyapu",
+		iSpanish: "La Paz",
+	},
+	"Tiayo": {
+		iLocal: _,
+		iSpanish: "Tampico",
+	},
+	"Tres Zapotes": {
+		iLocal: _,
+		iSpanish: "Veracruz",
+	},
+	"Tucume": {
+		iQuechua: _,
+		iSpanish: "Piura",
+	},
+	"Tula": {
+		iLocal: _,
+		iSpanish: "Leon",
+	},
+	"Tumipampa": {
+		iQuechua: _,
+		iSpanish: "Cuenca",
+	},
+	"Tututepec": {
+		iLocal: _,
+		iSpanish: "Puerto Escondido",
+	},
+	"Tzintzuntan": {
+		iLocal: _,
+		iSpanish: "Guadalajara",
 	},
 
 	### U ###
+	"Utalan": {
+		iMayan: _,
+		iSpanish: "Guatemala",
+	},
+	"Uxmal": {
+		iMayan: _,
+		iSpanish: "Campeche",
+	},
 
 	### V ###
 
@@ -331,5 +534,9 @@ name_translations = {
 	### Y ###
 
 	### Z ###
+	"Zempoala": {
+		iLocal: _,
+		iSpanish: "Xalapa",
+	},
 
 }

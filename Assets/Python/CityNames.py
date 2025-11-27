@@ -371,7 +371,7 @@ def applyName(city, translation, bNotify=False):
 	
 	# MacAurther: If there is no map name, or Civ is a transient civ, just use current name
 	if translation.name is None or civ(city.getOwner()) in lTransientCivs:
-		translation.name = current_name
+		return
 		
 	city.setName(translation.name, False)
 	

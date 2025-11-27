@@ -80,7 +80,7 @@ iCivGroupAndes : [iInca, iTiwanaku, iWari, iMuisca, iChimu],
 lNativeCivs = dCivGroups[iCivGroupNative] + [iIndigenous]
 
 # MacAurther: Some civs are more nomadic/transient/not well known and don't have definitive city locations. For those civs, just use the city list from CIV4CivilizationInfos.xml
-lTransientCivs = [iMississippi, iMuisca, iPueblo, iInuit, iHaudenosaunee, iLakota]
+lTransientCivs = [iMississippi, iMuisca, iPueblo, iHaudenosaunee, iLakota]
 
 # used in: Stability
 # tech groups share techs within each other on respawn
