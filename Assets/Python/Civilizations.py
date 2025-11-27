@@ -188,7 +188,7 @@ class Civilization(object):
 			if iEnemyPlayer >= 0 and self.iCiv != iEnemy:
 				team(iEnemyPlayer).declareWar(self.player.getTeam(), False, WarPlanTypes.NO_WARPLAN)
 		
-		# MacAurther TODO: Rare bug where master is assigned and then collapses??, causing bug in scoreboard??
+		# MacAurther: Rare bug where master is assigned and then collapses??, causing bug in scoreboard??
 		# I guess don't use this feature.
 		'''if self.iMasterCiv is not None:
 			iMasterPlayer = slot(self.iMasterCiv)

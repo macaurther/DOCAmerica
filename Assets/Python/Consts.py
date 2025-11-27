@@ -866,7 +866,7 @@ event_bullet = "INTERFACE_EVENT_BULLET"
 event_cancel = "INTERFACE_BUTTONS_CANCEL"
 
 
-# MacAurther TODO: Update this if more population hurry types are added
+# MacAurther: Update this if more population hurry types are added
 iNumHurries = 3
 (iHurryPopulation,	iHurryGoldUnits, iHurryGoldBuilding) = range(iNumHurries)
 

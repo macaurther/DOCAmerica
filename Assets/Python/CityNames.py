@@ -110,7 +110,6 @@ def onGreatPersonBorn(unit, iPlayer):
 def setupScenario():
 	dRelocated = {}
 	dRenamed = {}
-	# MacAurther TODO
 	if scenario() == i1500AD:
 		dRelocated = {
 		}
