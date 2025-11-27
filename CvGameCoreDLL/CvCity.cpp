@@ -2504,74 +2504,46 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 	// MacAurther: Migration
 	if (eProject >= PROJECT_MIGRATE_N && eProject <= PROJECT_MIGRATE_NW)
 	{
-		// Don't let AI migrate (MacAurther TODO: Maybe let them do it, but add in logic for them)
-		if(!GET_PLAYER(getOwner()).isHuman()) return false;
-
 		// Make sure player has the right civic
 		if(!GET_PLAYER(getOwner()).hasCivic(CIVIC_NOMADS)) return false;
 
-		int iNewX = getX();
-		int iNewY = getY();
-		switch(eProject)
-		{
-			case PROJECT_MIGRATE_N:
-				iNewY += 1;
-				break;
-			case PROJECT_MIGRATE_NE:
-				iNewX += 1;
-				iNewY += 1;
-				break;
-			case PROJECT_MIGRATE_E:
-				iNewX += 1;
-				break;
-			case PROJECT_MIGRATE_SE:
-				iNewX += 1;
-				iNewY -= 1;
-				break;
-			case PROJECT_MIGRATE_S:
-				iNewY -= 1;
-				break;
-			case PROJECT_MIGRATE_SW:
-				iNewX -= 1;
-				iNewY -= 1;
-				break;
-			case PROJECT_MIGRATE_W:
-				iNewX -= 1;
-				break;
-			case PROJECT_MIGRATE_NW:
-				iNewX -= 1;
-				iNewY += 1;
-				break;
-		}
+		// Get new plot
+		DirectionTypes direction = (DirectionTypes)(eProject - PROJECT_MIGRATE_N);
+		CvPlot* pNewPlot = plotDirection(getX_INLINE(), getY_INLINE(), direction);
 
-		if(iNewX < 0 || iNewX >= EARTH_X || iNewY < 0 || iNewY >= EARTH_Y) return false;
+		// Can't migrate in place
+		if (pNewPlot == plot()) return false;
 
-		// Make sure the player is moving to a valid tile. 6 criteria (MacAurther TODO: Wow this is messy, maybe clean up):
-		CvPlot* pNewPlot = GC.getMap().plot(iNewX, iNewY);
+		// Make sure the player is moving to a valid tile. 6 criteria:
 		//   the tile is not impassible
 		if (pNewPlot->isImpassable()) return false;
+
 		//   the tile is not water
 		if (pNewPlot->isWater()) return false;
+
 		//   the tile is owned by the migrating player AND not owned by the Indigenous player and the migrating player has Chief
 		bool bChiefAbility = GET_PLAYER(getOwner()).hasCivic(CIVIC_CHIEF) && pNewPlot->getOwner() != NO_PLAYER && GET_PLAYER(pNewPlot->getOwner()).getCivilizationType() == INDIGENOUS;
 		if (!bChiefAbility && pNewPlot->getOwner() != getOwner()) return false;
+
 		//   the tile does not contain a feature other than Flood Plains or Canyon AND the migrating player doesn't have Harmony
 		bool bHarmonyAbility = GET_PLAYER(getOwner()).hasCivic(CIVIC_HARMONY) && pNewPlot->getFeatureType() != FEATURE_BOG && pNewPlot->getFeatureType() != FEATURE_JUNGLE;
 		if (!bHarmonyAbility && pNewPlot->getFeatureType() != NO_FEATURE && pNewPlot->getFeatureType() != FEATURE_FLOOD_PLAINS && pNewPlot->getFeatureType() != FEATURE_CANYON) return false;
+
 		//   the terrain is suitable for founding
 		bool bFound = false;
 		if (GC.getTerrainInfo(pNewPlot->getTerrainType()).isFound()) bFound = true;
 		else if (GC.getTerrainInfo(pNewPlot->getTerrainType()).isFoundCoast() && pNewPlot->isCoastalLand()) bFound = true;
 		else if (GC.getTerrainInfo(pNewPlot->getTerrainType()).isFoundFreshWater() && pNewPlot->isFreshWater()) bFound = true;
 		if (!bFound) return false;
+
 		//   the tile is not adjacent to another city
 		for (int iX = -1; iX < 2; iX++)
 		{
-			int iCheckX = iNewX + iX;
+			int iCheckX = pNewPlot->getX_INLINE() + iX;
 			if (iCheckX < 0 || iCheckX >= EARTH_X) continue;
 			for (int iY = -1; iY < 2; iY++)
 			{
-				int iCheckY = iNewY + iY;
+				int iCheckY = pNewPlot->getY_INLINE() + iY;
 				if (iCheckY < 0 || iCheckY >= EARTH_Y) continue;
 				if (iCheckX == getX() && iCheckY == getY()) continue;	// Don't worry about the city that's moving, it'll move
 				if (GC.getMap().plot(iCheckX, iCheckY)->getPlotCity() != NULL) return false;

@@ -27,17 +27,26 @@ dDefaultInsertNames = {
 dDefaultInsertAdjectives = {
 }
 
+# MacAurther TODO: Flush out
 dSpecificVassalTitles = deepdict({
 	iSpain : {
+		iMississippi : "TXT_KEY_CIV_SPANISH_MISSISSIPPI",
 		iMaya : "TXT_KEY_CIV_SPANISH_MAYA",
-		iInca : "TXT_KEY_CIV_SPANISH_INCA",
+		iPueblo : "TXT_KEY_CIV_SPANISH_PUEBLO",
+		iPurepecha : "TXT_KEY_CIV_SPANISH_PUREPECHA",
 		iAztec : "TXT_KEY_CIV_SPANISH_AZTECS",
+		iMuisca : "TXT_KEY_CIV_SPANISH_MUISCA",
+		iChimu : "TXT_KEY_CIV_SPANISH_CHIMU",
+		iWari : "TXT_KEY_CIV_SPANISH_WARI",
+		iInca : "TXT_KEY_CIV_SPANISH_INCA",
+		iInca : "TXT_KEY_CIV_SPANISH_TIWANAKU",
 		iFrance : "TXT_KEY_CIV_SPANISH_FRANCE",
 		iNetherlands : "TXT_KEY_ADJECTIVE_TITLE",
 		iPortugal : "TXT_KEY_CIV_SPANISH_PORTUGAL",
 		iAmerica : "TXT_KEY_CIV_SPANISH_AMERICA",
 		iArgentina : "TXT_KEY_CIV_SPANISH_ARGENTINA",
 		iColombia : "TXT_KEY_CIV_SPANISH_COLOMBIA",
+		iPeru : "TXT_KEY_CIV_SPANISH_PERU",
 	},
 	iFrance : {
 		iEngland : "TXT_KEY_CIV_FRENCH_ENGLAND",
@@ -49,6 +58,7 @@ dSpecificVassalTitles = deepdict({
 		iAmerica : "TXT_KEY_CIV_FRENCH_AMERICA",
 		iHaiti : "TXT_KEY_CIV_FRENCH_HAITI",
 		iHaudenosaunee : "TXT_KEY_CIV_FRENCH_HAUDENOSAUNEE",
+		iMississippi : "TXT_KEY_CIV_FRENCH_MISSISSIPPI",
 	},
 	iEngland : {
 		iMaya : "TXT_KEY_CIV_ENGLISH_MAYA",

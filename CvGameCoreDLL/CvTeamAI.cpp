@@ -1340,6 +1340,12 @@ int CvTeamAI::AI_techTradeVal(TechTypes eTech, TeamTypes eTeam) const
 
 	iValue = ((iCost * 3) / 2);
 
+	// MacAurther: AI values Native Techs more than what they cost
+	if (GC.getTechInfo(eTech).getCultureGroup() == CULTURE_GROUP_NATIVE)
+	{
+		iValue *= 2;
+	}
+
 	iKnownCount = 0;
 	iPossibleKnownCount = 0;
 

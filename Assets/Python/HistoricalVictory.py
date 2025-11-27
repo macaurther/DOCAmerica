@@ -214,7 +214,7 @@ dGoals = {
 			(plots.region(rGreenland).named(KALAALLIT), 1),										# Greenland
 			by=1500
 		),
-		ResourceCount(iFur, 22, by=1600),	# MacAurther TODO: Update goal to include all artic resources
+		ResourceCount((iFur, 5), (iDeer, 5), (iSeal, 5), (iWhales, 2), by=1600),
 		TerrainCount(sum(iOcean, iCoast, iArcticCoast, iFjord), 100, by=1700),
 	),
 	iInca: (

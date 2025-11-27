@@ -186,44 +186,12 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SPANISH_MAYA</Tag>
-		<English>Diocesis of Yucat&#225;n</English>
-		<French>
-			<Text>Dioc&#232;se du Yucat&#225;n</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Di&#246;zese Yucat&#225;n:Di&#246;zese Yucat&#225;n:Di&#246;zese Yuc&#225;tan</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Diocesi dello Yucat&#225;n</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Diocesis de Yucat&#225;n</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_SPANISH_INCA</Tag>
+		<Tag>TXT_KEY_CIV_SPANISH_PERU</Tag>
 		<English>Viceroyalty of Peru</English>
 		<French>Viceroyalty of Peru</French>
 		<German>Viceroyalty of Peru</German>
 		<Italian>Viceroyalty of Peru</Italian>
 		<Spanish>Viceroyalty of Peru</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_SPANISH_INCA</Tag>
-		<English>Viceroyalty of New Spain</English>
-		<French>Viceroyalty of New Spain</French>
-		<German>Viceroyalty of New Spain</German>
-		<Italian>Viceroyalty of New Spain</Italian>
-		<Spanish>Viceroyalty of New Spain</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SPANISH_FRANCE</Tag>
@@ -334,12 +302,100 @@
 		<Spanish>Viceroyalty of New Granada</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_MISSISSIPPPI</Tag>
+		<English>Luisiana</English>
+		<French>Luisiana</French>
+		<German>Luisiana</German>
+		<Italian>Luisiana</Italian>
+		<Spanish>Luisiana</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_MAYA</Tag>
+		<English>Diocesis of Yucat&#225;n</English>
+		<French>
+			<Text>Dioc&#232;se du Yucat&#225;n</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Di&#246;zese Yucat&#225;n:Di&#246;zese Yucat&#225;n:Di&#246;zese Yuc&#225;tan</Text>
+			<Gender>Neuter:Neuter:Neuter</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Diocesi dello Yucat&#225;n</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Diocesis de Yucat&#225;n</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_PUEBLO</Tag>
+		<English>Provincia de Nuevo M&#233;xico</English>
+		<French>Provincia de Nuevo M&#233;xico</French>
+		<German>Provincia de Nuevo M&#233;xico</German>
+		<Italian>Provincia de Nuevo M&#233;xico</Italian>
+		<Spanish>Provincia de Nuevo M&#233;xico</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_PUREPECHA</Tag>
+		<English>Nueva Galicia</English>
+		<French>Nueva Galicia</French>
+		<German>Nueva Galicia</German>
+		<Italian>Nueva Galicia</Italian>
+		<Spanish>Nueva Galicia</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIV_SPANISH_AZTECS</Tag>
 		<English>Provincia de M&#233;xico</English>
 		<French>Provincia de M&#233;xico</French>
 		<German>Provincia de M&#233;xico</German>
 		<Italian>Provincia de M&#233;xico</Italian>
 		<Spanish>Provincia de M&#233;xico</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_MUISCA</Tag>
+		<English>Audiencia de Santa Fe</English>
+		<French>Audiencia de Santa Fe</French>
+		<German>Audiencia de Santa Fe</German>
+		<Italian>Audiencia de Santa Fe</Italian>
+		<Spanish>Audiencia de Santa Fe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_CHIMU</Tag>
+		<English>Audiencia de Quito</English>
+		<French>Audiencia de Quito</French>
+		<German>Audiencia de Quito</German>
+		<Italian>Audiencia de Quito</Italian>
+		<Spanish>Audiencia de Quito</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_WARI</Tag>
+		<English>Audiencia de Lima</English>
+		<French>Audiencia de Lima</French>
+		<German>Audiencia de Lima</German>
+		<Italian>Audiencia de Lima</Italian>
+		<Spanish>Audiencia de Lima</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_INCA</Tag>
+		<English>Audiencia de Cuzco</English>
+		<French>Audiencia de Cuzco</French>
+		<German>Audiencia de Cuzco</German>
+		<Italian>Audiencia de Cuzco</Italian>
+		<Spanish>Audiencia de Cuzco</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_TIWANAKU</Tag>
+		<English>Audiencia de Charcas</English>
+		<French>Audiencia de Charcas</French>
+		<German>Audiencia de Charcas</German>
+		<Italian>Audiencia de Charcas</Italian>
+		<Spanish>Audiencia de Charcas</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SPAIN_ADJECTIVE</Tag>

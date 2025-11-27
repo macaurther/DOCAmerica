@@ -105,5 +105,12 @@ def isCityStates(iPlayer):
 	return False
 
 def isAutocratic(iPlayer):
-	# MacAurther TODO
+	civic = civics(iPlayer)
+	
+	if civic.iExecutive == iDictator:
+		return True
+	
+	if civic.iAdministration == iPoliceState:
+		return True
+	
 	return False

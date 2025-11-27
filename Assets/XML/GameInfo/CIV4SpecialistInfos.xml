@@ -432,7 +432,9 @@
 				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</Yields>
-			<Commerces/>
+			<Commerces>
+				<iCommerce>2</iCommerce>
+			</Commerces>
 			<iExperience>0</iExperience>
 			<iHappiness>-1</iHappiness>
 			<Flavors/>

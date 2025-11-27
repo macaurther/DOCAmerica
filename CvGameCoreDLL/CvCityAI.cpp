@@ -4779,6 +4779,28 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 		}
 	}
 
+	// MacAurther: Migration projects
+	if (eProject >= PROJECT_MIGRATE_N && eProject <= PROJECT_MIGRATE_NW)	// MacAurther TODO: Fine-tune this. I'm just glad they have a chance to do it though
+	{
+		DirectionTypes direction = DirectionTypes (eProject - PROJECT_MIGRATE_N);
+		CvPlot* pNewPlot = plotDirection(getX_INLINE(), getY_INLINE(), direction);
+
+		// Base value of 3 for the migration food
+		iValue += 3;
+
+		// Consider delta of where you are now vs. where you're going (this includes settlermap preferences)
+		iValue += GET_PLAYER(getOwner()).AI_foundValue(pNewPlot->getX_INLINE(), pNewPlot->getY_INLINE()) - GET_PLAYER(getOwner()).AI_foundValue(getX_INLINE(), getY_INLINE());
+
+		// If destination has a tribe and owner has Chief Civic, beeline it baby
+		if(GET_PLAYER(getOwner()).hasCivic(CIVIC_CHIEF) && (pNewPlot->getImprovementType() == IMPROVEMENT_TRIBE || pNewPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)) iValue += 10;
+
+		// Lakota UP: likes to migrate
+		if(GET_PLAYER(getOwner()).getCivilizationType() == LAKOTA) iValue += 3;
+
+		// Finally, scale down based on cost
+		iValue *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getCreatePercent() / getProductionNeeded(eProject) / 100;
+	}
+
 	return iValue;
 }
 

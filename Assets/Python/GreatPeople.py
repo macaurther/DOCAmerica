@@ -1,7 +1,7 @@
 # coding: utf-8
 
 from RFCUtils import *
-#import RFCUtils as RFCU	# MacAurther TODO: Unneeded?
+import RFCUtils as RFCU
 from Events import handler
 from Core import *
 
@@ -29,7 +29,7 @@ def assignGreatPersonName(unit, iPlayer, city, bAnnounceBirth = True):
 		if sName[0] == "f":
 			sName = sName[1:]
 			unit = replace(unit, dFemaleGreatPeople[base_unit(unit)])
-			#unit = RFCU.replace(unit, dFemaleGreatPeople[base_unit(unit)])	# MacAurther TODO: Unneeded?
+			unit = RFCU.replace(unit, dFemaleGreatPeople[base_unit(unit)])
 		
 		unit.setName(sName)
 		
@@ -115,7 +115,7 @@ def getName(unit):
 	
 	return random_entry(lAvailableNames)
 
-# MacAurther TODO: Add mod-specific great people :)
+# MacAurther TODO: Add more mod-specific great people :)
 # WARNING: AI-GENERATED TABLES - I KNOW IT'S BAD AND HALLUCINATES PEOPLE WHO NEVER EXISTED BUT WHAT AM I GOING TO DO MY OWN RESEARCH I DON'T THINK SO
 #  They're the ones with detail on where the names are from, details that are unverifiable at times...
 dGreatPeople = {

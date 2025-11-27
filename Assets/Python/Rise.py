@@ -623,7 +623,7 @@ class Birth(object):
 		# reveal tiles
 		for plot in revealed:
 			plot.setRevealed(self.team.getID(), True, False, -1)
-	# MacAurther TODO: Europeans spawning at sea
+
 	def createUnits(self):
 		bInvasionCiv = self.iCiv in lInvasionCivs
 		

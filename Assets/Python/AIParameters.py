@@ -30,15 +30,32 @@ def onPlayerCivAssigned(iPlayer):
 	updateParameters(iPlayer)
 
 
-# MacAurther TODO:
+# MacAurther: The lower the value, the farther away civ will consider settling cities
 dTargetDistanceValueModifier = CivDict({
-iSpain : 3,
-iFrance : 3,
-iEngland : 3,
-iNetherlands : 3,
-iAmerica : 3,
+iWari: 7,
+iMississippi: 7,
+iNorse: 3,
+iInuit: 1,
+iInca: 4,
+iHaudenosaunee: 8,
+iSpain : 0,
+iFrance : 0,
+iEngland : 0,
+iNetherlands : 0,
+iLakota: 7,
+iHawaii: 8,
+iRussia: 3,
+iAmerica : 1,
+iArgentina: 2,
+iMexico : 2,
+iColombia : 7,
+iPeru : 7,
+iBrazil : 1,
+iVenezuela : 7,
+iCanada : 1,
 }, default=10)
 
+# MacAurther: The higher the value, the less like to train persecutors
 dReligiousTolerance = CivDict({
 iSpain : 1,
 iFrance : 2,

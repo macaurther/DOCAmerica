@@ -1,21 +1,6 @@
 ### Areas ###
 
 # Colonists
-# The first tuple is where the player will spawn, the second is where the AI will spawn  # MacAurther TODO: Get AI to actually work so separate locations aren't needed
-#  Norse
-tColonistReykjavik = 	((68, 118), (64, 117))
-#  Spain
-tColonistCaribbean = 	((65, 71), (58, 66))
-#  Portugal
-tColonistBrazil1 = 		((77, 23), (69, 26))
-#  England
-tColonistVirginia = 	((55, 87), (48, 86))
-#  France
-tColonistQuebec = 		((59, 96), (49, 99))
-#  Netherlands
-tColonistNewNetherlands =((58, 91), (48, 91))
-#  Russia
-tColonistAlaska = 		((4, 106), (11, 108))
 
 # Companies
 

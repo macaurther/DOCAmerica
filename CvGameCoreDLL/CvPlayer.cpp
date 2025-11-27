@@ -7501,7 +7501,7 @@ int CvPlayer::calculateUnitCost(int& iFreeUnits, int& iFreeMilitaryUnits, int& i
 		iSupport /= 2;
 	}
 
-	FAssert(iSupport >= 0);
+	// FAssert(iSupport >= 0);	// MacAurther: Don't know why this assert, there can easily be negative support with enough mercenaries. Disabled.
 
 	return std::max(0, iSupport);
 }

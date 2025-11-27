@@ -452,7 +452,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>3</iGridX>
 			<iGridY>1</iGridY>
@@ -489,7 +489,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>3</iGridX>
 			<iGridY>3</iGridY>
@@ -526,7 +526,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>3</iGridX>
 			<iGridY>5</iGridY>
@@ -559,7 +559,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>3</iGridX>
 			<iGridY>7</iGridY>
@@ -593,7 +593,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>3</iGridX>
 			<iGridY>9</iGridY>
@@ -626,7 +626,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>3</iGridX>
 			<iGridY>11</iGridY>
@@ -659,7 +659,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bWaterWork>1</bWaterWork>
 			<iGridX>3</iGridX>
@@ -733,7 +733,7 @@
 			<iAsset>8</iAsset>
 			<iPower>2</iPower>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
 			<iGridY>3</iGridY>
@@ -771,7 +771,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>8</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
 			<iGridY>5</iGridY>
@@ -809,7 +809,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>12</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
 			<iGridY>7</iGridY>
@@ -853,7 +853,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>8</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
 			<iGridY>9</iGridY>
@@ -894,7 +894,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>8</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
 			<iGridY>11</iGridY>
@@ -931,7 +931,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>16</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
 			<iGridY>13</iGridY>
@@ -969,7 +969,7 @@
 			<FirstFreeUnitClass>UNITCLASS_GREAT_GENERAL</FirstFreeUnitClass>
 			<iAsset>20</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>5</iGridX>
 			<iGridY>1</iGridY>
@@ -1004,7 +1004,7 @@
 			<iAsset>12</iAsset>
 			<iPower>2</iPower>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>5</iGridX>
 			<iGridY>3</iGridY>
@@ -1081,7 +1081,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>16</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bMapCentering>1</bMapCentering>
 			<iGridX>5</iGridX>
@@ -1162,7 +1162,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>16</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>5</iGridX>
 			<iGridY>11</iGridY>
@@ -1197,7 +1197,7 @@
 			<FirstFreeUnitClass>UNITCLASS_GREAT_MERCHANT</FirstFreeUnitClass>
 			<iAsset>12</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>5</iGridX>
 			<iGridY>13</iGridY>
@@ -1281,7 +1281,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>16</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>6</iGridX>
 			<iGridY>3</iGridY>
@@ -1314,7 +1314,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>20</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>6</iGridX>
 			<iGridY>5</iGridY>
@@ -1387,7 +1387,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>16</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bTechTrading>1</bTechTrading>
 			<iGridX>6</iGridX>
@@ -1427,7 +1427,7 @@
 			<iFirstFreeTechs>1</iFirstFreeTechs>
 			<iAsset>20</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>6</iGridX>
 			<iGridY>11</iGridY>
@@ -1464,7 +1464,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>8</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>6</iGridX>
 			<iGridY>13</iGridY>
@@ -1536,7 +1536,7 @@
 			<iAsset>24</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bVassalTrading>1</bVassalTrading>
 			<iGridX>7</iGridX>
@@ -1572,7 +1572,7 @@
 			<FirstFreeUnitClass>UNITCLASS_GREAT_ARTIST</FirstFreeUnitClass>
 			<iAsset>24</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>7</iGridX>
 			<iGridY>5</iGridY>
@@ -1612,7 +1612,7 @@
 			<iAsset>24</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>7</iGridX>
 			<iGridY>7</iGridY>
@@ -1686,7 +1686,7 @@
 			<iAsset>24</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
-			<bTrade>1</bTrade>
+			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>7</iGridX>
 			<iGridY>11</iGridY>

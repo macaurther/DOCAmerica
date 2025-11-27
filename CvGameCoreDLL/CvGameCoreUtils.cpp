@@ -1840,7 +1840,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 				!(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isWater()))
 			{
 				// MacAurther: Strait Feature: Ships can move through corners
-				if (!(pFromPlot->isStrait()) && !(pToPlot->isStrait()))
+				if (!(pFromPlot->isStrait()) || !(pToPlot->isStrait()))
 				{
 					return false;
 				}
