@@ -295,11 +295,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DICTATOR_STRATEGY</Tag>
-		<English>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</English>
-		<French>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</French>
-		<German>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</German>
-		<Italian>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</Italian>
-		<Spanish>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</Spanish>
+		<English>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves; reduced separatism in conqured foreign cities</English>
+		<French>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves; reduced separatism in conqured foreign cities</French>
+		<German>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves; reduced separatism in conqured foreign cities</German>
+		<Italian>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves; reduced separatism in conqured foreign cities</Italian>
+		<Spanish>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves; reduced separatism in conqured foreign cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DICTATOR_HELP</Tag>
+		<English>[ICON_BULLET]Reduced separatism in conquered foreign cities</English>
+		<French>[ICON_BULLET]Reduced separatism in conquered foreign cities</French>
+		<German>[ICON_BULLET]Reduced separatism in conquered foreign cities</German>
+		<Italian>[ICON_BULLET]Reduced separatism in conquered foreign cities</Italian>
+		<Spanish>[ICON_BULLET]Reduced separatism in conquered foreign cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRADITIONALISM</Tag>

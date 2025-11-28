@@ -335,6 +335,9 @@ public:
 	int getAssetValue() const;						// Exposed to Python
 	int getPowerValue() const;						// Exposed to Python
 	int getCultureGroup() const;						// Exposed to Python
+	int getExtraPop() const;						// Exposed to Python
+	int getHomelandAccess() const;						// Exposed to Python
+	int getContactDiscount() const;						// Exposed to Python
 
 	int getGridX() const;									// Exposed to Python
 	int getGridY() const;									// Exposed to Python
@@ -402,7 +405,10 @@ protected:
 	int m_iFirstFreeTechs;
 	int m_iAssetValue;
 	int m_iPowerValue;
-	int m_iCultureGroup;
+	int m_iCultureGroup; // MacAurther
+	int m_iExtraPop; // MacAurther
+	int m_iHomelandAccess; // MacAurther
+	int m_iContactDiscount; // MacAurther
 
 	int m_iGridX;
 	int m_iGridY;

@@ -37,7 +37,6 @@ def mayanPower(iTech, iTeam, iPlayer):
 @handler("cityHurry")
 # Teotihuacan UP
 def teotihuacanPowerHurry(pCity, iHurry):
-	# MacAurther TODO: Update this if more population hurry types are added
 	if iHurry == iHurryPopulation and civ(pCity) == iTeotihuacan:
 		doTeotihuacanPower(pCity)
 

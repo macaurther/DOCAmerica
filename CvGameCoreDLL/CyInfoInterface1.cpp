@@ -72,6 +72,9 @@ void CyInfoPythonInterface1()
 		.def("getAssetValue", &CvTechInfo::getAssetValue, "int ()")
 		.def("getPowerValue", &CvTechInfo::getPowerValue, "int ()")
 		.def("getCultureGroup", &CvTechInfo::getCultureGroup, "int ()")	// MacAurther
+		.def("getExtraPop", &CvTechInfo::getExtraPop, "int ()")	// MacAurther
+		.def("getHomelandAccess", &CvTechInfo::getHomelandAccess, "int ()")	// MacAurther
+		.def("getContactDiscount", &CvTechInfo::getContactDiscount, "int ()")	// MacAurther
 
 		.def("getGridX", &CvTechInfo::getGridX, "int ()")
 		.def("getGridY", &CvTechInfo::getGridY, "int ()")

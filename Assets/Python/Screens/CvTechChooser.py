@@ -654,54 +654,44 @@ class CvTechChooser:
 				elif type == "FreeUnit":
 					if gc.getUnitInfo(item).getEspionagePoints() == 0 or not CyGame().isOption(GameOptionTypes.GAMEOPTION_NO_ESPIONAGE):
 						screen.addDDSGFCAt(szItem, szTechBox, player.getUnitButton(item), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_HELP_FREE_UNIT, item, tech, False)
+
+				# MacAurther: Tribe contact discount
+				elif TechInfo.getContactDiscount() != 0:
+					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CHEAP_CONTACT").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
 				
-				# MacAurther TODO: This is kludgy, to make right, it'd have to be added to the XML. But that's a lot of work...
+				# MacAurther: Extra population on city founding
+				elif TechInfo.getExtraPop() != 0:
+					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_EXTRA_POPULATION").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+				
+				# MacAurther: Receive Immigrants from North Europe
+				elif TechInfo.getHomelandAccess() == 0:
+					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_NORTH_EUROPE").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+				# MacAurther: Receive Immigrants from South Europe
+				elif TechInfo.getHomelandAccess() == 1:
+					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_SOUTH_EUROPE").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+				# MacAurther: Receive Immigrants from Africa
+				elif TechInfo.getHomelandAccess() == 2:
+					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_AFRICA").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+				# MacAurther: Receive Immigrants from Siberia
+				elif TechInfo.getHomelandAccess() == 3:
+					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_SIBERIA").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+				# MacAurther: Receive Immigrants from Asia
+				elif TechInfo.getHomelandAccess() == 4:
+					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_ASIA").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+
 				# MacAurther: Custom Tech effect buttons
 				# Hunting: Animal Hunting
 				elif TechInfo.getGridX() == 1 and TechInfo.getGridY() == 1:
-					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_ANIMAL_HUNTING").getPath()
-					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_ANIMAL_HUNTING").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
 				# Pathfinding: Mountain Pass
 				elif TechInfo.getGridX() == 2 and TechInfo.getGridY() == 11:
-					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_MOUNTAINPASS").getPath()
-					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
-				# Linguistics, Localization: Tribe contact discount
-				elif (TechInfo.getGridX() == 1 and TechInfo.getGridY() == 9) or (TechInfo.getGridX() == 2 and TechInfo.getGridY() == 9):
-					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CHEAP_CONTACT").getPath()
-					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
-				# Community, Civil Liberties, Globalism: Extra population on city founding
-				elif (TechInfo.getGridX() == 12 and TechInfo.getGridY() == 9) or (TechInfo.getGridX() == 17 and TechInfo.getGridY() == 13) or (TechInfo.getGridX() == 21 and TechInfo.getGridY() == 11):
-					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_EXTRA_POPULATION").getPath()
-					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_MOUNTAINPASS").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
 				# Surveying: Forts claim additional territory
 				elif (TechInfo.getGridX() == 15 and TechInfo.getGridY() == 9):
-					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_EXTRA_FORT_TERRITORY").getPath()
-					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_EXTRA_FORT_TERRITORY").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
 				# Pioneering: Cities start with worker and defender
 				elif (TechInfo.getGridX() == 16 and TechInfo.getGridY() == 9):
-					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CITY_DEFENDER_AND_WORKER").getPath()
-					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
-				# North Europe Access: Receive Immigrants from North Europe
-				elif (TechInfo.getGridX() == 7 and TechInfo.getGridY() == 1):
-					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_NORTH_EUROPE").getPath()
-					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
-				# South Europe Access: Receive Immigrants from South Europe
-				elif (TechInfo.getGridX() == 8 and TechInfo.getGridY() == 1):
-					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_SOUTH_EUROPE").getPath()
-					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
-				# Africa Access: Receive Immigrants from Africa
-				elif (TechInfo.getGridX() == 22 and TechInfo.getGridY() == 9):
-					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_AFRICA").getPath()
-					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
-				# Siberia Access: Receive Immigrants from Siberia
-				elif (TechInfo.getGridX() == 14 and TechInfo.getGridY() == 1):
-					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_SIBERIA").getPath()
-					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
-				# Asia Access: Receive Immigrants from Asia
-				elif (TechInfo.getGridX() == 22 and TechInfo.getGridY() == 13):
-					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_ASIA").getPath()
-					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
-				
+					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CITY_DEFENDER_AND_WORKER").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
 				elif type == "CustomEffect":
 					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_GENERAL_QUESTIONMARK").getPath()
 					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)

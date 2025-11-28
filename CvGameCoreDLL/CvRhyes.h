@@ -139,6 +139,18 @@ enum RegionPowers
 	NUM_REGION_POWERS
 };
 
+// MacAurther
+enum Homelands
+{
+	NO_HOMELAND = -1,
+	HOMELAND_NORTH_EUROPE,
+	HOMELAND_SOUTH_EUROPE,
+	HOMELAND_AFRICA,
+	HOMELAND_SIBERIA,
+	HOMELAND_ASIA,
+	NUM_HOMELANDS
+};
+
 #endif	// CVRHYES_H
 
 static const int lTechLeaderPenalty[NUM_ERAS] = {0, 0, 20, 25, 30, 40, 50};

@@ -1402,11 +1402,17 @@ public:
 	bool isImmigrationTutorial() const;
 	int getRegionPowers() const;
 	int getFortRange() const;
-	int getContactCost() const;
 	bool canResearchNativeTech(TechTypes eTech) const;
 	bool hasShipOnEdge() const;
 	void setImmigrantShip(CvUnit* pUnit);
 	CvUnit* getImmigrantShip() const;
+
+	void changeExtraPop(int iChange);
+	int getExtraPop() const;
+	void changeHomelandAccess(int eHomeland, int iChange);
+	bool getHomelandAccess(int iHomeland) const;
+	void changeContactDiscount(int iChange);
+	int getContactDiscount() const;
 
 protected:
 
@@ -1594,6 +1600,8 @@ protected:
 	TechTypes m_eFreeTechChosen; // Leoreth
 
 	CvUnit* m_pImmigrantShip; // MacAurther
+	int m_iExtraPop; // MacAurther
+	int m_iContactDiscount; // MacAurther
 
 	int* m_aiSeaPlotYield;
 	int* m_aiYieldRateModifier;
@@ -1614,6 +1622,7 @@ protected:
 	int* m_aiCommerceFlexibleCount;
 	int* m_aiGoldPerTurnByPlayer;
 	int* m_aiEspionageSpendingWeightAgainstTeam;
+	int* m_aiHomelandAccess; // MacAurther
 
 	// Leoreth
 	int* m_aiDomainProductionModifiers;

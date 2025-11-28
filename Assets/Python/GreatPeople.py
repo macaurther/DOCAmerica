@@ -114,7 +114,6 @@ def getName(unit):
 	
 	return random_entry(lAvailableNames)
 
-# MacAurther TODO: Add more mod-specific great people :)
 # WARNING: AI-GENERATED TABLES - I KNOW IT'S BAD AND HALLUCINATES PEOPLE WHO NEVER EXISTED BUT WHAT AM I GOING TO DO MY OWN RESEARCH I DON'T THINK SO
 #  They're the ones with detail on where the names are from, details that are unverifiable at times...
 dGreatPeople = {

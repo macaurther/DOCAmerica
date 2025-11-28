@@ -334,15 +334,8 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		changeHealRate(10);
 	}
 
-	// MacAurther: Starting population increases with certain techs:
-	int iExtraPopulation = 0;
-
-	if (GET_TEAM(GET_PLAYER(eOwner).getTeam()).isHasTech((TechTypes)COMMUNITY)) iExtraPopulation += 1;
-	if (GET_TEAM(GET_PLAYER(eOwner).getTeam()).isHasTech((TechTypes)CIVIL_LIBERTIES)) iExtraPopulation += 1;
-	if (GET_TEAM(GET_PLAYER(eOwner).getTeam()).isHasTech((TechTypes)GLOBALISM)) iExtraPopulation += 2;
-
-
-	changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPopulation);
+	// MacAurther: Starting population increases with certain techs
+	changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + GET_PLAYER(eOwner).getExtraPop());
 
 	changeAirUnitCapacity(GC.getDefineINT("CITY_AIR_UNIT_CAPACITY"));
 

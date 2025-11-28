@@ -19,6 +19,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>1</iGridX>
@@ -50,6 +51,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>1</iGridX>
@@ -77,6 +79,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>1</iGridX>
@@ -108,6 +111,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>1</iGridX>
@@ -136,6 +140,8 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
+			<iContactDiscount>25</iContactDiscount>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>1</iGridX>
@@ -163,6 +169,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>1</iGridX>
@@ -190,6 +197,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>1</iGridX>
@@ -224,6 +232,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>2</iGridX>
@@ -258,6 +267,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>2</iGridX>
@@ -285,6 +295,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>2</iGridX>
@@ -319,6 +330,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>2</iGridX>
@@ -351,6 +363,8 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
+			<iContactDiscount>25</iContactDiscount>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>2</iGridX>
@@ -382,6 +396,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>2</iGridX>
@@ -419,6 +434,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>2</iGridX>
@@ -452,6 +468,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>3</iGridX>
@@ -489,6 +506,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>3</iGridX>
@@ -526,6 +544,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>3</iGridX>
@@ -559,6 +578,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>3</iGridX>
@@ -593,6 +613,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>3</iGridX>
@@ -626,6 +647,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>3</iGridX>
@@ -659,6 +681,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bWaterWork>1</bWaterWork>
@@ -698,6 +721,7 @@
 			<iAsset>8</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
@@ -733,6 +757,7 @@
 			<iAsset>8</iAsset>
 			<iPower>2</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
@@ -771,6 +796,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>8</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
@@ -809,6 +835,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>12</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
@@ -853,6 +880,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>8</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
@@ -894,6 +922,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>8</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
@@ -931,6 +960,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>16</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
@@ -969,6 +999,7 @@
 			<FirstFreeUnitClass>UNITCLASS_GREAT_GENERAL</FirstFreeUnitClass>
 			<iAsset>20</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>5</iGridX>
@@ -1004,6 +1035,7 @@
 			<iAsset>12</iAsset>
 			<iPower>2</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>5</iGridX>
@@ -1042,6 +1074,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>16</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bBridgeBuilding>1</bBridgeBuilding>
@@ -1081,6 +1114,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>16</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bMapCentering>1</bMapCentering>
@@ -1120,6 +1154,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>12</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bOpenBordersTrading>1</bOpenBordersTrading>
@@ -1162,6 +1197,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>16</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>5</iGridX>
@@ -1197,6 +1233,7 @@
 			<FirstFreeUnitClass>UNITCLASS_GREAT_MERCHANT</FirstFreeUnitClass>
 			<iAsset>12</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>5</iGridX>
@@ -1247,6 +1284,7 @@
 			<iAsset>12</iAsset>
 			<iPower>5</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>6</iGridX>
@@ -1281,6 +1319,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>16</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>6</iGridX>
@@ -1314,6 +1353,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>20</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>6</iGridX>
@@ -1348,6 +1388,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>12</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>6</iGridX>
@@ -1387,6 +1428,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>16</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bTechTrading>1</bTechTrading>
@@ -1427,6 +1469,7 @@
 			<iFirstFreeTechs>1</iFirstFreeTechs>
 			<iAsset>20</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>6</iGridX>
@@ -1464,6 +1507,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>8</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>6</iGridX>
@@ -1505,6 +1549,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>2</iCultureGroup>
+			<iHomelandAccess>0</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>7</iGridX>
@@ -1536,6 +1581,7 @@
 			<iAsset>24</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bVassalTrading>1</bVassalTrading>
@@ -1572,6 +1618,7 @@
 			<FirstFreeUnitClass>UNITCLASS_GREAT_ARTIST</FirstFreeUnitClass>
 			<iAsset>24</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>7</iGridX>
@@ -1612,6 +1659,7 @@
 			<iAsset>24</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>7</iGridX>
@@ -1646,6 +1694,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>20</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>7</iGridX>
@@ -1686,6 +1735,7 @@
 			<iAsset>24</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>7</iGridX>
@@ -1722,6 +1772,7 @@
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>20</iAsset>
 			<iCultureGroup>1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>7</iGridX>
@@ -1753,6 +1804,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>2</iCultureGroup>
+			<iHomelandAccess>1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>8</iGridX>
@@ -1784,6 +1836,7 @@
 			<iAsset>20</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>8</iGridX>
@@ -1816,6 +1869,7 @@
 			<iAsset>20</iAsset>
 			<iPower>1</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bRepeat>1</bRepeat>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1849,6 +1903,7 @@
 			<iAsset>20</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>8</iGridX>
@@ -1881,6 +1936,7 @@
 			<iAsset>20</iAsset>
 			<iPower>1</iPower>
 			<iCultureGroup>0</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bRepeat>1</bRepeat>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1914,6 +1970,7 @@
 			<iAsset>20</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>8</iGridX>
@@ -1952,6 +2009,7 @@
 			<iAsset>12</iAsset>
 			<iPower>5</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>8</iGridX>
@@ -1993,6 +2051,7 @@
 			<iAsset>36</iAsset>
 			<iPower>5</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>9</iGridX>
@@ -2026,6 +2085,7 @@
 			<Era>ERA_EXPLORATION</Era>
 			<iAsset>36</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>9</iGridX>
@@ -2063,6 +2123,7 @@
 			<Era>ERA_EXPLORATION</Era>
 			<iAsset>36</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>9</iGridX>
@@ -2093,6 +2154,7 @@
 			<Era>ERA_EXPLORATION</Era>
 			<iAsset>36</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bMapTrading>1</bMapTrading>
@@ -2128,6 +2190,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>9</iGridX>
@@ -2162,6 +2225,7 @@
 			<Era>ERA_EXPLORATION</Era>
 			<iAsset>36</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>9</iGridX>
@@ -2204,6 +2268,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>9</iGridX>
@@ -2241,6 +2306,7 @@
 			<iAsset>40</iAsset>
 			<iPower>5</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>10</iGridX>
@@ -2272,6 +2338,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>10</iGridX>
@@ -2307,6 +2374,7 @@
 			<iAsset>40</iAsset>
 			<iPower>2</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>10</iGridX>
@@ -2345,6 +2413,7 @@
 			<Era>ERA_EXPLORATION</Era>
 			<iAsset>40</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bExtraWaterSeeFrom>1</bExtraWaterSeeFrom>
@@ -2387,6 +2456,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bGoldTrading>1</bGoldTrading>
@@ -2423,6 +2493,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>10</iGridX>
@@ -2454,6 +2525,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>10</iGridX>
@@ -2492,6 +2564,7 @@
 			<iAsset>28</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>11</iGridX>
@@ -2525,6 +2598,7 @@
 			<Era>ERA_COLONIAL</Era>
 			<iAsset>44</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>11</iGridX>
@@ -2560,6 +2634,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>11</iGridX>
@@ -2595,6 +2670,7 @@
 			<iAsset>12</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>11</iGridX>
@@ -2633,6 +2709,7 @@
 			<Era>ERA_COLONIAL</Era>
 			<iAsset>32</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>11</iGridX>
@@ -2669,6 +2746,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>11</iGridX>
@@ -2704,6 +2782,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>11</iGridX>
@@ -2745,6 +2824,7 @@
 			<iAsset>44</iAsset>
 			<iPower>5</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>12</iGridX>
@@ -2779,6 +2859,7 @@
 			<Era>ERA_COLONIAL</Era>
 			<iAsset>40</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>12</iGridX>
@@ -2811,6 +2892,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>12</iGridX>
@@ -2846,6 +2928,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>12</iGridX>
@@ -2882,6 +2965,8 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iExtraPop>1</iExtraPop>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>12</iGridX>
@@ -2917,6 +3002,7 @@
 			<iAsset>24</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>12</iGridX>
@@ -2957,6 +3043,7 @@
 			<Era>ERA_COLONIAL</Era>
 			<iAsset>44</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>12</iGridX>
@@ -3002,6 +3089,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>13</iGridX>
@@ -3035,6 +3123,7 @@
 			<Era>ERA_COLONIAL</Era>
 			<iAsset>20</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>13</iGridX>
@@ -3065,6 +3154,7 @@
 			<Era>ERA_COLONIAL</Era>
 			<iAsset>44</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>13</iGridX>
@@ -3099,6 +3189,7 @@
 			<Era>ERA_COLONIAL</Era>
 			<iAsset>44</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>13</iGridX>
@@ -3134,6 +3225,7 @@
 			<Era>ERA_COLONIAL</Era>
 			<iAsset>44</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>13</iGridX>
@@ -3180,6 +3272,7 @@
 			<Era>ERA_COLONIAL</Era>
 			<iAsset>40</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>13</iGridX>
@@ -3224,6 +3317,7 @@
 			<Era>ERA_COLONIAL</Era>
 			<iAsset>48</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>13</iGridX>
@@ -3268,6 +3362,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>2</iCultureGroup>
+			<iHomelandAccess>3</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>14</iGridX>
@@ -3299,6 +3394,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>2</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>14</iGridX>
@@ -3331,6 +3427,7 @@
 			<iAsset>20</iAsset>
 			<iPower>1</iPower>
 			<iCultureGroup>1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bRepeat>1</bRepeat>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -3363,6 +3460,7 @@
 			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>40</iAsset>
 			<iCultureGroup>2</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>14</iGridX>
@@ -3399,6 +3497,7 @@
 			<iAsset>20</iAsset>
 			<iPower>1</iPower>
 			<iCultureGroup>1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bRepeat>1</bRepeat>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -3432,6 +3531,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>2</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>14</iGridX>
@@ -3462,6 +3562,7 @@
 			<Era>ERA_COLONIAL</Era>
 			<iAsset>36</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>14</iGridX>
@@ -3504,6 +3605,7 @@
 			<iAsset>48</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>15</iGridX>
@@ -3542,6 +3644,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>15</iGridX>
@@ -3577,6 +3680,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>15</iGridX>
@@ -3612,6 +3716,7 @@
 			<iAsset>48</iAsset>
 			<iPower>2</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bDefensivePactTrading>1</bDefensivePactTrading>
@@ -3652,6 +3757,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>15</iGridX>
@@ -3687,6 +3793,7 @@
 			<FirstFreeUnitClass>UNITCLASS_GREAT_STATESMAN</FirstFreeUnitClass>
 			<iAsset>52</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>15</iGridX>
@@ -3724,6 +3831,7 @@
 			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>40</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>15</iGridX>
@@ -3766,6 +3874,7 @@
 			<iAsset>52</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>16</iGridX>
@@ -3804,6 +3913,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>16</iGridX>
@@ -3838,6 +3948,7 @@
 			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>48</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bIrrigation>1</bIrrigation>
@@ -3879,6 +3990,7 @@
 			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>48</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>16</iGridX>
@@ -3915,6 +4027,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>16</iGridX>
@@ -3949,6 +4062,7 @@
 			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>24</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>16</iGridX>
@@ -3982,6 +4096,7 @@
 			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>36</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>16</iGridX>
@@ -4026,6 +4141,7 @@
 			<Era>ERA_INDUSTRIAL</Era>
 			<iAsset>52</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>17</iGridX>
@@ -4059,6 +4175,7 @@
 			<Era>ERA_INDUSTRIAL</Era>
 			<iAsset>52</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>17</iGridX>
@@ -4094,6 +4211,7 @@
 			<iAsset>20</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>17</iGridX>
@@ -4131,6 +4249,7 @@
 			<Era>ERA_INDUSTRIAL</Era>
 			<iAsset>52</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>17</iGridX>
@@ -4169,6 +4288,7 @@
 			<Era>ERA_INDUSTRIAL</Era>
 			<iAsset>48</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>17</iGridX>
@@ -4204,6 +4324,7 @@
 			<iAsset>52</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>17</iGridX>
@@ -4245,6 +4366,8 @@
 			<Era>ERA_INDUSTRIAL</Era>
 			<iAsset>44</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iExtraPop>1</iExtraPop>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>17</iGridX>
@@ -4292,6 +4415,7 @@
 			<Era>ERA_INDUSTRIAL</Era>
 			<iAsset>48</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>18</iGridX>
@@ -4329,6 +4453,7 @@
 			<iAsset>60</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>18</iGridX>
@@ -4368,6 +4493,7 @@
 			<Era>ERA_INDUSTRIAL</Era>
 			<iAsset>56</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>18</iGridX>
@@ -4406,6 +4532,7 @@
 			<Era>ERA_INDUSTRIAL</Era>
 			<iAsset>56</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>18</iGridX>
@@ -4441,6 +4568,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>18</iGridX>
@@ -4476,6 +4604,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>18</iGridX>
@@ -4511,6 +4640,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>18</iGridX>
@@ -4551,6 +4681,7 @@
 			<iAsset>56</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>19</iGridX>
@@ -4588,6 +4719,7 @@
 			<FirstFreeUnitClass>UNITCLASS_GREAT_ENGINEER</FirstFreeUnitClass>
 			<iAsset>56</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>19</iGridX>
@@ -4623,6 +4755,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>19</iGridX>
@@ -4660,6 +4793,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>19</iGridX>
@@ -4694,6 +4828,7 @@
 			<Era>ERA_INDUSTRIAL</Era>
 			<iAsset>52</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>19</iGridX>
@@ -4732,6 +4867,7 @@
 			<iFeatureProductionModifier>50</iFeatureProductionModifier>
 			<iAsset>56</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>19</iGridX>
@@ -4774,6 +4910,7 @@
 			<Era>ERA_INDUSTRIAL</Era>
 			<iAsset>56</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>19</iGridX>
@@ -4818,6 +4955,7 @@
 			<iAsset>64</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>20</iGridX>
@@ -4859,6 +4997,7 @@
 			<Era>ERA_MODERN</Era>
 			<iAsset>60</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>20</iGridX>
@@ -4897,6 +5036,7 @@
 			<Era>ERA_MODERN</Era>
 			<iAsset>64</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>20</iGridX>
@@ -4935,6 +5075,7 @@
 			<Era>ERA_MODERN</Era>
 			<iAsset>64</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>20</iGridX>
@@ -4977,6 +5118,7 @@
 			<Era>ERA_MODERN</Era>
 			<iAsset>72</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<bIgnoreIrrigation>1</bIgnoreIrrigation>
@@ -5020,6 +5162,7 @@
 			<Era>ERA_MODERN</Era>
 			<iAsset>64</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>20</iGridX>
@@ -5059,6 +5202,7 @@
 			<FirstFreeUnitClass>UNITCLASS_GREAT_SPY</FirstFreeUnitClass>
 			<iAsset>64</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>20</iGridX>
@@ -5096,6 +5240,7 @@
 			<iAsset>68</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>21</iGridX>
@@ -5134,6 +5279,7 @@
 			<iAsset>100</iAsset>
 			<iPower>1</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>21</iGridX>
@@ -5178,6 +5324,7 @@
 			<iAsset>68</iAsset>
 			<iPower>5</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>21</iGridX>
@@ -5213,6 +5360,7 @@
 			<iAsset>64</iAsset>
 			<iPower>5</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>21</iGridX>
@@ -5251,6 +5399,7 @@
 			<Era>ERA_MODERN</Era>
 			<iAsset>60</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>21</iGridX>
@@ -5290,6 +5439,8 @@
 			<Era>ERA_MODERN</Era>
 			<iAsset>68</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iExtraPop>2</iExtraPop>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>21</iGridX>
@@ -5336,6 +5487,7 @@
 			<Era>ERA_MODERN</Era>
 			<iAsset>68</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>21</iGridX>
@@ -5377,6 +5529,7 @@
 			<iAsset>68</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>22</iGridX>
@@ -5417,6 +5570,7 @@
 			<iAsset>72</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>22</iGridX>
@@ -5458,6 +5612,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>2</iCultureGroup>
+			<iHomelandAccess>2</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>22</iGridX>
@@ -5492,6 +5647,7 @@
 			<iAsset>72</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>22</iGridX>
@@ -5529,6 +5685,7 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>2</iCultureGroup>
+			<iHomelandAccess>4</iHomelandAccess>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>22</iGridX>
@@ -5568,6 +5725,7 @@
 			<iAsset>100</iAsset>
 			<iPower>1</iPower>
 			<iCultureGroup>2</iCultureGroup>
+			<iHomelandAccess>-1</iHomelandAccess>
 			<bRepeat>1</bRepeat>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>

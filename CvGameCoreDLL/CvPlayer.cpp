@@ -64,6 +64,7 @@ CvPlayer::CvPlayer()
 	m_aiCommerceFlexibleCount = new int[NUM_COMMERCE_TYPES];
 	m_aiGoldPerTurnByPlayer = new int[MAX_PLAYERS];
 	m_aiEspionageSpendingWeightAgainstTeam = new int[MAX_TEAMS];
+	m_aiHomelandAccess = new int[NUM_HOMELANDS]; // MacAurther
 
 	// Leoreth
 	m_aiDomainProductionModifiers = new int[NUM_DOMAIN_TYPES];
@@ -143,6 +144,7 @@ CvPlayer::~CvPlayer()
 	SAFE_DELETE_ARRAY(m_aiCommerceFlexibleCount);
 	SAFE_DELETE_ARRAY(m_aiGoldPerTurnByPlayer);
 	SAFE_DELETE_ARRAY(m_aiEspionageSpendingWeightAgainstTeam);
+	SAFE_DELETE_ARRAY(m_aiHomelandAccess); // MacAurther
 	SAFE_DELETE_ARRAY(m_aiDomainProductionModifiers); // Leoreth
 	SAFE_DELETE_ARRAY(m_aiDomainExperienceModifiers); // Leoreth
 	SAFE_DELETE_ARRAY(m_aiStabilityParameters); // Leoreth
@@ -588,6 +590,8 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_eFreeTechChosen = NO_TECH;
 
 	m_pImmigrantShip = NULL; // MacAurther
+	m_iExtraPop = 0; // MacAurther
+	m_iContactDiscount = 0; // MacAurther
 
 	m_eID = eID;
 	updateTeamType();
@@ -674,6 +678,11 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 				}
 			}
 		}
+	}
+
+	for (iI = 0; iI < NUM_HOMELANDS; iI++)
+	{
+		m_aiHomelandAccess[iI] = 0;
 	}
 
 	for (iI = 0; iI < NUM_FEAT_TYPES; iI++)
@@ -7194,7 +7203,7 @@ int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 {
 	FAssert(eBuild >= 0 && eBuild < GC.getNumBuildInfos());
 
-	if (pPlot->getBuildProgress(eBuild) > 0)
+	if (pPlot != NULL && pPlot->getBuildProgress(eBuild) > 0)
 	{
 		return 0;
 	}
@@ -7216,14 +7225,9 @@ int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 	}
 	
 	// MacAurther: Tribe Contacting
-	if (eBuild == BUILD_CONTACT_TRIBE && GET_TEAM(getTeam()).isHasTech((TechTypes)LINGUISTICS))
+	if (eBuild == BUILD_CONTACT_TRIBE)
 	{
-		iCostReduction += 25;
-	}
-
-	if (eBuild == BUILD_CONTACT_TRIBE && GET_TEAM(getTeam()).isHasTech((TechTypes)LOCALIZATION))
-	{
-		iCostReduction += 25;
+		iCostReduction += getContactDiscount();
 	}
 
 	iCost -= (iCost * iCostReduction) / 100;
@@ -18627,8 +18631,12 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_eStartingEra); // Leoreth
 	pStream->Read((int*)&m_eLastStateReligion);
 	pStream->Read((int*)&m_eParent);
+	//m_eTeamType not saved
 	pStream->Read((int*)&m_eFreeTechChosen); // Leoreth
-	updateTeamType(); //m_eTeamType not saved
+	//m_pImmigrantShip not saved
+	pStream->Read((int*)&m_iExtraPop); // MacAurther
+	pStream->Read((int*)&m_iContactDiscount); // MacAurther
+	updateTeamType(); 
 	updateHuman();
 
 	pStream->Read(NUM_YIELD_TYPES, m_aiSeaPlotYield);
@@ -18650,6 +18658,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiCommerceFlexibleCount);
 	pStream->Read(MAX_PLAYERS, m_aiGoldPerTurnByPlayer);
 	pStream->Read(MAX_TEAMS, m_aiEspionageSpendingWeightAgainstTeam);
+	pStream->Read(NUM_HOMELANDS, m_aiHomelandAccess); // MacAurther
 
 	// Leoreth
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiDomainProductionModifiers);
@@ -19063,8 +19072,11 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_eStartingEra); // Leoreth
 	pStream->Write(m_eLastStateReligion);
 	pStream->Write(m_eParent);
-	pStream->Write(m_eFreeTechChosen); // Leoreth
 	//m_eTeamType not saved
+	pStream->Write(m_eFreeTechChosen); // Leoreth
+	//m_pImmigrantShip not saved
+	pStream->Write(m_iExtraPop); // MacAurther
+	pStream->Write(m_iContactDiscount); // MacAurther
 
 	pStream->Write(NUM_YIELD_TYPES, m_aiSeaPlotYield);
 	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRateModifier);
@@ -19085,6 +19097,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(NUM_COMMERCE_TYPES, m_aiCommerceFlexibleCount);
 	pStream->Write(MAX_PLAYERS, m_aiGoldPerTurnByPlayer);
 	pStream->Write(MAX_TEAMS, m_aiEspionageSpendingWeightAgainstTeam);
+	pStream->Write(NUM_HOMELANDS, m_aiHomelandAccess); // MacAurther
 
 	// Leoreth
 	pStream->Write(NUM_DOMAIN_TYPES, m_aiDomainProductionModifiers);
@@ -25676,23 +25689,6 @@ int CvPlayer::getFortRange() const
 	return 1;
 }
 
-int CvPlayer::getContactCost() const
-{
-	int iCost = 40;
-
-	if(GET_TEAM(getTeam()).isHasTech((TechTypes)LINGUISTICS))
-	{
-		iCost -= 10;
-	}
-
-	if(GET_TEAM(getTeam()).isHasTech((TechTypes)LOCALIZATION))
-	{
-		iCost -= 10;
-	}
-
-	return iCost;
-}
-
 bool CvPlayer::canResearchNativeTech(TechTypes eTech) const
 {
 	// Can get goody techs that you can't normally research, so we just need to check whether or not we have it already
@@ -25708,7 +25704,7 @@ bool CvPlayer::canResearchNativeTech(TechTypes eTech) const
 	return false;
 }
 
-// Returns true if a player has a ship on either the edge
+// Returns true if a player has a ship on either the edge	// MacAurther TODO: Needed? Replace with new AI Immigration implementation
 bool CvPlayer::hasShipOnEdge() const
 {
 	int iLoop;
@@ -25735,4 +25731,34 @@ void CvPlayer::setImmigrantShip(CvUnit* pUnit)
 CvUnit* CvPlayer::getImmigrantShip() const
 {
 	return m_pImmigrantShip;
+}
+
+void CvPlayer::changeExtraPop(int iChange)
+{
+	m_iExtraPop += iChange;
+}
+
+int CvPlayer::getExtraPop() const
+{
+	return m_iExtraPop;
+}
+
+void CvPlayer::changeHomelandAccess(int iHomeland, int iChange)
+{
+	m_aiHomelandAccess[iHomeland] += iChange;
+}
+
+bool CvPlayer::getHomelandAccess(int iHomeland) const
+{
+	return m_aiHomelandAccess[iHomeland] > 0;
+}
+
+void CvPlayer::changeContactDiscount(int iChange)
+{
+	m_iContactDiscount += iChange;
+}
+
+int CvPlayer::getContactDiscount() const
+{
+	return m_iContactDiscount;
 }

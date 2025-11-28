@@ -433,7 +433,7 @@ class AStarMoveArea:
 		iTeam = pPlot.getRevealedTeam(self.iActivePlayerTeam, false)
 		pTeam = gc.getTeam(iTeam)
 		if pPlot.isRevealedGoody(iTeam):
-			if (pPlot.getImprovementType() == 30):#ImprovementTypes.IMPROVEMENT_TRIBE):	# MacAurther TODO: What is this for?
+			if (pPlot.getImprovementType() == ImprovementTypes.IMPROVEMENT_TRIBE):
 				return PleOpt.MH_Color_Passable_Barbarian_Territory()
 		elif (iPlayer == PlayerTypes.NO_PLAYER) or (iPlayer == self.iActivePlayer):
 			return PleOpt.MH_Color_Passable_Terrain()

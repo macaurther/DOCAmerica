@@ -1930,6 +1930,7 @@
 			<Description>TXT_KEY_CIVIC_DICTATOR</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DICTATOR_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DICTATOR_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_DICTATOR_HELP</Help>
 			<TechPrereq>TECH_TELEGRAPH</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Dictatorship.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>

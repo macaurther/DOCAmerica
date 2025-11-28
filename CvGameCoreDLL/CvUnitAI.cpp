@@ -11062,7 +11062,7 @@ bool CvUnitAI::AI_goody(int iRange)
 	}
 
 	// MacAurther: Has to be able to afford it
-	if (GET_PLAYER(getOwnerINLINE()).getContactCost() > GET_PLAYER(getOwnerINLINE()).getGold())	
+	if (GET_PLAYER(getOwnerINLINE()).getBuildCost(NULL, BUILD_CONTACT_TRIBE) > GET_PLAYER(getOwnerINLINE()).getGold())	
 	{
 		return false;
 	}
