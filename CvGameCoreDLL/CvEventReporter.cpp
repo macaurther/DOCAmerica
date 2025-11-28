@@ -596,6 +596,11 @@ void CvEventReporter::tribeAttacked(CvPlot* pPlot, PlayerTypes eAttacker)
 	m_kPythonEventMgr.reportTribeAttacked(pPlot, eAttacker);
 }
 
+void CvEventReporter::coupSucceeded(CvCity* pCity)
+{
+	m_kPythonEventMgr.reportCoupSucceeded(pCity);
+}
+
 void CvEventReporter::preSave()
 {
 	m_kPythonEventMgr.preSave();

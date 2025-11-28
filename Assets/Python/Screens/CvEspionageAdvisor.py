@@ -348,7 +348,9 @@ class CvEspionageAdvisor:
 
 			for iLoopMission in xrange(gc.getNumEspionageMissionInfos()):
 				pMission = gc.getEspionageMissionInfo(iLoopMission)
-				if iLoopMission == gc.getInfoTypeForString('ESPIONAGEMISSION_SABOTAGE_PROJECT'):
+				if iLoopMission == gc.getInfoTypeForString('ESPIONAGEMISSION_DEFECT') and civ(gc.getGame().getActivePlayer()) != iTiwanaku:
+					continue
+				elif iLoopMission == gc.getInfoTypeForString('ESPIONAGEMISSION_COUP') and civ(gc.getGame().getActivePlayer()) != iAmerica:
 					continue
 
 				if pMission.getCost() > -1:

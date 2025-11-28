@@ -15319,8 +15319,14 @@ bool CvPlayer::canDoEspionageMission(EspionageMissionTypes eMission, PlayerTypes
 		}
 	}
 
+	// MacAurther: Tiwanaku UU
+	if (eMission == ESPIONAGEMISSION_DEFECT && getCivilizationType() != TIWANAKU)
+	{
+		return false;
+	}
+
 	// MacAurther: American UU
-	if (eMission == ESPIONAGEMISSION_COUP && getCivilizationType() != AMERICA)
+	if (eMission == ESPIONAGEMISSION_COUP && (getCivilizationType() != AMERICA || GET_PLAYER(eTargetPlayer).getNumCities() < 2))	// Can't coup a civ out of existance :( I know you really want to though :(((
 	{
 		return false;
 	}
@@ -15758,11 +15764,6 @@ int CvPlayer::getEspionageMissionBaseCost(EspionageMissionTypes eMission, Player
 	else if (kMission.isPassive())
 	{
 		iMissionCost = (iBaseMissionCost * (100 + GET_TEAM(GET_PLAYER(eTargetPlayer).getTeam()).getEspionagePointsAgainstTeam(getTeam()))) / 100;
-	}
-	// MacAurther: American UU: Agent - Can perform Coup which makes the target player a Vassal if successful
-	else if (eMission == ESPIONAGEMISSION_COUP)
-	{
-		iMissionCost = iBaseMissionCost * (5 * GET_PLAYER(eTargetPlayer).getNumCities() + GET_PLAYER(eTargetPlayer).getNumUnits());
 	}
 	else
 	{
@@ -16414,6 +16415,43 @@ bool CvPlayer::doEspionageMission(EspionageMissionTypes eMission, PlayerTypes eT
 	}
 
 	//////////////////////////////
+	// Recruitment
+
+	if (eMission == ESPIONAGEMISSION_DEFECT)
+	{
+		FAssertMsg((getCivilizationType() == TIWANAKU),  "A Civilization other than Tiwanaku is performing a Defection");
+
+		if (kMission.getDestroyUnitCostFactor() > 0)
+		{
+			if (pSpyUnit->canAssassin(pPlot, false))
+			{
+				SpecialistTypes theGreatSpecialistTarget = (SpecialistTypes)iExtraData;
+				if (theGreatSpecialistTarget >= SPECIALIST_GREAT_PRIEST)
+				{
+					//Assassinate
+					CvCity* pCity = pPlot->getPlotCity();
+					if (NULL != pCity)
+					{
+						pCity->changeFreeSpecialistCount(theGreatSpecialistTarget, -1);
+						// When Tiwanaku has a capital
+						if (getCapitalCity() != NULL)
+						{
+							getCapitalCity()->changeFreeSpecialistCount(theGreatSpecialistTarget, 1);
+							szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_DEFECTED", GC.getSpecialistInfo(theGreatSpecialistTarget).getDescription(), pCity->getNameKey()).GetCString();
+						}
+						// When they do not
+						else
+						{
+							szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_DEFECTED_NO_CAPITAL", GC.getSpecialistInfo(theGreatSpecialistTarget).getDescription(), pCity->getNameKey()).GetCString();
+						}
+						bSomethingHappened = true;
+					}
+				}
+			}
+		}
+	}
+
+	//////////////////////////////
 	// Coup
 
 	if (eMission == ESPIONAGEMISSION_COUP)
@@ -16421,9 +16459,13 @@ bool CvPlayer::doEspionageMission(EspionageMissionTypes eMission, PlayerTypes eT
 		FAssertMsg((getCivilizationType() == AMERICA),  "A Civilization other than America is performing a Coup");
 		if (NO_PLAYER != eTargetPlayer)
 		{
-			szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_COUP", GET_PLAYER(eTargetPlayer).getCivilizationDescription()).GetCString();
-			GET_TEAM(eTargetTeam).setVassal(getTeam(), true, false);
-			bSomethingHappened = true;
+			CvCity* pCity = pPlot->getPlotCity();
+			if (NULL != pCity)
+			{
+				szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_COUP", pCity->getName()).GetCString();
+				CvEventReporter::getInstance().coupSucceeded(pCity);
+				bSomethingHappened = true;
+			}
 		}
 	}
 	

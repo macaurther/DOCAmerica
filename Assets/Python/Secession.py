@@ -2,6 +2,7 @@ from Core import *
 from RFCUtils import *
 from Locations import *
 from Resurrection import *
+from Events import handler
 
 import CityNames as cn
 
@@ -9,7 +10,7 @@ import CityNames as cn
 def secession(iPlayer, secedingCities):
 	data.setSecedingCities(iPlayer, secedingCities)
 
-def secedeCities(iPlayer, secedingCities, bRazeMinorCities = False):
+def secedeCities(iPlayer, secedingCities, bRazeMinorCities = False, iNewOwner = -1):	# MacAurther: Added NewOwner to specify if desired
 	iNumCities = player(iPlayer).getNumCities()
 	if iNumCities <= 0:
 		return
@@ -32,35 +33,40 @@ def secedeCities(iPlayer, secedingCities, bRazeMinorCities = False):
 		player(iBarbarian).disband(city)
 		plot(city).setCulture(iPlayer, 0, True)
 	
-	# determine who has the best claim on each city
-	dClaimedCities = appenddict()
-	for city in cededCities:
-		iClaim = getCityClaim(city)
-		dClaimedCities[iClaim].append(city)
+	# MacAurther: Give to specified civ, if any
+	if iNewOwner > -1:
+		for city in cededCities:
+			secedeCity(city, iNewOwner, not bComplete, iArmyPercent)
+	else:
+		# determine who has the best claim on each city
+		dClaimedCities = appenddict()
+		for city in cededCities:
+			iClaim = getCityClaim(city)
+			dClaimedCities[iClaim].append(city)
+			
+		lMinorCities = dClaimedCities.pop(-1, [])
+			
+		for iClaimant, claimedCities in dClaimedCities.items():
+			# assign cities to living civs
+			if player(iClaimant).isExisting():
+				for city in claimedCities:
+					iClaimantPlayer = slot(iClaimant)
+					secedeCity(city, iClaimantPlayer, not bComplete, iArmyPercent)
+			
+			# if sufficient for resurrection, resurrect civs
+			elif isResurrectionPossible() and canResurrectFromCities(iClaimant, claimedCities):
+				additionalCities = getAdditionalResurrectionCities(iClaimant, secedingCities)
+				resurrectionFromCollapse(iClaimant, claimedCities + additionalCities)
+			
+			# else cities go to minors
+			else:
+				lMinorCities.extend(claimedCities)
 		
-	lMinorCities = dClaimedCities.pop(-1, [])
-		
-	for iClaimant, claimedCities in dClaimedCities.items():
-		# assign cities to living civs
-		if player(iClaimant).isExisting():
-			for city in claimedCities:
-				iClaimantPlayer = slot(iClaimant)
-				secedeCity(city, iClaimantPlayer, not bComplete, iArmyPercent)
-		
-		# if sufficient for resurrection, resurrect civs
-		elif isResurrectionPossible() and canResurrectFromCities(iClaimant, claimedCities):
-			additionalCities = getAdditionalResurrectionCities(iClaimant, secedingCities)
-			resurrectionFromCollapse(iClaimant, claimedCities + additionalCities)
-		
-		# else cities go to minors
-		else:
-			lMinorCities.extend(claimedCities)
-	
-	# secede remaining cities to minors
-	lPossibleMinors = getPossibleMinors(iPlayer)
-	for iMinor, minorCities in cities.of(lMinorCities).divide(lPossibleMinors):
-		for city in minorCities:
-			secedeCity(city, iMinor, not bComplete, iArmyPercent)
+		# secede remaining cities to minors
+		lPossibleMinors = getPossibleMinors(iPlayer)
+		for iMinor, minorCities in cities.of(lMinorCities).divide(lPossibleMinors):
+			for city in minorCities:
+				secedeCity(city, iMinor, not bComplete, iArmyPercent)
 		
 	# notify for partial secessions
 	if not bComplete and player().canContact(iPlayer):
@@ -201,17 +207,7 @@ def balanceStability(iPlayer, iNewStabilityLevel):
 	playerData.resetHappinessTrend()
 	playerData.resetWarTrends()
 
-# MacAurther
-def secedeCitiesByRegions(iPlayer, lRegions, iNewOwner):
-	iNumCities = player(iPlayer).getNumCities()
-	if iNumCities <= 0:
-		return
-	
-	lCities = plots.regions(*lRegions).cities()
-	
-	bComplete = len(lCities) == iNumCities
-	iArmyPercent = 100 - 100 * len(lCities) / iNumCities
-	
-	for city in lCities:
-		if city.getOwner() == iPlayer:
-			secedeCity(city, iNewOwner, not bComplete, iArmyPercent)
+# MacAurther: American UU
+@handler("coupSucceeded")
+def doCoup(pCity):
+	secedeCities(pCity.getOwner(), cities.surrounding(pCity, radius=0))		# I don't know a better way to do this

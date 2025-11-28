@@ -3801,6 +3801,22 @@
 		<Spanish>Our artisans have created a total of %d1 [ICON_CULTURE] in our cities!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MISSION_DEFECT</Tag>
+		<English>Recruit</English>
+		<French>Recruit</French>
+		<German>Recruit</German>
+		<Italian>Recruit</Italian>
+		<Spanish>Recruit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ESPIONAGE_DEFECT</Tag>
+		<English>A Tiwanaku recruitment has succeeded in %s1.</English>
+		<French>A Tiwanaku recruitment has succeeded in %s1.</French>
+		<German>A Tiwanaku recruitment has succeeded in %s1.</German>
+		<Italian>A Tiwanaku recruitment has succeeded in %s1.</Italian>
+		<Spanish>A Tiwanaku recruitment has succeeded in %s1.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MISSION_COUP</Tag>
 		<English>Coup</English>
 		<French>Coup</French>

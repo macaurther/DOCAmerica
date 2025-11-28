@@ -163,6 +163,7 @@ public:
 	void buildingProcessed(CvCity* pCity, BuildingTypes eBuilding, int iChange); // Leoreth
 
 	void tribeAttacked(CvPlot* pPlot, PlayerTypes eAttacker);	// MacAurther
+	void coupSucceeded(CvCity* pCity);	// MacAurther
 
 	DllExport void preSave();
 

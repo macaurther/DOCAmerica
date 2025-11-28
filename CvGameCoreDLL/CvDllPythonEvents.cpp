@@ -1632,6 +1632,21 @@ void CvDllPythonEvents::reportTribeAttacked(CvPlot* pPlot, PlayerTypes eAttacker
 	}
 }
 
+// MacAurther: Coup Succeeded
+void CvDllPythonEvents::reportCoupSucceeded(CvCity* pCity)
+{
+	if (preEvent())
+	{
+		CyArgsList eventData;
+		eventData.add("coupSucceeded");
+
+		CyCity* pCyCity= new CyCity(pCity);
+		eventData.add(gDLL->getPythonIFace()->makePythonObject(pCyCity));
+
+		postEvent(eventData);
+	}
+}
+
 void CvDllPythonEvents::reportGenericEvent(const char* szEventName, void *pyArgs)
 {
 	if (preEvent())

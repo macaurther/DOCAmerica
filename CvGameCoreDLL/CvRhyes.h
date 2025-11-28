@@ -23,9 +23,7 @@ typedef list<char*> LISTCHAR;
 #define BUILDINGCLASS_PALACE	  ((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_PALACE"))				// MacAurther
 
 #define UNIT_IMMIGRANT			  ((UnitTypes)GC.getInfoTypeForString("UNIT_IMMIGRANT"))							// MacAurther
-#define UNIT_TIWANAKU_SISQENO	  ((UnitTypes)GC.getInfoTypeForString("UNIT_TIWANAKU_SISQENO"))						// MacAurther Todo: Not needed?
 #define UNIT_HAWAIIAN_WAA_KAULUA  ((UnitTypes)GC.getInfoTypeForString("UNIT_HAWAIIAN_WAA_KAULUA"))					// MacAurther
-#define UNIT_AMERICAN_AGENT		  ((UnitTypes)GC.getInfoTypeForString("UNIT_AMERICAN_AGENT"))						// MacAurther
 #define UNIT_CANNON				  ((UnitTypes)GC.getInfoTypeForString("UNIT_CANNON"))								// MacAurther
 #define UNIT_CANOE				  ((UnitTypes)GC.getInfoTypeForString("UNIT_CANOE"))								// MacAurther
 #define UNIT_TRACKMAN			  ((UnitTypes)GC.getInfoTypeForString("UNIT_TRACKMAN"))								// MacAurther
@@ -35,6 +33,7 @@ typedef list<char*> LISTCHAR;
 #define UNITCLASS_SLAVE			  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE"))						// MacAurther
 #define UNITCLASS_GREAT_STATESMAN ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_GREAT_STATESMAN"))			// MacAurther
 
+#define ESPIONAGEMISSION_DEFECT   ((EspionageMissionTypes)GC.getInfoTypeForString("ESPIONAGEMISSION_DEFECT"))		// MacAurther
 #define ESPIONAGEMISSION_COUP	  ((EspionageMissionTypes)GC.getInfoTypeForString("ESPIONAGEMISSION_COUP"))			// MacAurther
 
 #define BUILD_ROAD				  ((BuildTypes)GC.getInfoTypeForString("BUILD_ROAD"))								// MacAurther

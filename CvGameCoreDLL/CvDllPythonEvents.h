@@ -133,6 +133,7 @@ public:
 	void reportBuildingProcessed(CvCity* pCity, BuildingTypes eBuilding, int iChange); // Leoreth
 
 	void reportTribeAttacked(CvPlot* pPlot, PlayerTypes eAttacker);	// MacAurther
+	void reportCoupSucceeded(CvCity* pCity);	// MacAurther
 
 	void reportSetPlayerAlive(PlayerTypes ePlayerID, bool bNewValue);
 	void reportPlayerChangeStateReligion(PlayerTypes ePlayerID, ReligionTypes eNewReligion, ReligionTypes eOldReligion);

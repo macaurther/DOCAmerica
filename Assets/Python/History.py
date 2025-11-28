@@ -373,11 +373,11 @@ def americanWesternSettlement(iTech, iTeam, iPlayer):
 @handler("civicChanged")
 def doAmericanCivilWar(iPlayer, iOldCivic, iNewCivic):
 	if civ(iPlayer) == iAmerica and iOldCivic == iBondage and player(iPlayer).isHuman():	# Don't have AI do Civil War, it can't handle it
-		secedeCitiesByRegions(iPlayer, lSouthernUS, slot(iIndependent1))
+		secedeCities(iPlayer, plots.regions(*lSouthernUS).cities(), iNewOwner=slot(iIndependent2))
 		
 		# Let the player decided whether or not to declare war, but make the AI declare war on secession
-		'''if not player(iPlayer).isHuman():
-			team(iPlayer).declareWar(slot(iIndependent1), True, WarPlanTypes.WARPLAN_TOTAL)'''
+		if not player(iPlayer).isHuman():
+			team(iPlayer).declareWar(slot(iIndependent2), True, WarPlanTypes.WARPLAN_TOTAL)
 
 ### BIRTH ###
 			
