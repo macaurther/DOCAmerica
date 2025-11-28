@@ -275,6 +275,7 @@ name_translations = {
 	},
 	"Apatzingan": {
 		iLocal: _,
+		iNative: _,
 		iSpanish: "Puerto Vallarta",
 	},
 	"Atqasuk": {
@@ -289,6 +290,7 @@ name_translations = {
 	},
 	"Bogota": {
 		iLocal: _,
+		iNative: _,
 		iSpanish: u"Bogotá",
 	},
 
@@ -300,6 +302,7 @@ name_translations = {
 	},
 	"Caral": {
 		iLocal: _,
+		iNative: _,
 		iQuechua: "Pachacamac",
 		iSpanish: "Lima",
 	},
@@ -309,26 +312,32 @@ name_translations = {
 	},
 	"Catarpe": {
 		iQuechua: _,
+		iNative: _,
 		iSpanish: "San Pedro de Atacama",
 	},
 	"Chan Chan": {
 		iQuechua: _,
+		iNative: _,
 		iSpanish: "Trujillo",
 	},
 	"Chena Pukara": {
 		iLocal: _,
+		iNative: _,
 		iSpanish: "Santiago",
 	},
 	"Chichen Itza": {
 		iMayan: _,
+		iNative: _,
 		iSpanish: "Merida",
 	},
 	"Cholula": {
 		iLocal: _,
+		iNative: _,
 		iSpanish: "Puebla",
 	},
 	"Coba": {
 		iMayan: _,
+		iNative: _,
 		iSpanish: u"Cancún",
 	},
 	"Copan": {
@@ -337,6 +346,7 @@ name_translations = {
 	},
 	"Cuello": {
 		iMayan: _,
+		iNative: _,
 		iSpanish: "Ciudad de Belice",
 		iEnglish: "Belize City",
 	},
@@ -344,6 +354,7 @@ name_translations = {
 	### D ###
 	"Danibaan": {
 		iLocal: _,
+		iNative: _,
 		iSpanish: "Oaxaca",
 	},
 
@@ -361,20 +372,24 @@ name_translations = {
 	### H ###
 	"Hatun Canar": {
 		iQuechua: _,
+		iNative: _,
 		iSpanish: "Ingapirca",
 	},
 	"Huari": {
 		iQuechua: _,
+		iNative: _,
 		iSpanish: "Huaraz",
 	},
 
 	### I ###
 	"Iximche": {
 		iMayan: _,
+		iNative: _,
 		iSpanish: "San Salvador",
 	},
 	"Izamal": {
 		iMayan: _,
+		iNative: _,
 		iSpanish: "Progreso",
 	},
 
@@ -387,6 +402,7 @@ name_translations = {
 	### K ###
 	"Kitu": {
 		iQuechua: _,
+		iNative: _,
 		iSpanish: "Quito",
 	},
 
@@ -399,10 +415,12 @@ name_translations = {
 	### M ###
 	"Marcahuamachuco": {
 		iQuechua: _,
+		iNative: _,
 		iSpanish: "Cajamarca",
 	},
 	"Medellin": {
 		iLocal: _,
+		iNative: _,
 		iSpanish: u"Medellín",
 	},
 
@@ -413,6 +431,7 @@ name_translations = {
 	},
 	"Nanasqa": {
 		iQuechua: _,
+		iNative: _,
 		iSpanish: "Nazca",
 	},
 	"New Amsterdam": {
@@ -428,6 +447,8 @@ name_translations = {
 	### P ###
 	"Palenque": {
 		iMayan: _,
+		iNative: _,
+		iLocal: _,
 		iSpanish: "Villahermosa",
 	},
 	"Porco": {
@@ -438,10 +459,12 @@ name_translations = {
 	### Q ###
 	"Quirigua": {
 		iMayan: _,
+		iNative: _,
 		iSpanish: "Puerto Barrios",
 	},
 	"Qosqo": {
 		iQuechua: _,
+		iNative: _,
 		iSpanish: "Cusco",
 	},
 
@@ -450,10 +473,12 @@ name_translations = {
 	### S ###
 	"Sagwon": {
 		iLocal: _,
+		iNative: _,
 		iAmerican: "Prudhoe Bay",
 	},
 	"San Lorenzo": {
 		iLocal: _,
+		iNative: _,
 		iSpanish: "Coatzacoalcos",
 	},
 	"Sitka": {
@@ -478,50 +503,61 @@ name_translations = {
 	},
 	"Teotihuacan": {
 		iLocal: _,
+		iNative: _,
 		iMayan: "Puh",
 		iSpanish: "Texcoco"
 	},
 	"Tiahuanaco": {
 		iLocal: _,
+		iNative: _,
 		iQuechua: "Chuqiyapu",
 		iSpanish: "La Paz",
 	},
 	"Tiayo": {
 		iLocal: _,
+		iNative: _,
 		iSpanish: "Tampico",
 	},
 	"Tres Zapotes": {
 		iLocal: _,
+		iNative: _,
 		iSpanish: "Veracruz",
 	},
 	"Tucume": {
 		iQuechua: _,
+		iNative: _,
 		iSpanish: "Piura",
 	},
 	"Tula": {
 		iLocal: _,
+		iNative: _,
 		iSpanish: "Leon",
 	},
 	"Tumipampa": {
 		iQuechua: _,
+		iNative: _,
 		iSpanish: "Cuenca",
 	},
 	"Tututepec": {
 		iLocal: _,
+		iNative: _,
 		iSpanish: "Puerto Escondido",
 	},
 	"Tzintzuntan": {
 		iLocal: _,
+		iNative: _,
 		iSpanish: "Guadalajara",
 	},
 
 	### U ###
 	"Utalan": {
 		iMayan: _,
+		iNative: _,
 		iSpanish: "Guatemala",
 	},
 	"Uxmal": {
 		iMayan: _,
+		iNative: _,
 		iSpanish: "Campeche",
 	},
 
@@ -536,6 +572,7 @@ name_translations = {
 	### Z ###
 	"Zempoala": {
 		iLocal: _,
+		iNative: _,
 		iSpanish: "Xalapa",
 	},
 

@@ -100,7 +100,7 @@ dGoals = {
 	iMaya: (
 		FirstDiscover(iMathematics, iCalendar),
 		Wonder(iTempleOfKukulkan, by=800),
-		BestTechPlayer(at=1490),
+		BestTechPlayer(at=850),
 	),
 	iZapotec: (
 		FirstDiscover(iWriting),
@@ -121,8 +121,8 @@ dGoals = {
 		),
 	),
 	iTeotihuacan: (
-		BuildingCount(wonders(), 1, by=450),
-		GoldenAges(1, by=600),
+		BuildingCount(wonders(), 3, by=450),
+		GoldenAges(2, by=600),
 		CultureAmount(1500, at=650),
 	),
 	iTiwanaku: (

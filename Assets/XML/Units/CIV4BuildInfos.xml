@@ -86,7 +86,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -137,7 +137,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -151,7 +151,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -247,7 +247,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -261,7 +261,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -284,6 +284,7 @@
 		<BuildInfo>
 			<Type>BUILD_SLAVE_MINE</Type>
 			<Description>TXT_KEY_BUILD_SLAVE_MINE</Description>
+			<PrereqTech>TECH_MINING</PrereqTech>
 			<iTime>0</iTime>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_SLAVE_MINE</ImprovementType>
@@ -291,14 +292,14 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>0</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -306,7 +307,7 @@
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
 					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
-					<iTime>400</iTime>
+					<iTime>0</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
@@ -317,6 +318,7 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<Button>,Art/Interface/Buttons/Builds/BuildMine.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,6,7</Button>
+			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildInfo>
 		<BuildInfo>
 			<Type>BUILD_WORKSHOP</Type>
@@ -356,7 +358,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -444,7 +446,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -502,7 +504,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -546,7 +548,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -560,7 +562,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -598,7 +600,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<iTime>0</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>0</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -636,7 +645,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -650,7 +659,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -708,7 +717,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -780,7 +789,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -843,7 +852,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -857,7 +866,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -908,7 +917,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -922,7 +931,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -973,7 +982,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -987,7 +996,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1131,7 +1140,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1328,7 +1337,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1387,7 +1396,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1446,7 +1455,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1498,7 +1507,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1557,14 +1566,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -1616,7 +1625,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1668,7 +1677,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1720,7 +1729,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1772,7 +1781,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1824,7 +1833,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1880,7 +1889,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1932,7 +1941,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
