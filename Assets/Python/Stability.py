@@ -751,7 +751,7 @@ def calculateStability(iPlayer):
 		if iHeathenRatio > iHeathenThreshold:
 			iHeathenStability = (iHeathenRatio - iHeathenThreshold) / 10
 			
-			if iFanaticism in civics:
+			if iPatronato in civics:
 				iHeathenStability *= 2
 			
 			iReligionStability -= iHeathenStability

@@ -14901,6 +14901,7 @@ bool CvUnitAI::AI_fortTerritory(bool bCanal, bool bAirbase)	// MacAurther TODO: 
 					int iValue = 0;
 					iValue += bCanal ? kOwner.AI_getPlotCanalValue(pLoopPlot) : 0;
 					iValue += bAirbase ? kOwner.AI_getPlotAirbaseValue(pLoopPlot) : 0;
+					iValue += pLoopPlot->getSettlerValue(getOwnerINLINE()) * 100;	// MacAurther: AI tries to claim land withforts in city spots ahead of settlers
 
 					if (iValue > 0)
 					{

@@ -1545,7 +1545,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>2000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_EXPLORATION</Era>
+			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>2</iCultureGroup>
@@ -1800,7 +1800,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>2000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_EXPLORATION</Era>
+			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>2</iCultureGroup>
@@ -3358,7 +3358,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_COLONIAL</Era>
+			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>2</iCultureGroup>
@@ -5608,7 +5608,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>4000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_MODERN</Era>
+			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>2</iCultureGroup>
@@ -5681,7 +5681,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>5000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_MODERN</Era>
+			<Era>ERA_ANCIENT</Era>
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>2</iCultureGroup>

@@ -184,7 +184,7 @@ dGreatPeople = {
 			"Zaachila III",    # 14th – patron of Mixtec-Zapotec artistic syncretism
 			"Nezahual Coyotl", # Isthmus region poet associated with Zapotec courts
 			iModernEra,
-			"fNela Martínez",  # 20th – Zapotec writer and cultural activist (Oaxaca)
+			u"fNela Martínez",  # 20th – Zapotec writer and cultural activist (Oaxaca)
 			u"Francisco Toledo", # 20th – world-renowned Zapotec painter
 		),
 		iGreatScientist : (
@@ -204,7 +204,7 @@ dGreatPeople = {
 		),
 		iGreatStatesman : (
 			"Cosijopi",        # 16th – son of Cosijoeza, negotiated with the Spanish
-			"Don Juan Cortés", # 16th – Zapotec noble granted encomienda-like authority
+			u"Don Juan Cortés", # 16th – Zapotec noble granted encomienda-like authority
 			"Don Gaspar Antonio", # 17th – Zapotec interpreter and legal representative
 			iModernEra,
 			u"fEufrosina Cruz Mendoza", # 21st – Zapotec politician & women’s rights advocate
@@ -218,48 +218,24 @@ dGreatPeople = {
 	},
 	iTeotihuacan : {	# AI GENERATED
         iGreatProphet : (
-            "Feathered Serpent Priest",   # priestly office tied to the Feathered Serpent temple
-            "Great Goddess Interpreter",   # Teotihuacan "Great Goddess" cult figure
-            "Storm God Oracle",           # associated with Teotihuacan’s rain deity
-            "Old Fire God Keeper",        # priestly role linked to Huehueteotl
         ),
         iGreatArtist : (
-            "Master of the Red Temple Murals",   # 4th–6th – identified by mural style
-            "Master of Tetitla Murals",         # 6th – elite apartment compound artist
-            "Master of Atetelco Murals",        # 6th – jaguar/bird-warrior murals
-            "Frieze Carver of Temple of the Moon", # 4th–5th
             iModernEra,
             u"fBeatriz de la Fuente",           # 20th – renowned Mexican art historian of Teotihuacan
         ),
         iGreatScientist : (
-            "Temple Architect of the Sun",      # 2nd – designer of largest pyramid
-            "Astronomer of the Avenue of the Dead", # 2nd – planned cardinal alignment
-            "Surveyor of the Ciudadela",        # 3rd – responsible for grid system
         ),
 
         iGreatMerchant : (
-            "Merchant of the Oaxaca Barrio",    # 3rd–6th – documented Zapotec enclave traders
-            "Gulf Coast Obsidian Trader",       # long-distance merchant
-            "Merchant of the Merchants’ Barrio", # archaeologically identified compound
         ),
         iGreatEngineer : (
-            "Builder of the Moon Pyramid",      # 2nd–3rd
-            "Master of the Talud-Tablero",      # 3rd – architectural innovator
-            "Hydraulic Engineer of Teopancazco", # 4th – water redistribution systems
-            "Architect of the Great Compound",   # 3rd – marketplace complex
         ),
         iGreatStatesman : (
             "Spearthrower Owl",                 # 4th – foreign-linked dynastic personage attested at Tikal
-            "Revered Lord of Teotihuacan",      # generic noble title recognized in Maya inscriptions
-            "High Administrator of the Ciudadela", # elite palace administrator
             iModernEra,
             u"fLinda Manzanilla",               # 20th – leading Teotihuacan archaeologist
         ),
         iGreatGeneral : (
-            "Warrior of the Puma Standard",     # military order motif found in murals
-            "Warrior of the Eagle Standard",    # eagle-obsidian iconography
-            "General of the Feathered Serpent", # militarized imagery on temple façade
-            "High Captain of Atetelco",         # Atetelco war murals
         ),
     },
 	iTiwanaku : {	# AI GENERATED
@@ -270,42 +246,21 @@ dGreatPeople = {
             "Mallku Qhapaq",  # high ancestral spirit-lord in Aymara tradition
         ),
         iGreatArtist : (
-            "Akapana Master",   # anonymous monumental architect-sculptor (Akapana pyramid)
-            "Pumapunku Artisan",# anonymous stonemason linked to complex joinery at Pumapunku
-            "Gate of the Sun Sculptor", # anonymous master artist associated with the Sun Gate
-            "Willka Uyu Painter", # Tiwanaku ceremonial painter (generic, historically grounded)
             iModernEra,
             u"fMaría Luisa Pacheco",  # 20th – Bolivian modernist painter referencing indigenous themes
         ),
         iGreatScientist : (
-            "Kuno Ayar",     # mythic astronomer-priest (linked to solar alignments at Tiwanaku)
-            "Amauta of Kalasasaya", # title-based: astronomer-priest of the Kalasasaya observatory
-            "Suma Qamaña Sage", # title-based ethical-philosophical figure in Aymara tradition
         ),
         iGreatMerchant : (
-            "Qulla Caravan Leader",  # llama-caravan merchant of the altiplano exchange networks
-            "Uruq Trader",           # highland merchant class connected to regional redistribution
-            "Aymara Suyu Broker",    # organizer of inter-valley trade circuits
         ),
         iGreatEngineer : (
-            "Akapana Architect",      # planned terracing + hydraulic systems of Akapana pyramid
-            "Pumapunku Engineer",     # master of stone-cutting precision joints
-            "Lukurmata Hydrologist",  # engineered raised fields (suka kollus) at Lukurmata
-            "Suka Kollu Builder",     # raised-field agricultural engineer
-            "Molino Pariti Mason",    # master craftsman from Pariti Island workshops
         ),
         iGreatStatesman : (
-            "Mallku of Tiwanaku",     # hereditary lord title (pre-Inka Aymara polity)
-            "Qapaq of Qollasuyu",     # regional Aymara polity leader linked to Tiwanaku sphere
             "Uywa Kamani",            # steward-administrator in Aymara tradition
             iModernEra,
             u"Víctor Paz Estenssoro", # 20th – key Bolivian statesman (non-revolutionary context)
         ),
         iGreatGeneral : (
-            "Mallku Warrior",        # Aymara war-leader associated with Tiwanaku polities
-            "Protector of Pumapunku",# guard-marshal figure for ceremonial precinct
-            "Qollawaya Captain",     # highland military caravan-guard leader
-            "Ayaruk Defender",       # title-based warrior caste protecting raised-field zones
         ),
     },
 	iWari : {	# AI GENERATED
@@ -328,7 +283,7 @@ dGreatPeople = {
             "Yana Pankay", # 8th – agricultural specialist (raised fields / terrace planning)
         ),
         iGreatMerchant : (
-            "Qhapaq Ñanpa", # 8th – overseer of early Wari road system (proto-Qhapaq Ñan)
+            u"Qhapaq Ñanpa", # 8th – overseer of early Wari road system (proto-Qhapaq Ñan)
             "Sumaq Wanchuq", # 8th – administrator of provincial redistribution centers
             "Pacha Churana", # 8th – caravan master tied to llama trading routes
         ),
@@ -361,40 +316,24 @@ dGreatPeople = {
         ),
         iGreatArtist : (
             "Birdman Dancer",         # performer/ritual elite associated with the Southeastern Ceremonial Complex
-            "Shell Gorget Engraver",  # master craftsperson of classic Mississippian iconography
-            "Spiral Mound Carver",    # stone/wood artist creating SECC motifs
-            "Copper Workshop Master", # artisan of copper repoussé plates (Cahokia tradition)
             iModernEra,
             "fMary Yellow Robe",     # 20th – Choctaw artist, cultural preservationist
             "Preston Singletary",    # 20th – Tlingit–influenced modern Indigenous sculptor 
         ),
         iGreatScientist : (
-            "Sunwatch Astronomer",    # Cahokia’s Woodhenge–style solar calendar specialists
-            "Mound Engineer-Priest",  # elite responsible for calendrical/survey layout of earthworks
-            "Cedar Medicine Keeper",  # healer/knowledge-keeper role in Mississippian societies
         ),
         iGreatMerchant : (
-            "Shell Trade Captain",    # Gulf–Great Lakes marine shell trade
-            "Pipestone Caravaner",    # mover of catlinite/pipestone along trade corridors
-            "Riverway Commerce Chief",# Mississippi–Ohio–Tennessee river system trade leader
         ),
         iGreatEngineer : (
-            "Monks Mound Architect",  # planner of Cahokia’s central mound complex
-            "Earthlodge Builder",     # Southeastern earthlodge ceremonial architect
-            "Palisade Designer",      # defensive constructions at Mississippian centers
-            "Platform Mound Foreman", # supervisor of staged mound construction
         ),
         iGreatStatesman : (
             "Great Sun",              # Natchez paramount chief (politico-religious descendant of Mississippian system)
-            "War Chief of Cahokia",   # role attested archaeologically and in descendant cultures
-            "Council Speaker",        # communal decision-maker position
             iModernEra,
             "Philleo Nash",          # 20th – anthropologist & politician of Ho-Chunk heritage
         ),
         iGreatGeneral : (
-            "Falcon Warrior",         # SECC warrior cult figure
-            "Copper Plate Champion",  # heroic SECC warrior imagery type
-            "Red Horn Warrior",       # mythological and iconographic war figure
+            "Falcon Warrior",        # SECC warrior cult figure
+            "Red Horn Warrior",      # mythological and iconographic war figure
             iRevolutionaryEra,
             "Pushmataha",            # 18th–19th – famed Choctaw war leader allied with the U.S.
         ),
@@ -407,31 +346,25 @@ dGreatPeople = {
             "Sugamuxi",           # historical? high priest of the Sun Temple at Suamox
         ),
         iGreatArtist : (
-            "Hunza Chía",         # mythological patron of arts & moon goddess (Chía)
-            "Bacatá Chía",        # mythological (variant syncretic moon aspect)
             "Tundama",            # warrior-chief also associated with patronage of ceremonies
             iModernEra,
             u"fDébora Arango",    # 20th – Colombian painter; not Muisca but national-level inclusion like Asturias for Maya
         ),
         iGreatScientist : (
             "Nencatacoa",         # mythological deity of dance, arts, and **architecture**, linked to measurement & planning
-            "Chía",               # moon goddess → tied to calendrical astronomy
             "Bochica",            # attributed with teaching astronomy & timekeeping
         ),
         iGreatMerchant : (
             "Iraca",              # title of priest-king of Sugamuxi; controlled salt & trade routes
-            "Guecha Chía",        # noble merchant-warrior class (guecha)
             "Sasqua",             # merchant tied to salt and emerald trade (attested role)
-            "Güicanza",           # emerald-trade lineage of Muzo & Somondoco region
+            u"Güicanza",          # emerald-trade lineage of Muzo & Somondoco region
         ),
         iGreatEngineer : (
             "Nencatacoa",         # deity of construction; mythological but relevant
-            "Sué Chiminigagua",   # linked to solar temple architecture (syncretic figure)
-            "Bacatá Zipa",        # zipa authority over canal & terrace engineering
-            "Hunza Zaque",        # zaque authority overseeing infrastructure & temples
+            u"Sué Chiminigagua",   # linked to solar temple architecture (syncretic figure)
         ),
         iGreatStatesman : (
-            "Hunzahúa",           # first legendary zaque of Hunza (Tunja)
+            u"Hunzahúa",           # first legendary zaque of Hunza (Tunja)
             "Meicuchuca",         # early zipa of Bacatá, unifier
             "Saguamanchica",      # 15th – major zipa and political consolidator
             "Nemequene",          # 16th – reformer of laws & military hierarchy
@@ -450,7 +383,6 @@ dGreatPeople = {
         iGreatProphet : (
             "Thorgeir Ljosvetningagodi",   # 10th – lawspeaker who decided Iceland's conversion to Christianity
             "Thangbrand",                 # 10th – missionary sent by Olaf Tryggvason
-            "Leif Eiriksson",             # 11th – explorer credited with bringing Christianity to Greenland
             "Bishop Arnaldur",            # 12th – first bishop of Greenland
         ),
         iGreatArtist : (
@@ -480,7 +412,7 @@ dGreatPeople = {
         iGreatStatesman : (
             "Thorkell Geitisson",         # 10th – prominent chieftain of the Haukdælir clan
             "Gudmundur Arason",           # 12th – bishop and political power figure
-            "Gizurr Þorvaldsson",         # 13th – Earl of Iceland, major political unifier
+            u"Gizurr Þorvaldsson",         # 13th – Earl of Iceland, major political unifier
             iModernEra,
             u"Hannes Hafstein",           # 20th – first Minister for Iceland in Home Rule era
         ),
@@ -516,7 +448,6 @@ dGreatPeople = {
             u"César Gutiérrez Muñoz",  # 20th – historian/archaeologist specializing in Chimor
         ),
         iGreatMerchant : (
-            "Taycanamo",           # mythical first king of Chimor, linked to coastal trade expansion
             "Minchancaman",        # 15th – last independent Chimú king, major trade administrator
             "Qhapaq Chimu Quya",   # noble overseeing maritime commerce
             u"Qochap Ñam",          # merchant leader involved in Spondylus shell trade
@@ -560,19 +491,10 @@ dGreatPeople = {
 			"Tony Da",                    # 20th – San Ildefonso/Hopi artist, modernist pottery
 		),
 		iGreatScientist : (
-			"Sun Shrine Keeper",          # generic – Pueblo astronomical/ritual specialist
-			"Ancestral Engineer of Chaco",# generic – reflects masonry, geometry, road-building knowledge
 		),
 		iGreatMerchant : (
-			u"Macaw Trader of Paquimé",    # 12th–15th – specialized long-distance trade network
-			"Turquoise Road Caravaner",   # generic – ancestral turquoise trader (Chaco → Mesoamerica routes)
-			"Zuni Salt Trader",           # historic salt trade specialist
 		),
 		iGreatEngineer : (
-			"Chaco Master Mason",         # generic – great house builders, corbelled roofs, precision masonry
-			"Ancestral Irrigation Builder", # Hohokam/Pueblo irrigation master (Salt–Gila drainages)
-			"Cliff Palace Architect",     # Mesa Verde classical era architect
-			"Taos Pueblo Builder",        # historic multi-story adobe engineering
 		),
 		iGreatStatesman : (
 			"Diego Naranjo",              # 17th – leader who negotiated with Spanish after revolt
@@ -582,7 +504,6 @@ dGreatPeople = {
 		),
 		iGreatGeneral : (
 			"Catua",                      # 17th – Tewa war captain, role in Pueblo Revolt
-			"Otermin’s Adversary",        # generic commander in 1680–96 New Mexico wars
 		),
 	},
 	iPurepecha : {	# AI GENERATED
@@ -602,7 +523,7 @@ dGreatPeople = {
         ),
         iGreatScientist : (
             u"Ticátame",                # mythological hero credited with knowledge and order
-            u"Zuangua",                # 16th – last cazonci; documented medicinal knowledge
+            "Zuangua",                # 16th – last cazonci; documented medicinal knowledge
             iModernEra,
             u"José Luis Punzo",        # 20th – Purepecha archaeologist/linguist
         ),

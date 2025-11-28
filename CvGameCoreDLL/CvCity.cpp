@@ -17977,7 +17977,6 @@ void CvCity::setNextCoveredPlot(int iNewValue, bool bUpdatePlotGroups)
 					iCultureRange = std::max(0, plotDistance(getX_INLINE(), getY_INLINE(), pLoopPlot->getX(), pLoopPlot->getY()));
 
 					// Leoreth: only two rings for minor civilizations
-					// MacAurther TODO: Make 3rd Culture ring based on a tech?
 					if (!bMinor || iCultureRange <= 2)
 					{
 						pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), iCultureRange, -1, bUpdatePlotGroups);
@@ -18009,7 +18008,6 @@ void CvCity::setNextCoveredPlot(int iNewValue, bool bUpdatePlotGroups)
 					}
 
 					// Leoreth: only two rings for minor civilizations
-					// MacAurther TODO: Make 3rd Culture ring based on a tech?
 					if (!bMinor || iCultureRange <= 2)
 					{
 						pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), iCultureRange, 1, bUpdatePlotGroups);

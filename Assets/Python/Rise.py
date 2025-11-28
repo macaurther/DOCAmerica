@@ -1076,10 +1076,6 @@ class Birth(object):
 			self.bFlip = True
 	
 	def flippedArea(self):
-		if self.iCiv == iEngland and not self.isHuman():
-			area = plots.birth(self.iPlayer) + plots.region(rBritain).where(lambda p: not p.isOwned() or is_minor(p.getOwner()))
-			return area.unique()
-		
 		return self.isIndependence() and self.area or plots.birth(self.iPlayer)
 	
 	def flip(self):

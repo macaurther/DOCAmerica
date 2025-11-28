@@ -13969,7 +13969,7 @@ void CvPlayer::changeSpecialistExtraYield(SpecialistTypes eIndex1, YieldTypes eI
 	if (iChange != 0)
 	{
 		m_ppaaiSpecialistExtraYield[eIndex1][eIndex2] = (m_ppaaiSpecialistExtraYield[eIndex1][eIndex2] + iChange);
-		FAssert(getSpecialistExtraYield(eIndex1, eIndex2) >= 0);
+		//FAssert(getSpecialistExtraYield(eIndex1, eIndex2) >= 0);	// MacAurther: Disabling this because Immigrants give -1 to a yield
 
 		updateExtraSpecialistYield();
 
