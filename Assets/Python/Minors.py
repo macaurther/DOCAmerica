@@ -539,20 +539,27 @@ def maintainFallenCivilizations():
 @handler("tribeAttacked")
 def spawnTribeDefenders(pPlot, iAttacker):
 	iNumDefenders = pPlot.getTribeStoredUnits()
+	
+	# Find if plot is in a civ's core
+	iCoreCiv = -1
+	for iCiv in lBirthOrder:
+		if pPlot.isCore(iCiv):
+			iCoreCiv = iCiv
+			break
 
-	iUnit = iMilitiaSpearman
+	iUnit = unique_unit(iCoreCiv, iMilitiaSpearman)
 	for iI in range(iNumDefenders):
-		# MacAurther TODO: Made this more sophisticated?
-		if iI > 1: iUnit = iArcher
-		elif iI > 3: iUnit = iMaceman
+
+		if iI > 3: iUnit = unique_unit(iCoreCiv, iMaceman)
+		elif iI > 1: iUnit = unique_unit(iCoreCiv, iArcher)
 
 		# Upgrade archers to horse archers given certain conditions
-		if year() > year(1600) and pPlot.getTerrainType() in [iPlains, iPrairie] and pPlot.getFeatureType() == FeatureTypes.NO_FEATURE and iUnit == iArcher:
-			iUnit = iHorseArcher
+		if year() > year(1600) and pPlot.getTerrainType() in [iPlains, iPrairie] and pPlot.getFeatureType() == FeatureTypes.NO_FEATURE and base_unit(iUnit) == iArcher:
+			iUnit = unique_unit(iCoreCiv, iHorseArcher)
 
 		makeUnits(slot(iIndigenous), iUnit, pPlot, 1, UnitAITypes.UNITAI_SIT_FOREVER)
 	
-	message(iAttacker, 'TXT_KEY_TRIBE_DEFENDERS', sound='SND_GOODY_HOSTILE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pPlot)
+	message(iAttacker, 'TXT_KEY_TRIBE_DEFENDERS', sound='AS2D_GOODY_HOSTILE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pPlot)
 	pPlot.setTribeStoredUnits(0)
 
 @handler("unitPillage")

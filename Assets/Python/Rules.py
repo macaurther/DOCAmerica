@@ -71,7 +71,6 @@ def nativeCityConquered(iOldOwner, iNewOwner, pCity, bConquest, bTrade):
 	
 	# Check for any slave capturing
 	# Need to somehow get conquering unit, just get the first unit on the plot and hope it's right?
-	# MacAurther TODO: Improve this?
 	pPlot = pCity.plot()
 	if pPlot.getNumUnits() > 0:
 		pConqueringUnit = pPlot.getUnit(0)

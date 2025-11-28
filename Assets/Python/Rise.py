@@ -608,7 +608,6 @@ class Birth(object):
 			revealed += peerRevealed'''
 		
 		# MacAurther: Instead of dynamic tile revealing (which can be slow), reveal a pre-determined, more "historical" set of tiles
-		# MacAurther TODO: Make implementation more versatile?
 		lRegionList = None
 		if civ(self.iPlayer) in [iEngland, iFrance, iNetherlands, iRussia]:
 			lRegionList = lEuropeanRevealed1600AD

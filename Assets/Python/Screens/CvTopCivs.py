@@ -10,7 +10,7 @@ import random
 from Core import *
 
 NUM_CIVILIZATIONS = 8
-# MacAurther TODO: Make mod-specific historians :/
+
 HISTORIANS = {
 	iNorse: {
 		iExplorationEra: (

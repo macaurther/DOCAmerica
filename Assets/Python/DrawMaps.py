@@ -8,7 +8,6 @@ from pathlib import Path
 iWorldX = 85
 iWorldY = 122
 
-# MacAurther TODO: Update this alongside Consts
 iNumCivs = 38
 # 0				1				2				3				4				5				6				7				8				9
 (iAmerica, 		iArgentina, 	iAztec, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iEngland, 		iFrance, 		iHaiti,			

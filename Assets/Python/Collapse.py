@@ -66,10 +66,11 @@ def completeCollapse(iPlayer):
 		
 def downgradeImprovements(iPlayer):
 	lAlwaysDowngrade = [iCottage, iHamlet, iVillage, iTown]
-	bPlayerDowngrade = civ(iPlayer) in [iMississippi, iLakota, iPueblo, iHaudenosaunee, iInuit] and not player(iPlayer).isHuman()	# MacAurther TODO: Other "transitory" civs
+	bPlayerDowngrade = civ(iPlayer) in [iMississippi, iLakota, iPueblo, iHaudenosaunee, iInuit] and not player(iPlayer).isHuman()
 	
 	improvementPlots = plots.owner(iPlayer).where(lambda p: p.getImprovementType() >= 0)
 	alwaysDowngrade, potentialDowngrade = improvementPlots.split(lambda p: p.getImprovementType() in lAlwaysDowngrade or bPlayerDowngrade)
+
 	
 	if player(iPlayer).getCurrentEra() <= iColonialEra:
 		iFraction = 4
@@ -97,6 +98,11 @@ def downgradeImprovements(iPlayer):
 			iRoute = plot.getRouteType()
 			if iRoute >= 0:
 				plot.setRouteType(-1)
+
+	# MacAurther: always remove Andean RP peak improvements
+	peakImprovementPlots = plots.owner(iPlayer).where(lambda p: p.getImprovementType() >= 0 and p.getPlotType() == PlotTypes.PLOT_PEAK)
+	for plot in peakImprovementPlots:
+		plot.setImprovementType(-1)
 			
 	message(iPlayer, 'TXT_KEY_STABILITY_DOWNGRADE_IMPROVEMENTS', color=iRed)
 		

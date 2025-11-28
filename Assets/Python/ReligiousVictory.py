@@ -71,7 +71,6 @@ dGoals = {
 	),
 }
 
-# MacAurther TODO: Re-evaluate these
 dAdditionalPaganGoal = {
 	iAngakkuq: FeatureCount(iSeaIce, 20),
 	iAsatru: UnitLevelCount(5, 5),

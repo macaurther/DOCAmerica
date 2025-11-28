@@ -12421,7 +12421,6 @@ void CvPlot::setTribeThreatenTurn(int iTurn)
 void CvPlot::showTradewindOverlay()
 {
 	// MacAurther: Immigration: Update Tradewinds for active player if needed
-	// MacAurther TODO: XML-ize this?
 	NiColorA color;
 	AreaBorderLayers layer;
 	bool bTradewind = true;
