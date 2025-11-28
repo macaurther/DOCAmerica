@@ -783,7 +783,7 @@
 				</BonusTypeStruct>
 			</BonusTypeStructs>
 			<ImprovementPillage/>
-			<ImprovementUpgrade>IMPROVEMENT_MINE</ImprovementUpgrade>
+			<ImprovementUpgrade/>
 			<TechYieldChanges/>
 			<RouteYieldChanges>
 				<RouteYieldChange>
@@ -1387,7 +1387,7 @@
 				</BonusTypeStruct>
 			</BonusTypeStructs>
 			<ImprovementPillage/>
-			<ImprovementUpgrade>IMPROVEMENT_PLANTATION</ImprovementUpgrade>
+			<ImprovementUpgrade/>
 			<TechYieldChanges>
 				<TechYieldChange>
 					<PrereqTech>TECH_HORTICULTURE</PrereqTech>

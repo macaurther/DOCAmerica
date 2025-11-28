@@ -2829,8 +2829,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 
 			if (eFinalImprovementType != NO_IMPROVEMENT)
 			{
-				// MacAurther: Slave improvements decay over time, don't restrict their building
-				if (eFinalImprovementType == finalImprovementUpgrade(eImprovement) && eImprovement != IMPROVEMENT_SLAVE_PLANTATION && eImprovement != IMPROVEMENT_SLAVE_MINE)
+				if (eFinalImprovementType == finalImprovementUpgrade(eImprovement))
 				{
 					return false;
 				}
