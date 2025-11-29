@@ -116,37 +116,6 @@
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<!-- ORIENTAL -->
-		<ArtRef Name="generic:Oriental.nif::1x1x1_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::1x1x1_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::1x1x2_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::1x1x2_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::1x1x2_03">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
 		<!-- REVOLUTIONARY -->
 		<ArtRef Name="generic:ren_eu.nif::park_1x1">
 			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
@@ -294,53 +263,6 @@
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
-		<!-- Asian -->
-		<ArtRef Name="generic:asian.nif::1x1_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::1x1_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::1x1_03">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::1x1_04">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::1x1_05">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<!-- Roman -->
-		<ArtRef Name="generic:greco_roman.nif::1x1_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::1x1_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::1x1_03">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::1x1_04">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
 		<ArtRef Name="building:LSYSTEM_KILN">
 			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Kiln/Ancient/potteryshop.nif</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
@@ -477,70 +399,6 @@
 		<ArtRef Name="generic:med_eu.nif::2x1x2_04">
 			<Attribute Class="Era">ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<!-- ORIENTAL -->
-		<ArtRef Name="generic:Oriental.nif::1x2x2_01">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::1x2x2_02">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::1x2x2_03">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::1x2x2_04">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::1x2x2_05">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::2x1x2_01">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::2x1x2_02">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::2x1x2_03">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::2x1x2_04">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
@@ -752,20 +610,6 @@
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::1x2x2_04">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:Oriental.nif::1x2x2_05">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
 		<ArtRef Name="generic:africa1.nif::2x1x2_01">
 			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
@@ -863,104 +707,6 @@
 			<Rotate>90</Rotate>
 			<Scale>1.0</Scale>
 		</ArtRef>
-		<!-- Asian -->
-		<ArtRef Name="generic:asian.nif::2x1_01">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::2x1_02">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::2x1_03">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::2x1_04">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::1x2_01">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::1x2_02">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::1x2_03">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::1x2_04">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-		</ArtRef>
-		<!-- Roman -->
-		<ArtRef Name="generic:greco_roman.nif::2x1_01">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::2x1_02">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::2x1_03">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::2x1_04">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::1x2_01">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::1x2_02">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::1x2_03">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::1x2_04">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-		</ArtRef>
 		<!-- LEAF 2x1 BUILDINGS -->
 		<ArtRef Name="building:LSYSTEM_2x1">
 			<Attribute Class="Rotation">0,180</Attribute>
@@ -1000,56 +746,6 @@
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
-		<!-- Asian -->
-		<ArtRef Name="generic:asian.nif::3x1_01">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::3x1_02">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::1x3_01">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::1x3_02">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-		</ArtRef>
-		<!-- Roman -->
-		<ArtRef Name="generic:greco_roman.nif::3x1_01">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::3x1_02">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::1x3_01">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::1x3_02">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-		</ArtRef>
 		<!-- LEAF 3x1 BUILDINGS -->
 		<ArtRef Name="building:LSYSTEM_3x1">
 			<Attribute Class="Rotation">0,180</Attribute>
@@ -1075,13 +771,6 @@
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>1.1</Scale>
 		</ArtRef>
-		<!-- ORIENTAL -->
-		<ArtRef Name="generic:Oriental.nif::2x2x2_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::2x2_01">
 			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
@@ -1091,13 +780,6 @@
 		<ArtRef Name="generic:med_eu.nif::2x2x2_02">
 			<Attribute Class="Era">ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_SOUTH_AMERICA,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<!-- ORIENTAL -->
-		<ArtRef Name="generic:Oriental.nif::2x2x2_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>1.1</Scale>
 		</ArtRef>
@@ -1176,43 +858,6 @@
 			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
-		</ArtRef>
-		<!-- Asian -->
-		<ArtRef Name="generic:asian.nif::2x2_01">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::2x2_02">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::2x2_03">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:asian.nif::2x2_04">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<!-- Roman -->
-		<ArtRef Name="generic:greco_roman.nif::2x2_01">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::2x2_02">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:greco_roman.nif::2x2_03">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="building:LSYSTEM_KILN">
 			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Kiln/Medieval/bronzeshop.nif</Attribute>
