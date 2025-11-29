@@ -42,10 +42,18 @@
 		<FlavorType>FLAVOR_ADMIN</FlavorType>
 	</FlavorTypes>
 	<ArtStyleTypes>
-		<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+		<ArtStyleType>ARTSTYLE_BRITAIN</ArtStyleType>
+		<ArtStyleType>ARTSTYLE_EUROPE</ArtStyleType>
+		<ArtStyleType>ARTSTYLE_NORSE</ArtStyleType>
+		<ArtStyleType>ARTSTYLE_RUSSIA</ArtStyleType>
+		<ArtStyleType>ARTSTYLE_IBERIA</ArtStyleType>
+		<ArtStyleType>ARTSTYLE_AFRICA</ArtStyleType>
+		<ArtStyleType>ARTSTYLE_PACIFIC</ArtStyleType>
+		<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
+		<ArtStyleType>ARTSTYLE_NATIVE_PLAINS</ArtStyleType>
+		<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
 		<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 		<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
-		<ArtStyleType>ARTSTYLE_AFRICAN</ArtStyleType>
 	</ArtStyleTypes>
 	<CitySizeTypes>
 		<CitySizeType>CITYSIZE_SMALL</CitySizeType>

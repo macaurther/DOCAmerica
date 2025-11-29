@@ -40,229 +40,851 @@
 		<Width>1</Width>
 		<Height>1</Height>
 		<!-- LEAF 1x1 GENERICS -->
-		<ArtRef Name="generic:an_eu.nif::1x1_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x1_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x1_03">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x1_04">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x1_05">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x1_06">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x1_07">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+		<ArtRef Name="generic:All_Global_West.nif::1x1_01">
 			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x1_08">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+		<ArtRef Name="generic:All_Global_West.nif::1x1_02">
 			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x1_09">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+		<ArtRef Name="generic:All_Global_West.nif::1x1_04">
 			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
 		</ArtRef>
-		<!-- COLONIAL -->
-		<ArtRef Name="generic:med_eu.nif::1x1x1_01">
-			<Attribute Class="Era">ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+		<ArtRef Name="generic:All_Global_West.nif::1x1_05">
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<!-- 1x1 West Europe -->
+		<ArtRef Name="generic:Europe_Ancient.nif::1x1_01">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:med_eu.nif::1x1x1_02">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+		<ArtRef Name="generic:Europe_Ancient.nif::1x1_02">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE,ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:med_eu.nif::1x1x2_01">
-			<Attribute Class="Era">ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+		<ArtRef Name="generic:Europe_Ancient.nif::1x1_03">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE,ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Ancient.nif::1x1_04">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE,ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.25</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Ancient.nif::1x1_05">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:med_eu.nif::1x1x2_02">
-			<Attribute Class="Era">ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+		<ArtRef Name="generic:Europe_Ancient.nif::1x1_06">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:med_eu.nif::1x1x2_03">
-			<Attribute Class="Era">ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+		<ArtRef Name="generic:Europe_Ancient.nif::1x1_07">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<!-- REVOLUTIONARY -->
-		<ArtRef Name="generic:ren_eu.nif::park_1x1">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_SOUTH_AMERICA,ARTSTYLE_BARBARIAN</Attribute>
+		<ArtRef Name="generic:Europe_Ancient.nif::1x1_08">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Ancient.nif::1x1_09">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::1x1_01">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
-			<Attribute Class="Scalar">fCurvatureBias:24</Attribute>
-			<Scale>1.4</Scale>
+			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::1x1_01">
+		<ArtRef Name="generic:Europe_Medieval.nif::1x1_02">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::1x1_03">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::1x1_04">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x1_01">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x1_02">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x1_03">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x1_04">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::1x1_01">
 			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_SOUTH_AMERICA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.4</Scale>
+			<Scale>0.85</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::1x1_02">
+		<ArtRef Name="generic:Europe_Renaissance.nif::1x1_02">
 			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_SOUTH_AMERICA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.4</Scale>
+			<Scale>0.85</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::1x1_03">
+		<ArtRef Name="generic:Europe_Renaissance.nif::1x1_03">
 			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_SOUTH_AMERICA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.4</Scale>
+			<Scale>0.85</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::1x1_04">
+		<ArtRef Name="generic:Europe_Renaissance.nif::1x1_04">
 			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_SOUTH_AMERICA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.4</Scale>
+			<Scale>0.85</Scale>
 		</ArtRef>
-		<!-- INDUSTRIAL -->
-		<ArtRef Name="generic:ind_eu.nif::1x1_01">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ind_eu.nif::1x1_02">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ind_eu.nif::1x1_03">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ind_eu.nif::1x1_04">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ind_eu.nif::1x1_05">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<!-- MESO -->
-		<ArtRef Name="generic:meso_city.nif::1x1_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:meso_city.nif::1x1_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:meso_city.nif::1x1_03">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:meso_city.nif::1x1_04">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:meso_city.nif::1x1_05">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<!-- AFRICAN -->
-		<ArtRef Name="generic:africa1.nif::1x1x1_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
+		<ArtRef Name="generic:Europe_Industrial.nif::1x1_01">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:africa1.nif::1x1x1_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
+		<ArtRef Name="generic:Europe_Industrial.nif::1x1_02">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Industrial.nif::1x1_03">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.2</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Industrial.nif::1x1_04">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<!-- 1x1 East Europe -->
+		<ArtRef Name="generic:Baltic_Medieval.nif::1x1x1_01">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Medieval.nif::1x1x1_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Medieval.nif::1x1x2_01">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Medieval.nif::1x1x2_02">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Medieval.nif::1x1x2_03">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Renaissance.nif::1x1x1_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Renaissance.nif::1x1x1_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Renaissance.nif::1x1x2_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Renaissance.nif::1x1x2_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Renaissance.nif::1x1x2_03">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Industrial.nif::1x1_01">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Industrial.nif::1x1_02">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Industrial.nif::1x1_03">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Industrial.nif::1x1_04">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<!-- 1x1 Russia -->
+		<ArtRef Name="generic:Slavic_Renaissance.nif::1x1_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Renaissance.nif::1x1_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Renaissance.nif::1x1_03">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Renaissance.nif::1x1_05">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Rotate>90</Rotate>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Industrial.nif::1x1_02">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Industrial.nif::1x2_01">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Industrial.nif::1x2_02">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<!-- 1x1 Mediterranean -->
+		<ArtRef Name="generic:Europe_Ancient.nif::1x1_01">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Ancient.nif::1x1_05">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Ancient.nif::1x1_06">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Ancient.nif::1x1_09">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<!-- 1x1 Iberia -->
+		<ArtRef Name="generic:Iberia_Classical.nif::1x1_01">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Classical.nif::1x1_02">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Classical.nif::1x1_03">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Classical.nif::1x1_04">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Classical.nif::1x1_05">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Classical.nif::1x1_06">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Classical.nif::1x1_07">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Classical.nif::1x1_08">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Classical.nif::1x1_09">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::1x1x1_01">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::1x1x1_02">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::1x1x2_01">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::1x1x2_02">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::1x1x2_03">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x1x1_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x1x1_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x1x2_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x1x2_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x1x2_03">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<!-- 1x1 Africa -->
+		<ArtRef Name="generic:Africa_Ancient.nif::1x1x1_01">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Ancient.nif::1x1x1_02">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Ancient.nif::1x1x2_01">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Ancient.nif::1x1x2_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Ancient.nif::1x1x2_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Medieval.nif::1x1x1_01">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:africa1.nif::1x1x2_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
+		<ArtRef Name="generic:Africa_Medieval.nif::1x1x1_02">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:africa1.nif::1x1x2_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
+		<ArtRef Name="generic:Africa_Medieval.nif::1x1x2_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:africa1.nif::1x1x2_03">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
+		<ArtRef Name="generic:Africa_Medieval.nif::1x1x2_02">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<!-- MODERN -->
-		<ArtRef Name="generic:mod_eu.nif::1x1_01">
+		<ArtRef Name="generic:Africa_Medieval.nif::1x1x2_03">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Medieval.nif::1x2x2_03">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<!-- 1x1 Pacific -->
+		<ArtRef Name="generic:Native_Tropical.nif::1x1_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::1x1_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::1x2_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Pacific.nif::1x1x1_01">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Pacific.nif::1x1x1_02">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Rotate>180</Rotate>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Pacific.nif::1x1x2_03">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Pacific.nif::1x2x2_02">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Pacific.nif::1x2x2_03">
 			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:palmtrees.nif::1x1_01">
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Era">ERA_ALL,!ERA_MODERN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>2.5</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:palmtrees.nif::1x1_02">
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Era">ERA_ALL,!ERA_MODERN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>2.5</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:palmtrees.nif::1x1_03">
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Era">ERA_ALL,!ERA_MODERN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>2.5</Scale>
+		</ArtRef>
+		<!-- 1x1 Native Woodland -->
+		<ArtRef Name="generic:Native_Woodlands.nif::1x1_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::1x1_02">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+		<ArtRef Name="generic:Native_Woodlands.nif::1x1_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Woodlands.nif::1x1_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::1x1_03">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+		<ArtRef Name="generic:Native_Woodlands.nif::1x1_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::1x1_04">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+		<ArtRef Name="generic:colony_euro_late.nif::1x1_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::1x1_05">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+		<ArtRef Name="generic:colony_euro_late.nif::1x1_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x1_03">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x1_04">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<!-- 1x1 Native Plains -->
+		<ArtRef Name="generic:Native_Plains.nif::1x1_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Plains.nif::1x1_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Plains.nif::1x1_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x1_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x1_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x1_03">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x1_04">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<!-- 1x1 Mesoamerica -->
+		<ArtRef Name="generic:Mesoamerica_Ancient.nif::1x1_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Ancient.nif::1x1_02">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Ancient.nif::1x1_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Ancient.nif::1x1_04">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Medieval.nif::1x1_01">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Medieval.nif::1x1_03">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Medieval.nif::1x1_04">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Medieval.nif::1x1_05">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x1x1_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x1x1_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x1x2_02">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x1x2_03">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<!-- 1x1 South America -->
+		<ArtRef Name="generic:Native_Tropical.nif::1x1_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::1x1_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::1x2_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Ancient.nif::1x1x1_01">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Ancient.nif::1x1x2_03">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Ancient.nif::1x1x2_03">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Rotate>90</Rotate>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Ancient.nif::1x2x2_03">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x1x1_01">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x1x1_02">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x1x2_02">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x1x2_03">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<!-- LEAF 1x1 BUILDINGS -->
 		<ArtRef Name="building:LSYSTEM_KILN">
 			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Kiln/Ancient/potteryshop.nif</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
@@ -270,7 +892,7 @@
 			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
 			<Scale>0.6</Scale>
 		</ArtRef>
-		<!-- LEAF 1x1 BUILDINGS -->
+
 		<ArtRef Name="building:LSYSTEM_1x1">
 			<Scale>1.0</Scale>
 		</ArtRef>
@@ -279,433 +901,1420 @@
 		<Width>2</Width>
 		<Height>1</Height>
 		<!-- LEAF 2x1 GENERICS -->
-		<ArtRef Name="generic:an_eu.nif::2x1_01">
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+		<ArtRef Name="generic:All_Global_West.nif::1x2_02">
 			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::2x1_02">
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+		<ArtRef Name="generic:All_Global_West.nif::1x2_3">
 			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x2_01">
+		<ArtRef Name="generic:All_Global_West.nif::2x1_02">
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:All_Global_West.nif::2x1_03">
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:All_Global_West.nif::2x1_04">
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<!-- 2x1 West Europe -->
+		<ArtRef Name="generic:Europe_Ancient.nif::1x2_01">
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Ancient.nif::2x1_01">
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Rotate>90</Rotate>
+			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x2_02">
-			<Attribute Class="Rotation">90,270</Attribute>
+		<ArtRef Name="generic:Europe_Ancient.nif::2x1_02">
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Ancient.nif::2x1_03">
+			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::2x1_01">
-			<Attribute Class="Rotation">0,180</Attribute>
+		<ArtRef Name="generic:Europe_Medieval.nif::1x2_01">
 			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::2x1_02">
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::2x1_03">
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::2x1_04">
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x2_01">
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x2_02">
+		<ArtRef Name="generic:Europe_Medieval.nif::1x2_02">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
 		</ArtRef>
-		<!-- COLONIAL -->
-		<ArtRef Name="generic:med_eu.nif::1x2x2_01">
+		<ArtRef Name="generic:Europe_Medieval.nif::1x2_03">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::1x2_04">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::2x1_01">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::2x1_02">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::2x1_03">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::2x1_04">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x2_01">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x2_02">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x2_03">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x2_04">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x1_01">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x1_02">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x1_03">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x1_04">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::1x2_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.85</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::1x2_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.85</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::1x2_03">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::1x2_04">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.85</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::2x1_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.85</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::2x1_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.85</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::2x1_03">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.85</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::2x1_04">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.85</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Industrial.nif::1x2_01">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Industrial.nif::1x2_03">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Industrial.nif::1x2_04">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Industrial.nif::1x2_05">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Industrial.nif::2x1_01">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Industrial.nif::2x1_02">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Industrial.nif::2x1_03">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Industrial.nif::2x1_04">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<!-- 2x1 East Europe -->
+		<ArtRef Name="generic:Baltic_Medieval.nif::1x2x2_01">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Medieval.nif::1x2x2_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Medieval.nif::1x2x2_03">
 			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:med_eu.nif::1x2x2_02">
-			<Attribute Class="Era">ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
+		<ArtRef Name="generic:Baltic_Medieval.nif::1x2x2_04">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:med_eu.nif::1x2x2_03">
-			<Attribute Class="Era">ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
+		<ArtRef Name="generic:Baltic_Medieval.nif::1x2x2_05">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:med_eu.nif::1x2x2_04">
-			<Attribute Class="Era">ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:med_eu.nif::1x2x2_05">
-			<Attribute Class="Era">ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:med_eu.nif::2x1x2_01">
+		<ArtRef Name="generic:Baltic_Medieval.nif::2x1x2_01">
 			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:med_eu.nif::2x1x2_02">
-			<Attribute Class="Era">ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
+		<ArtRef Name="generic:Baltic_Medieval.nif::2x1x2_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:med_eu.nif::2x1x2_03">
-			<Attribute Class="Era">ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
+		<ArtRef Name="generic:Baltic_Medieval.nif::2x1x2_03">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:med_eu.nif::2x1x2_04">
-			<Attribute Class="Era">ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
+		<ArtRef Name="generic:Baltic_Medieval.nif::2x1x2_04">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Renaissance.nif::1x2x2_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<!-- REVOLUTIONARY -->
-		<ArtRef Name="generic:ren_eu.nif::park_2x1">
+		<ArtRef Name="generic:Baltic_Renaissance.nif::1x2x2_02">
 			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
-			<Attribute Class="Scalar">fCurvatureBias:68</Attribute>
-			<Scale>1.3</Scale>
-			<Rotate>90</Rotate>
-		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::1x2_01">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Renaissance.nif::1x2x2_03">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Rotate>90</Rotate>
-			<Scale>1.3</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::1x2_02">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Renaissance.nif::1x2x2_04">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>1.3</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::1x2_03">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Renaissance.nif::1x2x2_05">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>1.3</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::1x2_04">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>1.3</Scale>
+			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::1x2_05">
+		<ArtRef Name="generic:Baltic_Renaissance.nif::2x1x2_01">
 			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>1.3</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::park_2x1">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
-			<Attribute Class="Scalar">fCurvatureBias:68</Attribute>
-			<Scale>1.3</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::park_2x1_05">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
-			<Scale>1.3</Scale>
+			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::2x1_01">
+		<ArtRef Name="generic:Baltic_Renaissance.nif::2x1x2_02">
 			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>1.3</Scale>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::2x1_02">
+		<ArtRef Name="generic:Baltic_Renaissance.nif::2x1x2_03">
 			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>1.3</Scale>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::2x1_03">
+		<ArtRef Name="generic:Baltic_Renaissance.nif::2x1x2_04">
 			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>1.3</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::2x1_04">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>1.3</Scale>
+			<Scale>0.9</Scale>
 		</ArtRef>
-		<!-- INDUSTRIAL -->
-		<ArtRef Name="generic:ind_eu.nif::1x2_01">
+		<ArtRef Name="generic:Baltic_Industrial.nif::1x2_03">
 			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ind_eu.nif::1x2_02">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ind_eu.nif::1x2_3">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ind_eu.nif::2x1_01">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ind_eu.nif::2x1_02">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ind_eu.nif::2x1_03">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ind_eu.nif::2x1_04">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
-		<!-- MESO -->
-		<ArtRef Name="generic:meso_city.nif::1x2_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+		<ArtRef Name="generic:Baltic_Industrial.nif::1x2_04">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Industrial.nif::1x2_05">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Industrial.nif::2x1_01">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Industrial.nif::2x1_02">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Industrial.nif::2x1_03">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Industrial.nif::2x1_04">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<!-- 2x1 Russia -->
+		<ArtRef Name="generic:Baltic_Medieval.nif::1x2x2_03">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Medieval.nif::2x1x2_04">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Renaissance.nif::1x2_01">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Renaissance.nif::1x2_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.80</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Renaissance.nif::2x1_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Renaissance.nif::2x1_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Renaissance.nif::2x1_03">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Industrial.nif::1x1_03">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>1.1</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:meso_city.nif::1x2_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:meso_city.nif::1x2_3">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:meso_city.nif::2x1_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:meso_city.nif::2x1_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:meso_city.nif::2x1_03">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:meso_city.nif::2x1_04">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<!-- AFRICAN -->
-		<ArtRef Name="generic:africa1.nif::1x2x2_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
+		<ArtRef Name="generic:Slavic_Industrial.nif::1x1_05">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:africa1.nif::1x2x2_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:africa1.nif::1x2x2_03">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:africa1.nif::2x1x2_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:africa1.nif::2x1x2_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:africa1.nif::2x1x2_03">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:africa1.nif::2x1x2_04">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<!-- MODERN -->
-		<ArtRef Name="generic:mod_eu.nif::1x2_01">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::1x2_02">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::1x2_03">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::1x2_04">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::2x1_01">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::2x1_02">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::2x1_03">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::park_2x1">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Scalar">fCurvatureBias:68</Attribute>
-			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::park_2x1">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Attribute Class="Scalar">fCurvatureBias:68</Attribute>
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
 			<Rotate>90</Rotate>
 			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::park_2x1">
+		<ArtRef Name="generic:Slavic_Industrial.nif::1x2_3">
 			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Attribute Class="Scalar">fCurvatureBias:68</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Industrial.nif::2x1_02">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Rotate>90</Rotate>
 			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Industrial.nif::2x1_03">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<!-- 2x1 Mediterranean -->
+		<ArtRef Name="generic:Europe_Ancient.nif::1x2_01">
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Ancient.nif::2x1_01">
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Rotate>90</Rotate>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Ancient.nif::2x1_02">
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Ancient.nif::2x1_03">
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<!-- 2x1 Iberia -->
+		<ArtRef Name="generic:Iberia_Classical.nif::1x2_01">
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Classical.nif::1x2_02">
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Classical.nif::2x1_01">
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Classical.nif::2x1_02">
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Classical.nif::2x1_03">
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::1x2x2_01">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::1x2x2_02">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::1x2x2_03">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::1x2x2_04">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::1x2x2_05">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::2x1x2_01">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::2x1x2_02">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::2x1x2_03">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::2x1x2_04">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x2x2_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x2x2_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x2x2_04">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x2x2_05">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x2x2_03">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::2x1x2_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::2x1x2_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<!-- 2x1 Africa -->
+		<ArtRef Name="generic:Africa_Ancient.nif::1x2x2_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Ancient.nif::1x2x2_03">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Ancient.nif::1x2x2_05">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Ancient.nif::2x1x2_01">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Ancient.nif::2x1x2_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Medieval.nif::1x2x2_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Rotate>270</Rotate>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Medieval.nif::1x2x2_02">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Medieval.nif::1x2x2_04">
+			<Attribute Class="Era">ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Medieval.nif::1x2x2_05">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Medieval.nif::2x1x2_01">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Medieval.nif::2x1x2_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Medieval.nif::2x1x2_03">
+			<Attribute Class="Era">ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Medieval.nif::2x1x2_04">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<!-- 2x1 Pacific -->
+		<ArtRef Name="generic:Native_Tropical.nif::1x2_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::1x2_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::1x2_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::2x1_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::2x1_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Pacific.nif::1x1x2_01">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Pacific.nif::1x1x2_02">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Pacific.nif::1x2x2_04">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Pacific.nif::2x1x2_01">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Pacific.nif::2x1x2_02">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<!-- 2x1 Native Woodland -->
+		<ArtRef Name="generic:Native_Woodlands.nif::1x2_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Woodlands.nif::1x2_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Woodlands.nif::1x2_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Woodlands.nif::1x2_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Woodlands.nif::2x1_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Woodlands.nif::2x1_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Woodlands.nif::2x1_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Woodlands.nif::2x1_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Woodlands.nif::3x1_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x2_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x2_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x2_03">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x2_04">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x1_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x1_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x1_03">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x1_04">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<!-- 2x1 Native Plains -->
+		<ArtRef Name="generic:Native_Plains.nif::1x2_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Plains.nif::1x2_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Plains.nif::1x2_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Plains.nif::2x1_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Plains.nif::2x1_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Plains.nif::2x1_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Plains.nif::2x1_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x2_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x2_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x2_03">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x2_04">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x1_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x1_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x1_03">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x1_04">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<!-- 2x1 Mesoamerica -->
+		<ArtRef Name="generic:Mesoamerica_Ancient.nif::1x2_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Ancient.nif::1x2_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Ancient.nif::2x1_01">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Ancient.nif::2x1_02">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Ancient.nif::2x1_03">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Medieval.nif::1x2_01">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Medieval.nif::1x2_02">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Medieval.nif::1x2_3">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Medieval.nif::2x1_01">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Medieval.nif::2x1_02">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Medieval.nif::2x1_03">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Medieval.nif::2x1_04">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x2x2_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x2x2_05">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::2x1x2_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::2x1x2_04">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<!-- 2x1 South America -->
+		<ArtRef Name="generic:Native_Tropical.nif::1x2_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::1x2_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::1x2_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::2x1_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::2x1_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Ancient.nif::1x1x2_02">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Ancient.nif::2x1x2_01">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Ancient.nif::2x1x2_02">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Ancient.nif::2x1x2_03">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Medieval.nif::1x2x2_03">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Medieval.nif::1x2x2_03">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Rotate>90</Rotate>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Medieval.nif::1x2x2_05">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Medieval.nif::1x2x2_05">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Rotate>90</Rotate>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x2x2_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::1x2x2_05">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::2x1x2_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::2x1x2_04">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<!-- LEAF 2x1 BUILDINGS -->
 		<ArtRef Name="building:LSYSTEM_2x1">
@@ -721,30 +2330,375 @@
 	<LNode Name="Leaf_3x1">
 		<Width>3</Width>
 		<Height>1</Height>
-		<!-- Ancient -->
-		<ArtRef Name="generic:an_eu.nif::3x1_01">
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x3_01">
+<!-- 3x1 West Europe -->
+		<ArtRef Name="generic:Europe_Ancient.nif::1x3_01">
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::3x1_01">
+		<ArtRef Name="generic:Europe_Ancient.nif::3x1_01">
 			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::1x3_01">
 			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::1x3_02">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::3x1_01">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::3x1_02">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x3_01">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x3_02">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::3x1_01">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::3x1_02">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::3x1_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.85</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::3x1_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.85</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::1x3_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.85</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::1x3_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.85</Scale>
+		</ArtRef>
+<!-- 3x1 Russia -->
+		<ArtRef Name="generic:Slavic_Renaissance.nif::2x1_04">
+			<Attribute Class="Era">ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Industrial.nif::2x1_04">
+			<Attribute Class="Era">ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+<!-- 3x1 Mediterranean -->
+		<ArtRef Name="generic:Europe_Ancient.nif::1x3_01">
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::1x3_01">
-			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
+		<ArtRef Name="generic:Europe_Ancient.nif::3x1_01">
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+		</ArtRef>
+<!-- 3x1 Iberia -->
+		<ArtRef Name="generic:Iberia_Classical.nif::1x3_01">
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Classical.nif::3x1_01">
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+<!-- 3x1 Africa -->
+		<ArtRef Name="generic:Africa_Ancient.nif::1x2x2_04">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Ancient.nif::1x2x2_04">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Rotate>90</Rotate>
+			<Scale>0.8</Scale>
+		</ArtRef>
+<!-- 3x1 Pacific -->
+		<ArtRef Name="generic:Native_Tropical.nif::1x3_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::1x3_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::3x1_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::3x1_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Pacific.nif::2x1x2_03">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Pacific.nif::2x1x2_03">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Rotate>90</Rotate>
+			<Scale>0.9</Scale>
+		</ArtRef>
+<!-- 3x1 Native Woodland -->
+		<ArtRef Name="generic:Native_Woodlands.nif::1x3_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Woodlands.nif::1x3_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Woodlands.nif::3x1_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x3_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x3_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::3x1_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::3x1_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+<!-- 3x1 Native Plains -->
+		<ArtRef Name="generic:Native_Plains.nif::1x3_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Plains.nif::3x1_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Plains.nif::3x1_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x3_01">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::1x3_02">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::3x1_01">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::3x1_02">
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+<!-- 3x1 Mesoamerica -->
+		<ArtRef Name="generic:Mesoamerica_Ancient.nif::1x3_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Ancient.nif::3x1_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+<!-- 3x1 South America -->
+		<ArtRef Name="generic:Native_Tropical.nif::1x3_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::1x3_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::3x1_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::3x1_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<!-- LEAF 3x1 BUILDINGS -->
 		<ArtRef Name="building:LSYSTEM_3x1">
@@ -759,150 +2713,422 @@
 	<LNode Name="Leaf_2x2">
 		<Width>2</Width>
 		<Height>2</Height>
-		<!-- ANCIENT -->
-		<ArtRef Name="generic:an_eu.nif::2x2_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+		<!-- 2x2 GENERIC -->
+		<ArtRef Name="generic:All_Global_West.nif::2x2x3_01">
 			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-		</ArtRef>
-		<ArtRef Name="generic:med_eu.nif::2x2x2_01">
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:an_eu.nif::2x2_01">
-			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-		</ArtRef>
-		<!-- MEDIEVAL -->
-		<ArtRef Name="generic:med_eu.nif::2x2x2_02">
-			<Attribute Class="Era">ERA_COLONIAL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_SOUTH_AMERICA,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<!-- RENAISSANCE -->
-		<ArtRef Name="generic:ren_eu.nif::2x2_01">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_SOUTH_AMERICA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="generic:ren_eu.nif::2x2_02">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_SOUTH_AMERICA,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<!-- MESO -->
-		<ArtRef Name="generic:meso_city.nif::2x2x3_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:meso_city.nif::2x2x4_01">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:meso_city.nif::2x2x4_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<!-- AFRICAN -->
-		<ArtRef Name="generic:africa1.nif::2x2x2_02">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
-			<Scale>1.1</Scale>
-		</ArtRef>
-		<!-- INDUSTRIAL -->
-		<ArtRef Name="generic:ind_eu.nif::2x2x3_01">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ind_eu.nif::2x2x4_01">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:ind_eu.nif::2x2x4_02">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<!-- MODERN -->
-		<ArtRef Name="generic:mod_eu.nif::2x2_01">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::2x2_02">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.3</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::2x2_03">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="generic:mod_eu.nif::2x2_04">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
-			<Scale>1.0</Scale>
-		</ArtRef>
-		<ArtRef Name="building:LSYSTEM_KILN">
-			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Kiln/Medieval/bronzeshop.nif</Attribute>
+		<ArtRef Name="generic:All_Global_West.nif::2x2x4_01">
 			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
-			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="building:LSYSTEM_KILN">
-			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Kiln/Industrial/plastic_plant.nif</Attribute>
+		<ArtRef Name="generic:All_Global_West.nif::2x2x4_02">
 			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
-			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
-			<Scale>0.8</Scale>
-		</ArtRef>
-		<ArtRef Name="building:LSYSTEM_TAVERN">
-			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Tavern/tavern_native.nif</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN</Attribute>
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
-			<Scale>0.8</Scale>
-		</ArtRef>
-		<ArtRef Name="building:LSYSTEM_TAVERN">
-			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Tavern/tavern_europe.nif</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN</Attribute>
-			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="building:LSYSTEM_TAVERN">
-			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Tavern/Tavern_industrial.nif</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN</Attribute>
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+<!-- 2x2 West Europe -->
+		<ArtRef Name="generic:Europe_Ancient.nif::1x2_02">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
-		<ArtRef Name="building:LSYSTEM_TAVERN">
-			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Tavern/tavern_africa.nif</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
-			<Attribute Class="Era">ERA_ALL</Attribute>
+		<ArtRef Name="generic:Europe_Ancient.nif::2x1_04">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE,ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Ancient.nif::2x2_01">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE,ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::2x2_01">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::2x2_02">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::2x2_03">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Medieval.nif::2x2_04">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x2_01">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
-		<ArtRef Name="building:LSYSTEM_TAVERN">
-			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Tavern/tavern_native.nif</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA,ARTSTYLE_BARBARIAN</Attribute>
-			<Attribute Class="Era">ERA_ALL</Attribute>
+		<ArtRef Name="generic:colony_euro_late.nif::2x2_02">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x2_03">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x2_04">
+			<Attribute Class="Era">ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::2x2_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.85</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Renaissance.nif::2x2_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.85</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Europe_Industrial.nif::2x2_02">
+			<Attribute Class="Era">INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPE</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+<!-- 2x2 East Europe -->
+		<ArtRef Name="generic:Baltic_Medieval.nif::2x2x2_01">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Medieval.nif::2x2x2_02">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NORSE,ARTSTYLE_RUSSIA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Renaissance.nif::2x2x2_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Baltic_Renaissance.nif::2x2x2_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_BRITAIN,ARTSTYLE_NORSE,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+<!-- 2x2 Russia -->
+		<ArtRef Name="generic:Slavic_Renaissance.nif::2x2x4_02">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Slavic_Industrial.nif::2x2x3_01">
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+<!-- 2x2 Mediterranean -->
+		<ArtRef Name="generic:Europe_Ancient.nif::2x1_04">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+		</ArtRef>
+<!-- 2x2 Iberia -->
+		<ArtRef Name="generic:Iberia_Classical.nif::2x2_01">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::2x2x2_01">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Medieval.nif::2x2x2_02">
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::2x1x2_03">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::2x1x2_04">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::2x2x2_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Iberia_Renaissance.nif::2x2x2_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+<!-- 2x2 Africa -->
+		<ArtRef Name="generic:Africa_Ancient.nif::2x2x2_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Medieval.nif::2x2x2_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Africa_Medieval.nif::2x2x2_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+<!-- 2x2 Pacific -->
+		<ArtRef Name="generic:Native_Tropical.nif::2x2_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::2x2_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::2x2_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+
+
+		<ArtRef Name="generic:Pacific.nif::2x2x2_01">
+			<Attribute Class="Era">ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Pacific.nif::2x2x2_02">
+			<Attribute Class="Era">ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PACIFIC</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+<!-- 2x2 Native Woodland -->
+		<ArtRef Name="generic:Native_Woodlands.nif::2x2_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Woodlands.nif::2x2_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Woodlands.nif::2x2_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x2_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x2_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x2_03">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x2_04">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_WOODLAND</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+<!-- 2x2 Native Plains -->
+		<ArtRef Name="generic:Native_Plains.nif::2x2_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Plains.nif::2x2_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Plains.nif::2x2_04">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x2_01">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x2_02">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x2_03">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:colony_euro_late.nif::2x2_04">
+			<Attribute Class="Era">ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVE_PLAINS</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+<!-- 2x2 Mesoamerica -->
+		<ArtRef Name="generic:Mesoamerica_Medieval.nif::2x2x3_01">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Mesoamerica_Medieval.nif::2x2x4_02">
+			<Attribute Class="Era">ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_MESO_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.1</Scale>
+		</ArtRef>
+<!-- 2x2 South America -->
+		<ArtRef Name="generic:Native_Tropical.nif::2x2_01">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::2x2_02">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Native_Tropical.nif::2x2_03">
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Ancient.nif::1x2x2_05">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Medieval.nif::2x1x2_01">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY,ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Medieval.nif::2x1x2_02">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Medieval.nif::2x1x2_04">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="generic:Andes_Medieval.nif::2x2x2_01">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+			<Scale>0.9</Scale>
 		</ArtRef>
 		<!-- LEAF 2x2 BUILDINGS -->
 		<ArtRef Name="building:LSYSTEM_2x2">
@@ -1335,14 +3561,35 @@
 	<LProduction From="Node_4x2">
 		<Attribute Class="Scalar">bGoalOnly:1</Attribute>
 		<To Name="Leaf_4x2"/>
+		<ArtRef Name="decoration:native_lot.nif::4x2">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::4x2">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_EUROPE,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_BRITAIN,ARTSTYLE_RUSSIA,ARTSTYLE_NORSE,ARTSTYLE_PACIFIC,ARTSTYLE_BARBARIAN</Attribute>
+		</ArtRef>
 		<ArtRef Name="decoration:all_city_lot_4x2.nif">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA,ARTSTYLE_MESO_AMERICA,ARTSTYLE_SOUTH_AMERICA</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_4x2.nif">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL,!ARTSTYLE_AFRICA,!ARTSTYLE_NATIVE_WOODLAND,!ARTSTYLE_NATIVE_PLAINS,!ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::4x2">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_4x2.nif">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::4x2">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:mod_city_lot.nif::4x2">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
 		</ArtRef>
 	</LProduction>
 	<LProduction From="Node_4x2">
@@ -1413,14 +3660,35 @@
 	<LProduction From="Node_3x2">
 		<Attribute Class="Scalar">bGoalOnly:1</Attribute>
 		<To Name="Leaf_3x2"/>
+		<ArtRef Name="decoration:native_lot.nif::3x2">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::3x2">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_EUROPE,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_BRITAIN,ARTSTYLE_RUSSIA,ARTSTYLE_NORSE,ARTSTYLE_PACIFIC,ARTSTYLE_BARBARIAN</Attribute>
+		</ArtRef>
 		<ArtRef Name="decoration:all_city_lot_3x2.nif">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA,ARTSTYLE_MESO_AMERICA,ARTSTYLE_SOUTH_AMERICA</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_3x2.nif">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL,!ARTSTYLE_AFRICA,!ARTSTYLE_NATIVE_WOODLAND,!ARTSTYLE_NATIVE_PLAINS,!ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::3x2">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_3x2.nif">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::3x2">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:mod_city_lot.nif::3x2">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
 		</ArtRef>
 	</LProduction>
 	<LProduction From="Node_3x2">
@@ -1469,14 +3737,35 @@
 		<To Name="Leaf_1x1">
 			<Translate>1.5,0</Translate>
 		</To>
+		<ArtRef Name="decoration:native_lot.nif::4x1">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::4x1">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_EUROPE,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_BRITAIN,ARTSTYLE_RUSSIA,ARTSTYLE_NORSE,ARTSTYLE_PACIFIC,ARTSTYLE_BARBARIAN</Attribute>
+		</ArtRef>
 		<ArtRef Name="decoration:all_city_lot_4x1.nif">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA,ARTSTYLE_MESO_AMERICA,ARTSTYLE_SOUTH_AMERICA</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_4x1.nif">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL,!ARTSTYLE_AFRICA,!ARTSTYLE_NATIVE_WOODLAND,!ARTSTYLE_NATIVE_PLAINS,!ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::4x1">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_4x1.nif">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::4x1">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:mod_city_lot.nif::4x1">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
 		</ArtRef>
 	</LProduction>
 	<LProduction From="Node_4x1">
@@ -1532,14 +3821,35 @@
 		<To Name="Leaf_2x1">
 			<Translate>0.5,0</Translate>
 		</To>
+		<ArtRef Name="decoration:native_lot.nif::3x1">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::3x1">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_EUROPE,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_BRITAIN,ARTSTYLE_RUSSIA,ARTSTYLE_NORSE,ARTSTYLE_PACIFIC,ARTSTYLE_BARBARIAN</Attribute>
+		</ArtRef>
 		<ArtRef Name="decoration:all_city_lot_3x1.nif">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA,ARTSTYLE_MESO_AMERICA,ARTSTYLE_SOUTH_AMERICA</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_3x1.nif">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL,!ARTSTYLE_AFRICA,!ARTSTYLE_NATIVE_WOODLAND,!ARTSTYLE_NATIVE_PLAINS,!ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::3x1">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_3x1.nif">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::3x1">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:mod_city_lot.nif::3x1">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
 		</ArtRef>
 	</LProduction>
 	<LProduction From="Node_3x1">
@@ -1549,14 +3859,35 @@
 		<To Name="Leaf_2x1">
 			<Translate>-0.5,0</Translate>
 		</To>
+		<ArtRef Name="decoration:native_lot.nif::3x1">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::3x1">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_EUROPE,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_BRITAIN,ARTSTYLE_RUSSIA,ARTSTYLE_NORSE,ARTSTYLE_PACIFIC,ARTSTYLE_BARBARIAN</Attribute>
+		</ArtRef>
 		<ArtRef Name="decoration:all_city_lot_3x1.nif">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA,ARTSTYLE_MESO_AMERICA,ARTSTYLE_SOUTH_AMERICA</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_3x1.nif">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL,!ARTSTYLE_AFRICA,!ARTSTYLE_NATIVE_WOODLAND,!ARTSTYLE_NATIVE_PLAINS,!ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::3x1">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_3x1.nif">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::3x1">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:mod_city_lot.nif::3x1">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
 		</ArtRef>
 	</LProduction>
 	<!-- 2x2 node ***************************** -->
@@ -1564,14 +3895,35 @@
 		<To Name="Leaf_2x2">
 			<Translate>0,0</Translate>
 		</To>
+		<ArtRef Name="decoration:native_lot.nif::2x2">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::2x2">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_EUROPE,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_BRITAIN,ARTSTYLE_RUSSIA,ARTSTYLE_NORSE,ARTSTYLE_PACIFIC,ARTSTYLE_BARBARIAN</Attribute>
+		</ArtRef>
 		<ArtRef Name="decoration:all_city_lot_2x2.nif">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA,ARTSTYLE_MESO_AMERICA,ARTSTYLE_SOUTH_AMERICA</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_2x2.nif">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL,!ARTSTYLE_AFRICA,!ARTSTYLE_NATIVE_WOODLAND,!ARTSTYLE_NATIVE_PLAINS,!ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::2x2">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_2x2.nif">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::2x2">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:mod_city_lot.nif::2x2">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
 		</ArtRef>
 	</LProduction>
 	<LProduction From="Node_2x2">
@@ -1627,28 +3979,70 @@
 		<To Name="Leaf_1x1">
 			<Translate>0.5,0</Translate>
 		</To>
+		<ArtRef Name="decoration:native_lot.nif::2x1">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::2x1">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_EUROPE,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_BRITAIN,ARTSTYLE_RUSSIA,ARTSTYLE_NORSE,ARTSTYLE_PACIFIC,ARTSTYLE_BARBARIAN</Attribute>
+		</ArtRef>
 		<ArtRef Name="decoration:all_city_lot_2x1.nif">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA,ARTSTYLE_MESO_AMERICA,ARTSTYLE_SOUTH_AMERICA</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_2x1.nif">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL,!ARTSTYLE_AFRICA,!ARTSTYLE_NATIVE_WOODLAND,!ARTSTYLE_NATIVE_PLAINS,!ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::2x1">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_2x1.nif">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::2x1">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:mod_city_lot.nif::2x1">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
 		</ArtRef>
 	</LProduction>
 	<LProduction From="Node_2x1">
 		<To Name="Leaf_2x1">
 			<Translate>0,0</Translate>
 		</To>
+		<ArtRef Name="decoration:native_lot.nif::2x1">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::2x1">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_EUROPE,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_BRITAIN,ARTSTYLE_RUSSIA,ARTSTYLE_NORSE,ARTSTYLE_PACIFIC,ARTSTYLE_BARBARIAN</Attribute>
+		</ArtRef>
 		<ArtRef Name="decoration:all_city_lot_2x1.nif">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA,ARTSTYLE_MESO_AMERICA,ARTSTYLE_SOUTH_AMERICA</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_2x1.nif">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL,!ARTSTYLE_AFRICA,!ARTSTYLE_NATIVE_WOODLAND,!ARTSTYLE_NATIVE_PLAINS,!ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::2x1">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_2x1.nif">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::2x1">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:mod_city_lot.nif::2x1">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
 		</ArtRef>
 	</LProduction>
 	<LProduction From="Node_2x1">
@@ -1656,14 +4050,35 @@
 		<To Name="Leaf_2x1">
 			<Translate>0,0</Translate>
 		</To>
+		<ArtRef Name="decoration:native_lot.nif::2x1">
+			<Attribute Class="Era">ERA_ANCIENT</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::2x1">
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_EUROPE,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_BRITAIN,ARTSTYLE_RUSSIA,ARTSTYLE_NORSE,ARTSTYLE_PACIFIC,ARTSTYLE_BARBARIAN</Attribute>
+		</ArtRef>
 		<ArtRef Name="decoration:all_city_lot_2x1.nif">
-			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_CLASSICAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_IBERIA,ARTSTYLE_MESO_AMERICA,ARTSTYLE_SOUTH_AMERICA</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_2x1.nif">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL,!ARTSTYLE_AFRICA,!ARTSTYLE_NATIVE_WOODLAND,!ARTSTYLE_NATIVE_PLAINS,!ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:native_lot.nif::2x1">
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICA,ARTSTYLE_NATIVE_WOODLAND,ARTSTYLE_NATIVE_PLAINS,ARTSTYLE_PACIFIC</Attribute>
+		</ArtRef>
+		<ArtRef Name="decoration:all_city_lot_2x1.nif">
+			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::2x1">
-			<Attribute Class="Era">ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="Era">ERA_INDUSTRIAL</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:mod_city_lot.nif::2x1">
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="Era">ERA_MODERN</Attribute>
 		</ArtRef>
 	</LProduction>
 	<!-- AUTOGENERATED NODES FOLLOW -->
