@@ -1659,33 +1659,13 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_STONEWORKS</Type>
-			<LSystem>LSYSTEM_3x1</LSystem>
+			<LSystem>LSYSTEM_KILN</LSystem>
 			<bAnimated>1</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Structures/Improvements/Quarry/Quarry.nif</NIF>
-			<KFM>Art/Structures/Improvements/Quarry/Quarry.kfm</KFM>
-			<Button>Art/Interface/Buttons/Buildings/Stoneworks.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_LUMBERMILL</Type>
-			<LSystem>LSYSTEM_3x1</LSystem>
-			<bAnimated>1</bAnimated>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Structures/Improvements/Lumbermill/Lumbermill.nif</NIF>
-			<KFM>Art/Structures/Improvements/Lumbermill/Lumbermill.kfm</KFM>
-			<Button>,Art/Interface/Buttons/Builds/BuildLumberMill.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,7</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_SAWMILL</Type>
-			<LSystem>LSYSTEM_3x1</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/eu3_Euro_Workshop/west_workshop.nif</NIF>
+			<fInterfaceScale>0.3</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Kiln/Ancient/potteryshop.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/Sawmill.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/Stoneworks.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_HOLY_ROMAN_RATHAUS</Type>
@@ -2083,9 +2063,9 @@
 			<bAnimated>0</bAnimated>
 			<fScale>0.7</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Cliff Palace/mesaverde10.nif</NIF>
+			<NIF>Art/Structures/Buildings/Cliff_Palace/mesaverde10.nif</NIF>
 			<KFM/>
-			<Button>Art/Structures/Buildings/Cliff Palace/Button_Cliff_Palace.dds</Button>
+			<Button>Art/Structures/Buildings/Cliff_Palace/Button_Cliff_Palace.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GREAT_GEOGLYPH</Type>

@@ -581,12 +581,16 @@ def getUnitsForRole(iPlayer, iRole, bUnique=True):
 	units = [(iUnit, iUnitAI)]
 	
 	if iRole == iSettleSea:
-		# Half base, half settlers
-		for _ in range(infos.unit(iUnit).getCargoSpace()):
-			if _ % 2 == 0:
-				units.append(getUnitForRole(iPlayer, iBase, bUnique=bUnique))
-			else:
-				units.append(getUnitForRole(iPlayer, iSettle, bUnique=bUnique))
+		# If only one space, just put a settler
+		if infos.unit(iUnit).getCargoSpace() == 1:
+			units.append(getUnitForRole(iPlayer, iSettle, bUnique=bUnique))
+		# Otherwise, half base, half settlers
+		else:
+			for _ in range(infos.unit(iUnit).getCargoSpace()):
+				if _ % 2 == 0:
+					units.append(getUnitForRole(iPlayer, iBase, bUnique=bUnique))
+				else:
+					units.append(getUnitForRole(iPlayer, iSettle, bUnique=bUnique))
 	
 	elif iRole == iAssaultSea:
 		for _ in range(infos.unit(iUnit).getCargoSpace()):

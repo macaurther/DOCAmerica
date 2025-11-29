@@ -212,6 +212,7 @@ lCivilizations = [
 	Civilization(
 		iTiwanaku,
 		iGold=50,
+		lCivics=[iMita, iRedistribution],
 		techs=techs.column(2).including(iAgriculture, iPottery, iPastoralism, iMythology, iArithmetics, iMining, iMasonry),
 		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting),
 	),
@@ -225,8 +226,8 @@ lCivilizations = [
 	Civilization(
 		iMississippi,
 		iGold=25,
-		lCivics=[iChief, iClans, iSacrifice],
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iDugouts, iTanning, iDivination, iSeafaring),
+		lCivics=[iChief, iClans],
+		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iDugouts, iTanning, iDivination, iNavigation),
 		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iDiving, iFishing),
 	),
 	Civilization(
@@ -459,9 +460,10 @@ dStartingUnits = CivDict({
 		iDefend: 1,
 	},
 	iMississippi: {
-		iSettle: 2,
-		iWork: 1,
-		iBase: 1,
+		iSettle: 1,
+		iSettleSea: 1,
+		iWorkSea: 1,
+		iBase: 3,
 		iDefend: 1,
 	},
 	iPueblo: {

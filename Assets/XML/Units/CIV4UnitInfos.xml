@@ -2253,6 +2253,7 @@
 			<iCombatLimit>100</iCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
+			<iAnimalCombat>100</iAnimalCombat>
 			<iAsset>2</iAsset>
 			<UnitMeshGroups>
 				<iGroupSize>2</iGroupSize>

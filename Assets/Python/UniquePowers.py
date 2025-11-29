@@ -58,13 +58,18 @@ def desertPower(pCity):
 		for iBuilding in lFreeBuildings:
 			if not pCity.isHasRealBuilding(iBuilding):
 				pCity.setHasRealBuilding(iBuilding, True)
+				# Make sure Pueblo UP has a chance to proc
+				puebloPower(pCity, iBuilding)
 
-@handler("buildingBuilt")
 # Pueblo UP
+@handler("buildingBuilt")
+def puebloPowerTrigger(pCity, iBuilding):
+	puebloPower(pCity, iBuilding)
+
 def puebloPower(pCity, iBuilding):
 	if iBuilding == iStoneworks and civ(pCity.getOwner()) == iPueblo:
 		iNumPeakCanyons = plots.city_radius(pCity).where(lambda plot: plot.isPeak() or plot.getFeatureType() == iCanyon).count()
-		pCity.setBuildingCommerceChange(infos.building(iStoneworks).getBuildingClassType(), CommerceTypes.COMMERCE_CULTURE, iNumPeakCanyons)
+		pCity.setBuildingCommerceChange(infos.building(iStoneworks).getBuildingClassType(), CommerceTypes.COMMERCE_CULTURE, int(iNumPeakCanyons/2))
 
 @handler("cityAcquiredAndKept")
 # Chimu UP

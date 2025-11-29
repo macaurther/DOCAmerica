@@ -126,7 +126,7 @@ dGoals = {
 		CultureAmount(1500, at=650),
 	),
 	iTiwanaku: (
-		CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatProphet, 1, by=700),
+		CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatProphet, 2, by=700),
 		All(
 			Wonder(iKalasasaya),
 			Wonder(iGateOfTheSun),
@@ -153,13 +153,9 @@ dGoals = {
 		All(
 			BuildingCount(iPlatformMound, 6),
 			Wonder(iSerpentMound),
-			by=1200,
+			by=1100,
 		),
-		All(
-			CityBuilding(city(tCahokia).named(CAHOKIA), iPalace),
-			CitySpecialistCount(city(tCahokia).named(CAHOKIA), iSpecialistGreatMerchant, 3),
-			by=1400,
-		),
+		CitySpecialistCount(city(tCahokia).named(CAHOKIA), iSpecialistGreatMerchant, 3, by=1250),
 	),
 	iMuisca: (
 		ControlledResourceCount(iGold, 3, at=1150),
@@ -189,9 +185,9 @@ dGoals = {
 		All(
 			TradeConnection(),
 			SpecialistCount(iSpecialistGreatMerchant, 4),
-			by=1400,
+			at=1400,
 		),
-		UnitCount(iHorseArcher, 1, by=1680),
+		UnitCount(iHorseArcher, 1, by=1550),
 	),
 	iPurepecha: (
 		ControlledResourceCount(iFish, 2, by=1300),
