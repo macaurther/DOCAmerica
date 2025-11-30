@@ -17,24 +17,14 @@
 			<Button>,Art/Interface/Buttons/Buildings/Palace.dds,Art/Interface/Buttons/Buildings_Atlas.dds,6,5</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_WALLS</Type>
+			<Type>ART_DEF_BUILDING_PALISADE</Type>
 			<LSystem>LSYSTEM_WALLS</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Walls/Walls.nif</NIF>
 			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Wall.dds,Art/Interface/Buttons/Buildings_Atlas.dds,8,7</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_CASTLE</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>2.01</fScale>
-			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Castle/Castle.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Castle.dds,Art/Interface/Buttons/Buildings_Atlas.dds,2,8</Button>
+			<Button>Art/Interface/Buttons/Buildings/Palisade.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_BARRACKS</Type>
@@ -1806,16 +1796,6 @@
 			<NIF>Art/Structures/Improvements/Fort/eu_med_fort.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Trading_Fort.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_PALISADE</Type>
-			<LSystem>LSYSTEM_3x1</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Structures/Improvements/Pasture/Pasture.nif</NIF>
-			<KFM>Art/Structures/Improvements/Pasture/Pasture.kfm</KFM>
-			<Button>Art/Interface/Buttons/Buildings/Palisade.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SCHOOLHOUSE</Type>

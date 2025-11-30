@@ -3212,42 +3212,15 @@
 		<Width>1</Width>
 		<Height>1</Height>
 		<ArtRef Name="building:LSYSTEM_WALLS">
+			<Attribute Class="Era">ERA_ALL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
 			<Attribute Class="Scalar">szSpecialLayout:CityCenter</Attribute>
 			<Attribute Class="Scalar">szBuilder:WallBuilder</Attribute>
 			<Attribute Class="Scalar">bLayoutAfterGenerics:1</Attribute>
 			<Attribute Class="Scalar">bNoContour:1</Attribute>
+			<Attribute Class="Scalar">szPostArtFile:Art/Structures/Buildings/Walls/Palisade/post01_eu_an.nif</Attribute>
+			<Attribute Class="Scalar">szWallArtFile:Art/Structures/Buildings/Walls/Palisade/wall%1_eu_med.nif</Attribute>
 			<Rotate>45</Rotate>
-			<!-- this needs to be the negative of the CITY_TWIST value in detail manager; note that this uses degrees but DetailManager uses radians. Sorry. -->
-		</ArtRef>
-		<ArtRef Name="building:LSYSTEM_RUSSIAN_WALLS">
-			<Attribute Class="Scalar">szSpecialLayout:CityCenter</Attribute>
-			<Attribute Class="Scalar">szBuilder:WallBuilder</Attribute>
-			<Attribute Class="Scalar">bLayoutAfterGenerics:1</Attribute>
-			<Attribute Class="Scalar">bNoContour:1</Attribute>
-			<Attribute Class="Scalar">szPostArtFile:Art/2ndUUB/Buildings/Russia/post01_rus_ren.nif</Attribute>
-			<Attribute Class="Scalar">szWallArtFile:Art/2ndUUB/Buildings/Russia/wall%1_rus_ren.nif</Attribute>
-			<Rotate>45</Rotate>
-			<!-- this needs to be the negative of the CITY_TWIST value in detail manager; note that this uses degrees but DetailManager uses radians. Sorry. -->
-		</ArtRef>
-		<ArtRef Name="building:LSYSTEM_CELTIC_DUN">
-			<Attribute Class="Scalar">szSpecialLayout:CityCenter</Attribute>
-			<Attribute Class="Scalar">szBuilder:WallBuilder</Attribute>
-			<Attribute Class="Scalar">bLayoutAfterGenerics:1</Attribute>
-			<Attribute Class="Scalar">bNoContour:1</Attribute>
-			<Attribute Class="Scalar">szPostArtFile:Art/Structures/Buildings/Celtic_Dun/Celtic_Dun_Post.nif</Attribute>
-			<Attribute Class="Scalar">szWallArtFile:Art/Structures/Buildings/Celtic_Dun/Celtic_Dun_Wall_%1.nif</Attribute>
-			<Rotate>45</Rotate>
-			<!-- this needs to be the negative of the CITY_TWIST value in detail manager; note that this uses degrees but DetailManager uses radians. Sorry. -->
-		</ArtRef>
-		<ArtRef Name="building:LSYSTEM_HIGH_WALLS">
-			<Attribute Class="Scalar">szSpecialLayout:CityCenter</Attribute>
-			<Attribute Class="Scalar">szBuilder:WallBuilder</Attribute>
-			<Attribute Class="Scalar">bLayoutAfterGenerics:1</Attribute>
-			<Attribute Class="Scalar">bNoContour:1</Attribute>
-			<Attribute Class="Scalar">szPostArtFile:Art/Structures/Buildings/Tall Wall/post01_tall.nif</Attribute>
-			<Attribute Class="Scalar">szWallArtFile:Art/Structures/Buildings/Tall Wall/wall%1_tall.nif</Attribute>
-			<Rotate>45</Rotate>
-			<!-- this needs to be the negative of the CITY_TWIST value in detail manager; note that this uses degrees but DetailManager uses radians. Sorry. -->
 		</ArtRef>
 		<ArtRef Name="building:LSYSTEM_AQUEDUCT">
 			<Attribute Class="Scalar">szSpecialLayout:CityCenter</Attribute>
