@@ -8568,6 +8568,8 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 		pCombatDetails->iCityDefenseModifier = 0;
 		pCombatDetails->iHillsAttackModifier = 0;
 		pCombatDetails->iHillsDefenseModifier = 0;
+		pCombatDetails->iRoughAttackModifier = 0; // MacAurther
+		pCombatDetails->iRoughDefenseModifier = 0; // MacAurther
 		pCombatDetails->iPlainsAttackModifier = 0; // Leoreth
 		pCombatDetails->iPlainsDefenseModifier = 0; // Leoreth
 		pCombatDetails->iRiverAttackModifier = 0; // Leoreth
@@ -8830,6 +8832,17 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 			if (pCombatDetails != NULL)
 			{
 				pCombatDetails->iHillsAttackModifier = iExtraModifier;
+			}
+		}
+
+		// MacAurther
+		if (pAttackedPlot->isRough())
+		{
+			iExtraModifier = -pAttacker->roughAttackModifier();
+			iTempModifier += iExtraModifier;
+			if (pCombatDetails != NULL)
+			{
+				pCombatDetails->iRoughAttackModifier = iExtraModifier;
 			}
 		}
 
@@ -9755,6 +9768,20 @@ int CvUnit::hillsAttackModifier() const
 int CvUnit::hillsDefenseModifier() const
 {
 	return (m_pUnitInfo->getHillsDefenseModifier() + getExtraHillsDefensePercent());
+}
+
+
+// MacAurther
+int CvUnit::roughAttackModifier() const
+{
+	return m_pUnitInfo->getRoughAttackModifier();
+}
+
+
+// MacAurther
+int CvUnit::roughDefenseModifier() const
+{
+	return m_pUnitInfo->getRoughDefenseModifier();
 }
 
 

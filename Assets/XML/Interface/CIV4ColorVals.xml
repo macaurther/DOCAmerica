@@ -1407,5 +1407,61 @@
 			<fBlue>0.81</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_CIVILIZATION_LIGHT_ORANGE</Type>
+			<fRed>0.90</fRed>
+			<fGreen>0.65</fGreen>
+			<fBlue>0.00</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_CIVILIZATION_LIGHT_ORANGE_TEXT</Type>
+			<fRed>0.90</fRed>
+			<fGreen>0.65</fGreen>
+			<fBlue>0.00</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_CIVILIZATION_DARK_RED</Type>
+			<fRed>0.60</fRed>
+			<fGreen>0.00</fGreen>
+			<fBlue>0.00</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_CIVILIZATION_DARK_RED_TEXT</Type>
+			<fRed>1.00</fRed>
+			<fGreen>0.22</fGreen>
+			<fBlue>0.22</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_CIVILIZATION_BEIGE</Type>
+			<fRed>0.75</fRed>
+			<fGreen>0.70</fGreen>
+			<fBlue>0.45</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_CIVILIZATION_BEIGE_TEXT</Type>
+			<fRed>0.75</fRed>
+			<fGreen>0.70</fGreen>
+			<fBlue>0.45</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_CIVILIZATION_BROWN</Type>
+			<fRed>0.45</fRed>
+			<fGreen>0.30</fGreen>
+			<fBlue>0.10</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_CIVILIZATION_BROWN_TEXT</Type>
+			<fRed>0.90</fRed>
+			<fGreen>0.65</fGreen>
+			<fBlue>0.30</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
 	</ColorVals>
 </Civ4ColorVals>

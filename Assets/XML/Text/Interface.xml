@@ -2655,6 +2655,30 @@
 		<Spanish>Light Cavalry Units</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROUGH_STRENGTH</Tag>
+		<English>[ICON_BULLET]%D1_Change%% Rough Terrain Strength</English>
+		<French>[ICON_BULLET]%D1_Change%% Rough Terrain Strength</French>
+		<German>[ICON_BULLET]%D1_Change%% Rough Terrain Strength</German>
+		<Italian>[ICON_BULLET]%D1_Change%% Rough Terrain Strength</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change%% Rough Terrain Strength</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROUGH_ATTACK</Tag>
+		<English>[ICON_BULLET]%D1_Change%% Rough Terrain Attack</English>
+		<French>[ICON_BULLET]%D1_Change%% Rough Terrain Attack</French>
+		<German>[ICON_BULLET]%D1_Change%% Rough Terrain Attack</German>
+		<Italian>[ICON_BULLET]%D1_Change%% Rough Terrain Attack</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change%% Rough Terrain Attack</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROUGH_DEFENSE</Tag>
+		<English>[ICON_BULLET]%D1_Change%% Rough Terrain Defense</English>
+		<French>[ICON_BULLET]%D1_Change%% Rough Terrain Defense</French>
+		<German>[ICON_BULLET]%D1_Change%% Rough Terrain Defense</German>
+		<Italian>[ICON_BULLET]%D1_Change%% Rough Terrain Defense</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change%% Rough Terrain Defense</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_PLAINS_STRENGTH</Tag>
 		<English>[ICON_BULLET]%D1_Change%% Open Terrain Strength</English>
 		<French>[ICON_BULLET]%D1_Change%% de puissance en terrain d&#233;gag&#233;</French>
@@ -2685,6 +2709,14 @@
 		<German>[ICON_BULLET]%D1_Change%% Attack Along Rivers</German>
 		<Italian>[ICON_BULLET]%D1_Change%% Attack Along Rivers</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% Attack Along Rivers</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMBAT_PLOT_ROUGH_MOD</Tag>
+		<English>[ICON_BULLET]%D1_Bonus%% from Rough Terrain (Unit Ability)</English>
+		<French>[ICON_BULLET]%D1_Bonus%% from Rough Terrain (Unit Ability)</French>
+		<German>[ICON_BULLET]%D1_Bonus%% from Rough Terrain (Unit Ability)</German>
+		<Italian>[ICON_BULLET]%D1_Bonus%% from Rough Terrain (Unit Ability)</Italian>
+		<Spanish>[ICON_BULLET]%D1_Bonus%% from Rough Terrain (Unit Ability)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_PLAINS_MOD</Tag>

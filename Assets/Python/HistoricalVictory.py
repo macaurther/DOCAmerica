@@ -193,7 +193,7 @@ dGoals = {
 		ControlledResourceCount(iFish, 2, by=1300),
 		All(
 			UnitLevelCount(3, 10),
-			UnitCount(sum(iMacana, iArcher), 25),
+			UnitCount(sum(iQuangariecha, iArcher), 25),
 			by=1500,
 		),
 		All(

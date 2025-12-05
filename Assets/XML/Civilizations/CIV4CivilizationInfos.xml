@@ -1211,7 +1211,7 @@
 			<ShortDescription>TXT_KEY_CIV_HAUDENOSAUNEE_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_HAUDENOSAUNEE_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_HAUDENOSAUNEE_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_HAUDENOSAUNEE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_IROQUOIS</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_HAUDENOSAUNEE</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
@@ -1510,10 +1510,6 @@
 				</Building>
 			</Buildings>
 			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_ATLATLIST</UnitClassType>
-					<UnitType>UNIT_INCAN_SLINGER</UnitType>
-				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_MACEMAN</UnitClassType>
 					<UnitType>UNIT_INCAN_AUCAC</UnitType>
@@ -2741,7 +2737,7 @@
 			<ShortDescription>TXT_KEY_CIV_PUEBLO_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_PUEBLO_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_PUEBLO_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_DARK_ORANGE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_PUEBLO</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_PUEBLO</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
@@ -2893,7 +2889,7 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_MACEMAN</UnitClassType>
-					<UnitType>UNIT_PUREPECHA_MACANA</UnitType>
+					<UnitType>UNIT_PUREPECHA_QUANGARIECHA</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -3527,8 +3523,8 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
-					<UnitType>UNIT_WARI_PICTA</UnitType>
+					<UnitClassType>UNITCLASS_ATLATLIST</UnitClassType>
+					<UnitType>UNIT_WARI_SLINGER</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -3703,8 +3699,6 @@
 			<bAIPlayable>0</bAIPlayable>
 			<Cities>
 				<City>Cherokee</City>
-				<City>Anasazi</City>
-				<City>Teoihuacan</City>
 				<City>Olmec</City>
 				<City>Chinook</City>
 				<City>Apache</City>
@@ -4362,7 +4356,6 @@
 			<bAIPlayable>0</bAIPlayable>
 			<Cities>
 				<City>Cherokee</City>
-				<City>Anasazi</City>
 				<City>Olmec</City>
 				<City>Chinook</City>
 				<City>Apache</City>

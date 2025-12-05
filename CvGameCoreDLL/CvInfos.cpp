@@ -3363,6 +3363,8 @@ m_iCityDefenseModifier(0),
 m_iAnimalCombatModifier(0),
 m_iHillsAttackModifier(0),
 m_iHillsDefenseModifier(0),
+m_iRoughAttackModifier(0), // MacAurther
+m_iRoughDefenseModifier(0), // MacAurther
 m_iPlainsAttackModifier(0), // Leoreth
 m_iPlainsDefenseModifier(0), // Leoreth
 m_iBombRate(0),
@@ -3736,6 +3738,18 @@ int CvUnitInfo::getHillsAttackModifier() const
 int CvUnitInfo::getHillsDefenseModifier() const
 {
 	return m_iHillsDefenseModifier;
+}
+
+// MacAurther
+int CvUnitInfo::getRoughAttackModifier() const
+{
+	return m_iRoughAttackModifier;
+}
+
+// MacAurther
+int CvUnitInfo::getRoughDefenseModifier() const
+{
+	return m_iRoughDefenseModifier;
 }
 
 // Leoreth
@@ -4657,6 +4671,8 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iAnimalCombatModifier);
 	stream->Read(&m_iHillsAttackModifier);
 	stream->Read(&m_iHillsDefenseModifier);
+	stream->Read(&m_iRoughAttackModifier); // MacAurther
+	stream->Read(&m_iRoughDefenseModifier); // MacAurther
 	stream->Read(&m_iPlainsAttackModifier); // Leoreth
 	stream->Read(&m_iPlainsDefenseModifier); // Leoreth
 	stream->Read(&m_iBombRate);
@@ -4978,6 +4994,8 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iAnimalCombatModifier);
 	stream->Write(m_iHillsAttackModifier);
 	stream->Write(m_iHillsDefenseModifier);
+	stream->Write(m_iRoughAttackModifier); // MacAurther
+	stream->Write(m_iRoughDefenseModifier); // MacAurther
 	stream->Write(m_iPlainsAttackModifier); // Leoreth
 	stream->Write(m_iPlainsDefenseModifier); // Leoreth
 	stream->Write(m_iBombRate);
@@ -5394,6 +5412,8 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iAnimalCombatModifier, "iAnimalCombat");
 	pXML->GetChildXmlValByName(&m_iHillsAttackModifier, "iHillsAttack");
 	pXML->GetChildXmlValByName(&m_iHillsDefenseModifier, "iHillsDefense");
+	pXML->GetChildXmlValByName(&m_iRoughAttackModifier, "iRoughAttack"); // Leoreth
+	pXML->GetChildXmlValByName(&m_iRoughDefenseModifier, "iRoughDefense"); // Leoreth
 	pXML->GetChildXmlValByName(&m_iPlainsAttackModifier, "iPlainsAttack"); // Leoreth
 	pXML->GetChildXmlValByName(&m_iPlainsDefenseModifier, "iPlainsDefense"); // Leoreth
 

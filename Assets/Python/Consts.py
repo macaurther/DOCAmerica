@@ -516,7 +516,7 @@ iNumUnits = 150
 iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iTrackman,		iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       iAgent,			
 iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iImmigrant,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,
 iRanger,		iFactor,		iParatrooper,	iMilitiaSpearman,iFalconDancer,	iMilitiaPikeman,iMilitiaArquebusier,iMilitiaMusketman,iMinuteman,iMilitiaRifleman,		
-iMilitiaInfantry,iWarrior, 		iKoa,			iMohawk,		iSwordsman,		iAztecJaguar,	iMaceman,		iAucac,			iMacana,		iArquebusier,	
+iMilitiaInfantry,iWarrior, 		iKoa,			iMohawk,		iSwordsman,		iAztecJaguar,	iMaceman,		iAucac,			iQuangariecha,	iArquebusier,	
 iArmedSlave,	iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iSpearman,		
 iSuchucChiqui,	iLightningWarrior,iPikeman,		iEagle,			iPikeAndShot,	iLineInfantry,	iRedcoat,		iAntiTank,		iArcher,		iPicta,			
 iGuecha,		iCrossbowman,	iGatlingGun,	iMachineGun,	iAtlatlist,		iHolkan,		iSlinger,		iLongbowman,	iSkirmisher,	iGrenadier,		

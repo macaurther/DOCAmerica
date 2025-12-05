@@ -12239,6 +12239,12 @@ bool CvPlot::isStrait() const
 	return getFeatureType() == FEATURE_STRAIT || getFeatureType() == FEATURE_STRAIT_ISLANDS;
 }
 
+bool CvPlot::isRough() const
+{
+	return !isPlains() && !isCity(true);
+}
+
+
 // MacAurther: Forts
 PlayerTypes CvPlot::getFortOwner() const
 {

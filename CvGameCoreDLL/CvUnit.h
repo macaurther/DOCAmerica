@@ -34,6 +34,8 @@ struct DllExport CombatDetails					// Exposed to Python
 	int iCityDefenseModifier;
 	int iHillsAttackModifier;
 	int iHillsDefenseModifier;
+	int iRoughAttackModifier; // MacAurther
+	int iRoughDefenseModifier; // MacAurther
 	int iPlainsAttackModifier; // Leoreth
 	int iPlainsDefenseModifier; // Leoreth
 	int iFeatureAttackModifier;
@@ -436,6 +438,8 @@ public:
 	int animalCombatModifier() const;																				// Exposed to Python
 	int hillsAttackModifier() const;																				// Exposed to Python
 	int hillsDefenseModifier() const;																				// Exposed to Python
+	int roughAttackModifier() const; // MacAurther
+	int roughDefenseModifier() const; // MacAurther
 	int plainsAttackModifier() const; // Leoreth
 	int plainsDefenseModifier() const; // Leoreth
 	int riverAttackModifier() const; // Leoreth

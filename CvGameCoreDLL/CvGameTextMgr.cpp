@@ -1006,6 +1006,30 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 			}
 		}
 
+		// MacAurther
+		if (pUnit->roughAttackModifier() == pUnit->roughDefenseModifier())
+		{
+			if (pUnit->roughAttackModifier() != 0)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_UNIT_ROUGH_STRENGTH", pUnit->roughAttackModifier()));
+			}
+		}
+		else
+		{
+			if (pUnit->roughAttackModifier() != 0)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_UNIT_ROUGH_ATTACK", pUnit->roughAttackModifier()));
+			}
+
+			if (pUnit->roughDefenseModifier() != 0)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_UNIT_ROUGH_DEFENSE", pUnit->roughDefenseModifier()));
+			}
+		}
+
 		// Leoreth
 		if (pUnit->plainsAttackModifier() == pUnit->plainsDefenseModifier())
 		{
@@ -3380,6 +3404,18 @@ It is fine for a human player mouse-over (which is what it is used for).
                         }
                     }
 
+					// MacAurther
+					if (pPlot->isRough())
+					{
+						iModifier = pAttacker->roughAttackModifier();
+
+						if (iModifier != 0)
+						{
+							szString.append(NEWLINE);
+							szString.append(gDLL->getText("TXT_KEY_COMBAT_PLOT_ROUGH_MOD", -iModifier));
+						}
+					}
+
 					// Leoreth
 					if (pPlot->isPlains())
 					{
@@ -3560,6 +3596,18 @@ It is fine for a human player mouse-over (which is what it is used for).
 				{
 					szString.append(NEWLINE);
 					szString.append(gDLL->getText("TXT_KEY_COMBAT_PLOT_HILLS_MOD", iModifier));
+				}
+			}
+
+			// MacAurther
+			if (pPlot->isRough())
+			{
+				iModifier = pAttacker->roughAttackModifier();
+
+				if (iModifier != 0)
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_COMBAT_PLOT_ROUGH_MOD", iModifier));
 				}
 			}
 
@@ -9482,6 +9530,30 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 		{
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_HILLS_DEFENSE", GC.getUnitInfo(eUnit).getHillsDefenseModifier()));
+		}
+	}
+
+	// MacAurther
+	if (GC.getUnitInfo(eUnit).getRoughAttackModifier() == GC.getUnitInfo(eUnit).getRoughDefenseModifier())
+	{
+		if (GC.getUnitInfo(eUnit).getRoughAttackModifier() != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_ROUGH_STRENGTH", GC.getUnitInfo(eUnit).getRoughAttackModifier()));
+		}
+	}
+	else
+	{
+		if (GC.getUnitInfo(eUnit).getRoughAttackModifier() != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_ROUGH_ATTACK", GC.getUnitInfo(eUnit).getRoughAttackModifier()));
+		}
+
+		if (GC.getUnitInfo(eUnit).getRoughDefenseModifier() != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_ROUGH_DEFENSE", GC.getUnitInfo(eUnit).getRoughDefenseModifier()));
 		}
 	}
 

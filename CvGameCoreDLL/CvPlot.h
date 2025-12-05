@@ -588,6 +588,7 @@ public:
 	// MacAurther
 	void improveTile();
 	bool isStrait() const;
+	bool isRough() const;
 
 	// MacAurther: Forts
 	PlayerTypes getFortOwner() const;

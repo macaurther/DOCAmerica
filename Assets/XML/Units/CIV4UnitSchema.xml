@@ -367,6 +367,8 @@
 	<ElementType name="iAnimalCombat" content="textOnly" dt:type="int"/>
 	<ElementType name="iHillsAttack" content="textOnly" dt:type="int"/>
 	<ElementType name="iHillsDefense" content="textOnly" dt:type="int"/>
+	<ElementType name="iRoughAttack" content="textOnly" dt:type="int"/>
+	<ElementType name="iRoughDefense" content="textOnly" dt:type="int"/>
 	<ElementType name="iPlainsAttack" content="textOnly" dt:type="int"/>
 	<ElementType name="iPlainsDefense" content="textOnly" dt:type="int"/>
 	<ElementType name="iKamikazePercent" content="textOnly" dt:type="int"/>
@@ -650,6 +652,8 @@
 		<element type="iAnimalCombat" minOccurs="0"/>
 		<element type="iHillsAttack" minOccurs="0"/>
 		<element type="iHillsDefense" minOccurs="0"/>
+		<element type="iRoughAttack" minOccurs="0"/>
+		<element type="iRoughDefense" minOccurs="0"/>
 		<element type="iPlainsAttack" minOccurs="0"/>
 		<element type="iPlainsDefense" minOccurs="0"/>
 		<element type="TerrainNatives" minOccurs="0"/>

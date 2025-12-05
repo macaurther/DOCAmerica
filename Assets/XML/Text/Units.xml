@@ -507,11 +507,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MAYAN_HOLKAN_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight.</English>
-		<French>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight.</French>
-		<German>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</English>
+		<French>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</French>
+		<German>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INCAN_AUCAC_STRATEGY</Tag>
@@ -1695,11 +1695,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MISSISSIPPI_FALCON_DANCER_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals.</English>
-		<French>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals.</French>
-		<German>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals and starts with River Combat.</English>
+		<French>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals and starts with River Combat.</French>
+		<German>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals and starts with River Combat.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals and starts with River Combat.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals and starts with River Combat.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INUIT_DOG_SLED</Tag>
@@ -1882,7 +1882,7 @@
 		<Spanish>[COLOR_UNIT_TEXT]RPGs[COLOR_REVERT] can intercept aircraft, have a combat bonus against [COLOR_UNIT_TEXT]Armored Units[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Ambush[COLOR_REVERT] promotion.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_INCAN_SLINGER</Tag>
+		<Tag>TXT_KEY_UNIT_WARI_SLINGER</Tag>
 		<English>Slinger</English>
 		<French>Slinger</French>
 		<German>Slinger</German>
@@ -1890,12 +1890,12 @@
 		<Spanish>Slinger</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_INCAN_SLINGER_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is cheaper and has extra strength when defending in hills.</English>
-		<French>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is cheaper and has extra strength when defending in hills.</French>
-		<German>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is cheaper and has extra strength when defending in hills.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is cheaper and has extra strength when defending in hills.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is cheaper and has extra strength when defending in hills.</Spanish>
+		<Tag>TXT_KEY_UNIT_WARI_SLINGER_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</English>
+		<French>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</French>
+		<German>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GATLING_GUN</Tag>
@@ -2238,20 +2238,20 @@
 		<Spanish>This unit, the Zapotec replacement for the Spearman, has the standard bonus against Cavalry units, but also starts with the Shock promotion, making it fairly effective against melee units as well.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_PUREPECHA_MACANA</Tag>
-		<English>Macana</English>
-		<French>Macana</French>
-		<German>Macana</German>
-		<Italian>Macana</Italian>
-		<Spanish>Macana</Spanish>
+		<Tag>TXT_KEY_UNIT_PUREPECHA_QUANGARIECHA</Tag>
+		<English>Quangariecha</English>
+		<French>Quangariecha</French>
+		<German>Quangariecha</German>
+		<Italian>Quangariecha</Italian>
+		<Spanish>Quangariecha</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_PUREPECHA_MACANA_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</English>
-		<French>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</French>
-		<German>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</Spanish>
+		<Tag>TXT_KEY_UNIT_PUREPECHA_QUANGARIECHA_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</English>
+		<French>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</French>
+		<German>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LIGHT_SWORDSMAN_STRATEGY</Tag>

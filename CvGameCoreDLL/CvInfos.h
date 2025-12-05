@@ -876,6 +876,8 @@ public:
 	int getAnimalCombatModifier() const;			// Exposed to Python
 	int getHillsAttackModifier() const;			// Exposed to Python
 	int getHillsDefenseModifier() const;			// Exposed to Python
+	int getRoughAttackModifier() const; // MacAurther
+	int getRoughDefenseModifier() const; // MacAurther
 	int getPlainsAttackModifier() const; // Leoreth
 	int getPlainsDefenseModifier() const; // Leoreth
 	int getBombRate() const;									// Exposed to Python
@@ -1082,6 +1084,8 @@ protected:
 	int m_iAnimalCombatModifier;
 	int m_iHillsAttackModifier;
 	int m_iHillsDefenseModifier;
+	int m_iRoughAttackModifier; // MacAurther
+	int m_iRoughDefenseModifier; // MacAurther
 	int m_iPlainsAttackModifier; // Leoreth
 	int m_iPlainsDefenseModifier; // Leoreth
 	int m_iBombRate;
