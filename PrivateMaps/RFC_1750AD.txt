@@ -100,7 +100,7 @@ BeginPlot
 	x=7,y=116
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_ATLATLIST
+		UnitType=UNIT_SKIRMISHER
 		UnitOwner=CIVILIZATION_INUIT
 	EndUnit
 	BeginUnit
@@ -551,7 +551,7 @@ BeginPlot
 	x=11,y=117
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_ATLATLIST
+		UnitType=UNIT_SKIRMISHER
 		UnitOwner=CIVILIZATION_INUIT
 	EndUnit
 	BeginUnit

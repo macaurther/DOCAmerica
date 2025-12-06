@@ -516,11 +516,11 @@ iNumUnits = 150
 iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iTrackman,		iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       iAgent,			
 iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iImmigrant,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,
 iRanger,		iFactor,		iParatrooper,	iMilitiaSpearman,iFalconDancer,	iMilitiaPikeman,iMilitiaArquebusier,iMilitiaMusketman,iMinuteman,iMilitiaRifleman,		
-iMilitiaInfantry,iWarrior, 		iKoa,			iMohawk,		iSwordsman,		iAztecJaguar,	iMaceman,		iAucac,			iQuangariecha,	iArquebusier,	
-iArmedSlave,	iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iSpearman,		
-iSuchucChiqui,	iLightningWarrior,iPikeman,		iEagle,			iPikeAndShot,	iLineInfantry,	iRedcoat,		iAntiTank,		iArcher,		iPicta,			
-iGuecha,		iCrossbowman,	iGatlingGun,	iMachineGun,	iAtlatlist,		iHolkan,		iSlinger,		iLongbowman,	iSkirmisher,	iGrenadier,		
-iCacos,			iAlbionLegion,	iMarine,		iHorseArcher,	iSwiftArrow,	iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		
+iMilitiaInfantry,iWarrior, 		iKoa,			iTomahawk,		iSwordsman,		iAztecJaguar,	iAxeman,		iMaceman,		iAucac,			iQuangariecha,	
+iArquebusier,	iMohawk,		iArmedSlave,	iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		
+iFARs,			iSpearman,		iXhisxyag,		iPikeman,		iEagle,			iTercio,		iLineInfantry,	iRedcoat,		iAntiTank,		iArcher,		
+iGuecha,		iCrossbowman,	iGatlingGun,	iMachineGun,	iSkirmisher,	iHolkan,		iSlinger,		iLongbowman,	iIrregular,		iCacos,			
+iGrenadier,		iAlbionLegion,	iMarine,		iHorseArcher,	iSwiftArrow,	iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		
 iGrenadierCavalry,iRural,		iLightTank,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iAAGun,		
 
 # Naval Units (27)
@@ -886,7 +886,7 @@ lMigrantWorkers = [iTrackman]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger, iFactor]
 lMilitia = [iMilitiaPikeman, iMilitiaArquebusier, iMilitiaMusketman, iMilitiaRifleman, iMilitiaInfantry]
 lMainlineMercs = [iArquebusier, iMusketman, iCompagnies, iFusilier, iRifleman, iInfantry]
-lEliteMercs = [iPikeman, iPikeAndShot, iLineInfantry, iRedcoat, iAntiTank]
+lEliteMercs = [iPikeman, iTercio, iLineInfantry, iRedcoat, iAntiTank]
 lCollateralMercs = [iCrossbowman, iGatlingGun, iMachineGun]
 lSkirmishMercs = [iSkirmisher, iGrenadier, iMarine]
 lCavalryMercs = [iCuirassier, iConquistador, iDragoon, iCavalry, iLightTank, iTank]
@@ -993,7 +993,7 @@ iFusilier : 			[(1700, 1800), 		lHomelandsEuropePlus],
 iRifleman : 			[(1800, 1900), 		lHomelandsEuropePlus],
 iInfantry : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
 iPikeman : 				[(1500, 1550), 		lHomelandsEurope],
-iPikeAndShot : 			[(1550, 1700), 		lHomelandsEurope],
+iTercio : 				[(1550, 1700), 		[iHomelandSouthEurope]],
 iLineInfantry : 		[(1700, 1800), 		lHomelandsEuropePlus],
 iRedcoat : 				[(1700, 1800), 		[iHomelandNorthEurope]],
 iAntiTank : 			[(1930, iEndDate), 	lHomelandsEuropePlus],

@@ -62,11 +62,11 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_ATLATLIST</UnitType>
+					<UnitType>UNIT_SKIRMISHER</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_ATLATLIST_EUROPEAN</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_ATLATLIST_EUROPEAN</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_ATLATLIST_EUROPEAN</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SKIRMISHER_EUROPEAN</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SKIRMISHER_EUROPEAN</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SKIRMISHER_EUROPEAN</LateArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 			</StyleUnits>
@@ -213,21 +213,21 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_ATLATLIST</UnitType>
+					<UnitType>UNIT_SKIRMISHER</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_ATLATLIST_SOUTH_AMERICAN</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_ATLATLIST_SOUTH_AMERICAN</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_ATLATLIST_SOUTH_AMERICAN</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SKIRMISHER_SOUTH_AMERICAN</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SKIRMISHER_SOUTH_AMERICAN</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SKIRMISHER_SOUTH_AMERICAN</LateArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_ATLATLIST_SOUTH_AMERICAN</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_ATLATLIST_SOUTH_AMERICAN</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_ATLATLIST_SOUTH_AMERICAN</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SKIRMISHER_SOUTH_AMERICAN</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SKIRMISHER_SOUTH_AMERICAN</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SKIRMISHER_SOUTH_AMERICAN</LateArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_ATLATLIST_SOUTH_AMERICAN</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_ATLATLIST_SOUTH_AMERICAN</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_ATLATLIST_SOUTH_AMERICAN</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SKIRMISHER_SOUTH_AMERICAN</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SKIRMISHER_SOUTH_AMERICAN</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SKIRMISHER_SOUTH_AMERICAN</LateArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
@@ -378,11 +378,11 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_ATLATLIST</UnitType>
+					<UnitType>UNIT_SKIRMISHER</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_ATLATLIST_AFRICAN</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_ATLATLIST_AFRICAN</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_ATLATLIST_AFRICAN</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SKIRMISHER_AFRICAN</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SKIRMISHER_AFRICAN</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SKIRMISHER_AFRICAN</LateArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>

@@ -642,7 +642,7 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_SPEARMAN</UnitClassType>
-					<UnitType>UNIT_CHIMU_SUCHUC_CHIQUI</UnitType>
+					<UnitType>UNIT_CHIMU_AXEMAN</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -1169,7 +1169,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_GRENADIER</UnitClassType>
+					<UnitClassType>UNITCLASS_IRREGULAR</UnitClassType>
 					<UnitType>UNIT_HAITIAN_CACOS</UnitType>
 				</Unit>
 			</Units>
@@ -1314,6 +1314,10 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+					<UnitType>UNIT_HAUDENOSAUNEE_TOMAHAWK</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_ARQUEBUSIER</UnitClassType>
 					<UnitType>UNIT_HAUDENOSAUNEE_MOHAWK</UnitType>
 				</Unit>
 			</Units>
@@ -1513,6 +1517,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_MACEMAN</UnitClassType>
 					<UnitType>UNIT_INCAN_AUCAC</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_PIKEMAN</UnitClassType>
+					<UnitType>UNIT_INCAN_HALBERDIER</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -1841,7 +1849,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_ATLATLIST</UnitClassType>
+					<UnitClassType>UNITCLASS_SKIRMISHER</UnitClassType>
 					<UnitType>UNIT_MAYAN_HOLKAN</UnitType>
 				</Unit>
 			</Units>
@@ -3523,7 +3531,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_ATLATLIST</UnitClassType>
+					<UnitClassType>UNITCLASS_SKIRMISHER</UnitClassType>
 					<UnitType>UNIT_WARI_SLINGER</UnitType>
 				</Unit>
 			</Units>
@@ -3635,7 +3643,7 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_SPEARMAN</UnitClassType>
-					<UnitType>UNIT_ZAPOTEC_LIGHTNING</UnitType>
+					<UnitType>UNIT_ZAPOTEC_XHISXYAG</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>

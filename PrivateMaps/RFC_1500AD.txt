@@ -485,7 +485,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_ZAPOTEC_LIGHTNING
+		UnitType=UNIT_ZAPOTEC_XHISXYAG
 		UnitOwner=CIVILIZATION_ZAPOTEC
 	EndUnit
 EndPlot
@@ -765,7 +765,7 @@ EndPlot
 BeginPlot
 	x=15,y=64
 	BeginUnit
-		UnitType=UNIT_ZAPOTEC_LIGHTNING
+		UnitType=UNIT_ZAPOTEC_XHISXYAG
 		UnitOwner=CIVILIZATION_ZAPOTEC
 	EndUnit
 	BeginUnit
@@ -1072,7 +1072,7 @@ BeginPlot
 	x=19,y=60
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_ZAPOTEC_LIGHTNING
+		UnitType=UNIT_ZAPOTEC_XHISXYAG
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
 	BeginUnit
@@ -1292,11 +1292,11 @@ BeginPlot
 	x=21,y=57
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_ZAPOTEC_LIGHTNING
+		UnitType=UNIT_ZAPOTEC_XHISXYAG
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_ZAPOTEC_LIGHTNING
+		UnitType=UNIT_ZAPOTEC_XHISXYAG
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
 	BeginCity
@@ -1446,7 +1446,7 @@ BeginPlot
 	x=22,y=59
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_ZAPOTEC_LIGHTNING
+		UnitType=UNIT_ZAPOTEC_XHISXYAG
 		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginCity
@@ -1503,7 +1503,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_ATLATLIST
+		UnitType=UNIT_SKIRMISHER
 		UnitOwner=CIVILIZATION_INCA
 	EndUnit
 EndPlot
@@ -1997,7 +1997,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_INCA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_ATLATLIST
+		UnitType=UNIT_SKIRMISHER
 		UnitOwner=CIVILIZATION_INCA
 	EndUnit
 	BeginUnit

@@ -396,9 +396,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Unique/Aztec/Jaguar/Aztec_Jaguar.nif</NIF>
+			<NIF>Art/Units (Civilizations)/Aztec/Aztec Jaguar Warrior/newaztec_jaguar.nif</NIF>
 			<KFM>Art/Units/Unique/Aztec/Jaguar/Aztec_Jaguar.kfm</KFM>
-			<SHADERNIF>Art/Units/Unique/Aztec/Jaguar/Aztec_Jaguar_FX.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/Aztec/Aztec Jaguar Warrior/newaztec_jaguar.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -408,7 +408,10 @@
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
-			<AudioRunSounds/>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_MACEMAN</Type>
@@ -2553,7 +2556,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_LONGBOWMAN_SOUTH_AMERICA</Type>
-			<Button>Art/Interface/Buttons/Units/Native_Longbowman.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Longbowman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,8,7</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -2659,7 +2662,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_SPEARMAN_SOUTH_AMERICAN</Type>
-			<Button>Art/Interface/Buttons/Units/Native_Spearman.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Spearman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,6</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -2722,7 +2725,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</Type>
-			<Button>Art/Interface/Buttons/Units/Native_Militia_Spearman.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Levy.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -3108,9 +3111,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Prophet/greatprophet.nif</NIF>
-			<KFM>Art/Units/Female_Prophet/greatprophet.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Prophet/greatprophet_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Prophet/greatprophet.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Prophet/greatprophet.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Prophet/greatprophet_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3137,9 +3140,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Artist/engineer.nif</NIF>
-			<KFM>Art/Units/Female_Artist/engineer.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Artist/engineer_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Artist/engineer.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Artist/engineer.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Artist/engineer_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3158,9 +3161,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Artist_Modern/greatartist.nif</NIF>
-			<KFM>Art/Units/Female_Artist_Modern/greatartist.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Artist_Modern/greatartist_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Artist_Modern/greatartist.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Artist_Modern/greatartist.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Artist_Modern/greatartist_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3179,9 +3182,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Scientist/GreatScientistAncient.nif</NIF>
-			<KFM>Art/Units/Female_Scientist/GreatScientistAncient.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Scientist/GreatScientistAncient_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Scientist/GreatScientistAncient.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Scientist/GreatScientistAncient.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Scientist/GreatScientistAncient_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3200,9 +3203,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Scientist_Modern/greatscientistancient.nif</NIF>
-			<KFM>Art/Units/Female_Scientist_Modern/greatscientistancient.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Scientist_Modern/greatscientistancient_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Scientist_Modern/greatscientistancient.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Scientist_Modern/greatscientistancient.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Scientist_Modern/greatscientistancient_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3221,9 +3224,9 @@
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Merchant/greatmerchantancient.nif</NIF>
-			<KFM>Art/Units/Female_Merchant/greatmerchantancient.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Merchant/greatmerchantancient_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Merchant/greatmerchantancient.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Merchant/greatmerchantancient.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Merchant/greatmerchantancient_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3242,9 +3245,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Merchant_Modern/modernmerchant.nif</NIF>
-			<KFM>Art/Units/Female_Merchant_Modern/modernmerchant.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Merchant_Modern/modernmerchant_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Merchant_Modern/modernmerchant.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Merchant_Modern/modernmerchant.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Merchant_Modern/modernmerchant_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3271,9 +3274,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Great_Spy/Great_Spy_Ancient.nif</NIF>
-			<KFM>Art/Units/Female_Great_Spy/Great_Spy_Ancient.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Great_Spy/Great_Spy_Ancient_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Great_Spy/Great_Spy_Ancient.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Great_Spy/Great_Spy_Ancient.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Great_Spy/Great_Spy_Ancient_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3292,9 +3295,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Great_Spy_Modern/Great_Spy_Modern.nif</NIF>
-			<KFM>Art/Units/Female_Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Great_Spy_Modern/Great_Spy_Modern_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Great_Spy_Modern/Great_Spy_Modern.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Great_Spy_Modern/Great_Spy_Modern_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3313,9 +3316,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Engineer/Engineer.nif</NIF>
-			<KFM>Art/Units/Female_Engineer/Engineer.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Engineer/Engineer_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Engineer/Engineer.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Engineer/Engineer.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Engineer/Engineer_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3334,9 +3337,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Engineer_Modern/GreatEngineerModern.nif</NIF>
-			<KFM>Art/Units/Female_Engineer_Modern/GreatEngineerModern.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Engineer_Modern/GreatEngineerModern_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Engineer_Modern/GreatEngineerModern.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Engineer_Modern/GreatEngineerModern.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Engineer_Modern/GreatEngineerModern_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3355,9 +3358,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Warlord_Ancient/Warlord_Ancient.nif</NIF>
-			<KFM>Art/Units/Female_Warlord_Ancient/Warlord_Ancient.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Warlord_Ancient/Warlord_Ancient_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Warlord_Ancient/Warlord_Ancient.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Warlord_Ancient/Warlord_Ancient.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Warlord_Ancient/Warlord_Ancient_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>Bip01 Pelvis</ShadowAttachNode>
@@ -3376,9 +3379,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Warlord_MiddleAge/Warlord_MiddleAge.nif</NIF>
-			<KFM>Art/Units/Female_Warlord_MiddleAge/Warlord_MiddleAge.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Warlord_MiddleAge/Warlord_MiddleAge_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Warlord_MiddleAge/Warlord_MiddleAge.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Warlord_MiddleAge/Warlord_MiddleAge.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Warlord_MiddleAge/Warlord_MiddleAge_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>Bip01 Pelvis</ShadowAttachNode>
@@ -3397,9 +3400,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Female_Warlord_Modern/Warlord_Modern.nif</NIF>
-			<KFM>Art/Units/Female_Warlord_Modern/Warlord_Modern.kfm</KFM>
-			<SHADERNIF>Art/Units/Female_Warlord_Modern/Warlord_Modern_fx.nif</SHADERNIF>
+			<NIF>Art/Units/Female_GPs/Female_Warlord_Modern/Warlord_Modern.nif</NIF>
+			<KFM>Art/Units/Female_GPs/Female_Warlord_Modern/Warlord_Modern.kfm</KFM>
+			<SHADERNIF>Art/Units/Female_GPs/Female_Warlord_Modern/Warlord_Modern_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>Bip01 Pelvis</ShadowAttachNode>
@@ -3454,8 +3457,8 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_ATLATLIST</Type>
-			<Button>Art/Interface/Buttons/Units/Atlatlist.dds</Button>
+			<Type>ART_DEF_UNIT_SKIRMISHER</Type>
+			<Button>Art/Interface/Buttons/Units/Skirmisher.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -3749,55 +3752,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_PISTOLIER</Type>
-			<Button>Art/Interface/Buttons/Units/Pistolier.dds</Button>
-			<fScale>0.42</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Pistolier/pistolier_fx.nif</NIF>
-			<KFM>Art/Units/Unique/Russia/Cossack/RussianCossack.kfm</KFM>
-			<SHADERNIF>Art/Units/Pistolier/pistolier_fx.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
-				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_HUSSAR</Type>
-			<Button>Art/Interface/Buttons/Units/Hussar.dds</Button>
-			<fScale>0.42</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Hussar/hussar.nif</NIF>
-			<KFM>Art/Units/Unique/Russia/Cossack/RussianCossack.kfm</KFM>
-			<SHADERNIF>Art/Units/Hussar/hussar.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_ATLATLIST_EUROPEAN</Type>
+			<Type>ART_DEF_UNIT_SKIRMISHER_EUROPEAN</Type>
 			<Button>Art/Interface/Buttons/Units/Skirmisher.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -3821,7 +3776,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_ATLATLIST_SOUTH_AMERICAN</Type>
+			<Type>ART_DEF_UNIT_SKIRMISHER_SOUTH_AMERICAN</Type>
 			<Button>Art/Interface/Buttons/Units/Skirmisher.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -3846,7 +3801,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PIKEMAN_SOUTH_AMERICAN</Type>
-			<Button>Art/Interface/Buttons/Units/Native_Pikeman.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Pikeman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,1</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -3875,9 +3830,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Warrior/warrior2.nif</NIF>
+			<NIF>Art/Units/african/african_Warrior/warrior2.nif</NIF>
 			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Warrior/warrior2.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Warrior/warrior2.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3899,9 +3854,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Warrior/warrior2.nif</NIF>
+			<NIF>Art/Units/african/african_Warrior/warrior2.nif</NIF>
 			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Warrior/warrior2.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Warrior/warrior2.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3917,15 +3872,15 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_ATLATLIST_AFRICAN</Type>
+			<Type>ART_DEF_UNIT_SKIRMISHER_AFRICAN</Type>
 			<Button>Art/Interface/Buttons/Units/Skirmisher.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Skirmisher/real_immortal_nobow.nif</NIF>
+			<NIF>Art/Units/african/african_Skirmisher/real_immortal_nobow.nif</NIF>
 			<KFM>Art/Units/Unique/Mali/Skirmisher/MaliSkirmisher.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Skirmisher/real_immortal_nobow_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Skirmisher/real_immortal_nobow_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3947,9 +3902,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Spearman/african_spearman.nif</NIF>
+			<NIF>Art/Units/african/african_Spearman/african/african_spearman.nif</NIF>
 			<KFM>Art/Units/Spearman/Spearman.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Spearman/african_spearman.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Spearman/african/african_spearman.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3971,9 +3926,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_HeavySpearman/zulupike_fx_spearman_animation.nif</NIF>
+			<NIF>Art/Units/african/african_HeavySpearman/zulupike_fx_spearman_animation.nif</NIF>
 			<KFM>Art/Units/Spearman/Spearman.kfm</KFM>
-			<SHADERNIF>Art/Units/African_HeavySpearman/zulupike_fx_spearman_animation.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_HeavySpearman/zulupike_fx_spearman_animation.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3995,9 +3950,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Pikeman/africanpikeman.nif</NIF>
+			<NIF>Art/Units/african/african_Pikeman/africanpikeman.nif</NIF>
 			<KFM>Art/Units/Pikeman/Pikeman.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Pikeman/africanpikeman_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Pikeman/africanpikeman_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -4037,9 +3992,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Settler/Settler_Male.nif</NIF>
+			<NIF>Art/Units/african/african_Settler/Settler_Male.nif</NIF>
 			<KFM>Art/Units/Settler/Settler_Male.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Settler/Settler_Male_FX.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Settler/Settler_Male_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -4061,9 +4016,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Settler/Settler_Female.nif</NIF>
+			<NIF>Art/Units/african/african_Settler/Settler_Female.nif</NIF>
 			<KFM>Art/Units/Settler/Settler_Female.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Settler/Settler_Female_FX.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Settler/Settler_Female_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -4085,9 +4040,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Settler/Settler_Child.nif</NIF>
+			<NIF>Art/Units/african/african_Settler/Settler_Child.nif</NIF>
 			<KFM>Art/Units/Settler/Settler_Child.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Settler/Settler_Child_FX.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Settler/Settler_Child_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -4110,9 +4065,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Scout/african_scout.nif</NIF>
+			<NIF>Art/Units/african/african_Scout/african/african_scout.nif</NIF>
 			<KFM>Art/Units/Scout/Scout.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Scout/african_scout.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Scout/african/african_scout.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -4134,9 +4089,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Archer/zulu_archer.nif</NIF>
+			<NIF>Art/Units/african/african_Archer/zulu_archer.nif</NIF>
 			<KFM>Art/Units/Archer/Archer.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Archer/zulu_archer.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Archer/zulu_archer.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -4158,9 +4113,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Longbow/longbow.nif</NIF>
+			<NIF>Art/Units/african/african_Longbow/longbow.nif</NIF>
 			<KFM>Art/Units/Longbowman/Longbowman.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Longbow/longbow.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Longbow/longbow.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -4182,9 +4137,9 @@
 			<fInterfaceScale>1.1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Crossbow/crossbow.nif</NIF>
+			<NIF>Art/Units/african/african_Crossbow/crossbow.nif</NIF>
 			<KFM>Art/Units/Crossbowman/Crossbowman.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Crossbow/crossbow.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Crossbow/crossbow.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -4206,9 +4161,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_HorseArcher/africanarcherhorse.nif</NIF>
+			<NIF>Art/Units/african/african_HorseArcher/africanarcherhorse.nif</NIF>
 			<KFM>Art/Units/HorseArcher/HorseArcher.kfm</KFM>
-			<SHADERNIF>Art/Units/African_HorseArcher/africanarcherhorse_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_HorseArcher/africanarcherhorse_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -4227,9 +4182,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Swordsman/africansword.nif</NIF>
+			<NIF>Art/Units/african/african_Swordsman/africansword.nif</NIF>
 			<KFM>Art/Units/Scenario/Greek_Hyapist/Greek_Hypaspist.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Swordsman/africansword.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Swordsman/africansword.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -4251,9 +4206,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Maceman/zulumace.nif</NIF>
+			<NIF>Art/Units/african/african_Maceman/zulumace.nif</NIF>
 			<KFM>Art/Units/Unique_NativeAmerica_DogSoldier/Dogsoldier.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Maceman/zulumace.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Maceman/zulumace.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -4275,9 +4230,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Swordsman/african_swordsman.nif</NIF>
+			<NIF>Art/Units/african/african_Swordsman/african/african_swordsman.nif</NIF>
 			<KFM>Art/Units/Swordsman/Swordsman.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Swordsman/african_swordsman_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Swordsman/african/african_swordsman_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -4450,7 +4405,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PIKE_AND_SHOT_MUSKET</Type>
-			<Button>Art/Interface/Buttons/Units/Pike_and_Shot.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Tercio.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4474,7 +4429,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PIKE_AND_SHOT_PIKE</Type>
-			<Button>Art/Interface/Buttons/Units/Pike_and_Shot.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Tercio.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4603,54 +4558,6 @@
 			<NIF>Art/Units/tlenamacac/greatprophet.nif</NIF>
 			<KFM>Art/Units/tlenamacac/greatprophet.kfm</KFM>
 			<SHADERNIF>Art/Units/tlenamacac/greatprophet_fx.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_WARI_PICTA</Type>
-			<Button>Art/Interface/Buttons/Units/Picta.dds</Button>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>art/units/Mississippian Amayxoya/egyptian_archer.nif</NIF>
-			<KFM>Art/Units/Archer_Egyptian/Archer_Egyptian.kfm</KFM>
-			<SHADERNIF>art/units/Mississippian Amayxoya/egyptian_archer.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>0.85</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_CHIMU_SUCHUC_CHIQUI</Type>
-			<Button>Art/Interface/Buttons/Units/Suchuc_Chiqui.dds</Button>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>art/units/Kushan Trishula/KushanTrishula.nif</NIF>
-			<KFM>Art/Units/Charlemagne_PapalSpearman/PapalSpearman.kfm</KFM>
-			<SHADERNIF>art/units/Kushan Trishula/KushanTrishula.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -4954,7 +4861,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_ATLATLIST_MISSISSIPPIAN</Type>
+			<Type>ART_DEF_UNIT_SKIRMISHER_MISSISSIPPIAN</Type>
 			<Button>Art/Interface/Buttons/Units/Skirmisher.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -4978,41 +4885,6 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_CHARIOT_MISSISSIPPIAN</Type>
-			<Button>Art/Interface/Buttons/Units/Chariot.dds</Button>
-			<fScale>0.4</fScale>
-			<fInterfaceScale>0.9</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Mississippian Chariot/newnativechariot.nif</NIF>
-			<KFM>Art/Units/Chariot_Celtic/Chariot_Celtic.kfm</KFM>
-			<SHADERNIF>Art/Mississippian Chariot/newnativechariot.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/ChariotShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.20</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bSmoothMove>1</bSmoothMove>
-			<fAngleInterpRate>360.0</fAngleInterpRate>
-			<fExchangeAngle>-30.0</fExchangeAngle>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_HORSE_ARCHER_MISSISSIPPIAN</Type>
 			<Button>Art/Interface/Buttons/Units/Swift_Arrow.dds</Button>
 			<fScale>0.42</fScale>
@@ -5030,78 +4902,6 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_HORSEMAN_MISSISSIPPIAN</Type>
-			<Button>Art/Interface/Buttons/Units/Horseman.dds</Button>
-			<fScale>0.42</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Mississippian Horseman/sioux_knight.nif</NIF>
-			<KFM>Art/Units/Unique/Mongol/Keshik/MongelKeshik.kfm</KFM>
-			<SHADERNIF>Art/Units/Mississippian Horseman/sioux_knight.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_WAR_ELEPHANT_LAKOTA</Type>
-			<Button>Art/Interface/Buttons/Units/WarElephant.dds</Button>
-			<fScale>0.35</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Sioux War Elephant/NewElephantNative.nif</NIF>
-			<KFM>Art/Units/Unique_Khmer_ElephantBallista/Khmer_ElephantBallista.kfm</KFM>
-			<SHADERNIF>Art/Sioux War Elephant/NewElephantNative.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/WarElephantShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.45</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MACEMAN_HAUDENOSAUNEE</Type>
-			<Button>Art/Interface/Buttons/Units/Mohawk.dds</Button>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Iroquois Heavy Footman/iroquois_maceman.nif</NIF>
-			<KFM>Art/Units/Unique_NativeAmerica_DogSoldier/Dogsoldier.kfm</KFM>
-			<SHADERNIF>Art/Units/Iroquois Heavy Footman/iroquois_maceman.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -5406,30 +5206,6 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_FRENCH_GUARD</Type>
-			<Button>Art/Units/Guard/Guard.dds</Button>
-			<fScale>0.42</fScale>
-			<fInterfaceScale>0.9</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Guard/cuirassierfr.nif</NIF>
-			<KFM>Art/Units/Guard/Cuirassier.kfm</KFM>
-			<SHADERNIF>Art/Units/Guard/cuirassierfr.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FRENCH_HEAVY_CANNON</Type>
 			<Button>Art/Interface/Buttons/Units/EarlyCannon3.dds</Button>
 			<fScale>0.53</fScale>
@@ -5460,44 +5236,6 @@
 				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
 				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
 			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MOORISH_CORSAIR</Type>
-			<Button>Art/Units/Corsair/Button_Corsair.dds</Button>
-			<fScale>0.16</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Corsair/caravel.nif</NIF>
-			<KFM>Art/Units/Caravel/Caravel.kfm</KFM>
-			<SHADERNIF>Art/Units/Corsair/caravel_fx.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/CaravelShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<iDamageStates>4</iDamageStates>
-			<TrailDefinition>
-				<Texture>Art/Shared/water_ship_wake.dds</Texture>
-				<fWidth>1</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>1</fTaper>
-				<fFadeStartTime>.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bSmoothMove>1</bSmoothMove>
-			<fAngleInterpRate>720.0</fAngleInterpRate>
-			<fExchangeAngle>25.0</fExchangeAngle>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
-			</AudioRunSounds>
-			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
-			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_LINE_INFANTRY</Type>
@@ -5673,30 +5411,6 @@
 			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_CAVALRY_PISTOL</Type>
-			<Button>Art/Units/Pistol_Cavalry/Pistol_Cavalry_Button.dds</Button>
-			<fScale>0.34</fScale>
-			<fInterfaceScale>.95</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Pistol_Cavalry/Pistol_Cavalry_Union.nif</NIF>
-			<KFM>Art/Units/Pistol_Cavalry/Pistol_Cavalry.kfm</KFM>
-			<SHADERNIF>Art/Units/Pistol_Cavalry/Pistol_Cavalry_Union_FX.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
-				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CAVALRY</Type>
 			<Button>,Art/Interface/Buttons/Units/Cavalry.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,2</Button>
 			<fScale>0.42</fScale>
@@ -5825,14 +5539,14 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ARMED_SLAVE</Type>
-			<Button>Art/Units/African_Militia_Rifleman/militia_rifleman.dds</Button>
+			<Button>Art/Units/african/african_Militia_Rifleman/militia_rifleman.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Militia_Rifleman/Militia Rifleman.nif</NIF>
+			<NIF>Art/Units/african/african_Militia_Rifleman/Militia Rifleman.nif</NIF>
 			<KFM>Art/Units/Rifleman/Rifleman.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Militia_Rifleman/Militia Rifleman.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/african/african_Militia_Rifleman/Militia Rifleman.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -5959,7 +5673,7 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SKIRMISHER</Type>
+			<Type>ART_DEF_UNIT_IRREGULAR</Type>
 			<Button>Art/Units/Militia Grenadier/Militia Grenadier.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -6070,9 +5784,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/AfricanGrenadier/African_Grenadier/africangrenadier.nif</NIF>
+			<NIF>Art/Units/AfricanGrenadier/african_Grenadier/africangrenadier.nif</NIF>
 			<KFM>Art/Units/Grenadier/Grenadier.kfm</KFM>
-			<SHADERNIF>Art/Units/AfricanGrenadier/African_Grenadier/africangrenadier_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/AfricanGrenadier/african_Grenadier/africangrenadier_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6196,19 +5910,22 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Serpent/Cohuatl.nif</NIF>
-			<KFM>Art/Units/Unique/Aztec/Jaguar/Aztec_Jaguar.kfm</KFM>
-			<SHADERNIF>Art/Units/Serpent/Cohuatl.nif</SHADERNIF>
+			<NIF>Art/Units (Civilizations)/Aztec/Aztec Heavy Footman/AztecHeavyFootmanfinal.nif</NIF>
+			<KFM>Art/Units/Charlemagne_HeavySwordsman/HeavySwordsman.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Aztec/Aztec Heavy Footman/AztecHeavyFootmanfinal.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
 				<fShadowScale>1.0</fShadowScale>
 			</ShadowDef>
-			<fBattleDistance>0.4</fBattleDistance>
+			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
-			<AudioRunSounds/>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CUBAN_FARS</Type>
@@ -6657,14 +6374,14 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_AZTEC_EAGLE</Type>
-			<Button>Art/Interface/Buttons/Units/Eagle.dds</Button>
+			<Button>Art/Units (Civilizations)/Aztec/Aztec Eagle Warrior/Button_EagleWarrior.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Pikeman_South_America/Pikeman_South_America.nif</NIF>
-			<KFM>Art/Units/Pikeman_South_America/spearman.kfm</KFM>
-			<SHADERNIF>Art/Units/Pikeman_South_America/Pikeman_South_America_fx.nif</SHADERNIF>
+			<NIF>Art/Units (Civilizations)/Aztec/Aztec Eagle Warrior/AztecSpearmanHolkanfinal.nif</NIF>
+			<KFM>Art/Units/Unique_Maya_Holkan/Unique_Mayan_Holkan.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Aztec/Aztec Eagle Warrior/AztecSpearmanHolkanfinal.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6673,8 +6390,11 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds/>
+			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CAVALRY_RANGER_A</Type>
@@ -6871,6 +6591,423 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_INCAN_HALBERDIER</Type>
+			<Button>Art/Interface/Buttons/Units/IncanHalberdier.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Pikeman/Incapikemanfinalx.nif</NIF>
+			<KFM>Art/Units/Pikeman/Pikeman.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Pikeman/Incapikemanfinalx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_AXEMAN_CHIMU</Type>
+			<Button>Art/Interface/Buttons/Units/ChimuAxeman.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Axeman/IncanAxemanwar.nif</NIF>
+			<KFM>Art/Units/Celtic_Warrior/Celtic_Warrior.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Axeman/IncanAxemanwar.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_TOMAHAWK_IROQUOIS</Type>
+			<Button>Art/Units (Civilizations)/Iroquois/Iroquois Tomahawk/Button_Tomahawk.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Iroquois/Iroquois Tomahawk/Tomahawk.nif</NIF>
+			<KFM>Art/Units (Civilizations)/Iroquois/Iroquois Tomahawk/Tomahawk.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Iroquois/Iroquois Tomahawk/Tomahawk.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MOHAWK_IROQUOIS</Type>
+			<Button>Art/Units (Civilizations)/Iroquois/Iroquois Mohawk/Button_Mohawk.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Iroquois/Iroquois Mohawk/Native_American_Musketman.nif</NIF>
+			<KFM>Art/Units/Musketman/Musketman.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Iroquois/Iroquois Mohawk/Native_American_Musketman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+<!-- Inca -->
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ARCHER_INCAN</Type>
+			<Button>Art/Interface/Buttons/Units/Archer.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Archer/IncaArcher.nif</NIF>
+			<KFM>Art/Units/Archer_Egyptian/Archer_Egyptian.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Archer/IncaArcher.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPEARMAN_INCAN</Type>
+			<Button>Art/Interface/Buttons/Units/Spearman.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Spearman/incaspearmanfinal.nif</NIF>
+			<KFM>Art/Units/Spearman/Spearman.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Spearman/incaspearmanfinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SWORDSMAN_INCAN</Type>
+			<Button>Art/Interface/Buttons/Units/Swordsman.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Swordsman/Incaswordsmanfinal.nif</NIF>
+			<KFM>Art/Units/Swordsman/Swordsman.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Swordsman/Incaswordsmanfinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_HORSE_ARCHER_INCAN</Type>
+			<Button>Art/Interface/Buttons/Units/HorseArcher.dds</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Horse Archer/incahorsearcher.nif</NIF>
+			<KFM>Art/Units/HorseArcher/HorseArcher.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Horse Archer/incahorsearcher.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_AUCAKPUSSAK_INCAN</Type>
+			<Button>Art/Units (Civilizations)/Inca/Incan Aucakpussak/Button_Aucakpussak.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Aucakpussak/incahvyfootfinal.nif</NIF>
+			<KFM>Art/Units/Unique/Inca/Quechua/IncanQuechua.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Aucakpussak/incahvyfootfinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_LONGBOWMAN_INCAN</Type>
+			<Button>Art/Interface/Buttons/Units/Longbowman.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Longbowman/incalongbowman_fx.nif</NIF>
+			<KFM>Art/Units/Longbowman/Longbowman.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Longbowman/incalongbowman_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CROSSBOWMAN_INCAN</Type>
+			<Button>Art/Interface/Buttons/Units/Crossbowman.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Crossbowman/incacrossbowmanx.nif</NIF>
+			<KFM>Art/Units/Crossbowman/Crossbowman.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Crossbowman/incacrossbowmanx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MUSKETMAN_INCAN</Type>
+			<Button>Art/Interface/Buttons/Units/Musketman.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Musketman/incamusketeerfinal.nif</NIF>
+			<KFM>Art/Units/Unique/French/Musketeer/Musketeer.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Musketman/incamusketeerfinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CUIRASSIER_INCAN</Type>
+			<Button>Art/Interface/Buttons/Units/Cuirassier.dds</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Cuirassier/IncaCuirassierfinal.nif</NIF>
+			<KFM>Art/Units/Cuirassier/Cuirassier.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Cuirassier/IncaCuirassierfinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CANNON_INCAN</Type>
+			<Button>Art/Interface/Buttons/Units/Cannon.dds</Button>
+			<fScale>0.53</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Cannon/incacannonfinal.nif</NIF>
+			<KFM>Art/Units/Cannon/Cannon.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Cannon/incacannonfinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/CannonShadow.nif</ShadowNIF>
+				<ShadowAttachNode/>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<TrailDefinition>
+				<Texture>Art/Shared/wheeltread.dds</Texture>
+				<fWidth>1.0</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>0.0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.5</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GRENADIER_INCAN</Type>
+			<Button>Art/Interface/Buttons/Units/Grenadier.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Grenadier/incagrenadier.nif</NIF>
+			<KFM>Art/Units/Grenadier/Grenadier.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Grenadier/incagrenadier.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.95</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_RIFLEMAN_INCAN</Type>
+			<Button>Art/Interface/Buttons/Units/Rifleman.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Rifleman/incarifleman.nif</NIF>
+			<KFM>Art/Units/Rifleman/Rifleman.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Rifleman/incarifleman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CAVALRY_INCAN</Type>
+			<Button>Art/Interface/Buttons/Units/Cavalry.dds</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units (Civilizations)/Inca/Incan Cavalry/incacavalryfinal.nif</NIF>
+			<KFM>Art/Units/Cavalry/Cavalry.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/Inca/Incan Cavalry/incacavalryfinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>

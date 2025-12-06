@@ -311,14 +311,6 @@
 			<DefaultUnit>UNIT_PIKEMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_PIKE_AND_SHOT</Type>
-			<Description>TXT_KEY_UNIT_PIKE_AND_SHOT</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_PIKE_AND_SHOT</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_LINE_INFANTRY</Type>
 			<Description>TXT_KEY_UNIT_LINE_INFANTRY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -367,12 +359,12 @@
 			<DefaultUnit>UNIT_MACHINE_GUN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_ATLATLIST</Type>
-			<Description>TXT_KEY_UNIT_ATLATLIST</Description>
+			<Type>UNITCLASS_SKIRMISHER</Type>
+			<Description>TXT_KEY_UNIT_SKIRMISHER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_ATLATLIST</DefaultUnit>
+			<DefaultUnit>UNIT_SKIRMISHER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_LONGBOWMAN</Type>
@@ -383,12 +375,12 @@
 			<DefaultUnit>UNIT_LONGBOWMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_SKIRMISHER</Type>
-			<Description>TXT_KEY_UNIT_SKIRMISHER</Description>
+			<Type>UNITCLASS_IRREGULAR</Type>
+			<Description>TXT_KEY_UNIT_IRREGULAR</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_SKIRMISHER</DefaultUnit>
+			<DefaultUnit>UNIT_IRREGULAR</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_GRENADIER</Type>

@@ -2,6 +2,118 @@
 <!-- Units -->
 <Civ4GameText>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_COYOTE</Tag>
+		<English>Coyote</English>
+		<French>Coyote</French>
+		<German>Coyote</German>
+		<Italian>Coyote</Italian>
+		<Spanish>Coyote</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COYOTE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</English>
+		<French>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</French>
+		<German>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</German>
+		<Italian>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JAGUAR</Tag>
+		<English>Jaguar</English>
+		<French>Jaguar</French>
+		<German>Jaguar</German>
+		<Italian>Jaguar</Italian>
+		<Spanish>Jaguar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JAGUAR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</English>
+		<French>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</French>
+		<German>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</German>
+		<Italian>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLAR_BEAR</Tag>
+		<English>Polar Bear</English>
+		<French>Polar Bear</French>
+		<German>Polar Bear</German>
+		<Italian>Polar Bear</Italian>
+		<Spanish>Polar Bear</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLAR_BEAR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in Snow.</English>
+		<French>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in and Snow.</French>
+		<German>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in and Snow.</German>
+		<Italian>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in and Snow.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in and Snow.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COUGAR</Tag>
+		<English>Cougar</English>
+		<French>Cougar</French>
+		<German>Cougar</German>
+		<Italian>Cougar</Italian>
+		<Spanish>Cougar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COUGAR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</English>
+		<French>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</French>
+		<German>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</German>
+		<Italian>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GRIZZLY_BEAR</Tag>
+		<English>Grizzly Bear</English>
+		<French>Grizzly Bear</French>
+		<German>Grizzly Bear</German>
+		<Italian>Grizzly Bear</Italian>
+		<Spanish>Grizzly Bear</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GRIZZLY_BEAR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</English>
+		<French>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</French>
+		<German>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</German>
+		<Italian>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WOLF_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</English>
+		<French>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</French>
+		<German>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</German>
+		<Italian>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PANTHER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</English>
+		<French>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</French>
+		<German>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</German>
+		<Italian>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CLAWDIUS</Tag>
+		<English>Clawdius</English>
+		<French>Clawdius</French>
+		<German>Clawdius</German>
+		<Italian>Clawdius</Italian>
+		<Spanish>Clawdius</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CLAWDIUS_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</English>
+		<French>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</French>
+		<German>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</German>
+		<Italian>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_AMERICAN_MINUTEMAN</Tag>
 		<English>Minuteman</English>
 		<French>
@@ -507,19 +619,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MAYAN_HOLKAN_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</English>
-		<French>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</French>
-		<German>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</English>
+		<French>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</French>
+		<German>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INCAN_AUCAC_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Melee Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</English>
-		<French>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Melee Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</French>
-		<German>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Melee Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Melee Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Melee Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</English>
+		<French>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</French>
+		<German>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ICBM_STRATEGY</Tag>
@@ -1174,6 +1286,22 @@
 		<Spanish>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_IRREGULAR</Tag>
+		<English>Irregular</English>
+		<French>Irregular</French>
+		<German>Irregular</German>
+		<Italian>Irregular</Italian>
+		<Spanish>Irregular</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_IRREGULAR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Irregulars[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Irregulars[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Irregulars[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Irregulars[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Irregulars[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_MONITOR</Tag>
 		<English>Monitor</English>
 		<French>Monitor</French>
@@ -1350,46 +1478,6 @@
 		<Spanish>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT] units.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_PISTOLIER</Tag>
-		<English>Pistolier</English>
-		<French>
-			<Text>Pistolier</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Pistolier</German>
-		<Italian>Pistolier</Italian>
-		<Spanish>Pistolier</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_PISTOLIER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] units.</English>
-		<French>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] units.</French>
-		<German>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] units.</German>
-		<Italian>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] units.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] units.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_HUSSAR</Tag>
-		<English>Hussar</English>
-		<French>
-			<Text>Hussard</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Hussar</German>
-		<Italian>Hussar</Italian>
-		<Spanish>Hussar</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_HUSSAR_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</English>
-		<French>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</French>
-		<German>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</German>
-		<Italian>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_LIGHT_SWORDSMAN</Tag>
 		<English>Light Swordsman</English>
 		<French>
@@ -1526,20 +1614,24 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Man-of-War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_PIKE_AND_SHOT</Tag>
-		<English>Pike and Shot</English>
-		<French>Pike and Shot</French>
-		<German>Pike and Shot</German>
-		<Italian>Pike and Shot</Italian>
-		<Spanish>Pike and Shot</Spanish>
+		<Tag>TXT_KEY_UNIT_SPANISH_TERCIO</Tag>
+		<English>Tercio</English>
+		<French>
+			<Text>Tercio</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Tercio</German>
+		<Italian>Tercio</Italian>
+		<Spanish>Tercio</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_PIKE_AND_SHOT_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Pike and Shot[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Pike and Shot[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Pike and Shot[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Pike and Shot[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Pike and Shot[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Spanish>
+		<Tag>TXT_KEY_UNIT_SPANISH_TERCIO_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], is stronger.</English>
+		<French>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], is stronger.</French>
+		<German>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], is stronger.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], is stronger.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], is stronger.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FUSILIER</Tag>
@@ -1654,38 +1746,6 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Sisqeno[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], is available earlier and can steal Great People from foreign cities.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_WARI_PICTA</Tag>
-		<English>Picta</English>
-		<French>Picta</French>
-		<German>Picta</German>
-		<Italian>Picta</Italian>
-		<Spanish>Picta</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_WARI_PICTA_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Picta[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is stronger.</English>
-		<French>The [COLOR_UNIT_TEXT]Picta[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is stronger.</French>
-		<German>The [COLOR_UNIT_TEXT]Picta[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is stronger.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Picta[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is stronger.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Picta[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is stronger.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_CHIMU_SUCHUC_CHIQUI</Tag>
-		<English>Suchuc Chiqui</English>
-		<French>Suchuc Chiqui</French>
-		<German>Suchuc Chiqui</German>
-		<Italian>Suchuc Chiqui</Italian>
-		<Spanish>Suchuc Chiqui</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_CHIMU_SUCHUC_CHIQUI_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Suchuc Chiqui[COLOR_REVERT], the Chimu replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], is stronger and has extra strength versus Archery units.</English>
-		<French>The [COLOR_UNIT_TEXT]Suchuc Chiqui[COLOR_REVERT], the Chimu replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], is stronger and has extra strength versus Archery units.</French>
-		<German>The [COLOR_UNIT_TEXT]Suchuc Chiqui[COLOR_REVERT], the Chimu replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], is stronger and has extra strength versus Archery units.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Suchuc Chiqui[COLOR_REVERT], the Chimu replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], is stronger and has extra strength versus Archery units.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Suchuc Chiqui[COLOR_REVERT], the Chimu replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], is stronger and has extra strength versus Archery units.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_MISSISSIPPI_FALCON_DANCER</Tag>
 		<English>Falcon Dancer</English>
 		<French>Falcon Dancer</French>
@@ -1727,11 +1787,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MUISCA_GUECHA_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], is stronger.</English>
-		<French>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], is stronger.</French>
-		<German>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], is stronger.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], is stronger.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], is stronger.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is stronger.</English>
+		<French>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is stronger.</French>
+		<German>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is stronger.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is stronger.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is stronger.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TEOTIHUACAN_ARTISAN</Tag>
@@ -1891,11 +1951,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WARI_SLINGER_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</English>
-		<French>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</French>
-		<German>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</English>
+		<French>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</French>
+		<German>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], has an extra first strike change and starts with Flanking I and Flanking II.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHIMU_AXEMAN</Tag>
+		<English>Axeman</English>
+		<French>Axeman</French>
+		<German>Axeman</German>
+		<Italian>Axeman</Italian>
+		<Spanish>Axeman</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHIMU_AXEMAN_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], the Chimua replacement for the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], has a bonus versus Melee units.</English>
+		<French>The [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], the Chimua replacement for the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], has a bonus versus Melee units.</French>
+		<German>The [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], the Chimua replacement for the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], has a bonus versus Melee units.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], the Chimua replacement for the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], has a bonus versus Melee units.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], the Chimua replacement for the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], has a bonus versus Melee units.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GATLING_GUN</Tag>
@@ -1914,20 +1990,24 @@
 		<Spanish>[COLOR_UNIT_TEXT]Gatling Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_ATLATLIST</Tag>
-		<English>Atlatlist</English>
-		<French>Atlatlist</French>
-		<German>Atlatlist</German>
-		<Italian>Atlatlist</Italian>
-		<Spanish>Atlatlist</Spanish>
+		<Tag>TXT_KEY_UNIT_SKIRMISHER</Tag>
+		<English>Skirmisher</English>
+		<French>
+			<Text>Tirailleur</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Skirmisher</German>
+		<Italian>Skirmisher</Italian>
+		<Spanish>Skirmisher</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_ATLATLIST_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Atlatlists[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Atlatlists[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Atlatlists[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Atlatlists[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Atlatlists[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Spanish>
+		<Tag>TXT_KEY_UNIT_SKIRMISHER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LIGHT_TANK</Tag>
@@ -2151,11 +2231,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HAUDENOSAUNEE_MOHAWK_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</English>
-		<French>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</French>
-		<German>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</English>
+		<French>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</French>
+		<German>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TOMAHAWK</Tag>
+		<English>Tomahawk</English>
+		<French>Tomahawk</French>
+		<German>Tomahawk</German>
+		<Italian>Tomahawk</Italian>
+		<Spanish>Tomahawk</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TOMAHAWK_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]Tomahawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has 2 first strikes, a bonus versus Melee, and higher withdrawl chance.</English>
+		<French>The [COLOR_HIGHLIGHT_TEXT]Tomahawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has 2 first strikes, a bonus versus Melee, and higher withdrawl chance.</French>
+		<German>The [COLOR_HIGHLIGHT_TEXT]Tomahawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has 2 first strikes, a bonus versus Melee, and higher withdrawl chance.</German>
+		<Italian>The [COLOR_HIGHLIGHT_TEXT]Tomahawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has 2 first strikes, a bonus versus Melee, and higher withdrawl chance.</Italian>
+		<Spanish>The [COLOR_HIGHLIGHT_TEXT]Tomahawk[COLOR_REVERT], the Haudenosaunee replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has 2 first strikes, a bonus versus Melee, and higher withdrawl chance.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PERUVIAN_GUARDIA</Tag>
@@ -2199,11 +2295,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HAITIAN_CACOS_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</English>
-		<French>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</French>
-		<German>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Irregular[COLOR_REVERT], starts with the Drill I and Drill II promotions.</English>
+		<French>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Irregular[COLOR_REVERT], starts with the Drill I and Drill II promotions.</French>
+		<German>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Irregular[COLOR_REVERT], starts with the Drill I and Drill II promotions.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Irregular[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Irregular[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SPANISH_GALLEON</Tag>
@@ -2222,20 +2318,20 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces and are stronger.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_LIGHTNING_WARRIOR</Tag>
-		<English>Lightning Warrior</English>
-		<French>Lightning Warrior</French>
-		<German>Lightning Warrior</German>
-		<Italian>Lightning Warrior</Italian>
-		<Spanish>Lightning Warrior</Spanish>
+		<Tag>TXT_KEY_UNIT_ZAPOTEC_XHISXYAG</Tag>
+		<English>Xhisxyag</English>		<!-- From combining the Zapotec words for Stick and Man -->
+		<French>Xhisxyag</French>
+		<German>Xhisxyag</German>
+		<Italian>Xhisxyag</Italian>
+		<Spanish>Xhisxyag</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_LIGHTNING_WARRIOR_STRATEGY</Tag>
-		<English>This unit, the Zapotec replacement for the Spearman, has the standard bonus against Cavalry units, but also starts with the Shock promotion, making it fairly effective against melee units as well.</English>
-		<French>This unit, the Zapotec replacement for the Spearman, has the standard bonus against Cavalry units, but also starts with the Shock promotion, making it fairly effective against melee units as well.</French>
-		<German>This unit, the Zapotec replacement for the Spearman, has the standard bonus against Cavalry units, but also starts with the Shock promotion, making it fairly effective against melee units as well.</German>
-		<Italian>This unit, the Zapotec replacement for the Spearman, has the standard bonus against Cavalry units, but also starts with the Shock promotion, making it fairly effective against melee units as well.</Italian>
-		<Spanish>This unit, the Zapotec replacement for the Spearman, has the standard bonus against Cavalry units, but also starts with the Shock promotion, making it fairly effective against melee units as well.</Spanish>
+		<Tag>TXT_KEY_UNIT_ZAPOTEC_XHISXYAG_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Xhisxyag[COLOR_REVERT], the Zapotec replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], defends better in rough terrain.</English>
+		<French>The [COLOR_UNIT_TEXT]Xhisxyag[COLOR_REVERT], the Zapotec replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], defends better in rough terrain.</French>
+		<German>The [COLOR_UNIT_TEXT]Xhisxyag[COLOR_REVERT], the Zapotec replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], defends better in rough terrain.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Xhisxyag[COLOR_REVERT], the Zapotec replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], defends better in rough terrain.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Xhisxyag[COLOR_REVERT], the Zapotec replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], defends better in rough terrain.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PUREPECHA_QUANGARIECHA</Tag>
@@ -2398,116 +2494,20 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Factor[COLOR_REVERT], the Canadian replacement for the [COLOR_UNIT_TEXT]Ranger[COLOR_REVERT], can build Camps.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_COYOTE</Tag>
-		<English>Coyote</English>
-		<French>Coyote</French>
-		<German>Coyote</German>
-		<Italian>Coyote</Italian>
-		<Spanish>Coyote</Spanish>
+		<Tag>TXT_KEY_UNIT_INCAN_HALBERDIER</Tag>
+		<English>Halberdier</English>
+		<French>Halberdier</French>
+		<German>Halberdier</German>
+		<Italian>Halberdier</Italian>
+		<Spanish>Halberdier</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_COYOTE_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</English>
-		<French>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</French>
-		<German>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</German>
-		<Italian>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_JAGUAR</Tag>
-		<English>Jaguar</English>
-		<French>Jaguar</French>
-		<German>Jaguar</German>
-		<Italian>Jaguar</Italian>
-		<Spanish>Jaguar</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_JAGUAR_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</English>
-		<French>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</French>
-		<German>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</German>
-		<Italian>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_POLAR_BEAR</Tag>
-		<English>Polar Bear</English>
-		<French>Polar Bear</French>
-		<German>Polar Bear</German>
-		<Italian>Polar Bear</Italian>
-		<Spanish>Polar Bear</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_POLAR_BEAR_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in Snow.</English>
-		<French>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in and Snow.</French>
-		<German>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in and Snow.</German>
-		<Italian>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in and Snow.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in and Snow.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_COUGAR</Tag>
-		<English>Cougar</English>
-		<French>Cougar</French>
-		<German>Cougar</German>
-		<Italian>Cougar</Italian>
-		<Spanish>Cougar</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_COUGAR_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</English>
-		<French>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</French>
-		<German>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</German>
-		<Italian>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_GRIZZLY_BEAR</Tag>
-		<English>Grizzly Bear</English>
-		<French>Grizzly Bear</French>
-		<German>Grizzly Bear</German>
-		<Italian>Grizzly Bear</Italian>
-		<Spanish>Grizzly Bear</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_GRIZZLY_BEAR_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</English>
-		<French>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</French>
-		<German>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</German>
-		<Italian>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_WOLF_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</English>
-		<French>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</French>
-		<German>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</German>
-		<Italian>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_PANTHER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</English>
-		<French>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</French>
-		<German>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</German>
-		<Italian>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_CLAWDIUS</Tag>
-		<English>Clawdius</English>
-		<French>Clawdius</French>
-		<German>Clawdius</German>
-		<Italian>Clawdius</Italian>
-		<Spanish>Clawdius</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_CLAWDIUS_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</English>
-		<French>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</French>
-		<German>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</German>
-		<Italian>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</Spanish>
+		<Tag>TXT_KEY_UNIT_INCAN_HALBERDIER_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Halberdier[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, can be trains with Gold, and starts with Mobility.</English>
+		<French>The [COLOR_UNIT_TEXT]Halberdier[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, can be trains with Gold, and starts with Mobility.</French>
+		<German>The [COLOR_UNIT_TEXT]Halberdier[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, can be trains with Gold, and starts with Mobility.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Halberdier[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, can be trains with Gold, and starts with Mobility.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Halberdier[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, can be trains with Gold, and starts with Mobility.</Spanish>
 	</TEXT>
 	
 	
