@@ -254,7 +254,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AZTEC</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_AZTEC</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>AZT</Identifier>
@@ -597,7 +597,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_CYAN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_CHIMU</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_INCAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>CHM</Identifier>
@@ -1214,7 +1214,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_IROQUOIS</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_HAUDENOSAUNEE</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_IROQUOIS</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_GAIWIIO</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>HAU</Identifier>
@@ -1362,7 +1362,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_HAWAII</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_HAWAII</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_PACIFIC</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_POLYNESIAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_ATUA</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>HAW</Identifier>
@@ -1465,7 +1465,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_OCHRE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INCA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_INCAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>INC</Identifier>
@@ -1568,7 +1568,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_INUIT</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INUIT</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_IROQUOIS</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_ANGAKKUQ</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>INU</Identifier>
@@ -1678,7 +1678,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_LAKOTA</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_LAKOTA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_PLAINS</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_SIOUX</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_WOCEKIYA</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>LAK</Identifier>
@@ -1778,7 +1778,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_VERY_DARK_CYAN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MAYA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_MAYA</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_TEOTL_MAYA</PaganReligion>
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>MAY</Identifier>
@@ -2005,7 +2005,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_MISSISSIPPI</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MISSISSIPPI</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_MISSISSIPPIAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>MIS</Identifier>
@@ -2131,7 +2131,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_INDIGO_AND_WHITE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MUISCA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>MUI</Identifier>
@@ -2748,7 +2748,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_PUEBLO</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_PUEBLO</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_PUEBLO</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_KACHINA</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>PUE</Identifier>
@@ -2855,7 +2855,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_YELLOWISH_JADE_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_PUREPECHA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_AZTEC</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>PUR</Identifier>
@@ -3194,7 +3194,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_TEOTIHUACAN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TEOTIHUACAN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_AZTEC</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>TEO</Identifier>
@@ -3307,7 +3307,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_GREYISH_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TIWANAKU</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_INCAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>TIW</Identifier>
@@ -3488,7 +3488,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_ITALY</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_WARI</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_INCAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>WAR</Identifier>
@@ -3576,7 +3576,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_ORANGE_AND_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ZAPOTEC</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_AZTEC</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>ZAP</Identifier>
@@ -3687,7 +3687,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY1</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_MAYA</UnitArtStyleType>
 			<Identifier>MIN</Identifier>
 			<Region>MIN</Region>
 			<StartingYear>0</StartingYear>
@@ -4160,7 +4160,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_BROWN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_SIOUX</UnitArtStyleType>
 			<Identifier>NAT</Identifier>
 			<Region>MIN</Region>
 			<StartingYear>0</StartingYear>
