@@ -1103,14 +1103,6 @@
 		<Spanish>(Tiempo estimado de carga: %d1 minuto/s)[NEWLINE]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_MAYA_HOLKAN_EFFECT</Tag>
-		<English>Your Holkan has defeated a %s1 %s2, acquiring %d3 [ICON_FOOD] for %s4.</English>
-		<French>Votre holkan a vaincu un %s2 %s1 et ramen&#233; %d3 [ICON_FOOD] &#224; %s4.</French>
-		<German>Your Holkan has defeated a %s1 %s2, acquiring %d3 [ICON_FOOD] for %s4.</German>
-		<Italian>Your Holkan has defeated a %s1 %s2, acquiring %d3 [ICON_FOOD] for %s4.</Italian>
-		<Spanish>Your Holkan has defeated a %s1 %s2, acquiring %d3 [ICON_FOOD] for %s4.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_ANIMAL_HUNT_EFFECT</Tag>
 		<English>Your unit has defeated a %s1, acquiring %d2 [ICON_FOOD] for %s3.</English>
 		<French>Your unit has defeated a %s1, acquiring %d2 [ICON_FOOD] for %s3.</French>

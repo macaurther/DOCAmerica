@@ -1480,6 +1480,14 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_SPEARMAN</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MAYA_HOLKAN</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MAYA_HOLKAN</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MAYA_HOLKAN</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_HORSE_ARCHER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_HORSE_ARCHER_SOUTH_AMERICA</EarlyArtDefineTag>

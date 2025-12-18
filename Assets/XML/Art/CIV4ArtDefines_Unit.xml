@@ -2506,27 +2506,6 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MOHAWK</Type>
-			<Button>Art/Units/Iroquois Mohawk/Mohawk.dds</Button>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Iroquois Mohawk/Native_American_Musketman.nif</NIF>
-			<KFM>Art/Units/Musketman/Musketman.kfm</KFM>
-			<SHADERNIF>Art/Units/Iroquois Mohawk/Native_American_Musketman.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.05</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
-			<AudioRunSounds/>
-		</UnitArtInfo>
-		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_MOUNTED_BRAVE</Type>
 			<Button>Art/Units/Sioux Mounted Brave/Mounted Brave.dds</Button>
 			<fScale>0.42</fScale>
@@ -5899,9 +5878,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Settlers/Pacific Settlers/settler_male_fx.nif</NIF>
+			<NIF>Art/Units/Settlers/Pacific Settlers/settler_male_fx.nif</NIF>
 			<KFM>Art/Units/Settler/Settler_Male.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Settlers/Pacific Settlers/settler_male_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Settlers/Pacific Settlers/settler_male_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6044,9 +6023,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Settlers/Mesoamerican Settlers/settler_fx.nif</NIF>
+			<NIF>Art/Units/Settlers/Mesoamerican Settlers/settler_fx.nif</NIF>
 			<KFM>Art/Units/Settler/Settler_Male.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Settlers/Mesoamerican Settlers/settler_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Settlers/Mesoamerican Settlers/settler_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6068,9 +6047,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Settlers/Mesoamerican Settlers/settler_female_fx.nif</NIF>
+			<NIF>Art/Units/Settlers/Mesoamerican Settlers/settler_female_fx.nif</NIF>
 			<KFM>Art/Units/Settler/Settler_Female.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Settlers/Mesoamerican Settlers/settler_female_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Settlers/Mesoamerican Settlers/settler_female_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6092,9 +6071,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Settlers/Mesoamerican Settlers/settler_child_fx.nif</NIF>
+			<NIF>Art/Units/Settlers/Mesoamerican Settlers/settler_child_fx.nif</NIF>
 			<KFM>Art/Units/Settler/Settler_Child.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Settlers/Mesoamerican Settlers/settler_child_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Settlers/Mesoamerican Settlers/settler_child_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6116,9 +6095,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Settlers/Brazilian Settlers/settler_fx.nif</NIF>
+			<NIF>Art/Units/Settlers/Brazilian Settlers/settler_fx.nif</NIF>
 			<KFM>Art/Units/Settler/Settler_Male.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Settlers/Brazilian Settlers/settler_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Settlers/Brazilian Settlers/settler_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6339,9 +6318,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Workers/Pacific Worker/worker_south_america_fx.nif</NIF>
+			<NIF>Art/Units/Workers/Pacific Worker/worker_south_america_fx.nif</NIF>
 			<KFM>Art/Units/Worker/Worker.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Workers/Pacific Worker/worker_south_america_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Workers/Pacific Worker/worker_south_america_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6363,9 +6342,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Workers/Mesoamerican Worker/worker_fx.nif</NIF>
+			<NIF>Art/Units/Workers/Mesoamerican Worker/worker_fx.nif</NIF>
 			<KFM>Art/Units/Worker/Worker.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Workers/Mesoamerican Worker/worker_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Workers/Mesoamerican Worker/worker_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6387,9 +6366,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Workers/Mesoamerican Worker (Medieval)/mesoworker_fx.nif</NIF>
+			<NIF>Art/Units/Workers/Mesoamerican Worker (Medieval)/mesoworker_fx.nif</NIF>
 			<KFM>Art/Units/Worker/Worker.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Workers/Mesoamerican Worker (Medieval)/mesoworker_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Workers/Mesoamerican Worker (Medieval)/mesoworker_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6411,9 +6390,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Workers/Brazilian Worker/worker_fx.nif</NIF>
+			<NIF>Art/Units/Workers/Brazilian Worker/worker_fx.nif</NIF>
 			<KFM>Art/Units/Worker/Worker.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Workers/Brazilian Worker/worker_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Workers/Brazilian Worker/worker_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6436,9 +6415,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Scouts/Pacific Scout/scout_fx.nif</NIF>
+			<NIF>Art/Units/Scouts/Pacific Scout/scout_fx.nif</NIF>
 			<KFM>Art/Units/Scout/Scout.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Scouts/Pacific Scout/scout_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Scouts/Pacific Scout/scout_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6460,9 +6439,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Scouts/Native Scout/Scout.nif</NIF>
+			<NIF>Art/Units/Scouts/Native Scout/Scout.nif</NIF>
 			<KFM>Art/Units/Scout/Scout.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Scouts/Native Scout/Scout.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Scouts/Native Scout/Scout.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6484,9 +6463,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Scouts/Mesoamerican Scout/AztecSCoutfinal.nif</NIF>
+			<NIF>Art/Units/Scouts/Mesoamerican Scout/AztecSCoutfinal.nif</NIF>
 			<KFM>Art/Units/Scout/Scout.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Scouts/Mesoamerican Scout/AztecSCoutfinal.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Scouts/Mesoamerican Scout/AztecSCoutfinal.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6508,9 +6487,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Scouts/Brazilian Scout/scout.nif</NIF>
+			<NIF>Art/Units/Scouts/Brazilian Scout/scout.nif</NIF>
 			<KFM>Art/Units/Scout/Scout.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Scouts/Brazilian Scout/scout.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Scouts/Brazilian Scout/scout.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6533,9 +6512,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Explorers/Native Explorer/Converted_Native.nif</NIF>
-			<KFM>Art/Units (Shared)/Explorers/Native Explorer/Converted_Native.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Explorers/Native Explorer/Converted_Native.nif</SHADERNIF>
+			<NIF>Art/Units/Explorers/Native Explorer/Converted_Native.nif</NIF>
+			<KFM>Art/Units/Explorers/Native Explorer/Converted_Native.kfm</KFM>
+			<SHADERNIF>Art/Units/Explorers/Native Explorer/Converted_Native.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6557,9 +6536,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Explorers/Mesoamerican Explorer/AztecExplorerfinal.nif</NIF>
+			<NIF>Art/Units/Explorers/Mesoamerican Explorer/AztecExplorerfinal.nif</NIF>
 			<KFM>Art/Units/Charlemagne_LightSwordsman/LightSwordsman.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Explorers/Mesoamerican Explorer/AztecExplorerfinal.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Explorers/Mesoamerican Explorer/AztecExplorerfinal.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6581,9 +6560,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Explorers/Mayan Explorer/MayanExplorerfinal.nif</NIF>
+			<NIF>Art/Units/Explorers/Mayan Explorer/MayanExplorerfinal.nif</NIF>
 			<KFM>Art/Units/Explorer/Explorer.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Explorers/Mayan Explorer/MayanExplorerfinal.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Explorers/Mayan Explorer/MayanExplorerfinal.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6606,9 +6585,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Spies/Native Spy/ancient_spy_fx.nif</NIF>
+			<NIF>Art/Units/Spies/Native Spy/ancient_spy_fx.nif</NIF>
 			<KFM>Art/Units/AncientSpy/AncientSpy.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Spies/Native Spy/ancient_spy_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Spies/Native Spy/ancient_spy_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6630,9 +6609,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Spies/Native Spy (Modern)/Great_Spy_Modern_FX.nif</NIF>
+			<NIF>Art/Units/Spies/Native Spy (Modern)/Great_Spy_Modern_FX.nif</NIF>
 			<KFM>Art/Units/Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Spies/Native Spy (Modern)/Great_Spy_Modern_FX.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Spies/Native Spy (Modern)/Great_Spy_Modern_FX.nif</SHADERNIF>
 				<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6655,9 +6634,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Warriors/Pacific Warrior/mayawarriornew.nif</NIF>
+			<NIF>Art/Units/Warriors/Pacific Warrior/mayawarriornew.nif</NIF>
 			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Warriors/Pacific Warrior/mayawarriornew.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Warriors/Pacific Warrior/mayawarriornew.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6679,9 +6658,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Warriors/Native Warrior/iroquois_warrior.nif</NIF>
+			<NIF>Art/Units/Warriors/Native Warrior/iroquois_warrior.nif</NIF>
 			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Warriors/Native Warrior/iroquois_warrior.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Warriors/Native Warrior/iroquois_warrior.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6703,9 +6682,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Warriors/Mesoamerican Warrior/AztecWarriorfinal.nif</NIF>
+			<NIF>Art/Units/Warriors/Mesoamerican Warrior/AztecWarriorfinal.nif</NIF>
 			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Warriors/Mesoamerican Warrior/AztecWarriorfinal.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Warriors/Mesoamerican Warrior/AztecWarriorfinal.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -6727,9 +6706,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Shared)/Warriors/Brazilian Warrior/warrior.nif</NIF>
+			<NIF>Art/Units/Warriors/Brazilian Warrior/warrior.nif</NIF>
 			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
-			<SHADERNIF>Art/Units (Shared)/Warriors/Brazilian Warrior/warrior.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Warriors/Brazilian Warrior/warrior.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -7637,6 +7616,30 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MAYA_HOLKAN</Type>
+			<Button>,Art/Interface/Buttons/Units/ICBM.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,6,10</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Unique_Maya_Holkan/Unique_Mayan_Holkan.nif</NIF>
+			<KFM>Art/Units/Unique_Maya_Holkan/Unique_Mayan_Holkan.kfm</KFM>
+			<SHADERNIF>Art/Units/Unique_Maya_Holkan/Unique_Mayan_Holkan_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>

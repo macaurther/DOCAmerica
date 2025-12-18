@@ -509,8 +509,8 @@ lImmigraitonTechs = [iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSib
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 150
-# Land Units (100)
+iNumUnits = 151
+# Land Units (101)
 # 0				1				2				3				4				5				6				7				8				9
 (iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote,		iClawdius,		iSettler, 		iDogSled,		
 iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iTrackman,		iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       iAgent,			
@@ -518,10 +518,11 @@ iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iImmigrant,		iScout
 iRanger,		iFactor,		iParatrooper,	iMilitiaSpearman,iFalconDancer,	iMilitiaPikeman,iMilitiaArquebusier,iMilitiaMusketman,iMinuteman,iMilitiaRifleman,		
 iMilitiaInfantry,iWarrior, 		iKoa,			iTomahawk,		iSwordsman,		iAztecJaguar,	iAxeman,		iMaceman,		iAucac,			iQuangariecha,	
 iArquebusier,	iMohawk,		iArmedSlave,	iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		
-iFARs,			iSpearman,		iXhisxyag,		iPikeman,		iEagle,			iTercio,		iLineInfantry,	iRedcoat,		iAntiTank,		iArcher,		
-iGuecha,		iCrossbowman,	iGatlingGun,	iMachineGun,	iSkirmisher,	iHolkan,		iSlinger,		iLongbowman,	iIrregular,		iCacos,			
-iGrenadier,		iAlbionLegion,	iMarine,		iHorseArcher,	iSwiftArrow,	iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		
-iGrenadierCavalry,iRural,		iLightTank,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iAAGun,		
+iFARs,			iSpearman,		iXhisxyag,		iPikeman,		iHalberdier,	iEagle,			iTercio,		iLineInfantry,	iRedcoat,		iAntiTank,		
+iArcher,		iGuecha,		iCrossbowman,	iGatlingGun,	iMachineGun,	iSkirmisher,	iHolkan,		iSlinger,		iLongbowman,	iIrregular,		
+iCacos,			iGrenadier,		iAlbionLegion,	iMarine,		iHorseArcher,	iSwiftArrow,	iCuirassier,	iConquistador,	iDragoon,		iLlanero,		
+iCavalry,		iGrenadierCavalry,iRural,		iLightTank,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		
+iAAGun,		
 
 # Naval Units (27)
 # 0				1				2				3				4				5				6				7				8				9

@@ -203,21 +203,6 @@ def animalHunting(winningUnit, losingUnit):
 				
 				events.fireEvent("combatFood", iWinner, winningUnit, iFood)
 
-@handler("combatResult")
-def mayanHolkanAbility(winningUnit, losingUnit):
-	if winningUnit.getUnitType() == iHolkan and not losingUnit.getUnitType() in lAnimalUnits:
-		iWinner = winningUnit.getOwner()
-		if player(iWinner).getNumCities() > 0:
-			city = closestCity(winningUnit, iWinner)
-			if city and distance(winningUnit, city) <= 10:
-				iFood = scale(5)
-				city.changeFood(iFood)
-				
-				message(iWinner, 'TXT_KEY_MAYA_HOLKAN_EFFECT', adjective(losingUnit), losingUnit.getName(), iFood, city.getName())
-				
-				events.fireEvent("combatFood", iWinner, winningUnit, iFood)
-
-
 ### REVOLUTION ###
 
 @handler("revolution")

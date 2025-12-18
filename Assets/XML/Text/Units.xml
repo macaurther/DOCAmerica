@@ -618,12 +618,20 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_MAYAN_HOLKAN_HELP</Tag>
+		<English>[ICON_BULLET]+25% slave capture chance</English>
+		<French>[ICON_BULLET]+25% slave capture chance</French>
+		<German>[ICON_BULLET]+25% slave capture chance</German>
+		<Italian>[ICON_BULLET]+25% slave capture chance</Italian>
+		<Spanish>[ICON_BULLET]+25% slave capture chance</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_MAYAN_HOLKAN_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</English>
-		<French>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</French>
-		<German>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a bonus versus Melee units.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is more likely to capture slaves and has a bonus versus Melee units.</English>
+		<French>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is more likely to capture slaves and has a bonus versus Melee units.</French>
+		<German>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is more likely to capture slaves and has a bonus versus Melee units.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is more likely to capture slaves and has a bonus versus Melee units.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is more likely to capture slaves and has a bonus versus Melee units.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INCAN_AUCAC_STRATEGY</Tag>
@@ -744,14 +752,6 @@
 		<German>[COLOR_UNIT_TEXT]Mobile SAMs[COLOR_REVERT] cannot capture enemy cities and untis, can intercept aircraft and have a combat bonus against [COLOR_UNIT_TEXT]Helicopter Units[COLOR_REVERT].</German>
 		<Italian>[COLOR_UNIT_TEXT]Mobile SAMs[COLOR_REVERT] cannot capture enemy cities and untis, can intercept aircraft and have a combat bonus against [COLOR_UNIT_TEXT]Helicopter Units[COLOR_REVERT].</Italian>
 		<Spanish>[COLOR_UNIT_TEXT]Mobile SAMs[COLOR_REVERT] cannot capture enemy cities and untis, can intercept aircraft and have a combat bonus against [COLOR_UNIT_TEXT]Helicopter Units[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_MAYAN_HOLKAN_HELP</Tag>
-		<English>[ICON_BULLET]Receives [ICON_FOOD] for Defeating Enemy Units</English>
-		<French>[ICON_BULLET]Receives [ICON_FOOD] for Defeating Enemy Units</French>
-		<German>[ICON_BULLET]Receives [ICON_FOOD] for Defeating Enemy Units</German>
-		<Italian>[ICON_BULLET]Receives [ICON_FOOD] for Defeating Enemy Units</Italian>
-		<Spanish>[ICON_BULLET]Receives [ICON_FOOD] for Defeating Enemy Units</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MEXICAN_RURAL</Tag>

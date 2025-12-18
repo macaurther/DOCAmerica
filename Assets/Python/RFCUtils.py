@@ -978,7 +978,7 @@ def getSlaveCaptureChance(iPlayer, iUnit=None):
 	if pPlayer.getCivics(iCivicsLabor) in [iTlacotin, iEncomienda]: iChance += 25
 	if pPlayer.getCivics(iCivicsSociety) in [iSacrifice]: iChance += 25
 	if civ(iPlayer) in dCivGroups[iCivGroupMesoamerica]: iChance += 25	# MacAurther: Mesoamerican RP
-	if iUnit in [iAztecJaguar]: iChance += 25
+	if iUnit in [iAztecJaguar, iHolkan]: iChance += 25
 	if iUnit in [iBandeirante]: iChance += 50
 	return iChance
 
