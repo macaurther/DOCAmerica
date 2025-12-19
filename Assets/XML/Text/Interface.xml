@@ -3273,6 +3273,14 @@
 		<Spanish>After the discovery of %s1, your cities have received %d2 [ICON_FOOD]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_INCA_UP_EFFECT</Tag>
+		<English>After the conquest of %s1, populations were resettled across the empire, yielding %d2 [ICON_FOOD] in your cities</English>
+		<French>After the conquest of %s1, populations were resettled across the empire, yielding %d2 [ICON_FOOD] in your cities</French>
+		<German>After the conquest of %s1, populations were resettled across the empire, yielding %d2 [ICON_FOOD] in your cities</German>
+		<Italian>After the conquest of %s1, populations were resettled across the empire, yielding %d2 [ICON_FOOD] in your cities</Italian>
+		<Spanish>After the conquest of %s1, populations were resettled across the empire, yielding %d2 [ICON_FOOD] in your cities</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_POPUP_GOLD_CITY_CAPTURE</Tag>
 		<English>You have pillaged %d1_Num [ICON_GOLD] from the capture of %s2_CityName!!! What are your next orders for our troops?</English>
 		<French>Vous avez pill&#233; %d1_Num [ICON_GOLD] en capturant %s2_CityName !!! Quels sont vos ordres ?</French>

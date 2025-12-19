@@ -274,9 +274,9 @@ lCivilizations = [
 	Civilization(
 		iInca,
 		iGold=700,
-		lCivics=[iDespot, iClans, iTlacotin, iMindalaes],
+		lCivics=[iDespot, iMita, iMindalaes, iSacrifice, iIntegration],
 		lEnemies=[iWari, iTiwanaku],
-		techs=techs.column(4).including(iConstruction, iMathematics, iWriting, iTradeRoutes).without(iHunting, iTrapping, iDiving, iFishing),
+		techs=techs.column(4).including(iConstruction, iMathematics, iWriting, iTradeRoutes, iGeneralship, iAlloys),
 		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting, iLinguistics, iLocalization),
 	),
 	Civilization(
@@ -457,6 +457,7 @@ dStartingUnits = CivDict({
 		iWork: 2,
 		iBase: 2,
 		iAttack: 1,
+		iSkirmish: 3,
 		iDefend: 1,
 	},
 	iMississippi: {
@@ -496,10 +497,9 @@ dStartingUnits = CivDict({
 		iSettle: 1,
 		iWork: 2,
 		iBase: 4,
-		iAttack: 12,
+		iAttack: 8,
 		iDefend: 4,
 		iSkirmish: 4,
-		# if not human: 1 Settler
 	},
 	iPurepecha: {
 		iSettle: 2,
@@ -686,6 +686,7 @@ dExtraAIUnits = CivDict({
 	},
 	iInca: {
 		iBase: 5,
+		iAttack: 4,
 	},
 	iMexico: {
 		iBase: 4,
@@ -789,10 +790,7 @@ def createSpecificUnits(iPlayer, tile):
 	iCiv = civ(iPlayer)
 	bHuman = player(iPlayer).isHuman()
 	
-	if iCiv == iInca:
-		if not bHuman:
-			makeUnit(iPlayer, iSettler, tile)
-	elif iCiv == iAmerica:	# American UP
+	if iCiv == iAmerica:	# American UP
 		unit = makeUnit(iPlayer, iGreatStatesman, tile)
 		gp.assignGreatPersonName(unit, iPlayer, None, False)
 		unit = makeUnit(iPlayer, iGreatGeneral, tile)

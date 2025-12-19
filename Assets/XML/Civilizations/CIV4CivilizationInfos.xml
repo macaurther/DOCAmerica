@@ -3639,6 +3639,10 @@
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_TEOTL_STEP_PYRAMID</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_ZAPOTEC_PALACE</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>

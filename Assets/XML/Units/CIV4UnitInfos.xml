@@ -7369,7 +7369,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_PASTORALISM</PrereqTech>
+			<PrereqTech>TECH_ARITHMETICS</PrereqTech>
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -7433,11 +7433,11 @@
 			</UnitMeshGroups>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_FLANKING1</PromotionType>
+					<PromotionType>PROMOTION_DISENGAGE1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_FLANKING2</PromotionType>
+					<PromotionType>PROMOTION_DISENGAGE2</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>

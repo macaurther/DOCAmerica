@@ -15,7 +15,7 @@ lCivilizations = [
 		iGold=100,
 		lCivics=[iTlacotin, iRedistribution, iMonarch],
 		techs=techs.column(2).including(iTanning, iMining, iPottery, iAgriculture, iMythology, iDugouts, iCeremony),
-		extraTechs=techs.column(0).including(iLandmarks, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting, iDiving),
+		extraTechs=techs.column(0).including(iLandmarks, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting, iDiving, iHerbalism),
 	),
 	Civilization(
 		iTeotihuacan,

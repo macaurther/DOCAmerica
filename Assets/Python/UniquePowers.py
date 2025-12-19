@@ -19,6 +19,17 @@ def colombianPower(iOwner, iPlayer, pCity, bConquest):
 		if pCity in cities.regions(*lLatinAmerica):
 			pCity.setOccupationTimer(0)
 
+@handler("cityAcquired")
+# Inca UP
+def mayanPower(iOwner, iPlayer, pCity, bConquest):
+	if civ(iPlayer) == iInca and bConquest:
+		iNumCities = player(iPlayer).getNumCities()
+		if iNumCities > 0:
+			iFood = scale(60) / iNumCities
+			for pCity in cities.owner(iPlayer):
+				pCity.changeFood(iFood)
+			
+			message(iPlayer, 'TXT_KEY_INCA_UP_EFFECT', pCity.getName(), iFood)
 
 @handler("techAcquired")
 # Mayan UP

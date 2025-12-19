@@ -3367,13 +3367,6 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 			               (GC.getRouteInfo(getRouteType()).getMovementCost() + GET_TEAM(pUnit->getTeam()).getRouteChange(getRouteType())));
 		iRouteFlatCost = std::max((GC.getRouteInfo(pFromPlot->getRouteType()).getFlatMovementCost() * pUnit->baseMoves()),
 			                   (GC.getRouteInfo(getRouteType()).getFlatMovementCost() * pUnit->baseMoves()));
-
-		// MacAurther: Inca UP: Units travel faster on roads
-		if (GET_PLAYER(pUnit->getOwner()).getCivilizationType() == INCA)
-		{
-			iRouteCost /= 2;
-			iRouteFlatCost /= 2;
-		}
 	}
 	else
 	{

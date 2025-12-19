@@ -133,7 +133,7 @@ BeginPlot
 		CityName=Danibaan
 		CityPopulation=2
 		YearFounded=-500
-		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_ZAPOTEC_PALACE
 		BeginCulture
 			Civilization=CIVILIZATION_ZAPOTEC, Culture=50
 		EndCulture
