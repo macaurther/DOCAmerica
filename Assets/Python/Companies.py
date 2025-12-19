@@ -6,8 +6,8 @@ from Events import handler
 
 
 dCompanyTechs = {
-	iFurTrade         : [iExploration],
-	iTradingCompany   : [iExploration],
+	iTrappingIndustry : [iExploration],
+	iWestIndiesCompany : [iExploration],
 	iCerealIndustry   : [iEconomics, iBiology],
 	iFishingIndustry  : [iEconomics],
 	iTextileIndustry  : [iEconomics, iThermodynamics],
@@ -19,9 +19,9 @@ dCompanyTechs = {
 tCompaniesLimit = (10, 12, 16, 10, 12, 12, 6, 10) # kind of arbitrary currently, see how this plays out
 
 dCompanyExpiry = defaultdict({
-	iFurTrade : 1900,
-	iTradingCompany : 1800,
-	iTextileIndustry : 1920,
+	iTrappingIndustry  : 1900,
+	iWestIndiesCompany : 1800,
+	iTextileIndustry   : 1920,
 }, 2020)
 					
 	
@@ -105,31 +105,27 @@ def getCityValue(city, iCompany):
 	owner = player(city)
 	ownerTeam = team(city)
 
-	# Trade Company Civic increases likeliness for trading company
-	if iCompany == iTradingCompany and has_civic(owner, iTradingCompany):
-		iValue += 100
-
 	# Free Enterprise increases likeliness for all companies
 	if has_civic(owner, iFreeEnterprise):
 		iValue += 1
 
-	if iCompany == iTradingCompany:
+	if iCompany == iWestIndiesCompany:
 		iValue += 3
 			
-	elif iCompany == iTradingCompany:
+	elif iCompany == iWestIndiesCompany:
 		if city in cities.region(rCaribbean):
 			iValue += 1
 	
 	# trade companies and fishing industry - coastal cities only
-	if iCompany in [iTradingCompany, iFishingIndustry]:
+	if iCompany in [iWestIndiesCompany, iFishingIndustry]:
 		if not city.isCoastal(20):
 			return -1
 	
 	# various bonuses	
-	if iCompany == iFurTrade:
+	if iCompany == iTrappingIndustry:
 		if city.hasBuilding(unique_building(iOwner, iTradingPost)): iValue += 3
 
-	elif iCompany == iTradingCompany:
+	elif iCompany == iWestIndiesCompany:
 		if city.hasBuilding(unique_building(iOwner, iHarbor)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iCustomsHouse)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iBank)): iValue += 1
@@ -186,7 +182,7 @@ def getCityValue(city, iCompany):
 				bFound = True
 				if iCompany in [iFishingIndustry, iCerealIndustry, iTextileIndustry]:
 					iTempValue += city.getNumBonuses(iBonus)
-				elif iCompany in [iFurTrade, iOilIndustry]:
+				elif iCompany in [iTrappingIndustry, iOilIndustry]:
 					iTempValue += city.getNumBonuses(iBonus) * 4
 				else:
 					iTempValue += city.getNumBonuses(iBonus) * 2

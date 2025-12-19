@@ -471,7 +471,7 @@ iCultureGroupNone = -1
 
 # corporations
 iNumCorporations = 8
-(iFurTrade, iTradingCompany, iCerealIndustry, iFishingIndustry, iTextileIndustry, iSteelIndustry, iOilIndustry, iLuxuryIndustry) = range(iNumCorporations)
+(iTrappingIndustry, iWestIndiesCompany, iCerealIndustry, iFishingIndustry, iTextileIndustry, iSteelIndustry, iOilIndustry, iLuxuryIndustry) = range(iNumCorporations)
 
 # initialise tech variables to unit indices from XML
 
@@ -656,7 +656,7 @@ iAnimism,		iHarmony,		iSacrifice,		iOrganizedReligion,iCosmopolitans,iAcculturat
 iSettlement,	iNomads,		iIsolationism,	iConquest,		iIntegration,	iTributaries,	iAncestralLands,
 # Colony
 iCaptains,		iProprietors,	iViceroys,		iTrustees,		iGovernors,		iColonialAssembly,iHomeRule,
-iExpedition,	iAdmiralty,		iCharterColony,	iTradeCompany,	iRoyalColony,	iSecretariate,	iCommonwealth,	
+iExpedition,	iAdmiralty,		iCharterColony,	iTradingCompany,iRoyalColony,	iSecretariate,	iCommonwealth,	
 iSerfdom,		iEncomienda,	iIndenturedServitude,iSlavery,	iConscription,	iPenalColony,	iApprenticeship,
 iGoldRush,		iPlunder,		iExtraction,	iFactoryCivic,	iPlantationCivic,iMercantilism,	iCustomsUnion,
 iDivineRight,	iJesuits,		iPatronato,		iHaven,			iCastas,		iCreolism,		iEmancipation,

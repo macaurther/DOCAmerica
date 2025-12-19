@@ -765,19 +765,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRADING_COMPANY_STRATEGY</Tag>
-		<English>Can hurry building [ICON_PRODUCTION] with gold; Trading Company very likely to spread to your cities</English>
-		<French>Can hurry building [ICON_PRODUCTION] with gold; Trading Company very likely to spread to your cities</French>
-		<German>Can hurry building [ICON_PRODUCTION] with gold; Trading Company very likely to spread to your cities</German>
-		<Italian>Can hurry building [ICON_PRODUCTION] with gold; Trading Company very likely to spread to your cities</Italian>
-		<Spanish>Can hurry building [ICON_PRODUCTION] with gold; Trading Company very likely to spread to your cities</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_TRADING_COMPANY_HELP</Tag>
-		<English>[ICON_BULLET]Greatly increases likelihood for Trading Company Corporation to spread to your cities</English>
-		<French>[ICON_BULLET]Greatly increases likelihood for Trading Company Corporation to spread to your cities</French>
-		<German>[ICON_BULLET]Greatly increases likelihood for Trading Company Corporation to spread to your cities</German>
-		<Italian>[ICON_BULLET]Greatly increases likelihood for Trading Company Corporation to spread to your cities</Italian>
-		<Spanish>[ICON_BULLET]Greatly increases likelihood for Trading Company Corporation to spread to your cities</Spanish>
+		<English>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE] and no maintenance nor unhappiness from Corporations</English>
+		<French>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE] and no maintenance nor unhappiness from Corporations</French>
+		<German>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE] and no maintenance nor unhappiness from Corporations</German>
+		<Italian>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE] and no maintenance nor unhappiness from Corporations</Italian>
+		<Spanish>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE] and no maintenance nor unhappiness from Corporations</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMONWEALTH</Tag>

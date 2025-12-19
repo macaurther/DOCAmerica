@@ -618,16 +618,6 @@
 			<Button>,Art/Interface/Buttons/Buildings/IronWorks.dds,Art/Interface/Buttons/Buildings_Atlas.dds,2,4</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_TRADING_COMPANY</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.85</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Trading_Company/trade.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/TradingCompany.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_RED_CROSS</Type>
 			<LSystem>LSYSTEM_2x2_NO_ROTATE</LSystem>
 			<bAnimated>0</bAnimated>
@@ -1789,11 +1779,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_DUTCH_FACTORIJ</Type>
-			<LSystem>LSYSTEM_3x1</LSystem>
+			<LSystem>LSYSTEM_WALLS</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Structures/Improvements/Fort/eu_med_fort.nif</NIF>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Walls/Walls.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Trading_Fort.dds</Button>
 		</BuildingArtInfo>

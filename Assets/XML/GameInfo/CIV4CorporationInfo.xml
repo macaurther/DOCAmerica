@@ -7,9 +7,9 @@
 <Civ4CorporationInfo xmlns="x-schema:CIV4GameInfoSchema.xml">
 	<CorporationInfos>
 		<CorporationInfo>
-			<Type>CORPORATION_FUR_TRADE</Type>
-			<Description>TXT_KEY_CORPORATION_FUR_TRADE</Description>
-			<Civilopedia>TXT_KEY_CORPORATION_FUR_TRADE_PEDIA</Civilopedia>
+			<Type>CORPORATION_TRAPPING_INDUSTRY</Type>
+			<Description>TXT_KEY_CORPORATION_TRAPPING_INDUSTRY</Description>
+			<Civilopedia>TXT_KEY_CORPORATION_TRAPPING_INDUSTRY_PEDIA</Civilopedia>
 			<TechPrereq>TECH_COMPANIES</TechPrereq>
 			<FreeUnitClass>NONE</FreeUnitClass>
 			<iSpreadFactor>200</iSpreadFactor>
@@ -20,16 +20,19 @@
 			<iMaxConsumableBonuses>12</iMaxConsumableBonuses>
 			<PrereqBonuses>
 				<BonusType>BONUS_FUR</BonusType>
+				<BonusType>BONUS_BISON</BonusType>
+				<BonusType>BONUS_SEAL</BonusType>
+				<BonusType>BONUS_WHALE</BonusType>
 			</PrereqBonuses>
 			<HeadquarterCommerces>
 				<iHeadquarterCommerce>0</iHeadquarterCommerce>
 			</HeadquarterCommerces>
 			<BonusProduced>NONE</BonusProduced>
 			<CommercesProduced>
-				<iCommerceProduced>200</iCommerceProduced>
+				<iCommerceProduced>100</iCommerceProduced>
 			</CommercesProduced>
 			<YieldsProduced>
-				<iYieldProduced>0</iYieldProduced>
+				<iYieldProduced>50</iYieldProduced>
 			</YieldsProduced>
 			<Button>Art/Interface/Buttons/civics/FurTrade.dds</Button>
 			<MovieFile>NONE</MovieFile>
@@ -37,9 +40,9 @@
 			<Sound>AS2D_BUILD_BANK</Sound>
 		</CorporationInfo>
 		<CorporationInfo>
-			<Type>CORPORATION_TRADING_COMPANY</Type>
-			<Description>TXT_KEY_CORPORATION_TRADING_COMPANY</Description>
-			<Civilopedia>TXT_KEY_CORPORATION_TRADING_COMPANY_PEDIA</Civilopedia>
+			<Type>CORPORATION_WEST_INDIES_COMPANY</Type>
+			<Description>TXT_KEY_CORPORATION_WEST_INDIES_COMPANY</Description>
+			<Civilopedia>TXT_KEY_CORPORATION_WEST_INDIES_COMPANY_PEDIA</Civilopedia>
 			<TechPrereq>TECH_COMPANIES</TechPrereq>
 			<FreeUnitClass>NONE</FreeUnitClass>
 			<iSpreadFactor>200</iSpreadFactor>

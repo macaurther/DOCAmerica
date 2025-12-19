@@ -90,38 +90,6 @@
 		<Spanish>La [COLOR_BUILDING_TEXT]Cruz Roja[COLOR_REVERT] otorga el ascenso de [COLOR_HIGHLIGHT_TEXT]M&#233;dica I[COLOR_REVERT] a todas las unidades que se construyan en su ciudad y aumenta las posibilidades de que &#233;sta genere un [COLOR_UNIT_TEXT]Gran cient&#237;fico[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TRADING_COMPANY</Tag>
-		<English>Trading Company</English>
-		<French>
-			<Text>Compagnie marchande</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Handelsgesellschaft</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Compagnia commerciale</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>la Compa&#241;&#237;a de las Indias</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TRADING_COMPANY_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Trading Company[COLOR_REVERT] generates income for each city that Trading Company has spread to and provides two trade routes. It generates health for its city with access to [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT] and happiness for its city with access to [COLOR_HIGHLIGHT_TEXT]Coffee[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Tea[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Tobacco[COLOR_REVERT]. It increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</English>
-		<French>La [COLOR_BUILDING_TEXT]compagnie commerciale[COLOR_REVERT] g&#233;n&#232;re un revenu pour chaque ville o&#249; s'est propag&#233;e la Compagnie commerciale. Elle procure de la sant&#233; si sa ville a acc&#232;s &#224; des [COLOR_HIGHLIGHT_TEXT]&#233;pices[COLOR_REVERT], et du bonheur si sa ville a acc&#232;s &#224; du [COLOR_HIGHLIGHT_TEXT]caf&#233;[COLOR_REVERT], du [COLOR_HIGHLIGHT_TEXT]sucre[COLOR_REVERT], du [COLOR_HIGHLIGHT_TEXT]th&#233;[COLOR_REVERT] ou du [COLOR_HIGHLIGHT_TEXT]tabac[COLOR_REVERT]. Elle augmente aussi les chances d'apparition d'un [COLOR_UNIT_TEXT]marchand illustre[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Trading Company[COLOR_REVERT] generates income for each city that Trading Company has spread to and provides two trade routes. It generates health for its city with access to [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT] and happiness for its city with access to [COLOR_HIGHLIGHT_TEXT]Coffee[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Tea[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Tobacco[COLOR_REVERT]. It increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Trading Company[COLOR_REVERT] generates income for each city that Trading Company has spread to and provides two trade routes. It generates health for its city with access to [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT] and happiness for its city with access to [COLOR_HIGHLIGHT_TEXT]Coffee[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Tea[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Tobacco[COLOR_REVERT]. It increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Trading Company[COLOR_REVERT] generates income for each city that Trading Company has spread to and provides two trade routes. It generates health for its city with access to [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT] and happiness for its city with access to [COLOR_HIGHLIGHT_TEXT]Coffee[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Tea[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Tobacco[COLOR_REVERT]. It increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STOCK_EXCHANGE</Tag>
 		<English>Stock Exchange</English>
 		<French>

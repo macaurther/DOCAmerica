@@ -2,20 +2,12 @@
 <!-- Corporations -->
 <Civ4GameText>
 	<TEXT>
-		<Tag>TXT_KEY_CORPORATION_TRADING_COMPANY</Tag>
-		<English>Trading Company</English>
-		<French>
-			<Text>Compagnie commerciale</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Handelskompanie</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>Trading Company</Italian>
-		<Spanish>Trading Company</Spanish>
+		<Tag>TXT_KEY_CORPORATION_WEST_INDIES_COMPANY</Tag>
+		<English>West Indies Company</English>
+		<French>West Indies Company</French>
+		<German>West Indies Company</German>
+		<Italian>West Indies Company</Italian>
+		<Spanish>West Indies Company</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CORPORATION_CEREAL_INDUSTRY</Tag>
@@ -130,12 +122,12 @@
 		<Spanish>Computer Industry</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CORPORATION_FUR_TRADE</Tag>
-		<English>Fur Trade</English>
-		<French>Fur Trade</French>
-		<German>Fur Trade</German>
-		<Italian>Fur Trade</Italian>
-		<Spanish>Fur Trade</Spanish>
+		<Tag>TXT_KEY_CORPORATION_TRAPPING_INDUSTRY</Tag>
+		<English>Trapping Industry</English>
+		<French>Trapping Industry</French>
+		<German>Trapping Industry</German>
+		<Italian>Trapping Industry</Italian>
+		<Spanish>Trapping Industry</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CORPORATION_INFLUENCES_0</Tag>

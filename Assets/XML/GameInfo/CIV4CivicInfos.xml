@@ -1101,11 +1101,13 @@
 			<Description>TXT_KEY_CIVIC_TRADING_COMPANY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_TRADING_COMPANY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_TRADING_COMPANY_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_TRADING_COMPANY_HELP</Help>
 			<TechPrereq>TECH_ECONOMICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Colonialism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
+			<iCorporationCommerceModifier>100</iCorporationCommerceModifier>
+			<iCorporationUnhappinessModifier>-100</iCorporationUnhappinessModifier>
+			<iCorporationMaintenanceModifier>-100</iCorporationMaintenanceModifier>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<Hurrys>
 				<Hurry>
