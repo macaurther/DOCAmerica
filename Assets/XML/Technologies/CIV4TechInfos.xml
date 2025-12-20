@@ -1230,7 +1230,6 @@
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_CLASSICAL</Era>
-			<FirstFreeUnitClass>UNITCLASS_GREAT_MERCHANT</FirstFreeUnitClass>
 			<iAsset>12</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -1505,6 +1504,7 @@
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_CLASSICAL</Era>
+			<FirstFreeUnitClass>UNITCLASS_GREAT_MERCHANT</FirstFreeUnitClass>
 			<iAsset>8</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>

@@ -39,7 +39,7 @@
 			<Description>TXT_KEY_CIVIC_DESPOT</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DESPOT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DESPOT_STRATEGY</Strategy>
-			<TechPrereq>TECH_PROPERTY</TechPrereq>
+			<TechPrereq>TECH_SMELTING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Despotism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -115,7 +115,7 @@
 			<Description>TXT_KEY_CIVIC_COUNCIL</Description>
 			<Civilopedia>TXT_KEY_CIVIC_COUNCIL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_COUNCIL_STRATEGY</Strategy>
-			<TechPrereq>TECH_LAW</TechPrereq>
+			<TechPrereq>TECH_SCHOLARSHIP</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Council.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -225,7 +225,7 @@
 			<Description>TXT_KEY_CIVIC_BUREAUCRACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_BUREAUCRACY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_BUREAUCRACY_STRATEGY</Strategy>
-			<TechPrereq>TECH_SCHOLARSHIP</TechPrereq>
+			<TechPrereq>TECH_CODICES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Bureaucracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -242,7 +242,7 @@
 			<Description>TXT_KEY_CIVIC_VASSALAGE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_VASSALAGE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_VASSALAGE_STRATEGY</Strategy>
-			<TechPrereq>TECH_LAW</TechPrereq>
+			<TechPrereq>TECH_SUBJUGATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Vassalage.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -662,7 +662,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_SACRIFICE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_SACRIFICE_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_SACRIFICE_HELP</Help>
-			<TechPrereq>TECH_WRITING</TechPrereq>
+			<TechPrereq>TECH_ASTRONOMY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Sacrifice.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -810,7 +810,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_ISOLATIONISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ISOLATIONISM_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_ISOLATIONISM_HELP</Help>
-			<TechPrereq>TECH_WRITING</TechPrereq>
+			<TechPrereq>TECH_CEREMONY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Isolationism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -856,7 +856,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_INTEGRATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_INTEGRATION_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_INTEGRATION_HELP</Help>
-			<TechPrereq>TECH_CEREMONY</TechPrereq>
+			<TechPrereq>TECH_WRITING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Integration.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -875,7 +875,7 @@
 			<Description>TXT_KEY_CIVIC_TRIBUTARIES</Description>
 			<Civilopedia>TXT_KEY_CIVIC_TRIBUTARIES_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_TRIBUTARIES_STRATEGY</Strategy>
-			<TechPrereq>TECH_SUBJUGATION</TechPrereq>
+			<TechPrereq>TECH_LAW</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Tributaries.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,4,1</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>

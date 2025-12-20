@@ -2619,9 +2619,9 @@ class CvMainInterface:
 							if pUnit.plot().isCore(iCiv):
 								iCoreCiv = iCiv
 								break
-						iUnitUpgrade = unique_unit_civ(iCoreCiv, iUnitToUpgrade)
 						# Ensure there's a core civ and that they have a unique unit of this class
-						if not iCoreCiv in [-1, civ(pUnit)] and iUnitUpgrade != iUnitToUpgrade:
+						if not iCoreCiv in [-1, civ(pUnit)] and unique_unit_civ(iCoreCiv, iUnitToUpgrade) != iUnitToUpgrade:
+							iUnitUpgrade = unique_unit_civ(iCoreCiv, iUnitToUpgrade)
 							screen.appendMultiListButton("BottomButtonContainer", gc.getUnitInfo(iUnitUpgrade).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10003, 10003, False)
 							screen.show("BottomButtonContainer")
 							iCount = iCount + 1

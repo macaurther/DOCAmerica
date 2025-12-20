@@ -105,19 +105,20 @@ dGoals = {
 	iZapotec: (
 		FirstDiscover(iWriting),
 		All(
+			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatEngineer, 1),
+			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatProphet, 1),
+			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatArtist, 1),
+			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatScientist, 1),
+			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatGeneral, 1),
+			by=900,
+		),
+		All(
 			ControlledResourceCount(iJade, 1),
 			ControlledResourceCount(iObsidian, 1),
 			ControlledResourceCount(iGold, 1),
 			ControlledResourceCount(iSilver, 1),
 			BuildingCount(iJeweller, 3),
 			by=1000
-		),
-		All(
-			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatProphet, 1),
-			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatGeneral, 1),
-			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatArtist, 1),
-			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatScientist, 1),
-			by=1500,
 		),
 	),
 	iTeotihuacan: (

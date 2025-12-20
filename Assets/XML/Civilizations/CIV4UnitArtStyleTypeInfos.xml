@@ -1281,6 +1281,14 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_SPEARMAN</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SPEARMAN_SOUTH_AMERICAN</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SPEARMAN_SOUTH_AMERICAN</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SPEARMAN_SOUTH_AMERICAN</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_PIKEMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_PIKEMAN_AZTEC</EarlyArtDefineTag>

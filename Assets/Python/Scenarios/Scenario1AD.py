@@ -14,7 +14,7 @@ lCivilizations = [
 		iZapotec,
 		iGold=100,
 		lCivics=[iTlacotin, iRedistribution, iMonarch],
-		techs=techs.column(2).including(iTanning, iMining, iPottery, iAgriculture, iMythology, iDugouts, iCeremony),
+		techs=techs.column(2).including(iTanning, iMining, iPottery, iAgriculture, iMythology, iDugouts, iCeremony, iDivination),
 		extraTechs=techs.column(0).including(iLandmarks, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting, iDiving, iHerbalism),
 	),
 	Civilization(

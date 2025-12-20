@@ -1303,7 +1303,7 @@
 			<Strategy>TXT_KEY_BUILDING_ZAPOTEC_TOMB_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ZAPOTEC_TOMB</ArtDefineTag>
-			<PrereqTech>TECH_NOBILITY</PrereqTech>
+			<PrereqTech>TECH_CEREMONY</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>120</iCost>
@@ -1323,6 +1323,10 @@
 			<SpecialistCounts>
 				<SpecialistCount>
 					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
