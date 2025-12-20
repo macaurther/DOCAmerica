@@ -313,7 +313,6 @@ lCivilizations = [
 	Civilization(
 		iEngland,
 		iGold=300,
-		iImmigration=30,
 		iStateReligion=iProtestantism,
 		lCivics=[iProprietors, iCharterColony, iIndenturedServitude, iMercantilism, iDivineRight, iProvidence],
 		techs=techs.column(10).including(iShipbuilding, iCharter, iIndentures),
@@ -322,7 +321,6 @@ lCivilizations = [
 	Civilization(
 		iFrance,
 		iGold=400,
-		iImmigration=20,
 		iStateReligion=iCatholicism,
 		lCivics=[iExpedition, iAdmiralty, iSerfdom, iFactoryCivic, iJesuits, iOutposts],
 		techs=techs.column(10).including(iShipbuilding, iFortification),
@@ -354,7 +352,7 @@ lCivilizations = [
 	Civilization(
 		iRussia,
 		iGold=200,
-		iImmigration=20,
+		iImmigration=10,
 		iStateReligion=iOrthodoxy,
 		lCivics=[iTrustees, iTradingCompany, iIndenturedServitude, iFactoryCivic, iExtraction, iOutposts],
 		techs=techs.column(12),

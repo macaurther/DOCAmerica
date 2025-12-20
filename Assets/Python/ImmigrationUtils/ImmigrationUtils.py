@@ -79,6 +79,10 @@ class ImmigrationUtils:
 		if bPenalColony: iModifier -= 50
 		if bDecolonization: iModifier += 25
 
+		# England UP:
+		if civ(iPlayer) == iEngland and iHomeland == iHomelandNorthEurope:
+			iModifier -= 50
+
 		# Saturation
 		iModifier += data.civs[civ(iPlayer)].lNumImmigrantsEared[iHomeland] ** 1.1
 

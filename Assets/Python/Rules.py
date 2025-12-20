@@ -135,14 +135,10 @@ def extraCultureOnFound(city):
 
 @handler("cityBuilt")
 # Homestead civics
-def extraCultureOnFound(city):
+def extraImmigrationOnFound(city):
 	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
 	if iExpansionCivic in [iGrants, iHomesteads]:
 		iSettleImmigration = scale(50)
-		
-		# England UP
-		if civ(city.getOwner()) == iEngland:
-			iSettleImmigration *= 2
 		
 		player(city.getOwner()).changeImmigration(iSettleImmigration)
 

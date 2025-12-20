@@ -12792,19 +12792,7 @@ int CvPlayer::getCommerceRateModifier(CommerceTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_COMMERCE_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-
-	int iCommerceRateModifier = m_aiCommerceRateModifier[eIndex];
-
-	// MacAurther: England UP
-	if (eIndex == COMMERCE_IMMIGRATION && getCivilizationType() == ENGLAND)
-	{
-		iCommerceRateModifier += 100;
-	}
-
-	// MacAurther: Let's allow it to be negative
-	//FAssert(iCommerceRateModifier >= 0);
-
-	return iCommerceRateModifier;
+	return m_aiCommerceRateModifier[eIndex];
 }
 
 
