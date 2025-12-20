@@ -18198,7 +18198,7 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 	}
 
 	// Capital
-	int iCapitalMod = (city.isCapital() || GET_PLAYER(city.getOwner()).getCivilizationType() == MUISCA) ? owner.getCapitalCommerceRateModifier(eCommerceType) : 0;	// MacAurther: Muisca UP: Capital modifiers are applied to all cities
+	int iCapitalMod = city.isCapital() ? owner.getCapitalCommerceRateModifier(eCommerceType) : 0;
 	if (iCapitalMod != 0)
 	{
 		szBuffer.append(NEWLINE);
@@ -18384,7 +18384,7 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		}
 
 		// Capital
-		if (city.isCapital() || GET_PLAYER(city.getOwner()).getCivilizationType() == MUISCA)	// MacAurther: Muisca UP: Capital modifiers are applied to all cities
+		if (city.isCapital())
 		{
 			int iCapitalMod = owner.getCapitalYieldRateModifier(eYieldType);
 			if (0 != iCapitalMod)

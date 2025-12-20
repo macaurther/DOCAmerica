@@ -241,7 +241,7 @@ lCivilizations = [
 		iGold=50,
 		lCivics=[iExpedition, iSerfdom],
 		techs=techs.column(8),
-		extraTechs=techs.column(0).including(iNorthEuropeAccess),
+		extraTechs=techs.column(0).including(iNorthEuropeAccess, iHunting, iTrapping, iFishing),
 	),
 	Civilization(
 		iChimu,

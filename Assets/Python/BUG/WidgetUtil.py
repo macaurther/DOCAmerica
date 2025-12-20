@@ -132,6 +132,10 @@ def getWidgetHelp(argsList):
 	# MacAurther: Despotism Civic
 	if iData1 == 10002:
 		return CyTranslator().getText("TXT_KEY_BUTTON_HURRY", (turns(20), turns(10)))
+	
+	# MacAurther: Integration Civic
+	if iData1 == 10003:
+		return CyTranslator().getText("TXT_KEY_ACTION_INTEGRATION_UPGRADE", ())
 		
 	if iData1 == 12001:
 		szText = BugUtil.getPlainText("TXT_KEY_BUG_TECH_PREFS_ALL") + "\n"

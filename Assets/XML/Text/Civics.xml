@@ -1544,12 +1544,20 @@
 		<Spanish>Integration</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_INTEGRATION_HELP</Tag>
+		<English>[ICON_BULLET]Can upgrade units to unique variants in foreign core</English>
+		<French>[ICON_BULLET]Can upgrade units to unique variants in foreign core</French>
+		<German>[ICON_BULLET]Can upgrade units to unique variants in foreign core</German>
+		<Italian>[ICON_BULLET]Can upgrade units to unique variants in foreign core</Italian>
+		<Spanish>[ICON_BULLET]Can upgrade units to unique variants in foreign core</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INTEGRATION_STRATEGY</Tag>
-		<English>Reduced city occupation time; faster production of Compound; reduced war weariness</English>
-		<French>Reduced city occupation time; faster production of Compound; reduced war weariness</French>
-		<German>Reduced city occupation time; faster production of Compound; reduced war weariness</German>
-		<Italian>Reduced city occupation time; faster production of Compound; reduced war weariness</Italian>
-		<Spanish>Reduced city occupation time; faster production of Compound; reduced war weariness</Spanish>
+		<English>Reduced city occupation time; faster production of Compound; upgrade into foreign unique units</English>
+		<French>Reduced city occupation time; faster production of Compound; upgrade into foreign unique units</French>
+		<German>Reduced city occupation time; faster production of Compound; upgrade into foreign unique units</German>
+		<Italian>Reduced city occupation time; faster production of Compound; upgrade into foreign unique units</Italian>
+		<Spanish>Reduced city occupation time; faster production of Compound; upgrade into foreign unique units</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ANCESTRAL_LANDS</Tag>

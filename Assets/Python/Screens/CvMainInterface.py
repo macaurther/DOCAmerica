@@ -2592,22 +2592,39 @@ class CvMainInterface:
 								screen.appendMultiListButton("BottomButtonContainer", gc.getBuildingInfo(unique_building(iPlayer, iPaganTemple)).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10000, 10000, False)
 								screen.show("BottomButtonContainer")
 								iCount = iCount + 1
-						
+
 					# Leoreth: Byzantine UP: bribe barbarians
-					if pUnit.getUnitType() == iSpy and not pUnit.isMadeAttack() and player(pUnit).getNumCities() > 0:
+					if unittype(pUnit) == iSpy and not pUnit.isMadeAttack() and player(pUnit).getNumCities() > 0:
 						if canBribeUnits(pUnit):
 							screen.appendMultiListButton("BottomButtonContainer", gc.getTechInfo(iCurrency).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10001, 10001, False)
 							screen.show("BottomButtonContainer")
 							iCount = iCount + 1
 					
 					# MacAurther: Hurry population can also hurry slaves
-					if pUnit.getUnitType() in lSlaveUnits and player(iPlayer).canHurry(0) and pUnit.movesLeft() > 0:	# Hurry type 0: population
+					if unittype(pUnit) in lSlaveUnits and player(iPlayer).canHurry(0) and pUnit.movesLeft() > 0:	# Hurry type 0: population
 						city = city_(pUnit)
 						if city:
 							if civ(city) == civ(iPlayer) and city.isProductionBuilding():
 								screen.appendMultiListButton("BottomButtonContainer", gc.getMissionInfo(gc.getInfoTypeForString("MISSION_HURRY")).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10002, 10002, False)
 								screen.show("BottomButtonContainer")
 								iCount = iCount + 1
+					
+					# MacAurther: Integration Ability: can upgrade to Unique Units within core of another player
+					# Ensure that unit is in a city, that player has right civic, and that the selected unit is not itself a unique unit
+					if city_(pUnit) != None and player(iPlayer).getCivics(iCivicsExpansion) == iIntegration and base_unit(unittype(pUnit)) == unittype(pUnit):
+						iUnitToUpgrade = unittype(pUnit)
+						# Find out whose core
+						iCoreCiv = -1
+						for iCiv in lBirthOrder:
+							if pUnit.plot().isCore(iCiv):
+								iCoreCiv = iCiv
+								break
+						iUnitUpgrade = unique_unit_civ(iCoreCiv, iUnitToUpgrade)
+						# Ensure there's a core civ and that they have a unique unit of this class
+						if not iCoreCiv in [-1, civ(pUnit)] and iUnitUpgrade != iUnitToUpgrade:
+							screen.appendMultiListButton("BottomButtonContainer", gc.getUnitInfo(iUnitUpgrade).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10003, 10003, False)
+							screen.show("BottomButtonContainer")
+							iCount = iCount + 1
 
 		elif (CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY):
 		
@@ -5867,6 +5884,20 @@ class CvMainInterface:
 			
 			self.pPushedButtonUnit.kill(False, city.getOwner())
 			events.fireEvent("slaveExpended", city)
+		# MacAurther: end
+
+		# MacAurther: start Integration civic
+		if inputClass.getNotifyCode() == 11 and inputClass.getData1() == 10003:
+			self.pPushedButtonUnit = g_pSelectedUnit
+
+			iCoreCiv = -1
+			for iCiv in lBirthOrder:
+				if self.pPushedButtonUnit.plot().isCore(iCiv):
+					iCoreCiv = iCiv
+					break
+			
+			if iCoreCiv != -1:
+				replace(self.pPushedButtonUnit, unique_unit_civ(iCoreCiv, unittype(self.pPushedButtonUnit)))
 		# MacAurther: end
 
 		return 0

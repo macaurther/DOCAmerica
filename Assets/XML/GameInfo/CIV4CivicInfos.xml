@@ -855,12 +855,12 @@
 			<Description>TXT_KEY_CIVIC_INTEGRATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_INTEGRATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_INTEGRATION_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_INTEGRATION_HELP</Help>
 			<TechPrereq>TECH_CEREMONY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Integration.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<iOccupationTimeChange>-2</iOccupationTimeChange>
-			<iWarWearinessModifier>-50</iWarWearinessModifier>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>

@@ -3713,6 +3713,14 @@
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Bribe Barbarians[COLOR_REVERT][NEWLINE]Allows your spy to offer gold to bribe one barbarian unit on this plot to join your army.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_ACTION_INTEGRATION_UPGRADE</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Integrate Unit[COLOR_REVERT][NEWLINE]Upgrades your unit with local warriors.</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Integrate Unit[COLOR_REVERT][NEWLINE]Upgrades your unit with local warriors.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Integrate Unit[COLOR_REVERT][NEWLINE]Upgrades your unit with local warriors.</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Integrate Unit[COLOR_REVERT][NEWLINE]Upgrades your unit with local warriors.</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Integrate Unit[COLOR_REVERT][NEWLINE]Upgrades your unit with local warriors.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BRIBE_UNITS_POPUP</Tag>
 		<English>[H1]Bribing Barbarians[\H1][NEWLINE]Choose the barbarian unit you wish to bribe:[NEWLINE]</English>
 		<French>[H1]Soudoyer les barbares[\H1][NEWLINE]Choisissez l'unit&#233; barbare &#224; soudoyer :[NEWLINE]</French>

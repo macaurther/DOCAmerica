@@ -515,6 +515,13 @@ def unique_unit(identifier, iUnit):
 	if not player(identifier): return base_unit(iUnit)
 	return unique_unit_from_class(identifier, gc.getUnitInfo(unittype(iUnit)).getUnitClassType())
 
+# MacAurther: Needed a way to get unique unit from civ ID, not player (i.e. the player might not be living)
+def unique_unit_civ(iCiv, iUnit):
+	return unique_unit_from_class_civ(iCiv, gc.getUnitInfo(unittype(iUnit)).getUnitClassType())
+
+def unique_unit_from_class_civ(iCiv, iUnitClass):
+	return gc.getCivilizationInfo(iCiv).getCivilizationUnits(iUnitClass)
+
 
 def master(iPlayer):
 	return players.all().alive().where(lambda p: team(iPlayer).isVassal(p)).first()

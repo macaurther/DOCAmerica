@@ -6938,8 +6938,8 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		iYield += GC.getYieldInfo(eYield).getPeakChange();
 	}
 
-	// MacAurther: Norse UP: The Power of Seafarers: +1 Food on Water Tiles
-	if (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == NORSE && GC.getTerrainInfo(getTerrainType()).isWater())
+	// MacAurther: Norse UP: The Power of Seafarers: +1 Food on Arctic Coast and Fjords
+	if (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == NORSE && getTerrainType() == TERRAIN_ARCTIC_COAST || getTerrainType() == TERRAIN_FJORD)
 	{
 		if(eYield == YIELD_FOOD)
 		{
@@ -7089,6 +7089,15 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 		if (eBonus != NO_BONUS)
 		{
 			iYield += GC.getImprovementInfo(eImprovement).getImprovementBonusYield(eBonus, eYield);
+		}
+	}
+
+	// MacAurther: Muisca UP: +2 Commerce on Mines
+	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == MUISCA)
+	{
+		if (eYield == YIELD_COMMERCE && (eImprovement == IMPROVEMENT_MINE || eImprovement == IMPROVEMENT_SLAVE_MINE))
+		{
+			iYield += 2;
 		}
 	}
 
