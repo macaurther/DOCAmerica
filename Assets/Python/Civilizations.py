@@ -220,7 +220,7 @@ lCivilizations = [
 		iWari,
 		iGold=100,
 		lCivics=[iDespot, iMita, iRedistribution],
-		techs=techs.column(3).including(iMasonry, iArithmetics),
+		techs=techs.column(3).including(iMasonry, iArithmetics, iProperty, iCeremony),
 		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting),
 	),
 	Civilization(

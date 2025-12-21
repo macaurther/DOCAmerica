@@ -619,6 +619,14 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_MACEMAN</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MACEMAN_IROQUOIS</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MACEMAN_IROQUOIS</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MACEMAN_IROQUOIS</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SKIRMISHER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_SKIRMISHER_SIOUX</EarlyArtDefineTag>
@@ -1732,6 +1740,14 @@
 						<EarlyArtDefineTag>ART_DEF_UNIT_HORSE_ARCHER_INCAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_HORSE_ARCHER_INCAN</LateArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_HORSE_ARCHER_INCAN</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_MACEMAN</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MACEMAN_MAYAN</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MACEMAN_MAYAN</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MACEMAN_MAYAN</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>

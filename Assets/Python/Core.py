@@ -517,11 +517,9 @@ def unique_unit(identifier, iUnit):
 
 # MacAurther: Needed a way to get unique unit from civ ID, not player (i.e. the player might not be living)
 def unique_unit_civ(iCiv, iUnit):
-	print("iCiv: " + str(iCiv) + " iUnitClass: " + str(iUnit))	# Temp debug
 	return unique_unit_from_class_civ(iCiv, gc.getUnitInfo(unittype(iUnit)).getUnitClassType())
 
 def unique_unit_from_class_civ(iCiv, iUnitClass):
-	print("iCiv: " + str(iCiv) + " iUnitClass: " + str(iUnitClass))	# Temp debug
 	return gc.getCivilizationInfo(iCiv).getCivilizationUnits(iUnitClass)
 
 

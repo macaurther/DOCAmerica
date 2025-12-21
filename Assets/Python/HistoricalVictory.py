@@ -142,7 +142,7 @@ dGoals = {
 			CultureAmount(250),
 			by=900,
 		),
-		BuildingCount((iBarracks, 2), (iQollqa, 4), (iMarket, 2), by=1000),
+		BuildingCount((iBarracks, 2), (iQollqa, 4), (iMarket, 2), (iWeaver, 2), by=1000),
 		All(
 			CultureLevelCityCount(iCultureLevelDeveloping, 4),
 			PopulationCityCount(5, 4),
