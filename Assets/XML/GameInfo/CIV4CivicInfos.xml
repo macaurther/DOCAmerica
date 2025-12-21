@@ -39,7 +39,7 @@
 			<Description>TXT_KEY_CIVIC_DESPOT</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DESPOT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DESPOT_STRATEGY</Strategy>
-			<TechPrereq>TECH_SMELTING</TechPrereq>
+			<TechPrereq>TECH_PROPERTY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Despotism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>

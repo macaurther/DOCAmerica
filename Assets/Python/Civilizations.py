@@ -219,7 +219,7 @@ lCivilizations = [
 	Civilization(
 		iWari,
 		iGold=100,
-		lCivics=[iChief, iMita, iRedistribution],
+		lCivics=[iDespot, iMita, iRedistribution],
 		techs=techs.column(3).including(iMasonry, iArithmetics),
 		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting),
 	),
