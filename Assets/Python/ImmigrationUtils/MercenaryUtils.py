@@ -164,6 +164,7 @@ class Mercenary:
 
 		# Apply effects
 		if bIndenturedServitude and self.iUnitID in [iWorker, iPromyshlenniki, iLaborer]: iImmigrationCost -= 1
+		if civ(iPlayer) == iNorse and self.iUnitID == iSettler: iImmigrationCost -= 1	# Norse UP
 		if bProprietaries: iGoldCost /= 2
 		
 		return (iImmigrationCost, iGoldCost)

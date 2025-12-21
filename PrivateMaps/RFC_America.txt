@@ -40320,12 +40320,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=59,y=115
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=59,y=116
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot

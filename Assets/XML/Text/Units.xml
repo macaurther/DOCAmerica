@@ -2375,11 +2375,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_IMMIGRANT_STRATEGY</Tag>
-		<English>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</English>
-		<French>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</French>
-		<German>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</German>
-		<Italian>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</Italian>
-		<Spanish>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</Spanish>
+		<English>Hire [COLOR_UNIT_TEXT]Immigrants[COLOR_REVERT] with [ICON_IMMIGRATION] and settle them to increase [ICON_FOOD] and [ICON_CULTURE] at the cost of [ICON_IMMIGRATION], or gain a [ICON_CULTURE] boost.</English>
+		<French>Hire [COLOR_UNIT_TEXT]Immigrants[COLOR_REVERT] with [ICON_IMMIGRATION] and settle them to increase [ICON_FOOD] and [ICON_CULTURE] at the cost of [ICON_IMMIGRATION], or gain a [ICON_CULTURE] boost.</French>
+		<German>Hire [COLOR_UNIT_TEXT]Immigrants[COLOR_REVERT] with [ICON_IMMIGRATION] and settle them to increase [ICON_FOOD] and [ICON_CULTURE] at the cost of [ICON_IMMIGRATION], or gain a [ICON_CULTURE] boost.</German>
+		<Italian>Hire [COLOR_UNIT_TEXT]Immigrants[COLOR_REVERT] with [ICON_IMMIGRATION] and settle them to increase [ICON_FOOD] and [ICON_CULTURE] at the cost of [ICON_IMMIGRATION], or gain a [ICON_CULTURE] boost.</Italian>
+		<Spanish>Hire [COLOR_UNIT_TEXT]Immigrants[COLOR_REVERT] with [ICON_IMMIGRATION] and settle them to increase [ICON_FOOD] and [ICON_CULTURE] at the cost of [ICON_IMMIGRATION], or gain a [ICON_CULTURE] boost.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRACKMAN</Tag>
@@ -2391,11 +2391,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRACKMAN_STRATEGY</Tag>
-		<English>Hire Trackmen with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</English>
-		<French>Hire Trackmen with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</French>
-		<German>Hire Trackmen with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</German>
-		<Italian>Hire Trackmen with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</Italian>
-		<Spanish>Hire Trackmen with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</Spanish>
+		<English>Hire [COLOR_UNIT_TEXT]Trackmen[COLOR_REVERT] with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</English>
+		<French>Hire [COLOR_UNIT_TEXT]Trackmen[COLOR_REVERT] with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</French>
+		<German>Hire [COLOR_UNIT_TEXT]Trackmen[COLOR_REVERT] with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</German>
+		<Italian>Hire [COLOR_UNIT_TEXT]Trackmen[COLOR_REVERT] with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</Italian>
+		<Spanish>Hire [COLOR_UNIT_TEXT]Trackmen[COLOR_REVERT] with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LAKOTA_SWIFT_ARROW</Tag>

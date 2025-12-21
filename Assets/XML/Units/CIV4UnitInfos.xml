@@ -2123,6 +2123,7 @@
 				</TerrainImpassable>
 			</TerrainImpassables>
 			<iAsset>2</iAsset>
+			<iGreatWorkCulture>50</iGreatWorkCulture>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>
@@ -2334,25 +2335,7 @@
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>20</iWithdrawalProb>
-			<iHillsAttack>25</iHillsAttack>
-			<FeatureAttacks>
-				<FeatureAttack>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_TAIGA</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-			</FeatureAttacks>
+			<iRoughAttack>25</iRoughAttack>
 			<iAsset>2</iAsset>
 			<iPower>2</iPower>
 			<UnitMeshGroups>
@@ -2446,37 +2429,7 @@
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>40</iWithdrawalProb>
-			<iHillsAttack>25</iHillsAttack>
-			<FeatureAttacks>
-				<FeatureAttack>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_TAIGA</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_BOG</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-			</FeatureAttacks>
+			<iRoughAttack>25</iRoughAttack>
 			<iAsset>2</iAsset>
 			<iPower>5</iPower>
 			<UnitMeshGroups>
@@ -2565,25 +2518,7 @@
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>20</iWithdrawalProb>
-			<iHillsAttack>25</iHillsAttack>
-			<FeatureAttacks>
-				<FeatureAttack>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_TAIGA</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-			</FeatureAttacks>
+			<iRoughAttack>25</iRoughAttack>
 			<iAsset>2</iAsset>
 			<iPower>2</iPower>
 			<UnitMeshGroups>
@@ -2665,25 +2600,7 @@
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>20</iWithdrawalProb>
-			<iHillsAttack>25</iHillsAttack>
-			<FeatureAttacks>
-				<FeatureAttack>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_TAIGA</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-			</FeatureAttacks>
+			<iRoughAttack>25</iRoughAttack>
 			<iAsset>2</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
@@ -2776,25 +2693,7 @@
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>20</iWithdrawalProb>
-			<iHillsAttack>25</iHillsAttack>
-			<FeatureAttacks>
-				<FeatureAttack>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-				<FeatureAttack>
-					<FeatureType>FEATURE_TAIGA</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
-				</FeatureAttack>
-			</FeatureAttacks>
+			<iRoughAttack>25</iRoughAttack>
 			<iAsset>2</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
@@ -7794,7 +7693,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_TACTICS</PrereqTech>
+			<PrereqTech>TECH_GEOGRAPHY</PrereqTech>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -7894,7 +7793,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_TACTICS</PrereqTech>
+			<PrereqTech>TECH_GEOGRAPHY</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -10198,6 +10097,8 @@
 			</TerrainAttacks>
 			<iAsset>1</iAsset>
 			<iPower>5</iPower>
+			<iBaseHurry>30</iBaseHurry>
+			<iHurryMultiplier>0</iHurryMultiplier>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
 				<fMaxSpeed>2.25</fMaxSpeed>

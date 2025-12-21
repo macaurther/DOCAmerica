@@ -39,14 +39,14 @@ g_bAIThinkPeriod = 1 #Rhye (5 in Warlords, 4 in vanilla)
 def getHoverText(eWidgetType, iData1, iData2, bOption):
 	if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab):
 		fThreshold = float(objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
-		fProgress = float(gc.getActivePlayer().getImmigration())
 		fRate = float(gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION))
-		szText = BugUtil.getText("TXT_KEY_MISC_IMMIGRATION", (int(fProgress), int(fThreshold)))
+		fFirst = float(gc.getActivePlayer().getImmigration())
+		szText = BugUtil.getText("TXT_KEY_MISC_IMMIGRATION", (int(fFirst), int(fThreshold)))
 		if (fRate > 0):
-			iTurns = math.ceil((fThreshold - fProgress) / fRate)
+			iTurns = math.ceil((fThreshold - fFirst) / fRate)
 			if iTurns < 0: iTurns = 0
 			szText += u"\n%d%c%s " % (int(fRate), gc.getCommerceInfo(CommerceTypes.COMMERCE_IMMIGRATION).getChar(), BugUtil.getPlainText("TXT_KEY_PER_TURN"))
-			szText += BugUtil.getText("INTERFACE_CITY_TURNS", (iTurns,))
+			szText += BugUtil.getText("INTERFACE_CITY_TURNS", (int(iTurns),))
 	else:
 		szText = "Cannot earn immigrants here"
 	

@@ -1423,7 +1423,7 @@
 			<Description>TXT_KEY_CIVIC_FACTORY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_FACTORY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_FACTORY_STRATEGY</Strategy>
-			<TechPrereq>TECH_FORTIFICATION</TechPrereq>
+			<TechPrereq>TECH_FIREARMS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Factory.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -1593,7 +1593,7 @@
 			<Description>TXT_KEY_CIVIC_HAVEN</Description>
 			<Civilopedia>TXT_KEY_CIVIC_HAVEN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HAVEN_STRATEGY</Strategy>
-			<TechPrereq>TECH_NORTH_EUROPE_ACCESS</TechPrereq>
+			<TechPrereq>TECH_EXCHANGE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Haven.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -1614,7 +1614,7 @@
 			<Description>TXT_KEY_CIVIC_CASTAS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CASTAS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CASTAS_STRATEGY</Strategy>
-			<TechPrereq>TECH_SOUTH_EUROPE_ACCESS</TechPrereq>
+			<TechPrereq>TECH_FORTIFICATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Castas.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -1701,26 +1701,17 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
-			<Type>CIVIC_PROVIDENCE</Type>
-			<Description>TXT_KEY_CIVIC_PROVIDENCE</Description>
-			<Civilopedia>TXT_KEY_CIVIC_PROVIDENCE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_PROVIDENCE_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_PROVIDENCE_HELP</Help>
-			<TechPrereq>TECH_NORTH_EUROPE_ACCESS</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Providence.dds</Button>
+			<Type>CIVIC_GRANTS</Type>
+			<Description>TXT_KEY_CIVIC_GRANTS</Description>
+			<Civilopedia>TXT_KEY_CIVIC_GRANTS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_GRANTS_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_GRANTS_HELP</Help>
+			<TechPrereq>TECH_CARTOGRAPHY</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Grants.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
-			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<SpecialistTypeExtraYields>
-				<SpecialistTypeExtraYield>
-					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
-					<YieldChanges>
-						<iYield>4</iYield>
-						<iYield>0</iYield>
-						<iYield>2</iYield>
-					</YieldChanges>
-				</SpecialistTypeExtraYield>
-			</SpecialistTypeExtraYields>
+			<iWorkerSpeedModifier>50</iWorkerSpeedModifier>
+			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -1760,17 +1751,26 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
-			<Type>CIVIC_GRANTS</Type>
-			<Description>TXT_KEY_CIVIC_GRANTS</Description>
-			<Civilopedia>TXT_KEY_CIVIC_GRANTS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_GRANTS_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_GRANTS_HELP</Help>
+			<Type>CIVIC_PROVIDENCE</Type>
+			<Description>TXT_KEY_CIVIC_PROVIDENCE</Description>
+			<Civilopedia>TXT_KEY_CIVIC_PROVIDENCE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_PROVIDENCE_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_PROVIDENCE_HELP</Help>
 			<TechPrereq>TECH_TREATIES</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Grants.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Providence.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
-			<iWorkerSpeedModifier>50</iWorkerSpeedModifier>
-			<Upkeep>UPKEEP_LOW</Upkeep>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
+					<YieldChanges>
+						<iYield>4</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>

@@ -357,6 +357,15 @@ name_translations = {
 		iNative: _,
 		iSpanish: "Oaxaca",
 	},
+	"Deer Lake": {
+		iEnglish: _,
+		iSwedish: found("Vinland"),
+	},
+	"Dover": {
+		iEnglish: _,
+		iSwedish: found("Zwaanendael"),
+		iDutch: found("Zwaanendael"),
+	},
 
 	### E ###
 
@@ -450,6 +459,10 @@ name_translations = {
 		iNative: _,
 		iLocal: _,
 		iSpanish: "Villahermosa",
+	},
+	"Philadelphia": {
+		iEnglish: _,
+		iSwedish: found(u"Nya Göteborg"),
 	},
 	"Porco": {
 		iLocal: _,

@@ -41,6 +41,7 @@ MESOAMERICA = "TXT_KEY_VICTORY_NAME_MESOAMERICA"
 MISSISSIPPI_RIVER = "TXT_KEY_VICTORY_NAME_MISSISSIPPI_RIVER"
 OHIO_RIVER = "TXT_KEY_VICTORY_NAME_OHIO_RIVER"
 BAJIO = "TXT_KEY_VICTORY_NAME_BAJIO"
+ICELAND = "TXT_KEY_VICTORY_NAME_ICELAND"
 GREENLAND = "TXT_KEY_VICTORY_NAME_GREENLAND"
 VINLAND = "TXT_KEY_VICTORY_NAME_VINLAND"
 DELAWARE = "TXT_KEY_VICTORY_NAME_DELAWARE"
@@ -164,7 +165,11 @@ dGoals = {
 		GoldAmount(2000, by=1450),
 	),
 	iNorse: (
-		FirstSettle(plots.region(rGreenland).named(GREENLAND), by=1000),
+		All(
+			FirstSettle(plots.region(rIceland).named(ICELAND)),
+			FirstSettle(plots.region(rGreenland).named(GREENLAND)),
+			by=1000
+		),
 		FirstSettle(plots.rectangle(tVinland).named(VINLAND), by=1100),
 		All(
 			ImprovementCount(iLumbermill, 10),

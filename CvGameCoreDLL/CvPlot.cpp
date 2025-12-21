@@ -6938,15 +6938,6 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		iYield += GC.getYieldInfo(eYield).getPeakChange();
 	}
 
-	// MacAurther: Norse UP: The Power of Seafarers: +1 Food on Arctic Coast and Fjords
-	if (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == NORSE && getTerrainType() == TERRAIN_ARCTIC_COAST || getTerrainType() == TERRAIN_FJORD)
-	{
-		if(eYield == YIELD_FOOD)
-		{
-			iYield += 1;
-		}
-	}
-
 	if (isLake() && !GC.getTerrainInfo(getTerrainType()).isSaline())
 	{
 		iYield += GC.getYieldInfo(eYield).getLakeChange();

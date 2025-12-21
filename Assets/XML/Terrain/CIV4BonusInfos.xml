@@ -542,7 +542,7 @@
 			<Civilopedia>TXT_KEY_BONUS_BANANA_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_BANANA</ArtDefineTag>
-			<TechReveal>TECH_EXCHANGE</TechReveal>
+			<TechReveal>TECH_TRIANGULAR_TRADE</TechReveal>
 			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>

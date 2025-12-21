@@ -16777,7 +16777,7 @@ void CvGameTextMgr::buildStabilityParameterString(CvWStringBuffer& szBuffer, int
 		if (iParameterMotherland > 0)
 		{
 			CvWString szTemp;
-			szTemp.Format(L"%d: %s", iParameterMotherland, gDLL->getText("TXT_KEY_STABILITY_MOTHERLAND").GetCString());
+			szTemp.Format(L"+%d: %s", iParameterMotherland, gDLL->getText("TXT_KEY_STABILITY_MOTHERLAND").GetCString());
 			szStabilityParameters += NEWLINE + szTemp;
 		}
 
