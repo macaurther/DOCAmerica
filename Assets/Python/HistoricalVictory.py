@@ -210,10 +210,10 @@ dGoals = {
 	),
 	iInuit: (
 		CityCount(
-			(plots.rectangle(tKivalliq).named(KIVALLIQ), 1),										# Western Hudson Bay
+			(plots.rectangle(tKivalliq).named(KIVALLIQ), 1),		# Western Hudson Bay
 			(plots.rectangle(tQikiqtaaluk).named(QIKIQTAALUK), 1),	# Baffin Island and islands
-			(plots.rectangle(tNunavik).named(NUNAVIK), 1),											# Northern Quebec/ Eastern Hudson Bay
-			(plots.region(rGreenland).named(KALAALLIT), 1),										# Greenland
+			(plots.rectangle(tNunavik).named(NUNAVIK), 1),			# Northern Quebec/ Eastern Hudson Bay
+			(plots.region(rGreenland).named(KALAALLIT), 1),			# Greenland
 			by=1500
 		),
 		ResourceCount((iFur, 5), (iDeer, 5), (iSeal, 5), (iWhales, 2), by=1600),
@@ -229,9 +229,9 @@ dGoals = {
 		AreaPopulationPercent(plots.regions(*lAndes).named(ANDES), 100, at=1550),
 	),
 	iAztec: (
-		All(VassalCount(1), Control(plots.region(rBajio).named(BAJIO), subject=VASSALS), by=1450),
+		Control(plots.region(rBajio).named(BAJIO), subject=VASSALS, by=1450),
 		CityPopulation(start(iAztec).named(TENOCHTITLAN), 20, at=1500),
-		EnslaveCount(50, by=1550),
+		All(EnslaveCount(50), GoldenAges(10), by=1550),
 	),
 	iHaudenosaunee: (
 		All(ContactTribe(5), by=1550),

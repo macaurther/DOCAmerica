@@ -969,6 +969,9 @@ def enslaveUnit(pWinningUnit, pLosingUnit=None):
 		
 		pUnit.finishMoves()
 		events.fireEvent("enslave", iPlayer, pLosingUnit)
+
+		# Aztec UP:
+		pWinningUnit.changeExperience(2, -1, False, False, False)
 		return pUnit
 
 # used: Rules

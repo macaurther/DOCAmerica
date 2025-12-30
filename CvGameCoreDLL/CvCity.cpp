@@ -3971,7 +3971,7 @@ bool CvCity::canConscript(bool bForce) const
 		return false;
 	}
 
-	if (!bForce && getCivilizationType() != AZTECS) // MacAurther: includes Aztec UP
+	if (!bForce)
 	{
 		if (GET_PLAYER(getOwnerINLINE()).getConscriptCount() >= GET_PLAYER(getOwnerINLINE()).getMaxConscript())
 		{

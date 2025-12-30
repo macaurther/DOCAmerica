@@ -511,11 +511,11 @@ dStartingUnits = CivDict({
 	},
 	iAztec: {
 		iSettle: 1,
-		iWork: 3,
-		iBase: 3,
+		iWork: 1,
+		iBase: 2,
 		iAttack: 5,
-		iSkirmish: 3,
-		iDefend: 3,
+		iSkirmish: 2,
+		iDefend: 2,
 	},
 	iHaudenosaunee: {
 		iSettle: 1,

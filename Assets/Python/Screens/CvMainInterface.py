@@ -5859,7 +5859,7 @@ class CvMainInterface:
 			city = gc.getMap().plot(iX, iY).getPlotCity()
 			
 			player(city).changeGoldenAgeTurns(turns(1))
-			city.changeHurryAngerTimer(turns(10))
+			city.changeHurryAngerTimer(turns(10) * (1 + city.getHurryAngerModifier() / 100))
 			
 			self.pPushedButtonUnit.kill(False, city.getOwner())
 			
@@ -5878,9 +5878,9 @@ class CvMainInterface:
 			iY = self.pPushedButtonUnit.getY()
 			city = gc.getMap().plot(iX, iY).getPlotCity()
 			
-			city.changeBuildingProduction(city.getProductionBuilding(), turns(25))
+			city.changeBuildingProduction(city.getProductionBuilding(), turns(20))
 
-			city.changeHurryAngerTimer(turns(10))
+			city.changeHurryAngerTimer(turns(10) * (1 + city.getHurryAngerModifier() / 100))
 			
 			self.pPushedButtonUnit.kill(False, city.getOwner())
 			events.fireEvent("slaveExpended", city)

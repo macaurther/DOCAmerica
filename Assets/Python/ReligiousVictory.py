@@ -88,7 +88,7 @@ dAdditionalPaganGoal = {
 	),
 	iRodnovery: ResourceCount(iFur, 7),
 	iTeotlMaya: CombatFood(500),
-	iTeotlAztec: SacrificeGoldenAges(10),
+	iTeotlAztec: SacrificeGoldenAges(30),
 	iWocekiya: ResourceCount(iBison, 7),
 	iYoruba: ResourceCount((iBison, 8), (iGems, 6)),
 }
