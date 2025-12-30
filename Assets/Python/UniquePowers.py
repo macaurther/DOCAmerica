@@ -84,14 +84,23 @@ def puebloPower(pCity, iBuilding):
 
 @handler("cityAcquiredAndKept")
 # Chimu UP
-def chimuPower(iOwner, pCity):
+def chimuPowerCity(iOwner, pCity):
 	if civ(iOwner) == iChimu and pCity.getPreviousCiv() != None and plot(pCity).getBirthProtected() == -1:	# Don't give artist for rise flipped cities
-		pCapital = player(iOwner).getCapitalCity()
-		pCapital.changeFreeSpecialistCount(iSpecialistArtist, 1)
-		strMessage = "An Arist has arrived at your capital to recount your recent conquest"
-		# Inform the player that the artist has arrived
-		CyInterface().addMessage(iOwner, False, 20, strMessage, "", 0, infos.unit(iGreatArtist).getButton(), ColorTypes(0), pCapital.getX(), pCapital.getY(), True, True) 
+		chimuArtist(iOwner)
 
+@handler("unitPillage")
+# Chimu UP
+def chimuPowerTribe(pUnit, iImprovement, iRoute, iOwner, iGold):
+	if civ(pUnit) == iChimu:
+		if iImprovement == iTribe or iImprovement == iContactedTribe:
+			chimuArtist(pUnit.getOwner())
+
+def chimuArtist(iPlayer):
+	pCapital = player(iPlayer).getCapitalCity()
+	pCapital.changeFreeSpecialistCount(iSpecialistArtist, 1)
+	strMessage = "An Arist has arrived at your capital to recount your recent conquest"
+	# Inform the player that the artist has arrived
+	CyInterface().addMessage(iPlayer, False, 20, strMessage, "", 0, infos.unit(iGreatArtist).getButton(), ColorTypes(0), pCapital.getX(), pCapital.getY(), True, True) 
 
 @handler("goodyReceived")
 # Coureur des Bois ability
@@ -127,5 +136,5 @@ def inuitUP(pCity):
 	if player(iPlayer).getCivilizationType() == iInuit:
 		for i in range(gc.getNUM_CITY_PLOTS()):
 			pPlot = pCity.getCityIndexPlot(i)
-			if pPlot.getImprovementType() in [-1, iTribe] and pPlot.getBonusType(player(iPlayer).getTeam()) in [iFur, iDeer, iBison]:
+			if not pPlot.isWater() and pPlot.getImprovementType() in [-1, iTribe, iContactedTribe] and pPlot.getBonusType(player(iPlayer).getTeam()) in [iFur, iDeer, iBison, iSeal]:
 				pPlot.setImprovementType(iCamp)

@@ -14,7 +14,7 @@ iWari :			 (45, 39), # Huari
 iMississippi :	 (32, 87), # Cahokia
 iMuisca :		 (48, 50), # Bacata
 iNorse :		 (64, 117), # Reykjavik
-iChimu :		 (41, 41), # Chan Chan
+iChimu :		 (42, 40), # Chan Chan
 iPueblo :		 (20, 83), # Chaco Canyon
 iPurepecha :	 (20, 69), # Tzintzuntzan
 iInuit :		 (9, 118), # North Alaska
@@ -116,7 +116,7 @@ iWari :		    ((44, 39),	(45, 40)),
 iMississippi :  ((31, 83),	(36, 88)),
 iMuisca :		((48, 50),	(49, 53)),
 iNorse :		((0, 0), 	(0, 0)),	# No core for Europeans
-iChimu :		((40, 41),	(42, 43)),
+iChimu :		((41, 40),	(42, 42)),
 iPueblo :		((19, 82),	(21, 86)),
 iPurepecha :	((19, 68),	(21, 69)),
 iInuit :		((7, 117),	(15, 120)),

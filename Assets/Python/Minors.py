@@ -564,7 +564,7 @@ def spawnTribeDefenders(pPlot, iAttacker):
 
 @handler("unitPillage")
 def tribePillage(pUnit, iImprovement, iRoute, iOwner, iGold):
-	# If pillage a tribe, get uprising
+	# If pillage a tribe, do cleanup and enslavement
 	if iImprovement == iTribe or iImprovement == iContactedTribe:
 		# Reset any leftover stored units
 		pUnit.plot().setTribeStoredUnits(0)

@@ -1996,9 +1996,9 @@
 		<BuildInfo>
 			<Type>BUILD_WHALING_BOATS_KAYAK</Type>
 			<Description>TXT_KEY_BUILD_WHALING_BOATS</Description>
-			<PrereqTech>TECH_SEAFARING</PrereqTech>
+			<PrereqTech>TECH_DUGOUTS</PrereqTech>
 			<iTime>0</iTime>
-			<bKill>0</bKill>
+			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_WHALING_BOATS</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<HotKey>KB_W</HotKey>

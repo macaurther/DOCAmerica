@@ -2428,7 +2428,7 @@ bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage) cons
 			return true;
 		}
 
-		if (!canFight())
+		if (!canFight() || getUnitType() == UNIT_INUIT_DOG_SLED)	// MacAurther: Allow Inuit Dog Sled to move through
 		{
 			return true;
 		}

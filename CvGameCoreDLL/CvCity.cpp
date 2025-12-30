@@ -6207,12 +6207,6 @@ int CvCity::getTotalGreatPeopleRateModifier() const
 		iModifier += GC.getDefineINT("GOLDEN_AGE_GREAT_PEOPLE_MODIFIER");
 	}
 
-	// Leoreth: Zapotec UP
-	if (getCivilizationType() == ZAPOTEC)
-	{
-		iModifier += 50;
-	}
-
 	return std::max(0, (iModifier + 100));
 }
 

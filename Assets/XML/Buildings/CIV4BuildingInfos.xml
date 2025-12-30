@@ -782,7 +782,7 @@
 			<DomainFreeExperiences>
 				<DomainFreeExperience>
 					<DomainType>DOMAIN_LAND</DomainType>
-					<iExperience>2</iExperience>
+					<iExperience>3</iExperience>
 				</DomainFreeExperience>
 			</DomainFreeExperiences>
 			<Flavors>
@@ -1241,7 +1241,7 @@
 			<Strategy>TXT_KEY_BUILDING_CHIMU_KANCHA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CHIMU_KANCHA</ArtDefineTag>
-			<PrereqTech>TECH_NOBILITY</PrereqTech>
+			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>120</iCost>
@@ -7625,8 +7625,7 @@
 			<iAsset>25</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<SeaPlotYieldChanges>
-				<iYield>2</iYield>
-				<iYield>1</iYield>
+				<iYield>3</iYield>
 			</SeaPlotYieldChanges>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>

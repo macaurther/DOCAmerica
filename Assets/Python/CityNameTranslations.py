@@ -559,6 +559,8 @@ name_translations = {
 	"Tzintzuntan": {
 		iLocal: _,
 		iNative: _,
+		iNahuatl: _,
+		iMayan: _,
 		iSpanish: "Guadalajara",
 	},
 

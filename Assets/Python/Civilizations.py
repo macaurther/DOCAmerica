@@ -246,8 +246,8 @@ lCivilizations = [
 	Civilization(
 		iChimu,
 		iGold=300,
-		lCivics=[iDespot, iMindalaes],
-		techs=techs.column(4).including(iConstruction, iTradeRoutes),
+		lCivics=[iDespot, iMindalaes, iCraftsmen, iConquest],
+		techs=techs.column(4).including(iConstruction, iTradeRoutes, iGeneralship),
 		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iCultivation, iCompanionPlanting, iDiving, iFishing),
 	),
 	Civilization(
@@ -267,14 +267,14 @@ lCivilizations = [
 	Civilization(
 		iInuit,
 		iGold=25,
-		lCivics=[iHarmony],
-		techs=techs.column(2).including(iTanning, iMythology, iDugouts, iSeafaring),
-		extraTechs=techs.column(0).including(iHunting, iTrapping, iFishing),
+		lCivics=[iHarmony, iClans],
+		techs=techs.column(2).including(iTanning, iMythology, iDugouts),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iFishing, iLocalization),
 	),
 	Civilization(
 		iInca,
 		iGold=700,
-		lCivics=[iDespot, iMita, iMindalaes, iSacrifice, iIntegration],
+		lCivics=[iDespot, iMita, iMindalaes, iConquest],
 		lEnemies=[iWari, iTiwanaku],
 		techs=techs.column(4).including(iConstruction, iMathematics, iWriting, iTradeRoutes, iGeneralship, iAlloys),
 		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting, iLinguistics, iLocalization),
@@ -282,9 +282,9 @@ lCivilizations = [
 	Civilization(
 		iAztec,
 		iGold=600,
-		lCivics=[iDespot, iTlacotin, iRaiding, iOrganizedReligion],
+		lCivics=[iDespot, iTlacotin, iRaiding, iSacrifice, iConquest],
 		lEnemies=[iTeotihuacan],
-		techs=techs.column(4).including(iWriting, iCalendar, iTradeRoutes, iPriesthood, iAlloys, iMathematics),
+		techs=techs.column(4).including(iWriting, iCalendar, iTradeRoutes, iPriesthood, iGeneralship, iMathematics, iAstronomy),
 		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iCompanionPlanting, iKnapping, iFishing),
 	),
 	Civilization(
@@ -483,13 +483,15 @@ dStartingUnits = CivDict({
 	},
 	iChimu: {
 		iSettle: 2,
-		iWork: 1,
+		iWork: 2,
 		iBase: 2,
-		iAttack: 2,
+		iDefend: 1,
+		iSkirmish: 1,
+		iAttack: 3,
 	},
 	iInuit: {
 		iSettle: 2,
-		iBase: 2,
+		iDefend: 1,
 	},
 	iInca: {
 		iSettle: 1,
@@ -511,7 +513,7 @@ dStartingUnits = CivDict({
 		iSettle: 1,
 		iWork: 3,
 		iBase: 3,
-		iAttack: 10,
+		iAttack: 5,
 		iSkirmish: 3,
 		iDefend: 3,
 	},
@@ -674,8 +676,8 @@ dExtraAIUnits = CivDict({
 		iEscort: 1,
 	},
 	iAztec: {
-		iBase: 4,
-		iAttack: 6,
+		iBase: 2,
+		iAttack: 3,
 		iSkirmish: 2,
 		iDefend: 2,
 	},

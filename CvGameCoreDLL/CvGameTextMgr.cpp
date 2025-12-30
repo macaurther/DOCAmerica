@@ -18777,14 +18777,6 @@ void CvGameTextMgr::parseGreatPeopleHelp(CvWStringBuffer &szBuffer, CvCity& city
 		}
 	}
 
-	// MacAurther: Zapotec UP
-	if (city.getCivilizationType() == ZAPOTEC)
-	{
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_UNIQUE_POWER", 50));
-		szBuffer.append(NEWLINE);
-		iModifier += 50;
-	}
-
 	if (owner.isGoldenAge())
 	{
 		int iGoldenAgeMod = GC.getDefineINT("GOLDEN_AGE_GREAT_PEOPLE_MODIFIER");

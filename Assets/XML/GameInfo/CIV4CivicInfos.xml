@@ -496,6 +496,12 @@
 			<CommerceModifiers>
 				<iCommerce>-25</iCommerce>
 			</CommerceModifiers>
+			<BuildingProductionModifiers>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_TANNERY</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+			</BuildingProductionModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
@@ -666,8 +672,9 @@
 			<Button>,Art/Interface/Buttons/Civics/Sacrifice.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
-			<iStateReligionHappiness>-1</iStateReligionHappiness>
+			<iStateReligionHappiness>-2</iStateReligionHappiness>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<bStateReligion>1</bStateReligion>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>

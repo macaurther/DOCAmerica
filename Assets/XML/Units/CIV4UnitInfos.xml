@@ -182,6 +182,12 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_POLAR_BEAR</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_AMPHIBIOUS</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
 			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
 		</UnitInfo>
 		<UnitInfo>
@@ -452,7 +458,7 @@
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iHillsAttack>50</iHillsAttack>
-			<iHillsDefense>50</iHillsDefense>
+			<iHillsDefense>30</iHillsDefense>
 			<TerrainNatives>
 				<TerrainNative>
 					<TerrainType>TERRAIN_PLAINS</TerrainType>
@@ -480,6 +486,12 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_COUGAR</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GUERILLA1</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
 			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
 		</UnitInfo>
 		<UnitInfo>
@@ -789,7 +801,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_POTTERY</PrereqTech>
+			<PrereqTech>TECH_TANNING</PrereqTech>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>3</iMoves>
@@ -817,7 +829,7 @@
 				</TerrainImpassable>
 			</TerrainImpassables>
 			<iAsset>4</iAsset>
-			<iCombat>1</iCombat>
+			<iCombat>2</iCombat>
 			<iAnimalCombat>100</iAnimalCombat>
 			<UnitMeshGroups>
 				<iGroupSize>4</iGroupSize>
@@ -4299,7 +4311,6 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_ALLOYS</PrereqTech>
-			<PrereqBuilding>BUILDING_INCA_KALLANKA</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>

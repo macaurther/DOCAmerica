@@ -178,7 +178,7 @@ dGoals = {
 		),
 	),
 	iChimu: (
-		BuildingCount((iKancha, 3), by=1100),
+		BuildingCount((iKancha, 3), by=1200),
 		Control(plots.region(rPeru).named(PERU), subject=VASSALS, at=1400),
 		CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatArtist, 3, by=1500),
 	),
@@ -221,7 +221,7 @@ dGoals = {
 	),
 	iInca: (
 		All(
-			TradeRouteCount(45),
+			TradeRouteCount(40),
 			Wonders(iSacsayhuaman, iMachuPicchu),
 			by=1400,
 		),

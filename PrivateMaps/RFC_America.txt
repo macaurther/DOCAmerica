@@ -13988,6 +13988,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=64
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -14654,7 +14655,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=64
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -16302,6 +16302,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=115
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	BonusType=BONUS_SEAL
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
@@ -17641,6 +17642,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=116
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -22967,6 +22970,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=113
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -29342,7 +29346,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=47
-	BonusType=BONUS_INCENSE
+	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -30048,7 +30052,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=47
-	BonusType=BONUS_POTATO
+	BonusType=BONUS_INCENSE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
