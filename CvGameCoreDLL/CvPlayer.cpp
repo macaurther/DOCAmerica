@@ -8132,10 +8132,10 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 		}
 	}
 
-	// Haudenosaunee UP: starts with Confederacy and Council
+	// Haudenosaunee UP: starts with Tribal Confederacy, Integration, and Council
 	if (getCivilizationType() == HAUDENOSAUNEE)
 	{
-		if (eCivic == CIVIC_TRIBAL_CONFEDERACY || eCivic == CIVIC_COUNCIL)
+		if (eCivic == CIVIC_TRIBAL_CONFEDERACY || eCivic == CIVIC_COUNCIL || eCivic == CIVIC_INTEGRATION)
 		{
 			return true;
 		}

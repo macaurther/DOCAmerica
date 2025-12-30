@@ -503,6 +503,10 @@ def getRoleAI(iRole):
 		return UnitAITypes.UNITAI_COLLATERAL
 	elif iRole == iWork:
 		return UnitAITypes.UNITAI_WORKER
+	elif iRole == iMissionary:
+		return UnitAITypes.UNITAI_MISSIONARY
+	elif iRole == iSpyRole:
+		return UnitAITypes.UNITAI_SPY
 
 	return UnitAITypes.NO_UNITAI
 
@@ -544,6 +548,8 @@ def isUnitOfRole(iUnit, iRole):
 		return unit.getWorkRate() > 0 and unit.getCombat() == 0 and not unit.isSlave()
 	elif iRole == iMissionary:		# MacAurther: had to add this to be able to spawn missionaries
 		return unit.getReligionType() != -1
+	elif iRole == iSpyRole:			# MacAurther: had to add this to be able to spawn spies
+		return unit.isSpy()
 	
 	raise Exception("Unexpected unit role: %d" % iRole)
 	
@@ -565,6 +571,10 @@ def getUnitForRole(iPlayer, iRole, bUnique=True):
 	iReligion = player(iPlayer).getStateReligion()
 	if iRole == iMissionary and iReligion != -1:
 		return (missionary(iReligion), getRoleAI(iRole))
+	
+	# MacAurther : Adding this so can spawn spies
+	if iRole == iSpyRole:
+		return (unique_unit(iPlayer, iSpy), getRoleAI(iRole))
 
 	roleMetric = lambda unit: (infos.unit(unit).getCombat(), infos.unit(unit).getCityAttackModifier(), bUnique == (base_unit(unit) != unit))
 	possibleUnits = infos.units().where(lambda unit: canCreateUnit(iPlayer, unit)).where(lambda unit: isUnitOfRole(unit, iRole))

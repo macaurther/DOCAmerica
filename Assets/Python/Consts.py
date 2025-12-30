@@ -556,11 +556,11 @@ iGreatSpy : iFeGreatSpy,
 }
 
 
-iNumUnitRoles = 25
+iNumUnitRoles = 26
 # 0				1				2				3				4				5				6				7				8				9
 (iBase, 		iDefend, 		iAttack, 		iCounter, 		iShock, 		iHarass, 		iCityAttack, 	iWorkerSea, 	iSettle, 		iSettleSea, 
 iAttackSea, 	iAssaultSea, 	iWorkSea,		iMissionarySea,	iFerry, 		iEscort, 		iExplore, 		iShockCity, 	iSiege, 		iCitySiege, 	
-iExploreSea, 	iSkirmish, 		iLightEscort, 	iWork, 			iMissionary) = range(iNumUnitRoles)
+iExploreSea, 	iSkirmish, 		iLightEscort, 	iWork, 			iMissionary,	iSpyRole) = range(iNumUnitRoles)
 
 iNumPromotions = 89
 # 0				1				2				3				4				5				6				7				8				9

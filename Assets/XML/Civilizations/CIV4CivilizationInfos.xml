@@ -1236,9 +1236,9 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
+				<City>Onondaga</City>
 				<City>Mohawk</City>
 				<City>Cayuga</City>
-				<City>Onondaga</City>
 				<City>Seneca</City>
 				<City>Oneida</City>
 				<City>Tuscarora</City>
@@ -4183,11 +4183,8 @@
 			<bPlayable>0</bPlayable>
 			<bAIPlayable>0</bAIPlayable>
 			<Cities>
-				<City>Cahokia</City>
 				<City>Poverty Point</City>
 				<City>Mound City</City>
-				<City>Chaco Canyon</City>
-				<City>Mesa Verde</City>
 				<City>Snaketown</City>
 				<City>Spiro</City>
 				<City>Moundville</City>
@@ -4198,7 +4195,6 @@
 				<City>Ocmulgee</City>
 				<City>Kituhwa</City>
 				<City>Fort Ancient</City>
-				<City>Onondaga</City>
 				<City>Bawating</City>
 				<City>Acoma</City>
 				<City>Namb&#233;</City>

@@ -524,14 +524,13 @@ def getPossibleBribes(iPlayer, location):
 
 
 def canBribeUnits(spy):
-	if not player(spy).canHurry(1):
-		return False
 	# MacAurther: Bribe-ability is now independent from being able to hurry units with gold
 	if not (player(spy).hasCivic(iTribalConfederacy) or player(spy).hasCivic(iImperialism) or player(spy).hasCivic(iAssimilation)):
 		return False
 	
-	if plot(spy).isOwned() and plot(spy).getOwner() != spy.getOwner():
-		return False
+	# MacAurther: Don't care if it's someone elses territory
+	# if plot(spy).isOwned() and plot(spy).getOwner() != spy.getOwner():
+	# 	return False
 
 	if spy.getMoves() >= spy.maxMoves(): 
 		return False

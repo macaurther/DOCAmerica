@@ -234,7 +234,7 @@ dGoals = {
 		All(EnslaveCount(50), GoldenAges(10), by=1550),
 	),
 	iHaudenosaunee: (
-		All(ContactTribe(5), by=1550),
+		BuildingCount(iLonghouse, 5, by=1550),
 		Control(
             (plots.of(lLakeSuperior)).named(LAKE_SUPERIOR),
             (plots.of(lLakeMichigan)).named(LAKE_MICHIGAN),

@@ -539,7 +539,7 @@ def maintainFallenCivilizations():
 @handler("tribeAttacked")
 def spawnTribeDefenders(pPlot, iAttacker):
 	iNumDefenders = pPlot.getTribeStoredUnits()
-	
+
 	# Find if plot is in a civ's core
 	iCoreCiv = -1
 	for iCiv in lBirthOrder:
@@ -550,7 +550,7 @@ def spawnTribeDefenders(pPlot, iAttacker):
 	iUnit = unique_unit(iCoreCiv, iMilitiaSpearman)
 	for iI in range(iNumDefenders):
 
-		if iI > 3: iUnit = unique_unit(iCoreCiv, iMaceman)
+		if iI > 3 and player(iAttacker).canTrain(iMaceman, False, False): iUnit = unique_unit(iCoreCiv, iMaceman)	# Spawn advanced defenders for advanced attackers
 		elif iI > 1: iUnit = unique_unit(iCoreCiv, iArcher)
 
 		# Upgrade archers to horse archers given certain conditions
