@@ -935,6 +935,8 @@
 			<Button>,Art/Interface/Buttons/Civics/Proprietaries.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
+			<iBaseFreeUnits>50</iBaseFreeUnits>
+			<iFreeUnitsPopulationPercent>5</iFreeUnitsPopulationPercent>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PROPRIETARIES</WeLoveTheKing>
 		</CivicInfo>
@@ -1791,8 +1793,8 @@
 			<iCultureGroup>1</iCultureGroup>
 			<iWarWearinessModifier>-50</iWarWearinessModifier>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<iBaseFreeUnits>15</iBaseFreeUnits>
-			<iFreeUnitsPopulationPercent>10</iFreeUnitsPopulationPercent>
+			<iBaseFreeUnits>5</iBaseFreeUnits>
+			<iFreeUnitsPopulationPercent>100</iFreeUnitsPopulationPercent>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>

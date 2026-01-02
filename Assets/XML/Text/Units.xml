@@ -1067,11 +1067,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SPANISH_CONQUISTADOR_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], receives a defensive bonus, and has an attack bonus against cities.</English>
-		<French>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], receives a defensive bonus, and has an attack bonus against cities.</French>
-		<German>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], receives a defensive bonus, and has an attack bonus against cities.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], receives a defensive bonus, and has an attack bonus against cities.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], receives a defensive bonus, and has an attack bonus against cities.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], has no combat penalty in cities, can receive defense bonuses, can enter rough terrain, and has a bonus versus melee units.</English>
+		<French>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], has no combat penalty in cities, can receive defense bonuses, can enter rough terrain, and has a bonus versus melee units.</French>
+		<German>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], has no combat penalty in cities, can receive defense bonuses, can enter rough terrain, and has a bonus versus melee units.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], has no combat penalty in cities, can receive defense bonuses, can enter rough terrain, and has a bonus versus melee units.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], has no combat penalty in cities, can receive defense bonuses, can enter rough terrain, and has a bonus versus melee units.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SETTLER_STRATEGY</Tag>
@@ -1627,11 +1627,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SPANISH_TERCIO_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], is stronger.</English>
-		<French>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], is stronger.</French>
-		<German>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], is stronger.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], is stronger.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], is stronger.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is stronger.</English>
+		<French>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is stronger.</French>
+		<German>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is stronger.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is stronger.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], a replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is stronger.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FUSILIER</Tag>
@@ -1687,11 +1687,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_HELP</Tag>
-		<English>[ICON_BULLET]+50% slave capture chance[NEWLINE]</English>
-		<French>[ICON_BULLET]+50% slave capture chance[NEWLINE]</French>
-		<German>[ICON_BULLET]+50% slave capture chance[NEWLINE]</German>
-		<Italian>[ICON_BULLET]+50% slave capture chance[NEWLINE]</Italian>
-		<Spanish>[ICON_BULLET]+50% slave capture chance[NEWLINE]</Spanish>
+		<English>[ICON_BULLET]+33% slave capture chance[NEWLINE]</English>
+		<French>[ICON_BULLET]+33% slave capture chance[NEWLINE]</French>
+		<German>[ICON_BULLET]+33% slave capture chance[NEWLINE]</German>
+		<Italian>[ICON_BULLET]+33% slave capture chance[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]+33% slave capture chance[NEWLINE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_STRATEGY</Tag>

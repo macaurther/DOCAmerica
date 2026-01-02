@@ -1601,7 +1601,16 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 
 		if (iCaptureMaxTurns > 0)
 		{
-			iCaptureGold *= std::max(0, std::min(GC.getGame().getGameTurn() - pOldCity->getGameTurnAcquired(), getTurns(iCaptureMaxTurns)));
+			// MacAurther: It's unfair (especially to Spain) to lose out on capture gold when a civ collapses as they're being conquered.
+			// In the case that the captured city belonged to an Independent, use the found date instead of the aquire date
+			if (GET_PLAYER(pOldCity->getOwnerINLINE()).isMinorCiv())
+			{
+				iCaptureGold *= std::max(0, std::min(GC.getGame().getGameTurn() - pOldCity->getGameTurnFounded(), getTurns(iCaptureMaxTurns)));
+			}
+			else
+			{
+				iCaptureGold *= std::max(0, std::min(GC.getGame().getGameTurn() - pOldCity->getGameTurnAcquired(), getTurns(iCaptureMaxTurns)));
+			}
 			iCaptureGold /= getTurns(iCaptureMaxTurns);
 		}
 
@@ -5717,12 +5726,6 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 			if (canReceiveGoody(pPlot, eGoody, pUnit))
 			{
 				receiveGoody(pPlot, eGoody, pUnit);
-
-				// MacAurther: Native Confederacy Power
-				if (hasCivic(CIVIC_TRIBAL_CONFEDERACY))
-				{
-					pPlot->improveTile();
-				}
 
 				// Python Event
 				CvEventReporter::getInstance().goodyReceived(getID(), pPlot, pUnit, eGoody);

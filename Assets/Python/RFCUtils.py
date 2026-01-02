@@ -458,7 +458,7 @@ def replace(unit, iUnitType):
 
 # used: RFCUtils
 def getRoleDomain(iRole):
-	if iRole in [iWorkerSea, iSettleSea, iAttackSea, iAssaultSea, iWorkSea, iMissionarySea, iFerry, iEscort, iExploreSea, iLightEscort]:
+	if iRole in [iWorkerSea, iSettleSea, iAttackSea, iAssaultSea, iWorkSea, iMissionarySea, iSlaveSea, iFerry, iEscort, iExploreSea, iLightEscort]:
 		return DomainTypes.DOMAIN_SEA
 	return DomainTypes.DOMAIN_LAND
 
@@ -485,7 +485,7 @@ def getRoleAI(iRole):
 		return UnitAITypes.UNITAI_WORKER_SEA
 	elif iRole == iSettle:
 		return UnitAITypes.UNITAI_SETTLE
-	elif iRole in [iSettleSea, iWorkSea]:
+	elif iRole in [iSettleSea, iWorkSea, iSlaveSea]:
 		return UnitAITypes.UNITAI_SETTLER_SEA
 	elif iRole == iAttackSea:
 		return UnitAITypes.UNITAI_ATTACK_SEA
@@ -532,7 +532,7 @@ def isUnitOfRole(iUnit, iRole):
 		return iDomainType == DomainTypes.DOMAIN_SEA and unit.getCombat() == 0
 	elif iRole == iSettle:
 		return unit.isFound()
-	elif iRole in [iSettleSea, iAssaultSea, iWorkSea, iMissionarySea, iFerry]:
+	elif iRole in [iSettleSea, iAssaultSea, iWorkSea, iMissionarySea, iSlaveSea, iFerry]:
 		return unit.getCargoSpace() > 0
 	elif iRole in [iAttackSea, iEscort, iExploreSea]:
 		return iDomainType == DomainTypes.DOMAIN_SEA
@@ -621,6 +621,11 @@ def getUnitsForRole(iPlayer, iRole, bUnique=True):
 				units.append(getUnitForRole(iPlayer, iExplore, bUnique=bUnique))
 			else:
 				units.append(getUnitForRole(iPlayer, iMissionary, bUnique=bUnique))
+	
+	elif iRole == iSlaveSea:
+		# All slaves
+		for _ in range(infos.unit(iUnit).getCargoSpace()):
+			units.append((iChattleSlave, UnitAITypes.UNITAI_SLAVE))
 	
 	return units
 
@@ -988,11 +993,12 @@ def enslaveUnit(pWinningUnit, pLosingUnit=None):
 def getSlaveCaptureChance(iPlayer, iUnit=None):
 	pPlayer = player(iPlayer)
 	iChance = 0
-	if pPlayer.getCivics(iCivicsLabor) in [iTlacotin, iEncomienda]: iChance += 25
+	if pPlayer.getCivics(iCivicsLabor) in [iTlacotin]: iChance += 25
+	if pPlayer.getCivics(iCivicsLabor) in [iEncomienda]: iChance += 33
 	if pPlayer.getCivics(iCivicsSociety) in [iSacrifice]: iChance += 25
 	if civ(iPlayer) in dCivGroups[iCivGroupMesoamerica]: iChance += 25	# MacAurther: Mesoamerican RP
 	if iUnit in [iAztecJaguar, iHolkan]: iChance += 25
-	if iUnit in [iBandeirante]: iChance += 50
+	if iUnit in [iBandeirante]: iChance += 33
 	return iChance
 
 # used: Stability

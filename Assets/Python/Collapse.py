@@ -98,11 +98,6 @@ def downgradeImprovements(iPlayer):
 			iRoute = plot.getRouteType()
 			if iRoute >= 0:
 				plot.setRouteType(-1)
-
-	# MacAurther: always remove Andean RP peak improvements
-	peakImprovementPlots = plots.owner(iPlayer).where(lambda p: p.getImprovementType() >= 0 and p.getPlotType() == PlotTypes.PLOT_PEAK)
-	for plot in peakImprovementPlots:
-		plot.setImprovementType(-1)
 			
 	message(iPlayer, 'TXT_KEY_STABILITY_DOWNGRADE_IMPROVEMENTS', color=iRed)
 		

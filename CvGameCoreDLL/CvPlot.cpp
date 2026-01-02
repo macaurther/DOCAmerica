@@ -5577,14 +5577,21 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 				verifyUnitValidPlot();
 			}
 
+			// MacAurther: Andean UP: If peak becomes owned by a non-Andean civ and there's an improvement on it, remove it
+			bool bOwnedByAndean = getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES;
+			if (!bOwnedByAndean && isPeak() && getImprovementType() != NO_IMPROVEMENT)
+			{
+				setImprovementType(NO_IMPROVEMENT);
+			}
+
+			// MacAurther: Andean UP: If peak becomes owned by a non-Andean civ and there's an route on it, remove it
+			if (!bOwnedByAndean && isPeak() && getRouteType() != NO_ROUTE)
+			{
+				setRouteType(NO_ROUTE, true);
+			}
+
 			if (isOwned())
 			{
-				// MacAurther Tribe Update: Huts are not removed by territory anymore / Native Confederacy Power
-				if (isGoody() && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_TRIBAL_CONFEDERACY))
-				{
-					GET_PLAYER(getOwnerINLINE()).doGoody(this, NULL);
-				}
-
 				for (iI = 0; iI < MAX_CIV_TEAMS; ++iI)
 				{
 					if (GET_TEAM((TeamTypes)iI).isAlive())

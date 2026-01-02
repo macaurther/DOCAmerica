@@ -245,7 +245,7 @@ dGoals = {
 		ControlledResourceCount(iFur, 10, by=1700),
 	),
 	iSpain: (
-		RaidGold(3000, by=1600),
+		RaidGold(5000, by=1600),
 		All(
 			ContactTribe(25),
 			ReligionSpreads(50),

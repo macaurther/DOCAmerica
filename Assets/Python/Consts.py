@@ -556,11 +556,11 @@ iGreatSpy : iFeGreatSpy,
 }
 
 
-iNumUnitRoles = 26
+iNumUnitRoles = 27
 # 0				1				2				3				4				5				6				7				8				9
 (iBase, 		iDefend, 		iAttack, 		iCounter, 		iShock, 		iHarass, 		iCityAttack, 	iWorkerSea, 	iSettle, 		iSettleSea, 
-iAttackSea, 	iAssaultSea, 	iWorkSea,		iMissionarySea,	iFerry, 		iEscort, 		iExplore, 		iShockCity, 	iSiege, 		iCitySiege, 	
-iExploreSea, 	iSkirmish, 		iLightEscort, 	iWork, 			iMissionary,	iSpyRole) = range(iNumUnitRoles)
+iAttackSea, 	iAssaultSea, 	iWorkSea,		iMissionarySea,	iSlaveSea,		iFerry, 		iEscort, 		iExplore, 		iShockCity, 	iSiege, 		
+iCitySiege, 	iExploreSea, 	iSkirmish, 		iLightEscort, 	iWork, 			iMissionary,	iSpyRole) = range(iNumUnitRoles)
 
 iNumPromotions = 89
 # 0				1				2				3				4				5				6				7				8				9
@@ -1001,7 +1001,7 @@ iAntiTank : 			[(1930, iEndDate), 	lHomelandsEuropePlus],
 iCrossbowman : 			[(1500, 1550), 		lHomelandsEurope],
 iGatlingGun : 			[(1850, 1900), 		lHomelandsEuropePlus],
 iMachineGun : 			[(1900, 1950), 		lHomelandsEuropePlus],
-iSkirmisher : 			[(1550, 1700), 		lHomelandsEurope],
+iIrregular : 			[(1550, 1700), 		lHomelandsEurope],
 iGrenadier : 			[(1800, 1900), 		lHomelandsEuropePlus],
 iAlbionLegion : 		[(1800, 1900), 		[iHomelandNorthEurope]],
 iMarine : 				[(1930, iEndDate), 	lHomelandsEuropePlus],

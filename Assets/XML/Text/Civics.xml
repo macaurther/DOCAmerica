@@ -595,11 +595,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROPRIETORS_STRATEGY</Tag>
-		<English>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</English>
-		<French>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</French>
-		<German>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</German>
-		<Italian>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</Italian>
-		<Spanish>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</Spanish>
+		<English>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance</English>
+		<French>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance</French>
+		<German>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance</German>
+		<Italian>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance</Italian>
+		<Spanish>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROPRIETORS_HELP</Tag>
@@ -1137,11 +1137,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ENCOMIENDA_HELP</Tag>
-		<English>[ICON_BULLET]+25% slave capture chance</English>
-		<French>[ICON_BULLET]+25% slave capture chance</French>
-		<German>[ICON_BULLET]+25% slave capture chance</German>
-		<Italian>[ICON_BULLET]+25% slave capture chance</Italian>
-		<Spanish>[ICON_BULLET]+25% slave capture chance</Spanish>
+		<English>[ICON_BULLET]+33% slave capture chance</English>
+		<French>[ICON_BULLET]+33% slave capture chance</French>
+		<German>[ICON_BULLET]+33% slave capture chance</German>
+		<Italian>[ICON_BULLET]+33% slave capture chance</Italian>
+		<Spanish>[ICON_BULLET]+33% slave capture chance</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TLACOTIN</Tag>

@@ -536,9 +536,10 @@ dStartingUnits = CivDict({
 		iWorkSea: 1,
 		iMissionarySea: 1,
 	},
-	iPortugal: {	# MacAurther TOOD: Balance the rest of these sea spawns
-		iSettleSea: 1,
+	iPortugal: {
+		iSettleSea: 2,
 		iWorkSea: 1,
+		iSlaveSea: 1,
 		iMissionarySea: 1,
 	},
 	iEngland: {
@@ -677,17 +678,19 @@ dExtraAIUnits = CivDict({
 		iEscort: 1,
 	},
 	iAztec: {
-		iBase: 2,
-		iAttack: 3,
-		iSkirmish: 2,
+		iBase: 1,
+		iAttack: 6,
+		iSkirmish: 4,
 		iDefend: 2,
 	},
 	iBrazil: {
 		iBase: 1,
 	},
 	iInca: {
-		iBase: 5,
+		iBase: 1,
 		iAttack: 4,
+		iSkirmish: 4,
+		iDefend: 2,
 	},
 	iMexico: {
 		iBase: 4,
