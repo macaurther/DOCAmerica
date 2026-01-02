@@ -17769,7 +17769,15 @@ bool CvCity::canSlaveJoin() const
 	//if (!isColony()) return false;	
 
 	int iNumSlaves = getFreeSpecialistCount(SPECIALIST_SLAVE);
-	return (2 * iNumSlaves < getPopulation());
+	
+	// MacAurther: Slavery and Bondage civics
+	int iSlaveCap = getPopulation() / 2;
+	if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY) || GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_BONDAGE))
+	{
+		iSlaveCap = getPopulation() * 2;
+	}
+
+	return (iNumSlaves < iSlaveCap);
 }
 
 // Leoreth

@@ -9793,9 +9793,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Archer/egyptian_archer.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Archer/egyptian_archer.nif</NIF>
 			<KFM>Art/Units/Archer_Egyptian/Archer_Egyptian.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Archer/egyptian_archer.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Archer/egyptian_archer.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9817,9 +9817,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Spearman/lightspearman.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Spearman/lightspearman.nif</NIF>
 			<KFM>Art/Units (Civilizations)/English/English Pikeman/lightspearman.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Spearman/lightspearman.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Spearman/lightspearman.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9841,9 +9841,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Axeman/celtic_warrior.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Axeman/celtic_warrior.nif</NIF>
 			<KFM>Art/Units/Celtic_Warrior/Celtic_Warrior.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Axeman/celtic_warrior.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Axeman/celtic_warrior.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9865,9 +9865,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Swordsman/aztec_jaguar_fx.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Swordsman/aztec_jaguar_fx.nif</NIF>
 			<KFM>Art/Units/Unique/Aztec/Jaguar/Aztec_Jaguar.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Swordsman/aztec_jaguar_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Swordsman/aztec_jaguar_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9884,14 +9884,14 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ATLATL_PUEBLO</Type>
-			<Button>Art/Units (Civilizations)/Anasazi/Anasazi Atlatl/Button_Atlatl.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Skirmisher.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Atlatl/atl_atl.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Atlatl/atl_atl.nif</NIF>
 			<KFM>Art/Units/Unique/Mali/Skirmisher/MaliSkirmisher.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Atlatl/atl_atl.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Atlatl/atl_atl.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9900,7 +9900,7 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
@@ -9913,9 +9913,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Horse Archer/horsearcher.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Horse Archer/horsearcher.nif</NIF>
 			<KFM>Art/Units/HorseArcher/HorseArcher.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Horse Archer/horsearcher.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Horse Archer/horsearcher.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9937,9 +9937,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Heavy Footman/iroquois_maceman.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Heavy Footman/iroquois_maceman.nif</NIF>
 			<KFM>Art/Units/Unique_NativeAmerica_DogSoldier/Dogsoldier.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Heavy Footman/iroquois_maceman.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Heavy Footman/iroquois_maceman.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9956,14 +9956,14 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_KACHINA_PUEBLO</Type>	<!-- MacAurther TODO: Implement this unit -->
-			<Button>Art/Units (Civilizations)/Anasazi/Anasazi Kachina/Button_Kachina.dds</Button>
+			<Button>Art/Units (Civilizations)/pueblo/Anasazi Kachina/Button_Kachina.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Kachina/mesoandespear.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Kachina/mesoandespear.nif</NIF>
 			<KFM>Art/Units/Zulu_Impi/Zulu_Impi.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Kachina/mesoandespear.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Kachina/mesoandespear.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9985,9 +9985,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Longbowman/iroquois_longbowman.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Longbowman/iroquois_longbowman.nif</NIF>
 			<KFM>Art/Units/Longbowman/Longbowman.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi longbowman/iroquois_longbowman.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi longbowman/iroquois_longbowman.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -10009,9 +10009,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Crossbowman/Native_American_Crossbowman.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Crossbowman/Native_American_Crossbowman.nif</NIF>
 			<KFM>Art/Units/Crossbowman/Crossbowman.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Crossbowman/Native_American_Crossbowman.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Crossbowman/Native_American_Crossbowman.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -10033,9 +10033,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Musketman/musketman1.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Musketman/musketman1.nif</NIF>
 			<KFM>Art/Units/Musketman/Musketman.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Musketman/musketman1.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Musketman/musketman1.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -10057,9 +10057,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Cuirassier/cuirassier.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Cuirassier/cuirassier.nif</NIF>
 			<KFM>Art/Units/Cuirassier/Cuirassier.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Cuirassier/cuirassier.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Cuirassier/cuirassier.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
 				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
@@ -10081,9 +10081,9 @@
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Cannon/cannon.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Cannon/cannon.nif</NIF>
 			<KFM>Art/Units/Cannon/Cannon.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Cannon/cannon.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Cannon/cannon.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/CannonShadow.nif</ShadowNIF>
 				<ShadowAttachNode/>
@@ -10113,9 +10113,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Grenadier/iroquois_grenadier.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Grenadier/iroquois_grenadier.nif</NIF>
 			<KFM>Art/Units/Grenadier/Grenadier.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Grenadier/iroquois_grenadier.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Grenadier/iroquois_grenadier.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -10137,9 +10137,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Rifleman/Native_Musketman.nif</NIF>
-			<KFM>Art/Units (Civilizations)/Anasazi/Anasazi Rifleman/Native_Musketman.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Rifleman/Native_Musketman.nif</SHADERNIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Rifleman/Native_Musketman.nif</NIF>
+			<KFM>Art/Units (Civilizations)/pueblo/Anasazi Rifleman/Native_Musketman.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Rifleman/Native_Musketman.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -10161,9 +10161,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Cavalry/Native_Mounted_Warrior.nif</NIF>
-			<KFM>Art/Units (Civilizations)/Anasazi/Anasazi Cavalry/Native_Mounted_Warrior.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Cavalry/Native_Mounted_Warrior.nif</SHADERNIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Cavalry/Native_Mounted_Warrior.nif</NIF>
+			<KFM>Art/Units (Civilizations)/pueblo/Anasazi Cavalry/Native_Mounted_Warrior.kfm</KFM>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Cavalry/Native_Mounted_Warrior.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
 				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
@@ -10185,9 +10185,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Infantry/infantry_fx.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Infantry/infantry_fx.nif</NIF>
 			<KFM>Art/Units/Infantry/Infantry.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Infantry/infantry_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Infantry/infantry_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -10209,9 +10209,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Machine Gun/machinegunner.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Machine Gun/machinegunner.nif</NIF>
 			<KFM>Art/Units/MachineGun/MachineGunner.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Machine Gun/machinegunner.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Machine Gun/machinegunner.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -10233,9 +10233,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi AT Infantry/at_infantry.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi AT Infantry/at_infantry.nif</NIF>
 			<KFM>Art/Units/AntiTankInfantry/WWAntiTankInfantry.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi AT Infantry/at_infantry.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi AT Infantry/at_infantry.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -10257,9 +10257,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Marine/moderninfantry.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Marine/moderninfantry.nif</NIF>
 			<KFM>Art/Units/Marine/Marines.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Marine/moderninfantry.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Marine/moderninfantry.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -10281,9 +10281,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units (Civilizations)/Anasazi/Anasazi Paratrooper/Paratrooper_FX.nif</NIF>
+			<NIF>Art/Units (Civilizations)/pueblo/Anasazi Paratrooper/Paratrooper_FX.nif</NIF>
 			<KFM>Art/Units/Paratrooper/Paratrooper.kfm</KFM>
-			<SHADERNIF>Art/Units (Civilizations)/Anasazi/Anasazi Paratrooper/Paratrooper_FX.nif</SHADERNIF>
+			<SHADERNIF>Art/Units (Civilizations)/pueblo/Anasazi Paratrooper/Paratrooper_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>Bip01 Neck</ShadowAttachNode>

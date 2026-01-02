@@ -1049,6 +1049,14 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_SKIRMISHER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_ATLATL_PUEBLO</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_ATLATL_PUEBLO</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_ATLATL_PUEBLO</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SPEARMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_SPEARMAN_PUEBLO</EarlyArtDefineTag>

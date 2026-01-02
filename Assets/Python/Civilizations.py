@@ -783,7 +783,7 @@ dNeverTrain = CivDict({
 dSeaSpawns = CivDict({
 	iNorse:	      (68, 118),#  Norse
 	iSpain:	      (70, 73),	#  Spain
-	iPortugal:	  (77, 23),	#  Portugal
+	iPortugal:	  (80, 29),	#  Portugal
 	iEngland:	  (55, 87),	#  England
 	iFrance:	  (56, 98),	#  France
 	iNetherlands: (58, 91),	#  Netherlands
