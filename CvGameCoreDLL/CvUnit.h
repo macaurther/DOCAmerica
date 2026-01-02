@@ -295,7 +295,7 @@ public:
 	bool isWorker() const;
 
 	// MacAurther
-	bool canPopulate(const CvPlot* pPlot) const;
+	bool canPopulate(const CvPlot* pPlot) const;		// MacAurther TODO: Remove?
 	bool populate();
 	bool canContactTribe(const CvPlot* pPlot) const;
 	bool canUnitContactTribe() const;

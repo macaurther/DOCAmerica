@@ -19096,6 +19096,9 @@ bool CvCity::rebuild(EraTypes eEra)
 		}
 	}
 
+	// MacAurther: Because Settlers now cost 1 Population, rebuild now adds a pop too
+	changePopulation(1);
+
 	return bBuilt;
 }
 

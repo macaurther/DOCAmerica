@@ -540,22 +540,51 @@ def maintainFallenCivilizations():
 def spawnTribeDefenders(pPlot, iAttacker):
 	iNumDefenders = pPlot.getTribeStoredUnits()
 
-	# Find if plot is in a civ's core
-	iCoreCiv = -1
-	for iCiv in lBirthOrder:
-		if pPlot.isCore(iCiv):
-			iCoreCiv = iCiv
-			break
+	lSpecialUnits = []	# List of special units that can be spawned on this plot
 
-	iUnit = unique_unit(iCoreCiv, iMilitiaSpearman)
+	iTechLevel = 0	# How advanced spawned units should be - <=0: early game (ancient), =1: mid game (medieval), >=2: late game (gunpowder/horse)
+	if pPlot.getRegionID() in [rYukon, rNunavut, rQuebec, rNewFoundland] + lBrazil + lArgentina + [rGuyana, rParaguay, rUruguay]: iTechLevel -= 1
+	if year() >= year(1350): iTechLevel += 1
+	if year() >= year(1850): iTechLevel += 1
+
+	# Put tech level in bounds
+	iTechLevel = max(iTechLevel, 0)
+	iTechLevel = min(iTechLevel, 2)
+
+	# Build list of possible unique units to plut in plot based off of historical area
+	for iCiv in dCivGroups[iCivGroupNative]:
+		if iCiv == civ(iAttacker): continue		# don't spawn the unique unit of the attacker
+		if pPlot.getSettlerValue(iCiv) > 0:
+			for iUnit in range(iMilitiaSpearman, iWorkboat):	# Don't consider special settlers, works, scouts, spies, naval units, etc.
+				# Civilization unique units
+				iUniqueUnit = unique_unit_civ(iCiv, iUnit)
+				if base_unit(iUnit) == iUnit and iUniqueUnit != iUnit:
+					# Tech Level 0 excludes any units that require bonuses
+					if iTechLevel == 0 and (infos.unit(iUniqueUnit).getPrereqOrBonuses(0) != -1 or infos.unit(iUniqueUnit).getPrereqAndBonus() != -1): continue
+					# Tech Level 1 excludes any Gunpowder or Mounted units
+					if iTechLevel <= 1 and (infos.unit(iUniqueUnit).getUnitCombatType() in \
+					   [UnitCombatTypes.UNITCOMBAT_GUN, UnitCombatTypes.UNITCOMBAT_LIGHT_CAVALRY, UnitCombatTypes.UNITCOMBAT_HEAVY_CAVALRY]): 
+						continue
+					lSpecialUnits.append(iUniqueUnit)
+	
+	# See if Horse Archers are viable
+	if iTechLevel == 2 and pPlot.getTerrainType() in [iPlains, iPrairie] and pPlot.getFeatureType() == FeatureTypes.NO_FEATURE and pPlot.getSettlerValue(iLakota) == 0:
+		lSpecialUnits.append(iHorseArcher)
+					
+	# Select basic defender based on tech level
+	lBasicDefender = [iMilitiaSpearman, iMilitiaPikeman, iMilitiaArquebusier]
+	lAdvancedDefender = [iArcher, iLongbowman, iArquebusier]
 	for iI in range(iNumDefenders):
-
-		if iI > 3 and player(iAttacker).canTrain(iMaceman, False, False): iUnit = unique_unit(iCoreCiv, iMaceman)	# Spawn advanced defenders for advanced attackers
-		elif iI > 1: iUnit = unique_unit(iCoreCiv, iArcher)
-
-		# Upgrade archers to horse archers given certain conditions
-		if year() > year(1600) and pPlot.getTerrainType() in [iPlains, iPrairie] and pPlot.getFeatureType() == FeatureTypes.NO_FEATURE and base_unit(iUnit) == iArcher:
-			iUnit = unique_unit(iCoreCiv, iHorseArcher)
+		# First two defenders are basic
+		if iI < 2: iUnit = lBasicDefender[iTechLevel]
+		# Next defender is advanced
+		elif iI < 3: iUnit = lAdvancedDefender[iTechLevel]
+		# The rest are either unique or advanced
+		else:
+			if len(lSpecialUnits) > 0:
+				iUnit = lSpecialUnits[(iI - 3) % len(lSpecialUnits)]	# Cycle through available unique units
+			else:
+				iUnit = lAdvancedDefender[iTechLevel]
 
 		makeUnits(slot(iIndigenous), iUnit, pPlot, 1, UnitAITypes.UNITAI_SIT_FOREVER)
 	

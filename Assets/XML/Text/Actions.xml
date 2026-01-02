@@ -279,19 +279,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_REBUILD</Tag>
-		<English>Free buildings will be constructed in the city:</English>
-		<French>Des b&#226;timents gratuits seront construits dans la ville :</French>
-		<German>Frei verf&#252;gbare Geb&#228;ude werden in der Stadt errichtet:</German>
-		<Italian>Free buildings will be constructed in the city:</Italian>
-		<Spanish>Free buildings will be constructed in the city:</Spanish>
+		<English>+1 Population and Free buildings will be constructed in the city:</English>
+		<French>+1 Population and Free buildings will be constructed in the city:</French>
+		<German>+1 Population and Free buildings will be constructed in the city:</German>
+		<Italian>+1 Population and Free buildings will be constructed in the city:</Italian>
+		<Spanish>+1 Population and Free buildings will be constructed in the city:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REBUILD</Tag>
-		<English>[ICON_BULLET]Can rebuild free buildings in cities</English>
-		<French>[ICON_BULLET]Peut reconstruire des b&#226;timents gratuits dans les villes</French>
-		<German>[ICON_BULLET]Kann frei verf&#252;gbare Geb&#228;ude in St&#228;dten wiedererrichten</German>
-		<Italian>[ICON_BULLET]Can rebuild free buildings in cities</Italian>
-		<Spanish>[ICON_BULLET]Can rebuild free buildings in cities</Spanish>
+		<English>[ICON_BULLET]Can rebuild free buildings in cities and add population</English>
+		<French>[ICON_BULLET]Can rebuild free buildings in cities and add population</French>
+		<German>[ICON_BULLET]Can rebuild free buildings in cities and add population</German>
+		<Italian>[ICON_BULLET]Can rebuild free buildings in cities and add population</Italian>
+		<Spanish>[ICON_BULLET]Can rebuild free buildings in cities and add population</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROCESS_FOOD</Tag>

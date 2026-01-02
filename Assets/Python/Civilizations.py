@@ -306,7 +306,7 @@ lCivilizations = [
 		iPortugal,
 		iGold=300,
 		iStateReligion=iCatholicism,
-		lCivics=[iProprietors, iAdmiralty, iSlavery],
+		lCivics=[iProprietors, iAdmiralty, iGrants, iSlavery],
 		techs=techs.column(8).including(iGunpowder, iCompanies, iFinance, iCartography, iExchange, iExploration, iOptics, iTriangularTrade),
 		extraTechs=techs.column(0).including(iSouthEuropeAccess),
 	),
@@ -782,10 +782,10 @@ dNeverTrain = CivDict({
 
 dSeaSpawns = CivDict({
 	iNorse:	      (68, 118),#  Norse
-	iSpain:	      (65, 71),	#  Spain
+	iSpain:	      (70, 73),	#  Spain
 	iPortugal:	  (77, 23),	#  Portugal
 	iEngland:	  (55, 87),	#  England
-	iFrance:	  (59, 96),	#  France
+	iFrance:	  (56, 98),	#  France
 	iNetherlands: (58, 91),	#  Netherlands
 	iRussia:	  (4, 106),	#  Russia
 })

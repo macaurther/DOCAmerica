@@ -5334,6 +5334,13 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 	int iFreeUnits;
 	int iI;
 
+	// MacAurther: Do not set new owner of a plot with a Tribe or Contacted Tribe
+	bool bNativePlayer = eNewValue != NO_PLAYER && GET_PLAYER(eNewValue).isNative();
+	if (!bNativePlayer && (getImprovementType() == IMPROVEMENT_TRIBE || getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE))
+	{
+		return;
+	}
+
 	if (getOwnerINLINE() != eNewValue)
 	{
 		GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_PLOT_OWNER_CHANGE, eNewValue, (char*)NULL, getX_INLINE(), getY_INLINE());

@@ -1687,19 +1687,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_HELP</Tag>
-		<English>[ICON_BULLET]+33% slave capture chance[NEWLINE]</English>
-		<French>[ICON_BULLET]+33% slave capture chance[NEWLINE]</French>
-		<German>[ICON_BULLET]+33% slave capture chance[NEWLINE]</German>
-		<Italian>[ICON_BULLET]+33% slave capture chance[NEWLINE]</Italian>
-		<Spanish>[ICON_BULLET]+33% slave capture chance[NEWLINE]</Spanish>
+		<English>[ICON_BULLET]+33% slave capture chance</English>
+		<French>[ICON_BULLET]+33% slave capture chance</French>
+		<German>[ICON_BULLET]+33% slave capture chance</German>
+		<Italian>[ICON_BULLET]+33% slave capture chance</Italian>
+		<Spanish>[ICON_BULLET]+33% slave capture chance</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can attack, has rough terrain attack bonuses, is more likely to capture slaves, but can get negative goody results.</English>
-		<French>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can attack, has rough terrain attack bonuses, and is more likely to capture slaves, but can get negative goody results.</French>
-		<German>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can attack, has rough terrain attack bonuses, and is more likely to capture slaves, but can get negative goody results.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can attack, has rough terrain attack bonuses, and is more likely to capture slaves, but can get negative goody results.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can attack, has rough terrain attack bonuses, and is more likely to capture slaves, but can get negative goody results.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT] but can get negative goody results.</English>
+		<French>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT] but can get negative goody results.</French>
+		<German>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT] but can get negative goody results.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT] but can get negative goody results.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT] but can get negative goody results.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STEAMSHIP</Tag>

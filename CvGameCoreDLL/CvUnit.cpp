@@ -2379,7 +2379,11 @@ bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage) cons
 	// Leoreth: allow entering enemy territory while you have no cities to avoid being pushed out after spawn
 	if (!GET_PLAYER(getOwnerINLINE()).isBarbarian() && GET_PLAYER(getOwner()).getNumCities() == 0)
 	{
-		return true;
+		// MacAurther: But can't enter Native territory (i.e. can't enter Tribes)
+		if (!(eTeam != NO_TEAM && GET_TEAM(eTeam).isNative()))
+		{
+			return true;
+		}
 	}
 
 	if (GET_TEAM(getTeam()).isFriendlyTerritory(eTeam))
@@ -3073,7 +3077,7 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 	FAssert(canMoveOrAttackInto(pPlot) || isMadeAttack());
 
 	// MacAurther: Tribes. Spawn protectors (if any) if units that can't normally move through closed borders move in
-	if (!GET_PLAYER(getOwner()).isIndependent() && pPlot->getTribeStoredUnits() > 0 && GC.getUnitInfo(getUnitType()).isPillage())
+	if (!GET_PLAYER(getOwner()).isNative() && pPlot->getTribeStoredUnits() > 0 && GC.getUnitInfo(getUnitType()).isPillage())
 	{
 		CvEventReporter::getInstance().tribeAttacked(pPlot, getOwner());
 		pPlot->setTribeThreatenTurn(GC.getGame().getGameTurn());
