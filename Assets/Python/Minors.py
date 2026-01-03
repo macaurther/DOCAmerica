@@ -543,7 +543,7 @@ def spawnTribeDefenders(pPlot, iAttacker):
 	lSpecialUnits = []	# List of special units that can be spawned on this plot
 
 	iTechLevel = 0	# How advanced spawned units should be - <=0: early game (ancient), =1: mid game (medieval), >=2: late game (gunpowder/horse)
-	if pPlot.getRegionID() in [rYukon, rNunavut, rQuebec, rNewFoundland] + lBrazil + lArgentina + [rGuyana, rParaguay, rUruguay]: iTechLevel -= 1
+	if pPlot.getRegionID() in [rYukon, rNunavut, rQuebec, rNewFoundland, rHawaii] + lBrazil + lArgentina + [rGuyana, rParaguay, rUruguay]: iTechLevel -= 1
 	if year() >= year(1350): iTechLevel += 1
 	if year() >= year(1850): iTechLevel += 1
 

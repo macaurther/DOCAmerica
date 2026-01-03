@@ -27,7 +27,7 @@ iEngland :		 (45, 86), # Jamestown
 iFrance :		 (49, 99), # Quebec
 iNetherlands :	 (48, 91), # New Amsterdam
 iLakota :		 (30, 95), # Southern Minnesota
-iHawaii :		 (15, 48), # Hilo
+iHawaii :		 (14, 48), # Hilo
 iRussia :		 (11, 108), # Novo-Arkhangelsk
 iAmerica :		 (46, 90), # Philadelphia
 iHaiti :		 (54, 67), # Port-au-Prince
