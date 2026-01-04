@@ -804,26 +804,99 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Cambridge</City>
-				<City>Hastings</City>
-				<City>Coventry</City>
-				<City>Cardiff</City>
-				<City>Liverpool</City>
-				<City>Dover</City>
-				<City>Brighton</City>
-				<City>Leeds</City>
-				<City>Reading</City>
-				<City>Gloucester</City>
-				<City>Bristol</City>
-				<City>Leicester</City>
-				<City>Ipswich</City>
-				<City>Portsmouth</City>
-				<City>Berwick</City>
-				<City>Middlesbrough</City>
-				<City>Sheffield</City>
-				<City>Lancaster</City>
-				<City>Blackpool</City>
-				<City>Hull</City>
+                <City>Salem</City>
+                <City>Providence</City>
+                <City>Hartford</City>
+                <City>New Haven</City>
+                <City>Newport</City>
+                <City>Kingston</City>
+                <City>Newport News</City>
+                <City>Portsmouth</City>
+                <City>Rocksbury</City>
+                <City>Middle Plantation</City>
+                <City>Concord</City>
+                <City>Springfield</City>
+                <City>Cambridge</City>
+                <City>Lexington</City>
+                <City>New Bedford</City>
+                <City>Stamford</City>
+                <City>Annapolis</City>
+                <City>Worcester</City>
+                <City>Norfolk</City>
+                <City>Yorktown</City>
+                <City>Beaufort</City>
+                <City>Camden</City>
+                <City>Augusta</City>
+                <City>Salisbury</City>
+                <City>Reading</City>
+                <City>Georgetown</City>
+                <City>Burlington</City>
+                <City>Fort Erie</City>
+                <City>Roanoke</City>
+                <City>Exeter</City>
+                <City>Newbury</City>
+                <City>Barbados</City>
+                <City>Penobscot</City>
+                <City>Williamsburg</City>
+                <City>Wilmington</City>
+                <City>Rupert House</City>
+                <City>Martha's Vineyard</City>
+                <City>Saint George's</City>
+                <City>Dover</City>
+                <City>Hampton</City>
+                <City>Gloucester</City>
+                <City>Berwick</City>
+                <City>Windsor</City>
+                <City>London</City>
+                <City>Saint Kitts</City>
+                <City>Medford</City>
+                <City>Weymouth</City>
+                <City>Taunton</City>
+                <City>Lancaster</City>
+                <City>Bridgetown</City>
+                <City>Newark</City>
+                <City>Cupids</City>
+                <City>Kecoughtan</City>
+                <City>Henricus</City>
+                <City>Chelsea</City>
+                <City>Lynn</City>
+                <City>Lewes</City>
+                <City>Saint Mary's City</City>
+                <City>Sandwich</City>
+                <City>Saint Marks</City>
+                <City>Stratford</City>
+                <City>Sudbury</City>
+                <City>Woburn</City>
+                <City>Haverhill</City>
+                <City>Guilford</City>
+                <City>Andover</City>
+                <City>Kittery</City>
+                <City>Speightstown</City>
+                <City>Medfield</City>
+                <City>New Castle</City>
+                <City>Old Road Town</City>
+                <City>Pelham</City>
+                <City>Chelmsford</City>
+                <City>Groton</City>
+                <City>Billerica</City>
+                <City>Hopewell</City>
+                <City>Rye</City>
+                <City>Uxbridge</City>
+                <City>Piscatawaytown</City>
+                <City>Mendon</City>
+                <City>Amesbury</City>
+                <City>Westfield</City>
+                <City>Middleborough</City>
+                <City>Wallingford</City>
+                <City>Waterbury</City>
+                <City>South Orange</City>
+                <City>Bridgewater</City>
+                <City>Harbour Grace</City>
+                <City>Cockburn Town</City>
+                <City>New Britain</City>
+                <City>Chatham</City>
+                <City>New Bern</City>
+                <City>Freehold</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -2256,7 +2329,6 @@
 				<City>Fort Huys de Goede Hoop</City>
 				<City>De Punt</City>
 				<City>Vriessendael</City>
-				<City>'s Gravesande</City>
 				<City>Vlissingen</City>
 				<City>Yonkers</City>
 				<City>Nieuw Amersfoort</City>
@@ -2647,37 +2719,84 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Coimbra</City>
-				<City>Leiria</City>
-				<City>Braganza</City>
-				<City>Sagres</City>
-				<City>Aveiro</City>
-				<City>Viseu</City>
-				<City>Tomar</City>
-				<City>Cintra</City>
-				<City>Abrantes</City>
-				<City>Guarda</City>
-				<City>Chaves</City>
-				<City>Elvas</City>
-				<City>Silves</City>
-				<City>Vila Real</City>
-				<City>Tavira</City>
-				<City>Soure</City>
-				<City>Lamego</City>
-				<City>Palmela</City>
-				<City>Serpa</City>
-				<City>Sines</City>
-				<City>Almada</City>
-				<City>Estremoz</City>
-				<City>Miranda do Douro</City>
-				<City>Guimar&#227;es</City>
-				<City>&#201;vora</City>
-				<City>Covilh&#227;</City>
-				<City>Leix&#245;es</City>
-				<City>Set&#250;bal</City>
-				<City>Alc&#225;cer do Sal</City>
-				<City>M&#233;rtola</City>
-				<City>Angra do Hero&#237;smo</City>
+                <City>Igarassu</City>
+                <City>Santos</City>
+                <City>Fortim de S&#227;o Tiago</City>
+                <City>Santo Andr&#233;</City>
+                <City>S&#227;o Bernardo do Campo</City>
+                <City>Mogi das Cruzes</City>
+                <City>Santa Cruz</City>
+                <City>Santo Ant&#244;nio de S&#225;</City>
+                <City>S&#227;o Louren&#231;o dos &#205;ndios</City>
+                <City>S&#227;o Gon&#231;alo</City>
+                <City>Jo&#227;o Pessoa</City>
+                <City>S&#227;o Lu&#237;s</City>
+                <City>Feliz Lusit&#226;nia</City>
+                <City>Jacara&#237;</City>
+                <City>Jundia&#237;</City>
+                <City>Santar&#233;m</City>
+                <City>S&#227;o Jos&#233;</City>
+                <City>Laguna</City>
+                <City>Col&#243;nia do Sacramento</City>
+                <City>Curit&#237;ba</City>
+                <City>Ouro Preto</City>
+                <City>Contag&#233;m</City>
+                <City>Desterro</City>
+                <City>Rio Grande</City>
+                <City>Viam&#227;o</City>
+                <City>Macap&#225;</City>
+                <City>Gravata&#237;</City>
+                <City>Recife</City>
+                <City>Porto Seguro</City>
+                <City>Bahia</City>
+                <City>Ilh&#233;us</City>
+                <City>Cura&#231;&#227;o</City>
+                <City>S&#227;o Tom&#233;</City>
+                <City>Santo Amaro</City>
+                <City>Santa Anna</City>
+                <City>Vila Velha</City>
+                <City>Jo&#227;o Pessoa</City>
+                <City>Bel&#233;m</City>
+                <City>S&#227;o Miguel</City>
+                <City>Oliveira</City>
+                <City>Maranh&#227;o</City>
+                <City>Caxias</City>
+                <City>Alc&#226;ntara</City>
+                <City>Linhares</City>
+                <City>Juazeiro</City>
+                <City>S&#227;o Felix</City>
+                <City>Canan&#233;ia</City>
+                <City>Embu</City>
+                <City>Ipojuca</City>
+                <City>S&#227;o Mateus</City>
+                <City>S&#227;o Crist&#243;v&#227;o</City>
+                <City>Paudalho</City>
+                <City>Marechal Deodoro</City>
+                <City>Penedo</City>
+                <City>Sirinha&#233;m</City>
+                <City>Cabo Frio</City>
+                <City>Cabo de Santo Agostinho</City>
+                <City>Paraty</City>
+                <City>Boqueir&#227;o</City>
+                <City>Cachoeira</City>
+                <City>S&#227;o Borja</City>
+                <City>Escada</City>
+                <City>S&#227;o Luiz Gonzaga</City>
+                <City>S&#227;o Nicolau</City>
+                <City>S&#227;o Louren&#231;o das Miss&#245;es</City>
+                <City>Bom Jesus da Lapa</City>
+                <City>Ass&#250;</City>
+                <City>Barreiras</City>
+                <City>S&#227;o Jo&#227;o</City>
+                <City>Santo &#194;ngelo</City>
+                <City>Antonina</City>
+                <City>Serro</City>
+                <City>Brejo do Cruz</City>
+                <City>Rio de Contas</City>
+                <City>Tiradentes</City>
+                <City>Goi&#225;s</City>
+                <City>Piren&#243;polis</City>
+                <City>Inhambupe</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -3106,20 +3225,89 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Alicante</City>
-				<City>Jaen</City>
-				<City>Logrono</City>
-				<City>Palma</City>
-				<City>Teruel</City>
-				<City>Zamora</City>
-				<City>Mida</City>
-				<City>Lugo</City>
-				<City>Elche</City>
-				<City>Alcorcon</City>
-				<City>Vigo</City>
-				<City>San Sebastian</City>
-				<City>Ibiza</City>
-				<City>Las Palmas</City>
+                <City>Concepci&#243;n de la Vega</City>
+                <City>Vera Cruz</City>
+                <City>Potos&#237;</City>
+                <City>Ciudad de los Reyes</City>
+                <City>Caparra</City>
+                <City>Santa Mar&#237;a</City>
+                <City>Santa Marta</City>
+                <City>San Salvador</City>
+                <City>Acapulco</City>
+                <City>Esp&#237;ritu Santo</City>
+                <City>Cartagena</City>
+                <City>Valpara&#237;so</City>
+                <City>San Juan</City>
+                <City>Campeche</City>
+                <City>Cartago</City>
+                <City>La Navidad</City>
+                <City>Nombre de Dios</City>
+                <City>Portobelo</City>
+                <City>Loreto</City>
+                <City>Santa Barbara</City>
+                <City>Puerto Principe</City>
+                <City>Nuevo Segovia</City>
+                <City>San Fernando</City>
+                <City>Buenaventura</City>
+                <City>Arica</City>
+                <City>Santa Cruz</City>
+                <City>Valdivia</City>
+                <City>Ac&#225;mbaro</City>
+                <City>San Miguel</City>
+                <City>Mazatl&#225;n</City>
+                <City>Culiac&#225;n</City>
+                <City>Yuriria</City>
+                <City>Antigua</City>
+                <City>San Germ&#225;n</City>
+                <City>Aguascalientes</City>
+                <City>Parras</City>
+                <City>Salamanca</City>
+                <City>Dolores Hidalgo</City>
+                <City>Salvatierra</City>
+                <City>Cortazar</City>
+                <City>San Blas</City>
+                <City>Orizaba</City>
+                <City>Azua de Compostela</City>
+                <City>Cotu&#237;</City>
+                <City>Salvale&#243;n</City>
+                <City>Bonao</City>
+                <City>Hato Mayor</City>
+                <City>Cuman&#225;</City>
+                <City>Tecp&#225;n</City>
+                <City>San Crist&#243;bal</City>
+                <City>Puebla</City>
+                <City>Piura</City>
+                <City>Tepic</City>
+                <City>Otavalo</City>
+                <City>Bayaja</City>
+                <City>Paria</City>
+                <City>Popay&#225;n</City>
+                <City>Tupiza</City>
+                <City>Sucre</City>
+                <City>Ayacucho</City>
+                <City>Hu&#225;nuco</City>
+                <City>Moquegua</City>
+                <City>Genaro Codina</City>
+                <City>Cob&#225;n</City>
+                <City>Neyba</City>
+                <City>Tepezal&#225;</City>
+                <City>Asientos</City>
+                <City>Sonsonate</City>
+                <City>Sa&#237;n Alto</City>
+                <City>Cuenca</City>
+                <City>Susticac&#225;n</City>
+                <City>Tucum&#225;n</City>
+                <City>Mazapil</City>
+                <City>Jerez</City>
+                <City>Sombrerete</City>
+                <City>Huancavelica</City>
+                <City>Huaraz</City>
+                <City>Tarija</City>
+                <City>Juay&#250;a</City>
+                <City>Coamo</City>
+                <City>Salta</City>
+                <City>Corrientes</City>
+                <City>Juan Aldama</City>
 			</Cities>
 			<Buildings>
 				<Building>

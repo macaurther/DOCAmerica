@@ -310,8 +310,6 @@ def drainLakeTexcoco():
 		elif pPlot.getTerrainType() == iLagoon:
 			pPlot.setTerrainType(iMarsh, True, True)
 			pPlot.setFeatureType(iFloodPlains, 0)
-		else:
-			pPlot.setTerrainType(iPlains, True, True)
 
 ### BEGIN PLAYER TURN ###
 
