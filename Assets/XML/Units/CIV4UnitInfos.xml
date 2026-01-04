@@ -2097,7 +2097,7 @@
 			<Type>UNIT_IMMIGRANT</Type>
 			<Capture>UNITCLASS_IMMIGRANT</Capture>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_IMMIGRANT</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_IMMIGRANT</Description>
 			<Civilopedia>TXT_KEY_UNIT_IMMIGRANT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_IMMIGRANT_STRATEGY</Strategy>
@@ -2105,7 +2105,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_COLONIST</UnitAIType>
+					<UnitAIType>UNITAI_IMMIGRANT</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -4698,6 +4698,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_ARQUEBUSIER</Class>
 			<Type>UNIT_ARMED_SLAVE</Type>
+			<Capture>UNITCLASS_SLAVE</Capture>
 			<Combat>UNITCOMBAT_GUN</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
@@ -13395,11 +13396,7 @@
 			<bSlave>1</bSlave>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_WORKER</UnitAIType>
+					<UnitAIType>UNITAI_SLAVE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -13467,7 +13464,7 @@
 			<bSlave>1</bSlave>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_WORKER</UnitAIType>
+					<UnitAIType>UNITAI_SLAVE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>

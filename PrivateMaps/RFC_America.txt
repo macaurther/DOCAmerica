@@ -6237,7 +6237,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=107
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -6904,6 +6903,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=107
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -6917,7 +6917,7 @@ BeginPlot
 	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=10,y=110
@@ -7556,7 +7556,7 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=11,y=108

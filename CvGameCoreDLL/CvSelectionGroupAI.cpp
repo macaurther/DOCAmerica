@@ -591,7 +591,7 @@ bool CvSelectionGroupAI::AI_isDeclareWar(const CvPlot* pPlot)
 			case UNITAI_MERCHANT:
 			case UNITAI_ENGINEER:
 			case UNITAI_STATESMAN:
-			case UNITAI_COLONIST:
+			case UNITAI_IMMIGRANT:
 			case UNITAI_SLAVE:
 			case UNITAI_SIT_FOREVER:
 			case UNITAI_SPY:

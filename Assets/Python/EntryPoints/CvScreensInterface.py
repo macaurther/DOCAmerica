@@ -310,6 +310,10 @@ def showVictoryScreen():
 immigrationManager = CvImmigrationManager.CvImmigrationManager(IMMIGRATION_MANAGER)
 def showImmigrationManager():
 	immigrationManager.interfaceScreen()
+
+def getNumImmigrantsEarned(argsList):
+	iPlayer, iHomeland = argsList
+	return immigrationManager.getNumImmigrantsEarned(iPlayer, iHomeland)
 # < Immigration Manager End   >
 
 import CvPediaMain

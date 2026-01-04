@@ -573,12 +573,6 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	//if (pPlot->getX() == 0 && pPlot->getY() == 0)
 	//	GC.getGameINLINE().logMsg("kill in 00"); //Rhye
 
-	// MacAurther: If you are the Immigrant ship, make sure to unset the player member variable
-	if (GET_PLAYER(getOwnerINLINE()).getImmigrantShip() == this)
-	{
-		GET_PLAYER(getOwnerINLINE()).setImmigrantShip(NULL);
-	}
-
 	static std::vector<IDInfo> oldUnits;
 	oldUnits.clear();
 	pUnitNode = pPlot->headUnitNode();
@@ -8315,7 +8309,6 @@ BuildTypes CvUnit::getBuildType() const
 		case MISSION_GREAT_MISSION:
 		case MISSION_SATELLITE_ATTACK:
 		case MISSION_REBUILD:
-		case MISSION_POPULATE:
 		case MISSION_DIE_ANIMATION:
 			break;
 
@@ -14938,59 +14931,6 @@ bool CvUnit::rebuild()
 int CvUnit::getOriginalRegion() const
 {
 	return m_iOriginalRegion;
-}
-
-bool CvUnit::canPopulate(const CvPlot* pPlot) const
-{
-	// MacAurther: Changing role of Immigrants to be specialist, not pop boost. Keeping this here if I want to use in the future
-	return false;
-	/*if (getUnitType() != UNIT_IMMIGRANT)
-	{
-		return false;
-	}
-
-	if (!pPlot->isCity())
-	{
-		return false;
-	}
-
-	CvCity* pCity = pPlot->getPlotCity();
-
-	if (pCity->getOwner() != getOwner())
-	{
-		return false;
-	}
-
-	return true;*/
-}
-
-bool CvUnit::populate()
-{
-	if (!canPopulate(plot()))
-	{
-		return false;
-	}
-
-	if (!plot()->isCity())
-	{
-		return false;
-	}
-
-	bool bPopulated = plot()->getPlotCity()->populate();
-
-	if (bPopulated)
-	{
-		if (plot()->isActiveVisible(false))
-		{
-			NotifyEntity(MISSION_POPULATE);
-		}
-
-		kill(true);
-
-		return true;
-	}
-
-	return false;
 }
 
 bool CvUnit::canContactTribe(const CvPlot* pPlot) const

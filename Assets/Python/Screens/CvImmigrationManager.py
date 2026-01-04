@@ -123,6 +123,9 @@ class CvImmigrationManager:
 		
 		if(self.currentScreen == IMMIGRATION_MANAGER):
 			self.drawMercenaryScreenContent(screen)
+
+	def getNumImmigrantsEarned(self, iPlayer, iHomeland):
+		return objImmigrationUtils.getNumImmigrants(iPlayer, iHomeland)
 		
 	# Populates the panel that shows all of the available immigrants
 	def populateAvailableColonistsPanel(self, screen):
@@ -923,8 +926,4 @@ def onEndPlayerTurn(iGameTurn, iPlayer):
 		if not pPlayer.isHuman() and civ(iPlayer) < iIndependent1:
 			if pPlayer.isAlive():
 				if iPlayer % (g_bAIThinkPeriod) == iGameTurn % (g_bAIThinkPeriod):
-					print("Turn: " + str(iGameTurn) + " AI thinking about Immigrants, iPlayer: " + str(iPlayer))
-					objImmigrationUtils.computerPlayerThink(iPlayer)                                                                
-
-
-
+					objImmigrationUtils.computerPlayerThink(iPlayer)

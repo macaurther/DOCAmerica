@@ -316,7 +316,7 @@ lCivilizations = [
 		iStateReligion=iProtestantism,
 		lCivics=[iProprietors, iCharterColony, iIndenturedServitude, iMercantilism, iDivineRight, iProvidence],
 		techs=techs.column(10).including(iShipbuilding, iCharter, iIndentures),
-		extraTechs=techs.column(0).including(iNorthEuropeAccess),
+		extraTechs=techs.column(0).including(iNorthEuropeAccess, iFishing, iDiving),
 	),
 	Civilization(
 		iFrance,
@@ -324,7 +324,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iExpedition, iAdmiralty, iSerfdom, iFactoryCivic, iJesuits, iOutposts],
 		techs=techs.column(10).including(iShipbuilding, iFortification),
-		extraTechs=techs.column(0).including(iNorthEuropeAccess, iSouthEuropeAccess),
+		extraTechs=techs.column(0).including(iNorthEuropeAccess, iSouthEuropeAccess, iFishing, iDiving),
 	),
 	Civilization(
 		iNetherlands,
@@ -333,7 +333,7 @@ lCivilizations = [
 		iStateReligion=iProtestantism,
 		lCivics=[iTrustees, iTradingCompany, iSerfdom, iFactoryCivic, iDivineRight, iOutposts],
 		techs=techs.column(10).including(iFortification, iEconomics, iShipbuilding, iEducation),
-		extraTechs=techs.column(0).including(iNorthEuropeAccess),
+		extraTechs=techs.column(0).including(iNorthEuropeAccess, iFishing, iDiving),
 	),
 	Civilization(
 		iLakota,
@@ -356,7 +356,7 @@ lCivilizations = [
 		iStateReligion=iOrthodoxy,
 		lCivics=[iTrustees, iTradingCompany, iIndenturedServitude, iFactoryCivic, iExtraction, iOutposts],
 		techs=techs.column(12),
-		extraTechs=techs.column(0).including(iSiberiaAccess),
+		extraTechs=techs.column(0).including(iSiberiaAccess, iHunting, iTrapping, iFishing, iDiving),
 	),
 	Civilization(
 		iAmerica,
@@ -784,10 +784,10 @@ dSeaSpawns = CivDict({
 	iNorse:	      (68, 118),#  Norse
 	iSpain:	      (70, 73),	#  Spain
 	iPortugal:	  (80, 29),	#  Portugal
-	iEngland:	  (55, 87),	#  England
+	iEngland:	  (56, 87),	#  England
 	iFrance:	  (56, 98),	#  France
-	iNetherlands: (58, 91),	#  Netherlands
-	iRussia:	  (4, 106),	#  Russia
+	iNetherlands: (62, 91),	#  Netherlands
+	iRussia:	  (1, 106),	#  Russia
 })
 
 def createSpecificUnits(iPlayer, tile):

@@ -413,8 +413,8 @@ bool CvUnitAI::AI_update()
 			AI_satelliteMove();
 			break;
 
-		case UNITAI_COLONIST:
-			AI_colonistMove();
+		case UNITAI_IMMIGRANT:
+			AI_immigrantMove();
 			break;
 
 		case UNITAI_SLAVE:
@@ -682,7 +682,7 @@ int CvUnitAI::AI_groupFirstVal()
 	case UNITAI_MERCHANT:
 	case UNITAI_ENGINEER:
 	case UNITAI_STATESMAN:
-	case UNITAI_COLONIST:
+	case UNITAI_IMMIGRANT:
 	case UNITAI_SLAVE:
 	case UNITAI_SIT_FOREVER:
 		return 11;
@@ -5381,11 +5381,11 @@ void CvUnitAI::AI_settlerSeaMove()
 {
 	PROFILE_FUNC();
 
-	// Leoreth: otherwise they try to found the capital -> MacAurther: This is desirable behavior for spawn-at-sea civs
-	/*if (GET_PLAYER(getOwnerINLINE()).getNumCities() == 0)
+	// Leoreth: otherwise they try to found the capital -> MacAurther: This is desirable behavior for spawn-at-sea civs, disable this for them
+	if (GET_PLAYER(getOwnerINLINE()).getNumCities() == 0 && !((RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_EUROPE))
 	{
 		return;
-	}*/
+	}
 
 	bool bEmpty = !getGroup()->hasCargo();
 	if (bEmpty)
@@ -5398,28 +5398,6 @@ void CvUnitAI::AI_settlerSeaMove()
 		{
 			return;
 		}
-	}
-
-	//MacAurther: If you have nothing to attack and player doesn't have an immigrant ship, prioritize sending one
-	if (GET_PLAYER(getOwnerINLINE()).getImmigrantShip() == NULL)
-	{
-		//  If you're empty and have enough immigration, become the immigrant ship
-		if (bEmpty && GET_PLAYER(getOwnerINLINE()).getImmigration() > AI_MIN_IMMIGRATION)
-		{
-			if (AI_PickupImmigrantsMove())
-			{
-				// This is the Immigrant ship now
-				GET_PLAYER(getOwnerINLINE()).setImmigrantShip(this);
-				return;
-			}
-		}
-	}
-
-	// MacAurther: If you are the immigrant ship and not empty, you are not the immigrant ship anymore
-	// Go drop off your cargo and let someone else be the immigrant ship
-	if (!bEmpty && GET_PLAYER(getOwnerINLINE()).getImmigrantShip() == this)
-	{
-		GET_PLAYER(getOwnerINLINE()).setImmigrantShip(NULL);
 	}
 
 	int iSettlerCount = getUnitAICargo(UNITAI_SETTLE);
@@ -5489,6 +5467,36 @@ void CvUnitAI::AI_settlerSeaMove()
 		return;
 	}
 
+	// MacAurther: If you have nothing better to do and you're empty, go pick up Immigrants (if any)
+	if (bEmpty)
+	{
+		// Check homelands for immigrants
+		int iBestHomeland = -1;
+		int iBestHomelandCount = 0;
+		for (int iHomeland = 0; iHomeland < NUM_HOMELANDS; iHomeland++)
+		{
+			CyArgsList argsList;
+			argsList.add(getOwnerINLINE());
+			argsList.add(iHomeland);
+			long lResult=-1;
+			gDLL->getPythonIFace()->callFunction(PYScreensModule, "getNumImmigrantsEarned", argsList.makeFunctionArgs(), &lResult);
+			if ((int)lResult > iBestHomelandCount)
+			{
+				iBestHomeland = iHomeland;
+				iBestHomelandCount = (int)lResult;
+			}
+		}
+
+		// If there are immigrants to pick up, go do that
+		if (iBestHomeland > -1 && iBestHomelandCount > 0)
+		{
+			if (AI_PickupImmigrantsMove(iBestHomeland))
+			{
+				return;
+			}
+		}
+	}
+
 	if ((GC.getGame().getGameTurn() - getGameTurnCreated()) < 8)
 	{
 		if ((plot()->getPlotCity() == NULL) || GET_PLAYER(getOwnerINLINE()).AI_totalAreaUnitAIs(plot()->area(), UNITAI_SETTLE) == 0)
@@ -5500,19 +5508,9 @@ void CvUnitAI::AI_settlerSeaMove()
 		}
 	}
 
-
 	if (AI_pickup(UNITAI_WORKER))
 	{
 		return;
-	}
-
-	// MacAurther: If you have nothing else to do and you're empty, go pick up Immigrants
-	if (bEmpty && GET_PLAYER(getOwnerINLINE()).getImmigration() > AI_MIN_IMMIGRATION)
-	{
-		if (AI_PickupImmigrantsMove())
-		{
-			return;
-		}
 	}
 
 	if (AI_retreatToCity(true))
@@ -18990,7 +18988,7 @@ bool CvUnitAI::AI_rebuildMove(int iMinimumCost)
 }
 
 // MacAurther
-void CvUnitAI::AI_colonistMove()
+void CvUnitAI::AI_immigrantMove()
 {
 	PROFILE_FUNC();
 
@@ -19000,7 +18998,7 @@ void CvUnitAI::AI_colonistMove()
 		return;
 	}
 
-	if (AI_populateMove())
+	if (AI_join())
 	{
 		return;
 	}
@@ -19024,7 +19022,151 @@ void CvUnitAI::AI_slaveMove()
 {
 	PROFILE_FUNC();
 
+	// MacAurther: Mostly copied over AI_workerMove to unify AI behavior, allowing slaves to join AI cities (important for Haitian and American UHVs)
+	CvCity* pCity;
+	bool bNextCity;
+
+	bNextCity = false;
+
+	// XXX could be trouble...
+	if (plot()->getOwnerINLINE() != getOwnerINLINE())
+	{
+		if (AI_retreatToCity())
+		{
+			return;
+		}
+	}
+
+	if (!isHuman())
+	{
+		if (plot()->getOwnerINLINE() == getOwnerINLINE())
+		{
+			if (AI_load(UNITAI_SETTLER_SEA, MISSIONAI_LOAD_SETTLER, UNITAI_SETTLE, 2, -1, -1, 0, MOVE_SAFE_TERRITORY))
+			{
+				return;
+			}
+		}
+	}
+
+    if (!(getGroup()->canDefend()))
+	{
+		if (GET_PLAYER(getOwnerINLINE()).AI_isPlotThreatened(plot(), 2))
+		{
+			if (AI_retreatToCity()) // XXX maybe not do this??? could be working productively somewhere else...
+			{
+				return;
+			}
+		}
+	}
+
+	CvPlot* pBestBonusPlot = NULL;
+	BuildTypes eBestBonusBuild = NO_BUILD;
+	int iBestBonusValue = 0;
+
+    if (AI_improveBonus(25, &pBestBonusPlot, &eBestBonusBuild, &iBestBonusValue))
+	{
+		return;
+	}
+
+	pCity = NULL;
+
+	if (plot()->getOwnerINLINE() == getOwnerINLINE())
+	{
+		pCity = plot()->getPlotCity();
+		if (pCity == NULL)
+		{
+			pCity = plot()->getWorkingCity();
+		}
+	}
+
+	if (pCity != NULL)
+	{
+		if ((pCity->AI_getWorkersNeeded() > 0) && (plot()->isCity() || (pCity->AI_getWorkersNeeded() < ((1 + pCity->AI_getWorkersHave() * 2) / 3))))
+		{
+			if (AI_improveCity(pCity))
+			{
+				return;
+			}
+		}
+	}
+
+	if (AI_improveLocalPlot(2, pCity))
+	{
+		return;
+	}
+
+	// MacAurther: Inserted attempt to join a city before looking for other cities to improve
 	if (AI_join())
+	{
+		return;
+	}
+
+	if ((pCity == NULL) || (pCity->AI_getWorkersNeeded() == 0) || ((pCity->AI_getWorkersHave() > (pCity->AI_getWorkersNeeded() + 1))))
+	{
+		if ((pBestBonusPlot != NULL) && (iBestBonusValue >= 15))
+		{
+			if (AI_improvePlot(pBestBonusPlot, eBestBonusBuild))
+			{
+				return;
+			}
+		}
+
+//		if (pCity == NULL)
+//		{
+//			pCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), getOwnerINLINE()); // XXX do team???
+//		}
+
+		if (AI_nextCityToImprove(pCity))
+		{
+			return;
+		}
+
+		bNextCity = true;
+	}
+
+	if (pBestBonusPlot != NULL)
+	{
+		if (AI_improvePlot(pBestBonusPlot, eBestBonusBuild))
+		{
+			return;
+		}
+	}
+
+	if (pCity != NULL)
+	{
+		if (AI_improveCity(pCity))
+		{
+			return;
+		}
+	}
+
+	if (!bNextCity)
+	{
+		if (AI_nextCityToImprove(pCity))
+		{
+			return;
+		}
+	}
+
+	if (!isHuman() || (isAutomated() && GET_TEAM(getTeam()).getAtWarCount(true) == 0))
+	{
+		if (!isHuman() || (getGameTurnCreated() < GC.getGame().getGameTurn()))
+		{
+			if (AI_nextCityToImproveAirlift())
+			{
+				return;
+			}
+		}
+		if (!isHuman())
+		{
+			if (AI_load(UNITAI_SETTLER_SEA, MISSIONAI_LOAD_SETTLER, NO_UNITAI, -1, -1, -1, -1, MOVE_SAFE_TERRITORY))
+			{
+				return;
+			}
+		}
+	}
+
+	if (AI_improveLocalPlot(3, NULL))
 	{
 		return;
 	}
@@ -19044,109 +19186,73 @@ void CvUnitAI::AI_slaveMove()
 }
 
 
-bool CvUnitAI::AI_PickupImmigrantsMove()
+bool CvUnitAI::AI_PickupImmigrantsMove(int iHomeland)
 {
-	CvPlot* pEdge;
-	if(!AI_GetClosestEdge(pEdge))
+	CvPlot* pAccess;
+	if(!AI_GetClosestHomeland(pAccess, iHomeland))
 	{
 		// Ship can't get to edge, i.e. stuck in lake or blockaded
 		return false;
 	}
 
-	// See if you're already on the edge
-	if (pEdge == plot())
+	// See if you're already there
+	if (pAccess == plot())
 	{
 		// Just wait a turn to get some Immigrants
 		getGroup()->pushMission(MISSION_SKIP);
 		return true;
 	}
 	
-	// Got get you some Immigrants
-	getGroup()->pushMission(MISSION_MOVE_TO, pEdge->getX(), pEdge->getY());
+	// Go get you some Immigrants
+	getGroup()->pushMission(MISSION_MOVE_TO, pAccess->getX(), pAccess->getY());
 	return true;
 }
 
-bool CvUnitAI::AI_GetClosestEdge(CvPlot*& pClosestEdgePlot)	// MacAurther TODO: Rework to new system
+bool CvUnitAI::AI_GetClosestHomeland(CvPlot*& pClosestEdgePlot, int iHomeland)
 {
-	int iEastPathTurns = 0;
-	int iWestPathTurns = 0;
-	CvPlot* pPlotEast = GC.getMapINLINE().plotINLINE(EARTH_X - 1, getY());	
-	CvPlot* pPlotWest = GC.getMapINLINE().plotINLINE(0, getY());
-	
-	bool bEastPath = generatePath(pPlotEast, MOVE_MAX_MOVES | MOVE_IGNORE_DANGER, false, &iEastPathTurns);
-	bool bWestPath = generatePath(pPlotWest, MOVE_MAX_MOVES | MOVE_IGNORE_DANGER, false, &iWestPathTurns);
-	
-	if (bEastPath && !bWestPath)
-	{
-		// Use East Path
-		pClosestEdgePlot = pPlotEast;
-		return true;
-	}
-	else if (!bEastPath && bWestPath)
-	{
-		// Use West Path
-		pClosestEdgePlot = pPlotWest;
-		return true;
-	}
-	else if (bEastPath && bWestPath)
-	{
-		// Use Shorter Path
-		if (iEastPathTurns <= iWestPathTurns)
+	CvPlot* pBestPlot = NULL;
+    int iBestTurns = MAX_INT;
+
+    CvPlot* pLoopPlot = NULL;
+    TeamTypes eTeam = GET_PLAYER(getOwner()).getTeam();
+
+    for (int i = 0; i < GC.getMapINLINE().numPlotsINLINE(); ++i)
+    {
+        pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(i);
+
+        if (!pLoopPlot->isRevealed(eTeam, false))
 		{
-			// Prefer East if they're the same
-			pClosestEdgePlot = pPlotEast;
+            continue;
 		}
-		else
+
+        if (pLoopPlot->getFeatureType() - FEATURE_TRADEWINDS_NORTH_EUROPE != iHomeland)
 		{
-			pClosestEdgePlot = pPlotWest;
+            continue;
 		}
-		return true;
-	}
 
-	// No path
-	return false;
-}
-
-bool CvUnitAI::AI_populateMove()
-{
-	// Let's say we want to send Colonists to a city with spare happiness that's growing that's reachable
-	// First, see if we're at a city that fits those conditions
-	CvCity* pCity = plot()->getPlotCity();
-	if (pCity != NULL && pCity->foodDifference() >= 2 && pCity->happyLevel() - pCity->unhappyLevel() > 0)
-	{
-		getGroup()->pushMission(MISSION_POPULATE);
-		return true;
-	}
-
-	// Search for the city with the most spare happiness that's growing that's reachable
-	CvCity* pLoopCity;
-	CvCity* pBestCity = NULL;
-	int iLoop;
-	PlayerTypes ePlayer = getOwnerINLINE();
-	int iBestCityHappy = 0;
-
-	for (pLoopCity = GET_PLAYER(ePlayer).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(ePlayer).nextCity(&iLoop))
-	{
-		if (atPlot(pLoopCity->plot()) || canMoveInto(pLoopCity->plot(), false, false))
+        if (!canMoveOrAttackInto(pLoopPlot))
 		{
-			if (pLoopCity->foodDifference() >= 2)
-			{
-				int iHappy = pLoopCity->happyLevel() - pLoopCity->unhappyLevel();
-				if (iHappy > iBestCityHappy)
-				{
-					iBestCityHappy = iHappy;
-					pBestCity = pLoopCity;
-				}
-			}
+            continue;
 		}
-	}
 
-	if (pBestCity != NULL)
-	{
-		getGroup()->pushMission(MISSION_MOVE_TO, pBestCity->getX(), pBestCity->getY());
-		return true;
-	}
-	return false;
+        int iPathTurns = 0;
+        if (generatePath(pLoopPlot, 0, true, &iPathTurns))
+        {
+            if (iPathTurns < iBestTurns)
+            {
+                iBestTurns = iPathTurns;
+                pBestPlot = pLoopPlot;
+            }
+        }
+    }
+
+	if (pBestPlot != NULL)
+    {
+        pClosestEdgePlot = pBestPlot;
+        return true;
+    }
+
+    return false;
 }
 
 void CvUnitAI::read(FDataStreamBase* pStream)

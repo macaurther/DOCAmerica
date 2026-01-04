@@ -867,89 +867,9 @@ event_bullet = "INTERFACE_EVENT_BULLET"
 event_cancel = "INTERFACE_BUTTONS_CANCEL"
 
 
-# MacAurther: Update this if more population hurry types are added
+# MacAurther: Update this if more hurry types are added
 iNumHurries = 3
 (iHurryPopulation,	iHurryGoldUnits, iHurryGoldBuilding) = range(iNumHurries)
-
-# Immigration
-iNumImmigrantCategories = 28
-# 0				1				2				3				4				5				6				7				8				9
-(iSettlersCat,	iWorkersCat,	iMissionariesCat,iTransportsCat,iSlavesCat,		iColonistsCat,	iTrackmanCat,iExplorersCat,iMilitiaCat,	iMainlineCat,	
-iEliteCat,		iCollateralCat,	iSkirmishCat,	iCavCat,		iSiegeCat,		iMainlineShipCat,iSkirmishShipCat,iCapitalShipCat,iEndowCatArt,	iEndowCatAssets,
-iEndowCatInno,	iGPCatProphet,	iGPCatArtist,	iGPCatScientist,iGPCatMerchant,	iGPCatEngineer,	iGPCatStatesman,iGPCatGeneral) = range(iNumImmigrantCategories)
-
-lSettlers = [iSettler, iPioneer]
-lWorkers = [iWorker, iPromyshlenniki, iLaborer, iMadeireiro]
-lMissionaries = [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
-lTransports = [iLongship, iCaravel, iCarrack, iIndiaman, iGalleon, iFluyt, iBrigantine, iSteamship, iTransport]
-lColonists = [iImmigrant]
-lMigrantWorkers = [iTrackman]
-lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger, iFactor]
-lMilitia = [iMilitiaPikeman, iMilitiaArquebusier, iMilitiaMusketman, iMilitiaRifleman, iMilitiaInfantry]
-lMainlineMercs = [iArquebusier, iMusketman, iCompagnies, iFusilier, iRifleman, iInfantry]
-lEliteMercs = [iPikeman, iTercio, iLineInfantry, iRedcoat, iAntiTank]
-lCollateralMercs = [iCrossbowman, iGatlingGun, iMachineGun]
-lSkirmishMercs = [iSkirmisher, iGrenadier, iMarine]
-lCavalryMercs = [iCuirassier, iConquistador, iDragoon, iCavalry, iLightTank, iTank]
-lSiegeMercs = [iBombard, iCannon, iHeavyCannon, iRifledCannon, iArtillery]
-lMainlineShips = [iSloop, iFrigate, iIronclad, iDestroyer]
-lSkirmishShips = [iPrivateer, iSubmarine] # Note: Can't hire Monitors because they can't go in ocean
-lCapitalShips = [iBarque, iShipOfTheLine, iManOfWar, iCruiser, iBattleship, iCarrier]
-lGPProphet = [iGreatProphet]
-lGPArtist = [iGreatArtist]
-lGPScientist = [iGreatScientist]
-lGPMerchant = [iGreatMerchant]
-lGPEngineer = [iGreatEngineer]
-lGPStatesman = [iGreatStatesman]
-lGPGeneral = [iGreatGeneral]
-
-
-lGreatPeople = lGPProphet + lGPArtist + lGPScientist + lGPMerchant + lGPEngineer + lGPStatesman + lGPGeneral
-
-lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lColonists, lMigrantWorkers]
-
-lPossibleMercenariesLand = [lExplorers, lMilitia, lMainlineMercs, lEliteMercs, lCollateralMercs, lSkirmishMercs, lCavalryMercs, lSiegeMercs]
-lPossibleMercenariesSea = [lMainlineShips, lSkirmishShips, lCapitalShips]
-lPossibleMercenaries = lPossibleMercenariesLand + lPossibleMercenariesSea
-
-lPossibleImmigrants = lPossibleColonists + lPossibleMercenaries
-lNoTrainingNeeded = lColonists + lMigrantWorkers
-
-# A goal number of cities for an AI to build, used in Immigration Manager
-dNumCitiesGoal = CivDict({
-iMaya : 3,
-iZapotec : 1,
-iTeotihuacan : 2,
-iTiwanaku : 2,
-iWari : 3,
-iMississippi : 5,
-iMuisca : 2,
-iNorse : 4,
-iChimu : 2,
-iPueblo : 3,
-iPurepecha : 3,
-iInuit : 8,
-iInca : 10,
-iAztec : 5,
-iHaudenosaunee : 5,
-iSpain : 30,
-iPortugal : 20,
-iEngland : 15,
-iFrance : 10,
-iNetherlands : 5,
-iLakota : 5,
-iHawaii : 3,
-iRussia: 5,
-iAmerica : 30,
-iHaiti : 2,
-iArgentina : 10,
-iMexico : 10,
-iColombia : 5,
-iPeru : 5,
-iBrazil : 20,
-iVenezuela : 5,
-iCanada : 15,
-}, 0)
 
 # Immigration Homelands
 iNumImmigrationHomelands = 5

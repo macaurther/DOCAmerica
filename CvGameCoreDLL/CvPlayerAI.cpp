@@ -1504,7 +1504,7 @@ DomainTypes CvPlayerAI::AI_unitAIDomainType(UnitAITypes eUnitAI) const
 	case UNITAI_MERCHANT:
 	case UNITAI_ENGINEER:
 	case UNITAI_STATESMAN:
-	case UNITAI_COLONIST:
+	case UNITAI_IMMIGRANT:
 	case UNITAI_SLAVE:
 	case UNITAI_SIT_FOREVER:
 	case UNITAI_SPY:
@@ -1801,10 +1801,10 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 
 	if (iSettlerMapValue < 10)
 	{
+		CvPlot* pAdjacentPlot;
 		for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 		{
-			// MacAurther: Check if plot is NULL first
-			CvPlot* pAdjacentPlot = plotDirection(iX, iY, (DirectionTypes)iI);
+			pAdjacentPlot = plotDirection(iX, iY, (DirectionTypes)iI);
 			if (pAdjacentPlot != NULL && pAdjacentPlot->isCity())
 			{
 				return 0;
@@ -8583,7 +8583,7 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 		case UNITAI_MERCHANT:
 		case UNITAI_ENGINEER:
 		case UNITAI_STATESMAN:
-		case UNITAI_COLONIST:
+		case UNITAI_IMMIGRANT:
 		case UNITAI_SLAVE:
 		case UNITAI_SIT_FOREVER:
 		case UNITAI_SPY:
@@ -9013,7 +9013,7 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 	case UNITAI_MERCHANT:
 	case UNITAI_ENGINEER:
 	case UNITAI_STATESMAN:
-	case UNITAI_COLONIST:
+	case UNITAI_IMMIGRANT:
 	case UNITAI_SLAVE:
 	case UNITAI_SIT_FOREVER:
 		break;
@@ -15272,7 +15272,7 @@ bool CvPlayerAI::AI_disbandUnit(int iExpThreshold, bool bObsolete)
 							case UNITAI_GENERAL:
 							case UNITAI_MERCHANT:
 							case UNITAI_ENGINEER:
-							case UNITAI_COLONIST:
+							case UNITAI_IMMIGRANT:
 							case UNITAI_SLAVE:
 							case UNITAI_SIT_FOREVER:
 								break;
@@ -19416,7 +19416,7 @@ int CvPlayerAI::AI_getUnitEnabledValue(UnitTypes eUnit,
 		case UNITAI_MERCHANT:
 		case UNITAI_ENGINEER:
 		case UNITAI_STATESMAN:
-		case UNITAI_COLONIST:
+		case UNITAI_IMMIGRANT:
 		case UNITAI_SLAVE:
 		case UNITAI_SIT_FOREVER:
 			break;

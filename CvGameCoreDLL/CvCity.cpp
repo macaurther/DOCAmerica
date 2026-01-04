@@ -19121,9 +19121,3 @@ int CvCity::getTempHappiness() const
 
 	return (getHappinessTimer() + iHappinessTurns - 1) / iHappinessTurns;
 }
-
-bool CvCity::populate()
-{
-	changePopulation(1);
-	return true;
-}

@@ -1211,7 +1211,6 @@ public:
 	bool isCore() const;
 
 	bool rebuild(EraTypes eEra = NO_ERA);
-	bool populate(); // MacAurther
 
 	DllExport int getMusicScriptId() const;
 	DllExport int getSoundscapeScriptId() const;

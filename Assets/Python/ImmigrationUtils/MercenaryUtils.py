@@ -156,9 +156,6 @@ class Mercenary:
 		elif self.iUnitID in [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]:
 			iImmigrationCost = 1
 			iGoldCost = scale(10)
-		elif self.getUnitId() in lGreatPeople:
-			iImmigrationCost = 1
-			iGoldCost = scale(500)
 		else:
 			iGoldCost = self.getUnitInfo().getProductionCost() / 2
 
@@ -178,23 +175,6 @@ class Mercenary:
 		if iGoldCost > 0:
 			strHCost += u"%d%c" %(iGoldCost, gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
 		return strHCost
-
-	def canHireUnit(self, iPlayer):
-		pPlayer = gc.getPlayer(iPlayer)
-		
-		# Anglo-America RP: Can hire Great People
-		if civ(iPlayer) in [iAmerica, iCanada]:
-			if self.getUnitId() in lGreatPeople:
-				return True
-		
-		# Can hire Colonists and other special units even though you can't train them
-		if self.getUnitId() in [iImmigrant]:
-			return True
-		
-		if pPlayer.canTrain(self.getUnitId(), False, False):
-			return True
-		
-		return False
 
 	# Returns the mercenary's current experience level
 	def getExperienceLevel(self):
@@ -304,12 +284,6 @@ class Mercenary:
 	# Is Ship?
 	def isShip(self):
 		return self.getUnitInfo().getDomainType() == 0		# DOMAIN_SEA = 0
-	
-	def getUnitCategory(self):
-		for iUnitCategory, lUnitCategory in enumerate(lPossibleImmigrants):
-			if self.getUnitId() in lUnitCategory:
-				return iUnitCategory
-		return -1
 	
 class ImmigrantGroup:
 	def __init__(self, immigrant, iCount=1):

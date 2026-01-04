@@ -1403,9 +1403,6 @@ public:
 	int getRegionPowers() const;
 	int getFortRange() const;
 	bool canResearchNativeTech(TechTypes eTech) const;
-	bool hasShipOnEdge() const;
-	void setImmigrantShip(CvUnit* pUnit);
-	CvUnit* getImmigrantShip() const;
 
 	void changeExtraPop(int iChange);
 	int getExtraPop() const;
@@ -1599,7 +1596,6 @@ protected:
 	TeamTypes m_eTeamType;
 	TechTypes m_eFreeTechChosen; // Leoreth
 
-	CvUnit* m_pImmigrantShip; // MacAurther
 	int m_iExtraPop; // MacAurther
 	int m_iContactDiscount; // MacAurther
 

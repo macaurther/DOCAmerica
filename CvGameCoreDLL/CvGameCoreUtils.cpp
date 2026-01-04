@@ -2548,7 +2548,6 @@ void getMissionTypeString(CvWString& szString, MissionTypes eMissionType)
 	case MISSION_GREAT_MISSION: szString = L"MISSION_GREAT_MISSION"; break;
 	case MISSION_SATELLITE_ATTACK: szString = L"MISSION_SATELLITE_ATTACK"; break;
 	case MISSION_REBUILD: szString = L"MISSION_REBUILD"; break;
-	case MISSION_POPULATE: szString = L"MISSION_POPULATE"; break;
 
 	case MISSION_DIE_ANIMATION: szString = L"MISSION_DIE_ANIMATION"; break;
 
@@ -2652,7 +2651,7 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI)
 	case UNITAI_STATESMAN: szString = L"statesman"; break;
 	case UNITAI_PERSECUTOR: szString = L"persecutor"; break;
 	case UNITAI_SATELLITE: szString = L"satellite"; break;
-	case UNITAI_COLONIST: szString = L"colonist"; break;
+	case UNITAI_IMMIGRANT: szString = L"colonist"; break;
 	case UNITAI_SLAVE: szString = L"slave"; break;
 	case UNITAI_SIT_FOREVER: szString = L"sit forever"; break;
 

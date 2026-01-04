@@ -71,7 +71,6 @@ class CivData:
 		
 		# MacAurther: Immigration
 		self.numImmigrations = 0
-		self.lUnitCategoriesHired = [0] * iNumImmigrantCategories
 		self.lNumImmigrantsEared = [0] * iNumImmigrationHomelands
 		self.dEarnedImmigrants = {
 			iHomelandNorthEurope: {},

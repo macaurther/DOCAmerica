@@ -589,7 +589,6 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iFreeTechsOnDiscovery = 0;
 	m_eFreeTechChosen = NO_TECH;
 
-	m_pImmigrantShip = NULL; // MacAurther
 	m_iExtraPop = 0; // MacAurther
 	m_iContactDiscount = 0; // MacAurther
 
@@ -2378,7 +2377,7 @@ void CvPlayer::disbandUnit(bool bAnnounce)
 						case UNITAI_MERCHANT:
 						case UNITAI_ENGINEER:
 						case UNITAI_STATESMAN:
-						case UNITAI_COLONIST:
+						case UNITAI_IMMIGRANT:
 						case UNITAI_SLAVE:
 						case UNITAI_SIT_FOREVER:
 							break;
@@ -5608,7 +5607,7 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 		{
 			if (GC.getTechInfo((TechTypes) iI).isGoodyTech())
 			{
-				if (canResearchNativeTech((TechTypes)iI))
+				if (canResearchNativeTech((TechTypes)iI))	// MacAurther TODO: Refactor with new implementation
 				{
 					iValue = (1 + GC.getGameINLINE().getSorenRandNum(10000, "Goody Tech"));
 
@@ -18666,7 +18665,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_eParent);
 	//m_eTeamType not saved
 	pStream->Read((int*)&m_eFreeTechChosen); // Leoreth
-	//m_pImmigrantShip not saved
 	pStream->Read((int*)&m_iExtraPop); // MacAurther
 	pStream->Read((int*)&m_iContactDiscount); // MacAurther
 	updateTeamType(); 
@@ -19107,7 +19105,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_eParent);
 	//m_eTeamType not saved
 	pStream->Write(m_eFreeTechChosen); // Leoreth
-	//m_pImmigrantShip not saved
 	pStream->Write(m_iExtraPop); // MacAurther
 	pStream->Write(m_iContactDiscount); // MacAurther
 
@@ -25735,35 +25732,6 @@ bool CvPlayer::canResearchNativeTech(TechTypes eTech) const
 		}
 	}
 	return false;
-}
-
-// Returns true if a player has a ship on either the edge	// MacAurther TODO: Needed? Replace with new AI Immigration implementation
-bool CvPlayer::hasShipOnEdge() const
-{
-	int iLoop;
-	CvUnit* pLoopUnit;
-	// Loop through players units, checking if they're on the edge
-	for (pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
-	{
-		if (pLoopUnit->getDomainType() == DOMAIN_SEA)
-		{
-			if (pLoopUnit->getX() == 0 || pLoopUnit->getX() == EARTH_X - 1)
-			{
-				return true;
-			}
-		}
-	}
-	return false;
-}
-
-void CvPlayer::setImmigrantShip(CvUnit* pUnit)
-{
-	m_pImmigrantShip = pUnit;
-}
-
-CvUnit* CvPlayer::getImmigrantShip() const
-{
-	return m_pImmigrantShip;
 }
 
 void CvPlayer::changeExtraPop(int iChange)

@@ -281,6 +281,7 @@ def buildFoundedCapitalInfrastructure(city):
 
 
 # MacAurther: Help European AI by removing nearby Tribes when they settle cities
+# MacAurther TODO: Replace this with better AI handling of Tribes in general
 @handler("cityBuilt")
 def convertTribesAroundCity(pCity):
 	iPlayer = pCity.getOwner()

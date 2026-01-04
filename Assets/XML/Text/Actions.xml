@@ -302,30 +302,6 @@
 		<Spanish>Build Food</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_MISSION_POPULATE</Tag>
-		<English>Populate</English>
-		<French>Populate</French>
-		<German>Populate</German>
-		<Italian>Populate</Italian>
-		<Spanish>Populate</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_ACTION_POPULATE</Tag>
-		<English>+1 Population</English>
-		<French>+1 Population</French>
-		<German>+1 Population</German>
-		<Italian>+1 Population</Italian>
-		<Spanish>+1 Population</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_POPULATE</Tag>
-		<English>[ICON_BULLET]Can settle in a city, increasing its population by 1</English>
-		<French>[ICON_BULLET]Can settle in a city, increasing its population by 1</French>
-		<German>[ICON_BULLET]Can settle in a city, increasing its population by 1</German>
-		<Italian>[ICON_BULLET]Can settle in a city, increasing its population by 1</Italian>
-		<Spanish>[ICON_BULLET]Can settle in a city, increasing its population by 1</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONTACT</Tag>
 		<English>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
 		<French>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>

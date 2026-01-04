@@ -183,8 +183,8 @@
 			<Description>UNITAI_SATELLITE</Description>
 		</UnitAIInfo>
 		<UnitAIInfo>
-			<Type>UNITAI_COLONIST</Type>
-			<Description>UNITAI_COLONIST</Description>
+			<Type>UNITAI_IMMIGRANT</Type>
+			<Description>UNITAI_IMMIGRANT</Description>
 		</UnitAIInfo>
 		<UnitAIInfo>
 			<Type>UNITAI_SLAVE</Type>

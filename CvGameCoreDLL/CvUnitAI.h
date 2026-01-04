@@ -103,7 +103,7 @@ protected:
 	void AI_missileAirMove();
 	void AI_persecutorMove(); // Leoreth
 	void AI_satelliteMove(); // Leoreth
-	void AI_colonistMove();	// MacAurther
+	void AI_immigrantMove();	// MacAurther
 	void AI_slaveMove();	// MacAurther
 
 	void AI_networkAutomated();
@@ -223,9 +223,8 @@ protected:
 	bool AI_rebuildMove(int iMinimumCost);
 
 	// MacAurther
-	bool AI_PickupImmigrantsMove();
-	bool AI_GetClosestEdge(CvPlot*& pClosestEdge);
-	bool AI_populateMove();
+	bool AI_PickupImmigrantsMove(int iHomeland);
+	bool AI_GetClosestHomeland(CvPlot*& pClosestEdge, int iHomeland);
 
 	bool AI_followBombard();
 

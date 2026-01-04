@@ -567,15 +567,6 @@ def doUnitBribes(spy):
 	x, y = location(spy)
 	bribePopup.cancel().launch(spy.getOwner(), x, y)
 
-@handler("civicChanged")
-def onCivicChanged(iPlayer, iOldCivic, iNewCivic):
-	if iNewCivic == iTribalConfederacy:
-		for pPlot in plots.all().owner(iPlayer):
-			# Convert Tribes to Allied Tribe
-			if pPlot.getImprovementType() == iTribe:
-				pPlot.setImprovementType(iTribe)
-				player(iPlayer).doGoody(pPlot, None)
-
 ### POPUPS ###
 
 unit_bribe_popup = popup.text("TXT_KEY_BRIBE_UNITS_POPUP") \
