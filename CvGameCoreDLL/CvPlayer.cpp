@@ -12150,7 +12150,11 @@ void CvPlayer::setCivilizationType(CivilizationTypes iNewValue)
 
 void CvPlayer::applyCivilization(CivilizationTypes eCivilization, int iChange)
 {
-	int iI;
+	// Anglo America RP: +1 Commerce (and GPP) per Immigrant
+	if ((RegionPowers)getRegionPowers(eCivilization) == RP_ANGLO_AMERICA)
+	{
+		changeSpecialistExtraYield(SPECIALIST_IMMIGRANT, YIELD_COMMERCE, iChange);
+	}
 }
 
 
@@ -25654,7 +25658,12 @@ bool CvPlayer::isImmigrationTutorial() const
 
 int CvPlayer::getRegionPowers() const
 {
-	switch (getCivilizationType())
+	return getRegionPowers(getCivilizationType());
+}
+
+int CvPlayer::getRegionPowers(CivilizationTypes eCiv) const
+{
+	switch (eCiv)
 	{
 	case CHIMU:
 	case INCA:

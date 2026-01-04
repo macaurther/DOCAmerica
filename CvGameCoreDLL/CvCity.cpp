@@ -18631,6 +18631,15 @@ int CvCity::getSpecialistGreatPeopleRateChange(SpecialistTypes eSpecialist) cons
 		iGreatPeopleRate += iCultureLevelRate;
 	}*/
 
+	// Anglo America RP: +1 (Commerce and) GPP per Immigrant
+	if (eSpecialist == SPECIALIST_IMMIGRANT)
+	{
+		if ((RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_ANGLO_AMERICA)
+		{
+			iGreatPeopleRate += 1;
+		}
+	}
+
 	return iGreatPeopleRate;
 }
 

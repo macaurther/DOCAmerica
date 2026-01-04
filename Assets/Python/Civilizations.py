@@ -361,7 +361,7 @@ lCivilizations = [
 	Civilization(
 		iAmerica,
 		iGold=1500,
-		iImmigration=150,
+		iImmigration=20,
 		iStateReligion=iProtestantism,
 		lCivics=[iPlutocrats, iConfederacy, iBondage, iAgrarianism, iProfiteering, iHomesteads],
 		techs=techs.column(14).without(iSouthEuropeAccess, iSiberiaAccess),

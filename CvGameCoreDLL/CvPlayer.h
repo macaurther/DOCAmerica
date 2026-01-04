@@ -1401,6 +1401,7 @@ public:
 	void setImmigrationTutorial(bool bNewValue);
 	bool isImmigrationTutorial() const;
 	int getRegionPowers() const;
+	int getRegionPowers(CivilizationTypes eCiv) const;
 	int getFortRange() const;
 	bool canResearchNativeTech(TechTypes eTech) const;
 
