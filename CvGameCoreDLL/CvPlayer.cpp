@@ -522,6 +522,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iNoSlaveryCount = 0;
 	m_iColonialSlaveryCount = 0; // Leoreth
 	m_iNoResistanceCount = 0; // Leoreth
+	m_iUnhappinessDecayModifier = 0; // Leoreth
 	m_iFoodProductionModifier = 0; // Leoreth
 	m_iCulturedCityFreeSpecialists = 0; // Leoreth
 	m_iCapitalBuildingProductionModifier = 0; // Leoreth
@@ -18596,6 +18597,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iNoSlaveryCount); // Leoreth
 	pStream->Read(&m_iColonialSlaveryCount); // Leoreth
 	pStream->Read(&m_iNoResistanceCount); // Leoreth
+	pStream->Read(&m_iUnhappinessDecayModifier); // Leoreth
 	pStream->Read(&m_iFoodProductionModifier); // Leoreth
 	pStream->Read(&m_iCulturedCityFreeSpecialists); // Leoreth
 	pStream->Read(&m_iCapitalBuildingProductionModifier); // Leoreth
@@ -19035,6 +19037,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iNoSlaveryCount); // Leoreth
 	pStream->Write(m_iColonialSlaveryCount); // Leoreth
 	pStream->Write(m_iNoResistanceCount); // Leoreth
+	pStream->Write(m_iUnhappinessDecayModifier); // Leoreth
 	pStream->Write(m_iFoodProductionModifier); // Leoreth
 	pStream->Write(m_iCulturedCityFreeSpecialists); // Leoreth
 	pStream->Write(m_iCapitalBuildingProductionModifier); // Leoreth

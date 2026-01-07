@@ -12201,24 +12201,19 @@ void CvGameTextMgr::buildBuildingRequiresString(CvWStringBuffer& szBuffer, Build
 		switch (eBuilding)
 		{
 			case BUILDING_FLOATING_GARDENS:
+			case BUILDING_HUEY_TEOCALLI:
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_LAGOON"));
 				break;
 			case BUILDING_MACHU_PICCHU:
+			case BUILDING_YACHAYWASI:
+			case BUILDING_SACSAYHUAMAN:
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_PEAK"));
 				break;
 			case BUILDING_PUEBLO_BONITO:
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_CANYON"));
-				break;
-			case BUILDING_SACSAYHUAMAN:
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_PEAK"));
-				break;
-			case BUILDING_HUEY_TEOCALLI:
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_LAKE"));
 				break;
 			case BUILDING_GREAT_GEOGLYPH:
 				szBuffer.append(NEWLINE);
@@ -13611,11 +13606,12 @@ void CvGameTextMgr::setHappyHelp(CvWStringBuffer &szBuffer, CvCity& city)
 			szBuffer.append(NEWLINE);
 		}
 
-		iHappy = city.getTempHappiness();
-		if (iHappy > 0)
+		if (city.getHappinessTimer() > 0)
 		{
+			iHappy = GC.getDefineINT("TEMP_HAPPY");
 			iTotalHappy += iHappy;
-			szBuffer.append(gDLL->getText("TXT_KEY_HAPPY_TEMP", iHappy, city.getHappinessTimer()));
+			int iEffectiveHappinessTimer = city.getHappinessTimer() * 100 / (100 + GET_PLAYER(city.getOwnerINLINE()).getUnhappinessDecayModifier());
+			szBuffer.append(gDLL->getText("TXT_KEY_HAPPY_TEMP", iHappy, iEffectiveHappinessTimer));
 			szBuffer.append(NEWLINE);
 		}
 

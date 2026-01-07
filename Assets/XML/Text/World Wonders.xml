@@ -27,19 +27,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TEMPLE_OF_KUKULKAN_HELP</Tag>
-		<English>[ICON_BULLET]+1 [ICON_FOOD] on Rainforest</English>
-		<French>[ICON_BULLET]+1 [ICON_FOOD] on Rainforest</French>
-		<German>[ICON_BULLET]+1 [ICON_FOOD] on Rainforest</German>
-		<Italian>[ICON_BULLET]+1 [ICON_FOOD] on Rainforest</Italian>
-		<Spanish>[ICON_BULLET]+1 [ICON_FOOD] on Rainforest</Spanish>
+		<English>[ICON_BULLET]+1 [ICON_FOOD] and +2 [ICON_COMMERCE] on Rainforest</English>
+		<French>[ICON_BULLET]+1 [ICON_FOOD] and +2 [ICON_COMMERCE] on Rainforest</French>
+		<German>[ICON_BULLET]+1 [ICON_FOOD] and +2 [ICON_COMMERCE] on Rainforest</German>
+		<Italian>[ICON_BULLET]+1 [ICON_FOOD] and +2 [ICON_COMMERCE] on Rainforest</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_FOOD] and +2 [ICON_COMMERCE] on Rainforest</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TEMPLE_OF_KUKULKAN_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city and unlocks all Executive civics. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city and unlocks all Executive civics. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city and unlocks all Executive civics. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city and unlocks all Executive civics. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city and unlocks all Executive civics. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
+		<English>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra [ICON_FOOD] and [ICON_COMMERCE] to all rainforest tiles worked by its city. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra [ICON_FOOD] and [ICON_COMMERCE] to all rainforest tiles worked by its city. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra [ICON_FOOD] and [ICON_COMMERCE] to all rainforest tiles worked by its city. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra [ICON_FOOD] and [ICON_COMMERCE] to all rainforest tiles worked by its city. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra [ICON_FOOD] and [ICON_COMMERCE] to all rainforest tiles worked by its city. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HOLLYWOOD_STRATEGY</Tag>

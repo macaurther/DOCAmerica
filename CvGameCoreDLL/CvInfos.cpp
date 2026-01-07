@@ -5837,6 +5837,7 @@ m_iStateReligionBuildingProductionModifier(0),
 m_iStateReligionFreeExperience(0),
 m_iExpInBorderModifier(0),
 m_iLevelExperienceModifier(0), // Leoreth
+m_iUnhappinessDecayModifier(0), // Leoreth
 m_iVassalTradeModifier(0), // Leoreth
 m_iCivicCultureGroup(NO_CULTURE_GROUP), // FoB
 m_iFoodProductionModifier(0), // Leoreth

@@ -32,8 +32,9 @@ BeginPlot
 		CityName=Palenque
 		CityPopulation=2
 		YearFounded=-450
+		BuildingType=BUILDING_TEOTL_STEP_PYRAMID
 		BeginCulture
-			Civilization=CIVILIZATION_INDEPENDENT1, Culture=20
+			Civilization=CIVILIZATION_INDEPENDENT1, Culture=50
 		EndCulture
 	EndCity
 EndPlot
@@ -56,8 +57,9 @@ BeginPlot
 		CityName=Copan
 		CityPopulation=2
 		YearFounded=-400
+		BuildingType=BUILDING_TEOTL_STEP_PYRAMID
 		BeginCulture
-			Civilization=CIVILIZATION_INDEPENDENT1, Culture=10
+			Civilization=CIVILIZATION_INDEPENDENT1, Culture=25
 		EndCulture
 	EndCity
 EndPlot
@@ -80,8 +82,9 @@ BeginPlot
 		CityName=Chichen Itza
 		CityPopulation=1
 		YearFounded=-250
+		BuildingType=BUILDING_TEOTL_STEP_PYRAMID
 		BeginCulture
-			Civilization=CIVILIZATION_INDEPENDENT1, Culture=10
+			Civilization=CIVILIZATION_INDEPENDENT1, Culture=25
 		EndCulture
 	EndCity
 EndPlot
@@ -165,7 +168,7 @@ BeginPlot
 		CityPopulation=1
 		YearFounded=-1800
 		BeginCulture
-			Civilization=CIVILIZATION_INDIGENOUS, Culture=10
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=25
 		EndCulture
 	EndCity
 EndPlot
@@ -201,7 +204,7 @@ BeginPlot
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_KILN
 		BeginCulture
-			Civilization=CIVILIZATION_MAYA, Culture=100
+			Civilization=CIVILIZATION_MAYA, Culture=50
 		EndCulture
 	EndCity
 EndPlot

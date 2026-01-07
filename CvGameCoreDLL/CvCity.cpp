@@ -15991,18 +15991,15 @@ bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
 	switch (eBuilding)
 	{
 		case BUILDING_FLOATING_GARDENS:
+		case BUILDING_HUEY_TEOCALLI:
 			plotRequirement = TERRAIN_LAGOON;
-			break;
-		case BUILDING_MACHU_PICCHU:
-			bPeak = true;
 			break;
 		case BUILDING_PUEBLO_BONITO:
 			featureRequirement = FEATURE_CANYON;
 			break;
+		case BUILDING_MACHU_PICCHU:
 		case BUILDING_SACSAYHUAMAN:
-			bPeak = true;
-			break;
-		case BUILDING_HUEY_TEOCALLI:
+		case BUILDING_YACHAYWASI:
 			bLake = true;
 			break;
 		case BUILDING_GREAT_GEOGLYPH:

@@ -986,7 +986,8 @@ def enslaveUnit(pWinningUnit, pLosingUnit=None):
 		events.fireEvent("enslave", iPlayer, pLosingUnit)
 
 		# Aztec UP:
-		pWinningUnit.changeExperience(2, -1, False, False, False)
+		if civ(pWinningUnit) == iAztec:
+			pWinningUnit.changeExperience(2, -1, False, False, False)
 		return pUnit
 
 # used: Rules

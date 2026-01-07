@@ -7321,7 +7321,7 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 		}
 
 		// Leoreth: Temple of Kukulkan effect
-		if (getFeatureType() == FEATURE_RAINFOREST && eYield == YIELD_FOOD)
+		if (getFeatureType() == FEATURE_RAINFOREST && (eYield == YIELD_FOOD || eYield == YIELD_COMMERCE))
 		{
 			pWorkingCity = getWorkingCity();
 			
@@ -7331,7 +7331,14 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 				{
 					if (!bDisplay || pWorkingCity->isRevealed(GC.getGameINLINE().getActiveTeam(), false))
 					{
-						iYield += 1;
+						if(eYield == YIELD_FOOD)
+						{
+							iYield += 1;
+						}
+						else if(eYield == YIELD_COMMERCE)
+						{
+							iYield += 2;
+						}
 					}
 				}
 			}
