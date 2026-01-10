@@ -228,7 +228,7 @@ iNorse : 874,
 iChimu : 900,
 iPueblo : 950,
 iPurepecha : 1150,
-iInuit : 1200,
+iInuit : 20,#1200,
 iInca : 1200,
 iAztec : 1250,
 iHaudenosaunee : 1450,
@@ -754,9 +754,11 @@ dCivGroupRegions = {
 }
 
 # Revealed Tile Lists
-lEuropeanRevealed1600AD = [rIceland, rNewFoundland, rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, \
+lInuitRevealedTiles = [rBeringS]
+lInuitRevealedTilesAI = [rBeringS, rArcticO, rNorthwestPassage, rHudsonB, rAlaska, rYukon, rNunavut, rGreenland]
+lEuropeanRevealed1600AD = [rIceland, rNewFoundland, rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain, rFlorida, rBajio, \
                            rVeracruz, rOaxaca, rYucatan, rMesoamerica, rCaribbean, rColombia, rEcuador, rVenezuela, rGuyana, rPeru, \
-                           rBolivia, rMinasGerais, rChile, rUruguay, rPampas, rPatagonia, rBaffinB, rLabradorS, rNorthAtlanticO, rGOfMexico, 
+                           rMinasGerais, rParana, rChile, rUruguay, rPampas, rPatagonia, rBaffinB, rLabradorS, rNorthAtlanticO, rGOfMexico, 
                            rCaribbeanS, rSouthAtlanticO, rAtlanticO]
 lEuropeanRevealed1750AD = [rGreenland, rIceland, rOntario, rQuebec, rNewFoundland, rCalifornia, rTexas, rGreatLakes, rNewEngland, rMidAtlantic, \
                            rMaryland, rAppalachia, rCoastalPlain, rDeepSouth, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, rOaxaca, \

@@ -490,8 +490,10 @@ dStartingUnits = CivDict({
 		iAttack: 3,
 	},
 	iInuit: {
-		iSettle: 2,
+		iSettle: 1,
 		iDefend: 1,
+		iExplore: 1,
+		iSettleSea: 1,
 	},
 	iInca: {
 		iSettle: 1,
@@ -659,6 +661,9 @@ dStartingUnits = CivDict({
 
 # Extra units for AI
 dExtraAIUnits = CivDict({
+	iInuit: {
+		iSettleSea: 1,
+	},
 	iAmerica: {
 		iBase: 4,
 		iAttack: 8,

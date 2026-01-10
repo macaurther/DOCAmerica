@@ -4345,7 +4345,7 @@
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_INDIGENOUS</Type>	<!-- Used for non-urban independent natives -->
-			<Description>TXT_KEY_CIV_NATIVE_AMERICA_DESC</Description>
+			<Description>TXT_KEY_CIV_INDIGENOUS_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_INDIGENOUS_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_INDIGENOUS_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_NATIVE_AMERICA_PEDIA</Civilopedia>

@@ -270,12 +270,14 @@ dGoals = {
 			(plots.regions(*(lSouthAmerica + lCentralAmerica)).named(SOUTH_CENTRAL_AMERICA), 5),
 			by=1730,
 		),
-		PopulationCount(100, by=1760),
 		All(
+			Production(10000),
+			ControlledResourceCount(sum(iTimber), 3),
 			UnitCount(sum(iFrigate, iShipOfTheLine), 25),
 			SunkShips(50),
-			by=1800,
+			by=1750,
 		),
+		PopulationCount(100, by=1775),
 	),
 	iFrance: (
 		ControlledResourceCount(iFur, 15, by=1750),

@@ -138,3 +138,7 @@ def inuitUP(pCity):
 			pPlot = pCity.getCityIndexPlot(i)
 			if not pPlot.isWater() and pPlot.getImprovementType() in [-1, iTribe, iContactedTribe] and pPlot.getBonusType(player(iPlayer).getTeam()) in [iFur, iDeer, iBison, iSeal]:
 				pPlot.setImprovementType(iCamp)
+
+		# Help AI with defender (the NEED it)
+		if not player(iPlayer).isHuman():
+			makeUnit(iPlayer, iMilitiaSpearman, pCity)
