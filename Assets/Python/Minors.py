@@ -3,6 +3,8 @@
 from Core import *
 from Core import periodic as core_periodic
 from RFCUtils import *
+from Locations import *
+from CityNames import applyRelocation
 from Events import handler
 
 
@@ -42,19 +44,30 @@ def is_free_of_civ(iCiv):
 def is_other_civ(iCiv):
 	def func(barbarians):
 		return cities.rectangle(barbarians.target_area).owners().without(iCiv).any()
+	
+	return func
+
+
+def is_target_existing(iCiv):
+	def func(_):
+		return iCiv in players.major().existing()
+	
+	return func
 
 
 class MinorCity(object):
 
-	def __init__(self, iYear, iOwner, tile, name, iPopulation=1, iCiv=None, iCulture=0, bIgnoreRuins=False, units={}, buildings=[], bUnique=True, adjective=None, condition=lambda: True):
+	def __init__(self, iYear, iOwner, tile, name, tileName=None, iPopulation=1, iCiv=None, iCulture=0, bIgnoreRuins=False, bForce=False, units={}, buildings=[], bUnique=True, adjective=None, condition=lambda: True):
 		self.iYear = iYear
 		self.iOwner = iOwner
 		self.tile = tile
 		self.name = name
+		self.tileName = tileName
 		self.iPopulation = iPopulation
 		self.iCiv = iCiv
 		self.iCulture = iCulture
 		self.bIgnoreRuins = bIgnoreRuins
+		self.bForce = bForce
 		self.units = units
 		self.buildings = buildings
 		self.bUnique = bUnique
@@ -90,12 +103,17 @@ class MinorCity(object):
 		
 		if not self.condition():
 			return False
+			
+		if self.bForce:
+			if not isFree(self.iOwner, self.tile, bNoCity=True):
+				return False
 		
-		if not player(self.iOwner).canFound(*location(self.tile)):
-			return False
+		else:
+			if not player(self.iOwner).canFound(*location(self.tile)):
+				return False
 		
-		if not isFree(self.iOwner, self.tile, bNoCity=True, bNoCulture=True) and not isFree(self.iOwner, self.tile, bNoCity=True, iCityDistance=2):
-			return False
+			if not isFree(self.iOwner, self.tile, bNoCity=True, bNoCulture=True) and not isFree(self.iOwner, self.tile, bNoCity=True, iCityDistance=2):
+				return False
 		
 		return True
 		
@@ -137,6 +155,9 @@ class MinorCity(object):
 			self.add_buildings()
 			self.create_units()
 			
+			if self.tileName:
+				applyRelocation(founded, self.tileName)
+			
 	def every(self, iTurns):
 		return periodic(iTurns, self)
 	
@@ -147,7 +168,7 @@ class MinorCity(object):
 		for iRole, iNumUnits in self.units.items():
 			for iUnit, iUnitAI in getUnitsForRole(iUnitCiv, iRole, bUnique=bUnique):
 				if iUnit is None:
-					iUnit = iBase
+					iUnit = iMilitiaSpearman
 				
 				if not bUnique:
 					iUnit = base_unit(iUnit)
@@ -250,17 +271,23 @@ class Barbarians(object):
 		return data
 	
 	def check(self):
+		if not self.is_active():
+			return
+		
 		if self.can_spawn():
 			self.spawn()
+		
+		elif self.can_cleanup():
+			self.cleanup()
+	
+	def is_active(self):
+		return year(self.iStart) <= year() <= year(self.iEnd)
 	
 	def can_spawn(self):
 		if self.iAlternativeCiv is not None and player(self.iAlternativeCiv).isExisting():
 			return False
 		
 		if self.condition is not None and not self.condition(self):
-			return False
-	
-		if not (year(self.iStart) <= year() <= year(self.iEnd)):
 			return False
 		
 		if not self.every():
@@ -312,6 +339,19 @@ class Barbarians(object):
 		for plot in lSpawnPlots:
 			if self.can_notify(plot):
 				self.notify(plot)
+	
+	def can_cleanup(self):
+		if self.condition and not self.condition(self):
+			return True
+		
+		if self.iAlternativeCiv is not None and player(self.iAlternativeCiv).isExisting():
+			return True
+		
+		return False
+	
+	def cleanup(self):
+		for unit in units.owner(self.iOwner).where(lambda unit: data.units[unit].spawn_data == self.spawn_data()):
+			unit.kill(False, -1)
 	
 	def get_owner(self):
 		if self.pattern == MINORS:
@@ -388,6 +428,10 @@ class Barbarians(object):
 	
 	@staticmethod
 	def valid_unit_spawn_terrain(plot, iUnit):
+		return Barbarians.valid_unit_spawn_terrain_plot(plot, iUnit) and plots.ring(plot).any(lambda p: Barbarians.valid_unit_spawn_terrain_plot(p, iUnit))
+	
+	@staticmethod
+	def valid_unit_spawn_terrain_plot(plot, iUnit):
 		if infos.unit(iUnit).getTerrainImpassable(plot.getTerrainType()) and not plot.isOwned():
 			return False
 		
@@ -492,14 +536,16 @@ def assignMinorUnitAdjective(city, unit):
 		set_unit_adjective(unit, minor_city_adjective)
 	
 
-@handler("BeginGameTurn")
-def fragmentIndependents():
-	if year() >= year(50) and core_periodic(15):
-		iLargestMinor = players.independent().maximum(lambda p: player(p).getNumCities())
-		iSmallestMinor = players.independent().minimum(lambda p: player(p).getNumCities())
-		if player(iLargestMinor).getNumCities() > 2 * player(iSmallestMinor).getNumCities():
-			for city in cities.owner(iLargestMinor).sample(3):
-				completeCityFlip(city, iSmallestMinor, iLargestMinor, 50, bBarbarianDecay=False, bBarbarianConversion=True, bAlwaysOwnPlots=True, bFlipUnits=True)
+# MacAurther: Because indpendents are now unique (i.e. some being native independents, some being European),
+# 	Do no fragment
+# @handler("BeginGameTurn")
+# def fragmentIndependents():
+# 	if year() >= year(50) and core_periodic(15):
+# 		iLargestMinor = players.independent().maximum(lambda p: player(p).getNumCities())
+# 		iSmallestMinor = players.independent().minimum(lambda p: player(p).getNumCities())
+# 		if player(iLargestMinor).getNumCities() > 2 * player(iSmallestMinor).getNumCities():
+# 			for city in cities.owner(iLargestMinor).sample(3):
+# 				completeCityFlip(city, iSmallestMinor, iLargestMinor, 50, bBarbarianDecay=False, bBarbarianConversion=True, bAlwaysOwnPlots=True, bFlipUnits=True)
 
 
 @handler("BeginGameTurn")
@@ -514,7 +560,7 @@ def maintainFallenCivilizations():
 	
 	for iFallenCiv in fallen_civs:
 		if periodic(20, iFallenCiv):
-			fallen_cities = cities.respawn(iFallenCiv).where(is_minor)
+			fallen_cities = cities.respawn(iFallenCiv).where(is_minor).where(lambda city: plot(city).getExpansion() == -1)
 			
 			if fallen_cities:
 				iTechCiv = best_civ_of_same_tech_group(iFallenCiv)

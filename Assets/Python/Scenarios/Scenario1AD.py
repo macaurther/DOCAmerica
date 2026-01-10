@@ -53,6 +53,8 @@ def createStartingUnits():
 		makeUnit(iMaya, iArcher, plots.capital(iMaya))
 	if not player(iZapotec).isHuman():
 		makeUnit(iZapotec, iArcher, plots.capital(iZapotec))
+	if not player(iTeotihuacan).isHuman():
+		makeUnit(iTeotihuacan, iArcher, plots.capital(iTeotihuacan))
 
 scenario1AD = Scenario(
 	iStartYear = 0,
