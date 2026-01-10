@@ -99,9 +99,9 @@ THIRD_AZTEC_GOAL = "TXT_KEY_VICTORY_GOAL_AZTECS_3"
 
 dGoals = {
 	iMaya: (
-		FirstDiscover(iMathematics, iCalendar),
+		AveragePopulation(8, at=600),
 		Wonder(iTempleOfKukulkan, by=800),
-		BestTechPlayer(at=850),
+		EraFirstDiscover((iClassicalEra, 8)),
 	),
 	iZapotec: (
 		FirstDiscover(iWriting),
