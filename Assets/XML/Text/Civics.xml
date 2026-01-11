@@ -741,11 +741,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ROYAL_COLONY_STRATEGY</Tag>
-		<English>Military garrisons provide [ICON_HAPPY]</English>
-		<French>Military garrisons provide [ICON_HAPPY]</French>
-		<German>Military garrisons provide [ICON_HAPPY]</German>
-		<Italian>Military garrisons provide [ICON_HAPPY]</Italian>
-		<Spanish>Military garrisons provide [ICON_HAPPY]</Spanish>
+		<English>No colony maintenance; military garrisons provide [ICON_HAPPY]</English>
+		<French>No colony maintenance; military garrisons provide [ICON_HAPPY]</French>
+		<German>No colony maintenance; military garrisons provide [ICON_HAPPY]</German>
+		<Italian>No colony maintenance; military garrisons provide [ICON_HAPPY]</Italian>
+		<Spanish>No colony maintenance; military garrisons provide [ICON_HAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CHARTER_COLONY</Tag>

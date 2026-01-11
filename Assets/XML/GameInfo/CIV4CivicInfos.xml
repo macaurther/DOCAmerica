@@ -1135,6 +1135,7 @@
 			<Button>,Art/Interface/Buttons/Civics/RoyalColony.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,3,3</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
+			<iColonyMaintenanceModifier>-100</iColonyMaintenanceModifier>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
 		</CivicInfo>

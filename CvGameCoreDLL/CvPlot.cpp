@@ -2626,8 +2626,8 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	// Leoreth: different fishing boats for different sea levels
 	if (GC.getImprovementInfo(eImprovement).isWater())
 	{
-		if (eImprovement == IMPROVEMENT_FISHING_BOATS && getTerrainType() != GC.getInfoTypeForString("TERRAIN_COAST") && getTerrainType() != GC.getInfoTypeForString("TERRAIN_ARCTIC_COAST") && getTerrainType() != GC.getInfoTypeForString("TERRAIN_WIDE_RIVER")&& getTerrainType() != GC.getInfoTypeForString("TERRAIN_FJORD")) return false;
-		if (eImprovement == IMPROVEMENT_OCEAN_FISHERY && getTerrainType() != GC.getInfoTypeForString("TERRAIN_OCEAN")) return false;
+		if (eImprovement == IMPROVEMENT_FISHING_BOATS && getTerrainType() == TERRAIN_OCEAN) return false;
+		if (eImprovement == IMPROVEMENT_OCEAN_FISHERY && getTerrainType() != TERRAIN_OCEAN) return false;
 	}
 
 	// MacAurther: No improvements on Atolls or Lagoons
@@ -3537,72 +3537,71 @@ PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 	}
 	else
 	{
-		for (iI = 0; iI < MAX_PLAYERS; ++iI)
+	for (iI = 0; iI < MAX_PLAYERS; ++iI)
+	{
+		if (GET_PLAYER((PlayerTypes)iI).isAlive())
 		{
-			if (GET_PLAYER((PlayerTypes)iI).isAlive())
+			iCulture = bActual ? getActualCulture((PlayerTypes)iI) : getCulture((PlayerTypes)iI);
+
+			if (iCulture > 0)
 			{
-				iCulture = bActual ? getActualCulture((PlayerTypes)iI) : getCulture((PlayerTypes)iI);
-
-				if (iCulture > 0)
+				// All major civilizations have easier control over their own core (80% rule)
+				if (!GET_PLAYER((PlayerTypes)iI).isMinorCiv() && !GET_PLAYER((PlayerTypes)iI).isBarbarian()) 
 				{
-					// All major civilizations have easier control over their own core (80% rule)
-					if (!GET_PLAYER((PlayerTypes)iI).isMinorCiv() && !GET_PLAYER((PlayerTypes)iI).isBarbarian()) 
+					if (isCore((PlayerTypes)iI)) 
 					{
-						if (isCore((PlayerTypes)iI)) 
-						{
-							iCulture *= 4;
-						}
+						iCulture *= 4;
 					}
+				}
 
-					// MacAurther: Nations have cultural priority over Colonies, and each of those have priority over Natives (16/4/1)
-					switch(GET_PLAYER((PlayerTypes)iI).getCultureGroup())
-					{
-						case 1:
-							// Ancestral Lands civic
-							if(GET_PLAYER((PlayerTypes)iI).hasCivic(CIVIC_ANCESTRAL_LANDS))
-							{
-								iCulture *= 16;
-							}
-							break;
-						case 2:
-							iCulture *= 4;
-							break;
-						case 3:
+				// MacAurther: Nations have cultural priority over Colonies, and each of those have priority over Natives (16/4/1)
+				switch(GET_PLAYER((PlayerTypes)iI).getCultureGroup())
+				{
+					case CULTURE_GROUP_NATIVE:
+						// Ancestral Lands civic
+						if(GET_PLAYER((PlayerTypes)iI).hasCivic(CIVIC_ANCESTRAL_LANDS))
+						{
 							iCulture *= 16;
-							break;
-						default:
-							break;
-					}
+						}
+						break;
+					case CULTURE_GROUP_COLONY:
+						iCulture *= 4;
+						break;
+					case CULTURE_GROUP_NATION:
+						iCulture *= 16;
+						break;
+					default:
+						break;
+				}
 
-					// Independents get the same advantage over a civ's core if that civ is dead
-					if (GET_PLAYER((PlayerTypes)iI).isIndependent())
+				// Independents get the same advantage over a civ's core if that civ is dead
+				if (GET_PLAYER((PlayerTypes)iI).isIndependent())
+				{
+					for (int iJ = 0; iJ < MAX_CIV_PLAYERS; iJ++)
 					{
-						for (int iJ = 0; iJ < MAX_CIV_PLAYERS; iJ++)
+						if (GET_PLAYER((PlayerTypes)iJ).isMinorCiv())
 						{
-							if (GET_PLAYER((PlayerTypes)iJ).isMinorCiv())
-							{
-								continue;
-							}
+							continue;
+						}
 
-							if (isCore((PlayerTypes)iI) && GC.getGame().getGameTurn() > GET_PLAYER((PlayerTypes)iJ).getInitialBirthTurn() && !GET_PLAYER((PlayerTypes)iI).isAlive())
-							{
-								iCulture *= 4;
-								break;
-							}
+						if (isCore((PlayerTypes)iI) && GC.getGame().getGameTurn() > GET_PLAYER((PlayerTypes)iJ).getInitialBirthTurn() && !GET_PLAYER((PlayerTypes)iI).isAlive())
+						{
+							iCulture *= 4;
+							break;
 						}
 					}
-
-					if (isWithinCultureRange((PlayerTypes)iI))
+				}
+				if (isWithinCultureRange((PlayerTypes)iI))
+				{
+					if ((iCulture > iBestCulture) || ((iCulture == iBestCulture) && (getOwnerINLINE() == iI)))
 					{
-						if ((iCulture > iBestCulture) || ((iCulture == iBestCulture) && (getOwnerINLINE() == iI)))
-						{
-							iBestCulture = iCulture;
-							eBestPlayer = ((PlayerTypes)iI);
-						}
+						iBestCulture = iCulture;
+						eBestPlayer = ((PlayerTypes)iI);
 					}
 				}
 			}
 		}
+	}
 	}
 
 	if (!isCity())
@@ -5676,6 +5675,7 @@ PlotTypes CvPlot::getPlotType() const
 	return (PlotTypes)m_ePlotType;
 }
 
+
 bool CvPlot::isWater() const
 {
 	return (getPlotType() == PLOT_OCEAN);
@@ -6467,9 +6467,8 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 			}
 		}*/
 
-		// MacAurther: This is VERY slow if fort is in an area with a couple of cities mid-late game, especially on flips. Let's see if we can get away with just commenting this out...
 		// Building or removing a fort will now force a plotgroup update to verify resource connections.
-		/*if ( (NO_IMPROVEMENT != getImprovementType() && GC.getImprovementInfo(getImprovementType()).isActsAsCity()) !=
+		if ( (NO_IMPROVEMENT != getImprovementType() && GC.getImprovementInfo(getImprovementType()).isActsAsCity()) !=
 			 (NO_IMPROVEMENT != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity()) )
 		{
 			updatePlotGroup();
@@ -6486,7 +6485,7 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 					pLoopPlot->getPlotCity()->updateCoveredPlots(true);
 				}
 			}
-		}*/
+		}
 
 		if (NO_IMPROVEMENT != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity())
 		{
@@ -12144,6 +12143,7 @@ int CvPlot::getContinentID() const
 	case REGION_GROUP_SOUTH_AMERICA:
 		return 2;	// South America = 2
 	}
+
 	return -1;
 }
 

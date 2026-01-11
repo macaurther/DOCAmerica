@@ -314,7 +314,7 @@ lCivilizations = [
 		iEngland,
 		iGold=300,
 		iStateReligion=iProtestantism,
-		lCivics=[iProprietors, iCharterColony, iIndenturedServitude, iMercantilism, iDivineRight, iProvidence],
+		lCivics=[iProprietors, iCharterColony, iIndenturedServitude, iMercantilism, iDivineRight, iGrants],
 		techs=techs.column(10).including(iShipbuilding, iCharter, iIndentures),
 		extraTechs=techs.column(0).including(iNorthEuropeAccess, iFishing, iDiving),
 	),
@@ -560,11 +560,11 @@ dStartingUnits = CivDict({
 		iMissionarySea: 1,
 	},
 	iHawaii: {
-		iSettle: 2,
+		iSettle: 1,
 		iWork: 1,
 		iBase: 2,
 		iAttack: 2,
-		iFerry: 1,
+		iSettleSea: 1,
 	},
 	iRussia: {
 		iSettleSea: 1,
