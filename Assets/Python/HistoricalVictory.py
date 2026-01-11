@@ -184,7 +184,7 @@ dGoals = {
 	),
 	iPueblo: (
 		All(
-			CultureAmount(500, at=1200),
+			CultureAmount(500),
 			BuildingCount(iKiva, 5),
 			by=1200,
 		),

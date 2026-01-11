@@ -37,10 +37,6 @@
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
 				<TerrainImpassable>
-					<TerrainType>TERRAIN_SEMIDESERT</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
 					<TerrainType>TERRAIN_TUNDRA</TerrainType>
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
