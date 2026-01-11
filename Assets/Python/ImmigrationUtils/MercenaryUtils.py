@@ -132,11 +132,13 @@ class Mercenary:
 		
 		if iPlayer == -1:
 			bProprietaries = False
+			bAdmiralty = False
 			bIndenturedServitude = False
 		else:
 			# Get the actual current player object
 			civics = Civics.player(iPlayer)
 			bProprietaries = iProprietors in civics
+			bAdmiralty = iAdmiralty in civics
 			bIndenturedServitude = iIndenturedServitude in civics
 		
 		iImmigrationCost = 0
@@ -162,7 +164,10 @@ class Mercenary:
 		# Apply effects
 		if bIndenturedServitude and self.iUnitID in [iWorker, iPromyshlenniki, iLaborer]: iImmigrationCost -= 1
 		if civ(iPlayer) == iNorse and self.iUnitID == iSettler: iImmigrationCost -= 1	# Norse UP
-		if bProprietaries: iGoldCost /= 2
+		if bProprietaries and self.getUnitInfo().getUnitCombatType() != UnitCombatTypes.NO_UNITCOMBAT and self.getUnitInfo().getDomainType() == DomainTypes.DOMAIN_LAND:
+			iGoldCost /= 2
+		if bAdmiralty and self.getUnitInfo().getDomainType() == DomainTypes.DOMAIN_SEA:
+			iGoldCost /= 2
 		
 		return (iImmigrationCost, iGoldCost)
 			

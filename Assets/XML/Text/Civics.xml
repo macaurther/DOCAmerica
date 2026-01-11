@@ -587,11 +587,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ADMIRALTY_STRATEGY</Tag>
-		<English>Extra experience for naval units; double [ICON_PRODUCTION] speed for Harbor, Lighthouse</English>
-		<French>Extra experience for naval units; double [ICON_PRODUCTION] speed for Harbor, Lighthouse</French>
-		<German>Extra experience for naval units; double [ICON_PRODUCTION] speed for Harbor, Lighthouse</German>
-		<Italian>Extra experience for naval units; double [ICON_PRODUCTION] speed for Harbor, Lighthouse</Italian>
-		<Spanish>Extra experience for naval units; double [ICON_PRODUCTION] speed for Harbor, Lighthouse</Spanish>
+		<English>Extra experience for naval units; double [ICON_PRODUCTION] speed for Harbor, Lighthouse; cheaper ship mercenaries</English>
+		<French>Extra experience for naval units; double [ICON_PRODUCTION] speed for Harbor, Lighthouse; cheaper ship mercenaries</French>
+		<German>Extra experience for naval units; double [ICON_PRODUCTION] speed for Harbor, Lighthouse; cheaper ship mercenaries</German>
+		<Italian>Extra experience for naval units; double [ICON_PRODUCTION] speed for Harbor, Lighthouse; cheaper ship mercenaries</Italian>
+		<Spanish>Extra experience for naval units; double [ICON_PRODUCTION] speed for Harbor, Lighthouse; cheaper ship mercenaries</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ADMIRALTY_HELP</Tag>
+		<English>[ICON_BULLET]-50% [ICON_GOLD] required to hire naval Mercenaries</English>
+		<French>[ICON_BULLET]-50% [ICON_GOLD] required to hire naval Mercenaries</French>
+		<German>[ICON_BULLET]-50% [ICON_GOLD] required to hire naval Mercenaries</German>
+		<Italian>[ICON_BULLET]-50% [ICON_GOLD] required to hire naval Mercenaries</Italian>
+		<Spanish>[ICON_BULLET]-50% [ICON_GOLD] required to hire naval Mercenaries</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROPRIETORS</Tag>
@@ -603,24 +611,24 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROPRIETORS_STRATEGY</Tag>
-		<English>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance</English>
-		<French>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance</French>
-		<German>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance</German>
-		<Italian>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance</Italian>
-		<Spanish>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance</Spanish>
+		<English>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance; cheaper land mercenaries</English>
+		<French>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance; cheaper land mercenaries</French>
+		<German>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance; cheaper land mercenaries</German>
+		<Italian>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance; cheaper land mercenaries</Italian>
+		<Spanish>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries; reduced unit maintenance; cheaper land mercenaries</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROPRIETORS_HELP</Tag>
 		<English>[ICON_BULLET]Mercenaries do not cost additional upkeep
-[ICON_BULLET]-50% [ICON_COMMERCE] required to hire Immigrants</English>
+[ICON_BULLET]-50% [ICON_GOLD] required to hire land Mercenaries</English>
 		<French>[ICON_BULLET]Mercenaries do not cost additional upkeep
-[ICON_BULLET]-50% [ICON_COMMERCE] required to hire Immigrants</French>
+[ICON_BULLET]-50% [ICON_GOLD] required to hire land Mercenaries</French>
 		<German>[ICON_BULLET]Mercenaries do not cost additional upkeep
-[ICON_BULLET]-50% [ICON_COMMERCE] required to hire Immigrants</German>
+[ICON_BULLET]-50% [ICON_GOLD] required to hire land Mercenaries</German>
 		<Italian>[ICON_BULLET]Mercenaries do not cost additional upkeep
-[ICON_BULLET]-50% [ICON_COMMERCE] required to hire Immigrants</Italian>
+[ICON_BULLET]-50% [ICON_GOLD] required to hire land Mercenaries</Italian>
 		<Spanish>[ICON_BULLET]Mercenaries do not cost additional upkeep
-[ICON_BULLET]-50% [ICON_COMMERCE] required to hire Immigrants</Spanish>
+[ICON_BULLET]-50% [ICON_GOLD] required to hire land Mercenaries</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRIBAL_CONFEDERACY</Tag>
@@ -1617,11 +1625,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRUSTEES_STRATEGY</Tag>
-		<English>faster production of Schoolhouse, Monument</English>
-		<French>faster production of Schoolhouse, Monument</French>
-		<German>faster production of Schoolhouse, Monument</German>
-		<Italian>faster production of Schoolhouse, Monument</Italian>
-		<Spanish>faster production of Schoolhouse, Monument</Spanish>
+		<English>faster production of Schoolhouse, Monument; increased [ICON_SCIENCE]</English>
+		<French>faster production of Schoolhouse, Monument; increased [ICON_SCIENCE]</French>
+		<German>faster production of Schoolhouse, Monument; increased [ICON_SCIENCE]</German>
+		<Italian>faster production of Schoolhouse, Monument; increased [ICON_SCIENCE]</Italian>
+		<Spanish>faster production of Schoolhouse, Monument; increased [ICON_SCIENCE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HOME_RULE</Tag>
@@ -1737,19 +1745,24 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROVIDENCE_STRATEGY</Tag>
-		<English>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Great Prophet specialists</English>
-		<French>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Great Prophet specialists</French>
-		<German>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Great Prophet specialists</German>
-		<Italian>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Great Prophet specialists</Italian>
-		<Spanish>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Great Prophet specialists</Spanish>
+		<English>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; cities convert on founding</English>
+		<French>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; cities convert on founding</French>
+		<German>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; cities convert on founding</German>
+		<Italian>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; cities convert on founding</Italian>
+		<Spanish>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; cities convert on founding</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROVIDENCE_HELP</Tag>
-		<English>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</English>
-		<French>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</French>
-		<German>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</German>
-		<Italian>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</Italian>
-		<Spanish>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</Spanish>
+		<English>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
+[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</English>
+		<French>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
+[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</French>
+		<German>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
+[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</German>
+		<Italian>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
+[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</Italian>
+		<Spanish>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
+[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_STRONGMAN</Tag>

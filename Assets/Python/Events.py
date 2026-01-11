@@ -126,14 +126,6 @@ def giveAINativeTechs(iGameTurn):
 				if not team(iPlayer).isHasTech(iTech):
 					team(iPlayer).setHasTech(iTech, True, iPlayer, False, True)
 
-
-@handler("cityAcquiredAndKept")
-def convertOnCityAcquired(iPlayer, pCity):
-	if player(iPlayer).hasCivic(iPatronato):
-		if player(iPlayer).getStateReligion() != -1:
-			pCity.spreadReligion(player(iPlayer).getStateReligion())
-
-
 @handler("cityBuilt")
 def firstCityOnCityBuilt(city):
 	if city.isCapital():

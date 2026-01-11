@@ -984,6 +984,10 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>10</iCommerce>
+			</CommerceModifiers>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_TRUSTEES</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -1017,7 +1021,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
+			<iGreatPeopleRateModifier>50</iGreatPeopleRateModifier>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_MEETING_HALL</BuildingType>
@@ -1064,6 +1068,7 @@
 			<Description>TXT_KEY_CIVIC_ADMIRALTY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_ADMIRALTY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ADMIRALTY_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_ADMIRALTY_HELP</Help>
 			<TechPrereq>TECH_OPTICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/MaritimeLaw.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -1773,6 +1778,12 @@
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<YieldChanges>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
 				<SpecialistTypeExtraYield>
 					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
 					<YieldChanges>

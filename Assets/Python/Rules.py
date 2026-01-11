@@ -89,6 +89,13 @@ def spreadCultureOnConquest(iPlayer, city):
 		else:
 			convertTemporaryCulture(plot, iPlayer, 25, True)
 
+@handler("cityAcquiredAndKept")
+# Partonato civic
+def convertOnCityAcquired(iPlayer, pCity):
+	if player(iPlayer).hasCivic(iPatronato):
+		if player(iPlayer).getStateReligion() != -1:
+			pCity.spreadReligion(player(iPlayer).getStateReligion())
+
 
 ### CITY BUILT ###
 
@@ -128,10 +135,14 @@ def pioneeringAbility(city):
 
 @handler("cityBuilt")
 # Providence and Manifest Destiny civics
-def extraCultureOnFound(city):
-	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
+def extraCultureOnFound(pCity):
+	iExpansionCivic = player(pCity).getCivics(iCivicsExpansion)
 	if iExpansionCivic in [iProvidence, iManifestDestiny]:
-		city.changeCulture(city.getOwner(), scale(50), True)
+		pCity.changeCulture(pCity.getOwner(), scale(50), True)
+	
+	if iExpansionCivic in [iProvidence]:
+		if player(pCity).getStateReligion() != -1:
+			pCity.spreadReligion(player(pCity).getStateReligion())
 
 @handler("cityBuilt")
 # Homestead civics
