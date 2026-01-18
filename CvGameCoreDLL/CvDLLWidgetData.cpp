@@ -3259,14 +3259,6 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 						iThenWorkRate *= 2;
 					}
 
-					// MacAurther: French UP
-					if (eBuild == BUILD_FORT && GET_PLAYER(pSelectedUnit->getOwner()).getCivilizationType() == FRANCE)
-					{
-						iNowWorkRate *= 2;
-						
-						iThenWorkRate *= 2;
-					}
-
 					pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);
 				}
 

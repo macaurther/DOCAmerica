@@ -1695,11 +1695,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT] but can get negative goody results.</English>
-		<French>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT] but can get negative goody results.</French>
-		<German>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT] but can get negative goody results.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT] but can get negative goody results.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT] but can get negative goody results.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], but can get negative goody results.</English>
+		<French>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], but can get negative goody results.</French>
+		<German>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], but can get negative goody results.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], but can get negative goody results.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], is stronger, can pillage, is more likely to capture slaves, has a bonus attacking cities, has a flank attack against [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], but can get negative goody results.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STEAMSHIP</Tag>
@@ -1863,11 +1863,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], starts with the Woodsman II promotion and gain experience from contacting Tribes.</English>
-		<French>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], starts with the Woodsman II promotion and gain experience from contacting Tribes.</French>
-		<German>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], starts with the Woodsman II promotion and gain experience from contacting Tribes.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], starts with the Woodsman II promotion and gain experience from contacting Tribes.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], starts with the Woodsman II promotion and gain experience from contacting Tribes.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], gain [ICON_IMMIGRATION] from contacting Tribes and can build Forts.</English>
+		<French>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], gain [ICON_IMMIGRATION] from contacting Tribes and can build Forts.</French>
+		<German>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], gain [ICON_IMMIGRATION] from contacting Tribes and can build Forts.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], gain [ICON_IMMIGRATION] from contacting Tribes and can build Forts.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], gain [ICON_IMMIGRATION] from contacting Tribes and can build Forts.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_HELP</Tag>

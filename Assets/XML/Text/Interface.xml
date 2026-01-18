@@ -50,6 +50,14 @@
 		<Spanish>An enemy unit has been captured!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UP_FRANCE</Tag>
+		<English>A new trade route with a local tribe has been established!</English>
+		<French>A new trade route with a local tribe has been established!</French>
+		<German>A new trade route with a local tribe has been established!</German>
+		<Italian>A new trade route with a local tribe has been established!</Italian>
+		<Spanish>A new trade route with a local tribe has been established!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UP_EMIGRATION</Tag>
 		<English>A part of our population from %s1 is emigrating to the New World!</English>
 		<French>Une partie de la population de %s1 &#233;migre vers le Nouveau Monde !</French>

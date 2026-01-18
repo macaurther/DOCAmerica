@@ -281,8 +281,16 @@ dGoals = {
 	),
 	iFrance: (
 		ControlledResourceCount(iFur, 15, by=1750),
-		ImprovementCount(iContactedTribe, 20, by=1775),
-		TerrainCount(iWideRiver, 40, by=1800),
+		All(
+			TradeGold(4000),
+			TradeRouteCount(50),
+			at=1775,
+		),
+		All(
+            TerrainCount(iWideRiver, 40),
+			CultureLevelCityCount(iCultureLevelInfluential, 2),
+			by=1800,
+		),
 	),
 	iNetherlands: (
 		CitySpecialistCount(city(tNewAmsterdam).named(NEW_AMSTERDAM), iSpecialistGreatMerchant, 1, at=1660),

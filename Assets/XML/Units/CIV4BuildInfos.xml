@@ -1028,15 +1028,15 @@
 			<Type>BUILD_FORT</Type>
 			<Description>TXT_KEY_BUILD_FORT</Description>
 			<PrereqTech>TECH_REDUCTIONS</PrereqTech>
-			<iTime>1000</iTime>
-			<iCost>50</iCost>
+			<iTime>0</iTime>
+			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
-					<iTime>600</iTime>
+					<iTime>0</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>

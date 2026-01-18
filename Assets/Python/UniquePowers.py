@@ -112,13 +112,21 @@ def coureurDesBoisPower(iPlayer, pPlot, pUnit, iGoodyType):
 		message(iPlayer, "TXT_KEY_COUREUR_DES_BOIS_POWER", iImmigration)
 
 @handler("goodyReceived")
-# Iroquois UP
-def iroquoisPower(iPlayer, pPlot, pUnit, iGoodyType):
-	if civ(iPlayer) == iHaudenosaunee:
-		if year() > year(1600):
-			makeUnits(iPlayer, iArquebusier, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
-		else:
-			makeUnits(iPlayer, iMohawk, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
+# French UP
+def frenchUP(iPlayer, pPlot, pUnit, iGoodyType):
+	if civ(iPlayer) == iFrance:
+		iRegion = pPlot.getRegionID()
+		pBestCity = None
+		iBestDistance = 999
+		for pCity in cities.owner(iPlayer):
+			if pCity.getRegionID() == iRegion:
+				if distance(pCity, pPlot) < iBestDistance:
+					pBestCity = pCity
+					iBestDistance = distance(pCity, pPlot)
+		if pBestCity != None:
+			pBestCity.changeExtraTradeRoutes(1)
+			message(iPlayer, 'TXT_KEY_UP_FRANCE', sound='AS2D_REVOLTEND', event=1, button=infos.improvement(iTribe).getButton(), color=8, location=(pBestCity.getX(),pBestCity.getY()))
+
 
 @handler("improvementBuilt")
 # Russian UP
@@ -127,7 +135,7 @@ def onImprovementBuilt(iImprovement, iOldImprovement, iX, iY):	# MacAurther: Add
 		iPlayer = plot(iX, iY).getOwner()
 		if iPlayer > -1 and civ(iPlayer) == iRussia:
 			makeUnit(iPlayer, iSlave, (iX, iY), UnitAITypes.UNITAI_WORKER)
-			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iSlave).getButton(), color=8, location=(iX, iY))
+			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='AS2D_UNITGIFTED', event=1, button=infos.unit(iSlave).getButton(), color=8, location=(iX, iY))
 
 # MacAurther: Inuit UP
 @handler("cityBuilt")

@@ -2797,7 +2797,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 
 		// Leoreth: no adjacent acts as city improvements
 		CvPlot* pAdjacentPlot;
-		if (GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).isActsAsCity())
+		if (GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).isActsAsCity() && eImprovement != IMPROVEMENT_CONTACTED_TRIBE)	// MacAurther: Don't prevent contacting tribes next to cities
 		{
 			for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
 			{

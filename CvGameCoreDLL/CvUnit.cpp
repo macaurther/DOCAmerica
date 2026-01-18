@@ -7335,12 +7335,6 @@ bool CvUnit::build(BuildTypes eBuild)
 		iWorkRate *= 2;
 	}
 
-	// MacAurther: French UP
-	if (eBuild == BUILD_FORT && GET_PLAYER(getOwner()).getCivilizationType() == FRANCE)
-	{
-		iWorkRate *= 2;
-	}
-
 	bFinished = plot()->changeBuildProgress(eBuild, iWorkRate, getTeam());
 
 	finishMoves(); // needs to be at bottom because movesLeft() can affect workRate()...

@@ -7215,14 +7215,9 @@ int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 	
 	int iCostReduction = 0;	// Out of 100%
 
-	// MacAurther: French UP
 	CivilizationTypes eCiv = getCivilizationType();
-	if (eCiv == FRANCE && eBuild == BUILD_FORT)
-	{
-		iCostReduction += 50;
-	}
 	// MacAurther: Venezuelan UP
-	else if (eCiv == VENEZUELA)
+	if (eCiv == VENEZUELA)
 	{
 		iCostReduction += 100;
 	}
@@ -25718,12 +25713,6 @@ int CvPlayer::getRegionPowers(CivilizationTypes eCiv) const
 int CvPlayer::getFortRange() const
 {
 	if(GET_TEAM(getTeam()).isHasTech((TechTypes)PIONEERING))
-	{
-		return 2;
-	}
-
-	// French UP
-	if(getCivilizationType() == FRANCE)
 	{
 		return 2;
 	}
