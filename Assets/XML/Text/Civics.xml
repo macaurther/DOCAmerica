@@ -1193,11 +1193,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HARMONY_STRATEGY</Tag>
-		<English>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_SCIENCE]; cities are razed when lost</English>
-		<French>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_SCIENCE]; cities are razed when lost</French>
-		<German>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_SCIENCE]; cities are razed when lost</German>
-		<Italian>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_SCIENCE]; cities are razed when lost</Italian>
-		<Spanish>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_SCIENCE]; cities are razed when lost</Spanish>
+		<English>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</English>
+		<French>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</French>
+		<German>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</German>
+		<Italian>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</Italian>
+		<Spanish>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HARMONY_HELP</Tag>
@@ -1625,11 +1625,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRUSTEES_STRATEGY</Tag>
-		<English>faster production of Schoolhouse, Monument; increased [ICON_SCIENCE]</English>
-		<French>faster production of Schoolhouse, Monument; increased [ICON_SCIENCE]</French>
-		<German>faster production of Schoolhouse, Monument; increased [ICON_SCIENCE]</German>
-		<Italian>faster production of Schoolhouse, Monument; increased [ICON_SCIENCE]</Italian>
-		<Spanish>faster production of Schoolhouse, Monument; increased [ICON_SCIENCE]</Spanish>
+		<English>faster production of Schoolhouse, Monument; increased [ICON_RESEARCH]</English>
+		<French>faster production of Schoolhouse, Monument; increased [ICON_RESEARCH]</French>
+		<German>faster production of Schoolhouse, Monument; increased [ICON_RESEARCH]</German>
+		<Italian>faster production of Schoolhouse, Monument; increased [ICON_RESEARCH]</Italian>
+		<Spanish>faster production of Schoolhouse, Monument; increased [ICON_RESEARCH]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HOME_RULE</Tag>
@@ -1982,11 +1982,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_EGALITARIANISM_STRATEGY</Tag>
-		<English>No State Religion; double slots for Artist, Scientist; extra [ICON_SCIENCE] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</English>
-		<French>No State Religion; double slots for Artist, Scientist; extra [ICON_SCIENCE] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</French>
-		<German>No State Religion; double slots for Artist, Scientist; extra [ICON_SCIENCE] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</German>
-		<Italian>No State Religion; double slots for Artist, Scientist; extra [ICON_SCIENCE] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</Italian>
-		<Spanish>No State Religion; double slots for Artist, Scientist; extra [ICON_SCIENCE] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</Spanish>
+		<English>No State Religion; double slots for Artist, Scientist; extra [ICON_RESEARCH] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</English>
+		<French>No State Religion; double slots for Artist, Scientist; extra [ICON_RESEARCH] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</French>
+		<German>No State Religion; double slots for Artist, Scientist; extra [ICON_RESEARCH] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</German>
+		<Italian>No State Religion; double slots for Artist, Scientist; extra [ICON_RESEARCH] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</Italian>
+		<Spanish>No State Religion; double slots for Artist, Scientist; extra [ICON_RESEARCH] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DISPLACEMENT</Tag>
@@ -2174,11 +2174,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MECHANIZATION_STRATEGY</Tag>
-		<English>Extra [ICON_SCIENCE] from specialists; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</English>
-		<French>Extra [ICON_SCIENCE] from specialists; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</French>
-		<German>Extra [ICON_SCIENCE] from specialists; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</German>
-		<Italian>Extra [ICON_SCIENCE] from specialists; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</Italian>
-		<Spanish>Extra [ICON_SCIENCE] from specialists; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</Spanish>
+		<English>Extra [ICON_RESEARCH] from specialists; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</English>
+		<French>Extra [ICON_RESEARCH] from specialists; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</French>
+		<German>Extra [ICON_RESEARCH] from specialists; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</German>
+		<Italian>Extra [ICON_RESEARCH] from specialists; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</Italian>
+		<Spanish>Extra [ICON_RESEARCH] from specialists; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PLANTATION</Tag>

@@ -771,7 +771,7 @@ class CvImmigrationManager:
 		# Immigration Progress panel information
 		self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_X] = self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] / 2
+		self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] * 2 / 3
 		self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT])) / 4
 		self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_X] = self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*4)
 		self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_Y] = self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*10)

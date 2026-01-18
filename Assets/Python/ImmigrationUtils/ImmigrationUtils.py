@@ -61,8 +61,7 @@ class ImmigrationUtils:
 		
 	
 	def getImmigrationThreshold(self, iPlayer, iHomeland):
-		iCiv = civ(iPlayer)
-		return int(self.calculateBaseImmigrationThreshold(iPlayer) * self.getHomelandImmigrationThresholdModifier(iPlayer, iHomeland))
+		return int(self.calculateBaseImmigrationThreshold(iPlayer, iHomeland) * self.getHomelandImmigrationThresholdModifier(iPlayer, iHomeland))
 
 	def getHomelandImmigrationThresholdModifier(self, iPlayer, iHomeland):
 		iModifier = 0
@@ -83,13 +82,13 @@ class ImmigrationUtils:
 		if civ(iPlayer) == iEngland and iHomeland == iHomelandNorthEurope:
 			iModifier -= 50
 
-		# Saturation
-		iModifier += data.civs[civ(iPlayer)].lNumImmigrantsEared[iHomeland] ** 1.1
-
 		return max(100 + iModifier, 20) / 100
 
-	def calculateBaseImmigrationThreshold(self, iPlayer):
-		return 10 + (data.civs[civ(iPlayer)].numImmigrations ** 1.1)
+	def calculateBaseImmigrationThreshold(self, iPlayer, iHomeland):
+		iThreshold = 10
+		iThreshold += data.civs[civ(iPlayer)].numImmigrations
+		iThreshold += 2 * data.civs[civ(iPlayer)].lNumImmigrantsEared[iHomeland]
+		return iThreshold
 
 	def canEarnImmigrants(self, iPlayer, iHomeland=-1):
 		pPlayer = player(iPlayer)
@@ -105,35 +104,49 @@ class ImmigrationUtils:
 	def processImmigration(self, iPlayer):
 		iCiv = civ(iPlayer)
 		pPlayer = player(iPlayer)
-		bImmigrantGranted = True
-		while bImmigrantGranted:
-			bImmigrantGranted = False
+		iBestHomeland = 0
+		while iBestHomeland != -1:
+			print("Turn: " + str(turn()))	# temp debug
+			iBestHomeland = -1
 			for iHomeland in lHomelands:
 				if not self.canEarnImmigrants(iPlayer, iHomeland):
 					continue
-				if pPlayer.getImmigration() < self.getImmigrationThreshold(iCiv, iHomeland):
+				if self.getImmigrationThreshold(iPlayer, iHomeland) == 0:
 					continue
+				if pPlayer.getImmigration() < self.getImmigrationThreshold(iPlayer, iHomeland):
+					continue
+				if iBestHomeland == -1:
+					iBestHomeland = iHomeland
+					print("iBestHomeland 1: " + str(iBestHomeland))	# temp debug
+					print("pPlayer.getImmigration(): " + str(pPlayer.getImmigration()))
+					print("self.getImmigrationThreshold(iPlayer, iHomeland): " + str(self.getImmigrationThreshold(iPlayer, iHomeland)))
+				elif self.getImmigrationThreshold(iPlayer, iBestHomeland) > self.getImmigrationThreshold(iPlayer, iHomeland):
+					iBestHomeland = iHomeland
+					print("iBestHomeland 2: " + str(iBestHomeland))	# temp debug
+					print("pPlayer.getImmigration(): " + str(pPlayer.getImmigration()))
+					print("self.getImmigrationThreshold(iPlayer, iHomeland): " + str(self.getImmigrationThreshold(iPlayer, iHomeland)))
+					
+			if iBestHomeland != -1:
 				# Grant Immigrant
-				self.changeImmigrants(iPlayer, iHomeland, iImmigrant, 1)
-				bImmigrantGranted = True
+				self.changeImmigrants(iPlayer, iBestHomeland, iImmigrant, 1)
 				# Subtract cost
-				pPlayer.changeImmigration(-1*self.getImmigrationThreshold(iCiv, iHomeland))
+				pPlayer.changeImmigration(-1*self.getImmigrationThreshold(iPlayer, iBestHomeland))
 				# Increment num immigrant trackers
 				data.civs[iCiv].numImmigrations += 1
-				data.civs[iCiv].lNumImmigrantsEared[iHomeland] += 1
+				data.civs[iCiv].lNumImmigrantsEared[iBestHomeland] += 1
 				# Notify player (if human)
 				if pPlayer.isHuman():
 					# MacAurther TODO: This is very messy. Maybe improve if you feel like it
 					strHomeland = ""
-					if iHomeland == iHomelandNorthEurope:
+					if iBestHomeland == iHomelandNorthEurope:
 						strHomeland = "North Europe"
-					elif iHomeland == iHomelandSouthEurope:
+					elif iBestHomeland == iHomelandSouthEurope:
 						strHomeland = "South Europe"
-					elif iHomeland == iHomelandAfrica:
+					elif iBestHomeland == iHomelandAfrica:
 						strHomeland = "Africa"
-					elif iHomeland == iHomelandSiberia:
+					elif iBestHomeland == iHomelandSiberia:
 						strHomeland = "Siberia"
-					elif iHomeland == iHomelandAsia:
+					elif iBestHomeland == iHomelandAsia:
 						strHomeland = "Asia"
 
 					# Inform the player that the immigrant has arrived.
