@@ -5381,9 +5381,22 @@ void CvUnitAI::AI_settlerSeaMove()
 {
 	PROFILE_FUNC();
 
-	// Leoreth: otherwise they try to found the capital -> MacAurther: This is desirable behavior for spawn-at-sea civs, disable this for them
-	if (GET_PLAYER(getOwnerINLINE()).getNumCities() == 0 && !((RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_EUROPE))
+	// Leoreth: otherwise they try to found the capital -> MacAurther: This is desirable behavior for spawn-at-sea civs
+	if (GET_PLAYER(getOwnerINLINE()).getNumCities() == 0)
 	{
+		if ((RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_EUROPE)	// If European, beeline for capital (don't want deviation here, or else England or Netherlands like to go to SA sometimes)
+		{
+			CyArgsList argsList;
+			long lResultX=-1;
+			long lResultY=-1;
+			argsList.add(getOwnerINLINE());
+			gDLL->getPythonIFace()->callFunction(PYScreensModule, "getStartingLocationX", argsList.makeFunctionArgs(), &lResultX);
+			gDLL->getPythonIFace()->callFunction(PYScreensModule, "getStartingLocationY", argsList.makeFunctionArgs(), &lResultY);
+			if ((int)lResultX > -1 && (int)lResultY > -1)
+			{
+				getGroup()->pushMission(MISSION_MOVE_TO, (int)lResultX, (int)lResultY, 0, false, false, MISSIONAI_FOUND, GC.getMapINLINE().plot((int)lResultX, (int)lResultY));
+			}
+		}
 		return;
 	}
 

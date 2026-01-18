@@ -316,6 +316,16 @@ def getNumImmigrantsEarned(argsList):
 	return immigrationManager.getNumImmigrantsEarned(iPlayer, iHomeland)
 # < Immigration Manager End   >
 
+# MacAurther: Give DLL visibility into "preferred" capital locations
+def getStartingLocationX(argsList):
+	iPlayer = argsList[0]
+	return dCapitals[civ(iPlayer)][0]
+
+def getStartingLocationY(argsList):
+	iPlayer = argsList[0]
+	return dCapitals[civ(iPlayer)][1]
+
+
 import CvPediaMain
 import CvPediaHistory
 
