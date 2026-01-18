@@ -136,10 +136,6 @@ def firstCityOnCityBuilt(city):
 def goodyPopup(iPlayer, pPlot, pUnit, iGoodyType):
 	if pPlot.getImprovementType() == iContactedTribe:
 		strMessage = "A Tribe's Chieftan has given us a gift in honor of our meeting!"
-		CyInterface().addMessage(iPlayer, False, 20, strMessage, "", 0, gc.getImprovementInfo(iTribe).getButton(), ColorTypes(0), pPlot.getX(), pPlot.getY(), True, True) 
-	# If it's not a contacted tribe, it was allied by a Confederacy civic native
-	else:
-		strMessage = "A Tribe's Chieftan has given us a gift in honor of our new alliance!"
 		CyInterface().addMessage(iPlayer, False, 20, strMessage, "", 0, gc.getImprovementInfo(iTribe).getButton(), ColorTypes(0), pPlot.getX(), pPlot.getY(), True, True)
 
 

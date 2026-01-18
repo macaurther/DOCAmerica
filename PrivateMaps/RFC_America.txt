@@ -29653,7 +29653,7 @@ EndPlot
 BeginPlot
 	x=44,y=99
 	BonusType=BONUS_GOLD
-	FeatureType=FEATURE_TAIGA, FeatureVariety=0
+	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -33906,6 +33906,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=99
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -36006,15 +36007,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=97
+	BonusType=BONUS_POTATO
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 EndPlot
 BeginPlot
 	x=53,y=98
-	isNOfRiver
-	RiverWEDirection=1
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -36714,21 +36713,20 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=97
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=54,y=98
-	BonusType=BONUS_POTATO
-	FeatureType=FEATURE_FOREST, FeatureVariety=2
-	TerrainType=TERRAIN_MOORLAND
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=54,y=99
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	FeatureType=FEATURE_FOREST, FeatureVariety=2
+	TerrainType=TERRAIN_MOORLAND
+	PlotType=2
 EndPlot
 BeginPlot
 	x=54,y=100
@@ -37418,18 +37416,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=98
-	BonusType=BONUS_SEAL
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=55,y=99
-	FeatureType=FEATURE_ISLANDS, FeatureVariety=2
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=55,y=100
+	BonusType=BONUS_SEAL
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot

@@ -8155,7 +8155,6 @@
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<FreeBuilding>BUILDINGCLASS_PLAZA</FreeBuilding>
-			<CivicOption>CIVICOPTION_ADMINISTRATION</CivicOption>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>

@@ -16000,7 +16000,7 @@ bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
 		case BUILDING_MACHU_PICCHU:
 		case BUILDING_SACSAYHUAMAN:
 		case BUILDING_YACHAYWASI:
-			bLake = true;
+			bPeak = true;
 			break;
 		case BUILDING_GREAT_GEOGLYPH:
 			plotRequirement = TERRAIN_DESERT;

@@ -5584,14 +5584,14 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 			}
 
 			// MacAurther: Andean UP: If peak becomes owned by a non-Andean civ and there's an improvement on it, remove it
-			bool bOwnedByAndean = getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES;
-			if (!bOwnedByAndean && isPeak() && getImprovementType() != NO_IMPROVEMENT)
+			bool bOwnedByAndean = getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES;	// MacAurther: Allow no owner to keep improvements for tribe pillage area-of-effect issue
+			if (getOwner() != NO_PLAYER && !bOwnedByAndean && isPeak() && getImprovementType() != NO_IMPROVEMENT)
 			{
 				setImprovementType(NO_IMPROVEMENT);
 			}
 
 			// MacAurther: Andean UP: If peak becomes owned by a non-Andean civ and there's an route on it, remove it
-			if (!bOwnedByAndean && isPeak() && getRouteType() != NO_ROUTE)
+			if (getOwner() != NO_PLAYER && !bOwnedByAndean && isPeak() && getRouteType() != NO_ROUTE)	// MacAurther: Allow no owner to keep routes for tribe pillage area-of-effect issue
 			{
 				setRouteType(NO_ROUTE, true);
 			}
@@ -6504,7 +6504,7 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 		// MacAurther: Tribes - update culture
 		if (eOldImprovement == IMPROVEMENT_TRIBE || eOldImprovement == IMPROVEMENT_CONTACTED_TRIBE || eNewValue == IMPROVEMENT_TRIBE || eNewValue == IMPROVEMENT_CONTACTED_TRIBE)
 		{
-			updateCulture(true, false);
+			updateCulture(false, false);	// here
 			// Remove any stored units
 			if (eOldImprovement == IMPROVEMENT_TRIBE || eOldImprovement == IMPROVEMENT_CONTACTED_TRIBE)
 			{

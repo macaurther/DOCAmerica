@@ -160,10 +160,14 @@
 				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
+				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_MAP</GoodyType>
 				<GoodyType>GOODY_WARRIOR</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
+				<GoodyType>GOODY_SETTLER</GoodyType>
+				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_SLAVE</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
@@ -236,12 +240,16 @@
 			<Goodies>
 				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
+				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_MAP</GoodyType>
 				<GoodyType>GOODY_WARRIOR</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SLAVE</GoodyType>
+				<GoodyType>GOODY_SETTLER</GoodyType>
+				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
 			</Goodies>
@@ -312,6 +320,8 @@
 			<iAIAdvancedStartPercent>150</iAIAdvancedStartPercent>
 			<Goodies>
 				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
+				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
@@ -319,6 +329,7 @@
 				<GoodyType>GOODY_WARRIOR</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SLAVE</GoodyType>
+				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
 			</Goodies>
@@ -388,6 +399,8 @@
 			<iAIPerEraModifier>-2</iAIPerEraModifier>
 			<iAIAdvancedStartPercent>150</iAIAdvancedStartPercent>
 			<Goodies>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
+				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
@@ -396,6 +409,7 @@
 				<GoodyType>GOODY_WARRIOR</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SLAVE</GoodyType>
+				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
 			</Goodies>

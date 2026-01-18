@@ -1965,6 +1965,7 @@
 		<BuildInfo>
 			<Type>BUILD_CONTACT_TRIBE</Type>
 			<Description>TXT_KEY_BUILD_CONTACT_TRIBE</Description>
+			<Help>TXT_KEY_BUILD_CONTACT_TRIBE_HELP</Help>
 			<PrereqTech>TECH_EXPLORATION</PrereqTech>
 			<iTime>300</iTime>
 			<iCost>40</iCost>

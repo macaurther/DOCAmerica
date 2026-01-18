@@ -635,11 +635,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INCAN_AUCAC_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</English>
-		<French>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</French>
-		<German>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion, and can be trained with Copper or Obsidian.</English>
+		<French>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion, and can be trained with Copper or Obsidian.</French>
+		<German>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion, and can be trained with Copper or Obsidian.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion, and can be trained with Copper or Obsidian.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion, and can be trained with Copper or Obsidian.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ICBM_STRATEGY</Tag>
@@ -2343,11 +2343,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PUREPECHA_QUANGARIECHA_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</English>
-		<French>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</French>
-		<German>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense and starts with Guerilla I.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense, starts with Guerilla I, and can be trained with Copper.</English>
+		<French>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense, starts with Guerilla I, and can be trained with Copper.</French>
+		<German>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense, starts with Guerilla I, and can be trained with Copper.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense, starts with Guerilla I, and can be trained with Copper.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense, starts with Guerilla I, and can be trained with Copper.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LIGHT_SWORDSMAN_STRATEGY</Tag>

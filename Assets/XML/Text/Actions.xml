@@ -311,10 +311,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_CONTACT_TRIBE</Tag>
-		<English>Contact a [LINK=ROUTE_HIGHWAY]Tribe[\LINK]</English>
-		<French>Contact a [LINK=ROUTE_HIGHWAY]Tribe[\LINK]</French>
-		<German>Contact a [LINK=ROUTE_HIGHWAY]Tribe[\LINK]</German>
-		<Italian>Contact a [LINK=ROUTE_HIGHWAY]Tribe[\LINK]</Italian>
-		<Spanish>Contact a [LINK=ROUTE_HIGHWAY]Tribe[\LINK]</Spanish>
+		<English>Contact a [LINK=IMPROVEMENT_CONTACTED_TRIBE]Tribe[\LINK]</English>
+		<French>Contact a [LINK=IMPROVEMENT_CONTACTED_TRIBE]Tribe[\LINK]</French>
+		<German>Contact a [LINK=IMPROVEMENT_CONTACTED_TRIBE]Tribe[\LINK]</German>
+		<Italian>Contact a [LINK=IMPROVEMENT_CONTACTED_TRIBE]Tribe[\LINK]</Italian>
+		<Spanish>Contact a [LINK=IMPROVEMENT_CONTACTED_TRIBE]Tribe[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_CONTACT_TRIBE_HELP</Tag>
+		<English>[ICON_BULLET]Receive a Goody reward</English>
+		<French>[ICON_BULLET]Receive a Goody reward</French>
+		<German>[ICON_BULLET]Receive a Goody reward</German>
+		<Italian>[ICON_BULLET]Receive a Goody reward</Italian>
+		<Spanish>[ICON_BULLET]Receive a Goody reward</Spanish>
 	</TEXT>
 </Civ4GameText>

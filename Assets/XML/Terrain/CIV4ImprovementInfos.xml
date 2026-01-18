@@ -2141,7 +2141,6 @@
 			<Type>IMPROVEMENT_FORT</Type>
 			<Description>TXT_KEY_IMPROVEMENT_FORT</Description>
 			<Civilopedia>TXT_KEY_IMPROVEMENT_FORT_PEDIA</Civilopedia>
-			<Help>TXT_KEY_IMPROVEMENT_FORT_HELP</Help>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_FORT</ArtDefineTag>
 			<bActsAsCity>1</bActsAsCity>
 			<bHillsMakesValid>0</bHillsMakesValid>
