@@ -75,10 +75,8 @@ class CvCivicsScreen:
 		self.Categories = []
 		self.PlayerCivics = []
 		self.SelectedCivics = []
-		self.ValidCivics = []
+		self.ValidCivics = []		# FoB
 		self.DisplayedCivics = []
-		
-		self.CurrentHover = -1
 
 
 
@@ -131,7 +129,7 @@ class CvCivicsScreen:
 		player = gc.getPlayer(self.iActivePlayer)
 		screen = self.getScreen()
 
-		self.ValidCivics = [];
+		self.ValidCivics = [];		# FoB
 		for i in xrange(len(self.Categories)):
 			iCategory = self.Categories[i]
 			iX, iY = self.getPosition(iCategory)
@@ -216,23 +214,15 @@ class CvCivicsScreen:
 	def hoverCivic(self, iCivic, bHover):
 		''
 		iCategory = gc.getCivicInfo(iCivic).getCivicOptionType()
-		iDisplayedCivic = iCivic
-		
-		if self.SelectedCivics[iCategory] == iCivic and self.CurrentHover != iCivic:
-			iDisplayedCivic = self.getBaseCivic(iCategory)
 
 		if bHover:
-			if self.DisplayedCivics[iCategory] != iDisplayedCivic:
-				self.DisplayedCivics[iCategory] = iDisplayedCivic
-				self.CurrentHover = iDisplayedCivic
+			if self.DisplayedCivics[iCategory] != iCivic:
+				self.DisplayedCivics[iCategory] = iCivic
 				return True
 
-		else:
-			self.CurrentHover = -1
-
-			if self.DisplayedCivics[iCategory] != self.SelectedCivics[iCategory]:
-				self.DisplayedCivics[iCategory] = self.SelectedCivics[iCategory]
-				return True
+		elif self.DisplayedCivics[iCategory] != self.SelectedCivics[iCategory]:
+			self.DisplayedCivics[iCategory] = self.SelectedCivics[iCategory]
+			return True
 
 		return False
 
@@ -248,10 +238,10 @@ class CvCivicsScreen:
 		
 		for iCivic in xrange(gc.getNumCivicInfos()):
 			if gc.getCivicInfo(iCivic).getCivicOptionType() == iCategory:
-				if isDefaultCivic(iCivic): continue
-				if not player.isCivicValid(iCivic): continue
+				if isDefaultCivic(iCivic): continue		# FoB
+				if not player.isCivicValid(iCivic): continue		# FoB
 
-				if bUpdateValidCivicList:
+				if bUpdateValidCivicList:		# FoB
 					self.ValidCivics.append(iCivic)
 			
 				sName = "CivicButton" + str(iCivic)
@@ -373,18 +363,18 @@ class CvCivicsScreen:
 		player = gc.getPlayer(self.iActivePlayer)
 		iHoverCategory = gc.getCivicInfo(iHoverCivic).getCivicOptionType()
 
-		iCategoryIndices = [0,0,0,0,0,0];
-		for iCivic in self.ValidCivics:
+		iCategoryIndices = [0,0,0,0,0,0];		# FoB
+		for iCivic in self.ValidCivics:		# FoB
 			iCategory = gc.getCivicInfo(iCivic).getCivicOptionType()
-			if isDefaultCivic(iCivic): continue
-			if not player.isCivicValid(iCivic): continue;
+			if isDefaultCivic(iCivic): continue		# FoB
+			if not player.isCivicValid(iCivic): continue;		# FoB
 			if iCategory == iHoverCategory:
 				continue
 			iX, iY = self.getPosition(iCategory)
 			xPos = iX + self.W_CIVIC_CATEGORY - self.BUTTON_SMALL - self.MARGIN
 
-			iLine = iY + self.MARGIN + iCategoryIndices[iCategory] * self.LINE
-			iCategoryIndices[iCategory] = iCategoryIndices[iCategory]+1;
+			iLine = iY + self.MARGIN + iCategoryIndices[iCategory] * self.LINE		# FoB
+			iCategoryIndices[iCategory] = iCategoryIndices[iCategory]+1;		# FoB
 			
 			sName = "CivicName" + str(iCivic)
 			sText = gc.getCivicInfo(iCivic).getDescription()
