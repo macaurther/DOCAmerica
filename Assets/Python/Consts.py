@@ -85,12 +85,12 @@ lTransientCivs = [iMississippi, iMuisca, iPueblo, iHaudenosaunee, iLakota]
 # used in: Stability
 # tech groups share techs within each other on respawn
 iNumTechGroups = 3
-(iTechGroupWestern, iTechGroupLatinAmerica, iTechGroupNativeAmerica) = range(iNumTechGroups)
+(iTechGroupColony, iTechGroupNation, iTechGroupNative) = range(iNumTechGroups)
 
 dTechGroups = {
-iTechGroupWestern : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia, iAmerica, iCanada],
-iTechGroupLatinAmerica: [iArgentina, iMexico, iColombia, iBrazil, iHaiti, iPeru, iVenezuela],
-iTechGroupNativeAmerica : [iMaya, iInca, iAztec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iMuisca, iChimu, iInuit, iHaudenosaunee, iLakota, iHawaii, iZapotec, iPurepecha],
+iTechGroupColony : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia],
+iTechGroupNation: [iAmerica, iCanada, iArgentina, iMexico, iColombia, iBrazil, iHaiti, iPeru, iVenezuela],
+iTechGroupNative : [iMaya, iInca, iAztec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iMuisca, iChimu, iInuit, iHaudenosaunee, iLakota, iHawaii, iZapotec, iPurepecha],
 }
 
 lBioNewWorld = [iMaya, iInca, iAztec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iMuisca, iChimu, iInuit, iHaudenosaunee, iLakota, iHawaii, iZapotec, iPurepecha]

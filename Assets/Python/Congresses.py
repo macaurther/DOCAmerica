@@ -791,7 +791,7 @@ class Congress:
 		bOwner = (iOwner >= 0)
 		bOwnClaim = (iClaimant == iVoter)
 		
-		bRecolonise = plot.getRegionID() in lAmerica and civ(iClaimant) in dCivGroups[iCivGroupEurope] and civ(iOwner) in dCivGroups[iCivGroupAmerica] and civ(iOwner) in dTechGroups[iTechGroupWestern]
+		bRecolonise = plot.getRegionID() in lAmerica and civ(iClaimant) in dCivGroups[iCivGroupEurope] and civ(iOwner) in dCivGroups[iCivGroupAmerica] and civ(iOwner) in dTechGroups[iTechGroupColony]
 		
 		if bCity: city = plot.getPlotCity()
 		if bOwner: 
@@ -858,7 +858,7 @@ class Congress:
 			# Europeans support colonialism unless they want the plot for themselves (not against Western civs)
 			if civ(iVoter) in dCivGroups[iCivGroupEurope]:
 				if civ(iClaimant) in dCivGroups[iCivGroupEurope]:
-					if not bOwner or civ(iOwner) not in dTechGroups[iTechGroupWestern]:
+					if not bOwner or civ(iOwner) not in dTechGroups[iTechGroupColony]:
 						if plot.getPlayerSettlerValue(iVoter) == 0:
 							iClaimValidity += 10
 							
@@ -1071,7 +1071,7 @@ class Congress:
 				iSettlerMapValue = plot.getPlayerSettlerValue(iPlayer)
 				iValue = 0
 				
-				bRecolonise = not self.bPostWar and city.getRegionID() in lAmerica and civ(iPlayer) in dCivGroups[iCivGroupEurope] and civ(city) in dCivGroups[iCivGroupAmerica] and civ(city) in dTechGroups[iTechGroupWestern]
+				bRecolonise = not self.bPostWar and city.getRegionID() in lAmerica and civ(iPlayer) in dCivGroups[iCivGroupEurope] and civ(city) in dCivGroups[iCivGroupAmerica] and civ(city) in dTechGroups[iTechGroupColony]
 				
 				if not plot.isRevealed(iPlayer, False): continue
 				if city.isCapital(): continue

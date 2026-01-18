@@ -1666,6 +1666,14 @@ DenialTypes CvTeamAI::AI_mapTrade(TeamTypes eTeam) const
 		return DENIAL_WORST_ENEMY;
 	}
 
+	// MacAurther: Don't let Natives trade maps with Non-Natives (this ruins the Europeans' exploration game loop)
+	bool bTheyreNative = GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCultureGroup() == CULTURE_GROUP_NATIVE;
+	bool bWereNative = GET_PLAYER(GET_TEAM(getID()).getLeaderID()).getCultureGroup() == CULTURE_GROUP_NATIVE;
+	if (bTheyreNative != bWereNative)
+	{
+		return DENIAL_NEVER;
+	}
+
 	eAttitude = AI_getAttitude(eTeam);
 
 	// Sanguo Mod Performance start, added by poyuzhe 07.29.09
