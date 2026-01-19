@@ -937,7 +937,7 @@
 			<iCultureGroup>1</iCultureGroup>
 			<iBaseFreeUnits>50</iBaseFreeUnits>
 			<iFreeUnitsPopulationPercent>5</iFreeUnitsPopulationPercent>
-			<Upkeep>UPKEEP_LOW</Upkeep>
+			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PROPRIETARIES</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -947,7 +947,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_VICEROYS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_VICEROYS_STRATEGY</Strategy>
 			<TechPrereq>TECH_OFFICIALS</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Viceroys.dds</Button>
+			<Button>Art/Interface/Buttons/Civics/Viceroys.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -1623,6 +1623,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>25</iCommerce>
 			</CommerceModifiers>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iCount>1</iCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>

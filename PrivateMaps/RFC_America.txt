@@ -22140,6 +22140,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=86
+	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -25544,6 +25545,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=92
+	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -26159,6 +26161,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=85
+	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -38169,6 +38172,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=105
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -38874,7 +38878,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=105
-	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot

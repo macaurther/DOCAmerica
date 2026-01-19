@@ -200,7 +200,7 @@ def captureWeapons(pWinningUnit, pLosingUnit):
 def animalHunting(winningUnit, losingUnit):
 	if losingUnit.getUnitType() in lAnimalUnits:
 		iWinner = winningUnit.getOwner()
-		if player(iWinner).getNumCities() > 0:
+		if team(iWinner).isHasTech(iHunting) and player(iWinner).getNumCities() > 0:
 			city = closestCity(winningUnit, iWinner)
 			if city and distance(winningUnit, city) <= 10:
 				iFood = scale(10)

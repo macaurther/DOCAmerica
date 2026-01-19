@@ -56,7 +56,6 @@ QIKIQTAALUK =  "TXT_KEY_VICTORY_NAME_QIKIQTAALUK"
 NUNAVIK =  "TXT_KEY_VICTORY_NAME_NUNAVIK"
 KALAALLIT =  "TXT_KEY_VICTORY_NAME_KALAALLIT"
 MID_ATLANTIC =  "TXT_KEY_VICTORY_NAME_MID_ATLANTIC"
-VENEZUELA =  "TXT_KEY_VICTORY_NAME_VENEZUELA"
 BAHIA =  "TXT_KEY_VICTORY_NAME_BAHIA"
 ALASKA = "TXT_KEY_VICTORY_NAME_ALASKA"
 NATO = "TXT_KEY_VICTORY_NAME_NATO"
@@ -265,19 +264,23 @@ dGoals = {
 		SpecialistCount(iSpecialistSlave, 100, by=1800),
 	),
 	iEngland: (
-		CityCount(
-			(plots.regions(*lNorthAmerica).named(NORTH_AMERICA), 10),
-			(plots.regions(*(lSouthAmerica + lCentralAmerica)).named(SOUTH_CENTRAL_AMERICA), 5),
+		All(
+			SpecialistCount(iSpecialistGreatProphet, 3),
+			BuildingCount((iProtestantCathedral, 3), (iCatholicCathedral, 1)),
 			by=1730,
 		),
 		All(
 			Production(10000),
 			ControlledResourceCount(sum(iTimber), 3),
 			UnitCount(sum(iFrigate, iShipOfTheLine), 25),
-			SunkShips(50),
 			by=1750,
 		),
-		PopulationCount(100, by=1775),
+		All(
+			PopulationCount(200),
+			PopulationCityCount(20, 1),
+			PopulationCityCount(15, 3),
+			by=1775,
+		)
 	),
 	iFrance: (
 		ControlledResourceCount(iFur, 15, by=1750),
@@ -295,11 +298,10 @@ dGoals = {
 	iNetherlands: (
 		CitySpecialistCount(city(tNewAmsterdam).named(NEW_AMSTERDAM), iSpecialistGreatMerchant, 1, at=1660),
 		CityCount(
-			(plots.regions(rMidAtlantic).named(MID_ATLANTIC), 1),
-			(plots.regions(rCaribbean).named(CARIBBEAN), 1),
-			(plots.regions(rVenezuela).named(VENEZUELA), 1),
-			(plots.regions(rGuyana).named(GUAYANAS), 1),
-			(plots.regions(rBahia).named(BAHIA), 1),
+			(plots.regions(rMidAtlantic).named(MID_ATLANTIC), 2),
+			(plots.regions(rCaribbean).named(CARIBBEAN), 2),
+			(plots.regions(rGuyana).named(GUAYANAS), 2),
+			(plots.regions(rBahia).named(BAHIA), 2),
 			by=1700,
 		),
 		TradeGold(5000, by=1800),

@@ -3646,12 +3646,6 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
-			<UnitCombatMods>
-				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-					<iUnitCombatMod>100</iUnitCombatMod>
-				</UnitCombatMod>
-			</UnitCombatMods>
 			<TerrainImpassables>
 				<TerrainImpassable>
 					<TerrainType>TERRAIN_DESERT</TerrainType>
@@ -10114,12 +10108,16 @@
 			</UnitAIs>
 			<Builds>
 				<Build>
-					<BuildType>BUILD_FISHING_BOATS_WAA_KAULUA</BuildType>
+					<BuildType>BUILD_FISHING_BOATS</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_WHALING_BOATS</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
 			<PrereqTech>TECH_DUGOUTS</PrereqTech>
-			<iCost>25</iCost>
+			<iCost>35</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>4</iMoves>

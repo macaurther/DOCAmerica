@@ -158,13 +158,3 @@ def resetHandlersOnLoad():
 @handler("BeginGameTurn")
 def evictSaveData():
 	data.units.evict()
-
-@handler("combatResult")
-def waaKauluaAbility(pWinner, pLoser):
-	iWinner = pWinner.getOwner()
-	
-	if pWinner.getUnitType() == iWaaKaulua:
-		if pLoser.getUnitType() in (iCaravel, iCarrack, iIndiaman, iWestIndianman, iBrigantine, iSloop, iFrigate, iBarque, iShipOfTheLine, iManOfWar):
-			if not pWinner.isFull():
-				pCannon = makeUnit(iWinner, unique_unit(iWinner, iCannon), (pWinner.getX(), pWinner.getY()), UnitAITypes.UNITAI_ATTACK)
-				pCannon.setTransportUnit(pWinner)

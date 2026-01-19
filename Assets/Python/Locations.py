@@ -48,4 +48,4 @@ lLakeOntario = [(42, 93), (43, 92), (44, 92), (45, 93), (46, 94), (45, 95), (44,
 ### Tiles ###
 tTenochtitlan = (24, 67)
 tCahokia = (32, 87)
-tNewAmsterdam = (46, 89)
+tNewAmsterdam = (48, 91)

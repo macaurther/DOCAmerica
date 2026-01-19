@@ -1640,7 +1640,7 @@
 			<iAsset>20</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
-			<bTrade>0</bTrade>
+			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>7</iGridX>
 			<iGridY>5</iGridY>
@@ -2276,7 +2276,7 @@
 			<Quote>TXT_KEY_TECH_REDUCTIONS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Reductions.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Viceroys.dds,Art/Interface/Buttons/mem_buildings_atlas.dds,8,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2533,7 +2533,7 @@
 			<Quote>TXT_KEY_TECH_OFFICIALS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Governors.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Viceroys.dds,Art/Interface/Buttons/mem_buildings_atlas.dds,8,10</Button>
 		</TechInfo>
 		
 		<TechInfo>

@@ -81,8 +81,8 @@ class ImmigrationUtils:
 		# England UP:
 		if civ(iPlayer) == iEngland and iHomeland == iHomelandNorthEurope:
 			iModifier -= 50
-
-		return max(100 + iModifier, 20) / 100
+		
+		return max(100 + iModifier, 20) / 100.0
 
 	def calculateBaseImmigrationThreshold(self, iPlayer, iHomeland):
 		iThreshold = 10
@@ -106,25 +106,16 @@ class ImmigrationUtils:
 		pPlayer = player(iPlayer)
 		iBestHomeland = 0
 		while iBestHomeland != -1:
-			print("Turn: " + str(turn()))	# temp debug
 			iBestHomeland = -1
 			for iHomeland in lHomelands:
 				if not self.canEarnImmigrants(iPlayer, iHomeland):
-					continue
-				if self.getImmigrationThreshold(iPlayer, iHomeland) == 0:
 					continue
 				if pPlayer.getImmigration() < self.getImmigrationThreshold(iPlayer, iHomeland):
 					continue
 				if iBestHomeland == -1:
 					iBestHomeland = iHomeland
-					print("iBestHomeland 1: " + str(iBestHomeland))	# temp debug
-					print("pPlayer.getImmigration(): " + str(pPlayer.getImmigration()))
-					print("self.getImmigrationThreshold(iPlayer, iHomeland): " + str(self.getImmigrationThreshold(iPlayer, iHomeland)))
 				elif self.getImmigrationThreshold(iPlayer, iBestHomeland) > self.getImmigrationThreshold(iPlayer, iHomeland):
 					iBestHomeland = iHomeland
-					print("iBestHomeland 2: " + str(iBestHomeland))	# temp debug
-					print("pPlayer.getImmigration(): " + str(pPlayer.getImmigration()))
-					print("self.getImmigrationThreshold(iPlayer, iHomeland): " + str(self.getImmigrationThreshold(iPlayer, iHomeland)))
 					
 			if iBestHomeland != -1:
 				# Grant Immigrant

@@ -104,7 +104,7 @@ tEnglandAmerica1812NewOrleansBR = (35, 80)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
 iConquestNum, tConquestEnglandNetherlands = processConquest(iConquestNum, iEngland, iNetherlands, tEnglandNetherlandsTL, tEnglandNetherlandsBR, 2, iEnglandNetherlandsYear, 10)
-iConquestNum, tConquestEnglandQuebec = processConquest(iConquestNum, iEngland, iFrance, tEnglandQuebecTL, tEnglandNetherlandsBR, 2, iEnglandNetherlandsYear, 10)
+iConquestNum, tConquestEnglandQuebec = processConquest(iConquestNum, iEngland, iFrance, tEnglandQuebecTL, tEnglandQuebecBR, 2, iEnglandQuebecYear, 10)
 iConquestNum, tConquestEngland1812Washington = processConquest(iConquestNum, iEngland, iAmerica, tEnglandAmerica1812WashingtonTL, tEnglandAmerica1812WashingtonBR, 1, iEnglandAmerica1812WashingtonYear, 10)
 iConquestNum, tConquestEngland1812NewOrleans = processConquest(iConquestNum, iEngland, iAmerica, tEnglandAmerica1812NewOrleansTL, tEnglandAmerica1812NewOrleansBR, 1, iEnglandAmerica1812NewOrleansYear, 10)
 
@@ -347,7 +347,8 @@ def spawnConquerors(iPlayer, iPreferredTarget, tTL, tBR, iNumTargets, iYear, iIn
 		tPlot = findNearestLandPlot(city, iPlayer)
 		
 		dConquestUnits = {
-			iBase: 2 + iExtra,
+			iAttack: 2 + iExtra,
+			iShock: 1 + iExtra,
 			iCitySiege: 1 + 2*iExtra,
 		}
 		units = createRoleUnits(iPlayer, tPlot, dConquestUnits.items())

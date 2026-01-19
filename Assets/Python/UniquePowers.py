@@ -128,6 +128,17 @@ def frenchUP(iPlayer, pPlot, pUnit, iGoodyType):
 			message(iPlayer, 'TXT_KEY_UP_FRANCE', sound='AS2D_REVOLTEND', event=1, button=infos.improvement(iTribe).getButton(), color=8, location=(pBestCity.getX(),pBestCity.getY()))
 
 
+@handler("combatResult")
+# Wa'a Kaulua Ability
+def waaKauluaAbility(pWinner, pLoser):
+	iWinner = pWinner.getOwner()
+	
+	if pWinner.getUnitType() == iWaaKaulua:
+		if pLoser.getUnitType() in range(iCaravel, iBattleship):
+			if not pWinner.isFull():
+				pCannon = makeUnit(iWinner, unique_unit(iWinner, iCannon), (pWinner.getX(), pWinner.getY()), UnitAITypes.UNITAI_ATTACK)
+				pCannon.setTransportUnit(pWinner)
+
 @handler("improvementBuilt")
 # Russian UP
 def onImprovementBuilt(iImprovement, iOldImprovement, iX, iY):	# MacAurther: Added old improvement argument
