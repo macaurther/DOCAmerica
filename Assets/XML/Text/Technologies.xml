@@ -749,11 +749,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_CODICES_QUOTE</Tag>
-		<English>"Codices, like ancient whispers on pages of bark and parchment, cradle the visions of civilizations, revealing not just history but the sacred dance of ink and insight that connects humanity with the mysteries of time."[PARAGRAPH:2]-ChatGPT</English>
-		<French>"Codices, like ancient whispers on pages of bark and parchment, cradle the visions of civilizations, revealing not just history but the sacred dance of ink and insight that connects humanity with the mysteries of time."[PARAGRAPH:2]-ChatGPT</French>
-		<German>"Codices, like ancient whispers on pages of bark and parchment, cradle the visions of civilizations, revealing not just history but the sacred dance of ink and insight that connects humanity with the mysteries of time."[PARAGRAPH:2]-ChatGPT</German>
-		<Italian>"Codices, like ancient whispers on pages of bark and parchment, cradle the visions of civilizations, revealing not just history but the sacred dance of ink and insight that connects humanity with the mysteries of time."[PARAGRAPH:2]-ChatGPT</Italian>
-		<Spanish>"Codices, like ancient whispers on pages of bark and parchment, cradle the visions of civilizations, revealing not just history but the sacred dance of ink and insight that connects humanity with the mysteries of time."[PARAGRAPH:2]-ChatGPT</Spanish>
+		<English>"The book says..."[PARAGRAPH:2]-Mama Odie</English>
+		<French>"The book says..."[PARAGRAPH:2]-Mama Odie</French>
+		<German>"The book says..."[PARAGRAPH:2]-Mama Odie</German>
+		<Italian>"The book says..."[PARAGRAPH:2]-Mama Odie</Italian>
+		<Spanish>"The book says..."[PARAGRAPH:2]-Mama Odie</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_CODICES_PEDIA</Tag>
@@ -927,11 +927,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_COMPANION_PLANTING_QUOTE</Tag>
-		<English>"Companion planting is nature's symphony in the garden, where each plant lends its unique melody, creating a harmonious composition that transcends the individual notes of cultivation."[PARAGRAPH:2]-ChatGPT</English>
-		<French>"Companion planting is nature's symphony in the garden, where each plant lends its unique melody, creating a harmonious composition that transcends the individual notes of cultivation."[PARAGRAPH:2]-ChatGPT</French>
-		<German>"Companion planting is nature's symphony in the garden, where each plant lends its unique melody, creating a harmonious composition that transcends the individual notes of cultivation."[PARAGRAPH:2]-ChatGPT</German>
-		<Italian>"Companion planting is nature's symphony in the garden, where each plant lends its unique melody, creating a harmonious composition that transcends the individual notes of cultivation."[PARAGRAPH:2]-ChatGPT</Italian>
-		<Spanish>"Companion planting is nature's symphony in the garden, where each plant lends its unique melody, creating a harmonious composition that transcends the individual notes of cultivation."[PARAGRAPH:2]-ChatGPT</Spanish>
+		<English>"Bring the corn and bear the fruit; By the waters sweet and clean; Where the mighty sturgeon lives; Plant the squash and reap the bean."[PARAGRAPH:2]-Steady as a Beating Drum</English>
+		<French>"Bring the corn and bear the fruit; By the waters sweet and clean; Where the mighty sturgeon lives; Plant the squash and reap the bean."[PARAGRAPH:2]-Steady as a Beating Drum</French>
+		<German>"Bring the corn and bear the fruit; By the waters sweet and clean; Where the mighty sturgeon lives; Plant the squash and reap the bean."[PARAGRAPH:2]-Steady as a Beating Drum</German>
+		<Italian>"Bring the corn and bear the fruit; By the waters sweet and clean; Where the mighty sturgeon lives; Plant the squash and reap the bean."[PARAGRAPH:2]-Steady as a Beating Drum</Italian>
+		<Spanish>"Bring the corn and bear the fruit; By the waters sweet and clean; Where the mighty sturgeon lives; Plant the squash and reap the bean."[PARAGRAPH:2]-Steady as a Beating Drum</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_COMPANION_PLANTING_PEDIA</Tag>
@@ -1244,11 +1244,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_EARTHWORKS_QUOTE</Tag>
-		<English>"Earthworks stand as silent storytellers, their ancient mounds and sculpted landscapes echoing the aspirations and spiritual essence of civilizations etched into the very soil they shaped."[PARAGRAPH:2]-ChatGPT</English>
-		<French>"Earthworks stand as silent storytellers, their ancient mounds and sculpted landscapes echoing the aspirations and spiritual essence of civilizations etched into the very soil they shaped."[PARAGRAPH:2]-ChatGPT</French>
-		<German>"Earthworks stand as silent storytellers, their ancient mounds and sculpted landscapes echoing the aspirations and spiritual essence of civilizations etched into the very soil they shaped."[PARAGRAPH:2]-ChatGPT</German>
-		<Italian>"Earthworks stand as silent storytellers, their ancient mounds and sculpted landscapes echoing the aspirations and spiritual essence of civilizations etched into the very soil they shaped."[PARAGRAPH:2]-ChatGPT</Italian>
-		<Spanish>"Earthworks stand as silent storytellers, their ancient mounds and sculpted landscapes echoing the aspirations and spiritual essence of civilizations etched into the very soil they shaped."[PARAGRAPH:2]-ChatGPT</Spanish>
+		<English>"The island gives us what we need."[PARAGRAPH:2]-Chief Tui</English>
+		<French>"The island gives us what we need."[PARAGRAPH:2]-Chief Tui</French>
+		<German>"The island gives us what we need."[PARAGRAPH:2]-Chief Tui</German>
+		<Italian>"The island gives us what we need."[PARAGRAPH:2]-Chief Tui</Italian>
+		<Spanish>"The island gives us what we need."[PARAGRAPH:2]-Chief Tui</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_EARTHWORKS_PEDIA</Tag>
@@ -2511,15 +2511,15 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_LINGUISTICS</Tag>
-		<English>Linguistics</English>
-		<French>Linguistics</French>
-		<German>Linguistics</German>
-		<Italian>Linguistics</Italian>
-		<Spanish>Linguistics</Spanish>
+		<Tag>TXT_KEY_TECH_INTERPRETATION</Tag>
+		<English>Interpretation</English>
+		<French>Interpretation</French>
+		<German>Interpretation</German>
+		<Italian>Interpretation</Italian>
+		<Spanish>Interpretation</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_LINGUISTICS_HELP</Tag>
+		<Tag>TXT_KEY_TECH_INTERPRETATION_HELP</Tag>
 		<English>[ICON_BULLET]Contacting Tribes costs 25% less</English>
 		<French>[ICON_BULLET]Contacting Tribes costs 25% less</French>
 		<German>[ICON_BULLET]Contacting Tribes costs 25% less</German>
@@ -2527,7 +2527,7 @@
 		<Spanish>[ICON_BULLET]Contacting Tribes costs 25% less</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_LINGUISTICS_QUOTE</Tag>
+		<Tag>TXT_KEY_TECH_INTERPRETATION_QUOTE</Tag>
 		<English>"To speak a language is to take on a world, a culture."[PARAGRAPH:2]- Frantz Fanon</English>
 		<French>"To speak a language is to take on a world, a culture."[PARAGRAPH:2]- Frantz Fanon</French>
 		<German>"To speak a language is to take on a world, a culture."[PARAGRAPH:2]- Frantz Fanon</German>
@@ -2535,7 +2535,7 @@
 		<Spanish>"To speak a language is to take on a world, a culture."[PARAGRAPH:2]- Frantz Fanon</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_LINGUISTICS_PEDIA</Tag>
+		<Tag>TXT_KEY_TECH_INTERPRETATION_PEDIA</Tag>
 		<English>The history of Native American languages is a complex and varied one, shaped by the diverse cultures and geographic regions of the many tribes and nations that have inhabited the Americas for thousands of years. Linguistic research suggests that Native American languages are unrelated to each other and to other languages of the world. Before the arrival of Europeans in the 15th century, there were an estimated 300 to 600 different Native American languages spoken across North and South America. These languages were often spoken within small tribes or bands, and many were in danger of extinction due to the pressures of colonialism and cultural assimilation.[PARAGRAPH:2]During the 19th and early 20th centuries, efforts were made to preserve Native American languages and culture through ethnographic research, the establishment of Indian schools, and the creation of language revitalization programs. Many Native American communities have worked to revive their languages in recent decades, recognizing their importance as a link to their cultural heritage and identity. Today, there are an estimated 150 to 175 indigenous languages still spoken in the Americas, but many are endangered and face the threat of extinction. Efforts to document and preserve these languages continue, as they are an important part of the cultural heritage of the Americas and the world.</English>
 		<French>The history of Native American languages is a complex and varied one, shaped by the diverse cultures and geographic regions of the many tribes and nations that have inhabited the Americas for thousands of years. Linguistic research suggests that Native American languages are unrelated to each other and to other languages of the world. Before the arrival of Europeans in the 15th century, there were an estimated 300 to 600 different Native American languages spoken across North and South America. These languages were often spoken within small tribes or bands, and many were in danger of extinction due to the pressures of colonialism and cultural assimilation.[PARAGRAPH:2]During the 19th and early 20th centuries, efforts were made to preserve Native American languages and culture through ethnographic research, the establishment of Indian schools, and the creation of language revitalization programs. Many Native American communities have worked to revive their languages in recent decades, recognizing their importance as a link to their cultural heritage and identity. Today, there are an estimated 150 to 175 indigenous languages still spoken in the Americas, but many are endangered and face the threat of extinction. Efforts to document and preserve these languages continue, as they are an important part of the cultural heritage of the Americas and the world.</French>
 		<German>The history of Native American languages is a complex and varied one, shaped by the diverse cultures and geographic regions of the many tribes and nations that have inhabited the Americas for thousands of years. Linguistic research suggests that Native American languages are unrelated to each other and to other languages of the world. Before the arrival of Europeans in the 15th century, there were an estimated 300 to 600 different Native American languages spoken across North and South America. These languages were often spoken within small tribes or bands, and many were in danger of extinction due to the pressures of colonialism and cultural assimilation.[PARAGRAPH:2]During the 19th and early 20th centuries, efforts were made to preserve Native American languages and culture through ethnographic research, the establishment of Indian schools, and the creation of language revitalization programs. Many Native American communities have worked to revive their languages in recent decades, recognizing their importance as a link to their cultural heritage and identity. Today, there are an estimated 150 to 175 indigenous languages still spoken in the Americas, but many are endangered and face the threat of extinction. Efforts to document and preserve these languages continue, as they are an important part of the cultural heritage of the Americas and the world.</German>
@@ -2546,15 +2546,15 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_LOCALIZATION</Tag>
-		<English>Localization</English>
-		<French>Localization</French>
-		<German>Localization</German>
-		<Italian>Localization</Italian>
-		<Spanish>Localization</Spanish>
+		<Tag>TXT_KEY_TECH_MEDIATION</Tag>
+		<English>Mediation</English>
+		<French>Mediation</French>
+		<German>Mediation</German>
+		<Italian>Mediation</Italian>
+		<Spanish>Mediation</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_LOCALIZATION_HELP</Tag>
+		<Tag>TXT_KEY_TECH_MEDIATION_HELP</Tag>
 		<English>[ICON_BULLET]Contacting Tribes costs 25% less</English>
 		<French>[ICON_BULLET]Contacting Tribes costs 25% less</French>
 		<German>[ICON_BULLET]Contacting Tribes costs 25% less</German>
@@ -2562,16 +2562,16 @@
 		<Spanish>[ICON_BULLET]Contacting Tribes costs 25% less</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_LOCALIZATION_QUOTE</Tag>
-		<English>"Localization is the art of listening to the whispers of the land, understanding its unique dialect, and crafting sustainable narratives that harmonize with the wisdom written in the soils of our existence." [PARAGRAPH:2]-ChatGPT</English>
-		<French>"Localization is the art of listening to the whispers of the land, understanding its unique dialect, and crafting sustainable narratives that harmonize with the wisdom written in the soils of our existence." [PARAGRAPH:2]-ChatGPT</French>
-		<German>"Localization is the art of listening to the whispers of the land, understanding its unique dialect, and crafting sustainable narratives that harmonize with the wisdom written in the soils of our existence." [PARAGRAPH:2]-ChatGPT</German>
-		<Italian>"Localization is the art of listening to the whispers of the land, understanding its unique dialect, and crafting sustainable narratives that harmonize with the wisdom written in the soils of our existence." [PARAGRAPH:2]-ChatGPT</Italian>
-		<Spanish>"Localization is the art of listening to the whispers of the land, understanding its unique dialect, and crafting sustainable narratives that harmonize with the wisdom written in the soils of our existence." [PARAGRAPH:2]-ChatGPT</Spanish>
+		<Tag>TXT_KEY_TECH_MEDIATION_QUOTE</Tag>
+		<English>"But if you walk the footsteps of a stranger, you'll learn things you never knew, you never knew." [PARAGRAPH:2]-Colors of the Wind</English>
+		<French>"But if you walk the footsteps of a stranger, you'll learn things you never knew, you never knew." [PARAGRAPH:2]-Colors of the Wind</French>
+		<German>"But if you walk the footsteps of a stranger, you'll learn things you never knew, you never knew." [PARAGRAPH:2]-Colors of the Wind</German>
+		<Italian>"But if you walk the footsteps of a stranger, you'll learn things you never knew, you never knew." [PARAGRAPH:2]-Colors of the Wind</Italian>
+		<Spanish>"But if you walk the footsteps of a stranger, you'll learn things you never knew, you never knew." [PARAGRAPH:2]-Colors of the Wind</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_LOCALIZATION_PEDIA</Tag>
-		<English>In the diverse landscapes of Pre-Columbian America, the concept of localization was inherent to the ways indigenous societies interacted with their environments. This historical perspective is not only a narrative of survival but a testament to the deep understanding and respect these cultures had for their surroundings.[PARAGRAPH:2]In the heart of Mesoamerica, ancient civilizations like the Aztecs and Maya epitomized localization in their agricultural practices. They implemented sophisticated techniques such as terracing, chinampas, and milpas, adapting their farming methods to the specific characteristics of the land. These localized approaches not only sustained their communities but also showcased a profound connection between people and place. The sprawling deserts of the American Southwest witnessed the intricate localization efforts of the Ancestral Puebloans. Through the construction of cliff dwellings, ingenious water management systems, and the strategic use of natural resources, these societies not only thrived in a challenging environment but also left enduring imprints on the landscape.[PARAGRAPH:2]In the Great Plains, where the buffalo roamed freely, Plains Indians showcased a mobile form of localization. They followed the seasonal movements of herds, setting up temporary dwellings and utilizing every part of the buffalo for sustenance and material needs. This nomadic lifestyle harmonized with the rhythms of the land. On the Pacific Northwest coast, indigenous peoples engaged in a rich tradition of localization, relying on the abundant marine resources available to them. The construction of intricate cedar plank houses, the development of specialized tools, and the creation of complex social structures reflected a deep understanding of and adaptation to the coastal environment.[PARAGRAPH:2]The history of localization in Pre-Columbian America unveils a narrative of diversity and adaptability. It is a story of communities that, through generations of observation and experimentation, became attuned to the nuances of their ecosystems. The land, in turn, bore witness to the unique expressions of cultures that thrived by embracing the wisdom of local adaptation.</English>
+		<Tag>TXT_KEY_TECH_MEDIATION_PEDIA</Tag>
+		<English>Mediation represents the practical knowledge required to communicate, negotiate, and maintain relations between societies with different languages, customs, and systems of authority. During the Age of Exploration, successful contact with Indigenous peoples depended less on military force than on interpreters, cultural brokers, and individuals capable of navigating unfamiliar social norms.[PARAGRAPH:2]European expeditions often relied on translators, missionaries, traders, and adopted intermediaries who could convey intentions, observe protocol, and prevent misunderstandings. Gift exchange, ritual participation, and knowledge of local political structures were essential to securing alliances, trade access, and safe passage. Failures of mediation frequently resulted in conflict, instability, or the collapse of colonial ventures.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4060,11 +4060,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_SUBJUGATION_QUOTE</Tag>
-		<English>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</English>
-		<French>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</French>
-		<German>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</German>
-		<Italian>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</Italian>
-		<Spanish>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</Spanish>
+		<English>"When I give the word, your little town thingy will be bye-bye. Bye-bye!"[PARAGRAPH:2]-Kuzco</English>
+		<French>"When I give the word, your little town thingy will be bye-bye. Bye-bye!"[PARAGRAPH:2]-Kuzco</French>
+		<German>"When I give the word, your little town thingy will be bye-bye. Bye-bye!"[PARAGRAPH:2]-Kuzco</German>
+		<Italian>"When I give the word, your little town thingy will be bye-bye. Bye-bye!"[PARAGRAPH:2]-Kuzco</Italian>
+		<Spanish>"When I give the word, your little town thingy will be bye-bye. Bye-bye!"[PARAGRAPH:2]-Kuzco</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_SUBJUGATION_PEDIA</Tag>
@@ -4412,11 +4412,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_TRADE_ROUTES_QUOTE</Tag>
-		<English>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</English>
-		<French>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</French>
-		<German>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</German>
-		<Italian>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</Italian>
-		<Spanish>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</Spanish>
+		<English>"We know the way."[PARAGRAPH:2]-Opetaia Foa'i</English>
+		<French>"We know the way."[PARAGRAPH:2]-Opetaia Foa'i</French>
+		<German>"We know the way."[PARAGRAPH:2]-Opetaia Foa'i</German>
+		<Italian>"We know the way."[PARAGRAPH:2]-Opetaia Foa'i</Italian>
+		<Spanish>"We know the way."[PARAGRAPH:2]-Opetaia Foa'i</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_TRADE_ROUTES_PEDIA</Tag>

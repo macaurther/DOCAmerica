@@ -477,8 +477,8 @@ iNumCorporations = 8
 
 iNumTechs = 153
 #				2				3				4				5				6				7
-(iHunting,		iIrrigation,	iHerbalism,  	iCultivation,	iLinguistics,	iLandmarks,		iDiving,
-iTrapping,      iKnapping,		iEarthworks,    iCompanionPlanting,iLocalization,iPathfinding,  iFishing,
+(iHunting,		iIrrigation,	iHerbalism,  	iCultivation,	iInterpretation,	iLandmarks,		iDiving,
+iTrapping,      iKnapping,		iEarthworks,    iCompanionPlanting,iMediation,	iPathfinding,  iFishing,
 iTanning, 		iMining, 		iPottery, 		iAgriculture, 	iPastoralism, 	iMythology, 	iDugouts,
 iSmelting,      iMasonry,       iProperty,      iArithmetics,   iCeremony,      iDivination,    iNavigation,
 iGeneralship,	iConstruction,  iMathematics,   iAstronomy,     iWriting,       iPriesthood,    iTradeRoutes,
@@ -502,8 +502,8 @@ iRocketry,		iNuclearPower,	iAfricaAccess,	iRadar,			iAsiaAccess,
 iMultilateralism) = range(iNumTechs)
 
 # Techs that Natives start the game with, but Europeans have to trade for
-lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, iKnapping, iDiving,
-                iTrapping, iPathfinding, iEarthworks, iLocalization, iCompanionPlanting, iHerbalism, iFishing]
+lNativeTechs = [iHunting, iLandmarks, iIrrigation, iInterpretation, iCultivation, iKnapping, iDiving,
+                iTrapping, iPathfinding, iEarthworks, iMediation, iCompanionPlanting, iHerbalism, iFishing]
 # Techs that allow immigration in certain regions
 lImmigraitonTechs = [iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess]
 

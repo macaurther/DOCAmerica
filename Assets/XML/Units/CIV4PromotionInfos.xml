@@ -2342,7 +2342,7 @@
 			<Description>TXT_KEY_PROMOTION_SWAMP_FOX2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_SWAMP_FOX1</PromotionPrereqOr1>
-			<TechPrereq>TECH_HUNTING</TechPrereq>
+			<TechPrereq>TECH_INTERPRETATION</TechPrereq>
 			<FeatureDefenses>
 				<FeatureDefense>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
@@ -2401,7 +2401,7 @@
 			<Help>TXT_KEY_PROMOTION_SWAMP_FOX3_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_SWAMP_FOX2</PromotionPrereqOr1>
-			<TechPrereq>TECH_TRAPPING</TechPrereq>
+			<TechPrereq>TECH_MEDIATION</TechPrereq>
 			<bAlwaysHeal>1</bAlwaysHeal>
 			<FeatureAttacks>
 				<FeatureAttack>

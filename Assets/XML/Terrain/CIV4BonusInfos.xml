@@ -322,6 +322,7 @@
 			<Civilopedia>TXT_KEY_BONUS_MARBLE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_WONDER</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_MARBLE</ArtDefineTag>
+			<TechReveal>TECH_KNAPPING</TechReveal>
 			<TechCityTrade>TECH_MINING</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -424,6 +425,7 @@
 			<Civilopedia>TXT_KEY_BONUS_STONE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_WONDER</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_STONE</ArtDefineTag>
+			<TechReveal>TECH_KNAPPING</TechReveal>
 			<TechCityTrade>TECH_MINING</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -1196,6 +1198,7 @@
 			<Civilopedia>TXT_KEY_BONUS_DYE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_DYE</ArtDefineTag>
+			<TechReveal>TECH_INTERPRETATION</TechReveal>
 			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -1389,6 +1392,7 @@
 			<Civilopedia>TXT_KEY_BONUS_INCENSE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_INCENSE</ArtDefineTag>
+			<TechReveal>TECH_INTERPRETATION</TechReveal>
 			<TechCityTrade>TECH_PRIESTHOOD</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -1552,6 +1556,7 @@
 			<Civilopedia>TXT_KEY_BONUS_RUBBER_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_RUBBER</ArtDefineTag>
+			<TechReveal>TECH_MEDIATION</TechReveal>
 			<TechCityTrade>TECH_CONSTRUCTION</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -1593,6 +1598,7 @@
 			<Civilopedia>TXT_KEY_BONUS_SALT_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SALT</ArtDefineTag>
+			<TechReveal>TECH_LANDMARKS</TechReveal>
 			<TechCityTrade>TECH_MINING</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -1718,6 +1724,7 @@
 			<Civilopedia>TXT_KEY_BONUS_SPICES_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SPICES</ArtDefineTag>
+			<TechReveal>TECH_HERBALISM</TechReveal>
 			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -1813,6 +1820,7 @@
 			<Civilopedia>TXT_KEY_BONUS_TEA_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_TEA</ArtDefineTag>
+			<TechReveal>TECH_HERBALISM</TechReveal>
 			<TechCityTrade>TECH_AESTHETICS</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>

@@ -649,7 +649,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_HARMONY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HARMONY_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_HARMONY_HELP</Help>
-			<TechPrereq>TECH_LOCALIZATION</TechPrereq>
+			<TechPrereq>TECH_MEDIATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Harmony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iExtraHealth>2</iExtraHealth>

@@ -269,7 +269,7 @@ lCivilizations = [
 		iGold=25,
 		lCivics=[iHarmony, iClans],
 		techs=techs.column(2).including(iTanning, iMythology, iDugouts),
-		extraTechs=techs.column(0).including(iHunting, iTrapping, iFishing, iLocalization),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iFishing, iMediation),
 	),
 	Civilization(
 		iInca,
@@ -277,7 +277,7 @@ lCivilizations = [
 		lCivics=[iDespot, iMita, iMindalaes, iConquest],
 		lEnemies=[iWari, iTiwanaku],
 		techs=techs.column(4).including(iConstruction, iMathematics, iWriting, iTradeRoutes, iGeneralship, iAlloys),
-		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting, iLinguistics, iLocalization),
+		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting, iInterpretation, iMediation),
 	),
 	Civilization(
 		iAztec,
@@ -292,7 +292,7 @@ lCivilizations = [
 		iGold=200,
 		lCivics=[iCouncil, iTribalConfederacy, iHarmony, iIntegration],
 		techs=techs.column(3).including(iProperty, iCeremony),
-		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iLinguistics, iLocalization, iFishing),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation, iFishing),
 	),
 	Civilization(
 		iSpain,
@@ -340,7 +340,7 @@ lCivilizations = [
 		iGold=100,
 		lCivics=[iChief, iSubsistance, iHarmony, iNomads],
 		techs=techs.column(3).including(iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks),
-		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iLinguistics, iLocalization),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation),
 	),
 	Civilization(
 		iHawaii,

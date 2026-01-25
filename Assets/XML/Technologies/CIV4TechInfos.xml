@@ -133,10 +133,10 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_LINGUISTICS</Type>
-			<Description>TXT_KEY_TECH_LINGUISTICS</Description>
-			<Civilopedia>TXT_KEY_TECH_LINGUISTICS_PEDIA</Civilopedia>
-			<Help>TXT_KEY_TECH_LINGUISTICS_HELP</Help>
+			<Type>TECH_INTERPRETATION</Type>
+			<Description>TXT_KEY_TECH_INTERPRETATION</Description>
+			<Civilopedia>TXT_KEY_TECH_INTERPRETATION_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_INTERPRETATION_HELP</Help>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iAITradeModifier>900</iAITradeModifier>
 			<iCost>40</iCost>
@@ -157,7 +157,7 @@
 					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
-			<Quote>TXT_KEY_TECH_LINGUISTICS_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_INTERPRETATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Linguistics.dds</Button>
@@ -363,10 +363,10 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_LOCALIZATION</Type>
-			<Description>TXT_KEY_TECH_LOCALIZATION</Description>
-			<Civilopedia>TXT_KEY_TECH_LOCALIZATION_PEDIA</Civilopedia>
-			<Help>TXT_KEY_TECH_LOCALIZATION_HELP</Help>
+			<Type>TECH_MEDIATION</Type>
+			<Description>TXT_KEY_TECH_MEDIATION</Description>
+			<Civilopedia>TXT_KEY_TECH_MEDIATION_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_MEDIATION_HELP</Help>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iAITradeModifier>900</iAITradeModifier>
 			<iCost>60</iCost>
@@ -388,9 +388,9 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_LINGUISTICS</PrereqTech>
+				<PrereqTech>TECH_INTERPRETATION</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_LOCALIZATION_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_MEDIATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Localization.dds</Button>

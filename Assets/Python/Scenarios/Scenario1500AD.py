@@ -16,20 +16,20 @@ lCivilizations = [
 		iMuisca,
 		iGold=175,
 		lCivics=[iAristocrats, iBureaucracy, iCraftsmen, iRedistribution, iHarmony, iIntegration],
-		techs=techs.column(7).including(iArtisanry, iLaw).without(iNavigation, iTrapping, iEarthworks, iLinguistics, iLocalization, iDiving, iFishing)
+		techs=techs.column(7).including(iArtisanry, iLaw).without(iNavigation, iTrapping, iEarthworks, iInterpretation, iMediation, iDiving, iFishing)
 	),
 	Civilization(
 		iNorse,
 		iGold=75,
 		iImmigration=300,
 		lCivics=[iViceroys, iEncomienda, iPlunder, iImperialism],
-		techs=techs.column(10).without(iCartography, iLandmarks, iIrrigation, iLinguistics, iCultivation, iKnapping, iDiving, iTrapping, iPathfinding, iEarthworks, iLocalization, iCompanionPlanting, iHerbalism, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
+		techs=techs.column(10).without(iCartography, iLandmarks, iIrrigation, iInterpretation, iCultivation, iKnapping, iDiving, iTrapping, iPathfinding, iEarthworks, iMediation, iCompanionPlanting, iHerbalism, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
 	),
 	Civilization(
 		iInuit,
 		iGold=50,
 		lCivics=[iDespot, iHarmony, iSacrifice],
-		techs=techs.column(4).including(iCeremony, iSeafaring).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iLinguistics, iLocalization, iCultivation, iCompanionPlanting, iHerbalism)
+		techs=techs.column(4).including(iCeremony, iSeafaring).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iInterpretation, iMediation, iCultivation, iCompanionPlanting, iHerbalism)
 	),
 	Civilization(
 		iInca,
