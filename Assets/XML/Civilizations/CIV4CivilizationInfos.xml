@@ -124,18 +124,6 @@
 					<LeaderName>LEADER_FDR</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
-				<Leader>
-					<LeaderName>LEADER_KENNEDY</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-				<Leader>
-					<LeaderName>LEADER_REAGAN</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-				<Leader>
-					<LeaderName>LEADER_OBAMA</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
 			</Leaders>
 			<DerivativeCiv>CIVILIZATION_ENGLAND</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_AMERICA_SELECT</CivilizationSelectionSound>

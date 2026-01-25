@@ -3250,6 +3250,19 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 						}
 					}
 
+					// MacAurther: Pentagon Effect
+					if (eBuild != NO_BUILD && GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_PENTAGON))
+					{
+						if (GC.getBuildInfo(eBuild).getTechPrereq() == INFRASTRUCTURE)
+						{
+							iNowWorkRate *= 150;
+							iNowWorkRate /= 100;
+							
+							iThenWorkRate *= 150;
+							iThenWorkRate /= 100;
+						}
+					}
+
 					// MacAurther: Portuguese UP
 					if (eBuild != NO_BUILD && GET_PLAYER(pSelectedUnit->getOwner()).getCivilizationType() == PORTUGAL && eBuild != BUILD_CONTACT_TRIBE &&
 						pMissionPlot->getBonusType() != NO_BONUS && GET_TEAM(GET_PLAYER(pSelectedUnit->getOwner()).getTeam()).isHasTech((TechTypes)GC.getBonusInfo(pMissionPlot->getBonusType()).getTechReveal()))

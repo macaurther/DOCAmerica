@@ -470,14 +470,6 @@
 		<Spanish>Chateau Frontenac</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_FRONTENAC_HELP</Tag>
-		<English>[ICON_BULLET]+50% building speed for Railroads</English>
-		<French>[ICON_BULLET]Les ouvriers construisent les chemins de fer +50% rapidement</French>
-		<German>[ICON_BULLET]+50% Baugeschwindigkeit f&#252;r Schienen</German>
-		<Italian>[ICON_BULLET]+50% building speed for Railroads</Italian>
-		<Spanish>[ICON_BULLET]+50% building speed for Railroads</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FRONTENAC_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] gives all cities in your civilization one free specialist.</English>
 		<French>[COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] gives all cities in your civilization one free specialist.</French>
@@ -520,8 +512,8 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BILTMORE_ESTATE_HELP</Tag>
 		<English>[ICON_BULLET]+50% building speed for Railroads</English>
-		<French>[ICON_BULLET]+50% building speed for Railroads</French>
-		<German>[ICON_BULLET]+50% building speed for Railroads</German>
+		<French>[ICON_BULLET]Les ouvriers construisent les chemins de fer +50% rapidement</French>
+		<German>[ICON_BULLET]+50% Baugeschwindigkeit f&#252;r Schienen</German>
 		<Italian>[ICON_BULLET]+50% building speed for Railroads</Italian>
 		<Spanish>[ICON_BULLET]+50% building speed for Railroads</Spanish>
 	</TEXT>
@@ -1076,6 +1068,14 @@
 		<German>The [COLOR_BUILDING_TEXT]Kalasasaya[COLOR_REVERT], increases [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate, and provides a free Plaza in every city.</German>
 		<Italian>The [COLOR_BUILDING_TEXT]Kalasasaya[COLOR_REVERT], increases [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate, and provides a free Plaza in every city.</Italian>
 		<Spanish>The [COLOR_BUILDING_TEXT]Kalasasaya[COLOR_REVERT], increases [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate, and provides a free Plaza in every city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PENTAGON_HELP</Tag>
+		<English>[ICON_BULLET]+50% building speed for Highways</English>
+		<French>[ICON_BULLET]+50% building speed for Highways</French>
+		<German>[ICON_BULLET]+50% building speed for Highways</German>
+		<Italian>[ICON_BULLET]+50% building speed for Highways</Italian>
+		<Spanish>[ICON_BULLET]+50% building speed for Highways</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>

@@ -1924,11 +1924,11 @@
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_BANK</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
+					<iProductionModifier>200</iProductionModifier>
 				</BuildingProductionModifier>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_UNIVERSITY</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
+					<iProductionModifier>200</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_ROBBER_BARONS</WeLoveTheKing>

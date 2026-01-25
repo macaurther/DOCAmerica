@@ -7328,6 +7328,16 @@ bool CvUnit::build(BuildTypes eBuild)
 		}
 	}
 
+	// MacAurther: Pentagon effect
+	if (eBuild != NO_BUILD && GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_PENTAGON))
+	{
+		if (GC.getBuildInfo(eBuild).getTechPrereq() == INFRASTRUCTURE)
+		{
+			iWorkRate *= 150;
+			iWorkRate /= 100;
+		}
+	}
+
 	// MacAurther: Portuguese UP
 	if (eBuild != NO_BUILD && GET_PLAYER(getOwner()).getCivilizationType() == PORTUGAL && plot()->getBonusType() != NO_BONUS && eBuild != BUILD_CONTACT_TRIBE &&
 		GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)GC.getBonusInfo(plot()->getBonusType()).getTechReveal()))

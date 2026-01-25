@@ -8574,7 +8574,7 @@
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<iAIWeight>200</iAIWeight>
-			<iCost>800</iCost>
+			<iCost>600</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8599,6 +8599,12 @@
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_MARBLE</BonusType>
+					<iProductonModifier>100</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>

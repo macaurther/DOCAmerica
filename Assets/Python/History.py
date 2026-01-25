@@ -188,24 +188,24 @@ def expeditionaryForce(iGameTurn):
 			return
 
 		if iRevolutionaryCiv == iAmerica:
-			tExpeditionarySpawn = (45, 84)
+			tExpeditionarySpawn = (50, 92)
 			iExpeditionaryPlayer = slot(iEngland)
 		elif iRevolutionaryCiv == iHaiti:
-			tExpeditionarySpawn = (36, 56)
+			tExpeditionarySpawn = (53, 66)
 			iExpeditionaryPlayer = slot(iFrance)
 		# The Spanish revolutionary wars were more about taking land away from Spain instead of a Spanish expeditionary force, so I guess this doesn't really fit for them
 		# Also, at least in the 1750 AD Scenario, Spain is pretty buff already
 		#elif iRevolutionaryCiv == iArgentina:
-		#	tExpeditionarySpawn = (23, 8)
+		#	tExpeditionarySpawn = (59, 14)
 		#	iExpeditionaryPlayer = slot(iSpain)
 		#elif iRevolutionaryCiv == iMexico:
-		#	tExpeditionarySpawn = (16, 64)
+		#	tExpeditionarySpawn = (27, 68)
 		#	iExpeditionaryPlayer = slot(iSpain)
 		#elif iRevolutionaryCiv == iColombia:
-		#	tExpeditionarySpawn = (31, 48)
+		#	tExpeditionarySpawn = (14, 46)
 		#	iExpeditionaryPlayer = slot(iSpain)
 		#elif iRevolutionaryCiv == iPeru:
-		#	tExpeditionarySpawn = (20, 30)
+		#	tExpeditionarySpawn = (44, 35)
 		#	iExpeditionaryPlayer = slot(iSpain)
 		else:
 			return
@@ -250,8 +250,8 @@ def expeditionaryForce(iGameTurn):
 		}
 		
 		dExpeditionUnits = {
-			iBase: 6 + iModifier2,
-			iCounter: 4 + iModifier1,
+			iAttack: 6 + iModifier2,
+			iShock: 4 + iModifier1,
 			iSkirmish: 4 + iModifier1 + iModifier2,
 			iCitySiege: 4 + iModifier1,
 		}

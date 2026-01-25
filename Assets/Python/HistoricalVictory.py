@@ -313,12 +313,12 @@ dGoals = {
 	),
 	iHawaii: (
 		UnitCount(iCannon, 1, by=1790),
-		AreaPercent(plots.regions(rHawaii).named(HAWAII), 100, by=1810),
+		AreaPercent(plots.regions(rHawaii).named(HAWAII), 100, at=1810),
 		All(
 			CitySpecialistCount(start(iHawaii).named(HILO), iSpecialistGreatArtist, 1),
 			CitySpecialistCount(start(iHawaii).named(HILO), iSpecialistGreatMerchant, 1),
 			CitySpecialistCount(start(iHawaii).named(HILO), iSpecialistGreatGeneral, 1),
-			at=1890,
+			by=1890,
 		)
 	),
 	iRussia: (
@@ -332,11 +332,7 @@ dGoals = {
 			plots.regions(*lAmerica).named(AMERICA),
 			at=1900,
 		),
-		All(
-			ImmigrationSpent(1000000),
-			BuildingCount(wonders(), 10),
-			by=1920
-		),
+		BuildingCount(wonders(), 10, by=1930),
 		All(
 			FreedSlaves(50),
 			BuildingCount(iStateHouse, 50),
