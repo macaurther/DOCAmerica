@@ -2800,7 +2800,7 @@
 		<Spanish>[TAB]Settlement in pre-Columbian Americas was characterized by diverse and sophisticated systems of land use, community organization, and environmental adaptation across various regions and cultures. Early migrations from Asia via the Bering Land Bridge led to the initial peopling of the Americas over 15,000 years ago, with hunter-gatherer societies establishing temporary camps and seasonal settlements. By around 2000 BCE, these communities began to transition to more permanent agricultural settlements, particularly in Mesoamerica, where civilizations like the Olmec and Maya developed complex urban centers with monumental architecture, sophisticated agricultural techniques, and intricate social hierarchies. In the Andes, the Nazca and Moche cultures constructed extensive irrigation systems and established large, organized settlements. The Mississippian culture, flourishing from 800 CE to 1600 CE, built extensive earthen mounds and developed large, densely populated urban centers such as Cahokia. In the Pacific Northwest, cultures like the Haida and Tlingit created permanent villages along the coast, centered around fishing, hunting, and gathering. These early settlements laid the foundations for the diverse and highly organized societies that existed across the continent before European contact, showcasing advanced methods of environmental management, social organization, and cultural expression.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_NOMADS_PEDIA</Tag>
+		<Tag>TXT_KEY_CIVIC_NOMADIC_PEDIA</Tag>
 		<English>[TAB]In pre-Columbian Americas, nomadic lifestyles were prevalent among several Indigenous groups who adapted to diverse environments ranging from the Great Plains to the Arctic tundra. Nomadic tribes such as the Apache, Comanche, and Sioux of the Great Plains relied on hunting, gathering, and seasonal movements to follow migrating herds of bison, deer, and other game animals. These societies developed portable dwellings like tipis and wickiups that could be easily disassembled and transported. In the Southwest, the Navajo and Ute peoples moved seasonally to take advantage of different resources such as wild plants, seeds, and small game. Arctic and Subarctic peoples such as the Inuit and Aleut were also nomadic, hunting marine mammals and migratory birds across vast territories of ice and tundra. Despite their mobility, these nomadic cultures developed sophisticated knowledge of their environments, innovative technologies for survival, and intricate social structures that facilitated cooperation during migrations and seasonal gatherings. Their lifestyles were integral to their cultural identities and sustainable use of the diverse ecosystems they inhabited.</English>
 		<French>[TAB]In pre-Columbian Americas, nomadic lifestyles were prevalent among several Indigenous groups who adapted to diverse environments ranging from the Great Plains to the Arctic tundra. Nomadic tribes such as the Apache, Comanche, and Sioux of the Great Plains relied on hunting, gathering, and seasonal movements to follow migrating herds of bison, deer, and other game animals. These societies developed portable dwellings like tipis and wickiups that could be easily disassembled and transported. In the Southwest, the Navajo and Ute peoples moved seasonally to take advantage of different resources such as wild plants, seeds, and small game. Arctic and Subarctic peoples such as the Inuit and Aleut were also nomadic, hunting marine mammals and migratory birds across vast territories of ice and tundra. Despite their mobility, these nomadic cultures developed sophisticated knowledge of their environments, innovative technologies for survival, and intricate social structures that facilitated cooperation during migrations and seasonal gatherings. Their lifestyles were integral to their cultural identities and sustainable use of the diverse ecosystems they inhabited.</French>
 		<German>[TAB]In pre-Columbian Americas, nomadic lifestyles were prevalent among several Indigenous groups who adapted to diverse environments ranging from the Great Plains to the Arctic tundra. Nomadic tribes such as the Apache, Comanche, and Sioux of the Great Plains relied on hunting, gathering, and seasonal movements to follow migrating herds of bison, deer, and other game animals. These societies developed portable dwellings like tipis and wickiups that could be easily disassembled and transported. In the Southwest, the Navajo and Ute peoples moved seasonally to take advantage of different resources such as wild plants, seeds, and small game. Arctic and Subarctic peoples such as the Inuit and Aleut were also nomadic, hunting marine mammals and migratory birds across vast territories of ice and tundra. Despite their mobility, these nomadic cultures developed sophisticated knowledge of their environments, innovative technologies for survival, and intricate social structures that facilitated cooperation during migrations and seasonal gatherings. Their lifestyles were integral to their cultural identities and sustainable use of the diverse ecosystems they inhabited.</German>
@@ -4568,13 +4568,13 @@ Your stability level can change during a stability check. As long it is higher t
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCAINTRO_PEDIA</Tag>
-		<English>[H1]Welcome to Dawn of Civilization: America[\H1][PARAGRAPH:2]Dawn of Civilzation: America (DoCA) is a ModModMod of Dawn of Civilization and Rhye's and Fall of Civilization. It focuses on the time period between 500 BCE and 1950 CE in the Western Hemisphere. It includes a custom map, custom civilizations, unique powers, buildings, units, technologies, civics, and mechanics. Read up on the new mechanics in DoCA in Section 3 of the Concepts pages.</English>
+		<English>[H1]Welcome to Dawn of Civilization: America[\H1][PARAGRAPH:2]Dawn of Civilzation: America (DoCA) is a ModModMod of Dawn of Civilization and Rhye's and Fall of Civilization. It focuses on the time period between 1 CE and 1950 CE in the Western Hemisphere. It includes a custom map, custom civilizations, unique powers, buildings, units, technologies, civics, and mechanics. Read up on the new mechanics in DoCA in Section 3 of the Concepts pages.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_REGIONAL_POWERS_PEDIA</Tag>
 		<English>[H1]Regional Powers[\H1][PARAGRAPH:2]In Dawn of Civilization: America, every Civilization has a [BOLD]Unique Power[\BOLD] as well as a [BOLD]Regional Power[\BOLD]. Unlike [BOLD]Unique Powers[\BOLD], [BOLD]Regional Powers[\BOLD] are not unique to a Civilization, but are intead unique to a group of Civilizations from a common region. The different [BOLD]Regional Powers[\BOLD] are:
-[NEWLINE][ICON_BULLET][BOLD]Andes:[\BOLD] Can build farms on hills and +1 [ICON_FOOD] on farmed hills
-[TAB]Details: Allows the Farm improvement to be built on hills. Farms still require irrigation.
+[NEWLINE][ICON_BULLET][BOLD]Andes:[\BOLD] Can build farms on hills and peaks within borders area treated like hills
+[TAB]Details: Allows the Farm improvement to be built on hills. Farms still require irrigation. Peaks within borders can be traversed and have improvements constructed on them as if they were hills.
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_CHIMU]Chimu[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_INCA]Inca[\LINK]
@@ -4582,8 +4582,8 @@ Your stability level can change during a stability check. As long it is higher t
 [TAB][ICON_BULLET][LINK=CIVILIZATION_TIWANAKU]Tiwanaku[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_WARI]Wari[\LINK]
 [NEWLINE]
-[ICON_BULLET][BOLD]Anglo America:[\BOLD] Can hire Great People with Immigration
-[TAB]Details: Use generated [ICON_IMMIGRATION] ([LINK=CONCEPT_IMMIGRATION]Immigration[\LINK]) to hire Great People from abroad.
+[ICON_BULLET][BOLD]Anglo America:[\BOLD] +1 [ICON_COMMERCE] and [ICON_GREATPEOPLE] from Immigrants
+[TAB]Details: Immigrant specialists (see [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK]) generate additional [ICON_COMMERCE] and [ICON_GREATPEOPLE].
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_AMERICA]America[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_CANADA]Canada[\LINK]
@@ -4593,13 +4593,13 @@ Your stability level can change during a stability check. As long it is higher t
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_INUIT]Inuit[\LINK]
 [NEWLINE]
-[ICON_BULLET][BOLD]Plateau:[\BOLD] Cities start with improved infrastructure
+[ICON_BULLET][BOLD]Desert:[\BOLD] Cities start with improved infrastructure
 [TAB]Details: Each founded city starts with a Granary, Market, and Stoneworks.
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_PUEBLO]Pueblo[\LINK]
 [NEWLINE]
-[ICON_BULLET][BOLD]Europe:[\BOLD] No Core area, receive free stability, and can hire military units with [ICON_IMMIGRATION]
-[TAB]Details: You have no Core area. Instead, you are given bonus [LINK=CONCEPT_STABILITY]stability[\LINK] based on your home country's historical size. After the Revolutionary Era, this stability bonus decreases. Additionally, you can hire military units from Europe with [LINK=CONCEPT_STABILITY]Immigration[\LINK].
+[ICON_BULLET][BOLD]Europe:[\BOLD] No Core area and receive free stability
+[TAB]Details: You have no Core area. Instead, you are given bonus [LINK=CONCEPT_STABILITY]stability[\LINK] based on your home country's historical size. After the Revolutionary Era, this stability bonus decreases.
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_ENGLAND]England[\LINK]
 [TAB][TAB][ICON_BULLET]Bonus Stability: 10
@@ -4629,8 +4629,8 @@ Your stability level can change during a stability check. As long it is higher t
 [TAB][ICON_BULLET][LINK=CIVILIZATION_HAUDENOSAUNEE]Haudenosaunee[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_MISSISSIPPI]Mississippi[\LINK]
 [NEWLINE]
-[ICON_BULLET][BOLD]Latin America:[\BOLD] +3[ICON_HAPPY] from Catholic Church
-[TAB]Details: Catholic Churches provide extra Happiness. Your State Religion does not have to be Catholicism.
+[ICON_BULLET][BOLD]Latin America:[\BOLD] Buildings are not obsoleted
+[TAB]Details: You may construct buildings that are obsoleted, including wonders. If you control previously constructed, obsolete buildings, their effects will be active.
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_ARGENTINA]Argentina[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_BRAZIL]Brazil[\LINK]
@@ -4640,8 +4640,8 @@ Your stability level can change during a stability check. As long it is higher t
 [TAB][ICON_BULLET][LINK=CIVILIZATION_PERU]Peru[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_VENEZUELA]Venezuela[\LINK]
 [NEWLINE]
-[ICON_BULLET][BOLD]Mesoamerica:[\BOLD] Military units can enslave defeated enemy units, can sacrifice slaves to increase city happiness
-[TAB]Details: Identical to the Aztec UP from base RFC. Now, all native Mesoamerican Civilizations share this power.
+[ICON_BULLET][BOLD]Mesoamerica:[\BOLD] +25% Slave Capture
+[TAB]Details: Each of your military units have increased Slave Capture chance, additive with other effects. Slave Capture chance triggers on victory over another unit and the pillaging of Tribes.
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_AZTEC]Aztec[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_MAYA]Maya[\LINK]
@@ -4662,56 +4662,57 @@ Your stability level can change during a stability check. As long it is higher t
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TRIBES_PEDIA</Tag>
 		<English>[H1]Tribes[\H1][PARAGRAPH:2]In Dawn of Civilization: America, Tribal Villages (also known as Goody Huts or just Huts) are replaced with Tribes. There are two types of Tribes:
-[NEWLINE][ICON_BULLET][LINK=IMPROVEMENT_TRIBE]Tribe[\LINK]: An Amerindian tribe that has yet to be contacted by Europeans.
-[ICON_BULLET][LINK=IMPROVEMENT_CONTACTED_TRIBE]Contacted Tribe[\LINK]: An Amerindian tribe that has been contacted by Europeans.
-[PARAGRAPH:1]At the beginning of the game, the map is fairly densely populated by Tribes, roughly corresponding to known Amerindian tribes at the time they were contacted by Europeans, usually between 1500 and 1600 AD. Every 5 turns, an additional Tribe spawns randomly on the map. The main features of Tribes are:
-[NEWLINE][ICON_BULLET]Tribes are no longer simply removed by moving a unit onto them, nor are they removed by cultural border growth. A Tribe can exist within your borders.
-[ICON_BULLET]Tribes can be removed by pillaging; however, the inhabitants of that Tribe will rise up to resist you.
-[ICON_BULLET]Tribes work the land they're on, decreasing yields available to civilizations with Tribes within their borders.
-[H2]Pre-Columbian Interactions:[\H2]
-[ICON_BULLET]Native Civilizations can adopt the [LINK=CIVIC_TRIBAL_CONFEDERACY]Confederacy Civic[\LINK] to turn Tribes into Cottages or relevant Resource Improvements.
-[ICON_BULLET]Some Civics increased Tribes' yields.
-[ICON_BULLET]With the [LINK=CIVIC_NOMADS]Nomads Civic[\LINK], you can migrate your cities on top of Tribes, which removes them peacefully.
-[H2]European Interactions:[\H2]
-[ICON_BULLET]Contacted Tribes can be Converted by expending a Missionary. This counts as a religion spread. Converted Tribes turn into the Improvement for the bonus they're on, or a [LINK=IMPROVEMENT_COTTAGE]Cottage[\LINK] if their tile has no bonus. 
-[ICON_BULLET]Some Civics negate Contacted Tribes' decrease in yields.
+[NEWLINE][ICON_BULLET][LINK=IMPROVEMENT_TRIBE]Tribe[\LINK]: An indigenous tribe that has yet to be contacted by Europeans.
+[ICON_BULLET][LINK=IMPROVEMENT_CONTACTED_TRIBE]Contacted Tribe[\LINK]: An indigenous tribe that has been contacted by Europeans.
+[PARAGRAPH:1]At the beginning of the game, Tribes are randomly dispersed throughout the map based on availability of local food. Tribes cannot be created after the game begins. The main features of Tribes are:
+[NEWLINE][ICON_BULLET]Tribes are no longer simply removed by moving a unit onto them, nor are they removed by cultural border growth.
+[ICON_BULLET]Tribes can be removed by pillaging.
+[ICON_BULLET]Tribes own the land they're on, meaning civilizations cannot work tiles with Tribes.
+[ICON_BULLET]Tribes now count as cities (like Forts), giving defending units city defense bonuses (i.e. Archers, Militia, etc.).
+[H2]Tribe Defenders:[\H2]
+[ICON_BULLET]Tribes allow the passage of units that cannot pillage, such as civilian units and most recon units. 
+[ICON_BULLET]Tribes forbid the passage of units that can pillage. If a unit that can pillage attempts to enter their plot, the tribe's warriors will take arms and defend their homes.
+[ICON_BULLET]Tribe defenders will return to their homes after a period of time if not attacked again.
+[ICON_BULLET]Tribe defenders replenish natrually over time. If a Tribe takes multiple turns to invade, it may replenish a warrior or two.
+[ICON_BULLET]Tribe defenders become more numerous and more advanced over time and differ between specific regions. Tribes can even spawn unique units if within the historical area of that unit's civilization.
+[ICON_BULLET]Tribe defenders will never leave their tribe, not even to capture an adjacent, undefended worker.
+[ICON_BULLET]If a Tribe's defenders are defeated, that Tribe can be pillaged and removed from the game.
+[H2]Native Interactions:[\H2]
+[PARAGRAPH:1]When playing as a Native Civilization, the number of options for interacting/removing Tribes is limited:
+[ICON_BULLET]Tribes can be conquered and pillaged as normal.
+[ICON_BULLET]With the [LINK=CIVIC_NOMADIC]Nomadic[\LINK] AND [LINK=CIVIC_CHIEF]Chief[\LINK] civics together, you can migrate your cities on top of Tribes, which removes them peacefully.
+[ICON_BULLET]With the [LINK=CIVIC_TRIBAL_CONFEDERACY]Tribal Confederacy[\LINK] civic, you can bribe Indigenous defenders with a Spy to have them join your side.
+[H2]Colony/Nation Interactions:[\H2]
+[PARAGRAPH:1]When playing as a Colony or Nation Civilization, the number of options for interacting/removing Tribes is slightly greater:
+[ICON_BULLET]Tribes can be conquered and pillaged as normal.
 [ICON_BULLET]Tribes can be 'contacted' by moving an [LINK=UNIT_EXPLORER]Explorer[\LINK] or [LINK=UNIT_RANGER]Ranger[\LINK] to them, and performing the Contact action. The Tribe then becomes a Contacted Tribe and gives you a gift (equivalent to Goody rewards).
-[ICON_BULLET]Contacting Tribes costs [ICON_COMMERCE]. The [LINK=TECH_INTERPRETATION]Linguistics[\LINK] and the [LINK=TECH_INTERPRETATION]Localization[\LINK] [LINK=CONCEPT_NATIVE_TECHS]Native Technologies[\LINK] reduce the cost to Contact. 
-		</English>
-	</TEXT>
-		<TEXT>
-		<Tag>TXT_KEY_CONCEPT_NATIVE_TECHS_PEDIA</Tag>
-		<English>[H1]Native Technologies[\H1][PARAGRAPH:2]Amerindian peoples had lived in the Americas for at least 14,000 years prior to the arrival of Europeans, and they know their land well. They posses knowledge of the locations of mineral deposits, how to track certain animals, and how to cultivate certain crops. This knowledge is inherant to a Native Civilization; however, if you are playing as a European civilization, you will need to obtain it somehow.
-		[PARAGRAPH:1]In Dawn of Civilization: America, the first two columns of Technologies are the "Native Technologies", which represent generational knowledge Native civilizations have about their land and peoples.
-[NEWLINE][ICON_BULLET]Native Techs cannot be researched.
-[ICON_BULLET]Each Native American civilization starts with some of the Native Techs.
-[ICON_BULLET]Native Techs can be traded and stolen by spies.
-[ICON_BULLET]One random Native Tech is granted to the conqueror of a Native city (if it is not razed).
-[PARAGRAPH:1]Native Techs confer one of three types of advantages:
-[ICON_BULLET]Reveals the location of certain resources, such Gold and Corn.
-[ICON_BULLET]Allows additional promotions.
-[ICON_BULLET]Reduces the [ICON_COMMERCE] cost to contact [LINK=CONCEPT_TRIBES]Tribes[\LINK].
-[PARAGRAPH:1](Hint): As a European exploring the content, it might be wise to seek out the [LINK=TECH_INTERPRETATION]Linguistics[\LINK] and the [LINK=TECH_INTERPRETATION]Localization[\LINK] techs to make exploration cheaper.
+[ICON_BULLET]Contacting Tribes costs [ICON_GOLD]. The [LINK=TECH_INTERPRETATION]Linguistics[\LINK] and the [LINK=TECH_INTERPRETATION]Localization[\LINK] technologies reduce the cost to Contact. 
+[ICON_BULLET]Contacted Tribes can be Converted by expending a Missionary. This counts as a religion spread. Converted Tribes turn into the Improvement for the bonus they're on, or a [LINK=IMPROVEMENT_COTTAGE]Cottage[\LINK] if their tile has no bonus. 
 		</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_IMMIGRATION_PEDIA</Tag>
-		<English>[H1]Immigration[\H1][PARAGRAPH:2]In Dawn of Civilization: America, Immigration has be reworked from regular Dawn of Civilization. Previously, every few turns, Immigrant populations moved from a less desireable city to a more desirable one; however, in DoC: America, there are no Old World cities from which citizens can emmigrate. In an effort to create a more interactive Immigration system, which more decisions done by the player, the Mercenaries Mod by The Lopez (which was present in base Rhye's and Fall) has been partially reincorporated.
+		<English>[H1]Immigration[\H1][PARAGRAPH:2]In Dawn of Civilization: America, Immigration has be reworked from regular Dawn of Civilization. Previously, every few turns, Immigrant populations moved from a less desireable city to a more desirable one; however, in DoC: America, there are no Old World cities from which citizens can emmigrate. In an effort to create a more interactive Immigration system, with more decisions done by the player, the Mercenaries Mod by The Lopez (which was present in base Rhye's and Fall) has been partially reincorporated and greatly modified.
 [PARAGRAPH:2]The new Immigration system no longer moves population around. Instead, it introduces a new commerce type, Immigration ([ICON_IMMIGRATION]). Immigration is generated by:
 [NEWLINE][ICON_BULLET]Buildings - certain buildings and Wonders can increase Immigration rate (ex: [LINK=BUILDING_HARBOR]Harbor[\LINK])
-[ICON_BULLET]Civics - certain Civics increase or decrease Immigration rate (ex: [LINK=CIVIC_OPPORTUNITY]Opportunity[\LINK])
-[ICON_BULLET]Unique Powers - Some Unique Powers increase Immigration rate (ex: [LINK=CIVILIZATION_ENGLAND]England[\LINK])
-[ICON_BULLET]Events - Certain events give lump sums of Immigration (ex: first European contact with Native empires)
-[PARAGRAPH:1]Immigration is generated and accumlated globally each turn, similar to [ICON_GOLD]. It can be spent in the new Immigration Manager window. The Immigration screen can be accessed by clicking the small Immigration icon in the upper left of the screen or by pressing "M". Here you can hire foreign units to be your colonists or expeditionary force. You must have the [LINK=TECH_MEDIEVAL_CULTURE]Old World Culture[\LINK] to hire Immigrants.
-[H2]Hiring Immigrants[\H2][PARAGRAPH:1]Immigrants come in three types: Colonists, Expeditionaries, and Endowments. Colonists are civilian units and transport ships, Expeditionaries are military units, and Endowments are special bonuses. To hire an Immigrant, press the Hire button next to the Immigrant you wish to hire. Immigrants that you can't hire will not show a hire button. To hire a land unit, you need at least one ship with free capacity on either the East or West edge of the map. Newly hired land Immigrants will appear on the western-most ship with capacity you have on the sides of the map. For every Immigrant you hire, subsequent hires will be 10% more expensive; additionally, subsequent hires of that type become an additional 10% more expensive (Types are categories such as Workers, Militia, or Mainline Infantry). It may be wise to diversify your hirings.
-[H2]Immigrant Cost[\H2][PARAGRAPH:1]Notice your current balance in the top left of the Immigration window: this shows you current Gold [ICON_GOLD] and Immigration [ICON_IMMIGRATION] reserves. When hiring Immigrants, your [ICON_IMMIGRATION] pool will be prioritized over your [ICON_GOLD]. If you have enough [ICON_IMMIGRATION] to hire an Immigrant outright, 100% of its cost will be deducted from your [ICON_IMMIGRATION] total. If you have some but not enough [ICON_IMMIGRATION], some of the cost will come from your [ICON_GOLD], at a conversion rate of 2[ICON_GOLD] to 1[ICON_IMMIGRATION]. Note: Expeditionaries cannot be hired with [ICON_IMMIGRATION] unless you are playing as a Colony.
-[H2]Mercenaries[\H2][PARAGRAPH:1]If any [ICON_GOLD] was used to buy an Immigrant, it will be considered a Mercenary. Mercenaries cost an additional 2 [ICON_GOLD] of maintenance per turn. The gold cost to buy Mercenaries can be reduced and the maintenance can be eliminated by running the [LINK=CIVIC_PROPRIETORS]Proprietaries[\LINK] civic.
+[ICON_BULLET]Civics - certain Civics increase or decrease Immigration production (ex: [LINK=CIVIC_OPPORTUNITY]Opportunity[\LINK])
+[ICON_BULLET]Unique Powers - Some Unique Powers boost Immigration (ex: [LINK=CIVILIZATION_ENGLAND]England[\LINK])
+[ICON_BULLET]Events - Certain events give lump sums of Immigration (ex: contacting a tribe with a [LINK=UNIT_FRENCH_COUREUR_DES_BOIS]Coureur des Bois[\LINK]).
+[PARAGRAPH:1]Immigration is generated and accumlated globally each turn, similar to [ICON_GOLD]. Your current [ICON_IMMIGRATION] can be inspected in the new Immigration Manager window. The Immigration screen can be accessed by clicking the small Immigration icon in the upper left of the screen or by pressing "M". Here you can manage your Immigrants ([ICON_IMMIGRANT]) on the docks of far away lands, or even hire Mercenaries to bolster your forces.
+[H2]Homelands[\H2]
+[PARAGRAPH:1]There are five different Homelands from which Immigrants and Mercenaries come: North Europe, South Europe, Africa, Siberia, and Asia, each with their own unique set of Immigrants and Mercenaries. In order to hire units from a Homeland, you must have a ship with capacity on that Homeland's respective "Tradewind". In order to earn Immigrants from a Homeland, you must have that Homeland's associate "Access Technology."
+[PARAGRAPH:1]Tradewinds are a new map feature that are identified by a uniquely colored hash overlay. They typically exist around the Eastern and Western edges of the map. They represent areas where a ship can continue its journey on to foreign docks. Entering a Tradewind consumes all of a ship's movement.
+[PARAGRAPH:1]Access Technologies are Technologies that allow accumulated [ICON_IMMIGRATION] to be redeemed for [ICON_IMMIGRANT]. If you want to receive [ICON_IMMIGRANT] from North Europe, for example, you'll first need [LINK=TECH_NORTH_EUROPE_ACCESS]North Europe Access[\LINK]. If you're playing as a Civilization that uses Immigration, you will likely start with the Access technology that best corresponds with your Civilization (i.e. Siberia Access for Russia, or North and South European Access technologies for France). Additional Access Technologies can only be researched by Nations (see [LINK=TXT_KEY_CONCEPT_DOCA_CULTURE_GROUPS_PEDIA]Culture Groups[\LINK]), but can be traded once researched.
+[PARAGRAPH:1]Once you have an Access technology and are generating [ICON_IMMIGRATION], the process to earn [ICON_IMMIGRANT] is similar to Civilization: Colonization - once you surpass a threshold in accumulated [ICON_IMMIGRATION], you will be granted an [ICON_IMMIGRANT] on the docks of a Homeland. If you have multiple Access technologies, that [ICON_IMMIGRANT] will go to the Homeland with the lowest threshold. Thresholds increase across each Homeland for every [ICON_IMMIGRANT] you earn, and increase faster in Homelands where you've earned [ICON_IMMIGRANT]. If you have much more [ICON_IMMIGRATION] than your [ICON_IMMIGRATION] threshold, you can receive multiple [ICON_IMMIGRANT] in one turn.
+[PARAGRAPH:1]Earned [ICON_IMMIGRANT] will dutifully sit on the docks until you pick them up with a ship. Once embarked, [ICON_IMMIGRANT] becomes the [LINK=UNIT_IMMIGRANT]Immigrant[\LINK] unit, which can be settled in a city as an [LINK=SPECIALIST_IMMIGRANT]Immigrant Specialist[\LINK], or expended for a small [ICON_CULTURE] boost. Settling an Immigrant represents the formation of a small immigrant community that consumes [ICON_IMMIGRATION] in return for growth, or [ICON_FOOD]. In order to settle an Immigrant, a city will need to be generating excess [ICON_IMMIGRATION].
+[PARAGRAPH:1]Alternatively, earned [ICON_IMMIGRANT] can be converted to other useful units, like Settlers, Workers, and Missionaries. You can check the exchange rate in the Immigration Manager. It may be wise to save up on [ICON_IMMIGRANT] instead of settling them, especially because, in DoC America, Settlers cost 1 Population to train.
+[PARAGRAPH:1]Lastly, Mercenaries can be hired across all Homelands. Like base DoC, Mercenaries cost additional [ICON_GOLD] upkeep. Different homelands have different offerings of Mercenaries, and some Homelands have unique units that can be obtained with [ICON_IMMIGRANT] or [ICON_GOLD], like [LINK=UNIT_TRACKMAN]Trackmen[\LINK] from Asia and [LINK=UNIT_CHATTLE_SLAVE]Slaves[\LINK] from Africa.
 		</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCA_FORTS_PEDIA</Tag>
 		<English>[H1]Forts[\H1][PARAGRAPH:2]In Dawn of Civilization: America, [LINK=IMPROVEMENT_FORT]Forts[\LINK] claim territory when they are built. 
-[NEWLINE][ICON_BULLET]Upon construction, a Fort claims any unclaimed territory within a certain range (determined by Technologies and Unique Powers).
+[NEWLINE][ICON_BULLET]Upon construction, a Fort claims any unclaimed territory within a certain range (determined by Technologies).
 [ICON_BULLET]At first, it only claims adjacent tiles, but it can claim a Big-Fat-Cross once [LINK=TECH_SURVEYING]Surveying[\LINK] is researched. 
 [ICON_BULLET]Any territory claimed by a Fort remains in control of the Fort constructor until that Fort is destroyed (by razing). Even overwhelming Culture cannot override a Fort's claim.
 [ICON_BULLET]Capture enemy forts by occupying it with a unit.
@@ -4721,10 +4722,22 @@ Your stability level can change during a stability check. As long it is higher t
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCA_CULTURE_GROUPS_PEDIA</Tag>
-		<English>[H1]Culture Groups and Capitals[\H1]
-[ICON_BULLET]All Civilization are split into three Culture Groups: Natives, Colonies, and Nations. Natives are Civilizations that are native to the Americas, such as the Maya and Mississippi. Colonies are Civilizations that are made up of immigrants, mainly from Europe, and are ruled from a foreign land. Nations are Civilizations comprised of both immigrants and indigenous that are ruled domestically.
-[ICON_BULLET]Each Culture Group has their own unique set of civics.
-[ICON_BULLET]There are unique Capital buildings, and each Culture Group has its own type of center of government. Natives have Chieftan's Huts or Palaces, Colonies have Governor's Mansions, and Nations have Capitols.
+		<English>[H1]Culture Groups[\H1]
+[PARAGRAPH:1]All Civilization are split into three Culture Groups: Natives, Colonies, or Nations. 
+[ICON_BULLET]Natives: Civilizations that are native to the Americas, such as the Maya and Mississippi. 
+[ICON_BULLET]Colonies: Civilizations that are made up of immigrants or subjugated natives and are ruled from a foreign land, such as England and Spain.
+[ICON_BULLET]Nations: Civilizations comprised of both immigrants and indigenous that are ruled domestically, such as America and Mexico.
+[H2]Civics[\H2]
+[PARAGRAPH:1]Each Culture Group has their own unique set of civics. While there are some common themes and recycled mechanics between them, each set of civics has a complete compliment of 42 unique Civics, each with their own name, button, prerequisite technology, stability combos, and effects. There is no way to adopt a Civic from a Culture Group other than your own.
+[H2]Technology[\H2]
+[PARAGRAPH:1]Some technologies are associated to specific Culture Groups, meaning only that Culture Group can research that technology. Other culture groups may be able to obtain the technology through trading or Goody rewards. If you are unable to research a technology due to your Culture Group, a tooltip will explain why. 
+[PARAGRAPH:1]Native Culture Group Technologies are especially important. Among them are many techs that reveal a great number of important resources, such as Corn, Fish, Gold, etc. This thematically represents collective indigenous knowledge of how best to cultivate crops, or where to find local deposits of minerals. It is usually imperative to gain Native techs when playing as a Colony. Native Technologies can be obtained through Goody rewards (see [LINK=CONCEPT_TRIBES]Tribes[\LINK]) or through trade. The AI weights Native technologies 10x their actual cost; as a Colony, you won't be able to trade one advanced tech for the whole suite of Native techs. You'll likely have to trade away knowledge of Guns (among other things) to multiple Natives, or contact many Tribes to get all of the technologies.
+[PARAGRAPH:1]Similar but to a lesser degree, there are some Colony technologies that Natives really want. 
+[PARAGRAPH:1]Nations start with all Native and Colony technologies, so they won't be concerned with obtaining them. Instead, the only Nation technologies allow immigration from different regions (see [LINK=TXT_KEY_CONCEPT_IMMIGRATION_PEDIA]Immigration[\LINK]). While those technologies can only be researched by Nations, all Colonies and some Natives start with the knowledge specific Nation technologies, allowing them to receive Immigrants.
+[H2]Capitals[\H2]
+[PARAGRAPH:1]Each Culture Group also has their own unique Capital buildings. Natives have Chieftan's Huts or Palaces, Colonies have Governor's Mansions, and Nations have Capitols. Each Capital building has increasing yields with increasing Culture Group.
+[H2]Cultural Control[\H2]
+[PARAGRAPH:1]Nations needs less culture to control a plot than other Culture Groups. In general, cultural control preference goes first to Nations, then Colonies, then Natives, each with a ration of 4:1. Ex: A Colony needs only 1/4 the culture of a competing Native to claim a tile, while a Nation needs only 1/16 of a competing Native, or 1/4 of a competing Colony.
 		</English>
 	</TEXT>
 	<TEXT>
@@ -4736,23 +4749,20 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]A land unit cannot travel diagonally between two water tiles if both tiles contain the strait feature, unless it:
 [TAB][ICON_BULLET]has the [LINK=PROMOTION_AMPHIBIOUS]Amphibious[\LINK] promotion
 [TAB][ICON_BULLET]is moving from a route to a route and its owner has bridges researched
-[H2]Canyons[\H2][PARAGRAPH:1][LINK=FEATURE_CANYON]Canyons[\LINK] are a new feature that must be river-adjacent. Units cannot cross a river if moving out of or into a Canyon.
-[H2]Mountain Passes[\H2][PARAGRAPH:1]Land units cannot travel diagonally between two peaks unless their owner has acquired the [LINK=TECH_PATHFINDING]Pathfinding[\LINK] [LINK=CONCEPT_NATIVE_TECHS]native technology[\LINK].
+[H2]Canyons[\H2][PARAGRAPH:1][LINK=FEATURE_CANYON]Canyons[\LINK] are a new feature that must be river-adjacent. Units cannot cross a river if moving out of or into a Canyon, unless it has the has the [LINK=PROMOTION_GUERILLA1]Guerilla I[\LINK] promotion.
+[H2]Mountain Passes[\H2][PARAGRAPH:1]Land units cannot travel diagonally between two peaks unless their owner has acquired the [LINK=TECH_PATHFINDING]Pathfinding[\LINK] technology.
 </English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCA_ODDS_PEDIA</Tag>
 		<English>[H1]Odds and Ends in DOCA[\H1]
 [H2]Units[\H2]
-[ICON_BULLET]Lots of units of been reworked, and many units have been added. In general, units now have more well-defined roles and upgrade paths.
+[ICON_BULLET]Some units have been reworked, and many units have been added.
 [ICON_BULLET]Certain Seige units, such as Cannon, have been given a ranged attack. Use them to reduce an enemy's strength before attacking.
 [ICON_BULLET]Ranged attacks and city bombardment can only be performed if a unit is at full movement.
 [ICON_BULLET]Most units now have at least 2 Movement. This is to reflect the scale of the new DOCA map. Some units (such as heavy siege units) still only have 1 movement.
 [ICON_BULLET]Melee and Archery units have a chance to equip advanced weapons and mounts from defeated Gunpowder and Cavalry units.
 [ICON_BULLET]Defeated siege units have a chance to be captured.
-[H2]Slaves[\H2]
-[ICON_BULLET]TODO
-][ICON_BULLET]The Slave Revolt random event has been removed.
 [H2]Terrain[\H2]
 [ICON_BULLET]New Terrains have been added, including [LINK=TERRAIN_PRAIRIE]Prairie[\LINK] and [LINK=TERRAIN_WIDE_RIVER]Wide River[\LINK].
 [ICON_BULLET]The [LINK=TERRAIN_MARSH]Marsh[\LINK] Terrain has been reworked. It has a graphical update, and the Marsh Feature has been removed. Units are no longer restricted to moving into Marsh. Instead, a new feature, [LINK=FEATURE_BOG]Bog[\LINK], has been added. Bogs appear on Marshes and prevent most unit movements. [LINK=TERRAIN_SEMIDESERT]Swamps[\LINK] are another new feature type on Swamps that can be chopped like Forests.
@@ -4764,6 +4774,7 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]New Wonders have been added.
 [H2]Misc.[\H2]
 [ICON_BULLET]AI Natives will not trade maps with Colonies or Nations - you'll have to explore the continents for yourself!
+[ICON_BULLET]The Slave Revolt random event has been removed.
 [H2]Planned[\H2]
 [ICON_BULLET](PLANNED) After a certain date, Colonies become more likely to sell their land.
 		</English>

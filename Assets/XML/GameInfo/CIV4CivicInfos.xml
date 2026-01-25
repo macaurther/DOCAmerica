@@ -797,11 +797,11 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
-			<Type>CIVIC_NOMADS</Type>
-			<Description>TXT_KEY_CIVIC_NOMADS</Description>
-			<Civilopedia>TXT_KEY_CIVIC_NOMADS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_NOMADS_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_NOMADS_HELP</Help>
+			<Type>CIVIC_NOMADIC</Type>
+			<Description>TXT_KEY_CIVIC_NOMADIC</Description>
+			<Civilopedia>TXT_KEY_CIVIC_NOMADIC_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_NOMADIC_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_NOMADIC_HELP</Help>
 			<TechPrereq>TECH_PASTORALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Nomads.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>

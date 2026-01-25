@@ -1528,15 +1528,15 @@
 		<Spanish>The most primitive Expansion civic</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_NOMADS</Tag>
-		<English>Nomads</English>
-		<French>Nomads</French>
-		<German>Nomads</German>
-		<Italian>Nomads</Italian>
-		<Spanish>Nomads</Spanish>
+		<Tag>TXT_KEY_CIVIC_NOMADIC</Tag>
+		<English>Nomadic</English>
+		<French>Nomadic</French>
+		<German>Nomadic</German>
+		<Italian>Nomadic</Italian>
+		<Spanish>Nomadic</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_NOMADS_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_NOMADIC_STRATEGY</Tag>
 		<English>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</English>
 		<French>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</French>
 		<German>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</German>
@@ -1544,7 +1544,7 @@
 		<Spanish>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_NOMADS_HELP</Tag>
+		<Tag>TXT_KEY_CIVIC_NOMADIC_HELP</Tag>
 		<English>[ICON_BULLET]Cities can migrate[NEWLINE][ICON_BULLET]Gain [ICON_FOOD] after migrating</English>
 		<French>[ICON_BULLET]Cities can migrate[NEWLINE][ICON_BULLET]Gain [ICON_FOOD] after migrating</French>
 		<German>[ICON_BULLET]Cities can migrate[NEWLINE][ICON_BULLET]Gain [ICON_FOOD] after migrating</German>

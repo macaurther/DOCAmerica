@@ -2390,11 +2390,7 @@
 			<Description>TXT_KEY_IMPROVEMENT_TRIBE</Description>
 			<Civilopedia>TXT_KEY_IMPROVEMENT_TRIBE_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_TRIBE</ArtDefineTag>
-			<YieldChanges>
-				<iYieldChange>-2</iYieldChange>
-				<iYieldChange>-2</iYieldChange>
-				<iYieldChange>-1</iYieldChange>
-			</YieldChanges>
+			<YieldChanges/>
 			<bActsAsCity>1</bActsAsCity>
 			<bHillsMakesValid>0</bHillsMakesValid>
 			<bFreshWaterMakesValid>1</bFreshWaterMakesValid>
@@ -2519,11 +2515,7 @@
 			<Description>TXT_KEY_IMPROVEMENT_CONTACTED_TRIBE</Description>
 			<Civilopedia>TXT_KEY_IMPROVEMENT_CONTACTED_TRIBE_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_CONTACTED_TRIBE</ArtDefineTag>
-			<YieldChanges>
-				<iYieldChange>-2</iYieldChange>
-				<iYieldChange>-2</iYieldChange>
-				<iYieldChange>-1</iYieldChange>
-			</YieldChanges>
+			<YieldChanges/>
 			<bActsAsCity>1</bActsAsCity>
 			<bHillsMakesValid>0</bHillsMakesValid>
 			<bFreshWaterMakesValid>0</bFreshWaterMakesValid>

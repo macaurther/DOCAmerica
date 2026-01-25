@@ -2498,7 +2498,7 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 	if (eProject >= PROJECT_MIGRATE_N && eProject <= PROJECT_MIGRATE_NW)
 	{
 		// Make sure player has the right civic
-		if(!GET_PLAYER(getOwner()).hasCivic(CIVIC_NOMADS)) return false;
+		if(!GET_PLAYER(getOwner()).hasCivic(CIVIC_NOMADIC)) return false;
 
 		// Get new plot
 		DirectionTypes direction = (DirectionTypes)(eProject - PROJECT_MIGRATE_N);
