@@ -358,15 +358,15 @@ def americanWesternSettlement(iTech, iTeam, iPlayer):
 		for city in enemyCities:
 			plot = plots.surrounding(city).without(city).land().passable().no_enemies(iPlayer).random()
 			if plot:
-				createRoleUnit(iPlayer, plot, iBase, 3)
+				createRoleUnit(iPlayer, plot, iCityAttack, 3)
 				createRoleUnit(iPlayer, plot, iCitySiege, 2)
 				
 				message(city.getOwner(), "TXT_KEY_MESSAGE_AMERICAN_WEST_COAST_CONQUERORS", adjective(iPlayer), city.getName(), color=iRed, location=city, button=infos.unit(iMinuteman).getButton())
 				
 		if enemyCities.count() < 2:
 			for plot in plots.of(lWestCoast).without(enemyCities).sample(2 - enemyCities.count()):
-				makeUnit(iPlayer, iSettler, plot)
-				createRoleUnit(iPlayer, plot, iBase)
+				createRoleUnit(iPlayer, plot, iSettle)
+				createRoleUnit(iPlayer, plot, iDefend)
 
 
 ### COLLAPSE ###

@@ -4881,6 +4881,12 @@ bool CvUnit::canBombard(const CvPlot* pPlot) const
 		return false;
 	}
 
+	// MacAurther: No bombarding if not at full movement
+	if (canMove() && movesLeft() != maxMoves())
+	{
+		return false;
+	}
+
 	return true;
 }
 
@@ -13404,7 +13410,13 @@ bool CvUnit::canRangeStrike() const
 	}
 
 	// MacAurther: No ranged strike while being transported
-	if (isCargo())
+	if (canMove() && isCargo())
+	{
+		return false;
+	}
+
+	// MacAurther: No ranged strike if not at full movement
+	if (canMove() && movesLeft() != maxMoves())
 	{
 		return false;
 	}

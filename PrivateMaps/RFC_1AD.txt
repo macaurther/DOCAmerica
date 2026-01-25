@@ -20,11 +20,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_INDEPENDENT1
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDEPENDENT1
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDEPENDENT1
 	EndUnit
 	BeginCity
@@ -45,11 +45,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_INDEPENDENT1
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDEPENDENT1
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDEPENDENT1
 	EndUnit
 	BeginCity
@@ -70,11 +70,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_INDEPENDENT1
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDEPENDENT1
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDEPENDENT1
 	EndUnit
 	BeginCity
@@ -95,11 +95,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_TEOTIHUACAN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_TEOTIHUACAN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_TEOTIHUACAN
 	EndUnit
 	BeginUnit
@@ -132,11 +132,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ZAPOTEC
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_ZAPOTEC
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_ZAPOTEC
 	EndUnit
 	BeginCity
@@ -155,11 +155,11 @@ EndPlot
 BeginPlot
 	x=28,y=67
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginCity
@@ -183,11 +183,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 	BeginUnit

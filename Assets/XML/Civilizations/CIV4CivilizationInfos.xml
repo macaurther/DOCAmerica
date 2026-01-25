@@ -73,7 +73,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>MILITIA_MUSKETMAN</UnitClassType>
+					<UnitClassType>UNITCLASS_MILITIA</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
 				</Unit>
 				<Unit>
@@ -902,7 +902,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_LINE_INFANTRY</UnitClassType>
+					<UnitClassType>UNITCLASS_FUSILIER</UnitClassType>
 					<UnitType>UNIT_ENGLISH_REDCOAT</UnitType>
 				</Unit>
 				<Unit>
@@ -2143,7 +2143,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_MILITIA_SPEARMAN</UnitClassType>
+					<UnitClassType>UNITCLASS_MILITIA</UnitClassType>
 					<UnitType>UNIT_MISSISSIPPI_FALCON_DANCER</UnitType>
 				</Unit>
 			</Units>

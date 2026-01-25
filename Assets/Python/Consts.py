@@ -509,20 +509,19 @@ lImmigraitonTechs = [iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSib
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 151
-# Land Units (101)
+iNumUnits = 144
+# Land Units (94)
 # 0				1				2				3				4				5				6				7				8				9
 (iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote,		iClawdius,		iSettler, 		iDogSled,		
 iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iTrackman,		iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       iAgent,			
 iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iImmigrant,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,
-iRanger,		iFactor,		iParatrooper,	iMilitiaSpearman,iFalconDancer,	iMilitiaPikeman,iMilitiaArquebusier,iMilitiaMusketman,iMinuteman,iMilitiaRifleman,		
-iMilitiaInfantry,iWarrior, 		iKoa,			iTomahawk,		iSwordsman,		iAztecJaguar,	iAxeman,		iMaceman,		iAucac,			iQuangariecha,	
-iArquebusier,	iMohawk,		iArmedSlave,	iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		
-iFARs,			iSpearman,		iXhisxyag,		iPikeman,		iHalberdier,	iEagle,			iTercio,		iLineInfantry,	iRedcoat,		iAntiTank,		
-iArcher,		iGuecha,		iCrossbowman,	iGatlingGun,	iMachineGun,	iSkirmisher,	iHolkan,		iSlinger,		iLongbowman,	iIrregular,		
-iCacos,			iGrenadier,		iAlbionLegion,	iMarine,		iHorseArcher,	iSwiftArrow,	iCuirassier,	iConquistador,	iDragoon,		iLlanero,		
-iCavalry,		iGrenadierCavalry,iRural,		iLightTank,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		
-iAAGun,		
+iRanger,		iFactor,		iParatrooper,	iMilitia,		iFalconDancer,	iMinuteman,		iWarrior, 		iKoa,			iTomahawk,		iSwordsman,		
+iAztecJaguar,	iAxeman,		iMaceman,		iAucac,			iQuangariecha,	iArquebusier,	iMohawk,		iArmedSlave,	iMusketman,		iCompagnies,	
+iFusilier,		iRedcoat,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iSpearman,		iXhisxyag,		iPikeman,		
+iHalberdier,	iEagle,			iTercio,		iAntiTank,		iArcher,		iGuecha,		iCrossbowman,	iGatlingGun,	iMachineGun,	iSkirmisher,	
+iHolkan,		iSlinger,		iLongbowman,	iIrregular,		iCacos,			iGrenadier,		iAlbionLegion,	iMarine,		iHorseArcher,	iSwiftArrow,	
+iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		iGrenadierCavalry,iRural,		iLightTank,		iTank,			iBombard,		
+iCannon,		iArtillery,		iHowitzer,		iAAGun,		
 
 # Naval Units (27)
 # 0				1				2				3				4				5				6				7				8				9
@@ -903,11 +902,6 @@ iCoureurDesBois : 		[(1620, 1800), 		lHomelandsEurope],
 iRanger : 				[(1800, 1930), 		lHomelands],
 iFactor : 				[(1800, 1930), 		[iHomelandNorthEurope]],
 iParatrooper : 			[(1930, iEndDate), 	lHomelandsEuropePlus],
-iMilitiaPikeman : 		[(850, 1550), 		lHomelandsEurope],
-iMilitiaArquebusier : 	[(1550, 1700), 		lHomelandsEurope],
-iMilitiaMusketman : 	[(1700, 1800), 		lHomelandsEuropePlus],
-iMilitiaRifleman : 		[(1800, 1900), 		lHomelandsEuropePlus],
-iMilitiaInfantry : 		[(1900, iEndDate), 	lHomelandsEuropePlus],
 iKoa : 					[(0, 	1800), 		[iHomelandAsia]],
 iArquebusier : 			[(1500, 1550), 		lHomelandsEurope],
 iMusketman : 			[(1550, 1700), 		lHomelandsEurope],
@@ -917,7 +911,6 @@ iRifleman : 			[(1800, 1900), 		lHomelandsEuropePlus],
 iInfantry : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
 iPikeman : 				[(1500, 1550), 		lHomelandsEurope],
 iTercio : 				[(1550, 1700), 		[iHomelandSouthEurope]],
-iLineInfantry : 		[(1700, 1800), 		lHomelandsEuropePlus],
 iRedcoat : 				[(1700, 1800), 		[iHomelandNorthEurope]],
 iAntiTank : 			[(1930, iEndDate), 	lHomelandsEuropePlus],
 iCrossbowman : 			[(1500, 1550), 		lHomelandsEurope],
@@ -934,10 +927,9 @@ iCavalry : 				[(1800, 1920), 		lHomelandsEuropePlus],
 iLightTank : 			[(1920, iEndDate), 	lHomelandsEuropePlus],
 iTank : 				[(1940, iEndDate), 	lHomelandsEuropePlus],
 iBombard : 				[(1500, 1600), 		lHomelandsEurope],
-iCannon : 				[(1600, 1700), 		lHomelandsEurope],
-iHeavyCannon : 			[(1700, 1850), 		lHomelandsEuropePlus],
-iRifledCannon : 		[(1850, 1900), 		lHomelandsEuropePlus],
-iArtillery : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
+iCannon : 				[(1600, 1800), 		lHomelandsEurope],
+iArtillery : 			[(1800, 1900), 		lHomelandsEuropePlus],
+iHowitzer : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
 iAAGun : 				[(1930, iEndDate), 	lHomelandsEuropePlus],
 iLongship : 			[(850,  1450), 		[iHomelandNorthEurope]],
 iWaaKaulua : 			[(0, 	1800), 		[iHomelandAsia]],

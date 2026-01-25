@@ -101,7 +101,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MILITIA_SPEARMAN</UnitType>
+					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
@@ -213,7 +213,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MUSKETMAN</UnitType>
+					<UnitType>UNIT_ARQUEBUSIER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MUSKETMAN_POLYNESIAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_MUSKETMAN_POLYNESIAN</LateArtDefineTag>
@@ -237,7 +237,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_GRENADIER</UnitType>
+					<UnitType>UNIT_IRREGULAR</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_GRENADIER_POLYNESIAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_GRENADIER_POLYNESIAN</LateArtDefineTag>
@@ -245,7 +245,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_RIFLEMAN</UnitType>
+					<UnitType>UNIT_MUSKETMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_RIFLEMAN_POLYNESIAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_RIFLEMAN_POLYNESIAN</LateArtDefineTag>
@@ -332,7 +332,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MILITIA_SPEARMAN</UnitType>
+					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
@@ -460,7 +460,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_GRENADIER</UnitType>
+					<UnitType>UNIT_IRREGULAR</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_GRENADIER_IROQUOIS</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_GRENADIER_IROQUOIS</LateArtDefineTag>
@@ -468,7 +468,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_RIFLEMAN</UnitType>
+					<UnitType>UNIT_MUSKETMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_RIFLEMAN_IROQUOIS</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_RIFLEMAN_IROQUOIS</LateArtDefineTag>
@@ -555,7 +555,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MILITIA_SPEARMAN</UnitType>
+					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
@@ -659,7 +659,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MUSKETMAN</UnitType>
+					<UnitType>UNIT_ARQUEBUSIER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MUSKETMAN_SIOUX</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_MUSKETMAN_SIOUX</LateArtDefineTag>
@@ -683,7 +683,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_GRENADIER</UnitType>
+					<UnitType>UNIT_IRREGULAR</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_GRENADIER_SIOUX</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_GRENADIER_SIOUX</LateArtDefineTag>
@@ -691,7 +691,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_RIFLEMAN</UnitType>
+					<UnitType>UNIT_MUSKETMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_RIFLEMAN_SIOUX</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_RIFLEMAN_SIOUX</LateArtDefineTag>
@@ -778,7 +778,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MILITIA_SPEARMAN</UnitType>
+					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
@@ -882,7 +882,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MUSKETMAN</UnitType>
+					<UnitType>UNIT_ARQUEBUSIER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MUSKETMAN_MISSISSIPPIAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_MUSKETMAN_MISSISSIPPIAN</LateArtDefineTag>
@@ -906,7 +906,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_GRENADIER</UnitType>
+					<UnitType>UNIT_IRREGULAR</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_GRENADIER_IROQUOIS</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_GRENADIER_IROQUOIS</LateArtDefineTag>
@@ -914,7 +914,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_RIFLEMAN</UnitType>
+					<UnitType>UNIT_MUSKETMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_RIFLEMAN_PUEBLO</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_RIFLEMAN_PUEBLO</LateArtDefineTag>
@@ -1001,7 +1001,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MILITIA_SPEARMAN</UnitType>
+					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
@@ -1105,7 +1105,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MUSKETMAN</UnitType>
+					<UnitType>UNIT_ARQUEBUSIER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MUSKETMAN_PUEBLO</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_MUSKETMAN_PUEBLO</LateArtDefineTag>
@@ -1129,7 +1129,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_GRENADIER</UnitType>
+					<UnitType>UNIT_IRREGULAR</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_GRENADIER_IROQUOIS</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_GRENADIER_IROQUOIS</LateArtDefineTag>
@@ -1137,7 +1137,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_RIFLEMAN</UnitType>
+					<UnitType>UNIT_MUSKETMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_RIFLEMAN_PUEBLO</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_RIFLEMAN_PUEBLO</LateArtDefineTag>
@@ -1225,7 +1225,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MILITIA_SPEARMAN</UnitType>
+					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
@@ -1337,7 +1337,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MUSKETMAN</UnitType>
+					<UnitType>UNIT_ARQUEBUSIER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MUSKETMAN_AZTEC</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_MUSKETMAN_AZTEC</LateArtDefineTag>
@@ -1361,7 +1361,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_GRENADIER</UnitType>
+					<UnitType>UNIT_IRREGULAR</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_GRENADIER_INCAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_GRENADIER_INCAN</LateArtDefineTag>
@@ -1369,7 +1369,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_RIFLEMAN</UnitType>
+					<UnitType>UNIT_MUSKETMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_RIFLEMAN_AZTEC</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_RIFLEMAN_AZTEC</LateArtDefineTag>
@@ -1456,7 +1456,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MILITIA_SPEARMAN</UnitType>
+					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
@@ -1560,7 +1560,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MUSKETMAN</UnitType>
+					<UnitType>UNIT_ARQUEBUSIER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MUSKETMAN_MAYAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_MUSKETMAN_MAYAN</LateArtDefineTag>
@@ -1584,7 +1584,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_GRENADIER</UnitType>
+					<UnitType>UNIT_IRREGULAR</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_GRENADIER_INCAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_GRENADIER_INCAN</LateArtDefineTag>
@@ -1592,7 +1592,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_RIFLEMAN</UnitType>
+					<UnitType>UNIT_MUSKETMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_RIFLEMAN_AZTEC</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_RIFLEMAN_AZTEC</LateArtDefineTag>
@@ -1679,7 +1679,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MILITIA_SPEARMAN</UnitType>
+					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
@@ -1791,7 +1791,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MUSKETMAN</UnitType>
+					<UnitType>UNIT_ARQUEBUSIER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MUSKETMAN_INCAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_MUSKETMAN_INCAN</LateArtDefineTag>
@@ -1807,7 +1807,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_GRENADIER</UnitType>
+					<UnitType>UNIT_IRREGULAR</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_GRENADIER_INCAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_GRENADIER_INCAN</LateArtDefineTag>
@@ -1815,7 +1815,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_RIFLEMAN</UnitType>
+					<UnitType>UNIT_MUSKETMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_RIFLEMAN_INCAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_RIFLEMAN_INCAN</LateArtDefineTag>
@@ -1910,7 +1910,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MILITIA_SPEARMAN</UnitType>
+					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
@@ -2014,7 +2014,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MUSKETMAN</UnitType>
+					<UnitType>UNIT_ARQUEBUSIER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MUSKETMAN_BRAZILIAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_MUSKETMAN_BRAZILIAN</LateArtDefineTag>
@@ -2030,7 +2030,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_GRENADIER</UnitType>
+					<UnitType>UNIT_IRREGULAR</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_GRENADIER_BRAZILIAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_GRENADIER_BRAZILIAN</LateArtDefineTag>
@@ -2038,7 +2038,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_RIFLEMAN</UnitType>
+					<UnitType>UNIT_MUSKETMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_RIFLEMAN_BRAZILIAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_RIFLEMAN_BRAZILIAN</LateArtDefineTag>
@@ -2125,7 +2125,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MILITIA_SPEARMAN</UnitType>
+					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_AFRICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_AFRICAN</MiddleArtDefineTag>

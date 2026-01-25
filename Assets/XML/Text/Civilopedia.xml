@@ -4770,10 +4770,10 @@ Your stability level can change during a stability check. As long it is higher t
 [H2]Units[\H2]
 [ICON_BULLET]Lots of units of been reworked, and many units have been added. In general, units now have more well-defined roles and upgrade paths.
 [ICON_BULLET]Certain Seige units, such as Cannon, have been given a ranged attack. Use them to reduce an enemy's strength before attacking.
+[ICON_BULLET]Ranged attacks and city bombardment can only be performed if a unit is at full movement.
 [ICON_BULLET]Most units now have at least 2 Movement. This is to reflect the scale of the new DOCA map. Some units (such as heavy siege units) still only have 1 movement.
 [ICON_BULLET]Melee and Archery units have a chance to equip advanced weapons and mounts from defeated Gunpowder and Cavalry units.
 [ICON_BULLET]Defeated siege units have a chance to be captured.
-[ICON_BULLET][LINK=UNIT_MILITIA_SPEARMAN]Militia[\LINK] is now its own upgrade path. Each Era has its own Militia. They are generally cheap to build and weak, with bonus defense in Cities.
 [H2]Slaves[\H2]
 [ICON_BULLET]TODO
 ][ICON_BULLET]The Slave Revolt random event has been removed.

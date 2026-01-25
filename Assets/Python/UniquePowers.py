@@ -160,4 +160,4 @@ def inuitUP(pCity):
 
 		# Help AI with defender (the NEED it)
 		if not player(iPlayer).isHuman():
-			makeUnit(iPlayer, iMilitiaSpearman, pCity)
+			makeUnit(iPlayer, iMilitia, pCity)

@@ -291,7 +291,7 @@
 			<bSound>1</bSound>
 			<HotKey>KB_B</HotKey>
 			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
+			<bShiftDown>1</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<HotKeyAlt/>
@@ -300,7 +300,7 @@
 			<bCtrlDownAlt>0</bCtrlDownAlt>
 			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
 			<bVisible>1</bVisible>
-			<Button>,Art/Interface/Buttons/Actions/Bombard.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,2,1</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Artillery.dds,Art/Interface/Buttons/TechTree_Atlas.dds,5,1</Button>
 		</MissionInfo>
 		<MissionInfo>
 			<Type>MISSION_BOMBARD</Type>

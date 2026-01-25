@@ -475,7 +475,7 @@ dStartingUnits = CivDict({
 	iMuisca: {
 		iSettle: 1,
 		iWork: 1,
-		iBase: 2,
+		iDefend: 2,
 		iAttack: 1,
 	},
 	iNorse: {
@@ -484,8 +484,7 @@ dStartingUnits = CivDict({
 	iChimu: {
 		iSettle: 2,
 		iWork: 2,
-		iBase: 2,
-		iDefend: 1,
+		iDefend: 3,
 		iSkirmish: 1,
 		iAttack: 3,
 	},
@@ -498,7 +497,6 @@ dStartingUnits = CivDict({
 	iInca: {
 		iSettle: 1,
 		iWork: 2,
-		iBase: 4,
 		iAttack: 8,
 		iDefend: 4,
 		iSkirmish: 4,
@@ -506,7 +504,6 @@ dStartingUnits = CivDict({
 	iPurepecha: {
 		iSettle: 2,
 		iWork: 2,
-		iBase: 3,
 		iAttack: 4,
 		iSkirmish: 1,
 		iDefend: 1,
@@ -514,7 +511,6 @@ dStartingUnits = CivDict({
 	iAztec: {
 		iSettle: 1,
 		iWork: 1,
-		iBase: 2,
 		iAttack: 5,
 		iSkirmish: 2,
 		iDefend: 2,
@@ -583,14 +579,14 @@ dStartingUnits = CivDict({
 	iHaiti: {
 		iSettle: 1,
 		iWork: 2,
-		iBase: 3,
+		iDefend: 3,
 		iAttack: 2,
 		iSkirmish: 4,
 	},
 	iArgentina: {
 		iSettle: 5,
 		iWork: 4,
-		iBase: 3,
+		iDefend: 3,
 		iAttack: 7,
 		iSiege: 2,
 		iShock: 2,
@@ -601,7 +597,7 @@ dStartingUnits = CivDict({
 	iMexico: {
 		iSettle: 8,
 		iWork: 3,
-		iBase: 4,
+		iDefend: 4,
 		iAttack: 8,
 		iSkirmish: 2,
 		iShock: 2,
@@ -610,7 +606,7 @@ dStartingUnits = CivDict({
 	iColombia: {
 		iSettle: 4,
 		iWork: 3,
-		iBase: 3,
+		iDefend: 3,
 		iAttack: 7,
 		iSiege: 2,
 		iShock: 4,
@@ -619,7 +615,7 @@ dStartingUnits = CivDict({
 	iPeru: {
 		iSettle: 3,
 		iWork: 3,
-		iBase: 3,
+		iDefend: 3,
 		iAttack: 7,
 		iSiege: 1,
 		iCitySiege: 2,
@@ -629,7 +625,7 @@ dStartingUnits = CivDict({
 	iBrazil: {
 		iSettle: 8,
 		iWork: 3,
-		iBase: 4,
+		iDefend: 4,
 		iAttack: 3,
 		iSkirmish: 3,
 		iSiege: 1,
@@ -641,7 +637,7 @@ dStartingUnits = CivDict({
 	iVenezuela: {
 		iSettle: 3,
 		iWork: 2,
-		iBase: 3,
+		iDefend: 3,
 		iAttack: 6,
 		iSiege: 1,
 		iCitySiege: 1,
@@ -651,7 +647,7 @@ dStartingUnits = CivDict({
 	iCanada: {
 		iSettle: 8,
 		iWork: 3,
-		iBase: 6,
+		iDefend: 6,
 		iAttack: 8,
 		iShock: 2,
 	},
@@ -672,7 +668,7 @@ dExtraAIUnits = CivDict({
 		iEscort: 3,
 	},
 	iArgentina: {
-		iBase: 3,
+		iDefend: 3,
 		iAttack: 5,
 		iSkirmish: 3,
 		iShock: 4,
@@ -681,22 +677,22 @@ dExtraAIUnits = CivDict({
 		iEscort: 1,
 	},
 	iAztec: {
-		iBase: 1,
+		iDefend: 1,
 		iAttack: 6,
 		iSkirmish: 4,
 		iDefend: 2,
 	},
 	iBrazil: {
-		iBase: 1,
+		iDefend: 1,
 	},
 	iInca: {
-		iBase: 1,
+		iDefend: 1,
 		iAttack: 4,
 		iSkirmish: 4,
 		iDefend: 2,
 	},
 	iMexico: {
-		iBase: 4,
+		iDefend: 4,
 		iShock: 4,
 		iSiege: 1,
 	},

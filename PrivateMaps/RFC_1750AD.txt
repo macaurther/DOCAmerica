@@ -904,7 +904,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_HAWAII
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_HAWAII
 	EndUnit
 	BeginCity
@@ -933,7 +933,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_HAWAII
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_HAWAII
 	EndUnit
 	BeginUnit
@@ -1131,7 +1131,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 EndPlot
@@ -6963,23 +6963,23 @@ BeginPlot
 	x=58,y=0
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_SPEARMAN
+		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginCity

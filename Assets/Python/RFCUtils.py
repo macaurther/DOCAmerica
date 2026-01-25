@@ -271,7 +271,7 @@ def relocateSeaGarrisons(tCityPlot, iOldOwner):
 
 # used: Congresses, RFCUtils, Rules
 def createGarrisons(tCityPlot, iNewOwner, iNumUnits):
-	createRoleUnit(iNewOwner, tCityPlot, iBase, iNumUnits)
+	createRoleUnit(iNewOwner, tCityPlot, iDefend, iNumUnits)
 
 # used: Rise, Stability
 def clearPlague(iPlayer):
@@ -517,9 +517,9 @@ def isUnitOfRole(iUnit, iRole):
 	iDomainType = unit.getDomainType()
 
 	if iRole == iBase:
-		return base_unit(iUnit) in [iMilitiaSpearman, iMilitiaPikeman, iMilitiaArquebusier, iMilitiaMusketman, iMilitiaRifleman, iMilitiaInfantry]
+		return base_unit(iUnit) == iMilitia
 	elif iRole == iDefend:
-		return (iCombatType == UnitCombatTypes.UNITCOMBAT_ARCHER and unit.getCityDefenseModifier() > 0) or iCombatType == UnitCombatTypes.UNITCOMBAT_GUN
+		return (iCombatType == UnitCombatTypes.UNITCOMBAT_ARCHER and unit.getCityDefenseModifier() > 0) or iCombatType == UnitCombatTypes.UNITCOMBAT_GUN or base_unit(iUnit) == iMilitia
 	elif iRole in [iAttack, iCityAttack]:
 		return iCombatType in [UnitCombatTypes.UNITCOMBAT_MELEE, UnitCombatTypes.UNITCOMBAT_GUN]
 	elif iRole == iCounter:
@@ -598,7 +598,7 @@ def getUnitsForRole(iPlayer, iRole, bUnique=True):
 		else:
 			for _ in range(infos.unit(iUnit).getCargoSpace()):
 				if _ % 2 == 0:
-					units.append(getUnitForRole(iPlayer, iBase, bUnique=bUnique))
+					units.append(getUnitForRole(iPlayer, iDefend, bUnique=bUnique))
 				else:
 					units.append(getUnitForRole(iPlayer, iSettle, bUnique=bUnique))
 	

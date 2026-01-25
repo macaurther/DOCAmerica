@@ -168,7 +168,7 @@ class MinorCity(object):
 		for iRole, iNumUnits in self.units.items():
 			for iUnit, iUnitAI in getUnitsForRole(iUnitCiv, iRole, bUnique=bUnique):
 				if iUnit is None:
-					iUnit = iMilitiaSpearman
+					iUnit = iMilitia
 				
 				if not bUnique:
 					iUnit = base_unit(iUnit)
@@ -504,9 +504,9 @@ class Barbarians(object):
 
 # MacAurther TODO: Flush this out
 minor_cities = [
-	MinorCity(450, iIndigenous, (46, 33), "Nanasqa", iPopulation=1, iCiv=iTiwanaku, units={iBase: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_NAZCAN"),			# Nazca
-	MinorCity(950, iIndigenous, (49, 18), "Mapuches", iPopulation=1, iCiv=iInca, units={iBase: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MAPUCHE"),			# Mapuche
-	MinorCity(1836, iIndependent2, (29, 76), "Houston", iPopulation=3, iCiv=iAmerica, units={iBase: 4}, iCulture=25, adjective="TXT_KEY_ADJECTIVE_TEXAN"),	# Republic of Texas
+	MinorCity(450, iIndigenous, (46, 33), "Nanasqa", iPopulation=1, iCiv=iTiwanaku, units={iDefend: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_NAZCAN"),			# Nazca
+	MinorCity(950, iIndigenous, (49, 18), "Mapuches", iPopulation=1, iCiv=iInca, units={iDefend: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MAPUCHE"),			# Mapuche
+	MinorCity(1836, iIndependent2, (29, 76), "Houston", iPopulation=3, iCiv=iAmerica, units={iDefend: 4}, iCulture=25, adjective="TXT_KEY_ADJECTIVE_TEXAN"),	# Republic of Texas
 ]
 
 # MacAurther TODO: Flush this out
@@ -601,7 +601,7 @@ def spawnTribeDefenders(pPlot, iAttacker):
 	for iCiv in dCivGroups[iCivGroupNative]:
 		if iCiv == civ(iAttacker): continue		# don't spawn the unique unit of the attacker
 		if pPlot.getSettlerValue(iCiv) > 0:
-			for iUnit in range(iMilitiaSpearman, iWorkboat):	# Don't consider special settlers, works, scouts, spies, naval units, etc.
+			for iUnit in range(iMilitia, iWorkboat):	# Don't consider special settlers, works, scouts, spies, naval units, etc.
 				# Civilization unique units
 				iUniqueUnit = unique_unit_civ(iCiv, iUnit)
 				if base_unit(iUnit) == iUnit and iUniqueUnit != iUnit:
@@ -618,7 +618,7 @@ def spawnTribeDefenders(pPlot, iAttacker):
 		lSpecialUnits.append(iHorseArcher)
 					
 	# Select basic defender based on tech level
-	lBasicDefender = [iMilitiaSpearman, iMilitiaPikeman, iMilitiaArquebusier]
+	lBasicDefender = [iMilitia, iArcher, iLongbowman]
 	lAdvancedDefender = [iArcher, iLongbowman, iArquebusier]
 	for iI in range(iNumDefenders):
 		# First two defenders are basic
