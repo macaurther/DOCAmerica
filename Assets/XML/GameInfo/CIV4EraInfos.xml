@@ -42,7 +42,7 @@
 			<iAnarchyPercent>50</iAnarchyPercent>
 			<iMaintenanceRangePercent>70</iMaintenanceRangePercent>
 			<iEventChancePerTurn>1</iEventChancePerTurn>
-			<iSoundtrackSpace>150</iSoundtrackSpace>
+			<iSoundtrackSpace>0</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_ANCIENT_SOUNDTRACK_1</EraInfoSoundtrack>
@@ -53,6 +53,9 @@
 				<EraInfoSoundtrack>AS2D_ANCIENT_SOUNDTRACK_6</EraInfoSoundtrack>
 				<EraInfoSoundtrack>AS2D_ANCIENT_SOUNDTRACK_7</EraInfoSoundtrack>
 				<EraInfoSoundtrack>AS2D_ANCIENT_SOUNDTRACK_8</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_ANCIENT_SOUNDTRACK_9</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_ANCIENT_SOUNDTRACK_10</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_ANCIENT_SOUNDTRACK_11</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -149,7 +152,7 @@
 			<iAnarchyPercent>50</iAnarchyPercent>
 			<iMaintenanceRangePercent>75</iMaintenanceRangePercent>
 			<iEventChancePerTurn>2</iEventChancePerTurn>
-			<iSoundtrackSpace>50</iSoundtrackSpace>
+			<iSoundtrackSpace>0</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_1</EraInfoSoundtrack>
@@ -211,7 +214,7 @@
 			<iAnarchyPercent>40</iAnarchyPercent>
 			<iMaintenanceRangePercent>85</iMaintenanceRangePercent>
 			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>50</iSoundtrackSpace>
+			<iSoundtrackSpace>0</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_1</EraInfoSoundtrack>
@@ -277,7 +280,7 @@
 			<iAnarchyPercent>40</iAnarchyPercent>
 			<iMaintenanceRangePercent>85</iMaintenanceRangePercent>
 			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>50</iSoundtrackSpace>
+			<iSoundtrackSpace>0</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_1</EraInfoSoundtrack>
@@ -344,7 +347,7 @@
 			<iAnarchyPercent>34</iAnarchyPercent>
 			<iMaintenanceRangePercent>100</iMaintenanceRangePercent>
 			<iEventChancePerTurn>6</iEventChancePerTurn>
-			<iSoundtrackSpace>120</iSoundtrackSpace>
+			<iSoundtrackSpace>50</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_INDUSTRIAL_SOUNDTRACK_1</EraInfoSoundtrack>
@@ -404,7 +407,7 @@
 			<iAnarchyPercent>34</iAnarchyPercent>
 			<iMaintenanceRangePercent>95</iMaintenanceRangePercent>
 			<iEventChancePerTurn>8</iEventChancePerTurn>
-			<iSoundtrackSpace>80</iSoundtrackSpace>
+			<iSoundtrackSpace>50</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_ANFORTAS_WOUND</EraInfoSoundtrack>

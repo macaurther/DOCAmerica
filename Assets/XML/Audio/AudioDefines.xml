@@ -10143,6 +10143,27 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>SONG_ANCIENT_SOUNDTRACK_9</SoundID>
+			<Filename>Sounds/Soundtrack/Ancient/MesoAmerican1</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_ANCIENT_SOUNDTRACK_10</SoundID>
+			<Filename>Sounds/Soundtrack/Ancient/MesoAmerican2</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_ANCIENT_SOUNDTRACK_11</SoundID>
+			<Filename>Sounds/Soundtrack/Ancient/AncNA</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>SONG_EXPLORATION_SOUNDTRACK_1</SoundID>
 			<Filename>Sounds/Soundtrack/Exploration/AgincourtCarol</Filename>
 			<LoadType>STREAMED</LoadType>
@@ -10838,6 +10859,13 @@
 		<SoundData>
 			<SoundID>SND_KISSMYRNIG</SoundID>
 			<Filename>Sounds/KissMyRing</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SND_SACRIFICE</SoundID>
+			<Filename>Sounds/Sacrifice</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
