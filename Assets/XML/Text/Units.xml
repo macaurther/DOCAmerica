@@ -1555,23 +1555,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ENGLISH_MAN_OF_WAR</Tag>
-		<English>Man-of-War</English>
-		<French>
-			<Text>Man'o'war</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Man-of-War</German>
-		<Italian>Man-of-War</Italian>
-		<Spanish>Man-of-War</Spanish>
+		<English>Man'o'War</English>
+		<French>Man'o'War</French>
+		<German>Man'o'War</German>
+		<Italian>Man'o'War</Italian>
+		<Spanish>Man'o'War</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ENGLISH_MAN_OF_WAR_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Man-of-War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</English>
-		<French>The [COLOR_UNIT_TEXT]Man-of-War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</French>
-		<German>The [COLOR_UNIT_TEXT]Man-of-War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Man-of-War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Man-of-War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</English>
+		<French>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</French>
+		<German>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SPANISH_TERCIO</Tag>

@@ -432,8 +432,8 @@ lCivilizations = [
 		iImmigration=100,
 		iStateReligion=iProtestantism,
 		#iMasterCiv=iEngland,
-		lCivics=[iIndustrialism, iFreeEnterprise, iOpportunity, iHomesteads],
-		techs=techs.column(18),
+		lCivics=[iRepresentatives, iFederalism, iIndustrialism, iFreeEnterprise, iOpportunity, iHomesteads],
+		techs=techs.column(18).without(iSiberiaAccess),
 	),
 ]
 
@@ -646,9 +646,8 @@ dStartingUnits = CivDict({
 	},
 	iCanada: {
 		iSettle: 8,
-		iWork: 3,
+		iWork: 5,
 		iDefend: 6,
-		iAttack: 8,
 		iShock: 2,
 	},
 }, {})

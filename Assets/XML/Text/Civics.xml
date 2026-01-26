@@ -206,7 +206,7 @@
 		<Spanish>[ICON_BULLET]Tribes do not block city migration[NEWLINE][ICON_BULLET]+1 Population after migrating to a Tribe</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CONSCRIPTION</Tag>
+		<Tag>TXT_KEY_CIVIC_CONSCRIPTION_DESC</Tag>
 		<English>Conscription</English>
 		<French>Conscription</French>
 		<German>Conscription</German>
@@ -1665,11 +1665,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PENAL_COLONY_HELP</Tag>
-		<English>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to receive Immigrant</English>
-		<French>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to receive Immigrant</French>
-		<German>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to receive Immigrant</German>
-		<Italian>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to receive Immigrant</Italian>
-		<Spanish>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to receive Immigrant</Spanish>
+		<English>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to receive Immigrant (min. 20%)</English>
+		<French>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to receive Immigrant (min. 20%)</French>
+		<German>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to receive Immigrant (min. 20%)</German>
+		<Italian>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to receive Immigrant (min. 20%)</Italian>
+		<Spanish>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to receive Immigrant (min. 20%)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GOLD_RUSH</Tag>
@@ -1697,11 +1697,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_FACTORY_STRATEGY</Tag>
-		<English>Faster production of Palisade, Star Fort; extra slot for merchant</English>
-		<French>Faster production of Palisade, Star Fort; extra slot for merchant</French>
-		<German>Faster production of Palisade, Star Fort; extra slot for merchant</German>
-		<Italian>Faster production of Palisade, Star Fort; extra slot for merchant</Italian>
-		<Spanish>Faster production of Palisade, Star Fort; extra slot for merchant</Spanish>
+		<English>Faster production of Palisade, Star Fort; extra slot for merchant; extra [ICON_PRODUCTION] from merchant</English>
+		<French>Faster production of Palisade, Star Fort; extra slot for merchant; extra [ICON_PRODUCTION] from merchant</French>
+		<German>Faster production of Palisade, Star Fort; extra slot for merchant; extra [ICON_PRODUCTION] from merchant</German>
+		<Italian>Faster production of Palisade, Star Fort; extra slot for merchant; extra [ICON_PRODUCTION] from merchant</Italian>
+		<Spanish>Faster production of Palisade, Star Fort; extra slot for merchant; extra [ICON_PRODUCTION] from merchant</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CUSTOMS_UNION</Tag>
@@ -1713,11 +1713,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CUSTOMS_UNION_STRATEGY</Tag>
-		<English>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]; extra [ICON_PRODUCTION] from merchants</English>
-		<French>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]; extra [ICON_PRODUCTION] from merchants</French>
-		<German>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]; extra [ICON_PRODUCTION] from merchants</German>
-		<Italian>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]; extra [ICON_PRODUCTION] from merchants</Italian>
-		<Spanish>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]; extra [ICON_PRODUCTION] from merchants</Spanish>
+		<English>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</English>
+		<French>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</French>
+		<German>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</German>
+		<Italian>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</Italian>
+		<Spanish>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CLAIMS</Tag>

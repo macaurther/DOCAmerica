@@ -232,7 +232,7 @@ iInuit : 1200,
 iInca : 1200,
 iAztec : 1250,
 iHaudenosaunee : 1450,
-iSpain : 1492,
+iSpain : 20,#1492,
 iPortugal : 1532,
 iEngland : 1607,
 iFrance : 1608,
@@ -765,7 +765,8 @@ lEuropeanRevealed1750AD = [rGreenland, rIceland, rOntario, rQuebec, rNewFoundlan
                            rMinasGerais, rMatoGrosso, rParana, rChile, rParaguay, rUruguay, rChaco, rCuyo, rPampas, rPatagonia, \
                            rArcticO, rBaffinB, rNorthwestPassage, rHudsonB, rLabradorS,	rNorthAtlanticO, rGOfMexico, rCaribbeanS, rSouthAtlanticO, rSouthPacificO, \
 						   rNorthPacificO, rGOfCalifornia, rGOfAlaska, rBeringS, rAtlanticO, rPacificO]
-lEuropeanRevealed1850AD = lWest
+lEuropeanRevealed1850AD = lWest + [rArcticO, rBaffinB, rNorthwestPassage, rHudsonB, rLabradorS,	rNorthAtlanticO, rGOfMexico, rCaribbeanS, rSouthAtlanticO, rSouthPacificO, \
+						   rNorthPacificO, rGOfCalifornia, rGOfAlaska, rBeringS, rAtlanticO, rPacificO]
 
 
 #Projects

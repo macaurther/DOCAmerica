@@ -65,7 +65,7 @@ def completeCollapse(iPlayer):
 	events.fireEvent("collapse", iPlayer)
 		
 def downgradeImprovements(iPlayer):
-	lAlwaysDowngrade = [iCottage, iHamlet, iVillage, iTown]
+	lAlwaysDowngrade = [iCottage, iHamlet, iVillage, iTown, iFort]	# Remove forts when collapsing too
 	bPlayerDowngrade = civ(iPlayer) in [iMississippi, iLakota, iPueblo, iHaudenosaunee, iInuit] and not player(iPlayer).isHuman()
 	
 	improvementPlots = plots.owner(iPlayer).where(lambda p: p.getImprovementType() >= 0)

@@ -5584,14 +5584,14 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 			}
 
 			// MacAurther: Andean UP: If peak becomes owned by a non-Andean civ and there's an improvement on it, remove it
-			bool bOwnedByAndean = getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES;	// MacAurther: Allow no owner to keep improvements for tribe pillage area-of-effect issue
-			if (getOwner() != NO_PLAYER && !bOwnedByAndean && isPeak() && getImprovementType() != NO_IMPROVEMENT)
+			bool bOwnedByAndean = getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES;
+			if (!bOwnedByAndean && isPeak() && getImprovementType() != NO_IMPROVEMENT)
 			{
 				setImprovementType(NO_IMPROVEMENT);
 			}
 
 			// MacAurther: Andean UP: If peak becomes owned by a non-Andean civ and there's an route on it, remove it
-			if (getOwner() != NO_PLAYER && !bOwnedByAndean && isPeak() && getRouteType() != NO_ROUTE)	// MacAurther: Allow no owner to keep routes for tribe pillage area-of-effect issue
+			if (!bOwnedByAndean && isPeak() && getRouteType() != NO_ROUTE)
 			{
 				setRouteType(NO_ROUTE, true);
 			}
@@ -6467,8 +6467,9 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 			}
 		}*/
 
+		// MacAurther: Disabling this check because it causes HUGE lag spikes in late game with forts/tribes around multiple cities. The connection will resolve itself on subsequent updates?
 		// Building or removing a fort will now force a plotgroup update to verify resource connections.
-		if ( (NO_IMPROVEMENT != getImprovementType() && GC.getImprovementInfo(getImprovementType()).isActsAsCity()) !=
+		/*if ( (NO_IMPROVEMENT != getImprovementType() && GC.getImprovementInfo(getImprovementType()).isActsAsCity()) !=
 			 (NO_IMPROVEMENT != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity()) )
 		{
 			updatePlotGroup();
@@ -6485,7 +6486,7 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 					pLoopPlot->getPlotCity()->updateCoveredPlots(true);
 				}
 			}
-		}
+		}*/
 
 		if (NO_IMPROVEMENT != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity())
 		{
@@ -6499,7 +6500,10 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 
 		// MacAurther: Forts
 		// Make sure to update Fort Claims before reporting event, so that any callbacks know who owns the fort
-		if (eOldImprovement == IMPROVEMENT_FORT || eNewValue == IMPROVEMENT_FORT) updateFortClaims(NO_PLAYER);	// The NO_PLAYER argument will make this method search for the owner
+		if (eOldImprovement == IMPROVEMENT_FORT || eNewValue == IMPROVEMENT_FORT)
+		{
+			updateFortClaims(NO_PLAYER);	// The NO_PLAYER argument will make this method search for the owner
+		}
 
 		// MacAurther: Tribes - update culture
 		if (eOldImprovement == IMPROVEMENT_TRIBE || eOldImprovement == IMPROVEMENT_CONTACTED_TRIBE || eNewValue == IMPROVEMENT_TRIBE || eNewValue == IMPROVEMENT_CONTACTED_TRIBE)

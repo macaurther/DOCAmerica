@@ -1154,7 +1154,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Secretariate.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
-			<iCapitalBuildingProductionModifier>25</iCapitalBuildingProductionModifier>
+			<iCapitalBuildingProductionModifier>50</iCapitalBuildingProductionModifier>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<BuildingHappinessChanges>
 				<BuildingHappinessChange>
@@ -1272,7 +1272,7 @@
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
 			<Type>CIVIC_CONSCRIPTION</Type>
-			<Description>TXT_KEY_CIVIC_CONSCRIPTION</Description>
+			<Description>TXT_KEY_CIVIC_CONSCRIPTION_DESC</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CONSCRIPTION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CONSCRIPTION_STRATEGY</Strategy>
 			<TechPrereq>TECH_TIMEKEEPING</TechPrereq>
@@ -1280,6 +1280,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<iMaxConscript>2</iMaxConscript>
+			<iFoodProductionModifier>100</iFoodProductionModifier>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -1460,6 +1461,15 @@
 					<iCount>1</iCount>
 				</SpecialistCount>
 			</SpecialistCounts>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
@@ -1533,15 +1543,6 @@
 				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</HappinessExtraYields>
-			<SpecialistTypeExtraYields>
-				<SpecialistTypeExtraYield>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<YieldChanges>
-						<iYield>0</iYield>
-						<iYield>2</iYield>
-					</YieldChanges>
-				</SpecialistTypeExtraYield>
-			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>

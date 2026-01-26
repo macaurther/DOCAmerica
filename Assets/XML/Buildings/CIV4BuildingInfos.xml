@@ -2621,6 +2621,7 @@
 			<Strategy>TXT_KEY_BUILDING_LIGHTHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_LIGHTHOUSE</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_OPTICS</PrereqTech>
 			<bWater>1</bWater>
 			<iCost>80</iCost>
@@ -3818,7 +3819,6 @@
 			<Description>TXT_KEY_BUILDING_IMMIGRATION_OFFICE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_IMMIGRATION_OFFICE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_IMMIGRATION_OFFICE_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_IMMIGRATION_OFFICE_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FRENCH_SALON</ArtDefineTag>
 			<PrereqTech>TECH_PROGRESSIVISM</PrereqTech>
