@@ -35942,11 +35942,11 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_CHAVEZ_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_CHAVEZ_MIDDLE</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_CHAVEZ_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_CHAVEZ_MIDDLE</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
@@ -35958,7 +35958,7 @@
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_REVOLUTIONARY</EraType>
-					<DiploScriptId>AS2D_DIPLO_CHAVEZ_LATE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_CHAVEZ_MIDDLE</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_INDUSTRIAL</EraType>

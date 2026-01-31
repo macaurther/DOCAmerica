@@ -525,9 +525,10 @@ dStartingUnits = CivDict({
 	},
 	iLakota: {
 		iSettle: 2,
-		iBase: 2,
+		iDefend: 2,
 		iAttack: 3,
 		iSkirmish: 1,
+		iExplore: 1,
 	},
 	iSpain: {
 		iSettleSea: 1,

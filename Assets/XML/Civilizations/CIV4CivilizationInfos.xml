@@ -947,7 +947,7 @@
 				</Leader>
 			</Leaders>
 			<DerivativeCiv>CIVILIZATION_AMERICA</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_ENGLAND_SELECT</CivilizationSelectionSound>
+			<CivilizationSelectionSound>AS3D_COLONIAL_ENGLAND_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_ENGLAND_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -3214,7 +3214,6 @@
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
                 <City>Concepci&#243;n de la Vega</City>
-                <City>Vera Cruz</City>
                 <City>Potos&#237;</City>
                 <City>Ciudad de los Reyes</City>
                 <City>Caparra</City>

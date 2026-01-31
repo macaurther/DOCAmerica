@@ -6467,15 +6467,15 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 			}
 		}*/
 
-		// MacAurther: Disabling this check because it causes HUGE lag spikes in late game with forts/tribes around multiple cities. The connection will resolve itself on subsequent updates?
 		// Building or removing a fort will now force a plotgroup update to verify resource connections.
-		/*if ( (NO_IMPROVEMENT != getImprovementType() && GC.getImprovementInfo(getImprovementType()).isActsAsCity()) !=
+		if ( (NO_IMPROVEMENT != getImprovementType() && GC.getImprovementInfo(getImprovementType()).isActsAsCity()) !=
 			 (NO_IMPROVEMENT != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity()) )
 		{
 			updatePlotGroup();
-
+			
+			// MacAurther: Disabling culture cost updates because it causes HUGE lag spikes in late game with forts/tribes around multiple cities.
 			// Leoreth: update culture costs
-			CvPlot* pLoopPlot;
+			/*CvPlot* pLoopPlot;
 			for (int iI = 0; iI < NUM_CITY_PLOTS_3; iI++)
 			{
 				pLoopPlot = plotCity3(getX(), getY(), iI);
@@ -6485,8 +6485,8 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 					pLoopPlot->getPlotCity()->updateCultureCosts();
 					pLoopPlot->getPlotCity()->updateCoveredPlots(true);
 				}
-			}
-		}*/
+			}*/
+		}
 
 		if (NO_IMPROVEMENT != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity())
 		{

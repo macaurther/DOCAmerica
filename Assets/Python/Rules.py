@@ -394,6 +394,7 @@ def lMigrateCities(iGameTurn):
 		# Mostly copied from CvPlatyBuilderScreen
 		if pNewPlot.isCity(): return
 		if pOldCity:
+			pNewPlot.setImprovementType(-1)	# Make sure to clear improvement first (matters for Tribes)
 			x, y = location(pNewPlot)
 			pNewCity = pPlayer.initCity(x, y)
 			sName = pOldCity.getName()
@@ -403,6 +404,15 @@ def lMigrateCities(iGameTurn):
 			pOldPlot = pOldCity.plot()
 			pOldCity.kill()
 			pOldPlot.setImprovementType(-1)
+			pOldPlot.setRouteType(-1)
+			# Remove any Indigenous units that might have been on the plot (i.e. Tribe Defenders)
+			for i in range(pNewPlot.getNumUnits()-1, -1, -1):
+				pUnit = pNewPlot.getUnit(i)
+				# print("Consitering unit " + str(i))
+				if civ(pUnit) == iIndigenous:
+					# print("Unit is Indigenous")
+					pUnit.kill(False, -1)
+
 			# Also move any units fortified on the plot
 			for i in range(pOldPlot.getNumUnits()-1, -1, -1):
 				pUnit = pOldPlot.getUnit(i)
@@ -421,13 +431,13 @@ def lMigrateCities(iGameTurn):
 				iMovedFood += min(gc.getMap().plot(iXNew + iI, iYNew + iJ).getYield(YieldTypes.YIELD_FOOD), 1)	# Add 1 food for each tile that has food
 		if iMovedFood > 0:
 			pNewCity.changeFood(scale(iMovedFood))
-			message(iPlayer, 'TXT_KEY_MIGRATION_FOOD', sName, scale(iMovedFood), sound='AS2D_WELOVEKING', event=1, button=infos.tech(iHunting).getButton(), color=8, location=pNewPlot)
+			message(iPlayer, 'TXT_KEY_MIGRATION_FOOD', sName, scale(iMovedFood), sound='AS3D_UN_CAMEL_DIE_VOX', event=1, button=infos.tech(iHunting).getButton(), color=8, location=pNewPlot)
 		
 		# Lakota UP: Great General points for migration
 		if civ(iPlayer) == iLakota:
 			iExp = scale(2)
 			pPlayer.changeCombatExperience(iExp)
-			message(iPlayer, 'TXT_KEY_MIGRATION_GREAT_GENERAL', sName, iExp, sound='AS2D_WELOVEKING', event=1, button=infos.tech(iHunting).getButton(), color=8, location=pNewPlot)
+			message(iPlayer, 'TXT_KEY_MIGRATION_GREAT_GENERAL', sName, iExp, sound='AS3D_UN_WARLORD_COMMAND_VOX', event=1, button=infos.tech(iHunting).getButton(), color=8, location=pNewPlot)
 		
 		events.fireEvent("migration", iPlayer, 1)
 

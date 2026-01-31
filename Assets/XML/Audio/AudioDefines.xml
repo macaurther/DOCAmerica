@@ -10066,6 +10066,20 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>DIPLO_CHAVEZ_MIDDLE</SoundID>
+			<Filename>Sounds/Diplomacy/SpanishColonistLeader1</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_CHAVEZ_LATE</SoundID>
+			<Filename>Sounds/Diplomacy/SpanishColonistLeader2</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>DIPLO_BATTLE_HYMN_EARLY</SoundID>
 			<Filename>Sounds/Diplomacy/BattleHymn_Early</Filename>
 			<LoadType>STREAMED</LoadType>
