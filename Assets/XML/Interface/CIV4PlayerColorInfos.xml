@@ -25,7 +25,7 @@
 			<TextColorType>COLOR_PLAYER_LIGHT_BROWN_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_CYAN</Type>
+			<Type>PLAYERCOLOR_CYAN</Type>	<!-- Cherokee -->
 			<ColorTypePrimary>COLOR_PLAYER_CYAN</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_CYAN_TEXT</TextColorType>
@@ -49,7 +49,13 @@
 			<TextColorType>COLOR_PLAYER_VERY_DARK_CYAN_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_DARK_GREEN</Type>
+			<Type>PLAYERCOLOR_CARMINE</Type> <!-- Toltecs -->
+			<ColorTypePrimary>COLOR_PLAYER_CARMINE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_JADE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_CARMINE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_GREEN</Type>	<!-- Tupi -->
 			<ColorTypePrimary>COLOR_PLAYER_DARK_GREEN</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_GREEN_TEXT</TextColorType>
@@ -61,7 +67,7 @@
 			<TextColorType>COLOR_PLAYER_DARK_PINK_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_DARK_PURPLE</Type>
+			<Type>PLAYERCOLOR_DARK_PURPLE</Type> <!-- Teotihuacan -->
 			<ColorTypePrimary>COLOR_PLAYER_DARK_PURPLE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_PURPLE_TEXT</TextColorType>
@@ -97,7 +103,7 @@
 			<TextColorType>COLOR_PLAYER_ORANGE_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_PEACH</Type>
+			<Type>PLAYERCOLOR_PEACH</Type>	<!-- Apache -->
 			<ColorTypePrimary>COLOR_PLAYER_PEACH</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_PEACH_TEXT</TextColorType>
@@ -139,7 +145,7 @@
 			<TextColorType>COLOR_PLAYER_LIGHT_GREEN_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_LIGHT_BLUE</Type>
+			<Type>PLAYERCOLOR_LIGHT_BLUE</Type>	<!-- Arawak -->
 			<ColorTypePrimary>COLOR_PLAYER_LIGHT_BLUE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_LIGHT_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_LIGHT_BLUE_TEXT</TextColorType>
@@ -451,12 +457,6 @@
 			<TextColorType>COLOR_PLAYER_MIDDLE_INDIGO</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_TEOTIHUACAN</Type> <!-- Teotihuacan -->
-			<ColorTypePrimary>COLOR_PLAYER_MESOAMERICAN_RED</ColorTypePrimary>
-			<ColorTypeSecondary>COLOR_PLAYER_MESOAMERICAN_JADE</ColorTypeSecondary>
-			<TextColorType>COLOR_PLAYER_MESOAMERICAN_RED</TextColorType>
-		</PlayerColorInfo>		
-		<PlayerColorInfo>
 			<Type>PLAYERCOLOR_IROQUOIS</Type> <!-- Haudenosaunee -->
 			<ColorTypePrimary>COLOR_CIVILIZATION_BEIGE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_CIVILIZATION_BROWN</ColorTypeSecondary>
@@ -499,10 +499,16 @@
 			<TextColorType>COLOR_PLAYER_YELLOWISH_JADE_GREEN</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_LAKOTA</Type> <!-- Lakota -->
+			<Type>PLAYERCOLOR_CREAM</Type> <!-- Lakota -->
 			<ColorTypePrimary>COLOR_PLAYER_CREAM</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_X_BROWN</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_CREAM</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_JADE</Type>	<!-- Tupi -->
+			<ColorTypePrimary>COLOR_CIVILIZATION_JADE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_CIVILIZATION_DARK_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_CIVILIZATION_JADE_TEXT</TextColorType>
 		</PlayerColorInfo>
 	</PlayerColorInfos>
 </Civ4PlayerColorInfos>

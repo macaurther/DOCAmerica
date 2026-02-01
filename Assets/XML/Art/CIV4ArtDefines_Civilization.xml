@@ -176,8 +176,8 @@
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_TEOTIHUACAN</Type>
-			<Button>Art/Interface/Buttons/Civilizations/teotihuacan.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_ocelot.dds</Path>
+			<Button>Art/Interface/Buttons/Civilizations/Teotihuacan.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_SunMask.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
@@ -228,5 +228,35 @@
             <Path>Art/Interface/TeamColor/FlagDECAL_Lakota.dds</Path>
             <bWhiteFlag>1</bWhiteFlag>
         </CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_TOLTECS</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Toltecs.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Ocelot.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_APACHE</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Apache.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Apache.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_ARAWAK</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Arawak.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Arawak.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_CHEROKEE</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Cherokee.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Cherokee.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_TUPI</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Tupi.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Tupi.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

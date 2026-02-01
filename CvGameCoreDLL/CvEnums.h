@@ -1215,10 +1215,13 @@ enum CivilizationTypes		// Exposed to Python
 	NO_CIVILIZATION = -1,
 
 	AMERICA,
+	APACHE,
+	ARAWAK,
 	ARGENTINA,
 	AZTECS,
 	BRAZIL,
 	CANADA,
+	CHEROKEE,
 	CHIMU,
 	COLOMBIA,
 	ENGLAND,
@@ -1245,6 +1248,8 @@ enum CivilizationTypes		// Exposed to Python
 	SPAIN,
 	TEOTIHUACAN,
 	TIWANAKU,
+	TOLTECS,
+	TUPI,
 	VENEZUELA,
 	
 	WARI,

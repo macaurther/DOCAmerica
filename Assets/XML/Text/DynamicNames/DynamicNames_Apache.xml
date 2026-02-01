@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Apache -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_APACHE_DESC</Tag>
+		<English>The Apache</English>
+		<French>The Apache</French>
+		<German>The Apache</German>
+		<Italian>The Apache</Italian>
+		<Spanish>The Apache</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_APACHE_PEOPLES</Tag>
+		<English>Athabaskan Peoples</English>
+		<French>Athabaskan Peoples</French>
+		<German>Athabaskan Peoples</German>
+		<Italian>Athabaskan Peoples</Italian>
+		<Spanish>Athabaskan Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_APACHE_ADJECTIVE</Tag>
+		<English>Apache</English>
+		<French>Apache</French>
+		<German>Apache</German>
+		<Italian>Apache</Italian>
+		<Spanish>Apache</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_APACHE_SHORT_DESC</Tag>
+		<English>Apache</English>
+		<French>Apache</French>
+		<German>Apache</German>
+		<Italian>Apache</Italian>
+		<Spanish>Apache</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_APACHE_SHORT_DESC</Tag>
+		<English>Apache</English>
+		<French>Apache</French>
+		<German>Apache</German>
+		<Italian>Apache</Italian>
+		<Spanish>Apache</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_APACHE_DEFAULT</Tag>
+		<English>%s2 Kingdom</English>
+		<French>%s2 Kingdom</French>
+		<German>%s2 Kingdom</German>
+		<Italian>%s2 Kingdom</Italian>
+		<Spanish>%s2 Kingdom</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_APACHE_FASCIST</Tag>
+		<English>%s2 State</English>
+		<French>%s2 State</French>
+		<German>%s2 State</German>
+		<Italian>%s2 State</Italian>
+		<Spanish>%s2 State</Spanish>
+	</TEXT>
+</Civ4GameText>

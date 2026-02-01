@@ -408,9 +408,7 @@ def lMigrateCities(iGameTurn):
 			# Remove any Indigenous units that might have been on the plot (i.e. Tribe Defenders)
 			for i in range(pNewPlot.getNumUnits()-1, -1, -1):
 				pUnit = pNewPlot.getUnit(i)
-				# print("Consitering unit " + str(i))
 				if civ(pUnit) == iIndigenous:
-					# print("Unit is Indigenous")
 					pUnit.kill(False, -1)
 
 			# Also move any units fortified on the plot

@@ -237,6 +237,12 @@ lCivilizations = [
 		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iCultivation, iCompanionPlanting, iKnapping),
 	),
 	Civilization(
+		iToltec,
+		iGold=300,
+		techs=techs.column(3).including(iMasonry, iSmelting),
+		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iCultivation, iCompanionPlanting, iKnapping),
+	),
+	Civilization(
 		iNorse,
 		iGold=50,
 		lCivics=[iExpedition, iSerfdom],
@@ -256,6 +262,20 @@ lCivilizations = [
 		lCivics=[iSubsistance],
 		techs=techs.column(2).including(iTanning, iMining, iPottery, iAgriculture, iMythology),
 		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCompanionPlanting),
+	),
+	Civilization(
+		iArawak,
+		iGold=25,
+		lCivics=[iChief, iClans, iHarmony, iNomads],
+		techs=techs.column(3).including(iNavigation, iTradeRoutes).without(iMining),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation, iFishing),
+	),
+	Civilization(
+		iTupi,
+		iGold=25,
+		lCivics=[iChief, iClans, iHarmony, iNomads],
+		techs=techs.column(3).including(iNavigation, iTradeRoutes).without(iMining),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation, iFishing),
 	),
 	Civilization(
 		iPurepecha,
@@ -289,7 +309,7 @@ lCivilizations = [
 	),
 	Civilization(
 		iHaudenosaunee,
-		iGold=200,
+		iGold=150,
 		lCivics=[iCouncil, iTribalConfederacy, iHarmony, iIntegration],
 		techs=techs.column(3).including(iProperty, iCeremony),
 		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation, iFishing),
@@ -309,6 +329,13 @@ lCivilizations = [
 		lCivics=[iProprietors, iAdmiralty, iGrants, iSlavery],
 		techs=techs.column(8).including(iGunpowder, iCompanies, iFinance, iCartography, iExchange, iExploration, iOptics, iTriangularTrade),
 		extraTechs=techs.column(0).including(iSouthEuropeAccess),
+	),
+	Civilization(
+		iCherokee,
+		iGold=100,
+		lCivics=[iChief, iClans, iHarmony],
+		techs=techs.column(3).including(iProperty, iCeremony),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation, iFishing),
 	),
 	Civilization(
 		iEngland,
@@ -336,10 +363,17 @@ lCivilizations = [
 		extraTechs=techs.column(0).including(iNorthEuropeAccess, iFishing, iDiving),
 	),
 	Civilization(
+		iApache,
+		iGold=50,
+		lCivics=[iChief, iSubsistance, iNomads],
+		techs=techs.column(3).including(iCeremony, iContact, iRiding),
+		extraTechs=techs.column(0).including(iHunting, iCompanionPlanting, iInterpretation),
+	),
+	Civilization(
 		iLakota,
 		iGold=100,
 		lCivics=[iChief, iSubsistance, iHarmony, iNomads],
-		techs=techs.column(3).including(iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks),
+		techs=techs.column(3).including(iCeremony, iContact, iRiding),
 		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation),
 	),
 	Civilization(
@@ -465,18 +499,18 @@ dStartingUnits = CivDict({
 		iBase: 3,
 		iDefend: 1,
 	},
-	iPueblo: {
-		iSettle: 2,
-		iWork: 1,
-		iBase: 2,
-		iDefend: 2,
-		iExplore: 1,
-	},
 	iMuisca: {
 		iSettle: 1,
 		iWork: 1,
 		iDefend: 2,
 		iAttack: 1,
+	},
+	iToltec: {
+		iSettle: 1,
+		iWork: 1,
+		iDefend: 2,
+		iAttack: 4,
+		iSkirmish: 1,
 	},
 	iNorse: {
 		iSettleSea: 1,
@@ -487,6 +521,24 @@ dStartingUnits = CivDict({
 		iDefend: 3,
 		iSkirmish: 1,
 		iAttack: 3,
+	},
+	iPueblo: {
+		iSettle: 2,
+		iWork: 1,
+		iBase: 2,
+		iDefend: 2,
+		iExplore: 1,
+	},
+	iArawak: {
+		iSettle: 1,
+		iDefend: 2,
+		iExplore: 1,
+		iSettleSea: 1,
+	},
+	iTupi: {
+		iSettle: 2,
+		iDefend: 2,
+		iExplore: 1,
 	},
 	iInuit: {
 		iSettle: 1,
@@ -523,13 +575,6 @@ dStartingUnits = CivDict({
 		iAttack: 4,
 		iSpyRole: 1,
 	},
-	iLakota: {
-		iSettle: 2,
-		iDefend: 2,
-		iAttack: 3,
-		iSkirmish: 1,
-		iExplore: 1,
-	},
 	iSpain: {
 		iSettleSea: 1,
 		iWorkSea: 1,
@@ -540,6 +585,11 @@ dStartingUnits = CivDict({
 		iWorkSea: 1,
 		iSlaveSea: 1,
 		iMissionarySea: 1,
+	},
+	iCherokee: {
+		iSettle: 1,
+		iDefend: 2,
+		iWork: 1,
 	},
 	iEngland: {
 		iSettleSea: 1,
@@ -555,6 +605,18 @@ dStartingUnits = CivDict({
 		iSettleSea: 1,
 		iWorkSea: 1,
 		iMissionarySea: 1,
+	},
+	iApache: {
+		iSettle: 2,
+		iDefend: 2,
+		iSkirmish: 4,
+	},
+	iLakota: {
+		iSettle: 2,
+		iDefend: 2,
+		iAttack: 3,
+		iSkirmish: 2,
+		iExplore: 1,
 	},
 	iHawaii: {
 		iSettle: 1,

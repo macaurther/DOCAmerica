@@ -9,10 +9,10 @@ from Civics import isCommunist, isFascist, isRepublic, isAutocratic
 
 ### CONSTANTS ###
 
-iNumLanguages = 18
+iNumLanguages = 17
 lLanguages = (
 	iAmerican, iArgentinian, iBrazilian, iDutch, iEnglish, iFrench, iLocal, iMayan, iMexican, iNahuatl, 
-	iNative, iNordic, iPortuguese, iQuechua, iRussian, iSpanish, iSwedish, iToltec,
+	iNative, iNordic, iPortuguese, iQuechua, iRussian, iSpanish, iSwedish, 
 ) = range(iNumLanguages)
 
 

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tupi -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TUPI_DESC</Tag>
+		<English>The Tupi</English>
+		<French>The Tupi</French>
+		<German>The Tupi</German>
+		<Italian>The Tupi</Italian>
+		<Spanish>The Tupi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TUPI_PEOPLES</Tag>
+		<English>Tupi Peoples</English>
+		<French>Tupi Peoples</French>
+		<German>Tupi Peoples</German>
+		<Italian>Tupi Peoples</Italian>
+		<Spanish>Tupi Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TUPI_ADJECTIVE</Tag>
+		<English>Tupi</English>
+		<French>Tupi</French>
+		<German>Tupi</German>
+		<Italian>Tupi</Italian>
+		<Spanish>Tupi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TUPI_SHORT_DESC</Tag>
+		<English>Tupi</English>
+		<French>Tupi</French>
+		<German>Tupi</German>
+		<Italian>Tupi</Italian>
+		<Spanish>Tupi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TUPI_SHORT_DESC</Tag>
+		<English>Tupi</English>
+		<French>Tupi</French>
+		<German>Tupi</German>
+		<Italian>Tupi</Italian>
+		<Spanish>Tupi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TUPI_DEFAULT</Tag>
+		<English>%s2 Kingdom</English>
+		<French>%s2 Kingdom</French>
+		<German>%s2 Kingdom</German>
+		<Italian>%s2 Kingdom</Italian>
+		<Spanish>%s2 Kingdom</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TUPI_FASCIST</Tag>
+		<English>%s2 State</English>
+		<French>%s2 State</French>
+		<German>%s2 State</German>
+		<Italian>%s2 State</Italian>
+		<Spanish>%s2 State</Spanish>
+	</TEXT>
+</Civ4GameText>

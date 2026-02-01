@@ -130,6 +130,205 @@
 			<CivilizationActionSound>AS3D_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
+			<Type>CIVILIZATION_APACHE</Type>
+			<Description>TXT_KEY_CIV_APACHE_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_APACHE_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_APACHE_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_APACHE_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_PEACH</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_APACHE</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_PUEBLO</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_KACHINA</PaganReligion>	<!-- MacAurther TODO -->
+			<Impact>IMPACT_MARGINAL</Impact>
+			<Identifier>APA</Identifier>
+			<Region>AMA</Region>
+			<CultureGroup>0</CultureGroup>
+			<StartingYear>1625</StartingYear>
+			<LoadingTimes>
+				<LoadingTime>40</LoadingTime>
+				<LoadingTime>10</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+			</LoadingTimes>
+			<Rating>
+				<Trade>1</Trade>
+				<Production>3</Production>
+				<Culture>2</Culture>
+				<Growth>1</Growth>
+				<Start>1</Start>
+			</Rating>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+            <Cities>
+				<City>Tiiis Tseba</City>
+                <City>Chichiil Bidagoteel</City>
+                <City>Teehach</City>
+                <City>Tichiog</City>
+                <City>Kiis Chiintiidn</City>
+                <City>Ts Tsskidn</City>
+                <City>Dzi Likesilan</City>
+                <City>Tsebainasti</City>
+                <City>Hakiy</City>
+                <City>Ts L' tah</City>
+                <City>Naleei Danakaiy</City>
+                <City>T' Yadnlin</City>
+                <City>Nagonltin</City>
+                <City>Chichiil da'kizh</City>
+                <City>Izee Dighin</City>
+                <City>Ts Dadlit'as</City>
+                <City>T' Edn</City>
+                <City>Tse Nanesnasdz</City>
+                <City>Ts Ya Kih Nastl</City>
+                <City>Iyah Hajin</City>
+                <City>T' Nadidoh</City>
+                <City>Ma' Bijaa Daslaa</City>
+                <City>Tse Das'n</City>
+                <City>Dib Tud</City>
+                <City>Tse Ye Gocha</City>
+                <City>Yoo Golin</City>
+                <City>Washbidi Bit</City>
+                <City>Ts Shid</City>
+                <City>Ch' Disch'ag</City>
+                <City>Tii Ch'ogi</City>
+                <City>Bighan Da'isln</City>
+                <City>Bis Bit</City>
+            </Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_KACHINA_PITHOUSE</BuildingType>	<!-- MacAurther TODO -->
+				</Building>
+			</Buildings>
+			<Units/>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs/>
+			<DisableTechs/>
+			<InitialCivics>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
+			</InitialCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_MANGAS_COLORADAS</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>CIVILIZATION_PUEBLO</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
+		</CivilizationInfo>
+		<CivilizationInfo>
+			<Type>CIVILIZATION_ARAWAK</Type>
+			<Description>TXT_KEY_CIV_ARAWAK_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_ARAWAK_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_ARAWAK_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_ARAWAK_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_BLUE</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_ARAWAK</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>	<!-- MacAurther TODO -->
+			<Impact>IMPACT_MARGINAL</Impact>
+			<Identifier>ARA</Identifier>
+			<Region>AMA</Region>
+			<CultureGroup>0</CultureGroup>
+			<StartingYear>1000</StartingYear>
+			<LoadingTimes>
+				<LoadingTime>10</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+			</LoadingTimes>
+			<Rating>
+				<Trade>2</Trade>
+				<Production>1</Production>
+				<Culture>1</Culture>
+				<Growth>3</Growth>
+				<Start>1</Start>
+			</Rating>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+			<Cities>
+                <City>Boriken</City>
+                <City>Cubanacan</City>
+                <City>Haiti</City>
+                <City>Kiskeya</City>
+                <City>Jamaica</City>
+                <City>Arakaka</City>
+                <City>Imataka</City>
+                <City>Guanaba</City>
+                <City>Liguanea</City>
+                <City>Amakura</City>
+                <City>Iere</City>
+                <City>Malliouhana</City>
+                <City>Aloi</City>
+                <City>Ocanmanru</City>
+                <City>Liamugua</City>
+                <City>Atabei</City>
+                <City>Waitukubuli</City>
+                <City>Ichirouganaim</City>
+                <City>Kalaoucera</City>
+                <City>Oualiche</City>
+                <City>Touloukaera</City>
+                <City>Iyanola</City>
+                <City>Oualie</City>
+                <City>Hairoun</City>
+                <City>Wadadli</City>
+			</Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>	<!-- MacAurther TODO -->
+				</Building>
+			</Buildings>
+			<Units/>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs/>
+			<DisableTechs/>
+			<InitialCivics>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
+			</InitialCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_AGUEYBANA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>CIVILIZATION_TUPI</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound> <!-- Just using this language for more variety -->
+			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
+		</CivilizationInfo>
+		<CivilizationInfo>
 			<Type>CIVILIZATION_ARGENTINA</Type>
 			<Description>TXT_KEY_CIV_ARGENTINA_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_ARGENTINA_SHORT_DESC</ShortDescription>
@@ -269,9 +468,7 @@
 				<City>Calixtlahuaca</City>
 				<City>Tlacopan</City>
 				<City>Atzcapotzalco</City>
-				<City>Tzintzuntzen</City>
 				<City>Malinalco</City>
-				<City>Tula</City>
 				<City>Tamuin</City>
 				<City>Teayo</City>
 				<City>Cempoala</City>
@@ -297,8 +494,6 @@
 				<City>Ayotzinco</City>
 				<City>Iztapam</City>
 				<City>Zaculeu</City>
-				<City>Cholula</City>
-				<City>Tulum</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -575,6 +770,99 @@
 			<DerivativeCiv>CIVILIZATION_ENGLAND</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_ENGLAND_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_ENGLAND_ORDER</CivilizationActionSound>
+		</CivilizationInfo>
+		<CivilizationInfo>
+			<Type>CIVILIZATION_CHEROKEE</Type>
+			<Description>TXT_KEY_CIV_CHEROKEE_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_CHEROKEE_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_CHEROKEE_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_CHEROKEE_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_CYAN</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_CHEROKEE</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_MISSISSIPPIAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>	<!-- MacAurther TODO -->
+			<Impact>IMPACT_MARGINAL</Impact>
+			<Identifier>CHE</Identifier>
+			<Region>AMA</Region>
+			<CultureGroup>0</CultureGroup>
+			<StartingYear>1600</StartingYear>
+			<LoadingTimes>
+				<LoadingTime>30</LoadingTime>
+				<LoadingTime>5</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+			</LoadingTimes>
+			<Rating>
+				<Trade>1</Trade>
+				<Production>2</Production>
+				<Culture>2</Culture>
+				<Growth>2</Growth>
+				<Start>1</Start>
+			</Rating>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+            <Cities>
+                <City>Chota</City>
+                <City>Kituwah</City>
+                <City>Hiwassee</City>
+                <City>Tuskegee</City>
+                <City>Tellico</City>
+                <City>Keowee</City>
+                <City>Tahlequah</City>
+                <City>Nequassee</City>
+                <City>Tomotley</City>
+                <City>Kulsetsiyi</City>
+                <City>Tanasi</City>
+                <City>Toqua</City>
+                <City>Dugiluyi</City>
+                <City>Onodowahagh</City>
+                <City>Qualatchee</City>
+                <City>Itseyi</City>
+                <City>Whatauga</City>
+                <City>Coosawatie</City>
+                <City>Cheeohee</City>
+                <City>Kawiyi</City>
+                <City>Nikwasi</City>
+                <City>Distayohi</City>
+            </Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_MIDEWIWIN_MIDEWIGAAN</BuildingType>	<!-- MacAurther TODO -->
+				</Building>
+			</Buildings>
+			<Units/>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs/>
+			<DisableTechs/>
+			<InitialCivics>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
+			</InitialCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_OCONOSTOTA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>CIVILIZATION_MISSISSIPPI</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_CHIMU</Type>
@@ -1736,7 +2024,7 @@
 			<ShortDescription>TXT_KEY_CIV_LAKOTA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_LAKOTA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_LAKOTA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_LAKOTA</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_CREAM</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_LAKOTA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_PLAINS</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SIOUX</UnitArtStyleType>
@@ -3366,7 +3654,7 @@
 			<ShortDescription>TXT_KEY_CIV_TEOTIHUACAN_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_TEOTIHUACAN_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_TEOTIHUACAN_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_TEOTIHUACAN</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_DARK_PURPLE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TEOTIHUACAN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_AZTEC</UnitArtStyleType>
@@ -3391,39 +3679,7 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Tlatelolco</City>
-				<City>Texcoco</City>
-				<City>Calixtlahuaca</City>
-				<City>Atzcapotzalco</City>
-				<City>Malinalco</City>
-				<City>Tula</City>
-				<City>Tamuin</City>
-				<City>Teayo</City>
-				<City>Cempoala</City>
-				<City>Chalco</City>
-				<City>Tlalmanalco</City>
-				<City>Ixtapaluca</City>
-				<City>Huexotla</City>
-				<City>Tepexpan</City>
-				<City>Tepetlaoxtoc</City>
-				<City>Chiconautla</City>
-				<City>Zitlaltepec</City>
-				<City>Coyotepec</City>
-				<City>Tequixquiac</City>
-				<City>Jilotzingo</City>
-				<City>Tlapanaloya</City>
-				<City>Tultitan</City>
-				<City>Ecatepec</City>
-				<City>Coatepec</City>
-				<City>Chalchiuites</City>
-				<City>Chiauhita</City>
-				<City>Chapultepec</City>
-				<City>Itzapalapa</City>
-				<City>Ayotzinco</City>
-				<City>Iztapam</City>
-				<City>Zaculeu</City>
 				<City>Cholula</City>
-				<City>Tulum</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -3561,6 +3817,168 @@
 			<DerivativeCiv>CIVILIZATION_INCA</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_INCA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_INCA_ORDER</CivilizationActionSound>
+		</CivilizationInfo>
+		<CivilizationInfo>
+			<Type>CIVILIZATION_TOLTECS</Type>
+			<Description>TXT_KEY_CIV_TOLTECS_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_TOLTECS_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_TOLTECS_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_TOLTECS_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_CARMINE</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_TOLTECS</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_AZTEC</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
+			<Impact>IMPACT_LIMITED</Impact>
+			<Identifier>TOL</Identifier>
+			<Region>MES</Region>
+			<CultureGroup>0</CultureGroup>
+			<StartingYear>850</StartingYear>
+			<LoadingTimes>
+				<LoadingTime>10</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+			</LoadingTimes>
+			<Rating>
+				<Trade>5</Trade>
+				<Production>3</Production>
+				<Culture>3</Culture>
+				<Growth>3</Growth>
+				<Start>1</Start>
+			</Rating>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+			<Cities>
+				<City>Huichapan</City>
+				<City>Xilotepec</City>
+				<City>Tollantzinco</City>
+				<City>Tlalpizahuac</City>
+			</Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_TEOTL_STEP_PYRAMID</BuildingType>
+				</Building>
+			</Buildings>
+			<Units/>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs/>
+			<DisableTechs/>
+			<InitialCivics>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
+			</InitialCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_TOPILTZIN</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>CIVILIZATION_AZTEC</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_AZTEC_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_AZTEC_ORDER</CivilizationActionSound>
+		</CivilizationInfo>
+		<CivilizationInfo>
+			<Type>CIVILIZATION_TUPI</Type>
+			<Description>TXT_KEY_CIV_TUPI_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_TUPI_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_TUPI_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_TUPI_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_JADE</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_TUPI</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>	<!-- MacAurther TODO -->
+			<Impact>IMPACT_MARGINAL</Impact>
+			<Identifier>TUP</Identifier>
+			<Region>AMA</Region>
+			<CultureGroup>0</CultureGroup>
+			<StartingYear>1000</StartingYear>
+			<LoadingTimes>
+				<LoadingTime>10</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+			</LoadingTimes>
+			<Rating>
+				<Trade>2</Trade>
+				<Production>1</Production>
+				<Culture>1</Culture>
+				<Growth>3</Growth>
+				<Start>1</Start>
+			</Rating>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+            <Cities>
+                <City>Ata Kahni</City>
+                <City>Nuenuhkiki</City>
+                <City>Pake Kahni</City>
+                <City>Tabe Nanika</City>
+                <City>Tupi Wunu</City>
+                <City>Ekatotsa</City>
+                <City>Pia Baa</City>
+                <City>Taibo Sukui</City>
+                <City>Tupi Sokoobi</City>
+                <City>Kuhtu</City>
+                <City>Nuetutsi</City>
+                <City>Omo Sumui</City>
+                <City>Tupi Takai</City>
+                <City>Nuetaloi</City>
+                <City>Ata Lomoi</City>
+                <City>Tupi Lamasii</City>
+            </Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>	<!-- MacAurther TODO -->
+				</Building>
+			</Buildings>
+			<Units/>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs/>
+			<DisableTechs/>
+			<InitialCivics>
+				<CivicType>CIVIC_ELDERS</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SETTLEMENT</CivicType>
+			</InitialCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_CUNHAMBEBE</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>CIVILIZATION_ARAWAK</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound> <!-- Just using this language for more variety -->
+			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_VENEZUELA</Type>
@@ -3885,10 +4303,8 @@
 			<bPlayable>0</bPlayable>
 			<bAIPlayable>0</bAIPlayable>
 			<Cities>
-				<City>Cherokee</City>
 				<City>Olmec</City>
 				<City>Chinook</City>
-				<City>Apache</City>
 				<City>Chehalis</City>
 				<City>Illinois</City>
 				<City>Navajo</City>
@@ -4080,10 +4496,8 @@
 			<bPlayable>0</bPlayable>
 			<bAIPlayable>0</bAIPlayable>
 			<Cities>
-				<City>Cherokee</City>
 				<City>Olmec</City>
 				<City>Chinook</City>
-				<City>Apache</City>
 				<City>Chehalis</City>
 				<City>Illinois</City>
 				<City>Navajo</City>
@@ -4538,10 +4952,8 @@
 			<bPlayable>0</bPlayable>
 			<bAIPlayable>0</bAIPlayable>
 			<Cities>
-				<City>Cherokee</City>
 				<City>Olmec</City>
 				<City>Chinook</City>
-				<City>Apache</City>
 				<City>Chehalis</City>
 				<City>Illinois</City>
 				<City>Navajo</City>
@@ -4609,13 +5021,10 @@
 			<bPlayable>0</bPlayable>
 			<bAIPlayable>0</bAIPlayable>
 			<Cities>
-				<City>Cherokee</City>
 				<City>Olmec</City>
 				<City>Chinook</City>
-				<City>Apache</City>
 				<City>Chehalis</City>
 				<City>Illinois</City>
-				<City>Navajo</City>
 				<City>Carib</City>
 			</Cities>
 			<Buildings>
