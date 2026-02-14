@@ -531,10 +531,10 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
-			<Type>CIVIC_MINDALAES</Type>
-			<Description>TXT_KEY_CIVIC_MINDALAES</Description>
-			<Civilopedia>TXT_KEY_CIVIC_MINDALAES_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_MINDALAES_STRATEGY</Strategy>
+			<Type>CIVIC_MERCHANT_TRADE</Type>
+			<Description>TXT_KEY_CIVIC_MERCHANT_TRADE</Description>
+			<Civilopedia>TXT_KEY_CIVIC_MERCHANT_TRADE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_MERCHANT_TRADE_STRATEGY</Strategy>
 			<TechPrereq>TECH_TRADE_ROUTES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Merchants.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>

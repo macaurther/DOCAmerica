@@ -974,7 +974,7 @@ def getCivicStability(iPlayer, civics=None):
 		if iClans in civics: iStability -= 2
 		if iBureaucracy in civics: iStability += 2
 		if iCasteSystem in civics: iStability += 2
-		if iMindalaes in civics: iStability += 2
+		if iMerchantTrade in civics: iStability += 2
 		if iIsolationism in civics: iStability -= 2
 	
 	if iGodKing in civics:
@@ -1045,7 +1045,7 @@ def getCivicStability(iPlayer, civics=None):
 		if iIntegration in civics: iStability += 2
 	
 	if iCraftsmen in civics:
-		if iMindalaes in civics: iStability += 2
+		if iMerchantTrade in civics: iStability += 2
 		if iCosmopolitans in civics: iStability += 2
 		if iNomads in civics: iStability -= 2
 	
@@ -1070,7 +1070,7 @@ def getCivicStability(iPlayer, civics=None):
 		if iIsolationism in civics: iStability -= 2
 		if iIntegration in civics: iStability += 2
 		
-	if iMindalaes in civics:
+	if iMerchantTrade in civics:
 		if iCosmopolitans in civics: iStability += 2
 		if iAcculturation in civics: iStability += 2
 		if iNomads in civics: iStability += 2

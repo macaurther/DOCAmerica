@@ -1734,22 +1734,6 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs, can settle on ice, and has extra strength versus animals..</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_MUISCA_GUECHA</Tag>
-		<English>Guecha</English>
-		<French>Guecha</French>
-		<German>Guecha</German>
-		<Italian>Guecha</Italian>
-		<Spanish>Guecha</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_MUISCA_GUECHA_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is stronger.</English>
-		<French>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is stronger.</French>
-		<German>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is stronger.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is stronger.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is stronger.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_TEOTIHUACAN_ARTISAN</Tag>
 		<English>Artisan</English>
 		<French>
@@ -2464,6 +2448,22 @@
 		<German>The [COLOR_UNIT_TEXT]Halberdier[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, can be trains with Gold, and starts with Mobility.</German>
 		<Italian>The [COLOR_UNIT_TEXT]Halberdier[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, can be trains with Gold, and starts with Mobility.</Italian>
 		<Spanish>The [COLOR_UNIT_TEXT]Halberdier[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, can be trains with Gold, and starts with Mobility.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MUISCA_MINDALAE</Tag>
+		<English>Mindalae</English>
+		<French>Mindalae</French>
+		<German>Mindalae</German>
+		<Italian>Mindalae</Italian>
+		<Spanish>Mindalae</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MUISCA_MINDALAE_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Mindalae[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT], grants copies of Gold after completing Trade Missions.</English>
+		<French>The [COLOR_UNIT_TEXT]Mindalae[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT], grants copies of Gold after completing Trade Missions.</French>
+		<German>The [COLOR_UNIT_TEXT]Mindalae[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT], grants copies of Gold after completing Trade Missions.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Mindalae[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT], grants copies of Gold after completing Trade Missions.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Mindalae[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT], grants copies of Gold after completing Trade Missions.</Spanish>
 	</TEXT>
 	
 	

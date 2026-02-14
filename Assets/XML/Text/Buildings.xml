@@ -1607,11 +1607,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MUISCA_GOLDSMITH_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Goldsmith[COLOR_REVERT], the Muisca replacement for [COLOR_BUILDING_TEXT]Jeweller[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT] and gives happiness from [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silver[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Copper[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Goldsmith[COLOR_REVERT], the Muisca replacement for [COLOR_BUILDING_TEXT]Jeweller[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT] and gives happiness from [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silver[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Copper[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Goldsmith[COLOR_REVERT], the Muisca replacement for [COLOR_BUILDING_TEXT]Jeweller[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT] and gives happiness from [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silver[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Copper[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Goldsmith[COLOR_REVERT], the Muisca replacement for [COLOR_BUILDING_TEXT]Jeweller[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT] and gives happiness from [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silver[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Copper[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Goldsmith[COLOR_REVERT], the Muisca replacement for [COLOR_BUILDING_TEXT]Jeweller[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT] and gives happiness from [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silver[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Copper[COLOR_REVERT].</Spanish>
+		<English>The [COLOR_BUILDING_TEXT]Goldsmith[COLOR_REVERT], the Muisca replacement for [COLOR_BUILDING_TEXT]Jeweller[COLOR_REVERT], is available earlier, increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], allows you to hire a [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist, and gives happiness from [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silver[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Copper[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Goldsmith[COLOR_REVERT], the Muisca replacement for [COLOR_BUILDING_TEXT]Jeweller[COLOR_REVERT], is available earlier, increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], allows you to hire a [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist, and gives happiness from [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silver[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Copper[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Goldsmith[COLOR_REVERT], the Muisca replacement for [COLOR_BUILDING_TEXT]Jeweller[COLOR_REVERT], is available earlier, increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], allows you to hire a [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist, and gives happiness from [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silver[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Copper[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Goldsmith[COLOR_REVERT], the Muisca replacement for [COLOR_BUILDING_TEXT]Jeweller[COLOR_REVERT], is available earlier, increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], allows you to hire a [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist, and gives happiness from [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silver[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Copper[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Goldsmith[COLOR_REVERT], the Muisca replacement for [COLOR_BUILDING_TEXT]Jeweller[COLOR_REVERT], is available earlier, increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], allows you to hire a [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist, and gives happiness from [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silver[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Copper[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TEOTIHUACAN_TEMAZCAL</Tag>
@@ -2075,11 +2075,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_DUTCH_FACTORIJ_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], provides 2 Merchant specialists.</English>
-		<French>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], provides 2 Merchant specialists.</French>
-		<German>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], provides 2 Merchant specialists.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], provides 2 Merchant specialists.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], provides 2 Merchant specialists.</Spanish>
+		<English>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], allows you to hire two [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</English>
+		<French>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], allows you to hire two [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist..</French>
+		<German>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], allows you to hire two [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist..</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], allows you to hire two [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist..</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], allows you to hire two [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist..</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ENGLISH_ASSEMBLY</Tag>

@@ -1848,16 +1848,7 @@
 			</BonusTypeStructs>
 			<ImprovementPillage/>
 			<ImprovementUpgrade/>
-			<TechYieldChanges>
-				<TechYieldChange>
-					<PrereqTech>TECH_ECONOMICS</PrereqTech>
-					<TechYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</TechYields>
-				</TechYieldChange>
-			</TechYieldChanges>
+			<TechYieldChanges/>
 			<RouteYieldChanges/>
 			<bGraphicalOnly>1</bGraphicalOnly>
 		</ImprovementInfo>

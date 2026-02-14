@@ -157,7 +157,7 @@
 				<Growth>1</Growth>
 				<Start>1</Start>
 			</Rating>
-			<bPlayable>1</bPlayable>
+			<bPlayable>0</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
             <Cities>
 				<City>Tiiis Tseba</City>
@@ -260,7 +260,7 @@
 				<Growth>3</Growth>
 				<Start>1</Start>
 			</Rating>
-			<bPlayable>1</bPlayable>
+			<bPlayable>0</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
                 <City>Boriken</City>
@@ -802,7 +802,7 @@
 				<Growth>2</Growth>
 				<Start>1</Start>
 			</Rating>
-			<bPlayable>1</bPlayable>
+			<bPlayable>0</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
             <Cities>
                 <City>Chota</City>
@@ -2530,8 +2530,8 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
-					<UnitType>UNIT_MUISCA_GUECHA</UnitType>
+					<UnitClassType>UNITCLASS_GREAT_MERCHANT</UnitClassType>
+					<UnitType>UNIT_MUISCA_MINDALAE</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_WORKER</UnitClassType>
@@ -3853,7 +3853,7 @@
 				<Growth>3</Growth>
 				<Start>1</Start>
 			</Rating>
-			<bPlayable>1</bPlayable>
+			<bPlayable>0</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
 				<City>Huichapan</City>
@@ -3928,7 +3928,7 @@
 				<Growth>3</Growth>
 				<Start>1</Start>
 			</Rating>
-			<bPlayable>1</bPlayable>
+			<bPlayable>0</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
             <Cities>
                 <City>Ata Kahni</City>

@@ -102,6 +102,22 @@ def chimuArtist(iPlayer):
 	# Inform the player that the artist has arrived
 	CyInterface().addMessage(iPlayer, False, 20, strMessage, "", 0, infos.unit(iGreatArtist).getButton(), ColorTypes(0), pCapital.getX(), pCapital.getY(), True, True) 
 
+@handler("EndPlayerTurn")
+# Muisca Ability
+def muiscaAbility(iGameTurn, iPlayer):
+	if civ(iPlayer) == iMuisca:
+		pPlayer = player(iPlayer)
+		iTreasury = pPlayer.getGold()
+		iResources = 0
+		for iResource in [iGold, iSilver, iCopper]:
+			iResources += player(iPlayer).getNumAvailableBonuses(iResource) - \
+						  player(iPlayer).getBonusImport(iResource) + \
+						  player(iPlayer).getBonusExport(iResource)
+		iExtraGold = int(iTreasury * 0.01 * iResources)
+		if iExtraGold > 0:
+			pPlayer.changeGold(iExtraGold)
+			message(iPlayer, "TXT_KEY_MUSICA_POWER", iExtraGold, sound='AS2D_BAGOMONEY')
+
 @handler("goodyReceived")
 # Coureur des Bois ability
 def coureurDesBoisPower(iPlayer, pPlot, pUnit, iGoodyType):

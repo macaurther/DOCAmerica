@@ -6575,6 +6575,16 @@ bool CvUnit::trade()
 		NotifyEntity(MISSION_TRADE);
 	}
 
+	// MacAurther: Muisca Mindalae ability
+	if (GET_PLAYER(getOwner()).getCivilizationType() == MUISCA)
+	{
+		CvCity* pCapital = GET_PLAYER(getOwner()).getCapitalCity();
+		if(pCapital != NULL)
+		{
+			pCapital->changeFreeBonus(BONUS_GOLD, 1);
+		}
+	}
+
 	kill(true);
 
 	return true;

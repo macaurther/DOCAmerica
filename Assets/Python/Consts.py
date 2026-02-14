@@ -635,7 +635,7 @@ lImmigraitonTechs = [iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSib
 # initialise unit variables to unit indices from XML
 
 iNumUnits = 145
-# Land Units (95)
+# Land Units (94)
 # 0				1				2				3				4				5				6				7				8				9
 (iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote,		iClawdius,		iSettler, 		iDogSled,		
 iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iWorker, 		iTrackman,		iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       
@@ -643,10 +643,10 @@ iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iImmigran
 iCoureurDesBois,iRanger,		iFactor,		iParatrooper,	iMilitia,		iFalconDancer,	iMinuteman,		iWarrior, 		iKoa,			iTomahawk,		
 iSwordsman,		iAztecJaguar,	iAxeman,		iMaceman,		iAucac,			iQuangariecha,	iArquebusier,	iMohawk,		iArmedSlave,	iMusketman,		
 iCompagnies,	iFusilier,		iRedcoat,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iSpearman,		iXhisxyag,		
-iPikeman,		iHalberdier,	iEagle,			iTercio,		iAntiTank,		iArcher,		iGuecha,		iCrossbowman,	iGatlingGun,	iMachineGun,	
-iSkirmisher,	iHolkan,		iSlinger,		iLongbowman,	iIrregular,		iCacos,			iGrenadier,		iAlbionLegion,	iMarine,		iHorseArcher,	
-iSwiftArrow,	iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		iGrenadierCavalry,iRural,		iLightTank,		iTank,			
-iBombard,		iCannon,		iArtillery,		iHowitzer,		iAAGun,		
+iPikeman,		iHalberdier,	iEagle,			iTercio,		iAntiTank,		iArcher,		iCrossbowman,	iGatlingGun,	iMachineGun,	iSkirmisher,	
+iHolkan,		iSlinger,		iLongbowman,	iIrregular,		iCacos,			iGrenadier,		iAlbionLegion,	iMarine,		iHorseArcher,	iSwiftArrow,	
+iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		iGrenadierCavalry,iRural,		iLightTank,		iTank,			iBombard,		
+iCannon,		iArtillery,		iHowitzer,		iAAGun,		
 
 # Naval Units (27)
 # 0				1				2				3				4				5				6				7				8				9
@@ -656,10 +656,10 @@ iMonitor,		iSubmarine,		iBarque,		iShipOfTheLine,	iManOfWar,		iCruiser,		iBattle
 # Air Units (4)
 # 0				1				2				3				4				5				6				7				8				9
 iBiplane,		iFighter,		iBomber,		iNuclearBomber,	
-# Great People Units (17)
+# Great People Units (18)
 # 0				1				2				3				4				5				6				7				8				9
-iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,
-iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,
+iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iMindalae,		iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,
+iFeGreatProphet,iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,
 # Other Units (2)
 # 0				1				2				3				4				5				6				7				8				9
 iSlave,			iChattleSlave) = range(iNumUnits)
@@ -775,7 +775,7 @@ iNumCivics = 126
 (iElders,		iChief,			iDespot,		iMonarch,		iAristocrats,	iGodKing,		iCouncil,		
 iDecentralization,iClans,		iCityStates,	iTribalConfederacy,iBureaucracy,iVassalage,		iFirstNation,
 iTraditionalism,iSubsistance,	iTlacotin,		iMita,			iCraftsmen,		iCasteSystem,	iGuilds,	
-iReciprocity,	iCalpulli,		iRedistribution,iMindalaes,		iRaiding,		iDependency,	iTourism,
+iReciprocity,	iCalpulli,		iRedistribution,iMerchantTrade,	iRaiding,		iDependency,	iTourism,
 iAnimism,		iHarmony,		iSacrifice,		iOrganizedReligion,iCosmopolitans,iAcculturation,iGhostDance,
 iSettlement,	iNomads,		iIsolationism,	iConquest,		iIntegration,	iTributaries,	iAncestralLands,
 # Colony

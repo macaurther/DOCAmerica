@@ -7100,15 +7100,6 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 		}
 	}
 
-	// MacAurther: Muisca UP: +2 Commerce on Mines
-	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == MUISCA)
-	{
-		if (eYield == YIELD_COMMERCE && (eImprovement == IMPROVEMENT_MINE || eImprovement == IMPROVEMENT_SLAVE_MINE))
-		{
-			iYield += 2;
-		}
-	}
-
 	// MacAurther: Plains RP: +1 Food on Camps and Pastures
 	if (ePlayer != NO_PLAYER && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_PLAINS)
 	{

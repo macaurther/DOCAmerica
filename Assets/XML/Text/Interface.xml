@@ -4089,6 +4089,14 @@
 		<Spanish>Word has spread about a newly contacted Tribe! You have received %D1[ICON_IMMIGRATION].</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MUSICA_POWER</Tag>
+		<English>Your tunjos collection has appreciated! You have received %D1[ICON_GOLD].</English>
+		<French>Your tunjos collection has appreciated! You have received %D1[ICON_GOLD].</French>
+		<German>Your tunjos collection has appreciated! You have received %D1[ICON_GOLD].</German>
+		<Italian>Your tunjos collection has appreciated! You have received %D1[ICON_GOLD].</Italian>
+		<Spanish>Your tunjos collection has appreciated! You have received %D1[ICON_GOLD].</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROCESS_IMMIGRATION</Tag>
 		<English>Immigration</English>
 		<French>Immigration</French>

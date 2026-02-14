@@ -25568,7 +25568,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)ECONOMICS))
 	{
-		if (eCivic == CIVIC_RECIPROCITY || eCivic == CIVIC_MINDALAES || eCivic == CIVIC_CRAFTSMEN)
+		if (eCivic == CIVIC_RECIPROCITY || eCivic == CIVIC_MERCHANT_TRADE || eCivic == CIVIC_CRAFTSMEN)
 		{
 			return true;
 		}

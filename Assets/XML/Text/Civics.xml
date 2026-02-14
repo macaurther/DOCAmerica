@@ -374,15 +374,15 @@
 		<Spanish>The most primitive Economy civic</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MINDALAES</Tag>
-		<English>Mindalaes</English>
-		<French>Mindalaes</French>
-		<German>Mindalaes</German>
-		<Italian>Mindalaes</Italian>
-		<Spanish>Mindalaes</Spanish>
+		<Tag>TXT_KEY_CIVIC_MERCHANT_TRADE</Tag>
+		<English>Merchant Trade</English>
+		<French>Merchant Trade</French>
+		<German>Merchant Trade</German>
+		<Italian>Merchant Trade</Italian>
+		<Spanish>Merchant Trade</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MINDALAES_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_MERCHANT_TRADE_STRATEGY</Tag>
 		<English>Extra trade route in all cities; extra [ICON_PRODUCTION] from merchants</English>
 		<French>Extra trade route in all cities; extra [ICON_PRODUCTION] from merchants</French>
 		<German>Extra trade route in all cities; extra [ICON_PRODUCTION] from merchants</German>

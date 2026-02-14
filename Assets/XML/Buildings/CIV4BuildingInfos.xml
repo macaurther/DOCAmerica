@@ -1519,7 +1519,7 @@
 			<Strategy>TXT_KEY_BUILDING_MUISCA_GOLDSMITH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MUISCA_GOLDSMITH</ArtDefineTag>
-			<PrereqTech>TECH_ALLOYS</PrereqTech>
+			<PrereqTech>TECH_SMELTING</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1549,6 +1549,10 @@
 			<SpecialistCounts>
 				<SpecialistCount>
 					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
