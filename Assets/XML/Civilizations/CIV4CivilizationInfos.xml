@@ -142,7 +142,7 @@
 			<PaganReligion>PAGAN_RELIGION_KACHINA</PaganReligion>	<!-- MacAurther TODO -->
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>APA</Identifier>
-			<Region>AMA</Region>
+			<Region>PLA</Region>
 			<CultureGroup>0</CultureGroup>
 			<StartingYear>1625</StartingYear>
 			<LoadingTimes>
@@ -265,9 +265,7 @@
 			<Cities>
                 <City>Boriken</City>
                 <City>Cubanacan</City>
-                <City>Haiti</City>
                 <City>Kiskeya</City>
-                <City>Jamaica</City>
                 <City>Arakaka</City>
                 <City>Imataka</City>
                 <City>Guanaba</City>
@@ -295,7 +293,12 @@
 					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>	<!-- MacAurther TODO -->
 				</Building>
 			</Buildings>
-			<Units/>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_WORKER</UnitClassType>
+					<UnitType>UNIT_WORKER_AMAZON</UnitType>
+				</Unit>
+			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
@@ -784,7 +787,7 @@
 			<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>	<!-- MacAurther TODO -->
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>CHE</Identifier>
-			<Region>AMA</Region>
+			<Region>LAK</Region>
 			<CultureGroup>0</CultureGroup>
 			<StartingYear>1600</StartingYear>
 			<LoadingTimes>
@@ -2484,7 +2487,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>MUI</Identifier>
-			<Region>AND</Region>
+			<Region>AMA</Region>
 			<CultureGroup>0</CultureGroup>
 			<StartingYear>800</StartingYear>
 			<LoadingTimes>
@@ -2529,6 +2532,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
 					<UnitType>UNIT_MUISCA_GUECHA</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_WORKER</UnitClassType>
+					<UnitType>UNIT_WORKER_AMAZON</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -3947,7 +3954,12 @@
 					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>	<!-- MacAurther TODO -->
 				</Building>
 			</Buildings>
-			<Units/>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_WORKER</UnitClassType>
+					<UnitType>UNIT_WORKER_AMAZON</UnitType>
+				</Unit>
+			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>

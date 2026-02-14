@@ -14,6 +14,22 @@
 <Civ4GameText>
 	<!-- Regional Powers -->
 	<TEXT>
+		<Tag>TXT_KEY_RP_AMA_TITLE</Tag>
+		<English>Amazon - The Power of Foraging:</English>
+		<French>Amazon - The Power of Foraging:</French>
+		<German>Amazon - The Power of Foraging:</German>
+		<Italian>Amazon - The Power of Foraging:</Italian>
+		<Spanish>Amazon - The Power of Foraging:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_AMA</Tag>
+		<English>Camps improve Tea, Cocoa, Dye, Spices, Rubber, and Timber</English>
+		<French>Camps improve Tea, Cocoa, Dye, Spices, Rubber, and Timber</French>
+		<German>Camps improve Tea, Cocoa, Dye, Spices, Rubber, and Timber</German>
+		<Italian>Camps improve Tea, Cocoa, Dye, Spices, Rubber, and Timber</Italian>
+		<Spanish>Camps improve Tea, Cocoa, Dye, Spices, Rubber, and Timber</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_RP_AND_TITLE</Tag>
 		<English>Andes - The Power of Terraces:</English>
 		<French>Andes - The Power of Terraces:</French>

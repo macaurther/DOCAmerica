@@ -634,19 +634,19 @@ lImmigraitonTechs = [iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSib
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 144
-# Land Units (94)
+iNumUnits = 145
+# Land Units (95)
 # 0				1				2				3				4				5				6				7				8				9
 (iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote,		iClawdius,		iSettler, 		iDogSled,		
-iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iTrackman,		iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       iAgent,			
-iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iImmigrant,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,
-iRanger,		iFactor,		iParatrooper,	iMilitia,		iFalconDancer,	iMinuteman,		iWarrior, 		iKoa,			iTomahawk,		iSwordsman,		
-iAztecJaguar,	iAxeman,		iMaceman,		iAucac,			iQuangariecha,	iArquebusier,	iMohawk,		iArmedSlave,	iMusketman,		iCompagnies,	
-iFusilier,		iRedcoat,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iSpearman,		iXhisxyag,		iPikeman,		
-iHalberdier,	iEagle,			iTercio,		iAntiTank,		iArcher,		iGuecha,		iCrossbowman,	iGatlingGun,	iMachineGun,	iSkirmisher,	
-iHolkan,		iSlinger,		iLongbowman,	iIrregular,		iCacos,			iGrenadier,		iAlbionLegion,	iMarine,		iHorseArcher,	iSwiftArrow,	
-iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		iGrenadierCavalry,iRural,		iLightTank,		iTank,			iBombard,		
-iCannon,		iArtillery,		iHowitzer,		iAAGun,		
+iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iWorker, 		iTrackman,		iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       
+iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iImmigrant,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	
+iCoureurDesBois,iRanger,		iFactor,		iParatrooper,	iMilitia,		iFalconDancer,	iMinuteman,		iWarrior, 		iKoa,			iTomahawk,		
+iSwordsman,		iAztecJaguar,	iAxeman,		iMaceman,		iAucac,			iQuangariecha,	iArquebusier,	iMohawk,		iArmedSlave,	iMusketman,		
+iCompagnies,	iFusilier,		iRedcoat,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iSpearman,		iXhisxyag,		
+iPikeman,		iHalberdier,	iEagle,			iTercio,		iAntiTank,		iArcher,		iGuecha,		iCrossbowman,	iGatlingGun,	iMachineGun,	
+iSkirmisher,	iHolkan,		iSlinger,		iLongbowman,	iIrregular,		iCacos,			iGrenadier,		iAlbionLegion,	iMarine,		iHorseArcher,	
+iSwiftArrow,	iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		iGrenadierCavalry,iRural,		iLightTank,		iTank,			
+iBombard,		iCannon,		iArtillery,		iHowitzer,		iAAGun,		
 
 # Naval Units (27)
 # 0				1				2				3				4				5				6				7				8				9
@@ -913,12 +913,12 @@ iNumCultureLevels = 7
 
 #Improvements
 
-iNumImprovements = 31
+iNumImprovements = 32
 # 0				1				2				3				4				5				6				7				8				9
 (iLandWorked, 	iWaterWorked, 	iCityRuins, 	iFarm, 			iPaddyField, 	iFishingBoats, 	iOceanFishery, 	iWhalingBoats, 	iMine, 			iSlaveMine, 
-iWorkshop, 		iLumbermill, 	iWindmill, 		iWatermill, 	iPlantation, 	iSlavePlantation, iQuarry, 		iPasture, 		iCamp, 			iWell, 			
-iOffshorePlatform,iOrchard,		iCottage, 		iHamlet, 		iVillage, 		iTown, 			iFort, 			iForestPreserve, iMarinePreserve,iTribe,		
-iContactedTribe) = range(iNumImprovements)
+iWorkshop, 		iLumbermill, 	iWindmill, 		iWatermill, 	iPlantation, 	iSlavePlantation, iQuarry, 		iPasture, 		iCamp, 			iCampAmazon, 			
+iWell, 			iOffshorePlatform,iOrchard,		iCottage, 		iHamlet, 		iVillage, 		iTown, 			iFort, 			iForestPreserve, iMarinePreserve,
+iTribe,			iContactedTribe) = range(iNumImprovements)
 
 iNumRoutes = 3
 (iRouteRoad, iRouteRailroad, iRouteHighway) = range(iNumRoutes)

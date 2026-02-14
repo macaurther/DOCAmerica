@@ -125,6 +125,7 @@ enum CultureGroups
 enum RegionPowers
 {
 	NO_RP = -1,
+	RP_AMAZON,
 	RP_ANDES,
 	RP_ANGLO_AMERICA,
 	RP_ARCTIC,

@@ -24374,11 +24374,11 @@ EraTypes CvPlayer::getSoundtrackEra()
 				case TEOTIHUACAN:
 				case PUREPECHA:
 				case AZTECS:
+				case TOLTECS:
 					return (EraTypes)ERA_MESO;
 				case TIWANAKU:
 				case WARI:
 				case CHIMU:
-				case MUISCA:
 				case INCA:
 					return (EraTypes)ERA_ANDES;
 				case MISSISSIPPI:
@@ -24386,6 +24386,11 @@ EraTypes CvPlayer::getSoundtrackEra()
 				case HAUDENOSAUNEE:
 				case INUIT:
 				case LAKOTA:
+				case MUISCA:
+				case ARAWAK:
+				case TUPI:
+				case CHEROKEE:
+				case APACHE:
 					return (EraTypes)ERA_NATIVE;
 				case NORSE:
 					return (EraTypes)ERA_NORSE;
@@ -24416,8 +24421,11 @@ EraTypes CvPlayer::getSoundtrackEra()
 				case WARI:
 				case CHIMU:
 				case MUISCA:
+				case TOLTECS:
 				case INCA:
 				case PUEBLO:
+				case ARAWAK:
+				case TUPI:
 					return (EraTypes)ERA_LATIN;
 			}
 		}
@@ -25663,9 +25671,12 @@ int CvPlayer::getRegionPowers(CivilizationTypes eCiv) const
 {
 	switch (eCiv)
 	{
+	case ARAWAK:
+	case TUPI:
+	case MUISCA:
+		return RP_AMAZON;
 	case CHIMU:
 	case INCA:
-	case MUISCA:
 	case TIWANAKU:
 	case WARI:
 		return RP_ANDES;
@@ -25701,8 +25712,10 @@ int CvPlayer::getRegionPowers(CivilizationTypes eCiv) const
 		return RP_DESERT;
 	case HAUDENOSAUNEE:
 	case MISSISSIPPI:
+	case CHEROKEE:
 		return RP_LAKES_AND_RIVERS;
 	case LAKOTA:
+	case APACHE:
 		return RP_PLAINS;
 	default:
 		return NO_RP;
