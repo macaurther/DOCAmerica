@@ -14,6 +14,12 @@ dRelocatedCapitals = CivDict({
 dCapitalInfrastructure = CivDict({
 })
 
+# List of plots where Tribes are not allowed to spawn, usually because it randomly makes a UHV impossible/very difficult
+lBannedTribePlots = [
+	(46, 51),		# Gold for Muisca
+	(50, 53),		# Gold for Muisca
+]
+
 @handler("GameStart")
 def updateCulture():
 	for plot in plots.all():
@@ -39,6 +45,10 @@ def placeTribes():
 	# no Tribes in Iceland
 	for pPlot in plots.region(rIceland):
 		lProhibitedPlots.append(pPlot)
+		
+ 	# Skip over banned plots
+	for tBannedPlot in lBannedTribePlots:
+		lProhibitedPlots.append(plot(tBannedPlot[0], tBannedPlot[1]))
 
 	# Make sure capital vicinity is clear for all civs
 	for iCiv in dCapitals.keys():
@@ -59,7 +69,7 @@ def placeTribes():
 					if pPlot.getOwner() != PlayerTypes.NO_PLAYER or pPlot.isWater() or pPlot.isImpassable():
 						continue
 
-					# Skip over capital tiles
+					# Skip over prohibited tiles
 					bProhibited = False
 					for pNoPlot in lProhibitedPlots:
 						if pPlot.getX() == pNoPlot.getX() and pPlot.getY() == pNoPlot.getY():
