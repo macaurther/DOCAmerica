@@ -6664,7 +6664,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CUIRASSIER_POLYNESIAN</Type>
-			<Button>Art/Interface/Buttons/Units/Cuirassier.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Cuirassier.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,3,11</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -6808,7 +6808,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_AT_INFANTRY_POLYNESIAN</Type>
-			<Button>Art/Interface/Buttons/Units/AT_Infantry.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/AT_Infantry.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,5,11</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -6856,7 +6856,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PARATROOPER_POLYNESIAN</Type>
-			<Button>Art/Interface/Buttons/Units/Paratrooper.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Paratrooper.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,4,11</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -7097,7 +7097,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CUIRASSIER_AZTEC</Type>
-			<Button>Art/Interface/Buttons/Units/Cuirassier.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Cuirassier.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,3,11</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -7249,7 +7249,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_AT_INFANTRY_AZTEC</Type>
-			<Button>Art/Interface/Buttons/Units/AT_Infantry.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/AT_Infantry.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,5,11</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -7297,7 +7297,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PARATROOPER_AZTEC</Type>
-			<Button>Art/Interface/Buttons/Units/Paratrooper.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Paratrooper.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,4,11</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -7586,7 +7586,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CUIRASSIER_MAYAN</Type>
-			<Button>Art/Interface/Buttons/Units/Cuirassier.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Cuirassier.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,3,11</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -7803,7 +7803,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CUIRASSIER_INCAN</Type>
-			<Button>Art/Interface/Buttons/Units/Cuirassier.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Cuirassier.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,3,11</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -8253,7 +8253,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_AT_INFANTRY_BRAZILIAN</Type>
-			<Button>Art/Interface/Buttons/Units/AT_Infantry.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/AT_Infantry.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,5,11</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -8301,7 +8301,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PARATROOPER_BRAZILIAN</Type>
-			<Button>Art/Interface/Buttons/Units/Paratrooper.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Paratrooper.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,4,11</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -8542,7 +8542,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CUIRASSIER_IROQUOIS</Type>
-			<Button>Art/Interface/Buttons/Units/Cuirassier.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Cuirassier.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,3,11</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -8718,7 +8718,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_AT_INFANTRY_IROQUOIS</Type>
-			<Button>Art/Interface/Buttons/Units/AT_Infantry.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/AT_Infantry.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,5,11</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -8766,7 +8766,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PARATROOPER_IROQUOIS</Type>
-			<Button>Art/Interface/Buttons/Units/Paratrooper.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Paratrooper.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,4,11</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -9055,7 +9055,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CUIRASSIER_SIOUX</Type>
-			<Button>Art/Interface/Buttons/Units/Cuirassier.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Cuirassier.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,3,11</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -9199,7 +9199,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_AT_INFANTRY_SIOUX</Type>
-			<Button>Art/Interface/Buttons/Units/AT_Infantry.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/AT_Infantry.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,5,11</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -9247,7 +9247,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PARATROOPER_SIOUX</Type>
-			<Button>Art/Interface/Buttons/Units/Paratrooper.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Paratrooper.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,4,11</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -9464,7 +9464,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CUIRASSIER_MISSISSIPPIAN</Type>
-			<Button>Art/Interface/Buttons/Units/Cuirassier.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Cuirassier.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,3,11</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -9753,7 +9753,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CUIRASSIER_PUEBLO</Type>
-			<Button>Art/Interface/Buttons/Units/Cuirassier.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Cuirassier.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,3,11</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -9929,7 +9929,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_AT_INFANTRY_PUEBLO</Type>
-			<Button>Art/Interface/Buttons/Units/AT_Infantry.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/AT_Infantry.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,5,11</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -9977,7 +9977,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PARATROOPER_PUEBLO</Type>
-			<Button>Art/Interface/Buttons/Units/Paratrooper.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Paratrooper.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,4,11</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

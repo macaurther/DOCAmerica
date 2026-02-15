@@ -10,9 +10,11 @@
 			<Type>PROCESS_WEALTH</Type>
 			<Description>TXT_KEY_PROCESS_WEALTH</Description>
 			<Strategy>TXT_KEY_PROCESS_WEALTH_STRATEGY</Strategy>
-			<TechPrereq>TECH_FINANCE</TechPrereq>
+			<TechPrereq>TECH_ARITHMETICS</TechPrereq>
 			<ProductionToCommerceModifiers>
-				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>25</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 			</ProductionToCommerceModifiers>
@@ -22,10 +24,12 @@
 			<Type>PROCESS_RESEARCH</Type>
 			<Description>TXT_KEY_PROCESS_RESEARCH</Description>
 			<Strategy>TXT_KEY_PROCESS_RESEARCH_STRATEGY</Strategy>
-			<TechPrereq>TECH_EDUCATION</TechPrereq>
+			<TechPrereq>TECH_SCHOLARSHIP</TechPrereq>
 			<ProductionToCommerceModifiers>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
-				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>25</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 			</ProductionToCommerceModifiers>
 			<Button>Art/Interface/Buttons/Process/ProcessResearch.dds</Button>
@@ -34,31 +38,77 @@
 			<Type>PROCESS_CULTURE</Type>
 			<Description>TXT_KEY_PROCESS_CULTURE</Description>
 			<Strategy>TXT_KEY_PROCESS_CULTURE_STRATEGY</Strategy>
-			<TechPrereq>TECH_CODICES</TechPrereq>
+			<TechPrereq>TECH_WRITING</TechPrereq>
 			<ProductionToCommerceModifiers>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
-				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>25</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 			</ProductionToCommerceModifiers>
 			<Button>Art/Interface/Buttons/Process/ProcessCulture.dds</Button>
 		</ProcessInfo>
 		<ProcessInfo>
-			<Type>PROCESS_FOOD</Type>
-			<Description>TXT_KEY_PROCESS_FOOD</Description>
-			<Strategy>TXT_KEY_PROCESS_FOOD_STRATEGY</Strategy>
-			<TechPrereq>NONE</TechPrereq>
+			<Type>PROCESS_WEALTH_2</Type>
+			<Description>TXT_KEY_PROCESS_WEALTH_2</Description>
+			<Strategy>TXT_KEY_PROCESS_WEALTH_STRATEGY</Strategy>
+			<TechPrereq>TECH_ECONOMICS</TechPrereq>
 			<ProductionToCommerceModifiers>
+				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 			</ProductionToCommerceModifiers>
-			<Button>,-,Art/Interface/Buttons/Actions_Builds_Leaderheads_Specialists_Atlas.dds,4,7</Button>
+			<Button>Art/Interface/Buttons/Process/ProcessWealth2.dds</Button>
+		</ProcessInfo>
+		<ProcessInfo>
+			<Type>PROCESS_RESEARCH_2</Type>
+			<Description>TXT_KEY_PROCESS_RESEARCH_2</Description>
+			<Strategy>TXT_KEY_PROCESS_RESEARCH_STRATEGY</Strategy>
+			<TechPrereq>TECH_SCIENTIFIC_METHOD</TechPrereq>
+			<ProductionToCommerceModifiers>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+			</ProductionToCommerceModifiers>
+			<Button>Art/Interface/Buttons/Process/ProcessResearch2.dds</Button>
+		</ProcessInfo>
+		<ProcessInfo>
+			<Type>PROCESS_CULTURE_2</Type>
+			<Description>TXT_KEY_PROCESS_CULTURE_2</Description>
+			<Strategy>TXT_KEY_PROCESS_CULTURE_STRATEGY</Strategy>
+			<TechPrereq>TECH_INDOCTRINATION</TechPrereq>
+			<ProductionToCommerceModifiers>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+			</ProductionToCommerceModifiers>
+			<Button>Art/Interface/Buttons/Process/ProcessCulture2.dds</Button>
+		</ProcessInfo>
+		<ProcessInfo>
+			<Type>PROCESS_ESPIONAGE</Type>
+			<Description>TXT_KEY_PROCESS_ESPIONAGE</Description>
+			<Strategy>TXT_KEY_PROCESS_ESPIONAGE_STRATEGY</Strategy>
+			<TechPrereq>TECH_COMBINED_ARMS</TechPrereq>
+			<ProductionToCommerceModifiers>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+			</ProductionToCommerceModifiers>
+			<Button>Art/Interface/Buttons/Process/ProcessEspionage.dds</Button>
 		</ProcessInfo>
 		<ProcessInfo>
 			<Type>PROCESS_IMMIGRATION</Type>
 			<Description>TXT_KEY_PROCESS_IMMIGRATION</Description>
 			<Strategy>TXT_KEY_PROCESS_IMMIGRATION_STRATEGY</Strategy>
-			<TechPrereq>TECH_COMMUNITY</TechPrereq>
+			<TechPrereq>TECH_INDENTURES</TechPrereq>
 			<ProductionToCommerceModifiers>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
@@ -67,6 +117,76 @@
 				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
 			</ProductionToCommerceModifiers>
 			<Button>Art/Interface/Buttons/Process/ProcessImmigration.dds</Button>
+		</ProcessInfo>
+		<ProcessInfo>
+			<Type>PROCESS_WEALTH_3</Type>
+			<Description>TXT_KEY_PROCESS_WEALTH_3</Description>
+			<Strategy>TXT_KEY_PROCESS_WEALTH_STRATEGY</Strategy>
+			<TechPrereq>TECH_ASSEMBLY_LINE</TechPrereq>
+			<ProductionToCommerceModifiers>
+				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>25</iProductionToCommerceModifier>
+			</ProductionToCommerceModifiers>
+			<Button>Art/Interface/Buttons/Process/ProcessWealth3.dds</Button>
+		</ProcessInfo>
+		<ProcessInfo>
+			<Type>PROCESS_RESEARCH_3</Type>
+			<Description>TXT_KEY_PROCESS_RESEARCH_3</Description>
+			<Strategy>TXT_KEY_PROCESS_RESEARCH_STRATEGY</Strategy>
+			<TechPrereq>TECH_TELEGRAPH</TechPrereq>
+			<ProductionToCommerceModifiers>
+				<iProductionToCommerceModifier>25</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+			</ProductionToCommerceModifiers>
+			<Button>Art/Interface/Buttons/Process/ProcessResearch3.dds</Button>
+		</ProcessInfo>
+		<ProcessInfo>
+			<Type>PROCESS_CULTURE_3</Type>
+			<Description>TXT_KEY_PROCESS_CULTURE_3</Description>
+			<Strategy>TXT_KEY_PROCESS_CULTURE_STRATEGY</Strategy>
+			<TechPrereq>TECH_NATIONALISM</TechPrereq>
+			<ProductionToCommerceModifiers>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>25</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+			</ProductionToCommerceModifiers>
+			<Button>Art/Interface/Buttons/Process/ProcessCulture3.dds</Button>
+		</ProcessInfo>
+		<ProcessInfo>
+			<Type>PROCESS_ESPIONAGE_2</Type>
+			<Description>TXT_KEY_PROCESS_ESPIONAGE_2</Description>
+			<Strategy>TXT_KEY_PROCESS_ESPIONAGE_STRATEGY</Strategy>
+			<TechPrereq>TECH_JOURNALISM</TechPrereq>
+			<ProductionToCommerceModifiers>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>25</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+			</ProductionToCommerceModifiers>
+			<Button>Art/Interface/Buttons/Process/ProcessEspionage2.dds</Button>
+		</ProcessInfo>
+		<ProcessInfo>
+			<Type>PROCESS_IMMIGRATION_2</Type>
+			<Description>TXT_KEY_PROCESS_IMMIGRATION_2</Description>
+			<Strategy>TXT_KEY_PROCESS_IMMIGRATION_STRATEGY</Strategy>
+			<TechPrereq>TECH_PROGRESSIVISM</TechPrereq>
+			<ProductionToCommerceModifiers>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>25</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+			</ProductionToCommerceModifiers>
+			<Button>Art/Interface/Buttons/Process/ProcessImmigration2.dds</Button>
 		</ProcessInfo>
 	</ProcessInfos>
 </Civ4ProcessInfo>

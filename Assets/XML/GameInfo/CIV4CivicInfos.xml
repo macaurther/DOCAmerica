@@ -1042,7 +1042,7 @@
 			<Description>TXT_KEY_CIVIC_HOME_RULE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_HOME_RULE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HOME_RULE_STRATEGY</Strategy>
-			<TechPrereq>TECH_AUTONOMY</TechPrereq>
+			<TechPrereq>TECH_SCIENTIFIC_METHOD</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/HomeRule.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -1169,7 +1169,7 @@
 			<Description>TXT_KEY_CIVIC_COMMONWEALTH</Description>
 			<Civilopedia>TXT_KEY_CIVIC_COMMONWEALTH_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_COMMONWEALTH_STRATEGY</Strategy>
-			<TechPrereq>TECH_MODERNIZATION</TechPrereq>
+			<TechPrereq>TECH_JUDICIARY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/CommonLaw.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -1683,7 +1683,7 @@
 			<Description>TXT_KEY_CIVIC_EMANCIPATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_EMANCIPATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_EMANCIPATION_STRATEGY</Strategy>
-			<TechPrereq>TECH_MODERNIZATION</TechPrereq>
+			<TechPrereq>TECH_JUDICIARY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Emancipation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>

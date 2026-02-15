@@ -4097,20 +4097,212 @@
 		<Spanish>Your tunjos collection has appreciated! You have received %D1[ICON_GOLD].</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROCESS_WEALTH</Tag>
+		<English>Commodities</English>
+		<French>Commodities</French>
+		<German>Commodities</German>
+		<Italian>Commodities</Italian>
+		<Spanish>Commodities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_WEALTH_STRATEGY</Tag>
+		<English>Focusing on commodities converts [ICON_PRODUCTION] into a small amount of [ICON_GOLD] within that particular city.</English>
+		<French>Focusing on commodities converts [ICON_PRODUCTION] into a small amount of [ICON_GOLD] within that particular city.</French>
+		<German>Focusing on commodities converts [ICON_PRODUCTION] into a small amount of [ICON_GOLD] within that particular city.</German>
+		<Italian>Focusing on commodities converts [ICON_PRODUCTION] into a small amount of [ICON_GOLD] within that particular city.</Italian>
+		<Spanish>Focusing on commodities converts [ICON_PRODUCTION] into a small amount of [ICON_GOLD] within that particular city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_RESEARCH</Tag>
+		<English>Observations</English>
+		<French>Observations</French>
+		<German>Observations</German>
+		<Italian>Observations</Italian>
+		<Spanish>Observations</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_RESEARCH_STRATEGY</Tag>
+		<English>Focusing on observations converts [ICON_PRODUCTION] into a small amount of [ICON_RESEARCH] within that particular city.</English>
+		<French>Focusing on observations converts [ICON_PRODUCTION] into a small amount of [ICON_RESEARCH] within that particular city.</French>
+		<German>Focusing on observations converts [ICON_PRODUCTION] into a small amount of [ICON_RESEARCH] within that particular city.</German>
+		<Italian>Focusing on observations converts [ICON_PRODUCTION] into a small amount of [ICON_RESEARCH] within that particular city.</Italian>
+		<Spanish>Focusing on observations converts [ICON_PRODUCTION] into a small amount of [ICON_RESEARCH] within that particular city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_CULTURE</Tag>
+		<English>Epics</English>
+		<French>Epics</French>
+		<German>Epics</German>
+		<Italian>Epics</Italian>
+		<Spanish>Epics</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_CULTURE_STRATEGY</Tag>
+		<English>Focusing on epics converts [ICON_PRODUCTION] into a small amount of [ICON_CULTURE] within that particular city.</English>
+		<French>Focusing on epics converts [ICON_PRODUCTION] into a small amount of [ICON_CULTURE] within that particular city.</French>
+		<German>Focusing on epics converts [ICON_PRODUCTION] into a small amount of [ICON_CULTURE] within that particular city.</German>
+		<Italian>Focusing on epics converts [ICON_PRODUCTION] into a small amount of [ICON_CULTURE] within that particular city.</Italian>
+		<Spanish>Focusing on epics converts [ICON_PRODUCTION] into a small amount of [ICON_CULTURE] within that particular city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_WEALTH_2</Tag>
+		<English>Dividends</English>
+		<French>Dividends</French>
+		<German>Dividends</German>
+		<Italian>Dividends</Italian>
+		<Spanish>Dividends</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_WEALTH_2_STRATEGY</Tag>
+		<English>Focusing on dividends converts [ICON_PRODUCTION] into [ICON_GOLD] within that particular city.</English>
+		<French>Focusing on dividends converts [ICON_PRODUCTION] into [ICON_GOLD] within that particular city.</French>
+		<German>Focusing on dividends converts [ICON_PRODUCTION] into [ICON_GOLD] within that particular city.</German>
+		<Italian>Focusing on dividends converts [ICON_PRODUCTION] into [ICON_GOLD] within that particular city.</Italian>
+		<Spanish>Focusing on dividends converts [ICON_PRODUCTION] into [ICON_GOLD] within that particular city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_RESEARCH_2</Tag>
+		<English>Theories</English>
+		<French>Theories</French>
+		<German>Theories</German>
+		<Italian>Theories</Italian>
+		<Spanish>Theories</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_RESEARCH_2_STRATEGY</Tag>
+		<English>Focusing on theories converts [ICON_PRODUCTION] into [ICON_RESEARCH] within that particular city.</English>
+		<French>Focusing on theories converts [ICON_PRODUCTION] into [ICON_RESEARCH] within that particular city.</French>
+		<German>Focusing on theories converts [ICON_PRODUCTION] into [ICON_RESEARCH] within that particular city.</German>
+		<Italian>Focusing on theories converts [ICON_PRODUCTION] into [ICON_RESEARCH] within that particular city.</Italian>
+		<Spanish>Focusing on theories converts [ICON_PRODUCTION] into [ICON_RESEARCH] within that particular city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_CULTURE_2</Tag>
+		<English>Dogma</English>
+		<French>Dogma</French>
+		<German>Dogma</German>
+		<Italian>Dogma</Italian>
+		<Spanish>Dogma</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_CULTURE_2_STRATEGY</Tag>
+		<English>Focusing on dogma converts [ICON_PRODUCTION] into [ICON_CULTURE] within that particular city.</English>
+		<French>Focusing on dogma converts [ICON_PRODUCTION] into [ICON_CULTURE] within that particular city.</French>
+		<German>Focusing on dogma converts [ICON_PRODUCTION] into [ICON_CULTURE] within that particular city.</German>
+		<Italian>Focusing on dogma converts [ICON_PRODUCTION] into [ICON_CULTURE] within that particular city.</Italian>
+		<Spanish>Focusing on dogma converts [ICON_PRODUCTION] into [ICON_CULTURE] within that particular city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_ESPIONAGE</Tag>
+		<English>Networks</English>
+		<French>Networks</French>
+		<German>Networks</German>
+		<Italian>Networks</Italian>
+		<Spanish>Networks</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_ESPIONAGE_STRATEGY</Tag>
+		<English>Focusing on networks converts [ICON_PRODUCTION] into [ICON_ESPIONAGE] within that particular city.</English>
+		<French>Focusing on networks converts [ICON_PRODUCTION] into [ICON_ESPIONAGE] within that particular city.</French>
+		<German>Focusing on networks converts [ICON_PRODUCTION] into [ICON_ESPIONAGE] within that particular city.</German>
+		<Italian>Focusing on networks converts [ICON_PRODUCTION] into [ICON_ESPIONAGE] within that particular city.</Italian>
+		<Spanish>Focusing on networks converts [ICON_PRODUCTION] into [ICON_ESPIONAGE] within that particular city.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROCESS_IMMIGRATION</Tag>
-		<English>Immigration</English>
-		<French>Immigration</French>
-		<German>Immigration</German>
-		<Italian>Immigration</Italian>
-		<Spanish>Immigration</Spanish>
+		<English>Incentives</English>
+		<French>Incentives</French>
+		<German>Incentives</German>
+		<Italian>Incentives</Italian>
+		<Spanish>Incentives</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROCESS_IMMIGRATION_STRATEGY</Tag>
-		<English>Focusing on immigration converts production into immigration within that particular city.</English>
-		<French>Focusing on immigration converts production into immigration within that particular city.</French>
-		<German>Focusing on immigration converts production into immigration within that particular city.</German>
-		<Italian>Focusing on immigration converts production into immigration within that particular city.</Italian>
-		<Spanish>Focusing on immigration converts production into immigration within that particular city.</Spanish>
+		<English>Focusing on incentives converts [ICON_PRODUCTION] into [ICON_IMMIGRATION] within that particular city.</English>
+		<French>Focusing on incentives converts [ICON_PRODUCTION] into [ICON_IMMIGRATION] within that particular city.</French>
+		<German>Focusing on incentives converts [ICON_PRODUCTION] into [ICON_IMMIGRATION] within that particular city.</German>
+		<Italian>Focusing on incentives converts [ICON_PRODUCTION] into [ICON_IMMIGRATION] within that particular city.</Italian>
+		<Spanish>Focusing on incentives converts [ICON_PRODUCTION] into [ICON_IMMIGRATION] within that particular city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_WEALTH_3</Tag>
+		<English>Prosperity</English>
+		<French>Prosperity</French>
+		<German>Prosperity</German>
+		<Italian>Prosperity</Italian>
+		<Spanish>Prosperity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_WEALTH_3_STRATEGY</Tag>
+		<English>Focusing on prosperity converts [ICON_PRODUCTION] into [ICON_GOLD] and a small amount of [ICON_IMMIGRATION] within that particular city.</English>
+		<French>Focusing on prosperity converts [ICON_PRODUCTION] into [ICON_GOLD] and a small amount of [ICON_IMMIGRATION] within that particular city.</French>
+		<German>Focusing on prosperity converts [ICON_PRODUCTION] into [ICON_GOLD] and a small amount of [ICON_IMMIGRATION] within that particular city.</German>
+		<Italian>Focusing on prosperity converts [ICON_PRODUCTION] into [ICON_GOLD] and a small amount of [ICON_IMMIGRATION] within that particular city.</Italian>
+		<Spanish>Focusing on prosperity converts [ICON_PRODUCTION] into [ICON_GOLD] and a small amount of [ICON_IMMIGRATION] within that particular city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_RESEARCH_3</Tag>
+		<English>Innovation</English>
+		<French>Innovation</French>
+		<German>Innovation</German>
+		<Italian>Innovation</Italian>
+		<Spanish>Innovation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_RESEARCH_3_STRATEGY</Tag>
+		<English>Focusing on innovation converts [ICON_PRODUCTION] into [ICON_RESEARCH] and a small amount of [ICON_GOLD] within that particular city.</English>
+		<French>Focusing on innovation converts [ICON_PRODUCTION] into [ICON_RESEARCH] and a small amount of [ICON_GOLD] within that particular city.</French>
+		<German>Focusing on innovation converts [ICON_PRODUCTION] into [ICON_RESEARCH] and a small amount of [ICON_GOLD] within that particular city.</German>
+		<Italian>Focusing on innovation converts [ICON_PRODUCTION] into [ICON_RESEARCH] and a small amount of [ICON_GOLD] within that particular city.</Italian>
+		<Spanish>Focusing on innovation converts [ICON_PRODUCTION] into [ICON_RESEARCH] and a small amount of [ICON_GOLD] within that particular city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_CULTURE_3</Tag>
+		<English>Patriotism</English>
+		<French>Patriotism</French>
+		<German>Patriotism</German>
+		<Italian>Patriotism</Italian>
+		<Spanish>Patriotism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_CULTURE_3_STRATEGY</Tag>
+		<English>Focusing on patriotism converts [ICON_PRODUCTION] into [ICON_CULTURE] and a small amount of [ICON_ESPIONAGE] within that particular city.</English>
+		<French>Focusing on patriotism converts [ICON_PRODUCTION] into [ICON_CULTURE] and a small amount of [ICON_ESPIONAGE] within that particular city.</French>
+		<German>Focusing on patriotism converts [ICON_PRODUCTION] into [ICON_CULTURE] and a small amount of [ICON_ESPIONAGE] within that particular city.</German>
+		<Italian>Focusing on patriotism converts [ICON_PRODUCTION] into [ICON_CULTURE] and a small amount of [ICON_ESPIONAGE] within that particular city.</Italian>
+		<Spanish>Focusing on patriotism converts [ICON_PRODUCTION] into [ICON_CULTURE] and a small amount of [ICON_ESPIONAGE] within that particular city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_ESPIONAGE_2</Tag>
+		<English>Intelligence</English>
+		<French>Intelligence</French>
+		<German>Intelligence</German>
+		<Italian>Intelligence</Italian>
+		<Spanish>Intelligence</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_ESPIONAGE_2_STRATEGY</Tag>
+		<English>Focusing on intelligence converts [ICON_PRODUCTION] into [ICON_ESPIONAGE] and a small amount of [ICON_RESEARCH] within that particular city.</English>
+		<French>Focusing on intelligence converts [ICON_PRODUCTION] into [ICON_ESPIONAGE] and a small amount of [ICON_RESEARCH] within that particular city.</French>
+		<German>Focusing on intelligence converts [ICON_PRODUCTION] into [ICON_ESPIONAGE] and a small amount of [ICON_RESEARCH] within that particular city.</German>
+		<Italian>Focusing on intelligence converts [ICON_PRODUCTION] into [ICON_ESPIONAGE] and a small amount of [ICON_RESEARCH] within that particular city.</Italian>
+		<Spanish>Focusing on intelligence converts [ICON_PRODUCTION] into [ICON_ESPIONAGE] and a small amount of [ICON_RESEARCH] within that particular city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_IMMIGRATION_2</Tag>
+		<English>Welfare</English>
+		<French>Welfare</French>
+		<German>Welfare</German>
+		<Italian>Welfare</Italian>
+		<Spanish>Welfare</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_IMMIGRATION_2_STRATEGY</Tag>
+		<English>Focusing on welfare converts [ICON_PRODUCTION] into [ICON_IMMIGRATION] and a small amount of [ICON_CULTURE] within that particular city.</English>
+		<French>Focusing on welfare converts [ICON_PRODUCTION] into [ICON_IMMIGRATION] and a small amount of [ICON_CULTURE] within that particular city.</French>
+		<German>Focusing on welfare converts [ICON_PRODUCTION] into [ICON_IMMIGRATION] and a small amount of [ICON_CULTURE] within that particular city.</German>
+		<Italian>Focusing on welfare converts [ICON_PRODUCTION] into [ICON_IMMIGRATION] and a small amount of [ICON_CULTURE] within that particular city.</Italian>
+		<Spanish>Focusing on welfare converts [ICON_PRODUCTION] into [ICON_IMMIGRATION] and a small amount of [ICON_CULTURE] within that particular city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_JOIN_CITY_HELP</Tag>

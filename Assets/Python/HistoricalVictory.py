@@ -161,7 +161,7 @@ dGoals = {
 	iMuisca: (
 		ControlledResourceCount(iGold, 3, at=1150),
 		AveragePopulation(10, at=1300),
-		GoldAmount(10000, by=1450),
+		GoldAmount(20000, by=1450),
 	),
 	iNorse: (
 		All(
