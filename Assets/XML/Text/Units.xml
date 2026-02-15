@@ -2274,22 +2274,6 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Xhisxyag[COLOR_REVERT], the Zapotec replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], does not require resources and defends better in rough terrain.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_PUREPECHA_QUANGARIECHA</Tag>
-		<English>Quangariecha</English>
-		<French>Quangariecha</French>
-		<German>Quangariecha</German>
-		<Italian>Quangariecha</Italian>
-		<Spanish>Quangariecha</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_PUREPECHA_QUANGARIECHA_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense, starts with Guerilla I, and can be trained with Copper.</English>
-		<French>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense, starts with Guerilla I, and can be trained with Copper.</French>
-		<German>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense, starts with Guerilla I, and can be trained with Copper.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense, starts with Guerilla I, and can be trained with Copper.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Quangariecha[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger on city defense, starts with Guerilla I, and can be trained with Copper.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_LIGHT_SWORDSMAN_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Swordsmen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] for the Classical Era.</English>
 		<French>[COLOR_UNIT_TEXT]Swordsmen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] for the Classical Era.</French>
@@ -2472,6 +2456,30 @@
 		<German>[ICON_BULLET]Grants free copy of Gold in the capital after conducting a Trade Mission</German>
 		<Italian>[ICON_BULLET]Grants free copy of Gold in the capital after conducting a Trade Mission</Italian>
 		<Spanish>[ICON_BULLET]Grants free copy of Gold in the capital after conducting a Trade Mission</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PUREPECHA_TARASCAN_ARCHER</Tag>
+		<English>Tarascan Archer</English>
+		<French>Tarascan Archer</French>
+		<German>Tarascan Archer</German>
+		<Italian>Tarascan Archer</Italian>
+		<Spanish>Tarascan Archer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PUREPECHA_TARASCAN_ARCHER_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Tarascan Archer[COLOR_REVERT], the Purepechan replacement for the [COLOR_UNIT_TEXT]Longbowman[COLOR_REVERT], is immune to first strikes and is available earlier.</English>
+		<French>The [COLOR_UNIT_TEXT]Tarascan Archer[COLOR_REVERT], the Purepechan replacement for the [COLOR_UNIT_TEXT]Longbowman[COLOR_REVERT], is immune to first strikes and is available earlier.</French>
+		<German>The [COLOR_UNIT_TEXT]Tarascan Archer[COLOR_REVERT], the Purepechan replacement for the [COLOR_UNIT_TEXT]Longbowman[COLOR_REVERT], is immune to first strikes and is available earlier.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Tarascan Archer[COLOR_REVERT], the Purepechan replacement for the [COLOR_UNIT_TEXT]Longbowman[COLOR_REVERT], is immune to first strikes and is available earlier.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Tarascan Archer[COLOR_REVERT], the Purepechan replacement for the [COLOR_UNIT_TEXT]Longbowman[COLOR_REVERT], is immune to first strikes and is available earlier.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PUREPECHA_TARASCAN_ARCHER_PEDIA</Tag>
+		<English>The Tarascan Archer represents the distinctive military traditions of the Purepecha state of western Mesoamerica. Unlike many neighboring societies, which relied heavily on the atlatl (spear-thrower) and sling as their primary missile weapons, the Purepecha made greater and more systematic use of the bow in warfare.[PARAGRAPH:1]Purepecha armies fielded organized formations equipped with shields, copper weapons, and archers capable of sustained volleys. This emphasis on archery provided range and flexibility in battle, particularly in the lake basins and hill country of Michoacan, where controlling distance and approach routes was critical. Spanish accounts noted their disciplined resistance and effective missile fire during early encounters, which contributed to the Purepecha reputation as one of the strongest military powers of western Mesoamerica.</English>
+		<French>The Tarascan Archer represents the distinctive military traditions of the Purepecha state of western Mesoamerica. Unlike many neighboring societies, which relied heavily on the atlatl (spear-thrower) and sling as their primary missile weapons, the Purepecha made greater and more systematic use of the bow in warfare.[PARAGRAPH:1]Purepecha armies fielded organized formations equipped with shields, copper weapons, and archers capable of sustained volleys. This emphasis on archery provided range and flexibility in battle, particularly in the lake basins and hill country of Michoacan, where controlling distance and approach routes was critical. Spanish accounts noted their disciplined resistance and effective missile fire during early encounters, which contributed to the Purepecha reputation as one of the strongest military powers of western Mesoamerica.</French>
+		<German>The Tarascan Archer represents the distinctive military traditions of the Purepecha state of western Mesoamerica. Unlike many neighboring societies, which relied heavily on the atlatl (spear-thrower) and sling as their primary missile weapons, the Purepecha made greater and more systematic use of the bow in warfare.[PARAGRAPH:1]Purepecha armies fielded organized formations equipped with shields, copper weapons, and archers capable of sustained volleys. This emphasis on archery provided range and flexibility in battle, particularly in the lake basins and hill country of Michoacan, where controlling distance and approach routes was critical. Spanish accounts noted their disciplined resistance and effective missile fire during early encounters, which contributed to the Purepecha reputation as one of the strongest military powers of western Mesoamerica.</German>
+		<Italian>The Tarascan Archer represents the distinctive military traditions of the Purepecha state of western Mesoamerica. Unlike many neighboring societies, which relied heavily on the atlatl (spear-thrower) and sling as their primary missile weapons, the Purepecha made greater and more systematic use of the bow in warfare.[PARAGRAPH:1]Purepecha armies fielded organized formations equipped with shields, copper weapons, and archers capable of sustained volleys. This emphasis on archery provided range and flexibility in battle, particularly in the lake basins and hill country of Michoacan, where controlling distance and approach routes was critical. Spanish accounts noted their disciplined resistance and effective missile fire during early encounters, which contributed to the Purepecha reputation as one of the strongest military powers of western Mesoamerica.</Italian>
+		<Spanish>The Tarascan Archer represents the distinctive military traditions of the Purepecha state of western Mesoamerica. Unlike many neighboring societies, which relied heavily on the atlatl (spear-thrower) and sling as their primary missile weapons, the Purepecha made greater and more systematic use of the bow in warfare.[PARAGRAPH:1]Purepecha armies fielded organized formations equipped with shields, copper weapons, and archers capable of sustained volleys. This emphasis on archery provided range and flexibility in battle, particularly in the lake basins and hill country of Michoacan, where controlling distance and approach routes was critical. Spanish accounts noted their disciplined resistance and effective missile fire during early encounters, which contributed to the Purepecha reputation as one of the strongest military powers of western Mesoamerica.</Spanish>
 	</TEXT>
 	
 	

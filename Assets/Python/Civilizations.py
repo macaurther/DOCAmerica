@@ -282,7 +282,7 @@ lCivilizations = [
 		iPurepecha,
 		iGold=250,
 		lCivics=[iDespot, iTlacotin, iRedistribution],
-		techs=techs.column(4).including(iConstruction, iMathematics, iWriting),
+		techs=techs.column(4).including(iConstruction, iMathematics, iWriting, iGeneralship),
 		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iCompanionPlanting, iKnapping, iDiving, iFishing),
 	),
 	Civilization(
@@ -560,9 +560,10 @@ dStartingUnits = CivDict({
 	iPurepecha: {
 		iSettle: 2,
 		iWork: 2,
-		iAttack: 4,
+		iAttack: 3,
 		iSkirmish: 1,
-		iDefend: 1,
+		iDefend: 2,
+		iSpyRole: 1,	# Represents the incorporated refugees from tribes the Aztecs conquered spying on the periphery for the Purepecha
 	},
 	iAztec: {
 		iSettle: 1,

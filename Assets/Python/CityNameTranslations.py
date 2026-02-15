@@ -544,6 +544,7 @@ name_translations = {
 	"Tula": {
 		iLocal: _,
 		iNative: _,
+		iNahuatl: _,
 		iSpanish: "Leon",
 	},
 	"Tumipampa": {

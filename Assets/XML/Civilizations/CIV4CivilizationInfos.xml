@@ -3298,8 +3298,8 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_MACEMAN</UnitClassType>
-					<UnitType>UNIT_PUREPECHA_QUANGARIECHA</UnitType>
+					<UnitClassType>UNITCLASS_LONGBOWMAN</UnitClassType>
+					<UnitType>UNIT_PUREPECHA_TARASCAN_ARCHER</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>

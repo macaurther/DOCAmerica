@@ -1323,9 +1323,9 @@
 				<StyleUnit>
 					<UnitType>UNIT_LONGBOWMAN</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_LONGBOWMAN_AZTEC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_LONGBOWMAN_AZTEC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_LONGBOWMAN_AZTEC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_LONGBOWMAN_MAYAN</EarlyArtDefineTag>	<!-- Aztec Longbowman used for Purechan Tarascan Archer -->
+						<LateArtDefineTag>ART_DEF_UNIT_LONGBOWMAN_MAYAN</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_LONGBOWMAN_MAYAN</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
