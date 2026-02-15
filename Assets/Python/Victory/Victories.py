@@ -11,7 +11,6 @@ from Types import *
 ### GLOBALS ###
 
 dHistoricalGoals = None
-dReligiousGoals = None
 dAdditionalPaganGoal = None
 
 
@@ -20,20 +19,15 @@ dAdditionalPaganGoal = None
 @handler("fontsLoaded")
 def loadVictories():
 	import HistoricalVictory as Historical
-	import ReligiousVictory as Religious
 	
 	global dHistoricalGoals
 	global dReligiousGoals
 	global dAdditionalPaganGoal
 	
 	dHistoricalGoals = Historical.dGoals
-	dReligiousGoals = Religious.dGoals
-	dAdditionalPaganGoal = Religious.dAdditionalPaganGoal
-	
-	#printVictories(dHistoricalGoals, dReligiousGoals, dAdditionalPaganGoal)
 
 
-def printVictories(dHistoricalGoals, dReligiousGoals, dAdditionalPaganGoal):
+def printVictories(dHistoricalGoals):
 	from Files import getPath
 	
 	lines = []
@@ -43,18 +37,6 @@ def printVictories(dHistoricalGoals, dReligiousGoals, dAdditionalPaganGoal):
 		
 		for goal in dHistoricalGoals.get(iCiv, []):
 			lines.append("%s: %s" %  (text(goal.options["title_key"]), goal.description()))
-	
-	for iReligion in dReligiousGoals:
-		if iReligion < iNumReligions:
-			lines.append(infos.religion(iReligion).getDescription())
-		else:
-			lines.append(str(iReligion))
-		
-		for goal in dReligiousGoals[iReligion]:
-			lines.append("%s: %s" % (text(goal.options.get("title_key", "")), goal.description()))
-	
-	for iPaganReligion, goal in dAdditionalPaganGoal.items():
-		lines.append(str(goal.description()))
 	
 	file = open(getPath("UHV Descriptions.txt"), "w")
 	
@@ -68,32 +50,16 @@ def printVictories(dHistoricalGoals, dReligiousGoals, dAdditionalPaganGoal):
 def assignGoals(iPlayer):
 	if player(iPlayer).isHuman():
 		data.players[iPlayer].historicalVictory = HistoricalVictory.create(iPlayer)
-		data.players[iPlayer].religiousVictory = ReligiousVictory.create(iPlayer)
 
 
 @handler("switch")
 def onSwitch(iPrevious, iCurrent):
 	data.players[iPrevious].historicalVictory.disable()
-	data.players[iPrevious].religiousVictory.disable()
 	
 	data.players[iPrevious].historicalVictory = None
-	data.players[iPrevious].religiousVictory = None
 	
 	data.players[iCurrent].historicalVictory = HistoricalVictory.create(iCurrent)
-	data.players[iCurrent].religiousVictory = ReligiousVictory.create(iCurrent)
 	
-
-@handler("civicChanged")
-def onCivicChanged(iPlayer, iOldCivic, iNewCivic):
-	if iPlayer == active() and infos.civic(iOldCivic).isStateReligion() != infos.civic(iNewCivic).isStateReligion():
-		switchReligiousGoals(iPlayer)
-
-
-@handler("playerChangeStateReligion")
-def onStateReligionChanged(iPlayer):
-	if iPlayer == active():
-		switchReligiousGoals(iPlayer)
-
 
 @handler("victory")
 def onVictory(iPlayer):
@@ -101,14 +67,6 @@ def onVictory(iPlayer):
 		CyInterface().DoSoundtrack("AS2D_VICTORY")
 	else:
 		CyInterface().DoSoundtrack("AS2D_DEFEAT")
-
-
-	
-### UTILITY FUNCTIONS ###
-
-def switchReligiousGoals(iPlayer):
-	data.players[iPlayer].religiousVictory.disable()
-	data.players[iPlayer].religiousVictory = ReligiousVictory.create(iPlayer)
 
 
 ### CLASSES ###
@@ -219,28 +177,3 @@ class HistoricalVictory(Victory):
 			self.bGoldenAge = True
 		elif iSucceededGoals == iNumGoals:
 			self.bVictory = True
-	
-
-class ReligiousVictory(Victory):
-
-	VICTORY_TYPE = VictoryTypes.VICTORY_RELIGIOUS
-
-	@classmethod
-	def create(cls, iPlayer):
-		iStateReligion = player(iPlayer).getStateReligion()
-		
-		if iStateReligion >= 0:
-			return cls(iPlayer, dReligiousGoals[iStateReligion])
-		elif player(iPlayer).isStateReligion():
-			iCivilization = player(iPlayer).getCivilizationType()
-			iPaganReligion = infos.civ(iCivilization).getPaganReligion()
-			return cls(iPlayer, concat(dReligiousGoals[iPaganVictory], dAdditionalPaganGoal[iPaganReligion]))
-		else:
-			return cls(iPlayer, dReligiousGoals[iSecularVictory])
-
-	def check(self):
-		if self.succeeded_goals() == self.num_goals():
-			self.bVictory = True
-	
-	def create_goal(self, description):
-		return description(self.iPlayer, mode=STATELESS)

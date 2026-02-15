@@ -2083,7 +2083,7 @@ class CvWorldBuilderScreen:
 	def showVictoryOverlay(self):
 		removeStabilityOverlay()
 		lRegions = []
-		for index, goal in enumerate(data.players[self.m_iCurrentPlayer].historicalVictory.goals + data.players[self.m_iCurrentPlayer].religiousVictory.goals):
+		for index, goal in enumerate(data.players[self.m_iCurrentPlayer].historicalVictory.goals):
 			for name, area in goal.areas.items():
 				paintPlots(area.land(), 1000 + 2*index, "COLOR_MAGENTA")
 				if self.bVictoryRectangle:

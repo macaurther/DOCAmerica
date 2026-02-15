@@ -1559,11 +1559,6 @@ class CvVictoryScreen:
 				if iLoopVC == 7:
 					self.displayVictory(screen, szTable, data.players[self.iActivePlayer].historicalVictory)
 					bEntriesFound = True
-				
-				# Leoreth: Religious Victory
-				if iLoopVC == 8:
-					self.displayVictory(screen, szTable, data.players[self.iActivePlayer].religiousVictory)
-					bEntriesFound = True
 					
 				if bEntriesFound:
 					screen.appendTableRow(szTable)

@@ -93,9 +93,6 @@ class PlayerData:
 		
 		if self.historicalVictory:
 			self.historicalVictory.enable()
-		
-		if self.religiousVictory:
-			self.religiousVictory.enable()
 
 	def setup(self):
 	
@@ -125,7 +122,6 @@ class PlayerData:
 		self.religiousGoals = []
 		
 		self.historicalVictory = None
-		self.religiousVictory = None
 		
 		# Stability
 		

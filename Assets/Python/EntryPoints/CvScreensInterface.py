@@ -916,9 +916,8 @@ def getVictoryTooltip(argsList):
 	iPlayer, x, y = argsList
 	
 	historicalVictoryTooltip = data.players[iPlayer].historicalVictory and data.players[iPlayer].historicalVictory.area_names((x, y)) or []
-	religiousVictoryTooltip = data.players[iPlayer].religiousVictory and data.players[iPlayer].religiousVictory.area_names((x, y)) or []
 	
-	tooltips = unique(tooltip for tooltip in historicalVictoryTooltip + religiousVictoryTooltip if tooltip)
+	tooltips = unique(tooltip for tooltip in historicalVictoryTooltip if tooltip)
 	return "\n".join(tooltips)
 
 # Leoreth
