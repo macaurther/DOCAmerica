@@ -4299,6 +4299,7 @@
 			<UnitArtStyleType>UNIT_ARTSTYLE_MAYA</UnitArtStyleType>
 			<Identifier>MIN</Identifier>
 			<Region>MIN</Region>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -4492,6 +4493,7 @@
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
 			<Identifier>MIN</Identifier>
 			<Region>MIN</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -4632,6 +4634,7 @@
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
 			<Identifier>MIN</Identifier>
 			<Region>MIN</Region>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -4768,6 +4771,7 @@
 			<UnitArtStyleType>UNIT_ARTSTYLE_SIOUX</UnitArtStyleType>
 			<Identifier>NAT</Identifier>
 			<Region>MIN</Region>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
