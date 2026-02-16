@@ -21,7 +21,7 @@ def colombianPower(iOwner, iPlayer, pCity, bConquest):
 
 @handler("cityAcquired")
 # Inca UP
-def mayanPower(iOwner, iPlayer, pCity, bConquest):
+def incanPower(iOwner, iPlayer, pCity, bConquest):
 	if civ(iPlayer) == iInca and bConquest:
 		iNumCities = player(iPlayer).getNumCities()
 		if iNumCities > 0:

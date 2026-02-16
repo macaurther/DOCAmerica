@@ -16,6 +16,10 @@ dCapitalInfrastructure = CivDict({
 
 # List of plots where Tribes are not allowed to spawn, usually because it randomly makes a UHV impossible/very difficult
 lBannedTribePlots = [
+	(42, 43),		# Cotton for Wari
+	(44, 41),		# Wari Alley
+	(44, 42),		# Wari Alley
+	(44, 43),		# Gold for Wari
 	(46, 51),		# Gold for Muisca
 	(50, 53),		# Gold for Muisca
 ]

@@ -214,14 +214,14 @@ lCivilizations = [
 		iGold=50,
 		lCivics=[iMita, iRedistribution],
 		techs=techs.column(2).including(iAgriculture, iPottery, iPastoralism, iMythology, iArithmetics, iMining, iMasonry),
-		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting),
+		extraTechs=techs.column(0).including(iLandmarks, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting),
 	),
 	Civilization(
 		iWari,
 		iGold=100,
 		lCivics=[iDespot, iMita, iRedistribution],
 		techs=techs.column(3).including(iMasonry, iArithmetics, iProperty, iCeremony),
-		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting),
+		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting, iInterpretation),
 	),
 	Civilization(
 		iMississippi,
@@ -492,6 +492,7 @@ dStartingUnits = CivDict({
 		iAttack: 1,
 		iSkirmish: 3,
 		iDefend: 1,
+		iExplore: 1,
 	},
 	iMississippi: {
 		iSettle: 1,

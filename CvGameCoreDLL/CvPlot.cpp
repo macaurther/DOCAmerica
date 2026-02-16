@@ -1747,20 +1747,6 @@ bool CvPlot::isFreshWater() const
 		return true;
 	}
 
-	// MacAurther: Wari UP
-	if (getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getCivilizationType() == WARI)
-	{
-		for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
-		{
-			CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
-
-			if ((pAdjacentPlot != NULL) && pAdjacentPlot->isPeak())
-			{
-				return true;
-			}
-		}
-	}
-
 	for (iDX = -1; iDX <= 1; iDX++)
 	{
 		for (iDY = -1; iDY <= 1; iDY++)
@@ -3367,6 +3353,13 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 			               (GC.getRouteInfo(getRouteType()).getMovementCost() + GET_TEAM(pUnit->getTeam()).getRouteChange(getRouteType())));
 		iRouteFlatCost = std::max((GC.getRouteInfo(pFromPlot->getRouteType()).getFlatMovementCost() * pUnit->baseMoves()),
 			                   (GC.getRouteInfo(getRouteType()).getFlatMovementCost() * pUnit->baseMoves()));
+
+		// MacAurther: Wari UP: Units travel faster on roads
+		if (GET_PLAYER(pUnit->getOwner()).getCivilizationType() == WARI)
+		{
+			iRouteCost /= 2;
+			iRouteFlatCost /= 2;
+		}
 	}
 	else
 	{
