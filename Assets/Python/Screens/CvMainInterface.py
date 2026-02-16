@@ -3191,7 +3191,6 @@ class CvMainInterface:
 					
 					# MacAurther: We want to show Immigration yields as soon as Immigration can be used, so that players can tell how much each city generates at a glance
 					bShowImmigration = self.isShowImmigration(eCommerce, pHeadSelectedCity)
-					
 					if (gc.getPlayer(ePlayer).isCommerceFlexible(eCommerce) or (CyInterface().isCityScreenUp() and (eCommerce == CommerceTypes.COMMERCE_GOLD)) or bShowImmigration):
 						
 						szOutText = u"<font=2>%c:%d%%</font>" %(gc.getCommerceInfo(eCommerce).getChar(), gc.getPlayer(ePlayer).getCommercePercent(eCommerce))

@@ -147,11 +147,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STATUE_OF_LIBERTY_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases immigration rate in its city and provides additional culture from immigration in all cities.</English>
-		<French>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases immigration rate in its city and provides additional culture from immigration in all cities.</French>
-		<German>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases immigration rate in its city and provides additional culture from immigration in all cities.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases immigration rate in its city and provides additional culture from immigration in all cities.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases immigration rate in its city and provides additional culture from immigration in all cities.</Spanish>
+		<English>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases [ICON_IMMIGRATION] rate in its city, provides a slot for each specialist, and increases [ICON_HAPPINESS] with [ICON_IMMIGRATION] rate.</English>
+		<French>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases [ICON_IMMIGRATION] rate in its city, provides a slot for each specialist, and increases [ICON_HAPPINESS] with [ICON_IMMIGRATION] rate.</French>
+		<German>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases [ICON_IMMIGRATION] rate in its city, provides a slot for each specialist, and increases [ICON_HAPPINESS] with [ICON_IMMIGRATION] rate.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases [ICON_IMMIGRATION] rate in its city, provides a slot for each specialist, and increases [ICON_HAPPINESS] with [ICON_IMMIGRATION] rate.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases [ICON_IMMIGRATION] rate in its city, provides a slot for each specialist, and increases [ICON_HAPPINESS] with [ICON_IMMIGRATION] rate.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ITAIPU_DAM</Tag>
