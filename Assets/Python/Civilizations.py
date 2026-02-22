@@ -554,8 +554,9 @@ dStartingUnits = CivDict({
 	iInca: {
 		iSettle: 1,
 		iWork: 2,
-		iAttack: 8,
-		iDefend: 4,
+		iAttack: 7,
+		iDefend: 6,
+		iCounter: 2,
 		iSkirmish: 4,
 	},
 	iPurepecha: {
@@ -564,14 +565,16 @@ dStartingUnits = CivDict({
 		iAttack: 3,
 		iSkirmish: 1,
 		iDefend: 2,
+		iCounter: 1,
 		iSpyRole: 1,	# Represents the incorporated refugees from tribes the Aztecs conquered spying on the periphery for the Purepecha
 	},
 	iAztec: {
 		iSettle: 1,
 		iWork: 1,
-		iAttack: 6,
-		iSkirmish: 3,
-		iDefend: 4,
+		iAttack: 8,
+		iSkirmish: 4,
+		iDefend: 5,
+		iCounter: 2,
 	},
 	iHaudenosaunee: {
 		iSettle: 2,
@@ -733,16 +736,14 @@ dExtraAIUnits = CivDict({
 		iSettleSea: 1,
 	},
 	iInca: {
-		iDefend: 1,
+		iDefend: 2,
 		iAttack: 4,
 		iSkirmish: 4,
-		iDefend: 2,
 	},
 	iAztec: {
-		iDefend: 1,
+		iDefend: 2,
 		iAttack: 6,
 		iSkirmish: 4,
-		iDefend: 2,
 	},
 	iAmerica: {
 		iBase: 4,
@@ -774,44 +775,6 @@ dExtraAIUnits = CivDict({
 
 # Extra units if civ starts at war
 dAdditionalUnits = CivDict({
-	iInca: {
-		iDefend: 3,
-		iAttack: 3,
-		iSkirmish: 2,
-	},
-	iAmerica: {
-		iBase: 3,
-		iSkirmish: 3,
-		iSiege: 2,
-		iCitySiege: 1,
-	},
-	iArgentina: {
-		iBase: 2,
-		iShock: 4,
-	},
-	iMexico: {
-		iBase: 4,
-		iSiege: 1,
-		iCitySiege: 1,
-	},
-	iColombia: {
-		iBase: 4,
-		iSkirmish: 4,
-		iSiege: 1,
-		iCitySiege: 1,
-	},
-	iBrazil: {
-		iBase: 3,
-		iSkirmish: 2,
-		iSiege: 1,
-		iCitySiege: 1,
-	},
-	iCanada: {
-		iBase: 4,
-		iShock: 2,
-		iSiege: 1,
-		iCitySiege: 1,
-	},
 }, {})
 
 dStartingExperience = CivDict({

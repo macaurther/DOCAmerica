@@ -476,6 +476,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_TANNERY</ArtDefineTag>
 			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
 			<PrereqTech>TECH_TANNING</PrereqTech>
+			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -518,6 +519,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_INUIT_IGLOO</ArtDefineTag>
 			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
 			<PrereqTech>TECH_TANNING</PrereqTech>
+			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -573,6 +575,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_HAUDENOSAUNEE_LONGHOUSE</ArtDefineTag>
 			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
 			<PrereqTech>TECH_TANNING</PrereqTech>
+			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1384,11 +1387,7 @@
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 				<BonusHappinessChange>
-					<BonusType>BONUS_JADE</BonusType>
-					<iHappinessChange>1</iHappinessChange>
-				</BonusHappinessChange>
-				<BonusHappinessChange>
-					<BonusType>BONUS_OBSIDIAN</BonusType>
+					<BonusType>BONUS_INCENSE</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
@@ -1983,7 +1982,7 @@
 			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_EXPLORATION</PrereqTech>
 			<ObsoleteTech>TECH_RAILROAD</ObsoleteTech>
-			<iCost>60</iCost>
+			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>15</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
@@ -2003,12 +2002,20 @@
 					<BonusType>BONUS_FUR</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
-				<BonusHappinessChange>
-					<BonusType>BONUS_SUGAR</BonusType>
-					<iHappinessChange>1</iHappinessChange>
-				</BonusHappinessChange>
 			</BonusHappinessChanges>
-			<ConstructSound>AS2D_BUILD_BANK</ConstructSound>
+			<BonusHealthChanges>
+				<BonusHealthChange>
+					<BonusType>BONUS_SEAL</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+			</BonusHealthChanges>
+			<UnitCombatFreeExperiences>
+				<UnitCombatFreeExperience>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iExperience>2</iExperience>
+				</UnitCombatFreeExperience>
+			</UnitCombatFreeExperiences>
+			<ConstructSound>AS2D_BUILD_TANNERY</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -2026,7 +2033,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_RUSSIAN_HUNTING_POST</ArtDefineTag>
 			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_EXPLORATION</PrereqTech>
-			<iCost>60</iCost>
+			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>15</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
@@ -2069,7 +2076,7 @@
 					</YieldChanges>
 				</BonusYieldChange>
 			</BonusYieldChanges>
-			<ConstructSound>AS2D_BUILD_BANK</ConstructSound>
+			<ConstructSound>AS2D_BUILD_TANNERY</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -7906,7 +7913,6 @@
 			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_TACTICS</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
-			<CivicOption>CIVICOPTION_EXPANSION</CivicOption>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
@@ -7936,6 +7942,14 @@
 					<iFreeSpecialistCount>2</iFreeSpecialistCount>
 				</FreeSpecialistCount>
 			</FreeSpecialistCounts>
+			<SpecialistYieldChanges>
+				<SpecialistYieldChange>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<YieldChanges>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistYieldChange>
+			</SpecialistYieldChanges>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>

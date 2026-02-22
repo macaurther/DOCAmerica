@@ -1480,7 +1480,7 @@
 				<Growth>2</Growth>
 				<Start>1</Start>
 			</Rating>
-			<bPlayable>1</bPlayable>
+			<bPlayable>0</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
 				<City>La Croix</City>
@@ -1585,7 +1585,7 @@
 				<Growth>3</Growth>
 				<Start>2</Start>
 			</Rating>
-			<bPlayable>1</bPlayable>
+			<bPlayable>0</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
 				<City>Onondaga</City>
@@ -2049,7 +2049,7 @@
 				<Growth>3</Growth>
 				<Start>2</Start>
 			</Rating>
-			<bPlayable>1</bPlayable>
+			<bPlayable>0</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
 				<City>Wazi-kute</City>
@@ -4020,7 +4020,7 @@
 				<Growth>3</Growth>
 				<Start>2</Start>
 			</Rating>
-			<bPlayable>1</bPlayable>
+			<bPlayable>0</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
 				<City>Santo Tomas</City>

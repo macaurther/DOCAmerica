@@ -140,16 +140,6 @@ def buildAcquiredCapitalInfrastructure(iOwner, iPlayer, city):
 
 ### FIRST CITY ###
 
-@handler("firstCity")
-def setupMexicoCity(city):
-	if civ(city) == iMexico:
-		if city.at(*tTenochtitlan):
-			if game.getBuildingClassCreatedCount(infos.building(iFloatingGardens).getBuildingClassType()) == 0:
-				city.setHasRealBuilding(iFloatingGardens, True)
-			
-			iStateReligion = player(city).getStateReligion()
-			if iStateReligion >= 0 and city.isHasReligion(iStateReligion):
-				city.setHasRealBuilding(monastery(iStateReligion), True)
 
 
 ### BEGIN GAME TURN ###

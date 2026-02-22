@@ -308,6 +308,7 @@ name_translations = {
 	},
 	"Chalchuapa": {
 		iMayan: _,
+		iNahuatl: _,
 		iSpanish: "San Miguel",
 	},
 	"Catarpe": {
@@ -328,6 +329,7 @@ name_translations = {
 	"Chichen Itza": {
 		iMayan: _,
 		iNative: _,
+		iNahuatl: _,
 		iSpanish: "Merida",
 	},
 	"Cholula": {
@@ -338,15 +340,18 @@ name_translations = {
 	"Coba": {
 		iMayan: _,
 		iNative: _,
+		iNahuatl: _,
 		iSpanish: u"Cancún",
 	},
 	"Copan": {
 		iMayan: _,
+		iNahuatl: _,
 		iSpanish: "Coban",
 	},
 	"Cuello": {
 		iMayan: _,
 		iNative: _,
+		iNahuatl: _,
 		iSpanish: "Ciudad de Belice",
 		iEnglish: "Belize City",
 	},
@@ -355,6 +360,8 @@ name_translations = {
 	"Danibaan": {
 		iLocal: _,
 		iNative: _,
+		iNahuatl: _,
+		iMayan: _,
 		iSpanish: "Oaxaca",
 	},
 	"Deer Lake": {
@@ -394,11 +401,13 @@ name_translations = {
 	"Iximche": {
 		iMayan: _,
 		iNative: _,
+		iNahuatl: _,
 		iSpanish: "San Salvador",
 	},
 	"Izamal": {
 		iMayan: _,
 		iNative: _,
+		iNahuatl: _,
 		iSpanish: "Progreso",
 	},
 
@@ -436,6 +445,7 @@ name_translations = {
 	### N ###
 	"Naco": {
 		iMayan: _,
+		iNahuatl: _,
 		iSpanish: "San Pedro Sula",
 	},
 	"Nanasqa": {
@@ -458,6 +468,7 @@ name_translations = {
 		iMayan: _,
 		iNative: _,
 		iLocal: _,
+		iNahuatl: _,
 		iSpanish: "Villahermosa",
 	},
 	"Philadelphia": {
@@ -473,6 +484,7 @@ name_translations = {
 	"Quirigua": {
 		iMayan: _,
 		iNative: _,
+		iNahuatl: _,
 		iSpanish: "Puerto Barrios",
 	},
 	"Qosqo": {
@@ -492,6 +504,8 @@ name_translations = {
 	"San Lorenzo": {
 		iLocal: _,
 		iNative: _,
+		iNahuatl: _,
+		iMayan: _,
 		iSpanish: "Coatzacoalcos",
 	},
 	"Sitka": {
@@ -518,6 +532,7 @@ name_translations = {
 		iLocal: _,
 		iNative: _,
 		iMayan: "Puh",
+		iNahuatl: _,
 		iSpanish: "Texcoco"
 	},
 	"Tiahuanaco": {
@@ -534,6 +549,8 @@ name_translations = {
 	"Tres Zapotes": {
 		iLocal: _,
 		iNative: _,
+		iNahuatl: _,
+		iMayan: _,
 		iSpanish: "Veracruz",
 	},
 	"Tucume": {
@@ -555,6 +572,8 @@ name_translations = {
 	"Tututepec": {
 		iLocal: _,
 		iNative: _,
+		iNahuatl: _,
+		iMayan: _,
 		iSpanish: "Puerto Escondido",
 	},
 	"Tzintzuntan": {
@@ -569,11 +588,13 @@ name_translations = {
 	"Utalan": {
 		iMayan: _,
 		iNative: _,
+		iNahuatl: _,
 		iSpanish: "Guatemala",
 	},
 	"Uxmal": {
 		iMayan: _,
 		iNative: _,
+		iMayan: _,
 		iSpanish: "Campeche",
 	},
 
@@ -589,6 +610,8 @@ name_translations = {
 	"Zempoala": {
 		iLocal: _,
 		iNative: _,
+		iNahuatl: _,
+		iMayan: _,
 		iSpanish: "Xalapa",
 	},
 

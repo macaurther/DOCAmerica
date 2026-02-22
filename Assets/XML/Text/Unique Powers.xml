@@ -223,6 +223,38 @@
 		<Spanish>Start with five free Great People and extra [ICON_HAPPY] from settled Great People</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UP_APA_TITLE</Tag>
+		<English>The Power of Raiding:</English>
+		<French>The Power of Raiding:</French>
+		<German>The Power of Raiding:</German>
+		<Italian>The Power of Raiding:</Italian>
+		<Spanish>The Power of Raiding:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_APA</Tag>
+		<English>Coming Soon!</English>
+		<French>Coming Soon!</French>
+		<German>Coming Soon!</German>
+		<Italian>Coming Soon!</Italian>
+		<Spanish>Coming Soon!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ARA_TITLE</Tag>
+		<English>The Power of Currents:</English>
+		<French>The Power of Currents:</French>
+		<German>The Power of Currents:</German>
+		<Italian>The Power of Currents:</Italian>
+		<Spanish>The Power of Currents:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ARA</Tag>
+		<English>Coming Soon!</English>
+		<French>Coming Soon!</French>
+		<German>Coming Soon!</German>
+		<Italian>Coming Soon!</Italian>
+		<Spanish>Coming Soon!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UP_ARG_TITLE</Tag>
 		<English>The Power of Juntas:</English>
 		<French>Le pouvoir des juntes :</French>
@@ -285,6 +317,22 @@
 		<German>Double trade route yield from years of peace</German>
 		<Italian>Double trade route yield from years of peace</Italian>
 		<Spanish>Double trade route yield from years of peace</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CHE_TITLE</Tag>
+		<English>The Power of Resilience:</English>
+		<French>The Power of Resilience:</French>
+		<German>The Power of Resilience:</German>
+		<Italian>The Power of Resilience:</Italian>
+		<Spanish>The Power of Resilience:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CHE</Tag>
+		<English>Coming Soon!</English>
+		<French>Coming Soon!</French>
+		<German>Coming Soon!</German>
+		<Italian>Coming Soon!</Italian>
+		<Spanish>Coming Soon!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CHM_TITLE</Tag>
@@ -663,6 +711,38 @@
 		<Spanish>Double [ICON_GREATPEOPLE] from Buildings</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UP_TOL_TITLE</Tag>
+		<English>The Power of Artificers:</English>
+		<French>The Power of Artificers:</French>
+		<German>The Power of Artificers:</German>
+		<Italian>The Power of Artificers:</Italian>
+		<Spanish>The Power of Artificers:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_TOL</Tag>
+		<English>Coming Soon!</English>
+		<French>Coming Soon!</French>
+		<German>Coming Soon!</German>
+		<Italian>Coming Soon!</Italian>
+		<Spanish>Coming Soon!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_TUP_TITLE</Tag>
+		<English>The Power of Propagation:</English>
+		<French>The Power of Propagation:</French>
+		<German>The Power of Propagation:</German>
+		<Italian>The Power of Propagation:</Italian>
+		<Spanish>The Power of Propagation:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_TUP</Tag>
+		<English>Coming Soon!</English>
+		<French>Coming Soon!</French>
+		<German>Coming Soon!</German>
+		<Italian>Coming Soon!</Italian>
+		<Spanish>Coming Soon!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UP_VEN_TITLE</Tag>
 		<English>The Power of Latifundios:</English>
 		<French>The Power of Latifundios:</French>
@@ -672,11 +752,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_VEN</Tag>
-		<English>Improvements are free to build</English>
-		<French>Improvements are free to build</French>
-		<German>Improvements are free to build</German>
-		<Italian>Improvements are free to build</Italian>
-		<Spanish>Improvements are free to build</Spanish>
+		<English>Coming Soon!</English>
+		<French>Coming Soon!</French>
+		<German>Coming Soon!</German>
+		<Italian>Coming Soon!</Italian>
+		<Spanish>Coming Soon!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_WAR_TITLE</Tag>

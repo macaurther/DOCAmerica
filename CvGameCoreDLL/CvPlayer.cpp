@@ -7214,13 +7214,6 @@ int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 	int iCost = GC.getBuildInfo(eBuild).getCost();
 	
 	int iCostReduction = 0;	// Out of 100%
-
-	CivilizationTypes eCiv = getCivilizationType();
-	// MacAurther: Venezuelan UP
-	if (eCiv == VENEZUELA)
-	{
-		iCostReduction += 100;
-	}
 	
 	// MacAurther: Tribe Contacting
 	if (eBuild == BUILD_CONTACT_TRIBE)

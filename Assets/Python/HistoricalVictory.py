@@ -264,8 +264,8 @@ dGoals = {
 	),
 	iEngland: (
 		All(
-			SpecialistCount(iSpecialistGreatProphet, 3),
-			BuildingCount((iProtestantCathedral, 3), (iCatholicCathedral, 1)),
+			SpecialistCount(iSpecialistGreatProphet, 2),
+			BuildingCount((iProtestantCathedral, 2)),
 			by=1730,
 		),
 		All(
