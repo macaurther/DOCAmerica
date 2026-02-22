@@ -676,7 +676,8 @@ class Birth(object):
 				if city.isHolyCity():
 					capital = completeCityFlip(city, self.iPlayer, city.getOwner(), 100)
 				else:
-					self.data.lPreservedWonders += [iWonder for iWonder in infos.buildings() if isWonder(iWonder) and city.isHasRealBuilding(iWonder)]
+					# MacAurther: Disabling this feature because Aztec would sometimes randomly spawn with a wonder
+					#self.data.lPreservedWonders += [iWonder for iWonder in infos.buildings() if isWonder(iWonder) and city.isHasRealBuilding(iWonder)]
 				
 					plot_(city).eraseAIDevelopment()
 					plot_(city).setImprovementType(iCityRuins)

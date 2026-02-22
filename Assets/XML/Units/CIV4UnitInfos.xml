@@ -12728,7 +12728,7 @@
 			<Type>UNIT_SLAVE</Type>
 			<Capture>UNITCLASS_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_SLAVE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_SLAVE</Description>
 			<Civilopedia>TXT_KEY_UNIT_AZTEC_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_SLAVE_STRATEGY</Strategy>
@@ -12797,7 +12797,7 @@
 			<Type>UNIT_CHATTLE_SLAVE</Type>
 			<Capture>UNITCLASS_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_SLAVE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_SLAVE</Description>
 			<Civilopedia>TXT_KEY_UNIT_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_SLAVE_STRATEGY</Strategy>
