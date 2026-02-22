@@ -2142,11 +2142,16 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_BONDAGE_HELP</Tag>
-		<English>[ICON_BULLET]+300% city slave cap</English>
-		<French>[ICON_BULLET]+300% city slave cap</French>
-		<German>[ICON_BULLET]+300% city slave cap</German>
-		<Italian>[ICON_BULLET]+300% city slave cap</Italian>
-		<Spanish>[ICON_BULLET]+300% city slave cap</Spanish>
+		<English>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]+300% city slave cap</English>
+		<French>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]+300% city slave cap</French>
+		<German>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]+300% city slave cap</German>
+		<Italian>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]+300% city slave cap</Italian>
+		<Spanish>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]+300% city slave cap</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SHARECROPPING</Tag>

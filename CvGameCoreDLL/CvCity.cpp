@@ -2135,8 +2135,14 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 		}
 	}
 
-	// Leoreth: can't train slaves -> MacAurther: also can't train Immigrants, Trackmen
-	if (GC.getUnitInfo(eUnit).isSlave() || eUnit == UNIT_IMMIGRANT || eUnit == UNIT_TRACKMAN)
+	// Leoreth: can't train slaves -> MacAurther: unless running Bondage
+	if (GC.getUnitInfo(eUnit).isSlave() && !GET_PLAYER(getOwner()).hasCivic(CIVIC_BONDAGE))
+	{
+		return false;
+	}
+
+	// MacAurther:  can't train Immigrants, Trackmen
+	if (eUnit == UNIT_IMMIGRANT || eUnit == UNIT_TRACKMAN)
 	{
 		return false;
 	}

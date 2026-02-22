@@ -12734,6 +12734,7 @@
 			<Strategy>TXT_KEY_UNIT_SLAVE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bSlave>1</bSlave>
+			<bFood>1</bFood>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_SLAVE</UnitAIType>
@@ -12802,6 +12803,7 @@
 			<Strategy>TXT_KEY_UNIT_SLAVE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bSlave>1</bSlave>
+			<bFood>1</bFood>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_SLAVE</UnitAIType>

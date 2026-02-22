@@ -169,7 +169,7 @@ class ImmigrationUtils:
 			iNumImmigrants += data.civs[iCiv].dEarnedImmigrants[iHomeland][sUnit].getCount()
 		return iNumImmigrants
 
-	def getAvailableUnit(self, iHomeland, dSchedule):
+	def getAvailableUnit(self, iPlayer, iHomeland, dSchedule):
 		dUnits = {}
 
 		for iUnit in dSchedule.keys():
@@ -177,17 +177,26 @@ class ImmigrationUtils:
 				continue
 			if not turn() in range(year(dSchedule[iUnit][0][0]), year(dSchedule[iUnit][0][1]) + 1):
 				continue
+			if not self.canHire(iUnit, iPlayer, iHomeland):
+				continue
 			dUnits[str(iUnit)] = self.getImmigrantGroup(iUnit)
 			
 		return dUnits
-			
+	
+	# Extra check for special can hire cases
+	def canHire(self, iUnit, iPlayer, iHomeland):
+		civics = Civics.player(iPlayer)
+		if iUnit == iChattleSlave and not (iBondage in civics or iSlavery in civics):
+			return False
+		return True
+
 	# Returns a list of available immigrants given a homeland and date
-	def getAvailableImmigrants(self, iHomeland):
-		return self.getAvailableUnit(iHomeland, dImmigrantSchedule)
+	def getAvailableImmigrants(self, iPlayer, iHomeland):
+		return self.getAvailableUnit(iPlayer, iHomeland, dImmigrantSchedule)
 	
 	# Returns a list of available mercenaries given a homeland and date
-	def getAvailableMercenaries(self, iHomeland):
-		return self.getAvailableUnit(iHomeland, dMercenarySchedule)
+	def getAvailableMercenaries(self, iPlayer, iHomeland):
+		return self.getAvailableUnit(iPlayer, iHomeland, dMercenarySchedule)
 
 	def getEarnedImmigrants(self, iCiv, iHomeland):
 		return data.civs[iCiv].dEarnedImmigrants[iHomeland]

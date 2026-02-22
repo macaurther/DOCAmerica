@@ -80,6 +80,10 @@
 					<UnitClassType>UNITCLASS_SPY</UnitClassType>
 					<UnitType>UNIT_AMERICAN_AGENT</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
+					<UnitType>UNIT_CHATTLE_SLAVE</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -398,6 +402,10 @@
 					<UnitClassType>UNITCLASS_GREAT_GENERAL</UnitClassType>
 					<UnitType>UNIT_ARGENTINE_GREAT_GENERAL</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
+					<UnitType>UNIT_CHATTLE_SLAVE</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -617,6 +625,10 @@
 					<UnitClassType>UNITCLASS_LABORER</UnitClassType>
 					<UnitType>UNIT_BRAZILIAN_MADEIREIRO</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
+					<UnitType>UNIT_CHATTLE_SLAVE</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -736,6 +748,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_RANGER</UnitClassType>
 					<UnitType>UNIT_CANADIAN_FACTOR</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
+					<UnitType>UNIT_CHATTLE_SLAVE</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -1523,6 +1539,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_IRREGULAR</UnitClassType>
 					<UnitType>UNIT_HAITIAN_CACOS</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
+					<UnitType>UNIT_CHATTLE_SLAVE</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -2312,6 +2332,10 @@
 					<UnitClassType>UNITCLASS_CAVALRY</UnitClassType>
 					<UnitType>UNIT_MEXICAN_RURAL</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
+					<UnitType>UNIT_CHATTLE_SLAVE</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses/>
 			<FreeBuildingClasses>
@@ -2937,6 +2961,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_FUSILIER</UnitClassType>
 					<UnitType>UNIT_PERUVIAN_GUARDIA</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
+					<UnitType>UNIT_CHATTLE_SLAVE</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -4050,6 +4078,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_RIFLEMAN</UnitClassType>
 					<UnitType>UNIT_VENEZUELAN_VENCEDORES</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
+					<UnitType>UNIT_CHATTLE_SLAVE</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>

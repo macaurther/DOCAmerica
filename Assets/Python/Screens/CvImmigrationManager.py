@@ -130,7 +130,7 @@ class CvImmigrationManager:
 	# Populates the panel that shows all of the available immigrants
 	def populateAvailableColonistsPanel(self, screen):
 		# Get the available Colonists
-		dColonists = objImmigrationUtils.getAvailableImmigrants(data.iCurrentImmigrationManagerTab)
+		dColonists = objImmigrationUtils.getAvailableImmigrants(self.iActivePlayer, data.iCurrentImmigrationManagerTab)
 		
 		# Refresh panel
 		self.refreshAvailableColonistsInnerPanel(screen)
@@ -144,7 +144,7 @@ class CvImmigrationManager:
 	def populateAvailableMercenariesPanel(self, screen):
 
 		# Get the available Mercenaries
-		dMercenaries = objImmigrationUtils.getAvailableMercenaries(data.iCurrentImmigrationManagerTab)
+		dMercenaries = objImmigrationUtils.getAvailableMercenaries(self.iActivePlayer, data.iCurrentImmigrationManagerTab)
 		
 		# Refresh panel
 		self.refreshAvailableMercenariesInnerPanel(screen)
@@ -568,7 +568,7 @@ class CvImmigrationManager:
 	def updateAvailableColonists(self, screen):
 
 		# Get the available Colonists
-		dColonists = objImmigrationUtils.getAvailableImmigrants(data.iCurrentImmigrationManagerTab)
+		dColonists = objImmigrationUtils.getAvailableImmigrants(self.iActivePlayer, data.iCurrentImmigrationManagerTab)
 
 		self.updateAvailableUnits(screen, dColonists, "AvailableColonists")
 		
@@ -577,7 +577,7 @@ class CvImmigrationManager:
 	def updateAvailableMercenaries(self, screen):
 
 		# Get the available Mercenaries
-		dMercenaries = objImmigrationUtils.getAvailableMercenaries(data.iCurrentImmigrationManagerTab)
+		dMercenaries = objImmigrationUtils.getAvailableMercenaries(self.iActivePlayer, data.iCurrentImmigrationManagerTab)
 
 		self.updateAvailableUnits(screen, dMercenaries, "AvailableMercenaries")
 	
