@@ -1983,7 +1983,7 @@
 			<Help>TXT_KEY_BUILD_CONTACT_TRIBE_HELP</Help>
 			<PrereqTech>TECH_EXPLORATION</PrereqTech>
 			<iTime>300</iTime>
-			<iCost>40</iCost>
+			<iCost>25</iCost>
 			<ImprovementType>IMPROVEMENT_CONTACTED_TRIBE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_GREAT_EVENT</EntityEvent>
 			<HotKey>KB_C</HotKey>

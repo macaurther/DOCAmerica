@@ -115,16 +115,6 @@ def firstCityOnCityAcquiredAndKept(iPlayer, city):
 	if city.isCapital():
 		events.fireEvent("firstCity", city)
 
-
-@handler("BeginGameTurn")
-def giveAINativeTechs(iGameTurn):
-	# If European AI hasn't gotten Native Techs by 1700, help them out
-	if iGameTurn == year(1700):
-		for iPlayer in dCivGroups[iCivGroupEurope]:
-			for iTech in lNativeTechs:
-				if not team(iPlayer).isHasTech(iTech):
-					team(iPlayer).setHasTech(iTech, True, iPlayer, False, True)
-
 @handler("cityBuilt")
 def firstCityOnCityBuilt(city):
 	if city.isCapital():

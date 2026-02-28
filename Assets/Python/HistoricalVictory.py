@@ -321,8 +321,8 @@ dGoals = {
 	),
 	iRussia: (
 		ImprovementCount(iCamp, 10, by=1800),
-		AreaPercent(plots.region(rAlaska).named(ALASKA), 90, subject=VASSALS, at=1860),
-		TradeGold(1000, by=1870),
+		AreaPercent(plots.region(rAlaska).named(ALASKA), 90, subject=VASSALS, at=1820),
+		TradeGold(2000, by=1870),
 	),
 	iAmerica: (
 		AllowNone(

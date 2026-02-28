@@ -7299,9 +7299,7 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 	// MacAurther: Cannot build on top of Contacted Tribe
 	if (pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
 	{
-		// MacAurther: Russian UP
-		if (GET_PLAYER(getOwner()).getCivilizationType() == RUSSIA);
-		else if(eBuild == BUILD_ROAD);
+		if(eBuild == BUILD_ROAD);
 		else return false;
 	}
 

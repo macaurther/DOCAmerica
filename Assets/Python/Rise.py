@@ -274,6 +274,7 @@ def deleteExpansionUnits(iPlayer):
 		return
 	
 	for unit in units.owner(iPlayer).where(lambda u: u.isHasPromotion(iVolunteer)):
+		if unit.getID() in [iMinuteman, iRural]: continue	# MacAurther: Don't delete UU's that have Volunteer
 		unit.kill(False, -1)
 
 

@@ -52,6 +52,7 @@
 #define INVALID_PLOT_COORD				(-(MAX_INT))	// don't use -1 since that is a valid wrap coordinate
 #define DIRECTION_RADIUS				(1)
 #define DIRECTION_DIAMETER				((DIRECTION_RADIUS * 2) + 1)
+#define NUM_CITY_PLOTS_INNER			(9)	 // MacAurther
 #define NUM_CITY_PLOTS					(21)
 #define NUM_CITY_PLOTS_3				(37) // Leoreth: 21 + 16
 #define CITY_HOME_PLOT					(0)
