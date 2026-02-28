@@ -4780,7 +4780,7 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 	}
 
 	// MacAurther: Migration projects
-	if (eProject >= PROJECT_MIGRATE_N && eProject <= PROJECT_MIGRATE_NW)	// MacAurther TODO: Fine-tune this. I'm just glad they have a chance to do it though
+	if (eProject >= PROJECT_MIGRATE_N && eProject <= PROJECT_MIGRATE_NW)
 	{
 		DirectionTypes direction = DirectionTypes (eProject - PROJECT_MIGRATE_N);
 		CvPlot* pNewPlot = plotDirection(getX_INLINE(), getY_INLINE(), direction);

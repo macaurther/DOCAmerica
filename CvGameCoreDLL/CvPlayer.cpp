@@ -5608,15 +5608,13 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 		{
 			if (GC.getTechInfo((TechTypes) iI).isGoodyTech())
 			{
-				if (canResearchNativeTech((TechTypes)iI))	// MacAurther TODO: Refactor with new implementation
-				{
-					iValue = (1 + GC.getGameINLINE().getSorenRandNum(10000, "Goody Tech"));
+				// MacAurther: Don't need to check if can research, just give the good tech
+				iValue = (1 + GC.getGameINLINE().getSorenRandNum(10000, "Goody Tech"));
 
-					if (iValue > iBestValue)
-					{
-						iBestValue = iValue;
-						eBestTech = ((TechTypes)iI);
-					}
+				if (iValue > iBestValue)
+				{
+					iBestValue = iValue;
+					eBestTech = ((TechTypes)iI);
 				}
 			}
 		}
@@ -25724,21 +25722,6 @@ int CvPlayer::getFortRange() const
 	}
 
 	return 1;
-}
-
-bool CvPlayer::canResearchNativeTech(TechTypes eTech) const
-{
-	// Can get goody techs that you can't normally research, so we just need to check whether or not we have it already
-	if (!GET_TEAM(getTeam()).isHasTech(eTech))
-	{
-		// Also check that we have its prereq, if applicable
-		TechTypes ePrereq = (TechTypes)GC.getTechInfo(eTech).getPrereqAndTechs(0);
-		if (ePrereq == NO_TECH || GET_TEAM(getTeam()).isHasTech(ePrereq))
-		{
-			return true;
-		}
-	}
-	return false;
 }
 
 void CvPlayer::changeExtraPop(int iChange)

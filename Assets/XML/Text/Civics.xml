@@ -175,11 +175,16 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SLAVERY_HELP</Tag>
-		<English>[ICON_BULLET]+300% city slave cap</English>
-		<French>[ICON_BULLET]+300% city slave cap</French>
-		<German>[ICON_BULLET]+300% city slave cap</German>
-		<Italian>[ICON_BULLET]+300% city slave cap</Italian>
-		<Spanish>[ICON_BULLET]+300% city slave cap</Spanish>
+		<English>[ICON_BULLET]+300% city slave cap
+[ICON_BULLET]Can buy Slaves from Africa</English>
+		<French>[ICON_BULLET]+300% city slave cap
+[ICON_BULLET]Can buy Slaves from Africa</French>
+		<German>[ICON_BULLET]+300% city slave cap
+[ICON_BULLET]Can buy Slaves from Africa</German>
+		<Italian>[ICON_BULLET]+300% city slave cap
+[ICON_BULLET]Can buy Slaves from Africa</Italian>
+		<Spanish>[ICON_BULLET]+300% city slave cap
+[ICON_BULLET]Can buy Slaves from Africa</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CHIEF</Tag>
@@ -2062,11 +2067,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MERCANTILISM_STRATEGY</Tag>
-		<English>Reduced [ICON_COMMERCE] from trade routes; extra [ICON_COMMERCE] in capital; faster production of Customs House, Wharf</English>
-		<French>Reduced [ICON_COMMERCE] from trade routes; extra [ICON_COMMERCE] in capital; faster production of Customs House, Wharf</French>
-		<German>Reduced [ICON_COMMERCE] from trade routes; extra [ICON_COMMERCE] in capital; faster production of Customs House, Wharf</German>
-		<Italian>Reduced [ICON_COMMERCE] from trade routes; extra [ICON_COMMERCE] in capital; faster production of Customs House, Wharf</Italian>
-		<Spanish>Reduced [ICON_COMMERCE] from trade routes; extra [ICON_COMMERCE] in capital; faster production of Customs House, Wharf</Spanish>
+		<English>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Customs House, Wharf</English>
+		<French>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Customs House, Wharf</French>
+		<German>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Customs House, Wharf</German>
+		<Italian>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Customs House, Wharf</Italian>
+		<Spanish>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Customs House, Wharf</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_BUREAUCRACY_STRATEGY</Tag>
@@ -2143,14 +2148,19 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_BONDAGE_HELP</Tag>
 		<English>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]Can buy Slaves from Africa
 [ICON_BULLET]+300% city slave cap</English>
 		<French>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]Can buy Slaves from Africa
 [ICON_BULLET]+300% city slave cap</French>
 		<German>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]Can buy Slaves from Africa
 [ICON_BULLET]+300% city slave cap</German>
 		<Italian>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]Can buy Slaves from Africa
 [ICON_BULLET]+300% city slave cap</Italian>
 		<Spanish>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]Can buy Slaves from Africa
 [ICON_BULLET]+300% city slave cap</Spanish>
 	</TEXT>
 	<TEXT>

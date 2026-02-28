@@ -243,10 +243,10 @@ dGoals = {
 		ControlledResourceCount(iFur, 10, by=1700),
 	),
 	iSpain: (
-		RaidGold(5000, by=1600),
+		RaidGold(4000, by=1600),
 		All(
-			ContactTribe(25),
-			ReligionSpreads(50),
+			ContactTribe(20),
+			ReligionSpreads(40),
 			by=1700
 		),
 		All(
@@ -276,7 +276,6 @@ dGoals = {
 		),
 		All(
 			PopulationCount(200),
-			PopulationCityCount(20, 1),
 			PopulationCityCount(15, 3),
 			by=1775,
 		)

@@ -1212,6 +1212,7 @@
 			<Strategy>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bFood>1</bFood>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
 					<UnitClassUpgradeType>UNITCLASS_LABORER</UnitClassUpgradeType>
@@ -1328,7 +1329,7 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>3</iMoves>
 			<iNukeRange>-1</iNukeRange>
-			<iWorkRate>150</iWorkRate>
+			<iWorkRate>125</iWorkRate>
 			<iAsset>2</iAsset>
 			<iCombat>5</iCombat>
 			<UnitMeshGroups>
@@ -9531,6 +9532,10 @@
 			<TerrainImpassables>
 				<TerrainImpassable>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_DEEP_OCEAN</TerrainType>
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
 			</TerrainImpassables>

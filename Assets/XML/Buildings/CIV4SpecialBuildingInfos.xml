@@ -20,7 +20,7 @@
 			<Type>SPECIALBUILDING_TEMPLE</Type>
 			<Description>TXT_KEY_SPECIALBUILDING_TEMPLE</Description>
 			<ObsoleteTech>NONE</ObsoleteTech>
-			<TechPrereq>TECH_COMMUNITY</TechPrereq>
+			<TechPrereq>TECH_EVANGELISM</TechPrereq>
 			<TechPrereqAnyone>NONE</TechPrereqAnyone>
 			<bValid>1</bValid>
 			<ProductionTraits/>
@@ -30,7 +30,7 @@
 			<Type>SPECIALBUILDING_CATHEDRAL</Type>
 			<Description>TXT_KEY_SPECIALBUILDING_CATHEDRAL</Description>
 			<ObsoleteTech>NONE</ObsoleteTech>
-			<TechPrereq>TECH_ARCHITECTURE</TechPrereq>
+			<TechPrereq>TECH_COMMUNITY</TechPrereq>
 			<TechPrereqAnyone>NONE</TechPrereqAnyone>
 			<bValid>1</bValid>
 			<ProductionTraits/>
@@ -40,7 +40,7 @@
 			<Type>SPECIALBUILDING_MONASTERY</Type>
 			<Description>TXT_KEY_SPECIALBUILDING_MONASTERY</Description>
 			<ObsoleteTech>TECH_CIVIL_LIBERTIES</ObsoleteTech>
-			<TechPrereq>TECH_EVANGELISM</TechPrereq>
+			<TechPrereq>TECH_INDOCTRINATION</TechPrereq>
 			<TechPrereqAnyone>NONE</TechPrereqAnyone>
 			<bValid>1</bValid>
 			<ProductionTraits/>

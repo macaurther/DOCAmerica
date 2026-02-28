@@ -1403,7 +1403,6 @@ public:
 	int getRegionPowers() const;
 	int getRegionPowers(CivilizationTypes eCiv) const;
 	int getFortRange() const;
-	bool canResearchNativeTech(TechTypes eTech) const;
 
 	void changeExtraPop(int iChange);
 	int getExtraPop() const;

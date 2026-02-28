@@ -321,7 +321,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iCaptains, iExpedition, iSerfdom, iPlunder, iJesuits, iImperialism],
 		techs=techs.column(8).including(iGunpowder, iCompanies, iCartography, iEvangelism),
-		extraTechs=techs.column(0).including(iSouthEuropeAccess),
+		extraTechs=techs.column(0).including(iSouthEuropeAccess, iFishing, iDiving),
 	),
 	Civilization(
 		iPortugal,
@@ -329,7 +329,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iProprietors, iAdmiralty, iGrants, iSlavery],
 		techs=techs.column(8).including(iGunpowder, iCompanies, iFinance, iCartography, iExchange, iExploration, iOptics, iTriangularTrade),
-		extraTechs=techs.column(0).including(iSouthEuropeAccess),
+		extraTechs=techs.column(0).including(iSouthEuropeAccess, iFishing, iDiving),
 	),
 	Civilization(
 		iCherokee,

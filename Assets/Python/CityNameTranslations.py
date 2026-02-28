@@ -410,6 +410,12 @@ name_translations = {
 		iNahuatl: _,
 		iSpanish: "Progreso",
 	},
+	"Izapa": {
+		iMayan: _,
+		iNative: _,
+		iNahuatl: _,
+		iSpanish: "Tapachula",
+	},
 
 	### J ###
 	"Jamestown": {
@@ -471,6 +477,12 @@ name_translations = {
 		iNahuatl: _,
 		iSpanish: "Villahermosa",
 	},
+	"Petatlan": {
+		iMayan: _,
+		iNative: _,
+		iNahuatl: _,
+		iSpanish: u"Petatlán",
+	},
 	"Philadelphia": {
 		iEnglish: _,
 		iSwedish: found(u"Nya Göteborg"),
@@ -524,6 +536,8 @@ name_translations = {
 		iEnglish: "Mexico City",
 		iFrench: "Mexico",
 		iNahuatl: _,
+		iNative: _,
+		iLocal: _,
 		iPortuguese: u"Cidade do México",
 		iRussian: "Mekhiko",
 		iSpanish: u"Ciudad de México",

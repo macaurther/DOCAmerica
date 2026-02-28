@@ -545,7 +545,7 @@ def isUnitOfRole(iUnit, iRole):
 	elif iRole == iLightEscort:
 		return iDomainType == DomainTypes.DOMAIN_SEA and unit.getWithdrawalProbability() > 0
 	elif iRole == iWork:
-		return unit.getWorkRate() > 0 and unit.getCombat() == 0 and not unit.isSlave()
+		return unit.getWorkRate() > 0 and (unit.getCombat() == 0 or iUnit == iPromyshlenniki) and not unit.isSlave()	# Includes Russian UU
 	elif iRole == iMissionary:		# MacAurther: had to add this to be able to spawn missionaries
 		return unit.getReligionType() != -1
 	elif iRole == iSpyRole:			# MacAurther: had to add this to be able to spawn spies

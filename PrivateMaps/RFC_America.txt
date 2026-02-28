@@ -662,6 +662,7 @@ BeginPlot
 	x=0,y=112
 	RiverNSDirection=2
 	isWOfRiver
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -1276,6 +1277,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=111
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot

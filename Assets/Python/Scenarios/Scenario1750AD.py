@@ -145,7 +145,7 @@ scenario1750AD = Scenario(
 	},
 	
 	dOwnedTiles = {
-		iEngland : [(37, 80), (38, 80), (38, 81), (39, 81), (39, 82)],	# MacAurther TODO: This doesn't give England control of tiles east of the Appalachians
+		iEngland : [(37, 80), (38, 80), (38, 81), (39, 81), (39, 82)],	# MacAurther TODO: Re-evaluate with new map
 	},
 	iOwnerBaseCulture = 100,
 	

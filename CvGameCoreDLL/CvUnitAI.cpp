@@ -14892,7 +14892,7 @@ bool CvUnitAI::AI_irrigateTerritory()
 	return false;
 }
 
-bool CvUnitAI::AI_fortTerritory(bool bCanal, bool bAirbase)	// MacAurther TODO: AI Fort building
+bool CvUnitAI::AI_fortTerritory(bool bCanal, bool bAirbase)
 {
 	int iBestValue = 0;
 	BuildTypes eBestBuild = NO_BUILD;

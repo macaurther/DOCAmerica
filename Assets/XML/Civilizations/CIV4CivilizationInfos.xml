@@ -148,7 +148,8 @@
 			<Identifier>APA</Identifier>
 			<Region>PLA</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>1625</StartingYear>
+			<StartingYear>0</StartingYear>
+			<!--<StartingYear>1625</StartingYear>-->
 			<LoadingTimes>
 				<LoadingTime>40</LoadingTime>
 				<LoadingTime>10</LoadingTime>
@@ -161,7 +162,7 @@
 				<Growth>1</Growth>
 				<Start>1</Start>
 			</Rating>
-			<bPlayable>0</bPlayable>
+			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
             <Cities>
 				<City>Tiiis Tseba</City>
@@ -235,6 +236,7 @@
 			<DerivativeCiv>CIVILIZATION_PUEBLO</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
+			<DerivativeCiv>CIVILIZATION_PUEBLO</DerivativeCiv>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_ARAWAK</Type>
@@ -251,7 +253,8 @@
 			<Identifier>ARA</Identifier>
 			<Region>AMA</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>1000</StartingYear>
+			<StartingYear>0</StartingYear>
+			<!-- <StartingYear>1000</StartingYear> -->
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -264,7 +267,7 @@
 				<Growth>3</Growth>
 				<Start>1</Start>
 			</Rating>
-			<bPlayable>0</bPlayable>
+			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
                 <City>Boriken</City>
@@ -805,7 +808,8 @@
 			<Identifier>CHE</Identifier>
 			<Region>LAK</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>1600</StartingYear>
+			<StartingYear>0</StartingYear>
+			<!-- <StartingYear>1600</StartingYear> -->
 			<LoadingTimes>
 				<LoadingTime>30</LoadingTime>
 				<LoadingTime>5</LoadingTime>
@@ -818,7 +822,7 @@
 				<Growth>2</Growth>
 				<Start>1</Start>
 			</Rating>
-			<bPlayable>0</bPlayable>
+			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
             <Cities>
                 <City>Chota</City>
@@ -1483,7 +1487,8 @@
 			<Identifier>HAI</Identifier>
 			<Region>LAT</Region>
 			<CultureGroup>2</CultureGroup>
-			<StartingYear>1804</StartingYear>
+			<StartingYear>0</StartingYear>
+			<!-- <StartingYear>1804</StartingYear> -->
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -1496,7 +1501,7 @@
 				<Growth>2</Growth>
 				<Start>1</Start>
 			</Rating>
-			<bPlayable>0</bPlayable>
+			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
 				<City>La Croix</City>
@@ -1592,7 +1597,8 @@
 			<Identifier>HAU</Identifier>
 			<Region>LAK</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>1450</StartingYear>
+			<StartingYear>0</StartingYear>
+			<!-- <StartingYear>1450</StartingYear> -->
 			<LoadingTimes>
 				<LoadingTime>20</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -1605,7 +1611,7 @@
 				<Growth>3</Growth>
 				<Start>2</Start>
 			</Rating>
-			<bPlayable>0</bPlayable>
+			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
 				<City>Onondaga</City>
@@ -2056,7 +2062,8 @@
 			<Identifier>LAK</Identifier>
 			<Region>PLA</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>1625</StartingYear>
+			<StartingYear>0</StartingYear>
+			<!-- <StartingYear>1625</StartingYear> -->
 			<LoadingTimes>
 				<LoadingTime>25</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -2069,7 +2076,7 @@
 				<Growth>3</Growth>
 				<Start>2</Start>
 			</Rating>
-			<bPlayable>0</bPlayable>
+			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
 				<City>Wazi-kute</City>
@@ -2200,7 +2207,6 @@
 				<City>Labna</City>
 				<City>Wak Kabnal</City>
 				<City>Xunantunich</City>
-				<City>Izapa</City>
 				<City>Noj Peten</City>
 				<City>Utatlan</City>
 				<City>Mani</City>
@@ -3868,7 +3874,8 @@
 			<Identifier>TOL</Identifier>
 			<Region>MES</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>850</StartingYear>
+			<StartingYear>0</StartingYear>
+			<!-- <StartingYear>850</StartingYear> -->
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -3881,7 +3888,7 @@
 				<Growth>3</Growth>
 				<Start>1</Start>
 			</Rating>
-			<bPlayable>0</bPlayable>
+			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
 				<City>Huichapan</City>
@@ -3943,7 +3950,8 @@
 			<Identifier>TUP</Identifier>
 			<Region>AMA</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>1000</StartingYear>
+			<StartingYear>0</StartingYear>
+			<!-- <StartingYear>1000</StartingYear> -->
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -3956,7 +3964,7 @@
 				<Growth>3</Growth>
 				<Start>1</Start>
 			</Rating>
-			<bPlayable>0</bPlayable>
+			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
             <Cities>
                 <City>Ata Kahni</City>
@@ -4035,7 +4043,8 @@
 			<Identifier>VEN</Identifier>
 			<Region>LAT</Region>
 			<CultureGroup>2</CultureGroup>
-			<StartingYear>1831</StartingYear>
+			<StartingYear>0</StartingYear>
+			<!-- <StartingYear>1831</StartingYear> -->
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
 				<LoadingTime>40</LoadingTime>
@@ -4048,7 +4057,7 @@
 				<Growth>3</Growth>
 				<Start>2</Start>
 			</Rating>
-			<bPlayable>0</bPlayable>
+			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
 				<City>Santo Tomas</City>

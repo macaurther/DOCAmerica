@@ -1505,10 +1505,11 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<bNoForeignTrade>1</bNoForeignTrade>
 			<TradeYieldModifiers>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>-25</iYield>
+				<iYield>50</iYield>
 			</TradeYieldModifiers>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
@@ -1520,11 +1521,6 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
-			<CapitalYieldModifiers>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
-				<iYield>50</iYield>
-			</CapitalYieldModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
