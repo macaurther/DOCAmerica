@@ -23805,13 +23805,21 @@ void CvPlayer::updateTradeList(PlayerTypes eOtherPlayer, CLinkList<TradeData>& o
 		{
 			if (!CvDeal::isEndWar(pFirstOffer->m_data.m_eItemType) || !::atWar(getTeam(), GET_PLAYER(eOtherPlayer).getTeam()))
 			{
+				// MacAurther: Can trade gold for cities
+				bool bCityDeal = (ourOffer.head() != NULL && ourOffer.head()->m_data.m_eItemType == TRADE_CITIES) || 
+								 (theirOffer.head() != NULL && theirOffer.head()->m_data.m_eItemType == TRADE_CITIES);
 				for (CLLNode<TradeData>* pNode = ourInventory.head(); pNode != NULL; pNode = ourInventory.next(pNode))
 				{
-					if (pFirstOffer->m_data.m_eItemType == TRADE_CITIES || pNode->m_data.m_eItemType == TRADE_CITIES)
+					if (pNode->m_data.m_eItemType == TRADE_CITIES)
+					{
+						bCityDeal = true;
+					}
+					else if (CvDeal::isAnnual(pFirstOffer->m_data.m_eItemType) != CvDeal::isAnnual(pNode->m_data.m_eItemType))
 					{
 						pNode->m_data.m_bHidden = true;
 					}
-					else if (CvDeal::isAnnual(pFirstOffer->m_data.m_eItemType) != CvDeal::isAnnual(pNode->m_data.m_eItemType))
+					// MacAurther: Prevent trading things other than gold for cities on counterproposal
+					if (bCityDeal && pNode->m_data.m_eItemType != TRADE_GOLD)
 					{
 						pNode->m_data.m_bHidden = true;
 					}

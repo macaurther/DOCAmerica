@@ -7795,8 +7795,8 @@ int CvPlayerAI::AI_cityTradeVal(CvCity* pCity) const
 
 	iValue -= (iValue % GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
 
-	// Leoreth: help Canada acquire cities
-	if (getCivilizationType() == CANADA) iValue /= 2;
+	// Leoreth: help Canada acquire cities -> MacAurther: Nope, eh
+	//if (getCivilizationType() == CANADA) iValue /= 2;
 
 	if (isHuman())
 	{
@@ -7814,6 +7814,12 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 	CvCity* pNearestCity;
 
 	FAssert(pCity->getOwnerINLINE() == getID());
+
+	// MacAurther: Relax city trades when a Nation is asking a Native or Colony, or a Colony asking a Native - so long as the city is in the buy's settler area
+	int sellerCultureGroup = GET_PLAYER(getID()).getCultureGroup();
+	int buyerCultureGroup = GET_PLAYER(ePlayer).getCultureGroup();
+	bool bWithinHistoricalArea = pCity->plot()->getSettlerValue(ePlayer) > 0;
+	bool bRelaxTrade = (sellerCultureGroup < buyerCultureGroup) && bWithinHistoricalArea;
 
 	//Rhye - start
 	if (isHuman() && GET_PLAYER(ePlayer).getNumCities() == 0)
@@ -7865,7 +7871,7 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 						maxDistance = 100;
 						break;
 					default:
-						maxDistance = 150;
+						maxDistance = 1000;		// MacAurther: Whole map
 						break;
 				}
 				//if ((pNearestCity == NULL) || (plotDistance(pCity->getX_INLINE(), pCity->getY_INLINE(), pNearestCity->getX_INLINE(), pNearestCity->getY_INLINE()) > 9))
@@ -7906,7 +7912,7 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 	//Rhye - end
 
 	//Rhye - start
-	if (GET_PLAYER(getID()).getNumCities() < 5)
+	if (GET_PLAYER(getID()).getNumCities() < 5 && !bRelaxTrade) // MacAurther: Relaxing city trades
 	{
 		return DENIAL_NEVER;
 	}
@@ -7917,8 +7923,8 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 	}
 	//Rhye - end
 
-	// Leoreth: help Canada a bit
-	if (pCity->calculateCulturePercent(getID()) > 50 && GET_PLAYER(ePlayer).getCivilizationType() != CANADA)
+	// Leoreth -> MacAurther: Relaxing city trade
+	if (pCity->calculateCulturePercent(getID()) > 50 && !bRelaxTrade)
 	{
 		return DENIAL_TOO_MUCH;
 	}
