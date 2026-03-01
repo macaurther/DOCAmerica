@@ -1671,11 +1671,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STEAMSHIP_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</English>
-		<French>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</French>
-		<German>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</German>
-		<Italian>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Steamships[COLOR_REVERT] have four cargo spaces.</English>
+		<French>[COLOR_UNIT_TEXT]Steamships[COLOR_REVERT] have four cargo spaces.</French>
+		<German>[COLOR_UNIT_TEXT]Steamships[COLOR_REVERT] have four cargo spaces.</German>
+		<Italian>[COLOR_UNIT_TEXT]Steamships[COLOR_REVERT] have four cargo spaces.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Steamships[COLOR_REVERT] have four cargo spaces.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TIWANAKU_SISQENO</Tag>
@@ -2030,22 +2030,6 @@
 		<Spanish>[COLOR_UNIT_TEXT]Canoes[COLOR_REVERT] have one cargo space and cannot enter ocean.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_BRIGANTINE</Tag>
-		<English>Brigantine</English>
-		<French>Brigantine</French>
-		<German>Brigantine</German>
-		<Italian>Brigantine</Italian>
-		<Spanish>Brigantine</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_BRIGANTINE_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</English>
-		<French>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</French>
-		<German>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</German>
-		<Italian>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_SLOOP</Tag>
 		<English>Sloop</English>
 		<French>Sloop</French>
@@ -2112,22 +2096,6 @@
 		<German>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT] has two extra movement points, is stronger, can bombard city defenses, and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</German>
 		<Italian>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT] has two extra movement points, is stronger, can bombard city defenses, and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</Italian>
 		<Spanish>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT] has two extra movement points, is stronger, can bombard city defenses, and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_BARQUE</Tag>
-		<English>Barque</English>
-		<French>Barque</French>
-		<German>Barque</German>
-		<Italian>Barque</Italian>
-		<Spanish>Barque</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_BARQUE_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Barques[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are the advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</English>
-		<French>[COLOR_UNIT_TEXT]Barques[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are the advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</French>
-		<German>[COLOR_UNIT_TEXT]Barques[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are the advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</German>
-		<Italian>[COLOR_UNIT_TEXT]Barques[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are the advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Barques[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are the advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PUEBLO_PATHFINDER</Tag>

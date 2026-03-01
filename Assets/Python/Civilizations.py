@@ -404,23 +404,21 @@ lCivilizations = [
 	Civilization(
 		iHaiti,
 		iGold=100,
-		lCivics=[iSovereign, iSharecropping, iAgrarianism],
 		lEnemies=[iFrance],
-		techs=techs.column(14).without(iNorthEuropeAccess, iSouthEuropeAccess, iSiberiaAccess),
+		techs=techs.column(12).including(iFreeMarket, iAcademia, iIndependence).without(iNorthEuropeAccess, iSouthEuropeAccess),
+		extraTechs=techs.column(0).including(iAfricaAccess),
 	),
 	Civilization(
 		iArgentina,
 		iGold=1200,
-		iImmigration=40,
 		iStateReligion=iCatholicism,
 		lCivics=[iSovereign, iConfederacy, iBondage, iAgrarianism, iProfiteering, iHomesteads],
 		lEnemies=[iSpain],
-		techs=techs.column(14).without(iNorthEuropeAccess, iSiberiaAccess),
+		techs=techs.column(14).including(iHeritage, iSurveying).without(iNorthEuropeAccess, iSiberiaAccess),
 	),
 	Civilization(
 		iMexico,
 		iGold=500,
-		iImmigration=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iSovereign, iMartialLaw, iBondage, iAgrarianism, iProfiteering, iHomesteads],
 		lEnemies=[iSpain],
@@ -429,7 +427,6 @@ lCivilizations = [
 	Civilization(
 		iColombia,
 		iGold=750,
-		iImmigration=30,
 		iStateReligion=iCatholicism,
 		lCivics=[iSovereign, iFederalism, iBondage, iAgrarianism, iProfiteering, iHomesteads],
 		lEnemies=[iSpain],
@@ -438,7 +435,6 @@ lCivilizations = [
 	Civilization(
 		iPeru,
 		iGold=1200,
-		iImmigration=20,
 		iStateReligion=iCatholicism,
 		lCivics=[iSovereign, iFederalism, iBondage, iAgrarianism, iProfiteering, iHomesteads],
 		lEnemies=[iSpain],
@@ -447,7 +443,6 @@ lCivilizations = [
 	Civilization(
 		iBrazil,
 		iGold=1600,
-		iImmigration=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iSovereign, iFederalism, iBondage, iAgrarianism, iProfiteering, iHomesteads],
 		techs=techs.column(15).including(iMetallurgy, iHydrology).without(iNorthEuropeAccess, iSiberiaAccess),
@@ -455,7 +450,6 @@ lCivilizations = [
 	Civilization(
 		iVenezuela,
 		iGold=1200,
-		iImmigration=20,
 		iStateReligion=iCatholicism,
 		lCivics=[iSovereign, iFederalism, iBondage, iAgrarianism, iProfiteering, iHomesteads],
 		lEnemies=[iColombia],
@@ -663,8 +657,6 @@ dStartingUnits = CivDict({
 		iSiege: 2,
 		iShock: 2,
 		iCitySiege: 1,
-		iFerry: 1,
-		iEscort: 2,
 	},
 	iMexico: {
 		iSettle: 8,
@@ -691,8 +683,6 @@ dStartingUnits = CivDict({
 		iAttack: 7,
 		iSiege: 1,
 		iCitySiege: 2,
-		iFerry: 1,
-		iEscort: 1,
 	},
 	iBrazil: {
 		iSettle: 8,

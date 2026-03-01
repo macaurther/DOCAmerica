@@ -3190,7 +3190,7 @@
 			<Strategy>TXT_KEY_BUILDING_WHEELWRIGHT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WHEELWRIGHT</ArtDefineTag>
-			<PrereqTech>TECH_SURVEYING</PrereqTech>
+			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
 			<ObsoleteTech>TECH_RAILROAD</ObsoleteTech>
 			<iCost>150</iCost>
 			<iConquestProb>70</iConquestProb>
@@ -3702,7 +3702,7 @@
 			<Strategy>TXT_KEY_BUILDING_ARGENTINE_REFRIGERATION_PLANT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ARGENTINE_REFRIGERATION_PLANT</ArtDefineTag>
-			<PrereqTech>TECH_CHEMISTRY</PrereqTech>
+			<PrereqTech>TECH_THERMODYNAMICS</PrereqTech>
 			<iCost>160</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -4008,7 +4008,7 @@
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
-			<ConstructSound>AS2D_BUILD_FACTORY</ConstructSound>
+			<ConstructSound>AS2D_BUILD_WEAVER</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -4105,7 +4105,7 @@
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
-			<ConstructSound>AS2D_BUILD_FACTORY</ConstructSound>
+			<ConstructSound>AS2D_BUILD_WEAVER</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -8538,7 +8538,7 @@
 			<StateReligion>RELIGION_CATHOLICISM</StateReligion>
 			<PrereqReligion>RELIGION_CATHOLICISM</PrereqReligion>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
-			<PrereqTech>TECH_ACADEMIA</PrereqTech>
+			<PrereqTech>TECH_EVANGELISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8700,7 +8700,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MOUNT_VERNON</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
-			<PrereqTech>TECH_HERITAGE</PrereqTech>
+			<PrereqTech>TECH_SOCIAL_CONTRACT</PrereqTech>
 			<ObsoleteTech>TECH_PROGRESSIVISM</ObsoleteTech>
 			<StateReligion>RELIGION_PROTESTANTISM</StateReligion>
 			<PrereqReligion>RELIGION_PROTESTANTISM</PrereqReligion>
@@ -8749,7 +8749,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MONTICELLO</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
-			<PrereqTech>TECH_SOCIOLOGY</PrereqTech>
+			<PrereqTech>TECH_STATECRAFT</PrereqTech>
 			<ObsoleteTech>TECH_PROGRESSIVISM</ObsoleteTech>
 			<PrereqBonuses>BONUS_TOBACCO</PrereqBonuses>
 			<StateReligion>RELIGION_PROTESTANTISM</StateReligion>
@@ -8799,7 +8799,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SLATER_MILL</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
-			<PrereqTech>TECH_PHYSICS</PrereqTech>
+			<PrereqTech>TECH_GEOGRAPHY</PrereqTech>
 			<PrereqBonuses>BONUS_COTTON</PrereqBonuses>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8824,19 +8824,18 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<FlatRiverPlotYieldChanges>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+			</FlatRiverPlotYieldChanges>
 			<FreeSpecialistCounts>
 				<FreeSpecialistCount>
 					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
 					<iFreeSpecialistCount>2</iFreeSpecialistCount>
 				</FreeSpecialistCount>
 			</FreeSpecialistCounts>
-			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_TEXTILE_MILL</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
+			<ConstructSound>AS2D_BUILD_WEAVER</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>

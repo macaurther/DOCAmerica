@@ -187,7 +187,7 @@ EndPlot
 BeginPlot
 	x=8,y=70
 	BeginUnit
-		UnitType=UNIT_BARQUE
+		UnitType=UNIT_FRIGATE
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -1511,7 +1511,7 @@ EndPlot
 BeginPlot
 	x=19,y=33
 	BeginUnit
-		UnitType=UNIT_BARQUE
+		UnitType=UNIT_FRIGATE
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -5441,11 +5441,11 @@ BeginPlot
 	x=42,y=83
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_BARQUE
+		UnitType=UNIT_FRIGATE
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BARQUE
+		UnitType=UNIT_FRIGATE
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
@@ -5740,11 +5740,11 @@ BeginPlot
 	x=44,y=85
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_BARQUE
+		UnitType=UNIT_FRIGATE
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BARQUE
+		UnitType=UNIT_FRIGATE
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
@@ -6710,11 +6710,11 @@ EndPlot
 BeginPlot
 	x=53,y=37
 	BeginUnit
-		UnitType=UNIT_BARQUE
+		UnitType=UNIT_FRIGATE
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BARQUE
+		UnitType=UNIT_FRIGATE
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 EndPlot
@@ -6933,11 +6933,11 @@ EndPlot
 BeginPlot
 	x=56,y=35
 	BeginUnit
-		UnitType=UNIT_BARQUE
+		UnitType=UNIT_FRIGATE
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BARQUE
+		UnitType=UNIT_FRIGATE
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 EndPlot

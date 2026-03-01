@@ -614,10 +614,10 @@ iGunpowder, 	iCompanies, 	iFinance, 		iCartography, 	iExchange, 		iReductions,	i
 iFirearms, 		iTriangularTrade,iExploration, 	iOptics, 		iTreaties, 		iOfficials, 	iIndoctrination,
 iFortification,	iEconomics, 	iColonization, 	iShipbuilding, 	iEducation,		iCharter, 		iIndentures,
 iCombinedArms, 	iLogistics,		iExploitation, 	iTimekeeping, 	iCommunity, 	iPolitics, 		iHorticulture,
-iTactics,		iCurrency,		iGeography,		iScientificMethod,iUrbanPlanning,iStatecraft,	iSocialContract,
+iTactics,		iCurrency,		iMeteorology,	iScientificMethod,iUrbanPlanning,iStatecraft,	iSocialContract,
 iSiberiaAccess, iFreeMarket,	iAutonomy,		iAcademia, 		iModernization,	iIndependence,	iJudiciary,		
-iReplaceableParts,iNewspapers,	iMeteorology,	iSociology,		iSurveying,		iRepresentation,iHeritage,
-iMetallurgy,	iPostalService,	iHydrology,		iPhysics,		iPioneering,	iArchitecture, 	iHumanities,
+iReplaceableParts,iNewspapers,	iPhysics,		iSurveying,		iSociology,		iRepresentation,iHeritage,
+iMetallurgy,	iPostalService,	iHydrology,		iGeography,		iPioneering,	iArchitecture, 	iHumanities,
 iMachineTools, 	iThermodynamics, iEngineeing, 	iChemistry, 	iGeology,		iNationalism, 	iCivilLiberties,
 iMeasurement, 	iEngine, 		iRailroad, 		iElectricity, 	iConservation, 	iDoctrine, 		iEmancipation,
 iBallistics,	iAssemblyLine,	iCombustion,	iTelegraph,		iBiology,		iLaborUnions,	iJournalism,
@@ -634,7 +634,7 @@ lImmigraitonTechs = [iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSib
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 145
+iNumUnits = 142
 # Land Units (94)
 # 0				1				2				3				4				5				6				7				8				9
 (iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote,		iClawdius,		iSettler, 		iDogSled,		
@@ -648,11 +648,11 @@ iSlinger,		iLongbowman,	iTarascanArcher,iIrregular,		iCacos,			iGrenadier,		iAlb
 iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		iGrenadierCavalry,iRural,		iLightTank,		iTank,			iBombard,		
 iCannon,		iArtillery,		iHowitzer,		iAAGun,		
 
-# Naval Units (27)
+# Naval Units (24)
 # 0				1				2				3				4				5				6				7				8				9
 iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iKayak,			iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			
-iBrigantine,	iSteamship,		iTransport,		iCarrier,		iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iPrivateer,	    
-iMonitor,		iSubmarine,		iBarque,		iShipOfTheLine,	iManOfWar,		iCruiser,		iBattleship,	
+iSteamship,		iTransport,		iCarrier,		iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iPrivateer,	    iMonitor,		iSubmarine,		
+iShipOfTheLine,	iManOfWar,		iCruiser,		iBattleship,	
 # Air Units (4)
 # 0				1				2				3				4				5				6				7				8				9
 iBiplane,		iFighter,		iBomber,		iNuclearBomber,	
@@ -791,7 +791,7 @@ iMinarchy,		iMartialLaw,	iConfederacy,	iFederalism,	iKleptocracy,	iUnitary,		iPo
 iRuralism,		iBondage,		iSharecropping,	iIndustrialism,	iImmigrantLabor,iLaborUnions,	iMechanization,
 iLaissezFaire,	iAgrarianism,	iFreeEnterprise,iProtectionism,	iConsumerism,	iDefenseComplex,iPublicWelfare,
 iRevolution,	iLibertarianism,iProfiteering,	iOpportunity,	iSegregation,	iNativism,		iEgalitarianism,
-iDisplacement,	iHomesteads,	iAssimilation,	iManifestDestiny,iDecolonization,iNationhood,	iHegemony) = range(iNumCivics)
+iDisplacement,	iAssimilation,	iHomesteads,	iManifestDestiny,iDecolonization,iNationhood,	iHegemony) = range(iNumCivics)
 
 iNumCivicCategories = 6
 (iCivicsExecutive, iCivicsAdministration, iCivicsLabor, iCivicsEconomy, iCivicsSociety, iCivicsExpansion) = range(iNumCivicCategories)
@@ -1029,14 +1029,14 @@ iFactor : 				[(1800, 1930), 		[iHomelandNorthEurope]],
 iParatrooper : 			[(1930, iEndDate), 	lHomelandsEuropePlus],
 iKoa : 					[(0, 	1800), 		[iHomelandAsia]],
 iArquebusier : 			[(1500, 1550), 		lHomelandsEurope],
-iMusketman : 			[(1550, 1700), 		lHomelandsEurope],
-iCompagnies : 			[(1550, 1700), 		lHomelandsEurope],
-iFusilier : 			[(1700, 1800), 		lHomelandsEuropePlus],
-iRifleman : 			[(1800, 1900), 		lHomelandsEuropePlus],
-iInfantry : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
+iMusketman : 			[(1600, 1750), 		lHomelandsEurope],
+iCompagnies : 			[(1600, 1750), 		lHomelandsEurope],
+iFusilier : 			[(1750, 1850), 		lHomelandsEuropePlus],
+iRedcoat : 				[(1750, 1850), 		[iHomelandNorthEurope]],
+iRifleman : 			[(1850, 1920), 		lHomelandsEuropePlus],
+iInfantry : 			[(1920, iEndDate), 	lHomelandsEuropePlus],
 iPikeman : 				[(1500, 1550), 		lHomelandsEurope],
 iTercio : 				[(1550, 1700), 		[iHomelandSouthEurope]],
-iRedcoat : 				[(1700, 1800), 		[iHomelandNorthEurope]],
 iAntiTank : 			[(1930, iEndDate), 	lHomelandsEuropePlus],
 iCrossbowman : 			[(1500, 1550), 		lHomelandsEurope],
 iGatlingGun : 			[(1850, 1900), 		lHomelandsEuropePlus],
@@ -1045,10 +1045,10 @@ iIrregular : 			[(1550, 1700), 		lHomelandsEurope],
 iGrenadier : 			[(1800, 1900), 		lHomelandsEuropePlus],
 iAlbionLegion : 		[(1800, 1900), 		[iHomelandNorthEurope]],
 iMarine : 				[(1930, iEndDate), 	lHomelandsEuropePlus],
-iCuirassier : 			[(1500, 1650), 		lHomelandsEurope],
-iConquistador : 		[(1500, 1650), 		[iHomelandSouthEurope]],
-iDragoon : 				[(1650, 1800), 		lHomelandsEuropePlus],
-iCavalry : 				[(1800, 1920), 		lHomelandsEuropePlus],
+iCuirassier : 			[(1500, 1750), 		lHomelandsEurope],
+iConquistador : 		[(1500, 1750), 		[iHomelandSouthEurope]],
+iDragoon : 				[(1750, 1850), 		lHomelandsEuropePlus],
+iCavalry : 				[(1850, 1920), 		lHomelandsEuropePlus],
 iLightTank : 			[(1920, iEndDate), 	lHomelandsEuropePlus],
 iTank : 				[(1940, iEndDate), 	lHomelandsEuropePlus],
 iBombard : 				[(1500, 1600), 		lHomelandsEurope],
@@ -1062,20 +1062,16 @@ iKayak : 				[(-5000, 1500), 	[iHomelandSiberia]],
 iCaravel : 				[(1500, 1700), 		lHomelandsEurope],
 iCarrack : 				[(1500, 1700), 		[iHomelandSouthEurope]],
 iIndiaman : 			[(1600, 1700), 		lHomelandsEurope],
-iGalleon : 				[(1550, 1700), 		[iHomelandSouthEurope]],
-iFluyt : 				[(1600, 1700), 		[iHomelandNorthEurope]],		
-iBrigantine : 			[(1700, 1800), 		lHomelandsEuropePlus],
-iSteamship : 			[(1800, 1900), 		lHomelandsEuropePlus],
+iGalleon : 				[(1550, 1825), 		[iHomelandSouthEurope]],
+iFluyt : 				[(1600, 1825), 		[iHomelandNorthEurope]],
+iSteamship : 			[(1825, 1900), 		lHomelandsEuropePlus],
 iTransport : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
 iCarrier : 				[(1935, iEndDate), 	lHomelandsEuropePlus],
-iFrigate : 				[(1700, 1800), 		lHomelandsEuropePlus],
-iSloop : 				[(1600, 1700), 		lHomelandsEurope],
-iIronclad : 			[(1800, 1900), 		lHomelandsEuropePlus],
-iDestroyer : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
-iPrivateer : 			[(1550, 1700), 		lHomelandsEurope],
-iMonitor : 				[(1850, 1900), 		lHomelandsEuropePlus],
+iFrigate : 				[(1700, 1850), 		lHomelandsEuropePlus],
+iIronclad : 			[(1850, 1910), 		lHomelandsEuropePlus],
+iDestroyer : 			[(1910, iEndDate), 	lHomelandsEuropePlus],
+iPrivateer : 			[(1550, 1750), 		lHomelandsEurope],
 iSubmarine : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
-iBarque : 				[(1600, 1750), 		lHomelandsEurope],
 iShipOfTheLine : 		[(1750, 1900), 		lHomelandsEuropePlus],
 iManOfWar : 			[(1750, 1875), 		[iHomelandNorthEurope]],
 iCruiser : 				[(1875, 1930), 		lHomelandsEuropePlus],

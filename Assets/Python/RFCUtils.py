@@ -534,8 +534,10 @@ def isUnitOfRole(iUnit, iRole):
 		return unit.isFound()
 	elif iRole in [iSettleSea, iAssaultSea, iWorkSea, iMissionarySea, iSlaveSea, iFerry]:
 		return unit.getCargoSpace() > 0
-	elif iRole in [iAttackSea, iEscort, iExploreSea]:
-		return iDomainType == DomainTypes.DOMAIN_SEA
+	elif iRole in [iAttackSea]:
+		return iDomainType == DomainTypes.DOMAIN_SEA and unit.getAirRange() > 0
+	elif iRole in [iEscort, iExploreSea]:
+		return iDomainType == DomainTypes.DOMAIN_SEA and unit.getAirRange() == 0
 	elif iRole == iExplore:
 		return iCombatType == UnitCombatTypes.UNITCOMBAT_RECON
 	elif iRole in [iSiege, iCitySiege]:

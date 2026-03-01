@@ -687,7 +687,7 @@ class CvTechChooser:
 				elif TechInfo.getGridX() == 2 and TechInfo.getGridY() == 11:
 					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_MOUNTAINPASS").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
 				# Surveying: Forts claim additional territory
-				elif (TechInfo.getGridX() == 15 and TechInfo.getGridY() == 9):
+				elif (TechInfo.getGridX() == 15 and TechInfo.getGridY() == 7):
 					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_EXTRA_FORT_TERRITORY").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
 				# Pioneering: Cities start with worker and defender
 				elif (TechInfo.getGridX() == 16 and TechInfo.getGridY() == 9):

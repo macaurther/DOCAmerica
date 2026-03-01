@@ -1818,7 +1818,7 @@
 			<Description>TXT_KEY_CIVIC_DEPENDENCIES</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DEPENDENCIES_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DEPENDENCIES_STRATEGY</Strategy>
-			<TechPrereq>TECH_GEOGRAPHY</TechPrereq>
+			<TechPrereq>TECH_METEOROLOGY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Dependencies.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -2656,6 +2656,21 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
+			<Type>CIVIC_ASSIMILATION</Type>
+			<Description>TXT_KEY_CIVIC_ASSIMILATION</Description>
+			<Civilopedia>TXT_KEY_CIVIC_ASSIMILATION_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_ASSIMILATION_STRATEGY</Strategy>
+			<TechPrereq>TECH_ACADEMIA</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Assimilation.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>2</iCultureGroup>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<StateReligionBuildingYields>
+				<iYield>2</iYield>
+			</StateReligionBuildingYields>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
 			<Type>CIVIC_HOMESTEADS</Type>
 			<Description>TXT_KEY_CIVIC_HOMESTEADS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_HOMESTEADS_PEDIA</Civilopedia>
@@ -2667,21 +2682,6 @@
 			<iCultureGroup>2</iCultureGroup>
 			<iWorkerSpeedModifier>50</iWorkerSpeedModifier>
 			<Upkeep>UPKEEP_LOW</Upkeep>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
-			<Type>CIVIC_ASSIMILATION</Type>
-			<Description>TXT_KEY_CIVIC_ASSIMILATION</Description>
-			<Civilopedia>TXT_KEY_CIVIC_ASSIMILATION_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_ASSIMILATION_STRATEGY</Strategy>
-			<TechPrereq>TECH_SURVEYING</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Assimilation.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
-			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<StateReligionBuildingYields>
-				<iYield>2</iYield>
-			</StateReligionBuildingYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>

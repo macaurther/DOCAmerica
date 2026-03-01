@@ -351,7 +351,7 @@ class CvPediaTech(CvPediaScreen.CvPediaScreen):
 		if TechInfo.getGridX() == 2 and TechInfo.getGridY() == 11:
 			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_MOUNTAINPASS").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 		# Surveying: Forts claim additional territory
-		elif (TechInfo.getGridX() == 15 and TechInfo.getGridY() == 9):
+		elif (TechInfo.getGridX() == 15 and TechInfo.getGridY() == 7):
 			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_EXTRA_FORT_TERRITORY").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 		# Pioneering: Cities start with worker and defender
 		elif (TechInfo.getGridX() == 16 and TechInfo.getGridY() == 9):
