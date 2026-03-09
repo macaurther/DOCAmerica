@@ -1301,7 +1301,7 @@
 			<Type>ART_DEF_UNIT_MERCHANTMAN</Type>
 			<Button>Art/Interface/Buttons/Units/merchantman.dds</Button>
 			<fScale>0.14</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
 			<NIF>Art/Units/Merchantman/merchantman.nif</NIF>

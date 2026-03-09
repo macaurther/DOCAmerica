@@ -5,7 +5,6 @@ from Locations import *
 from Stability import *
 from Popups import popup
 from Scenarios import SCENARIOS
-import CvScreensInterface
 
 
 dRelocatedCapitals = CivDict({
@@ -299,47 +298,6 @@ def convertTribesAroundCity(pCity):
 
 
 ### FIRST CONTACT ###
-
-@handler("firstContact")
-def conquistadors(iTeamX, iHasMetTeamY):
-	if is_minor(iTeamX) or is_minor(iHasMetTeamY):
-		return
-	
-	#if year().between(1490, 1800):
-	if year().before(1700) and civ(iTeamX) in lBioNewWorld and civ(iHasMetTeamY) not in lBioNewWorld:	# MacAurther: don't trigger late conquerors
-		iNewWorldPlayer = iTeamX
-		iOldWorldPlayer = iHasMetTeamY
-		
-		iNewWorldCiv = civ(iNewWorldPlayer)
-		iOldWorldCiv = civ(iOldWorldPlayer)
-		
-		# Don't count the Norse (they might discover natives very early)
-		if iOldWorldCiv == iNorse:
-			return
-		
-		bAlreadyContacted = data.dFirstContactConquerors[iNewWorldCiv]
-		
-		# Can't first contact twice
-		if bAlreadyContacted:
-			return
-		
-		# MacAurther: Spain UP: Get free units when discovering Natives
-		if iOldWorldCiv == iSpain:
-			lMercenaries = [iConquistador, iCatholicMiss]
-			if iNewWorldCiv in [iAztec, iInca, iMaya]:
-				lMercenaries += [iArquebusier, iBombard, iPikeman, iExplorer]
-
-			# Holy mole I don't know how to write code
-			CvScreensInterface.immigrationManager.grantMercenaries(lMercenaries, iOldWorldPlayer, iHomelandSouthEurope)
-
-			message(iNewWorldPlayer, "TXT_KEY_FIRST_CONTACT_NEWWORLD")
-			message(iOldWorldPlayer, "TXT_KEY_FIRST_CONTACT_OLDWORLD")
-
-			# Inform the player that the mercenaries have arrived.
-			strMessage = "Conquistadors are waiting on the docks of South Europe!"
-			CyInterface().addMessage(iOldWorldPlayer, False, 20, strMessage, "AS2D_IMMIGRANTEARNED", InterfaceMessageTypes.MESSAGE_TYPE_INFO, "", gc.getInfoTypeForString("COLOR_YELLOW"), -1, -1, False, False) 
-		
-		data.dFirstContactConquerors[iNewWorldCiv] = True
 
 ### TECH ACQUIRED ###
 

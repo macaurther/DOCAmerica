@@ -7,6 +7,7 @@ from Consts import *
 from RFCUtils import *
 from operator import itemgetter
 from Events import handler
+import CvScreensInterface
 
 from Locations import *
 from Core import *
@@ -117,6 +118,55 @@ def muiscaAbility(iGameTurn, iPlayer):
 		if iExtraGold > 0:
 			pPlayer.changeGold(iExtraGold)
 			message(iPlayer, "TXT_KEY_MUSICA_POWER", iExtraGold, sound='AS2D_BAGOMONEY')
+
+@handler("firstContact")
+# Spanish Ability
+def conquistadors(iTeamX, iHasMetTeamY):
+	if is_minor(iTeamX) or is_minor(iHasMetTeamY):
+		return
+	
+	#if year().between(1490, 1800):
+	if year().before(1700) and civ(iTeamX) in lBioNewWorld and civ(iHasMetTeamY) not in lBioNewWorld:	# MacAurther: don't trigger late conquerors
+		iNewWorldTeam = iTeamX
+		iOldWorldTeam = iHasMetTeamY
+		
+		iNewWorldCiv = civ(iNewWorldTeam)
+		iOldWorldCiv = civ(iOldWorldTeam)
+		
+		if iOldWorldCiv != iSpain:
+			return
+		
+		bAlreadyContacted = data.dFirstContactConquerors[iNewWorldCiv]
+		
+		# Can't first contact twice
+		if bAlreadyContacted:
+			return
+		
+		# MacAurther: Spain UP: Get free units when discovering Natives
+		iTransportShip = iCaravel
+		if team(player(iOldWorldCiv)).isHasTech(gc.getUnitInfo(iGalleon).getPrereqAndTech()):
+			iTransportShip = iGalleon
+
+		# Grant Extra units based on which civ
+		lMercenaries = [iCatholicMiss]
+		if iNewWorldCiv in [iTeotihuacan, iTiwanaku, iMississippi, iToltec, iChimu, iArawak, iCherokee, iApache]:
+			lMercenaries += [iArquebusier]
+		elif iNewWorldCiv in [iMaya, iZapotec, iWari, iMuisca, iPueblo, iPurepecha]:
+			lMercenaries += [iTransportShip, iConquistador, iPikeman, iExplorer]
+		elif iNewWorldCiv in [iAztec, iInca]:
+			lMercenaries += [iTransportShip, iConquistador, iBombard]
+
+		# Holy mole I don't know how to write code
+		CvScreensInterface.immigrationManager.grantMercenaries(lMercenaries, iOldWorldTeam, iHomelandSouthEurope)
+
+		message(iNewWorldTeam, "TXT_KEY_FIRST_CONTACT_NEWWORLD")
+		message(iOldWorldTeam, "TXT_KEY_FIRST_CONTACT_OLDWORLD")
+
+		# Inform the player that the mercenaries have arrived.
+		strMessage = "Conquistadors are waiting on the docks of South Europe!"
+		CyInterface().addMessage(iOldWorldTeam, False, 20, strMessage, "AS2D_IMMIGRANTEARNED", InterfaceMessageTypes.MESSAGE_TYPE_INFO, "", gc.getInfoTypeForString("COLOR_YELLOW"), -1, -1, False, False) 
+		
+		data.dFirstContactConquerors[iNewWorldCiv] = True
 
 @handler("goodyReceived")
 # Coureur des Bois ability

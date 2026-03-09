@@ -620,9 +620,9 @@ def getUnitsForRole(iPlayer, iRole, bUnique=True):
 		# Half Missionaries, half Explorers
 		for _ in range(infos.unit(iUnit).getCargoSpace()):
 			if _ % 2 == 0:
-				units.append(getUnitForRole(iPlayer, iExplore, bUnique=bUnique))
-			else:
 				units.append(getUnitForRole(iPlayer, iMissionary, bUnique=bUnique))
+			else:
+				units.append(getUnitForRole(iPlayer, iExplore, bUnique=bUnique))
 	
 	elif iRole == iSlaveSea:
 		# All slaves
