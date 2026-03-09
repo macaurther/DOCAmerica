@@ -339,7 +339,7 @@ EndPlot
 BeginPlot
 	x=9,y=112
 	BeginUnit
-		UnitType=UNIT_INDIAMAN
+		UnitType=UNIT_MERCHANTMAN
 		UnitOwner=CIVILIZATION_RUSSIA
 	EndUnit
 EndPlot
@@ -444,7 +444,7 @@ BeginPlot
 	x=10,y=112
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_INDIAMAN
+		UnitType=UNIT_MERCHANTMAN
 		UnitOwner=CIVILIZATION_RUSSIA
 	EndUnit
 	BeginUnit
@@ -717,7 +717,7 @@ BeginPlot
 	x=12,y=108
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_INDIAMAN
+		UnitType=UNIT_MERCHANTMAN
 		UnitOwner=CIVILIZATION_RUSSIA
 	EndUnit
 	BeginUnit
@@ -4474,7 +4474,7 @@ BeginPlot
 	x=36,y=73
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_INDIAMAN
+		UnitType=UNIT_MERCHANTMAN
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
@@ -4692,7 +4692,7 @@ EndPlot
 BeginPlot
 	x=38,y=15
 	BeginUnit
-		UnitType=UNIT_INDIAMAN
+		UnitType=UNIT_MERCHANTMAN
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 EndPlot
@@ -5752,7 +5752,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_INDIAMAN
+		UnitType=UNIT_MERCHANTMAN
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
@@ -6091,11 +6091,11 @@ BeginPlot
 	x=46,y=93
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_INDIAMAN
+		UnitType=UNIT_MERCHANTMAN
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_INDIAMAN
+		UnitType=UNIT_MERCHANTMAN
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
@@ -6748,7 +6748,7 @@ EndPlot
 BeginPlot
 	x=54,y=113
 	BeginUnit
-		UnitType=UNIT_INDIAMAN
+		UnitType=UNIT_MERCHANTMAN
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 EndPlot
@@ -6869,7 +6869,7 @@ EndPlot
 BeginPlot
 	x=56,y=23
 	BeginUnit
-		UnitType=UNIT_INDIAMAN
+		UnitType=UNIT_MERCHANTMAN
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 EndPlot

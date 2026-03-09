@@ -513,4 +513,4 @@ def handleColonialConquest(iPlayer):
 	seaPlot = plots.surrounding(targets[0]).water().random()
 
 	if seaPlot:
-		makeUnit(iPlayer, unique_unit(iPlayer, iIndiaman), seaPlot)
+		makeUnit(iPlayer, unique_unit(iPlayer, iMerchantman), seaPlot)

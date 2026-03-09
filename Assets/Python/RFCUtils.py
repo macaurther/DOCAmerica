@@ -458,7 +458,7 @@ def replace(unit, iUnitType):
 
 # used: RFCUtils
 def getRoleDomain(iRole):
-	if iRole in [iWorkerSea, iSettleSea, iAttackSea, iAssaultSea, iWorkSea, iMissionarySea, iSlaveSea, iFerry, iEscort, iExploreSea, iLightEscort]:
+	if iRole in [iWorkerSea, iSettleSea, iAttackSea, iAssaultSea, iWorkSea, iMissionarySea, iSlaveSea, iShockSea, iReconSea, iFerry, iEscort, iExploreSea, iLightEscort]:
 		return DomainTypes.DOMAIN_SEA
 	return DomainTypes.DOMAIN_LAND
 
@@ -491,11 +491,11 @@ def getRoleAI(iRole):
 		return UnitAITypes.UNITAI_ATTACK_SEA
 	elif iRole == iMissionarySea:
 		return UnitAITypes.UNITAI_MISSIONARY_SEA
-	elif iRole in [iAssaultSea, iFerry]:
+	elif iRole in [iAssaultSea, iShockSea, iFerry]:
 		return UnitAITypes.UNITAI_ASSAULT_SEA
 	elif iRole == iEscort:
 		return UnitAITypes.UNITAI_ESCORT_SEA
-	elif iRole == iExploreSea:
+	elif iRole in [iExploreSea, iReconSea]:
 		return UnitAITypes.UNITAI_EXPLORE_SEA
 	elif iRole == iExplore:
 		return UnitAITypes.UNITAI_EXPLORE
@@ -532,7 +532,7 @@ def isUnitOfRole(iUnit, iRole):
 		return iDomainType == DomainTypes.DOMAIN_SEA and unit.getCombat() == 0
 	elif iRole == iSettle:
 		return unit.isFound()
-	elif iRole in [iSettleSea, iAssaultSea, iWorkSea, iMissionarySea, iSlaveSea, iFerry]:
+	elif iRole in [iSettleSea, iAssaultSea, iWorkSea, iMissionarySea, iSlaveSea, iShockSea, iReconSea, iFerry]:
 		return unit.getCargoSpace() > 0
 	elif iRole in [iAttackSea]:
 		return iDomainType == DomainTypes.DOMAIN_SEA and unit.getAirRange() > 0
@@ -596,7 +596,7 @@ def getUnitsForRole(iPlayer, iRole, bUnique=True):
 		# If only one space, just put a settler
 		if infos.unit(iUnit).getCargoSpace() == 1:
 			units.append(getUnitForRole(iPlayer, iSettle, bUnique=bUnique))
-		# Otherwise, half base, half settlers
+		# Otherwise, half defender, half settlers
 		else:
 			for _ in range(infos.unit(iUnit).getCargoSpace()):
 				if _ % 2 == 0:
@@ -628,6 +628,16 @@ def getUnitsForRole(iPlayer, iRole, bUnique=True):
 		# All slaves
 		for _ in range(infos.unit(iUnit).getCargoSpace()):
 			units.append((iChattleSlave, UnitAITypes.UNITAI_SLAVE))
+	
+	elif iRole == iShockSea:
+		# All Heavy Cav
+		for _ in range(infos.unit(iUnit).getCargoSpace()):
+			units.append(getUnitForRole(iPlayer, iShock, bUnique=bUnique))
+	
+	elif iRole == iReconSea:
+		# All Explorers
+		for _ in range(infos.unit(iUnit).getCargoSpace()):
+			units.append(getUnitForRole(iPlayer, iExplore, bUnique=bUnique))
 	
 	return units
 

@@ -580,11 +580,11 @@ dStartingUnits = CivDict({
 	},
 	iSpain: {
 		iSettleSea: 1,
-		iWorkSea: 1,
+		iReconSea: 1,
 		iMissionarySea: 1,
 	},
 	iPortugal: {
-		iSettleSea: 2,
+		iSettleSea: 1,
 		iWorkSea: 1,
 		iSlaveSea: 1,
 		iMissionarySea: 1,

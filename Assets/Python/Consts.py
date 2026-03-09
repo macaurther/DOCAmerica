@@ -650,7 +650,7 @@ iCannon,		iArtillery,		iHowitzer,		iAAGun,
 
 # Naval Units (24)
 # 0				1				2				3				4				5				6				7				8				9
-iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iKayak,			iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			
+iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iKayak,			iCaravel,		iCarrack,		iMerchantman,	iGalleon,       iFluyt,			
 iSteamship,		iTransport,		iCarrier,		iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iPrivateer,	    iMonitor,		iSubmarine,		
 iShipOfTheLine,	iManOfWar,		iCruiser,		iBattleship,	
 # Air Units (4)
@@ -680,11 +680,11 @@ iGreatSpy : iFeGreatSpy,
 }
 
 
-iNumUnitRoles = 27
+iNumUnitRoles = 29
 # 0				1				2				3				4				5				6				7				8				9
 (iBase, 		iDefend, 		iAttack, 		iCounter, 		iShock, 		iHarass, 		iCityAttack, 	iWorkerSea, 	iSettle, 		iSettleSea, 
-iAttackSea, 	iAssaultSea, 	iWorkSea,		iMissionarySea,	iSlaveSea,		iFerry, 		iEscort, 		iExplore, 		iShockCity, 	iSiege, 		
-iCitySiege, 	iExploreSea, 	iSkirmish, 		iLightEscort, 	iWork, 			iMissionary,	iSpyRole) = range(iNumUnitRoles)
+iAttackSea, 	iAssaultSea, 	iWorkSea,		iMissionarySea,	iSlaveSea,		iShockSea,		iReconSea,		iFerry, 		iEscort, 		iExplore, 		
+iShockCity, 	iSiege, 		iCitySiege, 	iExploreSea, 	iSkirmish, 		iLightEscort, 	iWork, 			iMissionary,	iSpyRole) = range(iNumUnitRoles)
 
 iNumPromotions = 89
 # 0				1				2				3				4				5				6				7				8				9
@@ -1061,7 +1061,7 @@ iWaaKaulua : 			[(0, 	1800), 		[iHomelandAsia]],
 iKayak : 				[(-5000, 1500), 	[iHomelandSiberia]],
 iCaravel : 				[(1500, 1700), 		lHomelandsEurope],
 iCarrack : 				[(1500, 1700), 		[iHomelandSouthEurope]],
-iIndiaman : 			[(1600, 1700), 		lHomelandsEurope],
+iMerchantman : 			[(1600, 1700), 		lHomelandsEurope],
 iGalleon : 				[(1550, 1825), 		[iHomelandSouthEurope]],
 iFluyt : 				[(1600, 1825), 		[iHomelandNorthEurope]],
 iSteamship : 			[(1825, 1900), 		lHomelandsEuropePlus],

@@ -463,12 +463,12 @@
 			<DefaultUnit>UNIT_CARAVEL</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_INDIAMAN</Type>
-			<Description>TXT_KEY_UNIT_INDIAMAN</Description>
+			<Type>UNITCLASS_MERCHANTMAN</Type>
+			<Description>TXT_KEY_UNIT_MERCHANTMAN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_INDIAMAN</DefaultUnit>
+			<DefaultUnit>UNIT_MERCHANTMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_STEAMSHIP</Type>
