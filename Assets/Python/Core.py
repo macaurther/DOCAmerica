@@ -434,7 +434,7 @@ def move(unit, destination):
 	if destination is None:
 		return
 
-	# MacAurther: Don't move units that just want to sit forever
+	# MacAurther: Don't move Tribe Defenders (i.e. units with Sit Forever AI)
 	if unit.getUnitAIType() == UnitAITypes.UNITAI_SIT_FOREVER:
 		return
 		

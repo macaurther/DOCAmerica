@@ -830,7 +830,9 @@ def moveDomainUnits(iPlayer, iOwner, units, destination):
 	
 	else:
 		for unit in units:
-			unit.kill(False, -1)
+			# MacAurther: Don't move Tribe Defenders (i.e. units with Sit Forever AI)
+			if unit.getUnitAIType() != UnitAITypes.UNITAI_SIT_FOREVER:
+				unit.kill(False, -1)
 
 # used: CvScreensInterface, CvPlatyBuilderScreen
 # TODO: should be civ based not player based

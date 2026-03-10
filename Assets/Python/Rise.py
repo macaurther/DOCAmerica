@@ -705,7 +705,11 @@ class Birth(object):
 			if unit.isAnimal():
 				unit.kill(False, -1)
 				continue
-			
+
+			# MacAurther: Don't move Tribe Defenders (i.e. units with Sit Forever AI)
+			if unit.getUnitAIType() == UnitAITypes.UNITAI_SIT_FOREVER:
+				continue
+	
 			if cities.owner(unit.getOwner()):
 				closest = cities.owner(unit.getOwner()).closest(unit)
 			elif unit.getDomainType() == DomainTypes.DOMAIN_SEA or unit.isCargo():
