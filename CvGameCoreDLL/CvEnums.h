@@ -1256,10 +1256,10 @@ enum CivilizationTypes		// Exposed to Python
 	WARI,
 	ZAPOTEC,
 	
-	INDEPENDENT,
-	INDEPENDENT2,
+	INDEPENDENT,	// Urban Natives
+	INDEPENDENT2,	// Nations
 	INDEPENDENT3,	// Player for Holy City AND NOTHING ELSE
-	INDIGENOUS,
+	INDIGENOUS,		// Tribal Natives
 	MINOR_CIV,
 	BARBARIAN_CIV,
 

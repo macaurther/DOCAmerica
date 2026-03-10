@@ -13,7 +13,7 @@
 			<Civilopedia>TXT_KEY_TECH_HUNTING_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_HUNTING_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -46,7 +46,7 @@
 			<Description>TXT_KEY_TECH_IRRIGATION</Description>
 			<Civilopedia>TXT_KEY_TECH_IRRIGATION_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -75,7 +75,7 @@
 			<Description>TXT_KEY_TECH_HERBALISM</Description>
 			<Civilopedia>TXT_KEY_TECH_HERBALISM_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -108,7 +108,7 @@
 			<Description>TXT_KEY_TECH_CULTIVATION</Description>
 			<Civilopedia>TXT_KEY_TECH_CULTIVATION_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -142,7 +142,7 @@
 			<Civilopedia>TXT_KEY_TECH_INTERPRETATION_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_INTERPRETATION_HELP</Help>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -176,7 +176,7 @@
 			<Description>TXT_KEY_TECH_LANDMARKS</Description>
 			<Civilopedia>TXT_KEY_TECH_LANDMARKS_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -209,7 +209,7 @@
 			<Description>TXT_KEY_TECH_DIVING</Description>
 			<Civilopedia>TXT_KEY_TECH_DIVING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -245,7 +245,7 @@
 			<Description>TXT_KEY_TECH_TRAPPING</Description>
 			<Civilopedia>TXT_KEY_TECH_TRAPPING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -281,7 +281,7 @@
 			<Description>TXT_KEY_TECH_KNAPPING</Description>
 			<Civilopedia>TXT_KEY_TECH_KNAPPING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -310,7 +310,7 @@
 			<Description>TXT_KEY_TECH_EARTHWORKS</Description>
 			<Civilopedia>TXT_KEY_TECH_EARTHWORKS_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -346,7 +346,7 @@
 			<Description>TXT_KEY_TECH_COMPANION_PLANTING</Description>
 			<Civilopedia>TXT_KEY_TECH_COMPANION_PLANTING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -380,7 +380,7 @@
 			<Civilopedia>TXT_KEY_TECH_MEDIATION_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_MEDIATION_HELP</Help>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -414,7 +414,7 @@
 			<Civilopedia>TXT_KEY_TECH_PATHFINDING_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_PATHFINDING_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
@@ -453,7 +453,7 @@
 			<Description>TXT_KEY_TECH_FISHING</Description>
 			<Civilopedia>TXT_KEY_TECH_FISHING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<iAITradeModifier>900</iAITradeModifier>
+			<iAITradeModifier>600</iAITradeModifier>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>

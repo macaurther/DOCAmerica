@@ -103,7 +103,7 @@ def minorWars(iMinorCiv):
 def updateMinorTechs(iMinorCiv, iMajorCiv):
 	techs = infos.techs().where(team(iMajorCiv).isHasTech)
 	
-	if civ(iMinorCiv) == iIndigenous:
+	if civ(iMinorCiv) in [iIndigenous, iIndependent1]:	# MacAurther: Independent1 is also native
 		techs = techs.where(lambda iTech: all(iEnabledTech in techs for iEnabledTech in getEnabledTechs(iTech)))
 		
 		nativePlayers = players.of(*lBioNewWorld)

@@ -177,6 +177,10 @@ def captureSlaves(winningUnit, losingUnit):
 
 @handler("combatResult")
 def captureWeapons(pWinningUnit, pLosingUnit):
+	# Don't capture if battle is between two AIs (hurts AI conquerors too much)
+	if not player(pWinningUnit).isHuman() and not player(pLosingUnit).isHuman():
+		return
+	
 	# Capture cannon
 	if infos.unit(pLosingUnit).getUnitCombatType() in [UnitCombatTypes.UNITCOMBAT_SIEGE]:
 		captureUnit(pLosingUnit, pWinningUnit, pLosingUnit.getUnitType(), 25)

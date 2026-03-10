@@ -170,7 +170,7 @@ iTechGroupNation: [iAmerica, iCanada, iArgentina, iMexico, iColombia, iBrazil, i
 iTechGroupNative : [iMaya, iInca, iAztec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iMuisca, iChimu, iInuit, iHaudenosaunee, iLakota, iHawaii, iZapotec, iPurepecha, iToltec, iArawak, iTupi, iCherokee, iApache],
 }
 
-lBioNewWorld = [iMaya, iInca, iAztec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iMuisca, iChimu, iInuit, iHaudenosaunee, iLakota, iHawaii, iZapotec, iPurepecha, iToltec, iArawak, iTupi, iCherokee, iApache]
+lBioNewWorld = [iMaya, iInca, iAztec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iMuisca, iChimu, iInuit, iHaudenosaunee, iLakota, iHawaii, iZapotec, iPurepecha, iToltec, iArawak, iTupi, iCherokee, iApache, iIndigenous, iIndependent1]
 lRevolutionaries = [iAmerica, iHaiti, iArgentina, iMexico, iColombia, iPeru]	# Europeans get expeditionary force at the spawn of these civs
 
 #for messages
