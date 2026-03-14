@@ -60,7 +60,7 @@ class Mercenary:
 		self.iExperienceLevel = iExperienceLevel
 		self.iNextExperienceLevel = iNextExperienceLevel		
 
-	def place(self, iPlayer, iHomeland):
+	def place(self, iPlayer, iHomeland, bAggressive=False):
 		player = gc.getPlayer(iPlayer)
 		civics = Civics.player(iPlayer)
 
@@ -84,6 +84,18 @@ class Mercenary:
 
 		# Set the mercenaries unique name
 		objUnit.setName(self.sUnitName)
+
+		# Set AI type to aggressive (if specified)
+		if bAggressive:
+			if self.isShip():
+				if self.getUnitInfo().getCargoSpace() > 0:
+					objUnit.setUnitAIType(UnitAITypes.UNITAI_ASSAULT_SEA)
+				else:
+					objUnit.setUnitAIType(UnitAITypes.UNITAI_ESCORT_SEA)
+			else:
+				if self.getUnitInfo().getCombat() > 0:
+					objUnit.setUnitAIType(UnitAITypes.UNITAI_ATTACK_CITY)
+
 
 		iExp = 0
 		# Conquest and Zealotry Civic
@@ -286,7 +298,7 @@ class Mercenary:
 		# If no plots were found that matched the given homeland at the latitude of the player's capital, return default
 		return plot(dHomelandDefaultUnitSpawn[iHomeland])
 	
-	# Is Ship?
+	# Classification helpers
 	def isShip(self):
 		return self.getUnitInfo().getDomainType() == 0		# DOMAIN_SEA = 0
 	

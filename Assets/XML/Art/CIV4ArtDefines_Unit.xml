@@ -1262,7 +1262,7 @@
 			<Type>ART_DEF_UNIT_GALLEON</Type>
 			<Button>,Art/Interface/Buttons/Units/Galleon.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,5,9</Button>
 			<fScale>0.17</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
+			<fInterfaceScale>0.75</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
 			<NIF>Art/Units/Galleon/Galleon_FX.nif</NIF>
@@ -1300,8 +1300,8 @@
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_MERCHANTMAN</Type>
 			<Button>Art/Interface/Buttons/Units/merchantman.dds</Button>
-			<fScale>0.14</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
+			<fScale>0.20</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
 			<NIF>Art/Units/Merchantman/merchantman.nif</NIF>

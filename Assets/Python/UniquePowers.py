@@ -156,8 +156,7 @@ def conquistadors(iTeamX, iHasMetTeamY):
 		elif iNewWorldCiv in [iAztec, iInca]:
 			lMercenaries += [iTransportShip, iConquistador, iBombard]
 
-		# Holy mole I don't know how to write code
-		CvScreensInterface.immigrationManager.grantMercenaries(lMercenaries, iOldWorldTeam, iHomelandSouthEurope)
+		CvScreensInterface.immigrationManager.grantMercenaries(lMercenaries, iOldWorldTeam, iHomelandSouthEurope)	# Holy mole I don't know how to write code
 
 		message(iNewWorldTeam, "TXT_KEY_FIRST_CONTACT_NEWWORLD")
 		message(iOldWorldTeam, "TXT_KEY_FIRST_CONTACT_OLDWORLD")

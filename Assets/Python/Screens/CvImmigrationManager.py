@@ -521,13 +521,15 @@ class CvImmigrationManager:
 		return strGoldText + strDelta
 	
 	# Hire list of mercenaries
-	def grantMercenaries(self, lMercenaries, iPlayer, iHomeland):
+	def grantMercenaries(self, lMercenaries, iPlayer, iHomeland=-1, bImmediate=False):
+		if iHomeland == -1:
+			iHomeland = objImmigrationUtils.getFirstOpenHomeland(iPlayer)
 		for iMercenary in lMercenaries:
-			self.hireMercenary(iMercenary, iPlayer, iHomeland, False)
+			self.hireMercenary(iMercenary, iPlayer, iHomeland, False, bImmediate)
 
 	# Useful method for use outside of Immigration Manager land as well
-	def hireMercenary(self, iMercenary, iPlayer, iHomeland, bPay = True):
-		objImmigrationUtils.hireMercenary(iMercenary, iPlayer, iHomeland, bPay)
+	def hireMercenary(self, iMercenary, iPlayer, iHomeland, bPay = True, bImmediate=False):
+		objImmigrationUtils.hireMercenary(iMercenary, iPlayer, iHomeland, bPay, bImmediate)
 
 	# Hires a mercenary for a player
 	def hireMercenaryOnScreen(self, screen, iMercenary, iHomeland):

@@ -851,7 +851,7 @@ public:
 	virtual bool AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot = NULL, BuildTypes* peBestBuild = NULL, CvPlot* pIgnorePlot = NULL, CvUnit* pUnit = NULL) = 0;
 	virtual bool AI_isCityAIType() const = 0;
 	virtual UnitAITypes AI_getUnitAIType() const = 0;																				// Exposed to Python
-	virtual void AI_setUnitAIType(UnitAITypes eNewValue) = 0;
+	virtual void AI_setUnitAIType(UnitAITypes eNewValue) = 0;																				// Exposed to Python
     virtual int AI_sacrificeValue(const CvPlot* pPlot) const = 0;
 	virtual std::pair<CvPlot*, CvPlot*> AI_spreadTarget(ReligionTypes eReligion, bool bGreatMission = false) = 0;
 	virtual CvCity* AI_persecutionTarget() = 0;

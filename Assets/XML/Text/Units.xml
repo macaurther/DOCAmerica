@@ -1003,11 +1003,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SHIP_OF_THE_LINE_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</English>
-		<French>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</French>
-		<German>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</German>
-		<Italian>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, conduct ranged attacks, and are the capital [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial and Revolutionary eras.</English>
+		<French>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, conduct ranged attacks, and are the capital [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial and Revolutionary eras.</French>
+		<German>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, conduct ranged attacks, and are the capital [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial and Revolutionary eras.</German>
+		<Italian>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, conduct ranged attacks, and are the capital [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial and Revolutionary eras.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, conduct ranged attacks, and are the capital [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial and Revolutionary eras.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NUCLEAR_BOMBER_STRATEGY</Tag>
@@ -1563,11 +1563,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ENGLISH_MAN_OF_WAR_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</English>
-		<French>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</French>
-		<German>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has two additional strength and ranged strength points and has 2 cargo spaces.</English>
+		<French>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has two additional strength and ranged strength points and has 2 cargo spaces.</French>
+		<German>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has two additional strength and ranged strength points and has 2 cargo spaces.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has two additional strength and ranged strength points and has 2 cargo spaces.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Man'o'War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has two additional strength and ranged strength points and has 2 cargo spaces.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SPANISH_TERCIO</Tag>

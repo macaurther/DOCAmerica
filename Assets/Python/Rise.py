@@ -291,7 +291,7 @@ def endExpansionOnPeace(bWar, iPlayer1, iPlayer2):
 		deleteExpansionUnits(iPlayer2)
 
 
-@handler("collapse")
+#@handler("collapse")
 def endExpansionOnCollapse(iPlayer):
 	for plot in plots.all().where(lambda plot: plot.getExpansion() == iPlayer):
 		plot.resetExpansion()
@@ -300,11 +300,6 @@ def endExpansionOnCollapse(iPlayer):
 @handler("firstCity")
 def createStartingWorkers(city):
 	iPlayer = city.getOwner()
-
-	# MacAurther: Don't give extra starting worker to civs that spawn at sea
-	if civ(iPlayer) in dSeaSpawns.keys():	
-		return
-	
 	iNumStartingWorkers = dStartingUnits[iPlayer].get(iWork, 0)
 	
 	if iNumStartingWorkers > 0:
@@ -506,12 +501,12 @@ class Birth(object):
 	def updateArea(self):
 		if self.iCiv in lExpandedFlipCivs:
 			owners = self.area.cities().owners().major()
-			ownerCities = cities.all().area(self.location).where(lambda city: city.getOwner() in owners).where(lambda city: not plot(city).isPlayerCore(city.getOwner()))
+			ownerCities = cities.all().area(self.location).where(lambda city: city.getOwner() in owners).where(lambda city: not plot(city).isPlayerCore(city.getOwner())).where(lambda city: plot(city).getSettlerValue(self.iCiv) > 0)
 			closerCities = ownerCities.where(lambda city: real_distance(city, self.location) <= real_distance(city, capital(city)))
 			
-			additionalPlots = closerCities.plots().expand(2).where(lambda p: p.getOwner() in owners and none(p.isPlayerCore(iPlayer) for iPlayer in players.major().existing().without(self.iPlayer)))
+			additionalPlots = closerCities.plots().expand(1) + closerCities.plots().expand(2).where(lambda p: p.getSettlerValue(self.iCiv) > 0)
 			
-			self.area += additionalPlots
+			self.area += additionalPlots.where(lambda p: p.getOwner() in owners and none(p.isPlayerCore(iPlayer) for iPlayer in players.major().existing().without(self.iPlayer)))
 			self.area = self.area.unique()
 		
 		# MacAurther: Not really sure what the below is doing
@@ -628,7 +623,7 @@ class Birth(object):
 		# reveal tiles
 		for plot in revealed:
 			plot.setRevealed(self.team.getID(), True, False, -1)
-
+	
 	def createUnits(self):
 		bInvasionCiv = self.iCiv in lInvasionCivs
 		
@@ -1032,10 +1027,6 @@ class Birth(object):
 		createSpecificUnits(self.iPlayer, self.location)		
 	
 	def birth(self):
-		# initial save
-		if self.isHuman():
-			game.initialSave()
-			
 		# reset AI
 		self.reset()
 		
@@ -1075,10 +1066,65 @@ class Birth(object):
 		
 		if chance(dWarOnFlipProbability[iOwner]):
 			player(iOwner).AI_changeMemoryCount(self.iPlayer, MemoryTypes.MEMORY_STOPPED_TRADING_RECENT, 1)
+			print("self.civ.iCiv: " + str(self.civ.iCiv) + " lRevolutionaries: " + str(lRevolutionaries)) # temp debug
+			# If declaring war on a revolutionary, grant an expeditionary force (only for AI)
+			if self.civ.iCiv in lRevolutionaries:
+				self.expeditionaryForce(iOwner)
 	
 	def declareWarOnFlip(self, iOwner):
 		team(iOwner).declareWar(self.player.getTeam(), False, WarPlanTypes.WARPLAN_ATTACKED_RECENT)
-	
+
+	# MacAurther: Method to handle the spawning of a colonial expeditionary force
+	def expeditionaryForce(self, iOwner):
+		lUnits = []
+		lLandUnits = []
+		print("self.civ.iCiv: " + str(self.civ.iCiv) + " civ(iOwner): " + str(civ(iOwner)))	# temp debug
+		# Not doing this based on roles, because we don't know how much tech the AI has
+		if self.civ.iCiv == iAmerica:
+			if civ(iOwner) == iEngland:
+				lUnits += [iShipOfTheLine] * 3 + [iFrigate] * 5 + [iMerchantman] * 2
+				lLandUnits += [iFusilier] * 12 + [iDragoon] * 8 + [iGrenadier] * 6 + [iCannon] * 6
+			elif civ(iOwner) in iCivGroupEurope:
+				lUnits += [iFrigate] * 2 + [iMerchantman] * 1
+				lLandUnits += [iFusilier] * 4 + [iDragoon] * 2 + [iGrenadier] * 2 + [iCannon] * 2
+		elif self.civ.iCiv == iHaiti:
+			if civ(iOwner) == iFrance:
+				lUnits += [iShipOfTheLine] * 1 + [iFrigate] * 3 + [iMerchantman] * 2
+				lLandUnits += [iFusilier] * 6 + [iDragoon] * 3 + [iGrenadier] * 2 + [iCannon] * 2
+			elif civ(iOwner) in iCivGroupEurope:
+				lUnits += [iFrigate] * 1 + [iMerchantman] * 1
+				lLandUnits += [iFusilier] * 3 + [iDragoon] * 1 + [iGrenadier] * 1 + [iCannon] * 1
+		else:
+			# If not specified, spawn a token force
+			lUnits += [iFrigate] * 1 + [iMerchantman] * 1
+			lLandUnits += [iFusilier] * 3 + [iDragoon] * 1 + [iGrenadier] * 1 + [iCannon] * 1
+		
+		# Randomize order of land units to make a good mix come to shore
+		random.shuffle(lLandUnits)
+		lUnits += lLandUnits
+
+		# Make sure to use unique units
+		for idx, iUnit in enumerate(lUnits):
+			lUnits[idx] = unique_unit(iOwner, iUnit)
+						
+		# disable birth protection if still active
+		self.player.setBirthProtected(False)
+		for p in plots.all():
+			if p.getBirthProtected() == self.iPlayer:
+				p.resetBirthProtected()
+		
+		# Declare total so AI will actually commit units
+		team(iOwner).declareWar(self.player.getTeam(), True, WarPlanTypes.WARPLAN_TOTAL)
+		
+		# Send units to a Homeland owner can get immigrants from (In 99% of cases this'll just be their default one)
+		CvScreensInterface.immigrationManager.grantMercenaries(lUnits, iOwner, bImmediate=True)
+
+		if self.civ.iCiv == iAmerica:
+			message(self.iPlayer, 'TXT_KEY_EXPEDITIONARY_REVOLUTIONARIES_AMERICA', color=iRed)
+		else:
+			message(self.iPlayer, 'TXT_KEY_EXPEDITIONARY_REVOLUTIONARIES', color=iRed)
+		message(iOwner, 'TXT_KEY_EXPEDITIONARY_EXPEDITIONARIES', color=iGreen)
+
 	def checkFlip(self):
 		if not self.bFlip and (self.player.getNumCities() > 0 or self.iCiv in lInvasionCivs):
 			self.flip()

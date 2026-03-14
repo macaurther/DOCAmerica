@@ -180,6 +180,7 @@ def replenishTribe(pPlot, iMaxUnits):
 
 @handler("BeginGameTurn")
 def expeditionaryForce(iGameTurn):
+	return # temp debug
 	for iRevolutionaryCiv in lRevolutionaries:
 		if turn() != year(dBirth[iRevolutionaryCiv]) + 1:
 			continue

@@ -226,7 +226,7 @@ class ImmigrationUtils:
 	
 	# This method acts as a proxy to the hire method in the Mercenary class. It will
 	# get the mercenary object in the global mercenary pool
-	def hireMercenary(self, iUnit, iPlayer, iHomeland, bPay=True):
+	def hireMercenary(self, iUnit, iPlayer, iHomeland, bPay=True, bImmediate=False):
 		' returns true if the objMercenary was successfully hired'
 		
 		# Get the player
@@ -263,9 +263,9 @@ class ImmigrationUtils:
 			self.changeImmigrants(iPlayer, iHomeland, iImmigrant, -iImmigrantCost)
 			pPlayer.setGold(pPlayer.getGold() - iGoldCost)
 		
-		# Place immediately if ship, otherwise add to earned Immigrants
-		if immigrant.isShip():
-			self.placeMercenary(iUnit, iPlayer, iHomeland)
+		# Place immediately if ship or force immediate with space, otherwise add to earned Immigrants
+		if immigrant.isShip() or (bImmediate and immigrant.hasShipForPlacement(iPlayer, iHomeland)):
+			self.placeMercenary(iUnit, iPlayer, iHomeland, bImmediate)
 		else:
 			# If not placed, add to earned immigrants list
 			self.changeImmigrants(iPlayer, iHomeland, iUnit, 1)
@@ -275,7 +275,7 @@ class ImmigrationUtils:
 		
 		return True
 
-	def placeMercenary(self, iUnit, iPlayer, iHomeland):
+	def placeMercenary(self, iUnit, iPlayer, iHomeland, bImmediate=False):
 		# Get the player
 		pPlayer = gc.getPlayer(iPlayer)
 		
@@ -285,11 +285,14 @@ class ImmigrationUtils:
 		
 		immigrant = self.getImmigrant(iUnit)
 
-		# Reduce earned immigrants by 1 if not a ship
-		if not immigrant.isShip():
+		# Reduce earned immigrants by 1 if not a ship and not immediate
+		if not immigrant.isShip() and not bImmediate:
 			self.changeImmigrants(iPlayer, iHomeland, iUnit, -1)
+		
+		# If unit is Mercenary and placed while AI owner is at war with another player, make it aggressive
+		bAggressive = not pPlayer.isHuman() and team(iPlayer).getAtWarCount(True)
 
-		immigrant.place(iPlayer, iHomeland)
+		immigrant.place(iPlayer, iHomeland, bAggressive)
 
 	# Performs the thinking for the computer players in regards to the mercenaries mod functionality.
 	# It will:
@@ -303,11 +306,11 @@ class ImmigrationUtils:
 		iCiv = civ(iPlayer)
 		
 		# Return immediately if the player is a filthy human :p
-		if(pPlayer.isHuman()):
+		if pPlayer.isHuman():
 			return
 
 		# Return immediately if the player is a barbarian, independent, or native
-		if(pPlayer.isBarbarian() or pPlayer.isIndependent() or pPlayer.isNative()):
+		if pPlayer.isBarbarian() or pPlayer.isIndependent() or pPlayer.isNative():
 			return
 		
 		for iHomeland in lHomelands:
