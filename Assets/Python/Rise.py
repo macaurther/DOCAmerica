@@ -273,9 +273,9 @@ def deleteExpansionUnits(iPlayer):
 	if players.minor().cities().any(lambda city: plot_(city).getExpansion() == iPlayer):
 		return
 	
-	for unit in units.owner(iPlayer).where(lambda u: u.isHasPromotion(iVolunteer)):
-		if unit.getID() in [iMinuteman, iRural]: continue	# MacAurther: Don't delete UU's that have Volunteer
-		unit.kill(False, -1)
+	# MacAurther: Don't delete volunteers - they're fun I like to have them around
+	# for unit in units.owner(iPlayer).where(lambda u: u.isHasPromotion(iVolunteer)):
+	# 	unit.kill(False, -1)
 
 
 @handler("changeWar")
@@ -1062,14 +1062,13 @@ class Birth(object):
 		if team(iOwner).isAtWar(self.player.getTeam()):
 			team(iOwner).AI_setAtWarCounter(self.player.getTeam(), 0)
 			self.team.AI_setAtWarCounter(player(iOwner).getTeam(), 0)
-			return
-		
-		if chance(dWarOnFlipProbability[iOwner]):
+			# MacAurther: Don't want to return here in case expeditionaries need to still be spawned
+		elif chance(dWarOnFlipProbability[iOwner]):
 			player(iOwner).AI_changeMemoryCount(self.iPlayer, MemoryTypes.MEMORY_STOPPED_TRADING_RECENT, 1)
-			print("self.civ.iCiv: " + str(self.civ.iCiv) + " lRevolutionaries: " + str(lRevolutionaries)) # temp debug
-			# If declaring war on a revolutionary, grant an expeditionary force (only for AI)
-			if self.civ.iCiv in lRevolutionaries:
-				self.expeditionaryForce(iOwner)
+		
+		# If fighting a revolutionary, grant an expeditionary force (only for AI)
+		if self.civ.iCiv in lRevolutionaries:
+			self.expeditionaryForce(iOwner)
 	
 	def declareWarOnFlip(self, iOwner):
 		team(iOwner).declareWar(self.player.getTeam(), False, WarPlanTypes.WARPLAN_ATTACKED_RECENT)
@@ -1078,20 +1077,19 @@ class Birth(object):
 	def expeditionaryForce(self, iOwner):
 		lUnits = []
 		lLandUnits = []
-		print("self.civ.iCiv: " + str(self.civ.iCiv) + " civ(iOwner): " + str(civ(iOwner)))	# temp debug
 		# Not doing this based on roles, because we don't know how much tech the AI has
 		if self.civ.iCiv == iAmerica:
 			if civ(iOwner) == iEngland:
 				lUnits += [iShipOfTheLine] * 3 + [iFrigate] * 5 + [iMerchantman] * 2
 				lLandUnits += [iFusilier] * 12 + [iDragoon] * 8 + [iGrenadier] * 6 + [iCannon] * 6
-			elif civ(iOwner) in iCivGroupEurope:
+			elif civ(iOwner) in dCivGroups[iCivGroupEurope]:
 				lUnits += [iFrigate] * 2 + [iMerchantman] * 1
 				lLandUnits += [iFusilier] * 4 + [iDragoon] * 2 + [iGrenadier] * 2 + [iCannon] * 2
 		elif self.civ.iCiv == iHaiti:
 			if civ(iOwner) == iFrance:
 				lUnits += [iShipOfTheLine] * 1 + [iFrigate] * 3 + [iMerchantman] * 2
 				lLandUnits += [iFusilier] * 6 + [iDragoon] * 3 + [iGrenadier] * 2 + [iCannon] * 2
-			elif civ(iOwner) in iCivGroupEurope:
+			elif civ(iOwner) in  dCivGroups[iCivGroupEurope]:
 				lUnits += [iFrigate] * 1 + [iMerchantman] * 1
 				lLandUnits += [iFusilier] * 3 + [iDragoon] * 1 + [iGrenadier] * 1 + [iCannon] * 1
 		else:

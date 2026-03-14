@@ -524,21 +524,21 @@ class CvImmigrationManager:
 	def grantMercenaries(self, lMercenaries, iPlayer, iHomeland=-1, bImmediate=False):
 		if iHomeland == -1:
 			iHomeland = objImmigrationUtils.getFirstOpenHomeland(iPlayer)
-		for iMercenary in lMercenaries:
-			self.hireMercenary(iMercenary, iPlayer, iHomeland, False, bImmediate)
+		for iUnit in lMercenaries:
+			self.hireMercenary(iUnit, iPlayer, iHomeland, False, bImmediate)
 
 	# Useful method for use outside of Immigration Manager land as well
-	def hireMercenary(self, iMercenary, iPlayer, iHomeland, bPay = True, bImmediate=False):
-		objImmigrationUtils.hireMercenary(iMercenary, iPlayer, iHomeland, bPay, bImmediate)
+	def hireMercenary(self, iUnit, iPlayer, iHomeland, bPay = True, bImmediate=False):
+		objImmigrationUtils.hireMercenary(iUnit, iPlayer, iHomeland, bPay, bImmediate)
 
 	# Hires a mercenary for a player
-	def hireMercenaryOnScreen(self, screen, iMercenary, iHomeland):
+	def hireMercenaryOnScreen(self, screen, iUnit, iHomeland):
 
 		# Get the active player ID
 		iPlayer = gc.getGame().getActivePlayer()
 
 		# Hire the mercenary for the player
-		self.hireMercenary(iMercenary, iPlayer, iHomeland)
+		self.hireMercenary(iUnit, iPlayer, iHomeland)
 
 		# Draw the gold information for the screen
 		self.drawGoldInformation(screen)
@@ -552,12 +552,12 @@ class CvImmigrationManager:
 		#self.clearMercenaryInformation(screen)
 	
 	# Places an immigrant onto game map
-	def placeMercenary(self, screen, iMercenary, iHomeland):
+	def placeMercenary(self, screen, iUnit, iHomeland):
 		# Get the active player ID
 		iPlayer = gc.getGame().getActivePlayer()
 
 		# Hire the mercenary for the player
-		objImmigrationUtils.placeMercenary(iMercenary, iPlayer, iHomeland)
+		objImmigrationUtils.placeMercenary(iUnit, iPlayer, iHomeland)
 
 		# Update the available mercenaries in the available mercenaries panel
 		self.populateAvailableColonistsPanel(screen)
@@ -684,30 +684,30 @@ class CvImmigrationManager:
 			
 			self.screenFunction = function
 			
-			iMercenary = gc.getInfoTypeForString(sMercenary)
+			iUnit = gc.getInfoTypeForString(sMercenary)
 				
 			# If the function was hire, then hire the mercenary
 			if(function == "HireButton"):
-				self.hireMercenaryOnScreen(screen, iMercenary, data.iCurrentImmigrationManagerTab) 
+				self.hireMercenaryOnScreen(screen, iUnit, data.iCurrentImmigrationManagerTab) 
 
 				# Populate the mercenary information panel if small screen
 				if self.bSmallScreen:
-					self.populateMercenaryInformation(screen, objImmigrationUtils.getImmigrant(iMercenary))
+					self.populateMercenaryInformation(screen, objImmigrationUtils.getImmigrant(iUnit))
 			
 			# If the function was hire, then hire the mercenary
 			if(function == "LoadButton"):
-				self.placeMercenary(screen, iMercenary, data.iCurrentImmigrationManagerTab) 
+				self.placeMercenary(screen, iUnit, data.iCurrentImmigrationManagerTab) 
 
 				# Populate the mercenary information panel if small screen
 				if self.bSmallScreen:
-					self.populateMercenaryInformation(screen, objImmigrationUtils.getImmigrant(iMercenary))
+					self.populateMercenaryInformation(screen, objImmigrationUtils.getImmigrant(iUnit))
 										
 			# If the function was to show the mercenary information then 
 			# populate the mercenary information panel.
 			if(function == "InfoButton"):
 				
 				# Get the mercenary from the global mercenary pool
-				mercenary = objImmigrationUtils.getImmigrant(iMercenary)
+				mercenary = objImmigrationUtils.getImmigrant(iUnit)
 
 				# Return immediately if we still couldn't get the mercenary information
 				if(mercenary == None):

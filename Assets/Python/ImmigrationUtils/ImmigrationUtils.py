@@ -245,7 +245,7 @@ class ImmigrationUtils:
 		
 		# Return immediately if player can't afford immigrant
 		(iImmigrationCost, iGoldCost) = immigrant.getHireCost(iPlayer)
-		if iGoldCost > pPlayer.getGold() and iImmigrationCost > pPlayer.getImmigration():
+		if (iGoldCost > pPlayer.getGold() and iImmigrationCost > pPlayer.getImmigration()) and bPay:
 			return False
 	
 		# Get the starting location for the immigrant

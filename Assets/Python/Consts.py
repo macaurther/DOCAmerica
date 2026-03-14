@@ -638,7 +638,7 @@ iNumUnits = 142
 # Land Units (94)
 # 0				1				2				3				4				5				6				7				8				9
 (iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote,		iClawdius,		iSettler, 		iDogSled,		
-iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iWorker, 		iTrackman,		iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       
+iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iWorkerAmazon,	iTrackman,		iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       
 iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iImmigrant,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	
 iCoureurDesBois,iRanger,		iFactor,		iParatrooper,	iMilitia,		iFalconDancer,	iMinuteman,		iWarrior, 		iKoa,			iTomahawk,		
 iSwordsman,		iAztecJaguar,	iAxeman,		iMaceman,		iAucac,			iArquebusier,	iMohawk,		iArmedSlave,	iMusketman,		iCompagnies,	
