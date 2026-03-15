@@ -171,7 +171,7 @@
 			<bGovernmentCenter>1</bGovernmentCenter>
 			<bNeverCapture>1</bNeverCapture>
 			<bNukeImmune>1</bNukeImmune>
-			<PrereqTech>TECH_HUMANITIES</PrereqTech>
+			<PrereqTech>TECH_REPRESENTATION</PrereqTech>
 			<iCost>320</iCost>
 			<iHurryCostModifier>50</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>

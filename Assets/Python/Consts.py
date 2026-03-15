@@ -747,7 +747,7 @@ iMountVernon,	iMonticello,	iSlaterMill,	iChapultepecCastle,iFortMcHenry,iWashing
 iBrooklynBridge,iChateauFrontenac,iMenloPark,	iBiltmoreEstate,iFrenchQuarter, iLeagueOfNations,iEmpireStateBuilding,iGoldenGateBridge,iHooverDam,iAlcatraz,		
 iMountRushmore,	iHollywood,		iSaltCathedral,iCristoRedentor,	iLasLajasSanctuary,iPentagon	) = range(iNumBuildings)
 
-
+lCapitols = [iPalace, iPalaceZapotec, iChieftansHut, iGovernorsMansion, iCapitol] # MacAurther: Multiple capitol types
 iBeginWonders = iFloatingGardens # different from DLL constant because that includes national wonders
 
 iTemple = iJewishTemple #generic
@@ -961,13 +961,13 @@ iCardenas,		iBolivar,		iCastilla,		iPedro,			iVargas,		iChavez,		iMacDonald,		iT
 dResurrectionLeaders = CivDict({
 })
 
-iNumPeriods = 0
-#() = range(iNumPeriods)
+# update DLL constants when this changes
+iNumPeriods = 5
+# 0				1				2				3				4				5				6				7				8				9
+(iPeriodAntebellumUSA, iUnifiedUSA, iFederalBrazil, iLakotaReservation, iCherokeeReservation) = range(iNumPeriods)
 
 iNumImpacts = 5
 (iImpactMarginal, iImpactLimited, iImpactSignificant, iImpactCritical, iImpactPlayer) = range(iNumImpacts)
-
-lSecondaryCivs = [iChimu, iHaiti, iHawaii, iInuit, iHaudenosaunee, iMississippi, iMuisca, iNorse, iPeru, iPueblo, iVenezuela, iWari, iLakota]
 
 (i500BC, i1500AD, i1750AD) = range(3)
 

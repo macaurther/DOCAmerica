@@ -7,6 +7,8 @@ from DynamicCivs import isCurrentCapital
 
 
 dEvacuatePeriods = {
+	iLakota : iLakotaReservation,
+	iCherokee : iCherokeeReservation,
 }
 
 dPeriods1500AD = {
@@ -20,6 +22,11 @@ dScenarioPeriods = {
 	1750: dPeriods1750AD,
 }
 dPeriodNames = {
+	iPeriodAntebellumUSA: "Antebellum_America",
+	iUnifiedUSA: "Unified_America",
+	iFederalBrazil: "Federal_Brazil",
+	iLakotaReservation: "Sioux_Reservation",
+	iCherokeeReservation: "Cherokee_Nation",
 }
 
 
@@ -57,6 +64,9 @@ def onBirth(iPlayer):
 @handler("collapse")
 def onCollapse(iPlayer):
 	pass
+	# MacAurther TODO: CSA implementation
+	# if civ(iPlayer) == iCSA:	
+	# 	setPeriod(iAmerica, iUnifiedUSA)
 
 @handler("resurrection")
 def onResurrection(iPlayer):
@@ -75,12 +85,33 @@ def onCityBuilt(city):
 
 @handler("vassalState")
 def onVassalState(iMaster, iVassal, bVassal, bCapitulated):
-	pass
+	iMasterCiv = civ(iMaster)
+	iVassalCiv = civ(iVassal)
+
+	if bVassal:
+		if iVassalCiv == iLakota and iMasterCiv in [iAmerica, iCanada, iEngland, iFrance]:
+			setPeriod(iLakota, iLakotaReservation)
+
+		if iVassalCiv == iCherokee and iMasterCiv in [iAmerica, iCanada, iEngland, iFrance]:
+			setPeriod(iCherokee, iCherokeeReservation)
 			
 
 @handler("capitalMoved")
 def onCapitalMoved(city):
-	pass
+	iOwner = city.getOwner()
+	iOwnerCiv = civ(iOwner)
+
+	if iOwnerCiv == iAmerica:
+		print("City x and y: " + str((city.getX(), city.getY())) + " tDC: " + str(tDC) + " game.getPeriod(iOwnerCiv): " + str(game.getPeriod(iOwnerCiv)) + " iUnifiedUSA: " + str(iUnifiedUSA)) # temp debug
+		print("Eval: " + str((city.getX(), city.getY()) == tDC and game.getPeriod(iOwnerCiv) != iUnifiedUSA))
+		# Move to DC gives larger core (but doesn't take away core if CSA is already defeated)
+		if (city.getX(), city.getY()) == tDC and game.getPeriod(iOwnerCiv) != iUnifiedUSA:
+			setPeriod(iAmerica, iPeriodAntebellumUSA)
+
+	if iOwnerCiv == iBrazil:
+		# Move to Brazilia gives larger core
+		if (city.getX(), city.getY()) == tBrazilia:
+			setPeriod(iBrazil, iFederalBrazil)
 
 
 @handler("techAcquired")

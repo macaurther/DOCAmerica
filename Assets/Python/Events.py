@@ -89,7 +89,7 @@ events.addEvent("slaveExpended")
 
 @handler("buildingBuilt")
 def capitalMovedOnPalaceBuilt(city, iBuilding):
-	if iBuilding == iPalace:
+	if iBuilding in lCapitols:	# MacAurther: Multiple capitol types
 		events.fireEvent("capitalMoved", city)
 
 @handler("buildingBuilt")

@@ -867,11 +867,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_1</Tag>
-		<English>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type that can be entered, and Rainforests can now be entered as well.</English>
-		<French>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type that can be entered, and Rainforests can now be entered as well.</French>
-		<German>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type that can be entered, and Rainforests can now be entered as well.</German>
-		<Italian>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type that can be entered, and Rainforests can now be entered as well.</Italian>
-		<Spanish>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type that can be entered, and Rainforests can now be entered as well.</Spanish>
+		<English>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type which, with proper promotion, can be entered, and Rainforests can now be entered as well.</English>
+		<French>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type which, with proper promotion, can be entered, and Rainforests can now be entered as well.</French>
+		<German>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type which, with proper promotion, can be entered, and Rainforests can now be entered as well.</German>
+		<Italian>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type which, with proper promotion, can be entered, and Rainforests can now be entered as well.</Italian>
+		<Spanish>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type which, with proper promotion, can be entered, and Rainforests can now be entered as well.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_2</Tag>
@@ -883,19 +883,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_3</Tag>
-		<English>Many unit stats and upgrade paths have been changed in DoC America.</English>
-		<French>Many unit stats and upgrade paths have been changed in DoC America.</French>
-		<German>Many unit stats and upgrade paths have been changed in DoC America.</German>
-		<Italian>Many unit stats and upgrade paths have been changed in DoC America.</Italian>
-		<Spanish>Many unit stats and upgrade paths have been changed in DoC America.</Spanish>
+		<English>Melee and Archery units have a chance to capture the weapons of defeated gunpowder and cavalry units, becoming much stronger!</English>
+		<French>Melee and Archery units have a chance to capture the weapons of defeated gunpowder and cavalry units, becoming much stronger!</French>
+		<German>Melee and Archery units have a chance to capture the weapons of defeated gunpowder and cavalry units, becoming much stronger!</German>
+		<Italian>Melee and Archery units have a chance to capture the weapons of defeated gunpowder and cavalry units, becoming much stronger!</Italian>
+		<Spanish>Melee and Archery units have a chance to capture the weapons of defeated gunpowder and cavalry units, becoming much stronger!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_4</Tag>
-		<English>In DoC America, eras have their own Militia unit. They're all cheap, built with food, and progressively get stronger over the eras.</English>
-		<French>In DoC America, eras have their own Militia unit. They're all cheap, built with food, and progressively get stronger over the eras.</French>
-		<German>In DoC America, eras have their own Militia unit. They're all cheap, built with food, and progressively get stronger over the eras.</German>
-		<Italian>In DoC America, eras have their own Militia unit. They're all cheap, built with food, and progressively get stronger over the eras.</Italian>
-		<Spanish>In DoC America, eras have their own Militia unit. They're all cheap, built with food, and progressively get stronger over the eras.</Spanish>
+		<English>Some units, such as siege units and capital ships, have a ranged attack that can be used to weaken units on another plot.</English>
+		<French>Some units, such as siege units and capital ships, have a ranged attack that can be used to weaken units on another plot.</French>
+		<German>Some units, such as siege units and capital ships, have a ranged attack that can be used to weaken units on another plot.</German>
+		<Italian>Some units, such as siege units and capital ships, have a ranged attack that can be used to weaken units on another plot.</Italian>
+		<Spanish>Some units, such as siege units and capital ships, have a ranged attack that can be used to weaken units on another plot.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_5</Tag>
@@ -907,11 +907,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_6</Tag>
-		<English>The Linguistics and Localization Native techs help negate the yield penalty of Tribes in your land.</English>
-		<French>The Linguistics and Localization Native techs help negate the yield penalty of Tribes in your land.</French>
-		<German>The Linguistics and Localization Native techs help negate the yield penalty of Tribes in your land.</German>
-		<Italian>The Linguistics and Localization Native techs help negate the yield penalty of Tribes in your land.</Italian>
-		<Spanish>The Linguistics and Localization Native techs help negate the yield penalty of Tribes in your land.</Spanish>
+		<English>Many units' movement speeds have been increased to account for DoC America's scaled up map.</English>
+		<French>Many units' movement speeds have been increased to account for DoC America's scaled up map.</French>
+		<German>Many units' movement speeds have been increased to account for DoC America's scaled up map.</German>
+		<Italian>Many units' movement speeds have been increased to account for DoC America's scaled up map.</Italian>
+		<Spanish>Many units' movement speeds have been increased to account for DoC America's scaled up map.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_7</Tag>
@@ -923,27 +923,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_8</Tag>
-		<English>Razing a Tribe will cause its people to rise up against you.</English>
-		<French>Razing a Tribe will cause its people to rise up against you.</French>
-		<German>Razing a Tribe will cause its people to rise up against you.</German>
-		<Italian>Razing a Tribe will cause its people to rise up against you.</Italian>
-		<Spanish>Razing a Tribe will cause its people to rise up against you.</Spanish>
+		<English>Trying to occupy a Tribe with units that can pillage will cause its people to rise up against you.</English>
+		<French>Trying to occupy a Tribe with units that can pillage will cause its people to rise up against you.</French>
+		<German>Trying to occupy a Tribe with units that can pillage will cause its people to rise up against you.</German>
+		<Italian>Trying to occupy a Tribe with units that can pillage will cause its people to rise up against you.</Italian>
+		<Spanish>Trying to occupy a Tribe with units that can pillage will cause its people to rise up against you.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_9</Tag>
-		<English>North is not always up on the DoC America map. It is based off of a projection that maximizes land to water ratio in a rectangle. In Alaska, North is to the upper right, in Iceland, North is to the left, and in Patagonia, South is to the lower left. Don't get disoriented!</English>
-		<French>North is not always up on the DoC America map. It is based off of a projection that maximizes land to water ratio in a rectangle. In Alaska, North is to the upper right, in Iceland, North is to the left, and in Patagonia, South is to the lower left. Don't get disoriented!</French>
-		<German>North is not always up on the DoC America map. It is based off of a projection that maximizes land to water ratio in a rectangle. In Alaska, North is to the upper right, in Iceland, North is to the left, and in Patagonia, South is to the lower left. Don't get disoriented!</German>
-		<Italian>North is not always up on the DoC America map. It is based off of a projection that maximizes land to water ratio in a rectangle. In Alaska, North is to the upper right, in Iceland, North is to the left, and in Patagonia, South is to the lower left. Don't get disoriented!</Italian>
-		<Spanish>North is not always up on the DoC America map. It is based off of a projection that maximizes land to water ratio in a rectangle. In Alaska, North is to the upper right, in Iceland, North is to the left, and in Patagonia, South is to the lower left. Don't get disoriented!</Spanish>
+		<English>It is now possible to trade cities for gold during peacetime. Make your Louisiana Purchase fantasy a reality.</English>
+		<French>It is now possible to trade cities for gold during peacetime. Make your Louisiana Purchase fantasy a reality.</French>
+		<German>It is now possible to trade cities for gold during peacetime. Make your Louisiana Purchase fantasy a reality.</German>
+		<Italian>It is now possible to trade cities for gold during peacetime. Make your Louisiana Purchase fantasy a reality.</Italian>
+		<Spanish>It is now possible to trade cities for gold during peacetime. Make your Louisiana Purchase fantasy a reality.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_10</Tag>
-		<English>Press "M" to access the Immigration menu! Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</English>
-		<French>Press "M" to access the Immigration menu! Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</French>
-		<German>Press "M" to access the Immigration menu! Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</German>
-		<Italian>Press "M" to access the Immigration menu! Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</Italian>
-		<Spanish>Press "M" to access the Immigration menu! Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</Spanish>
+		<English>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) the is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</English>
+		<French>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) the is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</French>
+		<German>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) the is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</German>
+		<Italian>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) the is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</Italian>
+		<Spanish>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) the is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_11</Tag>
@@ -963,11 +963,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_13</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>America and Brazil get expanded core areas when relocating their capitols to Washington, D.C. and Brasilia, respectively.</English>
+		<French>America and Brazil get expanded core areas when relocating their capitols to Washington, D.C. and Brasilia, respectively.</French>
+		<German>America and Brazil get expanded core areas when relocating their capitols to Washington, D.C. and Brasilia, respectively.</German>
+		<Italian>America and Brazil get expanded core areas when relocating their capitols to Washington, D.C. and Brasilia, respectively.</Italian>
+		<Spanish>America and Brazil get expanded core areas when relocating their capitols to Washington, D.C. and Brasilia, respectively.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_</Tag>

@@ -6,15 +6,9 @@
 
 # Congresses
 
-# Revolutions/Expeditionaries
-tExpeditionaryAmerica =		(44, 85)	# Boston
-tExpeditionaryHaiti = 		(37, 55)	# Port au Prince
-tExpeditionaryArgentina = 	(23, 10)	# Buenos Aires
-tExpeditionaryMexico = 		(17, 63)	# Caribbean Coast
-tExpeditionaryColombia = 	(32, 49)	# Caribbean Coast
-tExpeditionaryPeru = 		(20, 32)	# Lima
-
 # DynamicCivs
+tDC = (45, 88)
+tBrazilia = (69, 34)
 
 # Religions
 tHolyCity = (82, 0)	# MacAurther: faux city to be the Holy City for all old world religions (in the bottom left of the map surrounded by peaks)

@@ -40,7 +40,7 @@ def restoreCapital(iOwner, iPlayer, city):
 def resetNationalWonders(iOwner, iPlayer, city, bConquest, bTrade):
 	if bTrade:
 		for iNationalWonder in range(iNumBuildings):
-			if iNationalWonder != iPalace and isNationalWonderClass(infos.building(iNationalWonder).getBuildingClassType()) and city.hasBuilding(iNationalWonder):
+			if iNationalWonder not in lCapitols and isNationalWonderClass(infos.building(iNationalWonder).getBuildingClassType()) and city.hasBuilding(iNationalWonder): # MacAurther: Multiple capitol types
 				city.setHasRealBuilding(iNationalWonder, False)
 
 

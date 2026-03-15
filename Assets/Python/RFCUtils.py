@@ -734,8 +734,8 @@ def relocateCapital(iPlayer, tile):
 	if location(oldCapital) == location(newCapital):
 		return
 	
-	oldCapital.setHasRealBuilding(iPalace, False)
-	newCapital.setHasRealBuilding(iPalace, True)
+	oldCapital.setHasRealBuilding(unique_building(iPlayer, iPalace), False) # MacAurther: Multiple capitol types
+	newCapital.setHasRealBuilding(unique_building(iPlayer, iPalace), True) # MacAurther: Multiple capitol types
 	
 	events.fireEvent("capitalMoved", newCapital)
 	
