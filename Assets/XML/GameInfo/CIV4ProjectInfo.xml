@@ -35,7 +35,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>Art/Interface/Buttons/Actions/MigrateN.dds</Button>
+			<Button>Art/Interface/Buttons/Projects/MigrateN.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -73,7 +73,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>Art/Interface/Buttons/Actions/MigrateNE.dds</Button>
+			<Button>Art/Interface/Buttons/Projects/MigrateNE.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -111,7 +111,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>Art/Interface/Buttons/Actions/MigrateE.dds</Button>
+			<Button>Art/Interface/Buttons/Projects/MigrateE.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -149,7 +149,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>Art/Interface/Buttons/Actions/MigrateSE.dds</Button>
+			<Button>Art/Interface/Buttons/Projects/MigrateSE.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -187,7 +187,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>Art/Interface/Buttons/Actions/MigrateS.dds</Button>
+			<Button>Art/Interface/Buttons/Projects/MigrateS.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -225,7 +225,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>Art/Interface/Buttons/Actions/MigrateSW.dds</Button>
+			<Button>Art/Interface/Buttons/Projects/MigrateSW.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -263,7 +263,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>Art/Interface/Buttons/Actions/MigrateW.dds</Button>
+			<Button>Art/Interface/Buttons/Projects/MigrateW.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -301,7 +301,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>Art/Interface/Buttons/Actions/MigrateNW.dds</Button>
+			<Button>Art/Interface/Buttons/Projects/MigrateNW.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -323,7 +323,7 @@
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iCost>2000</iCost>
 			<iNukeInterception>0</iNukeInterception>
-			<iTechShare>0</iTechShare>
+			<iTechShare>1</iTechShare>
 			<iAirExperience>0</iAirExperience>
 			<iFirstAirExperience>0</iFirstAirExperience>
 			<iExistingProductionModifier>0</iExistingProductionModifier>
@@ -339,7 +339,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>,Art/Interface/Buttons/Buildings/ManhattanProject.dds,Art/Interface/Buttons/Buildings_Atlas.dds,7,4</Button>
+			<Button>Art/Interface/Buttons/Projects/WorldsFair.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
