@@ -12306,6 +12306,7 @@ void CvPlot::addFortClaims(PlayerTypes ePlayer)
 				{
 					pLoopPlot->setFortOwner(ePlayer);
 					pLoopPlot->setFortClaimer(this);
+					pLoopPlot->setOwner(ePlayer, true, false);
 					pLoopPlot->updateCulture(true, false);
 				}
 			}
