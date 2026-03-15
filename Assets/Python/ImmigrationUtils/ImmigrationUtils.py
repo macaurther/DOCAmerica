@@ -127,7 +127,6 @@ class ImmigrationUtils:
 				data.civs[iCiv].lNumImmigrantsEared[iBestHomeland] += 1
 				# Notify player (if human)
 				if pPlayer.isHuman():
-					# MacAurther TODO: This is very messy. Maybe improve if you feel like it
 					strHomeland = ""
 					if iBestHomeland == iHomelandNorthEurope:
 						strHomeland = "North Europe"
@@ -178,6 +177,8 @@ class ImmigrationUtils:
 			if not turn() in range(year(dSchedule[iUnit][0][0]), year(dSchedule[iUnit][0][1]) + 1):
 				continue
 			if not self.canHire(iUnit, iPlayer, iHomeland):
+				continue
+			if unique_unit(iPlayer, iUnit) != iUnit and not iUnit in lUniqueOverride:
 				continue
 			dUnits[str(iUnit)] = self.getImmigrantGroup(iUnit)
 			

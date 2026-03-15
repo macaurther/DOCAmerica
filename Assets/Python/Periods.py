@@ -64,7 +64,7 @@ def onBirth(iPlayer):
 @handler("collapse")
 def onCollapse(iPlayer):
 	pass
-	# MacAurther TODO: CSA implementation
+	# MacAurther TODO: CSA implementation?
 	# if civ(iPlayer) == iCSA:	
 	# 	setPeriod(iAmerica, iUnifiedUSA)
 
