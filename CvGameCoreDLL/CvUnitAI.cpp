@@ -5492,7 +5492,7 @@ void CvUnitAI::AI_settlerSeaMove()
 			argsList.add(getOwnerINLINE());
 			argsList.add(iHomeland);
 			long lResult=-1;
-			gDLL->getPythonIFace()->callFunction(PYScreensModule, "getNumImmigrantsEarned", argsList.makeFunctionArgs(), &lResult);
+			gDLL->getPythonIFace()->callFunction(PYScreensModule, "computerGetNumImmigrantsToTransport", argsList.makeFunctionArgs(), &lResult);
 			if ((int)lResult > iBestHomelandCount)
 			{
 				iBestHomeland = iHomeland;

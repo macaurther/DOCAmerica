@@ -485,6 +485,7 @@ name_translations = {
 	},
 	"Philadelphia": {
 		iEnglish: _,
+		iAmerican: _,
 		iSwedish: found(u"Nya Göteborg"),
 	},
 	"Porco": {

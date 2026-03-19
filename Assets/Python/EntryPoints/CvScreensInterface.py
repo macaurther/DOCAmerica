@@ -311,9 +311,9 @@ immigrationManager = CvImmigrationManager.CvImmigrationManager(IMMIGRATION_MANAG
 def showImmigrationManager():
 	immigrationManager.interfaceScreen()
 
-def getNumImmigrantsEarned(argsList):
+def computerGetNumImmigrantsToTransport(argsList):
 	iPlayer, iHomeland = argsList
-	return immigrationManager.getNumImmigrantsEarned(iPlayer, iHomeland)
+	return immigrationManager.computerGetNumImmigrantsToTransport(iPlayer, iHomeland)
 # < Immigration Manager End   >
 
 # MacAurther: Give DLL visibility into "preferred" capital locations

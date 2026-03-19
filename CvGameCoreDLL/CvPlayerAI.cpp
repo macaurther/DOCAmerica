@@ -10815,6 +10815,64 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		iValue /= 2;
 	}
 
+	// MacAurther: Bespoke civic evaluations
+	switch (eCivic)
+	{
+	case CIVIC_CHIEF:
+		iValue += (int)hasCivic(CIVIC_NOMADIC) * 20;
+		break;
+	case CIVIC_NOMADIC:
+		iValue += (int)(hasCivic(CIVIC_CHIEF) || hasCivic(CIVIC_HARMONY)) * 10;
+		break;
+	case CIVIC_HARMONY:
+		iValue += (int)hasCivic(CIVIC_NOMADIC) * 15;
+		break;
+	case CIVIC_INDENTURED_SERVITUDE:
+	case CIVIC_IMMIGRANT_LABOR:
+	case CIVIC_PENAL_COLONY:
+		iValue += AI_neededWorkers() * 5;
+		break;
+	case CIVIC_TLACOTIN:
+	case CIVIC_SACRIFICE:
+		iValue += countRequiredSlaves() * 2;
+		break;
+	case CIVIC_ENCOMIENDA:
+		iValue += countRequiredSlaves() * 4;
+		break;
+	case CIVIC_SLAVERY:
+	case CIVIC_BONDAGE:
+		iValue += countRequiredSlaves() * 8;
+		break;
+	case CIVIC_PATRONATO:
+	case CIVIC_RAIDING:
+	case CIVIC_PLUNDER:
+		iValue += iWarmongerPercent / 25;
+		break;
+	case CIVIC_GOD_KING:
+		iValue += 20;
+		break;
+	case CIVIC_DEPENDENCY:
+		iValue += 15;
+		break;
+	case CIVIC_INTEGRATION:
+		iValue += iWarmongerPercent / 20;
+		break;
+	case CIVIC_ANCESTRAL_LANDS:
+		iValue += 35;
+		break;
+	case CIVIC_PROVIDENCE:
+	case CIVIC_MANIFEST_DESTINY:
+		iValue + 20;
+		break;
+	case CIVIC_GRANTS:
+	case CIVIC_HOMESTEADS:
+		iValue + 25;
+		break;
+	case CIVIC_PROPRIETORS:
+		iValue += 2 * getExtraUnitCost();
+		break;
+	}
+
 	return iValue;
 }
 

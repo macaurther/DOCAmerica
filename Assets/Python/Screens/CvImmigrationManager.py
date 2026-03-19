@@ -124,8 +124,8 @@ class CvImmigrationManager:
 		if(self.currentScreen == IMMIGRATION_MANAGER):
 			self.drawMercenaryScreenContent(screen)
 
-	def getNumImmigrantsEarned(self, iPlayer, iHomeland):
-		return objImmigrationUtils.getNumImmigrants(iPlayer, iHomeland)
+	def computerGetNumImmigrantsToTransport(self, iPlayer, iHomeland):
+		return objImmigrationUtils.computerGetNumImmigrantsToTransport(iPlayer, iHomeland)
 		
 	# Populates the panel that shows all of the available immigrants
 	def populateAvailableColonistsPanel(self, screen):

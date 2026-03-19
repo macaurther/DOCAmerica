@@ -423,6 +423,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iProcessModifier>50</iProcessModifier>
 			<SpecialistCounts>
 				<SpecialistCount>
 					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
@@ -1942,7 +1943,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<iGreatPeopleRateModifier>50</iGreatPeopleRateModifier>
+			<iGreatPeopleRateModifier>100</iGreatPeopleRateModifier>
 			<SpecialistCounts>
 				<SpecialistCount>
 					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
@@ -1982,6 +1983,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<iProcessModifier>100</iProcessModifier>
 			<iNumCitiesMaintenanceModifier>-100</iNumCitiesMaintenanceModifier>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LIKE_PARTY</WeLoveTheKing>
 		</CivicInfo>

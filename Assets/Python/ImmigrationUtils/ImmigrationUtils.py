@@ -49,7 +49,7 @@ AVAILABLE_COLONISTS = "AvailableColonists"
 AVAILABLE_EXPEDITIONARIES = "AvailableExpeditionaries"
 
 # Set to true to print out debug messages in the logs
-g_bDebug = False
+g_bDebug = True 	# temp debug
 
 class ImmigrationUtils:
 
@@ -145,28 +145,33 @@ class ImmigrationUtils:
 
 	def changeImmigrants(self, iPlayer, iHomeland, iUnit, iChange):
 		iCiv = civ(iPlayer)
-		if str(iUnit) in data.civs[iCiv].dEarnedImmigrants[iHomeland].keys():
+		if str(iUnit) in data.civs[iCiv].dEarnedUnits[iHomeland].keys():
 			# If immigrant group already exists, do nothing
 			pass
 		elif iChange > 0:
 			# If immigrant group doesn't exist and will be added to, create group and decrement change (because creating starts it at 1)
-			data.civs[iCiv].dEarnedImmigrants[iHomeland][str(iUnit)] = self.getImmigrantGroup(iUnit)
+			data.civs[iCiv].dEarnedUnits[iHomeland][str(iUnit)] = self.getImmigrantGroup(iUnit)
 			iChange -= 1
 		else:
 			# If the immigrant group doesn't exist and the change is negative, return
 			return
 		
 		# If the change made the change count function return false, delete entry
-		if not data.civs[iCiv].dEarnedImmigrants[iHomeland][str(iUnit)].changeCount(iChange):
-			print("Deleting earned immigrant entry for: " + data.civs[iCiv].dEarnedImmigrants[iHomeland][str(iUnit)].getImmigrant().sUnitName)
-			del data.civs[iCiv].dEarnedImmigrants[iHomeland][str(iUnit)]
+		if not data.civs[iCiv].dEarnedUnits[iHomeland][str(iUnit)].changeCount(iChange):
+			print("Deleting earned immigrant entry for: " + data.civs[iCiv].dEarnedUnits[iHomeland][str(iUnit)].getImmigrant().sUnitName)
+			del data.civs[iCiv].dEarnedUnits[iHomeland][str(iUnit)]
 	
-	def getNumImmigrants(self, iPlayer, iHomeland):
+	def getTotalNumImmigrants(self, iPlayer, iHomeland):
 		iNumImmigrants = 0
 		iCiv = civ(iPlayer)
-		for sUnit in data.civs[iCiv].dEarnedImmigrants[iHomeland].keys():
-			iNumImmigrants += data.civs[iCiv].dEarnedImmigrants[iHomeland][sUnit].getCount()
+		for sUnit in data.civs[iCiv].dEarnedUnits[iHomeland].keys():
+			iNumImmigrants += data.civs[iCiv].dEarnedUnits[iHomeland][sUnit].getCount()
 		return iNumImmigrants
+	
+	def getNumImmigrants(self, iPlayer, iHomeland, iUnit):
+		if str(iUnit) in data.civs[civ(iPlayer)].dEarnedUnits[iHomeland].keys():
+			return data.civs[civ(iPlayer)].dEarnedUnits[iHomeland][str(iUnit)].getCount()
+		return 0
 
 	def getAvailableUnit(self, iPlayer, iHomeland, dSchedule):
 		dUnits = {}
@@ -200,7 +205,7 @@ class ImmigrationUtils:
 		return self.getAvailableUnit(iPlayer, iHomeland, dMercenarySchedule)
 
 	def getEarnedImmigrants(self, iCiv, iHomeland):
-		return data.civs[iCiv].dEarnedImmigrants[iHomeland]
+		return data.civs[iCiv].dEarnedUnits[iHomeland]
 	
 	def getHasEarnedImmigrant(self, iCiv, iHomeland, iUnit):
 		if not str(iUnit) in self.getEarnedImmigrants(iCiv, iHomeland).keys():
@@ -246,7 +251,7 @@ class ImmigrationUtils:
 		
 		# Return immediately if player can't afford immigrant
 		(iImmigrationCost, iGoldCost) = immigrant.getHireCost(iPlayer)
-		if (iGoldCost > pPlayer.getGold() and iImmigrationCost > pPlayer.getImmigration()) and bPay:
+		if bPay and not immigrant.canAfford(iPlayer, iHomeland):
 			return False
 	
 		# Get the starting location for the immigrant
@@ -271,8 +276,8 @@ class ImmigrationUtils:
 			# If not placed, add to earned immigrants list
 			self.changeImmigrants(iPlayer, iHomeland, iUnit, 1)
 
-
-		print(pPlayer.getName() + " | Current Gold: " + str(pPlayer.getGold()) + " | Current Immigration: " + str(pPlayer.getImmigration()) + " | Hired " + immigrant.getName() + " for " + str(iImmigrationCost) + " immigration and " + str(iGoldCost) + " gold.")
+		if g_bDebug:
+			print(pPlayer.getName() + " | Current Gold: " + str(pPlayer.getGold()) + " | Current Immigrants: " + str(self.getNumImmigrants(iPlayer, iHomeland, iImmigrant)) + " | Hired " + immigrant.getName() + " for " + str(iImmigrationCost) + " immigration and " + str(iGoldCost) + " gold.")
 		
 		return True
 
@@ -286,7 +291,7 @@ class ImmigrationUtils:
 		
 		immigrant = self.getImmigrant(iUnit)
 
-		# Reduce earned immigrants by 1 if not a ship and not immediate
+		# Reduce earned units by 1 if not a ship and not immediate
 		if not immigrant.isShip() and not bImmediate:
 			self.changeImmigrants(iPlayer, iHomeland, iUnit, -1)
 		
@@ -297,14 +302,13 @@ class ImmigrationUtils:
 
 	# Performs the thinking for the computer players in regards to the mercenaries mod functionality.
 	# It will:
-	# 	- Load earned immigrants on waiting ships
+	# 	- Load earned units on waiting ships
 	# It will not:
 	#	- Hire additional military units (MacAurther TODO: Add this?)
-	#	- Exchange immigrants for Settlers, Workers, etc. (MacAurther TODO: Add this?)
+	#	- Exchange Immigrants for Settlers, Workers, etc. (MacAurther TODO: Add this?)
 	def computerPlayerThink(self, iPlayer):
 		# Get the player
 		pPlayer = gc.getPlayer(iPlayer)
-		iCiv = civ(iPlayer)
 		
 		# Return immediately if the player is a filthy human :p
 		if pPlayer.isHuman():
@@ -314,13 +318,80 @@ class ImmigrationUtils:
 		if pPlayer.isBarbarian() or pPlayer.isIndependent() or pPlayer.isNative():
 			return
 		
+		# Convert earned Immigrants into other units
 		for iHomeland in lHomelands:
-			# Load waiting Immigrants with no prejudice (MacAurther TODO: Load most important units first?)
-			for sImmigrant in data.civs[iCiv].dEarnedImmigrants[iHomeland].keys():
-				iNumImmigrants = data.civs[iCiv].dEarnedImmigrants[iHomeland][sImmigrant].getCount()
-				if iNumImmigrants > 0:
-					for _ in range(iNumImmigrants):
-						if data.civs[iCiv].dEarnedImmigrants[iHomeland][sImmigrant].getImmigrant().hasShipForPlacement(iPlayer, iHomeland):
-							self.placeMercenary(int(sImmigrant), iPlayer, iHomeland)
-						else:
-							break
+			self.computerPlayerConvertImmigrants(iPlayer, iHomeland)
+		
+		# Load waiting units
+		for iHomeland in lHomelands:
+			self.computerPlayerLoadHomeland(iPlayer, iHomeland)
+
+		if g_bDebug:
+			print(pPlayer.getName() + " has the following earned immigrants:")
+			for iHomeland in lHomelands:
+				if self.getTotalNumImmigrants(iPlayer, iHomeland) > 0:
+					print("Homeland: " + str(iHomeland))
+					for sUnit in data.civs[civ(iPlayer)].dEarnedUnits[iHomeland].keys():
+						if self.getNumImmigrants(iPlayer, iHomeland, int(sUnit)) > 0:
+							print(data.civs[civ(iPlayer)].dEarnedUnits[iHomeland][sUnit].getImmigrantTitle())
+
+	def computerPlayerConvertImmigrants(self, iPlayer, iHomeland):
+		# Priority: Settlers, Workers, then Missionaries
+		# Try to hire, if didn't work, just continue on
+		if self.computerPlayerWantsSettlers(iPlayer):
+			self.hireMercenary(unique_unit(iPlayer, iSettler), iPlayer, iHomeland, bPay=True)
+		if self.computerPlayerWantsWorkers(iPlayer):
+			self.hireMercenary(unique_unit(iPlayer, iWorker), iPlayer, iHomeland, bPay=True)
+		if self.computerPlayerWantsMissionaries(iPlayer):
+			self.hireMercenary(unique_unit(iPlayer, missionary(player(iPlayer).getStateReligion())), iPlayer, iHomeland, bPay=True)
+
+	def computerPlayerLoadHomeland(self, iPlayer, iHomeland):
+		for sUnit in data.civs[civ(iPlayer)].dEarnedUnits[iHomeland].keys():
+			# Heuristic: Don't load any Immigrants unless you don't want any more settlers, workers, or missionaries
+			if str(iImmigrant) == sUnit and not self.computerPlayerWantsImmigrants(iPlayer):
+				continue
+			iNumUnits = self.getNumImmigrants(iPlayer, iHomeland, int(sUnit))
+			if iNumUnits > 0:
+				for _ in range(iNumUnits):
+					if data.civs[civ(iPlayer)].dEarnedUnits[iHomeland][sUnit].getImmigrant().hasShipForPlacement(iPlayer, iHomeland):
+						self.placeMercenary(int(sUnit), iPlayer, iHomeland)
+					else:
+						return
+
+	def computerPlayerWantsImmigrants(self, iPlayer):
+		return (not self.computerPlayerWantsSettlers(iPlayer)) and \
+			   (not self.computerPlayerWantsMissionaries(iPlayer)) and \
+			   (not self.computerPlayerWantsWorkers(iPlayer))	# Evaluate workers last since it'll probably take the longest and there's a chance to escape earlier
+
+	def computerPlayerWantsSettlers(self, iPlayer):
+		# Wants no more than 1 settler
+		for unit in units.owner(iPlayer):
+			if unit.isFound():
+				return False
+		return True
+
+	def computerPlayerWantsWorkers(self, iPlayer):
+		# Wants no more than 1 worker per city
+		iNumWorkers = 0
+		for unit in units.owner(iPlayer):
+			if base_unit(unit) in [iWorker, iLaborer]:
+				iNumWorkers += 1
+		return iNumWorkers < player(iPlayer).getNumCities()
+
+	def computerPlayerWantsMissionaries(self, iPlayer):
+		# Doesn't want if no State religion
+		if player(iPlayer).getStateReligion() == -1:
+			return False
+		# Wants no more than 1 missionary
+		for unit in units.owner(iPlayer):
+			if gc.getUnitInfo(unit.getUnitType()).getReligionSpreads(player(iPlayer).getStateReligion()) > 0:
+				return False
+		return True
+	
+	def computerGetNumImmigrantsToTransport(self, iPlayer, iHomeland):
+		bWantsImmigrants = self.computerPlayerWantsImmigrants(iPlayer)
+		iNumUnitsToTransport = 0
+		for sUnit in data.civs[civ(iPlayer)].dEarnedUnits[iHomeland].keys():
+			if bWantsImmigrants or (not "Immigrant" in sUnit):
+				iNumUnitsToTransport += 1
+		return iNumUnitsToTransport

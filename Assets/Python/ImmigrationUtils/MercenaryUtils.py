@@ -130,8 +130,8 @@ class Mercenary:
 		(iImmigrationCost, iGoldCost) = self.getHireCost(iPlayer)
 
 		bCanAffordImmigrants = iImmigrationCost == 0
-		if str(iImmigrant) in data.civs[civ(iPlayer)].dEarnedImmigrants[iHomeland].keys():
-			bCanAffordImmigrants = iImmigrationCost <= data.civs[civ(iPlayer)].dEarnedImmigrants[iHomeland][str(iImmigrant)].getCount()
+		if str(iImmigrant) in data.civs[civ(iPlayer)].dEarnedUnits[iHomeland].keys():
+			bCanAffordImmigrants = iImmigrationCost <= data.civs[civ(iPlayer)].dEarnedUnits[iHomeland][str(iImmigrant)].getCount()
 		
 		return iGoldCost <= player.getGold() and bCanAffordImmigrants
 	

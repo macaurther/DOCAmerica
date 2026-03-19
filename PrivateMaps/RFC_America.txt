@@ -15353,7 +15353,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=68
-	FeatureType=FEATURE_SCRUB, FeatureVariety=0
+	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -16029,7 +16029,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=69
-	BonusType=BONUS_CORN
+	FeatureType=FEATURE_SCRUB, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot

@@ -2419,14 +2419,14 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
+	case ZAPOTEC:
+		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
+		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		break;
 	case TEOTIHUACAN:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		aiUnitAIVal[UNITAI_WORKER] *= 2;
-		break;
-	case ZAPOTEC:
-		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		break;
 	case TIWANAKU:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
@@ -2443,15 +2443,14 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_SETTLE] *= 4;
 		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
-	case PUEBLO:
-		aiUnitAIVal[UNITAI_EXPLORE] *= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 3;
-		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
-		break;
 	case MUISCA:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
+		break;
+	case TOLTECS:
+		aiUnitAIVal[UNITAI_CITY_DEFENSE] *= 3;
+		aiUnitAIVal[UNITAI_CITY_DEFENSE] /= 2;
 		break;
 	case NORSE:
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
@@ -2459,6 +2458,22 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 	case CHIMU:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
+		break;
+	case PUEBLO:
+		aiUnitAIVal[UNITAI_EXPLORE] *= 2;
+		aiUnitAIVal[UNITAI_SETTLE] *= 3;
+		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
+		break;
+	case ARAWAK:
+		aiUnitAIVal[UNITAI_SETTLE] *= 5;
+		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 5;
+	case TUPI:
+		aiUnitAIVal[UNITAI_SETTLE] *= 5;
+		break;
+	case PUREPECHA:
+		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
+		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
 		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
 	case INUIT:
@@ -2479,10 +2494,6 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 	case HAUDENOSAUNEE:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] /= 2;
-		break;
-	case LAKOTA:
-		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		break;
 	case SPAIN:
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 2;
@@ -2535,7 +2546,12 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_ASSAULT_SEA] *= 3;
 		aiUnitAIVal[UNITAI_ASSAULT_SEA] /= 2;
 		break;
+	case LAKOTA:
+		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
+		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		break;
 	case HAWAII:
+		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 3;
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		break;
 	case RUSSIA:
@@ -9457,6 +9473,13 @@ int CvCityAI::AI_getCityImportance(bool bEconomy, bool bMilitary)
             }
         }
     }
+
+	// MacAurther: AI owner of Mexico City/Tenochtitlan thinks that that city is soooo important (needed because Tollan or Teotihuacan have more culture and take priority)
+	//  tldr this forces AI to give tile priority to Mexico City
+	if(bEconomy && getX() == MEXICO_CITY_X && getY() == MEXICO_CITY_Y)
+	{
+		iValue + 500;
+	}
 
     return iValue;
 }

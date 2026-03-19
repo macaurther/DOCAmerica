@@ -366,6 +366,7 @@ lCivilizations = [
 	Civilization(
 		iApache,
 		iGold=50,
+		lEnemies=[iPueblo],
 		lCivics=[iChief, iSubsistance, iNomads],
 		techs=techs.column(3).including(iCeremony, iContact, iRiding),
 		extraTechs=techs.column(0).including(iHunting, iCompanionPlanting, iInterpretation),

@@ -42,6 +42,9 @@ typedef list<char*> LISTCHAR;
 #define BUILD_FORT				  ((BuildTypes)GC.getInfoTypeForString("BUILD_FORT"))								// MacAurther
 #define BUILD_PLANTATION		  ((BuildTypes)GC.getInfoTypeForString("BUILD_PLANTATION"))							// MacAurther
 
+#define MEXICO_CITY_X			  24
+#define MEXICO_CITY_Y			  67
+
 enum Regions
 {
 	REGION_ALASKA, // Alaska

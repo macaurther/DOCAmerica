@@ -822,11 +822,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_STATE_PARTY_STRATEGY</Tag>
-		<English>No maintenance costs from number of cities</English>
-		<French>No maintenance costs from number of cities</French>
-		<German>No maintenance costs from number of cities</German>
-		<Italian>No maintenance costs from number of cities</Italian>
-		<Spanish>No maintenance costs from number of cities</Spanish>
+		<English>No maintenance costs from number of cities; extra [ICON_PRODUCTION] converted to commerce</English>
+		<French>No maintenance costs from number of cities; extra [ICON_PRODUCTION] converted to commerce</French>
+		<German>No maintenance costs from number of cities; extra [ICON_PRODUCTION] converted to commerce</German>
+		<Italian>No maintenance costs from number of cities; extra [ICON_PRODUCTION] converted to commerce</Italian>
+		<Spanish>No maintenance costs from number of cities; extra [ICON_PRODUCTION] converted to commerce</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MARTIAL_LAW</Tag>
@@ -2123,11 +2123,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GUILDS_STRATEGY</Tag>
-		<English>Extra slots and [ICON_COMMERCE] for Merchant, Engineer, Artist</English>
-		<French>Extra slots and [ICON_COMMERCE] for Merchant, Engineer, Artist</French>
-		<German>Extra slots and [ICON_COMMERCE] for Merchant, Engineer, Artist</German>
-		<Italian>Extra slots and [ICON_COMMERCE] for Merchant, Engineer, Artist</Italian>
-		<Spanish>Extra slots and [ICON_COMMERCE] for Merchant, Engineer, Artist</Spanish>
+		<English>Extra slots and [ICON_COMMERCE] for Merchant, Engineer, Artist; extra [ICON_PRODUCTION] converted to commerce</English>
+		<French>Extra slots and [ICON_COMMERCE] for Merchant, Engineer, Artist; extra [ICON_PRODUCTION] converted to commerce</French>
+		<German>Extra slots and [ICON_COMMERCE] for Merchant, Engineer, Artist; extra [ICON_PRODUCTION] converted to commerce</German>
+		<Italian>Extra slots and [ICON_COMMERCE] for Merchant, Engineer, Artist; extra [ICON_PRODUCTION] converted to commerce</Italian>
+		<Spanish>Extra slots and [ICON_COMMERCE] for Merchant, Engineer, Artist; extra [ICON_PRODUCTION] converted to commerce</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_BONDAGE</Tag>
