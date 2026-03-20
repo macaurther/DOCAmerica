@@ -44,6 +44,10 @@ typedef list<char*> LISTCHAR;
 
 #define MEXICO_CITY_X			  24
 #define MEXICO_CITY_Y			  67
+#define WASHINGTON_X			  45
+#define WASHINGTON_Y			  88
+#define BRASILIA_X			      69
+#define BRASILIA_Y			      34
 
 enum Regions
 {
