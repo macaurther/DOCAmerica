@@ -761,7 +761,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_ACCULTURATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ACCULTURATION_STRATEGY</Strategy>
 			<TechPrereq>TECH_CONTACT</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Acculturation.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Assimilation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<iStateReligionHappiness>1</iStateReligionHappiness>
