@@ -419,7 +419,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_GUILDS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_GUILDS_STRATEGY</Strategy>
 			<TechPrereq>TECH_ARTISANRY</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Guilds.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Guilds.dds,Art/Interface/Buttons/TechTree_Atlas.dds,4,4</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -2137,7 +2137,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_BONDAGE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_BONDAGE_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_BONDAGE_HELP</Help>
-			<Button>,Art/Interface/Buttons/Civics/Bondage.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Slavery.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
