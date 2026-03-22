@@ -27926,8 +27926,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=41
+	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
+	isWOfRiver
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
@@ -28601,12 +28603,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=40
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=43,y=41
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -29285,17 +29287,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=37
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=44,y=38
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=44,y=39
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -29317,7 +29319,7 @@ BeginPlot
 	x=44,y=42
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -29984,12 +29986,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=35
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=45,y=36
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30015,7 +30017,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	BonusType=BONUS_POTATO
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -30698,7 +30700,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=34
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -30712,13 +30714,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=36
-	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=46,y=37
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -31406,7 +31407,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -31416,20 +31417,19 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=35
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=47,y=36
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_PLAINS
+	BonusType=BONUS_POTATO
+	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=47,y=37
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -32123,13 +32123,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=32
-	BonusType=BONUS_COPPER
+	BonusType=BONUS_OBSIDIAN
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=48,y=33
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -32153,12 +32153,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=37
-	FeatureType=FEATURE_CANYON, FeatureVariety=0
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=48,y=38
+	isNOfRiver
+	RiverWEDirection=3
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -32828,19 +32833,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=33
-	BonusType=BONUS_OBSIDIAN
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=49,y=34
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=35
 	BonusType=BONUS_LLAMA
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -33536,7 +33540,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=34
-	BonusType=BONUS_STONE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -34909,7 +34912,6 @@ BeginPlot
 	x=52,y=31
 	RiverNSDirection=2
 	isWOfRiver
-	BonusType=BONUS_LLAMA
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
@@ -36328,12 +36330,13 @@ BeginPlot
 	x=54,y=29
 	RiverNSDirection=2
 	isWOfRiver
+	BonusType=BONUS_STONE
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=54,y=30
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -36343,7 +36346,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=32
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot

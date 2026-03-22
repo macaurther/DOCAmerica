@@ -3301,7 +3301,7 @@ It is fine for a human player mouse-over (which is what it is used for).
                         }
                     }
 
-                    if (pPlot->isHills())
+                    if (pPlot->isHills() || (RegionPowers)GET_PLAYER(pDefender->getOwner()).getRegionPowers() == RP_ANDES)	// MacAurther: Andes RP
                     {
                         iModifier = pDefender->hillsDefenseModifier();
 

@@ -4829,8 +4829,8 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 		// Lakota UP: likes to migrate
 		if(GET_PLAYER(getOwner()).getCivilizationType() == LAKOTA) iValue += 15;
 
-		// Don't like to move out of core
-		if(plot()->isCore(GET_PLAYER(getOwner()).getCivilizationType()) && !pNewPlot->isCore(GET_PLAYER(getOwner()).getCivilizationType())) iValue /= 3;
+		// NEVER move out of core
+		if(plot()->isCore(GET_PLAYER(getOwner()).getCivilizationType()) && !pNewPlot->isCore(GET_PLAYER(getOwner()).getCivilizationType())) iValue = 0;
 	}
 
 	return iValue;

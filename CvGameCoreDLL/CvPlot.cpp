@@ -3209,7 +3209,7 @@ int CvPlot::defenseModifier(TeamTypes eDefender, bool bIgnoreBuilding, bool bHel
 	// Leoreth: feature affects defense only without improvement
 	iModifier = ((getFeatureType() == NO_FEATURE || getImprovementType() != NO_IMPROVEMENT) ? GC.getTerrainInfo(getTerrainType()).getDefenseModifier() : GC.getFeatureInfo(getFeatureType()).getDefenseModifier());
 
-	if (isHills())
+	if (isHills() || (isPeak() && (RegionPowers)GET_PLAYER(GET_TEAM(eDefender).getLeaderID()).getRegionPowers() == RP_ANDES))	// MacAurther: Andes RP
 	{
 		iModifier += GC.getHILLS_EXTRA_DEFENSE();
 	}

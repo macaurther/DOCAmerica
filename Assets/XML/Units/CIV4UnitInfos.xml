@@ -451,6 +451,18 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<iHillsAttack>50</iHillsAttack>
 			<iHillsDefense>30</iHillsDefense>
+			<FeatureAttacks>
+				<FeatureAttack>
+					<FeatureType>FEATURE_CANYON</FeatureType>
+					<iFeatureAttack>50</iFeatureAttack>
+				</FeatureAttack>
+			</FeatureAttacks>
+			<FeatureDefenses>
+				<FeatureDefense>
+					<FeatureType>FEATURE_CANYON</FeatureType>
+					<iFeatureDefense>30</iFeatureDefense>
+				</FeatureDefense>
+			</FeatureDefenses>
 			<TerrainNatives>
 				<TerrainNative>
 					<TerrainType>TERRAIN_PLAINS</TerrainType>

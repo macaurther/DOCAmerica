@@ -5754,6 +5754,12 @@ bool CvUnit::canFound(const CvPlot* pPlot, bool bTestVisible) const
 		return false;
 	}
 
+	// MacAurther: Can't found on peaks (relevant for Andes RP)
+	if (pPlot != NULL && pPlot->isPeak())
+	{
+		return false;
+	}
+
 	return true;
 }
 
@@ -8757,7 +8763,7 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 			}
 		}
 
-		if (pPlot->isHills())
+		if (pPlot->isHills() || (pPlot->isPeak() && (RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES))  // MacAurther: Andes RP
 		{
 			iExtraModifier = hillsDefenseModifier();
 			iModifier += iExtraModifier;

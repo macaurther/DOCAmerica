@@ -2515,7 +2515,7 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 
 		// Make sure the player is moving to a valid tile. 6 criteria:
 		//   the tile is not impassible
-		if (pNewPlot->isImpassable()) return false;
+		if (pNewPlot->isImpassable() || pNewPlot->isPeak()) return false; // Check that's not a peak for Andes RP
 
 		//   the tile is not water
 		if (pNewPlot->isWater()) return false;
