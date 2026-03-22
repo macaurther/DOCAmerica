@@ -49,7 +49,7 @@ AVAILABLE_COLONISTS = "AvailableColonists"
 AVAILABLE_EXPEDITIONARIES = "AvailableExpeditionaries"
 
 # Set to true to print out debug messages in the logs
-g_bDebug = True 	# temp debug
+g_bDebug = False
 
 class ImmigrationUtils:
 
@@ -303,9 +303,9 @@ class ImmigrationUtils:
 	# Performs the thinking for the computer players in regards to the mercenaries mod functionality.
 	# It will:
 	# 	- Load earned units on waiting ships
+	#   - Exchange Immigrants for Settlers, Workers, etc.
 	# It will not:
-	#	- Hire additional military units (MacAurther TODO: Add this?)
-	#	- Exchange Immigrants for Settlers, Workers, etc. (MacAurther TODO: Add this?)
+	#	- Hire additional military units
 	def computerPlayerThink(self, iPlayer):
 		# Get the player
 		pPlayer = gc.getPlayer(iPlayer)

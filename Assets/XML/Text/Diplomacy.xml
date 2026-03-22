@@ -410,6 +410,38 @@
 		<Spanish>Aloha! Visitors from afar are welcome, so long as they provide some worth.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_OCONOSTOTA_1</Tag>
+		<English>I am [OUR_NAME], chief of the [OUR_CIV_ADJ] people. Let us trade and strengthen our friendship.</English>
+		<French>Je suis [OUR_NAME], chef des [OUR_CIV_ADJ:3]. Commen&#231;ons par commercer pour renforcer notre amiti&#233;</French>
+		<German>Ich bin [OUR_NAME], Oberhaupt des [OUR_CIV_ADJ:2] Volkes. Lasst uns Handel treiben und unsere Freundschaft st&#228;rken.</German>
+		<Italian>Sono [OUR_NAME], capo del popolo [OUR_CIV_ADJ]. Commerciamo e consolidiamo la nostra amicizia.</Italian>
+		<Spanish>Soy [OUR_NAME], jefe del pueblo [OUR_CIV_ADJ:1]. Comerciemos y estrechemos nuestros lazos de amistad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MANGAS_COLORADAS_1</Tag>
+		<English>Welcome. I am [OUR_NAME] of the [OUR_CIV_ADJ]. I pray that you and your people value peace as much as we do.</English>
+		<French>Bienvenue. Je suis [OUR_NAME] des [OUR_CIV_ADJ:3]. Je prie pour que la paix ait autant de valeur &#224; vos yeux qu'aux n&#244;tres.</French>
+		<German>Willkommen. Ich bin [OUR_NAME] vom [OUR_CIV_ADJ:2] Volk. Ich bete darum, dass Ihr und Euer Volk den Frieden ebenso sehr sch&#228;tzt wie wir.</German>
+		<Italian>Benvenuto. Sono [OUR_NAME] della civilt&#224; [OUR_CIV_ADJ]. Prego che tu e il tuo popolo diate tanto valore alla pace quanto gliene diamo noi.</Italian>
+		<Spanish>Bienvenido. Soy [OUR_NAME], de los [OUR_CIV_ADJ:3]. Rezo porque vuestro pueblo valore la paz tanto como nosotros.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_AGUEYBANA_1</Tag>
+		<English>Hello, traveler from the Great Sea. I am Cacique [OUR_NAME] of the [OUR_CIV_ADJ] tribe. Let us share this land and grow as friends.</English>
+		<French>Bonjour, voyageur des mers. Je suis le cacique [OUR_NAME] de la tribu des [OUR_CIV_ADJ:3]. Partageons-nous ces terres et devenons amis !</French>
+		<German>Hallo, Reisender vom Gro&#223;en Meer. Ich bin Kazike [OUR_NAME] vom [OUR_CIV_ADJ:2] Stamm. Lasst uns dieses Land teilen und als Freunde darin leben.</German>
+		<Italian>Salve, viaggiatore che arriva dal grande mare. Sono il cacique [OUR_NAME] della trib&#249; [OUR_CIV_ADJ]. Dividiamoci questa terra e diventiamo amici.</Italian>
+		<Spanish>Hola, viajero del Gran Mar. Soy el cacique [OUR_NAME] de la tribu [OUR_CIV_ADJ:2]. Compartamos esta tierra y seamos amigos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_CUNHAMBEBE_1</Tag>
+		<English>Hello, pale one. I, [OUR_NAME] of the [OUR_CIV_ADJ] people, welcome you. Let us feast in your honor.</English>
+		<French>Bonjour, visage p&#226;le. Moi, [OUR_NAME], chef des [OUR_CIV_ADJ:3] vous souhaite la bienvenue. Allons festoyer en votre honneur.</French>
+		<German>Hallo, Bleichgesicht. Ich, [OUR_NAME] vom [OUR_CIV_ADJ:2] Volk, hei&#223;e Euch willkommen. Lasst uns zu Euren Ehren ein Fest veranstalten.</German>
+		<Italian>Saluti, viso pallido. Io, [OUR_NAME] del popolo [OUR_CIV_ADJ], ti do il benvenuto. Facciamo festa in tuo onore.</Italian>
+		<Spanish>Hola, rostro p&#225;lido. Yo, [OUR_NAME] del pueblo [OUR_CIV_ADJ:1] os doy la bienvenida. Daremos un fest&#237;n en vuestro honor.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_</Tag>
 		<English></English>
 		<French></French>

@@ -802,7 +802,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_CHEROKEE</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MISSISSIPPIAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>	<!-- MacAurther TODO -->
+			<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>CHE</Identifier>
 			<Region>LAK</Region>
@@ -850,7 +850,7 @@
 			<Buildings>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
-					<BuildingType>BUILDING_MIDEWIWIN_MIDEWIGAAN</BuildingType>	<!-- MacAurther TODO -->
+					<BuildingType>BUILDING_MIDEWIWIN_MIDEWIGAAN</BuildingType>
 				</Building>
 			</Buildings>
 			<Units/>

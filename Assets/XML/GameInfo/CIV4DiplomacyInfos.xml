@@ -553,15 +553,67 @@
 					<Civilizations/>
 					<Leaders>
 						<Leader>
+							<LeaderType>LEADER_OCONOSTOTA</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes/>
+					<DiplomacyPowers/>
+					<DiplomacyText>
+						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_OCONOSTOTA_1</Text>
+					</DiplomacyText>
+				</Response>
+				<Response>
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_AGUEYBANA</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes/>
+					<DiplomacyPowers/>
+					<DiplomacyText>
+						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_AGUEYBANA_1</Text>
+					</DiplomacyText>
+				</Response>
+				<Response>
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_CUNHAMBEBE</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes/>
+					<DiplomacyPowers/>
+					<DiplomacyText>
+						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_CUNHAMBEBE_1</Text>
+					</DiplomacyText>
+				</Response>
+				<Response>
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_MANGAS_COLORADAS</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes/>
+					<DiplomacyPowers/>
+					<DiplomacyText>
+						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_MANGAS_COLORADAS_1</Text>
+					</DiplomacyText>
+				</Response>
+				<Response>
+					<Civilizations/>
+					<Leaders>
+						<Leader>
 							<LeaderType>LEADER_WARI_CAPAC</LeaderType>
 							<bLeaderType>1</bLeaderType>
 						</Leader>
 						<Leader>
 							<LeaderType>LEADER_CHAVEZ</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-						<Leader>
-							<LeaderType>LEADER_AGUEYBANA</LeaderType>
 							<bLeaderType>1</bLeaderType>
 						</Leader>
 						<Leader>
@@ -638,6 +690,26 @@
 						</Leader>
 						<Leader>
 							<LeaderType>LEADER_LOUVERTURE</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+						<Leader>
+							<LeaderType>LEADER_KOCHININAKO</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+						<Leader>
+							<LeaderType>LEADER_TOPILTZIN</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+						<Leader>
+							<LeaderType>LEADER_TUSKALOOSA</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+						<Leader>
+							<LeaderType>LEADER_XOC</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+						<Leader>
+							<LeaderType>LEADER_POPAY</LeaderType>
 							<bLeaderType>1</bLeaderType>
 						</Leader>
 					</Leaders>

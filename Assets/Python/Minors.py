@@ -537,7 +537,7 @@ def assignMinorUnitAdjective(city, unit):
 	
 
 # MacAurther: Because indpendents are now unique (i.e. some being native independents, some being European),
-# 	Do no fragment
+# 	Do not fragment
 # @handler("BeginGameTurn")
 # def fragmentIndependents():
 # 	if year() >= year(50) and core_periodic(15):
@@ -591,7 +591,7 @@ def spawnTribeDefenders(pPlot, iAttacker):
 	iTechLevel = 0	# How advanced spawned units should be - <=0: early game (ancient), =1: mid game (medieval), >=2: late game (gunpowder/horse)
 	if pPlot.getRegionID() in [rYukon, rNunavut, rQuebec, rNewFoundland, rHawaii] + lBrazil + lArgentina + [rGuyana, rParaguay, rUruguay]: iTechLevel -= 1
 	if year() >= year(1350): iTechLevel += 1
-	if year() >= year(1850): iTechLevel += 1
+	if year() >= year(1820): iTechLevel += 1
 
 	# Put tech level in bounds
 	iTechLevel = max(iTechLevel, 0)
