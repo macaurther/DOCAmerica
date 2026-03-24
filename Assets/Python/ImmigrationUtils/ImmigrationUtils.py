@@ -317,6 +317,10 @@ class ImmigrationUtils:
 		# Return immediately if the player is a barbarian, independent, or native
 		if pPlayer.isBarbarian() or pPlayer.isIndependent() or pPlayer.isNative():
 			return
+
+		# Return immediately if the player cannot earn immigrants
+		if not self.canEarnImmigrants(iPlayer):
+			return
 		
 		# Convert earned Immigrants into other units
 		for iHomeland in lHomelands:
