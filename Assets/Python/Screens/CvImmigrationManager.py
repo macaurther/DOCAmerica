@@ -600,7 +600,6 @@ class CvImmigrationManager:
 			unit = dImmigrantGroups[sUnit].getImmigrant()
 			unitTitle = dImmigrantGroups[sUnit].getImmigrantTitle()
 			panelName = unit.sUnitName + panel
-			print("Updating panelName: " + panelName)
 			
 			# Delete the cost string for the current unit we are processing.
 			screen.deleteWidget(panelName + "Text")
@@ -671,7 +670,6 @@ class CvImmigrationManager:
 				bTabClicked = False
 			
 			if bTabClicked:
-				print("Tab name: " + inputClass.getFunctionName() + "Tab id: " + str(data.iCurrentImmigrationManagerTab))
 				self.drawMercenaryScreenContent(self.getScreen())
 				return
 
@@ -917,10 +915,6 @@ def onEndPlayerTurn(iGameTurn, iPlayer):
 	pPlayer = gc.getPlayer(iPlayer)
 	
 	if pPlayer != None and objImmigrationUtils.canEarnImmigrants(iPlayer):
-
-		if g_bDebug:
-			CvUtil.pyPrint(pPlayer.getName() + " Gold: " + str(pPlayer.getGold()) + " is human: " + str(pPlayer.isHuman()))  
-
 		# Process new immigrants
 		objImmigrationUtils.processImmigration(iPlayer)
 

@@ -3133,7 +3133,7 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 /**	SPEEDTWEAK (Block Python) Sephi                                               	            **/
 /**	If you want to allow modmodders to enable this Callback, see CvCity::cancreate for example  **/
 /*************************************************************************************************/
-/**
+	// MacAurther: I do want to enable this callback (maybe a bad idea, we'll see)
 	CvEventReporter::getInstance().unitMove(pPlot, this, pOldPlot);
 /*************************************************************************************************/
 /**	END	                                        												**/

@@ -300,6 +300,14 @@ void CvGame::updateColoredPlots()
 								{
 									gDLL->getEngineIFace()->addColoredPlot(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT")).getColor(), PLOT_STYLE_CIRCLE, PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS);
 								}
+								// MacAurther: Show resource locations, even unrevealed (Anti-FOMO Mode)
+								if (pLoopPlot->getBonusType() != NO_BONUS)
+								{
+									if (pLoopPlot->isVisible(pHeadSelectedUnit->getTeam(), false))
+									{
+										gDLL->getEngineIFace()->addColoredPlot(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_WARNING_TEXT")).getColor(), PLOT_STYLE_TARGET, PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS);
+									}
+								}
 							}
 							if (plotDistance(pHeadSelectedUnit->getX_INLINE(), pHeadSelectedUnit->getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()) <= iRange)
 							{

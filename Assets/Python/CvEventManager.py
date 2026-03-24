@@ -147,7 +147,6 @@ class CvEventManager(object):
 			'windowActivation'		: self.onWindowActivation,
 			'gameUpdate'			: self.onGameUpdate,		# sample generic event
 			'playerChangeStateReligion'	: self.onPlayerChangeStateReligion,
-			'vassalState'			: self.onVassalState,
 			'revolution'			: self.onRevolution,
 			'cityCaptureGold'		: self.onCityCaptureGold,
 			'tradeMission'			: self.onTradeMission,

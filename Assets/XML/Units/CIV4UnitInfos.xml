@@ -2929,10 +2929,6 @@
 			<bFood>1</bFood>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_SWORDSMAN</UnitClassUpgradeType>
-					<bUnitClassUpgrade>1</bUnitClassUpgrade>
-				</UnitClassUpgrade>
-				<UnitClassUpgrade>
 					<UnitClassUpgradeType>UNITCLASS_SPEARMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
@@ -3024,10 +3020,6 @@
 			<bPillage>1</bPillage>
 			<bFood>1</bFood>
 			<UnitClassUpgrades>
-				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_SWORDSMAN</UnitClassUpgradeType>
-					<bUnitClassUpgrade>1</bUnitClassUpgrade>
-				</UnitClassUpgrade>
 				<UnitClassUpgrade>
 					<UnitClassUpgradeType>UNITCLASS_SPEARMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
@@ -3238,10 +3230,6 @@
 					<UnitClassUpgradeType>UNITCLASS_SWORDSMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
-				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_SPEARMAN</UnitClassUpgradeType>
-					<bUnitClassUpgrade>1</bUnitClassUpgrade>
-				</UnitClassUpgrade>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -3331,10 +3319,6 @@
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
 					<UnitClassUpgradeType>UNITCLASS_SWORDSMAN</UnitClassUpgradeType>
-					<bUnitClassUpgrade>1</bUnitClassUpgrade>
-				</UnitClassUpgrade>
-				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_SPEARMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -3432,10 +3416,6 @@
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
 					<UnitClassUpgradeType>UNITCLASS_SWORDSMAN</UnitClassUpgradeType>
-					<bUnitClassUpgrade>1</bUnitClassUpgrade>
-				</UnitClassUpgrade>
-				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_SPEARMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -5463,7 +5443,7 @@
 			<bPillage>1</bPillage>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MUSKETMAN</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_ARQUEBUSIER</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -5567,7 +5547,7 @@
 			<bPillage>1</bPillage>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MUSKETMAN</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_ARQUEBUSIER</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -5677,7 +5657,7 @@
 			<bPillage>1</bPillage>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MUSKETMAN</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_ARQUEBUSIER</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -5782,7 +5762,7 @@
 			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MUSKETMAN</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_ARQUEBUSIER</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>

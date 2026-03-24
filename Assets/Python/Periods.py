@@ -102,8 +102,6 @@ def onCapitalMoved(city):
 	iOwnerCiv = civ(iOwner)
 
 	if iOwnerCiv == iAmerica:
-		print("City x and y: " + str((city.getX(), city.getY())) + " tDC: " + str(tDC) + " game.getPeriod(iOwnerCiv): " + str(game.getPeriod(iOwnerCiv)) + " iUnifiedUSA: " + str(iUnifiedUSA)) # temp debug
-		print("Eval: " + str((city.getX(), city.getY()) == tDC and game.getPeriod(iOwnerCiv) != iUnifiedUSA))
 		# Move to DC gives larger core (but doesn't take away core if CSA is already defeated)
 		if (city.getX(), city.getY()) == tDC and game.getPeriod(iOwnerCiv) != iUnifiedUSA:
 			setPeriod(iAmerica, iPeriodAntebellumUSA)

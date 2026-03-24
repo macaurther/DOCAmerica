@@ -4777,6 +4777,8 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]The Slave Revolt random event has been removed.
 [ICON_BULLET]Cities in a civilization's historical area can now be bought from the AI with gold during peace time.
 [ICON_BULLET]America and Brazil get expanded core areas when moving their capitols to Washington, D.C. or Brasilia, respecitvely.
+[ICON_BULLET]In order to help first time players of DoCA who don't know the map and spawn dates well yet, warnings will be displayed if one of your settlers moves onto a tile that will flip to a new civilization soon.
+[ICON_BULLET]In order to help first time players of DoCA who don't know the map and resources spawns well yet, when a settler is selected, warnings will be displayed on nearby tiles with resources, whether revealed or not.
 		</English>
 	</TEXT>
 	<TEXT>

@@ -4560,6 +4560,14 @@
 		<Italian>The people are inspired by your sacrifice! +%d1 [ICON_CULTURE] in %s2.</Italian>
 		<Spanish>The people are inspired by your sacrifice! +%d1 [ICON_CULTURE] in %s2.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_FLIP_WARN</Tag>
+		<English>Your settler is within a land that will soon flip to another civilization.</English>
+		<French>Your settler is within a land that will soon flip to another civilization.</French>
+		<German>Your settler is within a land that will soon flip to another civilization.</German>
+		<Italian>Your settler is within a land that will soon flip to another civilization.</Italian>
+		<Spanish>Your settler is within a land that will soon flip to another civilization.</Spanish>
+	</TEXT>
 	
 	
 	<TEXT>

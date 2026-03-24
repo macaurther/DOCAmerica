@@ -333,6 +333,26 @@ def preserveCivilizationAttributes(iPlayer):
 	data.civs[iPlayer].iNumUnitGoldenAges = player(iPlayer).getNumUnitGoldenAges()
 
 
+# MacAurther: Warn human if settler is selected and a nearby area will be flipped soon (i.e. warn England of Netherlands spawn)
+@handler("unitMove")
+def warnFlipPlots(pPlot, pUnit, pOldPlot):
+	if not player(pUnit.getOwner()).isHuman():
+		return
+	
+	if not gc.getUnitInfo(pUnit.getUnitType()).isFound():
+		return
+	
+	# Find the civs that are going to spawn in the next 50 (TBR) years
+	for iCiv in dBirthArea.keys():
+		if 0 <= year(dBirth[iCiv]) - year() <= 50:
+			for plot in plots.rectangle(dBirthArea[iCiv]):
+				if pPlot.getX() == plot.getX() and pPlot.getY() == plot.getY():
+					message(pUnit.getOwner(), 'TXT_KEY_INTERFACE_FLIP_WARN', event=InterfaceMessageTypes.MESSAGE_TYPE_INFO, button=pUnit.getButton(), color=infos.type('COLOR_RED'), location=pUnit)
+					return
+	
+
+
+
 ### MAPS ###
 
 
