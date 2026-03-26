@@ -124,7 +124,7 @@ dGoals = {
 	iTeotihuacan: (
 		BuildingCount(wonders(), 3, by=450),
 		GoldenAges(2, by=600),
-		CultureAmount(1500, at=650),
+		CultureAmount(1000, at=650),
 	),
 	iTiwanaku: (
 		CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatProphet, 2, by=700),

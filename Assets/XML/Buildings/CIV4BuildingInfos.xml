@@ -1165,6 +1165,8 @@
 			<ArtDefineTag>ART_DEF_BUILDING_TEOTIHUACAN_TEMAZCAL</ArtDefineTag>
 			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<iCost>80</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
