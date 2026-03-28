@@ -334,9 +334,9 @@
 				<StyleUnit>
 					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MILITIA_NATIVE</LateArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
@@ -557,9 +557,9 @@
 				<StyleUnit>
 					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MILITIA_NATIVE</LateArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
@@ -780,9 +780,9 @@
 				<StyleUnit>
 					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MILITIA_NATIVE</LateArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
@@ -1003,9 +1003,9 @@
 				<StyleUnit>
 					<UnitType>UNIT_MILITIA</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MILITIA_NATIVE</LateArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
@@ -1194,7 +1194,6 @@
 				</StyleUnit>
 			</StyleUnits>
 		</UnitArtStyleTypeInfo>
-
 		<UnitArtStyleTypeInfo>
 			<Type>UNIT_ARTSTYLE_AZTEC</Type>
 			<StyleUnits>

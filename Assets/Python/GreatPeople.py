@@ -1254,7 +1254,6 @@ dGreatPeople = {
 		iGreatGeneral : (
 			"Winfield Scott", # 19th
 			"Ulysses S. Grant", # 19th
-			"Robert E. Lee", # 19th
 			iModernEra,
 			"John J. Pershing", # 20th
 			"Dwight D. Eisenhower", # 20th
@@ -1675,6 +1674,38 @@ dGreatPeople = {
 			u"João Baptista Mascarenhas de Morais", # 20th
 			"Eurico Gaspar Dutra", # 20th
 			"Artur da Costa e Silva", # 20th
+		),
+	},
+	iCSA : {
+		iGreatProphet : (
+		),
+		iGreatArtist : (
+		),
+		iGreatScientist : (
+		),
+		iGreatMerchant : (
+		),
+		iGreatEngineer : (
+		),
+		iGreatStatesman : (
+		),
+		iGreatGeneral : (
+			"Robert E. Lee", # 19th
+			"Stonewall Jackson", # 19th
+			"J.E.B. Stuart", # 19th
+			"Nathan Bedford Forrest", # 19th
+			"James Longstreet", # 19th
+			"Braxton Bragg", # 19th
+			"George Pickett", # 19th
+			"Bill Anderson", # 19th
+			"Albert Sidney Johnston", # 19th
+		),
+		iGreatSpy : (
+			"Sam Davis", # 19th
+			"fZora Fair", # 19th
+			"fAntonia Ford", # 19th
+			"Samuel Mudd", # 19th
+			"fEmeline Piggott", # 19th
 		),
 	},
 	iCanada : {

@@ -52,6 +52,7 @@ dBaseLanguages = {
 	iPeru: (iSpanish,),
 	iBrazil: (iBrazilian, iPortuguese),
 	iVenezuela: (iSpanish,),
+	iCSA: (iAmerican, iEnglish),
 	iCanada: (iEnglish, iFrench),
 }
 

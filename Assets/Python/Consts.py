@@ -13,13 +13,13 @@ iWorldY = 122
 iNumPlayers = gc.getMAX_PLAYERS()
 
 # civilizations, not players
-iNumCivs = 43
+iNumCivs = 44
 # 0				1				2				3				4				5				6				7				8				9
 (iAmerica, 		iApache,		iArawak,		iArgentina, 	iAztec, 		iBrazil, 		iCanada, 		iCherokee,		iChimu,			iColombia, 		
-iEngland, 		iFrance, 		iHaiti,			iHaudenosaunee,	iHawaii,		iInca,			iInuit,			iLakota,		iMaya,			iMexico, 		
-iMississippi,	iMuisca,		iNetherlands, 	iNorse,			iPeru,			iPortugal, 		iPueblo,		iPurepecha,		iRussia,		iSpain, 		
-iTeotihuacan,	iTiwanaku,		iToltec,		iTupi,			iVenezuela,		iWari,			iZapotec,		iIndependent1, 	iIndependent2, 	iIndependent3,	
-iIndigenous,	iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+iCSA,			iEngland, 		iFrance, 		iHaiti,			iHaudenosaunee,	iHawaii,		iInca,			iInuit,			iLakota,		iMaya,			
+iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	iNorse,			iPeru,			iPortugal, 		iPueblo,		iPurepecha,		iRussia,		
+iSpain, 		iTeotihuacan,	iTiwanaku,		iToltec,		iTupi,			iVenezuela,		iWari,			iZapotec,		iIndependent1, 	iIndependent2, 	
+iIndependent3,	iIndigenous,	iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 lBirthOrder = [
 	iMaya,
@@ -58,6 +58,7 @@ lBirthOrder = [
 	iPeru,
 	iBrazil,
 	iVenezuela,
+    iCSA,
 	iCanada,
 ]
 
@@ -106,6 +107,7 @@ iColombia : 1810,
 iPeru : 1822,
 iBrazil : 1822,
 iVenezuela : 1831,
+iCSA : 1860,
 iCanada : 1867,
 }, 0)
 
@@ -138,18 +140,18 @@ iNetherlands : 1814,
 iApache : 1886,
 iLakota : 1890,
 iHawaii : 1893,
+iCSA : 1890,
 }, 1950)
 
 # used in: Congresses, DynamicCivs, Plague, RFCUtils, UniquePowers, Victory
 # a civilisation can be in multiple civ groups
-iNumCivGroups = 6
-(iCivGroupEurope, iCivGroupNative, iCivGroupAmerica, iCivGroupNATO, iCivGroupMesoamerica, iCivGroupAndes) = range(iNumCivGroups)
+iNumCivGroups = 5
+(iCivGroupEurope, iCivGroupNative, iCivGroupAmerica, iCivGroupMesoamerica, iCivGroupAndes) = range(iNumCivGroups)
 
 dCivGroups = {
 iCivGroupEurope : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia],
 iCivGroupNative : [iMaya, iInca, iAztec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iMuisca, iChimu, iInuit, iHaudenosaunee, iLakota, iZapotec, iPurepecha, iToltec, iArawak, iTupi, iCherokee, iApache],
-iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iPeru, iVenezuela],
-iCivGroupNATO : [iAmerica, iCanada, iNorse, iEngland, iFrance, iSpain, iPortugal, iNetherlands],
+iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iPeru, iVenezuela, iCSA],
 iCivGroupMesoamerica : [iMaya, iAztec, iTeotihuacan, iZapotec, iPurepecha, iToltec],
 iCivGroupAndes : [iInca, iTiwanaku, iWari, iMuisca, iChimu],
 }
@@ -166,7 +168,7 @@ iNumTechGroups = 3
 
 dTechGroups = {
 iTechGroupColony : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia],
-iTechGroupNation: [iAmerica, iCanada, iArgentina, iMexico, iColombia, iBrazil, iHaiti, iPeru, iVenezuela],
+iTechGroupNation: [iAmerica, iCanada, iArgentina, iMexico, iColombia, iBrazil, iHaiti, iPeru, iVenezuela, iCSA],
 iTechGroupNative : [iMaya, iInca, iAztec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iMuisca, iChimu, iInuit, iHaudenosaunee, iLakota, iHawaii, iZapotec, iPurepecha, iToltec, iArawak, iTupi, iCherokee, iApache],
 }
 
@@ -333,10 +335,12 @@ lNeighbours = [
 	(iAmerica, iMexico),
 	(iAmerica, iCanada),
 	(iAmerica, iHaiti),
+	(iAmerica, iCSA),
 	(iArgentina, iBrazil),
 	(iColombia, iVenezuela),
 	(iVenezuela, iBrazil),
 	(iMexico, iColombia),
+    (iMexico, iCSA)
 ]
 
 lInfluences = [
@@ -372,6 +376,8 @@ lInfluences = [
 	(iBrazil, iPortugal),
 	(iBrazil, iTupi),
 	(iBrazil, iArawak),
+	(iCSA, iEngland),
+	(iCSA, iAmerica),
 	(iCanada, iFrance),
 	(iCanada, iEngland),
 ]
@@ -398,6 +404,7 @@ iColombia : [iSpain, iIndependent1, iIndependent2],
 iPeru : [iSpain, iIndependent1, iIndependent2],
 iBrazil : [iIndependent1, iIndependent2],
 iVenezuela : [iColombia],
+iCSA : [iAmerica],
 }, [])
 
 dTotalWarOnSpawn = CivDict({
@@ -405,6 +412,7 @@ iToltec : [iTeotihuacan],
 iInca : [iWari, iTiwanaku],
 iAztec : [iTeotihuacan, iToltec],
 iApache : [iPueblo],
+iCSA : [iAmerica],
 }, [])
 
 dAggressionLevel = CivDict({
@@ -444,6 +452,7 @@ iColombia : 3,
 iPeru : 1,
 iBrazil : 2,
 iVenezuela : 1,
+iCSA : 1,
 iCanada : 1,
 }, 0)
 
@@ -482,6 +491,7 @@ iColombia: 100,
 iPeru : 100,
 iBrazil: 100,
 iVenezuela : 100,
+iCSA : 100,
 iCanada: 100,
 }, 0)
 
@@ -522,6 +532,7 @@ iColombia : 100,
 iPeru : 100,
 iBrazil : 100,
 iVenezuela : 100,
+iCSA : 50,
 iCanada : 100,
 })
 
@@ -562,6 +573,7 @@ iColombia : 30,
 iPeru : 35,
 iBrazil : 40,
 iVenezuela : 20,
+iCSA : 20,
 iCanada : 40,
 }, 100)
 
@@ -871,7 +883,6 @@ dCivGroupRegions = {
 	iCivGroupEurope: lWest,
 	iCivGroupNative: lAmerica,
 	iCivGroupAmerica: lAmerica,
-	iCivGroupNATO: lAmerica,
 	iCivGroupMesoamerica: lMexico,
 	iCivGroupAndes: lAndes,
 }
@@ -948,7 +959,7 @@ iVictorySecularism = 8
 
 
 #leaders
-iNumLeaders = 68
+iNumLeaders = 69
 # 0				1				2				3				4				5				6				7				8				9
 (iLeaderBarbarian,iNativeLeader,iIndependentLeader,iPacal,		iXoc,			iCosijoeza,		iAtlatlCauac,	iMalkuHuyustus,	iWariCapac,		iUwahcil,		
 iTuskaloosa,	iKochininako,	iPopay,			iSaguamanchica,	iLiefErickson,	iGustav,		iGerhardsen,	iTacaynamo,		iTopiltzin,		iAua,			
@@ -956,7 +967,7 @@ iCunhambebe,	iAgueybana,		iPachacuti,		iHuaynaCapac,	iErendira,		iMontezuma,		iM
 iPhilip,		iFranco,		iOconostota,	iJoao,			iMaria,			iElizabeth,		iVictoria,		iChurchill,		iLouis,			iNapoleon,		
 iDeGaulle,		iWillemVanOranje,iWilliam,		iKamehameha,	iCatherine,		iAlexanderI,	iStalin,		iWashington,	iJackson,		iLincoln,		
 iRoosevelt,		iFDR,			iKennedy,		iReagan,		iObama,			iLOuverture,	iSanMartin,		iPeron,			iJuarez,		iSantaAnna,		
-iCardenas,		iBolivar,		iCastilla,		iPedro,			iVargas,		iChavez,		iMacDonald,		iTrudeau) = range(iNumLeaders)
+iCardenas,		iBolivar,		iCastilla,		iPedro,			iVargas,		iChavez,		iDavis,			iMacDonald,		iTrudeau) = range(iNumLeaders)
 
 dResurrectionLeaders = CivDict({
 })

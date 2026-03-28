@@ -31,7 +31,6 @@ class TechLog(object):
 		iCivGroupEurope: "Europe",
 		iCivGroupAmerica: "America",
 		iCivGroupNative: "Native America",
-		iCivGroupNATO: "NATO",
 		iCivGroupMesoamerica: "Mesoamerica",
 		iCivGroupAndes: "Andes",
 	}

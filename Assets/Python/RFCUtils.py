@@ -437,15 +437,19 @@ def freeSlaves(city, iPlayer):
 		return
 
 	iNumSlaves = city.getFreeSpecialistCount(iSpecialistSlave)
+	if iNumSlaves <= 0:
+		return
+	
 	city.setFreeSpecialistCount(iSpecialistSlave, 0)
 	
 	# MacAurther: Haiti UP: freed slaves give soldiers
 	if civ(iPlayer) == iHaiti:
 		createRoleUnit(iPlayer, city, iSkirmish, iNumSlaves, 0)
-	
-	# Emancipation Civic
-	if player(iPlayer).getCivics(iCivicsSociety) in [iEmancipation, iEmancipation3]:
+	else:
+		# Freed slaves turn into population and add temorary unhappiness
 		city.changePopulation(iNumSlaves)
+		city.changeHurryAngerTimer(turns(iNumSlaves * 10))
+		message(city.getOwner(), "TXT_KEY_MESSAGE_FREED_SLAVES", iNumSlaves, city.getName(), color=iGreen, location=city, button=infos.unit(iSlave).getButton())
 
 	events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
 	
@@ -540,8 +544,11 @@ def isUnitOfRole(iUnit, iRole):
 		return iDomainType == DomainTypes.DOMAIN_SEA and unit.getAirRange() == 0
 	elif iRole == iExplore:
 		return iCombatType == UnitCombatTypes.UNITCOMBAT_RECON
-	elif iRole in [iSiege, iCitySiege]:
+	# MacAurther: Want to specify difference between regular siege and things that can bombard
+	elif iRole in [iSiege]:
 		return iCombatType == UnitCombatTypes.UNITCOMBAT_SIEGE
+	elif iRole in [iCitySiege]:
+		return iCombatType == UnitCombatTypes.UNITCOMBAT_SIEGE and unit.getBombardRate() > 0
 	elif iRole == iSkirmish:
 		return iCombatType in [UnitCombatTypes.UNITCOMBAT_ARCHER, UnitCombatTypes.UNITCOMBAT_GUN] and unit.getCollateralDamage() > 0
 	elif iRole == iLightEscort:

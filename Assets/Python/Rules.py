@@ -218,27 +218,24 @@ def animalHunting(winningUnit, losingUnit):
 
 @handler("revolution")
 def validateSlaves(iPlayer):
+	print("player(iPlayer).canUseSlaves(): " + str(player(iPlayer).canUseSlaves())) # temp debug
 	if not player(iPlayer).canUseSlaves():
 		if player(iPlayer).getImprovementCount(iSlavePlantation) > 0:
 			for plot in plots.owner(iPlayer).where(lambda plot: plot.getImprovementType() == iSlavePlantation):
 				plot.setImprovementType(iPlantation)
+				events.fireEvent("freedSlaves", iPlayer, 1)
 		
 		if player(iPlayer).getImprovementCount(iSlaveMine) > 0:
 			for plot in plots.owner(iPlayer).where(lambda plot: plot.getImprovementType() == iSlaveMine):
 				plot.setImprovementType(iMine)
+				events.fireEvent("freedSlaves", iPlayer, 1)
 		
 		for city in cities.owner(iPlayer):
-			iNumSlaves = city.getFreeSpecialistCount(iSpecialistSlave)
-			city.setFreeSpecialistCount(iSpecialistSlave, 0)
-			
-			# Freed slaves turn into population and add temorary unhappiness
-			city.changePopulation(iNumSlaves)
-			city.changeHurryAngerTimer(turns(iNumSlaves * 3))
-			message(city.getOwner(), "TXT_KEY_MESSAGE_FREED_SLAVES", iNumSlaves, city.getName(), color=iGreen, location=city, button=infos.unit(iSlave).getButton())
-
+			freeSlaves(city, iPlayer)
 				
 		for slave in units.owner(iPlayer).where(lambda unit: base_unit(unit) in [iSlave, iChattleSlave]):
 			slave.kill(False, iPlayer)
+			events.fireEvent("freedSlaves", iPlayer, 1)
 
 
 ### CAPITAL MOVED ###

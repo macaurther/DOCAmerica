@@ -2392,7 +2392,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>2</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_PUEBLO_PATHFINDER</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_KACHINA_PUEBLO</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>

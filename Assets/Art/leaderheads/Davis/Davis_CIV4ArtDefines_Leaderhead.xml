@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Created with Notepad by strategyonly -->
+<Civ4ArtDefines xmlns="x-schema:Davis_CIV4ArtDefinesSchema.xml">
+	<LeaderheadArtInfos>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_JEFFERSON_DAVIS</Type>
+			<Button>Modules/Custom_Civilizations/Confederacy/Davis/Davisbutton.dds</Button>
+			<NIF>Modules/Custom_Civilizations/Confederacy/Davis/Davis.nif</NIF>
+			<KFM>Modules/Custom_Civilizations/Confederacy/Davis/Charlemagne.kfm</KFM>
+			<NoShaderNIF>Modules/Custom_Civilizations/Confederacy/Davis/Davis.nif</NoShaderNIF>
+			<BackgroundKFM>Modules/Custom_Civilizations/Confederacy/Davis/washington_bg.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+	</LeaderheadArtInfos>
+</Civ4ArtDefines>

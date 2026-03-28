@@ -457,6 +457,15 @@ lCivilizations = [
 		techs=techs.column(15).without(iNorthEuropeAccess, iSiberiaAccess),
 	),
 	Civilization(
+		iCSA,
+		iGold=1000,
+		iImmigration=20,
+		iStateReligion=iProtestantism,
+		lCivics=[iPlutocrats, iConfederacy, iBondage, iFreeEnterprise, iProfiteering, iHomesteads],
+		lEnemies=[iAmerica],
+		techs=techs.column(17).including(iMeasurement, iEngine, iRailroad, iElectricity, iDoctrine).without(iSiberiaAccess),
+	),
+	Civilization(
 		iCanada,
 		iGold=1000,
 		iImmigration=100,
@@ -715,11 +724,19 @@ dStartingUnits = CivDict({
 		iEscort: 1,
 		iMissionary: 1,
 	},
+	iCSA: {
+		iSettle: 8,
+		iWork: 5,
+		iDefend: 8,
+		iHarass: 6,
+		iCitySiege: 3,
+		iFerry: 1,
+	},
 	iCanada: {
 		iSettle: 8,
 		iWork: 5,
 		iDefend: 6,
-		iShock: 2,
+		iHarass: 2,
 		iMissionary: 1,
 	},
 }, {})
@@ -772,6 +789,11 @@ dExtraAIUnits = CivDict({
 	iBrazil: {
 		iDefend: 1,
 	},
+	iCSA: {
+		iDefend: 2,
+		iHarass: 2,
+		iCitySiege: 1,
+	},
 }, {})
 
 # Extra units if civ starts at war
@@ -781,19 +803,26 @@ dAdditionalUnits = CivDict({
 dStartingExperience = CivDict({
 	iArgentina: {
 		iShock: 2,
-		iBase: 4,
+		iDefend: 4,
 		iSiege: 2,
 	},
 	iMexico: {
-		iBase: 4,
+		iDefend: 4,
 		iShock: 2,
 		iSkirmish: 2,
 	},
 	iColombia: {
-		iBase: 2,
+		iDefend: 2,
 		iSkirmish: 2,
 		iSiege: 1,
 		iCitySiege: 1,
+	},
+	iCSA: {
+		iDefend: 2,
+		iSkirmish: 5,
+		iShock: 5,
+		iSiege: 3,
+		iCitySiege: 3,
 	},
 }, {})
 
@@ -840,6 +869,16 @@ def createSpecificUnits(iPlayer, tile):
 		gp.assignGreatPersonName(unit, iPlayer, None, False)
 	elif iCiv == iColombia:
 		makeUnits(iPlayer, iAlbionLegion, tile, 5).experience(2)
+	elif iCiv == iCSA:	# CSA UP
+		unit = makeUnit(iPlayer, iGreatGeneral, tile)
+		gp.assignGreatPersonName(unit, iPlayer, None, False)
+		unit = makeUnit(iPlayer, iGreatGeneral, tile)
+		gp.assignGreatPersonName(unit, iPlayer, None, False)
+		unit = makeUnit(iPlayer, iGreatGeneral, tile)
+		gp.assignGreatPersonName(unit, iPlayer, None, False)
+		unit = makeUnit(iPlayer, iGreatSpy, tile)
+		gp.assignGreatPersonName(unit, iPlayer, None, False)
+
 
 dSpecificAdditionalUnits = CivDict({
 }, {})

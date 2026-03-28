@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- America -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CSA_DESC</Tag>
+		<English>The Confederates</English>
+		<French>The Confederates</French>
+		<German>The Confederates</German>
+		<Italian>The Confederates</Italian>
+		<Spanish>The Confederates</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CSA_PEOPLES</Tag>
+		<English>Continental Congress</English>
+		<French>Continental Congress</French>
+		<German>Continental Congress</German>
+		<Italian>Continental Congress</Italian>
+		<Spanish>Continental Congress</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CSA_DEFAULT</Tag>
+		<English>Provisional Congress</English>
+		<French>Provisional Congress</French>
+		<German>Provisional Congress</German>
+		<Italian>Provisional Congress</Italian>
+		<Spanish>Provisional Congress</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CSA_REPUBLIC</Tag>
+		<English>Confederate States of %s1</English>
+		<French>Confederate States of %s1</French>
+		<German>Confederate States of %s1</German>
+		<Italian>Confederate States of %s1</Italian>
+		<Spanish>Confederate States of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CSA_COMMUNIST</Tag>
+		<English>Confederate Socialist States of %s1</English>
+		<French>Confederate Socialist States of %s1</French>
+		<German>Confederate Socialist States of %s1</German>
+		<Italian>Confederate Socialist States of %s1</Italian>
+		<Spanish>Confederate Socialist States of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CSA_ADJECTIVE</Tag>
+		<English>Confederate</English>
+		<French>Confederate</French>
+		<German>Confederate</German>
+		<Italian>Confederate</Italian>
+		<Spanish>Confederate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CSA_SHORT_DESC</Tag>
+		<English>CSA</English>
+		<French>CSA</French>
+		<German>CSA</German>
+		<Italian>CSA</Italian>
+		<Spanish>CSA</Spanish>
+	</TEXT>
+</Civ4GameText>

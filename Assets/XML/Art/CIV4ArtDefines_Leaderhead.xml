@@ -582,5 +582,13 @@
 			<NoShaderNIF>Art/LeaderHeads/Cunhambebe/Cunhambebe.nif</NoShaderNIF>
 			<BackgroundKFM>Art/LeaderHeads/Cunhambebe/Cunhambebe_BG.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_DAVIS</Type>
+			<Button>Art/LeaderHeads/Davis/Davisbutton.dds</Button>
+			<NIF>Art/LeaderHeads/Davis/Davis.nif</NIF>
+			<KFM>Art/LeaderHeads/Davis/Charlemagne.kfm</KFM>
+			<NoShaderNIF>Art/LeaderHeads/Davis/Davis.nif</NoShaderNIF>
+			<BackgroundKFM>Art/LeaderHeads/Davis/washington_bg.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

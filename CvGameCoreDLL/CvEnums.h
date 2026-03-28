@@ -1225,34 +1225,35 @@ enum CivilizationTypes		// Exposed to Python
 	CHEROKEE,
 	CHIMU,
 	COLOMBIA,
+
+	CSA,
 	ENGLAND,
 	FRANCE,
 	HAITI,
-	
 	HAUDENOSAUNEE,
 	HAWAII,
 	INCA,
 	INUIT,
 	LAKOTA,
 	MAYA,
+
 	MEXICO,
 	MISSISSIPPI,
 	MUISCA,
 	NETHERLANDS,
-	
 	NORSE,
 	PERU,
 	PORTUGAL,
 	PUEBLO,
 	PUREPECHA,
 	RUSSIA,
+
 	SPAIN,
 	TEOTIHUACAN,
 	TIWANAKU,
 	TOLTECS,
 	TUPI,
 	VENEZUELA,
-	
 	WARI,
 	ZAPOTEC,
 	
@@ -1402,6 +1403,9 @@ enum LeaderHeadTypes			// Exposed to Python
 	
 	// Venezuela
 	CHAVEZ,
+
+	// CSA
+	DAVIS,
 
 	// Canada
 	MACDONALD,

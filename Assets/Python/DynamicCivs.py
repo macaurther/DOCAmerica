@@ -201,6 +201,7 @@ dStartingLeaders = [
 	iPeru : iCastilla,
 	iBrazil : iPedro,
 	iVenezuela : iChavez,
+	iCSA : iDavis,
 	iCanada : iMacDonald,
 },
 # 1500 AD
@@ -776,10 +777,6 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 	
 	elif iCiv == iAmerica:
 		if civic.iLabor == iBondage:
-			# Capital has to be in the South
-			if tCapitalCoords[1] < 79:
-				return "TXT_KEY_CIV_AMERICA_CSA"
-				
 			if isControlled(iPlayer, plots.region(rMesoamerica)) and isControlled(iPlayer, plots.region(rCaribbean)):
 				return "TXT_KEY_CIV_AMERICA_GOLDEN_CIRCLE"
 			

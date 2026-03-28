@@ -2064,7 +2064,11 @@
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_MEETING_HALL</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
+					<iProductionModifier>200</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_PALACE</BuildingType>
+					<iProductionModifier>200</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
 		</CivicInfo>
@@ -2154,6 +2158,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<bNoSlavery>1</bNoSlavery>
 			<UnhappinessExtraYields>
 				<iYield>2</iYield>
 				<iYield>0</iYield>
@@ -2172,6 +2177,7 @@
 			<iCultureGroup>2</iCultureGroup>
 			<iExtraHealth>-1</iExtraHealth>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<bNoSlavery>1</bNoSlavery>
 			<SpecialistExtraYields>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
@@ -2205,6 +2211,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<bNoSlavery>1</bNoSlavery>
 			<SpecialistTypeExtraYields>
 				<SpecialistTypeExtraYield>
 					<SpecialistType>SPECIALIST_IMMIGRANT</SpecialistType>
@@ -2232,6 +2239,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<bNoSlavery>1</bNoSlavery>
 			<SpecialistExtraYields>
 				<iYield>1</iYield>
 			</SpecialistExtraYields>
@@ -2267,6 +2275,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<bNoSlavery>1</bNoSlavery>
 			<SpecialistExtraCommerces>
 				<iCommerce>0</iCommerce>
 				<iCommerce>3</iCommerce>
@@ -2699,10 +2708,6 @@
 			<iOccupationTimeChange>-6</iOccupationTimeChange>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<BuildingProductionModifiers>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_PALACE</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_BARRACKS</BuildingType>
 					<iProductionModifier>100</iProductionModifier>

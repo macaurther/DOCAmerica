@@ -41,7 +41,6 @@
 				<City>Franklin</City>
 				<City>Georgetown</City>
 				<City>Centralia</City>
-				<City>Greenville</City>
 				<City>Bristol</City>
 				<City>Stockton</City>
 				<City>Fairview</City>
@@ -142,7 +141,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_APACHE</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_PLAINS</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_PUEBLO</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_KACHINA</PaganReligion>	<!-- MacAurther TODO -->
+			<PaganReligion>PAGAN_RELIGION_KACHINA</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>APA</Identifier>
 			<Region>PLA</Region>
@@ -200,7 +199,7 @@
 			<Buildings>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
-					<BuildingType>BUILDING_KACHINA_PITHOUSE</BuildingType>	<!-- MacAurther TODO -->
+					<BuildingType>BUILDING_KACHINA_PITHOUSE</BuildingType>
 				</Building>
 			</Buildings>
 			<Units/>
@@ -247,7 +246,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ARAWAK</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>	<!-- MacAurther TODO -->
+			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>ARA</Identifier>
 			<Region>AMA</Region>
@@ -296,7 +295,7 @@
 			<Buildings>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
-					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>	<!-- MacAurther TODO -->
+					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -1070,6 +1069,101 @@
 			<DerivativeCiv>CIVILIZATION_SPAIN</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_SPAIN_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_SPAIN_ORDER</CivilizationActionSound>
+		</CivilizationInfo>
+		<CivilizationInfo>
+			<Type>CIVILIZATION_CSA</Type>
+			<Description>TXT_KEY_CIV_CSA_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_CSA_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_CSA_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_CSA_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_GRAY</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_CSA</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_BRITAIN</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_DRUIDISM</PaganReligion>
+			<Impact>IMPACT_SIGNIFICANT</Impact>
+			<Identifier>CSA</Identifier>
+			<Region>ANG</Region>
+			<CultureGroup>2</CultureGroup>
+			<StartingYear>0</StartingYear>
+			<!--<StartingYear>1860</StartingYear>-->
+			<LoadingTimes>
+				<LoadingTime>65</LoadingTime>
+				<LoadingTime>45</LoadingTime>
+				<LoadingTime>25</LoadingTime>
+			</LoadingTimes>
+			<Rating>
+				<Trade>3</Trade>
+				<Production>1</Production>
+				<Culture>2</Culture>
+				<Growth>4</Growth>
+				<Start>2</Start>
+			</Rating>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+			<Cities>
+				<City>Greenville</City>
+				<City>Clemson</City>
+				<City>Blacksburg</City>
+				<City>Clarksville</City>
+				<City>Owensboro</City>
+				<City>Winston-Salem</City>
+				<City>Poplar Bluff</City>
+				<City>Starkville</City>
+				<City>Vicksburg</City>
+				<City>College Station</City>
+				<City>Decatur</City>
+				<City>Tifton</City>
+				<City>Dothan</City>
+				<City>Brunswick</City>
+			</Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_DRUIDIC_NEMETON</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
+				</Building>
+			</Buildings>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
+					<UnitType>UNIT_CHATTLE_SLAVE</UnitType>
+				</Unit>
+			</Units>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs/>
+			<DisableTechs/>
+			<InitialCivics>
+				<CivicType>CIVIC_STRONGMAN</CivicType>
+				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
+				<CivicType>CIVIC_RURALISM</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE</CivicType>
+				<CivicType>CIVIC_REVOLUTION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT</CivicType>
+			</InitialCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_DAVIS</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>CIVILIZATION_AMERICA</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_AMERICA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_ENGLAND</Type>
@@ -3943,7 +4037,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TUPI</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>	<!-- MacAurther TODO -->
+			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>TUP</Identifier>
 			<Region>AMA</Region>
@@ -3985,7 +4079,7 @@
 			<Buildings>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
-					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>	<!-- MacAurther TODO -->
+					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -4831,30 +4925,21 @@
 				<City>Mound City</City>
 				<City>Snaketown</City>
 				<City>Spiro</City>
-				<City>Moundville</City>
 				<City>Nacogdoches</City>
 				<City>Nanih Waiya</City>
 				<City>Anhaica</City>
-				<City>Etowah</City>
 				<City>Ocmulgee</City>
-				<City>Kituhwa</City>
-				<City>Fort Ancient</City>
 				<City>Bawating</City>
 				<City>Acoma</City>
 				<City>Namb&#233;</City>
 				<City>Hovenweep</City>
-				<City>Casa Grande</City>
 				<City>Criel</City>
 				<City>Joara</City>
-				<City>Lake Jackson</City>
-				<City>Chota</City>
-				<City>Oneida</City>
 				<City>Logstown</City>
 				<City>Five Finger Ridge</City>
 				<City>Frijoles Canyon</City>
 				<City>Puye Cliff</City>
 				<City>Kiet Siel</City>
-				<City>Montezuma Castle</City>
 				<City>Wickliffe</City>
 				<City>Aztalan</City>
 				<City>Angel Mounds</City>

@@ -634,7 +634,7 @@ class Birth(object):
 			lRegionList = lEuropeanRevealed1600AD
 		elif civ(self.iPlayer) in [iAmerica, iHaiti, iArgentina, iMexico, iColombia, iPeru, iBrazil, iVenezuela]:
 			lRegionList = lEuropeanRevealed1750AD
-		elif civ(self.iPlayer) in [iCanada]:
+		elif civ(self.iPlayer) in [iCSA, iCanada]:
 			lRegionList = lEuropeanRevealed1850AD
 		
 		if lRegionList:

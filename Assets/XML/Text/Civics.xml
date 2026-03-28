@@ -886,11 +886,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_FEDERALISM_STRATEGY</Tag>
-		<English>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; double production towards meeting houses</English>
-		<French>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; double production towards meeting houses</French>
-		<German>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; double production towards meeting houses</German>
-		<Italian>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; double production towards meeting houses</Italian>
-		<Spanish>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; double production towards meeting houses</Spanish>
+		<English>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; faster production of Palace, Meeting Hall</English>
+		<French>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; faster production of Palace, Meeting Hall</French>
+		<German>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; faster production of Palace, Meeting Hall</German>
+		<Italian>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; faster production of Palace, Meeting Hall</Italian>
+		<Spanish>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; faster production of Palace, Meeting Hall</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CRAFTSMEN</Tag>
@@ -2035,11 +2035,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY_STRATEGY</Tag>
-		<English>Extra experience for land units; faster production of Palace, Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</English>
-		<French>Extra experience for land units; faster production of Palace, Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</French>
-		<German>Extra experience for land units; faster production of Palace, Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</German>
-		<Italian>Extra experience for land units; faster production of Palace, Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</Italian>
-		<Spanish>Extra experience for land units; faster production of Palace, Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</Spanish>
+		<English>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</English>
+		<French>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</French>
+		<German>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</German>
+		<Italian>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</Italian>
+		<Spanish>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY_HELP</Tag>
