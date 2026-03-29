@@ -218,7 +218,6 @@ def animalHunting(winningUnit, losingUnit):
 
 @handler("revolution")
 def validateSlaves(iPlayer):
-	print("player(iPlayer).canUseSlaves(): " + str(player(iPlayer).canUseSlaves())) # temp debug
 	if not player(iPlayer).canUseSlaves():
 		if player(iPlayer).getImprovementCount(iSlavePlantation) > 0:
 			for plot in plots.owner(iPlayer).where(lambda plot: plot.getImprovementType() == iSlavePlantation):

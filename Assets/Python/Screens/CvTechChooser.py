@@ -656,8 +656,8 @@ class CvTechChooser:
 						screen.addDDSGFCAt(szItem, szTechBox, player.getUnitButton(item), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_HELP_FREE_UNIT, item, tech, False)
 
 				# MacAurther: Tribe contact discount
-				elif TechInfo.getContactDiscount() != 0:
-					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CHEAP_CONTACT").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+				elif TechInfo.getGoodyBoost() != 0:
+					screen.addDDSGFCAt(szItem, szTechBox, CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_GOODY_BOOST").getPath(), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
 				
 				# MacAurther: Extra population on city founding
 				elif TechInfo.getExtraPop() != 0:

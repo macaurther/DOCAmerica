@@ -6333,7 +6333,7 @@ void CvTeam::processTech(TechTypes eTech, int iChange)
 			// MacAurther
 			GET_PLAYER((PlayerTypes)iI).changeExtraPop(GC.getTechInfo(eTech).getExtraPop() * iChange);
 			GET_PLAYER((PlayerTypes)iI).changeHomelandAccess(GC.getTechInfo(eTech).getHomelandAccess(), iChange);
-			GET_PLAYER((PlayerTypes)iI).changeContactDiscount(GC.getTechInfo(eTech).getContactDiscount() * iChange);
+			GET_PLAYER((PlayerTypes)iI).changeGoodyBoost(GC.getTechInfo(eTech).getGoodyBoost() * iChange);
 
 			GET_PLAYER((PlayerTypes)iI).changeAssets(GC.getTechInfo(eTech).getAssetValue() * iChange);
 			GET_PLAYER((PlayerTypes)iI).changePower(GC.getTechInfo(eTech).getPowerValue() * iChange);

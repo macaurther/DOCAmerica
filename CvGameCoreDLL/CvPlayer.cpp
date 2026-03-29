@@ -591,7 +591,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_eFreeTechChosen = NO_TECH;
 
 	m_iExtraPop = 0; // MacAurther
-	m_iContactDiscount = 0; // MacAurther
+	m_iGoodyBoost = 0; // MacAurther
 
 	m_eID = eID;
 	updateTeamType();
@@ -5409,12 +5409,11 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit) 
 		{
 			if (GC.getTechInfo((TechTypes) iI).isGoodyTech())
 			{
-				// MacAurther: You don't need to be able to research for goody techs in this mod! Huzzah
-				//if (canResearch((TechTypes)iI))
-				//{
-				bTechFound = true;
-				break;
-				//}
+				if (!GET_TEAM(getTeam()).isHasTech((TechTypes) iI)) // MacAurther: Don't check if can research, check if not already researched
+				{
+					bTechFound = true;
+					break;
+				}
 			}
 		}
 
@@ -5513,6 +5512,10 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 	iGold = GC.getGoodyInfo(eGoody).getGold() + GC.getGameINLINE().getSorenRandNum(GC.getGoodyInfo(eGoody).getGoldRand1(), "Goody Gold 1") + GC.getGameINLINE().getSorenRandNum(GC.getGoodyInfo(eGoody).getGoldRand2(), "Goody Gold 2");
 	iGold  = (iGold * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent()) / 100;
 
+	// MacAurther: Goody Boost (+50% Gold per boost)
+	iGold *= 2 + GET_PLAYER(pUnit->getOwner()).getGoodyBoost();
+	iGold /= 2;
+
 	if (iGold != 0)
 	{
 		changeGold(iGold);
@@ -5528,7 +5531,7 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 // BUG - Goody Hut Log - end
 	}
 
-	iRange = GC.getGoodyInfo(eGoody).getMapRange();
+	iRange = GC.getGoodyInfo(eGoody).getMapRange() + GET_PLAYER(pUnit->getOwner()).getGoodyBoost(); // MacAurther: Goody Boost
 
 	if (iRange > 0)
 	{
@@ -5591,7 +5594,7 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 
 	if (pUnit != NULL)
 	{
-		pUnit->changeExperience(GC.getGoodyInfo(eGoody).getExperience());
+		pUnit->changeExperience(GC.getGoodyInfo(eGoody).getExperience() + GET_PLAYER(pUnit->getOwner()).getGoodyBoost()); // MacAurther: Goody Boost
 	}
 
 	if (pUnit != NULL)
@@ -5608,13 +5611,15 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 		{
 			if (GC.getTechInfo((TechTypes) iI).isGoodyTech())
 			{
-				// MacAurther: Don't need to check if can research, just give the good tech
-				iValue = (1 + GC.getGameINLINE().getSorenRandNum(10000, "Goody Tech"));
-
-				if (iValue > iBestValue)
+				if (!GET_TEAM(getTeam()).isHasTech((TechTypes) iI)) // MacAurther: Don't check if can research, check if not already researched
 				{
-					iBestValue = iValue;
-					eBestTech = ((TechTypes)iI);
+					iValue = (1 + GC.getGameINLINE().getSorenRandNum(10000, "Goody Tech"));
+
+					if (iValue > iBestValue)
+					{
+						iBestValue = iValue;
+						eBestTech = ((TechTypes)iI);
+					}
 				}
 			}
 		}
@@ -5634,7 +5639,11 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 
 		if (eUnit != NO_UNIT)
 		{
-			initUnit(eUnit, pPlot->getX_INLINE(), pPlot->getY_INLINE());
+			// MacAurther: Goody Boost
+			for (int i = 0; i < 1 + GET_PLAYER(pUnit->getOwner()).getGoodyBoost(); i++)
+			{
+				initUnit(eUnit, pPlot->getX_INLINE(), pPlot->getY_INLINE());
+			}
 		}
 	}
 
@@ -7216,7 +7225,7 @@ int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 	// MacAurther: Tribe Contacting
 	if (eBuild == BUILD_CONTACT_TRIBE)
 	{
-		iCostReduction += getContactDiscount();
+		iCostReduction += getGoodyBoost();
 	}
 
 	iCost -= (iCost * iCostReduction) / 100;
@@ -18658,7 +18667,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	//m_eTeamType not saved
 	pStream->Read((int*)&m_eFreeTechChosen); // Leoreth
 	pStream->Read((int*)&m_iExtraPop); // MacAurther
-	pStream->Read((int*)&m_iContactDiscount); // MacAurther
+	pStream->Read((int*)&m_iGoodyBoost); // MacAurther
 	updateTeamType(); 
 	updateHuman();
 
@@ -19099,7 +19108,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	//m_eTeamType not saved
 	pStream->Write(m_eFreeTechChosen); // Leoreth
 	pStream->Write(m_iExtraPop); // MacAurther
-	pStream->Write(m_iContactDiscount); // MacAurther
+	pStream->Write(m_iGoodyBoost); // MacAurther
 
 	pStream->Write(NUM_YIELD_TYPES, m_aiSeaPlotYield);
 	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRateModifier);
@@ -25752,12 +25761,12 @@ bool CvPlayer::getHomelandAccess(int iHomeland) const
 	return m_aiHomelandAccess[iHomeland] > 0;
 }
 
-void CvPlayer::changeContactDiscount(int iChange)
+void CvPlayer::changeGoodyBoost(int iChange)
 {
-	m_iContactDiscount += iChange;
+	m_iGoodyBoost += iChange;
 }
 
-int CvPlayer::getContactDiscount() const
+int CvPlayer::getGoodyBoost() const
 {
-	return m_iContactDiscount;
+	return m_iGoodyBoost;
 }

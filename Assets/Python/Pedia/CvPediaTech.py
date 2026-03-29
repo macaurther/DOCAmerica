@@ -320,8 +320,8 @@ class CvPediaTech(CvPediaScreen.CvPediaScreen):
 				screen.attachImageButton(panel, "", gc.getBonusInfo(j).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_OBSOLETE_BONUS, j, 1, False)
 		
 		# MacAurther: Tribe contact discount
-		if TechInfo.getContactDiscount() != 0:
-			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CHEAP_CONTACT").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
+		if TechInfo.getGoodyBoost() != 0:
+			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_GOODY_BOOST").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 		
 		# MacAurther: Extra population on city founding
 		elif TechInfo.getExtraPop() != 0:

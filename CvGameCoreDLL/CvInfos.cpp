@@ -1252,7 +1252,7 @@ m_iPowerValue(0),
 m_iCultureGroup(NO_CULTURE_GROUP),
 m_iExtraPop(0),
 m_iHomelandAccess(NO_HOMELAND),
-m_iContactDiscount(0),
+m_iGoodyBoost(0),
 m_iGridX(0),
 m_iGridY(0),
 m_bRepeat(false),
@@ -1395,9 +1395,9 @@ int CvTechInfo::getHomelandAccess() const
 	return m_iHomelandAccess;
 }
 
-int CvTechInfo::getContactDiscount() const
+int CvTechInfo::getGoodyBoost() const
 {
-	return m_iContactDiscount;
+	return m_iGoodyBoost;
 }
 
 int CvTechInfo::getGridX() const
@@ -1597,7 +1597,7 @@ void CvTechInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iCultureGroup);
 	stream->Read(&m_iExtraPop);
 	stream->Read(&m_iHomelandAccess);
-	stream->Read(&m_iContactDiscount);
+	stream->Read(&m_iGoodyBoost);
 	stream->Read(&m_bRepeat);
 	stream->Read(&m_bTrade);
 	stream->Read(&m_bDisable);
@@ -1675,7 +1675,7 @@ void CvTechInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iCultureGroup);
 	stream->Write(m_iExtraPop);
 	stream->Write(m_iHomelandAccess);
-	stream->Write(m_iContactDiscount);
+	stream->Write(m_iGoodyBoost);
 	stream->Write(m_bRepeat);
 	stream->Write(m_bTrade);
 	stream->Write(m_bDisable);
@@ -1744,7 +1744,7 @@ bool CvTechInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iCultureGroup, "iCultureGroup");	// MacAurther
 	pXML->GetChildXmlValByName(&m_iExtraPop, "iExtraPop");	// MacAurther
 	pXML->GetChildXmlValByName(&m_iHomelandAccess, "iHomelandAccess");	// MacAurther
-	pXML->GetChildXmlValByName(&m_iContactDiscount, "iContactDiscount");	// MacAurther
+	pXML->GetChildXmlValByName(&m_iGoodyBoost, "iGoodyBoost");	// MacAurther
 	pXML->GetChildXmlValByName(&m_bRepeat, "bRepeat");
 	pXML->GetChildXmlValByName(&m_bTrade, "bTrade");
 	pXML->GetChildXmlValByName(&m_bDisable, "bDisable");

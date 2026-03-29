@@ -8671,7 +8671,7 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>3</iCombat>
+			<iCombat>5</iCombat>
 			<iCombatLimit>50</iCombatLimit>
 			<iAirCombat>8</iAirCombat>
 			<iAirCombatLimit>50</iAirCombatLimit>
@@ -8778,7 +8778,7 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>5</iCombat>
+			<iCombat>8</iCombat>
 			<iCombatLimit>50</iCombatLimit>
 			<iAirCombat>10</iAirCombat>
 			<iAirCombatLimit>50</iAirCombatLimit>

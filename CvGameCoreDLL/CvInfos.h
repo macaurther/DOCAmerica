@@ -337,7 +337,7 @@ public:
 	int getCultureGroup() const;						// Exposed to Python
 	int getExtraPop() const;						// Exposed to Python
 	int getHomelandAccess() const;						// Exposed to Python
-	int getContactDiscount() const;						// Exposed to Python
+	int getGoodyBoost() const;						// Exposed to Python
 
 	int getGridX() const;									// Exposed to Python
 	int getGridY() const;									// Exposed to Python
@@ -408,7 +408,7 @@ protected:
 	int m_iCultureGroup; // MacAurther
 	int m_iExtraPop; // MacAurther
 	int m_iHomelandAccess; // MacAurther
-	int m_iContactDiscount; // MacAurther
+	int m_iGoodyBoost; // MacAurther
 
 	int m_iGridX;
 	int m_iGridY;

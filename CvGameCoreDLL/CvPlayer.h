@@ -1408,8 +1408,8 @@ public:
 	int getExtraPop() const;
 	void changeHomelandAccess(int eHomeland, int iChange);
 	bool getHomelandAccess(int iHomeland) const;
-	void changeContactDiscount(int iChange);
-	int getContactDiscount() const;
+	void changeGoodyBoost(int iChange);
+	int getGoodyBoost() const;
 
 protected:
 
@@ -1597,7 +1597,7 @@ protected:
 	TechTypes m_eFreeTechChosen; // Leoreth
 
 	int m_iExtraPop; // MacAurther
-	int m_iContactDiscount; // MacAurther
+	int m_iGoodyBoost; // MacAurther
 
 	int* m_aiSeaPlotYield;
 	int* m_aiYieldRateModifier;
