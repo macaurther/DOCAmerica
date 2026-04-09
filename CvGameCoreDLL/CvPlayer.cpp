@@ -5635,15 +5635,61 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 
 	if (GC.getGoodyInfo(eGoody).getUnitClassType() != NO_UNITCLASS)
 	{
-		eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getGoodyInfo(eGoody).getUnitClassType());
+		// MacAurther: Goody Boost
+		UnitClassTypes eUnitClass = (UnitClassTypes)GC.getGoodyInfo(eGoody).getUnitClassType();
+		int iGoodyBoost = GET_PLAYER(pUnit->getOwner()).getGoodyBoost();
+		// Give better units the more goody boost a player has
+		if (eUnitClass == UNITCLASS_WORKER)
+		{
+			switch (iGoodyBoost)
+			{
+			case 0:
+				eUnitClass = UNITCLASS_SLAVE;
+				break;
+			case 1:
+				eUnitClass = UNITCLASS_WORKER;
+				break;
+			case 2:
+				eUnitClass = UNITCLASS_SETTLER;
+				break;
+			}
+		}
+		else if (eUnitClass == UNITCLASS_WORKER)
+		{
+			switch (iGoodyBoost)
+			{
+			case 0:
+				eUnitClass = UNITCLASS_LONGBOWMAN;
+				break;
+			case 1:
+				eUnitClass = UNITCLASS_ARQUEBUSIER;
+				break;
+			case 2:
+				eUnitClass = UNITCLASS_CUIRASSIER;
+				break;
+			}
+		}
+		else if (eUnitClass == UNITCLASS_SCOUT)
+		{
+			switch (iGoodyBoost)
+			{
+			case 0:
+				eUnitClass = UNITCLASS_SCOUT;
+				break;
+			case 1:
+				eUnitClass = UNITCLASS_EXPLORER;
+				break;
+			case 2:
+				eUnitClass = UNITCLASS_RANGER;
+				break;
+			}
+		}
+
+		eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass);
 
 		if (eUnit != NO_UNIT)
 		{
-			// MacAurther: Goody Boost
-			for (int i = 0; i < 1 + GET_PLAYER(pUnit->getOwner()).getGoodyBoost(); i++)
-			{
-				initUnit(eUnit, pPlot->getX_INLINE(), pPlot->getY_INLINE());
-			}
+			initUnit(eUnit, pPlot->getX_INLINE(), pPlot->getY_INLINE());
 		}
 	}
 
@@ -11628,6 +11674,7 @@ void CvPlayer::setAlive(bool bNewValue, bool bTurnActive)
 			clearResearchQueue();
 			killUnits();
 			killCities();
+			killForts();
 			killAllDeals();
 
 			setTurnActive(false);
@@ -25658,6 +25705,22 @@ int CvPlayer::getModifiedCommerceRateTimes100(CommerceTypes eCommerce) const
 int CvPlayer::getModifiedCommerceRate(CommerceTypes eCommerce) const
 {
 	return getModifiedCommerceRateTimes100(eCommerce) / 100;
+}
+
+void CvPlayer::killForts()
+{
+	CvPlot* pLoopPlot;
+	int iI;
+
+	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	{
+		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+
+		if (pLoopPlot->getFortOwner() == getID())
+		{
+			pLoopPlot->setImprovementType(NO_IMPROVEMENT);
+		}
+	}
 }
 
 void CvPlayer::setImmigrationTutorial(bool bNewValue)

@@ -324,7 +324,10 @@ class ImmigrationUtils:
 		
 		# Convert earned Immigrants into other units
 		for iHomeland in lHomelands:
-			self.computerPlayerConvertImmigrants(iPlayer, iHomeland)
+			self.computerPlayerHireImmigrants(iPlayer, iHomeland)
+			if iHomeland == iHomelandAfrica:
+				self.computerPlayerHireSlaves(iPlayer)
+
 		
 		# Load waiting units
 		for iHomeland in lHomelands:
@@ -339,7 +342,7 @@ class ImmigrationUtils:
 						if self.getNumImmigrants(iPlayer, iHomeland, int(sUnit)) > 0:
 							print(data.civs[civ(iPlayer)].dEarnedUnits[iHomeland][sUnit].getImmigrantTitle())
 
-	def computerPlayerConvertImmigrants(self, iPlayer, iHomeland):
+	def computerPlayerHireImmigrants(self, iPlayer, iHomeland):
 		# Priority: Settlers, Workers, then Missionaries
 		# Try to hire, if didn't work, just continue on
 		if self.computerPlayerWantsSettlers(iPlayer):
@@ -348,6 +351,10 @@ class ImmigrationUtils:
 			self.hireMercenary(unique_unit(iPlayer, iWorker), iPlayer, iHomeland, bPay=True)
 		if self.computerPlayerWantsMissionaries(iPlayer):
 			self.hireMercenary(unique_unit(iPlayer, missionary(player(iPlayer).getStateReligion())), iPlayer, iHomeland, bPay=True)
+	
+	def computerPlayerHireSlaves(self, iPlayer):
+		if self.computerPlayerWantsSlaves(iPlayer):
+			self.hireMercenary(unique_unit(iPlayer, iChattleSlave), iPlayer, iHomelandAfrica, bPay=True)
 
 	def computerPlayerLoadHomeland(self, iPlayer, iHomeland):
 		for sUnit in data.civs[civ(iPlayer)].dEarnedUnits[iHomeland].keys():
@@ -391,6 +398,15 @@ class ImmigrationUtils:
 			if gc.getUnitInfo(unit.getUnitType()).getReligionSpreads(player(iPlayer).getStateReligion()) > 0:
 				return False
 		return True
+	
+	def computerPlayerWantsSlaves(self, iPlayer):
+		# Doesn't want if can't buy
+		if not player(iPlayer).canBuySlaves():
+			return False
+		# Use baked in method
+		if player(iPlayer).countRequiredSlaves() > 0:
+			return True
+		return False
 	
 	def computerGetNumImmigrantsToTransport(self, iPlayer, iHomeland):
 		bWantsImmigrants = self.computerPlayerWantsImmigrants(iPlayer)

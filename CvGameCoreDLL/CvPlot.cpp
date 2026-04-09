@@ -6465,10 +6465,9 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 			 (NO_IMPROVEMENT != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity()) )
 		{
 			updatePlotGroup();
-			
-			// MacAurther: Disabling culture cost updates because it causes HUGE lag spikes in late game with forts/tribes around multiple cities.
+
 			// Leoreth: update culture costs
-			/*CvPlot* pLoopPlot;
+			CvPlot* pLoopPlot;
 			for (int iI = 0; iI < NUM_CITY_PLOTS_3; iI++)
 			{
 				pLoopPlot = plotCity3(getX(), getY(), iI);
@@ -6478,7 +6477,7 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 					pLoopPlot->getPlotCity()->updateCultureCosts();
 					pLoopPlot->getPlotCity()->updateCoveredPlots(true);
 				}
-			}*/
+			}
 		}
 
 		if (NO_IMPROVEMENT != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity())
@@ -6501,7 +6500,7 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 		// MacAurther: Tribes - update culture
 		if (eOldImprovement == IMPROVEMENT_TRIBE || eOldImprovement == IMPROVEMENT_CONTACTED_TRIBE || eNewValue == IMPROVEMENT_TRIBE || eNewValue == IMPROVEMENT_CONTACTED_TRIBE)
 		{
-			updateCulture(false, false);	// here
+			updateCulture(false, false);
 			// Remove any stored units
 			if (eOldImprovement == IMPROVEMENT_TRIBE || eOldImprovement == IMPROVEMENT_CONTACTED_TRIBE)
 			{

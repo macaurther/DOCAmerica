@@ -31,7 +31,14 @@ typedef list<char*> LISTCHAR;
 
 #define UNITCLASS_SETTLER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SETTLER"))					// MacAurther
 #define UNITCLASS_PIONEER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_PIONEER"))					// MacAurther
+#define UNITCLASS_WORKER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_WORKER"))					// MacAurther
 #define UNITCLASS_SLAVE			  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE"))						// MacAurther
+#define UNITCLASS_LONGBOWMAN      ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_LONGBOWMAN"))					// MacAurther
+#define UNITCLASS_ARQUEBUSIER     ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_ARQUEBUSIER"))				// MacAurther
+#define UNITCLASS_CUIRASSIER      ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_CUIRASSIER"))					// MacAurther
+#define UNITCLASS_SCOUT   		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SCOUT"))				    	// MacAurther
+#define UNITCLASS_EXPLORER 		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_EXPLORER"))			    	// MacAurther
+#define UNITCLASS_RANGER   		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_RANGER"))				    	// MacAurther
 #define UNITCLASS_GREAT_STATESMAN ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_GREAT_STATESMAN"))			// MacAurther
 
 #define ESPIONAGEMISSION_DEFECT   ((EspionageMissionTypes)GC.getInfoTypeForString("ESPIONAGEMISSION_DEFECT"))		// MacAurther

@@ -890,9 +890,8 @@ dCivGroupRegions = {
 # Revealed Tile Lists
 lInuitRevealedTiles = [rBeringS]
 lInuitRevealedTilesAI = [rBeringS, rArcticO, rNorthwestPassage, rHudsonB, rAlaska, rYukon, rNunavut, rGreenland]
-lEuropeanRevealed1600AD = [rIceland, rNewFoundland, rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain, rFlorida, rBajio, \
-                           rVeracruz, rOaxaca, rYucatan, rMesoamerica, rCaribbean, rColombia, rEcuador, rVenezuela, rGuyana, rPeru, \
-                           rMinasGerais, rParana, rChile, rUruguay, rPampas, rPatagonia, rBaffinB, rLabradorS, rNorthAtlanticO, rGOfMexico, 
+lEuropeanRevealed1600AD = [rIceland, rNewFoundland, rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain, rFlorida, rVeracruz, rOaxaca, rYucatan, \
+                           rMesoamerica, rCaribbean, rGuyana, rMinasGerais, rUruguay, rPatagonia, rBaffinB, rLabradorS, rNorthAtlanticO, rGOfMexico, \
                            rCaribbeanS, rSouthAtlanticO, rAtlanticO]
 lEuropeanRevealed1750AD = [rGreenland, rIceland, rOntario, rQuebec, rNewFoundland, rCalifornia, rTexas, rGreatLakes, rNewEngland, rMidAtlantic, \
                            rMaryland, rAppalachia, rCoastalPlain, rDeepSouth, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, rOaxaca, \

@@ -344,6 +344,8 @@ def warnFlipPlots(pPlot, pUnit, pOldPlot):
 	
 	# Find the civs that are going to spawn in the next 50 (TBR) years
 	for iCiv in dBirthArea.keys():
+		if iCiv == civ(pUnit.getOwner()):
+			continue
 		if 0 <= year(dBirth[iCiv]) - year() <= 50:
 			for plot in plots.rectangle(dBirthArea[iCiv]):
 				if pPlot.getX() == plot.getX() and pPlot.getY() == plot.getY():

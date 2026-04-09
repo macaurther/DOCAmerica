@@ -324,6 +324,7 @@ public:
 	int getGoldPerTurn() const;																																						// Exposed to Python
 
 	// MacAurther
+	void killForts();
 	void immigrationTutorial(CvWString szText = "", bool bFront = false); // MacAurther
 
 	DllExport int getImmigration() const;																																				// Exposed to Python
@@ -1303,10 +1304,9 @@ public:
 	int countVassalCities() const;
 	int countCoastalCities() const;
 	int countHappinessBonuses() const;
-	int countSlaveCities() const;
-	int countRequiredSlaves() const;
+	int countRequiredSlaves() const;											// Exposed to Python
 	CvCity* findSlaveCity() const;
-	bool canBuySlaves() const;
+	bool canBuySlaves() const;											// Exposed to Python
 
 	bool isTolerating(ReligionTypes eReligion) const;
 	bool isDistantSpread(const CvCity* pCity, ReligionTypes eReligion) const;
@@ -1356,7 +1356,7 @@ public:
 
 	void restoreGeneralThreshold();
 
-	bool canUseSlaves() const;
+	bool canUseSlaves() const;											// Exposed to Python
 
 	void updateCultureRanks() const;
 	void updateCultureRanks(CvPlotGroup* pPlotGroup) const;

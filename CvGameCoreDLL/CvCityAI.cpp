@@ -9494,7 +9494,7 @@ int CvCityAI::AI_getCityImportance(bool bEconomy, bool bMilitary)
 	//  tldr this forces AI to give tile priority to Mexico City
 	if(bEconomy && getX() == MEXICO_CITY_X && getY() == MEXICO_CITY_Y)
 	{
-		iValue + 500;
+		iValue += 500;
 	}
 
     return iValue;

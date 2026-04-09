@@ -167,24 +167,24 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Tag>
-		<English>Can buy Slaves; city slave cap is quadrupled</English>
-		<French>Can buy Slaves; city slave cap is quadrupled</French>
-		<German>Can buy Slaves; city slave cap is quadrupled</German>
-		<Italian>Can buy Slaves; city slave cap is quadrupled</Italian>
-		<Spanish>Can buy Slaves; city slave cap is quadrupled</Spanish>
+		<English>Can train Slaves; city slave cap is quadrupled</English>
+		<French>Can train Slaves; city slave cap is quadrupled</French>
+		<German>Can train Slaves; city slave cap is quadrupled</German>
+		<Italian>Can train Slaves; city slave cap is quadrupled</Italian>
+		<Spanish>Can train Slaves; city slave cap is quadrupled</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SLAVERY_HELP</Tag>
-		<English>[ICON_BULLET]+300% city slave cap
-[ICON_BULLET]Can buy Slaves from Africa</English>
-		<French>[ICON_BULLET]+300% city slave cap
-[ICON_BULLET]Can buy Slaves from Africa</French>
-		<German>[ICON_BULLET]+300% city slave cap
-[ICON_BULLET]Can buy Slaves from Africa</German>
-		<Italian>[ICON_BULLET]+300% city slave cap
-[ICON_BULLET]Can buy Slaves from Africa</Italian>
-		<Spanish>[ICON_BULLET]+300% city slave cap
-[ICON_BULLET]Can buy Slaves from Africa</Spanish>
+		<English>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]+300% city slave cap</English>
+		<French>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]+300% city slave cap</French>
+		<German>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]+300% city slave cap</German>
+		<Italian>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]+300% city slave cap</Italian>
+		<Spanish>[ICON_BULLET]Can train Slaves
+[ICON_BULLET]+300% city slave cap</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CHIEF</Tag>
@@ -1198,11 +1198,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HARMONY_STRATEGY</Tag>
-		<English>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</English>
-		<French>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</French>
-		<German>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</German>
-		<Italian>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</Italian>
-		<Spanish>Extra [ICON_HEALTH] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</Spanish>
+		<English>Extra [ICON_HEALTHY] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</English>
+		<French>Extra [ICON_HEALTHY] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</French>
+		<German>Extra [ICON_HEALTHY] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</German>
+		<Italian>Extra [ICON_HEALTHY] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</Italian>
+		<Spanish>Extra [ICON_HEALTHY] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HARMONY_HELP</Tag>
@@ -2139,28 +2139,23 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_BONDAGE_STRATEGY</Tag>
-		<English>Can buy Slaves; city slave cap is quadrupled</English>
-		<French>Can buy Slaves; city slave cap is quadrupled</French>
-		<German>Can buy Slaves; city slave cap is quadrupled</German>
-		<Italian>Can buy Slaves; city slave cap is quadrupled</Italian>
-		<Spanish>Can buy Slaves; city slave cap is quadrupled</Spanish>
+		<English>Can train Slaves; city slave cap is quadrupled</English>
+		<French>Can train Slaves; city slave cap is quadrupled</French>
+		<German>Can train Slaves; city slave cap is quadrupled</German>
+		<Italian>Can train Slaves; city slave cap is quadrupled</Italian>
+		<Spanish>Can train Slaves; city slave cap is quadrupled</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_BONDAGE_HELP</Tag>
 		<English>[ICON_BULLET]Can train Slaves
-[ICON_BULLET]Can buy Slaves from Africa
 [ICON_BULLET]+300% city slave cap</English>
 		<French>[ICON_BULLET]Can train Slaves
-[ICON_BULLET]Can buy Slaves from Africa
 [ICON_BULLET]+300% city slave cap</French>
 		<German>[ICON_BULLET]Can train Slaves
-[ICON_BULLET]Can buy Slaves from Africa
 [ICON_BULLET]+300% city slave cap</German>
 		<Italian>[ICON_BULLET]Can train Slaves
-[ICON_BULLET]Can buy Slaves from Africa
 [ICON_BULLET]+300% city slave cap</Italian>
 		<Spanish>[ICON_BULLET]Can train Slaves
-[ICON_BULLET]Can buy Slaves from Africa
 [ICON_BULLET]+300% city slave cap</Spanish>
 	</TEXT>
 	<TEXT>
