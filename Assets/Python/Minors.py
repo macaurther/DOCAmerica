@@ -502,14 +502,11 @@ class Barbarians(object):
 		
 		message(active(), self.SPAWN_NOTIFICATIONS[self.pattern], adjective_text, iColor=iRed, button=unit.getButton(), location=plot)
 
-# MacAurther TODO: Flush this out
 minor_cities = [
 	MinorCity(450, iIndigenous, (46, 33), "Nanasqa", iPopulation=1, iCiv=iTiwanaku, units={iDefend: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_NAZCAN"),			# Nazca
 	MinorCity(950, iIndigenous, (49, 18), "Mapuches", iPopulation=1, iCiv=iInca, units={iDefend: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MAPUCHE"),			# Mapuche
-	MinorCity(1836, iIndependent2, (29, 76), "Houston", iPopulation=3, iCiv=iAmerica, units={iDefend: 4}, iCulture=25, adjective="TXT_KEY_ADJECTIVE_TEXAN"),	# Republic of Texas
 ]
 
-# MacAurther TODO: Flush this out
 barbarians = [
 	Barbarians(1650, 1800, {iPrivateer: 1}, ((39, 63), (66, 71)), 10, PIRATES),
 ]
