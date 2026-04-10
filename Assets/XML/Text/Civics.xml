@@ -600,11 +600,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ADMIRALTY_HELP</Tag>
-		<English>[ICON_BULLET]-50% [ICON_GOLD] required to hire naval Mercenaries</English>
-		<French>[ICON_BULLET]-50% [ICON_GOLD] required to hire naval Mercenaries</French>
-		<German>[ICON_BULLET]-50% [ICON_GOLD] required to hire naval Mercenaries</German>
-		<Italian>[ICON_BULLET]-50% [ICON_GOLD] required to hire naval Mercenaries</Italian>
-		<Spanish>[ICON_BULLET]-50% [ICON_GOLD] required to hire naval Mercenaries</Spanish>
+		<English>[ICON_BULLET]-25% [ICON_GOLD] required to hire naval Mercenaries</English>
+		<French>[ICON_BULLET]-25% [ICON_GOLD] required to hire naval Mercenaries</French>
+		<German>[ICON_BULLET]-25% [ICON_GOLD] required to hire naval Mercenaries</German>
+		<Italian>[ICON_BULLET]-25% [ICON_GOLD] required to hire naval Mercenaries</Italian>
+		<Spanish>[ICON_BULLET]-25% [ICON_GOLD] required to hire naval Mercenaries</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROPRIETORS</Tag>
@@ -625,15 +625,15 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROPRIETORS_HELP</Tag>
 		<English>[ICON_BULLET]Mercenaries do not cost additional upkeep
-[ICON_BULLET]-50% [ICON_GOLD] required to hire land Mercenaries</English>
+[ICON_BULLET]-25% [ICON_GOLD] required to hire land Mercenaries</English>
 		<French>[ICON_BULLET]Mercenaries do not cost additional upkeep
-[ICON_BULLET]-50% [ICON_GOLD] required to hire land Mercenaries</French>
+[ICON_BULLET]-25% [ICON_GOLD] required to hire land Mercenaries</French>
 		<German>[ICON_BULLET]Mercenaries do not cost additional upkeep
-[ICON_BULLET]-50% [ICON_GOLD] required to hire land Mercenaries</German>
+[ICON_BULLET]-25% [ICON_GOLD] required to hire land Mercenaries</German>
 		<Italian>[ICON_BULLET]Mercenaries do not cost additional upkeep
-[ICON_BULLET]-50% [ICON_GOLD] required to hire land Mercenaries</Italian>
+[ICON_BULLET]-25% [ICON_GOLD] required to hire land Mercenaries</Italian>
 		<Spanish>[ICON_BULLET]Mercenaries do not cost additional upkeep
-[ICON_BULLET]-50% [ICON_GOLD] required to hire land Mercenaries</Spanish>
+[ICON_BULLET]-25% [ICON_GOLD] required to hire land Mercenaries</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRIBAL_CONFEDERACY</Tag>

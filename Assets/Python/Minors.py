@@ -511,7 +511,7 @@ minor_cities = [
 
 # MacAurther TODO: Flush this out
 barbarians = [
-	Barbarians(1600, 1800, {iPrivateer: 1}, ((39, 63), (66, 71)), 5, PIRATES),
+	Barbarians(1650, 1800, {iPrivateer: 1}, ((39, 63), (66, 71)), 10, PIRATES),
 ]
 
 

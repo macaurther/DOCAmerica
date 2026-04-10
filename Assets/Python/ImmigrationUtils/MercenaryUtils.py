@@ -177,9 +177,11 @@ class Mercenary:
 		if bIndenturedServitude and self.iUnitID in [iWorker, iPromyshlenniki, iLaborer]: iImmigrationCost -= 1
 		if civ(iPlayer) == iNorse and self.iUnitID == iSettler: iImmigrationCost -= 1	# Norse UP
 		if bProprietaries and self.getUnitInfo().getUnitCombatType() != UnitCombatTypes.NO_UNITCOMBAT and self.getUnitInfo().getDomainType() == DomainTypes.DOMAIN_LAND:
-			iGoldCost /= 2
+			iGoldCost *= 3
+			iGoldCost /= 4
 		if bAdmiralty and self.getUnitInfo().getDomainType() == DomainTypes.DOMAIN_SEA:
-			iGoldCost /= 2
+			iGoldCost *= 3
+			iGoldCost /= 4
 		
 		return (iImmigrationCost, iGoldCost)
 			

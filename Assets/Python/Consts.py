@@ -1080,7 +1080,7 @@ iCarrier : 				[(1935, iEndDate), 	lHomelandsEuropePlus],
 iFrigate : 				[(1700, 1850), 		lHomelandsEuropePlus],
 iIronclad : 			[(1850, 1910), 		lHomelandsEuropePlus],
 iDestroyer : 			[(1910, iEndDate), 	lHomelandsEuropePlus],
-iPrivateer : 			[(1550, 1750), 		lHomelandsEurope],
+iPrivateer : 			[(1630, 1750), 		lHomelandsEurope],		# Has to be after the Dutch spawn or else England can be cheeky
 iSubmarine : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
 iShipOfTheLine : 		[(1750, 1900), 		lHomelandsEuropePlus],
 iManOfWar : 			[(1750, 1875), 		[iHomelandNorthEurope]],

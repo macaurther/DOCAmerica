@@ -14412,7 +14412,7 @@ int CvUnit::getOriginalArtStyle() const
 				return GC.getCivilizationInfo(PORTUGAL).getUnitArtStyleType();
 		}
 	}
-	else
+	else	// Independent Natives
 	{
 		switch (getOriginalRegion())
 		{
