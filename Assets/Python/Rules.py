@@ -154,8 +154,6 @@ def extraImmigrationOnFound(city):
 		player(city.getOwner()).changeImmigration(iSettleImmigration)
 
 ### CITY GIFTED ###
-
-
 @handler("cityGifted")
 def giftedCityDefenders(city):
 	if not player(city).isHuman():
@@ -163,6 +161,12 @@ def giftedCityDefenders(city):
 		createGarrisons(city, city.getOwner(), iNumDefenders)
 
 ### GOODY RECEIVED ###
+@handler("goodyReceived")
+# Assimilation Civic
+def assimilationAbility(iPlayer, pPlot, pUnit, iGood):
+	iExpansionCivic = player(iPlayer).getCivics(iCivicsExpansion)
+	if iExpansionCivic in [iAssimilation]:
+		makeUnits(iPlayer, iImmigrant, pPlot, 1)
 
 
 

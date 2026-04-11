@@ -69,14 +69,11 @@ class ImmigrationUtils:
 		# Civics
 		if iPlayer == -1:
 			bPenalColony = False
-			bDecolonization = False
 		else:
 			# Get the actual current player object
 			civics = Civics.player(iPlayer)
 			bPenalColony = iPenalColony in civics
-			bDecolonization = iDecolonization in civics
 		if bPenalColony: iModifier -= 50
-		if bDecolonization: iModifier += 25
 
 		# England UP:
 		if civ(iPlayer) == iEngland and iHomeland == iHomelandNorthEurope:

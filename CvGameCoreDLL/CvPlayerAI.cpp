@@ -10826,6 +10826,19 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		break;
 	case CIVIC_HARMONY:
 		iValue += (int)hasCivic(CIVIC_NOMADIC) * 15;
+		// Make certain AIs force-run Harmony
+		switch (getCivilizationType())
+		{
+		case HAUDENOSAUNEE:
+		case ARAWAK:
+		case TUPI:
+		case CHEROKEE:
+		case APACHE:
+		case LAKOTA:
+		case INUIT:
+			iValue += 500;
+			break;
+		}
 		break;
 	case CIVIC_INDENTURED_SERVITUDE:
 	case CIVIC_IMMIGRANT_LABOR:

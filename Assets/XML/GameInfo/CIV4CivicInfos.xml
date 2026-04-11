@@ -1706,6 +1706,7 @@
 			<Description>TXT_KEY_CIVIC_IMPERIALISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_IMPERIALISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_IMPERIALISM_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_IMPERIALISM_HELP</Help>
 			<TechPrereq>TECH_GUNPOWDER</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Imperialism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -2672,6 +2673,7 @@
 			<Description>TXT_KEY_CIVIC_ASSIMILATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_ASSIMILATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ASSIMILATION_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_ASSIMILATION_HELP</Help>
 			<TechPrereq>TECH_ACADEMIA</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Assimilation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -2706,7 +2708,6 @@
 			<Button>,Art/Interface/Buttons/Civics/ManifestDestiny.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
-			<iOccupationTimeChange>-6</iOccupationTimeChange>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
@@ -2740,6 +2741,7 @@
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iExpInBorderModifier>100</iExpInBorderModifier>
+			<iOccupationTimeChange>-6</iOccupationTimeChange>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>

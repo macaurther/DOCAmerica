@@ -91,19 +91,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DECOLONIZATION_STRATEGY</Tag>
-		<English>Increased [ICON_CULTURE] in all cities; increased cost to hire Immigrants; extra XP within borders</English>
-		<French>Increased [ICON_CULTURE] in all cities; increased cost to hire Immigrants; extra XP within borders</French>
-		<German>Increased [ICON_CULTURE] in all cities; increased cost to hire Immigrants; extra XP within borders</German>
-		<Italian>Increased [ICON_CULTURE] in all cities; increased cost to hire Immigrants; extra XP within borders</Italian>
-		<Spanish>Increased [ICON_CULTURE] in all cities; increased cost to hire Immigrants; extra XP within borders</Spanish>
+		<English>Increased [ICON_CULTURE] in all cities; increased cost to hire Immigrants; extra XP within borders; greatly reduced unrest on city conquest</English>
+		<French>Increased [ICON_CULTURE] in all cities; increased cost to hire Immigrants; extra XP within borders; greatly reduced unrest on city conquest</French>
+		<German>Increased [ICON_CULTURE] in all cities; increased cost to hire Immigrants; extra XP within borders; greatly reduced unrest on city conquest</German>
+		<Italian>Increased [ICON_CULTURE] in all cities; increased cost to hire Immigrants; extra XP within borders; greatly reduced unrest on city conquest</Italian>
+		<Spanish>Increased [ICON_CULTURE] in all cities; increased cost to hire Immigrants; extra XP within borders; greatly reduced unrest on city conquest</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DECOLONIZATION_HELP</Tag>
-		<English>[ICON_BULLET]+25%[ICON_IMMIGRATION] required to hire immigrants</English>
-		<French>[ICON_BULLET]+25%[ICON_IMMIGRATION] required to hire immigrants</French>
-		<German>[ICON_BULLET]+25%[ICON_IMMIGRATION] required to hire immigrants</German>
-		<Italian>[ICON_BULLET]+25%[ICON_IMMIGRATION] required to hire immigrants</Italian>
-		<Spanish>[ICON_BULLET]+25%[ICON_IMMIGRATION] required to hire immigrants</Spanish>
+		<English>[ICON_BULLET]+1[ICON_IMMIGRANT] required to hire immigrants</English>
+		<French>[ICON_BULLET]+1[ICON_IMMIGRANT] required to hire immigrants</French>
+		<German>[ICON_BULLET]+1[ICON_IMMIGRANT] required to hire immigrants</German>
+		<Italian>[ICON_BULLET]+1[ICON_IMMIGRANT] required to hire immigrants</Italian>
+		<Spanish>[ICON_BULLET]+1[ICON_IMMIGRANT] required to hire immigrants</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INTERVENTION</Tag>
@@ -2034,6 +2034,14 @@
 		<Spanish>Extra [ICON_FOOD] from state religion buildings; spies can bribe Indigenous units</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ASSIMILATION_HELP</Tag>
+		<English>[ICON_BULLET]Receive an Immigrant when contacting Tribes</English>
+		<French>[ICON_BULLET]Receive an Immigrant when contacting Tribes</French>
+		<German>[ICON_BULLET]Receive an Immigrant when contacting Tribes</German>
+		<Italian>[ICON_BULLET]Receive an Immigrant when contacting Tribes</Italian>
+		<Spanish>[ICON_BULLET]Receive an Immigrant when contacting Tribes</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY</Tag>
 		<English>Manifest Destiny</English>
 		<French>Manifest Destiny</French>
@@ -2043,19 +2051,24 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY_STRATEGY</Tag>
-		<English>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</English>
-		<French>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</French>
-		<German>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</German>
-		<Italian>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</Italian>
-		<Spanish>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; greatly reduced unrest on city conquest</Spanish>
+		<English>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; no stability loss on razing native cities</English>
+		<French>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; no stability loss on razing native cities</French>
+		<German>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; no stability loss on razing native cities</German>
+		<Italian>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; no stability loss on razing native cities</Italian>
+		<Spanish>Extra experience for land units; faster production of Barracks, Magazine, Arsenal; extra [ICON_CULTURE] in new cities; no stability loss on razing native cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY_HELP</Tag>
-		<English>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</English>
-		<French>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</French>
-		<German>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</German>
-		<Italian>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</Italian>
-		<Spanish>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</Spanish>
+		<English>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
+[ICON_BULLET]No stability penalty for razing Native cities</English>
+		<French>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
+[ICON_BULLET]No stability penalty for razing Native cities</French>
+		<German>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
+[ICON_BULLET]No stability penalty for razing Native cities</German>
+		<Italian>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
+[ICON_BULLET]No stability penalty for razing Native cities</Italian>
+		<Spanish>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
+[ICON_BULLET]No stability penalty for razing Native cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HEGEMONY</Tag>
@@ -2269,6 +2282,14 @@
 		<German>Reduced unrest on city conquest; can bribe Indigenous units with spies; extra experience for land units</German>
 		<Italian>Reduced unrest on city conquest; can bribe Indigenous units with spies; extra experience for land units</Italian>
 		<Spanish>Reduced unrest on city conquest; can bribe Indigenous units with spies; extra experience for land units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_IMPERIALISM_HELP</Tag>
+		<English>[ICON_BULLET]No stability penalty for razing Native cities</English>
+		<French>[ICON_BULLET]No stability penalty for razing Native cities</French>
+		<German>[ICON_BULLET]No stability penalty for razing Native cities</German>
+		<Italian>[ICON_BULLET]No stability penalty for razing Native cities</Italian>
+		<Spanish>[ICON_BULLET]No stability penalty for razing Native cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GRANTS</Tag>

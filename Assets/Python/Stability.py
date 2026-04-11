@@ -133,6 +133,11 @@ def onCityRazed(city, iPlayer):
 		return
 
 	if player(iPlayer).isHuman():
+		civics = Civics.player(iPlayer)
+		# MacAurther: Imperialism and Manifest Destiny civics
+		if player(iOwner).getCultureGroup() == iCultureGroupNative and (iImperialism in civics or iManifestDestiny in civics):
+			return
+
 		iRazePenalty = -10
 		if city.getHighestPopulation() < 5 and not city.isCapital():
 			iRazePenalty = -2 * city.getHighestPopulation()

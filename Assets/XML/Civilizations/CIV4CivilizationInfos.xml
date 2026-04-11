@@ -142,7 +142,7 @@
 			<ArtStyleType>ARTSTYLE_NATIVE_PLAINS</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_PUEBLO</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_KACHINA</PaganReligion>
-			<Impact>IMPACT_MARGINAL</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>APA</Identifier>
 			<Region>PLA</Region>
 			<CultureGroup>0</CultureGroup>
@@ -247,7 +247,7 @@
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
-			<Impact>IMPACT_MARGINAL</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>ARA</Identifier>
 			<Region>AMA</Region>
 			<CultureGroup>0</CultureGroup>
@@ -802,7 +802,7 @@
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MISSISSIPPIAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>
-			<Impact>IMPACT_MARGINAL</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>CHE</Identifier>
 			<Region>LAK</Region>
 			<CultureGroup>0</CultureGroup>
@@ -1835,7 +1835,7 @@
 			<ArtStyleType>ARTSTYLE_PACIFIC</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_POLYNESIAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_ATUA</PaganReligion>
-			<Impact>IMPACT_MARGINAL</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>HAW</Identifier>
 			<Region>PAC</Region>
 			<CultureGroup>0</CultureGroup>
@@ -2041,7 +2041,7 @@
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_IROQUOIS</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_ANGAKKUQ</PaganReligion>
-			<Impact>IMPACT_MARGINAL</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>INU</Identifier>
 			<Region>ARC</Region>
 			<CultureGroup>0</CultureGroup>
@@ -2151,7 +2151,7 @@
 			<ArtStyleType>ARTSTYLE_NATIVE_PLAINS</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SIOUX</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_WOCEKIYA</PaganReligion>
-			<Impact>IMPACT_MARGINAL</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>LAK</Identifier>
 			<Region>PLA</Region>
 			<CultureGroup>0</CultureGroup>
@@ -2482,7 +2482,7 @@
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MISSISSIPPIAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>
-			<Impact>IMPACT_MARGINAL</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>MIS</Identifier>
 			<Region>LAK</Region>
 			<CultureGroup>0</CultureGroup>
@@ -3278,7 +3278,7 @@
 			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_PUEBLO</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_KACHINA</PaganReligion>
-			<Impact>IMPACT_MARGINAL</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>PUE</Identifier>
 			<Region>DES</Region>
 			<CultureGroup>0</CultureGroup>
@@ -4038,7 +4038,7 @@
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
-			<Impact>IMPACT_MARGINAL</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>TUP</Identifier>
 			<Region>AMA</Region>
 			<CultureGroup>0</CultureGroup>
