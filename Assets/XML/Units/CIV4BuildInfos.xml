@@ -1982,7 +1982,7 @@
 			<Description>TXT_KEY_BUILD_CONTACT_TRIBE</Description>
 			<Help>TXT_KEY_BUILD_CONTACT_TRIBE_HELP</Help>
 			<PrereqTech>TECH_EXPLORATION</PrereqTech>
-			<iTime>450</iTime>
+			<iTime>600</iTime>
 			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_CONTACTED_TRIBE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_GREAT_EVENT</EntityEvent>

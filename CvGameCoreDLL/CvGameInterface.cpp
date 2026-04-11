@@ -313,7 +313,7 @@ void CvGame::updateColoredPlots()
 							{
 								if (pLoopPlot->isVisible(pHeadSelectedUnit->getTeam(), false))
 								{
-									if (pHeadSelectedUnit->isNoBadGoodies())
+									if (pHeadSelectedUnit->isNoBadGoodies() || pHeadSelectedUnit->getUnitType() == UNIT_PORTUGUESE_BANDEIRANTE) // MacAurther: Show goody circles for Bandeirantes
 									{
 										if (pLoopPlot->isRevealedGoody(pHeadSelectedUnit->getTeam()))
 										{

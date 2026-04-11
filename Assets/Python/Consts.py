@@ -1090,4 +1090,4 @@ iChattleSlave:			[(1530, 1808), 		[iHomelandAfrica]],
 }
 
 # List of unique units that can be hired by any civ
-lUniqueOverride = [iTrackman]
+lUniqueOverride = [iTrackman, iChattleSlave]

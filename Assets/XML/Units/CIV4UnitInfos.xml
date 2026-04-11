@@ -2501,10 +2501,9 @@
 			<Strategy>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
-			<bPillage>1</bPillage>
+			<bRivalTerritory>1</bRivalTerritory>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
 					<UnitClassUpgradeType>UNITCLASS_RANGER</UnitClassUpgradeType>
@@ -2521,13 +2520,13 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
 			<Builds>
 				<Build>
 					<BuildType>BUILD_CONTACT_TRIBE</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>

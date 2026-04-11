@@ -8364,7 +8364,22 @@ int CvUnit::workRate(bool bMax) const
 
 	iRate = m_pUnitInfo->getWorkRate();
 
-	iRate *= std::max(0, (GET_PLAYER(getOwnerINLINE()).getWorkerSpeedModifier() + 100));
+	// MacAurther: Separate worker speed from contact speed
+	int speedModifier = 0;
+	if (isNoBadGoodies() || getUnitType() == UNIT_PORTUGUESE_BANDEIRANTE) // Ug it was so elegant, but the Bandeirante messed it up. Oh well
+	{
+		if (GET_PLAYER(getOwner()).hasCivic(CIVIC_OUTPOSTS))
+		{
+			speedModifier += 100;
+		}
+	}
+	else
+	{
+		GET_PLAYER(getOwnerINLINE()).getWorkerSpeedModifier();
+	}
+
+
+	iRate *= std::max(0, (speedModifier + 100));
 	iRate /= 100;
 
 	if (!isHuman() && !isBarbarian())
@@ -13551,6 +13566,9 @@ bool CvUnit::rangeStrike(int iX, int iY)
 
 	//set damage but don't update entity damage visibility
 	pDefender->setDamage(iUnitDamage, getOwnerINLINE(), false);
+
+	// MacAurther: Give XP for ranged strike
+	changeExperience(1);
 
 	if (pPlot->isActiveVisible(false))
 	{

@@ -175,15 +175,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SLAVERY_HELP</Tag>
-		<English>[ICON_BULLET]Can train Slaves
+		<English>[ICON_BULLET]Can train Slaves in cities with Slaves
 [ICON_BULLET]+300% city slave cap</English>
-		<French>[ICON_BULLET]Can train Slaves
+		<French>[ICON_BULLET]Can train Slaves in cities with Slaves
 [ICON_BULLET]+300% city slave cap</French>
-		<German>[ICON_BULLET]Can train Slaves
+		<German>[ICON_BULLET]Can train Slaves in cities with Slaves
 [ICON_BULLET]+300% city slave cap</German>
-		<Italian>[ICON_BULLET]Can train Slaves
+		<Italian>[ICON_BULLET]Can train Slaves in cities with Slaves
 [ICON_BULLET]+300% city slave cap</Italian>
-		<Spanish>[ICON_BULLET]Can train Slaves
+		<Spanish>[ICON_BULLET]Can train Slaves in cities with Slaves
 [ICON_BULLET]+300% city slave cap</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1091,6 +1091,14 @@
 		<German>Extra gold from Camps, Forts; faster productoin of Trading Post</German>
 		<Italian>Extra gold from Camps, Forts; faster productoin of Trading Post</Italian>
 		<Spanish>Extra gold from Camps, Forts; faster productoin of Trading Post</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_OUTPOSTS_HELP</Tag>
+		<English>[ICON_BULLET]+100% Tribe Contact speed</English>
+		<French>[ICON_BULLET]+100% Tribe Contact speed</French>
+		<German>[ICON_BULLET]+100% Tribe Contact speed</German>
+		<Italian>[ICON_BULLET]+100% Tribe Contact speed</Italian>
+		<Spanish>[ICON_BULLET]+100% Tribe Contact speed</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_EXPEDITION</Tag>
@@ -2147,15 +2155,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_BONDAGE_HELP</Tag>
-		<English>[ICON_BULLET]Can train Slaves
+		<English>[ICON_BULLET]Can train Slaves in cities with Slaves
 [ICON_BULLET]+300% city slave cap</English>
-		<French>[ICON_BULLET]Can train Slaves
+		<French>[ICON_BULLET]Can train Slaves in cities with Slaves
 [ICON_BULLET]+300% city slave cap</French>
-		<German>[ICON_BULLET]Can train Slaves
+		<German>[ICON_BULLET]Can train Slaves in cities with Slaves
 [ICON_BULLET]+300% city slave cap</German>
-		<Italian>[ICON_BULLET]Can train Slaves
+		<Italian>[ICON_BULLET]Can train Slaves in cities with Slaves
 [ICON_BULLET]+300% city slave cap</Italian>
-		<Spanish>[ICON_BULLET]Can train Slaves
+		<Spanish>[ICON_BULLET]Can train Slaves in cities with Slaves
 [ICON_BULLET]+300% city slave cap</Spanish>
 	</TEXT>
 	<TEXT>

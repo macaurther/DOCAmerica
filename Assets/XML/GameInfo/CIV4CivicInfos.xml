@@ -1739,6 +1739,7 @@
 			<Description>TXT_KEY_CIVIC_OUTPOSTS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_OUTPOSTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_OUTPOSTS_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_OUTPOSTS_HELP</Help>
 			<TechPrereq>TECH_EXPLORATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Outposts.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>

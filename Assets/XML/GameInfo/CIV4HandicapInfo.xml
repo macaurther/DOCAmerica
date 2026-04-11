@@ -83,6 +83,10 @@
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_WEAK</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_WEAK</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_WEAK</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
 			</Goodies>
 			<FreeTechs>
 				<FreeTech>
@@ -173,6 +177,10 @@
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_WEAK</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_WEAK</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
 			</Goodies>
 			<FreeTechs/>
 			<AIFreeTechs/>
@@ -254,6 +262,10 @@
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_WEAK</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
 			</Goodies>
 			<FreeTechs/>
 			<AIFreeTechs/>
@@ -335,6 +347,10 @@
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
 			</Goodies>
 			<FreeTechs/>
 			<AIFreeTechs/>
@@ -417,6 +433,10 @@
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
+				<GoodyType>GOODY_BARBARIANS_STRONG</GoodyType>
 			</Goodies>
 			<FreeTechs/>
 			<AIFreeTechs/>
