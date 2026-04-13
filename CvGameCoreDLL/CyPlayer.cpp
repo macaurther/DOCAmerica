@@ -1571,6 +1571,13 @@ int /* CivilizationTypes */  CyPlayer::getCivilizationType()
 	return m_pPlayer ? (int) m_pPlayer->getCivilizationType() : NO_CIVILIZATION;
 }
 
+// MacAurther
+int /*CultureGroupTypes*/ CyPlayer::getCultureGroup()
+{
+	if (m_pPlayer)
+		return m_pPlayer->getCultureGroup();
+}
+
 // edead: start
 void CyPlayer::setCivilizationType(int /* CivilizationTypes */ iNewValue)
 {

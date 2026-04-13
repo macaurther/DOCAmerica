@@ -149,5 +149,8 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		.def("separateAttackCitySelectionGroups", &CyPlayer::separateAttackCitySelectionGroups, "void ()")
 		.def("getModifiedCommerceRate", &CyPlayer::getModifiedCommerceRate, "int (CommerceTypes eCommerce)")
 		.def("canBuySlaves", &CyPlayer::canBuySlaves, "bool ()")
+
+		// MacAurther
+		.def("getCultureGroup", &CyPlayer::getCultureGroup, "int ()")
 		;
 }

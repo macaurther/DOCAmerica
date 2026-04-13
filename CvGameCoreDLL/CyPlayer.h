@@ -364,6 +364,7 @@ public:
 	int getID();
 	int /* HandicapTypes */ getHandicapType();
 	void setHandicapType(int /* HandicapTypes */ eHandicap); //Rhye
+	int /*CultureGroupTypes*/ getCultureGroup();
 	int /* CivilizationTypes */ getCivilizationType();
 	void setCivilizationType(int /* CivilizationTypes */ iNewValue); //edead
 	int /*LeaderHeadTypes*/ getLeaderType();
