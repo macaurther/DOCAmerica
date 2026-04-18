@@ -698,17 +698,18 @@ iNumUnitRoles = 29
 iAttackSea, 	iAssaultSea, 	iWorkSea,		iMissionarySea,	iSlaveSea,		iShockSea,		iReconSea,		iFerry, 		iEscort, 		iExplore, 		
 iShockCity, 	iSiege, 		iCitySiege, 	iExploreSea, 	iSkirmish, 		iLightEscort, 	iWork, 			iMissionary,	iSpyRole) = range(iNumUnitRoles)
 
-iNumPromotions = 89
+iNumPromotions = 92
 # 0				1				2				3				4				5				6				7				8				9
 (iCombat1,		iCombat2,		iCombat3,		iCombat4,		iCombat5,		iCombat6,		iCover,			iShockPromo,	iPinch,			iFormation,
 iCharge,		iAmbush,		iSkirmishPromo,	iAmphibious,	iMarch,			iBlitz,			iCommando,		iMedic1,		iMedic2,		iMedic3,		
 iGuerilla1,		iGuerilla2,		iGuerilla3,		iWoodsman1,		iWoodsman2,		iWoodsman3,		iFlanking1,		iFlanking2,		iFlanking3,		iCityRaider1,		
 iCityRaider2,	iCityRaider3,	iCityGarrison1,	iCityGarrison2,	iCityGarrison3,	iDrill1,		iDrill2,		iDrill3,		iDrill4,		iBarrage1,		
 iBarrage2,		iBarrage3,		iAccuracy,		iDisengage1,	iDisengage2,	iRiverCombat,	iSentry,		iMobility,		iNavigation1,	iNavigation2,	
-iRange1,		iRange2,		iInterception1,	iInterception2,	iAce,			iLogistics1,	iLogistics2,	iLogistics3,	iDeception1,	iDeception2,	iDeception3,
-iSecurity1,		iSecurity2,		iSecurity3,		iImprovise1,	iImprovise2,	iImprovise3,	iImprovise4,	iImprovise5,	iLoyalty,		iInstigator1,
-iInsitgator2,	iInstigator3,	iAlchemist1,	iAlchemist2,	iEscape1,		iEscape2,		iLeader,		iLeadership,	iTactics,		iMorale,
-iMercenary,		iDesertAdaptation,iPrairieAdaptation,iVolunteer,iReconnaissance,iSwampFox1,		iSwampFox2,		iSwampFox3) = range(iNumPromotions)
+iRange1,		iRange2,		iInterception1,	iInterception2,	iAce,			iLogistics1,	iLogistics2,	iLogistics3,	iDeception1,	iDeception2,	
+iDeception3,	iSecurity1,		iSecurity2,		iSecurity3,		iImprovise1,	iImprovise2,	iImprovise3,	iImprovise4,	iImprovise5,	iLoyalty,		
+iInstigator1, 	iInsitgator2,	iInstigator3,	iAlchemist1,	iAlchemist2,	iEscape1,		iEscape2,		iLeader,		iLeadership,	iTactics,		
+iMorale,		iMercenary,		iDesertAdaptation,iPrairieAdaptation,iVolunteer,iReconnaissance,iSwampFox1,		iSwampFox2,		iSwampFox3,		iBombardment1,  
+iBombardment2,	iBombardment3) = range(iNumPromotions)
 
 # initialise bonuses variables to bonuses IDs from WBS
 iNumBonuses = 49

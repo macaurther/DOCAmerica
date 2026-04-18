@@ -1485,9 +1485,9 @@
 			<Type>PROMOTION_ACCURACY</Type>
 			<Description>TXT_KEY_PROMOTION_ACCURACY</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_CITY_RAIDER1</PromotionPrereqOr1>
-			<PromotionPrereqOr2>PROMOTION_BARRAGE1</PromotionPrereqOr2>
-			<iBombardRateChange>8</iBombardRateChange>
+			<PromotionPrereqOr1>PROMOTION_BARRAGE3</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_BOMBARDMENT3</PromotionPrereqOr2>
+			<iAirRangeChange>1</iAirRangeChange>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
@@ -2432,6 +2432,77 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>,Art/Interface/Buttons/Promotions/SwampFox3.dds,Art/Interface/Buttons/Promotions_Colonization_Atlas.dds,2,10</Button>
+		</PromotionInfo>
+		<PromotionInfo>
+			<Type>PROMOTION_BOMBARDMENT1</Type>
+			<Description>TXT_KEY_PROMOTION_BOMBARDMENT1</Description>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<iBombardRateChange>8</iBombardRateChange>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iUnitCombatMod>10</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>10</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>,Art/Interface/Buttons/Promotions/Accuracy.dds,Art/Interface/Buttons/Promotions_Colonization_Atlas.dds,1,9</Button>
+		</PromotionInfo>
+		<PromotionInfo>
+			<Type>PROMOTION_BOMBARDMENT2</Type>
+			<Description>TXT_KEY_PROMOTION_BOMBARDMENT2</Description>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr2>PROMOTION_BOMBARDMENT1</PromotionPrereqOr2>
+			<iBombardRateChange>8</iBombardRateChange>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iUnitCombatMod>15</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>15</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>,Art/Interface/Buttons/Promotions/Accuracy.dds,Art/Interface/Buttons/Promotions_Colonization_Atlas.dds,2,9</Button>
+		</PromotionInfo>
+		<PromotionInfo>
+			<Type>PROMOTION_BOMBARDMENT3</Type>
+			<Description>TXT_KEY_PROMOTION_BOMBARDMENT3</Description>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr2>PROMOTION_BOMBARDMENT2</PromotionPrereqOr2>
+			<iBombardRateChange>8</iBombardRateChange>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iUnitCombatMod>25</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>25</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>,Art/Interface/Buttons/Promotions/Accuracy.dds,Art/Interface/Buttons/Promotions_Colonization_Atlas.dds,3,9</Button>
 		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>
