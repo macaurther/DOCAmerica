@@ -364,6 +364,10 @@ bool CvUnitAI::AI_update()
 		case UNITAI_SETTLER_SEA:
 			AI_settlerSeaMove();
 			break;
+		
+		case UNITAI_FERRY_IMMIGRANTS:
+			AI_ferryImmigrantsMove();
+			break;
 
 		case UNITAI_MISSIONARY_SEA:
 			AI_missionarySeaMove();
@@ -721,6 +725,7 @@ int CvUnitAI::AI_groupFirstVal()
 		break;
 
 	case UNITAI_SETTLER_SEA:
+	case UNITAI_FERRY_IMMIGRANTS:
 		return 9;
 		break;
 
@@ -5357,6 +5362,12 @@ void CvUnitAI::AI_assaultSeaMove()
 		return;
 	}
 
+	// MacAurther: If you have nothing better to do and you're empty, go pick up Immigrants (if any)
+	if (AI_ferryImmigrantsMove())
+	{
+		return;
+	}
+
 	if (AI_retreatToCity(true))
 	{
 		return;
@@ -5481,33 +5492,9 @@ void CvUnitAI::AI_settlerSeaMove()
 	}
 
 	// MacAurther: If you have nothing better to do and you're empty, go pick up Immigrants (if any)
-	if (bEmpty)
+	if (AI_ferryImmigrantsMove())
 	{
-		// Check homelands for immigrants
-		int iBestHomeland = -1;
-		int iBestHomelandCount = 0;
-		for (int iHomeland = 0; iHomeland < NUM_HOMELANDS; iHomeland++)
-		{
-			CyArgsList argsList;
-			argsList.add(getOwnerINLINE());
-			argsList.add(iHomeland);
-			long lResult=-1;
-			gDLL->getPythonIFace()->callFunction(PYScreensModule, "computerGetNumImmigrantsToTransport", argsList.makeFunctionArgs(), &lResult);
-			if ((int)lResult > iBestHomelandCount)
-			{
-				iBestHomeland = iHomeland;
-				iBestHomelandCount = (int)lResult;
-			}
-		}
-
-		// If there are immigrants to pick up, go do that
-		if (iBestHomeland > -1 && iBestHomelandCount > 0)
-		{
-			if (AI_PickupImmigrantsMove(iBestHomeland))
-			{
-				return;
-			}
-		}
+		return;
 	}
 
 	if ((GC.getGame().getGameTurn() - getGameTurnCreated()) < 8)
@@ -5566,6 +5553,12 @@ void CvUnitAI::AI_missionarySeaMove()
 	}
 
 	if (AI_pickup(UNITAI_MISSIONARY))
+	{
+		return;
+	}
+
+	// MacAurther: If you have nothing better to do and you're empty, go pick up Immigrants (if any)
+	if (AI_ferryImmigrantsMove())
 	{
 		return;
 	}
@@ -19198,6 +19191,62 @@ void CvUnitAI::AI_slaveMove()
 	return;
 }
 
+
+bool CvUnitAI::AI_ferryImmigrantsMove()
+{
+	if (!getGroup()->hasCargo())
+	{
+		// Check homelands for immigrants
+		int iBestHomeland = -1;
+		int iBestHomelandCount = 0;
+		for (int iHomeland = 0; iHomeland < NUM_HOMELANDS; iHomeland++)
+		{
+			CyArgsList argsList;
+			argsList.add(getOwnerINLINE());
+			argsList.add(iHomeland);
+			long lResult=-1;
+			gDLL->getPythonIFace()->callFunction(PYScreensModule, "computerGetNumImmigrantsToTransport", argsList.makeFunctionArgs(), &lResult);
+			if ((int)lResult > iBestHomelandCount)
+			{
+				iBestHomeland = iHomeland;
+				iBestHomelandCount = (int)lResult;
+			}
+		}
+
+		// If there are immigrants to pick up, go do that
+		if (iBestHomeland > -1 && iBestHomelandCount > 0)
+		{
+			if (AI_PickupImmigrantsMove(iBestHomeland))
+			{
+				AI_setUnitAIType(UNITAI_FERRY_IMMIGRANTS);
+				return true;
+			}
+		}
+	}
+	else if (AI_getUnitAIType() == UNITAI_FERRY_IMMIGRANTS)
+	{
+		// If in an owned city, unload
+		CvCity* pCity = plot()->getPlotCity();
+		if (pCity != NULL && pCity->getOwner() == getOwner())
+		{
+			getGroup()->unloadAll();
+			// Restore AI logic to default
+			AI_setUnitAIType((UnitAITypes)GC.getUnitInfo(getUnitType()).getDefaultUnitAIType());
+		}
+
+		// Drop off immigrants somewhere
+		if (AI_retreatToCity(true))
+		{
+			return true;
+		}
+		
+		if (AI_retreatToCity())
+		{
+			return true;
+		}
+	}
+	return false;
+}
 
 bool CvUnitAI::AI_PickupImmigrantsMove(int iHomeland)
 {

@@ -194,5 +194,9 @@
 			<Type>UNITAI_SIT_FOREVER</Type>
 			<Description>UNITAI_SIT_FOREVER</Description>
 		</UnitAIInfo>
+		<UnitAIInfo>
+			<Type>UNITAI_FERRY_IMMIGRANTS</Type>
+			<Description>UNITAI_FERRY_IMMIGRANTS</Description>
+		</UnitAIInfo>
 	</UnitAIInfos>
 </Civ4UnitAIInfos>

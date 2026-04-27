@@ -2036,6 +2036,7 @@ enum UnitAITypes			// Exposed to Python
 	UNITAI_IMMIGRANT, // MacAurther
 	UNITAI_SLAVE, // MacAurther
 	UNITAI_SIT_FOREVER, // MacAurther
+	UNITAI_FERRY_IMMIGRANTS, // MacAurther
 
 	NUM_UNITAI_TYPES
 };

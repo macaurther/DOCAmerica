@@ -6654,15 +6654,6 @@ void CvGameTextMgr::parseSpecialistHelpActual(CvWStringBuffer &szHelpString, Spe
 
 		int iHappinessChange = GC.getSpecialistInfo(eSpecialist).getHappiness();
 
-		if (pCity != NULL)
-		{
-			// MacAurther: American UP
-			if (GET_PLAYER(pCity->getOwnerINLINE()).getCivilizationType() == AMERICA && eSpecialist >= SPECIALIST_GREAT_PRIEST && eSpecialist <= SPECIALIST_GREAT_SPY)
-			{
-				iHappinessChange += 1;
-			}
-		}
-
 		if (iHappinessChange != 0)
 		{
 			if (iHappinessChange > 0)

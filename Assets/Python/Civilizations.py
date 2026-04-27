@@ -857,27 +857,15 @@ def createSpecificUnits(iPlayer, tile):
 	bHuman = player(iPlayer).isHuman()
 	
 	if iCiv == iAmerica:	# American UP
-		unit = makeUnit(iPlayer, iGreatStatesman, tile)
-		gp.assignGreatPersonName(unit, iPlayer, None, False)
-		unit = makeUnit(iPlayer, iGreatGeneral, tile)
-		gp.assignGreatPersonName(unit, iPlayer, None, False)
-		unit = makeUnit(iPlayer, iGreatScientist, tile)
-		gp.assignGreatPersonName(unit, iPlayer, None, False)
-		unit = makeUnit(iPlayer, iGreatMerchant, tile)
-		gp.assignGreatPersonName(unit, iPlayer, None, False)
-		unit = makeUnit(iPlayer, iGreatArtist, tile)
-		gp.assignGreatPersonName(unit, iPlayer, None, False)
+		for iGreatPerson in [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatSpy]:
+			unit = makeUnit(iPlayer, iGreatPerson, tile)
+			gp.assignGreatPersonName(unit, iPlayer, None, False)
 	elif iCiv == iColombia:
 		makeUnits(iPlayer, iAlbionLegion, tile, 5).experience(2)
 	elif iCiv == iCSA:	# CSA UP
-		unit = makeUnit(iPlayer, iGreatGeneral, tile)
-		gp.assignGreatPersonName(unit, iPlayer, None, False)
-		unit = makeUnit(iPlayer, iGreatGeneral, tile)
-		gp.assignGreatPersonName(unit, iPlayer, None, False)
-		unit = makeUnit(iPlayer, iGreatGeneral, tile)
-		gp.assignGreatPersonName(unit, iPlayer, None, False)
-		unit = makeUnit(iPlayer, iGreatSpy, tile)
-		gp.assignGreatPersonName(unit, iPlayer, None, False)
+		for iGreatPerson in [iGreatGeneral, iGreatGeneral, iGreatGeneral, iGreatSpy]:
+			unit = makeUnit(iPlayer, iGreatPerson, tile)
+			gp.assignGreatPersonName(unit, iPlayer, None, False)
 
 
 dSpecificAdditionalUnits = CivDict({
@@ -899,6 +887,24 @@ dTechPreferences = {
 	},
 	iWari : {
 		iConstruction: -20, # Try to let Tiwanaku have it
+	},
+	iArawak: {
+		iMining: -100,
+	},
+	iTupi: {
+		iMining: -100,
+	},
+	iInuit: {
+		iMining: -100,
+	},
+	iCherokee: {
+		iMining: -100,
+	},
+	iApache: {
+		iMining: -100,
+	},
+	iLakota: {
+		iMining: -100,
 	},
 	iSpain : {
 		iCartography: 100,

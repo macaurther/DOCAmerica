@@ -1523,6 +1523,7 @@ DomainTypes CvPlayerAI::AI_unitAIDomainType(UnitAITypes eUnitAI) const
 	case UNITAI_EXPLORE_SEA:
 	case UNITAI_ASSAULT_SEA:
 	case UNITAI_SETTLER_SEA:
+	case UNITAI_FERRY_IMMIGRANTS:
 	case UNITAI_MISSIONARY_SEA:
 	case UNITAI_SPY_SEA:
 	case UNITAI_CARRIER_SEA:
@@ -8658,6 +8659,7 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 
 		case UNITAI_ASSAULT_SEA:
 		case UNITAI_SETTLER_SEA:
+		case UNITAI_FERRY_IMMIGRANTS:
 			if (GC.getUnitInfo(eUnit).getCargoSpace() > 0)
 			{
 				if (GC.getUnitInfo(eUnit).getSpecialCargo() == NO_SPECIALUNIT)
@@ -9126,6 +9128,7 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 
 	case UNITAI_ASSAULT_SEA:
 	case UNITAI_SETTLER_SEA:
+	case UNITAI_FERRY_IMMIGRANTS:
 	case UNITAI_MISSIONARY_SEA:
 	case UNITAI_SPY_SEA:
 		iValue += (iCombatValue / 2);
@@ -10850,11 +10853,11 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		iValue += countRequiredSlaves() * 2;
 		break;
 	case CIVIC_ENCOMIENDA:
-		iValue += countRequiredSlaves() * 4;
+		if (getCurrentEra() < ERA_COLONIAL) iValue += countRequiredSlaves() * 3;
 		break;
 	case CIVIC_SLAVERY:
 	case CIVIC_BONDAGE:
-		iValue += countRequiredSlaves() * 8;
+		if (getCurrentEra() < ERA_INDUSTRIAL) iValue += countRequiredSlaves() * 12 + 50;
 		break;
 	case CIVIC_PATRONATO:
 	case CIVIC_RAIDING:
@@ -10875,11 +10878,11 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		break;
 	case CIVIC_PROVIDENCE:
 	case CIVIC_MANIFEST_DESTINY:
-		iValue + 20;
+		if (getCurrentEra() < ERA_MODERN) iValue += 20;
 		break;
 	case CIVIC_GRANTS:
 	case CIVIC_HOMESTEADS:
-		iValue + 25;
+		if (getCurrentEra() < ERA_MODERN) iValue += 25;
 		break;
 	case CIVIC_PROPRIETORS:
 		iValue += 2 * getExtraUnitCost();
@@ -15377,6 +15380,7 @@ bool CvPlayerAI::AI_disbandUnit(int iExpThreshold, bool bObsolete)
 
 							case UNITAI_ASSAULT_SEA:
 							case UNITAI_SETTLER_SEA:
+							case UNITAI_FERRY_IMMIGRANTS:
 							case UNITAI_MISSIONARY_SEA:
 							case UNITAI_SPY_SEA:
 							case UNITAI_CARRIER_SEA:
@@ -19553,6 +19557,7 @@ int CvPlayerAI::AI_getUnitEnabledValue(UnitTypes eUnit,
 			break;
 
 		case UNITAI_SETTLER_SEA:
+		case UNITAI_FERRY_IMMIGRANTS:
 			if (iCoastalCities > 0)
 			{
 				iUnitValue += ((bWarPlan || bCapitalAlone) ? 100 : 200);

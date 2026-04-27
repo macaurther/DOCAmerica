@@ -4592,12 +4592,6 @@ void CvCity::processSpecialist(SpecialistTypes eSpecialist, int iChange)
 
 	int iHappinessChange = GC.getSpecialistInfo(eSpecialist).getHappiness();
 
-	// MacAurther: American UP
-	if (GET_PLAYER(getOwnerINLINE()).getCivilizationType() == AMERICA && eSpecialist >= SPECIALIST_GREAT_PRIEST && eSpecialist <= SPECIALIST_GREAT_SPY)
-	{
-		iHappinessChange += 1;
-	}
-
 	if (iHappinessChange > 0)
 	{
 		changeSpecialistGoodHappiness(iHappinessChange * iChange);

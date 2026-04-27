@@ -223,6 +223,7 @@ protected:
 	bool AI_rebuildMove(int iMinimumCost);
 
 	// MacAurther
+	bool AI_ferryImmigrantsMove();
 	bool AI_PickupImmigrantsMove(int iHomeland);
 	bool AI_GetClosestHomeland(CvPlot*& pClosestEdge, int iHomeland);
 

@@ -49,7 +49,6 @@ AVAILABLE_COLONISTS = "AvailableColonists"
 AVAILABLE_EXPEDITIONARIES = "AvailableExpeditionaries"
 
 # Set to true to print out debug messages in the logs
-g_bDebug = False
 
 class ImmigrationUtils:
 
@@ -351,7 +350,7 @@ class ImmigrationUtils:
 	
 	def computerPlayerHireSlaves(self, iPlayer):
 		if self.computerPlayerWantsSlaves(iPlayer):
-			self.hireMercenary(unique_unit(iPlayer, iChattleSlave), iPlayer, iHomelandAfrica, bPay=True)
+			self.hireMercenary(iChattleSlave, iPlayer, iHomelandAfrica, bPay=True)
 
 	def computerPlayerLoadHomeland(self, iPlayer, iHomeland):
 		for sUnit in data.civs[civ(iPlayer)].dEarnedUnits[iHomeland].keys():
@@ -400,10 +399,17 @@ class ImmigrationUtils:
 		# Doesn't want if can't buy
 		if not player(iPlayer).canBuySlaves():
 			return False
-		# Use baked in method
-		if player(iPlayer).countRequiredSlaves() > 0:
-			return True
-		return False
+		# Check if can hire
+		if not self.canHire(iChattleSlave, iPlayer, iHomelandAfrica):
+			return False
+		# Protect against Natives buying slaves they can't get
+		if civ(iPlayer) in dCivGroups[iCivGroupNative]:
+			return False
+		# Don't hire crazy numbers of slaves
+		if str(iChattleSlave) in self.getEarnedImmigrants(civ(iPlayer), iHomelandAfrica).keys():
+			if self.getEarnedImmigrants(civ(iPlayer), iHomelandAfrica)[str(iChattleSlave)].getCount() < max(player(iPlayer).countRequiredSlaves(), 6):
+				return False
+		return True
 	
 	def computerGetNumImmigrantsToTransport(self, iPlayer, iHomeland):
 		bWantsImmigrants = self.computerPlayerWantsImmigrants(iPlayer)

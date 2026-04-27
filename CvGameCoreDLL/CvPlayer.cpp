@@ -2406,6 +2406,7 @@ void CvPlayer::disbandUnit(bool bAnnounce)
 
 						case UNITAI_ASSAULT_SEA:
 						case UNITAI_SETTLER_SEA:
+						case UNITAI_FERRY_IMMIGRANTS:
 						case UNITAI_MISSIONARY_SEA:
 						case UNITAI_SPY_SEA:
 						case UNITAI_CARRIER_SEA:

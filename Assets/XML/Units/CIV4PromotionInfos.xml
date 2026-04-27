@@ -2460,7 +2460,7 @@
 			<Type>PROMOTION_BOMBARDMENT2</Type>
 			<Description>TXT_KEY_PROMOTION_BOMBARDMENT2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr2>PROMOTION_BOMBARDMENT1</PromotionPrereqOr2>
+			<PromotionPrereq>PROMOTION_BOMBARDMENT1</PromotionPrereq>
 			<iBombardRateChange>8</iBombardRateChange>
 			<UnitCombatMods>
 				<UnitCombatMod>
@@ -2484,7 +2484,7 @@
 			<Type>PROMOTION_BOMBARDMENT3</Type>
 			<Description>TXT_KEY_PROMOTION_BOMBARDMENT3</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr2>PROMOTION_BOMBARDMENT2</PromotionPrereqOr2>
+			<PromotionPrereq>PROMOTION_BOMBARDMENT2</PromotionPrereq>
 			<iBombardRateChange>8</iBombardRateChange>
 			<UnitCombatMods>
 				<UnitCombatMod>

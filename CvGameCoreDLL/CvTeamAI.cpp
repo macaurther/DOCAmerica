@@ -4490,6 +4490,7 @@ int CvTeamAI::AI_getTechMonopolyValue(TechTypes eTech, TeamTypes eTeam) const
 					case UNITAI_SETTLER_SEA:
 					case UNITAI_MISSIONARY_SEA:
 					case UNITAI_SPY_SEA:
+					case UNITAI_FERRY_IMMIGRANTS:
 						break;
 
 					case UNITAI_CARRIER_SEA:
