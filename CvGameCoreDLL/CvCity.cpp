@@ -10706,10 +10706,10 @@ int CvCity::getCorporationCommerceByCorporation(CommerceTypes eIndex, Corporatio
 			//iCommerce += (GC.getCorporationInfo(eCorporation).getCommerceProduced(eIndex) * iNumBonuses * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100;
 			iCommerce = (GC.getCorporationInfo(eCorporation).getCommerceProduced(eIndex) * std::min(GC.getCorporationInfo(eCorporation).getMaxConsumableBonuses(), iNumBonuses) * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100; //Rhye - corporation cap
 			
-			// Dutch UP: double commerce from trading company
+			// Dutch UP: Extra Immigration from Corporations
 			if (getCivilizationType() == NETHERLANDS && eIndex == COMMERCE_IMMIGRATION)
 			{
-				iCommerce += 2;
+				iCommerce += 4;
 			}
 		}
 	}

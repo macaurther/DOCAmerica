@@ -11882,10 +11882,11 @@ int CvHandicapInfo::getHappyBonus() const
 
 int CvHandicapInfo::getHappyBonusByID(PlayerTypes ePlayer) const
 {
-	if (GET_PLAYER(ePlayer).getCivilizationType() == NETHERLANDS)
+	// MacAurther: No happy bonus for Dutch
+	/*if (GET_PLAYER(ePlayer).getCivilizationType() == NETHERLANDS)
 	{
 		return m_iHappyBonus + 3;
-	}
+	}*/
 
 	return m_iHappyBonus;
 }

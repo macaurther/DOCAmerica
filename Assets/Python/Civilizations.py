@@ -843,13 +843,13 @@ dNeverTrain = CivDict({
 }, [])
 
 dSeaSpawns = CivDict({
-	iNorse:	      (68, 118),#  Norse
-	iSpain:	      (70, 73),	#  Spain
-	iPortugal:	  (80, 29),	#  Portugal
-	iEngland:	  (56, 87),	#  England
-	iFrance:	  (56, 98),	#  France
-	iNetherlands: (62, 91),	#  Netherlands
-	iRussia:	  (1, 106),	#  Russia
+	iNorse:	      (68, 118),
+	iSpain:	      (70, 73),
+	iPortugal:	  (80, 29),
+	iEngland:	  (56, 87),
+	iFrance:	  (56, 98),
+	iNetherlands: (60, 91),
+	iRussia:	  (1, 106),
 })
 
 def createSpecificUnits(iPlayer, tile):
