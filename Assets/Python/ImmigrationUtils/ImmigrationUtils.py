@@ -49,6 +49,7 @@ AVAILABLE_COLONISTS = "AvailableColonists"
 AVAILABLE_EXPEDITIONARIES = "AvailableExpeditionaries"
 
 # Set to true to print out debug messages in the logs
+g_bDebug = True
 
 class ImmigrationUtils:
 
