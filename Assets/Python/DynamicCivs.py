@@ -150,7 +150,7 @@ lColonies = [iAztec, iInca, iMaya] # TODO: could be covered by more granular con
 
 dNameChanges = { # TODO: this should be covered by period
 	iAztec : "TXT_KEY_CIV_MEXICO_SHORT_DESC",
-	iInca : "TXT_KEY_CIV_PERU_SHORT_DESC",
+	iInca : "TXT_KEY_CIV_BOLIVIA_SHORT_DESC",
 }
 
 dAdjectiveChanges = {

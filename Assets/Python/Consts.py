@@ -193,7 +193,7 @@ iTan = 90
 iLime = 100
 
 # scripted conquerors
-iNumConquests = 23
+iNumConquests = 26
 
 lNeighbours = [
 	(iMaya, iAztec),

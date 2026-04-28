@@ -446,6 +446,7 @@ lCivilizations = [
 		iGold=1600,
 		iStateReligion=iCatholicism,
 		lCivics=[iSovereign, iFederalism, iBondage, iAgrarianism, iProfiteering, iHomesteads],
+		lEnemies=[iPortugal],
 		techs=techs.column(15).including(iMetallurgy, iHydrology).without(iNorthEuropeAccess, iSiberiaAccess),
 	),
 	Civilization(
@@ -620,8 +621,9 @@ dStartingUnits = CivDict({
 		iMissionarySea: 1,
 	},
 	iApache: {
-		iSettle: 2,
-		iDefend: 2,
+		iSettle: 3,
+		iDefend: 3,
+		iAttack: 3,
 		iSkirmish: 4,
 	},
 	iLakota: {

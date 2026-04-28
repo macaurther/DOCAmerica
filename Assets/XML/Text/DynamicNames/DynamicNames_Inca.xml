@@ -182,16 +182,12 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PERU_SHORT_DESC</Tag>
-		<English>Peru</English>
-		<French>
-			<Text>P&#233;rou</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Peru</German>
-		<Italian>Peru</Italian>
-		<Spanish>Peru</Spanish>
+		<Tag>TXT_KEY_CIV_BOLIVIA_SHORT_DESC</Tag>
+		<English>Bolivia</English>
+		<French>Bolivia</French>
+		<German>Bolivia</German>
+		<Italian>Bolivia</Italian>
+		<Spanish>Bolivia</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PERU_ADJECTIVE</Tag>

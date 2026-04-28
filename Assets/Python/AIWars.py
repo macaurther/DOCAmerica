@@ -125,9 +125,17 @@ tNetherlandsNorseBR = (48, 92)
 iConquestNum, tConquestNetherlandsNorse = processConquest(iConquestNum, iEngland, iNetherlands, tNetherlandsNorseTL, tNetherlandsNorseBR, 1, iNetherlandsNorseYear, 10)
 
 # America ------------------------------------------------------------------------------------------------------------------------
+iAmericaHaudenosauneeYear = 1783
+tAmericaHaudenosauneeTL = (43, 91)
+tAmericaHaudenosauneeBR = (46, 94)
+
 iAmericaCanadaYear = 1812
 tAmericaCanadaTL = (40, 93)
 tAmericaCanadaBR = (51, 100)
+
+iAmericaCherokeeYear = 1839
+tAmericaCherokeeTL = (37, 81)
+tAmericaCherokeeBR = (41, 86)
 
 iAmericaMexicoYear = 1846
 tAmericaMexicoTL = (16, 79)
@@ -137,14 +145,21 @@ iAmericaLakotkaYear = 1875
 tAmericaLakotkaTL = (21, 92)
 tAmericaLakotkaBR = (30, 99)
 
+iAmericaApacheYear = 1886
+tAmericaApacheTL = (23, 81)
+tAmericaApacheBR = (32, 87)
+
 iAmericaCubaYear = 1898
 tAmericaCubaTL = (40, 68)
 tAmericaCubaBR = (51, 72)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
+iConquestNum, tConquestAmericaCanada = processConquest(iConquestNum, iAmerica, iHaudenosaunee, tAmericaHaudenosauneeTL, tAmericaHaudenosauneeBR, 2, iAmericaHaudenosauneeYear, 10)
 iConquestNum, tConquestAmericaCanada = processConquest(iConquestNum, iAmerica, iCanada, tAmericaCanadaTL, tAmericaCanadaBR, 2, iAmericaCanadaYear, 10)
+iConquestNum, tConquestAmericaMexico = processConquest(iConquestNum, iAmerica, iCherokee, tAmericaCherokeeTL, tAmericaCherokeeBR, 2, iAmericaCherokeeYear, 10)
 iConquestNum, tConquestAmericaMexico = processConquest(iConquestNum, iAmerica, iMexico, tAmericaMexicoTL, tAmericaMexicoBR, 4, iAmericaMexicoYear, 10)
-iConquestNum, tConquestAmericaLakota = processConquest(iConquestNum, iAmerica, iLakota, tAmericaLakotkaTL, tAmericaLakotkaBR, 2, iAmericaLakotkaYear, 10)
+iConquestNum, tConquestAmericaLakota = processConquest(iConquestNum, iAmerica, iLakota, tAmericaLakotkaTL, tAmericaLakotkaBR, 4, iAmericaLakotkaYear, 10)
+iConquestNum, tConquestAmericaLakota = processConquest(iConquestNum, iAmerica, iApache, tAmericaApacheTL, tAmericaApacheBR, 3, iAmericaApacheYear, 10)
 iConquestNum, tConquestAmericaCuba = processConquest(iConquestNum, iAmerica, iSpain, tAmericaCubaTL, tAmericaCubaBR, 3, iAmericaCubaYear, 10)
 
 # Canada ------------------------------------------------------------------------------------------------------------------------
