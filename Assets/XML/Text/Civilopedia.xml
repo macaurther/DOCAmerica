@@ -4686,7 +4686,7 @@ Your stability level can change during a stability check. As long it is higher t
 [PARAGRAPH:1]When playing as a Colony or Nation Civilization, the number of options for interacting/removing Tribes is slightly greater:
 [ICON_BULLET]Tribes can be conquered and pillaged as normal.
 [ICON_BULLET]Tribes can be 'contacted' by moving an [LINK=UNIT_EXPLORER]Explorer[\LINK] or [LINK=UNIT_RANGER]Ranger[\LINK] to them, and performing the Contact action. The Tribe then becomes a Contacted Tribe and gives you a gift (equivalent to Goody rewards).
-[ICON_BULLET]Contacting Tribes costs [ICON_GOLD]. The [LINK=TECH_INTERPRETATION]Linguistics[\LINK] and the [LINK=TECH_INTERPRETATION]Localization[\LINK] technologies reduce the cost to Contact. 
+[ICON_BULLET]The [LINK=TECH_INTERPRETATION]Linguistics[\LINK] and the [LINK=TECH_INTERPRETATION]Localization[\LINK] technologies boost bonuses received for contacting tribes. This could be more money, more XP, or better units. 
 [ICON_BULLET]Contacted Tribes can be Converted by expending a Missionary. This counts as a religion spread. Converted Tribes turn into the Improvement for the bonus they're on, or a [LINK=IMPROVEMENT_COTTAGE]Cottage[\LINK] if their tile has no bonus. 
 		</English>
 	</TEXT>
@@ -4731,7 +4731,7 @@ Your stability level can change during a stability check. As long it is higher t
 [PARAGRAPH:1]Each Culture Group has their own unique set of civics. While there are some common themes and recycled mechanics between them, each set of civics has a complete compliment of 42 unique Civics, each with their own name, button, prerequisite technology, stability combos, and effects. There is no way to adopt a Civic from a Culture Group other than your own.
 [H2]Technology[\H2]
 [PARAGRAPH:1]Some technologies are associated to specific Culture Groups, meaning only that Culture Group can research that technology. Other culture groups may be able to obtain the technology through trading or Goody rewards. If you are unable to research a technology due to your Culture Group, a tooltip will explain why. 
-[PARAGRAPH:1]Native Culture Group Technologies are especially important. Among them are many techs that reveal a great number of important resources, such as Corn, Fish, Gold, etc. This thematically represents collective indigenous knowledge of how best to cultivate crops, or where to find local deposits of minerals. It is usually imperative to gain Native techs when playing as a Colony. Native Technologies can be obtained through Goody rewards (see [LINK=CONCEPT_TRIBES]Tribes[\LINK]) or through trade. The AI weights Native technologies 10x their actual cost; as a Colony, you won't be able to trade one advanced tech for the whole suite of Native techs. You'll likely have to trade away knowledge of Guns (among other things) to multiple Natives, or contact many Tribes to get all of the technologies.
+[PARAGRAPH:1]Native Culture Group Technologies are especially important. Among them are many techs that reveal a great number of resources, such as Corn, Fish, or Gold. This thematically represents collective indigenous knowledge of how best to cultivate crops, or where to find local deposits of minerals. It is usually imperative to gain Native techs when playing as a Colony. Native Technologies can be obtained through Goody rewards (see [LINK=CONCEPT_TRIBES]Tribes[\LINK]) or through trade. The AI weighs Native technologies 6x their actual cost; as a Colony, you won't be able to trade one advanced tech for the whole suite of Native techs. You'll likely have to trade away knowledge of Guns (among other things; be careful who you trade with!) to multiple Natives, or contact many Tribes to get all of the technologies.
 [PARAGRAPH:1]Similar but to a lesser degree, there are some Colony technologies that Natives really want. 
 [PARAGRAPH:1]Nations start with all Native and Colony technologies, so they won't be concerned with obtaining them. Instead, the only Nation technologies allow immigration from different regions (see [LINK=TXT_KEY_CONCEPT_IMMIGRATION_PEDIA]Immigration[\LINK]). While those technologies can only be researched by Nations, all Colonies and some Natives start with the knowledge specific Nation technologies, allowing them to receive Immigrants.
 [H2]Capitals[\H2]
@@ -4760,7 +4760,7 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]Some units have been reworked, and many units have been added.
 [ICON_BULLET]Certain Seige units, such as Cannon, have been given a ranged attack. Use them to reduce an enemy's strength before attacking.
 [ICON_BULLET]Ranged attacks and city bombardment can only be performed if a unit is at full movement.
-[ICON_BULLET]Most units now have at least 2 Movement. This is to reflect the scale of the new DOCA map. Some units (such as heavy siege units) still only have 1 movement.
+[ICON_BULLET]Most units now have at least 2 Movement. This is to reflect the scale of the new DOCA map. Some units (such as the Bombard) still only have 1 movement.
 [ICON_BULLET]Melee and Archery units have a chance to equip advanced weapons and mounts from defeated Gunpowder and Cavalry units.
 [ICON_BULLET]Defeated siege units have a chance to be captured.
 [H2]Terrain[\H2]
@@ -4777,8 +4777,9 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]The Slave Revolt random event has been removed.
 [ICON_BULLET]Cities in a civilization's historical area can now be bought from the AI with gold during peace time.
 [ICON_BULLET]America and Brazil get expanded core areas when moving their capitols to Washington, D.C. or Brasilia, respecitvely.
-[ICON_BULLET]In order to help first time players of DoCA who don't know the map and spawn dates well yet, warnings will be displayed if one of your settlers moves onto a tile that will flip to a new civilization soon.
-[ICON_BULLET]In order to help first time players of DoCA who don't know the map and resources spawns well yet, when a settler is selected, warnings will be displayed on nearby tiles with resources, whether revealed or not.
+[ICON_BULLET]In order to help first time players of DoCA who don't know the map and spawn dates well yet:
+[TAB][ICON_BULLET]Warnings will be displayed if one of your settlers moves onto a tile that will flip to a new civilization soon.
+[TAB][ICON_BULLET]When a settler is selected, nearby tiles with resources will be highlighted, whether the resource is revealed or not.
 		</English>
 	</TEXT>
 	<TEXT>

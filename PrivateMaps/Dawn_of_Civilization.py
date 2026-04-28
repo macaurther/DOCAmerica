@@ -8,8 +8,8 @@ import Rise, RegionMap
 
 lStartingDates = [
 	"1 AD",
-	"1500 AD",
-	"1750 AD",
+	# "1500 AD", # MacAurther TODO: Scenarios
+	# "1750 AD", # MacAurther TODO: Scenarios
 ]
 
 

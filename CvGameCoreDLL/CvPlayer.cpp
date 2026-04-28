@@ -25797,7 +25797,7 @@ int CvPlayer::getRegionPowers(CivilizationTypes eCiv) const
 // MacAurther: Forts
 int CvPlayer::getFortRange() const
 {
-	if(GET_TEAM(getTeam()).isHasTech((TechTypes)PIONEERING))
+	if(GET_TEAM(getTeam()).isHasTech((TechTypes)SURVEYING))
 	{
 		return 2;
 	}
