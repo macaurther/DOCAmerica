@@ -250,7 +250,7 @@ dGoals = {
 			by=1700
 		),
 		All(
-			ControlledResourceCount(sum(iSilver, iGold), 15),
+			ControlledResourceCount(sum(iSilver, iGold), 20),
 			LandPercent(50),
 			by=1790,
 		)

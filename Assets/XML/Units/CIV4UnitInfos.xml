@@ -9756,7 +9756,6 @@
 			</UnitAIs>
 			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
 			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
-			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -9822,7 +9821,6 @@
 			</UnitAIs>
 			<PrereqTech>TECH_EXPLORATION</PrereqTech>
 			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
-			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -9888,7 +9886,6 @@
 			</UnitAIs>
 			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
 			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
-			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>

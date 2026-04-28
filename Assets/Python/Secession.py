@@ -10,7 +10,7 @@ import CityNames as cn
 def secession(iPlayer, secedingCities):
 	data.setSecedingCities(iPlayer, secedingCities)
 
-def secedeCities(iPlayer, secedingCities, bRazeMinorCities = False, iNewOwner = -1):	# MacAurther: Added NewOwner to specify if desired
+def secedeCities(iPlayer, secedingCities, bRazeMinorCities = False):
 	iNumCities = player(iPlayer).getNumCities()
 	if iNumCities <= 0:
 		return
@@ -29,44 +29,40 @@ def secedeCities(iPlayer, secedingCities, bRazeMinorCities = False, iNewOwner = 
 	destroyedCities, cededCities = secedingCities.split(lambda city: bRazeMinorCities and canBeRazed(city))
 	
 	for city in destroyedCities:
+		cityPlot = plot(city)
 		cn.clearChanges(city)
 		player(iBarbarian).disband(city)
-		plot(city).setCulture(iPlayer, 0, True)
+		cityPlot.setCulture(iPlayer, 0, True)
 	
-	# MacAurther: Give to specified civ, if any
-	if iNewOwner > -1:
-		for city in cededCities:
-			secedeCity(city, iNewOwner, not bComplete, iArmyPercent)
-	else:
-		# determine who has the best claim on each city
-		dClaimedCities = appenddict()
-		for city in cededCities:
-			iClaim = getCityClaim(city)
-			dClaimedCities[iClaim].append(city)
-			
-		lMinorCities = dClaimedCities.pop(-1, [])
-			
-		for iClaimant, claimedCities in dClaimedCities.items():
-			# assign cities to living civs
-			if player(iClaimant).isExisting():
-				for city in claimedCities:
-					iClaimantPlayer = slot(iClaimant)
-					secedeCity(city, iClaimantPlayer, not bComplete, iArmyPercent)
-			
-			# if sufficient for resurrection, resurrect civs
-			elif isResurrectionPossible() and canResurrectFromCities(iClaimant, claimedCities):
-				additionalCities = getAdditionalResurrectionCities(iClaimant, secedingCities)
-				resurrectionFromCollapse(iClaimant, claimedCities + additionalCities)
-			
-			# else cities go to minors
-			else:
-				lMinorCities.extend(claimedCities)
+	# determine who has the best claim on each city
+	dClaimedCities = appenddict()
+	for city in cededCities:
+		iClaim = getCityClaim(city)
+		dClaimedCities[iClaim].append(city)
 		
-		# secede remaining cities to minors
-		lPossibleMinors = getPossibleMinors(iPlayer)
-		for iMinor, minorCities in cities.of(lMinorCities).divide(lPossibleMinors):
-			for city in minorCities:
-				secedeCity(city, iMinor, not bComplete, iArmyPercent)
+	lMinorCities = dClaimedCities.pop(-1, [])
+		
+	for iClaimant, claimedCities in dClaimedCities.items():
+		# assign cities to living civs
+		if player(iClaimant).isExisting():
+			for city in claimedCities:
+				iClaimantPlayer = slot(iClaimant)
+				secedeCity(city, iClaimantPlayer, not bComplete, iArmyPercent)
+		
+		# if sufficient for resurrection, resurrect civs
+		elif isResurrectionPossible() and canResurrectFromCities(iClaimant, claimedCities):
+			additionalCities = getAdditionalResurrectionCities(iClaimant, secedingCities)
+			resurrectionFromCollapse(iClaimant, claimedCities + additionalCities)
+		
+		# else cities go to minors
+		else:
+			lMinorCities.extend(claimedCities)
+	
+	# secede remaining cities to minors
+	lPossibleMinors = getPossibleMinors(iPlayer)
+	for iMinor, minorCities in cities.of(lMinorCities).divide(lPossibleMinors):
+		for city in minorCities:
+			secedeCity(city, iMinor, not bComplete, iArmyPercent)
 		
 	# notify for partial secessions
 	if not bComplete and player().canContact(iPlayer):
@@ -126,11 +122,7 @@ def getCityClaim(city):
 		return civ(iCultureClaim)
 	
 	# claim based on war targets: needs to be winning the war based on war success, not available to human player
-	closest = closestCity(city, same_continent=True)
-	warClaims = possibleClaims.without(active()).where(lambda p: team(p).isAtWar(team(iOwner).getID()) and plot(city).getPlayerWarValue(p) >= 4)
-	warClaims = warClaims.where(lambda p: team(p).AI_getAtWarCounter(player(iOwner).getTeam()) >= turns(10) and team(p).AI_getWarSuccess(player(iOwner).getTeam()) - team(iOwner).AI_getWarSuccess(player(p).getTeam()) >= (autoplay() and 0 or team(p).AI_getAtWarCounter(player(iOwner).getTeam())))
-	warClaims = warClaims.where(lambda p: not closest or closest.getOwner() == p or not team(iOwner).isAtWar(closest.getOwner()))
-	warClaims = warClaims.where(lambda p: closestCity(city, owner=p, same_continent=True) and distance(city, closestCity(city, owner=p, same_continent=True)) <= 12)
+	warClaims = possibleClaims.where(lambda p: hasWarClaim(p, city))
 	if warClaims:
 		iWarClaim = warClaims.maximum(lambda p: team(p).AI_getWarSuccess(team(iOwner).getID()) - team(iOwner).AI_getWarSuccess(team(p).getID()))
 		return civ(iWarClaim)
@@ -140,11 +132,57 @@ def getCityClaim(city):
 	if resurrections:
 		return resurrections.maximum(lambda c: (city.isCore(c), plot(city).getSettlerValue(c)))
 	
+	# holy cities are always assigned to independents
+	if city.isHolyCity():
+		return iIndependent
+	
 	return -1
+
+def hasWarClaim(iPlayer, city):
+	pPlayer = player(iPlayer)
+	tPlayer = team(pPlayer.getTeam())
+	
+	iOwner = city.getOwner()
+	pOwner = player(iOwner)
+	tOwner = team(pOwner.getTeam())
+	
+	if pPlayer.isHuman():
+		return False
+	
+	if not tPlayer.isAtWar(pOwner.getTeam()):
+		return False
+	
+	if plot(city).getPlayerWarValue(iPlayer) < 4:
+		return False
+	
+	if tPlayer.AI_getAtWarCounter(pOwner.getTeam()) < turns(10):
+		return False
+	
+	if tPlayer.AI_getWarSuccess(pOwner.getTeam()) - tOwner.AI_getWarSuccess(pPlayer.getTeam()) < (autoplay() and 0 or tPlayer.AI_getAtWarCounter(pOwner.getTeam())):
+		return False
+	
+	closest = closestCity(city, owner=iPlayer)
+	if not closest:
+		return False
+	
+	# if someone else owns a closer city and are also at war, leave it to them
+	if closest.getOwner() != iPlayer and tOwner.isAtWar(closest.getOwner()):
+		return False
+	
+
+	if distance(city, closest) > 12:
+		return False
+		
+	return True
 		
 def secedeCity(city, iNewOwner, bRelocate, iArmyPercent):
 	if not city: 
 		return
+	
+	# MacAurther: Remove from lMigrateCities. Can cause error when migrating during a collapse
+	for migrateCity in data.lMigrateCities:
+		if migrateCity.getX() == city.getX() and migrateCity.getY() == city.getY():
+			data.lMigrateCities.remove(migrateCity)
 	
 	name = city.getName()
 	iOldOwner = city.getOwner()

@@ -42,6 +42,19 @@ def freeSlotFor(iCiv):
 	iSlot = availableSlots.where(lambda p: stability(p) == iStabilityUnstable and getImpact(civ(p)) < iCivImpact).minimum(metric)
 	if iSlot is not None:
 		completeCollapse(iSlot)
+		return
+	
+	if iCivImpact > 1:
+		iSlot = availableSlots.where(lambda p: since(year(dFall[p])) >= 0 and getImpact(civ(p)) == 0).minimum(stability)
+		if iSlot is not None:
+			completeCollapse(iSlot)
+			return
+	
+	if iCivImpact > 2:
+		iSlot = availableSlots.where(lambda p: since(year(dFall[p])) >= 0 and getImpact(civ(p)) == 1).minimum(stability)
+		if iSlot is not None:
+			completeCollapse(iSlot)
+			return
 	
 def scheduleCollapse(iPlayer):
 	data.players[iPlayer].iTurnsToCollapse = 1
@@ -70,7 +83,6 @@ def downgradeImprovements(iPlayer):
 	
 	improvementPlots = plots.owner(iPlayer).where(lambda p: p.getImprovementType() >= 0)
 	alwaysDowngrade, potentialDowngrade = improvementPlots.split(lambda p: p.getImprovementType() in lAlwaysDowngrade or bPlayerDowngrade)
-
 	
 	if player(iPlayer).getCurrentEra() <= iColonialEra:
 		iFraction = 4
