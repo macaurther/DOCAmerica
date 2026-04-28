@@ -29567,6 +29567,7 @@ BeginPlot
 	x=44,y=85
 	isNOfRiver
 	RiverWEDirection=1
+	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot

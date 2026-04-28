@@ -10841,6 +10841,9 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		case INUIT:
 			iValue += 500;
 			break;
+		default:
+			iValue -= 500;
+			break;
 		}
 		break;
 	case CIVIC_INDENTURED_SERVITUDE:
