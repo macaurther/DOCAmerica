@@ -1042,11 +1042,14 @@ class Birth(object):
 		data.dBuildingsBuilt = dict((iBuilding, iNumBuildings) for iBuilding, iNumBuildings in dBuildingsBuilt.items() if iNumBuildings > 0)
 	
 	def setupWithoutSwitch(self):
+		# MacAurther: Civs that spawn at sea spawn on a different plot
+		tPlot = self.location
+		if self.iCiv in dSeaSpawns.keys(): tPlot = dSeaSpawns[self.iCiv]
 		if not self.isHuman():
 			self.assignAdditionalTechs()
-			createRoleUnits(self.iPlayer, self.location, getAIStartingUnits(self.iPlayer))
+			createRoleUnits(self.iPlayer, tPlot, getAIStartingUnits(self.iPlayer))
 		
-		createSpecificUnits(self.iPlayer, self.location)		
+		createSpecificUnits(self.iPlayer, tPlot)		
 	
 	def birth(self):
 		# reset AI

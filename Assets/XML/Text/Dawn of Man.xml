@@ -11,15 +11,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOM_MAYA</Tag>
-		<English>It is the year 500 BC. Urbanization on the peninsula of Yucatan sparks the formation of the Mayan city states, whose technological and architectural advancements would create the first advanced civilization in the Americas.</English>
+		<English>It is the year 1 AD. Urbanization on the peninsula of Yucatan sparks the formation of the Mayan city states, whose technological and architectural advancements would create the first advanced civilization in the Americas.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOM_ZAPOTEC</Tag>
-		<English>It is the year 500 BC. After hundreds of years of farming in the Oaxacan river valleys, a central power began to shape atop a mountain overlooking the other settlements. Power became consolidated over time until a powerful central monarchy was established in Danibaan.</English>
+		<English>It is the year 1 AD. After hundreds of years of farming in the Oaxacan river valleys, a central power began to shape atop a mountain overlooking the other settlements. Power became consolidated over time until a powerful central monarchy was established in Danibaan.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOM_TEOTIHUACAN</Tag>
-		<English>It is the year 200 BC. While the Valley of Mexico has been inhabited for thousands of years, advanced civilization thus far has only flourished East, in the Olmec, Zapotec, and Maya heartlands. Now urban centers are developing around Lake Texcoco. The most prominent is Teotihuacan, poised to influence the culture of all Mesoamerica.</English>
+		<English>It is the year 1 AD. While the Valley of Mexico has been inhabited for thousands of years, advanced civilization thus far has only flourished East, in the Olmec, Zapotec, and Maya heartlands. Now urban centers are developing around Lake Texcoco. The most prominent is Teotihuacan, poised to influence the culture of all Mesoamerica.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOM_TIWANAKU</Tag>
@@ -34,12 +34,8 @@
 		<English>It is the year 600 AD. Cultivation of the "Three Sisters," maize, beans, and squash, spreads quickly across the wooded valleys of the Ohio River. An agricultural revolution is on the brink in Fort Ancient among its mound-building people. Poised to spread their ideas, culture, and trade across the largest watershed in North America, the Mississippian culture is on the rise.</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_DOM_PUEBLO</Tag>
-		<English>It is the year 750 AD. The Hohokam people of the arid foothills have become adept at water conservation, their well-engineered canals irrigating the parched soil. However, due to increasing raids on their bountiful society, the Pueblo make a tactical retreat to the mountains, buildinging their unique cliff-dwellings. But how long can they last against the attackers?</English>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_DOM_MUISCA</Tag>
-		<English>It is the year 800 AD. A group of tribes, united by language, come together to form the Muisca Confederation in the high Andes. Plentiful gems and gold promise riches to the loose union of states, so long as they can form a trade network to the empires of the South.</English>
+		<English>It is the year 600 AD. A group of tribes, united by language, come together to form the Muisca Confederation in the high Andes. Plentiful gems and gold promise riches to the loose union of states, so long as they can form a trade network to the empires of the South.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOM_NORSE</Tag>
@@ -50,16 +46,20 @@
 		<English>It is the year 900 AD. Legend states that upon the arrival of Taycanamo in the Moche Valley on a balsa raft, a great dynasty was formed. That dynasty is destined to form an upstart empire, but will surely butt heads with other great powers.</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_DOM_INUIT</Tag>
-		<English>It is the year 950 AD. The Inuit's arrival to the Bering Strait marks the beginning of what will become one of the longest lasting cultures of the arctic.</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_INCA</Tag>
-		<English>It is the year 1100 AD. Manco Capac has just founded the Kingdom of Cuzco, the first Incan kingdom. Even in the harsh environment of the Andes and lacking suitable pack animals, they set out to create an empire never seen before in the Americas.</English>
+		<Tag>TXT_KEY_DOM_PUEBLO</Tag>
+		<English>It is the year 950 AD. The Hohokam people of the arid foothills have become adept at water conservation, their well-engineered canals irrigating the parched soil. However, due to increasing raids on their bountiful society, the Pueblo make a tactical retreat to the mountains, buildinging their unique cliff-dwellings. But how long can they last against the attackers?</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOM_PUREPECHA</Tag>
 		<English>It is the year 1150 AD. A powerful empire grows on the Pacific coast of Mesoamerica. Armed with superior metalworking and copper alloys, the Purepecha have never lost a battle; but increasing refugees from the East portend a rising power will soon constest their hegemony.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_INUIT</Tag>
+		<English>It is the year 1200 AD. The Inuit's arrival to the Bering Strait marks the beginning of what will become one of the longest lasting cultures of the arctic.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_INCA</Tag>
+		<English>It is the year 1200 AD. Manco Capac has just founded the Kingdom of Cuzco, the first Incan kingdom. Even in the harsh environment of the Andes and lacking suitable pack animals, they set out to create an empire never seen before in the Americas.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOM_AZTECS</Tag>
@@ -68,10 +68,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DOM_HAUDENOSAUNEE</Tag>
 		<English>It is the year 1350 AD. The Great Peacemaker unites the once bitter enemies of the lake into the Great League of Peace. The five nations draw upon each other for strength, but their might will soon be tested by invaders from far away.</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_LAKOTA</Tag>
-		<English>It is the year 1450 AD. Once on the fringes of Mississippian influence, the Dakota and Lakota peoples have been forced further northwest by invading Haudenosaunee. Learning to adapt to the plains, the Lakota will soon meet new arrivals to this world who bring gifts and curses: sacred mounts and decimating plague.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOM_SPAIN</Tag>
@@ -116,6 +112,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_DOM_NETHERLANDS_1750AD</Tag>
 		<English>It is the year 1750 AD. Hampered by the English at every turn, Dutch prospects in the New World seem to be drawing to a close. Perhaps an impending war could sow enough discord for a last attempt to seize territory?</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_LAKOTA</Tag>
+		<English>It is the year 1650 AD. Once on the fringes of Mississippian influence, the Dakota and Lakota peoples have been forced further northwest by invading Haudenosaunee. Learning to adapt to the plains, the Lakota will soon meet new arrivals to this world who bring gifts and curses: sacred mounts and decimating plague.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOM_HAWAII</Tag>

@@ -10,12 +10,12 @@
 		<Spanish>Mayan</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_ADJECTIVE_NAZCAN</Tag>
-		<English>Nazca</English>
-		<French>Nazca</French>
-		<German>Nazca</German>
-		<Italian>Nazca</Italian>
-		<Spanish>Nazca</Spanish>
+		<Tag>TXT_KEY_ADJECTIVE_MOCHE</Tag>
+		<English>Moche</English>
+		<French>Moche</French>
+		<German>Moche</German>
+		<Italian>Moche</Italian>
+		<Spanish>Moche</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_MAPUCHE</Tag>
@@ -32,5 +32,13 @@
 		<German>Texan</German>
 		<Italian>Texan</Italian>
 		<Spanish>Texan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ADJECTIVE_PIRATE</Tag>
+		<English>Pirate</English>
+		<French>Pirate</French>
+		<German>Pirate</German>
+		<Italian>Pirate</Italian>
+		<Spanish>Pirate</Spanish>
 	</TEXT>
 </Civ4GameText>

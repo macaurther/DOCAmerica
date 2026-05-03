@@ -32755,7 +32755,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=18
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot

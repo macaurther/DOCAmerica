@@ -136,6 +136,17 @@ def relocateAcquiredCapital(iOwner, iPlayer, city):
 def buildAcquiredCapitalInfrastructure(iOwner, iPlayer, city):
 	buildCapitalInfrastructure(iPlayer, city)
 
+# Help colonial AI by giving a Native Tech when conquering native cities (mostly helping Spain)
+# MacAurther TODO: Make AI better so this isn't needed
+@handler("cityAcquired")
+def nativeTechOnConquest(iOwner, iPlayer, city):
+	if not player(iPlayer).isHuman():
+		if city.getPreviousCiv() in dCivGroups[iCivGroupNative] + [iIndigenous, iIndependent1]:
+			for iTech in lNativeTechs:
+				if not team(iPlayer).isHasTech(iTech):
+					team(iPlayer).setHasTech(iTech, True, iPlayer, False, False)
+					print("Gave " + str(iPlayer) + " iTech: " + str(iTech)) # temp debug
+					return
 
 ### FIRST CITY ###
 

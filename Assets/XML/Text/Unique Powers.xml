@@ -592,11 +592,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MUI</Tag>
-		<English>Every turn, receive +1% [ICON_GOLD] of your treasury for every gold, silver, and copper you control.</English>
-		<French>Every turn, receive +1% [ICON_GOLD] of your treasury for every gold, silver, and copper you control.</French>
-		<German>Every turn, receive +1% [ICON_GOLD] of your treasury for every gold, silver, and copper you control.</German>
-		<Italian>Every turn, receive +1% [ICON_GOLD] of your treasury for every gold, silver, and copper you control.</Italian>
-		<Spanish>Every turn, receive +1% [ICON_GOLD] of your treasury for every gold, silver, and copper you control.</Spanish>
+		<English>Every turn, receive +1% [ICON_GOLD] of your treasury for every set of gold, silver, and copper you control.</English>
+		<French>Every turn, receive +1% [ICON_GOLD] of your treasury for every set of gold, silver, and copper you control.</French>
+		<German>Every turn, receive +1% [ICON_GOLD] of your treasury for every set of gold, silver, and copper you control.</German>
+		<Italian>Every turn, receive +1% [ICON_GOLD] of your treasury for every set of gold, silver, and copper you control.</Italian>
+		<Spanish>Every turn, receive +1% [ICON_GOLD] of your treasury for every set of gold, silver, and copper you control.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_NOR_TITLE</Tag>

@@ -1340,12 +1340,6 @@ int CvTeamAI::AI_techTradeVal(TechTypes eTech, TeamTypes eTeam) const
 
 	iValue = ((iCost * 3) / 2);
 
-	// MacAurther: AI values Native Techs more than what they cost
-	if (GC.getTechInfo(eTech).getCultureGroup() == CULTURE_GROUP_NATIVE)
-	{
-		iValue *= 2;
-	}
-
 	iKnownCount = 0;
 	iPossibleKnownCount = 0;
 
@@ -1373,6 +1367,13 @@ int CvTeamAI::AI_techTradeVal(TechTypes eTech, TeamTypes eTeam) const
 
 	iValue *= std::max(0, (GC.getTechInfo(eTech).getAITradeModifier() + 100));
 	iValue /= 100;
+
+	// MacAurther: AI values Native Techs more than what they cost, but only when dealing with a human
+	//	This is to help along the Colonial AI get native techs, and prevent the Native AI from running away with favorable tech deals
+	if (GC.getTechInfo(eTech).getCultureGroup() == CULTURE_GROUP_NATIVE && (isHuman() || GET_TEAM((TeamTypes)eTeam).isHuman()))
+	{
+		iValue *= 10;
+	}
 
 	iValue -= (iValue % GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
 

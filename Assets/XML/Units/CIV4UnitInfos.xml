@@ -2231,6 +2231,12 @@
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_COTTAGE_IMMIGRANT</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2250,6 +2256,7 @@
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
 			</TerrainImpassables>
+			<iWorkRate>100</iWorkRate>
 			<iAsset>2</iAsset>
 			<iGreatWorkCulture>50</iGreatWorkCulture>
 			<UnitMeshGroups>
@@ -7499,6 +7506,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
+			<PrereqTech>TECH_RIDING</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

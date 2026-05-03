@@ -1943,7 +1943,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 		if (iSettlerMapValue == 1)
 		{
 			// Leoreth: 10+ city site in radius
-			if (pLoopPlot->isCity() && (pLoopPlot->getSettlerValue(getID()) >= 10 || pLoopPlot->getSettlerValue(pLoopPlot->getOwner()) >= 0))
+			if (pLoopPlot->isCity(false) && (pLoopPlot->getSettlerValue(getID()) >= 10 || pLoopPlot->getSettlerValue(pLoopPlot->getOwner()) >= 0)) // MacAurther: Can settle on forts
 			{
 				return 0;
 			}
@@ -10825,7 +10825,19 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		iValue += (int)hasCivic(CIVIC_NOMADIC) * 20;
 		break;
 	case CIVIC_NOMADIC:
-		iValue += (int)(hasCivic(CIVIC_CHIEF) || hasCivic(CIVIC_HARMONY)) * 10;
+		// Make certain AIs prefer being nomadic
+		switch (getCivilizationType())
+		{
+		case ARAWAK:
+		case TUPI:
+		case APACHE:
+		case LAKOTA:
+			iValue += 100;
+			break;
+		default:
+			iValue -= 100;
+			break;
+		}
 		break;
 	case CIVIC_HARMONY:
 		iValue += (int)hasCivic(CIVIC_NOMADIC) * 15;
@@ -10888,7 +10900,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		if (getCurrentEra() < ERA_MODERN) iValue += 25;
 		break;
 	case CIVIC_PROPRIETORS:
-		iValue += 2 * getExtraUnitCost();
+		iValue += 25 * getExtraUnitCost();
 		break;
 	}
 

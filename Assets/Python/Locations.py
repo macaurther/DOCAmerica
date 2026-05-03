@@ -20,7 +20,7 @@ tLakeTexcocoBR = (25, 68)
 ## Victory
 
 # second Norse goal: Settle Vinland by 1100 AD
-tVinland = ((57, 100), (59, 100))
+tVinland = ((57, 98), (60, 101))
 # third Norse goal: Settle Delaware by 1640 AD
 tDelaware = ((46, 88), (47, 90))
 

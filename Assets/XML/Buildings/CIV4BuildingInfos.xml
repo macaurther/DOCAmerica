@@ -3378,7 +3378,7 @@
 			<Strategy>TXT_KEY_BUILDING_FRENCH_SEIGNEUR_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_DUTCH_DIKE</ArtDefineTag>
-			<PrereqTech>TECH_GEOGRAPHY</PrereqTech>
+			<PrereqTech>TECH_LOGISTICS</PrereqTech>
 			<bWater>1</bWater>
 			<bRiver>1</bRiver>
 			<iCost>250</iCost>

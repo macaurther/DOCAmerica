@@ -11,7 +11,6 @@ from Types import *
 ### GLOBALS ###
 
 dHistoricalGoals = None
-dAdditionalPaganGoal = None
 
 
 ### EVENT HANDLERS ###
@@ -21,8 +20,6 @@ def loadVictories():
 	import HistoricalVictory as Historical
 	
 	global dHistoricalGoals
-	global dReligiousGoals
-	global dAdditionalPaganGoal
 	
 	dHistoricalGoals = Historical.dGoals
 

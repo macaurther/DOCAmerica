@@ -375,8 +375,8 @@ lCivilizations = [
 		iLakota,
 		iGold=100,
 		lCivics=[iChief, iSubsistance, iHarmony, iNomads],
-		techs=techs.column(3).including(iCeremony, iContact, iRiding),
-		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation),
+		techs=techs.column(3).including(iCeremony, iRiding),
+		extraTechs=techs.column(0).including(iContact, iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation),
 	),
 	Civilization(
 		iHawaii,
@@ -630,7 +630,7 @@ dStartingUnits = CivDict({
 		iSettle: 2,
 		iDefend: 2,
 		iAttack: 3,
-		iSkirmish: 2,
+		iHarass: 2,
 		iExplore: 1,
 	},
 	iHawaii: {
@@ -727,11 +727,11 @@ dStartingUnits = CivDict({
 		iMissionary: 1,
 	},
 	iCSA: {
-		iSettle: 8,
-		iWork: 5,
-		iDefend: 8,
+		iSettle: 6,
+		iWork: 4,
+		iDefend: 2,
 		iHarass: 6,
-		iCitySiege: 3,
+		iCitySiege: 2,
 		iFerry: 1,
 	},
 	iCanada: {
@@ -765,6 +765,32 @@ dExtraAIUnits = CivDict({
 		iAttack: 6,
 		iSkirmish: 4,
 	},
+	iHaudenosaunee: {
+		iDefend: 6,
+	},
+	iCherokee: {
+		iDefend: 5,
+	},
+	# Give AI Colonies more ships of recon so they can get contacting
+	iSpain: {
+		iReconSea: 3,
+	},
+	iPortugal: {
+		iReconSea: 1,
+	},
+	iEngland: {
+		iReconSea: 1,
+	},
+	iFrance: {
+		iReconSea: 1,
+		iSettleSea: 1,
+	},
+	iNetherlands: {
+		iReconSea: 1,
+	},
+	iRussia: {
+		iReconSea: 1,
+	},
 	iAmerica: {
 		iBase: 4,
 		iAttack: 8,
@@ -790,11 +816,6 @@ dExtraAIUnits = CivDict({
 	},
 	iBrazil: {
 		iDefend: 1,
-	},
-	iCSA: {
-		iDefend: 2,
-		iHarass: 2,
-		iCitySiege: 1,
 	},
 }, {})
 

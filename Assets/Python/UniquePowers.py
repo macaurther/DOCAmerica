@@ -109,12 +109,12 @@ def muiscaAbility(iGameTurn, iPlayer):
 	if civ(iPlayer) == iMuisca:
 		pPlayer = player(iPlayer)
 		iTreasury = pPlayer.getGold()
-		iResources = 0
-		for iResource in [iGold, iSilver, iCopper]:
-			iResources += player(iPlayer).getNumAvailableBonuses(iResource) - \
-						  player(iPlayer).getBonusImport(iResource) + \
-						  player(iPlayer).getBonusExport(iResource)
-		iExtraGold = int(iTreasury * 0.01 * iResources)
+		lResourceCount = [0, 0, 0]
+		for i, iResource in enumerate([iGold, iSilver, iCopper]):
+			lResourceCount[i] += player(iPlayer).getNumAvailableBonuses(iResource) - \
+						         player(iPlayer).getBonusImport(iResource) + \
+						         player(iPlayer).getBonusExport(iResource)
+		iExtraGold = int(iTreasury * 0.01 * min(lResourceCount))
 		if iExtraGold > 0:
 			pPlayer.changeGold(iExtraGold)
 			message(iPlayer, "TXT_KEY_MUSICA_POWER", iExtraGold, sound='AS2D_BAGOMONEY')

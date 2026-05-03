@@ -32,8 +32,9 @@ typedef list<char*> LISTCHAR;
 
 #define UNITCLASS_SETTLER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SETTLER"))					// MacAurther
 #define UNITCLASS_PIONEER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_PIONEER"))					// MacAurther
-#define UNITCLASS_WORKER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_WORKER"))					// MacAurther
+#define UNITCLASS_WORKER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_WORKER"))						// MacAurther
 #define UNITCLASS_SLAVE			  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE"))						// MacAurther
+#define UNITCLASS_IMMIGRANT	      ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_IMMIGRANT"))					// MacAurther
 #define UNITCLASS_LONGBOWMAN      ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_LONGBOWMAN"))					// MacAurther
 #define UNITCLASS_ARQUEBUSIER     ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_ARQUEBUSIER"))				// MacAurther
 #define UNITCLASS_CUIRASSIER      ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_CUIRASSIER"))					// MacAurther

@@ -5532,7 +5532,7 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 // BUG - Goody Hut Log - end
 	}
 
-	iRange = GC.getGoodyInfo(eGoody).getMapRange() + GET_PLAYER(pUnit->getOwner()).getGoodyBoost(); // MacAurther: Goody Boost
+	iRange = GC.getGoodyInfo(eGoody).getMapRange() + 2 * GET_PLAYER(pUnit->getOwner()).getGoodyBoost(); // MacAurther: Goody Boost
 
 	if (iRange > 0)
 	{
@@ -5648,14 +5648,14 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 				eUnitClass = UNITCLASS_SLAVE;
 				break;
 			case 1:
-				eUnitClass = UNITCLASS_WORKER;
+				eUnitClass = UNITCLASS_IMMIGRANT;
 				break;
 			case 2:
-				eUnitClass = UNITCLASS_SETTLER;
+				eUnitClass = UNITCLASS_WORKER;
 				break;
 			}
 		}
-		else if (eUnitClass == UNITCLASS_WORKER)
+		else if (eUnitClass == UNITCLASS_LONGBOWMAN)
 		{
 			switch (iGoodyBoost)
 			{
@@ -5667,21 +5667,6 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 				break;
 			case 2:
 				eUnitClass = UNITCLASS_CUIRASSIER;
-				break;
-			}
-		}
-		else if (eUnitClass == UNITCLASS_SCOUT)
-		{
-			switch (iGoodyBoost)
-			{
-			case 0:
-				eUnitClass = UNITCLASS_SCOUT;
-				break;
-			case 1:
-				eUnitClass = UNITCLASS_EXPLORER;
-				break;
-			case 2:
-				eUnitClass = UNITCLASS_RANGER;
 				break;
 			}
 		}

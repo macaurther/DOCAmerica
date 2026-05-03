@@ -404,6 +404,24 @@ def domesticCrisis(iPlayer):
 
 def calculateAdministration(city):
 	iPlayer = city.getOwner()
+	iCiv = civ(iPlayer)
+
+	# MacAurther: Europeans RP: Increased Administration (i.e. their core cities are off of the map)
+	if city.isCapital():
+		if iCiv == iEngland:
+			return 100
+		elif iCiv == iFrance:
+			return 110
+		elif iCiv == iNetherlands:
+			return 25
+		elif iCiv == iNorse:
+			return 5
+		elif iCiv == iPortugal:
+			return 70
+		elif iCiv == iRussia:
+			return 75
+		elif iCiv == iSpain:
+			return 90
 
 	if not city.isPlayerCore(iPlayer):
 		return 0
@@ -557,22 +575,6 @@ def calculateStability(iPlayer):
 				
 	iAdministrationImprovements = plots.core(iPlayer).owner(iPlayer).where(lambda plot: plot.getWorkingCity() and plot.getImprovementType() in [iVillage, iTown]).count()
 	iAdministration += getAdministrationModifier(iPlayer) * iAdministrationImprovements / 100
-	
-	# MacAurther: Europeans RP: Increased Administration (i.e. their core cities are off of the map)
-	if iCiv == iEngland:
-		iAdministration += 100
-	elif iCiv == iFrance:
-		iAdministration += 110
-	elif iCiv == iNetherlands:
-		iAdministration += 25
-	elif iCiv == iNorse:
-		iAdministration += 5
-	elif iCiv == iPortugal:
-		iAdministration += 70
-	elif iCiv == iRussia:
-		iAdministration += 75
-	elif iCiv == iSpain:
-		iAdministration += 90
 	
 	iCurrentPower = pPlayer.getPower()
 	iPreviousPower = pPlayer.getPowerHistory(since(turns(10)))

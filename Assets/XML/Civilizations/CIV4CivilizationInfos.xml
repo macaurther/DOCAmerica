@@ -2155,8 +2155,7 @@
 			<Identifier>LAK</Identifier>
 			<Region>PLA</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>0</StartingYear>
-			<!-- <StartingYear>1625</StartingYear> -->
+			<StartingYear>1625</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>25</LoadingTime>
 				<LoadingTime>0</LoadingTime>

@@ -209,6 +209,27 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
+	x=46,y=33
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDEPENDENT1
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA
+		UnitOwner=CIVILIZATION_INDEPENDENT1
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_INDEPENDENT1
+		CityName=Nanasqa
+		CityPopulation=1
+		YearFounded=-200
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_INDEPENDENT1, Culture=1
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
 	x=82,y=0
 	BeginCity
 		CityOwner=CIVILIZATION_INDEPENDENT3

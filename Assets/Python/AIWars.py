@@ -39,8 +39,8 @@ iConquestNum, tConquestIncaChimu = processConquest(iConquestNum, iInca, iChimu, 
 
 # Spain ------------------------------------------------------------------------------------------------------------------------
 iSpainAztecsYear = 1519
-tSpainAztecsTL = (22, 23)
-tSpainAztecsBR = (28, 70)
+tSpainAztecsTL = (22, 66)
+tSpainAztecsBR = (26, 69)
 
 iSpainPurepechansYear = 1522
 tSpainPurepechansTL = (18, 66)
@@ -51,16 +51,16 @@ tSpainZapotecTL = (24, 63)
 tSpainZapotecBR = (29, 65)
 
 iSpainIncaYear = 1532
-tSpainIncaTL = (39, 31)
-tSpainIncaBR = (53, 42)
+tSpainIncaTL = (45, 32)
+tSpainIncaBR = (49, 37)
 
 iSpainWariYear = 1532
-tSpainWariTL = (39, 31)
-tSpainWariBR = (53, 42)
+tSpainWariTL = (41, 36)
+tSpainWariBR = (46, 42)
 
 iSpainChimuYear = 1532
-tSpainChimuTL = (39, 31)
-tSpainChimuBR = (53, 42)
+tSpainChimuTL = (40, 39)
+tSpainChimuBR = (43, 46)
 
 iSpainMuiscaYear = 1537
 tSpainMuiscaTL = (47, 49)
@@ -76,14 +76,14 @@ tSpainMayaBR = (38, 70)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
 iConquestNum, tConquestSpainAztecs = processConquest(iConquestNum, iSpain, iAztec, tSpainAztecsTL, tSpainAztecsBR, 2, iSpainAztecsYear, 10)
-iConquestNum, tConquestSpainPurepechans = processConquest(iConquestNum, iSpain, iPurepecha, tSpainPurepechansTL, tSpainPurepechansBR, 2, iSpainPurepechansYear, 10)
-iConquestNum, tConquestSpainZapotec = processConquest(iConquestNum, iSpain, iZapotec, tSpainZapotecTL, tSpainZapotecBR, 2, iSpainZapotecYear, 10)
+iConquestNum, tConquestSpainPurepechans = processConquest(iConquestNum, iSpain, iPurepecha, tSpainPurepechansTL, tSpainPurepechansBR, 1, iSpainPurepechansYear, 10)
+iConquestNum, tConquestSpainZapotec = processConquest(iConquestNum, iSpain, iZapotec, tSpainZapotecTL, tSpainZapotecBR, 1, iSpainZapotecYear, 10)
 iConquestNum, tConquestSpainInca = processConquest(iConquestNum, iSpain, iInca, tSpainIncaTL, tSpainIncaBR, 3, iSpainIncaYear, 10)
-iConquestNum, tConquestSpainWari = processConquest(iConquestNum, iSpain, iWari, tSpainWariTL, tSpainWariBR, 2, iSpainWariYear, 10)
-iConquestNum, tConquestSpainChimu = processConquest(iConquestNum, iSpain, iChimu, tSpainChimuTL, tSpainChimuBR, 2, iSpainChimuYear, 10)
+iConquestNum, tConquestSpainWari = processConquest(iConquestNum, iSpain, iWari, tSpainWariTL, tSpainWariBR, 1, iSpainWariYear, 10)
+iConquestNum, tConquestSpainChimu = processConquest(iConquestNum, iSpain, iChimu, tSpainChimuTL, tSpainChimuBR, 1, iSpainChimuYear, 10)
 iConquestNum, tConquestSpainMuisca = processConquest(iConquestNum, iSpain, iMuisca, tSpainMuiscaTL, tSpainMuiscaBR, 2, iSpainMuiscaYear, 10)
 iConquestNum, tConquestSpainPueblo = processConquest(iConquestNum, iSpain, iPueblo, tSpainPuebloTL, tSpainPuebloBR, 2, iSpainPuebloYear, 10)
-iConquestNum, tConquestSpainMaya = processConquest(iConquestNum, iSpain, iMaya, tSpainMayaTL, tSpainMayaBR, 2, iSpainMayaYear, 10)
+iConquestNum, tConquestSpainMaya = processConquest(iConquestNum, iSpain, iMaya, tSpainMayaTL, tSpainMayaBR, 1, iSpainMayaYear, 10)
 
 # England ------------------------------------------------------------------------------------------------------------------------
 iEnglandNetherlandsYear = 1670
@@ -141,6 +141,10 @@ iAmericaMexicoYear = 1846
 tAmericaMexicoTL = (16, 79)
 tAmericaMexicoBR = (25, 89)
 
+iAmericaCSAYear = 1863
+tAmericaCSATL = (21, 74)
+tAmericaCSABR = (46, 88)
+
 iAmericaLakotkaYear = 1875
 tAmericaLakotkaTL = (21, 92)
 tAmericaLakotkaBR = (30, 99)
@@ -154,13 +158,14 @@ tAmericaCubaTL = (40, 68)
 tAmericaCubaBR = (51, 72)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
-iConquestNum, tConquestAmericaCanada = processConquest(iConquestNum, iAmerica, iHaudenosaunee, tAmericaHaudenosauneeTL, tAmericaHaudenosauneeBR, 2, iAmericaHaudenosauneeYear, 10)
-iConquestNum, tConquestAmericaCanada = processConquest(iConquestNum, iAmerica, iCanada, tAmericaCanadaTL, tAmericaCanadaBR, 2, iAmericaCanadaYear, 10)
-iConquestNum, tConquestAmericaMexico = processConquest(iConquestNum, iAmerica, iCherokee, tAmericaCherokeeTL, tAmericaCherokeeBR, 2, iAmericaCherokeeYear, 10)
-iConquestNum, tConquestAmericaMexico = processConquest(iConquestNum, iAmerica, iMexico, tAmericaMexicoTL, tAmericaMexicoBR, 4, iAmericaMexicoYear, 10)
-iConquestNum, tConquestAmericaLakota = processConquest(iConquestNum, iAmerica, iLakota, tAmericaLakotkaTL, tAmericaLakotkaBR, 4, iAmericaLakotkaYear, 10)
-iConquestNum, tConquestAmericaLakota = processConquest(iConquestNum, iAmerica, iApache, tAmericaApacheTL, tAmericaApacheBR, 3, iAmericaApacheYear, 10)
-iConquestNum, tConquestAmericaCuba = processConquest(iConquestNum, iAmerica, iSpain, tAmericaCubaTL, tAmericaCubaBR, 3, iAmericaCubaYear, 10)
+iConquestNum, tConquestAmericaHaudenosaunee = processConquest(iConquestNum, iAmerica, iHaudenosaunee, tAmericaHaudenosauneeTL, tAmericaHaudenosauneeBR, 2, iAmericaHaudenosauneeYear, 10)
+iConquestNum, tConquestAmericaCanada = 	      processConquest(iConquestNum, iAmerica, iCanada, tAmericaCanadaTL, tAmericaCanadaBR, 2, iAmericaCanadaYear, 10)
+iConquestNum, tConquestAmericaCherokee =      processConquest(iConquestNum, iAmerica, iCherokee, tAmericaCherokeeTL, tAmericaCherokeeBR, 2, iAmericaCherokeeYear, 10)
+iConquestNum, tConquestAmericaMexico = 	      processConquest(iConquestNum, iAmerica, iMexico, tAmericaMexicoTL, tAmericaMexicoBR, 4, iAmericaMexicoYear, 10)
+iConquestNum, tConquestAmericaCSA = 	      processConquest(iConquestNum, iAmerica, iCSA, tAmericaCSATL, tAmericaCSABR, 10, iAmericaCSAYear, 10)
+iConquestNum, tConquestAmericaLakota = 	      processConquest(iConquestNum, iAmerica, iLakota, tAmericaLakotkaTL, tAmericaLakotkaBR, 4, iAmericaLakotkaYear, 10)
+iConquestNum, tConquestAmericaApache = 	      processConquest(iConquestNum, iAmerica, iApache, tAmericaApacheTL, tAmericaApacheBR, 3, iAmericaApacheYear, 10)
+iConquestNum, tConquestAmericaCuba = 	      processConquest(iConquestNum, iAmerica, iSpain, tAmericaCubaTL, tAmericaCubaBR, 3, iAmericaCubaYear, 10)
 
 # Canada ------------------------------------------------------------------------------------------------------------------------
 iCanadaLakotaYear = 1880
@@ -176,7 +181,7 @@ tConquestSpainAztecs, tConquestSpainPurepechans, tConquestSpainZapotec, tConques
 tConquestEnglandNetherlands, tConquestEngland1812Washington, tConquestEngland1812NewOrleans, 
 tConquestFranceMexico,
 tConquestNetherlandsNorse,
-tConquestAmericaCanada, tConquestAmericaMexico, tConquestAmericaLakota, tConquestAmericaCuba,
+tConquestAmericaHaudenosaunee, tConquestAmericaCanada, tConquestAmericaCherokee, tConquestAmericaMexico, tConquestAmericaCSA, tConquestAmericaLakota, tConquestAmericaApache, tConquestAmericaCuba,
 tConquestCanadaLakota]
 
 
@@ -282,15 +287,16 @@ def checkConquest(tConquest, tPrereqConquest = (), iWarPlan = WarPlanTypes.WARPL
 	if tPrereqConquest and not isConquered(tPrereqConquest):
 		return
 	
-	if iCiv == iSpain and (iPreferredTarget < 0 or player(iPreferredTarget).isHuman()):
-		return
+	# MacAurther: Why single out Spain? So sad
+	# if iCiv == iSpain and (iPreferredTarget < 0 or player(iPreferredTarget).isHuman()):
+	# 	return
 	
-	iStartTurn = year(iYear) + turns(data.iSeed % 10 - 5)
+	iStartTurn = year(iYear) + max(turns(data.iSeed % 10 - 5), 0)	# MacAurther: Don't let year be early
 	
 	if turn() == iStartTurn - turns(5):
 		warnConquest(iPlayer, iCiv, iPreferredTargetCiv, tTL, tBR)
 	
-	if turn() < player(iCiv).getLastBirthTurn() + turns(3): 
+	if turn() < player(iCiv).getLastBirthTurn(): # MacAurther: Allow conquerors for new civs
 		return
 	
 	if not (iStartTurn <= turn() <= iStartTurn + iIntervalTurns):
@@ -367,9 +373,6 @@ def spawnConquerors(iPlayer, iPreferredTarget, tTL, tBR, iNumTargets, iYear, iIn
 			iCitySiege: 1 + 2*iExtra,
 		}
 		units = createRoleUnits(iPlayer, tPlot, dConquestUnits.items())
-		
-		if iCiv == iSpain:
-			createRoleUnit(iPlayer, tPlot, iShock, 2*iExtra)
 		
 		units.promotion(iVolunteer)
 

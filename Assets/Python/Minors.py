@@ -503,8 +503,10 @@ class Barbarians(object):
 		message(active(), self.SPAWN_NOTIFICATIONS[self.pattern], adjective_text, iColor=iRed, button=unit.getButton(), location=plot)
 
 minor_cities = [
-	MinorCity(450, iIndigenous, (46, 33), "Nanasqa", iPopulation=1, iCiv=iTiwanaku, units={iDefend: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_NAZCAN"),			# Nazca
-	MinorCity(950, iIndigenous, (49, 18), "Mapuches", iPopulation=1, iCiv=iInca, units={iDefend: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MAPUCHE"),			# Mapuche
+	MinorCity(400, iIndependent1, (42, 40), "Moche", iPopulation=1, iCiv=iChimu, units={iDefend: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MOCHE"),			# Moche Culture
+	MinorCity(950, iIndigenous, (49, 18), "Mapuches", iPopulation=1, iCiv=iInca, units={iDefend: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MAPUCHE"),	 	# Mapuche
+	# MinorCity(1660, iBarbarian, (48, 65), "Port Royal", iPopulation=1, iCiv=iEngland, units={iDefend: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_PIRATE"), 	# Port Royal
+	# MinorCity(1670, iBarbarian, (46, 74), "Nassau", iPopulation=1, iCiv=iEngland, units={iDefend: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_PIRATE"),	 	# Nassau
 ]
 
 barbarians = [

@@ -14898,14 +14898,19 @@ bool CvUnitAI::AI_fortTerritory(bool bCanal, bool bAirbase)
 
 		if (AI_plotValid(pLoopPlot))
 		{
-			if (pLoopPlot->getOwnerINLINE() == getOwnerINLINE()) // XXX team???
+			if (pLoopPlot->getOwnerINLINE() == getOwnerINLINE() || pLoopPlot->getOwnerINLINE() == NO_PLAYER) // XXX team??? -> MacAurther: Forts don't have to be built within territory
 			{
+				// MacAurther: Instead, they have to be within historical area
+				if (pLoopPlot->getSettlerValue(getOwnerINLINE()) == 0)
+				{
+					continue;
+				}
 				if (pLoopPlot->getImprovementType() == NO_IMPROVEMENT)
 				{
 					int iValue = 0;
 					iValue += bCanal ? kOwner.AI_getPlotCanalValue(pLoopPlot) : 0;
 					iValue += bAirbase ? kOwner.AI_getPlotAirbaseValue(pLoopPlot) : 0;
-					iValue += pLoopPlot->getSettlerValue(getOwnerINLINE()) * 100;	// MacAurther: AI tries to claim land withforts in city spots ahead of settlers
+					iValue += pLoopPlot->getOwnerINLINE() == NO_PLAYER ? (pLoopPlot->getSettlerValue(getOwnerINLINE()) - 1) * 50 : 0;	// MacAurther: AI tries to claim land withforts in city spots ahead of settlers
 
 					if (iValue > 0)
 					{

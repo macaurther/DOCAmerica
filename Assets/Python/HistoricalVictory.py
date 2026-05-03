@@ -131,7 +131,6 @@ dGoals = {
 		All(
 			Wonder(iKalasasaya),
 			Wonder(iGateOfTheSun),
-			Wonder(iPyramidOfTheSun),
 			by=900,
 		),
 		GoldenAges(4, by=1100),
@@ -167,9 +166,14 @@ dGoals = {
 		All(
 			FirstSettle(plots.region(rIceland).named(ICELAND)),
 			FirstSettle(plots.region(rGreenland).named(GREENLAND)),
-			by=1000
+			FirstSettle(plots.rectangle(tVinland).named(VINLAND)),
+			by=1100
 		),
-		FirstSettle(plots.rectangle(tVinland).named(VINLAND), by=1100),
+		All(
+			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatStatesman, 2),
+			BuildingCount((iThingvellir, 5)),
+			by=1500,
+		),
 		All(
 			ImprovementCount(iLumbermill, 10),
 			Control(plots.rectangle(tDelaware).named(DELAWARE)),
@@ -229,7 +233,7 @@ dGoals = {
 	iAztec: (
 		Control(plots.region(rBajio).named(BAJIO), subject=VASSALS, by=1450),
 		CityPopulation(start(iAztec).named(TENOCHTITLAN), 20, at=1500),
-		All(EnslaveCount(50), GoldenAges(10), by=1550),
+		All(EnslaveCount(50), SacrificeGoldenAges(10), by=1550),
 	),
 	iHaudenosaunee: (
 		BuildingCount(iLonghouse, 5, by=1550),
@@ -288,7 +292,7 @@ dGoals = {
 			at=1775,
 		),
 		All(
-            TerrainCount(iWideRiver, 40),
+            TerrainCount(iWideRiver, 35),
 			CultureLevelCityCount(iCultureLevelInfluential, 2),
 			by=1800,
 		),
