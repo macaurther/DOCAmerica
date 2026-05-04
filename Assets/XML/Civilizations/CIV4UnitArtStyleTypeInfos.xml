@@ -874,6 +874,14 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_LONGBOWMAN</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_LONGBOWMAN_IROQUOIS</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_LONGBOWMAN_IROQUOIS</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_LONGBOWMAN_IROQUOIS</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_CROSSBOWMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_IROQUOIS</EarlyArtDefineTag>

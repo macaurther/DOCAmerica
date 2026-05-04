@@ -223,9 +223,6 @@ class CvPediaImprovement:
 				if iYieldChange != 0:
 					szText += u"%c%s%d%c with <link=literal>%s</link>\n" % (szBullet, szSign, iYieldChange, gc.getYieldInfo(iYieldType).getChar(), gc.getCivicInfo(iCivic).getDescription())
 
-		if self.iImprovement == iTown:
-			szText += u"%c+1%c with <link=literal>%s</link>\n" % (szBullet, gc.getYieldInfo(0).getChar(), gc.getProjectInfo(iHumanGenome).getText())
-
 		szText += gc.getImprovementInfo(self.iImprovement).getHelp()
 		szText += CyGameTextMgr().getImprovementHelp(self.iImprovement, True)
 		szText = szText.replace("\n\n", "\n").strip()

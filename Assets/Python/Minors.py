@@ -591,6 +591,8 @@ def spawnTribeDefenders(pPlot, iAttacker):
 	if pPlot.getRegionID() in [rYukon, rNunavut, rQuebec, rNewFoundland, rHawaii] + lBrazil + lArgentina + [rGuyana, rParaguay, rUruguay]: iTechLevel -= 1
 	if year() >= year(1350): iTechLevel += 1
 	if year() >= year(1820): iTechLevel += 1
+	# Contacted tribes get +1 Tech Level
+	if pPlot.getImprovementType() == iContactedTribe: iTechLevel += 1
 
 	# Put tech level in bounds
 	iTechLevel = max(iTechLevel, 0)

@@ -919,15 +919,38 @@ dTechPreferences = {
 	},
 	iInuit: {
 		iMining: -100,
+		iFirearms: -100, # Try to prevent mega scary modern natives
+		iFortification: -100,
+		iCombinedArms: -100,
+		iTactics: -100,
 	},
 	iCherokee: {
 		iMining: -100,
+		iFirearms: -100, # Try to prevent mega scary modern natives
+		iFortification: -100,
+		iCombinedArms: -100,
+		iTactics: -100,
 	},
 	iApache: {
 		iMining: -100,
+		iFirearms: -100, # Try to prevent mega scary modern natives
+		iFortification: -100,
+		iCombinedArms: -100,
+		iTactics: -100,
 	},
 	iLakota: {
 		iMining: -100,
+		iFirearms: -100, # Try to prevent mega scary modern natives
+		iFortification: -100,
+		iCombinedArms: -100,
+		iTactics: -100,
+	},
+	iHaudenosaunee: {
+		iMining: -100,
+		iFirearms: -100, # Try to prevent mega scary modern natives
+		iFortification: -100,
+		iCombinedArms: -100,
+		iTactics: -100,
 	},
 	iSpain : {
 		iCartography: 100,
