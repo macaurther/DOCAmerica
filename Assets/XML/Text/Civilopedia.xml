@@ -4688,7 +4688,7 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]Tribes can be conquered and pillaged as normal.
 [ICON_BULLET]Tribes can be 'contacted' by moving an [LINK=UNIT_EXPLORER]Explorer[\LINK] or [LINK=UNIT_RANGER]Ranger[\LINK] to them, and performing the Contact action. The Tribe then becomes a Contacted Tribe and gives you a gift (equivalent to Goody rewards).
 [ICON_BULLET]The [LINK=TECH_INTERPRETATION]Linguistics[\LINK] and the [LINK=TECH_INTERPRETATION]Localization[\LINK] technologies boost bonuses received for contacting tribes. This could be more money, more XP, or better units. 
-[ICON_BULLET]Contacted Tribes can be Converted by expending a Missionary. This counts as a religion spread. Converted Tribes turn into the Improvement for the bonus they're on, or a [LINK=IMPROVEMENT_COTTAGE]Cottage[\LINK] if their tile has no bonus. 
+[ICON_BULLET]Contacted Tribes can be Converted by expending a Missionary of your state religion. This counts as a religion spread. Converted Tribes turn into the Improvement for the bonus they're on, or a [LINK=IMPROVEMENT_COTTAGE]Cottage[\LINK] if their tile has no bonus. 
 		</English>
 	</TEXT>
 	<TEXT>

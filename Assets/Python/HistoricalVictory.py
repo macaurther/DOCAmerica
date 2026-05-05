@@ -86,6 +86,7 @@ ALL_EUROPEAN = "TXT_KEY_VICTORY_NAME_ALL_EUROPEAN"
 CHRISTIAN = "TXT_KEY_VICTORY_NAME_CHRISTIAN"
 EUROPEAN = "TXT_KEY_VICTORY_NAME_EUROPEAN"
 EUROPEAN_CIVILIZATION = "TXT_KEY_VICTORY_NAME_EUROPEAN_CIVILIZATION"
+NON_NATIVE = "TXT_KEY_VICTORY_NAME_NON_NATIVE"
 LOCAL = "TXT_KEY_VICTORY_NAME_LOCAL"
 
 # separators
@@ -311,7 +312,7 @@ dGoals = {
 	iLakota: (
 		AverageCultureAmount(500, by=1700),
 		GreatGenerals(2, by=1750),
-		AllowNone(group(iCivGroupAmerica).named(EUROPEAN), plots.regions([rNorthPlains, rGreatPlains]).named(GREAT_PLAINS), at=1890),
+		AllowNone(group(iCivGroupNonNative).named(NON_NATIVE), plots.regions([rNorthPlains, rGreatPlains]).named(GREAT_PLAINS), at=1890),
 	),
 	iHawaii: (
 		UnitCount(iCannon, 1, by=1790),
@@ -325,7 +326,7 @@ dGoals = {
 	),
 	iRussia: (
 		ImprovementCount(iCamp, 10, by=1800),
-		AreaPercent(plots.region(rAlaska).named(ALASKA), 90, subject=VASSALS, at=1820),
+		AreaPercent(plots.region(rAlaska).named(ALASKA), 100, subject=VASSALS, at=1820),
 		TradeGold(2000, by=1870),
 	),
 	iAmerica: (

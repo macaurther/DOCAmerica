@@ -79,7 +79,7 @@ iWari : 500,
 iMississippi : 600,
 iMuisca : 800,
 iToltec : 850,
-iNorse : 874,
+iNorse : 20,#874,
 iChimu : 900,
 iPueblo : 950,
 iArawak : 1000,
@@ -145,15 +145,20 @@ iCSA : 1890,
 
 # used in: Congresses, DynamicCivs, Plague, RFCUtils, UniquePowers, Victory
 # a civilisation can be in multiple civ groups
-iNumCivGroups = 5
-(iCivGroupEurope, iCivGroupNative, iCivGroupAmerica, iCivGroupMesoamerica, iCivGroupAndes) = range(iNumCivGroups)
+iNumCivGroups = 6
+(iCivGroupNative, iCivGroupEurope, iCivGroupAmerica, iCivGroupMesoamerica, iCivGroupAndes, iCivGroupNonNative) = range(iNumCivGroups)
+
+lNativeCivs = [iMaya, iInca, iAztec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iMuisca, iChimu, iInuit, iHaudenosaunee, iLakota, iZapotec, iPurepecha, iToltec, iArawak, iTupi, iCherokee, iApache]
+lColonyCivs = [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia]
+lNationCivs = [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iPeru, iVenezuela, iCSA]
 
 dCivGroups = {
-iCivGroupEurope : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia],
-iCivGroupNative : [iMaya, iInca, iAztec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iMuisca, iChimu, iInuit, iHaudenosaunee, iLakota, iZapotec, iPurepecha, iToltec, iArawak, iTupi, iCherokee, iApache],
-iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iPeru, iVenezuela, iCSA],
+iCivGroupNative : lNativeCivs,
+iCivGroupEurope : lColonyCivs,
+iCivGroupAmerica : lNationCivs,
 iCivGroupMesoamerica : [iMaya, iAztec, iTeotihuacan, iZapotec, iPurepecha, iToltec],
 iCivGroupAndes : [iInca, iTiwanaku, iWari, iMuisca, iChimu],
+iCivGroupNonNative : lColonyCivs + lNationCivs,
 }
 
 lNativeCivs = dCivGroups[iCivGroupNative] + [iIndigenous]

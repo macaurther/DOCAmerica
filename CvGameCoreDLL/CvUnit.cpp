@@ -5830,10 +5830,14 @@ bool CvUnit::canSpread(const CvPlot* pPlot, ReligionTypes eReligion, bool bTestV
 		return false;
 	}
 
-	// MacAurther: Missionaries can spread to Contacted Tribes too
+	// MacAurther: Missionaries of state religion can spread to Contacted Tribes too
 	if (pPlot != NULL && pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
 	{
-		return true;
+		ReligionTypes eStateReligion = GET_PLAYER(getOwner()).getStateReligion();
+		if (eReligion == eStateReligion)
+		{
+			return true;
+		}
 	}
 
 	pCity = pPlot->getPlotCity();

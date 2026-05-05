@@ -85,7 +85,7 @@ class ImmigrationUtils:
 		iThreshold = 10
 		iThreshold += data.civs[civ(iPlayer)].numImmigrations
 		iThreshold += 2 * data.civs[civ(iPlayer)].lNumImmigrantsEared[iHomeland]
-		return iThreshold
+		return scale(iThreshold)
 
 	def canEarnImmigrants(self, iPlayer, iHomeland=-1):
 		pPlayer = player(iPlayer)

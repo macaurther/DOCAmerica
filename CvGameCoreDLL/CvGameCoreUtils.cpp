@@ -1857,7 +1857,8 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 			if ((GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isPeak()) && 
 				(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isPeak()))
 			{
-				if (!GET_TEAM(GET_PLAYER(pSelectionGroup->getHeadUnit()->getOwner()).getTeam()).isHasTech((TechTypes)PATHFINDING))
+				if (!GET_TEAM(GET_PLAYER(pSelectionGroup->getHeadUnit()->getOwner()).getTeam()).isHasTech((TechTypes)PATHFINDING) &&
+					!pSelectionGroup->getHeadUnit()->isAnimal())
 				{
 					return false;
 				}

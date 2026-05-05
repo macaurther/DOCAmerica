@@ -6210,7 +6210,7 @@ void CvGame::doTurn()
 
 	createBarbarianUnits();
 
-	doGlobalWarming();
+	//doGlobalWarming(); // MacAurther: No global warming
 
 	//Rhye - comment this to stop religion founding
 	//doHolyCity();

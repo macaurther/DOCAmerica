@@ -1726,11 +1726,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CUSTOMS_UNION_STRATEGY</Tag>
-		<English>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</English>
-		<French>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</French>
-		<German>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</German>
-		<Italian>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</Italian>
-		<Spanish>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]</Spanish>
+		<English>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]; faster production of Customs House</English>
+		<French>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]; faster production of Customs House</French>
+		<German>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]; faster production of Customs House</German>
+		<Italian>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]; faster production of Customs House</Italian>
+		<Spanish>Extra trade routes; extra [ICON_COMMERCE] from excess [ICON_HAPPY]; faster production of Customs House</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CLAIMS</Tag>
@@ -2088,11 +2088,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MERCANTILISM_STRATEGY</Tag>
-		<English>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Customs House, Wharf</English>
-		<French>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Customs House, Wharf</French>
-		<German>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Customs House, Wharf</German>
-		<Italian>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Customs House, Wharf</Italian>
-		<Spanish>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Customs House, Wharf</Spanish>
+		<English>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Shipyard, Wharf</English>
+		<French>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Shipyard, Wharf</French>
+		<German>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Shipyard, Wharf</German>
+		<Italian>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Shipyard, Wharf</Italian>
+		<Spanish>Extra [ICON_COMMERCE] from trade routes; no foreign trade routes; faster production of Shipyard, Wharf</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_BUREAUCRACY_STRATEGY</Tag>

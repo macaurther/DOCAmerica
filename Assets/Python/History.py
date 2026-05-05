@@ -145,7 +145,6 @@ def nativeTechOnConquest(iOwner, iPlayer, city):
 			for iTech in lNativeTechs:
 				if not team(iPlayer).isHasTech(iTech):
 					team(iPlayer).setHasTech(iTech, True, iPlayer, False, False)
-					print("Gave " + str(iPlayer) + " iTech: " + str(iTech)) # temp debug
 					return
 
 ### FIRST CITY ###

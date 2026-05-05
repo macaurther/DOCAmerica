@@ -419,7 +419,7 @@ def calculateAdministration(city):
 		elif iCiv == iPortugal:
 			return 70
 		elif iCiv == iRussia:
-			return 75
+			return 50
 		elif iCiv == iSpain:
 			return 90
 
@@ -643,7 +643,7 @@ def calculateStability(iPlayer):
 	elif iCiv == iPortugal:
 		iMotherlandStability = 5
 	elif iCiv == iRussia:
-		iMotherlandStability = 10
+		iMotherlandStability = 5
 	elif iCiv == iSpain:
 		iMotherlandStability = 15
 	
