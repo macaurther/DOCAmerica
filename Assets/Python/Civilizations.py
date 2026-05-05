@@ -158,10 +158,11 @@ class Civilization(object):
 				self.player.setLastStateReligion(iNewStateReligion)
 				events.fireEvent("playerChangeStateReligion", self.player.getID(), iNewStateReligion, iOldStateReligion)
 		
+		iCivCultureGroup = gc.getCivilizationInfo(self.iCiv).getCultureGroup()
 		if self.techs:
 			for iTech in self.techs:
 				iTechCultureGroup = gc.getTechInfo(iTech).getCultureGroup()
-				iCivCultureGroup = gc.getCivilizationInfo(self.iCiv).getCultureGroup()
+				
 				# MacAurther: do give native and colony techs that are not repeatable to nations
 				if iCivCultureGroup == iCultureGroupNation and not gc.getTechInfo(iTech).isRepeat():
 					pass
@@ -176,6 +177,10 @@ class Civilization(object):
 		if self.extraTechs:		# Extra techs are where things like culture group restrictions can be overridden
 			for iTech in self.extraTechs:
 				self.team.setHasTech(iTech, True, self.player.getID(), False, False)
+				# Don't let civ broker tech if the extra tech is a culture group other than its own
+				iTechCultureGroup = gc.getTechInfo(iTech).getCultureGroup()
+				if iTechCultureGroup != iCivCultureGroup:
+					self.team.setNoTradeTech(iTech, True)
 
 
 		self.player.setStartingEra(self.player.getCurrentEra())
@@ -649,9 +654,9 @@ dStartingUnits = CivDict({
 		iSettle: 8,
 		iWork: 5,
 		iBase: 8,
-		iAttack: 2,
-		iSkirmish: 2,
-		iCitySiege: 2,
+		iAttack: 4,
+		iSkirmish: 4,
+		iCitySiege: 3,
 		iFerry: 1,
 		iMissionary: 1,
 	},
@@ -792,13 +797,14 @@ dExtraAIUnits = CivDict({
 		iReconSea: 1,
 	},
 	iAmerica: {
-		iBase: 4,
-		iAttack: 8,
+		iBase: 6,
+		iDefend: 6,
+		iAttack: 6,
 		iSkirmish: 3,
 		iShock: 4,
 		iSiege: 2,
-		iFerry: 1,
-		iEscort: 3,
+		iFerry: 2,
+		iEscort: 5,
 	},
 	iArgentina: {
 		iDefend: 3,

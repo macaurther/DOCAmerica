@@ -126,6 +126,9 @@ class CvImmigrationManager:
 
 	def computerGetNumImmigrantsToTransport(self, iPlayer, iHomeland):
 		return objImmigrationUtils.computerGetNumImmigrantsToTransport(iPlayer, iHomeland)
+	
+	def canEarnImmigrants(self, iPlayer):
+		return objImmigrationUtils.canEarnImmigrants(iPlayer)
 		
 	# Populates the panel that shows all of the available immigrants
 	def populateAvailableColonistsPanel(self, screen):

@@ -309,7 +309,8 @@ def showVictoryScreen():
 # < Immigration Manager Start >
 immigrationManager = CvImmigrationManager.CvImmigrationManager(IMMIGRATION_MANAGER)
 def showImmigrationManager():
-	immigrationManager.interfaceScreen()
+	if immigrationManager.canEarnImmigrants(CyGame().getActivePlayer()):
+		immigrationManager.interfaceScreen()
 
 def computerGetNumImmigrantsToTransport(argsList):
 	iPlayer, iHomeland = argsList

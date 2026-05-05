@@ -31,10 +31,13 @@ def foundReligions():
 	if turn() == year(1521):
 		foundReligion(tHolyCity, iProtestantism)
 
+@handler("BeginGameTurn")
+def spreadChristianityIceland():
+	spreadReligionToRegion(iCatholicism, [rIceland], 1100, 10)
 
 @handler("BeginGameTurn")
 def spreadJudaism():
-	spreadReligionToRegion(iJudaism, [rOntario, rNewEngland, rMidAtlantic], 1850, 10)
+	spreadReligionToRegion(iJudaism, [rOntario, rNewEngland, rMidAtlantic], 1820, 10)
 
 @handler("religionSpread")
 def replacePaganTemple(iReligion, iPlayer, city):

@@ -17,6 +17,9 @@ tHolyCity = (82, 0)	# MacAurther: faux city to be the Holy City for all old worl
 tLakeTexcocoTL = (24, 67)
 tLakeTexcocoBR = (25, 68)
 
+# Long Island
+tLongIsland = (49, 90)
+
 ## Victory
 
 # second Norse goal: Settle Vinland by 1100 AD

@@ -89,7 +89,7 @@ class ImmigrationUtils:
 
 	def canEarnImmigrants(self, iPlayer, iHomeland=-1):
 		pPlayer = player(iPlayer)
-		if iHomeland == -1:
+		if iHomeland in [-1, None]:
 			return any(gc.getTeam(pPlayer.getTeam()).isHasTech(iTech) for iTech in lImmigraitonTechs)
 		return gc.getTeam(pPlayer.getTeam()).isHasTech(lImmigraitonTechs[iHomeland])
 	
