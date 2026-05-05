@@ -1849,7 +1849,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 	}
 
 	// MacAurther: Land movement rules
-	if (pSelectionGroup->getDomainType() == DOMAIN_LAND)
+	if (pSelectionGroup->getDomainType() == DOMAIN_LAND && !pSelectionGroup->getHeadUnit()->isAnimal())
 	{
 		if (!pFromPlot->isWater() && !pToPlot->isWater())
 		{
@@ -1857,8 +1857,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 			if ((GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isPeak()) && 
 				(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isPeak()))
 			{
-				if (!GET_TEAM(GET_PLAYER(pSelectionGroup->getHeadUnit()->getOwner()).getTeam()).isHasTech((TechTypes)PATHFINDING) &&
-					!pSelectionGroup->getHeadUnit()->isAnimal())
+				if (!GET_TEAM(GET_PLAYER(pSelectionGroup->getHeadUnit()->getOwner()).getTeam()).isHasTech((TechTypes)PATHFINDING))
 				{
 					return false;
 				}

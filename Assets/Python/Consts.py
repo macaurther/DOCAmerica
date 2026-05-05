@@ -79,7 +79,7 @@ iWari : 500,
 iMississippi : 600,
 iMuisca : 800,
 iToltec : 850,
-iNorse : 20,#874,
+iNorse : 874,
 iChimu : 900,
 iPueblo : 950,
 iArawak : 1000,
@@ -198,7 +198,7 @@ iTan = 90
 iLime = 100
 
 # scripted conquerors
-iNumConquests = 26
+iNumConquests = 27
 
 lNeighbours = [
 	(iMaya, iAztec),

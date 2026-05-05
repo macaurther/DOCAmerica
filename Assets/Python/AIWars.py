@@ -176,13 +176,13 @@ tCanadaLakotaBR = (30, 105)
 iConquestNum, tConquestCanadaLakota = processConquest(iConquestNum, iCanada, iLakota, tCanadaLakotaTL, tCanadaLakotaBR, 2, iCanadaLakotaYear, 10)
 
 
-lConquests = [tConquestIncaWari, tConquestIncaTiwanaku, tConquestIncaChimu,
-tConquestSpainAztecs, tConquestSpainPurepechans, tConquestSpainZapotec, tConquestSpainInca, tConquestSpainWari, tConquestSpainChimu, tConquestSpainMuisca, tConquestSpainPueblo, tConquestSpainMaya,
-tConquestEnglandNetherlands, tConquestEngland1812Washington, tConquestEngland1812NewOrleans, 
-tConquestFranceMexico,
-tConquestNetherlandsNorse,
-tConquestAmericaHaudenosaunee, tConquestAmericaCanada, tConquestAmericaCherokee, tConquestAmericaMexico, tConquestAmericaCSA, tConquestAmericaLakota, tConquestAmericaApache, tConquestAmericaCuba,
-tConquestCanadaLakota]
+lConquests = [tConquestIncaWari, tConquestIncaTiwanaku, tConquestIncaChimu, # 3
+tConquestSpainAztecs, tConquestSpainPurepechans, tConquestSpainZapotec, tConquestSpainInca, tConquestSpainWari, tConquestSpainChimu, tConquestSpainMuisca, tConquestSpainPueblo, tConquestSpainMaya, # 9
+tConquestEnglandNetherlands, tConquestEnglandQuebec, tConquestEngland1812Washington, tConquestEngland1812NewOrleans, # 4
+tConquestFranceMexico, # 1
+tConquestNetherlandsNorse, # 1
+tConquestAmericaHaudenosaunee, tConquestAmericaCanada, tConquestAmericaCherokee, tConquestAmericaMexico, tConquestAmericaCSA, tConquestAmericaLakota, tConquestAmericaApache, tConquestAmericaCuba, # 8
+tConquestCanadaLakota] # 1
 
 
 @handler("GameStart")
