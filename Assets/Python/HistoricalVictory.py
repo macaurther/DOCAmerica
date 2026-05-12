@@ -161,7 +161,7 @@ dGoals = {
 	iMuisca: (
 		ControlledResourceCount(iGold, 3, at=1150),
 		AveragePopulation(10, at=1300),
-		GoldAmount(20000, by=1400),
+		GoldAmount(8000, by=1400),
 	),
 	iNorse: (
 		All(
@@ -214,7 +214,7 @@ dGoals = {
 	iInuit: (
 		CityCount(
 			(plots.rectangle(tKivalliq).named(KIVALLIQ), 1),		# Western Hudson Bay
-			(plots.rectangle(tQikiqtaaluk).named(QIKIQTAALUK), 1),	# Baffin Island and islands
+			(plots.rectangle(tQikiqtaaluk).without(lQikiqtaalukExceptions).named(QIKIQTAALUK), 1), # Baffin Island and islands
 			(plots.rectangle(tNunavik).named(NUNAVIK), 1),			# Northern Quebec/ Eastern Hudson Bay
 			(plots.region(rGreenland).named(KALAALLIT), 1),			# Greenland
 			by=1500

@@ -1077,6 +1077,7 @@ dBuildingPreferences = {
 		iSerpentMound: -40,
 		iMachuPicchu: -40,
 		iSacsayhuaman: -40,
+		iPuebloBonito: -80,
 		iYachaywasi: -100, # They become too powerful!!
 	},
 	iWari : {

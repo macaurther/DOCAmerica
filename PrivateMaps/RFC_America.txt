@@ -29282,6 +29282,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
+	ImprovementType=IMPROVEMENT_CITY_RUINS
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
@@ -30050,6 +30051,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	ImprovementType=IMPROVEMENT_CITY_RUINS
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot

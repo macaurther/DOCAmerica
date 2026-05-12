@@ -4445,10 +4445,32 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 							{
 								FAssertMsg(item.m_iData >= 0, "item.m_iData is expected to be non-negative (invalid Index)");
 
-								//if (GET_PLAYER(eWhoTo).canResearch(((TechTypes)item.m_iData), true)) // MacAurther: Don't need to be able to research a tech to trade it, to let natives get guns and such. let's see how this works out
-								//{
-								return true;
-								//}
+								if (GET_PLAYER(eWhoTo).canResearch(((TechTypes)item.m_iData), true))
+								{
+									return true;
+								}
+								// MacAurther: Can also trade if it's a culture group tech
+								if (GC.getTechInfo((TechTypes)(item.m_iData)).getCultureGroup() > NO_CULTURE_GROUP)
+								{
+									return true;
+								}
+								// MacAurther: Can also trade if any its prerequisites are culture group techs
+								for (int iI = 0; iI < GC.getNUM_OR_TECH_PREREQS(); iI++)
+								{
+									TechTypes ePrereq = (TechTypes)GC.getTechInfo((TechTypes)(item.m_iData)).getPrereqOrTechs(iI);
+									if (ePrereq != NO_TECH && GC.getTechInfo((TechTypes)ePrereq).getCultureGroup() > NO_CULTURE_GROUP)
+									{
+										return true;
+									}
+								}
+								for (int iI = 0; iI < GC.getNUM_AND_TECH_PREREQS(); iI++)
+								{
+									TechTypes ePrereq = (TechTypes)GC.getTechInfo((TechTypes)(item.m_iData)).getPrereqAndTechs(iI);
+									if (ePrereq != NO_TECH && GC.getTechInfo((TechTypes)ePrereq).getCultureGroup() > NO_CULTURE_GROUP)
+									{
+										return true;
+									}
+								}
 							}
 						}
 					}

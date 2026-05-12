@@ -29,7 +29,8 @@ tDelaware = ((46, 88), (47, 90))
 
 # first Inuit goal: Settle Kivalliq (Western Hudson Bay), Qikiqtaaluk (Baffin Island), Nunavik (Eastern Hudson Bay), and Kalaallit (Greenland) by 1100 AD
 tKivalliq = ((31, 105), (34, 109))
-tQikiqtaaluk = ((39, 109), (47, 115))
+tQikiqtaaluk = ((34, 109),	(47, 116))
+lQikiqtaalukExceptions = [(34, 109), (34, 110), (34, 111), (34, 112), (35, 110), (35, 111), (36, 109), (36, 111), (36, 112), (37, 109), (37, 111), (37, 112), (38, 109), (47, 116)]
 tNunavik = ((41, 102), (42, 107))
 
 # first Incan goal: build five Tambos and a road along the Andean coast by 1500 AD
