@@ -11240,6 +11240,12 @@ bool CvPlot::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible) const
 							break;
 						}
 					}
+					// MacAurther: Can train work boats on wide rivers regardless - the all lead to the sea
+					if (pLoopPlot->getTerrainType() == TERRAIN_WIDE_RIVER)
+					{
+						bValid = true;
+						break;
+					}
 				}
 			}
 

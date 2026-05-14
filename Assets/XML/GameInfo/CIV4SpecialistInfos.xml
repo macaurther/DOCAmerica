@@ -457,7 +457,8 @@
 			<GreatPeopleUnitClass>NONE</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>0</iGreatPeopleRateChange>
 			<Yields>
-				<iYield>2</iYield>
+				<iYield>1</iYield>
+				<iYield>1</iYield>
 			</Yields>
 			<Commerces>
 				<iCommerce>0</iCommerce>

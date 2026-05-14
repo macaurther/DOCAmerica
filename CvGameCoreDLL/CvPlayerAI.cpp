@@ -10873,6 +10873,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	case CIVIC_SLAVERY:
 	case CIVIC_BONDAGE:
 		if (getCurrentEra() < ERA_INDUSTRIAL) iValue += countRequiredSlaves() * 12 + 50;
+		if (getCivilizationType() == CSA) iValue += 1000;	// Force CSA to use Bondage so USA can free their slaves
 		break;
 	case CIVIC_PATRONATO:
 	case CIVIC_RAIDING:
