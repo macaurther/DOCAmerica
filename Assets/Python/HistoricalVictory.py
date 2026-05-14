@@ -204,7 +204,7 @@ dGoals = {
 		UnitCount(iHorseArcher, 1, by=1550),
 	),
 	iPurepecha: (
-		ControlledResourceCount(iFish, 2, by=1300),
+		ControlledResourceCount(iFish, 2, by=1250),
 		All(
 			UnitLevelCount(3, 10),
 			by=1500,

@@ -309,7 +309,7 @@ lCivilizations = [
 		iAztec,
 		iGold=300,
 		lCivics=[iDespot, iTlacotin, iRaiding, iSacrifice, iConquest],
-		lEnemies=[iTeotihuacan, iToltec],
+		lEnemies=[iTeotihuacan, iToltec, iPurepecha],
 		techs=techs.column(4).including(iWriting, iCalendar, iTradeRoutes, iPriesthood, iGeneralship, iMathematics, iAstronomy),
 		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iCompanionPlanting, iKnapping, iFishing),
 	),
