@@ -7330,6 +7330,23 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			}
 		}
 
+		// MacAurther: Machu Picchu Effect (+1 to all yields on peaks)
+		if (isPeak())
+		{
+			pWorkingCity = getWorkingCity();
+			
+			if (pWorkingCity != NULL)
+			{
+				if (pWorkingCity->isHasBuildingEffect((BuildingTypes)BUILDING_MACHU_PICCHU))
+				{
+					if (!bDisplay || pWorkingCity->isRevealed(GC.getGameINLINE().getActiveTeam(), false))
+					{
+						iYield += 1;
+					}
+				}
+			}
+		}
+
 		if (GET_PLAYER(ePlayer).isGoldenAge())
 		{
 			if (iYield >= GC.getYieldInfo(eYield).getGoldenAgeYieldThreshold())

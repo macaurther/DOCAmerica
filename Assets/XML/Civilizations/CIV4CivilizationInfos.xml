@@ -698,8 +698,6 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Hamilton</City>
-				<City>Mississauga</City>
 				<City>Windsor</City>
 				<City>Laval</City>
 				<City>Kitchener</City>
@@ -788,8 +786,8 @@
 				</Leader>
 			</Leaders>
 			<DerivativeCiv>CIVILIZATION_ENGLAND</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_ENGLAND_SELECT</CivilizationSelectionSound>
-			<CivilizationActionSound>AS3D_ENGLAND_ORDER</CivilizationActionSound>
+			<CivilizationSelectionSound>AS3D_CANADA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_CANADA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_CHEROKEE</Type>

@@ -63,11 +63,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MACHU_PICCHU_HELP</Tag>
-		<English>[ICON_BULLET]+2[ICON_GOLD] per Peak in City Radius</English>
-		<French>[ICON_BULLET]+2[ICON_GOLD] per Peak in City Radius</French>
-		<German>[ICON_BULLET]+2[ICON_GOLD] per Peak in City Radius</German>
-		<Italian>[ICON_BULLET]+2[ICON_GOLD] per Peak in City Radius</Italian>
-		<Spanish>[ICON_BULLET]+2[ICON_GOLD] per Peak in City Radius</Spanish>
+		<English>[ICON_BULLET]+1[ICON_FOOD], +1 [ICON_PRODUCTION], and +1[ICON_COMMERCE] on Peaks in City Radius</English>
+		<French>[ICON_BULLET]+1[ICON_FOOD], +1 [ICON_PRODUCTION], and +1[ICON_COMMERCE] on Peaks in City Radius</French>
+		<German>[ICON_BULLET]+1[ICON_FOOD], +1 [ICON_PRODUCTION], and +1[ICON_COMMERCE] on Peaks in City Radius</German>
+		<Italian>[ICON_BULLET]+1[ICON_FOOD], +1 [ICON_PRODUCTION], and +1[ICON_COMMERCE] on Peaks in City Radius</Italian>
+		<Spanish>[ICON_BULLET]+1[ICON_FOOD], +1 [ICON_PRODUCTION], and +1[ICON_COMMERCE] on Peaks in City Radius</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MACHU_PICCHU_STRATEGY</Tag>

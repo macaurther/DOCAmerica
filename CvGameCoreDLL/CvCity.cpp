@@ -4482,6 +4482,11 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		{
 			updateYield();
 		}
+		// Machu Picchu
+		else if (eBuilding == (BuildingTypes)BUILDING_MACHU_PICCHU)
+		{
+			updateYield();
+		}
 
 		GET_PLAYER(getOwnerINLINE()).changeAssets(GC.getBuildingInfo(eBuilding).getAssetValue() * iChange);
 

@@ -3,12 +3,6 @@ from RFCUtils import *
 from Events import handler
 
 
-@handler("buildingBuilt")
-def machuPicchuEffect(city, iBuilding):
-	if iBuilding == iMachuPicchu:
-		iNumPeaks = plots.city_radius(city).where(lambda plot: plot.isPeak()).count()
-		city.setBuildingCommerceChange(infos.building(iMachuPicchu).getBuildingClassType(), CommerceTypes.COMMERCE_GOLD, iNumPeaks * 2)
-		
 # Mount Vernon effect: free Great Person whenever a Great General is born
 @handler("greatPersonBorn")
 def mountVernonEffect(unit, iPlayer):

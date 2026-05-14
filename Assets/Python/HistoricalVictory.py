@@ -156,7 +156,11 @@ dGoals = {
 			Wonder(iSerpentMound),
 			by=1100,
 		),
-		CitySpecialistCount(city(tCahokia).named(CAHOKIA), iSpecialistGreatMerchant, 3, by=1250),
+		All(
+			CitySpecialistCount(city(tCahokia).named(CAHOKIA), iSpecialistGreatMerchant, 3),
+			PopulationCount(50),
+			by=1250
+		)
 	),
 	iMuisca: (
 		ControlledResourceCount(iGold, 3, at=1150),
@@ -261,11 +265,13 @@ dGoals = {
 		)
 	),
 	iPortugal: (
-		ResourceCount(sum(lPlantationResources).named(PLANTATION_RESOURCES), 30, by=1650),
-		CityCount(sum(
-			plots.regions(*lBrazil).named(BRAZIL),
-		), 15, by=1700),
-		SpecialistCount(iSpecialistSlave, 100, by=1800),
+		ResourceCount(sum(lPlantationResources).named(PLANTATION_RESOURCES), 25, by=1650),
+		All(
+            BuildingCount((iFeitoria, 12), (iEstate, 15)),
+			SpecialistCount(iSpecialistSlave, 30),
+			by=1700
+		),
+		AreaPercent(plots.regions(*lBrazil).named(BRAZIL), 80, subject=VASSALS, at=1800),
 	),
 	iEngland: (
 		All(
@@ -326,8 +332,12 @@ dGoals = {
 	),
 	iRussia: (
 		ImprovementCount(iCamp, 10, by=1800),
-		AreaPercent(plots.region(rAlaska).named(ALASKA), 100, subject=VASSALS, at=1820),
-		TradeGold(2000, by=1870),
+		All(
+            AreaPercent(plots.region(rAlaska).named(ALASKA), 100, subject=VASSALS),
+			BuildingCount((iHuntingPost, 8)),
+			at=1820
+		),
+		TradeGold(10000, by=1870),
 	),
 	iAmerica: (
 		AllowNone(
