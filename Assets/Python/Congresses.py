@@ -233,9 +233,9 @@ class Congress:
 		for x, y, _ in self.dPossibleClaims[active()]:
 			city = city_(x, y)
 			if city:
-				event.applyClaimCity(city.getName(), button=infos.civ(city).getButton())
+				event.applyClaimCity("%s (%s)" % (city.getName(), plot(x, y).getRegionName()), button=infos.civ(city).getButton())
 			else:
-				event.applyClaimCity(cn.getDisplayName(civ(), (x, y)), button='Art/Interface/Buttons/Actions/FoundCity.dds')
+				event.applyClaimCity("%s (%s)" % (cn.getDisplayName(civ(), (x, y)), plot(x, y).getRegionName()), button='Art/Interface/Buttons/Actions/FoundCity.dds')
 				
 		event.noClaim().launch()
 
@@ -255,11 +255,11 @@ class Congress:
 		if plot.isCity():
 			event = self.vote_claim.text("TXT_KEY_CONGRESS_REQUEST_CITY", name(iClaimant), adjective(plot), city(plot).getName())
 		elif plot.getOwner() == iClaimant:
-			event = self.vote_claim.text("TXT_KEY_CONGRESS_REQUEST_SETTLE_OWN", name(iClaimant), cn.getDisplayName(iClaimant, (x, y)))
+			event = self.vote_claim.text("TXT_KEY_CONGRESS_REQUEST_SETTLE_OWN", name(iClaimant), cn.getDisplayName(iClaimant, (x, y)), plot.getRegionName())
 		elif plot.isOwned():
-			event = self.vote_claim.text("TXT_KEY_CONGRESS_REQUEST_SETTLE_FOREIGN", name(iClaimant), adjective(plot), cn.getDisplayName(iClaimant, (x, y)))
+			event = self.vote_claim.text("TXT_KEY_CONGRESS_REQUEST_SETTLE_FOREIGN", name(iClaimant), adjective(plot), plot.getRegionName(), cn.getDisplayName(iClaimant, (x, y)))
 		else:
-			event = self.vote_claim.text("TXT_KEY_CONGRESS_REQUEST_SETTLE_EMPTY", name(iClaimant), cn.getDisplayName(iClaimant, (x, y)))
+			event = self.vote_claim.text("TXT_KEY_CONGRESS_REQUEST_SETTLE_EMPTY", name(iClaimant), plot.getRegionName(), cn.getDisplayName(iClaimant, (x, y)))
 			
 		event.approveClaim().abstainClaim().denyClaim().launch(iClaimant, plot.getOwner())
 		
@@ -303,12 +303,12 @@ class Congress:
 			if bCity:
 				event = self.bribe_other_city.text(adjective(iBribedPlayer), adjective(plot), city(plot).getName())
 			else:
-				event = self.bribe_other_plot.text(adjective(iBribedPlayer), adjective(plot), closestCity(plot, iBribedPlayer, same_continent=True).getName())
+				event = self.bribe_other_plot.text(adjective(iBribedPlayer), adjective(plot), plot.getRegionName(), closestCity(plot, iBribedPlayer, same_continent=True).getName())
 		else:	
 			if bCity:
 				event = self.bribe_own_city.text(adjective(iBribedPlayer), adjective(iClaimant), city(plot).getName())
 			else:
-				event = self.bribe_own_territory.text(adjective(iBribedPlayer), adjective(iClaimant), closestCity(plot, active(), same_continent=True).getName())
+				event = self.bribe_own_territory.text(adjective(iBribedPlayer), adjective(iClaimant), plot.getRegionName(), closestCity(plot, active(), same_continent=True).getName())
 		
 		iCost = iDifference * player(iBribedPlayer).calculateTotalCommerce() / 5
 		
@@ -437,7 +437,7 @@ class Congress:
 		if city:
 			event = self.demand_city.text(name(iClaimant), city.getName(), itemize(voted_yes, fullname))
 		else:
-			event = self.demand_plot.text(name(iClaimant), closestCity(plot, active(), same_continent=True).getName(), itemize(voted_yes, fullname))
+			event = self.demand_plot.text(name(iClaimant), plot.getRegionName(), closestCity(plot, active(), same_continent=True).getName(), itemize(voted_yes, fullname))
 		
 		event.acceptDemand().refuseDemand().launch(iClaimant, x, y)
 		
@@ -600,6 +600,7 @@ class Congress:
 			self.voteOnClaimsAI()
 			
 	def applyVotes(self):
+		data.dLastClaims = {}
 		dResults = {}
 		
 		for iClaimant in self.dCityClaims:
@@ -611,6 +612,8 @@ class Congress:
 				else:
 					iOtherClaimant, iVotes = dResults[(x, y)]
 					if self.dVotes[iClaimant] > iVotes: dResults[(x, y)] = (iClaimant, self.dVotes[iClaimant])
+			
+			data.dLastClaims[iClaimant] = (x, y)
 					
 		for (x, y), (iClaimant, iVotes) in dResults.items():
 			plot = plot_(x, y)
@@ -624,7 +627,7 @@ class Congress:
 				else:
 					self.assignCity(iClaimant, plot.getOwner(), (x, y))
 			else:
-				self.lColonies.append((cn.getDisplayName(iClaimant, (x, y)), plot.getOwner(), iClaimant))
+				self.lColonies.append(("%s %s" % (cn.getDisplayName(iClaimant, (x, y)), plot.getRegionName()), plot.getOwner(), iClaimant))
 				if bCanRefuse:
 					self.lHumanAssignments.append((iClaimant, (x, y)))
 				else:
@@ -672,7 +675,7 @@ class Congress:
 		
 		bLimitedDefenders = player(iPlayer).isHuman() or isIsland(flipped)
 		iNumDefenders = bLimitedDefenders and 2 or max(2, player(iPlayer).getCurrentEra()-1)
-		createRoleUnit(iPlayer, flipped, iDefend, iNumDefenders)
+		ensureDefenders(iPlayer, flipped, iNumDefenders)
 		
 	def foundColony(self, iPlayer, (x, y)):
 		plot = plot_(x, y)
@@ -842,7 +845,6 @@ class Congress:
 		if pVoter.AI_getAttitude(iClaimant) >= AttitudeTypes.ATTITUDE_CAUTIOUS: iClaimValidity += iClaimValue
 		
 		if not bRecolonise:
-		
 			# plot factors
 			# plot culture
 			if bOwner:
@@ -851,16 +853,27 @@ class Congress:
 				# after wars: claiming from a non-participant has less legitimacy unless its your own claim
 				if self.bPostWar and not bOwnClaim and iOwner not in self.losers:
 					iClaimValidity -= 10
+					
+				# reluctant to assign capitals
+				if bCity and city.isCapital():
+					iClaimValidity -= 5
 				
 			# generic settler map bonus
-			iClaimValidity += plot.getPlayerSettlerValue(iClaimant)
-
-			# Europeans support colonialism unless they want the plot for themselves (not against Western civs)
-			if civ(iVoter) in dCivGroups[iCivGroupEurope]:
-				if civ(iClaimant) in dCivGroups[iCivGroupEurope]:
-					if not bOwner or civ(iOwner) not in dTechGroups[iTechGroupColony]:
-						if plot.getPlayerSettlerValue(iVoter) == 0:
-							iClaimValidity += 10
+			iClaimantSettlerValue = plot.getPlayerSettlerValue(iClaimant)
+			iOwnerSettlerValue = bOwner and plot.getPlayerSettlerValue(iOwner) or 0
+			iClaimValidity += 2 * (iClaimantSettlerValue - iOwnerSettlerValue)
+			
+			# colonialism
+			if bColonialVoter and plot.getPlayerSettlerValue(iVoter) == 0:
+				iClaimValidity += 10
+				
+				if player(iClaimant).getCurrentEra() == iIndustrial and plot.getPlayerSettlerValue(iClaimant) > 0:
+					iClaimValidity += 10
+				
+					if plot.getRegionID() in lAfrica:
+						iClaimValidity += 5
+					if plot.getRegionID() in lSubSaharanAfrica:
+						iClaimValidity += 5
 							
 			# vote to support settler maps for civs from your own group
 			if bOwner:
@@ -1024,7 +1037,7 @@ class Congress:
 		if not self.dPossibleClaims[iPlayer]: return
 		x, y, iValue = find_max(self.dPossibleClaims[iPlayer], lambda claim: claim[2]).result
 		self.dCityClaims[iPlayer] = (x, y, iValue)
-		
+	
 	def canClaim(self, iPlayer):
 		if not self.bPostWar: return True
 		
@@ -1033,6 +1046,15 @@ class Congress:
 		if iPlayer in self.losers: return True
 		
 		return False
+	
+	def getSettlerClaimValue(self, iSettlerMapValue):
+		iValue = 0
+		
+		if iSettlerMapValue > 0: iValue += 1
+		if iSettlerMapValue > 1: iValue += 2
+		if iSettlerMapValue >= 10: iValue += 2
+		
+		return iValue
 			
 	def selectClaims(self, iPlayer):
 		pPlayer = player(iPlayer)
@@ -1050,11 +1072,15 @@ class Congress:
 				if iPlayer in self.losers and iLoopPlayer not in self.winners: continue
 				
 			# AI civs: cannot claim cities from friends
-			if not player(iPlayer).isHuman() and pPlayer.AI_getAttitude(iLoopPlayer) >= AttitudeTypes.ATTITUDE_FRIENDLY: 
+			if not player(iPlayer).isHuman() and not is_minor(iLoopPlayer) and pPlayer.AI_getAttitude(iLoopPlayer) >= AttitudeTypes.ATTITUDE_FRIENDLY: 
 				continue
 			
 			# recently spawned
 			if since(player(iLoopPlayer).getLastBirthTurn()) <= turns(10):
+				continue
+			
+			# never met
+			if not team(iPlayer).isHasEverMet(player(iLoopPlayer).getTeam()):
 				continue
 			
 			# exclude master/vassal relationships
@@ -1063,8 +1089,9 @@ class Congress:
 			if team(iPlayer).isAVassal() and master(iPlayer) == master(iLoopPlayer): continue
 			
 			# cannot demand cities while at war
-			if team(iPlayer).isAtWar(iLoopPlayer): 
+			if not is_minor(iLoopPlayer) and team(iPlayer).isAtWar(iLoopPlayer): 
 				continue
+
 			
 			for city in cities.owner(iLoopPlayer):
 				plot = plot_(city)
@@ -1073,8 +1100,8 @@ class Congress:
 				
 				bRecolonise = not self.bPostWar and city.getRegionID() in lAmerica and civ(iPlayer) in dCivGroups[iCivGroupEurope] and civ(city) in dCivGroups[iCivGroupAmerica] and civ(city) in dTechGroups[iTechGroupColony]
 				
-				if not plot.isRevealed(iPlayer, False): continue
-				if city.isCapital(): continue
+				if player(iPlayer).isHuman() and not plot.isRevealed(iPlayer, False): continue
+				if not player(iPlayer).isHuman() and location(plot) == data.dLastClaims.get(iPlayer): continue
 				
 				# after a war: losers can only claim previously owned cities
 				if self.bPostWar and iPlayer in self.losers:
@@ -1101,18 +1128,25 @@ class Congress:
 					iValue += 5
 							
 				# colonies
-				if not bRecolonise:
+				if not bRecolonise and city.getPreviousCiv() != civ(iPlayer):
 					if civ(iPlayer) in dCivGroups[iCivGroupEurope]:
-						if is_minor(iLoopPlayer) or (civ(iLoopPlayer) not in dCivGroups[iCivGroupEurope] and stability(iLoopPlayer) < iStabilityShaky) or (civ(iLoopPlayer) in dCivGroups[iCivGroupEurope] and not player(iLoopPlayer).isHuman() and pPlayer.AI_getAttitude(iLoopPlayer) < AttitudeTypes.ATTITUDE_PLEASED):
-							if iSettlerMapValue > 0:
-								iValue += iSettlerMapValue
+						if is_minor(iLoopPlayer) or (civ(iLoopPlayer) not in dCivGroups[iCivGroupEurope] and stability(iLoopPlayer) <= iStabilityShaky) or (civ(iLoopPlayer) in dCivGroups[iCivGroupEurope] and not player(iLoopPlayer).isHuman() and pPlayer.AI_getAttitude(iLoopPlayer) < AttitudeTypes.ATTITUDE_PLEASED):
+							if plot.getRegionID() in lLateColonialRegions or (plot.getRegionID() in lAmerica and civ(iLoopPlayer) in dCivGroups[iCivGroupEurope]):
+								if iSettlerMapValue > 0:
+									iValue += self.getSettlerClaimValue(iSettlerMapValue)
+									iValue += plot.getPlayerWarValue(iPlayer)
+									
+									if civ(iLoopPlayer) in dTechGroups[iTechGroupWestern]:
+										iValue /= 2
+									elif player(iPlayer).getCurrentEra() == iIndustrial and plot.getRegionID() in lSubSaharanAfrica:
+										iValue += 5
 									
 				# weaker and collapsing empires
 				if not is_minor(iLoopPlayer):
 					if game.getPlayerRank(iPlayer) > iNumPlayersAlive / 2 and game.getPlayerRank(iLoopPlayer) < iNumPlayersAlive / 2:
 						if data.players[iLoopPlayer].iStabilityLevel == iStabilityCollapsing:
 							if iSettlerMapValue > 0:
-								iValue += iSettlerMapValue
+								iValue += self.getSettlerClaimValue(iSettlerMapValue)
 									
 				# close to own empire
 				closest = closestCity(city, iPlayer)
@@ -1153,7 +1187,6 @@ class Congress:
 		lPlots = sort(lPlots, lambda p: p[2] + rand(3), True)
 		
 		# remove settled plots with the same name
-		#lPlots = [(x, y, value) for index, (x, y, value) in enumerate(lPlots) if city_(x, y) or cn.getDisplayName(iPlayer, (x, y)) not in [cn.getDisplayName(iPlayer, (ix, iy)) for (ix, iy, ivalue) in lPlots[:index]]]
 		lPlots = self.filterSettledPlots(iPlayer, lPlots)
 		
 		return lPlots[:10]
@@ -1167,22 +1200,25 @@ class Congress:
 				
 			lOtherNames =  []
 			for ix, iy, ivalue in lPlots[:index]:
-				try:
-					lOtherNames.append(cn.getDisplayName(iPlayer, (ix, iy)))
-				except Exception, e:
-					raise Exception("Encountered exception for %s on %s: %s" % (name(iPlayer), (ix, iy), e))
+				lOtherNames.append(cn.getDisplayName(iPlayer, (ix, iy)))
 			
-			try:
-				if cn.getDisplayName(iPlayer, (x, y)) not in lOtherNames:
-					lFiltered.append((x, y, value))
-					continue
-			except Exception, e:
-				raise Exception("Encountered exception for %s on %s: %s" % (name(iPlayer), (x, y), e))
+			if cn.getDisplayName(iPlayer, (x, y)) not in lOtherNames:
+				lFiltered.append((x, y, value))
+				continue
 		
 		return lFiltered
 				
 	def getHighestRankedPlayers(self, lPlayers, iNumPlayers):
 		return players.of(lPlayers).highest(iNumPlayers, game.getPlayerRank)
+	
+	def additionalInvites(self):
+		invites = []
+		
+		# America: claims in the west
+		if cities.regions(*lUnitedStates).notowner(iAmerica):
+			invites.append(iAmerica)
+		
+		return [iCiv for iCiv in invites if player(iCiv).isExisting() and not team(player(iCiv).getTeam()).isAVassal()]
 		
 	def invite(self):
 		rank = lambda x: game.getPlayerRank(x)
@@ -1205,9 +1241,12 @@ class Congress:
 			
 		self.invites = self.invites.existing()
 		
-		# America receives an invite if there are still claims in the west
-		if player(iAmerica).isExisting() and not team(player(iAmerica).getTeam()).isAVassal() and iAmerica not in self.invites and not self.bPostWar:
-			if cities.regions(*lUnitedStates).notowner(iAmerica):
-				if len(self.invites) == getNumInvitations():
-					self.invites = self.invites.limit(len(self.invites)-1)
-				self.invites = self.invites.including(slot(iAmerica))
+		if not self.bPostWar:
+			additionalInvites = [iInvite for iInvite in self.additionalInvites() if slot(iInvite) not in self.invites]
+			
+			if additionalInvites:
+				excessInvites = len(self.invites) + len(additionalInvites) - getNumInvitations()
+				if excessInvites > 0:
+					self.invites = self.invites.limit(len(self.invites)-excessInvites)
+			
+				self.invites = self.invites.including(*[slot(iCiv) for iCiv in additionalInvites])

@@ -112,17 +112,27 @@ def downgradeImprovements(iPlayer):
 				plot.setRouteType(-1)
 			
 	message(iPlayer, 'TXT_KEY_STABILITY_DOWNGRADE_IMPROVEMENTS', color=iRed)
+	
+def getPartialCollapseCities(iPlayer):
+	respawnCities = cities.respawn(iPlayer).owner(iPlayer)
+	coreCities = cities.core(iPlayer).owner(iPlayer)
+	
+	if respawnCities.count() > coreCities.count():
+		return respawnCities
+	
+	return coreCities
 		
 def collapseToCore(iPlayer):
-	nonCoreCities = cities.owner(iPlayer).where(lambda city: not city.isPlayerCore(iPlayer))
-	ahistoricalCities = nonCoreCities.where(lambda city: plot(city).getPlayerSettlerValue(iPlayer) == 0)
+	retainedCities = getPartialCollapseCities(iPlayer)
+	secededCities = cities.owner(iPlayer).without(retainedCities)
+	ahistoricalCities = secededCities.where(lambda city: plot_(city).getPlayerSettlerValue(iPlayer) == 0)
 	
 	# release all vassals
 	for iVassal in players.vassals(iPlayer):
 		team(iVassal).setVassal(player(iPlayer).getTeam(), False, False)
 				
 	# more than half ahistorical, only secede ahistorical cities
-	if 2 * ahistoricalCities.count() > nonCoreCities.count():
+	if 2 * ahistoricalCities.count() > secededCities.count():
 	
 		# notify owner
 		message(iPlayer, 'TXT_KEY_STABILITY_FOREIGN_SECESSION', color=iRed)
@@ -131,10 +141,15 @@ def collapseToCore(iPlayer):
 		secession(iPlayer, ahistoricalCities)
 		
 	# otherwise, secede all cities outside of core
-	elif nonCoreCities:
+	elif secededCities:
 	
 		# notify owner
 		message(iPlayer, 'TXT_KEY_STABILITY_COLLAPSE_TO_CORE', color=iRed)
 			
 		# secede all non-core cities
-		secession(iPlayer, nonCoreCities)
+		secession(iPlayer, secededCities)
+	
+	# reduce culture expansion
+	for plot in plots.owner(iPlayer):
+		if none(plot.isCultureRangeCity(iPlayer, iRange) for iRange in range(3)):
+			plot.setCulture(iPlayer, 0, True)

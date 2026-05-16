@@ -811,7 +811,7 @@ def startingLeader(identifier):
 	if not isinstance(identifier, Civ):
 		identifier = civ(identifier)
 		
-	return dStartingLeaders[scenario()].get(identifier, dStartingLeaders[i500BC][identifier])
+	return dStartingLeaders[scenario()].get(identifier, dStartingLeaders[i1AD][identifier])
 	
 def leader(iPlayer):
 	iCiv = civ(iPlayer)

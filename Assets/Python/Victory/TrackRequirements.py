@@ -2,6 +2,7 @@ from Core import *
 from BaseRequirements import *
 
 
+# Second Portuguese UHV goal
 class AreaBlockadeGold(TrackRequirement):
 	
 	TYPES = (AREA, AMOUNT)
@@ -17,7 +18,6 @@ class AreaBlockadeGold(TrackRequirement):
 		
 		self.handle("blockade", self.accumulate_blockade_gold)
 		self.handle("unitPillage", self.accumulate_pillage_gold)
-		self.handle("cityCaptureGold", self.accumulate_city_capture_gold)
 		
 	def accumulate_blockade_gold(self, goal, iGold, city):
 		if city in self.area:
@@ -29,12 +29,8 @@ class AreaBlockadeGold(TrackRequirement):
 			self.accumulate(iGold)
 			goal.check()
 	
-	def accumulate_city_capture_gold(self, goal, iGold, city):
-		if city in self.area:
-			self.accumulate(iGold)
-			goal.check()
 
-
+# Second Portuguese UHV goal
 class AreaReligionSpreadCount(TrackRequirement):
 
 	TYPES = (AREA, RELIGION, COUNT)
@@ -55,6 +51,29 @@ class AreaReligionSpreadCount(TrackRequirement):
 		if self.iReligion == iReligion and unit in self.area:
 			self.increment()
 			goal.check()
+
+
+# Second Australian UHV goal
+class AreaUnitGiftedCount(TrackRequirement):
+	
+	TYPES = (AREA, COUNT)
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_GIFT"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_AREA_UNIT_GIFTED_COUNT"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_AREA_UNIT_GIFTED_COUNT"
+	
+	def __init__(self, area, iCount, **options):
+		TrackRequirement.__init__(self, area, iCount, **options)
+		
+		self.area = area
+		
+		self.handle("unitGifted", self.increment_unit_gifted)
+	
+	def increment_unit_gifted(self, goal, unit, plot):
+		if plot in self.area:
+			if unit.canFight() and capital(unit.getOwner()).allUpgradesAvailable(unit.getUnitType(), 0) < 0:
+				self.increment()
+				goal.check()
 
 
 # First Tibetan UHV goal
@@ -147,6 +166,7 @@ class CombatFood(TrackRequirement):
 		self.accumulated("combatFood")
 
 
+# First Celtic UHV goal
 # First Moorish UHV goal
 # Second Dutch UHV goal
 class ConqueredCities(TrackRequirement):
@@ -238,6 +258,7 @@ class Constructed(TrackRequirement):
 		return "%s %s: %s" % (self.indicator(evaluator), text(self.PROGR_KEY, capitalize(BUILDING.format(self.iBuilding, bPlural=True))), self.progress_value(evaluator))
 
 
+# Second Rus UHV goal
 class DefeatedUnits(TrackRequirement):
 
 	TYPES = (CIVS_ADJECTIVE, COUNT)
@@ -259,7 +280,6 @@ class DefeatedUnits(TrackRequirement):
 			goal.check()
 
 
-# Third Aztec UHV goal
 class EnslaveCount(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -332,6 +352,7 @@ class EraFirstDiscover(TrackRequirement):
 
 # Third Chinese UHV goal
 # Second Toltec UHV goal
+# Second Burmese UHV goal
 # First Argentine UHV goal
 # Third Argentine UHV goal
 # Second Hindu URV goal
@@ -369,7 +390,6 @@ class GoldenAges(TrackRequirement):
 		return [golden_age]
 
 
-# Second Mexican UHV goal
 class GreatGenerals(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -389,7 +409,38 @@ class GreatGenerals(TrackRequirement):
 			goal.check()
 
 
-# Second Buddhist URV goal
+# First Vietnamese UHV goal
+# Third Mongol UHV goal
+# Second Mexican UHV goal
+# Second Australian UHV goal
+class GreatPeople(TrackRequirement):
+	
+	TYPES = (UNIT, COUNT)
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_CREATE"
+	
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_COUNT"
+	
+	def __init__(self, iGreatPerson, iRequired, **options):
+		TrackRequirement.__init__(self, iGreatPerson, iRequired, **options)
+		
+		self.iGreatPerson = iGreatPerson
+		
+		self.handle("greatPersonBorn", self.increment_great_people)
+	
+	def increment_great_people(self, goal, unit):
+		if infos.unit(unit).getUnitClassType() == infos.unit(self.iGreatPerson).getUnitClassType():
+			self.increment()
+			goal.check()
+	
+	def get_description(self, **options):
+		return Requirement.get_description(self, bPlural=self.bPlural, **options)
+
+	def progress_text(self, **options):
+		return Requirement.progress_text(self, bPlural=self.bPlural, **options)
+
+
+# Third Swedish UHV goal
 class HappiestTurns(TrackRequirement):
 
 	TYPES = (TURNS,)
@@ -445,6 +496,7 @@ class HealthiestTurns(TrackRequirement):
 		return (iHealthy * 100) / max(1, iHealthy + iUnhealthy)
 
 
+# First Swahili UHV goal
 class ImportCount(TrackRequirement):
 
 	TYPES = (RESOURCE, TURNS)
@@ -467,6 +519,7 @@ class ImportCount(TrackRequirement):
 		goal.check()
 
 
+# Third Ethiopian UHV goal
 class LiberatedCities(TrackRequirement):
 	
 	TYPES = (AREA, CIVS, COUNT)
@@ -489,7 +542,6 @@ class LiberatedCities(TrackRequirement):
 			goal.check()
 
 
-# First Buddhist URV goal
 class PeaceTurns(TrackRequirement):
 
 	TYPES = (TURNS,)
@@ -561,6 +613,7 @@ class PopeTurns(TrackRequirement):
 			goal.check()
 
 
+# Second Hittite UHV goal
 class Production(TrackRequirement):
 
 	TYPES = (AMOUNT,)
@@ -607,7 +660,6 @@ class RaidGold(TrackRequirement):
 		self.accumulated("combatGold")
 
 
-# Second Mongol UHV goal
 class RazeCount(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -622,6 +674,8 @@ class RazeCount(TrackRequirement):
 		self.incremented("cityRazed")
 
 
+# Third Celtic UHV goal
+# Second Kushan UHV goal
 class ReligionSpreadCount(TrackRequirement):
 
 	TYPES = (RELIGION, COUNT)
@@ -643,6 +697,7 @@ class ReligionSpreadCount(TrackRequirement):
 			goal.check()
 
 
+# Second Tibetan UHV goal
 class ReligionSpreadPopulationCount(TrackRequirement):
 
 	TYPES = (RELIGION, COUNT)
@@ -664,7 +719,6 @@ class ReligionSpreadPopulationCount(TrackRequirement):
 			goal.check()
 	
 
-
 # Third Colombian UHV goal
 class ResourceTradeGold(TrackRequirement):
 
@@ -685,6 +739,22 @@ class ResourceTradeGold(TrackRequirement):
 		goal.check()
 
 
+# Second Mongol UHV goal
+class SackCount(TrackRequirement):
+
+	TYPES = (COUNT,)
+
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_SACK"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_SACK_COUNT"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_SACK_COUNT"
+	
+	def __init__(self, *parameters, **options):
+		TrackRequirement.__init__(self, *parameters, **options)
+		
+		self.incremented("citySacked")
+
+
+# Second Aztec UHV goal
 # Third Aztec Teotl URV goal
 class SacrificeGoldenAges(TrackRequirement):
 
@@ -756,7 +826,6 @@ class SlaveTradeGold(TrackRequirement):
 	
 
 # Third Korean UHV goal
-# Second English UHV goal
 class SunkShips(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -776,7 +845,7 @@ class SunkShips(TrackRequirement):
 			goal.check()
 
 
-# Third Dravidian UHV goal
+# First Dravidian UHV goal
 class TradeGold(TrackRequirement):
 
 	TYPES = (AMOUNT,)
@@ -815,7 +884,7 @@ class TradeGold(TrackRequirement):
 		return self.iValue / 100
 
 
-# Second Mandinka UHV goal
+# Second Mande UHV goal
 class TradeMissionCount(TrackRequirement):
 
 	TYPES = (CITY, COUNT)
@@ -845,6 +914,9 @@ class TradeMissionCount(TrackRequirement):
 		return [trade_mission]
 
 
+# First Malay UHV goal
+# Second Masryeen UHV goal
+# Third Portuguese UHV goal
 class TradeRouteCommerce(TrackRequirement):
 
 	TYPES = (AMOUNT,)
@@ -859,7 +931,7 @@ class TradeRouteCommerce(TrackRequirement):
 		self.handle("BeginPlayerTurn", self.accumulate_trade_route_commerce)
 	
 	def accumulate_trade_route_commerce(self, goal, iGameTurn, iPlayer):
-		iGold = cities.owner(iPlayer).sum(lambda city: city.getTradeYield(YieldTypes.YIELD_COMMERCE))
+		iGold = cities.owner(iPlayer).sum(lambda city: city.getTradeYield(YieldTypes.YIELD_COMMERCE) * city.getBaseYieldRateModifier(YieldTypes.YIELD_COMMERCE, 0)) / 100
 		self.accumulate(iGold)
 		goal.check()
 

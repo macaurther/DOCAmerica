@@ -197,6 +197,12 @@ int CyPlot::getFeatureProduction(int /*BuildTypes*/ eBuild, int /*TeamTypes*/ eT
 	return m_pPlot ? m_pPlot->getFeatureProduction((BuildTypes) eBuild, (TeamTypes) eTeam, &tempCity) : -1;
 }
 
+void CyPlot::setWorkingCity(CyCity* pCity)
+{
+	CvCity* tempCity = pCity->getCity();
+	if (m_pPlot) m_pPlot->setWorkingCityOverride(tempCity);
+}
+
 CyUnit* CyPlot::getBestDefender(int /*PlayerTypes*/ eOwner, int /*PlayerTypes*/ eAttackingPlayer, CyUnit* pAttacker, bool bTestAtWar, bool bTestPotentialEnemy, bool bTestCanMove)
 {
 	return m_pPlot ? new CyUnit(m_pPlot->getBestDefender((PlayerTypes) eOwner, (PlayerTypes) eAttackingPlayer, pAttacker->getUnit(), bTestAtWar, bTestPotentialEnemy, bTestCanMove)) : NULL;
@@ -776,6 +782,11 @@ int /* BonusTypes */ CyPlot::getBonusType(int /*TeamTypes*/ eTeam)
 int /* BonusTypes */ CyPlot::getNonObsoleteBonusType(int /*TeamTypes*/ eTeam)
 {
 	return m_pPlot ? m_pPlot->getNonObsoleteBonusType((TeamTypes)eTeam) : -1;
+}
+
+int /* BonusTypes */ CyPlot::getBaseBonusVarietyType()
+{
+	return m_pPlot ? m_pPlot->getBaseBonusVarietyType() : -1;
 }
 
 int /* BonusTypes */ CyPlot::getBonusVarietyType(int /*TeamTypes*/ eTeam)

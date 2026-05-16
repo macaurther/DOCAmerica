@@ -5,6 +5,32 @@ from PIL import Image
 from pathlib import Path
 
 
+def Civ(x):
+	return x
+
+
+class CivDict:
+	
+	def __init__(self, dict, default=None):
+		self.dict = dict
+		self.default = default
+	
+	def __getitem__(self, key):
+		if self.default is None:
+			return self.dict[key]
+		
+		return self.dict.get(key, self.default)
+	
+	def __contains__(self, key):
+		return key in self.dict
+	
+	def get(self, key, default=None):
+		return self.dict.get(key, default)
+
+
+def appenddict(dict):
+	return CivDict(dict, [])
+	
 iWorldX = 85
 iWorldY = 122
 
@@ -194,8 +220,21 @@ tSpreadFactors = (
 )
 
 
+def get_full_path(path):
+	return Path.cwd() / "Assets/Maps" / path
+
+
+def map_exists(file_path):
+	try:
+		open(get_full_path(file_path))
+	except IOError:
+		return False
+	
+	return True
+
+
 def iterate_map(file_path):
-	full_file_path = Path.cwd() / "Assets/Maps" / file_path
+	full_file_path = get_full_path(file_path)
 	
 	with open(full_file_path) as file:
 		for y, line in enumerate(csv.reader(file)):
@@ -204,29 +243,74 @@ def iterate_map(file_path):
 					yield (x, y), 0
 				else:
 					yield (x, y), int(value)
+					
+					
+def is_area(rectangle, exceptions, identifier, tile):
+	x, y = tile
+	
+	(x1, y1), (x2, y2) = rectangle[identifier]
+	excluded = exceptions.get(identifier, [])
+	
+	return x1 <= x <= x2 and y1 <= y <= y2 and (x, y) not in excluded
 
 
 def is_core(iCiv, tile):
-	x, y = tile
-	
-	(tBLx, tBLy), (tTRx, tTRy) = dCoreArea[iCiv]
-	lExceptions = dCoreAreaExceptions.get(iCiv, [])
-	
-	return tBLx <= x <= tTRx and tBLy <= y <= tTRy and (x, y) not in lExceptions
+	return is_area(dCoreArea, dCoreAreaExceptions, iCiv, tile)
 
 
-def iterate_plot_types(iCiv):
+def is_period_core(identifier, tile):
+	iCiv, iPeriod = identifier
+	
+	if iPeriod not in dPeriodCoreArea:
+		return is_core(iCiv, tile)
+	
+	return is_area(dPeriodCoreArea, dPeriodCoreAreaExceptions, iPeriod, tile)
+
+
+def iterate_civ_map(iCiv):
 	civ_name = dCivNames[iCiv]
 
 	settler_values = iterate_map(f"Settler/{civ_name}.csv")
 	war_values = iterate_map(f"War/{civ_name}.csv")
+	
+	return iterate_plot_types(iCiv, settler_values, war_values, is_core)
+
+
+def iterate_period_map(iCiv, iPeriod):
+	period_name = dPeriodNames[iPeriod]
+	civ_name = dCivNames[iCiv]
+	
+	settler_map = f"Settler/Period/{period_name}.csv"
+	war_map = f"War/Period/{period_name}.csv"
+	
+	if map_exists(settler_map):
+		settler_values = iterate_map(settler_map)
+	else:
+		settler_values = iterate_map(f"Settler/{civ_name}.csv")
+	
+	if map_exists(war_map):
+		war_values = iterate_map(war_map)
+	else:
+		war_values = iterate_map(f"War/{civ_name}.csv")
+	
+	if iPeriod in dPeriodCoreArea:
+		core_func = is_period_core
+		identifier = (iCiv, iPeriod)
+	else:
+		core_func = is_core
+		identifier = iCiv
+	
+	return iterate_plot_types(identifier, settler_values, war_values, core_func)
+
+
+def iterate_plot_types(identifier, settler_values, war_values, core_func):
 	terrain_values = iterate_map("Export/BaseTerrain.csv")
 	
 	for ((x, y), iSettlerValue), (_, iWarValue), (_, iTerrainValue) in zip(settler_values, war_values, terrain_values):
 		if iTerrainValue == 2:
 			yield (x, y), PEAK
 			
-		elif iTerrainValue != 0 and is_core(iCiv, (x, iWorldY-1-y)):
+		elif iTerrainValue != 0 and core_func(identifier, (x, iWorldY-1-y)):
 			yield (x, y), CORE
 		
 		elif iSettlerValue > 0:
@@ -242,19 +326,40 @@ def iterate_plot_types(iCiv):
 			yield (x, y), LAND
 
 
-def draw_stability_map(iCiv):
-	civ_name = dCivNames[iCiv]
-
+def draw_stability_map(name, values):
+	print(name)
+	
 	image = Image.new("RGB", (iWorldX, iWorldY), "white")
 	pixels = image.load()
 
-	for (x, y), plot_type in iterate_plot_types(iCiv):
+	for (x, y), plot_type in values:
 		pixels[x, y] = plot_colors[plot_type]
 	
 	image = image.resize((iWorldX * 4, iWorldY * 4))
 	
-	image_path = Path.cwd() / "Maps" / f"{civ_name}.png"
+	image_path = Path.cwd() / "Maps" / f"{name}.png"
 	image.save(image_path)
+
+
+def draw_stability_map_for_civ(iCiv):
+	civ_name = dCivNames[iCiv]
+	values = iterate_civ_map(iCiv)
+	
+	draw_stability_map(civ_name, values)
+
+
+def draw_stability_map_for_period(iCiv, iPeriod):
+	civ_name = dCivNames[iCiv]
+	period_name = dPeriodNames[iPeriod]
+	values = iterate_period_map(iCiv, iPeriod)
+	
+	draw_stability_map(f"Periods/{civ_name}_{period_name}", values)
+
+
+def should_draw_for_period(iPeriod):
+	period_name = dPeriodNames[iPeriod]
+	
+	return map_exists(f"Settler/Period/{period_name}.csv") or map_exists(f"War/Period/{period_name}.csv") or iPeriod in dPeriodCoreArea
 
 
 def getSpreadFactor(iReligion, iRegion):
@@ -295,6 +400,8 @@ def iterate_religion_spread_factors(iReligion):
 
 
 def draw_religion_map(iReligion):
+	print(dReligionNames[iReligion])
+	
 	image = Image.new("RGB", (iWorldX, iWorldY), "white")
 	pixels = image.load()
 	
@@ -309,7 +416,11 @@ def draw_religion_map(iReligion):
 
 def draw_maps():
 	for iCiv in dCivNames:
-		draw_stability_map(iCiv)
+		draw_stability_map_for_civ(iCiv)
+		
+		for iPeriod in dCivPeriods.get(iCiv, []):
+			if should_draw_for_period(iPeriod):
+				draw_stability_map_for_period(iCiv, iPeriod)
 	
 	for iReligion in range(iNumReligions):
 		draw_religion_map(iReligion)

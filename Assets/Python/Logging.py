@@ -4,6 +4,7 @@ from RFCUtils import *
 from Events import handler
 
 from datetime import timedelta
+import time
 
 
 RISE_LOG = "Rise.log"
@@ -11,6 +12,7 @@ TECH_LOG = "Tech.log"
 RELATIONS_LOG = "Relations.log"
 CIVICS_LOG = "Civics.log"
 GW_LOG = "GlobalWarming.log"
+PLAGUE_LOG = "Plague.log"
 
 TIMER = None
 TECHS = None
@@ -19,10 +21,17 @@ TECHS = None
 class Timer(object):
 
 	def __init__(self):
-		self.start = game.getSecondsPlayed()
+		self.start = self.seconds()
+	
+	def seconds(self):
+		return time.clock()
 	
 	def elapsed(self):
-		return timedelta(seconds=game.getSecondsPlayed() - self.start)
+		return timedelta(seconds=self.seconds() - self.start)
+	
+	def log(self, message, *format):
+		formatted = message % format
+		print formatted + ": %s" % self.elapsed()
 
 
 class TechLog(object):
@@ -92,7 +101,7 @@ class TechLog(object):
 		tech("TECH RECEIVED:\n  %s for %s from %s in %d (turn %d)\n  Total %d: %s", infos.tech(iTech).getText(), infos.civ(iToCiv).getShortDescription(0), infos.civ(iFromCiv).getShortDescription(0), game.getGameTurnYear(), game.getGameTurn(), len(self.techs_received[iToCiv]), [infos.tech(iTech).getText() for iTech in self.techs_received[iToCiv]])
 		
 
-def time(func):
+def timed(func):
 	def timed_func(*args, **kwargs):
 		timer = Timer()
 		func(*args)
@@ -118,6 +127,12 @@ def stopTimer(iPlayer):
 	message = """AUTOPLAY TIME UNTIL %s: %s
 	"""
 	rise(message, name(iPlayer).upper(), TIMER.elapsed())
+
+
+#@handler("birth")
+def autoplayTime(iPlayer):
+	message = "AUTOPLAY TIME UNTIL %s: %s"
+	rise(message, name(iPlayer).upper(), game.getMinutesPlayed())
 
 
 #@handler("BeginGameTurn")
@@ -208,6 +223,28 @@ def log_civic_category(iCategory):
 	civics("%s\n%s\n\n", gc.getCivicOptionInfo(iCategory).getText().upper(), itemize(civic_counts, item_char="", linebreak_char="\n"))
 
 
+#@handler("revolution")
+def onRevolution(iPlayer):
+	if is_minor(iPlayer):
+		return
+	
+	civics("REVOLUTION: %s in %s", name(iPlayer).upper(), format_date(game.getGameTurnYear()))
+	civics("")
+	
+	for iCategory in range(6):
+		civics(gc.getCivicOptionInfo(iCategory).getText().upper())
+		
+		for iCivic in infos.civics():
+			if infos.civic(iCivic).getCivicOptionType() == iCategory and player(iPlayer).canDoCivics(iCivic):
+				civics("%s %s: %d", player(iPlayer).getCivics(iCategory) == iCivic and "X" or "O", infos.civic(iCivic).getText(), player(iPlayer).AI_civicValue(iCivic))
+		
+		#if iCategory == iCivicsTerritory and player(iPlayer).canDoCivics(iColonialism):
+		#	civics("")
+		#	civics("Colony maintenance for %d colonies: %d ", cities.owner(iPlayer).count(CyCity.isColony), cities.owner(iPlayer).sum(CyCity.calculateColonyMaintenance))
+			
+		civics("")
+
+
 def log(file, message, *format):
 	fileLog(file, str(message % format))
 
@@ -230,3 +267,7 @@ def civics(message, *format):
 
 def global_warming(message, *format):
 	log(GW_LOG, message, *format)
+
+
+def plague(message, *format):
+	log(PLAGUE_LOG, message, *format)

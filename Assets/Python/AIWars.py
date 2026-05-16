@@ -219,7 +219,7 @@ def startMinorWars(iGameTurn):
 def checkConquests():
 	for tConquest in lConquests:
 		checkConquest(tConquest)
-		
+
 		
 @handler("BeginGameTurn")
 def checkWarPlans(iGameTurn):		

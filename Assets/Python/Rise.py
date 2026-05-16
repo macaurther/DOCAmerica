@@ -84,6 +84,15 @@ def initBirths():
 
 @handler("GameStart")
 def initCamera():
+	city = capital(active())
+	if city:
+		unit = units.at(city).owner(active()).land().first()
+		if unit:
+			interface.selectUnit(unit, True, False, False)
+			
+		plot(city).cameraLookAt()
+		return
+	
 	plots.capital(active()).cameraLookAt()
 
 
@@ -623,7 +632,13 @@ class Birth(object):
 		revealed = revealed.expand(iVisionRange)
 		
 		if bCanPeerReveal:
-			revealed += peerRevealed'''
+			revealed += peerRevealed
+		
+		# for AI, reveal nearby settler and expansion targets to improve settler AI and help with expansion
+		if not self.isHuman():
+			region_plots = plots.all().land().where(lambda p: (p.getRegionID() in lAmerica) == (self.spawn.getRegionID in lAmerica))
+			revealed += region_plots.where(lambda p: p.getSettlerValue(self.iCiv) >= 10).where(lambda p: distance(self.location, p) <= 15).expand(2)
+			revealed += region_plots.where(lambda p: p.getExpansion() == self.iPlayer).expand(1)'''
 		
 		# MacAurther: Instead of dynamic tile revealing (which can be slow), reveal a pre-determined, more "historical" set of tiles
 		lRegionList = None

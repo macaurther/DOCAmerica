@@ -119,6 +119,12 @@ def muiscaAbility(iGameTurn, iPlayer):
 			pPlayer.changeGold(iExtraGold)
 			message(iPlayer, "TXT_KEY_MUSICA_POWER", iExtraGold, sound='AS2D_BAGOMONEY')
 
+@handler("buildingBuilt")
+# Spanish UB
+def missionPower(city, iBuilding):
+	if iBuilding == iMission:
+		makeUnits(city.getOwner(), iCatholicMiss, city.plot(), 1, UnitAITypes.UNITAI_MISSIONARY).adjective("")
+
 @handler("firstContact")
 # Spanish Ability
 def conquistadors(iTeamX, iHasMetTeamY):

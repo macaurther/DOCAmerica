@@ -76,6 +76,7 @@ events.addEvent("conquerors")
 events.addEvent("tribute")
 events.addEvent("playerCityRenamed")
 events.addEvent("buildingProcessed")
+events.addEvent("citySacked")
 events.addEvent("improvementBuilt")
 events.addEvent("improvementDestroyed")
 events.addEvent("EndGameTurn")
@@ -91,11 +92,6 @@ events.addEvent("slaveExpended")
 def capitalMovedOnPalaceBuilt(city, iBuilding):
 	if iBuilding in lCapitols:	# MacAurther: Multiple capitol types
 		events.fireEvent("capitalMoved", city)
-
-@handler("buildingBuilt")
-def missionPower(city, iBuilding):
-	if iBuilding == iMission:
-		makeUnits(city.getOwner(), iCatholicMiss, city.plot(), 1, UnitAITypes.UNITAI_MISSIONARY).adjective("")
 
 
 @handler("firstCity")
@@ -114,6 +110,7 @@ def capitalMovedOnCityAcquired(iOwner, iNewOwner, city):
 def firstCityOnCityAcquiredAndKept(iPlayer, city):
 	if city.isCapital():
 		events.fireEvent("firstCity", city)
+
 
 @handler("cityBuilt")
 def firstCityOnCityBuilt(city):

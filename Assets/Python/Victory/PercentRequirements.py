@@ -13,6 +13,10 @@ class AreaPercent(PercentRequirement):
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_AREA_PERCENT"
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_AREA_PERCENT"
 	
+	SUBJECT_DESC_KEYS = {
+		ALLIES: "TXT_KEY_VICTORY_DESC_CONTROL_DIRECTLY_OR_THROUGH_ALLIES",
+	}
+	
 	def __init__(self, area, *parameters, **options):
 		PercentRequirement.__init__(self, area, *parameters, **options)
 		
@@ -25,12 +29,12 @@ class AreaPercent(PercentRequirement):
 		return self.area.land().count()
 
 
-# Third Inca UHV goal
+# Second Manchu UHV goal
 class AreaPopulationPercent(PercentRequirement):
 
 	TYPES = (AREA, PERCENTAGE)
 	
-	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_CONTROL"
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_HAVE"
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_AREA_POPULATION_PERCENT"
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_AREA_POPULATION_PERCENT"
 	
@@ -43,7 +47,7 @@ class AreaPopulationPercent(PercentRequirement):
 		return area.cities().owner(iPlayer).sum(CyCity.getPopulation)
 	
 	def total(self):
-		return self.area.cities().sum(CyCity.getPopulation)
+		return game.getTotalPopulation()
 
 
 # Third American UHV goal
@@ -60,12 +64,15 @@ class CommercePercent(PercentRequirement):
 	}
 	
 	def value(self, iPlayer):
-		return max(0, player(iPlayer).calculateTotalCommerce())
+		if player(iPlayer).isExisting():
+			return max(0, player(iPlayer).calculateTotalCommerce())
+		
+		return 0
 
 
 # First Persian UHV goal
 # First Turkic UHV goal
-# Third Mongol UHV goal
+# Second Mongol UHV goal
 # Third Catholic URV goal
 class LandPercent(PercentRequirement):
 
@@ -86,8 +93,29 @@ class LandPercent(PercentRequirement):
 		return map.getLandPlots()
 
 
+# Third Inca UHV goal
+class PopulationInAreaPercent(PercentRequirement):
+
+	TYPES = (AREA, PERCENTAGE)
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_CONTROL"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_POPULATION_IN_AREA_PERCENT"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_POPULATION_IN_AREA_PERCENT"
+	
+	def __init__(self, area, *parameters, **options):
+		PercentRequirement.__init__(self, area, *parameters, **options)
+		
+		self.area = area
+	
+	def value(self, iPlayer, area):
+		return area.cities().owner(iPlayer).sum(CyCity.getPopulation)
+	
+	def total(self):
+		return self.area.cities().sum(CyCity.getPopulation)
+
+
 # Third Indian UHV goal
-# Third Indonesian UHV goal
+# Second Persian UHV goal
 # Third Shendao URV goal
 class PopulationPercent(PercentRequirement):
 
@@ -118,11 +146,13 @@ class PowerPercent(PercentRequirement):
 	}
 	
 	def value(self, iPlayer):
-		return player(iPlayer).getPower()
+		if player(iPlayer).isExisting():
+			return player(iPlayer).getPower()
+		
+		return 0
 
 
 # Third Arabian UHV goal
-# Second Tibetan UHV goal
 # Third Spanish UHV goal
 # Second Zoroastrian URV goal
 # First Islamic URV goal
@@ -143,7 +173,7 @@ class ReligionSpreadPercent(PercentRequirement):
 		return game.calculateReligionPercent(self.iReligion)
 
 
-# First Congolese UHV goal
+# Second Congolese UHV goal
 class ReligiousVotePercent(PercentRequirement):
 
 	TYPES = (PERCENTAGE,)
@@ -156,6 +186,8 @@ class ReligiousVotePercent(PercentRequirement):
 		return player(iPlayer).getVotes(16, 1)
 
 
+# Third Phoenician UHV goal
+# Second Swahili UHV goal
 class RevealedPercent(PercentRequirement):
 
 	TYPES = (AREA, PERCENTAGE)
@@ -188,6 +220,7 @@ class RevealedPercent(PercentRequirement):
 		return self.area.count()
 
 
+# First Portuguese UHV goal
 class WaterAreaPercent(PercentRequirement):
 
 	TYPES = (AREA, PERCENTAGE)

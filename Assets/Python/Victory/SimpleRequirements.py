@@ -7,7 +7,6 @@ import heapq
 
 
 # Third Ethiopian UHV goal
-# Third Buddhist URV goal
 class AllAttitude(Requirement):
 
 	TYPES = (ATTITUDE,)
@@ -50,8 +49,6 @@ class AllAttitude(Requirement):
 		return [civilizations]
 
 
-# First American UHV goal
-# First Colombian UHV goal
 class AllowNone(Requirement):
 
 	GLOBAL_TYPES = (CIVS,)
@@ -141,6 +138,7 @@ class Communist(Requirement):
 		return evaluator.any(lambda p: isCommunist(p))
 
 
+# First Arabian UHV goal
 class CompleteEra(ThresholdRequirement):
 
 	TYPES = (ERA,)
@@ -161,17 +159,24 @@ class CompleteEra(ThresholdRequirement):
 		return infos.techs().count(lambda iTech: infos.tech(iTech).getEra() == self.iEra)
 	
 
+# Second Egyptian UHV goal
+# Second Assyrian UHV goal
 # Second Greek UHV goal
 # Second Phoenician UHV goal
 # Second Dravidian UHV goal
+# Third Byzantine UHV goal
 # Second Japanese UHV goal
 # First Norse UHV goal
 # Second Arabian UHV goal
+# Third Burmese UHV goal
+# Third Masryeen UHV goal
 # First Mongol UHV goal
+# Third Aztec UHV goal
 # Second Ottoman UHV goal
 # Second Iranian UHV goal
+# First Manchu UHV goal
 # Second German UHV goal
-# First American UHV goal
+# First Colombian UHV goal
 # Second Colombian UHV goal
 # Second Canadian UHV goal
 class Control(Requirement):
@@ -181,7 +186,8 @@ class Control(Requirement):
 	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_CONTROL"
 	
 	SUBJECT_DESC_KEYS = {
-		VASSALS: "TXT_KEY_VICTORY_DESC_CONTROL_OR_VASSALIZE"
+		ALLIES: "TXT_KEY_VICTORY_DESC_CONTROL_DIRECTLY_OR_THROUGH_ALLIES",
+		VASSALS: "TXT_KEY_VICTORY_DESC_CONTROL_OR_VASSALIZE",
 	}
 	
 	def __init__(self, area, **options):
@@ -193,7 +199,7 @@ class Control(Requirement):
 		return self.area.cities().all_if_any(lambda city: city.getOwner() in evaluator)
 
 
-# Second Ottoman UHV goal
+# Second Swedish UHV goal
 class CultureCover(Requirement):
 
 	TYPES = (AREA,)
@@ -235,7 +241,6 @@ class GoldPercent(Requirement):
 		return "%s %s: %d / %d" % (self.indicator(evaluator), text(self.PROGR_KEY, *self.format_parameters()), self.value(evaluator), self.required(evaluator))
 
 
-# Third Ottoman UHV goal
 class MoreCulture(Requirement):
 
 	TYPES = (CIVS,)
@@ -261,7 +266,6 @@ class MoreCulture(Requirement):
 		return "%s %s: %d / %s" % (self.indicator(evaluator), text(self.PROGR_KEY), self.value(evaluator), self.required())
 
 
-# Third Ethiopian UHV goal
 class MoreReligion(Requirement):
 
 	TYPES = (AREA, RELIGION_ADJECTIVE, RELIGION_ADJECTIVE)
@@ -341,7 +345,37 @@ class NoStateReligion(Requirement):
 		return "%s: %d" % (text(self.PROGR_KEY, *self.format_parameters()), self.value())
 
 
-# Second Russian UHV goal
+class OnlyDefensiveWar(Requirement):
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_ONLY_DEFENSIVE_WAR"
+	
+	def __init__(self):
+		Requirement.__init__(self)
+		
+		self.handle("changeWar", self.handle_change_war)
+		self.handle("endPlayerTurn", self.handle_end_player_turn)
+	
+	def fulfilled(self, evaluator):
+		return True
+	
+	def handle_change_war(self, goal, iTeam, iOtherTeam, bWar, bFromDefensivePact):
+		if bWar and not bFromDefensivePact:
+			log_with_trace("expire change war: %s on %s" % (name(iTeam), name(iOtherTeam)))
+			raise Exception("expire change war")
+			goal.expire()
+	
+	def handle_end_player_turn(self, goal):
+		goalTeam = team(player(goal.iPlayer).getTeam())
+		
+		for iPlayer in players.major().alive().at_war(goal.iPlayer):
+			if player(iPlayer).AI_isWillingToTalk(goal.iPlayer):
+				if team(player(iPlayer).getTeam()).AI_makePeaceTradeVal(goalTeam.getID()) > goalTeam.AI_makePeaceTradeVal(player(iPlayer).getTeam()):
+					goal.expire()
+					log_with_trace("expire turnly at war with %s" % name(iPlayer))
+					raise Exception("expire turnly at war with %s" % name(iPlayer))
+					break
+
+
 class Project(Requirement):
 
 	TYPES = (PROJECT,)
@@ -387,8 +421,10 @@ class Route(Requirement):
 		return self.area.all(lambda p: p.getOwner() in evaluator and p.getRouteType() in self.routes)
 
 
+# First Persian UHV goal
 # Second Turkic UHV goal
-# First Russian UHV goal
+# Second English UHV goal
+# Second Russian UHV goal
 # First Canadian UHV goal
 class RouteConnection(Requirement):
 
@@ -470,7 +506,7 @@ class RouteConnection(Requirement):
 		return self.valid_owner(plot, evaluator) and (plot.isCity() or plot.getRouteType() in self.routes)
 
 
-# TODO: test
+# Second Ethiopian UHV goal
 class StateReligion(Requirement):
 	
 	TYPES = (RELIGION,)
@@ -540,14 +576,15 @@ class TradeConnection(Requirement):
 		return evaluator.any(lambda iPlayer: other_players.any(lambda iOtherPlayer: player(iPlayer).canContact(iOtherPlayer) and player(iPlayer).canTradeNetworkWith(iOtherPlayer)))
 
 
-# Second Egyptian UHV goal
+# First Egyptian UHV goal
+# Third Egyptian UHV goal
 # Third Greek UHV goal
 # Third Polynesian UHV goal
 # Second Mayan UHV goal
+# Second Khmer UHV goal
+# Third Mande UHV goal
 # Second Moorish UHV goal
-# Third French UHV goal
-# First Khmer UHV goal
-# Second Mandinka UHV goal
+# First Javanese UHV goal
 # First Italian UHV goal
 # Second Mughal UHV goal
 # Second American UHV goal

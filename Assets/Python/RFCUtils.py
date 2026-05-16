@@ -219,6 +219,9 @@ def convertPlotCulture(tPlot, iPlayer, iPercent, bOwner):
 	plot = plot_(tPlot)
 	city = city_(tPlot)
 	
+	if bOwner:
+		plot.setRevealed(player(iPlayer).getTeam(), True, False, player(iPlayer).getTeam())
+	
 	if city:
 		iTotalConvertedCulture = 0
 		for iLoopPlayer in players.all().without(iPlayer):
@@ -792,6 +795,9 @@ def canRespawn(iCiv):
 	if none(year().between(iStart, iEnd) for iStart, iEnd in dResurrections[iCiv]):
 		return False
 				
+	# Mexico cannot respawn if Aztecs are alive and vice versa
+	if exclusive(iCiv, iAztecs, iMexico):
+		return False
 			
 	return True
 	
@@ -1094,7 +1100,7 @@ def ensureDefenders(iPlayer, tPlot, iNumDefenders):
 # used: CvDawnOfMan
 def getDawnOfManText(iPlayer):
 	iScenario = scenario()
-	baseKey = 'TXT_KEY_DOM_%s' % str(name(iPlayer).replace(' ', '_').upper())
+	baseKey = 'TXT_KEY_DOM_%s' % civ_name(civ(iPlayer)).upper()
 	
 	fullKey = baseKey
 	if iScenario == i1500AD: fullKey += "_1500AD"

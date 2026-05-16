@@ -143,14 +143,16 @@ class Revealed(object):
 	def __init__(self, *args, **kwargs):
 		self.lLandRegions = kwargs.get("lLandRegions", [])
 		self.lCoastRegions = kwargs.get("lCoastRegions", [])
+		self.lSeaRegions = kwargs.get("lSeaRegions", [])
 		self.lSeaAreas = kwargs.get("lSeaAreas", [])
 	
 	def getArea(self):	
 		landPlots = plots.regions(*self.lLandRegions).where(CyPlot.isOwned)
-		coastPlots = plots.regions(*self.lCoastRegions).coastal().expand(1).water()
+		coastPlots = plots.regions(*self.lCoastRegions).coastal().expand(1).sea()
+		seaRegionPlots = plots.regions(*self.lSeaRegions).water()
 		seaPlots = plots.sum(plots.rectangle(*tArea) for tArea in self.lSeaAreas).water()
 		
-		return landPlots + coastPlots + seaPlots
+		return landPlots + coastPlots + seaRegionPlots + seaPlots
 			
 
 class Scenario(object):
@@ -176,6 +178,8 @@ class Scenario(object):
 		self.dColonistsAlreadyGiven = kwargs.get("dColonistsAlreadyGiven", {})
 		
 		self.lInitialWars = kwargs.get("lInitialWars", [])
+		self.lWorkingCities = kwargs.get("lWorkingCities", [])
+		self.lUnexpiredWonders = kwargs.get("lUnexpiredWonders", [])
 		
 		self.lAllGoalsFailed = kwargs.get("lAllGoalsFailed", [])
 		self.lGoalsSucceeded = kwargs.get("lGoalsSucceeded", [])
@@ -215,12 +219,12 @@ class Scenario(object):
 		self.adjustTurns(False)
 	
 		for iCiv in range(iNumCivs):
-			leaders = infos.leaders().where(lambda iLeader: infos.civ(iCiv).isOriginalLeader(iLeader) and iLeader in LEADER_DATES).sort(lambda iLeader: LEADER_DATES.get(iLeader, 2020))
+			leaders = infos.leaders().where(lambda iLeader: infos.civ(iCiv).isOriginalLeader(iLeader) and iLeader in LEADER_DATES).sort(lambda iLeader: LEADER_DATES.get(iLeader, 2025))
 			if not leaders:
 				continue
 			
-			before, after = leaders.split(lambda iLeader: LEADER_DATES.get(iLeader, 2020) < self.iStartYear)
-			if not after or (before and since(year(LEADER_DATES.get(before.last(), 2020))) < until(year(LEADER_DATES.get(after.first(), 2020)))):
+			before, after = leaders.split(lambda iLeader: LEADER_DATES.get(iLeader, 2025) < self.iStartYear)
+			if not after or (before and since(year(LEADER_DATES.get(before.last(), 2025))) < until(year(LEADER_DATES.get(after.first(), 2025)))):
 				after = after.including(before.last())
 				
 			for iLeader in range(iNumLeaders):
@@ -290,7 +294,6 @@ class Scenario(object):
 		self.updateLastTurnAlive()
 		self.updateNames()
 		self.updateCityNames()
-		self.updateCityWork()
 	
 	def adjustTerritories(self):
 		for city in cities.all():
@@ -315,7 +318,7 @@ class Scenario(object):
 			if city:
 				city.setBuildingOriginalOwner(iWonder, iCiv)
 				city.setBuildingOriginalTime(iWonder, iEarliestYear)
-			elif iYear < self.iStartYear:
+			elif iYear < self.iStartYear and iWonder not in self.lUnexpiredWonders:
 				game.incrementBuildingClassCreatedCount(infos.building(iWonder).getBuildingClassType())
 	
 	def adjustGreatPeople(self):
@@ -323,7 +326,7 @@ class Scenario(object):
 			player(iCiv).changeGreatPeopleCreated(iGreatPeople)
 		
 		for iCiv, iGreatGenerals in self.dGreatGeneralsCreated.items():
-			player(iCiv).changeGreatPeopleCreated(iGreatGenerals)
+			player(iCiv).changeGreatGeneralsCreated(iGreatGenerals)
 
 	def revealTiles(self):
 		for iGroup, revealed in self.dRevealed.items():
@@ -365,6 +368,10 @@ class Scenario(object):
 		cn.updateAllNames()
 	
 	def updateCityWork(self):
+		for tCity, tTiles in self.lWorkingCities:
+			for tTile in tTiles:
+				plot(tTile).setWorkingCity(city_(tCity))
+		
 		for city in cities.all():
 			city.AI_updateAssignWork()
 	

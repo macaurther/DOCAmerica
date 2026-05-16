@@ -91,6 +91,13 @@ class EventHandlerRegistry(object):
 		
 		return buildingBuilt
 	
+	def changeWar(self, goal, applicable, func):
+		def changeWar((bWar, iTeam, iOtherTeam, bFromDefensivePact)):
+			if applicable(goal, team(iTeam).getLeaderID()):
+				func(goal, iTeam, iOtherTeam, bWar, bFromDefensivePact)
+		
+		return changeWar
+	
 	def cityAcquired(self, goal, applicable, func):
 		def cityAcquired((iOwner, iPlayer, city, bConquest, bTrade)):
 			if applicable(goal, iPlayer):
@@ -140,6 +147,13 @@ class EventHandlerRegistry(object):
 		
 		return cityRazed
 	
+	def citySacked(self, goal, applicable, func):
+		def citySacked((city,)):
+			if applicable(goal, city.getOwner()):
+				func(goal)
+		
+		return citySacked
+	
 	def combatFood(self, goal, applicable, func):
 		def combatFood((iPlayer, unit, iFood)):
 			if applicable(goal, iPlayer):
@@ -167,6 +181,13 @@ class EventHandlerRegistry(object):
 				func(goal, iCorporation)
 		
 		return corporationSpread
+	
+	def endPlayerTurn(self, goal, applicable, func):
+		def endPlayerTurn((iGameTurn, iPlayer)):
+			if applicable(goal, iPlayer):
+				func(goal)
+		
+		return endPlayerTurn
 	
 	def enslave(self, goal, applicable, func):
 		def enslave((iPlayer, losingUnit)):
@@ -245,6 +266,13 @@ class EventHandlerRegistry(object):
 		
 		return religionFounded
 	
+	def religionSpread(self, goal, applicable, func):
+		def religionSpread((iReligion, iPlayer, city)):
+			if applicable(goal, iPlayer):
+				func(goal, city, iReligion)
+		
+		return religionSpread
+	
 	def sacrificeGoldenAge(self, goal, applicable, func):
 		def sacrificeGoldenAge((iPlayer, city)):
 			if applicable(goal, iPlayer):
@@ -272,6 +300,13 @@ class EventHandlerRegistry(object):
 				func(goal, iTo)
 		
 		return tribute
+	
+	def unitGifted(self, goal, applicable, func):
+		def unitGifted((unit, iPlayer, plot)):
+			if applicable(goal, iPlayer):
+				func(goal, unit, plot)
+		
+		return unitGifted
 	
 	def unitPillage(self, goal, applicable, func):
 		def unitPillage((unit, iImprovement, iRoute, iPlayer, iGold)):

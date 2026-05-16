@@ -133,6 +133,16 @@ class CountAggregate(Aggregate):
 		return count(items)
 
 
+class MaximumAggregate(Aggregate):
+
+	def __init__(self, *items):
+		Aggregate.__init__(self, *items)
+		self.separator = "TXT_KEY_OR"
+	
+	def aggregate(self, items):
+		return max(items)
+
+
 class AreaArgumentFactory(object):
 
 	def __getattr__(self, name):
@@ -253,8 +263,10 @@ class AreaArgument(NamedArgument):
 	def birth(self, iCiv):
 		return self.call_for_civ("birth", iCiv)
 	
-	def core(self, iCiv):
-		return self.call_for_civ("core", iCiv)
+	def core(self, iCiv, iPeriod=None):
+		self.call("core", (iCiv,), {"iPeriod": iPeriod})
+		self.named(infos.civ(iCiv).getShortDescription(0))
+		return self
 	
 	def normal(self, iCiv):
 		return self.call_for_civ("normal", iCiv)
@@ -332,7 +344,6 @@ class LocationCityArgument(CityArgument):
 		return plots.of([self.tile])
 
 
-# TODO: test
 class AreaCityArgument(CityArgument):
 
 	def __init__(self, plots):
@@ -341,7 +352,7 @@ class AreaCityArgument(CityArgument):
 		self.plots = plots
 	
 	def __repr__(self):
-		return "AreaCityArgument%s" % (self.plots,)
+		return "AreaCityArgument(%s)" % (self.plots,)
 	
 	def __eq__(self, other):
 		if not isinstance(other, AreaCityArgument):

@@ -110,7 +110,6 @@ class FileMap(object):
 	
 	def create(self, values):
 		map = [[None for x in range(iWorldX)] for y in range(iWorldY)]
-		print("values: " + str(values))
 		
 		for (x, y), value in values:
 			map[y][x] = value

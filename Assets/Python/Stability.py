@@ -428,6 +428,9 @@ def calculateAdministration(city):
 	
 	iPopulation = city.getPopulation()
 	iAdministrationModifier = getAdministrationModifier(iPlayer)
+	
+	if city.hasBuilding(unique_building(iPlayer, iCourthouse)):
+		iAdministrationModifier += 50
 
 	iAdministration = iAdministrationModifier * iPopulation / 100
 	
@@ -450,6 +453,7 @@ def getSeparatismModifier(iPlayer, city):
 	bTotalitarianism = civic.iExecutive == iDictator
 	bExpansionExceptions = bTotalitarianism
 	
+	iCurrentEra = player(iPlayer).getCurrentEra()
 	iTotalCulture = civs.major().sum(lambda c: plot.isCore(c) and 2 * plot.getCivCulture(c) or plot.getCivCulture(c))
 	iCulturePercent = iTotalCulture != 0 and 100 * plot.getCulture(iPlayer) / iTotalCulture or 0
 	
@@ -469,14 +473,6 @@ def getSeparatismModifier(iPlayer, city):
 	# not majority culture
 	if iCulturePercent < 50: iModifier += 1
 	if iCulturePercent < 20: iModifier += 1
-	
-	# Courthouse
-	if city.hasBuilding(unique_building(iPlayer, iCourthouse)):
-		# English Assembly UB
-		if iCiv == iEngland:
-			iModifier -= 2
-		else:
-			iModifier -= 1
 	
 	# Jail
 	if city.hasBuilding(unique_building(iPlayer, iJail)):
@@ -519,6 +515,7 @@ def calculateStability(iPlayer):
 	iCurrentEra = pPlayer.getCurrentEra()
 	iTotalPopulation = pPlayer.getTotalPopulation()
 	iPlayerScore = pPlayer.getScoreHistory(turn())
+	iNumCities = pPlayer.getNumCities()
 	
 	civics = Civics.player(iPlayer)
 	

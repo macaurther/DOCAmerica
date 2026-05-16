@@ -103,7 +103,7 @@ def init():
 	g_unitIcons[g_gpUnitTypes[GP_GENERAL]] = FontUtil.getChar(FontSymbols.GREAT_GENERAL_CHAR)
 	# MOD: specify icon (font glyph) for each new great person (4)
 	#g_unitIcons[g_gpUnitTypes[GP_DOCTOR]] = FontUtil.getChar(FontSymbols.HEALTHY_CHAR)
-	
+
 def getUnitType(gpType):
 	return g_gpUnitTypes[gpType]
 

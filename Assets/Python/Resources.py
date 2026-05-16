@@ -38,6 +38,9 @@ def setup():
 	global dRemovedFeatures
 	dRemovedFeatures = TileDict(dRemovedFeaturesDict, year)
 	
+	global dTerrains
+	dTerrains = TileDict(dTerrainsDict, year)
+	
 	global dConquerorPlotTypes
 	dConquerorPlotTypes = TileDict(dConquerorPlotTypesDict)
 	
@@ -74,6 +77,9 @@ dRemovedFeaturesDict = {
 	(13, 84)  : 1300,  # Southwest Flood Plains
 	(13, 79)  : 1300,  # North Mexico Flood Plains
 	(15, 78)  : 1300,  # North Mexico Flood Plains
+}
+
+dTerrainsDict = {
 }
 
 dConquerorPlotTypesDict = {
@@ -113,9 +119,9 @@ def removeResourcesOnCollapse(iPlayer):
 
 
 @handler("BeginGameTurn")
-def removeResources():
-	for x, y in dRemovedResources[game.getGameTurn()]:
-		removeResource(x, y)
+def createTerrains():
+	for tile, iTerrain in dTerrains[game.getGameTurn()]:
+		plot(tile).setTerrainType(iTerrain, True, True)
 
 
 @handler("BeginGameTurn")
@@ -160,11 +166,6 @@ def setupScenarioResources():
 	setup()
 	iStartTurn = scenarioStartTurn()
 	
-	for iTurn, lResources in dRemovedResources:
-		if iTurn <= iStartTurn:
-			for x, y in lResources:
-				removeResource(x, y)
-	
 	for iTurn, lResources in dResources:
 		if iTurn <= iStartTurn:
 			for (x, y), iResource in lResources:
@@ -174,6 +175,16 @@ def setupScenarioResources():
 		if year(dBirth[iCiv]) <= iStartTurn and any(iEnd >= iStartTurn for iStart, iEnd in dResurrections[iCiv]):
 			for (x, y), iResource in lResources:
 				createResource(x, y, iResource)
+	
+	for iCivGroup, lResources in dCivGroupResources:
+		for (x, y), iResource, iYear in lResources:
+			if year(iYear) <= iStartTurn:
+				createResource(x, y, iResource)
+	
+	for iTurn, lResources in dRemovedResources:
+		if iTurn <= iStartTurn:
+			for x, y in lResources:
+				removeResource(x, y)
 	
 	for iTurn, lFeatures in dFeatures:
 		if iTurn <= iStartTurn:
@@ -185,15 +196,16 @@ def setupScenarioResources():
 			for x, y in lFeatures:
 				plot(x, y).setFeatureType(-1, 0)
 				
+	for iTurn, lTerrains in dTerrains:
+		if iTurn <= iStartTurn:
+			for (x, y), iTerrain in lTerrains:
+				plot(x, y).setTerrainType(iTerrain, True, True)
+				
 	for iCiv, lPlots in dConquerorPlotTypes:
 		if year(dFall[iCiv]) <= iStartTurn:
 			for (x, y), iPlotType in lPlots:
 				plot(x, y).setPlotType(iPlotType, True, True)
 	
-	for iCivGroup, lResources in dCivGroupResources:
-		for (x, y), iResource, iYear in lResources:
-			if year(iYear) <= iStartTurn:
-				createResource(x, y, iResource)
 
 
 def createAllResources():
@@ -212,13 +224,18 @@ def createResource(iX, iY, iBonus, createTextKey="TXT_KEY_MISC_DISCOVERED_NEW_RE
 	
 	if iRemovedBonus == iBonus:
 		return
+		
+	iBonusVariety = plot.getBaseBonusVarietyType()
 	
 	plot.setBonusType(iBonus)
+	
+	if iBonusVariety >= 0:
+		plot.setBonusVarietyType(iBonusVariety)
 			
 	if iBonus == -1:
 		iImprovement = plot.getImprovementType()
 		if iImprovement >= 0:
-			if infos.improvement(iImprovement).isImprovementBonusTrade(iRemovedBonus):
+			if not plot.canHaveImprovement(iImprovement, plot.getTeam(), False):
 				plot.setImprovementType(-1)
 		
 	iOwner = plot.getOwner()

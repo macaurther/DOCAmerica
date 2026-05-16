@@ -116,7 +116,7 @@ class CvGameDesc:
 		if self.maxTurns > 0:
 			gc.getGame().setMaxTurns(turns(self.maxTurns))
 		else:
-			gc.getGame().changeMaxTurns(-turns(self.gameTurn))
+			gc.getGame().changeMaxTurns(-turns(self.maxTurns))
 			
 		for option in self.options:
 			optionType = gc.getInfoTypeForString(option)
@@ -1218,7 +1218,8 @@ class CvCityDesc:
 		if not bDevelopmentOnly or city.getGameTurnFounded() != game.getGameTurn():
 			f.write("\t\tYearFounded=%s\n" % gc.getGame().getTurnYear(city.getGameTurnFounded()))
 		if not bDevelopmentOnly or city.getGameTurnAcquired() != game.getGameTurn():
-			f.write("\t\tYearAcquired=%s\n" % gc.getGame().getTurnYear(city.getGameTurnAcquired()))
+			if city.getGameTurnAcquired() != city.getGameTurnFounded():
+				f.write("\t\tYearAcquired=%s\n" % gc.getGame().getTurnYear(city.getGameTurnAcquired()))
 		if not bDevelopmentOnly or city.getOriginalCiv() != city.getCivilizationType():
 			f.write("\t\tPreviousOwner=%s\n" % gc.getCivilizationInfo(city.getOriginalCiv()).getType())
 		for iCiv in range(gc.getNumCivilizationInfos()):
@@ -1508,12 +1509,14 @@ class CvCityDesc:
 		if not self.iYearFounded:
 			self.iYearFounded = scenarioStartYear()
 		if not self.iYearAcquired:
-			self.iYearAcquired = scenarioStartYear()
+			self.iYearAcquired = self.iYearFounded
 		
 		if self.iYearFounded:
-			self.city.setGameTurnFounded(year(self.iYearFounded))
+			iGameTurnFounded = getGameTurnForYear(self.iYearFounded, 0, game.getCalendar(), game.getGameSpeedType())
+			self.city.setGameTurnFounded(iGameTurnFounded)
 		if self.iYearAcquired:
-			self.city.setGameTurnAcquired(year(self.iYearAcquired))
+			iGameTurnAcquired = getGameTurnForYear(self.iYearAcquired, 0, game.getCalendar(), game.getGameSpeedType())
+			self.city.setGameTurnAcquired(iGameTurnAcquired)
 		if self.originalOwner:
 			iOriginalOwnerCiv = Civ(CvUtil.findInfoTypeNum(gc.getCivilizationInfo, gc.getNumCivilizationInfos(), self.originalOwner))
 			if iOriginalOwnerCiv >= 0:
@@ -1609,8 +1612,8 @@ class CvPlotDesc:
 				f.write("\tStartingPlot\n")
 			if (plot.getBonusType(-1)!=-1):
 				f.write("\tBonusType=%s\n" %(gc.getBonusInfo(plot.getBonusType(-1)).getType()) )
-			if (plot.getBonusVarietyType(-1) != -1):
-				f.write("\tBonusVarietyType=%s\n" % gc.getBonusInfo(plot.getBonusVarietyType(-1)).getType())
+			if (plot.getBaseBonusVarietyType() != -1):
+				f.write("\tBonusVarietyType=%s\n" % gc.getBonusInfo(plot.getBaseBonusVarietyType()).getType())
 				
 		if (plot.getImprovementType()!=-1):
 			f.write("\tImprovementType=%s\n" %(gc.getImprovementInfo(plot.getImprovementType()).getType()) )

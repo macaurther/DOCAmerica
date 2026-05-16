@@ -985,7 +985,10 @@ iNumPeriods = 5
 iNumImpacts = 5
 (iImpactMarginal, iImpactLimited, iImpactSignificant, iImpactCritical, iImpactPlayer) = range(iNumImpacts)
 
-(i500BC, i1500AD, i1750AD) = range(3)
+iNumScenarios = 3
+(i1AD, i1500AD, i1750AD) = range(iNumScenarios)
+
+lScenarioStartYears = [0, 1500, 1750]
 
 # Stability overlay and editor
 iNumPlotStabilityTypes = 4

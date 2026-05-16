@@ -319,7 +319,7 @@ class CvPediaTech(CvPediaScreen.CvPediaScreen):
 			if gc.getBonusInfo(j).getTechObsolete() == self.iTech:
 				screen.attachImageButton(panel, "", gc.getBonusInfo(j).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_OBSOLETE_BONUS, j, 1, False)
 		
-		# MacAurther: Tribe contact discount
+		# MacAurther: Tribe goody boost
 		if TechInfo.getGoodyBoost() != 0:
 			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_GOODY_BOOST").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 		

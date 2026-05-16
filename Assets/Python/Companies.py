@@ -16,7 +16,7 @@ dCompanyTechs = {
 	iLuxuryIndustry   : [iEconomics],
 }
 
-tCompaniesLimit = (10, 12, 16, 10, 12, 12, 6, 10) # kind of arbitrary currently, see how this plays out
+tCompaniesLimit = (20, 25, 30, 20, 25, 25, 15, 20) # kind of arbitrary currently, see how this plays out
 
 dCompanyExpiry = defaultdict({
 	iTrappingIndustry  : 1900,
@@ -35,7 +35,7 @@ def verifyCorporations(iOwner, iPlayer, city):
 
 @handler("BeginGameTurn")
 def checkCompanies(iGameTurn):
-	for iCompany in infos.corporations().periodic_iter(iNumCorporations / 2):
+	for iCompany in infos.corporations().periodic_iter(iNumCorporations / 3):
 		checkCompany(iCompany, iGameTurn)
 
 
@@ -47,7 +47,9 @@ def getCompanyLimit(iCompany):
 	if not isCompanyValid(iCompany):
 		return 0
 	
-	return tCompaniesLimit[iCompany]
+	iEnabledCount = players.major().existing().count(lambda p: canHaveCompany(iCompany, p))
+	
+	return min(3 * iEnabledCount, tCompaniesLimit[iCompany])
 	
 	
 def canHaveCompany(iCompany, iPlayer):
@@ -123,11 +125,14 @@ def getCityValue(city, iCompany):
 	
 	# various bonuses	
 	if iCompany == iTrappingIndustry:
-		if city.hasBuilding(unique_building(iOwner, iTradingPost)): iValue += 3
+		if city.hasBuilding(unique_building(iOwner, iTradingPost)): iValue += 2
+		if city.hasBuilding(unique_building(iOwner, iHarbor)): iValue += 1
+		if city.hasBuilding(unique_building(iOwner, iMarket)): iValue += 3
 
 	elif iCompany == iWestIndiesCompany:
 		if city.hasBuilding(unique_building(iOwner, iHarbor)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iCustomsHouse)): iValue += 1
+		if city.hasBuilding(iFeitoria): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iBank)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iWarehouse)): iValue += 1
 
@@ -140,6 +145,8 @@ def getCityValue(city, iCompany):
 		if city.hasBuilding(unique_building(iOwner, iLighthouse)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iHarbor)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iWharf)): iValue += 1
+		if city.hasBuilding(unique_building(iOwner, iSlaughterhouse)): iValue += 1
+		if city.hasBuilding(iColdStoragePlant): iValue += 1
 		
 	elif iCompany == iTextileIndustry:
 		if city.hasBuilding(unique_building(iOwner, iMarket)): iValue += 1
@@ -149,6 +156,7 @@ def getCityValue(city, iCompany):
 		if city.hasBuilding(unique_building(iOwner, iManufactory)): iValue += 2
 
 	elif iCompany == iSteelIndustry:
+		if city.hasBuilding(unique_building(iOwner, iFactory)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iCoalPlant)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iRailwayStation)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iSteelMill)): iValue += 3
@@ -160,10 +168,12 @@ def getCityValue(city, iCompany):
 		if city.hasBuilding(unique_building(iOwner, iStockExchange)): iValue += 3
 
 	elif iCompany == iLuxuryIndustry:
-		if city.hasBuilding(unique_building(iOwner, iTavern)): iValue += 1
-		# MacAurther: Catch Independents who don't have National Galleries
-		if unique_building(iOwner, iNationalGallery) != -1:
-			if city.hasBuilding(unique_building(iOwner, iNationalGallery)): iValue += 3
+		if city.hasBuilding(unique_building(iOwner, iFactory)): iValue += 1
+		if city.hasBuilding(unique_building(iOwner, iJeweller)): iValue += 1
+		if city.hasBuilding(unique_building(iOwner, iDepartmentStore)): iValue += 1
+		if city.hasBuilding(iMall): iValue += 1
+		if city.hasBuilding(unique_building(iOwner, iHotel)): iValue += 1
+		if city.hasBuilding(unique_building(iOwner, iNationalGallery)): iValue += 3
 	
 	# needs at least a few requirements
 	if iValue <= 0:
@@ -173,24 +183,32 @@ def getCityValue(city, iCompany):
 	iValue += city.getTradeRoutes() - 1
 	
 	# resources
-	iTempValue = 0
-	bFound = False
+	iResourceValue = 0
 	for i in range(6):
 		iBonus = infos.corporation(iCompany).getPrereqBonus(i)
 		if iBonus > -1:
 			if city.getNumBonuses(iBonus) > 0: 
-				bFound = True
 				if iCompany in [iFishingIndustry, iCerealIndustry, iTextileIndustry]:
-					iTempValue += city.getNumBonuses(iBonus)
-				elif iCompany in [iTrappingIndustry, iOilIndustry]:
-					iTempValue += city.getNumBonuses(iBonus) * 4
+					iResourceValue += city.getNumBonuses(iBonus)
+				elif iCompany == iOilIndustry:
+					iResourceValue += city.getNumBonuses(iBonus) * 4
+				elif iCompany == iTrappingIndustry:
+					if iBonus == iFur:
+						iResourceValue += city.getNumBonuses(iBonus) * 4
+					else:
+						iResourceValue += city.getNumBonuses(iBonus) * 2
 				else:
-					iTempValue += city.getNumBonuses(iBonus) * 2
+					iResourceValue += city.getNumBonuses(iBonus) * 2
 				
-	if not bFound: 
+	if iResourceValue == 0: 
 		return -1
+		
+	iCompanyCount = player(iOwner).countCorporations(iCompany)
+	iCompanyLimit = getCompanyLimit(iCompany)
 	
-	iValue += iTempValue
+	iResourceValue -= iCompanyCount
+	
+	iValue += iResourceValue
 	
 	# competition
 	if iCompany == iCerealIndustry and city.isHasCorporation(iFishingIndustry): iValue /= 2
@@ -201,11 +219,10 @@ def getCityValue(city, iCompany):
 	# threshold
 	if iValue < 4:
 		return -1
+	
+	iCompanyExcess = max(0, iCompanyCount - iCompanyLimit / 2)
+	
+	iValue *= 10
+	iValue /= 10 + iCompanyExcess
 		
-	iCompanyCount = player(iOwner).countCorporations(iCompany)
-	iCompanyLimit = getCompanyLimit(iCompany)
-	
-	if iCompanyCount > iCompanyLimit / 4: iValue -= 1
-	if iCompanyCount > iCompanyLimit / 2: iValue -= 1
-	
 	return iValue

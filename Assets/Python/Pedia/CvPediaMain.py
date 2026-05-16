@@ -524,7 +524,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 
 	def placeTechs(self):
 		lTechs = []
-		dTechs = dict((iX, []) for iX in range(25))	# MacAurtheR: yay magic numbers. Remember to update this if num tech rows changes
+		dTechs = dict((iX, []) for iX in range(23))	# MacAurther: yay magic numbers. Remember to update this if num tech rows changes
 		
 		for iTech in range(gc.getNumTechInfos()):
 			techInfo = gc.getTechInfo(iTech)

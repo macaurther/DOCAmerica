@@ -85,7 +85,10 @@ def getPlayerExperience(unit):
 	return iExperience
 	
 	
-def format_date(year):
+def format_date(year = None):
+	if year is None:
+		year = game.getGameTurnYear()
+	
 	return text(year >= 0 and "TXT_KEY_YEAR_AD" or "TXT_KEY_YEAR_BC", abs(year))
 
 
@@ -108,7 +111,6 @@ def variadic(*items):
 def listify(item):
 	if isinstance(item, list):
 		return item
-	# TODO: test info collection
 	if isinstance(item, (tuple, set, InfoCollection)):
 		return list(item)
 	if isinstance(item, types.GeneratorType):
@@ -461,16 +463,18 @@ def has_civic(identifier, iCivic):
 
 
 def scenarioStart():
-	return turn() == scenarioStartTurn()
+	return not game.isFinalInitialized() or turn() == scenarioStartTurn()
 
 
 def scenarioStartTurn():
+	if not game.isFinalInitialized():
+		return getGameTurnForYear(scenarioStartYear(), 0, game.getCalendar(), game.getGameSpeedType())
+	
 	return getTurnForYear(scenarioStartYear())
 
 
 def scenarioStartYear():
-	lStartYears = [0, 1500, 1750]
-	return lStartYears[scenario()]
+	return lScenarioStartYears[scenario()]
 
 
 def scenario():
@@ -854,17 +858,21 @@ def civ(identifier = None):
 	return Civ(player(identifier).getCivilizationType())
 
 
-def period(iCiv):
-	iPlayer = slot(iCiv)
-	if iPlayer >= 0:
-		return player(iPlayer).getPeriod()
-	return -1
+def period(identifier):
+	if isinstance(identifier, Civ):
+		iPlayer = slot(identifier)
+		if iPlayer < 0:
+			return -1
+		
+		return period(iPlayer)
+	
+	return player(identifier).getPeriod()
 	
 	
 def active():
 	return gc.getGame().getActivePlayer()
-	
-	
+
+
 class FindResult(object):
 
 	def __init__(self, result, index, value):
@@ -1143,9 +1151,11 @@ class EntityCollection(object):
 	def set(self):
 		return set(self._keys)
 	
-	# TODO: test
 	def map(self, func):
 		return self.copy([self._keyify(mapped) for mapped in self.get(func)])
+	
+	def proportion(self, func):
+		return 1.0 * self.count(func) / self.count()
 	
 	def format(self, separator=",", final_separator=None, formatter=lambda x: x):
 		if final_separator is None:
@@ -1255,8 +1265,9 @@ class PlotFactory:
 		
 		return self.core(identifier)
 
-	def core(self, identifier):
-		iPeriod = player(identifier).getPeriod()
+	def core(self, identifier, iPeriod=None):
+		if iPeriod is None:
+			iPeriod = period(identifier)
 		if iPeriod in dPeriodCoreArea:
 			return self.area(dPeriodCoreArea, dPeriodCoreAreaExceptions, iPeriod)
 		return self.area(dCoreArea, dCoreAreaExceptions, identifier)
@@ -1266,9 +1277,13 @@ class PlotFactory:
 			return self.none()
 		return self.area(dExpansionArea, dExpansionAreaExceptions, identifier)
 
-	def respawn(self, identifier):
+	def respawn(self, identifier, iPeriod=None):
 		if identifier in dRespawnArea:
 			return self.area(dRespawnArea, dRespawnAreaExceptions, identifier)
+		if iPeriod is None:
+			iPeriod = period(identifier)
+		if iPeriod in dPeriodCoreArea:
+			return self.area(dPeriodCoreArea, dPeriodCoreAreaExceptions, iPeriod)
 		return self.birth(identifier)
 	
 	def capital(self, identifier):
@@ -1387,7 +1402,6 @@ class Locations(EntityCollection):
 	def intersect(self, locations):
 		return any(loc in locations for loc in self)
 	
-	# TODO: test
 	def revealed(self, identifier):
 		return self.where(lambda loc: plot(loc).isRevealed(player(identifier).getTeam(), False))
 
@@ -1450,8 +1464,24 @@ class Plots(Locations):
 	def no_enemies(self, iPlayer):
 		return self.where(lambda p: units.at(p).atwar(iPlayer).none())
 	
-	def expand(self, iNumTiles):
-		return self.enrich(lambda p: plots.circle(p, radius=iNumTiles))
+	def expand(self, iRange):
+		if not self:
+			return self
+		
+		if iRange == 0:
+			return self
+		
+		min_x, max_x = self.minimum(CyPlot.getX).getX(), self.maximum(CyPlot.getX).getX()
+		min_y, max_y = self.minimum(CyPlot.getY).getY(), self.maximum(CyPlot.getY).getY()
+		
+		factory = PlotFactory()
+		rectangle = factory.rectangle((min_x-1, min_y-1), (max_x+1, max_y+1)).set()
+		inner = self.set()
+		outer = rectangle - inner
+		
+		expanded = self + Plots(outer).where(lambda p: not p.isNone() and any(key in inner for key in factory.surrounding(p)._keys))
+		
+		return expanded.expand(iRange-1)
 	
 	def edge(self):
 		return self.where(lambda p: plots.surrounding(p).any(lambda sp: sp not in self))
@@ -1632,6 +1662,10 @@ class Cities(Locations):
 	
 	def plots(self):
 		return self.transform(Plots, map = lambda key: plot(self._factory(key)))
+	
+	def ever_owned(self, *civs):
+		civs = variadic(*civs)
+		return any(city.isEverOwnedCiv(iCiv) for city in self for iCiv in civs)
 	
 		
 class UnitFactory:
@@ -1924,11 +1958,9 @@ class Civilizations(EntityCollection):
 	def __str__(self):
 		return ",".join([infos.civ(item).getText() for item in self.entities()])
 	
-	# TODO: test
 	def alive(self):
 		return self.where(lambda c: player(c).isAlive())
 	
-	# TODO: test
 	def notalive(self):
 		return self.where(lambda c: not player(c).isAlive())
 		
@@ -1937,7 +1969,6 @@ class Civilizations(EntityCollection):
 			exceptions = [exceptions]
 		return self.where(lambda c: c not in [civ(e) for e in exceptions])
 	
-	# TODO: test
 	def past_birth(self):
 		return self.where(lambda c: year() >= year(dBirth[c]))
 	
@@ -2156,7 +2187,7 @@ class Infos:
 	def commerce(self, identifier):
 		return gc.getCommerceInfo(identifier)
 	
-	def commerces(self, identifier):
+	def commerces(self):
 		return InfoCollection.type(gc.getCommerceInfo, CommerceTypes.NUM_COMMERCE_TYPES)
 		
 	def corporation(self, identifier):

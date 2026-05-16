@@ -165,36 +165,49 @@ class Languages(object):
 		self.identifier = identifier
 		self.tile = tile
 		
-		#print "get languages for %s on %s" % (name(identifier), getBaseName(tile))
+		# print "get languages for %s on %s" % (name(identifier), getBaseName(tile))
 		
 	def __iter__(self):
-		for iLanguage in getPrimaryLanguages(self.identifier):
-			#print "yield primary: %s" % iLanguage
-			yield iLanguage
+		iPrimaryIdentifier = self.identifier
+		if self.city and is_minor(self.identifier):
+			if self.city.getPreviousCiv() >= 0:
+				iPrimaryIdentifier = Civ(self.city.getPreviousCiv())
 		
-		local_civs = self.getLocalLanguageCivs()
-		local_civs = local_civs.where(self.isValid)
+		for iLanguage in getPrimaryLanguages(iPrimaryIdentifier):
+			# print "yield primary: %s" % iLanguage
+			yield iLanguage
+			
+		bOriginalMinor = self.city and is_minor(Civ(self.city.getOriginalCiv()))
+		bNonlocalMajor = not is_minor(self.identifier) and self.plot.getSettlerValue(self.iCiv) > 0 and (not self.city or self.city.getOriginalCiv() == self.iCiv)
+		
+		if bOriginalMinor or bNonlocalMajor:
+			for iLanguage in getLocalLanguages(self.tile):
+				# print "yield local for original minor or nonlocal major: %s" % iLanguage
+				yield iLanguage
+		
+		local_languages = self.getLocalLanguages()
+		local_civs = self.getValidLanguageCivs(local_languages)
 		
 		if self.plot.getRegionID() in lAmerica and True not in data.dFirstContactConquerors.values():
 			local_civs = local_civs.group(iCivGroupAmerica)
 		
 		similar_civs, different_civs = local_civs.split(self.isSimilar)
 		
-		#print "similar: %s" % [(infos.civ(iCiv).getText(), self.getSortingKey(iCiv)) for iCiv in similar_civs.sort(self.getSortingKey, reverse=True)]
-		#print "different: %s" % [(infos.civ(iCiv).getText(), self.getSortingKey(iCiv)) for iCiv in different_civs.sort(self.getSortingKey, reverse=True)]
+		# print "similar: %s" % [(infos.civ(iCiv).getText(), self.getSortingKey(iCiv)) for iCiv in similar_civs.sort(self.getSortingKey, reverse=True)]
+		# print "different: %s" % [(infos.civ(iCiv).getText(), self.getSortingKey(iCiv)) for iCiv in different_civs.sort(self.getSortingKey, reverse=True)]
 		
 		for iSimilarCiv in similar_civs.sort(self.getSortingKey, reverse=True):
 			for iLanguage in getPrimaryLanguages(iSimilarCiv):
-				#print "yield similar for %s: %s" % (infos.civ(iSimilarCiv).getText(), iLanguage)
+				# print "yield similar for %s: %s" % (infos.civ(iSimilarCiv).getText(), iLanguage)
 				yield iLanguage
 		
-		for iLanguage in getLocalLanguages(self.tile):
-			#print "yield local: %s" % iLanguage
+		for iLanguage in local_languages:
+			# print "yield local: %s" % iLanguage
 			yield iLanguage
 		
 		for iDifferentCiv in different_civs.sort(self.getSortingKey, reverse=True):
 			for iLanguage in getPrimaryLanguages(iDifferentCiv):
-				#print "yield different for %s: %s" % (infos.civ(iDifferentCiv).getText(), iLanguage)
+				# print "yield different for %s: %s" % (infos.civ(iDifferentCiv).getText(), iLanguage)
 				yield iLanguage
 	
 	@property
@@ -213,17 +226,20 @@ class Languages(object):
 	def player(self):
 		return player(identifier)
 	
-	def getLocalLanguageCivs(self):
+	def getLocalLanguages(self):
 		base_name, changed_name = getTileNames(self.tile)
 		
 		tile_languages = Translations.of(changed_name).getLanguages()
 		
 		if base_name != changed_name:
 			tile_languages |= Translations.of(base_name).getLanguages()
-			
-		local_civs = [iCiv for iCiv, tLanguages in dBaseLanguages.items() if tile_languages & set(tLanguages)]
 		
-		return civs.of(*local_civs)
+		return tile_languages
+	
+	def getValidLanguageCivs(self, localLanguages):
+		local_civs = [iCiv for iCiv, tLanguages in dBaseLanguages.items() if not is_minor(iCiv) and localLanguages & set(tLanguages)]
+		
+		return civs.of(*local_civs).where(self.isValid)
 	
 	def isPastBirth(self, iCiv):
 		return since(year(dBirth[iCiv])) > 0 or (self.plot.getSettlerValue(iCiv) > 0 and self.isConnected(iCiv))
@@ -367,11 +383,11 @@ def applyName(city, translation, bNotify=False):
 		return
 	
 	if translation.bRelocation:
-		applyRelocation(city, translation)
+		applyRelocation(city, translation.name)
 		return
 	
 	if translation.bRenaming:
-		applyRenaming(city, translation)
+		applyRenaming(city, translation.name)
 		return
 	
 	# MacAurther: If there is no map name, or Civ is a transient civ, just use current name
@@ -384,27 +400,27 @@ def applyName(city, translation, bNotify=False):
 		message(city.getOwner(), "TXT_KEY_MESSAGE_CITY_NAME_CHANGE", current_name, translation.name, location=city, button='Art/Interface/Buttons/Actions/FoundCity.dds')
 
 
-def applyRelocation(city, translation):
+def applyRelocation(city, name):
 	tile_name = city_names[city]
-	if tile_name == translation.name:
+	if tile_name == name:
 		return
 	
 	current_relocated_name = data.dRelocatedCities.get(tile_name, tile_name)
 	if current_relocated_name in data.dRenamedCities:
 		del data.dRenamedCities[current_relocated_name]
 	
-	data.dRelocatedCities[tile_name] = translation.name
+	data.dRelocatedCities[tile_name] = name
 	checkName(city)
 
 
-def applyRenaming(city, translation):
+def applyRenaming(city, name):
 	tile_name = city_names[city]
 	tile_name = data.dRelocatedCities.get(tile_name, tile_name)
 	
-	if tile_name == translation.name:
+	if tile_name == name:
 		return
 	
-	data.dRenamedCities[tile_name] = translation.name
+	data.dRenamedCities[tile_name] = name
 	checkName(city)
 
 

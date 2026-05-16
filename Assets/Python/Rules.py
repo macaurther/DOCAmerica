@@ -89,6 +89,12 @@ def spreadCultureOnConquest(iPlayer, city):
 		else:
 			convertTemporaryCulture(plot, iPlayer, 25, True)
 
+
+@handler("cityAcquiredAndKept")
+def revealCity(iPlayer, city):
+	"""Sometimes birth flips can flip a city before its tile is revealed."""
+	city.setRevealed(player(iPlayer).getTeam(), True)
+	
 @handler("cityAcquiredAndKept")
 # Partonato civic
 def convertOnCityAcquired(iPlayer, pCity):

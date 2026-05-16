@@ -350,6 +350,9 @@ class Barbarians(object):
 		return False
 	
 	def cleanup(self):
+		if not player(self.iOwner).isExisting():
+			return
+		
 		for unit in units.owner(self.iOwner).where(lambda unit: data.units[unit].spawn_data == self.spawn_data()):
 			unit.kill(False, -1)
 	
@@ -501,6 +504,7 @@ class Barbarians(object):
 		unit = infos.unit(self.units.items()[0][0])
 		
 		message(active(), self.SPAWN_NOTIFICATIONS[self.pattern], adjective_text, iColor=iRed, button=unit.getButton(), location=plot)
+
 
 minor_cities = [
 	MinorCity(400, iIndependent1, (42, 40), "Moche", iPopulation=1, iCiv=iChimu, units={iDefend: 2}, iCulture=5, adjective="TXT_KEY_ADJECTIVE_MOCHE"),			# Moche Culture

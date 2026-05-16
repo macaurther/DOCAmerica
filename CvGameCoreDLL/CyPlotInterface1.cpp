@@ -294,9 +294,11 @@ void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 		.def("isExpansion", &CyPlot::isExpansion, "bool ()")
 		.def("setRevealedOwner", &CyPlot::setRevealedOwner, "void (int eTeam, int eNewValue)")
 		.def("setBonusVarietyType", &CyPlot::setBonusVarietyType, "void (int eBonusType)")
+		.def("getBaseBonusVarietyType", &CyPlot::getBaseBonusVarietyType, "int ()")
 		.def("getBonusVarietyType", &CyPlot::getBonusVarietyType, "int ()")
 		.def("getContinentArea", &CyPlot::getContinentArea, "int ()")
 		.def("updateRevealedOwner", &CyPlot::updateRevealedOwner, "void (int eTeam)")
+		.def("setWorkingCity", &CyPlot::setWorkingCity, "void (CvCity pCity)")
 
 		// MacAurther
 		.def("updateFortClaims", &CyPlot::updateFortClaims, "void (int ePlayer)")
