@@ -1426,15 +1426,14 @@ void CvMap::calculateAreas()
 	CvArea* southAmerica = addArea();
 	CvArea* oldWorld = addArea();
 
-	int northAmericaID = northAmerica->getID();
+	int southAmericaID = plot(58, 15)->getArea(); // Buenos Aires
+	int northAmericaID = plot(45, 88)->getArea(); // Washington
+
 	int centralAmericaID = centralAmerica->getID();
-	int southAmericaID = southAmerica->getID();
-	int oldWorldID = oldWorld->getID();
 
 	northAmerica->init(northAmericaID, false);
 	centralAmerica->init(centralAmericaID, false);
 	southAmerica->init(southAmericaID, false);
-	oldWorld->init(oldWorldID, false);
 
 	CvPlot* plot;
 	for (int iX = 0; iX < getGridWidth(); iX++)
@@ -1448,32 +1447,6 @@ void CvMap::calculateAreas()
 			{
 				switch (plot->getRegionID())
 				{
-				case REGION_ALASKA:
-				case REGION_YUKON:
-				case REGION_NUNAVUT:
-				case REGION_GREENLAND:
-				case REGION_NORTH_CASCADIA:
-				case REGION_NORTH_PLAINS:
-				case REGION_ONTARIO:
-				case REGION_QUEBEC:
-				case REGION_NEW_FOUNDLAND:
-				case REGION_SOUTH_CASCADIA:
-				case REGION_CALIFORNIA:
-				case REGION_ROCKIES:
-				case REGION_TEXAS:
-				case REGION_GREAT_PLAINS:
-				case REGION_GREAT_LAKES:
-				case REGION_NEW_ENGLAND:
-				case REGION_MID_ATLANTIC:
-				case REGION_MARYLAND:
-				case REGION_APPALACHIA:
-				case REGION_COASTAL_PLAIN:
-				case REGION_DEEP_SOUTH:
-				case REGION_FLORIDA:
-				case REGION_HAWAII:
-					plot->setArea(northAmericaID);
-					break;
-				case REGION_SOUTHWEST:
 				case REGION_BAJA_CALIFORNIA:
 				case REGION_SIERRA_MADRES:
 				case REGION_BAJIO:
@@ -1481,45 +1454,22 @@ void CvMap::calculateAreas()
 				case REGION_OAXACA:
 				case REGION_YUCATAN:
 				case REGION_MESOAMERICA:
-				case REGION_CARIBBEAN:
-					plot->setArea(centralAmericaID);
-					break;
-				case REGION_COLOMBIA:
-				case REGION_ECUADOR:
-				case REGION_VENEZUELA:
-				case REGION_GUYANA:
-				case REGION_PERU:
-				case REGION_BOLIVIA:
-				case REGION_AMAZONAS:
-				case REGION_PARA:
-				case REGION_BAHIA:
-				case REGION_MINAS_GERAIS:
-				case REGION_MATO_GROSSO:
-				case REGION_PARANA:
-				case REGION_CHILE:
-				case REGION_PARAGUAY:
-				case REGION_URUGUAY:
-				case REGION_CHACO:
-				case REGION_CUYO:
-				case REGION_PAMPAS:
-				case REGION_PATAGONIA:
-					plot->setArea(southAmericaID);
-					break;
-				case REGION_ICELAND:
-				case REGION_OLD_WORLD:
-					plot->setArea(oldWorldID);
+					if (plot->getArea() == northAmericaID)
+					{
+						plot->setArea(centralAmericaID);
+					}
 					break;
 				}
 			}
 		}
 	}
 
-	// Leoreth: store closest area of size 30+
+	// Leoreth: store closest area of size 40+
 	for (iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		pLoopPlot = plotByIndexINLINE(iI);
 
-		pLoopPlot->setContinentArea(getArea(pLoopPlot->getArea())->getClosestAreaSize(30));
+		pLoopPlot->setContinentArea(getArea(pLoopPlot->getArea())->getClosestAreaSize(40));
 	}
 }
 
