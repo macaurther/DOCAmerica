@@ -1424,7 +1424,6 @@ void CvMap::calculateAreas()
 	CvArea* northAmerica = addArea();
 	CvArea* centralAmerica = addArea();
 	CvArea* southAmerica = addArea();
-	CvArea* oldWorld = addArea();
 
 	int southAmericaID = plot(58, 15)->getArea(); // Buenos Aires
 	int northAmericaID = plot(45, 88)->getArea(); // Washington

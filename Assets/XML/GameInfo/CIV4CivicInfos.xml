@@ -936,7 +936,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Proprietaries.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
-			<iNumCitiesMaintenanceModifier>25</iNumCitiesMaintenanceModifier>
+			<iNumCitiesMaintenanceModifier>50</iNumCitiesMaintenanceModifier>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PROPRIETARIES</WeLoveTheKing>
 		</CivicInfo>
