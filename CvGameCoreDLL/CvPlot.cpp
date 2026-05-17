@@ -12330,8 +12330,7 @@ void CvPlot::addFortClaims(PlayerTypes ePlayer)
 				{
 					pLoopPlot->setFortOwner(ePlayer);
 					pLoopPlot->setFortClaimer(this);
-					pLoopPlot->setOwner(ePlayer, true, false);
-					pLoopPlot->updateCulture(true, false);
+					pLoopPlot->setOwner(ePlayer, false, false);
 				}
 			}
 		}
@@ -12357,7 +12356,7 @@ void CvPlot::removeFortClaims()
 				{
 					pLoopPlot->setFortOwner(NO_PLAYER);
 					pLoopPlot->setFortClaimer(NULL);
-					pLoopPlot->updateCulture(true, false);
+					pLoopPlot->updateCulture(false, false);
 				}
 			}
 		}
