@@ -49,7 +49,7 @@ AVAILABLE_COLONISTS = "AvailableColonists"
 AVAILABLE_EXPEDITIONARIES = "AvailableExpeditionaries"
 
 # Set to true to print out debug messages in the logs
-g_bDebug = True
+g_bDebug = False
 
 class ImmigrationUtils:
 
@@ -104,21 +104,25 @@ class ImmigrationUtils:
 		iBestHomeland = 0
 		while iBestHomeland != -1:
 			iBestHomeland = -1
+			iBestThreshold = 0
 			for iHomeland in lHomelands:
 				if not self.canEarnImmigrants(iPlayer, iHomeland):
 					continue
-				if pPlayer.getImmigration() < self.getImmigrationThreshold(iPlayer, iHomeland):
+				iThreshold = self.getImmigrationThreshold(iPlayer, iHomeland)
+				if pPlayer.getImmigration() < iThreshold:
 					continue
 				if iBestHomeland == -1:
 					iBestHomeland = iHomeland
-				elif self.getImmigrationThreshold(iPlayer, iBestHomeland) > self.getImmigrationThreshold(iPlayer, iHomeland):
+					iBestThreshold = iThreshold
+				elif iBestThreshold > iThreshold:
 					iBestHomeland = iHomeland
-					
+					iBestThreshold = iThreshold
+
 			if iBestHomeland != -1:
 				# Grant Immigrant
 				self.changeImmigrants(iPlayer, iBestHomeland, iImmigrant, 1)
 				# Subtract cost
-				pPlayer.changeImmigration(-1*self.getImmigrationThreshold(iPlayer, iBestHomeland))
+				pPlayer.changeImmigration(-1 * iBestThreshold)
 				# Increment num immigrant trackers
 				data.civs[iCiv].numImmigrations += 1
 				data.civs[iCiv].lNumImmigrantsEared[iBestHomeland] += 1
@@ -161,8 +165,8 @@ class ImmigrationUtils:
 	def getTotalNumImmigrants(self, iPlayer, iHomeland):
 		iNumImmigrants = 0
 		iCiv = civ(iPlayer)
-		for sUnit in data.civs[iCiv].dEarnedUnits[iHomeland].keys():
-			iNumImmigrants += data.civs[iCiv].dEarnedUnits[iHomeland][sUnit].getCount()
+		for group in data.civs[iCiv].dEarnedUnits[iHomeland].itervalues():
+			iNumImmigrants += group.getCount()
 		return iNumImmigrants
 	
 	def getNumImmigrants(self, iPlayer, iHomeland, iUnit):
@@ -172,18 +176,21 @@ class ImmigrationUtils:
 
 	def getAvailableUnit(self, iPlayer, iHomeland, dSchedule):
 		dUnits = {}
+		iCurrentTurn = turn()
 
 		for iUnit in dSchedule.keys():
 			if not iHomeland in dSchedule[iUnit][1]:
 				continue
-			if not turn() in range(year(dSchedule[iUnit][0][0]), year(dSchedule[iUnit][0][1]) + 1):
+			iYearStart = year(dSchedule[iUnit][0][0])
+			iYearEnd   = year(dSchedule[iUnit][0][1])
+			if not (iYearStart <= iCurrentTurn <= iYearEnd):
 				continue
 			if not self.canHire(iUnit, iPlayer, iHomeland):
 				continue
 			if unique_unit(iPlayer, iUnit) != iUnit and not iUnit in lUniqueOverride:
 				continue
 			dUnits[str(iUnit)] = self.getImmigrantGroup(iUnit)
-			
+
 		return dUnits
 	
 	# Extra check for special can hire cases
@@ -319,16 +326,21 @@ class ImmigrationUtils:
 		if not self.canEarnImmigrants(iPlayer):
 			return
 		
+		# Compute want-flags once to avoid repeated full unit-list scans
+		bWantsSettlers     = self.computerPlayerWantsSettlers(iPlayer)
+		bWantsWorkers      = self.computerPlayerWantsWorkers(iPlayer)
+		bWantsMissionaries = self.computerPlayerWantsMissionaries(iPlayer)
+		bWantsImmigrants   = not bWantsSettlers and not bWantsWorkers and not bWantsMissionaries
+
 		# Convert earned Immigrants into other units
 		for iHomeland in lHomelands:
-			self.computerPlayerHireImmigrants(iPlayer, iHomeland)
+			self.computerPlayerHireImmigrants(iPlayer, iHomeland, bWantsSettlers, bWantsWorkers, bWantsMissionaries)
 			if iHomeland == iHomelandAfrica:
 				self.computerPlayerHireSlaves(iPlayer)
 
-		
 		# Load waiting units
 		for iHomeland in lHomelands:
-			self.computerPlayerLoadHomeland(iPlayer, iHomeland)
+			self.computerPlayerLoadHomeland(iPlayer, iHomeland, bWantsImmigrants)
 
 		if g_bDebug:
 			print(pPlayer.getName() + " has the following earned immigrants:")
@@ -339,29 +351,29 @@ class ImmigrationUtils:
 						if self.getNumImmigrants(iPlayer, iHomeland, int(sUnit)) > 0:
 							print(data.civs[civ(iPlayer)].dEarnedUnits[iHomeland][sUnit].getImmigrantTitle())
 
-	def computerPlayerHireImmigrants(self, iPlayer, iHomeland):
+	def computerPlayerHireImmigrants(self, iPlayer, iHomeland, bWantsSettlers, bWantsWorkers, bWantsMissionaries):
 		# Priority: Settlers, Workers, then Missionaries
 		# Try to hire, if didn't work, just continue on
-		if self.computerPlayerWantsSettlers(iPlayer):
+		if bWantsSettlers:
 			self.hireMercenary(unique_unit(iPlayer, iSettler), iPlayer, iHomeland, bPay=True)
-		if self.computerPlayerWantsWorkers(iPlayer):
+		if bWantsWorkers:
 			self.hireMercenary(unique_unit(iPlayer, iWorker), iPlayer, iHomeland, bPay=True)
-		if self.computerPlayerWantsMissionaries(iPlayer):
+		if bWantsMissionaries:
 			self.hireMercenary(unique_unit(iPlayer, missionary(player(iPlayer).getStateReligion())), iPlayer, iHomeland, bPay=True)
 	
 	def computerPlayerHireSlaves(self, iPlayer):
 		if self.computerPlayerWantsSlaves(iPlayer):
 			self.hireMercenary(iChattleSlave, iPlayer, iHomelandAfrica, bPay=True)
 
-	def computerPlayerLoadHomeland(self, iPlayer, iHomeland):
-		for sUnit in data.civs[civ(iPlayer)].dEarnedUnits[iHomeland].keys():
+	def computerPlayerLoadHomeland(self, iPlayer, iHomeland, bWantsImmigrants):
+		for sUnit, group in list(data.civs[civ(iPlayer)].dEarnedUnits[iHomeland].items()):
 			# Heuristic: Don't load any Immigrants unless you don't want any more settlers, workers, or missionaries
-			if str(iImmigrant) == sUnit and not self.computerPlayerWantsImmigrants(iPlayer):
+			if str(iImmigrant) == sUnit and not bWantsImmigrants:
 				continue
-			iNumUnits = self.getNumImmigrants(iPlayer, iHomeland, int(sUnit))
+			iNumUnits = group.getCount()
 			if iNumUnits > 0:
 				for _ in range(iNumUnits):
-					if data.civs[civ(iPlayer)].dEarnedUnits[iHomeland][sUnit].getImmigrant().hasShipForPlacement(iPlayer, iHomeland):
+					if group.getImmigrant().hasShipForPlacement(iPlayer, iHomeland):
 						self.placeMercenary(int(sUnit), iPlayer, iHomeland)
 					else:
 						return
@@ -407,8 +419,10 @@ class ImmigrationUtils:
 		if civ(iPlayer) in dCivGroups[iCivGroupNative]:
 			return False
 		# Don't hire crazy numbers of slaves
-		if str(iChattleSlave) in self.getEarnedImmigrants(civ(iPlayer), iHomelandAfrica).keys():
-			if self.getEarnedImmigrants(civ(iPlayer), iHomelandAfrica)[str(iChattleSlave)].getCount() < max(player(iPlayer).countRequiredSlaves(), 6):
+		dEarned = self.getEarnedImmigrants(civ(iPlayer), iHomelandAfrica)
+		sKey = str(iChattleSlave)
+		if sKey in dEarned:
+			if dEarned[sKey].getCount() < max(player(iPlayer).countRequiredSlaves(), 6):
 				return False
 		return True
 	
@@ -416,6 +430,6 @@ class ImmigrationUtils:
 		bWantsImmigrants = self.computerPlayerWantsImmigrants(iPlayer)
 		iNumUnitsToTransport = 0
 		for sUnit in data.civs[civ(iPlayer)].dEarnedUnits[iHomeland].keys():
-			if bWantsImmigrants or (not "Immigrant" in sUnit):
+			if bWantsImmigrants or (str(iImmigrant) != sUnit):
 				iNumUnitsToTransport += 1
 		return iNumUnitsToTransport
