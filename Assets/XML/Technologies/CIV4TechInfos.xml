@@ -5825,7 +5825,7 @@
 				</Flavor>
 			</Flavors>
 			<OrPreReqs>
-				<PrereqTech>TECH_GLOBALISM</PrereqTech>
+				<PrereqTech>TECH_RAILROAD</PrereqTech>
 			</OrPreReqs>
 			<Quote>TXT_KEY_TECH_ASIA_ACCESS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>

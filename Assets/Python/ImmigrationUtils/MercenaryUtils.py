@@ -173,15 +173,15 @@ class Mercenary:
 			iImmigrationCost = 1
 			iGoldCost = scale(10)
 		else:
-			iGoldCost = self.getUnitInfo().getProductionCost() / 2
+			iGoldCost = self.getUnitInfo().getProductionCost()
 
 		# Apply effects
 		if bIndenturedServitude and self.iUnitID in [iWorker, iPromyshlenniki, iLaborer]: iImmigrationCost -= 1
 		if iImmigrationCost > 0 and bDecolonization: iImmigrationCost += 1
 		if civ(iPlayer) == iNorse and self.iUnitID == iSettler: iImmigrationCost -= 1	# Norse UP
 		if bProprietaries and self.getUnitInfo().getUnitCombatType() != UnitCombatTypes.NO_UNITCOMBAT and self.getUnitInfo().getDomainType() == DomainTypes.DOMAIN_LAND:
-			iGoldCost *= 3
-			iGoldCost /= 4
+			iGoldCost *= 4
+			iGoldCost /= 5
 		if bAdmiralty and self.getUnitInfo().getDomainType() == DomainTypes.DOMAIN_SEA:
 			iGoldCost *= 3
 			iGoldCost /= 4

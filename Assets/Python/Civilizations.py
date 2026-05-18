@@ -1022,6 +1022,7 @@ dTechPreferences = {
 		iRailroad: 30,
 		iRepresentation: 30,
 		iEconomics: 20,
+		iMachineTools: 30,
 		iAssemblyLine: 20,
 	},
 	iArgentina : {

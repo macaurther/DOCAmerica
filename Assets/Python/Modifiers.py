@@ -72,7 +72,7 @@ NCE = 80	# Num Cities Euro
 tCulture =		          ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,     20, 20, 20, 20, 30 )
                                                                                                                                                                             
 tUnitUpkeep = 		      ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,      0,  0,  0,100,100 )
-tResearchCost = 	      ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    110,110,999,110,110 )
+tResearchCost = 	      ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80,    110,110,999,110,110 )
 tDistanceMaintenance = 	  ( DMN,DMN,DMN,DMN,DMN,DMN,DMN,DMN,DME,DMN,DMN,DMN,DMN,DMN,DMN,DMN,DMN,DMN,DME,DME,DMN,DME,DME,DME,DMN,DMN,DMN,DME,DME,DME,DME,DME,DME,DME,DME,DME,DME,DME,     25, 25, 25, 25, 25 )	# Larger map = make distance less of a penalty
 tColonyMaintenance = 	  ( NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCE,NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCE,NCE,NCN,NCE,NCE,NCE,NCN,NCN,NCN,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,     50, 50, 50, 50, 50 )	# Larger map = make num cities less of a penalty
 tCitiesMaintenance = 	  ( NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCE,NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCE,NCE,NCN,NCE,NCE,NCE,NCN,NCN,NCN,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,     50, 50, 50, 50, 50 )	# Larger map = make num cities less of a penalty
