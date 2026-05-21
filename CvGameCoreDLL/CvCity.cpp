@@ -17807,6 +17807,10 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 	int iCost = pPlot->calculateCultureCost();
 	int iExtraCost = 0;
 
+	// MacAurther
+	const CvPlayer& kOwner = GET_PLAYER(getOwner());
+	const RegionPowers eRegionPowers = (RegionPowers)kOwner.getRegionPowers();
+
 	int iDistance = std::max(plotDistance(getX(), getY(), pPlot->getX(), pPlot->getY()), GC.getMap().calculatePathDistance(plot(), pPlot, MOVE_IGNORE_DANGER | MOVE_THROUGH_ENEMY));
 
 	if (bOrdering)
@@ -17818,7 +17822,7 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 
 		iExtraCost += 100 * iDistance;
 
-		if (pPlot->isWater() && !pPlot->isLake() && pPlot->getBonusType() == -1 && iDistance > 1 && GET_PLAYER(getOwner()).getRegionPowers() != RP_LAKES_AND_RIVERS)	// MacAurther: Lakes and Rivers RP
+		if (pPlot->isWater() && !pPlot->isLake() && pPlot->getBonusType() == -1 && iDistance > 1 && eRegionPowers != RP_LAKES_AND_RIVERS)	// MacAurther: Lakes and Rivers RP
 		{
 			if (!isCoastal(20))
 			{
@@ -17834,11 +17838,11 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 		//if (pPlot->getOwner() == getOwner()) iCost += 1000;
 	}
 
-	if (pPlot->getBonusType() >= 0 && (GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)GC.getBonusInfo(pPlot->getBonusType()).getTechReveal()) || GET_PLAYER(getOwner()).getCivilizationType() == HAWAII)) // MacAurther: Includes Hawaii UP
+	if (pPlot->getBonusType() >= 0 && (GET_TEAM(kOwner.getTeam()).isHasTech((TechTypes)GC.getBonusInfo(pPlot->getBonusType()).getTechReveal()) || kOwner.getCivilizationType() == HAWAII)) // MacAurther: Includes Hawaii UP
 	{
 		iExtraCost += GC.getDefineINT("CULTURE_COST_BONUS");
 	}
-	
+
 	if (iDistance <= 1)
 	{
 		iExtraCost -= GC.getDefineINT("CULTURE_COST_DISTANCE");
@@ -17848,19 +17852,19 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 		iExtraCost += std::min(3, iDistance) * GC.getDefineINT("CULTURE_COST_DISTANCE");
 	}
 
-	if (plot()->isRiver() && pPlot->isRiver() && GET_PLAYER(getOwner()).getRegionPowers() != RP_LAKES_AND_RIVERS)	// MacAurther: Lakes and Rivers RP
+	if (plot()->isRiver() && pPlot->isRiver() && eRegionPowers != RP_LAKES_AND_RIVERS)	// MacAurther: Lakes and Rivers RP
 	{
 		iExtraCost += GC.getDefineINT("CULTURE_COST_RIVER");
 	}
 
 	// Leoreth: Inca UP -> MacAurther: Andean RP
-	if (GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES && pPlot->isPeak())
+	if (eRegionPowers == RP_ANDES && pPlot->isPeak())
 	{
 		iExtraCost += GC.getDefineINT("CULTURE_COST_HILL") - GC.getDefineINT("CULTURE_COST_PEAK");
 	}
 
 	// Leoreth -> MacAurther: Pacific RP
-	if (GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC && pPlot->isWater())
+	if (eRegionPowers == RP_PACIFIC && pPlot->isWater())
 	{
 		iExtraCost -= GC.getTerrainInfo(TERRAIN_OCEAN).getCultureCostModifier();
 	}

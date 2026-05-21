@@ -799,9 +799,10 @@ void CvPlot::doImprovement()
 		if (getBonusType() == NO_BONUS)
 		{
 			FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlot::doImprovement");
+			const bool bHawaiianPower = GET_PLAYER(getOwner()).getCivilizationType() == HAWAII; // MacAurther: cache outside bonus loop — Hawaii UP
 			for (iI = 0; iI < GC.getNumBonusInfos(); ++iI)
 			{
-				if (GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getBonusInfo((BonusTypes) iI).getTechReveal())) || GET_PLAYER(getOwner()).getCivilizationType() == HAWAII) // MacAurther: Includes Hawaii UP
+				if (GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getBonusInfo((BonusTypes) iI).getTechReveal())) || bHawaiianPower) // MacAurther: Includes Hawaii UP
 				{
 /************************************************************************************************/
 /* UNOFFICIAL_PATCH                       03/04/10                                jdog5000      */

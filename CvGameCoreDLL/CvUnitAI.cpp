@@ -14922,23 +14922,22 @@ bool CvUnitAI::AI_fortTerritory(bool bCanal, bool bAirbase)
 							BuildTypes eBuild = ((BuildTypes)iJ);
 							FAssertMsg(eBuild < GC.getNumBuildInfos(), "Invalid Build");
 
-							if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
+							ImprovementTypes eBuildImprovement = (ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement();
+							if (eBuildImprovement != NO_IMPROVEMENT)
 							{
-								if (GC.getImprovementInfo((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement())).isActsAsCity())
+								const CvImprovementInfo& kBuildImprovementInfo = GC.getImprovementInfo(eBuildImprovement);
+								if (kBuildImprovementInfo.isActsAsCity() && kBuildImprovementInfo.getDefenseModifier() > 0)
 								{
-								    if (GC.getImprovementInfo((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement())).getDefenseModifier() > 0)
-								    {
-                                        if (canBuild(pLoopPlot, eBuild))
+                                    if (canBuild(pLoopPlot, eBuild))
+                                    {
+                                        iValue = 10000;
+
+                                        iValue /= (GC.getBuildInfo(eBuild).getTime() + 1);
+
+                                        if (iValue < iBestTempBuildValue)
                                         {
-                                            iValue = 10000;
-
-                                            iValue /= (GC.getBuildInfo(eBuild).getTime() + 1);
-
-                                            if (iValue < iBestTempBuildValue)
-                                            {
-                                                iBestTempBuildValue = iValue;
-                                                eBestTempBuild = eBuild;
-                                            }
+                                            iBestTempBuildValue = iValue;
+                                            eBestTempBuild = eBuild;
                                         }
                                     }
 								}
@@ -19287,12 +19286,13 @@ bool CvUnitAI::AI_GetClosestHomeland(CvPlot*& pClosestEdgePlot, int iHomeland)
     {
         pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(i);
 
-        if (!pLoopPlot->isRevealed(eTeam, false))
+		// Cheapest check first
+        if (pLoopPlot->getFeatureType() - FEATURE_TRADEWINDS_NORTH_EUROPE != iHomeland) 
 		{
             continue;
 		}
 
-        if (pLoopPlot->getFeatureType() - FEATURE_TRADEWINDS_NORTH_EUROPE != iHomeland)
+        if (!pLoopPlot->isRevealed(eTeam, false))
 		{
             continue;
 		}

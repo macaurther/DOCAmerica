@@ -1854,9 +1854,10 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 	{
 		if (!pFromPlot->isWater() && !pToPlot->isWater())
 		{
+			CvPlot* pCornerA = GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY); // MacAurther: cache both corner plots — reused by mountain pass and strait checks below
+			CvPlot* pCornerB = GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY);
 			// MacAurther: Mountain Passes: Can't move through corners without Pathfinding technology
-			if ((GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isPeak()) && 
-				(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isPeak()))
+			if (pCornerA != NULL && pCornerB != NULL && pCornerA->isPeak() && pCornerB->isPeak())
 			{
 				if (!GET_TEAM(GET_PLAYER(pSelectionGroup->getHeadUnit()->getOwner()).getTeam()).isHasTech((TechTypes)PATHFINDING))
 				{
@@ -1864,8 +1865,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 				}
 			}
 			// MacAurther: Straits: Can't cross straits as a land unit unless has Amphibious or there is a bridge
-			if ((GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isStrait()) && 
-				(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isStrait()))
+			if (pCornerA != NULL && pCornerB != NULL && pCornerA->isStrait() && pCornerB->isStrait())
 			{
 				if (!pSelectionGroup->getHeadUnit()->isHasPromotion(PROMOTION_AMPHIBIOUS) &&
 					!(GET_TEAM(pSelectionGroup->getHeadUnit()->getTeam()).isBridgeBuilding() && pFromPlot->isRoute() && pToPlot->isRoute()))
