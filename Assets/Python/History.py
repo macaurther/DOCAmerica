@@ -23,6 +23,13 @@ lBannedTribePlots = [
 	(50, 53),		# Gold for Muisca
 ]
 
+# Minimum number of Tribes guaranteed to spawn in each region.
+# A region-specific pressure score builds as the region is traversed and resets
+# each time a tribe is placed, driving placement when global score alone falls short.
+dRegionMinTribes = {
+	rHawaii: 3,
+}
+
 @handler("GameStart")
 def updateCulture():
 	for plot in plots.all():
@@ -61,6 +68,15 @@ def placeTribes():
 					continue
 				lProhibitedPlots.append(plot((dCapitals[iCiv][0]+i, dCapitals[iCiv][1]+j)))
 
+	# Pre-count viable plots per tracked region and initialise per-region tracking
+	dRegionRemainingTribes = dict(dRegionMinTribes)
+	dRegionScore       = dict((r, 0) for r in dRegionMinTribes)
+	dRegionViablePlots = dict(
+		(r, sum(1 for p in plots.region(r)
+		        if p.getOwner() == PlayerTypes.NO_PLAYER and not p.isWater() and not p.isImpassable()))
+		for r in dRegionMinTribes
+	)
+
 	# Look at 3 rows and 3 cols at a time
 	for y in range(0, iWorldY, 3):
 		for x in range(0, iWorldX, 3):
@@ -71,6 +87,12 @@ def placeTribes():
 					# Skip over owned tiles and water, and peaks
 					if pPlot.getOwner() != PlayerTypes.NO_PLAYER or pPlot.isWater() or pPlot.isImpassable():
 						continue
+
+					# Region minimum tracking
+					iPlotRegion    = pPlot.getRegionID()
+					bTrackedRegion = iPlotRegion in dRegionMinTribes and dRegionRemainingTribes[iPlotRegion] > 0
+					if bTrackedRegion:
+						dRegionViablePlots[iPlotRegion] -= 1
 
 					# Skip over prohibited tiles
 					bProhibited = False
@@ -98,16 +120,31 @@ def placeTribes():
 						if not isTribeAdjacent(x_, y_):
 							spawnTribe(pPlot)
 							iQueuedTribes -= 1
+							iQueuedPlotRegion = pPlot.getRegionID()
+							if iQueuedPlotRegion in dRegionMinTribes and dRegionRemainingTribes[iQueuedPlotRegion] > 0:
+								dRegionScore[iQueuedPlotRegion] = 0
+								dRegionRemainingTribes[iQueuedPlotRegion] -= 1
 						continue
 
+					# Compute effective score: global score plus region pressure bonus
+					iEffectiveScore = iScore
+					if bTrackedRegion:
+						iViableLeft      = max(dRegionViablePlots[iPlotRegion], 1)
+						iEffectiveScore += dRegionScore[iPlotRegion] * dRegionRemainingTribes[iPlotRegion] / iViableLeft
+
 					# Check if Tribe is earned if the current score is nonzero
-					if iScore >= iThreshold and iCurrScore > 0:
+					if iEffectiveScore >= iThreshold and iCurrScore > 0:
 						if isTribeAdjacent(x_, y_):
 							iQueuedTribes += 1
 						else:
 							spawnTribe(pPlot)
-						
+							if bTrackedRegion:
+								dRegionScore[iPlotRegion] = 0
+								dRegionRemainingTribes[iPlotRegion] -= 1
+
 						iScore -= iThreshold
+					elif bTrackedRegion:
+						dRegionScore[iPlotRegion] += iCurrScore
 			
 def spawnTribe(pPlot):
 	pPlot.setImprovementType(iTribe)
