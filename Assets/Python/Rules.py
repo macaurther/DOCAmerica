@@ -4,6 +4,19 @@ from RFCUtils import *
 from Events import handler
 
 
+# Migration direction deltas: (dX, dY)
+_MIGRATE_DELTAS = {
+	iMigrateN:  ( 0,  1),
+	iMigrateNE: ( 1,  1),
+	iMigrateE:  ( 1,  0),
+	iMigrateSE: ( 1, -1),
+	iMigrateS:  ( 0, -1),
+	iMigrateSW: (-1, -1),
+	iMigrateW:  (-1,  0),
+	iMigrateNW: (-1,  1),
+}
+
+
 ### CONSTANTS ###
 
 dRelocatedCapitals = {
@@ -349,33 +362,10 @@ def updateLastTurnAlive(iPlayer, bAlive):
 # Migration
 @handler("projectBuilt")
 def detectMigrateCity(pCity, iProject):
-	if iProject in [iMigrateN, iMigrateNE, iMigrateE, iMigrateSE, iMigrateS, iMigrateSW, iMigrateW, iMigrateNW]:		
-		# Calculate new plot
-		iX = pCity.getX()
-		iY = pCity.getY()
-		iXNew = iX
-		iYNew = iY
-		if iProject == iMigrateN:
-			iYNew += 1
-		elif iProject == iMigrateNE:
-			iXNew += 1
-			iYNew += 1
-		elif iProject == iMigrateE:
-			iXNew += 1
-		elif iProject == iMigrateSE:
-			iXNew += 1
-			iYNew -= 1
-		elif iProject == iMigrateS:
-			iYNew -= 1
-		elif iProject == iMigrateSW:
-			iXNew -= 1
-			iYNew -= 1
-		elif iProject == iMigrateW:
-			iXNew -= 1
-		elif iProject == iMigrateNW:
-			iXNew -= 1
-			iYNew += 1
-		
+	delta = _MIGRATE_DELTAS.get(iProject)
+	if delta is not None:
+		iXNew = pCity.getX() + delta[0]
+		iYNew = pCity.getY() + delta[1]
 		data.lMigrateCities.append(pCity)
 		data.lMigrateX.append(iXNew)
 		data.lMigrateY.append(iYNew)
@@ -434,9 +424,10 @@ def lMigrateCities(iGameTurn):
 
 		# Nomads effect: give food based off yields of plots surrounding new city (even if migration failed for whatever reason)
 		iMovedFood = 0
+		pMap = gc.getMap()
 		for iI in range(-1, 2):
 			for iJ in range(-1, 2):
-				iMovedFood += min(gc.getMap().plot(iXNew + iI, iYNew + iJ).getYield(YieldTypes.YIELD_FOOD), 1)	# Add 1 food for each tile that has food
+				iMovedFood += min(pMap.plot(iXNew + iI, iYNew + iJ).getYield(YieldTypes.YIELD_FOOD), 1)	# Add 1 food for each tile that has food
 		if iMovedFood > 0:
 			pNewCity.changeFood(scale(iMovedFood))
 			message(iPlayer, 'TXT_KEY_MIGRATION_FOOD', sName, scale(iMovedFood), sound='AS3D_UN_CAMEL_DIE_VOX', event=1, button=infos.tech(iHunting).getButton(), color=8, location=pNewPlot)
@@ -459,7 +450,6 @@ def copyCityStats(pOldCity, pNewCity, bMove):
 		pNewCity.setPopulation(pOldCity.getPopulation())
 		for iBuilding in xrange(gc.getNumBuildingInfos()):
 			pNewCity.setBuildingProduction(iBuilding, pOldCity.getBuildingProduction(iBuilding))
-			if gc.getBuildingInfo(iBuilding).isCapital() and not bMove: continue
 			pNewCity.setNumRealBuilding(iBuilding, pOldCity.getNumRealBuilding(iBuilding))
 		for iClass in xrange(gc.getNumBuildingClassInfos()):
 			for iCommerce in xrange(CommerceTypes.NUM_COMMERCE_TYPES):
