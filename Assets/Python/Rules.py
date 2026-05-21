@@ -364,8 +364,9 @@ def updateLastTurnAlive(iPlayer, bAlive):
 def detectMigrateCity(pCity, iProject):
 	delta = _MIGRATE_DELTAS.get(iProject)
 	if delta is not None:
-		iXNew = pCity.getX() + delta[0]
-		iYNew = pCity.getY() + delta[1]
+		pMap = gc.getMap()
+		iXNew = max(0, min(pCity.getX() + delta[0], pMap.getGridWidth() - 1))
+		iYNew = max(0, min(pCity.getY() + delta[1], pMap.getGridHeight() - 1))
 		data.lMigrateCities.append(pCity)
 		data.lMigrateX.append(iXNew)
 		data.lMigrateY.append(iYNew)
@@ -383,16 +384,15 @@ def lMigrateCities(iGameTurn):
 		iPlayer = pOldCity.getOwner()
 		pPlayer = player(iPlayer)
 
-		pOldPlot = pOldCity.plot()
 		pNewPlot = gc.getMap().plot(iXNew, iYNew)
 
 		# Nomads effect: If there was a tribe on the tile previously, add a population
 		bMovedToTribe = False
 		if pNewPlot.getImprovementType() in [iTribe, iContactedTribe]:
 			bMovedToTribe = True
-		
+
 		# Mostly copied from CvPlatyBuilderScreen
-		if pNewPlot.isCity(): return
+		if pNewPlot.isCity(): continue
 		if pOldCity:
 			pNewPlot.setImprovementType(-1)	# Make sure to clear improvement first (matters for Tribes)
 			x, y = location(pNewPlot)
@@ -416,29 +416,28 @@ def lMigrateCities(iGameTurn):
 				pUnit = pOldPlot.getUnit(i)
 				if pUnit.isWaiting():
 					move(pUnit, pNewPlot)
-			
+
 			if bMovedToTribe:
 				pNewCity.changePopulation(1)
 				message(iPlayer, 'TXT_KEY_TRIBE_INTEGRATED', sName, sound='AS2D_UNITGIFTED', event=1, button=infos.improvement(iTribe).getButton(), color=8, location=pNewPlot)
 
+			# Nomads effect: give food based off yields of plots surrounding new city
+			iMovedFood = 0
+			pMap = gc.getMap()
+			for iI in range(-1, 2):
+				for iJ in range(-1, 2):
+					iMovedFood += min(pMap.plot(iXNew + iI, iYNew + iJ).getYield(YieldTypes.YIELD_FOOD), 1)	# Add 1 food for each tile that has food
+			if iMovedFood > 0:
+				pNewCity.changeFood(scale(iMovedFood))
+				message(iPlayer, 'TXT_KEY_MIGRATION_FOOD', sName, scale(iMovedFood), sound='AS3D_UN_CAMEL_DIE_VOX', event=1, button=infos.tech(iHunting).getButton(), color=8, location=pNewPlot)
 
-		# Nomads effect: give food based off yields of plots surrounding new city (even if migration failed for whatever reason)
-		iMovedFood = 0
-		pMap = gc.getMap()
-		for iI in range(-1, 2):
-			for iJ in range(-1, 2):
-				iMovedFood += min(pMap.plot(iXNew + iI, iYNew + iJ).getYield(YieldTypes.YIELD_FOOD), 1)	# Add 1 food for each tile that has food
-		if iMovedFood > 0:
-			pNewCity.changeFood(scale(iMovedFood))
-			message(iPlayer, 'TXT_KEY_MIGRATION_FOOD', sName, scale(iMovedFood), sound='AS3D_UN_CAMEL_DIE_VOX', event=1, button=infos.tech(iHunting).getButton(), color=8, location=pNewPlot)
-		
-		# Lakota UP: Great General points for migration
-		if civ(iPlayer) == iLakota:
-			iExp = scale(2)
-			pPlayer.changeCombatExperience(iExp)
-			message(iPlayer, 'TXT_KEY_MIGRATION_GREAT_GENERAL', sName, iExp, sound='AS3D_UN_WARLORD_COMMAND_VOX', event=1, button=infos.tech(iHunting).getButton(), color=8, location=pNewPlot)
-		
-		events.fireEvent("migration", iPlayer, 1)
+			# Lakota UP: Great General points for migration
+			if civ(iPlayer) == iLakota:
+				iExp = scale(2)
+				pPlayer.changeCombatExperience(iExp)
+				message(iPlayer, 'TXT_KEY_MIGRATION_GREAT_GENERAL', sName, iExp, sound='AS3D_UN_WARLORD_COMMAND_VOX', event=1, button=infos.tech(iHunting).getButton(), color=8, location=pNewPlot)
+
+			events.fireEvent("migration", iPlayer, 1)
 
 	# Clear migration data
 	data.lMigrateCities = []
