@@ -20,37 +20,6 @@ typedef list<char*> LISTCHAR;
 
 #define NUM_ERAS				  (ERA_MODERN+1)
 
-#define BUILDINGCLASS_PALACE	  ((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_PALACE"))				// MacAurther
-
-#define UNIT_INUIT_DOG_SLED    	  ((UnitTypes)GC.getInfoTypeForString("UNIT_INUIT_DOG_SLED"))						// MacAurther
-#define UNIT_PORTUGUESE_BANDEIRANTE ((UnitTypes)GC.getInfoTypeForString("UNIT_PORTUGUESE_BANDEIRANTE"))			    			// MacAurther
-#define UNIT_IMMIGRANT			  ((UnitTypes)GC.getInfoTypeForString("UNIT_IMMIGRANT"))							// MacAurther
-#define UNIT_HAWAIIAN_WAA_KAULUA  ((UnitTypes)GC.getInfoTypeForString("UNIT_HAWAIIAN_WAA_KAULUA"))					// MacAurther
-#define UNIT_CANNON				  ((UnitTypes)GC.getInfoTypeForString("UNIT_CANNON"))								// MacAurther
-#define UNIT_CANOE				  ((UnitTypes)GC.getInfoTypeForString("UNIT_CANOE"))								// MacAurther
-#define UNIT_TRACKMAN			  ((UnitTypes)GC.getInfoTypeForString("UNIT_TRACKMAN"))								// MacAurther
-
-#define UNITCLASS_SETTLER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SETTLER"))					// MacAurther
-#define UNITCLASS_PIONEER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_PIONEER"))					// MacAurther
-#define UNITCLASS_WORKER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_WORKER"))						// MacAurther
-#define UNITCLASS_SLAVE			  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE"))						// MacAurther
-#define UNITCLASS_IMMIGRANT	      ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_IMMIGRANT"))					// MacAurther
-#define UNITCLASS_LONGBOWMAN      ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_LONGBOWMAN"))					// MacAurther
-#define UNITCLASS_ARQUEBUSIER     ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_ARQUEBUSIER"))				// MacAurther
-#define UNITCLASS_CUIRASSIER      ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_CUIRASSIER"))					// MacAurther
-#define UNITCLASS_SCOUT   		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SCOUT"))				    	// MacAurther
-#define UNITCLASS_EXPLORER 		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_EXPLORER"))			    	// MacAurther
-#define UNITCLASS_RANGER   		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_RANGER"))				    	// MacAurther
-#define UNITCLASS_GREAT_STATESMAN ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_GREAT_STATESMAN"))			// MacAurther
-
-#define ESPIONAGEMISSION_DEFECT   ((EspionageMissionTypes)GC.getInfoTypeForString("ESPIONAGEMISSION_DEFECT"))		// MacAurther
-#define ESPIONAGEMISSION_COUP	  ((EspionageMissionTypes)GC.getInfoTypeForString("ESPIONAGEMISSION_COUP"))			// MacAurther
-
-#define BUILD_ROAD				  ((BuildTypes)GC.getInfoTypeForString("BUILD_ROAD"))								// MacAurther
-#define BUILD_CONTACT_TRIBE		  ((BuildTypes)GC.getInfoTypeForString("BUILD_CONTACT_TRIBE"))						// MacAurther
-#define BUILD_FORT				  ((BuildTypes)GC.getInfoTypeForString("BUILD_FORT"))								// MacAurther
-#define BUILD_PLANTATION		  ((BuildTypes)GC.getInfoTypeForString("BUILD_PLANTATION"))							// MacAurther
-
 #define MEXICO_CITY_X			  24
 #define MEXICO_CITY_Y			  67
 #define WASHINGTON_X			  45
