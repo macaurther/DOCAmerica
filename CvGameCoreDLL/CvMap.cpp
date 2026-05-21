@@ -1421,18 +1421,13 @@ void CvMap::calculateAreas()
 
 	// Leoreth: create different continents for Europe, Africa and South America, plus separate Scandinavia and Denmark
 	// MacAurther: Reducing this to just Western Hemisphere
-	CvArea* northAmerica = addArea();
 	CvArea* centralAmerica = addArea();
-	CvArea* southAmerica = addArea();
 
-	int southAmericaID = plot(58, 15)->getArea(); // Buenos Aires
 	int northAmericaID = plot(45, 88)->getArea(); // Washington
 
 	int centralAmericaID = centralAmerica->getID();
 
-	northAmerica->init(northAmericaID, false);
 	centralAmerica->init(centralAmericaID, false);
-	southAmerica->init(southAmericaID, false);
 
 	CvPlot* plot;
 	for (int iX = 0; iX < getGridWidth(); iX++)

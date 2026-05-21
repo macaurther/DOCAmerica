@@ -7765,6 +7765,12 @@ int CvPlayerAI::AI_cityTradeVal(CvCity* pCity) const
 
 	FAssert(pCity->getOwnerINLINE() != getID());
 
+	// MacAurther: Relax city trade valuation when a Nation/Colony is buying from a lower culture group
+	int sellerCultureGroup = GET_PLAYER(pCity->getOwnerINLINE()).getCultureGroup();
+	int buyerCultureGroup  = getCultureGroup();
+	bool bRelaxTrade = (sellerCultureGroup < buyerCultureGroup)
+	                && (pCity->plot()->getSettlerValue(getID()) > 0);
+
 	//iValue = 300;
 	iValue = 0;
 
@@ -7772,8 +7778,15 @@ int CvPlayerAI::AI_cityTradeVal(CvCity* pCity) const
 
 	iValue += (pCity->getCultureLevel() * 200);
 
-	//iValue += (((((pCity->getPopulation() * 50) + GC.getGameINLINE().getElapsedGameTurns() + 100) * 4) * pCity->plot()->calculateCulturePercent(pCity->getOwnerINLINE())) / 100);
-	iValue += (((((pCity->getPopulation() * 30) + GC.getGameINLINE().getElapsedGameTurns()/8 + 40) * 4) * pCity->plot()->calculateCulturePercent(pCity->getOwnerINLINE())) / 100);
+	// MacAurther: For relaxed trades, remove the time-based inflation
+	if (bRelaxTrade)
+	{
+		iValue += (((((pCity->getPopulation() * 30) + 40) * 4) * pCity->plot()->calculateCulturePercent(pCity->getOwnerINLINE())) / 100);
+	}
+	else
+	{
+		iValue += (((((pCity->getPopulation() * 30) + GC.getGameINLINE().getElapsedGameTurns()/8 + 40) * 4) * pCity->plot()->calculateCulturePercent(pCity->getOwnerINLINE())) / 100);
+	}
 
 	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
@@ -7788,13 +7801,23 @@ int CvPlayerAI::AI_cityTradeVal(CvCity* pCity) const
 		}
 	}
 
-	if (!(pCity->isEverOwned(getID())))
+	// MacAurther: Skip the never-owned bonus for relaxed trades (Nation buying Native cities always triggers it, inflating price)
+	if (!(pCity->isEverOwned(getID())) && !bRelaxTrade)
 	{
 		iValue *= 3;
 		iValue /= 2;
 	}
 
 	iValue -= (iValue % GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
+
+	// MacAurther: Apply era-based price decay for relaxed trades: cities get cheaper to acquire as history progresses
+	if (bRelaxTrade)
+	{
+		const int iEra = GC.getGameINLINE().getCurrentEra();
+		const int iEraDiscount = std::max(50, 100 - std::max(0, iEra - 2) * 15);
+		iValue *= iEraDiscount;
+		iValue /= 100;
+	}
 
 	// Leoreth: help Canada acquire cities -> MacAurther: Nope, eh
 	//if (getCivilizationType() == CANADA) iValue /= 2;
@@ -7918,7 +7941,8 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 		return DENIAL_NEVER;
 	}
 
-	if (pCity->isCapital())
+	// MacAurther: Allow capital sale in relaxed trades
+	if (pCity->isCapital() && !bRelaxTrade)
 	{
 		return DENIAL_NEVER;
 	}
