@@ -6940,14 +6940,14 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 
 	iYield = GC.getTerrainInfo(getTerrainType()).getYield(eYield);
 
-	if (isHills() || (isPeak() && getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES))	// MacAurther: Andes RP: Peaks are treated as hills within borders
+	if (isPeak())
+	{
+		const bool bAndesPeak = getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES; // MacAurther
+		iYield += bAndesPeak ? GC.getYieldInfo(eYield).getHillsChange() : GC.getYieldInfo(eYield).getPeakChange();
+	}
+	else if (isHills())
 	{
 		iYield += GC.getYieldInfo(eYield).getHillsChange();
-	}
-
-	if (isPeak() && !(getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES))	// MacAurther: Andes RP: If ever peaks get a yield, don't give it when they're treated like hills
-	{
-		iYield += GC.getYieldInfo(eYield).getPeakChange();
 	}
 
 	if (isLake() && !GC.getTerrainInfo(getTerrainType()).isSaline())

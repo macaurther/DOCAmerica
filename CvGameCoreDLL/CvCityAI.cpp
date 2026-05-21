@@ -8065,9 +8065,10 @@ int CvCityAI::AI_plotValue(CvPlot* pPlot, bool bAvoidGrowth, bool bRemove, bool 
 	{
 		if (pPlot->getBonusType(getTeam()) == NO_BONUS) // XXX double-check CvGame::doFeature that the checks are the same...
 		{
+			const bool bHawaiianPower = GET_PLAYER(getOwner()).getCivilizationType() == HAWAII;
 			for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
 			{
-				if (GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getBonusInfo((BonusTypes) iI).getTechReveal())) || GET_PLAYER(getOwner()).getCivilizationType() == HAWAII) // MacAurther: Includes Hawaii UP
+				if (GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getBonusInfo((BonusTypes) iI).getTechReveal())) || bHawaiianPower) // MacAurther: Includes Hawaii UP
 				{
 					if (GC.getImprovementInfo(eCurrentImprovement).getImprovementBonusDiscoverRand(iI) > 0)
 					{
