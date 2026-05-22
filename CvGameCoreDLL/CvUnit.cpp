@@ -8379,7 +8379,7 @@ int CvUnit::workRate(bool bMax) const
 	}
 	else
 	{
-		GET_PLAYER(getOwnerINLINE()).getWorkerSpeedModifier();
+		speedModifier += GET_PLAYER(getOwnerINLINE()).getWorkerSpeedModifier();
 	}
 
 
