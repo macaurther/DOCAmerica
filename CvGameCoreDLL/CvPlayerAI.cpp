@@ -7817,6 +7817,23 @@ int CvPlayerAI::AI_cityTradeVal(CvCity* pCity) const
 		const int iEraDiscount = std::max(50, 100 - std::max(0, iEra - 2) * 15);
 		iValue *= iEraDiscount;
 		iValue /= 100;
+
+		// MacAurther: AI seller charges more when it has poor relations with the buyer
+		if (!GET_PLAYER(pCity->getOwnerINLINE()).isHuman())
+		{
+			const AttitudeTypes eAttitude = (AttitudeTypes)GET_PLAYER(pCity->getOwnerINLINE()).AI_getAttitude(getID());
+			int iAttitudeMult;
+			if (eAttitude >= ATTITUDE_PLEASED)
+				iAttitudeMult = 100;
+			else if (eAttitude == ATTITUDE_CAUTIOUS)
+				iAttitudeMult = 150;
+			else if (eAttitude == ATTITUDE_ANNOYED)
+				iAttitudeMult = 200;
+			else // ATTITUDE_FURIOUS
+				iAttitudeMult = 300;
+			iValue *= iAttitudeMult;
+			iValue /= 100;
+		}
 	}
 
 	// Leoreth: help Canada acquire cities -> MacAurther: Nope, eh
@@ -14043,6 +14060,95 @@ void CvPlayerAI::AI_doDiplo()
 										}
 									}
 									// edead: end
+
+									// MacAurther: AI proactively buys cities in its historical area
+									// from civs with a lower culture group (e.g. Nations buying Native/Colony cities)
+									if (getCultureGroup() > GET_PLAYER((PlayerTypes)iI).getCultureGroup())
+									{
+										if (GC.getGameINLINE().getSorenRandNum(3, "AI City Purchase") == 0)
+										{
+											CvCity* pBestBuyCity = NULL;
+											int iBestBuyScore = 0;
+											int iLoop2;
+
+											for (pLoopCity = GET_PLAYER((PlayerTypes)iI).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER((PlayerTypes)iI).nextCity(&iLoop))
+											{
+												int iSettlerVal = pLoopCity->plot()->getSettlerValue(getID());
+												if (iSettlerVal <= 0)
+													continue;
+
+												if (GET_PLAYER((PlayerTypes)iI).AI_cityTrade(pLoopCity, getID()) != NO_DENIAL)
+													continue;
+
+												setTradeItem(&item, TRADE_CITIES, pLoopCity->getID());
+												if (!GET_PLAYER((PlayerTypes)iI).canTradeItem(getID(), item, true))
+													continue;
+
+												bool bNearby = false;
+												CvCity* pOurCity;
+												for (pOurCity = firstCity(&iLoop2); pOurCity != NULL; pOurCity = nextCity(&iLoop2))
+												{
+													if (plotDistance(pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE(),
+																	 pOurCity->getX_INLINE(), pOurCity->getY_INLINE()) <= 8)
+													{
+														bNearby = true;
+														break;
+													}
+												}
+												if (!bNearby)
+													continue;
+
+												int iCityVal = AI_cityTradeVal(pLoopCity);
+												if (iCityVal <= 0)
+													continue;
+												if (AI_maxGoldTrade((PlayerTypes)iI) < iCityVal)
+													continue;
+
+												setTradeItem(&item, TRADE_GOLD, iCityVal);
+												if (!canTradeItem((PlayerTypes)iI, item, true))
+													continue;
+
+												if (iSettlerVal > iBestBuyScore)
+												{
+													iBestBuyScore = iSettlerVal;
+													pBestBuyCity = pLoopCity;
+												}
+											}
+
+											if (pBestBuyCity != NULL)
+											{
+												int iCityVal = AI_cityTradeVal(pBestBuyCity);
+
+												ourList.clear();
+												theirList.clear();
+
+												setTradeItem(&item, TRADE_GOLD, iCityVal);
+												ourList.insertAtEnd(item);
+
+												setTradeItem(&item, TRADE_CITIES, pBestBuyCity->getID());
+												theirList.insertAtEnd(item);
+
+												if (GET_PLAYER((PlayerTypes)iI).isHuman())
+												{
+													if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
+													{
+														pDiplo = new CvDiploParameters(getID());
+														FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
+														pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_DEAL"));
+														pDiplo->setAIContact(true);
+														pDiplo->setOurOfferList(theirList);
+														pDiplo->setTheirOfferList(ourList);
+														gDLL->beginDiplomacy(pDiplo, (PlayerTypes)iI);
+														abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()] = true;
+													}
+												}
+												else
+												{
+													GC.getGameINLINE().implementDeal(getID(), (PlayerTypes)iI, &ourList, &theirList);
+												}
+											}
+										}
+									}
 
 									if (AI_getContactTimer(((PlayerTypes)iI), CONTACT_TRADE_BONUS) == 0)
 									{

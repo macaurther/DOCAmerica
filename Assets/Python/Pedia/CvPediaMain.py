@@ -524,13 +524,14 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 
 	def placeTechs(self):
 		lTechs = []
-		dTechs = dict((iX, []) for iX in range(23))	# MacAurther: yay magic numbers. Remember to update this if num tech rows changes
+		iNumTechColumns = 25 # MacAurther: yay magic numbers. Remember to update this if num tech rows changes
+		dTechs = dict((iX, []) for iX in range(iNumTechColumns))	
 		
 		for iTech in range(gc.getNumTechInfos()):
 			techInfo = gc.getTechInfo(iTech)
 			dTechs[techInfo.getGridX()].append((techInfo.getGridY(), techInfo.getDescription(), iTech))
 		
-		for iX in range(23):
+		for iX in range(iNumTechColumns):
 			if lTechs:
 				lTechs.append(("", -1))
 			

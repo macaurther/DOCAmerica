@@ -851,14 +851,6 @@
 		<Spanish>Toda la informaci&#243;n sobre los juegos antiguos se ha perdido por siempre.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_FAIL_OVERWHELM</Tag>
-		<English>You have failed the quest of the "Overwhelm Doctrine!"</English>
-		<French>Vous avez &#233;chou&#233; dans la qu&#234;te de la Doctrine de l'&#201;crasement !</French>
-		<German>Die Quest "&#220;berw&#228;ltigungsdoktrin" ist gescheitert!</German>
-		<Italian>Hai fallito nell'impresa della Dottrina della sopraffazione!</Italian>
-		<Spanish>&#161;La misi&#243;n Doctrina del doblegamiento ha fracasado!</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_SPORTS_LEAGUE</Tag>
 		<English>You have failed the quest of The National Sports League.</English>
 		<French>Vous avez &#233;chou&#233; dans la qu&#234;te de la Ligue sportive nationale.</French>
@@ -2193,54 +2185,6 @@
 		<German>In %s3_city [NUM1:wurde:wurden] %d1 %s2:3_civ_adjective Geb&#228;ude zerst&#246;rt</German>
 		<Italian>%d1 [NUM1:edificio %s2:1_civ_adjective &#232; stato distrutto:edifici %s2:3_civ_adjective sono stati distrutti] a %s3_city</Italian>
 		<Spanish>[NUM1:Se ha destruido:Se han destruido] %d1 [NUM1:edificio:edificios] de la civilizaci&#243;n %s2:2_civ_adjective en %s3_city.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_OVERWHELM_1</Tag>
-		<English>The Overwhelm Doctrine[PARAGRAPH:1]You are tasked by your military leaders to construct a fully functional aircraft carrier battle fleet.</English>
-		<French>La Doctrine de l'&#201;crasement[PARAGRAPH:1]Vos dirigeants militaires vous chargent de construire une flotte op&#233;rationnelle de porte-avions.</French>
-		<German>Die &#220;berw&#228;ltigungsdoktrin[PARAGRAPH:1]Eure Milit&#228;rf&#252;hrer verlangen von Euch, eine voll funktionale Flugzeugtr&#228;ger-Schlachtflotte zu bauen.</German>
-		<Italian>Dottrina della sopraffazione[PARAGRAPH:1]I capi militari ti hanno incaricato di costruire una flotta da battaglia con tanto di portaerei.</Italian>
-		<Spanish>Doctrina del doblegamiento[PARAGRAPH:1]Los l&#237;deres militares encargan la construcci&#243;n de una flota de combate de portaaviones plenamente operativa.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_OVERWHELM_DONE_1</Tag>
-		<English>Take advantage of our momentum to provide additional training for these crews. Prepare them for battle.</English>
-		<French>Profiter de notre avantage pour fournir un entra&#238;nement suppl&#233;mentaire aux &#233;quipages et les pr&#233;parer pour la bataille.</French>
-		<German>Nutzt die g&#252;nstige Situation, um die Besatzung weiter auszubilden. Bereitet sie auf die Schlacht vor.</German>
-		<Italian>Approfitta dello slancio per addestrare ulteriormente le truppe. Preparale per la battaglia.</Italian>
-		<Spanish>Aprovechemos estos favorables momentos para dar entrenamiento adicional a estas tripulaciones. Que se preparen para la batalla.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_OVERWHELM_DONE_2</Tag>
-		<English>Our intent is to keep the peace through strength. Leverage our might in to commercial opportunity.</English>
-		<French>Notre intention est de conserver la paix en impressionnant. Utiliser notre puissance &#224; des fins commerciales.</French>
-		<German>Unser Ziel ist es, den Frieden durch St&#228;rke aufrechtzuerhalten. Setzt unsere Macht geschickt ein, um daraus wirtschaftliche Vorteile zu ziehen.</German>
-		<Italian>Il nostro scopo &#232; di mantenere la pace con la forza. Trasforma la nostra potenza in un'opportunit&#224; commerciale.</Italian>
-		<Spanish>Nuestra intenci&#243;n es emplear la fuerza para mantener la paz. Que nuestro poder sea utilizado para explotar las oportunidades comerciales.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_OVERWHELM_DONE_3</Tag>
-		<English>Leverage our military advantage to persuade the world to ban nuclear weapons.</English>
-		<French>Utiliser notre avantage militaire pour persuader le monde de bannir les armes nucl&#233;aires.</French>
-		<German>Setzt unseren milit&#228;rischen Vorteil dazu ein, die Welt vom Nuklearwaffenverbot zu &#252;berzeugen.</German>
-		<Italian>Sfrutta il nostro vantaggio militare per persuadere il mondo a bandire le armi nucleari.</Italian>
-		<Spanish>Que nuestra ventaja militar se aproveche para convencer al mundo de que se deben prohibir las armas nucleares.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_OVERWHELM_DONE_HELP_3</Tag>
-		<English>[ICON_BULLET]No nuclear weapons.</English>
-		<French>[ICON_BULLET]Pas d'armes nucl&#233;aires.</French>
-		<German>[ICON_BULLET]Keine Nuklearwaffen.</German>
-		<Italian>[ICON_BULLET]Niente armi nucleari.</Italian>
-		<Spanish>[ICON_BULLET]Armas nucleares no.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_OVERWHELM_HELP_1</Tag>
-		<English>[PARAGRAPH:1]To complete this quest, you must build %d1 [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT], %d3 [COLOR_UNIT_TEXT]%s4_unit[COLOR_REVERT], %d5 [COLOR_UNIT_TEXT]%s6_unit[COLOR_REVERT], and %d7 [COLOR_UNIT_TEXT]%s8_unit[COLOR_REVERT] units. A source of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT] will be required to fuel the planes.[PARAGRAPH:1]An additional reward option will be available if your civilization was the one to build [COLOR_BUILDING_TEXT]%s9_building[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Satellites[COLOR_REVERT] or [COLOR_TECH_TEXT]Superconductors[COLOR_REVERT] without having met the conditions.</English>
-		<French>[PARAGRAPH:1]Pour achever cette qu&#234;te, vous devez construire %d1 unit&#233;s : [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT], %d3 unit&#233;s : [COLOR_UNIT_TEXT]%s4_unit[COLOR_REVERT], %d5 unit&#233;s : [COLOR_UNIT_TEXT]%s6_unit[COLOR_REVERT] et %d7 unit&#233;s : [COLOR_UNIT_TEXT]%s8_unit[COLOR_REVERT]. Une source de [COLOR_HIGHLIGHT_TEXT]p&#233;trole[COLOR_REVERT] sera n&#233;cessaire pour ravitailler les avions.[PARAGRAPH:1]Une option de r&#233;compense suppl&#233;mentaire sera disponible si votre civilisation a construit : [COLOR_BUILDING_TEXT]%s9_building[COLOR_REVERT].[PARAGRAPH:1]Vous &#233;chouerez si une civilisation rivale ach&#232;ve cette qu&#234;te avant vous ou si vous d&#233;couvrez les [COLOR_TECH_TEXT]satellites[COLOR_REVERT] ou les [COLOR_TECH_TEXT]superconducteurs[COLOR_REVERT] sans avoir rempli les conditions de victoire.</French>
-		<German>[PARAGRAPH:1]To complete this quest, you must build %d1 [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT], %d3 [COLOR_UNIT_TEXT]%s4_unit[COLOR_REVERT], %d5 [COLOR_UNIT_TEXT]%s6_unit[COLOR_REVERT], and %d7 [COLOR_UNIT_TEXT]%s8_unit[COLOR_REVERT] units. A source of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT] will be required to fuel the planes.[PARAGRAPH:1]An additional reward option will be available if your civilization was the one to build [COLOR_BUILDING_TEXT]%s9_building[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Satellites[COLOR_REVERT] or [COLOR_TECH_TEXT]Superconductors[COLOR_REVERT] without having met the conditions.</German>
-		<Italian>[PARAGRAPH:1]To complete this quest, you must build %d1 [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT], %d3 [COLOR_UNIT_TEXT]%s4_unit[COLOR_REVERT], %d5 [COLOR_UNIT_TEXT]%s6_unit[COLOR_REVERT], and %d7 [COLOR_UNIT_TEXT]%s8_unit[COLOR_REVERT] units. A source of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT] will be required to fuel the planes.[PARAGRAPH:1]An additional reward option will be available if your civilization was the one to build [COLOR_BUILDING_TEXT]%s9_building[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Satellites[COLOR_REVERT] or [COLOR_TECH_TEXT]Superconductors[COLOR_REVERT] without having met the conditions.</Italian>
-		<Spanish>[PARAGRAPH:1]To complete this quest, you must build %d1 [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT], %d3 [COLOR_UNIT_TEXT]%s4_unit[COLOR_REVERT], %d5 [COLOR_UNIT_TEXT]%s6_unit[COLOR_REVERT], and %d7 [COLOR_UNIT_TEXT]%s8_unit[COLOR_REVERT] units. A source of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT] will be required to fuel the planes.[PARAGRAPH:1]An additional reward option will be available if your civilization was the one to build [COLOR_BUILDING_TEXT]%s9_building[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Satellites[COLOR_REVERT] or [COLOR_TECH_TEXT]Superconductors[COLOR_REVERT] without having met the conditions.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PARROTS_1</Tag>
@@ -3803,22 +3747,6 @@
 		<Spanish>&#161;La vieja dinast&#237;a se ha extinguido! &#161;No quedan herederos que puedan reclamar el trono!</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_OVERWHELM_1</Tag>
-		<English>Our brightest admiral has proposed an amphibious assault strategy designed to capture port cities with lightning strikes.[PARAGRAPH:1]If we construct a large enough aircraft carrier battle fleet, we can bring any coastal city to its knees, making it much easier to attack amphibiously. We need a force large enough to disable all defenses with heavy shore bombardment and soften the defenders by bombing from the air. Then our troops may land on the same day the battle begins and thrust inland against a foe who will be in total disarray.</English>
-		<French>Notre amiral le plus brillant a propos&#233; une strat&#233;gie d'assaut amphibie, afin de capturer les villes portuaires lors de frappes &#233;clairs.[PARAGRAPH:1]Si nous construisons une flotte de porte-avions assez importante, nous pouvons soumettre toutes les villes portuaires pour faciliter l'assaut amphibie. Nous devons disposer d'une force assez importante, afin de d&#233;truire toutes les d&#233;fenses avec des bombardements c&#244;tiers et d'affaiblir les d&#233;fenseurs avec des bombardements a&#233;riens. Ensuite, nos troupes accosteront le jour du d&#233;but de la bataille et avanceront dans les terres pour affronter un ennemi en plein d&#233;sarroi.</French>
-		<German>Unser kl&#252;gster Admiral hat eine Amphibienangriffsstrategie vorgeschlagen, mit der Hafenst&#228;dte per Blitzangriff eingenommen werden.[PARAGRAPH:1]Wenn wir eine Flugzeugtr&#228;ger-Schlachtflotte bauen, die gro&#223; genug ist, k&#246;nnen wir jede K&#252;stenstadt in die Knie zwingen, was einen Amphibienangriff bedeutend erleichtert. Unsere Streitmacht muss gro&#223; genug sein, um die gesamte Verteidigung mit schwerer K&#252;stenbombardierung auszuschalten und die Verteidiger durch Luftangriffe zu schw&#228;chen. Dann k&#246;nnen unsere Truppen an dem Tag, an dem die Schlacht beginnt, bereits landen und ins Landesinnere gegen einen Feind vorr&#252;cken, der in vollkommenem Chaos versinkt.</German>
-		<Italian>Il nostro ammiraglio pi&#249; brillante ha proposto una strategia di assalto anfibio progettata per catturare le citt&#224; con i porti con attacchi fulminei.[PARAGRAPH:1]Se costruiamo una flotta abbastanza grande di portaerei, possiamo mettere in ginocchio qualsiasi citt&#224; costiera, rendendo molto pi&#249; facile un attacco anfibio. Abbiamo bisogno di una forza abbastanza grande da disabilitare le difese con pesanti bombardamenti e ammorbidire i difensori bombardandoli dal cielo. Quindi le nostre truppe potranno sbarcare il giorno dell'inizio della battaglia e penetrare in un territorio difeso da un nemico in totale confusione.</Italian>
-		<Spanish>Nuestro m&#225;s brillante almirante ha propuesto una estrategia de asalto anfibio dise&#241;ada para apoderarse de ciudades portuarias con ataques rel&#225;mpago.[PARAGRAPH:1]Si construimos una flota de combate de portaaviones lo bastante grande, podremos doblegar a cualquier ciudad costera, lo que facilitar&#225; mucho el ataque anfibio. Necesitamos una fuerza lo bastante grande como para anular todas las defensas mediante un intenso bombardeo en la costa y debilitar a los defensores bombardeando desde el aire. Entonces nuestras tropas podr&#225;n aterrizar el mismo d&#237;a que la batalla empiece y presionar hacia el interior a un enemigo que estar&#225; totalmente confundido.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_OVERWHELM_DONE_1</Tag>
-		<English>Congratulations! You have built a powerful Aircraft Carrier battle fleet capable of conquering enemy cities in a single attack. A force capable of executing the Overwhelm Doctrine is now yours to command. Please choose your reward.</English>
-		<French>F&#233;licitations ! Vous avez construit une puissante flotte de porte-avions capable de conqu&#233;rir les villes ennemies en une seule attaque. Vous dirigez &#224; pr&#233;sent une arm&#233;e capable d'ex&#233;cuter la Doctrine de l'&#201;crasement. Veuillez choisir votre r&#233;compense.</French>
-		<German>Gl&#252;ckwunsch! Sie haben eine m&#228;chtige Flugzeugtr&#228;ger-Schlachtflotte aufgebaut, mit der feindliche St&#228;dte in einem einzigen Angriff erobert werden k&#246;nnen. Sie befehligen jetzt eine Streitmacht, welche die &#220;berw&#228;ltigungsdoktrin ausf&#252;hren kann. W&#228;hlen Sie Ihre Belohnung aus.</German>
-		<Italian>Congratulazioni! Hai costruito una potente flotta da battaglia con portaerei, in grado di conquistare citt&#224; nemiche con un singolo attacco. Ora al tuo comando c'&#232; una forza in grado di mettere in atto la dottrina della sopraffazione. Scegli la ricompensa.</Italian>
-		<Spanish>&#161;Felicidades! Hab&#233;is creado una poderosa flota de combate de portaaviones capaz de conquistar ciudades enemigas con un solo ataque. Ahora ten&#233;is a vuestras &#243;rdenes a una fuerza capaz de ejecutar la doctrina del doblegamiento. Elegid vuestra recompensa.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PARROTS_1</Tag>
 		<English>Tamers have figured out how to farm the abundant supply of parrots within one of our tropical forest regions.</English>
 		<French>Des dresseurs ont trouv&#233; le moyen d'exploiter l'abondante source de perroquets dont nous disposons dans une de nos r&#233;gions tropicales.</French>
@@ -5345,14 +5273,6 @@
 		<German>Es gibt Berichte &#252;ber massive %s1:3_civ_adjective B&#252;rgerproteste hinsichtlich des Atomwaffenarsenals.</German>
 		<Italian>Rapporti recenti mostrano massicce proteste di cittadini %s1:3_civ_adjective per l'arsenale nucleare della nazione.</Italian>
 		<Spanish>Las noticias indican protestas masivas en %s1_civ_adjective por la reserva nuclear del pais.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_OVERWHELM_DONE</Tag>
-		<English>The %s1_civ_adjective people have constructed what is by far the most deadly fleet of warships in the history of warfare. Their aircraft carrier battle group could crush anything that gets in its way.</English>
-		<French>Le peuple %s1_civ_adjective a construit ce qui est de loin la plus impressionnante flotte de navires de guerre de l'histoire. Leur groupe de porte-avions de combat pourrait &#233;craser quiconque se met en travers son chemin.</French>
-		<German>Das %s1:3_civ_adjective Volk hat die weitaus m&#228;chtigste Kriegsschiffflotte in der Geschichte der Kriegsf&#252;hrung errichtet. Ihre Flugzeugtr&#228;ger-Kampftruppe k&#246;nnte alles zerschmettern, das sich ihr in den Weg stellt.</German>
-		<Italian>La popolazione %s1:2_civ_adjective ha costruito la pi&#249; letale flotta di navi da guerra della storia. Il loro gruppo da battaglia con portaerei pu&#242; schiacciare qualsiasi cosa si metta sulla sua strada.</Italian>
-		<Spanish>Los %s1:3_civ_adjective han construido la que es, con mucho, la m&#225;s letal flota de barcos de guerra de la historia b&#233;lica. Su grupo de portaaviones de combate podr&#237;a aplastar cualquier cosa que se cruzase en su camino.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_PARROTS</Tag>
