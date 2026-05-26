@@ -140,7 +140,11 @@ def newWorldPlague(iTeamX, iHasMetTeamY):
 	
 	if is_minor(iOldWorld):
 		return
-	
+
+	# MacAurther: Don't give plague for Norse contact
+	if civ(iOldWorld) == iNorse:
+		return
+
 	if data.players[iNewWorld].iPlagueCountdown == 0:
 		if not team(iNewWorld).isHasTech(iBiology):
 			city = cities.owner(iNewWorld).random()
