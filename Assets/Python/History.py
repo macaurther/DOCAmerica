@@ -21,6 +21,7 @@ lBannedTribePlots = [
 	(44, 43),		# Gold for Wari
 	(46, 51),		# Gold for Muisca
 	(50, 53),		# Gold for Muisca
+	(21, 81),		# Sante Fe for Pueblo
 ]
 
 # Minimum number of Tribes guaranteed to spawn in each region.

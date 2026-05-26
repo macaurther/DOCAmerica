@@ -4278,7 +4278,7 @@ bool CvPlot::isNetworkTerrain(TeamTypes eTeam) const
 
 bool CvPlot::isBonusNetwork(TeamTypes eTeam) const
 {
-	if (isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && !isWater())) // Arctic RP: Trade routes do not require roads
+	if (isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && (getTerrainType() == TERRAIN_TUNDRA || getTerrainType() == TERRAIN_MOORLAND))) // Arctic RP
 	{
 		return true;
 	}
@@ -4355,9 +4355,9 @@ bool CvPlot::isTradeNetworkConnected(const CvPlot* pPlot, TeamTypes eTeam) const
 		}
 	}
 
-	if (isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && !isWater())) // Arctic RP: Trade routes do not require roads
+	if (isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && (getTerrainType() == TERRAIN_TUNDRA || getTerrainType() == TERRAIN_MOORLAND))) // Arctic RP
 	{
-		if (pPlot->isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && !pPlot->isWater())) // Arctic RP: Trade routes do not require roads
+		if (pPlot->isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && (pPlot->getTerrainType() == TERRAIN_TUNDRA || pPlot->getTerrainType() == TERRAIN_MOORLAND))) // Arctic RP
 		{
 			return true;
 		}

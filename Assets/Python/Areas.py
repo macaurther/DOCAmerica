@@ -137,7 +137,7 @@ iTupi : 		((56, 28),	(65, 35)),
 iPurepecha :	((19, 68),	(21, 69)),
 iInuit :		((7, 117),	(15, 120)),
 iInca :		    ((46, 34),	(49, 37)),
-iAztec :		((24, 67),	(24, 67)),
+iAztec :		((24, 66),	(24, 67)),
 iHaudenosaunee :((43, 92),	(46, 94)),
 iSpain : 		((0, 0), 	(0, 0)),	# No core for Colonies
 iPortugal : 	((0, 0), 	(0, 0)),	# No core for Colonies
