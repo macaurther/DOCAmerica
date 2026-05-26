@@ -4231,7 +4231,7 @@ bool CvPlot::isValidRoute(const CvUnit* pUnit) const
 
 bool CvPlot::isTradeNetworkImpassable(TeamTypes eTeam) const
 {
-	return (isImpassable() && !isRiverNetwork(eTeam));
+	return (isImpassable() && !isRiverNetwork(eTeam) && !isArcticRP(eTeam)); // Arctic RP
 }
 
 bool CvPlot::isRiverNetwork(TeamTypes eTeam) const
@@ -4278,7 +4278,7 @@ bool CvPlot::isNetworkTerrain(TeamTypes eTeam) const
 
 bool CvPlot::isBonusNetwork(TeamTypes eTeam) const
 {
-	if (isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && (getTerrainType() == TERRAIN_TUNDRA || getTerrainType() == TERRAIN_MOORLAND))) // Arctic RP
+	if (isRoute() || isArcticRP(eTeam)) // Arctic RP
 	{
 		return true;
 	}
@@ -4355,9 +4355,9 @@ bool CvPlot::isTradeNetworkConnected(const CvPlot* pPlot, TeamTypes eTeam) const
 		}
 	}
 
-	if (isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && (getTerrainType() == TERRAIN_TUNDRA || getTerrainType() == TERRAIN_MOORLAND))) // Arctic RP
+	if (isRoute() || isArcticRP(eTeam)) // Arctic RP
 	{
-		if (pPlot->isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && (pPlot->getTerrainType() == TERRAIN_TUNDRA || pPlot->getTerrainType() == TERRAIN_MOORLAND))) // Arctic RP
+		if (pPlot->isRoute() || pPlot->isArcticRP(eTeam)) // Arctic RP
 		{
 			return true;
 		}
@@ -12428,6 +12428,12 @@ bool CvPlot::isTradewinds()
 		getFeatureType() == FEATURE_TRADEWINDS_AFRICA ||
 		getFeatureType() == FEATURE_TRADEWINDS_SIBERIA ||
 		getFeatureType() == FEATURE_TRADEWINDS_ASIA);
+}
+
+bool CvPlot::isArcticRP(TeamTypes eTeam) const
+{
+	return eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && 
+		(getTerrainType() == TERRAIN_TUNDRA || getTerrainType() == TERRAIN_MOORLAND || getTerrainType() == TERRAIN_SNOW || getFeatureType() == FEATURE_ICE);
 }
 
 int CvPlot::getTribeStoredUnits()

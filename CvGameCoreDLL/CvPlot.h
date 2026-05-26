@@ -601,6 +601,7 @@ public:
 	DllExport void updateFortClaims(PlayerTypes ePlayer);			// Exposed to Python
 
 	bool isTradewinds();
+	bool isArcticRP(TeamTypes eTeam) const;
 
 	// MacAurther Tribes
 	DllExport int getTribeStoredUnits();							// Exposed to Python
