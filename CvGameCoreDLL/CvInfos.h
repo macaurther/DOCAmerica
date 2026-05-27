@@ -1819,6 +1819,13 @@ public:
 	bool isAllowsNukes() const;				// Exposed to Python
 	bool isNoResistance() const; // Leoreth
 
+	// MacAurther: Geographic prerequisites
+	int getPrereqPlotTerrain() const;
+	int getPrereqPlotFeature() const;
+	int getPrereqAdjacentTerrain() const;
+	int getPrereqAdjacentFeature() const;
+	bool isPrereqAdjacentPeak() const;
+
 	const TCHAR* getConstructSound() const;				// Exposed to Python
 	void setConstructSound(const TCHAR* szVal);
 	const TCHAR* getArtDefineTag() const;				// Exposed to Python
@@ -2051,6 +2058,13 @@ protected:
 	bool m_bStateReligion;
 	bool m_bAllowsNukes;
 	bool m_bNoResistance; // Leoreth
+
+	// MacAurther: Geographic prerequisites
+	int m_iPrereqPlotTerrain;
+	int m_iPrereqPlotFeature;
+	int m_iPrereqAdjacentTerrain;
+	int m_iPrereqAdjacentFeature;
+	bool m_bPrereqAdjacentPeak;
 
 	CvString m_szConstructSound;
 	CvString m_szArtDefineTag;

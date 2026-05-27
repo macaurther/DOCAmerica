@@ -12187,33 +12187,42 @@ void CvGameTextMgr::buildBuildingRequiresString(CvWStringBuffer& szBuffer, Build
 			}
 		}
 
-		// MacAurther: Geographic Requirements
-		// TODO: Really bad implementation
-		switch (eBuilding)
+		// MacAurther: Geographic prerequisites
+		const CvBuildingInfo& kBuildingGeo = GC.getBuildingInfo(eBuilding);
+		if (kBuildingGeo.getPrereqPlotTerrain() != NO_TERRAIN)
 		{
-			case BUILDING_FLOATING_GARDENS:
-			case BUILDING_HUEY_TEOCALLI:
+			if (NULL == pCity || pCity->plot()->getTerrainType() != (TerrainTypes)kBuildingGeo.getPrereqPlotTerrain())
+			{
 				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_LAGOON"));
-				break;
-			case BUILDING_MACHU_PICCHU:
-			case BUILDING_YACHAYWASI:
-			case BUILDING_SACSAYHUAMAN:
+				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_REQUIRES_PLOT",
+					GC.getTerrainInfo((TerrainTypes)kBuildingGeo.getPrereqPlotTerrain()).getDescription()));
+			}
+		}
+		if (kBuildingGeo.getPrereqPlotFeature() != NO_FEATURE)
+		{
+			if (NULL == pCity || pCity->plot()->getFeatureType() != (FeatureTypes)kBuildingGeo.getPrereqPlotFeature())
+			{
 				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_PEAK"));
-				break;
-			case BUILDING_PUEBLO_BONITO:
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_CANYON"));
-				break;
-			case BUILDING_GREAT_GEOGLYPH:
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_DESERT"));
-				break;
-			case BUILDING_SERPENT_MOUND:
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_WIDE_RIVER"));
-				break;
+				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_REQUIRES_PLOT",
+					GC.getFeatureInfo((FeatureTypes)kBuildingGeo.getPrereqPlotFeature()).getDescription()));
+			}
+		}
+		if (kBuildingGeo.getPrereqAdjacentTerrain() != NO_TERRAIN)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_REQUIRES_ADJACENT",
+				GC.getTerrainInfo((TerrainTypes)kBuildingGeo.getPrereqAdjacentTerrain()).getDescription()));
+		}
+		if (kBuildingGeo.getPrereqAdjacentFeature() != NO_FEATURE)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_REQUIRES_ADJACENT",
+				GC.getFeatureInfo((FeatureTypes)kBuildingGeo.getPrereqAdjacentFeature()).getDescription()));
+		}
+		if (kBuildingGeo.isPrereqAdjacentPeak())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_REQUIRES_ADJACENT_PEAK"));
 		}
 
 		if (kBuilding.getNumCitiesPrereq() > 0)

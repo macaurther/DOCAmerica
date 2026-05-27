@@ -63,6 +63,11 @@
 	<ElementType name="MaxStartEra" content="textOnly"/>
 	<ElementType name="ObsoleteTech" content="textOnly"/>
 	<ElementType name="PrereqTech" content="textOnly"/>
+	<ElementType name="PrereqPlotTerrain" content="textOnly" dt:type="string"/> <!-- MacAurther -->
+	<ElementType name="PrereqPlotFeature" content="textOnly" dt:type="string"/> <!-- MacAurther -->
+	<ElementType name="PrereqAdjacentTerrain" content="textOnly" dt:type="string"/> <!-- MacAurther -->
+	<ElementType name="PrereqAdjacentFeature" content="textOnly" dt:type="string"/> <!-- MacAurther -->
+	<ElementType name="bPrereqAdjacentPeak" content="textOnly" dt:type="boolean"/> <!-- MacAurther -->
 	<ElementType name="TechTypes" content="eltOnly">
 		<element type="PrereqTech" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
@@ -471,6 +476,11 @@
 		<element type="MaxStartEra" minOccurs="0"/>
 		<element type="ObsoleteTech" minOccurs="0"/>
 		<element type="PrereqTech" minOccurs="0"/>
+		<element type="PrereqPlotTerrain" minOccurs="0"/> <!-- MacAurther -->
+		<element type="PrereqPlotFeature" minOccurs="0"/> <!-- MacAurther -->
+		<element type="PrereqAdjacentTerrain" minOccurs="0"/> <!-- MacAurther -->
+		<element type="PrereqAdjacentFeature" minOccurs="0"/> <!-- MacAurther -->
+		<element type="bPrereqAdjacentPeak" minOccurs="0"/> <!-- MacAurther -->
 		<element type="TechTypes" minOccurs="0"/>
 		<element type="Bonus" minOccurs="0"/>
 		<element type="PrereqBonuses" minOccurs="0"/>

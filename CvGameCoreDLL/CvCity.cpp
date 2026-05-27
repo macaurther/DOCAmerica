@@ -15995,68 +15995,37 @@ bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
 		}
 	}
 
-	// MacAurther: Various geographic world wonders
-	TerrainTypes plotRequirement = NO_TERRAIN;
-	FeatureTypes featureRequirement = NO_FEATURE;
-	TerrainTypes adjacentRequirement = NO_TERRAIN;
-	bool bLake = false;
-	bool bPeak = false;
-	switch (eBuilding)
-	{
-		case BUILDING_FLOATING_GARDENS:
-		case BUILDING_HUEY_TEOCALLI:
-			plotRequirement = TERRAIN_LAGOON;
-			break;
-		case BUILDING_PUEBLO_BONITO:
-			featureRequirement = FEATURE_CANYON;
-			break;
-		case BUILDING_MACHU_PICCHU:
-		case BUILDING_SACSAYHUAMAN:
-		case BUILDING_YACHAYWASI:
-			bPeak = true;
-			break;
-		case BUILDING_GREAT_GEOGLYPH:
-			plotRequirement = TERRAIN_DESERT;
-			break;
-		case BUILDING_SERPENT_MOUND:
-			adjacentRequirement = TERRAIN_WIDE_RIVER;
-			break;
-	}
+	// MacAurther: Geographic prerequisites (from XML)
+	const CvBuildingInfo& kBuildingGeo = GC.getBuildingInfo(eBuilding);
+	if (kBuildingGeo.getPrereqPlotTerrain() != NO_TERRAIN)
+		if (plot()->getTerrainType() != (TerrainTypes)kBuildingGeo.getPrereqPlotTerrain()) return false;
+	if (kBuildingGeo.getPrereqPlotFeature() != NO_FEATURE)
+		if (plot()->getFeatureType() != (FeatureTypes)kBuildingGeo.getPrereqPlotFeature()) return false;
 
-	if (plotRequirement != NO_TERRAIN && plot()->getTerrainType() != plotRequirement) return false;
-	if (featureRequirement != NO_FEATURE && plot()->getFeatureType() != featureRequirement) return false;
-
-	if (adjacentRequirement != NO_TERRAIN || bLake || bPeak)
+	if (kBuildingGeo.getPrereqAdjacentTerrain() != NO_TERRAIN
+		|| kBuildingGeo.getPrereqAdjacentFeature() != NO_FEATURE
+		|| kBuildingGeo.isPrereqAdjacentPeak())
 	{
-		bool bFound = false;
-		for (int iX = -1; iX < 2; iX++)
+		bool bAdjTerrainOk = (kBuildingGeo.getPrereqAdjacentTerrain() == NO_TERRAIN);
+		bool bAdjFeatureOk = (kBuildingGeo.getPrereqAdjacentFeature() == NO_FEATURE);
+		bool bAdjPeakOk    = (!kBuildingGeo.isPrereqAdjacentPeak());
+		for (int iX = -1; iX <= 1; iX++)
 		{
-			for (int iY = -1; iY < 2; iY++)
+			for (int iY = -1; iY <= 1; iY++)
 			{
-				int iWorldX = plot()->getX() + iX;
-				int iWorldY = plot()->getY() + iY;
-				if (iWorldX >= EARTH_X || iWorldX < 0 || iWorldY >= EARTH_Y || iWorldY < 0) continue;
-				CvPlot* pAdjacentPlot = GC.getMapINLINE().plotINLINE(iWorldX, iWorldY);
-				if (adjacentRequirement != NO_TERRAIN && pAdjacentPlot->getTerrainType() == adjacentRequirement)
-				{
-					bFound = true;
-					break;
-				}
-				else if (bLake && pAdjacentPlot->isLake())
-				{
-					bFound = true;
-					break;
-				}
-				else if (bPeak && pAdjacentPlot->isPeak())
-				{
-					bFound = true;
-					break;
-				}
+				if (iX == 0 && iY == 0) continue;
+				CvPlot* pAdj = plotXY(getX_INLINE(), getY_INLINE(), iX, iY);
+				if (pAdj == NULL) continue;
+				if (!bAdjTerrainOk && pAdj->getTerrainType() == (TerrainTypes)kBuildingGeo.getPrereqAdjacentTerrain())
+					bAdjTerrainOk = true;
+				if (!bAdjFeatureOk && pAdj->getFeatureType() == (FeatureTypes)kBuildingGeo.getPrereqAdjacentFeature())
+					bAdjFeatureOk = true;
+				if (!bAdjPeakOk && pAdj->isPeak())
+					bAdjPeakOk = true;
 			}
 		}
-		if (!bFound) return false;
+		if (!bAdjTerrainOk || !bAdjFeatureOk || !bAdjPeakOk) return false;
 	}
-	// End geographic wonders
 
 	return true;
 }

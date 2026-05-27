@@ -7686,6 +7686,7 @@
 			<MaxStartEra>ERA_REVOLUTIONARY</MaxStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
+			<PrereqPlotTerrain>TERRAIN_LAGOON</PrereqPlotTerrain>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -7800,6 +7801,7 @@
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_LAW</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_SCIENCE</ObsoleteTech>
+			<bPrereqAdjacentPeak>1</bPrereqAdjacentPeak>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -7852,6 +7854,7 @@
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_PATHFINDING</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
+			<PrereqPlotFeature>FEATURE_CANYON</PrereqPlotFeature>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -7918,6 +7921,7 @@
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_CEMENT</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_TACTICS</ObsoleteTech>
+			<bPrereqAdjacentPeak>1</bPrereqAdjacentPeak>
 			<FreePromotion>PROMOTION_GUERILLA2</FreePromotion>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -7969,6 +7973,7 @@
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_TACTICS</ObsoleteTech>
+			<PrereqPlotTerrain>TERRAIN_LAGOON</PrereqPlotTerrain>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8082,6 +8087,7 @@
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_SCIENCE</ObsoleteTech>
+			<bPrereqAdjacentPeak>1</bPrereqAdjacentPeak>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8179,6 +8185,7 @@
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_EARTHWORKS</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
+			<PrereqPlotTerrain>TERRAIN_DESERT</PrereqPlotTerrain>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8336,6 +8343,7 @@
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_PROPERTY</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
+			<PrereqAdjacentTerrain>TERRAIN_WIDE_RIVER</PrereqAdjacentTerrain>
 			<CivicOption>CIVICOPTION_SOCIETY</CivicOption>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -9653,6 +9661,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_GOLDEN_GATE_BRIDGE</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_GOLDEN_GATE_BRIDGE</MovieDefineTag>
 			<PrereqTech>TECH_CIVIL_RIGHTS</PrereqTech>
+			<PrereqAdjacentFeature>FEATURE_STRAIT_ISLANDS</PrereqAdjacentFeature>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -9776,10 +9785,12 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ALCATRAZ</ArtDefineTag>
 			<PrereqTech>TECH_PSYCHOLOGY</PrereqTech>
+			<PrereqAdjacentFeature>FEATURE_STRAIT_ISLANDS</PrereqAdjacentFeature>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
+			<bWater>1</bWater>
 			<iAIWeight>200</iAIWeight>
 			<iCost>1000</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>

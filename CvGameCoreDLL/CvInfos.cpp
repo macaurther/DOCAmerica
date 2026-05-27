@@ -7569,6 +7569,11 @@ m_bCenterInCity(false),
 m_bStateReligion(false),
 m_bAllowsNukes(false),
 m_bNoResistance(false), // Leoreth
+m_iPrereqPlotTerrain(NO_TERRAIN),
+m_iPrereqPlotFeature(NO_FEATURE),
+m_iPrereqAdjacentTerrain(NO_TERRAIN),
+m_iPrereqAdjacentFeature(NO_FEATURE),
+m_bPrereqAdjacentPeak(false),
 m_piPrereqAndTechs(NULL),
 m_piPrereqOrBonuses(NULL),
 m_piProductionTraits(NULL),
@@ -8831,6 +8836,13 @@ bool CvBuildingInfo::isNoResistance() const
 	return m_bNoResistance;
 }
 
+// MacAurther: Geographic prerequisites
+int CvBuildingInfo::getPrereqPlotTerrain() const     { return m_iPrereqPlotTerrain; }
+int CvBuildingInfo::getPrereqPlotFeature() const     { return m_iPrereqPlotFeature; }
+int CvBuildingInfo::getPrereqAdjacentTerrain() const { return m_iPrereqAdjacentTerrain; }
+int CvBuildingInfo::getPrereqAdjacentFeature() const { return m_iPrereqAdjacentFeature; }
+bool CvBuildingInfo::isPrereqAdjacentPeak() const    { return m_bPrereqAdjacentPeak; }
+
 // Leoreth
 BuildingClassTypes CvBuildingInfo::getBuildingClass() const
 {
@@ -9018,6 +9030,11 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bStateReligion);
 	stream->Read(&m_bAllowsNukes);
 	stream->Read(&m_bNoResistance); // Leoreth
+	stream->Read(&m_iPrereqPlotTerrain);
+	stream->Read(&m_iPrereqPlotFeature);
+	stream->Read(&m_iPrereqAdjacentTerrain);
+	stream->Read(&m_iPrereqAdjacentFeature);
+	stream->Read(&m_bPrereqAdjacentPeak);
 
 	stream->ReadString(m_szConstructSound);
 	stream->ReadString(m_szArtDefineTag);
@@ -9400,6 +9417,11 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bStateReligion);
 	stream->Write(m_bAllowsNukes);
 	stream->Write(m_bNoResistance); // Leoreth
+	stream->Write(m_iPrereqPlotTerrain);
+	stream->Write(m_iPrereqPlotFeature);
+	stream->Write(m_iPrereqAdjacentTerrain);
+	stream->Write(m_iPrereqAdjacentFeature);
+	stream->Write(m_bPrereqAdjacentPeak);
 
 	stream->WriteString(m_szConstructSound);
 	stream->WriteString(m_szArtDefineTag);
@@ -9682,6 +9704,16 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bCenterInCity, "bCenterInCity");
 	pXML->GetChildXmlValByName(&m_bStateReligion, "bStateReligion");
 	pXML->GetChildXmlValByName(&m_bNoResistance, "bNoResistance"); // Leoreth
+	// MacAurther: Geographic prerequisites
+	pXML->GetChildXmlValByName(szTextVal, "PrereqPlotTerrain");
+	m_iPrereqPlotTerrain = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(szTextVal, "PrereqPlotFeature");
+	m_iPrereqPlotFeature = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(szTextVal, "PrereqAdjacentTerrain");
+	m_iPrereqAdjacentTerrain = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(szTextVal, "PrereqAdjacentFeature");
+	m_iPrereqAdjacentFeature = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(&m_bPrereqAdjacentPeak, "bPrereqAdjacentPeak");
 	pXML->GetChildXmlValByName(&m_iAIWeight, "iAIWeight");
 	pXML->GetChildXmlValByName(&m_iProductionCost, "iCost");
 	pXML->GetChildXmlValByName(&m_iHurryCostModifier, "iHurryCostModifier");
