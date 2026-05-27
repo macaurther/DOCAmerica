@@ -891,10 +891,6 @@ def createSpecificUnits(iPlayer, tile):
 			gp.assignGreatPersonName(unit, iPlayer, None, False)
 	elif iCiv == iColombia:
 		makeUnits(iPlayer, iAlbionLegion, tile, 5).experience(2)
-	elif iCiv == iCSA:	# CSA UP
-		for iGreatPerson in [iGreatGeneral, iGreatGeneral, iGreatGeneral, iGreatSpy]:
-			unit = makeUnit(iPlayer, iGreatPerson, tile)
-			gp.assignGreatPersonName(unit, iPlayer, None, False)
 
 
 dSpecificAdditionalUnits = CivDict({

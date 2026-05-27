@@ -232,3 +232,22 @@ def inuitUP(pCity):
 		# Help AI with defender (the NEED it)
 		if not player(iPlayer).isHuman():
 			makeUnit(iPlayer, iMilitia, pCity)
+
+@handler("cityBuilt")
+# CSA UP
+def csaUPCityBuilt(pCity):
+	doCSAUP(pCity)
+
+@handler("cityAcquiredAndKept")
+# CSA UP
+def csaUPCityAcquired(iOwner, pCity):
+	doCSAUP(pCity)
+
+def doCSAUP(pCity):
+	iPlayer = pCity.getOwner()
+	if civ(iPlayer) != iCSA:
+		return
+	if not player(iPlayer).canUseSlaves():
+		return
+	if pCity.getFreeSpecialistCount(iSpecialistSlave) < 3:
+		pCity.setFreeSpecialistCount(iSpecialistSlave, 3)
