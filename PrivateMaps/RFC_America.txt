@@ -5510,11 +5510,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=8,y=89
+	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=8,y=90
+	RiverNSDirection=2
+	isWOfRiver
+	BonusType=BONUS_WINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -6135,19 +6139,23 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=88
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=9,y=89
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	RiverWEDirection=3
+	isNOfRiver
+	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=9,y=90
-	BonusType=BONUS_WINE
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=9,y=91
@@ -6792,9 +6800,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=89
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
+	RiverNSDirection=0
 	isWOfRiver
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
@@ -6802,6 +6808,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=90
+	RiverWEDirection=3
+	isNOfRiver
 	RiverNSDirection=2
 	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
