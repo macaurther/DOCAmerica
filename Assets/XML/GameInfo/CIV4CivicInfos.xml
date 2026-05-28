@@ -64,6 +64,12 @@
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
+			<BuildingHappinessChanges>
+				<BuildingHappinessChange>
+					<BuildingType>BUILDINGCLASS_PALACE</BuildingType>
+					<iHappinessChange>2</iHappinessChange>
+				</BuildingHappinessChange>
+			</BuildingHappinessChanges>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -661,6 +667,16 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>-25</iCommerce>
 			</CommerceModifiers>
+			<FeatureHappinessChanges>
+				<FeatureHappinessChange>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<iHappinessChange>1</iHappinessChange>
+				</FeatureHappinessChange>
+				<FeatureHappinessChange>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<iHappinessChange>1</iHappinessChange>
+				</FeatureHappinessChange>
+			</FeatureHappinessChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -911,6 +927,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<iDomesticGreatGeneralRateModifier>50</iDomesticGreatGeneralRateModifier>
+			<iExpInBorderModifier>100</iExpInBorderModifier>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -1107,6 +1124,7 @@
 				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</UnimprovedTileYields>
+			<iCorporationMaintenanceModifier>-100</iCorporationMaintenanceModifier>
 			<iStateReligionHappiness>1</iStateReligionHappiness>
 		</CivicInfo>
 		<CivicInfo>
@@ -1120,8 +1138,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<iCorporationCommerceModifier>100</iCorporationCommerceModifier>
-			<iCorporationUnhappinessModifier>-100</iCorporationUnhappinessModifier>
-			<iCorporationMaintenanceModifier>-100</iCorporationMaintenanceModifier>
+			<iMilitaryProductionModifier>-50</iMilitaryProductionModifier>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<Hurrys>
 				<Hurry>
@@ -1907,6 +1924,7 @@
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
+			<iWonderProductionModifier>25</iWonderProductionModifier>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -2092,6 +2110,7 @@
 			<iBaseFreeUnits>15</iBaseFreeUnits>
 			<iFreeUnitsPopulationPercent>10</iFreeUnitsPopulationPercent>
 			<iLevelExperienceModifier>-25</iLevelExperienceModifier>
+			<iCaptureGoldModifier>50</iCaptureGoldModifier>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<CommerceModifiers>
 				<iCommerce>-10</iCommerce>
@@ -2122,6 +2141,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<iUnhappinessDecayModifier>100</iUnhappinessDecayModifier>
+			<iWarWearinessModifier>-50</iWarWearinessModifier>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
