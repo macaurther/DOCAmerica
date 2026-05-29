@@ -79,6 +79,7 @@ class CivData:
 			iHomelandSiberia: {},
 			iHomelandAsia: {},
 		}
+		self.lTradewindDiscovered = [False] * iNumImmigrationHomelands
 
 
 class PlayerData:

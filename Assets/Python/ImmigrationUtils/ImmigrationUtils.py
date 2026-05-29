@@ -204,8 +204,23 @@ class ImmigrationUtils:
 	def getAvailableImmigrants(self, iPlayer, iHomeland):
 		return self.getAvailableUnit(iPlayer, iHomeland, dImmigrantSchedule)
 	
-	# Returns a list of available mercenaries given a homeland and date
+	def hasDiscoveredTradewind(self, iPlayer, iHomeland):
+		iCiv = civ(iPlayer)
+		if data.civs[iCiv].lTradewindDiscovered[iHomeland]:
+			return True  # cached — skip the scan
+		iTeam = player(iPlayer).getTeam()
+		iTradewindFeature = iTradeWindsStart + iHomeland
+		for plot in plots.all():
+			if plot.isRevealed(iTeam, False) and plot.getFeatureType() == iTradewindFeature:
+				data.civs[iCiv].lTradewindDiscovered[iHomeland] = True
+				return True
+		return False
+
+	# Returns a list of available mercenaries given a homeland and date.
+	# Requires the player to have revealed at least one tradewind tile for that homeland.
 	def getAvailableMercenaries(self, iPlayer, iHomeland):
+		if not self.hasDiscoveredTradewind(iPlayer, iHomeland):
+			return {}
 		return self.getAvailableUnit(iPlayer, iHomeland, dMercenarySchedule)
 
 	def getEarnedImmigrants(self, iCiv, iHomeland):
@@ -360,6 +375,8 @@ class ImmigrationUtils:
 			self.hireMercenary(unique_unit(iPlayer, iWorker), iPlayer, iHomeland, bPay=True)
 		if bWantsMissionaries:
 			self.hireMercenary(unique_unit(iPlayer, missionary(player(iPlayer).getStateReligion())), iPlayer, iHomeland, bPay=True)
+		# TODO: if AI is extended to hire mercenaries, call getAvailableMercenaries(iPlayer, iHomeland)
+		# here — it already enforces the tradewind discovery gate via hasDiscoveredTradewind.
 	
 	def computerPlayerHireSlaves(self, iPlayer):
 		if self.computerPlayerWantsSlaves(iPlayer):
