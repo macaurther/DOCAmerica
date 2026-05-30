@@ -94,19 +94,9 @@ iEnglandQuebecYear = 1758
 tEnglandQuebecTL = (54, 45)
 tEnglandQuebecBR = (53, 101)
 
-iEnglandAmerica1812WashingtonYear = 1814
-tEnglandAmerica1812WashingtonTL = (44, 85)
-tEnglandAmerica1812WashingtonBR = (47, 89)
-
-iEnglandAmerica1812NewOrleansYear = 1815
-tEnglandAmerica1812NewOrleansTL = (32, 78)
-tEnglandAmerica1812NewOrleansBR = (35, 80)
-
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
 iConquestNum, tConquestEnglandNetherlands = processConquest(iConquestNum, iEngland, iNetherlands, tEnglandNetherlandsTL, tEnglandNetherlandsBR, 2, iEnglandNetherlandsYear, 10)
 iConquestNum, tConquestEnglandQuebec = processConquest(iConquestNum, iEngland, iFrance, tEnglandQuebecTL, tEnglandQuebecBR, 2, iEnglandQuebecYear, 10)
-iConquestNum, tConquestEngland1812Washington = processConquest(iConquestNum, iEngland, iAmerica, tEnglandAmerica1812WashingtonTL, tEnglandAmerica1812WashingtonBR, 1, iEnglandAmerica1812WashingtonYear, 10)
-iConquestNum, tConquestEngland1812NewOrleans = processConquest(iConquestNum, iEngland, iAmerica, tEnglandAmerica1812NewOrleansTL, tEnglandAmerica1812NewOrleansBR, 1, iEnglandAmerica1812NewOrleansYear, 10)
 
 # France ------------------------------------------------------------------------------------------------------------------------
 iFranceMexicoYear = 1861
@@ -178,7 +168,7 @@ iConquestNum, tConquestCanadaLakota = processConquest(iConquestNum, iCanada, iLa
 
 lConquests = [tConquestIncaWari, tConquestIncaTiwanaku, tConquestIncaChimu, # 3
 tConquestSpainAztecs, tConquestSpainPurepechans, tConquestSpainZapotec, tConquestSpainInca, tConquestSpainWari, tConquestSpainChimu, tConquestSpainMuisca, tConquestSpainPueblo, tConquestSpainMaya, # 9
-tConquestEnglandNetherlands, tConquestEnglandQuebec, tConquestEngland1812Washington, tConquestEngland1812NewOrleans, # 4
+tConquestEnglandNetherlands, tConquestEnglandQuebec, # 2
 tConquestFranceMexico, # 1
 tConquestNetherlandsNorse, # 1
 tConquestAmericaHaudenosaunee, tConquestAmericaCanada, tConquestAmericaCherokee, tConquestAmericaMexico, tConquestAmericaCSA, tConquestAmericaLakota, tConquestAmericaApache, tConquestAmericaCuba, # 8
