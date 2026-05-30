@@ -5578,14 +5578,14 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 			}
 
 			// MacAurther: Andean UP: If peak becomes owned by a non-Andean civ and there's an improvement on it, remove it
-			bool bOwnedByAndean = getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES;
-			if (!bOwnedByAndean && isPeak() && getImprovementType() != NO_IMPROVEMENT)
+			bool bOwnedByNonAndean = getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getRegionPowers() != RP_ANDES;
+			if (bOwnedByNonAndean && isPeak() && getImprovementType() != NO_IMPROVEMENT)
 			{
 				setImprovementType(NO_IMPROVEMENT);
 			}
 
 			// MacAurther: Andean UP: If peak becomes owned by a non-Andean civ and there's an route on it, remove it
-			if (!bOwnedByAndean && isPeak() && getRouteType() != NO_ROUTE)
+			if (bOwnedByNonAndean && isPeak() && getRouteType() != NO_ROUTE)
 			{
 				setRouteType(NO_ROUTE, true);
 			}
