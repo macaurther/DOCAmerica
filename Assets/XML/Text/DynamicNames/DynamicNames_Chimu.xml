@@ -77,4 +77,28 @@
 		<Italian>Revolutionary Union of %s1</Italian>
 		<Spanish>Revolutionary Union of %s1</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ECUADOR_DEFAULT</Tag>
+		<English>Republic of %s1</English>
+		<French>République du %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>República de %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ECUADOR_SHORT_DESC</Tag>
+		<English>Ecuador</English>
+		<French>Ecuador</French>
+		<German>Ecuador</German>
+		<Italian>Ecuador</Italian>
+		<Spanish>Ecuador</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ECUADOR_ADJECTIVE</Tag>
+		<English>Ecuadorian</English>
+		<French>Ecuadorian</French>
+		<German>Ecuadorian</German>
+		<Italian>Ecuadorian</Italian>
+		<Spanish>Ecuadorian</Spanish>
+	</TEXT>
 </Civ4GameText>

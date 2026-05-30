@@ -394,6 +394,12 @@ dNeighbours = dictFromEdges(lBirthCivs, lNeighbours)
 dInfluences = dictFromEdges(lBirthCivs, lInfluences)
 
 dResurrections = CivDict({
+iTupi :     [(1811, 2050)],
+iInca :     [(1818, 2050)],
+iMaya :     [(1821, 2050)],
+iChimu :    [(1822, 2050)],
+iTiwanaku : [(1825, 2050)],
+iArawak :   [(1966, 2050)],
 }, [])
 
 dEnemyCivsOnSpawn = CivDict({
@@ -501,32 +507,32 @@ iCanada: 100,
 }, 0)
 
 dResurrectionProbability = CivDict({
-iMaya : 25,
-iZapotec : 75,
+iMaya : 75,
+iZapotec : 50,
 iTeotihuacan : 0,
-iTiwanaku : 0,
+iTiwanaku : 75,
 iWari : 0,
-iMississippi : 75,
+iMississippi : 50,
 iMuisca : 0,
 iToltec : 0,
-iNorse : 50,
-iChimu : 0,
-iPueblo : 75,
-iArawak : 0,
-iTupi : 0,
+iNorse : 75,
+iChimu : 75,
+iPueblo : 50,
+iArawak : 75,
+iTupi : 75,
 iPurepecha : 0,
-iInuit : 100,
-iInca : 0,
+iInuit : 75,
+iInca : 75,
 iAztec : 0,
 iHaudenosaunee : 0,
-iSpain : 75,
+iSpain : 25,
 iPortugal : 0,
 iCherokee : 0,
-iEngland : 75,
-iFrance : 75,
-iNetherlands : 75,
-iApache : 0,
-iLakota : 50,
+iEngland : 25,
+iFrance : 25,
+iNetherlands : 25,
+iApache : 75,
+iLakota : 75,
 iHawaii : 50,
 iRussia : 0,
 iAmerica : 100,
@@ -978,9 +984,9 @@ dResurrectionLeaders = CivDict({
 })
 
 # update DLL constants when this changes
-iNumPeriods = 5
-# 0				1				2				3				4				5				6				7				8				9
-(iPeriodAntebellumUSA, iUnifiedUSA, iFederalBrazil, iLakotaReservation, iCherokeeReservation) = range(iNumPeriods)
+iNumPeriods = 11
+# 0                     1            2              3                    4                     5               6              7                8              9              10
+(iPeriodAntebellumUSA, iUnifiedUSA, iFederalBrazil, iLakotaReservation, iCherokeeReservation, iMayaGuatemala, iChimuEcuador, iTiwanakuBolivia, iTupiParaguay, iArawakGuyana, iIncaChile) = range(iNumPeriods)
 
 iNumImpacts = 5
 (iImpactMarginal, iImpactLimited, iImpactSignificant, iImpactCritical, iImpactPlayer) = range(iNumImpacts)

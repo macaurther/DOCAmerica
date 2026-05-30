@@ -221,4 +221,28 @@
 			<Plural>0</Plural>
 		</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GUATEMALA_DEFAULT</Tag>
+		<English>Republic of %s1</English>
+		<French>République du %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>República de %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GUATEMALA_SHORT_DESC</Tag>
+		<English>Guatemala</English>
+		<French>Guatemala</French>
+		<German>Guatemala</German>
+		<Italian>Guatemala</Italian>
+		<Spanish>Guatemala</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GUATEMALA_ADJECTIVE</Tag>
+		<English>Guatemalan</English>
+		<French>Guatemalan</French>
+		<German>Guatemalan</German>
+		<Italian>Guatemalan</Italian>
+		<Spanish>Guatemalan</Spanish>
+	</TEXT>
 </Civ4GameText>

@@ -169,10 +169,9 @@ dGoals = {
 	),
 	iNorse: (
 		All(
-			FirstSettle(plots.region(rIceland).named(ICELAND)),
-			FirstSettle(plots.region(rGreenland).named(GREENLAND)),
-			FirstSettle(plots.rectangle(tVinland).named(VINLAND)),
-			by=1100
+			FirstSettle(plots.region(rIceland).named(ICELAND), by=1000),
+			FirstSettle(plots.region(rGreenland).named(GREENLAND), by=1000),
+			FirstSettle(plots.rectangle(tVinland).named(VINLAND), by=1100),
 		),
 		All(
 			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatStatesman, 2),

@@ -57,4 +57,28 @@
 		<Italian>%s2 State</Italian>
 		<Spanish>%s2 State</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PARAGUAY_DEFAULT</Tag>
+		<English>Republic of %s1</English>
+		<French>République du %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>República de %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PARAGUAY_SHORT_DESC</Tag>
+		<English>Paraguay</English>
+		<French>Paraguay</French>
+		<German>Paraguay</German>
+		<Italian>Paraguay</Italian>
+		<Spanish>Paraguay</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PARAGUAY_ADJECTIVE</Tag>
+		<English>Paraguayan</English>
+		<French>Paraguayan</French>
+		<German>Paraguayan</German>
+		<Italian>Paraguayan</Italian>
+		<Spanish>Paraguayan</Spanish>
+	</TEXT>
 </Civ4GameText>

@@ -138,7 +138,13 @@ def setupScenario():
 
 def getPrimaryLanguages(identifier):
 	iCiv = civ(identifier)
-		
+	iPeriod = player(identifier).getPeriod()
+
+	if iPeriod in (iMayaGuatemala, iChimuEcuador, iTiwanakuBolivia, iTupiParaguay, iIncaChile):
+		return (iSpanish,) + dBaseLanguages.get(iCiv, tuple())
+	if iPeriod == iArawakGuyana:
+		return (iEnglish,) + dBaseLanguages.get(iCiv, tuple())
+
 	if iCiv in [iMaya, iAztec, iInca, iWari, iTeotihuacan, iZapotec, iPurepecha, iPueblo, iChimu, iMuisca, iTiwanaku]:
 		if player(identifier).getStateReligion() in [iOrthodoxy, iCatholicism, iProtestantism] or team(identifier).isAVassal():
 			return (iSpanish,) + dBaseLanguages.get(iCiv, tuple())

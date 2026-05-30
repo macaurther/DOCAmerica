@@ -109,4 +109,28 @@
 		<Italian>Revolutionary Union of %s1</Italian>
 		<Spanish>Revolutionary Union of %s1</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BOLIVIA_DEFAULT</Tag>
+		<English>Republic of %s1</English>
+		<French>République du %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>República de %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BOLIVIA_SHORT_DESC</Tag>
+		<English>Bolivia</English>
+		<French>Bolivia</French>
+		<German>Bolivia</German>
+		<Italian>Bolivia</Italian>
+		<Spanish>Bolivia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BOLIVIA_ADJECTIVE</Tag>
+		<English>Bolivian</English>
+		<French>Bolivian</French>
+		<German>Bolivian</German>
+		<Italian>Bolivian</Italian>
+		<Spanish>Bolivian</Spanish>
+	</TEXT>
 </Civ4GameText>

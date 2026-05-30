@@ -181,14 +181,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_BOLIVIA_SHORT_DESC</Tag>
-		<English>Bolivia</English>
-		<French>Bolivia</French>
-		<German>Bolivia</German>
-		<Italian>Bolivia</Italian>
-		<Spanish>Bolivia</Spanish>
-	</TEXT>
+
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PERU_ADJECTIVE</Tag>
 		<English>Peruvian</English>
@@ -296,5 +289,29 @@
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHILE_DEFAULT</Tag>
+		<English>Republic of %s1</English>
+		<French>République du %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>República de %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHILE_SHORT_DESC</Tag>
+		<English>Chile</English>
+		<French>Chile</French>
+		<German>Chile</German>
+		<Italian>Chile</Italian>
+		<Spanish>Chile</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHILE_ADJECTIVE</Tag>
+		<English>Chilean</English>
+		<French>Chilean</French>
+		<German>Chilean</German>
+		<Italian>Chilean</Italian>
+		<Spanish>Chilean</Spanish>
 	</TEXT>
 </Civ4GameText>

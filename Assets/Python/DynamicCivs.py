@@ -142,20 +142,30 @@ dEmpireThreshold = {
 
 lChristianity = [iCatholicism, iOrthodoxy, iProtestantism]
 
-lRespawnNameChanges = [iInca, iAztec] # TODO: this should be covered by period
+lRespawnNameChanges = [iInca, iAztec, iMaya, iChimu, iTiwanaku, iTupi, iArawak] # TODO: this should be covered by period
 lVassalNameChanges = [iInca, iAztec] # TODO: this should be covered by period
 lChristianityNameChanges = [iInca, iAztec] # TODO: this should be covered by period
 
 lColonies = [iAztec, iInca, iMaya] # TODO: could be covered by more granular continental regions
 
 dNameChanges = { # TODO: this should be covered by period
-	iAztec : "TXT_KEY_CIV_MEXICO_SHORT_DESC",
-	iInca : "TXT_KEY_CIV_BOLIVIA_SHORT_DESC",
+	iAztec :    "TXT_KEY_CIV_MEXICO_SHORT_DESC",
+	iInca :     "TXT_KEY_CIV_CHILE_SHORT_DESC",
+	iMaya :     "TXT_KEY_CIV_GUATEMALA_SHORT_DESC",
+	iChimu :    "TXT_KEY_CIV_ECUADOR_SHORT_DESC",
+	iTiwanaku : "TXT_KEY_CIV_BOLIVIA_SHORT_DESC",
+	iTupi :     "TXT_KEY_CIV_PARAGUAY_SHORT_DESC",
+	iArawak :   "TXT_KEY_CIV_GUYANA_SHORT_DESC",
 }
 
 dAdjectiveChanges = {
-	iAztec : "TXT_KEY_CIV_MEXICO_ADJECTIVE",
-	iInca : "TXT_KEY_CIV_PERU_ADJECTIVE",
+	iAztec :    "TXT_KEY_CIV_MEXICO_ADJECTIVE",
+	iInca :     "TXT_KEY_CIV_CHILE_ADJECTIVE",
+	iMaya :     "TXT_KEY_CIV_GUATEMALA_ADJECTIVE",
+	iChimu :    "TXT_KEY_CIV_ECUADOR_ADJECTIVE",
+	iTiwanaku : "TXT_KEY_CIV_BOLIVIA_ADJECTIVE",
+	iTupi :     "TXT_KEY_CIV_PARAGUAY_ADJECTIVE",
+	iArawak :   "TXT_KEY_CIV_GUYANA_ADJECTIVE",
 }
 
 dStartingLeaders = [

@@ -27,6 +27,12 @@ dPeriodNames = {
 	iFederalBrazil: "Federal_Brazil",
 	iLakotaReservation: "Sioux_Reservation",
 	iCherokeeReservation: "Cherokee_Nation",
+	iMayaGuatemala:   "Maya_Guatemala",
+	iChimuEcuador:    "Chimu_Ecuador",
+	iTiwanakuBolivia: "Tiwanaku_Bolivia",
+	iTupiParaguay:    "Tupi_Paraguay",
+	iArawakGuyana:    "Arawak_Guyana",
+	iIncaChile:       "Inca_Chile",
 }
 
 
@@ -68,7 +74,17 @@ def onCollapse(iPlayer):
 
 @handler("resurrection")
 def onResurrection(iPlayer):
-	pass
+	dRespawnPeriods = {
+		iMaya:     iMayaGuatemala,
+		iChimu:    iChimuEcuador,
+		iTiwanaku: iTiwanakuBolivia,
+		iTupi:     iTupiParaguay,
+		iArawak:   iArawakGuyana,
+		iInca:     iIncaChile,
+	}
+	iCivPlayer = civ(iPlayer)
+	if iCivPlayer in dRespawnPeriods:
+		setPeriod(iCivPlayer, dRespawnPeriods[iCivPlayer])
 
 
 @handler("cityAcquired")

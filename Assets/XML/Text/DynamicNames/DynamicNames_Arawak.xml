@@ -57,4 +57,28 @@
 		<Italian>%s2 State</Italian>
 		<Spanish>%s2 State</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GUYANA_DEFAULT</Tag>
+		<English>Republic of %s1</English>
+		<French>République du %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>Republic of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GUYANA_SHORT_DESC</Tag>
+		<English>Guyana</English>
+		<French>Guyana</French>
+		<German>Guyana</German>
+		<Italian>Guyana</Italian>
+		<Spanish>Guyana</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GUYANA_ADJECTIVE</Tag>
+		<English>Guyanese</English>
+		<French>Guyanese</French>
+		<German>Guyanese</German>
+		<Italian>Guyanese</Italian>
+		<Spanish>Guyanese</Spanish>
+	</TEXT>
 </Civ4GameText>
