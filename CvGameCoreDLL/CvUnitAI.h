@@ -165,6 +165,7 @@ protected:
 	bool AI_pirateBlockade();
 	bool AI_seaBombardRange(int iMaxRange);
 	bool AI_pillage(int iBonusValueThreshold = 0);
+	bool AI_pillageTribes();
 	bool AI_pillageRange(int iRange, int iBonusValueThreshold = 0);
 	bool AI_found();
 	bool AI_foundRange(int iRange, bool bFollow = false);

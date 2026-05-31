@@ -236,20 +236,7 @@ def relocateFoundedCapital(city):
 def buildFoundedCapitalInfrastructure(city):
 	buildCapitalInfrastructure(city.getOwner(), city)
 
-
-# MacAurther: Help European AI by removing nearby Tribes when they settle cities
-# MacAurther TODO: Replace this with better AI handling of Tribes in general
-@handler("cityBuilt")
-def convertTribesAroundCity(pCity):
-	iPlayer = pCity.getOwner()
-	if not player(iPlayer).isHuman() and player(iPlayer).getCivilizationType() in dCivGroups[iCivGroupEurope]:
-		for i in range(gc.getNUM_CITY_PLOTS()):
-			pPlot = pCity.getCityIndexPlot(i)
-			if pPlot.getImprovementType() in [iTribe, iContactedTribe]:
-				pPlot.setImprovementType(-1)
-
 ### UNIT BUILT ###
-
 
 ### FIRST CONTACT ###
 

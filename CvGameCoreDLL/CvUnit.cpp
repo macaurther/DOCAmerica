@@ -3122,6 +3122,19 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 		pPlot->updateFortClaims(getOwner());
 	}
 
+	// MacAurther: AI tries to pillage tribes if they end up there
+	if (!isHuman() && !GET_PLAYER(getOwnerINLINE()).isMinorCiv() && m_pUnitInfo->isPillage())
+	{
+		ImprovementTypes eMovedImprovement = pPlot->getImprovementType();
+		if (eMovedImprovement == IMPROVEMENT_TRIBE || eMovedImprovement == IMPROVEMENT_CONTACTED_TRIBE)
+		{
+			if (canPillage(pPlot))
+			{
+				getGroup()->pushMission(MISSION_PILLAGE, -1, -1, 0, false, false, MISSIONAI_PILLAGE, pPlot);
+			}
+		}
+	}
+
 	// MacAurther: End turn if moving into Tradewind
 	if (pPlot->isTradewinds())
 	{

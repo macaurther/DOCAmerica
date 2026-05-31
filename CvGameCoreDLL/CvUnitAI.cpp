@@ -2026,6 +2026,12 @@ void CvUnitAI::AI_attackMove()
 					}
 				}
 			}
+
+			// MacAurther: Pillage tribes within the AI's cultural sphere
+			if (AI_pillageTribes())
+			{
+				return;
+			}
 		}
 		else
 		{
@@ -9345,37 +9351,40 @@ std::pair<CvPlot*, CvPlot*> CvUnitAI::AI_spreadTarget(ReligionTypes eReligion, b
 		}
 	}
 
-	// MacAurther: If a Tribe is in the BFC of one of AI's cities, try to convert it too
-	for (pLoopCity = GET_PLAYER(getOwner()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwner()).nextCity(&iLoop))
+	// MacAurther: Convert Contacted Tribes within the AI's cultural sphere.
+	// Competes directly with city targets. Base score of 1000 puts a nearby tribe
+	// in the 200-1000 range; culture scales it further so a high-culture late-game
+	// tribe can outbid a distant foreign city. Own and nearby cities still dominate.
+	for (int iMapI = 0; iMapI < GC.getMapINLINE().numPlotsINLINE(); iMapI++)
 	{
-		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(iMapI);
+		if (pPlot == NULL) continue;
+		if (pPlot->getImprovementType() != IMPROVEMENT_CONTACTED_TRIBE) continue;
+		if (!AI_plotValid(pPlot)) continue;
+		if (pPlot->area() != area()) continue;
+
+		int iCulture = pPlot->getCulture(getOwnerINLINE());
+		if (iCulture <= 0) continue;
+
+		if (canSpread(pPlot, eReligion, false, true))
 		{
-			CvPlot* pPlot = pLoopCity->getCityIndexPlot(iI);
-			if (pPlot != NULL && AI_plotValid(pPlot) && pPlot->area() == area())
+			if (!(pPlot->isVisibleEnemyUnit(this)))
 			{
-				if (canSpread(pPlot, eReligion, false, true))
+				if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pPlot, MISSIONAI_SPREAD, getGroup()) == 0)
 				{
-					if (!(pPlot->isVisibleEnemyUnit(this)))
+					if (generatePath(pPlot, 0, true, &iPathTurns))
 					{
-						if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pPlot, MISSIONAI_SPREAD, getGroup()) == 0)
+						iValue = (2000 + iCulture / 5) / (iPathTurns + 2);
+						if (iValue > iBestValue)
 						{
-							if (generatePath(pPlot, 0, true, &iPathTurns))
-							{
-								iValue = 100;	// Set to some arbitrary low value so that AI prioritizes cities, but will eventually convert the Tribes in its borders
-								if (iValue > iBestValue)
-								{
-									iBestValue = iValue;
-									pBestPlot = getPathEndTurnPlot();
-									pBestSpreadPlot = pPlot;
-								}
-							}
+							iBestValue = iValue;
+							pBestPlot = getPathEndTurnPlot();
+							pBestSpreadPlot = pPlot;
 						}
 					}
 				}
 			}
 		}
-		
-		
 	}
 
 
@@ -12914,6 +12923,164 @@ bool CvUnitAI::AI_canPillage(CvPlot& kPlot) const
 		{
 			return true;
 		}
+	}
+
+	return false;
+}
+
+
+// Returns true if a mission was pushed...
+// Try to pillage tribes that are nearby cities
+bool CvUnitAI::AI_pillageTribes()
+{
+	PROFILE_FUNC();
+
+	// If already standing on a tribe, pillage it immediately
+	if (!GET_PLAYER(getOwnerINLINE()).isMinorCiv())
+	{
+		ImprovementTypes eCurrentImprovement = plot()->getImprovementType();
+		if (eCurrentImprovement == IMPROVEMENT_TRIBE || eCurrentImprovement == IMPROVEMENT_CONTACTED_TRIBE)
+		{
+			if (canPillage(plot()))
+			{
+				getGroup()->pushMission(MISSION_PILLAGE, -1, -1, 0, false, false, MISSIONAI_PILLAGE, plot());
+				return true;
+			}
+		}
+	}
+
+	if (GET_PLAYER(getOwnerINLINE()).isMinorCiv())
+	{
+		return false;
+	}
+
+	// Don't try to pillage when at war
+	if (GET_TEAM(getTeam()).getAtWarCount(true) > 0)
+	{
+		return false;
+	}
+
+	CvPlot* pBestPillagePlot = NULL;
+	int iBestValue = 0;
+
+	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	{
+		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		if (pLoopPlot == NULL) continue;
+
+		ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
+		if (eImprovement != IMPROVEMENT_TRIBE && eImprovement != IMPROVEMENT_CONTACTED_TRIBE) continue;
+
+		if (!AI_plotValid(pLoopPlot)) continue;
+		if (pLoopPlot->area() != area()) continue;
+
+		// Only target tribes where we have cultural presence
+		int iCulture = pLoopPlot->getCulture(getOwnerINLINE());
+		if (iCulture <= 0) continue;
+
+		// Pathfinding cannot traverse native territory without an active war. Defer the war
+		// declaration to push-time; here just verify it would be possible if needed.
+		bool bCanTarget = false;
+		{
+			TeamTypes eTribeTeam = pLoopPlot->getTeam();
+			if (eTribeTeam == NO_TEAM || isEnemy(eTribeTeam, pLoopPlot) || GET_TEAM(getTeam()).canDeclareWar(eTribeTeam))
+			{
+				bCanTarget = true;
+			}
+			if (!bCanTarget)
+			{
+				for (int iDir = 0; iDir < NUM_DIRECTION_TYPES && !bCanTarget; iDir++)
+				{
+					CvPlot* pAdjPlot = plotDirection(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), (DirectionTypes)iDir);
+					if (pAdjPlot != NULL)
+					{
+						TeamTypes eAdjTeam = pAdjPlot->getTeam();
+						if (eAdjTeam != NO_TEAM && !isEnemy(eAdjTeam, pAdjPlot) && GET_TEAM(getTeam()).canDeclareWar(eAdjTeam))
+						{
+							bCanTarget = true;
+						}
+					}
+				}
+			}
+		}
+		if (!bCanTarget) continue;
+
+		// If defenders are already visible, AI_anyAttack() handles them; come back when the tile is clear
+		if (pLoopPlot->isVisibleEnemyUnit(this)) continue;
+
+		if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_PILLAGE, getGroup(), 1) == 0)
+		{
+			// Use step distance as a proxy
+			int iDistance = stepDistance(getX_INLINE(), getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE());
+			if (iDistance > 0 && iDistance <= 10)
+			{
+				int iValue = (1000 + iCulture / 5) / (iDistance + 2);
+				if (iValue > iBestValue)
+				{
+					iBestValue = iValue;
+					pBestPillagePlot = pLoopPlot;
+				}
+			}
+		}
+	}
+
+	if (pBestPillagePlot != NULL)
+	{
+		if (atPlot(pBestPillagePlot))
+		{
+			getGroup()->pushMission(MISSION_PILLAGE, -1, -1, 0, false, false, MISSIONAI_PILLAGE, pBestPillagePlot);
+			return true;
+		}
+
+		// Try to path normally first (succeeds if already at war with the relevant native player).
+		// If the path fails, find the native team blocking access and declare war
+		int iPathTurns;
+		if (!generatePath(pBestPillagePlot, 0, true, &iPathTurns))
+		{
+			TeamTypes eBlockingTeam = NO_TEAM;
+
+			// Check the tribe tile owner first
+			TeamTypes eTribeTeam = pBestPillagePlot->getTeam();
+			if (eTribeTeam != NO_TEAM && !isEnemy(eTribeTeam, pBestPillagePlot) && GET_TEAM(getTeam()).canDeclareWar(eTribeTeam))
+			{
+				eBlockingTeam = eTribeTeam;
+			}
+
+			// Then check adjacent tiles for native territory blocking the path
+			if (eBlockingTeam == NO_TEAM)
+			{
+				for (int iDir = 0; iDir < NUM_DIRECTION_TYPES; iDir++)
+				{
+					CvPlot* pAdjPlot = plotDirection(pBestPillagePlot->getX_INLINE(), pBestPillagePlot->getY_INLINE(), (DirectionTypes)iDir);
+					if (pAdjPlot != NULL)
+					{
+						TeamTypes eAdjTeam = pAdjPlot->getTeam();
+						if (eAdjTeam != NO_TEAM && !isEnemy(eAdjTeam, pAdjPlot) && GET_TEAM(getTeam()).canDeclareWar(eAdjTeam))
+						{
+							eBlockingTeam = eAdjTeam;
+							break;
+						}
+					}
+				}
+			}
+
+			if (eBlockingTeam == NO_TEAM)
+			{
+				return false;
+			}
+
+			GET_TEAM(getTeam()).declareWar(eBlockingTeam, false, WARPLAN_LIMITED);
+
+			if (!generatePath(pBestPillagePlot, 0, true, &iPathTurns))
+			{
+				return false;
+			}
+		}
+
+		CvPlot* pEndTurnPlot = getPathEndTurnPlot();
+		FAssert(!atPlot(pEndTurnPlot));
+		getGroup()->pushMission(MISSION_MOVE_TO, pEndTurnPlot->getX_INLINE(), pEndTurnPlot->getY_INLINE(), 0, false, false, MISSIONAI_PILLAGE, pBestPillagePlot);
+		return true;
 	}
 
 	return false;
