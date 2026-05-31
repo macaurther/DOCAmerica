@@ -5068,24 +5068,13 @@ bool CvUnit::pillage()
 	{
 		eTempImprovement = pPlot->getImprovementType();
 
-		if (pPlot->getTeam() != getTeam() || pPlot->isTribe()) // MacAurther: Get gold and trigger callback for tribes pillaged inside borders, but not Allied Tribes
+		if (pPlot->getTeam() != getTeam())
 		{
-			// Use python to determine pillage amounts...
-			lPillageGold = 0;
+			iPillageGold = GC.getImprovementInfo(eTempImprovement).getPillageGold();
+			iPillageGold += GC.getGameINLINE().getSorenRandNum(iPillageGold / 2, "pillage gold");
 
-			CyPlot* pyPlot = new CyPlot(pPlot);
-			CyUnit* pyUnit = new CyUnit(this);
-
-			CyArgsList argsList;
-			argsList.add(gDLL->getPythonIFace()->makePythonObject(pyPlot));	// pass in plot class
-			argsList.add(gDLL->getPythonIFace()->makePythonObject(pyUnit));	// pass in unit class
-
-			gDLL->getPythonIFace()->callFunction(PYGameModule, "doPillageGold", argsList.makeFunctionArgs(),&lPillageGold);
-
-			delete pyPlot;	// python fxn must not hold on to this pointer
-			delete pyUnit;	// python fxn must not hold on to this pointer
-
-			iPillageGold = (int)lPillageGold;
+			iPillageGold *= (100 + getPillageChange());
+			iPillageGold /= 100;
 
 			//Rhye - start UP (Viking) -> MacAurther: Raiding civic
 			if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_RAIDING))
