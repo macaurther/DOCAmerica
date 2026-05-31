@@ -3129,7 +3129,9 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 		{
 			if (canPillage(pPlot))
 			{
-				getGroup()->pushMission(MISSION_PILLAGE, -1, -1, 0, false, false, MISSIONAI_PILLAGE, pPlot);
+				// bAppend=true: do NOT call clearMissionQueue() while continueMission() is on the stack.
+				// Appending PILLAGE lets the current MOVE_TO complete normally; PILLAGE executes next.
+				getGroup()->pushMission(MISSION_PILLAGE, -1, -1, 0, true, false, MISSIONAI_PILLAGE, pPlot);
 			}
 		}
 	}

@@ -13059,6 +13059,8 @@ bool CvUnitAI::AI_pillageTribes()
 		}
 
 		CvPlot* pEndTurnPlot = getPathEndTurnPlot();
+		if (pEndTurnPlot == NULL)
+			return false;
 		FAssert(!atPlot(pEndTurnPlot));
 		getGroup()->pushMission(MISSION_MOVE_TO, pEndTurnPlot->getX_INLINE(), pEndTurnPlot->getY_INLINE(), 0, false, false, MISSIONAI_PILLAGE, pBestPillagePlot);
 		return true;

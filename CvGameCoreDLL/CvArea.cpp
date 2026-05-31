@@ -354,7 +354,6 @@ int CvArea::countCanSpread(ReligionTypes eReligion, PlayerTypes eOwner, bool bMi
 	// MacAurther: Can spread to more than just cities, can spread to Contacted Tribe Improvements
 	CvPlot* pLoopPlot;
 	int iCount;
-	int iLoop;
 	int iI;
 
 	iCount = 0;
