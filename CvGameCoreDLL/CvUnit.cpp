@@ -3125,8 +3125,7 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 	// MacAurther: AI tries to pillage tribes if they end up there
 	if (!isHuman() && !GET_PLAYER(getOwnerINLINE()).isMinorCiv() && m_pUnitInfo->isPillage())
 	{
-		ImprovementTypes eMovedImprovement = pPlot->getImprovementType();
-		if (eMovedImprovement == IMPROVEMENT_TRIBE || eMovedImprovement == IMPROVEMENT_CONTACTED_TRIBE)
+		if (pPlot->isTribe())
 		{
 			if (canPillage(pPlot))
 			{
@@ -5069,7 +5068,7 @@ bool CvUnit::pillage()
 	{
 		eTempImprovement = pPlot->getImprovementType();
 
-		if (pPlot->getTeam() != getTeam() || eTempImprovement == IMPROVEMENT_TRIBE || eTempImprovement == IMPROVEMENT_CONTACTED_TRIBE) // MacAurther: Get gold and trigger callback for tribes pillaged inside borders, but not Allied Tribes
+		if (pPlot->getTeam() != getTeam() || pPlot->isTribe()) // MacAurther: Get gold and trigger callback for tribes pillaged inside borders, but not Allied Tribes
 		{
 			// Use python to determine pillage amounts...
 			lPillageGold = 0;
@@ -5762,7 +5761,7 @@ bool CvUnit::canFound(const CvPlot* pPlot, bool bTestVisible) const
 	}
 
 	// MacAurther: Cannot found on top of Tribe or Contacted Tribe
-	if (pPlot != NULL && (pPlot->getImprovementType() == IMPROVEMENT_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE))
+	if (pPlot != NULL && pPlot->isTribe())
 	{
 		return false;
 	}

@@ -12940,8 +12940,7 @@ bool CvUnitAI::AI_pillageTribes()
 		return false;
 
 	// If already standing on a tribe, pillage it immediately
-	ImprovementTypes eCurrentImprovement = plot()->getImprovementType();
-	if ((eCurrentImprovement == IMPROVEMENT_TRIBE || eCurrentImprovement == IMPROVEMENT_CONTACTED_TRIBE) && canPillage(plot()))
+	if (plot()->isTribe() && canPillage(plot()))
 	{
 		getGroup()->pushMission(MISSION_PILLAGE, -1, -1, 0, false, false, MISSIONAI_PILLAGE, plot());
 		return true;
@@ -12961,8 +12960,7 @@ bool CvUnitAI::AI_pillageTribes()
 		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 		if (pLoopPlot == NULL) continue;
 
-		ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
-		if (eImprovement != IMPROVEMENT_TRIBE && eImprovement != IMPROVEMENT_CONTACTED_TRIBE) continue;
+		if (!pLoopPlot->isTribe()) continue;
 
 		if (!AI_plotValid(pLoopPlot)) continue;
 		if (pLoopPlot->area() != area()) continue;

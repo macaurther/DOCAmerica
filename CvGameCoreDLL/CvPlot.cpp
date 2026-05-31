@@ -3502,7 +3502,7 @@ PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 	int iI;
 	
 	// MacAurther: Tribes and Contacted Tribes own their tiles
-	if(getImprovementType() == IMPROVEMENT_TRIBE || getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
+	if(isTribe())
 	{
 		for (iI = 0; iI < MAX_PLAYERS; ++iI)
 		{
@@ -5329,7 +5329,7 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 
 	// MacAurther: Do not set new owner of a plot with a Tribe or Contacted Tribe
 	bool bNativePlayer = eNewValue != NO_PLAYER && GET_PLAYER(eNewValue).isNative();
-	if (!bNativePlayer && (getImprovementType() == IMPROVEMENT_TRIBE || getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE))
+	if (!bNativePlayer && isTribe())
 	{
 		return;
 	}
@@ -6389,6 +6389,13 @@ void CvPlot::setBonusVarietyType(BonusTypes eNewValue)
 ImprovementTypes CvPlot::getImprovementType() const
 {
 	return (ImprovementTypes)m_eImprovementType;
+}
+
+
+bool CvPlot::isTribe() const
+{
+	ImprovementTypes eImprovement = getImprovementType();
+	return eImprovement == IMPROVEMENT_TRIBE || eImprovement == IMPROVEMENT_CONTACTED_TRIBE;
 }
 
 

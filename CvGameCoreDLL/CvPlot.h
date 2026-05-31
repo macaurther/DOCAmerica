@@ -330,6 +330,7 @@ public:
 
 	DllExport ImprovementTypes getImprovementType() const;																													// Exposed to Python
 	DllExport void setImprovementType(ImprovementTypes eNewValue);																									// Exposed to Python
+	bool isTribe() const; // MacAurther: true for IMPROVEMENT_TRIBE or IMPROVEMENT_CONTACTED_TRIBE
 
 	DllExport RouteTypes getRouteType() const;																																			// Exposed to Python
 	DllExport void setRouteType(RouteTypes eNewValue, bool bUpdatePlotGroup);																															// Exposed to Python

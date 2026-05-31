@@ -273,6 +273,8 @@ class GameData:
 		
 		self.bNoCongressOption = False
 		
+		self.dLastClaims = {}
+		
 		# Plague
 		
 		self.lGenericPlagueTurns = [-1] * 5

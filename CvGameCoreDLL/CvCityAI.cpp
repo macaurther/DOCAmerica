@@ -4824,7 +4824,7 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 		iValue += (GET_PLAYER(getOwner()).AI_foundValue(pNewPlot->getX_INLINE(), pNewPlot->getY_INLINE()) - GET_PLAYER(getOwner()).AI_foundValue(getX_INLINE(), getY_INLINE())) * 2;
 
 		// If destination has a tribe and owner has Chief Civic, beeline it baby
-		if(GET_PLAYER(getOwner()).hasCivic(CIVIC_CHIEF) && (pNewPlot->getImprovementType() == IMPROVEMENT_TRIBE || pNewPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)) iValue += 100;
+		if(GET_PLAYER(getOwner()).hasCivic(CIVIC_CHIEF) && pNewPlot->isTribe()) iValue += 100;
 
 		// Lakota UP: likes to migrate
 		if(GET_PLAYER(getOwner()).getCivilizationType() == LAKOTA) iValue += 15;
