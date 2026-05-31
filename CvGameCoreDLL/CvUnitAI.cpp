@@ -12935,23 +12935,16 @@ bool CvUnitAI::AI_pillageTribes()
 {
 	PROFILE_FUNC();
 
-	// If already standing on a tribe, pillage it immediately
-	if (!GET_PLAYER(getOwnerINLINE()).isMinorCiv())
-	{
-		ImprovementTypes eCurrentImprovement = plot()->getImprovementType();
-		if (eCurrentImprovement == IMPROVEMENT_TRIBE || eCurrentImprovement == IMPROVEMENT_CONTACTED_TRIBE)
-		{
-			if (canPillage(plot()))
-			{
-				getGroup()->pushMission(MISSION_PILLAGE, -1, -1, 0, false, false, MISSIONAI_PILLAGE, plot());
-				return true;
-			}
-		}
-	}
-
+	// Independents should not pillage tribes
 	if (GET_PLAYER(getOwnerINLINE()).isMinorCiv())
-	{
 		return false;
+
+	// If already standing on a tribe, pillage it immediately
+	ImprovementTypes eCurrentImprovement = plot()->getImprovementType();
+	if ((eCurrentImprovement == IMPROVEMENT_TRIBE || eCurrentImprovement == IMPROVEMENT_CONTACTED_TRIBE) && canPillage(plot()))
+	{
+		getGroup()->pushMission(MISSION_PILLAGE, -1, -1, 0, false, false, MISSIONAI_PILLAGE, plot());
+		return true;
 	}
 
 	// Don't try to pillage when at war
@@ -12981,25 +12974,21 @@ bool CvUnitAI::AI_pillageTribes()
 		// Pathfinding cannot traverse native territory without an active war. Defer the war
 		// declaration to push-time; here just verify it would be possible if needed.
 		bool bCanTarget = false;
+		TeamTypes eTribeTeam = pLoopPlot->getTeam();
+		if (eTribeTeam == NO_TEAM || isEnemy(eTribeTeam, pLoopPlot) || GET_TEAM(getTeam()).canDeclareWar(eTribeTeam))
 		{
-			TeamTypes eTribeTeam = pLoopPlot->getTeam();
-			if (eTribeTeam == NO_TEAM || isEnemy(eTribeTeam, pLoopPlot) || GET_TEAM(getTeam()).canDeclareWar(eTribeTeam))
+			bCanTarget = true;
+		}
+		else
+		{
+			for (int iDir = 0; iDir < NUM_DIRECTION_TYPES && !bCanTarget; iDir++)
 			{
-				bCanTarget = true;
-			}
-			if (!bCanTarget)
-			{
-				for (int iDir = 0; iDir < NUM_DIRECTION_TYPES && !bCanTarget; iDir++)
+				CvPlot* pAdjPlot = plotDirection(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), (DirectionTypes)iDir);
+				if (pAdjPlot != NULL)
 				{
-					CvPlot* pAdjPlot = plotDirection(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), (DirectionTypes)iDir);
-					if (pAdjPlot != NULL)
-					{
-						TeamTypes eAdjTeam = pAdjPlot->getTeam();
-						if (eAdjTeam != NO_TEAM && !isEnemy(eAdjTeam, pAdjPlot) && GET_TEAM(getTeam()).canDeclareWar(eAdjTeam))
-						{
-							bCanTarget = true;
-						}
-					}
+					TeamTypes eAdjTeam = pAdjPlot->getTeam();
+					if (eAdjTeam != NO_TEAM && !isEnemy(eAdjTeam, pAdjPlot) && GET_TEAM(getTeam()).canDeclareWar(eAdjTeam))
+						bCanTarget = true;
 				}
 			}
 		}
@@ -13026,12 +13015,6 @@ bool CvUnitAI::AI_pillageTribes()
 
 	if (pBestPillagePlot != NULL)
 	{
-		if (atPlot(pBestPillagePlot))
-		{
-			getGroup()->pushMission(MISSION_PILLAGE, -1, -1, 0, false, false, MISSIONAI_PILLAGE, pBestPillagePlot);
-			return true;
-		}
-
 		// Try to path normally first (succeeds if already at war with the relevant native player).
 		// If the path fails, find the native team blocking access and declare war
 		int iPathTurns;
