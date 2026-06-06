@@ -19,8 +19,9 @@ lBannedTribePlots = [
 	(44, 41),		# Wari Alley
 	(44, 42),		# Wari Alley
 	(44, 43),		# Gold for Wari
-	(46, 51),		# Gold for Muisca
-	(50, 53),		# Gold for Muisca
+	(46, 51),		# 1st Gold for Muisca
+	(50, 53),		# 2nd Gold for Muisca
+	(51, 50),		# 2nd Corn for Muisca
 	(21, 81),		# Sante Fe for Pueblo
 ]
 
