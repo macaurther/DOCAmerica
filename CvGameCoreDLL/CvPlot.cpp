@@ -1972,11 +1972,10 @@ bool CvPlot::isRiverConnection(DirectionTypes eDirection) const
 		return false;
 	}
 
-	// MacAurther: Just assume if you're a strait, you're connected
-	if (isStrait())
-	{
-		return true;
-	}
+	// MacAurther: Removed isStrait() early-return here — it inverted the
+	// HALF_TILING feature-art connection mask, causing strait corner pieces to
+	// render where there was NO diagonal neighbor instead of where there WAS one.
+	// TODO: restore trade-route connectivity through straits via a separate mechanism.
 
 	switch (eDirection)
 	{
@@ -8979,6 +8978,23 @@ void CvPlot::updateFeatureSymbol(bool bForce)
 	else
 	{
 		gDLL->getEntityIFace()->updatePosition((CvEntity*)m_pFeatureSymbol); //update position and contours
+	}
+
+	// MacAurther: strait corner channels. The EXE's HALF_TILING connection mask
+	// is always 15 for straits, so we compute adjacency ourselves: a corner
+	// channel is shown only where the diagonally-adjacent tile is also a strait.
+	// Two diagonal straits each light the corner pointing at their shared vertex,
+	// forming a continuous channel; an isolated strait shows nothing.
+	if (m_pFeatureSymbol != NULL && eFeature == FEATURE_STRAIT)
+	{
+		CvPlot* pNW = plotXY(m_iX, m_iY, -1,  1);
+		CvPlot* pNE = plotXY(m_iX, m_iY,  1,  1);
+		CvPlot* pSE = plotXY(m_iX, m_iY,  1, -1);
+		CvPlot* pSW = plotXY(m_iX, m_iY, -1, -1);
+		setFeatureDummyVisibility("STRAIT_NW", pNW != NULL && pNW->isStrait());
+		setFeatureDummyVisibility("STRAIT_NE", pNE != NULL && pNE->isStrait());
+		setFeatureDummyVisibility("STRAIT_SE", pSE != NULL && pSE->isStrait());
+		setFeatureDummyVisibility("STRAIT_SW", pSW != NULL && pSW->isStrait());
 	}
 }
 

@@ -811,6 +811,44 @@
 			</FeatureVariety>
 		</FeatureArtInfo>
 		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_STRAIT</Type>
+			<bAnimated>0</bAnimated>
+			<bRiverArt>0</bRiverArt>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<LightType>LIGHT_TYPE_SUN</LightType>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<Button></Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/Strait/strait.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<FeatureDummyNodes>
+					<FeatureDummyNode>
+						<Tag>STRAIT_NW</Tag>
+						<Name>STRAIT_NW</Name>
+					</FeatureDummyNode>
+					<FeatureDummyNode>
+						<Tag>STRAIT_NE</Tag>
+						<Name>STRAIT_NE</Name>
+					</FeatureDummyNode>
+					<FeatureDummyNode>
+						<Tag>STRAIT_SE</Tag>
+						<Name>STRAIT_SE</Name>
+					</FeatureDummyNode>
+					<FeatureDummyNode>
+						<Tag>STRAIT_SW</Tag>
+						<Name>STRAIT_SW</Name>
+					</FeatureDummyNode>
+				</FeatureDummyNodes>
+				<bGenerateRotations>0</bGenerateRotations>
+				<VarietyButton></VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
 			<Type>ART_DEF_FEATURE_BOG</Type>
 			<bAnimated>0</bAnimated>
 			<bRiverArt>0</bRiverArt>
