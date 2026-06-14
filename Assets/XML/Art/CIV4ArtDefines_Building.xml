@@ -2447,5 +2447,15 @@
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Coppersmith.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_STONEHENGE</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.54</fScale>
+			<fInterfaceScale>0.57</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Stonehenge/Stonehenge.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Stonehenge.dds,Art/Interface/Buttons/Buildings_Atlas.dds,1,7</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

@@ -1176,6 +1176,15 @@
 			<DefaultBuilding>BUILDING_GREAT_GEOGLYPH</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_WOODHENGE</Type>
+			<Description>TXT_KEY_BUILDING_WOODHENGE</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<DefaultBuilding>BUILDING_WOODHENGE</DefaultBuilding>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_PYRAMID_OF_THE_SUN</Type>
 			<Description>TXT_KEY_BUILDING_PYRAMID_OF_THE_SUN</Description>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>

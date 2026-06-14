@@ -3,6 +3,12 @@ from RFCUtils import *
 from Events import handler
 
 
+@handler("buildingBuilt")
+def yachaywasiEffect(city, iBuilding):
+	if iBuilding == iYachaywasi:
+		iNumPeaks = plots.city_radius(city).where(lambda plot: plot.isPeak()).count()
+		city.setBuildingCommerceChange(infos.building(iYachaywasi).getBuildingClassType(), CommerceTypes.COMMERCE_RESEARCH, iNumPeaks)
+
 # Mount Vernon effect: free Great Person whenever a Great General is born
 @handler("greatPersonBorn")
 def mountVernonEffect(unit, iPlayer):

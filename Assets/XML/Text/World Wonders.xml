@@ -942,6 +942,30 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]Great Geoglyph[COLOR_REVERT] adds additional culture to all of your specialists.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WOODHENGE</Tag>
+		<English>Woodhenge</English>
+		<French>Woodhenge</French>
+		<German>Woodhenge</German>
+		<Italian>Woodhenge</Italian>
+		<Spanish>Woodhenge</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WOODHENGE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Woodhenge[COLOR_REVERT] provides +2 [ICON_CULTURE] and a free [COLOR_HIGHLIGHT_TEXT]Pagan Temple[COLOR_REVERT] in every city, and generates a [COLOR_HIGHLIGHT_TEXT]Great Artist[COLOR_REVERT]. Must be built adjacent to a [COLOR_HIGHLIGHT_TEXT]Forest[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Woodhenge[COLOR_REVERT] provides +2 [ICON_CULTURE] and a free [COLOR_HIGHLIGHT_TEXT]Pagan Temple[COLOR_REVERT] in every city, and generates a [COLOR_HIGHLIGHT_TEXT]Great Artist[COLOR_REVERT]. Must be built adjacent to a [COLOR_HIGHLIGHT_TEXT]Forest[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Woodhenge[COLOR_REVERT] provides +2 [ICON_CULTURE] and a free [COLOR_HIGHLIGHT_TEXT]Pagan Temple[COLOR_REVERT] in every city, and generates a [COLOR_HIGHLIGHT_TEXT]Great Artist[COLOR_REVERT]. Must be built adjacent to a [COLOR_HIGHLIGHT_TEXT]Forest[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Woodhenge[COLOR_REVERT] provides +2 [ICON_CULTURE] and a free [COLOR_HIGHLIGHT_TEXT]Pagan Temple[COLOR_REVERT] in every city, and generates a [COLOR_HIGHLIGHT_TEXT]Great Artist[COLOR_REVERT]. Must be built adjacent to a [COLOR_HIGHLIGHT_TEXT]Forest[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Woodhenge[COLOR_REVERT] provides +2 [ICON_CULTURE] and a free [COLOR_HIGHLIGHT_TEXT]Pagan Temple[COLOR_REVERT] in every city, and generates a [COLOR_HIGHLIGHT_TEXT]Great Artist[COLOR_REVERT]. Must be built adjacent to a [COLOR_HIGHLIGHT_TEXT]Forest[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WOODHENGE_PEDIA</Tag>
+		<English>Woodhenges were sacred monuments of the Mississippian peoples, consisting of large cedar posts arranged in precise circular formations to track the movements of the sun and mark the passage of the seasons. The most celebrated example stood at Cahokia, the great mound city near the confluence of the Missouri and Mississippi rivers, where successive rings of posts were erected and rebuilt over centuries. Priests and astronomers used these solar observatories to determine the equinoxes and solstices, governing the timing of planting, harvest, and the great ceremonial gatherings that drew pilgrims from across the continent. The posts themselves were sacred objects — felled in the surrounding forests and dragged to the ceremonial precinct, where they stood as pillars connecting the earth to the sky world above.</English>
+		<French>Woodhenges were sacred monuments of the Mississippian peoples, consisting of large cedar posts arranged in precise circular formations to track the movements of the sun and mark the passage of the seasons. The most celebrated example stood at Cahokia, the great mound city near the confluence of the Missouri and Mississippi rivers, where successive rings of posts were erected and rebuilt over centuries. Priests and astronomers used these solar observatories to determine the equinoxes and solstices, governing the timing of planting, harvest, and the great ceremonial gatherings that drew pilgrims from across the continent. The posts themselves were sacred objects — felled in the surrounding forests and dragged to the ceremonial precinct, where they stood as pillars connecting the earth to the sky world above.</French>
+		<German>Woodhenges were sacred monuments of the Mississippian peoples, consisting of large cedar posts arranged in precise circular formations to track the movements of the sun and mark the passage of the seasons. The most celebrated example stood at Cahokia, the great mound city near the confluence of the Missouri and Mississippi rivers, where successive rings of posts were erected and rebuilt over centuries. Priests and astronomers used these solar observatories to determine the equinoxes and solstices, governing the timing of planting, harvest, and the great ceremonial gatherings that drew pilgrims from across the continent. The posts themselves were sacred objects — felled in the surrounding forests and dragged to the ceremonial precinct, where they stood as pillars connecting the earth to the sky world above.</German>
+		<Italian>Woodhenges were sacred monuments of the Mississippian peoples, consisting of large cedar posts arranged in precise circular formations to track the movements of the sun and mark the passage of the seasons. The most celebrated example stood at Cahokia, the great mound city near the confluence of the Missouri and Mississippi rivers, where successive rings of posts were erected and rebuilt over centuries. Priests and astronomers used these solar observatories to determine the equinoxes and solstices, governing the timing of planting, harvest, and the great ceremonial gatherings that drew pilgrims from across the continent. The posts themselves were sacred objects — felled in the surrounding forests and dragged to the ceremonial precinct, where they stood as pillars connecting the earth to the sky world above.</Italian>
+		<Spanish>Woodhenges were sacred monuments of the Mississippian peoples, consisting of large cedar posts arranged in precise circular formations to track the movements of the sun and mark the passage of the seasons. The most celebrated example stood at Cahokia, the great mound city near the confluence of the Missouri and Mississippi rivers, where successive rings of posts were erected and rebuilt over centuries. Priests and astronomers used these solar observatories to determine the equinoxes and solstices, governing the timing of planting, harvest, and the great ceremonial gatherings that drew pilgrims from across the continent. The posts themselves were sacred objects — felled in the surrounding forests and dragged to the ceremonial precinct, where they stood as pillars connecting the earth to the sky world above.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_YACHAYWASI</Tag>
 		<English>Yachaywasi</English>
 		<French>Yachaywasi</French>
@@ -950,12 +974,20 @@
 		<Spanish>Yachaywasi</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_YACHAYWASI_HELP</Tag>
+		<English>[ICON_BULLET]+2[ICON_RESEARCH] per Peak in City Radius</English>
+		<French>[ICON_BULLET]+2[ICON_RESEARCH] par montagne dans les environs de la ville</French>
+		<German>[ICON_BULLET]+2[ICON_RESEARCH] per Peak in City Radius</German>
+		<Italian>[ICON_BULLET]+2[ICON_RESEARCH] per Peak in City Radius</Italian>
+		<Spanish>[ICON_BULLET]+2[ICON_RESEARCH] per Peak in City Radius</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_YACHAYWASI_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Yachaywasi[COLOR_REVERT] adds additional science to all of your specialists.</English>
-		<French>[COLOR_BUILDING_TEXT]Yachaywasi[COLOR_REVERT] adds additional science to all of your specialists.</French>
-		<German>[COLOR_BUILDING_TEXT]Yachaywasi[COLOR_REVERT] adds additional science to all of your specialists.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Yachaywasi[COLOR_REVERT] adds additional science to all of your specialists.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Yachaywasi[COLOR_REVERT] adds additional science to all of your specialists.</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</English>
+		<French>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</French>
+		<German>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</German>
+		<Italian>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ALCATRAZ</Tag>

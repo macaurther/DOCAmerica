@@ -7960,6 +7960,48 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_WOODHENGE</BuildingClass>
+			<Type>BUILDING_WOODHENGE</Type>
+			<Description>TXT_KEY_BUILDING_WOODHENGE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_WOODHENGE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_WOODHENGE_STRATEGY</Strategy>
+			<Advisor>ADVISOR_CULTURE</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_STONEHENGE</ArtDefineTag>
+			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
+			<PrereqAdjacentFeature>FEATURE_FOREST</PrereqAdjacentFeature>
+			<FreeBuilding>BUILDINGCLASS_PAGAN_TEMPLE</FreeBuilding>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<bTeamShare>1</bTeamShare>
+			<bNukeImmune>1</bNukeImmune>
+			<bPagan>1</bPagan>
+			<iAIWeight>200</iAIWeight>
+			<iCost>150</iCost>
+			<iHurryCostModifier>100</iHurryCostModifier>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iConquestProb>100</iConquestProb>
+			<iAsset>12</iAsset>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_RELIGION</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_PYRAMID_OF_THE_SUN</BuildingClass>
 			<Type>BUILDING_PYRAMID_OF_THE_SUN</Type>
 			<Description>TXT_KEY_BUILDING_PYRAMID_OF_THE_SUN</Description>
@@ -8353,6 +8395,7 @@
 			<Description>TXT_KEY_BUILDING_YACHAYWASI</Description>
 			<Civilopedia>TXT_KEY_BUILDING_YACHAYWASI_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_YACHAYWASI_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_YACHAYWASI_HELP</Help>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_YACHAYWASI</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
@@ -8407,6 +8450,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_SACRIFICIAL_ALTAR</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>

@@ -736,7 +736,7 @@ iNumBonusVarieties = 10
 (iDyeCochineal, iSpicesVanilla, iGemsTurquoise, iGemsDiamonds,	iGemsEmeralds,	iSheepBlack,	iCowBrown,		iPigFurry,		iCitrusOranges, iCrabShrimp) = range(iNumBonuses, iNumBonuses + iNumBonusVarieties)
 
 # Buildings
-iNumBuildings = 211
+iNumBuildings = 212
 # Buildings (117)
 # 0				1				2				3				4				5				6				7				8				9
 (iPalace,		iPalaceZapotec,	iChieftansHut,	iGovernorsMansion,iCapitol,		iGranary,		iQollqa,		iSmokehouse,	iLuau,			iTipi,			
@@ -765,11 +765,11 @@ iNationalMonument,iNationalTheatre,iNationalGallery,iNationalCollege,iMilitaryAc
 iGrandCentralStation,iSupremeCourt,
 # Great Wonders (47)
 # 0				1				2				3				4				5				6				7				8				9
-iKalasasaya,	iPuebloBonito,	iTlachihualtepetl,iGateOfTheSun,iGreatGeoglyph,	iPyramidOfTheSun,iSerpentMound,	iFloatingGardens,iTempleOfKukulkan,iAcllahuasi,	
-iSacsayhuaman,	iHueyTeocalli,	iYachaywasi,	iYacatas,		iTemblequeAqueduct,iLaFortaleza,iSaoFranciscoSquare,iGuadalupeBasilica,iManzanaJesuitica,iIndendenceHall,
-iHospicioCabanas,iMountVernon,	iMonticello,	iSlaterMill,	iChapultepecCastle,iFortMcHenry,iWashingtonMonument,iFaneuilHall,iStatueOfLiberty,iCentralPark,	
-iEllisIsland,	iBrooklynBridge,iChateauFrontenac,iMenloPark,	iBiltmoreEstate,iFrenchQuarter, iLeagueOfNations,iEmpireStateBuilding,iGoldenGateBridge,iHooverDam,
-iAlcatraz,		iMountRushmore,	iHollywood,		iSaltCathedral,iCristoRedentor,	iLasLajasSanctuary,iPentagon	) = range(iNumBuildings)
+iKalasasaya,	iPuebloBonito,	iTlachihualtepetl,iGateOfTheSun,iGreatGeoglyph,	iWoodhenge,		iPyramidOfTheSun,iSerpentMound,	iFloatingGardens,iTempleOfKukulkan,
+iAcllahuasi,	iSacsayhuaman,	iHueyTeocalli,	iYachaywasi,	iYacatas,		iTemblequeAqueduct,iLaFortaleza,iSaoFranciscoSquare,iGuadalupeBasilica,iManzanaJesuitica,
+iIndendenceHall,iHospicioCabanas,iMountVernon,	iMonticello,	iSlaterMill,	iChapultepecCastle,iFortMcHenry,iWashingtonMonument,iFaneuilHall,iStatueOfLiberty,
+iCentralPark,	iEllisIsland,	iBrooklynBridge,iChateauFrontenac,iMenloPark,	iBiltmoreEstate,iFrenchQuarter, iLeagueOfNations,iEmpireStateBuilding,iGoldenGateBridge,
+iHooverDam,		iAlcatraz,		iMountRushmore,	iHollywood,		iSaltCathedral,iCristoRedentor,	iLasLajasSanctuary,iPentagon	) = range(iNumBuildings)
 
 lCapitols = [iPalace, iPalaceZapotec, iChieftansHut, iGovernorsMansion, iCapitol] # MacAurther: Multiple capitol types
 iBeginWonders = iFloatingGardens # different from DLL constant because that includes national wonders
