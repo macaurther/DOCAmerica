@@ -1055,7 +1055,12 @@ class Birth(object):
 		data.dUnitsKilled = dict((iUnit, iNumUnits) for iUnit, iNumUnits in dUnitsKilled.items() if iNumUnits > 0)
 		data.dUnitsLost = dict((iUnit, iNumUnits) for iUnit, iNumUnits in dUnitsLost.items() if iNumUnits > 0)
 		data.dBuildingsBuilt = dict((iBuilding, iNumBuildings) for iBuilding, iNumBuildings in dBuildingsBuilt.items() if iNumBuildings > 0)
-	
+
+		# MacAurther: Create civ-specific spawn units (e.g. American UP great people) missing from switch path
+		tPlot = self.location
+		if self.iCiv in dSeaSpawns.keys(): tPlot = dSeaSpawns[self.iCiv]
+		createSpecificUnits(self.iPlayer, tPlot)
+
 	def setupWithoutSwitch(self):
 		# MacAurther: Civs that spawn at sea spawn on a different plot
 		tPlot = self.location
