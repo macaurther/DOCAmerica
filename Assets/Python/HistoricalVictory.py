@@ -203,14 +203,15 @@ dGoals = {
 		UnitCount(iHorseArcher, 1, by=1550),
 	),
 	iPurepecha: (
-		ControlledResourceCount(iFish, 2, by=1250),
+		BuildingCount(iCoppersmith, 4, by=1400),
 		All(
-			UnitLevelCount(3, 10),
+			UnitLevelCount(4, 5),
+			DefeatedUnits(civs(iIndigenous, iToltec, iAztec), 30),
 			by=1500,
 		),
 		All(
 			NoCityLost(),
-			Control(plots.region(rBajio).named(BAJIO)),
+			PowerPercent(25),
 			at=1600,
 		)
 	),
@@ -228,7 +229,7 @@ dGoals = {
 	iInca: (
 		All(
 			TradeRouteCount(40),
-			Wonders(iSacsayhuaman, iMachuPicchu),
+			Wonders(iSacsayhuaman, iAcllahuasi),
 			by=1400,
 		),
 		GoldAmount(2500, by=1500),

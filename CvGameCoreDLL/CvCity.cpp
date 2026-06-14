@@ -3525,12 +3525,6 @@ int CvCity::getProductionModifier(UnitTypes eUnit) const
 		}
 	}
 
-	// MacAurther: Purepecha UP
-	if (GET_PLAYER(getOwnerINLINE()).getCivilizationType() == PUREPECHA)
-	{
-		iMultiplier += 50;
-	}
-
 	return std::max(0, iMultiplier);
 }
 
@@ -4482,8 +4476,8 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		{
 			updateYield();
 		}
-		// Machu Picchu
-		else if (eBuilding == (BuildingTypes)BUILDING_MACHU_PICCHU)
+		// Acllahuasi
+		else if (eBuilding == (BuildingTypes)BUILDING_ACLLAHUASI)
 		{
 			updateYield();
 		}

@@ -3411,12 +3411,12 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_ALTAR</BuildingClassType>
-					<BuildingType>BUILDING_PUREPECHA_YACATAS</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_TEOTL_STEP_PYRAMID</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_JEWELLER</BuildingClassType>
+					<BuildingType>BUILDING_PUREPECHA_COPPERSMITH</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>

@@ -7340,20 +7340,29 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			}
 		}
 
-		// MacAurther: Machu Picchu Effect (+1 to all yields on peaks)
+		// Acllahuasi Effect (+1 to all yields on peaks)
 		if (isPeak())
 		{
 			pWorkingCity = getWorkingCity();
-			
+
 			if (pWorkingCity != NULL)
 			{
-				if (pWorkingCity->isHasBuildingEffect((BuildingTypes)BUILDING_MACHU_PICCHU))
+				if (pWorkingCity->isHasBuildingEffect((BuildingTypes)BUILDING_ACLLAHUASI))
 				{
 					if (!bDisplay || pWorkingCity->isRevealed(GC.getGameINLINE().getActiveTeam(), false))
 					{
 						iYield += 1;
 					}
 				}
+			}
+		}
+
+		// Purepecha UP: Power of Fisherfolk (+3 Commerce on Freshwater Lakes and Fishing Boats)
+		if (eYield == YIELD_COMMERCE && GET_PLAYER(ePlayer).getCivilizationType() == PUREPECHA)
+		{
+			if (isLake() || getImprovementType() == IMPROVEMENT_FISHING_BOATS)
+			{
+				iYield += 3;
 			}
 		}
 

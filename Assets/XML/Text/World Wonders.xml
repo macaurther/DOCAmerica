@@ -51,15 +51,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MACHU_PICCHU</Tag>
-		<English>Machu Picchu</English>
+		<English>Acllahuasi</English>
 		<French>
-			<Text>Machu Picchu</Text>
+			<Text>Acllahuasi</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
-		<German>Machu Picchu</German>
-		<Italian>Machu Picchu</Italian>
-		<Spanish>Machu Picchu</Spanish>
+		<German>Acllahuasi</German>
+		<Italian>Acllahuasi</Italian>
+		<Spanish>Acllahuasi</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MACHU_PICCHU_HELP</Tag>
@@ -71,11 +71,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MACHU_PICCHU_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 gold for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
-		<French>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 gold for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
-		<German>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 gold for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>
-		<Italian>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 gold for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 gold for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Acllahuasi[COLOR_REVERT] provides +1[ICON_FOOD], +1[ICON_PRODUCTION], and +1[ICON_COMMERCE] on every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
+		<French>[COLOR_BUILDING_TEXT]Acllahuasi[COLOR_REVERT] provides +1[ICON_FOOD], +1[ICON_PRODUCTION], and +1[ICON_COMMERCE] on every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
+		<German>[COLOR_BUILDING_TEXT]Acllahuasi[COLOR_REVERT] provides +1[ICON_FOOD], +1[ICON_PRODUCTION], and +1[ICON_COMMERCE] on every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>
+		<Italian>[COLOR_BUILDING_TEXT]Acllahuasi[COLOR_REVERT] provides +1[ICON_FOOD], +1[ICON_PRODUCTION], and +1[ICON_COMMERCE] on every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Acllahuasi[COLOR_REVERT] provides +1[ICON_FOOD], +1[ICON_PRODUCTION], and +1[ICON_COMMERCE] on every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOAI_STATUES_HELP</Tag>
