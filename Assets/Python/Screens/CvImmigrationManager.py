@@ -120,7 +120,10 @@ class CvImmigrationManager:
 		# Calculate all of the screen position data if necessary
 		if not self.bScreenDataCalculated:
 			self.calculateScreenWidgetData(screen)
-		
+
+		# Always refresh active player — civ switch changes the player slot
+		self.iActivePlayer = gc.getGame().getActivePlayer()
+
 		if(self.currentScreen == IMMIGRATION_MANAGER):
 			self.drawMercenaryScreenContent(screen)
 
@@ -910,6 +913,12 @@ def onLoadGame():
 	if (gc.getGame().getGameTurn() >= dBirth[active()]): #Rhye
 		global objImmigrationUtils
 		objImmigrationUtils = ImmigrationUtils.ImmigrationUtils()
+
+@handler("playerCivAssigned")
+def onPlayerCivAssigned(iPlayer):
+	# Reset immigration tab when human switches civ so it reinitializes for new civ
+	if gc.getPlayer(iPlayer).isHuman():
+		data.iCurrentImmigrationManagerTab = -1
 
 @handler("EndPlayerTurn")
 def onEndPlayerTurn(iGameTurn, iPlayer):   
