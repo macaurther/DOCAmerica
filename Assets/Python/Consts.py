@@ -163,6 +163,9 @@ iCivGroupNonNative : lColonyCivs + lNationCivs,
 
 lIndigenousCivs = dCivGroups[iCivGroupNative] + [iIndigenous]
 
+# #MacAurther: civs that turn their cities into Tribe improvements on complete collapse
+lTribalCollapseCivs = [iInuit, iHaudenosaunee, iApache, iLakota, iPueblo, iArawak, iTupi, iMississippi]
+
 # MacAurther: Some civs are more nomadic/transient/not well known and don't have definitive city locations. For those civs, just use the city list from CIV4CivilizationInfos.xml
 lTransientCivs = [iMississippi, iMuisca, iPueblo, iHaudenosaunee, iLakota, iArawak, iTupi, iCherokee, iApache]
 
@@ -887,6 +890,8 @@ lSouthAmerica = [rColombia, rEcuador, rVenezuela, rGuyana, rPeru, rBolivia, rChi
 lCentralAmerica = [rMesoamerica, rCaribbean]
 lLatinAmerica = lCentralAmerica + lMexico + lSouthAmerica
 lNorthAmerica = lCanada + lContinentalUS + [rAlaska] + lMexico
+
+lLateColonialRegions = [rAlaska, rGreenland, rIceland, rMesoamerica, rCaribbean, rHawaii, rGuyana]
 
 lAmerica = lSouthAmerica + lCentralAmerica + lNorthAmerica
 lWest = lAmerica + [rHawaii, rGreenland]
