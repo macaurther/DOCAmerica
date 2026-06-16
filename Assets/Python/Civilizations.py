@@ -924,35 +924,35 @@ dTechPreferences = {
 		iFirearms: -100, # Try to prevent mega scary modern natives
 		iFortification: -100,
 		iCombinedArms: -100,
-		iTactics: -100,
+		iRegulars: -100,
 	},
 	iCherokee: {
 		iMining: -100,
 		iFirearms: -100, # Try to prevent mega scary modern natives
 		iFortification: -100,
 		iCombinedArms: -100,
-		iTactics: -100,
+		iRegulars: -100,
 	},
 	iApache: {
 		iMining: -100,
 		iFirearms: -100, # Try to prevent mega scary modern natives
 		iFortification: -100,
 		iCombinedArms: -100,
-		iTactics: -100,
+		iRegulars: -100,
 	},
 	iLakota: {
 		iMining: -100,
 		iFirearms: -100, # Try to prevent mega scary modern natives
 		iFortification: -100,
 		iCombinedArms: -100,
-		iTactics: -100,
+		iRegulars: -100,
 	},
 	iHaudenosaunee: {
 		iMining: -100,
 		iFirearms: -100, # Try to prevent mega scary modern natives
 		iFortification: -100,
 		iCombinedArms: -100,
-		iTactics: -100,
+		iRegulars: -100,
 	},
 	iSpain : {
 		iCartography: 100,
@@ -1140,7 +1140,7 @@ dBuildingPreferences = {
 		iNationalGallery: 20,
 	},
 	iFrance : {
-		iChateauFrontenac: 20,
+		iFrontenac: 20,
 		iFrenchQuarter: 20,
 	},
 	iNetherlands : {
@@ -1181,6 +1181,6 @@ dBuildingPreferences = {
 		iCristoRedentor: 30,
 	},
 	iCanada : {
-		iChateauFrontenac: 30,
+		iFrontenac: 30,
 	},
 }

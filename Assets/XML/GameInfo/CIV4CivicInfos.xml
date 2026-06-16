@@ -1828,7 +1828,7 @@
 			<Description>TXT_KEY_CIVIC_INTERVENTION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_INTERVENTION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_INTERVENTION_STRATEGY</Strategy>
-			<TechPrereq>TECH_TACTICS</TechPrereq>
+			<TechPrereq>TECH_REGULARS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Intervention.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>

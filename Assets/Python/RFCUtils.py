@@ -1005,7 +1005,7 @@ def captureUnit(pLosingUnit, pWinningUnit, iUnit, iChance):
 def enslaveUnit(pWinningUnit, pLosingUnit=None):
 	if pLosingUnit is not None:
 		# No slaves when both combatants aren't native
-		if civ(pLosingUnit) not in lNativeCivs and civ(pWinningUnit) not in lNativeCivs:
+		if civ(pLosingUnit) not in lIndigenousCivs and civ(pWinningUnit) not in lIndigenousCivs:
 			return
 		
 		if pLosingUnit.isAnimal(): 

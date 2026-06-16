@@ -4570,7 +4570,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_TACTICS</PrereqTech>
+			<PrereqTech>TECH_REGULARS</PrereqTech>
 			<iCost>105</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4668,7 +4668,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_TACTICS</PrereqTech>
+			<PrereqTech>TECH_REGULARS</PrereqTech>
 			<iCost>105</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -7834,7 +7834,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_TACTICS</PrereqTech>
+			<PrereqTech>TECH_REGULARS</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
 			<iCost>140</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

@@ -79,7 +79,7 @@ def nativeCityConquered(iOldOwner, iNewOwner, pCity, bConquest, bTrade):
 		return
 	
 	# Check if city was taken from a Native
-	if not civ(iOldOwner) in lNativeCivs:
+	if not civ(iOldOwner) in lIndigenousCivs:
 		return
 	
 	# Check for any slave capturing

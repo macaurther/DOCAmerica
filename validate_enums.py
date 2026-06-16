@@ -404,6 +404,54 @@ def compare_python_order(py_names, enum_entries, enum_prefix, suffix_drops=None,
 
     return len(mismatches), msgs
 
+def check_consts_duplicates(text):
+    """
+    Scan Consts.py for variable names declared more than once.
+    Returns list of (name, [line_no, ...]) sorted by first occurrence.
+    """
+    clean_lines = [re.sub(r'#.*', '', ln) for ln in text.splitlines()]
+    clean_text = '\n'.join(clean_lines)
+
+    declarations = {}
+
+    def record(name, line_no):
+        if name not in declarations:
+            declarations[name] = []
+        declarations[name].append(line_no)
+
+    # Tuple unpacking: (...) = range(var)
+    end_re = re.compile(r'\)\s*=\s*range\s*\([^)]+\)')
+    for m_end in end_re.finditer(clean_text):
+        pos = m_end.start()
+        depth = 0
+        start_pos = 0
+        for i in range(pos, -1, -1):
+            if clean_text[i] == ')':
+                depth += 1
+            elif clean_text[i] == '(':
+                depth -= 1
+                if depth == 0:
+                    start_pos = i
+                    break
+        tuple_line = clean_text[:start_pos].count('\n') + 1
+        region = clean_text[start_pos:pos + 1]
+        for name in re.findall(r'\b([a-z][a-zA-Z0-9]*)\b', region):
+            if any(c.isupper() for c in name):
+                record(name, tuple_line)
+
+    # Simple assignments: name = value  (not ==, +=, etc.)
+    for i, line in enumerate(clean_lines, 1):
+        if re.search(r'\)\s*=\s*range', line):
+            continue  # closing line of tuple unpacking — already handled above
+        m = re.match(r'\s*([A-Za-z_]\w*)\s*=(?!=)', line)
+        if m:
+            record(m.group(1), i)
+
+    dups = [(name, sorted(set(lns)))
+            for name, lns in declarations.items()
+            if len(set(lns)) > 1]
+    return sorted(dups, key=lambda x: x[1][0])
+
 # ---------------------------------------------------------------------------
 # Per-check runner
 # ---------------------------------------------------------------------------
@@ -555,13 +603,33 @@ def main():
         results.append(r)
         total_errors += r['errors']
 
+    # --- Consts.py duplicate variable check ---
+    print("\n=== Consts.py Duplicate Check ===")
+    dup_result = {'label': 'Consts.py duplicates', 'errors': 0, 'warnings': 0,
+                  'fail_label': 'duplicate(s)'}
+    if not consts_text:
+        cprint("  [SKIP] Consts.py not available")
+        dup_result['warnings'] = 1
+    else:
+        dups = check_consts_duplicates(consts_text)
+        if not dups:
+            cprint("  [OK] No duplicate variable declarations found")
+        else:
+            cprint("  [FAIL] %d variable(s) declared more than once:" % len(dups))
+            for name, lns in dups:
+                cprint("  [FAIL]   %-40s lines: %s" % (name, ', '.join(str(l) for l in lns)))
+            dup_result['errors'] = len(dups)
+            total_errors += len(dups)
+    results.append(dup_result)
+
     # --- File-level recap ---
     print("\n" + "=" * 60)
     print("RECAP")
     w = max(len(r['label']) for r in results)
     for r in results:
         if r['errors']:
-            line = "  %-*s  [FAIL] %d order mismatch(es)" % (w, r['label'], r['errors'])
+            fail_label = r.get('fail_label', 'order mismatch(es)')
+            line = "  %-*s  [FAIL] %d %s" % (w, r['label'], r['errors'], fail_label)
             print(_red(line))
         elif r['warnings']:
             line = "  %-*s  [WARN] count or name differences" % (w, r['label'])

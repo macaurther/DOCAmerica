@@ -3147,9 +3147,9 @@
 <!-- Cost 650, iAsset 36 -->
 
 		<TechInfo>
-			<Type>TECH_TACTICS</Type>
-			<Description>TXT_KEY_TECH_TACTICS</Description>
-			<Civilopedia>TXT_KEY_TECH_TACTICS_PEDIA</Civilopedia>
+			<Type>TECH_REGULARS</Type>
+			<Description>TXT_KEY_TECH_REGULARS</Description>
+			<Civilopedia>TXT_KEY_TECH_REGULARS_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -3175,7 +3175,7 @@
 			<AndPreReqs>
 				<PrereqTech>TECH_COMBINED_ARMS</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_TACTICS_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_REGULARS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Tactics.dds</Button>

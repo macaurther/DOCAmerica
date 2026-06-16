@@ -2769,7 +2769,7 @@
 			<Strategy>TXT_KEY_BUILDING_MAGAZINE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MAGAZINE</ArtDefineTag>
-			<PrereqTech>TECH_TACTICS</PrereqTech>
+			<PrereqTech>TECH_REGULARS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

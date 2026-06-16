@@ -161,7 +161,7 @@ iCivGroupAndes : [iInca, iTiwanaku, iWari, iMuisca, iChimu],
 iCivGroupNonNative : lColonyCivs + lNationCivs,
 }
 
-lNativeCivs = dCivGroups[iCivGroupNative] + [iIndigenous]
+lIndigenousCivs = dCivGroups[iCivGroupNative] + [iIndigenous]
 
 # MacAurther: Some civs are more nomadic/transient/not well known and don't have definitive city locations. For those civs, just use the city list from CIV4CivilizationInfos.xml
 lTransientCivs = [iMississippi, iMuisca, iPueblo, iHaudenosaunee, iLakota, iArawak, iTupi, iCherokee, iApache]
@@ -637,7 +637,7 @@ iGunpowder, 	iCompanies, 	iFinance, 		iCartography, 	iExchange, 		iReductions,	i
 iFirearms, 		iTriangularTrade,iExploration, 	iOptics, 		iTreaties, 		iOfficials, 	iIndoctrination,
 iFortification,	iEconomics, 	iColonization, 	iShipbuilding, 	iEducation,		iCharter, 		iIndentures,
 iCombinedArms, 	iLogistics,		iExploitation, 	iTimekeeping, 	iCommunity, 	iPolitics, 		iHorticulture,
-iTactics,		iCurrency,		iMeteorology,	iScientificMethod,iUrbanPlanning,iStatecraft,	iSocialContract,
+iRegulars,		iCurrency,		iMeteorology,	iScientificMethod,iUrbanPlanning,iStatecraft,	iSocialContract,
 iSiberiaAccess, iFreeMarket,	iAutonomy,		iAcademia, 		iModernization,	iIndependence,	iJudiciary,		
 iReplaceableParts,iNewspapers,	iPhysics,		iSurveying,		iSociology,		iRepresentation,iHeritage,
 iMetallurgy,	iPostalService,	iHydrology,		iGeography,		iPioneering,	iArchitecture, 	iHumanities,
