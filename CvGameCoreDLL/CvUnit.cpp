@@ -14496,7 +14496,7 @@ int CvUnit::getOriginalArtStyle() const
 			case REGION_OAXACA:
 			case REGION_YUCATAN:
 			case REGION_MESOAMERICA:
-				return GC.getCivilizationInfo(AZTECS).getUnitArtStyleType();
+				return GC.getCivilizationInfo(AZTEC).getUnitArtStyleType();
 			case REGION_PERU:
 			case REGION_BOLIVIA:
 			case REGION_CHILE:
@@ -14506,7 +14506,7 @@ int CvUnit::getOriginalArtStyle() const
 		}
 	}
 
-	return GC.getCivilizationInfo(INDEPENDENT).getUnitArtStyleType();
+	return GC.getCivilizationInfo(INDEPENDENT1).getUnitArtStyleType();
 }
 
 // edead: start Relic trade based on Afforess' Advanced Diplomacy (Leoreth)

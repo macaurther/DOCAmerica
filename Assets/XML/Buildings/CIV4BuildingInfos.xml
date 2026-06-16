@@ -8220,13 +8220,13 @@
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_MACHU_PICCHU</BuildingClass>
-			<Type>BUILDING_MACHU_PICCHU</Type>
-			<Description>TXT_KEY_BUILDING_MACHU_PICCHU</Description>
-			<Civilopedia>TXT_KEY_BUILDING_MACHU_PICCHU_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_MACHU_PICCHU_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_MACHU_PICCHU_HELP</Help>
+			<Type>BUILDING_ACLLAHUASI</Type>
+			<Description>TXT_KEY_BUILDING_ACLLAHUASI</Description>
+			<Civilopedia>TXT_KEY_BUILDING_ACLLAHUASI_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_ACLLAHUASI_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_ACLLAHUASI_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_MACHU_PICCHU</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_ACLLAHUASI</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_MACHU_PICCHU</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_LAW</PrereqTech>

@@ -272,14 +272,14 @@ lCivilizations = [
 	Civilization(
 		iArawak,
 		iGold=25,
-		lCivics=[iChief, iClans, iHarmony, iNomads],
+		lCivics=[iChief, iClans, iHarmony, iNomadic],
 		techs=techs.column(3).including(iNavigation, iTradeRoutes).without(iMining),
 		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation, iFishing, iIrrigation, iHerbalism),
 	),
 	Civilization(
 		iTupi,
 		iGold=25,
-		lCivics=[iChief, iClans, iHarmony, iNomads],
+		lCivics=[iChief, iClans, iHarmony, iNomadic],
 		techs=techs.column(3).including(iNavigation, iTradeRoutes).without(iMining),
 		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation, iFishing, iHerbalism),
 	),
@@ -372,14 +372,14 @@ lCivilizations = [
 		iApache,
 		iGold=50,
 		lEnemies=[iPueblo],
-		lCivics=[iChief, iSubsistance, iNomads],
+		lCivics=[iChief, iSubsistance, iNomadic],
 		techs=techs.column(3).including(iCeremony, iContact, iRiding),
 		extraTechs=techs.column(0).including(iHunting, iCompanionPlanting, iInterpretation),
 	),
 	Civilization(
 		iLakota,
 		iGold=100,
-		lCivics=[iChief, iSubsistance, iHarmony, iNomads],
+		lCivics=[iChief, iSubsistance, iHarmony, iNomadic],
 		techs=techs.column(3).including(iCeremony, iRiding),
 		extraTechs=techs.column(0).including(iContact, iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation),
 	),
@@ -1146,7 +1146,7 @@ dBuildingPreferences = {
 	iNetherlands : {
 	},
 	iAmerica : {
-		iIndendenceHall: 40,
+		iIndependenceHall: 40,
 		iMountVernon: 20,
 		iMonticello: 20,
 		iFortMcHenry: 20,

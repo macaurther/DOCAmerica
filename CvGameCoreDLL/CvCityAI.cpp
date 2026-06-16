@@ -2486,7 +2486,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 3;
 		break;
-	case AZTECS:
+	case AZTEC:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
 		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;

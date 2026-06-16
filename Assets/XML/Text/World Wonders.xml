@@ -50,7 +50,7 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Hollywood[COLOR_REVERT] grants a culture boost and provides your civilization with seven [COLOR_HIGHLIGHT_TEXT]Hit Movies[COLOR_REVERT] resources (which provide happiness). It increases the odds that its city will generate a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MACHU_PICCHU</Tag>
+		<Tag>TXT_KEY_BUILDING_ACLLAHUASI</Tag>
 		<English>Acllahuasi</English>
 		<French>
 			<Text>Acllahuasi</Text>
@@ -62,7 +62,7 @@
 		<Spanish>Acllahuasi</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MACHU_PICCHU_HELP</Tag>
+		<Tag>TXT_KEY_BUILDING_ACLLAHUASI_HELP</Tag>
 		<English>[ICON_BULLET]+1[ICON_FOOD], +1 [ICON_PRODUCTION], and +1[ICON_COMMERCE] on Peaks in City Radius</English>
 		<French>[ICON_BULLET]+1[ICON_FOOD], +1 [ICON_PRODUCTION], and +1[ICON_COMMERCE] on Peaks in City Radius</French>
 		<German>[ICON_BULLET]+1[ICON_FOOD], +1 [ICON_PRODUCTION], and +1[ICON_COMMERCE] on Peaks in City Radius</German>
@@ -70,7 +70,7 @@
 		<Spanish>[ICON_BULLET]+1[ICON_FOOD], +1 [ICON_PRODUCTION], and +1[ICON_COMMERCE] on Peaks in City Radius</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MACHU_PICCHU_STRATEGY</Tag>
+		<Tag>TXT_KEY_BUILDING_ACLLAHUASI_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Acllahuasi[COLOR_REVERT] provides +1[ICON_FOOD], +1[ICON_PRODUCTION], and +1[ICON_COMMERCE] on every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
 		<French>[COLOR_BUILDING_TEXT]Acllahuasi[COLOR_REVERT] provides +1[ICON_FOOD], +1[ICON_PRODUCTION], and +1[ICON_COMMERCE] on every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
 		<German>[COLOR_BUILDING_TEXT]Acllahuasi[COLOR_REVERT] provides +1[ICON_FOOD], +1[ICON_PRODUCTION], and +1[ICON_COMMERCE] on every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>

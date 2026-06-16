@@ -216,7 +216,7 @@ def secedeCity(city, iNewOwner, bRelocate, iArmyPercent):
 	message(iNewOwner, 'TXT_KEY_STABILITY_CITY_CHANGED_OWNER_US', name, color=iRed)
 		
 def getPossibleMinors(iPlayer):
-	lPossibleMinors = [iIndependent2, iBarbarian]
+	lPossibleMinors = [iIndependent2]
 
 	if gc.getGame().countKnownTechNumTeams(iNationalism) == 0 and civ(iPlayer) in dCivGroups[iCivGroupNative]:
 		lPossibleMinors = [iIndigenous, iIndependent1]

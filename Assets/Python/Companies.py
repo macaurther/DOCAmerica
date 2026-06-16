@@ -146,7 +146,7 @@ def getCityValue(city, iCompany):
 		if city.hasBuilding(unique_building(iOwner, iHarbor)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iWharf)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iSlaughterhouse)): iValue += 1
-		if city.hasBuilding(iColdStoragePlant): iValue += 1
+		if city.hasBuilding(iRefrigerationPlant): iValue += 1
 		
 	elif iCompany == iTextileIndustry:
 		if city.hasBuilding(unique_building(iOwner, iMarket)): iValue += 1

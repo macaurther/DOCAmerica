@@ -223,7 +223,7 @@ dGoals = {
 			(plots.region(rGreenland).named(KALAALLIT), 1),			# Greenland
 			by=1500
 		),
-		ResourceCount((iFur, 5), (iDeer, 5), (iSeal, 5), (iWhales, 2), by=1600),
+		ResourceCount((iFur, 5), (iDeer, 5), (iSeal, 5), (iWhale, 2), by=1600),
 		TerrainCount(sum(iOcean, iCoast, iArcticCoast, iFjord), 100, by=1700),
 	),
 	iInca: (
@@ -353,7 +353,7 @@ dGoals = {
 		)
 	),
 	iHaiti: (
-		FirstDiscover(iEmancipation),
+		FirstDiscover(iProgressivism),
 		FreedSlaves(20),
 		Control(plots.region(rCaribbean).named(CARIBBEAN), at=1890),
 	),

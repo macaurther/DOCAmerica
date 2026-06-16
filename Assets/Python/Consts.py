@@ -641,11 +641,11 @@ iTactics,		iCurrency,		iMeteorology,	iScientificMethod,iUrbanPlanning,iStatecraf
 iSiberiaAccess, iFreeMarket,	iAutonomy,		iAcademia, 		iModernization,	iIndependence,	iJudiciary,		
 iReplaceableParts,iNewspapers,	iPhysics,		iSurveying,		iSociology,		iRepresentation,iHeritage,
 iMetallurgy,	iPostalService,	iHydrology,		iGeography,		iPioneering,	iArchitecture, 	iHumanities,
-iMachineTools, 	iThermodynamics, iEngineeing, 	iChemistry, 	iGeology,		iNationalism, 	iCivilLiberties,
-iMeasurement, 	iEngine, 		iRailroad, 		iElectricity, 	iConservation, 	iDoctrine, 		iEmancipation,
-iBallistics,	iAssemblyLine,	iCombustion,	iTelegraph,		iBiology,		iLaborUnions,	iJournalism,
-iFlight,		iMacroeconomics,iInfrastructure,iRadio,			iEcology,		iPowerProjection,iPsychology,
-iAviation,		iGlobalism,		iFission,		iSynthetics,	iSocialServices,iCivilRights,	iTelevision,
+iMachineTools, 	iThermodynamics, iEngineering, 	iChemistry, 	iGeology,		iNationalism, 	iCivilLiberties,
+iMeasurement, 	iEngine, 		iRailroad, 		iElectricity, 	iConservation, 	iDoctrine, 		iProgressivism,
+iBallistics,	iAssemblyLine,	iCombustion,	iTelegraph,		iBiology,		iOrganizedLabor,iJournalism,
+iFlight,		iMacroeconomics,iInfrastructure,iRadio,			iEcology,		iCivilRights,	iPsychology,
+iAviation,		iPowerProjection,iFission,		iSynthetics,	iSocialServices,iGlobalism,		iTelevision,
 iRocketry,		iNuclearPower,	iAfricaAccess,	iRadar,			iAsiaAccess,
 iMultilateralism) = range(iNumTechs)
 
@@ -718,18 +718,18 @@ iCityRaider2,	iCityRaider3,	iCityGarrison1,	iCityGarrison2,	iCityGarrison3,	iDri
 iBarrage2,		iBarrage3,		iAccuracy,		iDisengage1,	iDisengage2,	iRiverCombat,	iSentry,		iMobility,		iNavigation1,	iNavigation2,	
 iRange1,		iRange2,		iInterception1,	iInterception2,	iAce,			iLogistics1,	iLogistics2,	iLogistics3,	iDeception1,	iDeception2,	
 iDeception3,	iSecurity1,		iSecurity2,		iSecurity3,		iImprovise1,	iImprovise2,	iImprovise3,	iImprovise4,	iImprovise5,	iLoyalty,		
-iInstigator1, 	iInsitgator2,	iInstigator3,	iAlchemist1,	iAlchemist2,	iEscape1,		iEscape2,		iLeader,		iLeadership,	iTactics,		
+iInstigator1, 	iInstigator2,	iInstigator3,	iAlchemist1,	iAlchemist2,	iEscape1,		iEscape2,		iLeader,		iLeadership,	iTactics,		
 iMorale,		iMercenary,		iDesertAdaptation,iPrairieAdaptation,iVolunteer,iReconnaissance,iSwampFox1,		iSwampFox2,		iSwampFox3,		iBombardment1,  
 iBombardment2,	iBombardment3) = range(iNumPromotions)
 
 # initialise bonuses variables to bonuses IDs from WBS
 iNumBonuses = 49
 # 0				1				2				3				4				5				6				7				8				9
-(iAluminium, 	iBison,			iCitrus,		iCoal, 			iCopper, 		iHorse, 		iIron, 			iMarble, 		iOil, 			iStone, 		
+(iAluminum, 	iBison,			iCitrus,		iCoal, 			iCopper, 		iHorse, 		iIron, 			iMarble, 		iOil, 			iStone, 		
 iUranium, 		iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iDeer, 			iFish, 			iPig, 			iPotato,		
 iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			iCoffee, 		iCotton,		iDye, 			iFur,			iGems, 			
-iGold, 			iIncense, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,			iSeal,			iSilver, 		iSpices,
-iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
+iGold, 			iIncense, 		iJade,			iObsidian,		iPearl, 		iRubber,		iSalt,			iSeal,			iSilver, 		iSpices,
+iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhale, 		iHitFootballEvent,iHitSingles, 	iHitMovies) = range(iNumBonuses)
 
 iNumBonusVarieties = 10
 # 0				1				2				3				4				5				6				7				8				9
@@ -739,7 +739,7 @@ iNumBonusVarieties = 10
 iNumBuildings = 212
 # Buildings (117)
 # 0				1				2				3				4				5				6				7				8				9
-(iPalace,		iPalaceZapotec,	iChieftansHut,	iGovernorsMansion,iCapitol,		iGranary,		iQollqa,		iSmokehouse,	iLuau,			iTipi,			
+(iPalace,		iZapotecPalace,	iChieftansHut,	iGovernorsMansion,iCapitol,		iGranary,		iQollqa,		iSmokehouse,	iLuau,			iTipi,			
 iTannery,		iIgloo,			iLonghouse,		iKiln,			iArena,			iBallCourt,		iSambadrome,	iBarracks,		iKallanka,		iHerbalist,		
 iKuna,			iWeaver,		iPaganTemple,	iAqueduct,		iSukaQullu,		iBath,			iTemazcal,		iCompound,		iKancha,		iTomb,			
 iMarket,		iStoneworks,	iJeweller,		iGoldsmith,		iCoppersmith,	iPlaza,			iPlatformMound,	iKiva,			iAltar,			iTzompantli,
@@ -747,7 +747,7 @@ iHarbor,		iConstabulary,	iRoyalMountedPolice,iTradingPost,iHuntingPost,	iForge,	
 iMonument,		iSchoolhouse,	iCalmecac,		iGrocer, 		iCourthouse,	iAssembly,		iThingvellir,	iWharf,			iLighthouse,	iWarehouse,		
 iSilversmith,	iMagazine,		iStarFort,		iCitadelle,		iEstate,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iPostOffice,	
 iTambo,			iWheelwright,	iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iShipyard,		iObservatory,	
-iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			iImmigrationOffice,iRailwayStation,iTextileMill,
+iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iRefrigerationPlant,iSewer,		iJail,			iImmigrationOffice,iRailwayStation,iTextileMill,
 iWoolMill,		iSteelMill,		iRefinery,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		iNewspaper,		iSupermarket,	iHospital,		
 iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,iFactory,		iMaquiladora,	iCoalPlant,		iHydroPlant,	
 iIndustrialPark,iNuclearPlant,	iPark,			iStadium,		iBunker,		iLaboratory,	iBroadcastTower,
@@ -763,23 +763,23 @@ iAcademy, 		iAdministrativeCenter, iManufactory, iArmoury, 	iMuseum, 		iStockExc
 # 0				1				2				3				4				5				6				7				8				9
 iNationalMonument,iNationalTheatre,iNationalGallery,iNationalCollege,iMilitaryAcademy,iSecretService,iIronworks,iRedCross,		iNationalPark,	iCentralBank, 	
 iGrandCentralStation,iSupremeCourt,
-# Great Wonders (47)
+# Great Wonders (48)
 # 0				1				2				3				4				5				6				7				8				9
 iKalasasaya,	iPuebloBonito,	iTlachihualtepetl,iGateOfTheSun,iGreatGeoglyph,	iWoodhenge,		iPyramidOfTheSun,iSerpentMound,	iFloatingGardens,iTempleOfKukulkan,
 iAcllahuasi,	iSacsayhuaman,	iHueyTeocalli,	iYachaywasi,	iYacatas,		iTemblequeAqueduct,iLaFortaleza,iSaoFranciscoSquare,iGuadalupeBasilica,iManzanaJesuitica,
-iIndendenceHall,iHospicioCabanas,iMountVernon,	iMonticello,	iSlaterMill,	iChapultepecCastle,iFortMcHenry,iWashingtonMonument,iFaneuilHall,iStatueOfLiberty,
-iCentralPark,	iEllisIsland,	iBrooklynBridge,iChateauFrontenac,iMenloPark,	iBiltmoreEstate,iFrenchQuarter, iLeagueOfNations,iEmpireStateBuilding,iGoldenGateBridge,
+iIndependenceHall,iHospicioCabanas,iMountVernon,iMonticello,	iSlaterMill,	iChapultepecCastle,iFortMcHenry,iWashingtonMonument,iFaneuilHall,iStatueOfLiberty,
+iCentralPark,	iEllisIsland,	iBrooklynBridge,iFrontenac,		iMenloPark,		iBiltmoreEstate,iFrenchQuarter, iLeagueOfNations,iEmpireStateBuilding,iGoldenGateBridge,
 iHooverDam,		iAlcatraz,		iMountRushmore,	iHollywood,		iSaltCathedral,iCristoRedentor,	iLasLajasSanctuary,iPentagon	) = range(iNumBuildings)
 
-lCapitols = [iPalace, iPalaceZapotec, iChieftansHut, iGovernorsMansion, iCapitol] # MacAurther: Multiple capitol types
-iBeginWonders = iFloatingGardens # different from DLL constant because that includes national wonders
+lCapitols = [iPalace, iZapotecPalace, iChieftansHut, iGovernorsMansion, iCapitol] # MacAurther: Multiple capitol types
+iBeginWonders = iKalasasaya # different from DLL constant because that includes national wonders
 
 iTemple = iJewishTemple #generic
 iCathedral = iJewishCathedral #generic
 iMonastery = iJewishMonastery #generic
 iShrine = iJewishShrine #generic
 
-iFirstWonder = iFloatingGardens
+iFirstWonder = iKalasasaya
 
 iPlague = iNumBuildings
 iNumBuildingsPlague = iPlague+1
@@ -801,7 +801,7 @@ iDecentralization,iClans,		iCityStates,	iTribalConfederacy,iBureaucracy,iVassala
 iTraditionalism,iSubsistance,	iTlacotin,		iMita,			iCraftsmen,		iCasteSystem,	iGuilds,	
 iReciprocity,	iCalpulli,		iRedistribution,iMerchantTrade,	iRaiding,		iDependency,	iTourism,
 iAnimism,		iHarmony,		iSacrifice,		iOrganizedReligion,iCosmopolitans,iAcculturation,iGhostDance,
-iSettlement,	iNomads,		iIsolationism,	iConquest,		iIntegration,	iTributaries,	iAncestralLands,
+iSettlement,	iNomadic,		iIsolationism,	iConquest,		iIntegration,	iTributaries,	iAncestralLands,
 # Colony
 iCaptains,		iProprietors,	iViceroys,		iTrustees,		iGovernors,		iColonialAssembly,iHomeRule,
 iExpedition,	iAdmiralty,		iCharterColony,	iTradingCompany,iRoyalColony,	iSecretariate,	iCommonwealth,	

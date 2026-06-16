@@ -58,7 +58,7 @@ lCivilizations = [
 	Civilization(
 		iLakota,
 		iGold=100,
-		lCivics=[iChief, iHarmony, iNomads],
+		lCivics=[iChief, iHarmony, iNomadic],
 		techs=techs.column(4).including(iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks)
 	),
 	Civilization(

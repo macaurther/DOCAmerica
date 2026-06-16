@@ -1221,13 +1221,13 @@
 			<DefaultBuilding>BUILDING_TEMPLE_OF_KUKULKAN</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_MACHU_PICCHU</Type>
-			<Description>TXT_KEY_BUILDING_MACHU_PICCHU</Description>
+			<Type>BUILDINGCLASS_ACLLAHUASI</Type>
+			<Description>TXT_KEY_BUILDING_ACLLAHUASI</Description>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_MACHU_PICCHU</DefaultBuilding>
+			<DefaultBuilding>BUILDING_ACLLAHUASI</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_SACSAYHUAMAN</Type>

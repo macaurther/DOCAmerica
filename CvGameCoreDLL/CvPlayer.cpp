@@ -2621,7 +2621,7 @@ bool CvPlayer::isBarbarian() const
 // Leoreth
 bool CvPlayer::isIndependent() const
 {
-	return getCivilizationType() == INDEPENDENT || getCivilizationType() == INDEPENDENT2 || getCivilizationType() == INDEPENDENT3;
+	return getCivilizationType() == INDEPENDENT1 || getCivilizationType() == INDEPENDENT2 || getCivilizationType() == INDEPENDENT3;
 }
 
 
@@ -24436,7 +24436,7 @@ EraTypes CvPlayer::getSoundtrackEra()
 				case ZAPOTEC:
 				case TEOTIHUACAN:
 				case PUREPECHA:
-				case AZTECS:
+				case AZTEC:
 				case TOLTECS:
 					return (EraTypes)ERA_MESO;
 				case TIWANAKU:
@@ -24479,7 +24479,7 @@ EraTypes CvPlayer::getSoundtrackEra()
 				case ZAPOTEC:
 				case TEOTIHUACAN:
 				case PUREPECHA:
-				case AZTECS:
+				case AZTEC:
 				case TIWANAKU:
 				case WARI:
 				case CHIMU:
@@ -25780,7 +25780,7 @@ int CvPlayer::getRegionPowers(CivilizationTypes eCiv) const
 	case PERU:
 	case VENEZUELA:
 		return RP_LATIN_AMERICA;
-	case AZTECS:
+	case AZTEC:
 	case MAYA:
 	case TEOTIHUACAN:
 	case ZAPOTEC:

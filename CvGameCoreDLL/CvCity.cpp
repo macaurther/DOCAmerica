@@ -4653,7 +4653,7 @@ int CvCity::determineArtStyleType() const
 		}
 		else if (eRegionGroup == REGION_GROUP_CENTRAL_AMERICA)
 		{
-			return GC.getCivilizationInfo(AZTECS).getArtStyleType();
+			return GC.getCivilizationInfo(AZTEC).getArtStyleType();
 		}
 		else if (eRegionGroup == REGION_GROUP_SOUTH_AMERICA)
 		{
