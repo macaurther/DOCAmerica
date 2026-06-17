@@ -28,7 +28,10 @@ def secedeCities(iPlayer, secedingCities, bRazeMinorCities = False):
 	# #MacAurther: tribal civs collapse into Tribe improvements instead of independent cities
 	if iCiv in lTribalCollapseCivs and not player(iPlayer).isHuman() and bComplete:
 		bContacted = any(team(iPlayer).isHasMet(team(p).getID()) for p in players.major().existing() if civ(p) in dCivGroups[iCivGroupNonNative])
-		iTribeType = iContactedTribe if bContacted else iTribe
+		if bContacted:
+			iTribeType = iContactedTribe
+		else:
+			iTribeType = iTribe
 		holyCities, tribalCities = secedingCities.split(lambda city: city.isHolyCity())
 		for city in tribalCities:
 			cityPlot = plot(city)
