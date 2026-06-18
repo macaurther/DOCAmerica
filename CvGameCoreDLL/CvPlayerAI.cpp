@@ -10895,7 +10895,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 			iValue += 500;
 			break;
 		default:
-			iValue -= 500;
+			iValue -= 5000;
 			break;
 		}
 		break;

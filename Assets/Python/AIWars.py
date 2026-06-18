@@ -131,10 +131,6 @@ iAmericaMexicoYear = 1846
 tAmericaMexicoTL = (16, 79)
 tAmericaMexicoBR = (25, 89)
 
-iAmericaCSAYear = 1863
-tAmericaCSATL = (21, 74)
-tAmericaCSABR = (46, 88)
-
 iAmericaLakotkaYear = 1875
 tAmericaLakotkaTL = (21, 92)
 tAmericaLakotkaBR = (30, 99)
@@ -152,7 +148,6 @@ iConquestNum, tConquestAmericaHaudenosaunee = processConquest(iConquestNum, iAme
 iConquestNum, tConquestAmericaCanada = 	      processConquest(iConquestNum, iAmerica, iCanada, tAmericaCanadaTL, tAmericaCanadaBR, 2, iAmericaCanadaYear, 10)
 iConquestNum, tConquestAmericaCherokee =      processConquest(iConquestNum, iAmerica, iCherokee, tAmericaCherokeeTL, tAmericaCherokeeBR, 2, iAmericaCherokeeYear, 10)
 iConquestNum, tConquestAmericaMexico = 	      processConquest(iConquestNum, iAmerica, iMexico, tAmericaMexicoTL, tAmericaMexicoBR, 4, iAmericaMexicoYear, 10)
-iConquestNum, tConquestAmericaCSA = 	      processConquest(iConquestNum, iAmerica, iCSA, tAmericaCSATL, tAmericaCSABR, 10, iAmericaCSAYear, 10)
 iConquestNum, tConquestAmericaLakota = 	      processConquest(iConquestNum, iAmerica, iLakota, tAmericaLakotkaTL, tAmericaLakotkaBR, 4, iAmericaLakotkaYear, 10)
 iConquestNum, tConquestAmericaApache = 	      processConquest(iConquestNum, iAmerica, iApache, tAmericaApacheTL, tAmericaApacheBR, 3, iAmericaApacheYear, 10)
 iConquestNum, tConquestAmericaCuba = 	      processConquest(iConquestNum, iAmerica, iSpain, tAmericaCubaTL, tAmericaCubaBR, 3, iAmericaCubaYear, 10)
@@ -171,7 +166,7 @@ tConquestSpainAztecs, tConquestSpainPurepechans, tConquestSpainZapotec, tConques
 tConquestEnglandNetherlands, tConquestEnglandQuebec, # 2
 tConquestFranceMexico, # 1
 tConquestNetherlandsNorse, # 1
-tConquestAmericaHaudenosaunee, tConquestAmericaCanada, tConquestAmericaCherokee, tConquestAmericaMexico, tConquestAmericaCSA, tConquestAmericaLakota, tConquestAmericaApache, tConquestAmericaCuba, # 8
+tConquestAmericaHaudenosaunee, tConquestAmericaCanada, tConquestAmericaCherokee, tConquestAmericaMexico, tConquestAmericaLakota, tConquestAmericaApache, tConquestAmericaCuba, # 7
 tConquestCanadaLakota] # 1
 
 
@@ -281,12 +276,12 @@ def checkConquest(tConquest, tPrereqConquest = (), iWarPlan = WarPlanTypes.WARPL
 	# if iCiv == iSpain and (iPreferredTarget < 0 or player(iPreferredTarget).isHuman()):
 	# 	return
 	
-	iStartTurn = year(iYear) + max(turns(data.iSeed % 10 - 5), 0)	# MacAurther: Don't let year be early
+	iStartTurn = year(iYear) + turns(data.iSeed % 10 - 5)
 	
 	if turn() == iStartTurn - turns(5):
 		warnConquest(iPlayer, iCiv, iPreferredTargetCiv, tTL, tBR)
 	
-	if turn() < player(iCiv).getLastBirthTurn(): # MacAurther: Allow conquerors for new civs
+	if turn() < player(iCiv).getLastBirthTurn() + turns(3): 
 		return
 	
 	if not (iStartTurn <= turn() <= iStartTurn + iIntervalTurns):

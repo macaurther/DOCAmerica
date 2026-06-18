@@ -822,7 +822,12 @@ class Birth(object):
 			birthCities = plots.birth(self.iCiv).cities()
 			if players.major().where(lambda p: civ(p) != self.iCiv).where(lambda p: birthCities.owner(p).any()).all_if_any(lambda p: stability(p) >= iStabilitySolid):
 				return False'''
-		
+
+		# #MacAurther: CSA only spawns if a human is playing the USA
+		if self.iCiv == iCSA:
+			if not player(iAmerica).isHuman():
+				return False
+
 		return True
 	
 	def announce(self):
