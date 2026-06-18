@@ -794,6 +794,8 @@ class Congress:
 		bOwner = (iOwner >= 0)
 		bOwnClaim = (iClaimant == iVoter)
 		
+		bColonialClaimant = civ(iClaimant) in dCivGroups[iCivGroupEurope] and (not bOwner or civ(iOwner) not in dTechGroups[iTechGroupColony])
+		bColonialVoter = bColonialClaimant and civ(iVoter) in dCivGroups[iCivGroupEurope]
 		bRecolonise = plot.getRegionID() in lAmerica and civ(iClaimant) in dCivGroups[iCivGroupEurope] and civ(iOwner) in dCivGroups[iCivGroupAmerica] and civ(iOwner) in dTechGroups[iTechGroupColony]
 		
 		if bCity: city = plot.getPlotCity()
@@ -802,8 +804,8 @@ class Congress:
 			bOwnCity = (iOwner == iVoter)
 			bWarClaim = (iClaimant in self.winners and iOwner in self.losers)
 		
-		# everyone agrees on AI American claims in the west, unless owner is native to the Americas
-		if civ(iClaimant) == iAmerica and iVoter != iOwner and civ(iOwner) not in dCivGroups[iCivGroupAmerica]:
+		# everyone agrees on AI American claims in the west
+		if civ(iClaimant) == iAmerica and iVoter != iOwner and not (bCity and city.isEverOwnedCiv(iAmerica)):
 			if plot in plots.regions(*lUnitedStates):
 				self.vote(iVoter, iClaimant, 1)
 				return
@@ -867,12 +869,10 @@ class Congress:
 			if bColonialVoter and plot.getPlayerSettlerValue(iVoter) == 0:
 				iClaimValidity += 10
 				
-				if player(iClaimant).getCurrentEra() == iIndustrial and plot.getPlayerSettlerValue(iClaimant) > 0:
+				if player(iClaimant).getCurrentEra() == iIndustrialEra and plot.getPlayerSettlerValue(iClaimant) > 0:
 					iClaimValidity += 10
 				
-					if plot.getRegionID() in lAfrica:
-						iClaimValidity += 5
-					if plot.getRegionID() in lSubSaharanAfrica:
+					if plot.getRegionID() in lLateColonialRegions:
 						iClaimValidity += 5
 							
 			# vote to support settler maps for civs from your own group
@@ -1026,7 +1026,7 @@ class Congress:
 		return None
 				
 	def vote(self, iVoter, iClaimant, iVote):
-		if iClaimant in self.dVotes: self.dVotes[iClaimant] += iVote
+		#if iClaimant in self.dVotes: self.dVotes[iClaimant] += iVote
 		self.dVotes[iClaimant] += iVote
 		if iVote == 1 and iVoter not in self.dVotedFor[iClaimant]: self.dVotedFor[iClaimant].append(iVoter)
 				
@@ -1136,9 +1136,9 @@ class Congress:
 									iValue += self.getSettlerClaimValue(iSettlerMapValue)
 									iValue += plot.getPlayerWarValue(iPlayer)
 									
-									if civ(iLoopPlayer) in dTechGroups[iTechGroupWestern]:
+									if civ(iLoopPlayer) in dTechGroups[iTechGroupColony]:
 										iValue /= 2
-									elif player(iPlayer).getCurrentEra() == iIndustrial and plot.getRegionID() in lSubSaharanAfrica:
+									elif player(iPlayer).getCurrentEra() == iIndustrialEra and plot.getRegionID() in lLateColonialRegions:
 										iValue += 5
 									
 				# weaker and collapsing empires
