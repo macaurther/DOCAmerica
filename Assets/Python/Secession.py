@@ -36,7 +36,7 @@ def secedeCities(iPlayer, secedingCities, bRazeMinorCities = False):
 		for city in tribalCities:
 			cityPlot = plot(city)
 			cn.clearChanges(city)
-			player(iBarbarian).disband(city)
+			player(iPlayer).disband(city)
 			cityPlot.setCulture(iPlayer, 0, True)
 			cityPlot.setImprovementType(iTribeType)
 			cityPlot.setTribeStoredUnits(6)
