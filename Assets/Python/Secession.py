@@ -25,29 +25,6 @@ def secedeCities(iPlayer, secedingCities, bRazeMinorCities = False):
 	if bComplete:
 		clearPlague(iPlayer)
 
-	# #MacAurther: tribal civs collapse into Tribe improvements instead of independent cities
-	if iCiv in lTribalCollapseCivs and not player(iPlayer).isHuman() and bComplete:
-		bContacted = any(team(iPlayer).isHasMet(team(p).getID()) for p in players.major().existing() if civ(p) in dCivGroups[iCivGroupNonNative])
-		if bContacted:
-			iTribeType = iContactedTribe
-		else:
-			iTribeType = iTribe
-		holyCities, tribalCities = secedingCities.split(lambda city: city.isHolyCity())
-		for city in tribalCities:
-			cityPlot = plot(city)
-			cn.clearChanges(city)
-			player(iPlayer).disband(city)
-			cityPlot.setCulture(iPlayer, 0, True)
-			cityPlot.setImprovementType(iTribeType)
-			cityPlot.setTribeStoredUnits(6)
-			cityPlot.setCulture(slot(iIndigenous), 100, True)
-		lPossibleMinors = getPossibleMinors(iPlayer)
-		for iMinor, minorCities in holyCities.divide(lPossibleMinors):
-			for city in minorCities:
-				secedeCity(city, iMinor, False, iArmyPercent)
-		balanceStability(iPlayer, iStabilityUnstable)
-		return
-
 	# if smaller cities are supposed to be destroyed, do that first
 	destroyedCities, cededCities = secedingCities.split(lambda city: bRazeMinorCities and canBeRazed(city))
 	
@@ -100,6 +77,10 @@ def canBeRazed(city):
 	
 	if city.getNumActiveWorldWonders() > 0:
 		return False
+	
+	# always raze Mississippi cities, except holy city
+	if civ(city) == iMississippi and not player(city).isHuman():
+		return True
 	
 	if city.getPopulation() >= 10:
 		return False

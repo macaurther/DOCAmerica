@@ -1086,7 +1086,7 @@ dBuildingPreferences = {
 		iSacsayhuaman: -40,
 	},
 	iMississippi : {
-		iSerpentMound: 40,
+		iSerpentMound: -100, # We don't actually want AI Mississippi to get this, because then their city can't be razed
 		iGateOfTheSun: -80,
 		iPyramidOfTheSun: -80,
 		iAcllahuasi: -40,
