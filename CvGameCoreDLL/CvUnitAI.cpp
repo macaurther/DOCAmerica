@@ -14931,6 +14931,10 @@ bool CvUnitAI::AI_irrigateTerritory()
 				{
 					eImprovement = pLoopPlot->getImprovementType();
 
+					//MacAurther: don't replace forts or other actAsCity improvements outside city range
+					if (eImprovement != NO_IMPROVEMENT && GC.getImprovementInfo(eImprovement).isActsAsCity())
+						continue;
+
 					if ((eImprovement == NO_IMPROVEMENT) || !(GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_SAFE_AUTOMATION) && !(eImprovement == (GC.getDefineINT("RUINS_IMPROVEMENT")))))
 					{
 						if ((eImprovement == NO_IMPROVEMENT) || !(GC.getImprovementInfo(eImprovement).isCarriesIrrigation()))
