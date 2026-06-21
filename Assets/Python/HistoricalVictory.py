@@ -282,7 +282,7 @@ dGoals = {
 		All(
 			Production(10000),
 			ControlledResourceCount(sum(iTimber), 3),
-			UnitCount(sum(iFrigate, iShipOfTheLine), 25),
+			UnitCount(sum(iFrigate, iManOfWar), 25),
 			by=1750,
 		),
 		All(

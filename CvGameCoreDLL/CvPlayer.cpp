@@ -23188,7 +23188,7 @@ bool CvPlayer::canStealTech(PlayerTypes eTarget, TechTypes eTech) const
 		}
 
 		// MacAurther: Can steal tech from other culture groups so long as they can be traded; otherwise, you can't
-		if (GC.getTechInfo(eTech).getCultureGroup() != GC.getCivilizationInfo(getCivilizationType()).getCultureGroup())
+		if (!GET_TEAM(getTeam()).isHasTech(eTech) && GC.getTechInfo(eTech).getCultureGroup() != GC.getCivilizationInfo(getCivilizationType()).getCultureGroup())
 		{
 			if (GC.getTechInfo(eTech).isTrade())
 			{
