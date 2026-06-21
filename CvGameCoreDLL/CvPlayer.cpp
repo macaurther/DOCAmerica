@@ -4780,7 +4780,7 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 		return true;
 		break;
 
-	//MacAurther: tradeable if the seller (this) holds a city or fort in the region and the buyer has a historical claim
+	//MacAurther: tradeable if the seller holds a city or fort in the region that falls within the buyer's historical tiles
 	case TRADE_REGION:
 	{
 		int iRegion = item.m_iData;
@@ -4789,7 +4789,7 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 			int iLoop;
 			for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 			{
-				if (pLoopCity->getRegionID() == iRegion)
+				if (pLoopCity->getRegionID() == iRegion && pLoopCity->plot()->getSettlerValue(eWhoTo) > 0)
 				{
 					return true;
 				}
@@ -4797,7 +4797,7 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 			for (int iFort = 0; iFort < getNumOwnedForts(); iFort++)
 			{
 				CvPlot* pFortPlot = getOwnedFort(iFort);
-				if (pFortPlot != NULL && pFortPlot->getRegionID() == iRegion)
+				if (pFortPlot != NULL && pFortPlot->getRegionID() == iRegion && pFortPlot->getSettlerValue(eWhoTo) > 0)
 				{
 					return true;
 				}
@@ -23720,7 +23720,7 @@ void CvPlayer::buildTradeTable(PlayerTypes eOtherPlayer, CLinkList<TradeData>& o
             break;
 		// edead: end
 
-		//MacAurther: list each region where we hold a city/fort and the buyer has a claim
+		//MacAurther: list each region where we hold a city/fort within the buyer's historical tiles
 		case TRADE_REGION:
 		{
 			bool abOurRegion[NUM_REGIONS];
@@ -23733,7 +23733,7 @@ void CvPlayer::buildTradeTable(PlayerTypes eOtherPlayer, CLinkList<TradeData>& o
 			for (CvCity* pLoopCity = firstCity(&iLoopCity); pLoopCity != NULL; pLoopCity = nextCity(&iLoopCity))
 			{
 				iR = pLoopCity->getRegionID();
-				if (iR >= 0 && iR < NUM_REGIONS) { abOurRegion[iR] = true; }
+				if (iR >= 0 && iR < NUM_REGIONS && pLoopCity->plot()->getSettlerValue(eOtherPlayer) > 0) { abOurRegion[iR] = true; }
 			}
 			for (int iFort = 0; iFort < getNumOwnedForts(); iFort++)
 			{
@@ -23741,7 +23741,7 @@ void CvPlayer::buildTradeTable(PlayerTypes eOtherPlayer, CLinkList<TradeData>& o
 				if (pFortPlot != NULL)
 				{
 					iR = pFortPlot->getRegionID();
-					if (iR >= 0 && iR < NUM_REGIONS) { abOurRegion[iR] = true; }
+					if (iR >= 0 && iR < NUM_REGIONS && pFortPlot->getSettlerValue(eOtherPlayer) > 0) { abOurRegion[iR] = true; }
 				}
 			}
 			for (iR = 0; iR < NUM_REGIONS; iR++)

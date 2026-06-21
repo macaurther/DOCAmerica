@@ -876,7 +876,7 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
         break;
 	// edead: end
 
-	//MacAurther: gift all cities, then transfer all forts, the seller owns in the region
+	//MacAurther: gift cities/forts the seller owns in the region that fall within the buyer's historical area
 	case TRADE_REGION:
 	{
 		int iRegion = trade.m_iData;
@@ -886,7 +886,7 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 		CLinkList<int> cityIDs;
 		for (CvCity* pLoopCity = GET_PLAYER(eFromPlayer).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(eFromPlayer).nextCity(&iLoop))
 		{
-			if (pLoopCity->getRegionID() == iRegion)
+			if (pLoopCity->getRegionID() == iRegion && pLoopCity->plot()->getSettlerValue(eToPlayer) > 0)
 			{
 				cityIDs.insertAtEnd(pLoopCity->getID());
 			}
@@ -905,7 +905,7 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 		for (int iFort = 0; iFort < GET_PLAYER(eFromPlayer).getNumOwnedForts(); iFort++)
 		{
 			CvPlot* pFortPlot = GET_PLAYER(eFromPlayer).getOwnedFort(iFort);
-			if (pFortPlot != NULL && pFortPlot->getRegionID() == iRegion)
+			if (pFortPlot != NULL && pFortPlot->getRegionID() == iRegion && pFortPlot->getSettlerValue(eToPlayer) > 0)
 			{
 				fortPlots.insertAtEnd(GC.getMapINLINE().plotNumINLINE(pFortPlot->getX_INLINE(), pFortPlot->getY_INLINE()));
 			}

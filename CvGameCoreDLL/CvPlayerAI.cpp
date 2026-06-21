@@ -7985,7 +7985,7 @@ int CvPlayerAI::AI_regionTradeVal(int iRegion, PlayerTypes ePlayer) const
 	int iLoop;
 	for (CvCity* pLoopCity = GET_PLAYER(ePlayer).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(ePlayer).nextCity(&iLoop))
 	{
-		if (pLoopCity->getRegionID() == iRegion)
+		if (pLoopCity->getRegionID() == iRegion && pLoopCity->plot()->getSettlerValue(getID()) > 0)
 		{
 			iValue += AI_cityTradeVal(pLoopCity);
 		}
@@ -7993,7 +7993,7 @@ int CvPlayerAI::AI_regionTradeVal(int iRegion, PlayerTypes ePlayer) const
 	for (int iFort = 0; iFort < GET_PLAYER(ePlayer).getNumOwnedForts(); iFort++)
 	{
 		CvPlot* pFortPlot = GET_PLAYER(ePlayer).getOwnedFort(iFort);
-		if (pFortPlot != NULL && pFortPlot->getRegionID() == iRegion)
+		if (pFortPlot != NULL && pFortPlot->getRegionID() == iRegion && pFortPlot->getSettlerValue(getID()) > 0)
 		{
 			iValue += 200;
 		}
