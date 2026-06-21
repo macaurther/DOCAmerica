@@ -6980,6 +6980,22 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		}
 	}
 
+	// MacAurther: sum AdjacentYieldChanges from all neighboring feature plots
+	if (!isImpassable())
+	{
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+		{
+			CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+			if (pAdjacentPlot != NULL && pAdjacentPlot->getFeatureType() != NO_FEATURE)
+			{
+				if (pAdjacentPlot->isWater() == isWater())
+				{
+					iYield += GC.getFeatureInfo(pAdjacentPlot->getFeatureType()).getAdjacentYieldChange(eYield);
+				}
+			}
+		}
+	}
+
 	// MacAurther: Hoover Dam effect
 	if (eTeam != NO_TEAM && !isPeak() && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).isHasBuildingEffect((BuildingTypes)BUILDING_HOOVER_DAM))
 	{

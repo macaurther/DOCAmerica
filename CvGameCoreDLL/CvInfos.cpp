@@ -14699,6 +14699,7 @@ m_iEffectProbability(0),
 m_piYieldChange(NULL),
 m_piRiverYieldChange(NULL),
 m_piHillsYieldChange(NULL),
+m_piAdjacentYieldChange(NULL), // MacAurther
 m_pi3DAudioScriptFootstepIndex(NULL),
 m_pbTerrain(NULL)
 {
@@ -14716,6 +14717,7 @@ CvFeatureInfo::~CvFeatureInfo()
 	SAFE_DELETE_ARRAY(m_piYieldChange);
 	SAFE_DELETE_ARRAY(m_piRiverYieldChange);
 	SAFE_DELETE_ARRAY(m_piHillsYieldChange);
+	SAFE_DELETE_ARRAY(m_piAdjacentYieldChange); // MacAurther
 	SAFE_DELETE_ARRAY(m_pi3DAudioScriptFootstepIndex);
 	SAFE_DELETE_ARRAY(m_pbTerrain);
 }
@@ -14899,6 +14901,14 @@ int CvFeatureInfo::getHillsYieldChange(int i) const
 	return m_piHillsYieldChange ? m_piHillsYieldChange[i] : -1;
 }
 
+// MacAurther
+int CvFeatureInfo::getAdjacentYieldChange(int i) const
+{
+	FAssertMsg(i < NUM_YIELD_TYPES, "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piAdjacentYieldChange ? m_piAdjacentYieldChange[i] : -1;
+}
+
 int CvFeatureInfo::get3DAudioScriptFootstepIndex(int i) const
 {
 	//	FAssertMsg(i < ?, "Index out of bounds");
@@ -14976,6 +14986,17 @@ bool CvFeatureInfo::read(CvXMLLoadUtility* pXML)
 	else
 	{
 		pXML->InitList(&m_piHillsYieldChange, NUM_YIELD_TYPES);
+	}
+
+	// MacAurther
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"AdjacentYieldChanges"))
+	{
+		pXML->SetYields(&m_piAdjacentYieldChange);
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+	else
+	{
+		pXML->InitList(&m_piAdjacentYieldChange, NUM_YIELD_TYPES);
 	}
 
 	pXML->GetChildXmlValByName(&m_iMovementCost, "iMovement");

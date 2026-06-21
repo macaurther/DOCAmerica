@@ -1928,5 +1928,26 @@
 				<VarietyButton>Art/Interface/Buttons/TerrainFeatures/China_Sea.dds</VarietyButton>
 			</FeatureVariety>
 		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_VOLCANO</Type>
+			<bAnimated>1</bAnimated>
+			<bRiverArt>0</bRiverArt>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<LightType>LIGHT_TYPE_SUN</LightType>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>1.2</fInterfaceScale>
+			<Button>Art/Interface/Buttons/TerrainFeatures/Volcano.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/Volcano/Volcano.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<FeatureDummyNodes/>
+				<bGenerateRotations>0</bGenerateRotations>
+				<VarietyButton>Art/Interface/Buttons/TerrainFeatures/Volcano.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
 	</FeatureArtInfos>
 </Civ4ArtDefines>

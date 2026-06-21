@@ -141,4 +141,20 @@
 		<Italian>Strait Islands</Italian>
 		<Spanish>Strait Islands</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_VOLCANO</Tag>
+		<English>Volcano</English>
+		<French>Volcan</French>
+		<German>Vulkan</German>
+		<Italian>Vulcano</Italian>
+		<Spanish>Volc&#225;n</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_VOLCANO_PEDIA</Tag>
+		<English>An active volcanic mountain. Impassable to all units; no city or improvement may be built here.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>

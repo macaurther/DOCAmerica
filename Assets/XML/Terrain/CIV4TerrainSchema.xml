@@ -116,6 +116,9 @@
 	<ElementType name="YieldChanges" content="eltOnly">
 		<element type="iYieldChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="AdjacentYieldChanges" content="eltOnly"> <!-- MacAurther -->
+		<element type="iYieldChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="iHealthPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iAppearance" content="textOnly" dt:type="int"/>
 	<ElementType name="iDisappearance" content="textOnly" dt:type="int"/>
@@ -152,6 +155,7 @@
 		<element type="YieldChanges"/>
 		<element type="RiverYieldChange"/>
 		<element type="HillsYieldChange"/>
+		<element type="AdjacentYieldChanges" minOccurs="0"/> <!-- MacAurther -->
 		<element type="iMovement"/>
 		<element type="iSeeThrough"/>
 		<element type="iHealthPercent"/>

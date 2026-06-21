@@ -3428,6 +3428,7 @@ public:
 	int getYieldChange(int i) const;						// Exposed to Python
 	int getRiverYieldChange(int i) const;				// Exposed to Python
 	int getHillsYieldChange(int i) const;				// Exposed to Python
+	int getAdjacentYieldChange(int i) const;		// MacAurther
 	int get3DAudioScriptFootstepIndex(int i) const;
 
 	bool isTerrain(int i) const;								// Exposed to Python
@@ -3481,6 +3482,7 @@ protected:
 	int* m_piYieldChange;
 	int* m_piRiverYieldChange;
 	int* m_piHillsYieldChange;
+	int* m_piAdjacentYieldChange; // MacAurther
 	int* m_pi3DAudioScriptFootstepIndex;
 
 	bool* m_pbTerrain;

@@ -8542,8 +8542,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=47
+	FeatureType=FEATURE_VOLCANO, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	PlotType=2
 EndPlot
 BeginPlot
 	x=13,y=48
@@ -8818,8 +8819,9 @@ BeginPlot
 	x=13,y=97
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	FeatureType=FEATURE_VOLCANO, FeatureVariety=0
+	TerrainType=TERRAIN_TUNDRA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=13,y=98
@@ -17352,8 +17354,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=66
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	FeatureType=FEATURE_VOLCANO, FeatureVariety=0
+	TerrainType=TERRAIN_TUNDRA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=67
@@ -23338,8 +23341,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=61
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	FeatureType=FEATURE_VOLCANO, FeatureVariety=0
+	TerrainType=TERRAIN_TUNDRA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=35,y=62
@@ -23983,8 +23987,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=59
-	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_VOLCANO, FeatureVariety=0
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
 BeginPlot
@@ -29344,8 +29348,9 @@ BeginPlot
 	x=44,y=44
 	isNOfRiver
 	RiverWEDirection=1
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	FeatureType=FEATURE_VOLCANO, FeatureVariety=0
+	TerrainType=TERRAIN_TUNDRA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=44,y=45
@@ -30789,9 +30794,9 @@ BeginPlot
 	x=46,y=45
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	FeatureType=FEATURE_VOLCANO, FeatureVariety=0
+	TerrainType=TERRAIN_TUNDRA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=46,y=46
@@ -31301,8 +31306,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=11
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	FeatureType=FEATURE_VOLCANO, FeatureVariety=0
+	TerrainType=TERRAIN_TUNDRA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=47,y=12
@@ -32142,8 +32148,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=33
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	FeatureType=FEATURE_VOLCANO, FeatureVariety=0
+	TerrainType=TERRAIN_TUNDRA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=48,y=34

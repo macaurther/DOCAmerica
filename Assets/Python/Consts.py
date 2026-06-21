@@ -948,11 +948,11 @@ iNumRoutes = 3
 
 #feature & terrain
 
-iNumFeatures = 23
+iNumFeatures = 24
 # 0				1				2				3				4				5				6				7				8				9
-(iSeaIce, 		iJungle, 		iCenote, 		iFloodPlains, 	iForest, 		iBog, 			iSwamp, 		iCape, 			iIslands, 		iRainforest, 
-iFallout, 		iTaiga, 		iPalmForest,	iCanyon,		iReef,			iScrub,			iStraight,		iStraightIslands,iTradewindNorthEurope,iTradewindSouthEurope,
-iTradewindAfrica,iTradewindSiberia,iTradewindAsia) = range(iNumFeatures)
+(iSeaIce, 		iJungle, 		iCenote, 		iFloodPlains, 	iForest, 		iBog, 			iSwamp, 		iCape, 			iIslands, 		iRainforest,
+iFallout, 		iTaiga, 		iPalmForest,	iCanyon,		iReef,			iScrub,			iStraight,		iStraightIslands,iVolcano,		iTradewindNorthEurope,
+iTradewindSouthEurope,iTradewindAfrica,iTradewindSiberia,iTradewindAsia) = range(iNumFeatures)
 
 iTradeWindsStart = iTradewindNorthEurope
 
