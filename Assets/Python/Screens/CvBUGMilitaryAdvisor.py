@@ -948,7 +948,8 @@ class CvMilitaryAdvisor:
 					plot = unit.plot()
 					if plot.isNone():
 						continue
-					bVisible = (plot.isVisible(iActiveTeam, False) or (plot.isCity() and plot.getPlotCity().canBeSelected())) and not unit.isInvisible(iActiveTeam, False)
+					# MacAurther: CyCity has no canBeSelected(); use plot.isRevealed to extend visibility to fogged-but-known city tiles
+					bVisible = (plot.isVisible(iActiveTeam, False) or (plot.isCity() and plot.isRevealed(iActiveTeam, False))) and not unit.isInvisible(iActiveTeam, False)
 					if not bVisible:
 						continue
 					if unit.getVisualOwner() in self.selectedLeaders:
