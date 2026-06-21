@@ -6,14 +6,14 @@ from Events import handler
 
 
 dCompanyTechs = {
-	iTrappingIndustry : [iExploration],
-	iWestIndiesCompany : [iExploration],
-	iCerealIndustry   : [iEconomics, iBiology],
-	iFishingIndustry  : [iEconomics],
-	iTextileIndustry  : [iEconomics, iThermodynamics],
+	iTrappingIndustry : [iCompanies],
+	iWestIndiesCompany : [iCompanies],
+	iCerealIndustry   : [iEconomics, iGeography],
+	iFishingIndustry  : [iEconomics, iMeteorology],
+	iTextileIndustry  : [iEconomics, iEngineering],
 	iSteelIndustry    : [iEconomics, iMetallurgy],
-	iOilIndustry      : [iEconomics],
-	iLuxuryIndustry   : [iEconomics],
+	iOilIndustry      : [iEconomics, iCombustion],
+	iLuxuryIndustry   : [iEconomics, iFreeMarket],
 }
 
 tCompaniesLimit = (20, 25, 30, 20, 25, 25, 15, 20) # kind of arbitrary currently, see how this plays out
