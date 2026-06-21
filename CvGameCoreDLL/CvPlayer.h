@@ -1045,6 +1045,17 @@ public:
 	CvCity* addCity();
 	void deleteCity(int iID);
 
+	// MacAurther: owned-fort iteration (forts the player owns; mirrors city iteration).
+	// A fort's state lives on its CvPlot; this list is just a maintained index into it.
+	int getNumOwnedForts() const;
+	CvPlot* getOwnedFort(int iIndex) const;
+	void addOwnedFort(CvPlot* pPlot);
+	void removeOwnedFort(CvPlot* pPlot);
+
+	// MacAurther: true if this player has a historical claim (settler value > 0) in the region.
+	// Settler values are static map data, so the result is computed once and cached.
+	bool hasRegionClaim(int iRegion) const;
+
 	// unit iteration
 	DllExport CvUnit* firstUnit(int *pIterIdx, bool bRev=false) const;																// Exposed to Python
 	DllExport CvUnit* nextUnit(int *pIterIdx, bool bRev=false) const;																	// Exposed to Python
@@ -1219,6 +1230,9 @@ public:
 	virtual DenialTypes AI_bonusTrade(BonusTypes eBonus, PlayerTypes ePlayer) const = 0;
 	virtual int AI_cityTradeVal(CvCity* pCity) const = 0;
 	virtual DenialTypes AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const = 0;
+	//MacAurther: AI_regionTradeVal/AI_regionTrade are NOT virtual here on purpose. Adding virtuals
+	//to CvPlayer shifts the vtable that the EXE calls by hardcoded index (breaks save/load). They
+	//live on CvPlayerAI as plain methods; base-class callers reach them via AI()->.
 	virtual DenialTypes AI_stopTradingTrade(TeamTypes eTradeTeam, PlayerTypes ePlayer) const = 0;
 	virtual DenialTypes AI_civicTrade(CivicTypes eCivic, PlayerTypes ePlayer) const = 0;
 	virtual DenialTypes AI_religionTrade(ReligionTypes eReligion, PlayerTypes ePlayer) const = 0;
@@ -1665,6 +1679,17 @@ protected:
 	bool* m_pabSpecialUnitValid; // Leoreth
 
 	std::vector<EventTriggerTypes> m_triggersFired;
+
+	// MacAurther: plot indices of forts this player owns. Maintained incrementally by
+	// addOwnedFort/removeOwnedFort (called from CvPlot::addFortClaims/removeFortClaims),
+	// and rebuilt lazily from plot state on first use (so save format is unchanged).
+	mutable std::vector<int> m_aiOwnedForts;
+	mutable bool m_bOwnedFortsInit;
+	void ensureOwnedFortsInit() const;
+
+	// MacAurther: cached historical claim per region (static; computed once)
+	mutable bool* m_abRegionClaim;
+	mutable bool m_bRegionClaimValid;
 
 	// Leoreth
 	std::map<BuildingClassTypes, int> m_buildingClassPreference;

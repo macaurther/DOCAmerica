@@ -6153,6 +6153,9 @@ int CvPlayerAI::AI_dealVal(PlayerTypes ePlayer, const CLinkList<TradeData>* pLis
 				iValue += AI_cityTradeVal(pCity);
 			}
 			break;
+		case TRADE_REGION: //MacAurther
+			iValue += AI_regionTradeVal(pNode->m_data.m_iData, ePlayer);
+			break;
 		case TRADE_GOLD:
 			iValue += (pNode->m_data.m_iData * AI_goldTradeValuePercent(ePlayer)) / 100;
 			break;
@@ -7971,6 +7974,42 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 		return DENIAL_TOO_MUCH;
 	}
 
+	return NO_DENIAL;
+}
+
+
+//MacAurther: value a region as the sum of the owner's city trade values there, plus a flat amount per owned fort
+int CvPlayerAI::AI_regionTradeVal(int iRegion, PlayerTypes ePlayer) const
+{
+	int iValue = 0;
+	int iLoop;
+	for (CvCity* pLoopCity = GET_PLAYER(ePlayer).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(ePlayer).nextCity(&iLoop))
+	{
+		if (pLoopCity->getRegionID() == iRegion)
+		{
+			iValue += AI_cityTradeVal(pLoopCity);
+		}
+	}
+	for (int iFort = 0; iFort < GET_PLAYER(ePlayer).getNumOwnedForts(); iFort++)
+	{
+		CvPlot* pFortPlot = GET_PLAYER(ePlayer).getOwnedFort(iFort);
+		if (pFortPlot != NULL && pFortPlot->getRegionID() == iRegion)
+		{
+			iValue += 200;
+		}
+	}
+	return iValue;
+}
+
+
+//MacAurther: AI denial for selling a region
+DenialTypes CvPlayerAI::AI_regionTrade(int iRegion, PlayerTypes ePlayer) const
+{
+	if (isHuman()) return NO_DENIAL;
+	if (atWar(getTeam(), GET_PLAYER(ePlayer).getTeam())) return NO_DENIAL;
+	// MacAurther: peacetime region trade follows the culture-group hierarchy (higher buys from lower only)
+	if (GET_PLAYER(ePlayer).getCultureGroup() <= getCultureGroup()) return DENIAL_NEVER;
+	if (AI_getAttitude(ePlayer) <= ATTITUDE_FURIOUS) return DENIAL_ATTITUDE;
 	return NO_DENIAL;
 }
 
@@ -14146,6 +14185,87 @@ void CvPlayerAI::AI_doDiplo()
 												{
 													GC.getGameINLINE().implementDeal(getID(), (PlayerTypes)iI, &ourList, &theirList);
 												}
+											}
+										}
+									}
+
+									//MacAurther: AI proactively buys regions it has a historical claim in (cities and forts)
+									if (GC.getGameINLINE().getSorenRandNum(4, "AI Region Purchase") == 0)
+									{
+										int iBestRegion = -1;
+										int iBestRegionVal = 0;
+
+										bool abConsidered[NUM_REGIONS];
+										int iR;
+										for (iR = 0; iR < NUM_REGIONS; iR++) { abConsidered[iR] = false; }
+
+										int iLoop2;
+										for (CvCity* pSellCity = GET_PLAYER((PlayerTypes)iI).firstCity(&iLoop2); pSellCity != NULL; pSellCity = GET_PLAYER((PlayerTypes)iI).nextCity(&iLoop2))
+										{
+											iR = pSellCity->getRegionID();
+											if (iR >= 0 && iR < NUM_REGIONS) { abConsidered[iR] = true; }
+										}
+										for (int iFort = 0; iFort < GET_PLAYER((PlayerTypes)iI).getNumOwnedForts(); iFort++)
+										{
+											CvPlot* pFortPlot = GET_PLAYER((PlayerTypes)iI).getOwnedFort(iFort);
+											if (pFortPlot != NULL)
+											{
+												iR = pFortPlot->getRegionID();
+												if (iR >= 0 && iR < NUM_REGIONS) { abConsidered[iR] = true; }
+											}
+										}
+
+										for (iR = 0; iR < NUM_REGIONS; iR++)
+										{
+											if (!abConsidered[iR]) continue;
+											if (!hasRegionClaim(iR)) continue;
+											if (GET_PLAYER((PlayerTypes)iI).AI_regionTrade(iR, getID()) != NO_DENIAL) continue;
+
+											setTradeItem(&item, TRADE_REGION, iR);
+											if (!GET_PLAYER((PlayerTypes)iI).canTradeItem(getID(), item, true)) continue;
+
+											int iRegionVal = AI_regionTradeVal(iR, (PlayerTypes)iI);
+											if (iRegionVal <= 0) continue;
+											if (AI_maxGoldTrade((PlayerTypes)iI) < iRegionVal) continue;
+
+											setTradeItem(&item, TRADE_GOLD, iRegionVal);
+											if (!canTradeItem((PlayerTypes)iI, item, true)) continue;
+
+											if (iRegionVal > iBestRegionVal)
+											{
+												iBestRegionVal = iRegionVal;
+												iBestRegion = iR;
+											}
+										}
+
+										if (iBestRegion >= 0)
+										{
+											ourList.clear();
+											theirList.clear();
+
+											setTradeItem(&item, TRADE_GOLD, iBestRegionVal);
+											ourList.insertAtEnd(item);
+
+											setTradeItem(&item, TRADE_REGION, iBestRegion);
+											theirList.insertAtEnd(item);
+
+											if (GET_PLAYER((PlayerTypes)iI).isHuman())
+											{
+												if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
+												{
+													pDiplo = new CvDiploParameters(getID());
+													FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
+													pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_DEAL"));
+													pDiplo->setAIContact(true);
+													pDiplo->setOurOfferList(theirList);
+													pDiplo->setTheirOfferList(ourList);
+													gDLL->beginDiplomacy(pDiplo, (PlayerTypes)iI);
+													abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()] = true;
+												}
+											}
+											else
+											{
+												GC.getGameINLINE().implementDeal(getID(), (PlayerTypes)iI, &ourList, &theirList);
 											}
 										}
 									}

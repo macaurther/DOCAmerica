@@ -3515,6 +3515,7 @@ enum TradeableItems						// Exposed to Python
 	TRADE_CIVIC,
 	TRADE_RELIGION,
 	TRADE_SLAVE, // Leoreth
+	TRADE_REGION, //MacAurther: trade all holdings in a region
 
 #ifdef _USRDLL
 	NUM_TRADEABLE_HEADINGS,

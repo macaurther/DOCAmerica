@@ -165,6 +165,8 @@ public:
 
 	int AI_cityTradeVal(CvCity* pCity) const;
 	DenialTypes AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const;
+	int AI_regionTradeVal(int iRegion, PlayerTypes ePlayer) const;
+	DenialTypes AI_regionTrade(int iRegion, PlayerTypes ePlayer) const;
 
 	int AI_stopTradingTradeVal(TeamTypes eTradeTeam, PlayerTypes ePlayer) const;
 	DenialTypes AI_stopTradingTrade(TeamTypes eTradeTeam, PlayerTypes ePlayer) const;

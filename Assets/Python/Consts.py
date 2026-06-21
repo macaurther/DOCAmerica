@@ -148,7 +148,7 @@ iCSA : 1890,
 iNumCivGroups = 6
 (iCivGroupNative, iCivGroupEurope, iCivGroupAmerica, iCivGroupMesoamerica, iCivGroupAndes, iCivGroupNonNative) = range(iNumCivGroups)
 
-lNativeCivs = [iMaya, iInca, iAztec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iMuisca, iChimu, iInuit, iHaudenosaunee, iLakota, iZapotec, iPurepecha, iToltec, iArawak, iTupi, iCherokee, iApache]
+lNativeCivs = [iMaya, iInca, iAztec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iMuisca, iChimu, iInuit, iHaudenosaunee, iLakota, iZapotec, iPurepecha, iToltec, iArawak, iTupi, iCherokee, iApache, iHawaii]
 lColonyCivs = [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia]
 lNationCivs = [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iPeru, iVenezuela, iCSA]
 

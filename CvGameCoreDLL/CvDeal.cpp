@@ -270,6 +270,9 @@ void CvDeal::addTrades(CLinkList<TradeData>* pFirstList, CLinkList<TradeData>* p
 				bFirstTrade = true;
 				bFirstSlaves = true;
 				break;
+			case TRADE_REGION: //MacAurther
+				bFirstTrade = true;
+				break;
 			case TRADE_GOLD:
 				bFirstTrade = true;
 				iFirstGold += pNode->m_data.m_iData;
@@ -313,6 +316,9 @@ void CvDeal::addTrades(CLinkList<TradeData>* pFirstList, CLinkList<TradeData>* p
 			case TRADE_SLAVE:
 				bSecondTrade = true;
 				bSecondSlaves = true;
+				break;
+			case TRADE_REGION: //MacAurther
+				bSecondTrade = true;
 				break;
 			case TRADE_GOLD:
 				bSecondTrade = true;
@@ -870,6 +876,52 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
         break;
 	// edead: end
 
+	//MacAurther: gift all cities, then transfer all forts, the seller owns in the region
+	case TRADE_REGION:
+	{
+		int iRegion = trade.m_iData;
+		int iLoop;
+
+		// snapshot then gift cities (TASK_GIFT mutates the seller's city list)
+		CLinkList<int> cityIDs;
+		for (CvCity* pLoopCity = GET_PLAYER(eFromPlayer).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(eFromPlayer).nextCity(&iLoop))
+		{
+			if (pLoopCity->getRegionID() == iRegion)
+			{
+				cityIDs.insertAtEnd(pLoopCity->getID());
+			}
+		}
+		for (CLLNode<int>* pCityNode = cityIDs.head(); pCityNode != NULL; pCityNode = cityIDs.next(pCityNode))
+		{
+			CvCity* pGiftCity = GET_PLAYER(eFromPlayer).getCity(pCityNode->m_data);
+			if (pGiftCity != NULL)
+			{
+				pGiftCity->doTask(TASK_GIFT, eToPlayer);
+			}
+		}
+
+		// snapshot then transfer forts (removeFortClaims/addFortClaims mutate the fort lists)
+		CLinkList<int> fortPlots;
+		for (int iFort = 0; iFort < GET_PLAYER(eFromPlayer).getNumOwnedForts(); iFort++)
+		{
+			CvPlot* pFortPlot = GET_PLAYER(eFromPlayer).getOwnedFort(iFort);
+			if (pFortPlot != NULL && pFortPlot->getRegionID() == iRegion)
+			{
+				fortPlots.insertAtEnd(GC.getMapINLINE().plotNumINLINE(pFortPlot->getX_INLINE(), pFortPlot->getY_INLINE()));
+			}
+		}
+		for (CLLNode<int>* pFortNode = fortPlots.head(); pFortNode != NULL; pFortNode = fortPlots.next(pFortNode))
+		{
+			CvPlot* pFortPlot = GC.getMapINLINE().plotByIndexINLINE(pFortNode->m_data);
+			if (pFortPlot != NULL)
+			{
+				pFortPlot->removeFortClaims();
+				pFortPlot->addFortClaims(eToPlayer);
+			}
+		}
+		break;
+	}
+
 	case TRADE_GOLD:
 		GET_PLAYER(eFromPlayer).changeGold(-(trade.m_iData));
 		GET_PLAYER(eToPlayer).changeGold(trade.m_iData);
@@ -1045,6 +1097,7 @@ void CvDeal::endTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eToP
 		break;
 
 	case TRADE_CITIES:
+	case TRADE_REGION: //MacAurther
 	case TRADE_GOLD:
 	case TRADE_SLAVE: // edead
 		FAssert(false);

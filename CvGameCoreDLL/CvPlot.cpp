@@ -12352,10 +12352,17 @@ void CvPlot::addFortClaims(PlayerTypes ePlayer)
 			}
 		}
 	}
+
+	// MacAurther: track this fort in the owning player's fort list
+	GET_PLAYER(ePlayer).addOwnedFort(this);
 }
 
 void CvPlot::removeFortClaims()
 {
+	// MacAurther: the fort tile claims itself, so its own fortOwner is the owning player.
+	// Capture it before the loop below clears it.
+	PlayerTypes eOldOwner = getFortOwner();
+
 	// Check surrounding area for plots claimed by forts
 	for(int iI = -2; iI < 3; iI++){
 		for(int iJ = -2; iJ < 3; iJ++){
@@ -12377,6 +12384,12 @@ void CvPlot::removeFortClaims()
 				}
 			}
 		}
+	}
+
+	// MacAurther: stop tracking this fort in the former owner's fort list
+	if (eOldOwner != NO_PLAYER)
+	{
+		GET_PLAYER(eOldOwner).removeOwnedFort(this);
 	}
 }
 

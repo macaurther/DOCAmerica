@@ -76,6 +76,8 @@ CvPlayer::CvPlayer()
 	m_abFeatAccomplished = new bool[NUM_FEAT_TYPES];
 	m_abOptions = new bool[NUM_PLAYEROPTION_TYPES];
 
+	m_abRegionClaim = new bool[NUM_REGIONS]; //MacAurther
+
 	m_paiBonusExport = NULL;
 	m_paiBonusImport = NULL;
 	m_paiImprovementCount = NULL;
@@ -152,6 +154,7 @@ CvPlayer::~CvPlayer()
 	SAFE_DELETE_ARRAY(m_aiReligionYieldChange); // Leoreth
 	SAFE_DELETE_ARRAY(m_abFeatAccomplished);
 	SAFE_DELETE_ARRAY(m_abOptions);
+	SAFE_DELETE_ARRAY(m_abRegionClaim); //MacAurther
 }
 
 
@@ -377,6 +380,9 @@ void CvPlayer::uninit()
 
 	m_triggersFired.clear();
 
+	m_aiOwnedForts.clear(); // MacAurther
+	m_bOwnedFortsInit = false; // MacAurther: force lazy rebuild from plot state
+
 	m_buildingClassPreference.clear(); // Leoreth
 
 	if (m_ppaaiSpecialistExtraYield != NULL)
@@ -440,6 +446,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iGold = 0;
 	m_iGoldPerTurn = 0;
 	m_iImmigration = 0; // MacAurther
+	m_bRegionClaimValid = false; //MacAurther: recompute region claim cache lazily
 	m_iAdvancedStartPoints = -1;
 	m_iGoldenAgeTurns = 0;
 	m_iNumUnitGoldenAges = 0;
@@ -4773,6 +4780,32 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 		return true;
 		break;
 
+	//MacAurther: tradeable if the seller (this) holds a city or fort in the region and the buyer has a historical claim
+	case TRADE_REGION:
+	{
+		int iRegion = item.m_iData;
+		if (GET_PLAYER(eWhoTo).hasRegionClaim(iRegion))
+		{
+			int iLoop;
+			for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+			{
+				if (pLoopCity->getRegionID() == iRegion)
+				{
+					return true;
+				}
+			}
+			for (int iFort = 0; iFort < getNumOwnedForts(); iFort++)
+			{
+				CvPlot* pFortPlot = getOwnedFort(iFort);
+				if (pFortPlot != NULL && pFortPlot->getRegionID() == iRegion)
+				{
+					return true;
+				}
+			}
+		}
+		break;
+	}
+
 	// edead: start Relic trade based on Afforess' Advanced Diplomacy
    case TRADE_SLAVE:
 	    CvUnit* pUnitTraded = getUnit(item.m_iData);
@@ -4873,6 +4906,11 @@ DenialTypes CvPlayer::getTradeDenial(PlayerTypes eWhoTo, TradeData item) const
 	case TRADE_PEACE_TREATY:
 		break;
 
+	//MacAurther: AI denial for selling a region (AI() cast: AI_regionTrade is non-virtual on CvPlayerAI)
+	case TRADE_REGION:
+		return AI()->AI_regionTrade(item.m_iData, eWhoTo);
+		break;
+
 	// edead: start Relic trade based on Afforess' Advanced Diplomacy
 	case TRADE_SLAVE:
 		CvUnit* pUnit = getUnit(item.m_iData);
@@ -4885,6 +4923,43 @@ DenialTypes CvPlayer::getTradeDenial(PlayerTypes eWhoTo, TradeData item) const
 	}
 
 	return NO_DENIAL;
+}
+
+
+// MacAurther: lazily fill the region claim cache once; settler values never change during play
+bool CvPlayer::hasRegionClaim(int iRegion) const
+{
+	if (iRegion < 0 || iRegion >= NUM_REGIONS)
+	{
+		return false;
+	}
+
+	if (!m_bRegionClaimValid)
+	{
+		int iR;
+		for (iR = 0; iR < NUM_REGIONS; iR++)
+		{
+			m_abRegionClaim[iR] = false;
+		}
+
+		for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		{
+			CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+			iR = pLoopPlot->getRegionID();
+			if (iR < 0 || iR >= NUM_REGIONS)
+			{
+				continue;
+			}
+			if (!m_abRegionClaim[iR] && pLoopPlot->getSettlerValue(getID()) > 0)
+			{
+				m_abRegionClaim[iR] = true;
+			}
+		}
+
+		m_bRegionClaimValid = true;
+	}
+
+	return m_abRegionClaim[iRegion];
 }
 
 
@@ -14664,6 +14739,97 @@ void CvPlayer::deleteCity(int iID)
 }
 
 
+// MacAurther: owned-fort iteration -------------------------------------------
+
+// Rebuild the owned-fort list from current plot state. Runs once (lazy): forts are
+// not re-claimed on load, but the plot state that identifies them (IMPROVEMENT_FORT +
+// fort owner) is serialized, so one scan reconstructs the list. After that the list is
+// maintained incrementally via addOwnedFort/removeOwnedFort.
+void CvPlayer::ensureOwnedFortsInit() const
+{
+	if (m_bOwnedFortsInit)
+	{
+		return;
+	}
+
+	m_aiOwnedForts.clear();
+
+	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	{
+		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		if (pLoopPlot->getImprovementType() == IMPROVEMENT_FORT && pLoopPlot->getFortOwner() == getID())
+		{
+			m_aiOwnedForts.push_back(iI);
+		}
+	}
+
+	m_bOwnedFortsInit = true;
+}
+
+
+int CvPlayer::getNumOwnedForts() const
+{
+	ensureOwnedFortsInit();
+	return (int)m_aiOwnedForts.size();
+}
+
+
+CvPlot* CvPlayer::getOwnedFort(int iIndex) const
+{
+	ensureOwnedFortsInit();
+	FAssertMsg(iIndex >= 0 && iIndex < (int)m_aiOwnedForts.size(), "owned-fort index out of range");
+	if (iIndex < 0 || iIndex >= (int)m_aiOwnedForts.size())
+	{
+		return NULL;
+	}
+	return GC.getMapINLINE().plotByIndexINLINE(m_aiOwnedForts[iIndex]);
+}
+
+
+void CvPlayer::addOwnedFort(CvPlot* pPlot)
+{
+	if (pPlot == NULL)
+	{
+		return;
+	}
+	ensureOwnedFortsInit();
+
+	int iPlotIndex = GC.getMapINLINE().plotNumINLINE(pPlot->getX_INLINE(), pPlot->getY_INLINE());
+
+	// de-dup: don't track the same fort twice
+	for (int i = 0; i < (int)m_aiOwnedForts.size(); i++)
+	{
+		if (m_aiOwnedForts[i] == iPlotIndex)
+		{
+			return;
+		}
+	}
+
+	m_aiOwnedForts.push_back(iPlotIndex);
+}
+
+
+void CvPlayer::removeOwnedFort(CvPlot* pPlot)
+{
+	if (pPlot == NULL)
+	{
+		return;
+	}
+	ensureOwnedFortsInit();
+
+	int iPlotIndex = GC.getMapINLINE().plotNumINLINE(pPlot->getX_INLINE(), pPlot->getY_INLINE());
+
+	for (std::vector<int>::iterator it = m_aiOwnedForts.begin(); it != m_aiOwnedForts.end(); ++it)
+	{
+		if (*it == iPlotIndex)
+		{
+			m_aiOwnedForts.erase(it);
+			return;
+		}
+	}
+}
+
+
 CvUnit* CvPlayer::firstUnit(int *pIterIdx, bool bRev) const
 {
 	return !bRev ? m_units.beginIter(pIterIdx) : m_units.endIter(pIterIdx);
@@ -23553,6 +23719,45 @@ void CvPlayer::buildTradeTable(PlayerTypes eOtherPlayer, CLinkList<TradeData>& o
             }
             break;
 		// edead: end
+
+		//MacAurther: list each region where we hold a city/fort and the buyer has a claim
+		case TRADE_REGION:
+		{
+			bool abOurRegion[NUM_REGIONS];
+			int iR;
+			for (iR = 0; iR < NUM_REGIONS; iR++)
+			{
+				abOurRegion[iR] = false;
+			}
+			int iLoopCity;
+			for (CvCity* pLoopCity = firstCity(&iLoopCity); pLoopCity != NULL; pLoopCity = nextCity(&iLoopCity))
+			{
+				iR = pLoopCity->getRegionID();
+				if (iR >= 0 && iR < NUM_REGIONS) { abOurRegion[iR] = true; }
+			}
+			for (int iFort = 0; iFort < getNumOwnedForts(); iFort++)
+			{
+				CvPlot* pFortPlot = getOwnedFort(iFort);
+				if (pFortPlot != NULL)
+				{
+					iR = pFortPlot->getRegionID();
+					if (iR >= 0 && iR < NUM_REGIONS) { abOurRegion[iR] = true; }
+				}
+			}
+			for (iR = 0; iR < NUM_REGIONS; iR++)
+			{
+				if (abOurRegion[iR] && GET_PLAYER(eOtherPlayer).hasRegionClaim(iR))
+				{
+					setTradeItem(&item, TRADE_REGION, iR);
+					if (getTradeDenial(eOtherPlayer, item) == NO_DENIAL)
+					{
+						bFoundItemUs = true;
+						ourList.insertAtEnd(item);
+					}
+				}
+			}
+			break;
+		}
 		}
 	}
 }
@@ -23600,6 +23805,11 @@ bool CvPlayer::getHeadingTradeString(PlayerTypes eOtherPlayer, TradeableItems eI
         szString = gDLL->getText("TXT_KEY_TRADE_SLAVE");
         break;
 	// edead: end
+
+	//MacAurther: region trade tab heading
+	case TRADE_REGION:
+		szString = gDLL->getText("TXT_KEY_TRADE_REGIONS");
+		break;
 
 	default:
 		szString.clear();
@@ -23782,6 +23992,17 @@ bool CvPlayer::getItemTradeString(PlayerTypes eOtherPlayer, bool bOffer, bool bS
         }
         break;
 	// edead: end
+
+	//MacAurther: show the region name for region trade items
+	case TRADE_REGION:
+	{
+		char szBuf[20];
+		CvWString szKey;
+		sprintf(szBuf, "TXT_KEY_REGION_%d", zTradeData.m_iData);
+		szKey = gDLL->getText(szBuf);
+		szString = gDLL->getText(szKey);
+		break;
+	}
 	default:
 		szString.clear();
 		return false;
@@ -23869,12 +24090,12 @@ void CvPlayer::updateTradeList(PlayerTypes eOtherPlayer, CLinkList<TradeData>& o
 		{
 			if (!CvDeal::isEndWar(pFirstOffer->m_data.m_eItemType) || !::atWar(getTeam(), GET_PLAYER(eOtherPlayer).getTeam()))
 			{
-				// MacAurther: Can trade gold for cities
-				bool bCityDeal = (ourOffer.head() != NULL && ourOffer.head()->m_data.m_eItemType == TRADE_CITIES) || 
-								 (theirOffer.head() != NULL && theirOffer.head()->m_data.m_eItemType == TRADE_CITIES);
+				// MacAurther: Can trade gold for cities/regions
+				bool bCityDeal = (ourOffer.head() != NULL && (ourOffer.head()->m_data.m_eItemType == TRADE_CITIES || ourOffer.head()->m_data.m_eItemType == TRADE_REGION)) ||
+								 (theirOffer.head() != NULL && (theirOffer.head()->m_data.m_eItemType == TRADE_CITIES || theirOffer.head()->m_data.m_eItemType == TRADE_REGION));
 				for (CLLNode<TradeData>* pNode = ourInventory.head(); pNode != NULL; pNode = ourInventory.next(pNode))
 				{
-					if (pNode->m_data.m_eItemType == TRADE_CITIES)
+					if (pNode->m_data.m_eItemType == TRADE_CITIES || pNode->m_data.m_eItemType == TRADE_REGION)
 					{
 						bCityDeal = true;
 					}

@@ -314,6 +314,14 @@
 		<Spanish>Slave Trade</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TRADE_REGIONS</Tag>
+		<English>Regions</English>
+		<French>Régions</French>
+		<German>Regionen</German>
+		<Italian>Regioni</Italian>
+		<Spanish>Regiones</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_TRUDEAU_1</Tag>
 		<English>Good day and bonjour to you, [CT_NAME]. The [OUR_CIV_ADJ] people wish for peace, but insists that masters in our own house we must be.</English>
 		<French>Bonjour et good day, [CT_NAME]. Le peuple [OUR_CIV_ADJ] souhaite la paix, mais nous insistons pour &#234;tre ma&#238;tres chez nous.</French>
