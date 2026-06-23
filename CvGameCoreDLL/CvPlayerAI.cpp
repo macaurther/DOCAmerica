@@ -970,6 +970,14 @@ int CvPlayerAI::AI_movementPriority(CvSelectionGroup* pGroup) const
 
 	if (pHeadUnit != NULL)
 	{
+		// MacAurther: Aztec settler moves before all other units on their first turn so Tenochtitlan is their capital
+		if (pHeadUnit->AI_getUnitAIType() == UNITAI_SETTLE
+			&& getCivilizationType() == AZTEC
+			&& getCapitalCity() == NULL)
+		{
+			return 0;
+		}
+
 		if (pHeadUnit->hasCargo())
 		{
 			if (pHeadUnit->specialCargo() == NO_SPECIALUNIT)
