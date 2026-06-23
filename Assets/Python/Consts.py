@@ -124,19 +124,16 @@ iMuisca : 1540,
 iToltec : 1300,
 iChimu : 1470,
 iPueblo : 1600,
-iArawak : 1550,
-iTupi : 1550,
-iPurepecha : 1530,
+iArawak : 1650,		# historically 1550
+iTupi : 1650,		# historically 1550
+iPurepecha : 1600,	# historically 1530
 iInuit : 1700,
-iInca : 1533,
-iAztec : 1521,
+iInca : 1600,		# historically 1533
+iAztec : 1600,		# historically 1521
 iHaudenosaunee : 1800,
-iSpain : 1900,
-iPortugal : 1822,
+iSpain : 1910,		# historically 1898
+iPortugal : 1850, 	# historically 1822
 iCherokee : 1838,
-iEngland : 1867,
-iFrance : 1805,
-iNetherlands : 1814,
 iApache : 1886,
 iLakota : 1890,
 iHawaii : 1893,

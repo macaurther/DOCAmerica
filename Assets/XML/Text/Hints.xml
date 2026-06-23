@@ -986,6 +986,14 @@
 		<Spanish>New Player Help Feature: If one of your settlers moves into a plot that will flip to a new civilization soon, you will get a warning to avoid that spot!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_HINT_AMERICA_16</Tag>
+		<English>Nations have the most cultural power over tiles, followed by Colonies, and lastly Natives. Natives can boost their cultural power to be equal with Nations with the Ancestral Lands civic.</English>
+		<French>Nations have the most cultural power over tiles, followed by Colonies, and lastly Natives. Natives can boost their cultural power to be equal with Nations with the Ancestral Lands civic.</French>
+		<German>Nations have the most cultural power over tiles, followed by Colonies, and lastly Natives. Natives can boost their cultural power to be equal with Nations with the Ancestral Lands civic.</German>
+		<Italian>Nations have the most cultural power over tiles, followed by Colonies, and lastly Natives. Natives can boost their cultural power to be equal with Nations with the Ancestral Lands civic.</Italian>
+		<Spanish>Nations have the most cultural power over tiles, followed by Colonies, and lastly Natives. Natives can boost their cultural power to be equal with Nations with the Ancestral Lands civic.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_</Tag>
 		<English></English>
 		<French></French>
