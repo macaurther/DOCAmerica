@@ -2579,6 +2579,12 @@ bool CyPlayer::isColonialSlavery()
 	return m_pPlayer ? m_pPlayer->isColonialSlavery() : false;
 }
 
+// MacAurther
+bool CyPlayer::isNoSlavery()
+{
+	return m_pPlayer ? m_pPlayer->isNoSlavery() : false;
+}
+
 bool CyPlayer::canUseSlaves()
 {
 	return m_pPlayer ? m_pPlayer->canUseSlaves() : false;

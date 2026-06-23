@@ -195,8 +195,8 @@ class ImmigrationUtils:
 	
 	# Extra check for special can hire cases
 	def canHire(self, iUnit, iPlayer, iHomeland):
-		civics = Civics.player(iPlayer)
-		if iUnit == iChattleSlave and not (iBondage in civics or iSlavery in civics):
+		# slaves available unless player runs a civic with bNoSlavery
+		if iUnit == iChattleSlave and gc.getPlayer(iPlayer).isNoSlavery():
 			return False
 		return True
 

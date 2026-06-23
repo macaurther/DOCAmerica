@@ -577,6 +577,7 @@ public:
 	void AI_chooseFreeTech();
 	bool isSlavery();
 	bool isColonialSlavery();
+	bool isNoSlavery(); // MacAurther
 	bool canUseSlaves();
 	int AI_bestCivic(int iCivicOptionType);
 	void setFreeTechsOnDiscovery(int iNewValue);

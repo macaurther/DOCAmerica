@@ -96,6 +96,7 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		.def("AI_chooseFreeTech", &CyPlayer::AI_chooseFreeTech, "void ()")
 		.def("isSlavery", &CyPlayer::isSlavery, "bool ()")
 		.def("isColonialSlavery", &CyPlayer::isColonialSlavery, "bool ()")
+		.def("isNoSlavery", &CyPlayer::isNoSlavery, "bool ()") // MacAurther
 		.def("getLastStateReligion", &CyPlayer::getLastStateReligion, "int ()")
 		.def("AI_bestCivic", &CyPlayer::AI_bestCivic, "int (int iCivicOptionType)")
 		.def("setFreeTechsOnDiscovery", &CyPlayer::setFreeTechsOnDiscovery, "void (int iNewValue)")

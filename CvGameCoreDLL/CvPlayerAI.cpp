@@ -7842,6 +7842,12 @@ int CvPlayerAI::AI_cityTradeVal(CvCity* pCity) const
 	// Leoreth: help Canada acquire cities -> MacAurther: Nope, eh
 	//if (getCivilizationType() == CANADA) iValue /= 2;
 
+	// MacAurther: AI values cities lower when buying from the human player
+	if (!isHuman() && GET_PLAYER(pCity->getOwnerINLINE()).isHuman())
+	{
+		iValue /= 3;
+	}
+
 	if (isHuman())
 	{
 		return std::max(iValue, GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
