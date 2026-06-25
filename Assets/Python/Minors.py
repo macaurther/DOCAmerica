@@ -625,6 +625,10 @@ def spawnTribeDefenders(pPlot, iAttacker):
 	# Select basic defender based on tech level
 	lBasicDefender = [iMilitia, iArcher, iLongbowman]
 	lAdvancedDefender = [iArcher, iLongbowman, iArquebusier]
+	sTribeName = text("TXT_KEY_TRIBE_REGION_%d" % pPlot.getRegionID())
+	if sTribeName.startswith("TXT_KEY"):
+		sTribeName = ""
+
 	for iI in range(iNumDefenders):
 		# First two defenders are basic
 		if iI < 2: iUnit = lBasicDefender[iTechLevel]
@@ -637,7 +641,10 @@ def spawnTribeDefenders(pPlot, iAttacker):
 			else:
 				iUnit = lAdvancedDefender[iTechLevel]
 
-		makeUnits(slot(iIndigenous), iUnit, pPlot, 1, UnitAITypes.UNITAI_SIT_FOREVER)
+		lUnits = makeUnits(slot(iIndigenous), iUnit, pPlot, 1, UnitAITypes.UNITAI_SIT_FOREVER)
+		if sTribeName:
+			for unit in lUnits:
+				unit.setName('%s %s' % (sTribeName, unit.getName()))
 	
 	message(iAttacker, 'TXT_KEY_TRIBE_DEFENDERS', sound='AS2D_GOODY_HOSTILE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pPlot)
 	pPlot.setTribeStoredUnits(0)
