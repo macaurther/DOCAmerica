@@ -26,18 +26,18 @@ lCivilizations = [
 	),
 	Civilization(
 		iIndependent1,
-		techs=techs.column(2)
+		techs=techs.column(3).including(iArithmetics)
 	),
 	Civilization(
 		iIndependent2,
-		techs=techs.column(2)
+		techs=techs.column(8).without(iNorthEuropeAccess, iSouthEuropeAccess, iContinuance, iStewardship)
 	),
 	Civilization(
 		iIndependent3
 	),
 	Civilization(
 		iIndigenous,
-		techs=techs.column(2).including(iTanning, iMythology)
+		techs=techs.column(3)
 	),
 	Civilization(
 		iBarbarian,
