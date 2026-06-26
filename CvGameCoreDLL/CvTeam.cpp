@@ -5724,7 +5724,9 @@ void CvTeam::setHasTech(TechTypes eIndex, bool bNewValue, PlayerTypes ePlayer, b
 
 			if (bFirst)
 			{
-				if (GC.getGameINLINE().countKnownTechNumTeamsCultureGroup(eIndex, GET_PLAYER(getLeaderID()).getCultureGroup()) == 1)	// MacAurther: Let each Culture group get its own great people
+				if (GET_PLAYER(getLeaderID()).getCultureGroup() == CULTURE_GROUP_NATIVE	// MacAurther: Natives get their own pool so Norse can't steal Classical era great people
+					? GC.getGameINLINE().countKnownTechNumTeamsCultureGroup(eIndex, CULTURE_GROUP_NATIVE) == 1
+					: GC.getGameINLINE().countKnownTechNumTeams(eIndex) == 1)
 				{
 					eFreeUnit = GET_PLAYER(ePlayer).getTechFreeUnit(eIndex);
 					if (eFreeUnit != NO_UNIT)
