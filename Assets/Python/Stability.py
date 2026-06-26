@@ -147,6 +147,23 @@ def onCityRazed(city, iPlayer):
 		data.iHumanRazePenalty += iRazePenalty
 		checkStability(iPlayer)
 
+# MacAurther: Added small raze penalty for pillaging Tribes
+@handler("unitPillage")
+def onTribeRazed(pUnit, iImprovement, iRoute, iOwner, iGold):
+	if iImprovement not in [iTribe, iContactedTribe]:
+		return
+
+	iPlayer = pUnit.getOwner()
+	if not player(iPlayer).isHuman():
+		return
+
+	civics = Civics.player(iPlayer)
+	if iImperialism in civics or iManifestDestiny in civics:
+		return
+
+	data.iHumanRazePenalty += -1
+	checkStability(iPlayer)
+
 @handler("techAcquired")
 def onTechAcquired(iTech, iTeam, iPlayer):
 	if year() == scenarioStartTurn():

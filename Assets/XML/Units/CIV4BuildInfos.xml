@@ -1044,6 +1044,7 @@
 			<Description>TXT_KEY_BUILD_FORT</Description>
 			<PrereqTech>TECH_REDUCTIONS</PrereqTech>
 			<iTime>0</iTime>
+			<iCost>25</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
