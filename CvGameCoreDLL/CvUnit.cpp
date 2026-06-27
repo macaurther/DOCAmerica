@@ -389,6 +389,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
 	m_iBaseCombat = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCombat() : 0;
 	m_eLeaderUnitType = NO_UNIT;
+	m_eVisualCiv = NO_CIVILIZATION;									// MacAurther
 	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;
 
 	m_combatUnit.reset();
@@ -513,6 +514,9 @@ void CvUnit::convert(CvUnit* pUnit)
 		m_szName.replace(m_szName.find(szUnitType), szUnitType.length(), m_pUnitInfo->getDescription());
 	}
 // BUG - Unit Name - end
+
+	if (pUnit->getVisualCiv() != NO_CIVILIZATION) // MacAurther: preserve visual civ through conversion/upgrade
+		setVisualCiv(pUnit->getVisualCiv());
 
 	CvUnit* pTransportUnit = pUnit->getTransportUnit();
 	if (pTransportUnit != NULL)
@@ -8116,6 +8120,18 @@ CivilizationTypes CvUnit::getCivilizationType() const
 	return GET_PLAYER(getOwnerINLINE()).getCivilizationType();
 }
 
+// MacAurther: Visual civ override for unit graphics
+CivilizationTypes CvUnit::getVisualCiv() const
+{
+	return m_eVisualCiv;
+}
+
+void CvUnit::setVisualCiv(CivilizationTypes eNewValue)
+{
+	m_eVisualCiv = eNewValue;
+	reloadEntity(); // refresh graphical entity to pick up new art style
+}
+
 const wchar* CvUnit::getVisualCivAdjective(TeamTypes eForTeam) const
 {
 	if (getVisualOwner(eForTeam) == getOwnerINLINE())
@@ -12849,6 +12865,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	FAssert(NO_UNIT != m_eUnitType);
 	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
 	pStream->Read((int*)&m_eLeaderUnitType);
+	pStream->Read((int*)&m_eVisualCiv);								// MacAurther
 
 	pStream->Read((int*)&m_combatUnit.eOwner);
 	pStream->Read(&m_combatUnit.iID);
@@ -12954,6 +12971,7 @@ void CvUnit::write(FDataStreamBase* pStream)
 	pStream->Write(m_eCapturingPlayer);
 	pStream->Write(m_eUnitType);
 	pStream->Write(m_eLeaderUnitType);
+	pStream->Write(m_eVisualCiv);										// MacAurther
 
 	pStream->Write(m_combatUnit.eOwner);
 	pStream->Write(m_combatUnit.iID);
@@ -14136,7 +14154,8 @@ const CvArtInfoUnit* CvUnit::getArtInfo(int i, EraTypes eEra) const
 		return m_pUnitInfo->getArtInfo(i, eEra, (UnitArtStyleTypes)getOriginalArtStyle());
 	}
 
-	return m_pUnitInfo->getArtInfo(i, eEra, (UnitArtStyleTypes) GC.getCivilizationInfo(getCivilizationType()).getUnitArtStyleType());
+	CivilizationTypes eVisualCiv = (m_eVisualCiv != NO_CIVILIZATION) ? m_eVisualCiv : getCivilizationType();	// MacAurther
+	return m_pUnitInfo->getArtInfo(i, eEra, (UnitArtStyleTypes) GC.getCivilizationInfo(eVisualCiv).getUnitArtStyleType());
 }
 
 const TCHAR* CvUnit::getButton() const

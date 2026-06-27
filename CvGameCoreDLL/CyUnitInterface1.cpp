@@ -284,6 +284,8 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 
 		.def("getDamage", &CyUnit::getDamage, "int ()")
 		.def("setDamage", &CyUnit::setDamage, "void (int iNewValue, int /*PlayerTypes*/ ePlayer)")
+		.def("getVisualCiv", &CyUnit::getVisualCiv, "int ()")					// MacAurther
+		.def("setVisualCiv", &CyUnit::setVisualCiv, "void (int /*CivilizationTypes*/ eNewValue)")	// MacAurther
 		.def("changeDamage", &CyUnit::changeDamage, "void (int iChange, int /*PlayerTypes*/ ePlayer)")
 		.def("getMoves", &CyUnit::getMoves, "int ()")
 		.def("setMoves", &CyUnit::setMoves, "void (int iNewValue)")

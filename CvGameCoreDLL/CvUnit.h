@@ -838,6 +838,9 @@ public:
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
 
+	CivilizationTypes getVisualCiv() const;								// MacAurther: Exposed to Python
+	void setVisualCiv(CivilizationTypes eNewValue);						// MacAurther: Exposed to Python
+
 	virtual void AI_init(UnitAITypes eUnitAI) = 0;
 	virtual void AI_uninit() = 0;
 	virtual void AI_reset(UnitAITypes eUnitAI = NO_UNITAI) = 0;
@@ -939,6 +942,7 @@ protected:
 	PlayerTypes m_eCapturingPlayer;
 	UnitTypes m_eUnitType;
 	UnitTypes m_eLeaderUnitType;
+	CivilizationTypes m_eVisualCiv; // MacAurther
 	CvUnitInfo *m_pUnitInfo;
 
 	IDInfo m_combatUnit;

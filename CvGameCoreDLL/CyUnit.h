@@ -297,6 +297,8 @@ public:
 	int getDamage();
 	void setDamage(int iNewValue, int /*PlayerTypes*/ ePlayer);
 	void changeDamage(int iChange, int /*PlayerTypes*/ ePlayer);
+	int getVisualCiv();												// MacAurther
+	void setVisualCiv(int /*CivilizationTypes*/ eNewValue);			// MacAurther
 	int getMoves();
 	void setMoves(int iNewValue);
 	void changeMoves(int iChange);

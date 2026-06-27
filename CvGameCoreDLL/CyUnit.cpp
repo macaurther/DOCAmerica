@@ -1169,6 +1169,18 @@ int CyUnit::getDamage()
 	return m_pUnit ? m_pUnit->getDamage() : -1;
 }
 
+// MacAurther: Visual civ override for unit graphics
+int CyUnit::getVisualCiv()
+{
+	return m_pUnit ? (int)m_pUnit->getVisualCiv() : -1;
+}
+
+void CyUnit::setVisualCiv(int eNewValue)
+{
+	if (m_pUnit)
+		m_pUnit->setVisualCiv((CivilizationTypes)eNewValue);
+}
+
 void CyUnit::setDamage(int iNewValue, int /*PlayerTypes*/ ePlayer)
 {
 	if (m_pUnit)

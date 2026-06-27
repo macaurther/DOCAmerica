@@ -650,6 +650,14 @@ def spawnTribeDefenders(pPlot, iAttacker):
 	message(iAttacker, 'TXT_KEY_TRIBE_DEFENDERS', sound='AS2D_GOODY_HOSTILE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pPlot)
 	pPlot.setTribeStoredUnits(0)
 
+# MacAurther: Give goody-spawned units indigenous graphics
+@handler("goodyReceived")
+def goodyUnitVisualCiv(iPlayer, pPlot, pUnit, iGoodyType):
+	for i in range(pPlot.getNumUnits()):
+		pSpawned = pPlot.getUnit(i)
+		if pSpawned.getOwner() == iPlayer and pSpawned.getID() != pUnit.getID():
+			pSpawned.setVisualCiv(iIndigenous)
+
 @handler("unitPillage")
 def tribePillage(pUnit, iImprovement, iRoute, iOwner, iGold):
 	# If pillage a tribe, do cleanup and enslavement
