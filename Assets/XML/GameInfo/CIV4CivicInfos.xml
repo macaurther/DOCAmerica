@@ -1684,6 +1684,7 @@
 			<Description>TXT_KEY_CIVIC_CREOLISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CREOLISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CREOLISM_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_CREOLISM_HELP</Help>
 			<TechPrereq>TECH_COMMUNITY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Creolism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>

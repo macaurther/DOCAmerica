@@ -240,7 +240,7 @@ def spawnTribeRaiders(pPlot):
 		iCiv = civ(iPlayer)
 		if iCiv not in lColonyCivs and iCiv not in lNationCivs:
 			continue
-		if iCiv in lNationCivs and iCreolism in Civics.player(iPlayer):
+		if iCreolism in Civics.player(iPlayer):
 			continue
 		iPlayerContribution = 0
 		for pCity in cities.owner(iPlayer):

@@ -2253,11 +2253,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CREOLISM_STRATEGY</Tag>
-		<English>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]</English>
-		<French>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]</French>
-		<German>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]</German>
-		<Italian>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]</Italian>
-		<Spanish>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]</Spanish>
+		<English>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]; nearby tribes do not spawn raiders</English>
+		<French>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]; nearby tribes do not spawn raiders</French>
+		<German>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]; nearby tribes do not spawn raiders</German>
+		<Italian>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]; nearby tribes do not spawn raiders</Italian>
+		<Spanish>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]; nearby tribes do not spawn raiders</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CREOLISM_HELP</Tag>
+		<English>[ICON_BULLET]Nearby tribes do not spawn raiders</English>
+		<French>[ICON_BULLET]Nearby tribes do not spawn raiders</French>
+		<German>[ICON_BULLET]Nearby tribes do not spawn raiders</German>
+		<Italian>[ICON_BULLET]Nearby tribes do not spawn raiders</Italian>
+		<Spanish>[ICON_BULLET]Nearby tribes do not spawn raiders</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_EMANCIPATION_STRATEGY</Tag>
