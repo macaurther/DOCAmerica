@@ -210,14 +210,20 @@ def waaKauluaAbility(pWinner, pLoser):
 				pCannon = makeUnit(iWinner, unique_unit(iWinner, iCannon), (pWinner.getX(), pWinner.getY()), UnitAITypes.UNITAI_ATTACK)
 				pCannon.setTransportUnit(pWinner)
 
-@handler("improvementBuilt")
+@handler("unitSpreadReligionAttempt")
 # Russian UP
-def onImprovementBuilt(iImprovement, iOldImprovement, iX, iY):	# MacAurther: Added old improvement argument
-	if iImprovement > -1 and iOldImprovement == iContactedTribe:
-		iPlayer = plot(iX, iY).getOwner()
-		if iPlayer > -1 and civ(iPlayer) == iRussia:
-			makeUnit(iPlayer, iSlave, (iX, iY), UnitAITypes.UNITAI_WORKER)
-			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='AS2D_UNITGIFTED', event=1, button=infos.unit(iSlave).getButton(), color=8, location=(iX, iY))
+def russiaUP(pUnit, iReligion, bSuccess):
+	if not bSuccess:
+		return
+	if pUnit.plot().getImprovementType() != iContactedTribe:
+		return
+	if iReligion != iOrthodoxy:
+		return
+	iPlayer = pUnit.getOwner()
+	if civ(iPlayer) != iRussia:
+		return
+	makeUnit(iPlayer, iSlave, (pUnit.getX(), pUnit.getY()), UnitAITypes.UNITAI_WORKER)
+	message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='AS2D_UNITGIFTED', event=1, button=infos.unit(iSlave).getButton(), color=8, location=(pUnit.getX(), pUnit.getY()))
 
 # MacAurther: Inuit UP
 @handler("cityBuilt")

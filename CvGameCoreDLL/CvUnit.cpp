@@ -5950,10 +5950,10 @@ bool CvUnit::spread(ReligionTypes eReligion)
 	// MacAurther: Can spread to Contacted Tribes too (which always succeeds)
 	if (plot()->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
 	{
-		plot()->improveTile();
-
 		// Python Event
 		CvEventReporter::getInstance().unitSpreadReligionAttempt(this, eReligion, true);
+
+		plot()->improveTile();
 
 		kill(true);
 		return true;
