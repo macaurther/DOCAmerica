@@ -585,22 +585,29 @@ def maintainFallenCivilizations():
 						makeUnits(city.getOwner(), iDefender, city, iNumDesiredUnits-iNumCurrentUnits, iDefenseAI)
 
 # MacAurther: Tribes
+# How advanced spawned units should be - 0: ancient, 1: medieval, 2: gunpowder
+def getTribeTechLevel(pPlot):
+	iTechLevel = 0
+	if pPlot.getRegionID() in [rYukon, rNunavut, rQuebec, rNewFoundland, rHawaii] + lBrazil + lArgentina + [rGuyana, rParaguay, rUruguay]: iTechLevel -= 1
+	if year() >= year(1350): iTechLevel += 1
+	if year() >= year(1820): iTechLevel += 1
+	if pPlot.getImprovementType() == iContactedTribe: iTechLevel += 1
+	return max(0, min(2, iTechLevel))
+
+def nameTribeUnits(lUnits, pPlot):
+	sTribeName = text("TXT_KEY_TRIBE_REGION_%d" % pPlot.getRegionID())
+	if sTribeName.startswith("TXT_KEY"):
+		return
+	for unit in lUnits:
+		unit.setName('%s %s' % (sTribeName, unit.getName()))
+
 @handler("tribeAttacked")
 def spawnTribeDefenders(pPlot, iAttacker):
 	iNumDefenders = pPlot.getTribeStoredUnits()
 
 	lSpecialUnits = []	# List of special units that can be spawned on this plot
 
-	iTechLevel = 0	# How advanced spawned units should be - <=0: early game (ancient), =1: mid game (medieval), >=2: late game (gunpowder/horse)
-	if pPlot.getRegionID() in [rYukon, rNunavut, rQuebec, rNewFoundland, rHawaii] + lBrazil + lArgentina + [rGuyana, rParaguay, rUruguay]: iTechLevel -= 1
-	if year() >= year(1350): iTechLevel += 1
-	if year() >= year(1820): iTechLevel += 1
-	# Contacted tribes get +1 Tech Level
-	if pPlot.getImprovementType() == iContactedTribe: iTechLevel += 1
-
-	# Put tech level in bounds
-	iTechLevel = max(iTechLevel, 0)
-	iTechLevel = min(iTechLevel, 2)
+	iTechLevel = getTribeTechLevel(pPlot)
 
 	# Build list of possible unique units to plut in plot based off of historical area
 	for iCiv in dCivGroups[iCivGroupNative]:
@@ -625,10 +632,6 @@ def spawnTribeDefenders(pPlot, iAttacker):
 	# Select basic defender based on tech level
 	lBasicDefender = [iMilitia, iArcher, iLongbowman]
 	lAdvancedDefender = [iArcher, iLongbowman, iArquebusier]
-	sTribeName = text("TXT_KEY_TRIBE_REGION_%d" % pPlot.getRegionID())
-	if sTribeName.startswith("TXT_KEY"):
-		sTribeName = ""
-
 	for iI in range(iNumDefenders):
 		# First two defenders are basic
 		if iI < 2: iUnit = lBasicDefender[iTechLevel]
@@ -642,9 +645,7 @@ def spawnTribeDefenders(pPlot, iAttacker):
 				iUnit = lAdvancedDefender[iTechLevel]
 
 		lUnits = makeUnits(slot(iIndigenous), iUnit, pPlot, 1, UnitAITypes.UNITAI_SIT_FOREVER)
-		if sTribeName:
-			for unit in lUnits:
-				unit.setName('%s %s' % (sTribeName, unit.getName()))
+		nameTribeUnits(lUnits, pPlot)
 	
 	message(iAttacker, 'TXT_KEY_TRIBE_DEFENDERS', sound='AS2D_GOODY_HOSTILE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pPlot)
 	pPlot.setTribeStoredUnits(0)

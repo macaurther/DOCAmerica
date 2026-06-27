@@ -4449,6 +4449,14 @@
 		<Spanish>Local tribespeople have taken up arms against your aggression!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TRIBE_RAIDERS</Tag>
+		<English>A raiding party has been spotted leaving a nearby tribe, intent on reclaiming their lands.</English>
+		<French>A raiding party has been spotted leaving a nearby tribe, intent on reclaiming their lands.</French>
+		<German>A raiding party has been spotted leaving a nearby tribe, intent on reclaiming their lands.</German>
+		<Italian>A raiding party has been spotted leaving a nearby tribe, intent on reclaiming their lands.</Italian>
+		<Spanish>A raiding party has been spotted leaving a nearby tribe, intent on reclaiming their lands.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_TRIBE_INTEGRATED</Tag>
 		<English>Local tribespeople have joined your band of nomads in %s1!</English>
 		<French>Local tribespeople have joined your band of nomads in %s1!</French>

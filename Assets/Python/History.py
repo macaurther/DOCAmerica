@@ -5,6 +5,7 @@ from Locations import *
 from Stability import *
 from Popups import popup
 from Scenarios import SCENARIOS
+from Minors import getTribeTechLevel, nameTribeUnits
 
 
 dRelocatedCapitals = CivDict({
@@ -209,6 +210,7 @@ def defendTribes(iGameTurn):
 				pPlot = plot(x,y)
 				if pPlot.getImprovementType() in [iTribe, iContactedTribe]:
 					replenishTribe(pPlot, iMaxUnits)
+					spawnTribeRaiders(pPlot)
 
 					# If it has been a while since the tribe was threatened, pack units back in
 					if(pPlot.getTribeThreatenTurn() + 8 < iGameTurn):
@@ -226,6 +228,56 @@ def replenishTribe(pPlot, iMaxUnits):
 			iNumIndigenous += 1
 	if iNumIndigenous + pPlot.getTribeStoredUnits() < iMaxUnits:
 		pPlot.setTribeStoredUnits(pPlot.getTribeStoredUnits() + 1)
+
+def spawnTribeRaiders(pPlot):
+	if pPlot.getNumUnits() > 0:
+		return
+
+	iChance = 0
+	lContributors = []
+	lHumanContributors = []
+	for iPlayer in players.major().existing():
+		iCiv = civ(iPlayer)
+		if iCiv not in lColonyCivs and iCiv not in lNationCivs:
+			continue
+		if iCiv in lNationCivs and iCreolism in Civics.player(iPlayer):
+			continue
+		iPlayerContribution = 0
+		for pCity in cities.owner(iPlayer):
+			iDist = plotDistance(pPlot.getX(), pPlot.getY(), pCity.getX(), pCity.getY())
+			if iDist == 1:
+				iPlayerContribution += 25
+			elif iDist == 2:
+				iPlayerContribution += 10
+		if iPlayerContribution > 0:
+			iChance += iPlayerContribution
+			lContributors.append(iPlayer)
+			if player(iPlayer).isHuman():
+				lHumanContributors.append(iPlayer)
+
+	if iChance <= 0:
+		return
+
+	if rand(100) >= min(iChance, 100):
+		return
+
+	lRaiders = [iSkirmisher, iMaceman, iArquebusier]
+	iUnit = lRaiders[getTribeTechLevel(pPlot)]
+
+	# declare war so raiders can enter Colony/Nation territory to pillage
+	iIndigPlayer = slot(iIndigenous)
+	for iPlayer in lContributors:
+		if not team(iIndigPlayer).isAtWar(player(iPlayer).getTeam()):
+			team(iIndigPlayer).declareWar(player(iPlayer).getTeam(), False, WarPlanTypes.WARPLAN_TOTAL)
+
+	lSpawned = makeUnits(iIndigPlayer, iUnit, pPlot, 1, UnitAITypes.UNITAI_ATTACK_CITY_LEMMING)
+	if not lSpawned:
+		return
+
+	nameTribeUnits(lSpawned, pPlot)
+
+	for iContributor in lHumanContributors:
+		message(iContributor, 'TXT_KEY_TRIBE_RAIDERS', sound='AS2D_GOODY_HOSTILE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pPlot)
 
 ### CITY BUILT ###
 
