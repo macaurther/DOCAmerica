@@ -7698,6 +7698,7 @@
 			<Strategy>TXT_KEY_BUILDING_KALASASAYA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_KALASASAYA</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_KALASASAYA</MovieDefineTag>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<FreeBuilding>BUILDINGCLASS_PLAZA</FreeBuilding>
@@ -7749,6 +7750,7 @@
 			<Strategy>TXT_KEY_BUILDING_PUEBLO_BONITO_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PUEBLO_BONITO</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_PUEBLO_BONITO</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_PATHFINDING</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
@@ -7816,6 +7818,7 @@
 			<Strategy>TXT_KEY_BUILDING_TLACHIHUALTEPETL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TLACHIHUALTEPETL</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_TLACHIHUALTEPETL</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_SCIENCE</ObsoleteTech>
@@ -7866,6 +7869,7 @@
 			<Strategy>TXT_KEY_BUILDING_GATE_OF_THE_SUN_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GATE_OF_THE_SUN</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_GATE_OF_THE_SUN</MovieDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
@@ -7914,6 +7918,7 @@
 			<Strategy>TXT_KEY_BUILDING_GREAT_GEOGLYPH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GREAT_GEOGLYPH</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_GREAT_GEOGLYPH</MovieDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_EARTHWORKS</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
@@ -7967,6 +7972,7 @@
 			<Strategy>TXT_KEY_BUILDING_WOODHENGE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STONEHENGE</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_WOODHENGE</MovieDefineTag>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<PrereqAdjacentFeature>FEATURE_FOREST</PrereqAdjacentFeature>
@@ -8010,6 +8016,7 @@
 			<Help>TXT_KEY_BUILDING_PYRAMID_OF_THE_SUN_HELP</Help>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PYRAMID_OF_THE_SUN</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_PYRAMID_OF_THE_SUN</MovieDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_CEREMONY</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
@@ -8063,6 +8070,7 @@
 			<Strategy>TXT_KEY_BUILDING_SERPENT_MOUND_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SERPENT_MOUND</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_SERPENT_MOUND</MovieDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_PROPERTY</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
@@ -8281,6 +8289,7 @@
 			<Strategy>TXT_KEY_BUILDING_SACSAYHUAMAN_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SACSAYHUAMAN</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_SACSAYHUAMAN</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_CEMENT</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_TACTICS</ObsoleteTech>
@@ -8333,6 +8342,7 @@
 			<Strategy>TXT_KEY_BUILDING_HUEY_TEOCALLI_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HUEY_TEOCALLI</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_HUEY_TEOCALLI</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_TACTICS</ObsoleteTech>
@@ -8398,6 +8408,7 @@
 			<Help>TXT_KEY_BUILDING_YACHAYWASI_HELP</Help>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_YACHAYWASI</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_YACHAYWASI</MovieDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_SCIENCE</ObsoleteTech>
@@ -8448,6 +8459,7 @@
 			<Strategy>TXT_KEY_BUILDING_PUREPECHA_YACATAS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_SACRIFICIAL_ALTAR</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_YACATAS</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
@@ -8513,6 +8525,7 @@
 			<Strategy>TXT_KEY_BUILDING_TEMBLEQUE_AQUEDUCT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AQUA_APPIA</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_TEMBLEQUE_AQUEDUCT</MovieDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_FINANCE</PrereqTech>
 			<ObsoleteTech>TECH_ELECTRICITY</ObsoleteTech>
@@ -8566,6 +8579,7 @@
 			<Strategy>TXT_KEY_BUILDING_LA_FORTALEZA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_LA_FORTALEZA</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_LA_FORTALEZA</MovieDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_OFFICIALS</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
@@ -8627,6 +8641,7 @@
 			<Help>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SAO_FRANCISCO_SQUARE</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_SAO_FRANCISCO_SQUARE</MovieDefineTag>
 			<PrereqTech>TECH_URBAN_PLANNING</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8716,6 +8731,7 @@
 			<Strategy>TXT_KEY_BUILDING_MANZANA_JESUITICA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MANZANA_JESUITICA</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_MANZANA_JESUITICA</MovieDefineTag>
 			<StateReligion>RELIGION_CATHOLICISM</StateReligion>
 			<PrereqReligion>RELIGION_CATHOLICISM</PrereqReligion>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
@@ -8774,6 +8790,7 @@
 			<Strategy>TXT_KEY_BUILDING_INDEPENDENCE_HALL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INDEPENDENCE_HALL</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_INDEPENDENCE_HALL</MovieDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_INDEPENDENCE</PrereqTech>
 			<FreeBuilding>BUILDINGCLASS_COURTHOUSE</FreeBuilding>
@@ -8828,6 +8845,7 @@
 			<Strategy>TXT_KEY_BUILDING_HOSPICIO_CABANAS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HOSPICIO_CABANAS</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_HOSPICIO_CABANAS</MovieDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_SCIENTIFIC_METHOD</PrereqTech>
 			<ReligionType>RELIGION_CATHOLICISM</ReligionType>
@@ -8880,6 +8898,7 @@
 			<Help>TXT_KEY_BUILDING_MOUNT_VERNON_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MOUNT_VERNON</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_MOUNT_VERNON</MovieDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_SOCIAL_CONTRACT</PrereqTech>
 			<ObsoleteTech>TECH_PROGRESSIVISM</ObsoleteTech>
@@ -8929,6 +8948,7 @@
 			<Strategy>TXT_KEY_BUILDING_MONTICELLO_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MONTICELLO</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_MONTICELLO</MovieDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_STATECRAFT</PrereqTech>
 			<ObsoleteTech>TECH_PROGRESSIVISM</ObsoleteTech>
@@ -8979,6 +8999,7 @@
 			<Strategy>TXT_KEY_BUILDING_SLATER_MILL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SLATER_MILL</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_SLATER_MILL</MovieDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_GEOGRAPHY</PrereqTech>
 			<PrereqBonuses>BONUS_COTTON</PrereqBonuses>
@@ -9085,6 +9106,7 @@
 			<Strategy>TXT_KEY_BUILDING_FORT_MCHENRY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FORT_MCHENRY</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_FORT_MCHENRY</MovieDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_PHYSICS</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
@@ -9149,6 +9171,7 @@
 			<Strategy>TXT_KEY_BUILDING_WASHINGTON_MONUMENT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WASHINGTON_MONUMENT</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_WASHINGTON_MONUMENT</MovieDefineTag>
 			<PrereqTech>TECH_NATIONALISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -9196,6 +9219,7 @@
 			<Strategy>TXT_KEY_BUILDING_FANEUIL_HALL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FANEUIL_HALL</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_FANEUIL_HALL</MovieDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_NEWSPAPERS</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
@@ -9343,6 +9367,7 @@
 			<Help>TXT_KEY_BUILDING_CENTRAL_PARK_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CENTRAL_PARK</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_CENTRAL_PARK</MovieDefineTag>
 			<PrereqTech>TECH_CONSERVATION</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -9384,6 +9409,7 @@
 			<Strategy>TXT_KEY_BUILDING_ELLIS_ISLAND_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ELLIS_ISLAND</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_ELLIS_ISLAND</MovieDefineTag>
 			<PrereqTech>TECH_PROGRESSIVISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -9621,6 +9647,7 @@
 			<Help>TXT_KEY_BUILDING_BILTMORE_ESTATE_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BILTMORE_ESTATE</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_BILTMORE_ESTATE</MovieDefineTag>
 			<PrereqTech>TECH_RAILROAD</PrereqTech>
 			<FreeBuilding>BUILDINGCLASS_RAILWAY_STATION</FreeBuilding>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
@@ -9669,6 +9696,7 @@
 			<Help>TXT_KEY_BUILDING_FRENCH_QUARTER_HELP</Help>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FRENCH_QUARTER</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_FRENCH_QUARTER</MovieDefineTag>
 			<PrereqTech>TECH_ELECTRICITY</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -9739,6 +9767,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_EMPIRE_STATE_BUILDING</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_EMPIRE_STATE_BUILDING</MovieDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_EMPIRE_STATE_BUILDING</MovieDefineTag>
 			<PrereqTech>TECH_MACROECONOMICS</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -9783,6 +9812,7 @@
 			<Strategy>TXT_KEY_BUILDING_GOLDEN_GATE_BRIDGE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GOLDEN_GATE_BRIDGE</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_GOLDEN_GATE_BRIDGE</MovieDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_GOLDEN_GATE_BRIDGE</MovieDefineTag>
 			<PrereqTech>TECH_CIVIL_RIGHTS</PrereqTech>
 			<PrereqAdjacentFeature>FEATURE_STRAIT_ISLANDS</PrereqAdjacentFeature>
@@ -9858,6 +9888,7 @@
 			<Help>TXT_KEY_BUILDING_HOOVER_DAM_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HOOVER_DAM</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_HOOVER_DAM</MovieDefineTag>
 			<PrereqTech>TECH_INFRASTRUCTURE</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -9908,6 +9939,7 @@
 			<Strategy>TXT_KEY_BUILDING_ALCATRAZ_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ALCATRAZ</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_ALCATRAZ</MovieDefineTag>
 			<PrereqTech>TECH_PSYCHOLOGY</PrereqTech>
 			<PrereqAdjacentFeature>FEATURE_STRAIT_ISLANDS</PrereqAdjacentFeature>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
@@ -9962,6 +9994,7 @@
 			<Strategy>TXT_KEY_BUILDING_MOUNT_RUSHMORE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MT_RUSHMORE</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_MOUNT_RUSHMORE</MovieDefineTag>
 			<PrereqTech>TECH_PSYCHOLOGY</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>

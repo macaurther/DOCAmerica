@@ -123,6 +123,10 @@
 			<Path>Art/Movies/Wonders/TrafalgarSquare.bik</Path>
 		</MovieArtInfo>
 		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_EMPIRE_STATE_BUILDING</Type>
+			<Path>Art/Movies/Wonders/EmpireStateBuilding.bik</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
 			<Type>ART_DEF_MOVIE_MACHU_PICCHU</Type>
 			<Path>Art/Movies/Wonders/Machu Picchu.bik</Path>
 		</MovieArtInfo>
@@ -235,6 +239,10 @@
 			<Path>Art/Movies/Wonders/Shalimar_Gardens.dds</Path>
 		</MovieArtInfo>
 		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_GOLDEN_GATE_BRIDGE</Type>
+			<Path>Art/Movies/Wonders/Golden_Gate_Bridge.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
 			<Type>ART_DEF_MOVIE_TORRE_DE_BELEM</Type>
 			<Path>Art/Movies/Wonders/TorreDeBelem.bik</Path>
 		</MovieArtInfo>
@@ -245,6 +253,130 @@
 		<MovieArtInfo>
 			<Type>ART_DEF_MOVIE_TSUKIJI</Type>
 			<Path>Art/Movies/Wonders/Tsukiji.bik</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_ALCATRAZ</Type>
+			<Path>Art/Movies/Wonders/Alcatraz.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_BILTMORE_ESTATE</Type>
+			<Path>Art/Movies/Wonders/BiltmoreEstate.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_CENTRAL_PARK</Type>
+			<Path>Art/Movies/Wonders/CentralPark.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_ELLIS_ISLAND</Type>
+			<Path>Art/Movies/Wonders/EllisIsland.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_FANEUIL_HALL</Type>
+			<Path>Art/Movies/Wonders/FaneuilHall.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_FORT_MCHENRY</Type>
+			<Path>Art/Movies/Wonders/FortMcHenry.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_FRENCH_QUARTER</Type>
+			<Path>Art/Movies/Wonders/FrenchQuarter.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_GATE_OF_THE_SUN</Type>
+			<Path>Art/Movies/Wonders/GateOfTheSun.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_GREAT_GEOGLYPH</Type>
+			<Path>Art/Movies/Wonders/GreatGeoglyph.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_HOOVER_DAM</Type>
+			<Path>Art/Movies/Wonders/HooverDam.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_HOSPICIO_CABANAS</Type>
+			<Path>Art/Movies/Wonders/HospicioCabanas.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_HUEY_TEOCALLI</Type>
+			<Path>Art/Movies/Wonders/HueyTeocalli.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_INDEPENDENCE_HALL</Type>
+			<Path>Art/Movies/Wonders/IndependenceHall.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_KALASASAYA</Type>
+			<Path>Art/Movies/Wonders/Kalasasaya.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_LA_FORTALEZA</Type>
+			<Path>Art/Movies/Wonders/LaFortaleza.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_MANZANA_JESUITICA</Type>
+			<Path>Art/Movies/Wonders/ManzanaJesuitica.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_MONTICELLO</Type>
+			<Path>Art/Movies/Wonders/Monticello.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_MOUNT_RUSHMORE</Type>
+			<Path>Art/Movies/Wonders/MountRushmore.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_MOUNT_VERNON</Type>
+			<Path>Art/Movies/Wonders/MountVernon.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_PUEBLO_BONITO</Type>
+			<Path>Art/Movies/Wonders/PuebloBonito.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_YACATAS</Type>
+			<Path>Art/Movies/Wonders/Yacatas.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_PYRAMID_OF_THE_SUN</Type>
+			<Path>Art/Movies/Wonders/PyramidOfTheSun.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_SACSAYHUAMAN</Type>
+			<Path>Art/Movies/Wonders/Sacsayhuaman.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_SAO_FRANCISCO_SQUARE</Type>
+			<Path>Art/Movies/Wonders/SaoFranciscoSquare.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_SERPENT_MOUND</Type>
+			<Path>Art/Movies/Wonders/SerpentMound.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_SLATER_MILL</Type>
+			<Path>Art/Movies/Wonders/SlaterMill.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_TEMBLEQUE_AQUEDUCT</Type>
+			<Path>Art/Movies/Wonders/TemblequeAqueduct.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_TLACHIHUALTEPETL</Type>
+			<Path>Art/Movies/Wonders/Tlachihualtepetl.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_WASHINGTON_MONUMENT</Type>
+			<Path>Art/Movies/Wonders/WashingtonMonument.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_WOODHENGE</Type>
+			<Path>Art/Movies/Wonders/Woodhenge.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_YACHAYWASI</Type>
+			<Path>Art/Movies/Wonders/Yachaywasi.dds</Path>
 		</MovieArtInfo>
 	</MovieArtInfos>
 </Civ4ArtDefines>

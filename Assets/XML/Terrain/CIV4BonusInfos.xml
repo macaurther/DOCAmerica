@@ -1640,6 +1640,7 @@
 			<ArtDefineTag>ART_DEF_BONUS_SEAL</ArtDefineTag>
 			<TechReveal>TECH_TRAPPING</TechReveal>
 			<TechCityTrade>TECH_DUGOUTS</TechCityTrade>
+			<TechObsolete>TECH_SYNTHETICS</TechObsolete>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 				<iYieldChange>0</iYieldChange>

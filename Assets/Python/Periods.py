@@ -69,8 +69,7 @@ def onBirth(iPlayer):
 
 @handler("collapse")
 def onCollapse(iPlayer):
-	if civ(iPlayer) == iCSA:	
-		setPeriod(iAmerica, iUnifiedUSA)
+	pass
 
 @handler("resurrection")
 def onResurrection(iPlayer):
@@ -130,3 +129,12 @@ def onCapitalMoved(city):
 def onTechAcquired(iTech, iTeam, iPlayer):
 	iCiv = civ(iPlayer)
 	iEra = infos.tech(iTech).getEra()
+
+
+@handler("BeginGameTurn")
+def unifyUSA(iGameTurn):
+	# if CSA never spawned or was eliminated, transition America to unified after 1864
+	if year() > 1864 and game.getPeriod(iAmerica) != iUnifiedUSA:
+		iCSASlot = slot(iCSA)
+		if iCSASlot < 0 or not player(iCSASlot).isAlive():
+			setPeriod(iAmerica, iUnifiedUSA)
