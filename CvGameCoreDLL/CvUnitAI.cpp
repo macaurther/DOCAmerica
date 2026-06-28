@@ -9996,6 +9996,15 @@ bool CvUnitAI::AI_join(int iMaxCount)
 							if (GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(pLoopCity->plot(), 2) == 0)
 							{
 								iValue = pLoopCity->AI_specialistValue(((SpecialistTypes)iI), pLoopCity->AI_avoidGrowth(), false);
+								// MacAurther: growing malus when settling immigrants or slaves into an already-stacked city
+								if (eSpecialist == SPECIALIST_IMMIGRANT || eSpecialist == SPECIALIST_SLAVE)
+								{
+									int iOvercrowding = std::max(0, pLoopCity->getFreeSpecialistCount(eSpecialist) - 3);
+									if (iOvercrowding > 0)
+									{
+										iValue = std::max(0, iValue - iOvercrowding * 200);
+									}
+								}
 								if (iValue > iBestValue)
 								{
 									iBestValue = iValue;
