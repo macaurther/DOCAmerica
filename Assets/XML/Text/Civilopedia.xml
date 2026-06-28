@@ -4697,6 +4697,12 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]Tribes can be 'contacted' by moving an [LINK=UNIT_EXPLORER]Explorer[\LINK] or [LINK=UNIT_RANGER]Ranger[\LINK] to them, and performing the Contact action. The Tribe then becomes a Contacted Tribe and gives you a gift (equivalent to Goody rewards).
 [ICON_BULLET]The [LINK=TECH_INTERPRETATION]Linguistics[\LINK] and the [LINK=TECH_INTERPRETATION]Localization[\LINK] technologies boost bonuses received for contacting tribes. This could be more money, more XP, or better units. 
 [ICON_BULLET]Contacted Tribes can be Converted by expending a Missionary of your state religion. This counts as a religion spread. Converted Tribes turn into the Improvement for the bonus they're on, or a [LINK=IMPROVEMENT_COTTAGE]Cottage[\LINK] if their tile has no bonus.
+[H2]Raiders:[\H2]
+[PARAGRAPH:1]Tribes near Colony and Nation settlements may spawn Raiders — hostile indigenous warriors who will pillage and attack nearby cities.
+[NEWLINE][ICON_BULLET]The chance of a Raider spawning each turn is based on proximity. Cities adjacent to a Tribe have a much higher contribution than cities two tiles away.
+[ICON_BULLET]Multiple nearby cities stack their contributions, increasing the chance further.
+[ICON_BULLET]Raiders will not spawn if the Tribe already has units defending it.
+[ICON_BULLET]Colonies running the [LINK=CIVIC_CREOLISM]Creolism[\LINK] civic do not contribute to Raider spawning, as their inclusive society does not antagonize nearby Tribes.
 [H2]Stability:[\H2]
 [PARAGRAPH:1]Pillaging a Tribe or Contacted Tribe incurs a -1 [LINK=CONCEPT_STABILITY]stability[\LINK] penalty. This penalty is waived if you are running the [LINK=CIVIC_IMPERIALISM]Imperialism[\LINK] or [LINK=CIVIC_MANIFEST_DESTINY]Manifest Destiny[\LINK] civic.
 		</English>

@@ -233,6 +233,9 @@ def spawnTribeRaiders(pPlot):
 	if pPlot.getNumUnits() > 0:
 		return
 
+	if pPlot.getBirthProtected() >= 0:
+		return
+
 	iChance = 0
 	lContributors = []
 	lHumanContributors = []
