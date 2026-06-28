@@ -31179,7 +31179,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=110
-	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_FJORD
 	PlotType=3
 EndPlot

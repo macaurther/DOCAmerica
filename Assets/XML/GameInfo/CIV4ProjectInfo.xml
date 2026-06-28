@@ -349,5 +349,48 @@
 			<CreateSound/>
 			<MovieDefineTag/>
 		</ProjectInfo>
+		<ProjectInfo>
+			<Type>PROJECT_MANHATTAN_PROJECT</Type>
+			<Description>TXT_KEY_PROJECT_MANHATTAN_PROJECT</Description>
+			<Civilopedia>TXT_KEY_PROJECT_MANHATTAN_PROJECT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROJECT_MANHATTAN_PROJECT_STRATEGY</Strategy>
+			<VictoryPrereq>NONE</VictoryPrereq>
+			<TechPrereq>TECH_FISSION</TechPrereq>
+			<AnyonePrereqProject>NONE</AnyonePrereqProject>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iCost>2000</iCost>
+			<iNukeInterception>0</iNukeInterception>
+			<iTechShare>0</iTechShare>
+			<iAirExperience>0</iAirExperience>
+			<iFirstAirExperience>0</iFirstAirExperience>
+			<iExistingProductionModifier>0</iExistingProductionModifier>
+			<SpecialUnit>NONE</SpecialUnit>
+			<EveryoneSpecialUnit>NONE</EveryoneSpecialUnit>
+			<EveryoneSpecialBuilding>SPECIALBUILDING_BOMB_SHELTER</EveryoneSpecialBuilding>
+			<FirstFreeUnit>UNIT_NUCLEAR_BOMBER</FirstFreeUnit>
+			<FreePromotion>NONE</FreePromotion>
+			<bSpaceship>0</bSpaceship>
+			<bAllowsNukes>1</bAllowsNukes>
+			<bSatelliteIntercept>0</bSatelliteIntercept>
+			<bSatelliteAttack>0</bSatelliteAttack>
+			<bGoldenAge>0</bGoldenAge>
+			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
+			<bRevealsMap>0</bRevealsMap>
+			<Button>,Art/Interface/Buttons/Buildings/ManhattanProject.dds,Art/Interface/Buttons/Buildings_Atlas.dds,7,4</Button>
+			<PrereqProjects/>
+			<VictoryThresholds/>
+			<VictoryMinThresholds/>
+			<iVictoryDelayPercent>0</iVictoryDelayPercent>
+			<iSuccessRate>0</iSuccessRate>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_URANIUM</BonusType>
+					<iProductonModifier>100</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
+			<CreateSound/>
+			<MovieDefineTag>ART_DEF_MOVIE_MANHATTAN_PROJECT</MovieDefineTag>
+		</ProjectInfo>
 	</ProjectInfos>
 </Civ4ProjectInfo>

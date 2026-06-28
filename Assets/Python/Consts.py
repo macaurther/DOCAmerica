@@ -918,7 +918,7 @@ lEuropeanRevealed1850AD = lWest + [rArcticO, rBaffinB, rNorthwestPassage, rHudso
 
 iNumProjects = 9
 # 0				1				2				3				4				5				6				7				8				9
-(iMigrateN,		iMigrateNE,		iMigrateE,		iMigrateSE,		iMigrateS,		iMigrateSW,		iMigrateW,		iMigrateNW,		iWorldsFair) = range(iNumProjects)
+(iMigrateN,		iMigrateNE,		iMigrateE,		iMigrateSE,		iMigrateS,		iMigrateSW,		iMigrateW,		iMigrateNW,		iWorldsFair, 	iManhattanProject) = range(iNumProjects)
 
 #Eras
 

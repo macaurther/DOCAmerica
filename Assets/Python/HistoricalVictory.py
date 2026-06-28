@@ -406,7 +406,7 @@ dGoals = {
 		All(
 			RouteConnection([iRouteRailroad], capital().named(CAPITAL), plots.all().coastal().regions(*lCanadaAtlanticCoast).named(ATLANTIC_COAST)),
 			RouteConnection([iRouteRailroad], capital().named(CAPITAL), plots.all().coastal().regions(*lCanadaPacificCoast).named(PACIFIC_COAST)),
-			by=1920,
+			by=1886,
 		),
 		All(
 			Control((plots.regions(*lCanada)).named(CITIES_IN_CANADA)),

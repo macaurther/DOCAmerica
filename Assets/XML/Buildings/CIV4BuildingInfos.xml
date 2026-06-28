@@ -9712,7 +9712,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_LEAGUE_OF_NATIONS</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_LEAGUE_OF_NATIONS</MovieDefineTag>
 			<VictoryPrereq>VICTORY_DIPLOMATIC</VictoryPrereq>
-			<PrereqTech>TECH_MULTILATERALISM</PrereqTech>
+			<PrereqTech>TECH_GLOBALISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
