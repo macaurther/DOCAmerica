@@ -2617,8 +2617,8 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 		if (eImprovement == IMPROVEMENT_OCEAN_FISHERY && getTerrainType() != TERRAIN_OCEAN) return false;
 	}
 
-	// MacAurther: No improvements on Atolls or Lagoons
-	if (getTerrainType() == GC.getInfoTypeForString("TERRAIN_LAGOON") || getTerrainType() == GC.getInfoTypeForString("TERRAIN_ATOLL"))
+	// MacAurther: No improvements on Atolls or Lagoons, except for Contacted Tribes
+	if (eImprovement != IMPROVEMENT_CONTACTED_TRIBE && (getTerrainType() == GC.getInfoTypeForString("TERRAIN_LAGOON") || getTerrainType() == GC.getInfoTypeForString("TERRAIN_ATOLL")))
 	{
 		return false;
 	}

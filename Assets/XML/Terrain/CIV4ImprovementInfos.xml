@@ -2739,6 +2739,10 @@
 					<TerrainType>TERRAIN_SAVANNA</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_ATOLL</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<FeatureMakesValids>
 				<FeatureMakesValid>
