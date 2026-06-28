@@ -23,6 +23,8 @@ dCompanyExpiry = defaultdict({
 	iWestIndiesCompany : 1800,
 	iTextileIndustry   : 1920,
 }, 2020)
+
+lTradingCompanyCorps = [iWestIndiesCompany, iTrappingIndustry]
 					
 	
 @handler("cityAcquired")
@@ -31,6 +33,44 @@ def verifyCorporations(iOwner, iPlayer, city):
 		if city.isHasCorporation(iCorporation):
 			if getCityValue(city, iCorporation) < 0:
 				city.setHasCorporation(iCorporation, False, True, True)
+	# MacAurther: spread trading companies to acquired city if new owner has Trading Company
+	if has_civic(player(iPlayer), iTradingCompany):
+		for iCorp in lTradingCompanyCorps:
+			if canHaveCompany(iCorp, iPlayer) and getCityValue(city, iCorp) > 0:
+				city.setHasCorporation(iCorp, True, True, True)
+
+
+@handler("cityBuilt")
+def tradingCompanyNewCity(city):
+	# MacAurther: spread trading companies to newly built cities when running Trading Company
+	iPlayer = city.getOwner()
+	if has_civic(player(iPlayer), iTradingCompany):
+		for iCorp in lTradingCompanyCorps:
+			if canHaveCompany(iCorp, iPlayer) and getCityValue(city, iCorp) > 0:
+				city.setHasCorporation(iCorp, True, True, True)
+
+
+@handler("playerRevolution")
+def tradingCompanyAdopted(iPlayer, iAnarchyTurns, lOldCivics, lNewCivics):
+	# MacAurther: spread trading companies to all eligible cities when Trading Company is newly adopted
+	if iTradingCompany not in lNewCivics or iTradingCompany in lOldCivics:
+		return
+	for city in cities.owner(iPlayer):
+		for iCorp in lTradingCompanyCorps:
+			if canHaveCompany(iCorp, iPlayer) and getCityValue(city, iCorp) > 0:
+				city.setHasCorporation(iCorp, True, True, True)
+
+
+@handler("techAcquired")
+def tradingCompanyTechUnlocked(iTech, iTeam, iPlayer):
+	# MacAurther: if iCompanies is unlocked while already running Trading Company, spread trading companies
+	if iTech != iCompanies:
+		return
+	if has_civic(player(iPlayer), iTradingCompany):
+		for city in cities.owner(iPlayer):
+			for iCorp in lTradingCompanyCorps:
+				if canHaveCompany(iCorp, iPlayer) and getCityValue(city, iCorp) > 0:
+					city.setHasCorporation(iCorp, True, True, True)
 
 
 @handler("BeginGameTurn")
@@ -221,8 +261,12 @@ def getCityValue(city, iCompany):
 		return -1
 	
 	iCompanyExcess = max(0, iCompanyCount - iCompanyLimit / 2)
-	
+
 	iValue *= 10
 	iValue /= 10 + iCompanyExcess
-		
+
+	# MacAurther: Trading Company guarantees West Indies and Trapping Industry in all eligible cities
+	if iCompany in lTradingCompanyCorps and has_civic(owner, iTradingCompany):
+		return 1000
+
 	return iValue

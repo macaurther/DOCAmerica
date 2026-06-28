@@ -786,11 +786,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRADING_COMPANY_STRATEGY</Tag>
-		<English>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE]; reduced unit production</English>
-		<French>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE]; reduced unit production</French>
-		<German>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE]; reduced unit production</German>
-		<Italian>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE]; reduced unit production</Italian>
-		<Spanish>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE]; reduced unit production</Spanish>
+		<English>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE]; reduced unit production; guarantees West Indies Company and Trapping Industry in all eligible cities</English>
+		<French>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE]; reduced unit production; guarantees West Indies Company and Trapping Industry in all eligible cities</French>
+		<German>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE]; reduced unit production; guarantees West Indies Company and Trapping Industry in all eligible cities</German>
+		<Italian>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE]; reduced unit production; guarantees West Indies Company and Trapping Industry in all eligible cities</Italian>
+		<Spanish>Can hurry building [ICON_PRODUCTION] with gold; increased [ICON_COMMERCE]; reduced unit production; guarantees West Indies Company and Trapping Industry in all eligible cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRADING_COMPANY_HELP</Tag>
+		<English>[ICON_BULLET]Guarantees [LINK=CORPORATION_WEST_INDIES_COMPANY]West Indies Company[\LINK] and [LINK=CORPORATION_TRAPPING_INDUSTRY]Trapping Industry[\LINK] in all eligible cities</English>
+		<French>[ICON_BULLET]Guarantees [LINK=CORPORATION_WEST_INDIES_COMPANY]West Indies Company[\LINK] and [LINK=CORPORATION_TRAPPING_INDUSTRY]Trapping Industry[\LINK] in all eligible cities</French>
+		<German>[ICON_BULLET]Guarantees [LINK=CORPORATION_WEST_INDIES_COMPANY]West Indies Company[\LINK] and [LINK=CORPORATION_TRAPPING_INDUSTRY]Trapping Industry[\LINK] in all eligible cities</German>
+		<Italian>[ICON_BULLET]Guarantees [LINK=CORPORATION_WEST_INDIES_COMPANY]West Indies Company[\LINK] and [LINK=CORPORATION_TRAPPING_INDUSTRY]Trapping Industry[\LINK] in all eligible cities</Italian>
+		<Spanish>[ICON_BULLET]Guarantees [LINK=CORPORATION_WEST_INDIES_COMPANY]West Indies Company[\LINK] and [LINK=CORPORATION_TRAPPING_INDUSTRY]Trapping Industry[\LINK] in all eligible cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMONWEALTH</Tag>
