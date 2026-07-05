@@ -30,7 +30,7 @@ lCivilizations = [
 	),
 	Civilization(
 		iIndependent2,
-		techs=techs.column(8).without(iNorthEuropeAccess, iSouthEuropeAccess, iContinuance, iStewardship)
+		techs=techs.column(3)
 	),
 	Civilization(
 		iIndependent3

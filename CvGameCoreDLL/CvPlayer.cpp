@@ -4516,7 +4516,7 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 				return false;
 			}
 
-			if (pCityTraded->isOccupation())
+			if (pCityTraded->isOccupation() && !pCityTraded->isPreviousOwner(eWhoTo))
 			{
 				return false;
 			}
