@@ -4561,7 +4561,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 		}
 	}
 
-	// MacAurther: AI American and Brazil want to move their capitols
+	// MacAurther: AI American and Brazil want to move their capitals
 	if (eBuildingClass == BUILDINGCLASS_PALACE && GET_PLAYER(getOwner()).getCivilizationType() == AMERICA)
 	{
 		if (getX() == WASHINGTON_X && getY() == WASHINGTON_Y)
@@ -4574,6 +4574,14 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 		if (getX() == BRASILIA_X && getY() == BRASILIA_Y)
 		{
 			iValue += 500;
+		}
+	}
+	// Spain REALLY wants to move its capital
+	if (eBuildingClass == BUILDINGCLASS_PALACE && GET_PLAYER(getOwner()).getCivilizationType() == SPAIN)
+	{
+		if (getX() == MEXICO_CITY_X && getY() == MEXICO_CITY_Y)
+		{
+			iValue += 5000;
 		}
 	}
 

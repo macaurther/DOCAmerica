@@ -268,6 +268,11 @@ _ = object()
 name_translations = {
 
 	### A ###
+	"Albany": {
+		iEnglish: _,
+		iAmerican: _,
+		iDutch: "Fort Oranje",
+	},
 	"Aniak": {
 		iLocal: _,
 		iNative: "Anyaraq",
@@ -288,10 +293,26 @@ name_translations = {
 		iEnglish: _,
 		iAmerican: "Washington",
 	},
+	"Baton Rouge": {
+		iFrench: _,
+		iAmerican: _,
+		iEnglish: "New Richmond",
+		iSpanish: "San Carlos",
+	},
+	"Biloxi": {
+		iEnglish: _,
+		iAmerican: _,
+		iFrench: "Fort Maurepas",
+	},
 	"Bogota": {
 		iLocal: _,
 		iNative: _,
 		iSpanish: u"Bogotá",
+	},
+	"Brooklyn": {
+		iEnglish: _,
+		iAmerican: _,
+		iDutch: "Breukelen",
 	},
 
 	### C ###
@@ -306,24 +327,45 @@ name_translations = {
 		iQuechua: "Pachacamac",
 		iSpanish: "Lima",
 	},
-	"Chalchuapa": {
-		iMayan: _,
-		iNahuatl: _,
-		iSpanish: "San Miguel",
+	"Castries": {
+		iEnglish: _,
+		iAmerican: _,
+		iFrench: "Fort-Royal",
 	},
 	"Catarpe": {
 		iQuechua: _,
 		iNative: _,
 		iSpanish: "San Pedro de Atacama",
 	},
+	"Chalchuapa": {
+		iMayan: _,
+		iNahuatl: _,
+		iSpanish: "San Miguel",
+	},
 	"Chan Chan": {
 		iQuechua: _,
 		iNative: _,
 		iSpanish: "Trujillo",
 	},
+	"Charleston": {
+		iEnglish: _,
+		iAmerican: _,
+		iFrench: "Charlesfort",
+		iSpanish: "Santa Elena",
+	},
+	"Charlotte Amalie": {
+		iNordic: _,
+		iAmerican: _,
+		iEnglish: "Road Town",
+		iFrench: "Sainte-Croix",
+		iSpanish: "Santa Cruz",
+	},
 	"Chena Pukara": {
 		iLocal: _,
 		iNative: _,
+		iFrench: "Santiago du Chili",
+		iPortuguese: "Santiago do Chile",
+		iRussian: "Santyago",
 		iSpanish: "Santiago",
 	},
 	"Chichen Itza": {
@@ -368,6 +410,11 @@ name_translations = {
 		iEnglish: _,
 		iSwedish: found("Vinland"),
 	},
+	"Detroit": {
+		iEnglish: _,
+		iAmerican: _,
+		iFrench: u"Détroit",
+	},
 	"Dover": {
 		iEnglish: _,
 		iSwedish: found("Zwaanendael"),
@@ -379,11 +426,22 @@ name_translations = {
 	### F ###
 	"Fort Christina": {
 		iNordic: _,
+		iDutch: "Fort Altena",
 		iEnglish: "Wilmington",
 		iAmerican: "Wilmington",
 	},
+	"Fortaleza": {
+		iBrazilian: _,
+		iPortuguese: _,
+		iDutch: "Schoonenborch",
+	},
 
 	### G ###
+	"Georgetown": {
+		iEnglish: _,
+		iAmerican: _,
+		iDutch: "Stabroek",
+	},
 
 	### H ###
 	"Hatun Canar": {
@@ -427,6 +485,7 @@ name_translations = {
 	"Kitu": {
 		iQuechua: _,
 		iNative: _,
+		iRussian: "Kito",
 		iSpanish: "Quito",
 	},
 
@@ -447,6 +506,12 @@ name_translations = {
 		iNative: _,
 		iSpanish: u"Medellín",
 	},
+	"Mobile": {
+		iEnglish: _,
+		iAmerican: _,
+		iFrench: "La Mobile",
+		iSpanish: "Movila",
+	},
 
 	### N ###
 	"Naco": {
@@ -459,12 +524,23 @@ name_translations = {
 		iNative: _,
 		iSpanish: "Nazca",
 	},
+	"Natal": {
+		iBrazilian: _,
+		iPortuguese: _,
+		iDutch: "Fort Ceulen",
+	},
 	"New Amsterdam": {
 		iDutch: "Nieuw-Amsterdam",
 		iEnglish: "New York",
 		iAmerican: "New York",
 		iFrench: u"La Nouvelle-Angoulême",
 		iRussian: "Nowy Jork",
+	},
+	"New Orleans": {
+		iEnglish: _,
+		iAmerican: _,
+		iFrench: u"La Nouvelle-Orléans",
+		iSpanish: "Nueva Orleans",
 	},
 
 	### O ###
@@ -477,6 +553,10 @@ name_translations = {
 		iNahuatl: _,
 		iSpanish: "Villahermosa",
 	},
+	"Paramaribo": {
+		iDutch: _,
+		iEnglish: "Torarica",
+	},
 	"Petatlan": {
 		iMayan: _,
 		iNative: _,
@@ -486,33 +566,55 @@ name_translations = {
 	"Philadelphia": {
 		iEnglish: _,
 		iAmerican: _,
+		iDutch: "Fort Nassau",
+		iFrench: "Philadelphie",
+		iPortuguese: u"Filadélfia",
+		iSpanish: "Filadelfia",
 		iSwedish: u"Nya Göteborg",
 	},
 	"Porco": {
 		iLocal: _,
 		iSpanish: "Sucre",
 	},
+	"Port of Spain": {
+		iEnglish: _,
+		iAmerican: _,
+		iSpanish: u"Puerto España",
+	},
 
 	### Q ###
+	"Qosqo": {
+		iQuechua: _,
+		iNative: _,
+		iSpanish: "Cusco",
+	},
 	"Quirigua": {
 		iMayan: _,
 		iNative: _,
 		iNahuatl: _,
 		iSpanish: "Puerto Barrios",
 	},
-	"Qosqo": {
-		iQuechua: _,
-		iNative: _,
-		iSpanish: "Cusco",
-	},
 
 	### R ###
+	"Recife": {
+		iBrazilian: _,
+		iPortuguese: _,
+		iDutch: "Mauritsstad",
+	},
 
 	### S ###
+	"Sacramento": {
+		iMexican: "Nueva Helvecia",
+	},
 	"Sagwon": {
 		iLocal: _,
 		iNative: _,
 		iAmerican: "Prudhoe Bay",
+	},
+	"San Francisco": {
+		iEnglish: _,
+		iAmerican: _,
+		iMexican: "Yerba Buena",
 	},
 	"San Lorenzo": {
 		iLocal: _,
@@ -521,17 +623,46 @@ name_translations = {
 		iMayan: _,
 		iSpanish: "Coatzacoalcos",
 	},
+	"Santa Rosa": {
+		iRussian: "Krepost Ross",
+	},
+	"Sao Luis": {
+		iBrazilian: _,
+		iPortuguese: _,
+		iFrench: "Saint-Louis",
+	},
 	"Sitka": {
-		iRussian: _,
+		iRussian: "Novo-Arkhangelsk",
 		iAmerican: "Juneau",
 	},
 	"St. Augustine": {
-		iSpanish: _,
+		iSpanish: u"San Agustín",
+		iFrench: "Saint-Augustin",
 		iEnglish: "Jacksonville",
 		iAmerican: "Jacksonville",
 	},
+	"St. John's": {
+		iEnglish: _,
+		iAmerican: _,
+		iDutch: "Oranjestad",
+		iFrench: "Basse-Terre",
+	},
+	"St. Louis": {
+		iEnglish: _,
+		iAmerican: _,
+		iFrench: "Saint-Louis",
+	},
 
 	### T ###
+	"Tacoma": {
+		iEnglish: "Fort Nisqually",
+		iAmerican: _,
+	},
+	"Tallahassee": {
+		iEnglish: _,
+		iAmerican: _,
+		iSpanish: "San Luis",
+	},
 	"Tenochtitlan": {
 		iDutch: "Mexico-Stad",
 		iEnglish: "Mexico City",
@@ -554,6 +685,7 @@ name_translations = {
 		iLocal: _,
 		iNative: _,
 		iQuechua: "Chuqiyapu",
+		iRussian: "La-Pas",
 		iSpanish: "La Paz",
 	},
 	"Tiayo": {
@@ -567,6 +699,11 @@ name_translations = {
 		iNahuatl: _,
 		iMayan: _,
 		iSpanish: "Veracruz",
+	},
+	"Trois-Rivieres": {
+		iFrench: _,
+		iEnglish: "Three Rivers",
+		iAmerican: "Three Rivers",
 	},
 	"Tucume": {
 		iQuechua: _,
@@ -596,6 +733,7 @@ name_translations = {
 		iNative: _,
 		iNahuatl: _,
 		iMayan: _,
+		iRussian: "Gvadalakhara",
 		iSpanish: "Guadalajara",
 	},
 
@@ -604,12 +742,17 @@ name_translations = {
 		iMayan: _,
 		iNative: _,
 		iNahuatl: _,
+		iDutch: "Guatemala-Stad",
+		iEnglish: "Guatemala City",
+		iFrench: "Guatemala",
+		iPortuguese: "Cidade da Guatemala",
+		iRussian: "Gvatemala",
 		iSpanish: "Guatemala",
 	},
 	"Uxmal": {
 		iMayan: _,
 		iNative: _,
-		iMayan: _,
+		iNahuatl: _,
 		iSpanish: "Campeche",
 	},
 
