@@ -1214,19 +1214,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HARMONY_STRATEGY</Tag>
-		<English>Extra [ICON_HEALTHY] in each city; [ICON_HAPPY] from forests and rainforests; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</English>
-		<French>Extra [ICON_HEALTHY] in each city; [ICON_HAPPY] from forests and rainforests; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</French>
-		<German>Extra [ICON_HEALTHY] in each city; [ICON_HAPPY] from forests and rainforests; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</German>
-		<Italian>Extra [ICON_HEALTHY] in each city; [ICON_HAPPY] from forests and rainforests; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</Italian>
-		<Spanish>Extra [ICON_HEALTHY] in each city; [ICON_HAPPY] from forests and rainforests; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost</Spanish>
+		<English>Extra [ICON_HEALTHY] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost; nearby tribes do not spawn raiders</English>
+		<French>Extra [ICON_HEALTHY] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost; nearby tribes do not spawn raiders</French>
+		<German>Extra [ICON_HEALTHY] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost; nearby tribes do not spawn raiders</German>
+		<Italian>Extra [ICON_HEALTHY] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost; nearby tribes do not spawn raiders</Italian>
+		<Spanish>Extra [ICON_HEALTHY] in each city; cities do not remove features; reduced [ICON_RESEARCH]; cities are razed when lost; nearby tribes do not spawn raiders</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HARMONY_HELP</Tag>
-		<English>[ICON_BULLET]Cities do not remove features[NEWLINE][ICON_BULLET]Cities are razed when lost</English>
-		<French>[ICON_BULLET]Cities do not remove features[NEWLINE][ICON_BULLET]Cities are razed when lost</French>
-		<German>[ICON_BULLET]Cities do not remove features[NEWLINE][ICON_BULLET]Cities are razed when lost</German>
-		<Italian>[ICON_BULLET]Cities do not remove features[NEWLINE][ICON_BULLET]Cities are razed when lost</Italian>
-		<Spanish>[ICON_BULLET]Cities do not remove features[NEWLINE][ICON_BULLET]Cities are razed when lost</Spanish>
+		<English>[ICON_BULLET]Cities do not remove features[NEWLINE][ICON_BULLET]Cities are razed when lost[NEWLINE][ICON_BULLET]Nearby tribes do not spawn raiders</English>
+		<French>[ICON_BULLET]Cities do not remove features[NEWLINE][ICON_BULLET]Cities are razed when lost[NEWLINE][ICON_BULLET]Nearby tribes do not spawn raiders</French>
+		<German>[ICON_BULLET]Cities do not remove features[NEWLINE][ICON_BULLET]Cities are razed when lost[NEWLINE][ICON_BULLET]Nearby tribes do not spawn raiders</German>
+		<Italian>[ICON_BULLET]Cities do not remove features[NEWLINE][ICON_BULLET]Cities are razed when lost[NEWLINE][ICON_BULLET]Nearby tribes do not spawn raiders</Italian>
+		<Spanish>[ICON_BULLET]Cities do not remove features[NEWLINE][ICON_BULLET]Cities are razed when lost[NEWLINE][ICON_BULLET]Nearby tribes do not spawn raiders</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PATRONATO</Tag>

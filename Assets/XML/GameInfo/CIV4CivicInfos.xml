@@ -667,16 +667,6 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>-25</iCommerce>
 			</CommerceModifiers>
-			<FeatureHappinessChanges>
-				<FeatureHappinessChange>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iHappinessChange>1</iHappinessChange>
-				</FeatureHappinessChange>
-				<FeatureHappinessChange>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<iHappinessChange>1</iHappinessChange>
-				</FeatureHappinessChange>
-			</FeatureHappinessChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
