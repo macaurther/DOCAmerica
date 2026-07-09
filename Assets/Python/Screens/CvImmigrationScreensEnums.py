@@ -1,9 +1,9 @@
 
 #
-# Mercenaries Mod
+# Immigrants Mod
 # By: The Lopez
 # CvImmigrationScreensEnums
-# 
+#
 
 # Enum for the Immigrant related screens...
 

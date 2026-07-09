@@ -70,11 +70,10 @@ import FontUtil
 # < Mercenaries Start >
 import CvImmigrationManager
 #import CvConfigParser #Rhye
-import ImmigrationUtils
+import Immigration
 #import CvMercenaryModGameUtils #Rhye
 import CvGameInterface
 
-objImmigrationUtils = ImmigrationUtils.ImmigrationUtils()
 gameUtils = CvGameInterface.gameUtils()
 
 # < Mercenaries End   >
@@ -1589,7 +1588,7 @@ class CvMainInterface:
 			screen.show( "InterfaceTopRight" )
 			screen.show( "TurnLogButton" )
 			# < Mercenaries Start >
-			if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer()): 
+			if Immigration.canEarnImmigrants(gc.getActivePlayer()): 
 				screen.show( "ImmigrationManagerButton" )				
 			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
@@ -1618,7 +1617,7 @@ class CvMainInterface:
 
 			screen.moveToFront( "TurnLogButton" )
 			# < Mercenaries Start >
-			if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer()): 
+			if Immigration.canEarnImmigrants(gc.getActivePlayer()): 
 				screen.moveToFront( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
@@ -1677,7 +1676,7 @@ class CvMainInterface:
 			screen.show( "InterfaceTopRight" )
 			screen.show( "TurnLogButton" )
 			# < Mercenaries Start >
-			if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer()): 
+			if Immigration.canEarnImmigrants(gc.getActivePlayer()): 
 				screen.show( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
@@ -1706,7 +1705,7 @@ class CvMainInterface:
 
 			screen.moveToFront( "TurnLogButton" )
 			# < Mercenaries Start >
-			if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer()): 
+			if Immigration.canEarnImmigrants(gc.getActivePlayer()): 
 				screen.moveToFront( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
@@ -1735,7 +1734,7 @@ class CvMainInterface:
 			screen.show( "InterfaceTopRight" )
 			screen.show( "TurnLogButton" )
 			# < Mercenaries Start >
-			if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer()): 
+			if Immigration.canEarnImmigrants(gc.getActivePlayer()): 
 				screen.show( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
@@ -1772,7 +1771,7 @@ class CvMainInterface:
 
 			screen.moveToFront( "TurnLogButton" )
 			# < Mercenaries Start >
-			if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer()): 
+			if Immigration.canEarnImmigrants(gc.getActivePlayer()): 
 				screen.moveToFront( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
@@ -5976,4 +5975,4 @@ class CvMainInterface:
 			pPlayer = gc.getPlayer(pHeadSelectedCity.getOwner())
 		else:
 			pPlayer = gc.getPlayer(gc.getGame().getActivePlayer())
-		return  objImmigrationUtils.canEarnImmigrants(pPlayer.getID())
+		return  Immigration.canEarnImmigrants(pPlayer.getID())

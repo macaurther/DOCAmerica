@@ -1,16 +1,17 @@
 #
-# Mercenaries Mod
+# Immigrants Mod
 # By: The Lopez
+# Modified by MacAurther
 # CvImmigrationManager
-# 
+#
 
 from CvPythonExtensions import *
 import CvUtil
-import ScreenInput
-import time
-import PyHelpers
-import Popup as PyPopup
-import ImmigrationUtils
+import ImmigrantPool
+import Immigration
+import Hiring
+import ImmigrationAI
+import Immigrants
 #import CvConfigParser #Rhye
 import math
 from CvImmigrationScreensEnums import *
@@ -21,24 +22,17 @@ import BugUtil
 
 from Events import handler
 
-PyPlayer = PyHelpers.PyPlayer
-PyInfo = PyHelpers.PyInfo
-
 # globals
 gc = CyGlobalContext()
 ArtFileMgr = CyArtFileMgr()
 localText = CyTranslator()
-objImmigrationUtils = ImmigrationUtils.ImmigrationUtils()
 
 # Set to true to print out debug messages in the logs
 g_bDebug = false
 
-# Default valus is 1 
-g_bAIThinkPeriod = 1 #Rhye (5 in Warlords, 4 in vanilla)
-
 def getHoverText(eWidgetType, iData1, iData2, bOption):
-	if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab):
-		fThreshold = float(objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
+	if Immigration.canEarnImmigrants(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab):
+		fThreshold = float(Immigration.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
 		fRate = float(gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION))
 		fFirst = float(gc.getActivePlayer().getImmigration())
 		szText = BugUtil.getText("TXT_KEY_MISC_IMMIGRATION", (int(fFirst), int(fThreshold)))
@@ -51,6 +45,13 @@ def getHoverText(eWidgetType, iData1, iData2, bOption):
 		szText = "Cannot earn immigrants here"
 	
 	return szText
+
+# Per-panel layout: (innerPanelId, X-key, Y-key, WIDTH-key, HEIGHT-key)
+dPanelLayout = {
+	"AvailableColonists":   (AVAILABLE_COLONISTS_INNER_PANEL_ID,   AVAILABLE_COLONISTS_INNER_PANEL_X,   AVAILABLE_COLONISTS_INNER_PANEL_Y,   AVAILABLE_COLONISTS_INNER_PANEL_WIDTH,   AVAILABLE_COLONISTS_INNER_PANEL_HEIGHT),
+	"AvailableMercenaries": (AVAILABLE_MERCENARIES_INNER_PANEL_ID, AVAILABLE_MERCENARIES_INNER_PANEL_X, AVAILABLE_MERCENARIES_INNER_PANEL_Y, AVAILABLE_MERCENARIES_INNER_PANEL_WIDTH, AVAILABLE_MERCENARIES_INNER_PANEL_HEIGHT),
+	"EarnedImmigrants":     (EARNED_IMMIGRANTS_INNER_PANEL_ID,     EARNED_IMMIGRANTS_INNER_PANEL_X,     EARNED_IMMIGRANTS_INNER_PANEL_Y,     EARNED_IMMIGRANTS_INNER_PANEL_WIDTH,     EARNED_IMMIGRANTS_INNER_PANEL_HEIGHT),
+}
 
 class CvImmigrationManager:
 	"Immigration Manager"
@@ -79,8 +80,7 @@ class CvImmigrationManager:
 		# When populated this dictionary will contain the information needed to build
 		# the widgets for the current screen resolution.		
 		self.screenWidgetData = {}
-	
-		self.nWidgetCount = 0
+
 		self.iActivePlayer = -1
 		
 		self.currentScreen = IMMIGRATION_MANAGER
@@ -113,8 +113,6 @@ class CvImmigrationManager:
 		screen.setRenderInterfaceOnly(True);
 		screen.showScreen(PopupStates.POPUPSTATE_IMMEDIATE, False)
 
-		self.nWidgetCount = 0
-	
 		screen = self.getScreen()
 
 		# Calculate all of the screen position data if necessary
@@ -128,119 +126,107 @@ class CvImmigrationManager:
 			self.drawMercenaryScreenContent(screen)
 
 	def computerGetNumImmigrantsToTransport(self, iPlayer, iHomeland):
-		return objImmigrationUtils.computerGetNumImmigrantsToTransport(iPlayer, iHomeland)
+		return ImmigrationAI.computerGetNumImmigrantsToTransport(iPlayer, iHomeland)
 	
 	def canEarnImmigrants(self, iPlayer):
-		return objImmigrationUtils.canEarnImmigrants(iPlayer)
-		
-	# Populates the panel that shows all of the available immigrants
-	def populateAvailableColonistsPanel(self, screen):
-		# Get the available Colonists
-		dColonists = objImmigrationUtils.getAvailableImmigrants(self.iActivePlayer, data.iCurrentImmigrationManagerTab)
-		
-		# Refresh panel
-		self.refreshAvailableColonistsInnerPanel(screen)
-		self.populateAvailablePanel(screen, AVAILABLE_COLONISTS_INNER_PANEL_ID, dColonists, "AvailableColonists")
+		return Immigration.canEarnImmigrants(iPlayer)
 
-	def refreshAvailableColonistsInnerPanel(self, screen):
-		screen.deleteWidget(AVAILABLE_COLONISTS_INNER_PANEL_ID)
-		screen.addPanel(AVAILABLE_COLONISTS_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_X], self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_Y], self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
+	# Unit counts for the active player and the currently selected homeland tab
+	def getAvailableColonists(self):
+		return Immigration.getAvailableImmigrants(self.iActivePlayer, data.iCurrentImmigrationManagerTab)
 
-	# Populates the panel that shows all of the available Mercenaries
-	def populateAvailableMercenariesPanel(self, screen):
+	def getAvailableMercenaries(self):
+		return Immigration.getAvailableMercenaries(self.iActivePlayer, data.iCurrentImmigrationManagerTab)
 
-		# Get the available Mercenaries
-		dMercenaries = objImmigrationUtils.getAvailableMercenaries(self.iActivePlayer, data.iCurrentImmigrationManagerTab)
-		
-		# Refresh panel
-		self.refreshAvailableMercenariesInnerPanel(screen)
-		self.populateAvailablePanel(screen, AVAILABLE_MERCENARIES_INNER_PANEL_ID, dMercenaries, "AvailableMercenaries")
-	
-	def refreshAvailableMercenariesInnerPanel(self, screen):
-		screen.deleteWidget(AVAILABLE_MERCENARIES_INNER_PANEL_ID)
-		screen.addPanel(AVAILABLE_MERCENARIES_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_X], self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_Y], self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
+	def getEarnedImmigrants(self):
+		return ImmigrantPool.getEarnedImmigrants(civ(self.iActivePlayer), data.iCurrentImmigrationManagerTab)
 
-	
-	# Populates the panel that shows all of the earned immigrants
-	def populateEarnedImmigrantsPanel(self, screen):
-		# Get the earned immigrants
-		dEarnedImmigrantGroups = objImmigrationUtils.getEarnedImmigrants(civ(self.iActivePlayer), data.iCurrentImmigrationManagerTab)
-		
-		# Refresh panel
-		self.refreshEarnedImmigrantsInnerPanel(screen)
-		self.populateAvailablePanel(screen, EARNED_IMMIGRANTS_INNER_PANEL_ID, dEarnedImmigrantGroups, "EarnedImmigrants")
-	
-	def refreshEarnedImmigrantsInnerPanel(self, screen):
-		screen.deleteWidget(EARNED_IMMIGRANTS_INNER_PANEL_ID)
-		screen.addPanel(EARNED_IMMIGRANTS_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[EARNED_IMMIGRANTS_INNER_PANEL_X], self.screenWidgetData[EARNED_IMMIGRANTS_INNER_PANEL_Y], self.screenWidgetData[EARNED_IMMIGRANTS_INNER_PANEL_WIDTH], self.screenWidgetData[EARNED_IMMIGRANTS_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
+	def getUnitCountsForPanel(self, panel):
+		if panel == "AvailableColonists":
+			return self.getAvailableColonists()
+		elif panel == "AvailableMercenaries":
+			return self.getAvailableMercenaries()
+		else:
+			return self.getEarnedImmigrants()
+
+	def refreshInnerPanel(self, screen, panel):
+		innerPanelId, xKey, yKey, wKey, hKey = dPanelLayout[panel]
+		screen.deleteWidget(innerPanelId)
+		screen.addPanel(innerPanelId, "", "", True, True, self.screenWidgetData[xKey], self.screenWidgetData[yKey], self.screenWidgetData[wKey], self.screenWidgetData[hKey], PanelStyles.PANEL_STYLE_IN)
+
+	# Populates the panel (Available Colonists, Available Mercenaries, or Earned Immigrants)
+	def populatePanel(self, screen, panel):
+		dUnitCounts = self.getUnitCountsForPanel(panel)
+		self.refreshInnerPanel(screen, panel)
+		self.populateAvailablePanel(screen, dPanelLayout[panel][0], dUnitCounts, panel)
 
 	# Helper function that populates a panel (Colonist, Expeditionary, or Endowment)
-	def populateAvailablePanel(self, screen, innerPanelId, dImmigrantGroups, panel):
-		mercenaryCount = 0
-		
-		# Go through the mercenaries and populate the available mercenaries panel
-		for sUnit in dImmigrantGroups.keys():
-			unit = dImmigrantGroups[sUnit].getImmigrant()
-			unitTitle = dImmigrantGroups[sUnit].getImmigrantTitle()
-			panelName = unit.sUnitName + panel
-			
+	def populateAvailablePanel(self, screen, innerPanelId, dUnitCounts, panel):
+		iUnitCount = 0
+
+		# Go through the units and populate the panel
+		for iUnit in dUnitCounts.keys():
+			iCount = dUnitCounts[iUnit]
+			unitTitle = Immigrants.getTitle(iUnit, iCount)
+			panelName = Immigrants.getName(iUnit) + panel
+
 			# Create Immigrant Panel
 			screen.attachPanel(innerPanelId, panelName, "", "", False, False, PanelStyles.PANEL_STYLE_DAWN)
-			screen.attachImageButton( panelName, unit.getUnitInfo().getType()+"-"+panelName+"-InfoButton", 
-										unit.getUnitInfo().getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
+			screen.attachImageButton( panelName, gc.getUnitInfo(iUnit).getType()+"-"+panelName+"-InfoButton",
+										gc.getUnitInfo(iUnit).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 			screen.attachPanel(panelName, panelName+"Text", unitTitle, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 
-			self.populateImmigrantXPString(unit, screen, panelName)
+			self.populateImmigrantXPString(iUnit, screen, panelName)
 			if not panel == "EarnedImmigrants":
-				self.populateImmigrantHireString(unit, self.iActivePlayer, screen, panelName)
-				self.populateImmigrantHireButton(unit, screen, panelName)
+				self.populateImmigrantHireString(iUnit, self.iActivePlayer, screen, panelName)
+				self.populateImmigrantHireButton(iUnit, screen, panelName)
 			else:
-				self.populateImmigrantLoadButton(unit, screen, panelName)
+				self.populateImmigrantLoadButton(iUnit, screen, panelName)
 
-			mercenaryCount = mercenaryCount + 1
-			
+			iUnitCount = iUnitCount + 1
 
-		# Add the padding to the available mercenaries panel to improve the look of the screen
-		if((4-mercenaryCount)>0):
 
-			for i in range(4-mercenaryCount):
+		# Add padding panels to improve the look of the screen when there are few units
+		if((4-iUnitCount)>0):
+
+			for i in range(4-iUnitCount):
 				screen.attachPanel(innerPanelId, "dummyPanelHire"+str(i), "", "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 
 
-	def populateImmigrantXPString(self, unit, screen, panelName):
-		screen.attachLabel( panelName + "Text", panelName  + "text3", "     Level: " + str(unit.getLevel()))
+	def populateImmigrantXPString(self, iUnit, screen, panelName):
+		screen.attachLabel( panelName + "Text", panelName  + "text3", "     Level: " + str(Immigrants.getLevel(iUnit)))
 
-	def populateImmigrantHireString(self, unit, iPlayer, screen, panelName):
+	def populateImmigrantHireString(self, iUnit, iPlayer, screen, panelName):
 		# Build the unit hire cost string
-		strHCost = unit.getHireCostString(iPlayer)	
+		strHCost = Immigrants.getHireCostString(iUnit, iPlayer)
 		screen.attachLabel( panelName + "Text", panelName  + "text4", "     Hire Cost: " + strHCost)
 
-	def populateImmigrantHireButton(self, unit, screen, panelName):
+	def populateImmigrantHireButton(self, iUnit, screen, panelName):
 		# Add the hire button for the unit
-		if(unit.canAfford(self.iActivePlayer, data.iCurrentImmigrationManagerTab)):
+		if(Immigrants.canAfford(iUnit, self.iActivePlayer, data.iCurrentImmigrationManagerTab)):
 			screen.attachPanel(panelName, panelName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
-			screen.attachImageButton( panelName, unit.getUnitInfo().getType()+"-"+panelName+"-HireButton", 
+			screen.attachImageButton( panelName, gc.getUnitInfo(iUnit).getType()+"-"+panelName+"-HireButton",
 										"Art/Interface/Buttons/Actions/Join.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 
-	def populateImmigrantLoadButton(self, unit, screen, panelName):
+	def populateImmigrantLoadButton(self, iUnit, screen, panelName):
 		# Ships don't load
-		if unit.isShip():
+		if Immigrants.isShip(iUnit):
 			return
-		
+
 		# Ensure that player still has units left to load
-		if not objImmigrationUtils.getHasEarnedImmigrant(civ(self.iActivePlayer), data.iCurrentImmigrationManagerTab, unit.getUnitId()):
+		if not ImmigrantPool.getHasEarnedImmigrant(civ(self.iActivePlayer), data.iCurrentImmigrationManagerTab, iUnit):
 			return
 
 		# Ensure there's a ship to load onto
-		if(not unit.hasShipForPlacement(self.iActivePlayer, data.iCurrentImmigrationManagerTab)):
+		if(not Immigrants.hasShipForPlacement(self.iActivePlayer, data.iCurrentImmigrationManagerTab)):
 			return
 
 		# Add the load button for the unit
 		screen.attachPanel(panelName, panelName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
-		screen.attachImageButton( panelName, unit.getUnitInfo().getType()+"-"+panelName+"-LoadButton", 
+		screen.attachImageButton( panelName, gc.getUnitInfo(iUnit).getType()+"-"+panelName+"-LoadButton",
 									"Art/Interface/Buttons/Actions/Load.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 
 
@@ -254,10 +240,11 @@ class CvImmigrationManager:
 		screen.deleteWidget(IMMIGRANT_UNIT_GRAPHIC)		
 		
 			
-	# Populates the unit information panel with the unit information details		
-	def populateMercenaryInformation(self, screen, unit):
+	# Populates the unit information panel with the unit information details
+	def populateMercenaryInformation(self, screen, iUnit):
 		# Get the ID for the current active player
 		iPlayer = gc.getGame().getActivePlayer()
+		kUnit = gc.getUnitInfo(iUnit)
 
 		screen.addPanel(IMMIGRANT_INFORMATION_PROMOTION_PANEL_ID, "", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
 		
@@ -276,29 +263,30 @@ class CvImmigrationManager:
 		screen.enableSelect(IMMIGRANT_INFORMATION_STRATEGY_LIST_ID, False)
 
 		# Build the unit hire cost string
-		strHCost = unit.getHireCostString(iPlayer)
-		
+		strHCost = Immigrants.getHireCostString(iUnit, iPlayer)
+
 		# Build the unit XP string
-		strXP = u"%d/%d" %(unit.getExperienceLevel(), unit.getNextExperienceLevel())
+		# MacAurther: mercenaries always start at 0 XP; there's no per-unit override
+		strXP = u"%d/%d" % (0, 0)
 
 		# Build the unit stats string
-		strStats = u"%d%c    %d%c" %(unit.getUnitInfo().getCombat(), CyGame().getSymbolID(FontSymbols.STRENGTH_CHAR), unit.getUnitInfo().getMoves(),CyGame().getSymbolID(FontSymbols.MOVES_CHAR))
-		if unit.getUnitInfo().getAirCombat() > 0 and unit.getUnitInfo().getAirRange() > 0:
-			strStats += u"    %d%c" % (unit.getUnitInfo().getAirCombat(), CyGame().getSymbolID(FontSymbols.RANGED_STRENGTH_CHAR))
-			strStats += u"    %d%c" % (unit.getUnitInfo().getAirRange(), CyGame().getSymbolID(FontSymbols.RANGE_CHAR))
+		strStats = u"%d%c    %d%c" %(kUnit.getCombat(), CyGame().getSymbolID(FontSymbols.STRENGTH_CHAR), kUnit.getMoves(),CyGame().getSymbolID(FontSymbols.MOVES_CHAR))
+		if kUnit.getAirCombat() > 0 and kUnit.getAirRange() > 0:
+			strStats += u"    %d%c" % (kUnit.getAirCombat(), CyGame().getSymbolID(FontSymbols.RANGED_STRENGTH_CHAR))
+			strStats += u"    %d%c" % (kUnit.getAirRange(), CyGame().getSymbolID(FontSymbols.RANGE_CHAR))
 
-		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, unit.getName(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Level: " + str(unit.getLevel()) + "     XP: " + strXP, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, Immigrants.getName(iUnit), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Level: " + str(Immigrants.getLevel(iUnit)) + "     XP: " + strXP, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  " + strStats, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  ", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Hire Cost: " + strHCost, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		
-		szText = CyGameTextMgr().getUnitHelp(unit.getUnitId(), True, False, False, None)[1:]
+
+		szText = CyGameTextMgr().getUnitHelp(iUnit, True, False, False, None)[1:]
 		screen.appendListBoxString(IMMIGRANT_INFORMATION_STRATEGY_LIST_ID, szText, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		screen.appendListBoxString(IMMIGRANT_INFORMATION_STRATEGY_LIST_ID, "  " + unit.getUnitInfo().getStrategy(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_STRATEGY_LIST_ID, "  " + kUnit.getStrategy(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 		# Get the promotion list for the unit
-		lPromotionList = unit.getCurrentPromotionList()
+		lPromotionList = Immigrants.getPromotions(iUnit)
 
 		screen.attachMultiListControlGFC(IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_ID, IMMIGRANT_INFORMATION_PROMOTION_LIST_CONTROL_ID, "", 1, 64, 64, TableStyles.TABLE_STYLE_STANDARD)
 
@@ -306,12 +294,12 @@ class CvImmigrationManager:
 		for promotion in lPromotionList:
 			screen.appendMultiListButton(IMMIGRANT_INFORMATION_PROMOTION_LIST_CONTROL_ID, gc.getPromotionInfo(promotion).getButton(), 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, promotion, -1, False)
 
-		screen.addUnitGraphicGFC(IMMIGRANT_UNIT_GRAPHIC, unit.getUnitId(), self.screenWidgetData[IMMIGRANT_ANIMATION_X], self.screenWidgetData[IMMIGRANT_ANIMATION_Y], self.screenWidgetData[IMMIGRANT_ANIMATION_WIDTH], self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT], WidgetTypes.WIDGET_GENERAL, -1, -1, self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_X], self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_Z], self.screenWidgetData[IMMIGRANT_ANIMATION_SCALE], True)
+		screen.addUnitGraphicGFC(IMMIGRANT_UNIT_GRAPHIC, iUnit, self.screenWidgetData[IMMIGRANT_ANIMATION_X], self.screenWidgetData[IMMIGRANT_ANIMATION_Y], self.screenWidgetData[IMMIGRANT_ANIMATION_WIDTH], self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT], WidgetTypes.WIDGET_GENERAL, -1, -1, self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_X], self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_Z], self.screenWidgetData[IMMIGRANT_ANIMATION_SCALE], True)
 
 		# Add additional hire button (so 720 p screens can see if :P)
 		if self.bSmallScreen:
-			self.populateImmigrantHireButton(unit, screen, "ImmigrantInformationDetailsPanel")
-			self.populateImmigrantLoadButton(unit, screen, "ImmigrantInformationDetailsPanel")
+			self.populateImmigrantHireButton(iUnit, screen, "ImmigrantInformationDetailsPanel")
+			self.populateImmigrantLoadButton(iUnit, screen, "ImmigrantInformationDetailsPanel")
 
 	
 	# Draws the gold information in the "Immigration Manager" screens
@@ -359,7 +347,7 @@ class CvImmigrationManager:
 	def drawMercenaryScreenContent(self, screen):
 		# If initial tab isn't set, set it
 		if data.iCurrentImmigrationManagerTab == -1:
-			data.iCurrentImmigrationManagerTab = objImmigrationUtils.getFirstOpenHomeland(self.iActivePlayer)
+			data.iCurrentImmigrationManagerTab = Immigration.getFirstOpenHomeland(self.iActivePlayer)
 
 		# Draw the top bar
 		self.drawScreenTop(screen)
@@ -395,9 +383,9 @@ class CvImmigrationManager:
 
 		# Populate the available panels
 		self.updateImmigrationBar(screen)
-		self.populateAvailableColonistsPanel(screen)
-		self.populateAvailableMercenariesPanel(screen)
-		self.populateEarnedImmigrantsPanel(screen)
+		self.populatePanel(screen, "AvailableColonists")
+		self.populatePanel(screen, "AvailableMercenaries")
+		self.populatePanel(screen, "EarnedImmigrants")
 	
 	def drawTabs(self):
 		xLink = self.screenWidgetData[MARGIN]
@@ -422,8 +410,8 @@ class CvImmigrationManager:
 		screen.setStackedBarColors( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE_EXTRA, gc.getInfoTypeForString("COLOR_EMPTY") )
 		screen.setStackedBarColors( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY") )
 		
-		if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab):
-			fThreshold = float(objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
+		if Immigration.canEarnImmigrants(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab):
+			fThreshold = float(Immigration.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
 			fRate = float(gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION))
 			fFirst = float(gc.getActivePlayer().getImmigration())
 			szText = u""
@@ -529,13 +517,13 @@ class CvImmigrationManager:
 	# Hire list of mercenaries
 	def grantMercenaries(self, lMercenaries, iPlayer, iHomeland=-1, bImmediate=False):
 		if iHomeland == -1:
-			iHomeland = objImmigrationUtils.getFirstOpenHomeland(iPlayer)
+			iHomeland = Immigration.getFirstOpenHomeland(iPlayer)
 		for iUnit in lMercenaries:
 			self.hireMercenary(iUnit, iPlayer, iHomeland, False, bImmediate)
 
 	# Useful method for use outside of Immigration Manager land as well
 	def hireMercenary(self, iUnit, iPlayer, iHomeland, bPay = True, bImmediate=False):
-		objImmigrationUtils.hireMercenary(iUnit, iPlayer, iHomeland, bPay, bImmediate)
+		Hiring.hireMercenary(iUnit, iPlayer, iHomeland, bPay, bImmediate)
 
 	# Hires a mercenary for a player
 	def hireMercenaryOnScreen(self, screen, iUnit, iHomeland):
@@ -550,9 +538,9 @@ class CvImmigrationManager:
 		self.drawGoldInformation(screen)
 
 		# Update the available mercenaries in the available mercenaries panel
-		self.populateAvailableColonistsPanel(screen)
-		self.populateAvailableMercenariesPanel(screen)
-		self.populateEarnedImmigrantsPanel(screen)
+		self.populatePanel(screen, "AvailableColonists")
+		self.populatePanel(screen, "AvailableMercenaries")
+		self.populatePanel(screen, "EarnedImmigrants")
 
 		# Clear the information in the mercenary information panel
 		#self.clearMercenaryInformation(screen)
@@ -563,66 +551,13 @@ class CvImmigrationManager:
 		iPlayer = gc.getGame().getActivePlayer()
 
 		# Hire the mercenary for the player
-		objImmigrationUtils.placeMercenary(iUnit, iPlayer, iHomeland)
+		Hiring.placeMercenary(iUnit, iPlayer, iHomeland)
 
 		# Update the available mercenaries in the available mercenaries panel
-		self.populateAvailableColonistsPanel(screen)
-		self.populateAvailableMercenariesPanel(screen)
-		self.populateEarnedImmigrantsPanel(screen)
+		self.populatePanel(screen, "AvailableColonists")
+		self.populatePanel(screen, "AvailableMercenaries")
+		self.populatePanel(screen, "EarnedImmigrants")
 
-				
-	# Updates the available mercenaries panel, displays the hire button to the 
-	# player only for the mercenaries they can hire.
-	def updateAvailableColonists(self, screen):
-
-		# Get the available Colonists
-		dColonists = objImmigrationUtils.getAvailableImmigrants(self.iActivePlayer, data.iCurrentImmigrationManagerTab)
-
-		self.updateAvailableUnits(screen, dColonists, "AvailableColonists")
-		
-	# Updates the available mercenaries panel, displays the hire button to the 
-	# player only for the mercenaries they can hire.
-	def updateAvailableMercenaries(self, screen):
-
-		# Get the available Mercenaries
-		dMercenaries = objImmigrationUtils.getAvailableMercenaries(self.iActivePlayer, data.iCurrentImmigrationManagerTab)
-
-		self.updateAvailableUnits(screen, dMercenaries, "AvailableMercenaries")
-	
-	
-	# Updates the available mercenaries panel, displays the hire button to the 
-	# player only for the mercenaries they can hire.
-	def updateEarnedImmigrants(self, screen):
-
-		# Get the earned immigrants
-		dEarnedImmigrantGroups = objImmigrationUtils.getEarnedImmigrants(civ(self.iActivePlayer), data.iCurrentImmigrationManagerTab)
-
-		self.updateAvailableUnits(screen, dEarnedImmigrantGroups, "EarnedImmigrants")
-	
-	
-	def updateAvailableUnits(self, screen, dImmigrantGroups, panel):
-		# Go through the mercenaries and populate the available mercenaries panel
-		for sUnit in dImmigrantGroups.keys():
-			unit = dImmigrantGroups[sUnit].getImmigrant()
-			unitTitle = dImmigrantGroups[sUnit].getImmigrantTitle()
-			panelName = unit.sUnitName + panel
-			
-			# Delete the cost string for the current unit we are processing.
-			screen.deleteWidget(panelName + "Text")
-			
-			screen.attachPanel(panelName, panelName+"Text", unitTitle, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
-
-			# Delete the hire button for the current unit we are processing.
-			screen.deleteWidget(unit.getUnitInfo().getType()+"-"+panelName+"-HireButton")
-			screen.deleteWidget(unit.getUnitInfo().getType()+"-"+panelName+"-LoadButton")
-
-			self.populateImmigrantXPString(unit, screen, panelName)
-			if not panel == "EarnedImmigrants":
-				self.populateImmigrantHireString(unit, self.iActivePlayer, screen, panelName)
-				self.populateImmigrantHireButton(unit, screen, panelName)
-			else:
-				self.populateImmigrantLoadButton(unit, screen, panelName)
-	
 	# Handles the input to the immigration manager screens
 	def handleInput (self, inputClass):
 
@@ -692,42 +627,33 @@ class CvImmigrationManager:
 				
 			# If the function was hire, then hire the mercenary
 			if(function == "HireButton"):
-				self.hireMercenaryOnScreen(screen, iUnit, data.iCurrentImmigrationManagerTab) 
+				self.hireMercenaryOnScreen(screen, iUnit, data.iCurrentImmigrationManagerTab)
 
 				# Populate the mercenary information panel if small screen
 				if self.bSmallScreen:
-					self.populateMercenaryInformation(screen, objImmigrationUtils.getImmigrant(iUnit))
-			
+					self.populateMercenaryInformation(screen, iUnit)
+
 			# If the function was hire, then hire the mercenary
 			if(function == "LoadButton"):
-				self.placeMercenary(screen, iUnit, data.iCurrentImmigrationManagerTab) 
+				self.placeMercenary(screen, iUnit, data.iCurrentImmigrationManagerTab)
 
 				# Populate the mercenary information panel if small screen
 				if self.bSmallScreen:
-					self.populateMercenaryInformation(screen, objImmigrationUtils.getImmigrant(iUnit))
-										
-			# If the function was to show the mercenary information then 
+					self.populateMercenaryInformation(screen, iUnit)
+
+			# If the function was to show the mercenary information then
 			# populate the mercenary information panel.
 			if(function == "InfoButton"):
-				
-				# Get the mercenary from the global mercenary pool
-				mercenary = objImmigrationUtils.getImmigrant(iUnit)
 
-				# Return immediately if we still couldn't get the mercenary information
-				if(mercenary == None):
+				# Return immediately if we couldn't resolve a real unit type
+				if(iUnit == -1):
 					return
 
 				# Populate the mercenary information panel
-				self.populateMercenaryInformation(screen, mercenary)
+				self.populateMercenaryInformation(screen, iUnit)
 		return 0
  		
 		
-	# returns a unique ID for a widget in this screen
-	def getNextWidgetName(self):
-		szName = self.WIDGET_ID + str(self.nWidgetCount)
-		self.nWidgetCount += 1
-		return szName
-													
 	def update(self, fDelta):
 		screen = self.getScreen()
 		
@@ -899,39 +825,8 @@ class CvImmigrationManager:
 
 		self.bScreenDataCalculated = True
 
-@handler("GameStart")
-def onGameStart():
-	'Called at the start of the game'
-	global objImmigrationUtils        
-	objImmigrationUtils = ImmigrationUtils.ImmigrationUtils()
-	return 0
-
-
-# This method creates a new instance of the ImmigrationUtils class to be used later
-@handler("OnLoad")
-def onLoadGame():
-	if (gc.getGame().getGameTurn() >= dBirth[active()]): #Rhye
-		global objImmigrationUtils
-		objImmigrationUtils = ImmigrationUtils.ImmigrationUtils()
-
 @handler("playerCivAssigned")
 def onPlayerCivAssigned(iPlayer):
 	# Reset immigration tab when human switches civ so it reinitializes for new civ
 	if gc.getPlayer(iPlayer).isHuman():
 		data.iCurrentImmigrationManagerTab = -1
-
-@handler("EndPlayerTurn")
-def onEndPlayerTurn(iGameTurn, iPlayer):   
-	# This method will display the immigration manager screen
-	# and provide the logic to make the computer players think.
-	pPlayer = gc.getPlayer(iPlayer)
-	
-	if pPlayer != None and objImmigrationUtils.canEarnImmigrants(iPlayer):
-		# Process new immigrants
-		objImmigrationUtils.processImmigration(iPlayer)
-
-		# if the player is not human and not independent then run the think method
-		if not pPlayer.isHuman() and civ(iPlayer) < iIndependent1:
-			if pPlayer.isAlive():
-				if iPlayer % (g_bAIThinkPeriod) == iGameTurn % (g_bAIThinkPeriod):
-					objImmigrationUtils.computerPlayerThink(iPlayer)
