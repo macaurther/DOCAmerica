@@ -3266,6 +3266,14 @@
 		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_VICTORY_GOAL_RUSSIA_3</Tag>
+		<English>Control the core of any 3 indigenous civilizations</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_VICTORY_GOAL_SECULAR_1</Tag>
 		<English>Control a cathedral of every religion</English>
 		<French></French>
@@ -3585,6 +3593,14 @@
 		<German>Alaska</German>
 		<Italian>Alaska</Italian>
 		<Spanish>Alaska</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_NORTH_PACIFIC_COAST</Tag>
+		<English>North Pacific Coast</English>
+		<French>Côte Nord du Pacifique</French>
+		<German>Nordpazifikküste</German>
+		<Italian>Costa del Pacifico Settentrionale</Italian>
+		<Spanish>Costa Norte del Pacífico</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NAME_NATO</Tag>

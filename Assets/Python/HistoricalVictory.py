@@ -6,6 +6,9 @@ lHappinessResources = [iResource for iResource in infos.bonuses() if infos.bonus
 #lColonialResources = [iBanana, iSpices, iSugar, iCoffee, iTea, iTobacco, iCocoa, iSalt, iCitrus]
 lPlantationResources = [iBanana, iCocoa, iCoffee, iCotton, iDye, iIncense, iRubber, iSpices, iSugar, iTea, iTobacco]
 
+# third Russian goal: control the core of any 3 indigenous civilizations
+lRussianTargets = [plots.core(iCiv) for iCiv in lNativeCivs]
+
 
 # city names
 BUENOS_AIRES = "TXT_KEY_VICTORY_NAME_BUENOS_AIRES"
@@ -58,6 +61,7 @@ KALAALLIT =  "TXT_KEY_VICTORY_NAME_KALAALLIT"
 MID_ATLANTIC =  "TXT_KEY_VICTORY_NAME_MID_ATLANTIC"
 BAHIA =  "TXT_KEY_VICTORY_NAME_BAHIA"
 ALASKA = "TXT_KEY_VICTORY_NAME_ALASKA"
+NORTH_PACIFIC_COAST = "TXT_KEY_VICTORY_NAME_NORTH_PACIFIC_COAST"
 NATO = "TXT_KEY_VICTORY_NAME_NATO"
 GREAT_PLAINS = "TXT_KEY_VICTORY_NAME_GREAT_PLAINS"
 ANDES = "TXT_KEY_VICTORY_NAME_ANDES"
@@ -95,6 +99,7 @@ OR = "TXT_KEY_OR"
 # goal descriptors
 FIRST_NORSE_GOAL = "TXT_KEY_VICTORY_GOAL_NORSE_1"
 THIRD_AZTEC_GOAL = "TXT_KEY_VICTORY_GOAL_AZTECS_3"
+THIRD_RUSSIAN_GOAL = "TXT_KEY_VICTORY_GOAL_RUSSIA_3"
 
 
 dGoals = {
@@ -333,11 +338,11 @@ dGoals = {
 	iRussia: (
 		ImprovementCount(iCamp, 10, by=1800),
 		All(
-            AreaPercent(plots.region(rAlaska).named(ALASKA), 100, subject=VASSALS),
+			AreaPercent(plots.regions(rAlaska, rNorthCascadia, rSouthCascadia, rCalifornia).coastal().named(NORTH_PACIFIC_COAST), 66, subject=VASSALS),
 			BuildingCount((iHuntingPost, 8)),
 			at=1820
 		),
-		TradeGold(10000, by=1870),
+		Control(required=3, by=1850, desc_key=THIRD_RUSSIAN_GOAL, *lRussianTargets),
 	),
 	iAmerica: (
 		AllowNone(

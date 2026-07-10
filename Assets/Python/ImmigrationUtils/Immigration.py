@@ -3,6 +3,21 @@
 # MacAurther: earning mechanics (thresholds, immigrant grants, tradewind discovery)
 # and hire availability.
 #
+# MacAurther TODO (post-release, not yet started): "Immigration System Enhancement"
+# - Clean up dImmigrantSchedule/dMercenarySchedule and move them out of Consts.py
+#   into their own data module (they're large, growing content tables, not
+#   engine-style constants).
+# - Limited mercenary stock: mercenaries accumulate over time up to a cap and
+#   are decremented globally (across all players) when hired, instead of being
+#   unlimited. getAvailableUnit()'s dUnits[iUnit] = 1 placeholder (below) is the
+#   spot to swap in real remaining-stock counts.
+# - "Special mercs": homeland-flavored demonyms for mercenary units (e.g. North
+#   Europe's Fusilier could roll as "Highlander Fusilier" or "Hessian Fusilier"),
+#   each demonym granting a couple of free promotions (Highlander -> Guerilla I/II).
+#   More granted promotions -> higher hire price. The pool of available demonyms
+#   per homeland should reroll/vary over time so games don't all see the same mix.
+# - Eventually consider extending the demonym/variation idea to Immigrants too.
+#
 
 from CvPythonExtensions import *
 from Consts import *
