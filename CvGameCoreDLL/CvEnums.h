@@ -2876,7 +2876,6 @@ enum PromotionTypes				// Exposed to Python
 	NUM_PROMOTIONS
 };
 
-// #MacAurther: reordered METEOROLOGY/GEOGRAPHY/PHYSICS (86/100/108), swapped SOCIOLOGY/SURVEYING (101/102), PROGRESSIVISM (125); aligned ACCESS and name-only constants with XML
 enum TechTypes						// Exposed to Python
 {
 	NO_TECH = -1,

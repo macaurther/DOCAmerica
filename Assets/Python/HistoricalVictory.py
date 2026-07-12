@@ -342,7 +342,7 @@ dGoals = {
 			BuildingCount((iHuntingPost, 8)),
 			at=1820
 		),
-		Control(required=3, by=1850, desc_key=THIRD_RUSSIAN_GOAL, *lRussianTargets),
+		Control(required=3, at=1850, desc_key=THIRD_RUSSIAN_GOAL, *lRussianTargets),
 	),
 	iAmerica: (
 		AllowNone(

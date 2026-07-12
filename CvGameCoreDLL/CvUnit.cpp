@@ -232,6 +232,14 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 		}
 	}
 
+	// MacAurther: Arawak UP - Power of Jungle Migration (all land units, civilian and military, start with Swamp Fox I-III)
+	if (getDomainType() == DOMAIN_LAND && GET_PLAYER(getOwnerINLINE()).getCivilizationType() == ARAWAK)
+	{
+		setHasPromotion(PROMOTION_SWAMP_FOX1, true);
+		setHasPromotion(PROMOTION_SWAMP_FOX2, true);
+		setHasPromotion(PROMOTION_SWAMP_FOX3, true);
+	}
+
 	if (getDomainType() == DOMAIN_LAND)
 	{
 		if (baseCombatStr() > 0)

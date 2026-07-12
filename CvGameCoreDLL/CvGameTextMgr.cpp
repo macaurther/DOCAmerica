@@ -18899,7 +18899,7 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 // BUG - Airport Icon - start
 		if (getBugOptionBOOL("CityBar__AirportIcon", true, "BUG_CITYBAR_AIRPORT_ICONS"))
 		{
-			int eAirportClass = GC.getInfoTypeForString("BUILDINGCLASS_AIRPORT");
+			int eAirportClass = BUILDINGCLASS_AIRPORT;
 			if (eAirportClass != -1)
 			{
 				int eAirport = GC.getCivilizationInfo(pCity->getCivilizationType()).getCivilizationBuildings(eAirportClass);

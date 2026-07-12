@@ -589,7 +589,8 @@ def maintainFallenCivilizations():
 def getTribeTechLevel(pPlot):
 	iTechLevel = 0
 	if pPlot.getRegionID() in [rYukon, rNunavut, rQuebec, rNewFoundland, rHawaii] + lBrazil + lArgentina + [rGuyana, rParaguay, rUruguay]: iTechLevel -= 1
-	if year() >= year(1350): iTechLevel += 1
+	if year(1550) >= year() >= year(1350) and pPlot.getRegionID() in lAndes: iTechLevel += 1
+	if year() >= year(1580): iTechLevel += 1
 	if year() >= year(1820): iTechLevel += 1
 	if pPlot.getImprovementType() == iContactedTribe: iTechLevel += 1
 	return max(0, min(2, iTechLevel))

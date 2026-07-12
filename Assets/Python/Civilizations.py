@@ -755,7 +755,11 @@ dExtraAIUnits = CivDict({
 		iSkirmish: 1,
 	},
 	iArawak : {
-		iSettleSea: 1,
+		iSettle : 2,
+		iSettleSea: 2,
+	},
+	iTupi : {
+		iSettle : 2,
 	},
 	iInuit: {
 		iSettleSea: 1,

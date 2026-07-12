@@ -4826,16 +4826,16 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 		CvPlot* pNewPlot = plotDirection(getX_INLINE(), getY_INLINE(), direction);
 
 		// Base value of 5 for the migration food
-		iValue += 10;
+		iValue += 5;
 
 		// Consider delta of where you are now vs. where you're going (this includes settlermap preferences)
-		iValue += (GET_PLAYER(getOwner()).AI_foundValue(pNewPlot->getX_INLINE(), pNewPlot->getY_INLINE()) - GET_PLAYER(getOwner()).AI_foundValue(getX_INLINE(), getY_INLINE())) * 2;
+		iValue += (GET_PLAYER(getOwner()).AI_foundValue(pNewPlot->getX_INLINE(), pNewPlot->getY_INLINE()) - GET_PLAYER(getOwner()).AI_foundValue(getX_INLINE(), getY_INLINE()));
 
 		// If destination has a tribe and owner has Chief Civic, beeline it baby
 		if(GET_PLAYER(getOwner()).hasCivic(CIVIC_CHIEF) && pNewPlot->isTribe()) iValue += 100;
 
 		// Lakota UP: likes to migrate
-		if(GET_PLAYER(getOwner()).getCivilizationType() == LAKOTA) iValue += 15;
+		if(GET_PLAYER(getOwner()).getCivilizationType() == LAKOTA) iValue += 5;
 
 		// NEVER move out of core
 		if(plot()->isCore(GET_PLAYER(getOwner()).getCivilizationType()) && !pNewPlot->isCore(GET_PLAYER(getOwner()).getCivilizationType())) iValue = 0;

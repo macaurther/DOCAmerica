@@ -2605,7 +2605,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	}
 
 	// Leoreth -> MacAurther: Andes RP (Terraces): can build farms on hills
-	if (eTeam != NO_TEAM && (RegionPowers)GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ANDES && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_FARM") && getTerrainType() != GC.getInfoTypeForString("TERRAIN_DESERT"))
+	if (eTeam != NO_TEAM && (RegionPowers)GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ANDES && eImprovement == IMPROVEMENT_FARM && getTerrainType() != TERRAIN_DESERT)
 	{
 		bTerrace = true;
 	}
@@ -2618,7 +2618,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	}
 
 	// MacAurther: No improvements on Atolls or Lagoons, except for Contacted Tribes
-	if (eImprovement != IMPROVEMENT_CONTACTED_TRIBE && (getTerrainType() == GC.getInfoTypeForString("TERRAIN_LAGOON") || getTerrainType() == GC.getInfoTypeForString("TERRAIN_ATOLL")))
+	if (eImprovement != IMPROVEMENT_CONTACTED_TRIBE && (getTerrainType() == TERRAIN_LAGOON || getTerrainType() == TERRAIN_ATOLL))
 	{
 		return false;
 	}

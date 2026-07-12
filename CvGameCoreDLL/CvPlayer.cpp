@@ -5959,7 +5959,7 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 	if (!bValid)
 	{
 		if (GC.getTerrainInfo(pPlot->getTerrainType()).isFound() || 
-			(getCivilizationType() == INUIT && pPlot->getTerrainType() == GC.getInfoTypeForString("TERRAIN_TUNDRA"))) // Inuit UU: Can settle on Tundra (anywhere)
+			(getCivilizationType() == INUIT && pPlot->getTerrainType() == TERRAIN_TUNDRA)) // Inuit UU: Can settle on Tundra (anywhere)
 		{
 			bValid = true;
 		}
@@ -5969,7 +5969,7 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 	{
 		
 		if (GC.getTerrainInfo(pPlot->getTerrainType()).isFoundCoast() || 
-			(getCivilizationType() == INUIT && pPlot->getTerrainType() == GC.getInfoTypeForString("TERRAIN_SNOW"))) // Inuit UU: Can settle on Ice (along Coast)
+			(getCivilizationType() == INUIT && pPlot->getTerrainType() == TERRAIN_SNOW)) // Inuit UU: Can settle on Ice (along Coast)
 		{
 			if (pPlot->isCoastalLand())
 			{
@@ -6953,7 +6953,7 @@ int CvPlayer::getProductionNeeded(BuildingTypes eBuilding) const
 	iProductionNeeded /= 100;
 
 	// Leoreth: cheaper palace in earlier eras, more expensive later
-	if (eBuilding == GC.getInfoTypeForString("BUILDING_PALACE"))
+	if (eBuilding == BUILDING_PALACE)
 	{
 		// half in ancient, the same in medieval, +50% in industrial, +100% in future
 		iProductionNeeded = iProductionNeeded * (2 + getCurrentEra()) / 4;
