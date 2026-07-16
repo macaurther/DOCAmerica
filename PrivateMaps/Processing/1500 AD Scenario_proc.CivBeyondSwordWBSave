@@ -1,24 +1,47 @@
-Platy Builder
-Version=11
-
-BeginGame
-	Calendar=CALENDAR_DEFAULT
-	Option=GAMEOPTION_AGGRESSIVE_AI
-	Option=GAMEOPTION_NO_TECH_BROKERING
-	GameTurn=200
-	StartYear=1500
-	Description=TXT_KEY_RHYES_WB_DESC
-	ModPath=Mods\DOCAmerica
-EndGame
-
-BeginMap
-EndMap
-
-
 ### Plot Info ###
+BeginPlot
+	x=2,y=55
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=4,y=55
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=5,y=113
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
 BeginPlot
 	x=5,y=115
 	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=6,y=111
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=6,y=116
+	ImprovementType=IMPROVEMENT_TRIBE
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
 EndPlot
 BeginPlot
 	x=6,y=117
@@ -70,6 +93,10 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=8,y=55
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=8,y=120
 	ImprovementType=IMPROVEMENT_WHALING_BOATS
 EndPlot
@@ -79,6 +106,18 @@ BeginPlot
 		UnitType=UNIT_PANTHER
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=9,y=89
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=9,y=92
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=9,y=94
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=9,y=117
@@ -110,12 +149,22 @@ BeginPlot
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_INUIT_IGLOO
+		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_BARRACKS
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=121
 		EndCulture
 		YearFounded=1200
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
+EndPlot
+BeginPlot
+	x=10,y=53
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=10,y=84
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=10,y=90
@@ -130,6 +179,22 @@ BeginPlot
 		UnitType=UNIT_SCOUT
 		UnitOwner=CIVILIZATION_INUIT
 	EndUnit
+EndPlot
+BeginPlot
+	x=11,y=82
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=11,y=88
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=11,y=91
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=11,y=94
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=11,y=107
@@ -157,6 +222,38 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CAMP
 EndPlot
 BeginPlot
+	x=11,y=120
+	ImprovementType=IMPROVEMENT_TRIBE
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+EndPlot
+BeginPlot
+	x=12,y=77
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=12,y=79
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=12,y=93
 	BeginUnit
 		UnitType=UNIT_GRIZZLY_BEAR
@@ -164,11 +261,75 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=13,y=83
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=13,y=95
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=13,y=99
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=13,y=101
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=13,y=104
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=13,y=109
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=13,y=120
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=14,y=74
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=14,y=79
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=14,y=97
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=14,y=115
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=15,y=84
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=15,y=92
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=15,y=94
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=15,y=101
 	BeginUnit
 		UnitType=UNIT_WOLF
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=15,y=109
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=16,y=75
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=16,y=83
@@ -198,6 +359,9 @@ BeginPlot
 		CityName=Gila
 		CityPopulation=4
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
+		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_BARRACKS
 		BuildingType=BUILDING_HERBALIST
 		BuildingType=BUILDING_MARKET
@@ -218,6 +382,14 @@ BeginPlot
 		UnitType=UNIT_GRIZZLY_BEAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=16,y=97
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=16,y=114
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=17,y=74
@@ -257,9 +429,16 @@ BeginPlot
 		CityName=Casa Rinconada
 		CityPopulation=3
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
+		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_BARRACKS
+		BuildingType=BUILDING_HERBALIST
+		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_STONEWORKS
 		BuildingType=BUILDING_PUEBLO_KIVA
+		BuildingType=BUILDING_ALTAR
 		BuildingType=BUILDING_KACHINA_PITHOUSE
 		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
 		BeginCulture
@@ -287,6 +466,10 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=17,y=92
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=17,y=115
 	ImprovementType=IMPROVEMENT_CAMP
 EndPlot
@@ -295,9 +478,24 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
 BeginPlot
+	x=18,y=77
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=18,y=82
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=18,y=83
+	BeginUnit
+		UnitType=UNIT_SLAVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+EndPlot
+BeginPlot
+	x=18,y=88
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=18,y=99
@@ -305,6 +503,10 @@ BeginPlot
 		UnitType=UNIT_COUGAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=18,y=111
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=18,y=113
@@ -351,6 +553,10 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=19,y=71
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=19,y=81
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
@@ -370,11 +576,19 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=19,y=102
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=19,y=103
 	BeginUnit
 		UnitType=UNIT_GRIZZLY_BEAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=19,y=106
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=19,y=115
@@ -416,6 +630,10 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
+	x=20,y=67
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=20,y=69
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -452,6 +670,8 @@ BeginPlot
 		CityPopulation=7
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
 		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_BARRACKS
 		BuildingType=BUILDING_HERBALIST
@@ -480,6 +700,10 @@ BeginPlot
 		UnitType=UNIT_SPEARMAN
 		UnitOwner=CIVILIZATION_PUREPECHA
 	EndUnit
+EndPlot
+BeginPlot
+	x=20,y=81
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=20,y=82
@@ -522,6 +746,11 @@ BeginPlot
 		CityPopulation=7
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
+		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_BARRACKS
+		BuildingType=BUILDING_HERBALIST
 		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_STONEWORKS
@@ -546,11 +775,31 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_MINE
 EndPlot
 BeginPlot
+	x=20,y=86
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=20,y=88
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=20,y=91
 	BeginUnit
 		UnitType=UNIT_COUGAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=20,y=95
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=20,y=97
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=20,y=111
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=21,y=64
@@ -580,6 +829,18 @@ BeginPlot
 	x=21,y=69
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=21,y=73
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=21,y=75
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=21,y=79
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=21,y=83
@@ -620,6 +881,8 @@ BeginPlot
 		CityPopulation=3
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
+		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_BARRACKS
 		BuildingType=BUILDING_HERBALIST
 		BuildingType=BUILDING_WEAVER
@@ -635,6 +898,18 @@ BeginPlot
 		YearFounded=970
 		PreviousOwner=CIVILIZATION_PUEBLO
 	EndCity
+EndPlot
+BeginPlot
+	x=21,y=99
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=21,y=103
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=21,y=106
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=22,y=67
@@ -662,6 +937,14 @@ BeginPlot
 		UnitType=UNIT_COUGAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=22,y=95
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=22,y=97
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=22,y=101
@@ -706,6 +989,18 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=23,y=72
+	ImprovementType=IMPROVEMENT_TRIBE
+	BeginUnit
+		UnitType=UNIT_SWORDSMAN
+		UnitOwner=CIVILIZATION_PUREPECHA
+	EndUnit
+EndPlot
+BeginPlot
+	x=23,y=79
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=23,y=84
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
@@ -723,6 +1018,10 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=23,y=99
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=23,y=113
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -731,7 +1030,7 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
-		CityName=Sisimiut
+		CityName=Iqaluit
 		CityPopulation=1
 		YearFounded=1475
 		PreviousOwner=CIVILIZATION_INUIT
@@ -769,7 +1068,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_AZTEC
 		CityName=Tenochtitlan
-		CityPopulation=14
+		CityPopulation=6
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_TANNERY
@@ -783,10 +1082,8 @@ BeginPlot
 		BuildingType=BUILDING_HUEY_TEOCALLI
 		BuildingType=BUILDING_TEOTL_STEP_PYRAMID
 		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
+		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
-		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
-		FreeSpecialistType=SPECIALIST_SLAVE
-		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_AZTEC, Culture=210
@@ -799,6 +1096,10 @@ BeginPlot
 	x=24,y=68
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_SPY
+		UnitOwner=CIVILIZATION_AZTEC
+	EndUnit
 EndPlot
 BeginPlot
 	x=24,y=69
@@ -819,11 +1120,31 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=24,y=85
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=24,y=87
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=24,y=89
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=24,y=91
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=24,y=93
 	BeginUnit
 		UnitType=UNIT_COUGAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=24,y=103
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=24,y=105
@@ -861,10 +1182,6 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=25,y=67
-	ImprovementType=IMPROVEMENT_FISHING_BOATS
-EndPlot
-BeginPlot
 	x=25,y=69
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -892,6 +1209,14 @@ BeginPlot
 		CityName=Teotihuacan
 		CityPopulation=4
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
+		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_BARRACKS
+		BuildingType=BUILDING_HERBALIST
+		BuildingType=BUILDING_WEAVER
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_BATH
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_STONEWORKS
 		BuildingType=BUILDING_JEWELLER
@@ -900,7 +1225,12 @@ BeginPlot
 		BuildingType=BUILDING_PYRAMID_OF_THE_SUN
 		BuildingType=BUILDING_TEOTL_STEP_PYRAMID
 		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
+		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
+		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
 		FreeSpecialistType=SPECIALIST_GREAT_ENGINEER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
@@ -910,6 +1240,18 @@ BeginPlot
 		YearAcquired=1260
 		PreviousOwner=CIVILIZATION_TEOTIHUACAN
 	EndCity
+EndPlot
+BeginPlot
+	x=25,y=77
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=25,y=97
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=25,y=109
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=25,y=114
@@ -945,11 +1287,30 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=26,y=83
+	BeginUnit
+		UnitType=UNIT_SPY
+		UnitOwner=CIVILIZATION_PUEBLO
+	EndUnit
+EndPlot
+BeginPlot
 	x=26,y=85
 	BeginUnit
 		UnitType=UNIT_COUGAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=26,y=91
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=26,y=95
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=26,y=101
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=27,y=64
@@ -972,6 +1333,30 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=27,y=73
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=27,y=75
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=27,y=81
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=27,y=83
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=27,y=89
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=27,y=97
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=27,y=99
 	BeginUnit
 		UnitType=UNIT_WOLF
@@ -991,6 +1376,10 @@ BeginPlot
 		UnitType=UNIT_GRIZZLY_BEAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=27,y=110
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=28,y=63
@@ -1020,7 +1409,19 @@ BeginPlot
 		CityName=Danibaan
 		CityPopulation=3
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
+		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_BARRACKS
+		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_PAGAN_TEMPLE
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_BATH
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_STONEWORKS
+		BuildingType=BUILDING_JEWELLER
+		BuildingType=BUILDING_PLAZA
+		BuildingType=BUILDING_ALTAR
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		BeginCulture
 			Civilization=CIVILIZATION_AZTEC, Culture=35
@@ -1043,6 +1444,14 @@ EndPlot
 BeginPlot
 	x=28,y=67
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_SPY
+		UnitOwner=CIVILIZATION_PUEBLO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPY
+		UnitOwner=CIVILIZATION_PUREPECHA
+	EndUnit
 	BeginUnit
 		UnitType=UNIT_WARRIOR
 		UnitOwner=CIVILIZATION_INDIGENOUS
@@ -1068,7 +1477,9 @@ BeginPlot
 		CityName=Tres Zapotes
 		CityPopulation=3
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_PAGAN_TEMPLE
+		BuildingType=BUILDING_AQUEDUCT
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
 		BeginCulture
 			Civilization=CIVILIZATION_AZTEC, Culture=4
@@ -1081,6 +1492,10 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
+	x=28,y=78
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=28,y=93
 	BeginUnit
 		UnitType=UNIT_COYOTE
@@ -1088,11 +1503,27 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=28,y=95
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=28,y=99
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=28,y=100
 	BeginUnit
 		UnitType=UNIT_GRIZZLY_BEAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=28,y=103
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=28,y=105
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=28,y=107
@@ -1118,6 +1549,18 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=29,y=80
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=29,y=82
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=29,y=84
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=29,y=117
 	BeginUnit
 		UnitType=UNIT_WOLF
@@ -1129,6 +1572,18 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_MINE
 EndPlot
 BeginPlot
+	x=30,y=86
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=30,y=89
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=30,y=91
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=30,y=93
 	BeginUnit
 		UnitType=UNIT_COUGAR
@@ -1136,11 +1591,23 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=30,y=97
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=30,y=100
 	BeginUnit
 		UnitType=UNIT_COUGAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=30,y=104
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=30,y=106
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=31,y=63
@@ -1160,6 +1627,8 @@ BeginPlot
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_PAGAN_TEMPLE
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_PLAGUE
 		BeginCulture
 			Civilization=CIVILIZATION_INDIGENOUS, Culture=909
 		EndCulture
@@ -1167,6 +1636,14 @@ BeginPlot
 		YearAcquired=1425
 		PreviousOwner=CIVILIZATION_MAYA
 	EndCity
+EndPlot
+BeginPlot
+	x=31,y=83
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=32,y=62
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=32,y=64
@@ -1192,8 +1669,18 @@ BeginPlot
 		CityName=Palenque
 		CityPopulation=3
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
+		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_BARRACKS
+		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_PAGAN_TEMPLE
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_BATH
+		BuildingType=BUILDING_COMPOUND
+		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_STONEWORKS
+		BuildingType=BUILDING_JEWELLER
 		BuildingType=BUILDING_PLAZA
 		BuildingType=BUILDING_ALTAR
 		FreeSpecialistType=SPECIALIST_SLAVE
@@ -1207,8 +1694,20 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
+	x=32,y=79
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=32,y=82
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=32,y=85
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=32,y=95
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=32,y=98
@@ -1216,6 +1715,10 @@ BeginPlot
 		UnitType=UNIT_GRIZZLY_BEAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=32,y=100
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=32,y=103
@@ -1240,6 +1743,10 @@ BeginPlot
 	x=33,y=67
 	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=33,y=89
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=33,y=113
@@ -1272,9 +1779,18 @@ BeginPlot
 		CityName=Tikal
 		CityPopulation=6
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
+		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_BARRACKS
+		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_PAGAN_TEMPLE
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_BATH
+		BuildingType=BUILDING_COMPOUND
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_STONEWORKS
+		BuildingType=BUILDING_JEWELLER
 		BuildingType=BUILDING_PLAZA
 		BuildingType=BUILDING_ALTAR
 		BeginCulture
@@ -1307,6 +1823,22 @@ BeginPlot
 		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_INDEPENDENT1
 	EndUnit
+EndPlot
+BeginPlot
+	x=34,y=78
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=34,y=81
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=34,y=96
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=34,y=100
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=35,y=62
@@ -1378,6 +1910,14 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=35,y=90
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=35,y=94
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=35,y=103
 	BeginUnit
 		UnitType=UNIT_GRIZZLY_BEAR
@@ -1409,9 +1949,20 @@ BeginPlot
 		CityName=Chichen Itza
 		CityPopulation=4
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
+		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_BARRACKS
 		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_PAGAN_TEMPLE
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_BATH
+		BuildingType=BUILDING_COMPOUND
+		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_STONEWORKS
+		BuildingType=BUILDING_JEWELLER
+		BuildingType=BUILDING_PLAZA
+		BuildingType=BUILDING_ALTAR
 		BuildingType=BUILDING_TEMPLE_OF_KUKULKAN
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
@@ -1429,15 +1980,15 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=36,y=85
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=36,y=102
 	BeginUnit
 		UnitType=UNIT_WOLF
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
-EndPlot
-BeginPlot
-	x=36,y=112
-	ImprovementType=IMPROVEMENT_CAMP
 EndPlot
 BeginPlot
 	x=37,y=69
@@ -1449,19 +2000,16 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_WORKSHOP
 EndPlot
 BeginPlot
-	x=37,y=112
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA
-		UnitOwner=CIVILIZATION_INUIT
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_INUIT
-		CityName=Igloolik
-		CityPopulation=1
-		YearFounded=1475
-		PreviousOwner=CIVILIZATION_INUIT
-	EndCity
+	x=37,y=79
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=37,y=83
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=37,y=92
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=37,y=114
@@ -1469,6 +2017,26 @@ BeginPlot
 		UnitType=UNIT_POLAR_BEAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=38,y=59
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=38,y=85
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=38,y=88
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=38,y=90
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=38,y=94
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=38,y=97
@@ -1492,11 +2060,27 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=39,y=62
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=39,y=81
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=39,y=98
 	BeginUnit
 		UnitType=UNIT_WOLF
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=39,y=101
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=39,y=114
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=40,y=40
@@ -1516,6 +2100,26 @@ BeginPlot
 		UnitType=UNIT_PANTHER
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=40,y=78
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=40,y=86
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=40,y=88
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=40,y=91
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=40,y=96
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=41,y=41
@@ -1561,6 +2165,10 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=41,y=45
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=41,y=77
 	BeginUnit
 		UnitType=UNIT_JAGUAR
@@ -1581,6 +2189,10 @@ EndPlot
 BeginPlot
 	x=42,y=40
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_SPY
+		UnitOwner=CIVILIZATION_MUISCA
+	EndUnit
 	BeginUnit
 		UnitType=UNIT_INCAN_AUCAC
 		UnitOwner=CIVILIZATION_INCA
@@ -1634,6 +2246,10 @@ BeginPlot
 		CityName=Chan Chan
 		CityPopulation=6
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
+		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_PLAZA
 		FreeSpecialistType=SPECIALIST_ARTIST
@@ -1663,24 +2279,39 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=42,y=45
-	ImprovementType=IMPROVEMENT_FARM
-	RouteType=ROUTE_ROAD
+	x=42,y=47
+	BeginUnit
+		UnitType=UNIT_SPY
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
 EndPlot
 BeginPlot
-	x=42,y=105
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA
-		UnitOwner=CIVILIZATION_INUIT
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_INUIT
-		CityName=Puvirnituq
-		CityPopulation=1
-		YearFounded=1475
-		PreviousOwner=CIVILIZATION_INUIT
-	EndCity
+	x=42,y=84
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=42,y=88
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=42,y=90
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=42,y=95
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=42,y=98
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=42,y=100
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=42,y=102
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=42,y=111
@@ -1723,34 +2354,20 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_MINE
 EndPlot
 BeginPlot
+	x=43,y=44
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=43,y=46
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_INCAN_AUCAC
-		UnitOwner=CIVILIZATION_INCA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_INCAN_AUCAC
-		UnitOwner=CIVILIZATION_INCA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_INCAN_AUCAC
-		UnitOwner=CIVILIZATION_INCA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_INCA
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_INCA
-		CityName=Quito
-		CityPopulation=3
-		BuildingType=BUILDING_GRANARY
-		BeginCulture
-			Civilization=CIVILIZATION_INCA, Culture=75
-		EndCulture
-		YearFounded=1400
-	EndCity
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=43,y=74
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=43,y=82
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=43,y=86
@@ -1805,6 +2422,10 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=44,y=9
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=44,y=36
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -1820,6 +2441,8 @@ BeginPlot
 		CityName=Pachacamac
 		CityPopulation=4
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_INCA_KALLANKA
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_STONEWORKS
@@ -1872,12 +2495,16 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=44,y=104
-	ImprovementType=IMPROVEMENT_CAMP
+	x=44,y=50
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=44,y=110
-	ImprovementType=IMPROVEMENT_CAMP
+	x=44,y=71
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=44,y=95
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=45,y=1
@@ -1892,6 +2519,10 @@ BeginPlot
 		UnitType=UNIT_COUGAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=45,y=34
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=45,y=36
@@ -1941,8 +2572,16 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=45,y=44
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=45,y=45
 	ImprovementType=IMPROVEMENT_CITY_RUINS
+EndPlot
+BeginPlot
+	x=45,y=58
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=45,y=93
@@ -2021,19 +2660,12 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
-	x=45,y=110
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA
-		UnitOwner=CIVILIZATION_INUIT
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_INUIT
-		CityName=Iqaluit
-		CityPopulation=1
-		YearFounded=1475
-		PreviousOwner=CIVILIZATION_INUIT
-	EndCity
+	x=45,y=112
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=46,y=4
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=46,y=13
@@ -2109,6 +2741,22 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=46,y=52
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=46,y=65
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=46,y=84
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=46,y=96
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=47,y=1
 	BeginUnit
 		UnitType=UNIT_COYOTE
@@ -2159,6 +2807,10 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=47,y=39
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=47,y=49
 	ImprovementType=IMPROVEMENT_CAMP_AMAZON
 	RouteType=ROUTE_ROAD
@@ -2167,6 +2819,14 @@ BeginPlot
 	x=47,y=50
 	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=47,y=55
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=47,y=87
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=47,y=98
@@ -2181,6 +2841,14 @@ BeginPlot
 		UnitType=UNIT_WOLF
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=48,y=5
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=48,y=18
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=48,y=31
@@ -2274,6 +2942,10 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
+	x=48,y=41
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=48,y=50
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -2302,6 +2974,11 @@ BeginPlot
 		CityPopulation=10
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
+		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_BARRACKS
+		BuildingType=BUILDING_HERBALIST
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_STONEWORKS
 		BuildingType=BUILDING_MUISCA_GOLDSMITH
@@ -2357,6 +3034,8 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_BARRACKS
+		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_INTI_TEMPLE
 		BeginCulture
 			Civilization=CIVILIZATION_MUISCA, Culture=76
@@ -2364,6 +3043,10 @@ BeginPlot
 		YearFounded=1060
 		PreviousOwner=CIVILIZATION_MUISCA
 	EndCity
+EndPlot
+BeginPlot
+	x=48,y=68
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=48,y=70
@@ -2380,8 +3063,24 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=49,y=8
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=49,y=18
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INCAN_AUCAC
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INCAN_AUCAC
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INCAN_AUCAC
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
 	BeginUnit
 		UnitType=UNIT_INCAN_AUCAC
 		UnitOwner=CIVILIZATION_INCA
@@ -2439,8 +3138,18 @@ BeginPlot
 		CityName=El Fuerte
 		CityPopulation=9
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
+		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_INCA_KALLANKA
+		BuildingType=BUILDING_HERBALIST
+		BuildingType=BUILDING_WEAVER
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_BATH
 		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_STONEWORKS
+		BuildingType=BUILDING_PLAZA
+		BuildingType=BUILDING_ALTAR
 		BuildingType=BUILDING_INCAN_TAMBO
 		BuildingType=BUILDING_INTI_TEMPLE
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
@@ -2485,62 +3194,48 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=49,y=45
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=49,y=49
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=49,y=70
-	RouteType=ROUTE_ROAD
+	x=49,y=64
 	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
+		UnitType=UNIT_CANOE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_ARAWAK
-		CityName=Amakura
-		CityPopulation=2
-		BeginCulture
-			Civilization=CIVILIZATION_ARAWAK, Culture=10
-		EndCulture
-		YearFounded=1490
-		PreviousOwner=CIVILIZATION_ARAWAK
-	EndCity
+EndPlot
+BeginPlot
+	x=49,y=70
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=49,y=94
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=49,y=97
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=49,y=102
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=49,y=112
 	ImprovementType=IMPROVEMENT_WHALING_BOATS
 EndPlot
 BeginPlot
-	x=50,y=25
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_INCAN_AUCAC
-		UnitOwner=CIVILIZATION_INCA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_INCAN_AUCAC
-		UnitOwner=CIVILIZATION_INCA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_INCAN_AUCAC
-		UnitOwner=CIVILIZATION_INCA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_INCA
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_INCA
-		CityName=Mejillones
-		CityPopulation=1
-		BuildingType=BUILDING_GRANARY
-		BeginCulture
-			Civilization=CIVILIZATION_INCA, Culture=50
-		EndCulture
-		YearFounded=1400
-		PreviousOwner=CIVILIZATION_INCA
-	EndCity
+	x=50,y=15
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=50,y=27
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=50,y=30
@@ -2577,8 +3272,11 @@ BeginPlot
 		CityName=Pikillacta
 		CityPopulation=5
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
 		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_INCA_KALLANKA
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_STONEWORKS
 		BuildingType=BUILDING_PLAZA
 		BuildingType=BUILDING_INCAN_TAMBO
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
@@ -2629,8 +3327,35 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
+	x=50,y=68
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=50,y=92
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=50,y=111
+	BeginUnit
+		UnitType=UNIT_CARAVEL
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+EndPlot
+BeginPlot
 	x=50,y=114
 	ImprovementType=IMPROVEMENT_WINDMILL
+EndPlot
+BeginPlot
+	x=51,y=9
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=51,y=12
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=51,y=23
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=51,y=30
@@ -2652,42 +3377,48 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=51,y=59
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_ARAWAK
-		CityName=Amakura
-		CityPopulation=2
-		BuildingType=BUILDING_INTI_TEMPLE
-		BeginCulture
-			Civilization=CIVILIZATION_ARAWAK, Culture=25
-		EndCulture
-		YearFounded=1480
-		PreviousOwner=CIVILIZATION_ARAWAK
-	EndCity
+	x=51,y=38
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=51,y=41
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=51,y=44
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=51,y=51
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=51,y=58
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=51,y=96
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=51,y=100
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=51,y=112
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA
-		UnitOwner=CIVILIZATION_INUIT
+		UnitType=UNIT_IRREGULAR
+		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_INUIT
+		CityOwner=CIVILIZATION_NORSE
 		CityName=Nuuk
-		CityPopulation=2
-		BuildingType=BUILDING_INUIT_IGLOO
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_NORSE_THINGVELLIR
 		BeginCulture
-			Civilization=CIVILIZATION_INUIT, Culture=100
 			Civilization=CIVILIZATION_NORSE, Culture=86
 		EndCulture
 		YearFounded=1125
@@ -2698,6 +3429,10 @@ BeginPlot
 	x=51,y=113
 	ImprovementType=IMPROVEMENT_CAMP
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=52,y=16
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=52,y=30
@@ -2729,10 +3464,17 @@ BeginPlot
 		CityPopulation=8
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_KILN
 		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_INCA_KALLANKA
+		BuildingType=BUILDING_HERBALIST
+		BuildingType=BUILDING_WEAVER
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_BATH
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_STONEWORKS
+		BuildingType=BUILDING_PLAZA
+		BuildingType=BUILDING_ALTAR
 		BuildingType=BUILDING_INCAN_TAMBO
 		BuildingType=BUILDING_KALASASAYA
 		BuildingType=BUILDING_GATE_OF_THE_SUN
@@ -2761,28 +3503,16 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=52,y=45
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_ARAWAK
-		CityName=Guanaba
-		CityPopulation=3
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_INTI_TEMPLE
-		BeginCulture
-			Civilization=CIVILIZATION_ARAWAK, Culture=75
-		EndCulture
-		YearFounded=1420
-		PreviousOwner=CIVILIZATION_ARAWAK
-	EndCity
+	x=52,y=36
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=52,y=46
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=52,y=48
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=52,y=102
@@ -2792,9 +3522,21 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=52,y=104
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=52,y=112
 	ImprovementType=IMPROVEMENT_WINDMILL
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=53,y=11
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=53,y=13
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=53,y=30
@@ -2830,11 +3572,23 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=53,y=50
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=53,y=56
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=53,y=58
 	BeginUnit
 		UnitType=UNIT_PANTHER
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=53,y=94
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=53,y=101
@@ -2853,6 +3607,10 @@ BeginPlot
 		UnitType=UNIT_COUGAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=54,y=25
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=54,y=29
@@ -2894,6 +3652,14 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FARM
 EndPlot
 BeginPlot
+	x=54,y=47
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=54,y=101
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=54,y=104
 	BeginUnit
 		UnitType=UNIT_GRIZZLY_BEAR
@@ -2901,47 +3667,28 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
-	x=54,y=51
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_ARAWAK
-		CityName=Kiskeya
-		CityPopulation=4
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_INTI_TEMPLE
-		BeginCulture
-			Civilization=CIVILIZATION_ARAWAK, Culture=81
-		EndCulture
-		YearFounded=1430
-		PreviousOwner=CIVILIZATION_ARAWAK
-	EndCity
+	x=55,y=13
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=54,y=67
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_ARAWAK
-		CityName=Amakura
-		CityPopulation=1
-		BuildingType=BUILDING_PLAGUE
-		BeginCulture
-			Civilization=CIVILIZATION_ARAWAK, Culture=25
-		EndCulture
-		YearFounded=1480
-		PreviousOwner=CIVILIZATION_ARAWAK
-	EndCity
+	x=55,y=19
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=55,y=23
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=55,y=35
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=55,y=44
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=55,y=55
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=55,y=58
@@ -2958,6 +3705,26 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=55,y=111
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=56,y=15
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=56,y=27
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=56,y=30
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=56,y=32
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=56,y=34
 	BeginUnit
 		UnitType=UNIT_SCOUT
@@ -2965,27 +3732,8 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
-	x=56,y=39
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_ARAWAK
-		CityName=Imataka
-		CityPopulation=3
-		BuildingType=BUILDING_INTI_TEMPLE
-		BeginCulture
-			Civilization=CIVILIZATION_ARAWAK, Culture=82
-		EndCulture
-		YearFounded=900
-		PreviousOwner=CIVILIZATION_ARAWAK
-	EndCity
+	x=56,y=68
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=56,y=110
@@ -2997,11 +3745,27 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_MINE
 EndPlot
 BeginPlot
+	x=56,y=114
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=57,y=13
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=57,y=17
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=57,y=24
 	BeginUnit
 		UnitType=UNIT_JAGUAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=57,y=35
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=57,y=46
@@ -3011,20 +3775,90 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=57,y=57
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=57,y=59
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=57,y=100
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+EndPlot
+BeginPlot
 	x=57,y=101
 	RouteType=ROUTE_ROAD
-	ImprovementType=IMPROVEMENT_CITY_RUINS
+	BeginUnit
+		UnitType=UNIT_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_NORSE
+		CityName=L'Anse aux Meadows
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_NORSE, Culture=2
+		EndCulture
+		YearFounded=1450
+		PreviousOwner=CIVILIZATION_NORSE
+	EndCity
 EndPlot
 BeginPlot
 	x=57,y=110
 	RouteType=ROUTE_ROAD
-	ImprovementType=IMPROVEMENT_CITY_RUINS
+	BeginUnit
+		UnitType=UNIT_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_IRREGULAR
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_NORSE
+		CityName=Hvalsey
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MONUMENT
+		BeginCulture
+			Civilization=CIVILIZATION_NORSE, Culture=108
+		EndCulture
+		YearFounded=1075
+		PreviousOwner=CIVILIZATION_NORSE
 	EndCity
 EndPlot
 BeginPlot
 	x=57,y=112
 	ImprovementType=IMPROVEMENT_CAMP
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=58,y=20
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=58,y=22
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=58,y=26
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=58,y=29
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=58,y=39
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=58,y=66
@@ -3051,11 +3885,19 @@ EndPlot
 BeginPlot
 	x=58,y=110
 	ImprovementType=IMPROVEMENT_WINDMILL
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
 EndPlot
 BeginPlot
 	x=58,y=111
 	ImprovementType=IMPROVEMENT_CAMP
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=59,y=17
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=59,y=18
@@ -3065,36 +3907,16 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
-	x=59,y=51
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER_AMAZON
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_ARAWAK
-		CityName=Boriken
-		CityPopulation=3
-		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_GRANARY
-		BeginCulture
-			Civilization=CIVILIZATION_ARAWAK, Culture=190
-		EndCulture
-		YearFounded=1130
-		PreviousOwner=CIVILIZATION_ARAWAK
-	EndCity
+	x=59,y=31
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=59,y=36
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=59,y=56
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=59,y=67
@@ -3112,6 +3934,18 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=59,y=84
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=60,y=19
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=60,y=22
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=60,y=40
 	BeginUnit
 		UnitType=UNIT_PANTHER
@@ -3126,8 +3960,16 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
-	x=60,y=46
+	x=60,y=47
+	ImprovementType=IMPROVEMENT_CAMP_AMAZON
+EndPlot
+BeginPlot
+	x=60,y=51
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
 		UnitOwner=CIVILIZATION_ARAWAK
@@ -3138,20 +3980,16 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ARAWAK
-		CityName=Cubanacan
-		CityPopulation=3
-		BuildingType=BUILDING_BARRACKS
+		CityName=Kiskeya
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_INTI_TEMPLE
 		BeginCulture
-			Civilization=CIVILIZATION_ARAWAK, Culture=82
+			Civilization=CIVILIZATION_ARAWAK, Culture=81
 		EndCulture
-		YearFounded=1450
+		YearFounded=1430
 		PreviousOwner=CIVILIZATION_ARAWAK
 	EndCity
-EndPlot
-BeginPlot
-	x=60,y=47
-	ImprovementType=IMPROVEMENT_CAMP_AMAZON
 EndPlot
 BeginPlot
 	x=60,y=54
@@ -3187,6 +4025,10 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
+	x=61,y=36
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=61,y=38
 	BeginUnit
 		UnitType=UNIT_JAGUAR
@@ -3198,11 +4040,131 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=61,y=47
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_ARAWAK
+		CityName=Cubanacan
+		CityPopulation=7
+		BuildingType=BUILDING_BARRACKS
+		BuildingType=BUILDING_INTI_TEMPLE
+		BeginCulture
+			Civilization=CIVILIZATION_ARAWAK, Culture=82
+		EndCulture
+		YearFounded=1450
+		PreviousOwner=CIVILIZATION_ARAWAK
+	EndCity
+EndPlot
+BeginPlot
+	x=61,y=49
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_CANOE
+		UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CANOE
+		UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER_AMAZON
+		UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SETTLER
+		UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SETTLER
+		UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_ARAWAK
+		CityName=Boriken
+		CityPopulation=5
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_ARAWAK, Culture=190
+		EndCulture
+		YearFounded=1130
+		PreviousOwner=CIVILIZATION_ARAWAK
+	EndCity
+EndPlot
+BeginPlot
+	x=61,y=56
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=61,y=66
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=62,y=17
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=62,y=18
 	BeginUnit
 		UnitType=UNIT_WOLF
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=62,y=19
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=62,y=27
+	ImprovementType=IMPROVEMENT_TRIBE
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA
+		UnitOwner=CIVILIZATION_INDIGENOUS
+	EndUnit
+EndPlot
+BeginPlot
+	x=62,y=30
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=62,y=33
@@ -3233,32 +4195,20 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
+	x=62,y=39
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=62,y=44
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=62,y=47
 	ImprovementType=IMPROVEMENT_CAMP_AMAZON
 EndPlot
 BeginPlot
-	x=62,y=55
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_ARAWAK
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_ARAWAK
-		CityName=Liguanea
-		CityPopulation=2
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_INTI_TEMPLE
-		BeginCulture
-			Civilization=CIVILIZATION_ARAWAK, Culture=50
-		EndCulture
-		YearFounded=1450
-		PreviousOwner=CIVILIZATION_ARAWAK
-	EndCity
+	x=63,y=25
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=63,y=28
@@ -3297,6 +4247,18 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CAMP_AMAZON
 EndPlot
 BeginPlot
+	x=63,y=41
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=63,y=46
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=63,y=52
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=63,y=55
 	BeginUnit
 		UnitType=UNIT_PANTHER
@@ -3310,11 +4272,11 @@ EndPlot
 BeginPlot
 	x=63,y=116
 	BeginUnit
-		UnitType=UNIT_VIKING_LONGSHIP
+		UnitType=UNIT_CARAVEL
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_VIKING_LONGSHIP
+		UnitType=UNIT_CARAVEL
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 EndPlot
@@ -3336,8 +4298,20 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=64,y=23
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=64,y=27
 	ImprovementType=IMPROVEMENT_CAMP_AMAZON
+EndPlot
+BeginPlot
+	x=64,y=44
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=64,y=61
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=64,y=117
@@ -3392,6 +4366,10 @@ BeginPlot
 		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
+EndPlot
+BeginPlot
+	x=65,y=25
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=65,y=33
@@ -3460,6 +4438,10 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
+	x=65,y=46
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=65,y=52
 	BeginUnit
 		UnitType=UNIT_JAGUAR
@@ -3471,11 +4453,35 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
 BeginPlot
+	x=66,y=20
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=66,y=30
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=66,y=50
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=66,y=55
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=67,y=21
 	BeginUnit
 		UnitType=UNIT_COUGAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=67,y=22
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=67,y=27
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=67,y=40
@@ -3499,12 +4505,28 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=68,y=31
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=68,y=32
 	ImprovementType=IMPROVEMENT_FARM
 EndPlot
 BeginPlot
+	x=68,y=36
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=68,y=50
 	ImprovementType=IMPROVEMENT_CAMP_AMAZON
+EndPlot
+BeginPlot
+	x=68,y=53
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=69,y=29
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=69,y=34
@@ -3530,6 +4552,18 @@ BeginPlot
 		YearFounded=1125
 		PreviousOwner=CIVILIZATION_TUPI
 	EndCity
+EndPlot
+BeginPlot
+	x=69,y=39
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=69,y=41
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=69,y=44
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=69,y=49
@@ -3575,11 +4609,47 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
 BeginPlot
+	x=71,y=26
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=71,y=28
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=71,y=33
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=71,y=36
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=71,y=41
 	BeginUnit
 		UnitType=UNIT_JAGUAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=71,y=49
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=72,y=30
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=72,y=43
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=72,y=45
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=73,y=37
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=73,y=43
@@ -3596,11 +4666,23 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=74,y=32
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=74,y=45
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=74,y=48
 	BeginUnit
 		UnitType=UNIT_JAGUAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=75,y=29
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=75,y=32
@@ -3610,6 +4692,10 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=75,y=35
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=76,y=36
 	BeginUnit
 		UnitType=UNIT_JAGUAR
@@ -3617,11 +4703,39 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=76,y=39
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=77,y=37
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=78,y=39
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=78,y=42
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=78,y=47
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=80,y=42
 	BeginUnit
 		UnitType=UNIT_PANTHER
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
+EndPlot
+BeginPlot
+	x=80,y=43
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=80,y=45
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=82,y=0

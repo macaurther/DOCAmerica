@@ -2059,7 +2059,6 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Iqaluit</City>
 				<City>Sisimiut</City>
 				<City>Inuvik</City>
 				<City>Mamterilleq</City>
@@ -2156,7 +2155,7 @@
 			<StartingYear>1625</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>25</LoadingTime>
-				<LoadingTime>0</LoadingTime>
+				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>

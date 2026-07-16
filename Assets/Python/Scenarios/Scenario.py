@@ -126,8 +126,19 @@ RELIGION_FOUNDING_DATES = {
 }
 
 WONDER_ORIGINAL_BUILDERS = {
+	iPyramidOfTheSun : (iTeotihuacan, 200),
+	iGreatGeoglyph : (iIndigenous, 500),
+	iGateOfTheSun : (iTiwanaku, 550),
+	iKalasasaya : (iTiwanaku, 600),
+	iTlachihualtepetl : (iTeotihuacan, 600),
 	iTempleOfKukulkan : (iMaya, 800),
+	iPuebloBonito : (iPueblo, 1050),
 	iFloatingGardens : (iAztec, 1350),
+	iYachaywasi : (iInca, 1440),
+	iAcllahuasi : (iInca, 1450),
+	iYacatas : (iPurepecha, 1450),
+	iHueyTeocalli : (iAztec, 1487),
+	iSacsayhuaman : (iInca, 1500),
 }
 
 DEFAULT_CIV_DESCRIPTIONS = {}

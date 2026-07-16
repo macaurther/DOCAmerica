@@ -6470,6 +6470,25 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 			}
 		}*/
 
+		// MacAurther: Do Forts and Tribes before updating plot groups!
+		// MacAurther: Forts
+		// Make sure to update Fort Claims before reporting event, so that any callbacks know who owns the fort
+		if (eOldImprovement == IMPROVEMENT_FORT || eNewValue == IMPROVEMENT_FORT)
+		{
+			updateFortClaims(NO_PLAYER);	// The NO_PLAYER argument will make this method search for the owner
+		}
+
+		// MacAurther: Tribes - update culture
+		if (eOldImprovement == IMPROVEMENT_TRIBE || eOldImprovement == IMPROVEMENT_CONTACTED_TRIBE || eNewValue == IMPROVEMENT_TRIBE || eNewValue == IMPROVEMENT_CONTACTED_TRIBE)
+		{
+			updateCulture(false, false);
+			// Remove any stored units
+			if (eOldImprovement == IMPROVEMENT_TRIBE || eOldImprovement == IMPROVEMENT_CONTACTED_TRIBE)
+			{
+				setTribeStoredUnits(0);
+			}
+		}
+
 		// Building or removing a fort will now force a plotgroup update to verify resource connections.
 		if ( (NO_IMPROVEMENT != getImprovementType() && GC.getImprovementInfo(getImprovementType()).isActsAsCity()) !=
 			 (NO_IMPROVEMENT != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity()) )
@@ -6498,24 +6517,6 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 		if (GC.getGameINLINE().isDebugMode())
 		{
 			setLayoutDirty(true);
-		}
-
-		// MacAurther: Forts
-		// Make sure to update Fort Claims before reporting event, so that any callbacks know who owns the fort
-		if (eOldImprovement == IMPROVEMENT_FORT || eNewValue == IMPROVEMENT_FORT)
-		{
-			updateFortClaims(NO_PLAYER);	// The NO_PLAYER argument will make this method search for the owner
-		}
-
-		// MacAurther: Tribes - update culture
-		if (eOldImprovement == IMPROVEMENT_TRIBE || eOldImprovement == IMPROVEMENT_CONTACTED_TRIBE || eNewValue == IMPROVEMENT_TRIBE || eNewValue == IMPROVEMENT_CONTACTED_TRIBE)
-		{
-			updateCulture(false, false);
-			// Remove any stored units
-			if (eOldImprovement == IMPROVEMENT_TRIBE || eOldImprovement == IMPROVEMENT_CONTACTED_TRIBE)
-			{
-				setTribeStoredUnits(0);
-			}
 		}
 
 		if (getImprovementType() != NO_IMPROVEMENT)
