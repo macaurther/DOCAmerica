@@ -37,9 +37,10 @@ lCivilizations = [
 		iGold=400,
 		iImmigration=300,
 		iStateReligion=iCatholicism,
-		lCivics=[iViceroys, iRoyalColony, iEncomienda, iPlunder, iJesuits, iImperialism],
-		techs=techs.column(15).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
-		dAttitudes={iPortugal: 2}
+		lCivics=[iViceroys, iRoyalColony, iSlavery, iExtraction, iCastas, iProvidence],
+		techs=techs.column(12),
+		extraTechs=techs.column(2).including(iSouthEuropeAccess),
+		dAttitudes={iPortugal: 2, iEngland: -4},
 	),
 	Civilization(
 		iPortugal,
@@ -47,9 +48,10 @@ lCivilizations = [
 		iGold=450,
 		iImmigration=300,
 		iStateReligion=iCatholicism,
-		lCivics=[iProprietors, iAdmiralty, iSlavery, iFactoryCivic, iExtraction, iGrants],
-		techs=techs.column(15).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
-		dAttitudes={iSpain: 2, iEngland: 2, iNetherlands: -2}
+		lCivics=[iViceroys, iAdmiralty, iSlavery, iPlantationCivic, iCastas, iOutposts],
+		techs=techs.column(12),
+		extraTechs=techs.column(2).including(iSouthEuropeAccess),
+		dAttitudes={iSpain: 2, iEngland: 2, iNetherlands: -2},
 	),
 	Civilization(	#TODO
 		iCherokee,

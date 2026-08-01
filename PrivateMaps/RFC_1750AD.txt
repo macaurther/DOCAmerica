@@ -112,8 +112,17 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Guadalajara
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_MARKET
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=35
+		EndCulture
+		YearFounded=1542
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -123,8 +132,14 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=El Paso
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_SPANISH_MISSION
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=10
+		EndCulture
+		YearFounded=1659
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -134,8 +149,14 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santa Fe
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_SPANISH_MISSION
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=10
+		EndCulture
+		YearFounded=1610
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -179,9 +200,35 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Ciudad de México
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_SPAIN
+		CityPopulation=10
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_SCHOOLHOUSE
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_JAIL
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_ESTATE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_CATHEDRAL
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
+		BuildingType=BUILDING_CUSTOMS_HOUSE
+		BuildingType=BUILDING_FLOATING_GARDENS
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
+		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=90
+		EndCulture
+		YearFounded=1325
+		YearAcquired=1521
+		PreviousOwner=CIVILIZATION_AZTEC
 	EndCity
 EndPlot
 BeginPlot
@@ -195,8 +242,15 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Monterrey
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=25
+		EndCulture
+		YearFounded=1596
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -251,8 +305,16 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Oaxaca
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=30
+		EndCulture
+		YearFounded=1529
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -262,8 +324,22 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Veracruz
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_JAIL
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CUSTOMS_HOUSE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=45
+		EndCulture
+		YearFounded=1519
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -284,8 +360,15 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Villahermosa
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=12
+		EndCulture
+		YearFounded=1564
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -339,8 +422,21 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Guatemala
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=45
+		EndCulture
+		YearFounded=1524
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -370,8 +466,15 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Managua
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=12
+		EndCulture
+		YearFounded=1524
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -392,8 +495,16 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Merida
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=25
+		EndCulture
+		YearFounded=1542
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -414,8 +525,16 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Tegucigalpa
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_SILVERSMITH
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=25
+		EndCulture
+		YearFounded=1578
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -481,8 +600,16 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Guayaquil
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=35
+		EndCulture
+		YearFounded=1538
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -503,9 +630,17 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Trujillo
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_SPAIN
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=25
+		EndCulture
+		YearFounded=850
+		YearAcquired=1534
+		PreviousOwner=CIVILIZATION_CHIMU
 	EndCity
 EndPlot
 BeginPlot
@@ -514,8 +649,26 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Havana
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=7
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_JAIL
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		BuildingType=BUILDING_CUSTOMS_HOUSE
+		BuildingType=BUILDING_STAR_FORT
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=60
+		EndCulture
+		YearFounded=1519
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -525,8 +678,16 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=San Agustín
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_SPANISH_MISSION
+		BuildingType=BUILDING_STAR_FORT
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=100
+		EndCulture
+		YearFounded=1565
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -547,8 +708,18 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Quito
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=45
+		EndCulture
+		YearFounded=1534
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -580,32 +751,46 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Lima
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=9
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_JAIL
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_ESTATE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		BuildingType=BUILDING_CATHOLIC_CATHEDRAL
+		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
+		BuildingType=BUILDING_CUSTOMS_HOUSE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=80
+		EndCulture
+		YearFounded=1535
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
 BeginPlot
 	x=45,y=10
-	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_SPAIN
-		CityName=Puerto Montt
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_SPAIN
-	EndCity
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+		UnitType=UNIT_MUSKETMAN
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 EndPlot
 BeginPlot
 	x=45,y=39
 	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_SPAIN
-		CityName=Huaraz
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_SPAIN
-	EndCity
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+		UnitType=UNIT_MUSKETMAN
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 EndPlot
 BeginPlot
 	x=45,y=45
@@ -617,8 +802,15 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Cali
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=25
+		EndCulture
+		YearFounded=1536
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -628,8 +820,14 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Medellín
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=15
+		EndCulture
+		YearFounded=1616
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -639,8 +837,22 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Cartagena
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=6
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		BuildingType=BUILDING_STAR_FORT
+		BuildingType=BUILDING_CUSTOMS_HOUSE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=55
+		EndCulture
+		YearFounded=1533
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -723,21 +935,24 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Chillán
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=15
+		EndCulture
+		YearFounded=1580
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
 BeginPlot
 	x=47,y=32
-	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_SPAIN
-		CityName=Paracas
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_SPAIN
-	EndCity
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+		UnitType=UNIT_MUSKETMAN
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 EndPlot
 BeginPlot
 	x=47,y=65
@@ -761,9 +976,19 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Cusco
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_SPAIN
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		BuildingType=BUILDING_SILVERSMITH
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=50
+		EndCulture
+		YearFounded=1100
+		YearAcquired=1533
+		PreviousOwner=CIVILIZATION_INCA
 	EndCity
 EndPlot
 BeginPlot
@@ -772,9 +997,17 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Bogotá
-		CityPopulation=1
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		BuildingType=BUILDING_GOVERNORS_MANSION
-		YearFounded=0
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=45
+		EndCulture
+		YearFounded=1538
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -784,8 +1017,16 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Maracaibo
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=25
+		EndCulture
+		YearFounded=1529
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -817,21 +1058,27 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santiago
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=45
+		EndCulture
+		YearFounded=1541
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
 BeginPlot
 	x=49,y=24
-	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_SPAIN
-		CityName=Antofagasta
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_SPAIN
-	EndCity
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+		UnitType=UNIT_MUSKETMAN
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 EndPlot
 BeginPlot
 	x=49,y=68
@@ -839,8 +1086,17 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santiago de Cuba
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=25
+		EndCulture
+		YearFounded=1515
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -850,8 +1106,15 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Holguin
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=15
+		EndCulture
+		YearFounded=1545
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -884,8 +1147,14 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Barquisimeto
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=15
+		EndCulture
+		YearFounded=1552
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -917,8 +1186,17 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=La Paz
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_SILVERSMITH
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=45
+		EndCulture
+		YearFounded=1548
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -928,8 +1206,16 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Cordoba
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_SCHOOLHOUSE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=30
+		EndCulture
+		YearFounded=1573
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -939,8 +1225,14 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Salta
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=15
+		EndCulture
+		YearFounded=1582
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -950,8 +1242,17 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Sucre
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_SCHOOLHOUSE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=35
+		EndCulture
+		YearFounded=1538
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -987,8 +1288,19 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Caracas
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_STABLE
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=40
+		EndCulture
+		YearFounded=1567
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -1002,8 +1314,14 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santa Cruz
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=15
+		EndCulture
+		YearFounded=1561
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -1024,8 +1342,20 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Buenos Aires
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=6
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_JAIL
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CUSTOMS_HOUSE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=55
+		EndCulture
+		YearFounded=1536
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -1035,8 +1365,20 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santo Domingo
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=40
+		EndCulture
+		YearFounded=1496
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -1047,7 +1389,12 @@ BeginPlot
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Manaus
 		CityPopulation=1
-		YearFounded=0
+		BuildingType=BUILDING_GRANARY
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=8
+		EndCulture
+		YearFounded=1669
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
@@ -1068,9 +1415,17 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Montevideo
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_SPAIN
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=10
+		EndCulture
+		YearFounded=1724
+		YearAcquired=1725
+		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
 BeginPlot
@@ -1079,8 +1434,16 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Asuncion
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_WEAVER
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=30
+		EndCulture
+		YearFounded=1537
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -1123,21 +1486,35 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=San Juan
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_LA_FORTALEZA
+		BuildingType=BUILDING_STAR_FORT
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=35
+		EndCulture
+		YearFounded=1521
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
 BeginPlot
 	x=63,y=19
-	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_PORTUGAL
-		CityName=Porto Alegre
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_PORTUGAL
-	EndCity
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 EndPlot
 BeginPlot
 	x=64,y=59
@@ -1176,13 +1553,15 @@ EndPlot
 BeginPlot
 	x=65,y=28
 	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_PORTUGAL
-		CityName=Aracatuba
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_PORTUGAL
-	EndCity
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 EndPlot
 BeginPlot
 	x=65,y=46
@@ -1191,7 +1570,12 @@ BeginPlot
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Santarem
 		CityPopulation=1
-		YearFounded=0
+		BuildingType=BUILDING_GRANARY
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=8
+		EndCulture
+		YearFounded=1661
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
@@ -1225,7 +1609,12 @@ BeginPlot
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Curitiba
 		CityPopulation=1
-		YearFounded=0
+		BuildingType=BUILDING_GRANARY
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=8
+		EndCulture
+		YearFounded=1693
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
@@ -1246,22 +1635,34 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Sao Paulo
-		CityPopulation=1
-		BuildingType=BUILDING_GOVERNORS_MANSION
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=30
+		EndCulture
+		YearFounded=1554
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
 BeginPlot
 	x=69,y=30
-	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_PORTUGAL
-		CityName=Uberlandia
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_PORTUGAL
-	EndCity
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 EndPlot
 BeginPlot
 	x=69,y=49
@@ -1270,20 +1671,27 @@ BeginPlot
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Macapa
 		CityPopulation=1
-		YearFounded=0
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_STAR_FORT
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=8
+		EndCulture
+		YearFounded=1738
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
 BeginPlot
 	x=72,y=30
-	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_PORTUGAL
-		CityName=Belo Horizonte
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_PORTUGAL
-	EndCity
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 EndPlot
 BeginPlot
 	x=72,y=48
@@ -1291,8 +1699,18 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Belem
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=30
+		EndCulture
+		YearFounded=1616
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
@@ -1302,8 +1720,27 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Rio de Janiero
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_JAIL
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=50
+		EndCulture
+		YearFounded=1565
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
@@ -1313,8 +1750,17 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Vitoria
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=18
+		EndCulture
+		YearFounded=1551
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
@@ -1324,8 +1770,16 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Sao Luis
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=18
+		EndCulture
+		YearFounded=1612
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
@@ -1335,8 +1789,17 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Porto Seguro
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=18
+		EndCulture
+		YearFounded=1535
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
@@ -1346,8 +1809,29 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Salvador
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=6
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_JAIL
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_CATHEDRAL
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		BuildingType=BUILDING_GOVERNORS_MANSION
+		BuildingType=BUILDING_CUSTOMS_HOUSE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=55
+		EndCulture
+		YearFounded=1549
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
@@ -1358,7 +1842,14 @@ BeginPlot
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Fortaleza
 		CityPopulation=1
-		YearFounded=0
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_STAR_FORT
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=10
+		EndCulture
+		YearFounded=1726
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
@@ -1373,6 +1864,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Maceio
 		CityPopulation=1
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=5
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
@@ -1383,8 +1879,18 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Natal
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_STAR_FORT
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_PORTUGAL, Culture=18
+		EndCulture
+		YearFounded=1599
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
