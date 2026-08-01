@@ -51,6 +51,13 @@ lCivilizations = [
 		techs=techs.column(15).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iSpain: 2, iEngland: 2, iNetherlands: -2}
 	),
+	Civilization(	#TODO
+		iCherokee,
+		iGold=100,
+		lCivics=[iChief, iClans, iHarmony],
+		techs=techs.column(3).including(iProperty, iCeremony),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation, iFishing),
+	),
 	Civilization(
 		iEngland,
 		iLeader=iVictoria,
@@ -80,6 +87,21 @@ lCivilizations = [
 		lCivics=[iTrustees, iTradingCompany, iSlavery, iMercantilism, iExtraction, iOutposts],
 		techs=techs.column(15).including(iMeteorology).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iFrance: 2, iPortugal: -2}
+	),
+	Civilization( #TODO
+		iApache,
+		iGold=50,
+		lEnemies=[iPueblo],
+		lCivics=[iChief, iSubsistance, iNomadic],
+		techs=techs.column(3).including(iCeremony, iContact, iRiding),
+		extraTechs=techs.column(0).including(iHunting, iCompanionPlanting, iInterpretation),
+	),
+	Civilization( #TODO
+		iLakota,
+		iGold=100,
+		lCivics=[iChief, iSubsistance, iHarmony, iNomadic],
+		techs=techs.column(3).including(iCeremony, iRiding),
+		extraTechs=techs.column(0).including(iContact, iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation),
 	),
 	Civilization(
 		iHawaii,

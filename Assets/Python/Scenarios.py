@@ -8,7 +8,7 @@ from Scenario1750AD import scenario1750AD
 SCENARIOS = {
 	i1AD: scenario1AD,
 	i1500AD: scenario1500AD,
-	# i1750AD: scenario1750AD, # MacAurther TODO: Scenarios
+	i1750AD: scenario1750AD,
 }
 
 
