@@ -146,8 +146,7 @@
 			<Identifier>APA</Identifier>
 			<Region>PLA</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>0</StartingYear>
-			<!--<StartingYear>1625</StartingYear>-->
+			<StartingYear>1625</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>40</LoadingTime>
 				<LoadingTime>10</LoadingTime>
@@ -251,8 +250,7 @@
 			<Identifier>ARA</Identifier>
 			<Region>AMA</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>0</StartingYear>
-			<!-- <StartingYear>1000</StartingYear> -->
+			<StartingYear>1000</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -804,8 +802,7 @@
 			<Identifier>CHE</Identifier>
 			<Region>LAK</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>0</StartingYear>
-			<!-- <StartingYear>1600</StartingYear> -->
+			<StartingYear>1600</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>30</LoadingTime>
 				<LoadingTime>5</LoadingTime>
@@ -1083,8 +1080,7 @@
 			<Identifier>CSA</Identifier>
 			<Region>ANG</Region>
 			<CultureGroup>2</CultureGroup>
-			<StartingYear>0</StartingYear>
-			<!--<StartingYear>1860</StartingYear>-->
+			<StartingYear>1860</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>65</LoadingTime>
 				<LoadingTime>45</LoadingTime>
@@ -1578,8 +1574,7 @@
 			<Identifier>HAI</Identifier>
 			<Region>LAT</Region>
 			<CultureGroup>2</CultureGroup>
-			<StartingYear>0</StartingYear>
-			<!-- <StartingYear>1804</StartingYear> -->
+			<StartingYear>1804</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -1688,8 +1683,7 @@
 			<Identifier>HAU</Identifier>
 			<Region>LAK</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>0</StartingYear>
-			<!-- <StartingYear>1450</StartingYear> -->
+			<StartingYear>1450</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>20</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -3962,8 +3956,7 @@
 			<Identifier>TOL</Identifier>
 			<Region>MES</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>0</StartingYear>
-			<!-- <StartingYear>850</StartingYear> -->
+			<StartingYear>850</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -4038,8 +4031,7 @@
 			<Identifier>TUP</Identifier>
 			<Region>AMA</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>0</StartingYear>
-			<!-- <StartingYear>1000</StartingYear> -->
+			<StartingYear>1000</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -4131,8 +4123,7 @@
 			<Identifier>VEN</Identifier>
 			<Region>LAT</Region>
 			<CultureGroup>2</CultureGroup>
-			<StartingYear>0</StartingYear>
-			<!-- <StartingYear>1831</StartingYear> -->
+			<StartingYear>1831</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
 				<LoadingTime>40</LoadingTime>

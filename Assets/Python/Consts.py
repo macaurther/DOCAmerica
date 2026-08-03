@@ -113,6 +113,8 @@ iCanada : 1867,
 
 lBirthCivs = dBirth.keys()
 
+lNotYetPlayable = [iApache, iArawak, iCherokee, iCSA, iHaiti, iHaudenosaunee, iToltec, iTupi, iVenezuela]
+
 dFall = CivDict({
 iMaya : 950,
 iZapotec : 800,

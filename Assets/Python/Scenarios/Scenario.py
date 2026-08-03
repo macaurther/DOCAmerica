@@ -221,7 +221,7 @@ class Scenario(object):
 			
 		for iCiv in range(iNumCivs):
 			iCivStartYear = infos.civ(iCiv).getStartingYear()
-			infos.civ(iCiv).setPlayable(iCivStartYear != 0 and iCivStartYear >= self.iStartYear)
+			infos.civ(iCiv).setPlayable(iCivStartYear != 0 and iCivStartYear >= self.iStartYear and iCiv not in lNotYetPlayable)
 		
 		for civ in self.lCivilizations:
 			civ.info.setPlayable(civ.isPlayable())
