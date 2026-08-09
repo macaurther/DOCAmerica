@@ -9793,6 +9793,62 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>SND_ARGENTINA_SELECT</SoundID>
+			<Filename>Sounds/Units/ArgentinaSelect</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SND_ARGENTINA_ORDER</SoundID>
+			<Filename>Sounds/Units/ArgentinaOrder</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SND_BRAZIL_SELECT</SoundID>
+			<Filename>Sounds/Units/BrazilSelect</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SND_BRAZIL_ORDER</SoundID>
+			<Filename>Sounds/Units/BrazilOrder</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SND_COLOMBIA_SELECT</SoundID>
+			<Filename>Sounds/Units/ColombiaSelect</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SND_COLOMBIA_ORDER</SoundID>
+			<Filename>Sounds/Units/ColombiaOrder</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SND_MEXICO_SELECT</SoundID>
+			<Filename>Sounds/Units/MexicoSelect</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SND_MEXICO_ORDER</SoundID>
+			<Filename>Sounds/Units/MexicoOrder</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>SONG_CHRISTIAN_1</SoundID>
 			<Filename>Sounds/Soundtrack/Christian/Christian1</Filename>
 			<LoadType>STREAMED</LoadType>

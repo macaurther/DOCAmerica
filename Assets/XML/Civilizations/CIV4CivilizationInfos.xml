@@ -439,8 +439,8 @@
 				</Leader>
 			</Leaders>
 			<DerivativeCiv>CIVILIZATION_SPAIN</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_SPAIN_SELECT</CivilizationSelectionSound>
-			<CivilizationActionSound>AS3D_SPAIN_ORDER</CivilizationActionSound>
+			<CivilizationSelectionSound>AS3D_ARGENTINA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_ARGENTINA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_AZTEC</Type>
@@ -662,8 +662,8 @@
 				</Leader>
 			</Leaders>
 			<DerivativeCiv>CIVILIZATION_PORTUGAL</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_PORTUGAL_SELECT</CivilizationSelectionSound>
-			<CivilizationActionSound>AS3D_PORTUGAL_ORDER</CivilizationActionSound>
+			<CivilizationSelectionSound>AS3D_BRAZIL_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_BRAZIL_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_CANADA</Type>
@@ -1062,8 +1062,8 @@
 				</Leader>
 			</Leaders>
 			<DerivativeCiv>CIVILIZATION_SPAIN</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_SPAIN_SELECT</CivilizationSelectionSound>
-			<CivilizationActionSound>AS3D_SPAIN_ORDER</CivilizationActionSound>
+			<CivilizationSelectionSound>AS3D_COLOMBIA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_COLOMBIA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_CSA</Type>
@@ -2458,8 +2458,8 @@
 				</Leader>
 			</Leaders>
 			<DerivativeCiv>CIVILIZATION_SPAIN</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_SPAIN_SELECT</CivilizationSelectionSound>
-			<CivilizationActionSound>AS3D_SPAIN_ORDER</CivilizationActionSound>
+			<CivilizationSelectionSound>AS3D_MEXICO_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_MEXICO_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_MISSISSIPPI</Type>
