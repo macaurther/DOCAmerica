@@ -64,29 +64,15 @@ dRemovedResourcesDict = {
 }
 
 dFeaturesDict = {
-	(8, 92) : (1850, iFloodPlains), # California
-	(9, 92) : (1850, iFloodPlains), # California
-	(8, 91) : (1850, iFloodPlains), # California
-    (9, 90) : (1850, iFloodPlains), # California
-	(9, 89) : (1850, iFloodPlains), # California
 }
 
 dRemovedFeaturesDict = {
-	(10, 85)  : 1300,  # Southwest Flood Plains
-	(11, 84)  : 1300,  # Southwest Flood Plains
-	(13, 84)  : 1300,  # Southwest Flood Plains
-	(13, 79)  : 1300,  # North Mexico Flood Plains
-	(15, 78)  : 1300,  # North Mexico Flood Plains
 }
 
 dTerrainsDict = {
 }
 
 dConquerorPlotTypesDict = {
-	(24, 36) : (iInca, PlotTypes.PLOT_HILLS),
-	(28, 28) : (iInca, PlotTypes.PLOT_HILLS),
-	(29, 25) : (iInca, PlotTypes.PLOT_HILLS),
-	(28, 21) : (iInca, PlotTypes.PLOT_HILLS),
 }
 
 dCivGroupResourcesDict = {

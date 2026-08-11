@@ -18,10 +18,18 @@ EndMap
 BeginPlot
 	x=6,y=116
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Shaktoolik
 		CityPopulation=1
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_INUIT, Culture=75
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
@@ -29,22 +37,72 @@ EndPlot
 BeginPlot
 	x=7,y=112
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_EXPLORER
+	UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_RUSSIAN_PROMYSHLENNIKI
+	UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_RUSSIAN_PROMYSHLENNIKI
+	UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_ORTHODOX_MISSIONARY
+	UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Anchorage
 		CityPopulation=2
-		YearFounded=0
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_RUSSIA, Culture=15
+		EndCulture
+		YearFounded=1741
 		PreviousOwner=CIVILIZATION_RUSSIA
 	EndCity
 EndPlot
 BeginPlot
 	x=9,y=118
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_INUIT_KAYAK
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Chota
-		CityPopulation=1
+		CityPopulation=2
 		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_INUIT_IGLOO
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_INUIT, Culture=500
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
@@ -52,22 +110,68 @@ EndPlot
 BeginPlot
 	x=11,y=108
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_EXPLORER
+	UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_RUSSIAN_PROMYSHLENNIKI
+	UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Novo-Arkhangelsk
-		CityPopulation=2
+		CityPopulation=3
 		BuildingType=BUILDING_GOVERNORS_MANSION
-		YearFounded=0
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_SMOKEHOUSE
+		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
+		BeginCulture
+			Civilization=CIVILIZATION_RUSSIA, Culture=20
+		EndCulture
+		YearFounded=1741
 		PreviousOwner=CIVILIZATION_RUSSIA
 	EndCity
 EndPlot
 BeginPlot
 	x=12,y=47
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_HAWAIIAN_WAA_KAULUA
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HAWAIIAN_KOA
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HAWAIIAN_KOA
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_ARCHER
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HAWAII
 		CityName=Milolii
 		CityPopulation=1
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_HAWAII, Culture=8
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_HAWAII
 	EndCity
@@ -75,11 +179,56 @@ EndPlot
 BeginPlot
 	x=14,y=48
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_HAWAIIAN_WAA_KAULUA
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HAWAIIAN_WAA_KAULUA
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HAWAIIAN_WAA_KAULUA
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HAWAIIAN_KOA
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HAWAIIAN_KOA
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HAWAIIAN_KOA
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HAWAIIAN_KOA
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_ARCHER
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_SETTLER
+	UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HAWAII
 		CityName=Hilo
-		CityPopulation=1
+		CityPopulation=2
 		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_HAWAII, Culture=12
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_HAWAII
 	EndCity
@@ -87,10 +236,22 @@ EndPlot
 BeginPlot
 	x=14,y=119
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_INUIT_KAYAK
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Nuiqsut
 		CityPopulation=1
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_INUIT, Culture=50
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
@@ -98,10 +259,18 @@ EndPlot
 BeginPlot
 	x=18,y=115
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Inuvik
 		CityPopulation=1
+		BuildingType=BUILDING_INUIT_IGLOO
+		BeginCulture
+			Civilization=CIVILIZATION_INUIT, Culture=250
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
@@ -109,6 +278,18 @@ EndPlot
 BeginPlot
 	x=20,y=69
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Guadalajara
@@ -117,10 +298,11 @@ BeginPlot
 		BuildingType=BUILDING_TANNERY
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_PUREPECHA_YACATAS
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=35
+			Civilization=CIVILIZATION_SPAIN, Culture=250
 		EndCulture
 		YearFounded=1542
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -129,6 +311,22 @@ EndPlot
 BeginPlot
 	x=20,y=80
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_DRAGOON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=El Paso
@@ -146,6 +344,18 @@ EndPlot
 BeginPlot
 	x=21,y=85
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_DRAGOON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santa Fe
@@ -163,10 +373,30 @@ EndPlot
 BeginPlot
 	x=22,y=88
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_HORSE_ARCHER
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_APACHE
 		CityName=Teehach
 		CityPopulation=1
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_APACHE, Culture=1000
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_APACHE
 	EndCity
@@ -174,11 +404,32 @@ EndPlot
 BeginPlot
 	x=23,y=82
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_HORSE_ARCHER
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HORSE_ARCHER
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HORSE_ARCHER
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_APACHE
 		CityName=Tiiis Tseba
-		CityPopulation=1
+		CityPopulation=2
 		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_APACHE, Culture=1250
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_APACHE
 	EndCity
@@ -186,10 +437,23 @@ EndPlot
 BeginPlot
 	x=23,y=113
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_INUIT_KAYAK
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Sisimiut
 		CityPopulation=1
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_INUIT, Culture=150
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
@@ -197,6 +461,42 @@ EndPlot
 BeginPlot
 	x=24,y=67
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_DRAGOON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Ciudad de México
@@ -216,6 +516,9 @@ BeginPlot
 		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
 		BuildingType=BUILDING_CUSTOMS_HOUSE
 		BuildingType=BUILDING_FLOATING_GARDENS
+		BuildingType=BUILDING_HUEY_TEOCALLI
+		BuildingType=BUILDING_GUADALUPE_BASILICA
+		BuildingType=BUILDING_TEMBLEQUE_AQUEDUCT
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
 		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
@@ -224,7 +527,7 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=90
+			Civilization=CIVILIZATION_SPAIN, Culture=1500
 		EndCulture
 		YearFounded=1325
 		YearAcquired=1521
@@ -233,12 +536,28 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=69
-	ImprovementType=IMPROVEMENT_CITY_RUINS
 	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CITY_RUINS
 EndPlot
 BeginPlot
 	x=25,y=74
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_DRAGOON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Monterrey
@@ -257,10 +576,34 @@ EndPlot
 BeginPlot
 	x=25,y=90
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_LAKOTA_SWIFT_ARROW
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LAKOTA_SWIFT_ARROW
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LAKOTA_SWIFT_ARROW
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LAKOTA_SWIFT_ARROW
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Iyasica
 		CityPopulation=1
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_LAKOTA, Culture=1000
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
@@ -268,11 +611,40 @@ EndPlot
 BeginPlot
 	x=26,y=96
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_LAKOTA_SWIFT_ARROW
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LAKOTA_SWIFT_ARROW
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LAKOTA_SWIFT_ARROW
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LAKOTA_SWIFT_ARROW
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Wazi-kute
-		CityPopulation=1
+		CityPopulation=2
 		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_LAKOTA_TIPI
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_LAKOTA, Culture=1750
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
@@ -280,10 +652,38 @@ EndPlot
 BeginPlot
 	x=27,y=84
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_HORSE_ARCHER
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HORSE_ARCHER
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HORSE_ARCHER
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HORSE_ARCHER
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HORSE_ARCHER
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_APACHE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_APACHE
 		CityName=Chichiil Bidagoteel
 		CityPopulation=1
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_APACHE, Culture=1250
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_APACHE
 	EndCity
@@ -291,10 +691,18 @@ EndPlot
 BeginPlot
 	x=27,y=112
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Mamterilleq
 		CityPopulation=1
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_INUIT, Culture=200
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
@@ -302,6 +710,10 @@ EndPlot
 BeginPlot
 	x=28,y=64
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Oaxaca
@@ -321,6 +733,26 @@ EndPlot
 BeginPlot
 	x=28,y=67
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_SPANISH_GALLEON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_SPANISH_GALLEON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Veracruz
@@ -337,19 +769,64 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=45
+			Civilization=CIVILIZATION_SPAIN, Culture=450
 		EndCulture
 		YearFounded=1519
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
 BeginPlot
+	x=28,y=102
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_FRENCH_COUREUR_DES_BOIS
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COUREUR_DES_BOIS
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+EndPlot
+BeginPlot
 	x=29,y=91
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_LAKOTA_SWIFT_ARROW
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LAKOTA_SWIFT_ARROW
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LAKOTA_SWIFT_ARROW
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LAKOTA_SWIFT_ARROW
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LAKOTA_SWIFT_ARROW
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_LAKOTA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Chantenna
 		CityPopulation=1
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_LAKOTA, Culture=1250
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
@@ -357,6 +834,10 @@ EndPlot
 BeginPlot
 	x=32,y=65
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Villahermosa
@@ -366,7 +847,7 @@ BeginPlot
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=12
+			Civilization=CIVILIZATION_SPAIN, Culture=250
 		EndCulture
 		YearFounded=1564
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -375,10 +856,17 @@ EndPlot
 BeginPlot
 	x=32,y=79
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Lafayette
 		CityPopulation=1
+		BeginCulture
+			Civilization=CIVILIZATION_FRANCE, Culture=5
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
@@ -386,21 +874,35 @@ EndPlot
 BeginPlot
 	x=32,y=87
 	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_FRANCE
-		CityName=Saint-Louis
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_FRANCE
-	EndCity
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COUREUR_DES_BOIS
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 EndPlot
 BeginPlot
 	x=32,y=108
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_INUIT_KAYAK
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Arviat
 		CityPopulation=1
+		BuildingType=BUILDING_INUIT_IGLOO
+		BeginCulture
+			Civilization=CIVILIZATION_INUIT, Culture=125
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
@@ -408,10 +910,22 @@ EndPlot
 BeginPlot
 	x=33,y=113
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_INUIT_KAYAK
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Kugaaruk
 		CityPopulation=1
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_INUIT, Culture=175
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
@@ -419,6 +933,10 @@ EndPlot
 BeginPlot
 	x=34,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Guatemala
@@ -429,12 +947,11 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		BuildingType=BUILDING_CATHOLIC_MONASTERY
-		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=45
+			Civilization=CIVILIZATION_SPAIN, Culture=150
 		EndCulture
 		YearFounded=1524
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -443,26 +960,93 @@ EndPlot
 BeginPlot
 	x=34,y=65
 	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CITY_RUINS
 EndPlot
 BeginPlot
 	x=34,y=78
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=La Nouvelle-Orléans
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=6
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_JAIL
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_FRENCH_QUARTER
+		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_FRANCE, Culture=500
+		EndCulture
+		YearFounded=1718
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
 BeginPlot
 	x=35,y=62
-	ImprovementType=IMPROVEMENT_CITY_RUINS
 	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CITY_RUINS
 EndPlot
 BeginPlot
 	x=36,y=58
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Managua
@@ -481,17 +1065,46 @@ EndPlot
 BeginPlot
 	x=36,y=66
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Belize City
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=250
+		EndCulture
+		YearFounded=1638
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
 BeginPlot
 	x=36,y=69
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Merida
@@ -499,10 +1112,11 @@ BeginPlot
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_TEMPLE_OF_KUKULKAN
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=25
+			Civilization=CIVILIZATION_SPAIN, Culture=400
 		EndCulture
 		YearFounded=1542
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -511,17 +1125,42 @@ EndPlot
 BeginPlot
 	x=36,y=79
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=La Mobile
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_FRANCE, Culture=75
+		EndCulture
+		YearFounded=1702
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
 BeginPlot
 	x=37,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Tegucigalpa
@@ -532,19 +1171,41 @@ BeginPlot
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=25
+			Civilization=CIVILIZATION_SPAIN, Culture=75
 		EndCulture
 		YearFounded=1578
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
 BeginPlot
+	x=37,y=90
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COUREUR_DES_BOIS
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+EndPlot
+BeginPlot
 	x=37,y=114
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Ilulissat
 		CityPopulation=1
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_INUIT, Culture=50
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
@@ -552,10 +1213,31 @@ EndPlot
 BeginPlot
 	x=39,y=82
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_ARQUEBUSIER
+	UnitOwner=CIVILIZATION_CHEROKEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_CHEROKEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_CHEROKEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MACEMAN
+	UnitOwner=CIVILIZATION_CHEROKEE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CHEROKEE
 		CityName=Hiwassee
-		CityPopulation=1
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_CHEROKEE, Culture=1200
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_CHEROKEE
 	EndCity
@@ -563,10 +1245,31 @@ EndPlot
 BeginPlot
 	x=39,y=86
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_ARQUEBUSIER
+	UnitOwner=CIVILIZATION_CHEROKEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_CHEROKEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_CHEROKEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_CHEROKEE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CHEROKEE
 		CityName=Kituwah
-		CityPopulation=1
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_CHEROKEE, Culture=1000
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_CHEROKEE
 	EndCity
@@ -574,22 +1277,69 @@ EndPlot
 BeginPlot
 	x=39,y=93
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Détroit
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_FRANCE, Culture=75
+		EndCulture
+		YearFounded=1701
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
 BeginPlot
 	x=40,y=84
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_ARQUEBUSIER
+	UnitOwner=CIVILIZATION_CHEROKEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_ARQUEBUSIER
+	UnitOwner=CIVILIZATION_CHEROKEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_CHEROKEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_CHEROKEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MACEMAN
+	UnitOwner=CIVILIZATION_CHEROKEE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CHEROKEE
 		CityName=Chota
-		CityPopulation=1
+		CityPopulation=3
 		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_CHEROKEE, Culture=1500
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_CHEROKEE
 	EndCity
@@ -597,6 +1347,10 @@ EndPlot
 BeginPlot
 	x=41,y=45
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Guayaquil
@@ -616,17 +1370,52 @@ EndPlot
 BeginPlot
 	x=41,y=80
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Savannah
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_IMMIGRANT
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=150
+		EndCulture
+		YearFounded=1733
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
 BeginPlot
 	x=42,y=40
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Trujillo
@@ -646,6 +1435,22 @@ EndPlot
 BeginPlot
 	x=42,y=72
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_SPANISH_GALLEON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Havana
@@ -666,7 +1471,7 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=60
+			Civilization=CIVILIZATION_SPAIN, Culture=750
 		EndCulture
 		YearFounded=1519
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -675,6 +1480,18 @@ EndPlot
 BeginPlot
 	x=42,y=78
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=San Agustín
@@ -685,7 +1502,7 @@ BeginPlot
 		BuildingType=BUILDING_STAR_FORT
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=100
+			Civilization=CIVILIZATION_SPAIN, Culture=1250
 		EndCulture
 		YearFounded=1565
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -694,10 +1511,22 @@ EndPlot
 BeginPlot
 	x=42,y=105
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_INUIT_KAYAK
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Puvirnituq
 		CityPopulation=1
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_INUIT, Culture=75
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
@@ -705,6 +1534,14 @@ EndPlot
 BeginPlot
 	x=43,y=46
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Quito
@@ -714,33 +1551,123 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		BuildingType=BUILDING_CATHOLIC_MONASTERY
-		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=45
+			Civilization=CIVILIZATION_SPAIN, Culture=750
+			Civilization=CIVILIZATION_INCA, Culture=1000
 		EndCulture
 		YearFounded=1534
 		PreviousOwner=CIVILIZATION_SPAIN
+		PreviousOwner=CIVILIZATION_INCA
 	EndCity
 EndPlot
 BeginPlot
 	x=43,y=82
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Charleston
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=750
+		EndCulture
+		YearFounded=1670
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
 BeginPlot
+	x=43,y=90
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+EndPlot
+BeginPlot
 	x=43,y=92
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+	UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+	UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+	UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MACEMAN
+	UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HAUDENOSAUNEE
 		CityName=Cayuga
-		CityPopulation=1
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HAUDENOSAUNEE_LONGHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_HAUDENOSAUNEE, Culture=750
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndCity
@@ -748,6 +1675,58 @@ EndPlot
 BeginPlot
 	x=44,y=36
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_SPANISH_GALLEON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_SPANISH_GALLEON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_DRAGOON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_DRAGOON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Lima
@@ -769,7 +1748,7 @@ BeginPlot
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=80
+			Civilization=CIVILIZATION_SPAIN, Culture=400
 		EndCulture
 		YearFounded=1535
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -777,10 +1756,11 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=10
+	RouteType=ROUTE_ROAD
 	ImprovementType=IMPROVEMENT_FORT
 	BeginUnit
-		UnitType=UNIT_MUSKETMAN
-		UnitOwner=CIVILIZATION_SPAIN
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 EndPlot
 BeginPlot
@@ -788,8 +1768,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	ImprovementType=IMPROVEMENT_FORT
 	BeginUnit
-		UnitType=UNIT_MUSKETMAN
-		UnitOwner=CIVILIZATION_SPAIN
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 EndPlot
 BeginPlot
@@ -799,6 +1779,10 @@ EndPlot
 BeginPlot
 	x=45,y=50
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Cali
@@ -817,6 +1801,10 @@ EndPlot
 BeginPlot
 	x=45,y=54
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Medellín
@@ -834,6 +1822,14 @@ EndPlot
 BeginPlot
 	x=45,y=58
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Cartagena
@@ -859,34 +1855,143 @@ EndPlot
 BeginPlot
 	x=45,y=86
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_DRAGOON
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_DRAGOON
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
-		CityName=Jamestown
-		CityPopulation=1
-		BuildingType=BUILDING_GOVERNORS_MANSION
-		YearFounded=0
+		CityName=Williamsburg
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=1500
+		EndCulture
+		YearFounded=1607
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
 BeginPlot
 	x=45,y=88
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Baltimore
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_IMMIGRANT
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=750
+		EndCulture
+		YearFounded=1729
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
 BeginPlot
 	x=45,y=93
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+	UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+	UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+	UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MACEMAN
+	UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HAUDENOSAUNEE
 		CityName=Onondaga
-		CityPopulation=1
+		CityPopulation=3
 		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HAUDENOSAUNEE_LONGHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_HAUDENOSAUNEE, Culture=1250
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndCity
@@ -894,44 +1999,135 @@ EndPlot
 BeginPlot
 	x=45,y=110
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_INUIT_KAYAK
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Iqaluit
-		CityPopulation=1
+		CityPopulation=2
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_SMOKEHOUSE
+		BuildingType=BUILDING_INUIT_IGLOO
+		BeginCulture
+			Civilization=CIVILIZATION_INUIT, Culture=150
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
 BeginPlot
 	x=46,y=33
-	ImprovementType=IMPROVEMENT_CITY_RUINS
 	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CITY_RUINS
 EndPlot
 BeginPlot
 	x=46,y=74
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Nassau
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=75
+			Civilization=CIVILIZATION_NETHERLANDS, Culture=25
+		EndCulture
+		YearFounded=1670
 		PreviousOwner=CIVILIZATION_ENGLAND
+		PreviousOwner=CIVILIZATION_NETHERLANDS
 	EndCity
 EndPlot
 BeginPlot
 	x=46,y=90
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_SPY
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Philadelphia
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=7
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_JAIL
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		BuildingType=BUILDING_CUSTOMS_HOUSE
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
+		FreeSpecialistType=SPECIALIST_IMMIGRANT
+		FreeSpecialistType=SPECIALIST_IMMIGRANT
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=800
+			Civilization=CIVILIZATION_NETHERLANDS, Culture=75
+			Civilization=CIVILIZATION_NORSE, Culture=15
+		EndCulture
+		YearFounded=1682
 		PreviousOwner=CIVILIZATION_ENGLAND
+		PreviousOwner=CIVILIZATION_NETHERLANDS
+		PreviousOwner=CIVILIZATION_NORSE
 	EndCity
 EndPlot
 BeginPlot
 	x=47,y=14
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_SPANISH_GALLEON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Chillán
@@ -950,29 +2146,74 @@ BeginPlot
 	x=47,y=32
 	ImprovementType=IMPROVEMENT_FORT
 	BeginUnit
-		UnitType=UNIT_MUSKETMAN
-		UnitOwner=CIVILIZATION_SPAIN
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 EndPlot
 BeginPlot
 	x=47,y=65
-	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PLANTATION
 EndPlot
 BeginPlot
 	x=47,y=97
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_DRAGOON
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Montreal
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_IMMIGRANT
+		BeginCulture
+			Civilization=CIVILIZATION_FRANCE, Culture=500
+		EndCulture
+		YearFounded=1642
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
 BeginPlot
 	x=48,y=35
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Cusco
@@ -982,9 +2223,11 @@ BeginPlot
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		BuildingType=BUILDING_CATHOLIC_MONASTERY
 		BuildingType=BUILDING_SILVERSMITH
+		BuildingType=BUILDING_YACHAYWASI
+		BuildingType=BUILDING_SACSAYHUAMAN
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=50
+			Civilization=CIVILIZATION_SPAIN, Culture=750
 		EndCulture
 		YearFounded=1100
 		YearAcquired=1533
@@ -994,6 +2237,38 @@ EndPlot
 BeginPlot
 	x=48,y=50
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_DRAGOON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Bogotá
@@ -1005,15 +2280,21 @@ BeginPlot
 		BuildingType=BUILDING_GOVERNORS_MANSION
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=45
+			Civilization=CIVILIZATION_SPAIN, Culture=850
+			Civilization=CIVILIZATION_MUISCA, Culture=1000
 		EndCulture
 		YearFounded=1538
 		PreviousOwner=CIVILIZATION_SPAIN
+		PreviousOwner=CIVILIZATION_MUISCA
 	EndCity
 EndPlot
 BeginPlot
 	x=48,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Maracaibo
@@ -1033,28 +2314,120 @@ EndPlot
 BeginPlot
 	x=48,y=65
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Kingston
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=35
+		EndCulture
+		YearFounded=1692
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
 BeginPlot
 	x=48,y=91
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_DRAGOON
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=New York
-		CityPopulation=1
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_ENGLAND
+		CityPopulation=6
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_JAIL
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
+		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
+		FreeSpecialistType=SPECIALIST_IMMIGRANT
+		FreeSpecialistType=SPECIALIST_IMMIGRANT
+		FreeSpecialistType=SPECIALIST_IMMIGRANT
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=1000
+			Civilization=CIVILIZATION_NETHERLANDS, Culture=100
+		EndCulture
+		YearFounded=1625
+		YearAcquired=1665
+		PreviousOwner=CIVILIZATION_NETHERLANDS
 	EndCity
 EndPlot
 BeginPlot
 	x=49,y=18
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santiago
@@ -1063,7 +2436,6 @@ BeginPlot
 		BuildingType=BUILDING_TANNERY
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
-		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=45
@@ -1074,15 +2446,28 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=24
+	RouteType=ROUTE_ROAD
 	ImprovementType=IMPROVEMENT_FORT
 	BeginUnit
-		UnitType=UNIT_MUSKETMAN
-		UnitOwner=CIVILIZATION_SPAIN
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 EndPlot
 BeginPlot
 	x=49,y=68
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santiago de Cuba
@@ -1094,7 +2479,7 @@ BeginPlot
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=25
+			Civilization=CIVILIZATION_SPAIN, Culture=75
 		EndCulture
 		YearFounded=1515
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -1103,6 +2488,10 @@ EndPlot
 BeginPlot
 	x=49,y=70
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Holguin
@@ -1112,7 +2501,7 @@ BeginPlot
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=15
+			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
 		YearFounded=1545
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -1121,29 +2510,161 @@ EndPlot
 BeginPlot
 	x=49,y=93
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_DRAGOON
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Boston
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=7
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_JAIL
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		BuildingType=BUILDING_CUSTOMS_HOUSE
+		BuildingType=BUILDING_FANEUIL_HALL
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
+		FreeSpecialistType=SPECIALIST_IMMIGRANT
+		FreeSpecialistType=SPECIALIST_IMMIGRANT
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=1500
+		EndCulture
+		YearFounded=1630
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
 BeginPlot
 	x=49,y=99
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_DRAGOON
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Quebec
-		CityPopulation=1
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_JAIL
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_STAR_FORT
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
 		BuildingType=BUILDING_GOVERNORS_MANSION
-		YearFounded=0
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
+		FreeSpecialistType=SPECIALIST_IMMIGRANT
+		BeginCulture
+			Civilization=CIVILIZATION_FRANCE, Culture=750
+		EndCulture
+		YearFounded=1608
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
 BeginPlot
 	x=51,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Barquisimeto
@@ -1152,7 +2673,7 @@ BeginPlot
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=15
+			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
 		YearFounded=1552
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -1161,21 +2682,61 @@ EndPlot
 BeginPlot
 	x=51,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_DUTCH_FLUYT
+	UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NETHERLANDS
 		CityName=Willemstad
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_NETHERLANDS, Culture=150
+		EndCulture
+		YearFounded=1634
 		PreviousOwner=CIVILIZATION_NETHERLANDS
 	EndCity
 EndPlot
 BeginPlot
 	x=51,y=112
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_INUIT_KAYAK
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_INUIT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Nuuk
-		CityPopulation=1
+		CityPopulation=2
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_SMOKEHOUSE
+		BuildingType=BUILDING_INUIT_IGLOO
+		BeginCulture
+			Civilization=CIVILIZATION_INUIT, Culture=25
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
@@ -1183,6 +2744,18 @@ EndPlot
 BeginPlot
 	x=52,y=32
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=La Paz
@@ -1192,9 +2765,11 @@ BeginPlot
 		BuildingType=BUILDING_SILVERSMITH
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_GATE_OF_THE_SUN
+		BuildingType=BUILDING_KALASASAYA
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=45
+			Civilization=CIVILIZATION_SPAIN, Culture=400
 		EndCulture
 		YearFounded=1548
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -1203,6 +2778,14 @@ EndPlot
 BeginPlot
 	x=54,y=17
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Cordoba
@@ -1211,6 +2794,7 @@ BeginPlot
 		BuildingType=BUILDING_TANNERY
 		BuildingType=BUILDING_SCHOOLHOUSE
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_MANZANA_JESUITICA
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=30
@@ -1222,6 +2806,10 @@ EndPlot
 BeginPlot
 	x=54,y=22
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Salta
@@ -1239,6 +2827,14 @@ EndPlot
 BeginPlot
 	x=54,y=29
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Sucre
@@ -1247,10 +2843,9 @@ BeginPlot
 		BuildingType=BUILDING_TANNERY
 		BuildingType=BUILDING_SCHOOLHOUSE
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
-		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=35
+			Civilization=CIVILIZATION_SPAIN, Culture=250
 		EndCulture
 		YearFounded=1538
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -1259,32 +2854,93 @@ EndPlot
 BeginPlot
 	x=54,y=67
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Port-au-Prince
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_FRANCE, Culture=150
+		EndCulture
+		YearFounded=1749
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
 BeginPlot
 	x=54,y=96
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Halifax
 		CityPopulation=1
-		YearFounded=0
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_STAR_FORT
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_IMMIGRANT
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=3
+		EndCulture
+		YearFounded=1749
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
 BeginPlot
-	x=55,y=29
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
 	x=55,y=58
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_SPANISH_GALLEON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Caracas
@@ -1298,7 +2954,7 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=40
+			Civilization=CIVILIZATION_SPAIN, Culture=450
 		EndCulture
 		YearFounded=1567
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -1311,6 +2967,10 @@ EndPlot
 BeginPlot
 	x=57,y=31
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santa Cruz
@@ -1328,10 +2988,17 @@ EndPlot
 BeginPlot
 	x=57,y=110
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_NORSE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Hvalsey
 		CityPopulation=1
+		BeginCulture
+			Civilization=CIVILIZATION_NORSE, Culture=15
+		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_NORSE
 	EndCity
@@ -1339,6 +3006,38 @@ EndPlot
 BeginPlot
 	x=58,y=15
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_SPANISH_GALLEON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Buenos Aires
@@ -1353,7 +3052,7 @@ BeginPlot
 		BuildingType=BUILDING_CUSTOMS_HOUSE
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=55
+			Civilization=CIVILIZATION_SPAIN, Culture=150
 		EndCulture
 		YearFounded=1536
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -1362,6 +3061,22 @@ EndPlot
 BeginPlot
 	x=58,y=66
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_SPANISH_GALLEON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santo Domingo
@@ -1373,10 +3088,11 @@ BeginPlot
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		BuildingType=BUILDING_CATHOLIC_MONASTERY
 		ReligionType=RELIGION_CATHOLICISM
+		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=40
+			Civilization=CIVILIZATION_SPAIN, Culture=1000
 		EndCulture
 		YearFounded=1496
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -1385,6 +3101,10 @@ EndPlot
 BeginPlot
 	x=60,y=46
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Manaus
@@ -1401,17 +3121,49 @@ EndPlot
 BeginPlot
 	x=60,y=98
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=St. John's
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=18
+		EndCulture
+		YearFounded=1585
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
 BeginPlot
 	x=61,y=16
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Montevideo
@@ -1431,6 +3183,18 @@ EndPlot
 BeginPlot
 	x=61,y=24
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Asuncion
@@ -1450,39 +3214,92 @@ EndPlot
 BeginPlot
 	x=61,y=118
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_NORSE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Isafjordur
 		CityPopulation=1
-		YearFounded=0
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		ReligionType=RELIGION_PROTESTANTISM
+		BeginCulture
+			Civilization=CIVILIZATION_NORSE, Culture=75
+		EndCulture
+		YearFounded=874
 		PreviousOwner=CIVILIZATION_NORSE
 	EndCity
 EndPlot
 BeginPlot
 	x=62,y=55
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NETHERLANDS
 		CityName=Stabroek
 		CityPopulation=1
-		YearFounded=0
+		BuildingType=BUILDING_GRANARY
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_NETHERLANDS, Culture=75
+		EndCulture
+		YearFounded=1745
 		PreviousOwner=CIVILIZATION_NETHERLANDS
 	EndCity
 EndPlot
 BeginPlot
 	x=62,y=60
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Fort-Royal
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_WEAVER
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_FRANCE, Culture=150
+		EndCulture
+		YearFounded=1638
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
 BeginPlot
 	x=62,y=66
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_SPANISH_GALLEON
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=San Juan
@@ -1498,7 +3315,7 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=35
+			Civilization=CIVILIZATION_SPAIN, Culture=500
 		EndCulture
 		YearFounded=1521
 		PreviousOwner=CIVILIZATION_SPAIN
@@ -1506,47 +3323,119 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=19
+	RouteType=ROUTE_ROAD
 	ImprovementType=IMPROVEMENT_FORT
 	BeginUnit
-		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
-		UnitOwner=CIVILIZATION_PORTUGAL
+	UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+	UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
-		UnitOwner=CIVILIZATION_PORTUGAL
+	UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+	UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 EndPlot
 BeginPlot
 	x=64,y=59
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Bridgetown
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_WEAVER
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		BuildingType=BUILDING_ESTATE
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=250
+		EndCulture
+		YearFounded=1628
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
 BeginPlot
 	x=64,y=65
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_NORSE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Charlotte Amalie
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_NORSE, Culture=250
+		EndCulture
+		YearFounded=1666
 		PreviousOwner=CIVILIZATION_NORSE
 	EndCity
 EndPlot
 BeginPlot
 	x=64,y=117
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_NORSE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Reykjavik
-		CityPopulation=1
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
 		BuildingType=BUILDING_GOVERNORS_MANSION
-		YearFounded=0
+		ReligionType=RELIGION_PROTESTANTISM
+		BeginCulture
+			Civilization=CIVILIZATION_NORSE, Culture=1500
+		EndCulture
+		YearFounded=874
 		PreviousOwner=CIVILIZATION_NORSE
 	EndCity
 EndPlot
@@ -1555,17 +3444,25 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	ImprovementType=IMPROVEMENT_FORT
 	BeginUnit
-		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
-		UnitOwner=CIVILIZATION_PORTUGAL
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
-		UnitOwner=CIVILIZATION_PORTUGAL
+	UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+	UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 EndPlot
 BeginPlot
 	x=65,y=46
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Santarem
@@ -1582,29 +3479,88 @@ EndPlot
 BeginPlot
 	x=65,y=55
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_DUTCH_FLUYT
+	UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NETHERLANDS
 		CityName=Paramaribo
-		CityPopulation=1
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
 		BuildingType=BUILDING_GOVERNORS_MANSION
-		YearFounded=0
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_NETHERLANDS, Culture=350
+		EndCulture
+		YearFounded=1630
 		PreviousOwner=CIVILIZATION_NETHERLANDS
 	EndCity
 EndPlot
 BeginPlot
 	x=65,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Gustavia
 		CityPopulation=1
-		YearFounded=0
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_FRANCE, Culture=250
+		EndCulture
+		YearFounded=1648
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
 BeginPlot
 	x=66,y=23
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Curitiba
@@ -1621,21 +3577,82 @@ EndPlot
 BeginPlot
 	x=68,y=54
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Cayenne
-		CityPopulation=1
-		YearFounded=0
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TANNERY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_FRANCE, Culture=250
+		EndCulture
+		YearFounded=1643
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
 BeginPlot
 	x=69,y=26
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Sao Paulo
-		CityPopulation=3
+		CityPopulation=8
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_TANNERY
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
@@ -1646,7 +3663,7 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_PORTUGAL, Culture=30
+			Civilization=CIVILIZATION_PORTUGAL, Culture=1750
 		EndCulture
 		YearFounded=1554
 		PreviousOwner=CIVILIZATION_PORTUGAL
@@ -1654,19 +3671,28 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=69,y=30
+	RouteType=ROUTE_ROAD
 	ImprovementType=IMPROVEMENT_FORT
 	BeginUnit
-		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
-		UnitOwner=CIVILIZATION_PORTUGAL
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
-		UnitOwner=CIVILIZATION_PORTUGAL
+	UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+	UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 EndPlot
 BeginPlot
 	x=69,y=49
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Macapa
@@ -1683,19 +3709,36 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=72,y=30
+	RouteType=ROUTE_ROAD
 	ImprovementType=IMPROVEMENT_FORT
 	BeginUnit
-		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
-		UnitOwner=CIVILIZATION_PORTUGAL
+	UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+	UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
-		UnitOwner=CIVILIZATION_PORTUGAL
+	UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+	UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 EndPlot
 BeginPlot
 	x=72,y=48
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Belem
@@ -1717,10 +3760,50 @@ EndPlot
 BeginPlot
 	x=73,y=27
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Rio de Janiero
-		CityPopulation=5
+		CityPopulation=6
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_TANNERY
 		BuildingType=BUILDING_HARBOR
@@ -1738,7 +3821,7 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_PORTUGAL, Culture=50
+			Civilization=CIVILIZATION_PORTUGAL, Culture=1250
 		EndCulture
 		YearFounded=1565
 		PreviousOwner=CIVILIZATION_PORTUGAL
@@ -1747,6 +3830,14 @@ EndPlot
 BeginPlot
 	x=75,y=30
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Vitoria
@@ -1767,6 +3858,18 @@ EndPlot
 BeginPlot
 	x=75,y=47
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Sao Luis
@@ -1786,6 +3889,14 @@ EndPlot
 BeginPlot
 	x=76,y=34
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Porto Seguro
@@ -1806,6 +3917,34 @@ EndPlot
 BeginPlot
 	x=77,y=37
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Salvador
@@ -1829,7 +3968,7 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_PORTUGAL, Culture=55
+			Civilization=CIVILIZATION_PORTUGAL, Culture=750
 		EndCulture
 		YearFounded=1549
 		PreviousOwner=CIVILIZATION_PORTUGAL
@@ -1838,6 +3977,22 @@ EndPlot
 BeginPlot
 	x=78,y=47
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_FRIGATE
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MERCHANTMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Fortaleza
@@ -1847,7 +4002,7 @@ BeginPlot
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_PORTUGAL, Culture=10
+			Civilization=CIVILIZATION_PORTUGAL, Culture=400
 		EndCulture
 		YearFounded=1726
 		PreviousOwner=CIVILIZATION_PORTUGAL
@@ -1860,6 +4015,10 @@ EndPlot
 BeginPlot
 	x=79,y=41
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Maceio
@@ -1867,7 +4026,7 @@ BeginPlot
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_PORTUGAL, Culture=5
+			Civilization=CIVILIZATION_PORTUGAL, Culture=15
 		EndCulture
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_PORTUGAL
@@ -1876,6 +4035,14 @@ EndPlot
 BeginPlot
 	x=80,y=45
 	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_WORKER
+	UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Natal
@@ -1888,7 +4055,7 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_PORTUGAL, Culture=18
+			Civilization=CIVILIZATION_PORTUGAL, Culture=150
 		EndCulture
 		YearFounded=1599
 		PreviousOwner=CIVILIZATION_PORTUGAL
@@ -1911,4 +4078,2358 @@ BeginPlot
 		YearFounded=0
 		PreviousOwner=CIVILIZATION_INDEPENDENT3
 	EndCity
+EndPlot
+BeginPlot
+	x=5,y=115
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=6,y=113
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=7,y=111
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=9,y=117
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=10,y=109
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=11,y=118
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=12,y=48
+	ImprovementType=IMPROVEMENT_PLANTATION
+EndPlot
+BeginPlot
+	x=18,y=70
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=18,y=113
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=19,y=69
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=19,y=81
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=19,y=82
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=19,y=83
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=20,y=67
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=20,y=76
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=20,y=77
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=20,y=78
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=20,y=84
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=20,y=85
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=21,y=68
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=21,y=69
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_MINE
+EndPlot
+BeginPlot
+	x=21,y=75
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=21,y=79
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=21,y=83
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=22,y=67
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=22,y=70
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=22,y=71
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=22,y=74
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=22,y=112
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=23,y=65
+	ImprovementType=IMPROVEMENT_MINE
+EndPlot
+BeginPlot
+	x=23,y=67
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=23,y=68
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=23,y=69
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_MINE
+EndPlot
+BeginPlot
+	x=23,y=72
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=23,y=73
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=24,y=66
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=24,y=68
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=24,y=73
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=24,y=115
+	ImprovementType=IMPROVEMENT_WHALING_BOATS
+EndPlot
+BeginPlot
+	x=25,y=65
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=25,y=75
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=25,y=76
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=26,y=65
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=26,y=67
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=26,y=74
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=27,y=64
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=27,y=66
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_QUARRY
+EndPlot
+BeginPlot
+	x=27,y=68
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=27,y=69
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=27,y=73
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=27,y=75
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=28,y=63
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=28,y=66
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=29,y=63
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=29,y=65
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=29,y=66
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=29,y=99
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=30,y=65
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PADDY_FIELD
+EndPlot
+BeginPlot
+	x=30,y=95
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COUREUR_DES_BOIS
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+EndPlot
+BeginPlot
+	x=30,y=96
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=30,y=97
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=30,y=107
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=31,y=63
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=31,y=65
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_VILLAGE
+EndPlot
+BeginPlot
+	x=31,y=94
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=31,y=114
+	ImprovementType=IMPROVEMENT_WHALING_BOATS
+EndPlot
+BeginPlot
+	x=32,y=62
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=32,y=64
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=32,y=66
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=32,y=86
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=32,y=102
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=33,y=61
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=33,y=64
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=33,y=65
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=33,y=66
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_VILLAGE
+EndPlot
+BeginPlot
+	x=33,y=67
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=33,y=79
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PADDY_FIELD
+EndPlot
+BeginPlot
+	x=33,y=83
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=33,y=86
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=33,y=88
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=33,y=103
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_EXPLORER
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+EndPlot
+BeginPlot
+	x=34,y=61
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=34,y=64
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=34,y=66
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=34,y=67
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=34,y=68
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=34,y=69
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_QUARRY
+EndPlot
+BeginPlot
+	x=34,y=77
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=34,y=80
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=34,y=81
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=34,y=82
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=34,y=89
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=35,y=60
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=35,y=63
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_MINE
+EndPlot
+BeginPlot
+	x=35,y=65
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=35,y=66
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=35,y=68
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=35,y=69
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_QUARRY
+EndPlot
+BeginPlot
+	x=36,y=60
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=36,y=61
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=36,y=67
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=36,y=68
+	ImprovementType=IMPROVEMENT_CITY_RUINS
+EndPlot
+BeginPlot
+	x=36,y=70
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=36,y=78
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=37,y=60
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=37,y=62
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=37,y=63
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=37,y=69
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=37,y=70
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_VILLAGE
+EndPlot
+BeginPlot
+	x=37,y=100
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=38,y=63
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=38,y=68
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=38,y=91
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=38,y=92
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=38,y=94
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=38,y=100
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=38,y=101
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_EXPLORER
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+EndPlot
+BeginPlot
+	x=39,y=62
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=40,y=46
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=40,y=71
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=40,y=80
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=41,y=41
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=41,y=42
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_VILLAGE
+EndPlot
+BeginPlot
+	x=41,y=44
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=41,y=70
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=41,y=72
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=41,y=77
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=41,y=82
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=41,y=94
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=42,y=41
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=42,y=43
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=42,y=74
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=42,y=77
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=42,y=83
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=42,y=90
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=43,y=36
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=43,y=44
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=43,y=48
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=43,y=50
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=43,y=72
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=43,y=76
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=43,y=80
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=43,y=83
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=43,y=84
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=43,y=86
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_MINE
+EndPlot
+BeginPlot
+	x=43,y=90
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_CANNON
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+EndPlot
+BeginPlot
+	x=43,y=96
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=43,y=100
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=43,y=103
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+EndPlot
+BeginPlot
+	x=44,y=35
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=44,y=41
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=44,y=42
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=44,y=43
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=44,y=45
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=44,y=47
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=44,y=49
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=44,y=51
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=44,y=53
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=44,y=56
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=44,y=72
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=44,y=83
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=44,y=84
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=44,y=87
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=44,y=88
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_QUARRY
+EndPlot
+BeginPlot
+	x=44,y=104
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=45,y=11
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=45,y=34
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=45,y=37
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=45,y=40
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=45,y=47
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=45,y=56
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=45,y=57
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=45,y=71
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=45,y=73
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=45,y=84
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=45,y=85
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=45,y=89
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_MINE
+EndPlot
+BeginPlot
+	x=45,y=90
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_MINE
+EndPlot
+BeginPlot
+	x=46,y=12
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=46,y=14
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=46,y=36
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=46,y=38
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=46,y=48
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=46,y=49
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=46,y=51
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=46,y=52
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_COTTAGE
+EndPlot
+BeginPlot
+	x=46,y=53
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=46,y=55
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=46,y=56
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=46,y=57
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=46,y=60
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=46,y=65
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=46,y=71
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=46,y=98
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=47,y=13
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=47,y=16
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=47,y=36
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=47,y=49
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=47,y=50
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=47,y=55
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=47,y=57
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=47,y=70
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=47,y=87
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=47,y=88
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=47,y=90
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=47,y=91
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_MINE
+EndPlot
+BeginPlot
+	x=47,y=92
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=47,y=99
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=48,y=15
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=48,y=16
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=48,y=17
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=48,y=18
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=48,y=19
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=48,y=20
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=48,y=32
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=48,y=34
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=48,y=36
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=48,y=51
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_QUARRY
+EndPlot
+BeginPlot
+	x=48,y=52
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=48,y=53
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=48,y=54
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=48,y=56
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=48,y=68
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=48,y=70
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=48,y=71
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=48,y=90
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=48,y=92
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=49,y=21
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=49,y=22
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=49,y=23
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=49,y=33
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=49,y=35
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=49,y=49
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=49,y=56
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=49,y=69
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=49,y=90
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=49,y=92
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=49,y=94
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=49,y=95
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=49,y=100
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_LUMBERMILL
+EndPlot
+BeginPlot
+	x=50,y=17
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=50,y=34
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=50,y=57
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=50,y=59
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=50,y=68
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=50,y=98
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=51,y=18
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=51,y=31
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=51,y=34
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=51,y=58
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=51,y=71
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=51,y=96
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_LUMBERMILL
+EndPlot
+BeginPlot
+	x=51,y=97
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=51,y=105
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_FRENCH_COUREUR_DES_BOIS
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+EndPlot
+BeginPlot
+	x=52,y=17
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=52,y=21
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=52,y=30
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=52,y=31
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=52,y=33
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=52,y=55
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=52,y=56
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=52,y=104
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=53,y=16
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=53,y=18
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=53,y=22
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=53,y=23
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=53,y=26
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=53,y=27
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=53,y=28
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_QUARRY
+EndPlot
+BeginPlot
+	x=53,y=30
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=53,y=32
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=53,y=56
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=53,y=66
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=54,y=19
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=54,y=20
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=54,y=21
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=54,y=24
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=54,y=25
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=54,y=28
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=54,y=56
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=54,y=68
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=55,y=16
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=55,y=17
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=55,y=21
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=55,y=23
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=55,y=27
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=55,y=57
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=55,y=66
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=55,y=101
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_FRENCH_COUREUR_DES_BOIS
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+EndPlot
+BeginPlot
+	x=56,y=15
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=56,y=17
+	ImprovementType=IMPROVEMENT_HAMLET
+EndPlot
+BeginPlot
+	x=56,y=18
+	ImprovementType=IMPROVEMENT_COTTAGE
+EndPlot
+BeginPlot
+	x=56,y=27
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=56,y=28
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=56,y=29
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=56,y=32
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=56,y=56
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=56,y=59
+	ImprovementType=IMPROVEMENT_HAMLET
+EndPlot
+BeginPlot
+	x=56,y=60
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=56,y=65
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=56,y=97
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+EndPlot
+BeginPlot
+	x=57,y=15
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=57,y=16
+	ImprovementType=IMPROVEMENT_HAMLET
+EndPlot
+BeginPlot
+	x=57,y=26
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=57,y=29
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=57,y=30
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=57,y=32
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_LUMBERMILL
+EndPlot
+BeginPlot
+	x=57,y=66
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=57,y=67
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=57,y=68
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=57,y=100
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+EndPlot
+BeginPlot
+	x=58,y=16
+	ImprovementType=IMPROVEMENT_TOWN
+EndPlot
+BeginPlot
+	x=58,y=17
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=58,y=25
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=58,y=30
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=58,y=100
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=59,y=16
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=59,y=17
+	ImprovementType=IMPROVEMENT_COTTAGE
+EndPlot
+BeginPlot
+	x=59,y=25
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=59,y=66
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=59,y=100
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_LUMBERMILL
+EndPlot
+BeginPlot
+	x=60,y=14
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=60,y=16
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=60,y=24
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=60,y=25
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=60,y=47
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=60,y=54
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=60,y=59
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=60,y=65
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=61,y=17
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=61,y=26
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=61,y=45
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=61,y=55
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=61,y=66
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=62,y=20
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=62,y=23
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=62,y=54
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=62,y=118
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=63,y=24
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=63,y=54
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=63,y=63
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=64,y=20
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=64,y=21
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=64,y=27
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=64,y=61
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=64,y=63
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=65,y=22
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=65,y=54
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=66,y=24
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=66,y=28
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=66,y=47
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=66,y=53
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=67,y=22
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=67,y=23
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_LUMBERMILL
+EndPlot
+BeginPlot
+	x=67,y=25
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=67,y=26
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=67,y=27
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=68,y=26
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=68,y=27
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=68,y=28
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=68,y=50
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=68,y=52
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=69,y=25
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=69,y=27
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=70,y=26
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=70,y=27
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=70,y=28
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=70,y=29
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=70,y=50
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=71,y=28
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=71,y=30
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=72,y=26
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=72,y=27
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=72,y=29
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=72,y=31
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_MINE
+EndPlot
+BeginPlot
+	x=73,y=29
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=73,y=49
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=74,y=25
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=74,y=27
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=74,y=28
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=74,y=30
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=74,y=32
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=74,y=48
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PADDY_FIELD
+EndPlot
+BeginPlot
+	x=75,y=29
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=75,y=31
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=75,y=33
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=75,y=35
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=75,y=46
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=76,y=31
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=76,y=33
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=76,y=35
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=76,y=36
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=76,y=37
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=76,y=38
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=76,y=47
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=77,y=34
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=77,y=38
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=77,y=46
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=77,y=47
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=78,y=39
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=78,y=41
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=79,y=40
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=79,y=42
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=79,y=43
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=79,y=44
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=79,y=46
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_QUARRY
+EndPlot
+BeginPlot
+	x=80,y=42
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=80,y=44
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=81,y=43
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=7,y=117
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=8,y=120
+	ImprovementType=IMPROVEMENT_WHALING_BOATS
+EndPlot
+BeginPlot
+	x=10,y=107
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=13,y=46
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=13,y=50
+	ImprovementType=IMPROVEMENT_PLANTATION
+EndPlot
+BeginPlot
+	x=13,y=120
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=16,y=47
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=17,y=115
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=18,y=117
+	ImprovementType=IMPROVEMENT_WHALING_BOATS
+EndPlot
+BeginPlot
+	x=24,y=83
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=25,y=114
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=26,y=88
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=26,y=94
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=27,y=97
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=27,y=111
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=29,y=100
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=29,y=101
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=29,y=113
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=30,y=98
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=32,y=78
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_QUARRY
+EndPlot
+BeginPlot
+	x=32,y=85
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=32,y=93
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=32,y=113
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=33,y=84
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=33,y=92
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=33,y=110
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=34,y=91
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=34,y=107
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=35,y=79
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=35,y=81
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=35,y=90
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=36,y=65
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=36,y=90
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=36,y=112
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=37,y=80
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=37,y=115
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=38,y=81
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=38,y=86
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=38,y=113
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=39,y=84
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=39,y=92
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=40,y=91
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=40,y=93
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=41,y=90
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=41,y=105
+	ImprovementType=IMPROVEMENT_WHALING_BOATS
+EndPlot
+BeginPlot
+	x=42,y=81
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PADDY_FIELD
+EndPlot
+BeginPlot
+	x=42,y=92
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=42,y=95
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=42,y=100
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_MUSKETMAN
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+EndPlot
+BeginPlot
+	x=42,y=108
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=43,y=94
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=43,y=108
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_EXPLORER
+	UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+EndPlot
+BeginPlot
+	x=44,y=85
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=44,y=86
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=44,y=95
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=44,y=97
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=44,y=110
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=45,y=74
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=45,y=87
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_SLAVE_PLANTATION
+EndPlot
+BeginPlot
+	x=45,y=95
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=45,y=97
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_QUARRY
+EndPlot
+BeginPlot
+	x=46,y=84
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=46,y=87
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=46,y=88
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=46,y=89
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=46,y=91
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=46,y=97
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=47,y=110
+	ImprovementType=IMPROVEMENT_WHALING_BOATS
+EndPlot
+BeginPlot
+	x=48,y=93
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_QUARRY
+EndPlot
+BeginPlot
+	x=48,y=95
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_QUARRY
+EndPlot
+BeginPlot
+	x=48,y=96
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=48,y=98
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=48,y=99
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=49,y=97
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=50,y=90
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=50,y=92
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=50,y=93
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=51,y=92
+	ImprovementType=IMPROVEMENT_WHALING_BOATS
+EndPlot
+BeginPlot
+	x=51,y=99
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=51,y=113
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=52,y=97
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_FRENCH_COMPAGNIES
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+	UnitType=UNIT_IRREGULAR
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+EndPlot
+BeginPlot
+	x=52,y=110
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=53,y=67
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=54,y=66
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_MINE
+EndPlot
+BeginPlot
+	x=55,y=104
+	ImprovementType=IMPROVEMENT_FORT
+	BeginUnit
+	UnitType=UNIT_FRENCH_COUREUR_DES_BOIS
+	UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+EndPlot
+BeginPlot
+	x=58,y=111
+	ImprovementType=IMPROVEMENT_CAMP
+EndPlot
+BeginPlot
+	x=59,y=99
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=62,y=97
+	ImprovementType=IMPROVEMENT_WHALING_BOATS
+EndPlot
+BeginPlot
+	x=63,y=55
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PADDY_FIELD
+EndPlot
+BeginPlot
+	x=63,y=115
+	ImprovementType=IMPROVEMENT_WHALING_BOATS
+EndPlot
+BeginPlot
+	x=63,y=118
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=63,y=119
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+EndPlot
+BeginPlot
+	x=64,y=54
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=65,y=116
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=68,y=53
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_ORCHARD
+EndPlot
+BeginPlot
+	x=69,y=54
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot

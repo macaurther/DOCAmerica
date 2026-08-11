@@ -642,16 +642,17 @@ class Birth(object):
 		
 		# MacAurther: Instead of dynamic tile revealing (which can be slow), reveal a pre-determined, more "historical" set of tiles
 		lRegionList = None
-		if civ(self.iPlayer) in [iInuit]:
+		iCiv = civ(self.iPlayer)
+		if iCiv in [iInuit]:
 			if player(self.iPlayer).isHuman():
 				lRegionList = lInuitRevealedTiles
 			else:
 				lRegionList = lInuitRevealedTilesAI
-		if civ(self.iPlayer) in [iEngland, iFrance, iNetherlands, iRussia]:
+		if iCiv in [iEngland, iFrance, iNetherlands, iRussia]:
 			lRegionList = lEuropeanRevealed1600AD
-		elif civ(self.iPlayer) in [iAmerica, iHaiti, iArgentina, iMexico, iColombia, iPeru, iBrazil, iVenezuela]:
+		elif iCiv in [iAmerica, iHaiti, iArgentina, iMexico, iColombia, iPeru, iBrazil, iVenezuela]:
 			lRegionList = lEuropeanRevealed1750AD
-		elif civ(self.iPlayer) in [iCSA, iCanada]:
+		elif iCiv in [iCSA, iCanada]:
 			lRegionList = lEuropeanRevealed1850AD
 		
 		if lRegionList:

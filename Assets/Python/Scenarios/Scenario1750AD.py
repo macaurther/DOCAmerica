@@ -9,9 +9,9 @@ lCivilizations = [
 	Civilization(
 		iNorse,
 		iGold=75,
-		iImmigration=300,
 		lCivics=[iGovernors, iAdmiralty, iIndenturedServitude, iFactoryCivic, iHaven, iOutposts],
-		techs=techs.column(13).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
+		techs=techs.column(12),
+		extraTechs=techs.column(2).including(iNorthEuropeAccess),
 	),
 	Civilization(
 		iInuit,
@@ -34,8 +34,8 @@ lCivilizations = [
 	Civilization(
 		iSpain,
 		iLeader=iPhilip,
-		iGold=400,
-		iImmigration=300,
+		iGold=1500,
+		iImmigration=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iViceroys, iRoyalColony, iSlavery, iExtraction, iCastas, iProvidence],
 		techs=techs.column(12),
@@ -46,7 +46,7 @@ lCivilizations = [
 		iPortugal,
 		iLeader=iJoao,
 		iGold=450,
-		iImmigration=300,
+		iImmigration=25,
 		iStateReligion=iCatholicism,
 		lCivics=[iViceroys, iAdmiralty, iSlavery, iPlantationCivic, iCastas, iOutposts],
 		techs=techs.column(12),
@@ -67,27 +67,30 @@ lCivilizations = [
 		iImmigration=300,
 		iStateReligion=iProtestantism,
 		lCivics=[iGovernors, iCommonwealth, iSlavery, iMercantilism, iHaven, iProvidence],
-		techs=techs.column(15).including(iMeteorology, iSurveying, iPhysics).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
-		dAttitudes={iFrance: -4, iPortugal: 2}
+		techs=techs.column(12),
+		extraTechs=techs.column(2).including(iNorthEuropeAccess),
+		dAttitudes={iFrance: -8, iPortugal: 2}
 	),
 	Civilization(
 		iFrance,
 		iLeader=iLouis,
 		iGold=400,
-		iImmigration=300,
+		iImmigration=150,
 		iStateReligion=iCatholicism,
 		lCivics=[iGovernors, iCharterColony, iSlavery, iFactoryCivic, iHaven, iOutposts],
-		techs=techs.column(15).including(iMeteorology, iSurveying, iPhysics).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
-		dAttitudes={iEngland: -4, iNetherlands: 2}
+		techs=techs.column(12),
+		extraTechs=techs.column(2).including(iNorthEuropeAccess, iSouthEuropeAccess),
+		dAttitudes={iEngland: -8, iNetherlands: 2}
 	),
 	Civilization(
 		iNetherlands,
 		iLeader=iWilliam,
 		iGold=800,
-		iImmigration=200,
+		iImmigration=25,
 		iStateReligion=iProtestantism,
 		lCivics=[iTrustees, iTradingCompany, iSlavery, iMercantilism, iExtraction, iOutposts],
-		techs=techs.column(15).including(iMeteorology).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
+		techs=techs.column(12),
+		extraTechs=techs.column(2).including(iNorthEuropeAccess),
 		dAttitudes={iFrance: 2, iPortugal: -2}
 	),
 	Civilization( #TODO
@@ -114,10 +117,11 @@ lCivilizations = [
 	Civilization(
 		iRussia,
 		iGold=200,
-		iImmigration=100,
+		iImmigration=15,
 		iStateReligion=iOrthodoxy,
 		lCivics=[iTrustees, iTradingCompany, iIndenturedServitude, iFactoryCivic, iExtraction, iOutposts],
-		techs=techs.column(14).without(iLandmarks, iCultivation, iHerbalism).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iAsiaAccess),
+		techs=techs.column(12),
+		extraTechs=techs.column(2).including(iSiberiaAccess),
 	),
 	Civilization(
 		iIndependent1,
@@ -169,7 +173,7 @@ scenario1750AD = Scenario(
 	},
 	
 	dOwnedTiles = {
-		iEngland : [(37, 80), (38, 80), (38, 81), (39, 81), (39, 82)],	# MacAurther TODO: Re-evaluate with new map
+		iEngland : [],	# MacAurther TODO
 	},
 	iOwnerBaseCulture = 100,
 	
@@ -177,7 +181,7 @@ scenario1750AD = Scenario(
 		iCivGroupEurope: Revealed(
 			lLandRegions=lEuropeanRevealed1750AD,
 			lCoastRegions=lAmerica,
-			lSeaAreas=[((0, 0), (58, 27)), ((0, 27), (23, 38)), ((50, 27), (58, 38)), ((0, 38), (58, 84)), ((0, 84), (10, 121)), ((31, 84), (58, 117)), ],
+			lSeaAreas=[((0, 0), (82, 121))],
 		),
 	},
 	
