@@ -94,6 +94,9 @@ def isRepublic(iPlayer):
 	if civic.iExecutive == iRepresentatives:
 		return True
 	
+	if civic.iAdministration == iFederalism:
+		return True
+	
 	return False
 	
 def isCityStates(iPlayer):
