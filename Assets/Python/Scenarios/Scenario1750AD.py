@@ -173,7 +173,6 @@ scenario1750AD = Scenario(
 	},
 	
 	dOwnedTiles = {
-		iEngland : [],	# MacAurther TODO
 	},
 	iOwnerBaseCulture = 100,
 	
