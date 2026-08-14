@@ -2605,7 +2605,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	}
 
 	// Leoreth -> MacAurther: Andes RP (Terraces): can build farms on hills
-	if (eTeam != NO_TEAM && (RegionPowers)GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ANDES && eImprovement == IMPROVEMENT_FARM && getTerrainType() != TERRAIN_DESERT)
+	if (eImprovement == IMPROVEMENT_FARM && getTerrainType() != TERRAIN_DESERT && eTeam != NO_TEAM && (RegionPowers)GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ANDES)
 	{
 		bTerrace = true;
 	}
@@ -6998,12 +6998,9 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 	}
 
 	// MacAurther: Hoover Dam effect
-	if (eTeam != NO_TEAM && !isPeak() && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).isHasBuildingEffect((BuildingTypes)BUILDING_HOOVER_DAM))
+	if (iYield < 1 && (getTerrainType() == TERRAIN_DESERT || getTerrainType() == TERRAIN_SEMIDESERT) && eTeam != NO_TEAM && !isPeak() && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).isHasBuildingEffect((BuildingTypes)BUILDING_HOOVER_DAM))
 	{
-		if (iYield < 1 && (getTerrainType() == TERRAIN_DESERT || getTerrainType() == TERRAIN_SEMIDESERT))
-		{
-			iYield = 1;
-		}
+		iYield = 1;
 	}
 	
 	// Leoreth: clamp negative values so that bonus yields are always applied
@@ -12478,8 +12475,9 @@ bool CvPlot::isTradewinds()
 
 bool CvPlot::isArcticRP(TeamTypes eTeam) const
 {
-	return eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && 
-		(getTerrainType() == TERRAIN_TUNDRA || getTerrainType() == TERRAIN_MOORLAND || getTerrainType() == TERRAIN_SNOW || getFeatureType() == FEATURE_ICE);
+	return eTeam != NO_TEAM &&
+		(getTerrainType() == TERRAIN_TUNDRA || getTerrainType() == TERRAIN_MOORLAND || getTerrainType() == TERRAIN_SNOW || getFeatureType() == FEATURE_ICE) &&
+		GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC;
 }
 
 int CvPlot::getTribeStoredUnits()

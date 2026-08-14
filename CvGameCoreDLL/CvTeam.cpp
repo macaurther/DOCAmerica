@@ -5116,13 +5116,18 @@ int CvTeam::getObsoleteBuildingCount(BuildingTypes eIndex) const
 
 bool CvTeam::isObsoleteBuilding(BuildingTypes eIndex) const				
 {
-	// MacAurther: Latin America RP
-	if (GET_PLAYER(GET_TEAM(getID()).getLeaderID()).getRegionPowers() == RP_LATIN_AMERICA)
+	if (getObsoleteBuildingCount(eIndex) <= 0)
 	{
 		return false;
 	}
 
-	return (getObsoleteBuildingCount(eIndex) > 0);
+	// MacAurther: Latin America RP
+	if (GET_PLAYER(getLeaderID()).getRegionPowers() == RP_LATIN_AMERICA)
+	{
+		return false;
+	}
+
+	return true;
 }
 
 
