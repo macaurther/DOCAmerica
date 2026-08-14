@@ -8,28 +8,45 @@ from Core import *
 lCivilizations = [
 	Civilization(
 		iNorse,
-		iGold=75,
+		iGold=250,
 		lCivics=[iGovernors, iAdmiralty, iIndenturedServitude, iFactoryCivic, iHaven, iOutposts],
 		techs=techs.column(12),
 		extraTechs=techs.column(2).including(iNorthEuropeAccess),
 	),
 	Civilization(
-		iInuit,
+		iArawak,
 		iGold=50,
-		lCivics=[iDespot, iHarmony, iSacrifice],
-		techs=techs.column(7).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iAsiaAccess)
+		iStateReligion=iCatholicism,
+		lCivics=[iChief, iClans, iDependency, iAcculturation, iAncestralLands],
+		techs=techs.column(4).including(iTradeRoutes).without(iSmelting),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation, iFishing, iIrrigation, iHerbalism, iContact),
+		dAttitudes={iPortugal: -3, iSpain: -4},
+	),
+	Civilization(
+		iTupi,
+		iGold=50,
+		iStateReligion=iCatholicism,
+		lCivics=[iChief, iClans, iDependency, iAcculturation, iNomadic],
+		techs=techs.column(4).including(iTradeRoutes).without(iSmelting),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation, iFishing, iHerbalism, iContact),
+		dAttitudes={iPortugal: -4},
+	),
+	Civilization(
+		iInuit,
+		iGold=150,
+		iStateReligion=iProtestantism,
+		lCivics=[iDespot, iClans, iDependency, iAcculturation, iIsolationism],
+		techs=techs.column(4).including(iTradeRoutes, iSeafaring, iAstronomy, iIndoctrination).without(iSmelting),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iFishing, iMediation, iHerbalism, iKnapping, iContact),
+		dAttitudes={iRussia: -4, iNorse: -2, iEngland: -1, iFrance: 2},
 	),
 	Civilization(
 		iHaudenosaunee,
 		iGold=300,
-		lCivics=[iCouncil, iTribalConfederacy, iTlacotin, iMerchantTrade, iAcculturation, iIntegration],
-		techs=techs.column(7),
-	),
-	Civilization(
-		iLakota,
-		iGold=100,
-		lCivics=[iChief, iClans, iTlacotin, iMerchantTrade, iHarmony, iNomadic],
-		techs=techs.column(7),
+		lCivics=[iCouncil, iTribalConfederacy, iTlacotin, iDependency, iHarmony, iIntegration],
+		techs=techs.column(4).including(iTradeRoutes, iPriesthood, iGunpowder, iExchange).without(iSmelting),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation, iFishing, iContact),
+		dAttitudes={iEngland: 4, iFrance: -2},
 	),
 	Civilization(
 		iSpain,
@@ -53,12 +70,13 @@ lCivilizations = [
 		extraTechs=techs.column(2).including(iSouthEuropeAccess),
 		dAttitudes={iSpain: 2, iEngland: 2, iNetherlands: -2},
 	),
-	Civilization(	#TODO
+	Civilization(
 		iCherokee,
-		iGold=100,
-		lCivics=[iChief, iClans, iHarmony],
-		techs=techs.column(3).including(iProperty, iCeremony),
-		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation, iFishing),
+		iGold=150,
+		lCivics=[iChief, iFirstNation, iDependency, iAcculturation],
+		techs=techs.column(4).including(iTradeRoutes, iWriting, iGunpowder, iExchange).without(iSmelting),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation, iFishing, iContact),
+		dAttitudes={iFrance: 2, iEngland: -2},
 	),
 	Civilization(
 		iEngland,
@@ -93,26 +111,27 @@ lCivilizations = [
 		extraTechs=techs.column(2).including(iNorthEuropeAccess),
 		dAttitudes={iFrance: 2, iPortugal: -2}
 	),
-	Civilization( #TODO
+	Civilization(
 		iApache,
 		iGold=50,
-		lEnemies=[iPueblo],
-		lCivics=[iChief, iSubsistance, iNomadic],
-		techs=techs.column(3).including(iCeremony, iContact, iRiding),
-		extraTechs=techs.column(0).including(iHunting, iCompanionPlanting, iInterpretation),
-	),
-	Civilization( #TODO
-		iLakota,
-		iGold=100,
 		lCivics=[iChief, iSubsistance, iHarmony, iNomadic],
-		techs=techs.column(3).including(iCeremony, iRiding),
-		extraTechs=techs.column(0).including(iContact, iHunting, iTrapping, iCompanionPlanting, iInterpretation, iMediation),
+		techs=techs.column(4).without(iSmelting),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iInterpretation, iMediation, iFishing, iContact, iRiding),
+		dAttitudes={iSpain: -4}
+	),
+	Civilization(
+		iLakota,
+		iGold=50,
+		lCivics=[iChief, iSubsistance, iHarmony, iNomadic],
+		techs=techs.column(4).without(iSmelting),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iInterpretation, iMediation, iFishing, iContact, iRiding),
 	),
 	Civilization(
 		iHawaii,
-		iGold=150,
+		iGold=250,
 		lCivics=[iMonarch, iClans, iTlacotin, iMerchantTrade, iIsolationism, iConquest],
-		techs=techs.column(7).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess),
+		techs=techs.column(4).including(iAstronomy, iTradeRoutes, iSeafaring).without(iSmelting),
+		extraTechs=techs.column(0).including(iKnapping, iDiving, iFishing, iHerbalism, iAsiaAccess),
 	),
 	Civilization(
 		iRussia,

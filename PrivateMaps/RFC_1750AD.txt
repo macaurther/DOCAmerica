@@ -25,12 +25,12 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Shaktoolik
-		CityPopulation=1
+		CityPopulation=3
 		BuildingType=BUILDING_SMOKEHOUSE
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=75
 		EndCulture
-		YearFounded=0
+		YearFounded=1100
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -96,14 +96,14 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Chota
-		CityPopulation=2
+		CityPopulation=5
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_INUIT_IGLOO
 		BuildingType=BUILDING_SMOKEHOUSE
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=500
 		EndCulture
-		YearFounded=0
+		YearFounded=1100
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -172,7 +172,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_HAWAII, Culture=8
 		EndCulture
-		YearFounded=0
+		YearFounded=1600
 		PreviousOwner=CIVILIZATION_HAWAII
 	EndCity
 EndPlot
@@ -229,7 +229,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_HAWAII, Culture=12
 		EndCulture
-		YearFounded=0
+		YEARFOUNDED=1600
 		PreviousOwner=CIVILIZATION_HAWAII
 	EndCity
 EndPlot
@@ -247,12 +247,12 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Nuiqsut
-		CityPopulation=1
+		CityPopulation=2
 		BuildingType=BUILDING_SMOKEHOUSE
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=50
 		EndCulture
-		YearFounded=0
+		YEARFOUNDED=1100
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -266,12 +266,12 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Inuvik
-		CityPopulation=1
+		CityPopulation=3
 		BuildingType=BUILDING_INUIT_IGLOO
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=250
 		EndCulture
-		YearFounded=0
+		YEARFOUNDED=1100
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -397,7 +397,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_APACHE, Culture=1000
 		EndCulture
-		YearFounded=0
+		YearFounded=1650
 		PreviousOwner=CIVILIZATION_APACHE
 	EndCity
 EndPlot
@@ -430,7 +430,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_APACHE, Culture=1250
 		EndCulture
-		YearFounded=0
+		YearFounded=1650
 		PreviousOwner=CIVILIZATION_APACHE
 	EndCity
 EndPlot
@@ -448,13 +448,13 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Sisimiut
-		CityPopulation=1
+		CityPopulation=4
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_SMOKEHOUSE
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=150
 		EndCulture
-		YearFounded=0
+		YearFounded=1150
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -604,7 +604,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_LAKOTA, Culture=1000
 		EndCulture
-		YearFounded=0
+		YearFounded=1670
 		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
 EndPlot
@@ -645,7 +645,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_LAKOTA, Culture=1750
 		EndCulture
-		YearFounded=0
+		YearFounded=1780
 		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
 EndPlot
@@ -684,7 +684,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_APACHE, Culture=1250
 		EndCulture
-		YearFounded=0
+		YearFounded=1700
 		PreviousOwner=CIVILIZATION_APACHE
 	EndCity
 EndPlot
@@ -698,12 +698,12 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Mamterilleq
-		CityPopulation=1
+		CityPopulation=3
 		BuildingType=BUILDING_SMOKEHOUSE
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=200
 		EndCulture
-		YearFounded=0
+		YEARFOUNDED=1100
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -827,7 +827,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_LAKOTA, Culture=1250
 		EndCulture
-		YearFounded=0
+		YearFounded=1700
 		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
 EndPlot
@@ -867,7 +867,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=5
 		EndCulture
-		YearFounded=0
+		YearFounded=1710
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
@@ -898,12 +898,12 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Arviat
-		CityPopulation=1
+		CityPopulation=3
 		BuildingType=BUILDING_INUIT_IGLOO
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=125
 		EndCulture
-		YearFounded=0
+		YEARFOUNDED=1100
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -921,12 +921,12 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Kugaaruk
-		CityPopulation=1
+		CityPopulation=2
 		BuildingType=BUILDING_SMOKEHOUSE
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=175
 		EndCulture
-		YearFounded=0
+		YEARFOUNDED=1100
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -1200,13 +1200,13 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Ilulissat
-		CityPopulation=1
+		CityPopulation=3
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_SMOKEHOUSE
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=50
 		EndCulture
-		YearFounded=0
+		YEARFOUNDED=1100
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -1238,7 +1238,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_CHEROKEE, Culture=1200
 		EndCulture
-		YearFounded=0
+		YearFounded=1670
 		PreviousOwner=CIVILIZATION_CHEROKEE
 	EndCity
 EndPlot
@@ -1270,7 +1270,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_CHEROKEE, Culture=1000
 		EndCulture
-		YearFounded=0
+		YearFounded=1680
 		PreviousOwner=CIVILIZATION_CHEROKEE
 	EndCity
 EndPlot
@@ -1340,7 +1340,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_CHEROKEE, Culture=1500
 		EndCulture
-		YearFounded=0
+		YearFounded=1700
 		PreviousOwner=CIVILIZATION_CHEROKEE
 	EndCity
 EndPlot
@@ -1522,12 +1522,14 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Puvirnituq
-		CityPopulation=1
+		CityPopulation=2
 		BuildingType=BUILDING_SMOKEHOUSE
+		BuildingType=BUILDING_PROTESTANT_MONASTERY
+		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=75
 		EndCulture
-		YearFounded=0
+		YEARFOUNDED=1100
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -1668,7 +1670,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_HAUDENOSAUNEE, Culture=750
 		EndCulture
-		YearFounded=0
+		YearFounded=1500
 		PreviousOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndCity
 EndPlot
@@ -1992,7 +1994,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_HAUDENOSAUNEE, Culture=1250
 		EndCulture
-		YearFounded=0
+		YearFounded=1450
 		PreviousOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndCity
 EndPlot
@@ -2010,14 +2012,16 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Iqaluit
-		CityPopulation=2
+		CityPopulation=3
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_SMOKEHOUSE
 		BuildingType=BUILDING_INUIT_IGLOO
+		BuildingType=BUILDING_PROTESTANT_MONASTERY
+		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=150
 		EndCulture
-		YearFounded=0
+		YEARFOUNDED=1100
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -2730,14 +2734,16 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Nuuk
-		CityPopulation=2
+		CityPopulation=3
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_SMOKEHOUSE
 		BuildingType=BUILDING_INUIT_IGLOO
+		BuildingType=BUILDING_PROTESTANT_MONASTERY
+		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=25
 		EndCulture
-		YearFounded=0
+		YEARFOUNDED=1100
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -2999,7 +3005,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_NORSE, Culture=15
 		EndCulture
-		YearFounded=0
+		YEARFOUNDED=1100
 		PreviousOwner=CIVILIZATION_NORSE
 	EndCity
 EndPlot
@@ -4028,7 +4034,7 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=15
 		EndCulture
-		YearFounded=0
+		YearFounded=1600
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
@@ -5487,6 +5493,25 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FARM
 EndPlot
 BeginPlot
+	x=56,y=39
+	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_ARAWAK
+		CityName=Guanaba
+		CityPopulation=3
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_ARAWAK, Culture=25
+		EndCulture
+		YearFounded=1300
+		PreviousOwner=CIVILIZATION_ARAWAK
+	EndCity
+EndPlot
+BeginPlot
 	x=56,y=56
 	RouteType=ROUTE_ROAD
 	ImprovementType=IMPROVEMENT_FARM
@@ -5595,6 +5620,45 @@ BeginPlot
 	x=59,y=25
 	RouteType=ROUTE_ROAD
 	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=59,y=27
+	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_TUPI
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_TUPI
+		CityName=Pia Baa
+		CityPopulation=2
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_TUPI, Culture=50
+		EndCulture
+		YearFounded=1300
+		PreviousOwner=CIVILIZATION_TUPI
+	EndCity
+EndPlot
+BeginPlot
+	x=59,y=51
+	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_ARAWAK
+		CityName=Boriken
+		CityPopulation=2
+		BuildingType=BUILDING_SMOKEHOUSE
+		BuildingType=BUILDING_PALACE
+		BeginCulture
+			Civilization=CIVILIZATION_ARAWAK, Culture=50
+		EndCulture
+		YearFounded=1300
+		PreviousOwner=CIVILIZATION_ARAWAK
+	EndCity
 EndPlot
 BeginPlot
 	x=59,y=66
@@ -5801,6 +5865,25 @@ BeginPlot
 	x=69,y=27
 	RouteType=ROUTE_ROAD
 	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=69,y=34
+	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_TUPI
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_TUPI
+		CityName=Nuenuhkiki
+		CityPopulation=2
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_TUPI, Culture=25
+		EndCulture
+		YearFounded=1300
+		PreviousOwner=CIVILIZATION_TUPI
+	EndCity
 EndPlot
 BeginPlot
 	x=70,y=26
@@ -6295,6 +6378,25 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FARM
 EndPlot
 BeginPlot
+	x=47,y=44
+	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_ARAWAK
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_ARAWAK
+		CityName=Kiskeya
+		CityPopulation=2
+		BuildingType=BUILDING_SMOKEHOUSE
+		BeginCulture
+			Civilization=CIVILIZATION_ARAWAK, Culture=25
+		EndCulture
+		YearFounded=1300
+		PreviousOwner=CIVILIZATION_ARAWAK
+	EndCity
+EndPlot
+BeginPlot
 	x=47,y=110
 	ImprovementType=IMPROVEMENT_WHALING_BOATS
 EndPlot
@@ -6392,6 +6494,26 @@ EndPlot
 BeginPlot
 	x=59,y=99
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=62,y=33
+	RouteType=ROUTE_ROAD
+	BeginUnit
+	UnitType=UNIT_LONGBOWMAN
+	UnitOwner=CIVILIZATION_TUPI
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_TUPI
+		CityName=Ata Kahni
+		CityPopulation=2
+		BuildingType=BUILDING_SMOKEHOUSE
+		BuildingType=BUILDING_PALACE
+		BeginCulture
+			Civilization=CIVILIZATION_TUPI, Culture=150
+		EndCulture
+		YearFounded=1300
+		PreviousOwner=CIVILIZATION_TUPI
+	EndCity
 EndPlot
 BeginPlot
 	x=62,y=97

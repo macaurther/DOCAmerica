@@ -9,8 +9,8 @@ import cStringIO
 MAPS_PATH = "Assets/Maps"
 
 
-def getPath(file_name):
-	return "%s\Mods\\DOCAmerica\\Assets\\Maps\\%s" % (os.getcwd(), file_name)
+def getPath(file_name, directory="Maps"):
+	return "%s\Mods\\DOCAmerica\\Assets\\%s\\%s" % (os.getcwd(), directory, file_name)
 
 
 class UnicodeWriter:
@@ -184,5 +184,61 @@ class FileDict(object):
 	def values(self):
 		if self.dict is None:
 			self.load()
-		
+
 		return self.dict.values()
+
+
+class FileMatrix(object):
+
+	@staticmethod
+	def read(file_path):
+		try:
+			file = open(getPath(file_path, "Data"))
+		except IOError:
+			return
+
+		try:
+			for index, line in enumerate(csv.reader(file)):
+				if index == 0:
+					continue
+
+				if len(line) < 2:
+					continue
+
+				yield tuple(int(x) for x in line[1:])
+		except:
+			file.close()
+			raise
+
+		file.close()
+
+	def __init__(self, path):
+		self.path = path
+		self.matrix = None
+
+	def __getitem__(self, (outer_key, inner_key)):
+		if self.matrix is None:
+			self.load()
+
+		return self.matrix[outer_key][inner_key]
+
+	def load(self):
+		self.matrix = tuple(self.read(self.path))
+
+
+class CivFileMatrix(FileMatrix):
+
+	def __init__(self, path, defaults):
+		FileMatrix.__init__(self, path)
+
+		self.defaults = defaults
+
+	def __getitem__(self, (outer_key, iCiv)):
+		if iCiv not in lCivOrder:
+			return self.defaults[outer_key]
+
+		if self.matrix is None:
+			self.load()
+
+		inner_key = lCivOrder.index(iCiv)
+		return self.matrix[outer_key][inner_key]
