@@ -1143,14 +1143,6 @@
 		<Spanish>Overextraction has removed a resource!</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_IMMIGRATION_SCREEN_TITLE</Tag>
-		<English>Immigration Manager</English>
-		<French>Immigration Manager</French>
-		<German>Immigration Manager</German>
-		<Italian>Immigration Manager</Italian>
-		<Spanish>Immigration Manager</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_IMMIGRANT_INFORMATION</Tag>
 		<English>Immigrant Information</English>
 		<French>Immigrant Information</French>
@@ -1205,14 +1197,6 @@
 		<German>Eine neue Zivilisation wurde geboren: %s1_CityName</German>
 		<Italian>&#200; nata una nuova civilt&#224;: %s1_CityName</Italian>
 		<Spanish>Ha nacido una nueva civilizaci&#243;n: %s1_CityName</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MISC_DEFEAT</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_DEFEAT2</Tag>
@@ -2343,14 +2327,6 @@
 		<Spanish>[ICON_BULLET]%D1_Mod%% [ICON_GOLD] on City Conquest</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CAPTURE_GOLD_MODIFIER</Tag>
-		<English>[ICON_BULLET]%D1_Mod%% [ICON_GOLD] on City Conquest</English>
-		<French>[ICON_BULLET]%D1_Mod%% [ICON_GOLD] lors de la conqu&#234;te d'une ville</French>
-		<German>[ICON_BULLET]%D1_Mod%% [ICON_GOLD] bei Stadteroberung</German>
-		<Italian>[ICON_BULLET]%D1_Mod%% [ICON_GOLD] on City Conquest</Italian>
-		<Spanish>[ICON_BULLET]%D1_Mod%% [ICON_GOLD] on City Conquest</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CAPITAL_BUILDING_PRODUCTION_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] for Buildings Already in Capital</English>
 		<French>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] for Buildings Already in Capital</French>
@@ -2461,14 +2437,6 @@
 		<German>[ICON_BULLET]Kann keine Sklaven verwenden</German>
 		<Italian>[ICON_BULLET]Cannot Use Slaves</Italian>
 		<Spanish>[ICON_BULLET]Cannot Use Slaves</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CAN_USE_SLAVES</Tag>
-		<English>[ICON_BULLET]Can Use Slaves</English>
-		<French>[ICON_BULLET]Possible d'utiliser des esclaves</French>
-		<German>[ICON_BULLET]Kann Sklaven verwenden</German>
-		<Italian>[ICON_BULLET]Can Use Slaves</Italian>
-		<Spanish>[ICON_BULLET]Can Use Slaves</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CAN_CAPTURE_WORKERS</Tag>

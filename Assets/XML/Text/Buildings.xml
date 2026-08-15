@@ -386,26 +386,6 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]Ball Court[COLOR_REVERT], the Mayan replacement for the [COLOR_BUILDING_TEXT]Arena[COLOR_REVERT], is cheaper, increases happiness from access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT] and grants experience points to melee and archery units built in its city.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MEXICAN_CHARREADA</Tag>
-		<English>Charreada Arena</English>
-		<French>
-			<Text>Ar&#232;ne de Charrer&#237;a:Ar&#232;nes de Charrer&#237;a</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Charreada Arena</German>
-		<Italian>Charreada Arena</Italian>
-		<Spanish>Charreada Arena</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MEXICAN_CHARREADA_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Charreada Arena[COLOR_REVERT], the Mexican replacement for the [COLOR_BUILDING_TEXT]Arena[COLOR_REVERT], grants experience points to mounted units built in its city and increases happiness from access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Charreada Arena[COLOR_REVERT], the Mexican replacement for the [COLOR_BUILDING_TEXT]Arena[COLOR_REVERT], grants experience points to mounted units built in its city and increases happiness from access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Charreada Arena[COLOR_REVERT], the Mexican replacement for the [COLOR_BUILDING_TEXT]Arena[COLOR_REVERT], grants experience points to mounted units built in its city and increases happiness from access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Charreada Arena[COLOR_REVERT], the Mexican replacement for the [COLOR_BUILDING_TEXT]Arena[COLOR_REVERT], grants experience points to mounted units built in its city and increases happiness from access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Charreada Arena[COLOR_REVERT], the Mexican replacement for the [COLOR_BUILDING_TEXT]Arena[COLOR_REVERT], grants experience points to mounted units built in its city and increases happiness from access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_WALLS_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Walls[COLOR_REVERT] increase a city's defenses against pre-gunpowder units. [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT].</English>
 		<French>[COLOR_BUILDING_TEXT]Walls[COLOR_REVERT] increase a city's defenses against pre-gunpowder units. [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT].</French>

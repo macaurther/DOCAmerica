@@ -1278,14 +1278,6 @@
 		<Spanish>Skirmisher</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_SKIRMISHER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_IRREGULAR</Tag>
 		<English>Irregular</English>
 		<French>Irregular</French>
@@ -1448,14 +1440,6 @@
 		<German>Light Swordsman</German>
 		<Italian>Light Swordsman</Italian>
 		<Spanish>Light Swordsman</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_LIGHT_SWORDSMAN_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Light Swordsmen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] or the Classical Era.</English>
-		<French>[COLOR_UNIT_TEXT]Light Swordsmen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] or the Classical Era.</French>
-		<German>[COLOR_UNIT_TEXT]Light Swordsmen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] or the Classical Era.</German>
-		<Italian>[COLOR_UNIT_TEXT]Light Swordsmen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] or the Classical Era.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Light Swordsmen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] or the Classical Era.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LABORER</Tag>
@@ -1928,18 +1912,6 @@
 		<German>[COLOR_UNIT_TEXT]Gatling Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</German>
 		<Italian>[COLOR_UNIT_TEXT]Gatling Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Italian>
 		<Spanish>[COLOR_UNIT_TEXT]Gatling Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_SKIRMISHER</Tag>
-		<English>Skirmisher</English>
-		<French>
-			<Text>Tirailleur</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Skirmisher</German>
-		<Italian>Skirmisher</Italian>
-		<Spanish>Skirmisher</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SKIRMISHER_STRATEGY</Tag>

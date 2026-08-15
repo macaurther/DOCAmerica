@@ -2,14 +2,6 @@
 <!-- Strategies -->
 <Civ4GameText>
 	<TEXT>
-		<Tag>TXT_KEY_CONCEPT_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_CONDITIONAL_SPAWNS</Tag>
 		<English>2c) Conditional Spawns</English>
 		<French>2c) Naissances conditionnelles</French>

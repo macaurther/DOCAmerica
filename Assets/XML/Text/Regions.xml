@@ -2,14 +2,6 @@
 <!-- Regions -->
 <Civ4GameText>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
-	</TEXT>
-	<TEXT>
 	<Tag>TXT_KEY_REGION_0</Tag>
 		<English>Alaska</English>
 		<French>Alaska</French>
@@ -784,14 +776,6 @@
 		<German>Deep Ocean</German>
 		<Italian>Deep Ocean</Italian>
 		<Spanish>Deep Ocean</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_AREA_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AREA_0</Tag>

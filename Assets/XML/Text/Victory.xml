@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Victory -->
 <Civ4GameText>
-	<TEXT>
-		<Tag>TXT_KEY_VICTORY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
-	</TEXT>
 	
 	
 <!-- GOAL AND GOAL DEFINITION TEXT -->
@@ -449,14 +441,6 @@
 		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_VICTORY_DESC_HAVE_IN_CITY</Tag>
-		<English>have %s1 in %s2</English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_VICTORY_DESC_HAVE_IN_TERRITORY</Tag>
 		<English>have all of %s1 in your territory</English>
 		<French></French>
@@ -483,14 +467,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_DESC_FOUND</Tag>
 		<English>found %s1</English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_VICTORY_DESC_BUILD</Tag>
-		<English>build %s1</English>
 		<French></French>
 		<German></German>
 		<Italian></Italian>
@@ -550,14 +526,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_DESC_COUNT</Tag>
 		<English>%s2 %s1</English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_VICTORY_DESC_SIMPLE</Tag>
-		<English>%s1</English>
 		<French></French>
 		<German></German>
 		<Italian></Italian>
@@ -3569,14 +3537,6 @@
 		<German>the Mid Atlantic</German>
 		<Italian>the Mid Atlantic</Italian>
 		<Spanish>the Mid Atlantic</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_VICTORY_NAME_LOCAL</Tag>
-		<English>local</English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NAME_BAHIA</Tag>
