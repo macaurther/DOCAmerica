@@ -113,15 +113,15 @@ lTribalVillages = [
 
 
 def createStartingUnits():
-	# MacAurther TODO
 	pass
 
 def setupGoals(iCiv, goals):
-	# MacAurther TODO
-	pass
-	# Haudenosaunee tribe goal
-	#if iCiv == iHaudenosaunee:
-	#	goals[0].requirements[0].accumulate(1)
+	if iCiv == iNorse:
+		goals[0].requirements[0].succeed()
+		goals[0].requirements[1].succeed()
+		goals[0].requirements[2].succeed()
+	elif iCiv == iPurepecha:
+		goals[1].requirements[1].requirements[0].accumulate(20)
 
 scenario1500AD = Scenario(
 	iStartYear = 1500,
@@ -133,10 +133,17 @@ scenario1500AD = Scenario(
 	iOwnerBaseCulture = 20,
 	
 	dGreatPeopleCreated = {
-		# MacAurther TODO
+		iInca: 2,
+		iAztec: 1,
+		iMuisca: 1,
+		iPurepecha: 1,
+		iHaudenosaunee: 1,
 	},
 	dGreatGeneralsCreated = {
-		# MacAurther TODO
+		iInca: 1,
+		iAztec: 2,
+		iMuisca: 1,
+		iPurepecha: 1,
 	},
 	
 	lAllGoalsFailed = [iMaya, iZapotec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPueblo, iChimu],

@@ -172,13 +172,18 @@ lTribalVillages = [
 	
 
 def createStartingUnits():
-	# MacAurther TODO
 	pass
 
 def setupGoals(iCiv, goals):
-	# MacAurther TODO
-	pass
-	
+	if iCiv == iNorse:
+		goals[0].requirements[0].succeed()
+		goals[0].requirements[1].succeed()
+		goals[0].requirements[2].succeed()
+	elif iCiv == iSpain:
+		goals[0].requirements[0].accumulate(4000)
+		goals[1].requirements[0].requirements[0].accumulate(20)
+		goals[1].requirements[1].requirements[0].accumulate(40)
+
 
 scenario1750AD = Scenario(
 	iStartYear = 1750,
