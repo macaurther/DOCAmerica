@@ -1126,6 +1126,9 @@ class Birth(object):
 
 	# MacAurther: Method to handle the spawning of a colonial expeditionary force
 	def expeditionaryForce(self, iOwner):
+		if civ(iOwner) not in dCivGroups[iCivGroupEurope]:
+			return
+
 		lUnits = []
 		lLandUnits = []
 		# Not doing this based on roles, because we don't know how much tech the AI has
