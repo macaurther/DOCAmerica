@@ -87,7 +87,7 @@ class CvPediaProject:
 		screen.attachLabel(panel, "", "  ")
 
 		iTech = info.getTechPrereq()
-		if iTech >= -1:
+		if iTech > -1: # MacAurther: Bugfix, make this consistent with othera
 			screen.attachImageButton(panel, "", gc.getTechInfo(iTech).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_TECH, iTech, 1, False)
 
 		iAnyoneProjectPrereq = info.getAnyoneProjectPrereq()

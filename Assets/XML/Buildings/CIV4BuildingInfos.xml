@@ -8848,7 +8848,7 @@
 			<MovieDefineTag>ART_DEF_MOVIE_HOSPICIO_CABANAS</MovieDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_SCIENTIFIC_METHOD</PrereqTech>
-			<ReligionType>RELIGION_CATHOLICISM</ReligionType>
+			<StateReligion>RELIGION_CATHOLICISM</StateReligion>
 			<PrereqReligion>RELIGION_CATHOLICISM</PrereqReligion>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>

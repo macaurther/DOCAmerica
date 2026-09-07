@@ -39,7 +39,7 @@ dSpecificVassalTitles = deepdict({
 		iChimu : "TXT_KEY_CIV_SPANISH_CHIMU",
 		iWari : "TXT_KEY_CIV_SPANISH_WARI",
 		iInca : "TXT_KEY_CIV_SPANISH_INCA",
-		iInca : "TXT_KEY_CIV_SPANISH_TIWANAKU",
+		iTiwanaku : "TXT_KEY_CIV_SPANISH_TIWANAKU",
 		iFrance : "TXT_KEY_CIV_SPANISH_FRANCE",
 		iNetherlands : "TXT_KEY_ADJECTIVE_TITLE",
 		iPortugal : "TXT_KEY_CIV_SPANISH_PORTUGAL",
@@ -62,7 +62,6 @@ dSpecificVassalTitles = deepdict({
 	},
 	iEngland : {
 		iMaya : "TXT_KEY_CIV_ENGLISH_MAYA",
-		iHaudenosaunee : "TXT_KEY_CIV_ENGLISH_IROQUOIS",
 		iFrance : "TXT_KEY_CIV_ENGLISH_FRANCE",
 		iNetherlands : "TXT_KEY_CIV_ENGLISH_NETHERLANDS",
 		iAmerica : "TXT_KEY_CIV_ENGLISH_AMERICA",
