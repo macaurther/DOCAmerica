@@ -1256,13 +1256,13 @@ class PlotFactory:
 		if extended:
 			if identifier in dExtendedBirthArea:
 				if identifier in dExtendedBirthAreaExceptions:
-					return self.area(dExtendedBirthArea, dExtendedBirthAreaExceptions, identifier)
-				
-				return self.area(dExtendedBirthArea, dBirthAreaExceptions, identifier)
-		
+					return self.area(dExtendedBirthArea, dExtendedBirthAreaExceptions, identifier).where(lambda p: p.getTerrainType() not in (iOcean, iDeepOcean)) # MacAurther: exclude ocean and deep ocean
+
+				return self.area(dExtendedBirthArea, dBirthAreaExceptions, identifier).where(lambda p: p.getTerrainType() not in (iOcean, iDeepOcean)) # MacAurther: exclude ocean and deep ocean
+
 		if identifier in dBirthArea:
-			return self.area(dBirthArea, dBirthAreaExceptions, identifier)
-		
+			return self.area(dBirthArea, dBirthAreaExceptions, identifier).where(lambda p: p.getTerrainType() not in (iOcean, iDeepOcean)) # MacAurther: exclude ocean and deep ocean
+
 		return self.core(identifier)
 
 	def core(self, identifier, iPeriod=None):

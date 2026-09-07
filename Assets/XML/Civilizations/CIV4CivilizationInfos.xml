@@ -244,7 +244,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ARAWAK</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN_NATIVE</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>ARA</Identifier>
@@ -570,7 +570,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_MIDDLE_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_BRAZIL</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_IBERIA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN_EUROPEAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>BRA</Identifier>
@@ -2596,7 +2596,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_INDIGO_AND_WHITE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MUISCA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN_NATIVE</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>MUI</Identifier>
@@ -3096,7 +3096,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_VERY_LIGHT_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_PORTUGAL</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_IBERIA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN_EUROPEAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_DRUIDISM</PaganReligion>
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>POR</Identifier>
@@ -4025,7 +4025,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_JADE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TUPI</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN_NATIVE</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>TUP</Identifier>
