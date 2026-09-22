@@ -116,7 +116,7 @@ dForeignAdjectives = deepdict({
 
 dForeignNames = deepdict({
 	iSpain : {
-		iAztec : "TXT_KEY_CIV_SPANISH_NAME_AZTECS",
+		iAztec : "TXT_KEY_CIV_MEXICO_SHORT_DESC",
 	},
 	iFrance : {
 	},
@@ -518,6 +518,8 @@ def vassalName(iPlayer, iMaster):
 def republicName(iPlayer):
 	iCiv = civ(iPlayer)
 
+	if iCiv == iCSA: return "TXT_KEY_CIV_AMERICA_SHORT_DESC"
+
 	if iCiv == iEngland: return None
 	
 	if iCiv == iInca and data.civs[iPlayer].iResurrections > 0: return None
@@ -554,7 +556,11 @@ def specificName(iPlayer):
 			
 			
 			
-	if iCiv == iNetherlands:
+	if iCiv == iInca:
+		if not bResurrected and not bEmpire:
+			return capitalName(iPlayer)
+			
+	elif iCiv == iNetherlands:
 		if bCityStates:
 			return short(iPlayer)
 			
@@ -673,6 +679,8 @@ def vassalTitle(iPlayer, iMaster):
 def communistTitle(iPlayer):
 	iCiv = civ(iPlayer)
 
+	if iCiv == iCherokee: return key(iPlayer, "REPUBLIC")
+
 	if iCiv in lSocialistRepublicOf: return "TXT_KEY_SOCIALIST_REPUBLIC_OF"
 	if iCiv in lSocialistRepublicAdj: return "TXT_KEY_SOCIALIST_REPUBLIC_ADJECTIVE"
 	if iCiv in lPeoplesRepublicOf: return "TXT_KEY_PEOPLES_REPUBLIC_OF"
@@ -681,11 +689,20 @@ def communistTitle(iPlayer):
 	return key(iPlayer, "COMMUNIST")
 	
 def fascistTitle(iPlayer):
+	if civ(iPlayer) == iCSA: return key(iPlayer, "REPUBLIC")
+
 	return key(iPlayer, "FASCIST")
 	
 def republicTitle(iPlayer):
 	iCiv = civ(iPlayer)
 	pPlayer = player(iPlayer)
+	
+	if iCiv in [iHaudenosaunee, iMuisca]:
+		return None
+	
+	if iCiv == iPeru or (iCiv == iTiwanaku and pPlayer.getPeriod() == iTiwanakuBolivia):
+		if isControlled(iPlayer, plots.region(rPeru)) and isControlled(iPlayer, plots.region(rBolivia)):
+			return "TXT_KEY_CIV_PERU_BOLIVIAN_CONFEDERATION"
 
 	if iCiv == iEngland:
 		iEra = pPlayer.getCurrentEra()
@@ -699,6 +716,9 @@ def republicTitle(iPlayer):
 	if iCiv == iColombia:
 		if isControlled(iPlayer, plots.region(rPeru)) and isControlled(iPlayer, plots.region(rColombia)):
 			return "TXT_KEY_CIV_COLOMBIA_FEDERATION_ANDES"
+		
+		if all(isControlled(iPlayer, plots.region(iRegion)) for iRegion in [rColombia, rVenezuela, rEcuador]):
+			return "TXT_KEY_CIV_COLOMBIA_GRAN_COLOMBIA"
 			
 	if pPlayer.getStateReligion() == iIslam:
 		if iCiv in lIslamicRepublicOf: return "TXT_KEY_ISLAMIC_REPUBLIC_OF"
@@ -746,6 +766,10 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if bCityStates:
 			return "TXT_KEY_CIV_AZTECS_ALTEPETL"
 	
+	elif iCiv == iPurepecha:
+		if bEmpire:
+			return "TXT_KEY_EMPIRE_ADJECTIVE"
+
 	elif iCiv == iSpain:
 			
 		if bEmpire and iEra > iColonialEra:
