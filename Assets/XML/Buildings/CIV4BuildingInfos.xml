@@ -9990,8 +9990,8 @@
 			<BuildingClass>BUILDINGCLASS_MOUNT_RUSHMORE</BuildingClass>
 			<Type>BUILDING_MOUNT_RUSHMORE</Type>
 			<Description>TXT_KEY_BUILDING_MOUNT_RUSHMORE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_MOUNT_RUSHMORE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_MOUNT_RUSHMORE_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_MT_RUSHMORE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_MT_RUSHMORE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MT_RUSHMORE</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_MOUNT_RUSHMORE</MovieDefineTag>

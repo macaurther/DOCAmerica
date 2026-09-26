@@ -2421,4 +2421,40 @@
 		<Italian>The Tarascan Archer represents the distinctive military traditions of the Purepecha state of western Mesoamerica. Unlike many neighboring societies, which relied heavily on the atlatl (spear-thrower) and sling as their primary missile weapons, the Purepecha made greater and more systematic use of the bow in warfare.[PARAGRAPH:1]Purepecha armies fielded organized formations equipped with shields, copper weapons, and archers capable of sustained volleys. This emphasis on archery provided range and flexibility in battle, particularly in the lake basins and hill country of Michoacan, where controlling distance and approach routes was critical. Spanish accounts noted their disciplined resistance and effective missile fire during early encounters, which contributed to the Purepecha reputation as one of the strongest military powers of western Mesoamerica.</Italian>
 		<Spanish>The Tarascan Archer represents the distinctive military traditions of the Purepecha state of western Mesoamerica. Unlike many neighboring societies, which relied heavily on the atlatl (spear-thrower) and sling as their primary missile weapons, the Purepecha made greater and more systematic use of the bow in warfare.[PARAGRAPH:1]Purepecha armies fielded organized formations equipped with shields, copper weapons, and archers capable of sustained volleys. This emphasis on archery provided range and flexibility in battle, particularly in the lake basins and hill country of Michoacan, where controlling distance and approach routes was critical. Spanish accounts noted their disciplined resistance and effective missile fire during early encounters, which contributed to the Purepecha reputation as one of the strongest military powers of western Mesoamerica.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALUNIT_ICBM</Tag>
+		<English>ICBM</English>
+		<French>
+			<Text>Missile intercontinental</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>ICBM</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>ICBM:ICBM</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>ICBM:ICBM</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALUNIT_SATELLITE</Tag>
+		<English>Satellite</English>
+		<French>
+			<Text>Satellite</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Satellit</German>
+		<Italian>Satellite</Italian>
+		<Spanish>Satellite</Spanish>
+	</TEXT>
 </Civ4GameText>

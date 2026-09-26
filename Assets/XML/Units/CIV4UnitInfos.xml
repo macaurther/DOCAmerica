@@ -12545,7 +12545,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_SLAVE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_SLAVE</Description>
-			<Civilopedia>TXT_KEY_UNIT_AZTEC_SLAVE_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_UNIT_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_SLAVE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bSlave>1</bSlave>
