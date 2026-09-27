@@ -110,90 +110,42 @@
 		<Spanish>Revolutionary Union of %s1</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PERU_DEFAULT</Tag>
-		<English>Kingdom of %s1</English>
+		<Tag>TXT_KEY_CIV_CHILE_COMMUNIST</Tag>
+		<English>Socialist Republic of %s1</English>
 		<French>
-			<Text>Royaume du %s1</Text>
-			<Gender>Male</Gender>
+			<Text>R&#233;publique socialiste de %s1</Text>
+			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
-		<German>
-			<Text>K&#246;nigreich %s1:K&#246;nigreich %s1:K&#246;nigreich %s1</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Regno del %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Reino de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
+		<German>Socialist Republic of %s1</German>
+		<Italian>Socialist Republic of %s1</Italian>
+		<Spanish>Socialist Republic of %s1</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PERU_COMMUNIST</Tag>
-		<English>%s2 Revolutionary Movement</English>
+		<Tag>TXT_KEY_CIV_CHILE_FASCIST</Tag>
+		<English>%s2 Junta</English>
 		<French>
-			<Text>Mouvement r&#233;volutionnaire %s2</Text>
-			<Gender>Male</Gender>
+			<Text>Junte %s2</Text>
+			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
 		<German>
-			<Text>Revolution&#228;re Bewegung der %s2:Revolution&#228;re Bewegung der %s2:Revolution&#228;ren Bewegung der %s2</Text>
+			<Text>%s2 Junta:%s2 Junta:%s2 Junta</Text>
 			<Gender>Female:Female:Female</Gender>
 			<Plural>0:0:0</Plural>
 		</German>
 		<Italian>
-			<Text>Movimento Rivoluzionario %s2</Text>
-			<Gender>Male</Gender>
+			<Text>Giunta %s2</Text>
+			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Movimiento Revolucionario %s2</Text>
+			<Text>Junta %s2</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Spanish>
 	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_PERU_FASCIST</Tag>
-		<English>Government of the %s2 Armed Forces</English>
-		<French>
-			<Text>Gouvernement des Forces arm&#233;es %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Regierung der %s2-Streitkr&#228;fte:Regierung der %s2-Streitkr&#228;fte:Regierung der %s2-Streitkr&#228;fte</Text>
-			<Gender>Female:Female:Female</Gender>
-			<Plural>1:1:1</Plural>
-		</German>
-		<Italian>
-			<Text>Governo delle Forze Armate %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Gobierno de las Fuerzas Armadas %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
 
-	<TEXT>
-		<Tag>TXT_KEY_CIV_PERU_ADJECTIVE</Tag>
-		<English>Peruvian</English>
-		<French>
-			<Text>p&#233;ruvien:p&#233;ruvienne:p&#233;ruviens:p&#233;ruviennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Peruvian</German>
-		<Italian>Peruvian</Italian>
-		<Spanish>Peruvian</Spanish>
-	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_INCA_FOUR_REGIONS</Tag>
 		<English>Four %s2 Regions</English>

@@ -3267,7 +3267,7 @@
 		<Spanish>Resources</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_VICTORY_DESC_CONTACT</Tag>
+		<Tag>TXT_KEY_VICTORY_DESC_CONTACT_TRIBE</Tag>
 		<English>contact %s1</English>
 		<French></French>
 		<German></German>
@@ -3275,7 +3275,7 @@
 		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_VICTORY_DESC_CONTACT_TRIBE</Tag>
+		<Tag>TXT_KEY_VICTORY_DESC_CONTACT_TRIBE_TRIBES</Tag>
 		<English>%s1 Tribes</English>
 		<French></French>
 		<German></German>
@@ -3291,7 +3291,7 @@
 		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_VICTORY_DESC_CONVERT</Tag>
+		<Tag>TXT_KEY_VICTORY_DESC_CONVERT_SPREADS</Tag>
 		<English>convert %s1</English>
 		<French></French>
 		<German></German>

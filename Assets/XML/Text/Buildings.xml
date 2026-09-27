@@ -2733,4 +2733,44 @@
 		<Italian>(Wikipedia)Compound units served widely different purposes as they formed the basis of simple dwellings as well as of temples and palaces; furthermore, several compound could be grouped together to form blocks in large settlements.</Italian>
 		<Spanish>(Wikipedia)Compound units served widely different purposes as they formed the basis of simple dwellings as well as of temples and palaces; furthermore, several compound could be grouped together to form blocks in large settlements.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MIDEWIWIN_MIDEWIGAAN_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Midewigaan[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]River Combat[COLOR_REVERT] promotion for free.</English>
+		<French>The [COLOR_BUILDING_TEXT]Midewigaan[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]River Combat[COLOR_REVERT] promotion for free.</French>
+		<German>The [COLOR_BUILDING_TEXT]Midewigaan[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]River Combat[COLOR_REVERT] promotion for free.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Midewigaan[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]River Combat[COLOR_REVERT] promotion for free.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Midewigaan[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]River Combat[COLOR_REVERT] promotion for free.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ANGAKKUQ_QARGI_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Qargi[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion for free.</English>
+		<French>The [COLOR_BUILDING_TEXT]Qargi[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion for free.</French>
+		<German>The [COLOR_BUILDING_TEXT]Qargi[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion for free.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Qargi[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion for free.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Qargi[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion for free.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GAIWIIO_LONGHOUSE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Gai wiio Longhouse[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotion for free.</English>
+		<French>The [COLOR_BUILDING_TEXT]Gai wiio Longhouse[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotion for free.</French>
+		<German>The [COLOR_BUILDING_TEXT]Gai wiio Longhouse[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotion for free.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Gai wiio Longhouse[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotion for free.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Gai wiio Longhouse[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotion for free.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_KACHINA_PITHOUSE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Pithouse[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Guerrilla I[COLOR_REVERT] promotion for free.</English>
+		<French>The [COLOR_BUILDING_TEXT]Pithouse[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Guerrilla I[COLOR_REVERT] promotion for free.</French>
+		<German>The [COLOR_BUILDING_TEXT]Pithouse[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Guerrilla I[COLOR_REVERT] promotion for free.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Pithouse[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Guerrilla I[COLOR_REVERT] promotion for free.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Pithouse[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Guerrilla I[COLOR_REVERT] promotion for free.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WOCEKIYA_SHRINE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Wocekiya Shrine[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Morale[COLOR_REVERT] promotion for free.</English>
+		<French>The [COLOR_BUILDING_TEXT]Wocekiya Shrine[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Morale[COLOR_REVERT] promotion for free.</French>
+		<German>The [COLOR_BUILDING_TEXT]Wocekiya Shrine[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Morale[COLOR_REVERT] promotion for free.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Wocekiya Shrine[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Morale[COLOR_REVERT] promotion for free.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Wocekiya Shrine[COLOR_REVERT] provides +1 [ICON_HAPPY] and +1 [ICON_CULTURE]. Eligible units trained in the city receive the [COLOR_HIGHLIGHT_TEXT]Morale[COLOR_REVERT] promotion for free.</Spanish>
+	</TEXT>
 </Civ4GameText>
