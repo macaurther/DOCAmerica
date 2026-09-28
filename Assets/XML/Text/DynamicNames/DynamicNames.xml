@@ -534,4 +534,12 @@
 			<Plural>0</Plural>
 		</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RESERVATION_ADJECTIVE</Tag>
+		<English>%s2 Reservation</English>
+		<French>%s2 Reservation</French>
+		<German>%s2 Reservation</German>
+		<Italian>%s2 Reservation</Italian>
+		<Spanish>%s2 Reservation</Spanish>
+	</TEXT>
 </Civ4GameText>

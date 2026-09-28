@@ -626,6 +626,9 @@ def specificAdjective(iPlayer):
 ### Title methods ###
 
 def title(iPlayer):
+	if team(iPlayer).isAVassal() and player(iPlayer).getCultureGroup() == iCultureGroupNative and player(master(iPlayer)).getCultureGroup() == iCultureGroupNation:
+		return "TXT_KEY_RESERVATION_ADJECTIVE"
+
 	if isCapitulated(iPlayer):
 		sVassalTitle = vassalTitle(iPlayer, master(iPlayer))
 		if sVassalTitle: return sVassalTitle
