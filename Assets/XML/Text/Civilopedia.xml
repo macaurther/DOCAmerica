@@ -2401,7 +2401,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GHOST_DANCE_PEDIA</Tag>
-		<English>[TAB]Sovereignty is the full right and power of a governing body over itself, without any interference from outside sources or bodies. A civilisation that has lost the power to assert its own sovereignty has essentially been destroyed or at least subordinated. On the other hand, Sovereignty itself implies that the civilisation exerts no influence over anything else than its core territory.</English>
+		<English>[TAB]The Ghost Dance was an Indigenous religious revitalization movement that spread across the western United States in the late nineteenth century. The Northern Paiute spiritual leader Wovoka taught that ceremonial dancing and righteous conduct would help bring about a renewed world in which living people could be reunited with the dead. Communities adapted these teachings to their own traditions amid dispossession, hunger and pressure to abandon Indigenous ways of life.[PARAGRAPH:2]Among the Lakota, the movement offered hope during a period of severe hardship. United States authorities treated its spread as a threat and sent troops to the reservations. The resulting confrontation culminated in the massacre of Lakota men, women and children at Wounded Knee in December 1890. The Ghost Dance expressed hopes for spiritual renewal and the survival of Indigenous communities; it was not simply a program of political isolation.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -3985,24 +3985,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_CONDITIONAL_SPAWNS_PEDIA</Tag>
-		<English>[H1]Conditional Spawns[\H1][PARAGRAPH:2]Certain civilizations in Dawn of Civilization only spawn when the right conditions are met. These civilizations are Byzantium, Italy, the Ottomans, Thailand, Iran, and Mexico. Their requirements are listed below:
-[NEWLINE][BOLD]Byzantium:[\BOLD]
-[ICON_BULLET]Greece has to be dead
-[ICON_BULLET]Rome has to be alive
-[ICON_BULLET]If Rome is human controlled, the Byzantine spawn can be prevented by having a Solid stability
-[NEWLINE][BOLD]Italy:[\BOLD]
-[ICON_BULLET]Rome has to be dead
-[NEWLINE][BOLD]Ottomans:[\BOLD]
-[ICON_BULLET]Always spawns if any city in their birth area is human controlled
-[ICON_BULLET]Does not spawn if the Turks never conquer a city in Asia west of Persia
-[NEWLINE][BOLD]Thailand:[\BOLD]
-[ICON_BULLET]Always spawns if the Khmer are dead
-[ICON_BULLET]Also spawns if the Khmer stability is Shaky or lower
-[ICON_BULLET]If the human player controls the Khmer, Shaky stability is sufficient to prevent the Thai spawn
-[NEWLINE][BOLD]Iran:[\BOLD]
-[ICON_BULLET]Persia has to be dead
-[NEWLINE][BOLD]Mexico:[\BOLD]
-[ICON_BULLET]Aztecs have to be dead[PARAGRAPH:2]The civilizations of Argentina, Mexico, Colombia, Brazil, and Canada are considered conditional independence spawns. Their spawn is canceled if all players that control any city in their birth area have Solid stability.</English>
+		<English>[H1]Conditional Spawns[\H1][PARAGRAPH:2]Civilizations normally appear at their scheduled birth dates. The following additional conditions apply to AI births:[NEWLINE][ICON_BULLET][BOLD]Mexico:[\BOLD] the Aztecs must no longer exist.[NEWLINE][ICON_BULLET][BOLD]Confederate States of America:[\BOLD] the United States must be controlled by a human player.[PARAGRAPH:2]Solid stability does not cancel independence births in this mod. During autoplay, civilizations of Limited or Marginal historical impact may also be skipped if the selected civilization begins more than 20 scaled turns after their historical fall. Available player slots and historical impact can affect whether a birth proceeds; see Historical Impact.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4039,9 +4022,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DIPLOMATIC_INSTITUTIONS_PEDIA</Tag>
-		<English>[H1]Diplomatic Institutions[\H1][PARAGRAPH:2]The [BOLD]Apostolic Palace[\BOLD] and [BOLD]League of Nations[\BOLD] have seen some changes in Dawn of Civilizations. Several rules have been modified and certain resolutions were to increase their impact and make them more interesting to interact with. General changes:
+		<English>[H1]Diplomatic Institutions[\H1][PARAGRAPH:2]The [BOLD]League of Nations[\BOLD] follows modified diplomatic rules in this mod. Several rules have been modified and certain resolutions were added to increase their impact and make them more interesting to interact with. General changes:
 [ICON_BULLET]Instead of being directly proportional to population, the number of votes of a civilization are now proportional to the square root of its population. This reduces the influence of large civilizations and makes cooperation with smaller civilizations more important.
-[ICON_BULLET]Defying resolutions now follows different rules for the two institutions.
 [ICON_BULLET]When a civilization attempts to win a diplomatic victory, its own votes and the votes of its vassals are disregarded. Instead it needs to win a majority among the remaining votes. This way, the diplomatic victory truly requires diplomacy, and cannot be achieved by military subjugation.
 [H2]League of Nations[\H2]
 [ICON_BULLET]Security Council: only the four civilizations with the highest military power are allowed to defy resolutions.
@@ -4055,26 +4037,15 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOC_ODDS_PEDIA</Tag>
 		<English>[H1]Odds and Ends: Dawn of Civilization[\H1]
-[ICON_BULLET]The plague can't kill units anymore
+[ICON_BULLET]Plague damage to combat units is capped at 50%; noncombat workers can still die from plague.
 [ICON_BULLET]Cities of a vassalized civilization can keep control of the first ring around its cities, unless it's also the first ring of a master's city
 [ICON_BULLET]AI civilizations become more unstable if they survive ahistorically long
-[ICON_BULLET]The American conqueror event automatically leads to war
-[ICON_BULLET]It's impossible to vassalize far away civilizations until the discovery of Exploration
-[ICON_BULLET]It's impossible to train settlers on other continents than your capital's until the discovery of Exploration
-[ICON_BULLET]AI Mongols get additional armies to attack Russia and the Middle East
-[ICON_BULLET]Pagan Temples can only be built in cities without religions (this does not apply to unique buildings that replace Pagan Temples)
-[ICON_BULLET]Religion spread to a city turns Pagan Temples into temples of the new religion
-[ICON_BULLET]Free tech events like Liberalism or Oracle only allow to choose techs from your current or earlier eras
-[ICON_BULLET]The Seljuks attack the Middle East in the 11th century
-[ICON_BULLET]Buddhism is founded by building a Hindu Temple
 [ICON_BULLET]Palace costs scale with the current game era
 [ICON_BULLET]Cities built on resources on islands with five or less tiles receive the production and commerce as the best improvement for the resource
 [ICON_BULLET]Missionary success chances depend on the civilization they attempt to proselytize, similar to the natural spread of religions
 [ICON_BULLET]Independent civilizations can't circumnavigate or get conquerors
-[ICON_BULLET]The spawn of the Tamil, Tibetan, Moorish, Polish and Congolese civilizations can be disabled or randomized by editing the GlobalDefinesAlt.xml file
 [ICON_BULLET]Great Artist specialists give +1 [ICON_HAPPY]
 [ICON_BULLET]The human player isn't at war with any civilization on spawn anymore
-[ICON_BULLET]The location of goody huts on the map is randomly determined at the beginning of the game
 [ICON_BULLET]Revolutions still cause anarchy during Golden Ages, but the Golden Age counter will not decrease during anarchy
 [ICON_BULLET]The range of the Blockade mission has been reduced to 2
 [ICON_BULLET]New set of difficulty levels: Heir, Regent, Monarch, Emperor and Paragon. Regent is the standard difficulty. Monarch and Paragon feature stronger AI opponents than their preceding levels.
@@ -4098,7 +4069,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_NEW_CORPORATIONS_PEDIA</Tag>
-		<English>[H1]Corporations in Dawn of Civilization[\H1][PARAGRAPH:2]Corporation headquarters and executives have been removed in Dawn of Civilization. Instead, corporations spread on their own to cities that can attract them. To be able to attract a corporation, you need to have the associated technology and control at least one of the consumed resources. The chance increases by acquiring more resources, constructing appropriate buildings or adopting the Free Market civic. The number of cities per corporation is limited, so corporations can also leave one city and move to another that fulfills its requirements better. Certain corporations also compete with each other, reducing the chance of being present in the same city.[PARAGRAPH:2]The Silk Route and Trading Company corporations behave differently from the others. They don't require the Corporation technology to spread to your cities, but are limited to certain historical regions of the map. Also, they expire after a certain date and start to leave your cities.</English>
+		<English>[H1]Corporations in Dawn of Civilization[\H1][PARAGRAPH:2]Corporation headquarters and executives have been removed in Dawn of Civilization. Instead, corporations spread on their own to cities that can attract them. To be able to attract a corporation, you need to have the associated technology and control at least one of the consumed resources. The chance increases by acquiring more resources, constructing appropriate buildings or adopting Free Enterprise or Trading Company. The number of cities per corporation is limited, so corporations can also leave one city and move to another that fulfills its requirements better. Certain corporations also compete with each other, reducing the chance of being present in the same city.[PARAGRAPH:2]Each industry has its own technology requirements, suitable resources and buildings, and expiry date. Trading Company also spreads the Trapping Industry and West Indies Company to eligible cities when adopted, when Companies is discovered, and when cities are founded or acquired. The West Indies Company and Fishing Industry require coastal cities. Consult the corporation entries for their resources and benefits.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4129,7 +4100,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_RESPAWNS_PEDIA</Tag>
-		<English>[H1]Rebirths and Resurrections in Dawn of Civilization[\H1][PARAGRAPH:2]There are different mechanics for collapsed civilizations to return into the game. Resurrection refers to the rules already present in vanilla RFC that allow a civilization to return if its core is controlled by independents or an unstable civilization. This effect is limited to certain periods in Dawn of Civilization, to prevent ahistorical respawns of ancient and classical civs. Also, it's not necessary to discover Nationalism to enable this mechanism, although it increases the probability of resurrections. This means that you will see resurrections occur earlier in the game. Outside of periodic checks, these resurrections can also occur when an unstable civilization collapses - if their territory includes the core of a civilization that can return, these cities will become part of this civilization instead of being independent.[PARAGRAPH:2]Dawn of Civilization also adds another mechanic that is referred to as rebirths. These are scripted and return a specific dead civ at specific dates, if certain conditions are met. Also, the faction now represents a completely new civilization with UU, UB, UP and UHV. Players can take control of these civilizations and complete their victory goals by switching to them, even if they have switched once already. Currently, this mechanic covers the rebirths of Persia as Iran, Maya as Colombia and Aztecs as Mexico.</English>
+		<English>[H1]Rebirths and Resurrections in Dawn of Civilization[\H1][PARAGRAPH:2]There are different mechanics for collapsed civilizations to return into the game. Resurrection refers to the rules already present in vanilla RFC that allow a civilization to return if its core is controlled by independents or an unstable civilization. This effect is limited to certain periods in Dawn of Civilization, to prevent ahistorical respawns of ancient and classical civs. Also, it's not necessary to discover Nationalism to enable this mechanism, although it increases the probability of resurrections. This means that you will see resurrections occur earlier in the game. Outside of periodic checks, these resurrections can also occur when an unstable civilization collapses - if their territory includes the core of a civilization that can return, these cities will become part of this civilization instead of being independent.[PARAGRAPH:2]In this mod, some resurrected civilizations enter a later historical period: Maya becomes Guatemala, Chimu becomes Ecuador, Tiwanaku becomes Bolivia, Tupi becomes Paraguay, Arawak becomes Guyana, and Inca becomes Chile. These period changes are distinct from the births of separate civilizations such as Colombia and Mexico.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4149,14 +4120,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_SLAVERY_PEDIA</Tag>
-		<English>[H1]Slavery[\H1][PARAGRAPH:2]Dawn of Civilization aims to represent the transatlantic slave trade as part of the Columbian Exchange. To this purpose, a slave unit has been added to the game.
-[NEWLINE][BOLD]Capturing slave units[\BOLD][PARAGRAPH:2]Slave units cannot be trained. Instead it is possible to capture them in combat. This is enabled by two civics: Slavery (Society) and Colonialism (Territory). Every time when defeating a Native unit while running one of these civics, there is a chance of receiving a slave unit.
-[NEWLINE][BOLD]Trading slave units[\BOLD][PARAGRAPH:2]The other option to acquire slaves is by trade. This is only enabled for civilizations that control at least one colony. If any of the civilizations participating in a trade has colonies, slave units will appear on the table just like resources, techs etc. 
-[NEWLINE][BOLD]Using slave units[\BOLD][PARAGRAPH:2]It is only possible to use slaves in the Americas and Sub-Saharan Africa. In addition, certain civics (Egalitarianism, Nationhood, and Multilateralism) prevent the use of slaves. The possible actions for slaves are:
-[NEWLINE][BOLD]Build a slave plantation:[\BOLD] the slave can build a slave plantation on all tiles that have a resource which requires a plantation, yielding +1 [ICON_PRODUCTION] and +2 [ICON_COMMERCE] compared to a normal plantation. The slave is used in the process, similar to a work boat.
-[NEWLINE][BOLD]Join city as a slave specialist:[\BOLD] the slave can permanently join the city as a slave specialist, yielding 2 [ICON_PRODUCTION] and creating 1 [ICON_UNHAPPY]. The number of slaves per city is limited to half of its population.
-[NEWLINE][BOLD]Freeing the slaves[\BOLD][PARAGRAPH:2]Slave effects (plantations and specialists) only remain active as long as you can use slaves (see above). When you abandon the civics required for slavery, Slave Plantations will revert to ordinary Plantations and Slave specialists will be removed. Likewise, when territory with a Slave Plantation is acquired by a civilization that cannot use slaves, it will revert to a Plantation. Slaves present in cities will always be freed on conquest. If the conqueror can also use slaves, they will receive an equivalent number of Slave units in return.
-[NEWLINE][BOLD]The Aztecs[\BOLD][PARAGRAPH:2]The Aztec unique power enables them to acquire slave units by winning battles; regardless of the losing unit there is a chance of acquiring a slave unit. Aztec slaves also have the additional abilities of acting as workers and can be sacrificed in their cities, as a way to temporarily increase happiness there.</English>
+		<English>[H1]Slavery[\H1][PARAGRAPH:2]Slave units represent coerced labor and the slave trade. Capturing slaves, trading them, and using their labor follow different rules.[NEWLINE][BOLD]Capturing slaves[\BOLD][PARAGRAPH:1]A combat enslavement attempt requires a defeated military land unit that is not an animal, with at least one combatant belonging to an Indigenous civilization. Capture chances are increased by Tlacotin (+25 percentage points), Encomienda (+33), Sacrifice (+25), the Mesoamerican regional power (+25), and certain unique units. These bonuses add together. Other enslavement opportunities include city conquest and pillaging Tribes.[NEWLINE][BOLD]Using slaves[\BOLD][PARAGRAPH:1]Slave labor is not restricted to overseas colonies. Eligible units can create Slave Plantations or Slave Mines, or settle as Slave specialists. The normal specialist limit is half the city population, rounded down; Slavery or Bondage raises it to twice the population. Unit and improvement entries show the available actions and yields.[NEWLINE][BOLD]Civic restrictions[\BOLD][PARAGRAPH:1]Tlacotin, Mita, Encomienda, Slavery and Bondage explicitly permit slavery. Emancipation, Sharecropping, Industrialism, Immigrant Labor, Labor Unions, Mechanization, Segregation and Egalitarianism forbid it unless an active civic explicitly permits it. Without either type of civic, slave use remains allowed.[NEWLINE][BOLD]Freeing slaves[\BOLD][PARAGRAPH:1]When a civic change makes slave use unavailable, Slave Plantations revert to Plantations, Slave Mines revert to Mines, settled slaves are freed, and existing slave units are removed.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4164,200 +4128,104 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_STABILITY_INFLUENCES_PEDIA</Tag>
-		<English>[H1]Stability Influence Factors[\H1]
-[NEWLINE][BOLD]EXPANSION[\BOLD]
-[NEWLINE][BOLD]Overextension[\BOLD]
-Overextension is the main factor of expansion stability. It depends on two scores:
-[ICON_BULLET]core population score
-[ICON_BULLET]periphery population score
-[NEWLINE]Without taking modifiers into account, they are just the population in your core and the population outside of your core, respectively. As long as your periphery population score is below your core population score, everything is fine. Once the periphery score exceeds 100% of the core population score, you will receive an expansion stability penalty according to a formula which I will explain later. The scores are affected by a number of modifiers and therefore aren't only based on city population.
-[NEWLINE]The [BOLD]core population score[\BOLD] is multiplied by your current era plus one. Since the modifier is era-based, your ability to support a large periphery grows during the game.
-[NEWLINE]The [BOLD]periphery population score[\BOLD] for every city is based on many different factors. Since a lower periphery score is better for stability, negative modifiers are desired.
-+2 if the city is not on historical territory (so it makes sense to mainly control historical tiles)
-+1 if you are not the original owner of this city (unless you are running Totalitarianism, or the city is under your control for more than 25 turns)
-+1 if you have less than 50% culture in this city
-+1 if you have less than 20% culture in this city (those two penalties are cumulative, for a total of +2 if you are below 20%. Culture counts double within their civilization's own cores. Persia is immune to culture-based penalties due to their UP)
-+1 if it is a historical overseas city and you are running Totalitarianism
--1 if the city has a Courthouse
--1 if the city has a Jail
--1 if it is a historical overseas city and you are running Colonialism
--1 if it is an overseas city and you are Portugal (their UP)
-
-[NEWLINE]In addition to city population, each Village and Town in your core counts as one core population.
-[NEWLINE]The expansion penalty can be at most -25, and grows faster right after the periphery score exceeds the core score than later on. This allows a diminishing yet growing effect of expansion stability that allows playing Domination games without making expansion stability irrelevant in more historical games.
-[NEWLINE]Between stability checks, the overextension penalty can only increase by at most 5 negative points. For instance, if you had a penalty of 0 in the last check and the calculation results in -10, you will still only get a penalty of -5 until the next check.
-[NEWLINE]Adopting Isolationism and keeping your periphery population at 10 or lower will give you +10 stability.
-[NEWLINE][BOLD]Recent Expansion[\BOLD]
-Founding and conquering cities in your historical area provides positive stability. The effect lasts for 20 turns from when the city has been acquired. The stability from recently conquered cities is higher when running Conquest and due to the Persian UP.
-[NEWLINE][BOLD]Razing[\BOLD]
-You get a -10 stability penalty for every city you have razed. This penalty decays by 2 points every 5 turns. This penalty is global, that means if you accrue -20 raze stability from razing two cities, it still decays by 2 points every 5 turns, instead of by 4. The exception to this rule are smaller cities. If the city has never had a population of more than 5, the penalty is -2 * [highest population the city has had] instead. This exception does not apply to another civilizations capital, which always gives a -10 penalty when razed.
-Barbarian-owned cities will not count for this penalty, while cities owned by minor civilizations are worth only half of the usual penalty points.
-[NEWLINE][BOLD]ECONOMY[\BOLD]
-[NEWLINE][BOLD]Economic Growth[\BOLD]
-The economic growth score is updated every third turn, in which the total amount of commerce produced is compared to the amount from three turns earlier. Has it grown by more than 5%, the score increases, has it shrunk by more than 5%, it decreases. Otherwise the score slowly moves towards 0 again. At every stability check the score is directly applied to the economy stability.
-[NEWLINE][BOLD]DOMESTIC[\BOLD]
-[NEWLINE][BOLD]Happiness[\BOLD]
-Happiness stability works similar to economic growth stability in that it is accumulating every third turn depending on the situation of your civilization. To that end, the happy and unhappy cities in a civilization are counted based on the following criteria:
-[NEWLINE][BOLD]Happy city:[\BOLD] currently celebrates the "We Love the King" day OR its happiness exceeds its unhappiness by at least a quarter of your empire's average city size and it has at least the average city size of your empire
-[BOLD]Unhappy city:[\BOLD] the city has more unhappiness than happiness OR the extra unhappiness (from all factors except population) exceeds a fifth of the city's population
-[NEWLINE]Note that it is possible for a city to not fulfill either of these criteria, in which case it doesn't count at all for the purposes of happiness stability. A city can also both fulfill the criteria for being happy and unhappy, in which case it counts as happy. Your happiness stability grows every third turn if you have more happy than unhappy cities, and declines if you have more unhappy than happy cities. This factor cannot exceed -5 or 5, respectively. If the amount of happy and unhappy cities is exactly the same, the value slowly approaches 0 again.
-[NEWLINE][BOLD]Religion[\BOLD]
-For religions, two or three percentages are calculated:
-[ICON_BULLET]the percentage of cities that have your state religion (believer ratio)
-[ICON_BULLET]the percentage of cities that have at least one non-state religion (heathen ratio)
-[ICON_BULLET]if you are running Theocracy, the percentage of cities that have ONLY your state religion
-[NEWLINE]Some non-state religions are ignored for the purposes of the second and third ratios ("tolerance").
-[ICON_BULLET]civs with either Tolerance or Secularism tolerate all non-state religions
-[ICON_BULLET]Hinduism and Buddhism tolerate each other
-[NEWLINE][BOLD]Heathen ratio:[\BOLD] You incur neither penalties nor bonuses if your ratio is 30%. Otherwise, you receive -1 stability for every 10% over 30% and +1 stability for every 10% below 30%.
-[BOLD]Believer ratio:[\BOLD] You incur neither penalties nor bonuses if your ratio is 75%. Otherwise, you receive -1 stability for every 5% below 75% (up to a maximum of -10) and +1 stability for every 5% over 75%.
-[BOLD]Theocracy bonus:[\BOLD] if you are running Theocracy, you also receive +1 stability for every 20% of your cities that only have your state religion.
-[NEWLINE]Note that while the other factors require you to have a state religion, the religion stability from the heathen ratio also applies when you don't have a state religion.
-[NEWLINE][BOLD]Civics[\BOLD]
-Civics stability comes either from running a certain combination of civics or from running specific civics in a certain era or after discovering a certain technology.
-
-Totalitarianism + State Party: +5
-Totalitarianism + Despotism: +3
-Totalitarianism + Revolutionism: +3
-Totalitarianism + Central Planning: +3
-Totalitarianism + Secularism: +2
-Totalitarianism + any religious civic except Secularism: -5
-Totalitarianism + Constitution: -5
-Totalitarianism + Democracy: -3
-
-Central Planning + Egalitarianism: +2
-Central Planning + State Party: +2
-Central Planning + Centralism: +2
-
-Egalitarianism + Democracy: +2
-Egalitarianism + Constitution: +2
-Egalitarianism + any religious civic except Tolerance and Secularism: -3
-
-Individualism + Republic or Democracy: +2
-Individualism + Free Enterprise: +3
-Individualism + Central Planning: -5
-Individualism + Regulated Trade or Public Welfare: -2
-Individualism + Tolerance: +2
-
-Theocracy + Individualism or Egalitarianism: -3
-
-Deification + Republic or Democracy: -3
-Deification + Redistribution before the Medieval era: +2
-Deification + Slavery before the Medieval era: +2
-
-Vassalage + Individualism or Egalitarianism: -5
-Vassalage + Free Enterprise or Central Planning or Public Welfare: -3
-Vassalage + Tributaries: +5
-Vassalage + Monarchy in the Medieval era: +2
-Vassalage + Manorialism in the Medieval era: +3
-
-Republic + Citizenship: +2
-Republic + Vassalage: -3
-Republic + Merchant Trade: +2
-
-Centralism + Democracy: -5
-Centralism + Regulated Trade: +3
-Centralism + Clergy: +2
-Centralism + Monarchy in the Renaissance: +2
-
-Despotism + Slavery: +2
-Despotism + Nationhood: +3
-
-Caste System + Citizenship: -4
-Caste System + Clergy: +2
-Caste System + Secularism: -3
-
-Multilateralism + Despotism: -3
-Multilateralism + Totalitarianism: -3
-Multilateralism + Egalitarianism: +2
-Multilateralism + Theocracy: -3
-
-Monarchy + Clergy or Monasticism: +2
-
-Elective + Centralism: -5
-
-Constitution + Democracy: +2
-
-Revolutionism + any religious civic except Tolerance and Secularism: -3
-
-Regulated Trade + Manorialism: +2
-Regulated Trade + Meritocracy: +3
-
-Isolationism + Merchant Trade or Free Enterprise: -4
-Isolationism + Regulated Trade or Central Planning: +3
-
-
-
-Vassalage in the Middle Ages: +2
-Vassalage in the Industrial Era or later: -5
-
-Deification in the Classical Era or earlier: +2
-Deification after the Classical Era: -2 per era after the Classical Era
-
-Republic in the Classical Era or earlier: +2
-Republic in the Industrial Era or later: -5
-
-Isolationism after the Renaissance: -3 per era after the Renaissance
-
-Not running any civic out of Republic, Democracy, Revolutionism or Constitution after the discovery of Representation: -5
-
-Slavery or Manorialism or Caste System after the discovery of Civil Rights: -5
-
-Reciprocity or Redistribution or Merchant Trade after the discovery of Economics: -5
-
-Conquest or Tributaries after the discovery of Nationalism: -5
-
-Animism or Deification after the discovery of Theology: -5
-
-Caste System with Hindu state religion: +3
-
-Slavery with Christian state religion: -3
-
-Slavery with Muslim state religion: +2
-
-Monasticism with Buddhist state religion: +2
-[NEWLINE][BOLD]FOREIGN[\BOLD]
-[NEWLINE]Several factors contribute to your foreign stability rating:
-[NEWLINE][BOLD]Vassal stability[\BOLD]
-Vassals receive +4 stability for every stability level their master exceeds them by
-
-Masters receive:
-
-For every collapsing vassal: -3
-For every unstable vassal: -1
-For every solid vassal: +2
-
-For every vassal when running Tributaries: +2
-
-[BOLD]Relations stability[\BOLD]
-If civilisations we know have overall more favourable than unfavourable impressions of us (different relationship factors in the diplomacy tooltip), we receive positive stability, otherwise negative stability. The impact of the effect increases if the relationship factors are at three or more.
-
-For every player that is more powerful and sees you as their worst enemy: -3
-
-With Isolationism, relations stability can never be negative, and positive relations stability is halved.
-
-[BOLD]Defensive Pact stability[\BOLD]
-
-For every civilisation with a higher score we have a defensive pact with: +3
-
-With Multilateralism, for every civilisation we have a defensive pact with: +3
-
-[BOLD]Civic specific foreign stability[\BOLD]
-
-For every neighbor you are at war with while running Nationhood: +2
-For every civilization you are at war with while running Multilateralism: -2
-For every civilization with different state religion you are at war with while running Theocracy: +3
-For every civilization with the same state religion you are at war with while running Theocracy: -2
-[NEWLINE][BOLD]MILITARY[\BOLD]
-[NEWLINE]All military scores are calculated for each war your civilization is in.
-[NEWLINE][BOLD]Conquest Stability[\BOLD]
-This factor depends on the number of cities you have conquered from this civ compared to those you have lost to it. Cities are worth more if the owner has less of them, i.e. losing a city has a larger impact if you don't have a lot of them in the first place.
-[NEWLINE][BOLD]Battle Stability[\BOLD]
-Similar to conquest stability, the battles you have won are compared to the battles you have lost. In either case, a battle is "worth" as much as the defeated unit's power rating. How much battle stability you get or lose depends on your overall military strength - the stronger you are, the less of an impact a singular battle has in either way. Battle stability decays while a war lasts.
-[NEWLINE][BOLD]War Weariness Stability[\BOLD]
-Your war weariness is compared to your enemy's. If it is larger, you receive a penalty proportional to the difference. This penalty also decays while the war lasts.
-[NEWLINE][BOLD]Barbarian Losses Stability[\BOLD]
-You receive a -1 stability penalty for every battle you lose against a barbarian unit. This penalty also decays over time.</English>
+		<English>[H1]Stability Influence Factors[\H1][NEWLINE][BOLD]EXPANSION[\BOLD][NEWLINE][BOLD]Administration and separatism[\BOLD][PARAGRAPH:1]Administration supports territory outside your core. Core city population contributes administration, modified by era, civilization and Courthouses; the capital adds population again outside decline. Worked Villages and Towns in your core also contribute. European civilizations have special capital administration values to represent their overseas homelands. There is an additional base allowance of 10 administration.[PARAGRAPH:1]Non-core cities generate separatism from population, with increases for ahistorical territory, recent foreign ownership, low cultural control and hurry or conscription anger. Jails reduce the modifier. Dictator removes the recent-foreign-ownership modifier. Recent conquests in designated conquest areas temporarily contribute no separatism. Once separatism exceeds administration, overextension imposes an increasingly severe penalty approaching -25. Isolationism gives +10 stability when total separatism is at most 10.[NEWLINE][BOLD]Recent expansion and razing[\BOLD][PARAGRAPH:1]Recent historical settlements and conquests in historical or conquest areas add stability for 20 scaled turns, unless the civilization is in decline. Conquest or Imperialism increases the conquest bonus. Razing a city normally costs the human player 10 stability; small non-capitals cost less and minor-owned cities halve the penalty. Barbarian cities are exempt. Imperialism or Manifest Destiny exempts cities of Native-culture owners. Pillaging a Tribe costs 1 stability unless either civic is active. The accumulated razing penalty recovers by 2 every five turns.[NEWLINE][BOLD]ECONOMY[\BOLD][PARAGRAPH:1]Economic stability follows the recent economic trend. Free Enterprise increases the effect of growth or contraction; Public Welfare halves a negative economic score.[NEWLINE][BOLD]DOMESTIC[\BOLD][PARAGRAPH:1]Happiness stability follows recent happiness trends and is normally limited to -5 through +5. Representatives doubles negative happiness stability. Religious stability reflects the share of the population following the state religion and the presence of non-tolerated, non-local religions. Patronato doubles the penalty for excessive non-tolerated religion, while Representatives doubles a negative religious score.
+[NEWLINE][BOLD]Civic combinations[\BOLD][PARAGRAPH:1]Each listed pair contributes +2 or -2 stability when both civics are active. Add all matching pairs; unlisted pairs have no combination modifier. Each pair is listed once. Confederacy makes the entire civic-combination score zero, including bonuses and penalties. It does not remove era or technology penalties. Negative combination totals are halved for AI civilizations.
+[NEWLINE][BOLD]Native civics[\BOLD]
+[ICON_BULLET][BOLD]Chief[\BOLD]: +2 with Clans, Subsistance, Nomadic; -2 with Bureaucracy.
+[ICON_BULLET][BOLD]Despot[\BOLD]: +2 with Mit'a, Raiding, Sacrifice, Conquest; -2 with City States, Tribal Confederacy, Tourism.
+[ICON_BULLET][BOLD]Monarch[\BOLD]: +2 with Organized Religion.
+[ICON_BULLET][BOLD]Aristocrats[\BOLD]: +2 with Bureaucracy, Caste System, Merchant Trade; -2 with Clans, Isolationism.
+[ICON_BULLET][BOLD]God King[\BOLD]: +2 with Vassalage, Tributaries.
+[ICON_BULLET][BOLD]Council[\BOLD]: +2 with Tribal Confederacy, First Nation, Tourism, Ancestral Lands.
+[ICON_BULLET][BOLD]Clans[\BOLD]: +2 with Isolationism; -2 with Caste System, Sacrifice, Organized Religion, Integration.
+[ICON_BULLET][BOLD]City States[\BOLD]: +2 with Tlacotin, Caste System, Organized Religion, Cosmopolitans, Tributaries; -2 with Subsistance, Redistribution.
+[ICON_BULLET][BOLD]Tribal Confederacy[\BOLD]: +2 with Craftsmen, Calpulli, Dependency; -2 with Isolationism, Integration.
+[ICON_BULLET][BOLD]Bureaucracy[\BOLD]: +2 with Mit'a, Guilds, Redistribution, Organized Religion; -2 with Harmony, Nomadic.
+[ICON_BULLET][BOLD]Vassalage[\BOLD]: +2 with Tributaries.
+[ICON_BULLET][BOLD]First Nation[\BOLD]: +2 with Craftsmen, Tourism, Ancestral Lands.
+[ICON_BULLET][BOLD]Subsistance[\BOLD]: -2 with Redistribution, Sacrifice, Conquest.
+[ICON_BULLET][BOLD]Tlacotin[\BOLD]: +2 with Raiding, Sacrifice, Tributaries; -2 with Isolationism.
+[ICON_BULLET][BOLD]Mit'a[\BOLD]: +2 with Redistribution, Conquest, Integration.
+[ICON_BULLET][BOLD]Craftsmen[\BOLD]: +2 with Merchant Trade, Cosmopolitans; -2 with Nomadic.
+[ICON_BULLET][BOLD]Caste System[\BOLD]: +2 with Organized Religion; -2 with Calpulli, Tourism, Harmony, Integration.
+[ICON_BULLET][BOLD]Guilds[\BOLD]: +2 with Dependency, Acculturation.
+[ICON_BULLET][BOLD]Redistribution[\BOLD]: +2 with Organized Religion, Integration; -2 with Nomadic, Isolationism.
+[ICON_BULLET][BOLD]Merchant Trade[\BOLD]: +2 with Cosmopolitans, Acculturation, Nomadic, Tributaries; -2 with Isolationism.
+[ICON_BULLET][BOLD]Raiding[\BOLD]: +2 with Sacrifice, Ghost Dance, Ancestral Lands; -2 with Harmony, Isolationism.
+[ICON_BULLET][BOLD]Dependency[\BOLD]: +2 with Acculturation; -2 with Ghost Dance, Conquest.
+[ICON_BULLET][BOLD]Tourism[\BOLD]: +2 with Acculturation, Ancestral Lands; -2 with Isolationism.
+[ICON_BULLET][BOLD]Harmony[\BOLD]: +2 with Nomadic, Isolationism; -2 with Conquest.
+[ICON_BULLET][BOLD]Sacrifice[\BOLD]: +2 with Conquest; -2 with Isolationism.
+[ICON_BULLET][BOLD]Organized Religion[\BOLD]: +2 with Tributaries.
+[ICON_BULLET][BOLD]Cosmopolitans[\BOLD]: +2 with Integration.
+[ICON_BULLET][BOLD]Acculturation[\BOLD]: +2 with Ancestral Lands.
+[ICON_BULLET][BOLD]Ghost Dance[\BOLD]: +2 with Ancestral Lands.
+[NEWLINE][BOLD]Colony civics[\BOLD]
+[ICON_BULLET][BOLD]Proprietors[\BOLD]: +2 with Charter Colony, Indentured Servitude, Penal Colony, Plantation, Grants; -2 with Commonwealth, Mercantilism, Jesuits, Creolism.
+[ICON_BULLET][BOLD]Viceroys[\BOLD]: +2 with Encomienda, Plunder, Customs Union, Patronato, Castas, Imperialism.
+[ICON_BULLET][BOLD]Trustees[\BOLD]: +2 with Trading Company, Slavery, Extraction, Factory, Outposts; -2 with Secretariate, Encomienda, Conscription, Mercantilism.
+[ICON_BULLET][BOLD]Governors[\BOLD]: +2 with Royal Colony, Conscription, Mercantilism, Patronato, Intervention; -2 with Admiralty, Jesuits.
+[ICON_BULLET][BOLD]Colonial Assembly[\BOLD]: +2 with Secretariate, Apprenticeship, Customs Union, Emancipation, Dependencies; -2 with Trading Company.
+[ICON_BULLET][BOLD]Home Rule[\BOLD]: +2 with Commonwealth, Apprenticeship, Customs Union, Creolism, Grants; -2 with Charter Colony, Trading Company, Royal Colony, Extraction, Mercantilism, Intervention.
+[ICON_BULLET][BOLD]Admiralty[\BOLD]: +2 with Slavery, Penal Colony, Extraction, Haven; -2 with Customs Union, Patronato.
+[ICON_BULLET][BOLD]Charter Colony[\BOLD]: +2 with Indentured Servitude, Factory, Plantation, Haven, Providence, Grants; -2 with Plunder.
+[ICON_BULLET][BOLD]Trading Company[\BOLD]: +2 with Slavery, Extraction, Factory; -2 with Encomienda, Penal Colony, Mercantilism, Emancipation, Grants.
+[ICON_BULLET][BOLD]Royal Colony[\BOLD]: +2 with Mercantilism, Emancipation, Intervention; -2 with Encomienda.
+[ICON_BULLET][BOLD]Secretariate[\BOLD]: +2 with Apprenticeship, Mercantilism, Intervention; -2 with Dependencies.
+[ICON_BULLET][BOLD]Commonwealth[\BOLD]: +2 with Customs Union, Emancipation, Dependencies; -2 with Mercantilism.
+[ICON_BULLET][BOLD]Encomienda[\BOLD]: +2 with Plunder, Patronato, Castas, Imperialism; -2 with Customs Union, Haven, Creolism.
+[ICON_BULLET][BOLD]Indentured Servitude[\BOLD]: +2 with Factory, Haven, Providence, Grants; -2 with Plantation, Emancipation.
+[ICON_BULLET][BOLD]Slavery[\BOLD]: +2 with Plantation, Castas; -2 with Creolism, Emancipation.
+[ICON_BULLET][BOLD]Conscription[\BOLD]: +2 with Extraction, Jesuits.
+[ICON_BULLET][BOLD]Penal Colony[\BOLD]: -2 with Plunder, Jesuits, Emancipation, Grants.
+[ICON_BULLET][BOLD]Apprenticeship[\BOLD]: +2 with Mercantilism, Jesuits, Grants.
+[ICON_BULLET][BOLD]Plunder[\BOLD]: +2 with Patronato, Imperialism; -2 with Grants.
+[ICON_BULLET][BOLD]Extraction[\BOLD]: +2 with Imperialism; -2 with Haven, Grants.
+[ICON_BULLET][BOLD]Factory[\BOLD]: +2 with Outposts.
+[ICON_BULLET][BOLD]Plantation[\BOLD]: +2 with Castas.
+[ICON_BULLET][BOLD]Mercantilism[\BOLD]: -2 with Patronato.
+[ICON_BULLET][BOLD]Customs Union[\BOLD]: +2 with Emancipation, Dependencies; -2 with Imperialism.
+[ICON_BULLET][BOLD]Jesuits[\BOLD]: +2 with Providence.
+[ICON_BULLET][BOLD]Patronato[\BOLD]: +2 with Imperialism.
+[ICON_BULLET][BOLD]Haven[\BOLD]: +2 with Providence.
+[ICON_BULLET][BOLD]Emancipation[\BOLD]: +2 with Intervention.
+[NEWLINE][BOLD]Nation civics[\BOLD]
+[ICON_BULLET][BOLD]Junta[\BOLD]: +2 with Martial Law, Police State; -2 with Federalism, Labor Unions, Free Enterprise, Libertarianism.
+[ICON_BULLET][BOLD]Sovereign[\BOLD]: +2 with Kleptocracy, Unitary, Bondage, Agrarianism; -2 with Public Welfare, Egalitarianism, Decolonization.
+[ICON_BULLET][BOLD]Plutocrats[\BOLD]: +2 with Kleptocracy, Industrialism, Immigrant Labor, Labor Unions, Free Enterprise, Protectionism, Defense Complex, Profiteering.
+[ICON_BULLET][BOLD]Representatives[\BOLD]: +2 with Federalism, Protectionism, Public Welfare, Libertarianism, Opportunity, Egalitarianism, Assimilation; -2 with Martial Law, Police State, Bondage, Nativism.
+[ICON_BULLET][BOLD]Dictator[\BOLD]: +2 with Kleptocracy, Police State, Nationhood; -2 with Federalism, Libertarianism, Egalitarianism.
+[ICON_BULLET][BOLD]State Party[\BOLD]: +2 with Unitary, Labor Unions, Hegemony; -2 with Free Enterprise, Consumerism.
+[ICON_BULLET][BOLD]Martial Law[\BOLD]: -2 with Free Enterprise, Libertarianism.
+[ICON_BULLET][BOLD]Federalism[\BOLD]: +2 with Defense Complex, Opportunity, Segregation, Homesteads, Manifest Destiny, Nationhood; -2 with Labor Unions.
+[ICON_BULLET][BOLD]Kleptocracy[\BOLD]: +2 with Sharecropping, Industrialism, Free Enterprise, Defense Complex, Profiteering; -2 with Protectionism, Opportunity.
+[ICON_BULLET][BOLD]Unitary[\BOLD]: +2 with Labor Unions, Public Welfare, Assimilation.
+[ICON_BULLET][BOLD]Police State[\BOLD]: +2 with Protectionism, Defense Complex, Segregation, Nativism, Nationhood; -2 with Immigrant Labor, Labor Unions, Public Welfare, Libertarianism, Opportunity, Egalitarianism, Assimilation.
+[ICON_BULLET][BOLD]Bondage[\BOLD]: +2 with Agrarianism, Profiteering, Manifest Destiny; -2 with Consumerism, Public Welfare, Opportunity, Egalitarianism.
+[ICON_BULLET][BOLD]Sharecropping[\BOLD]: +2 with Free Enterprise, Segregation, Homesteads.
+[ICON_BULLET][BOLD]Industrialism[\BOLD]: +2 with Free Enterprise, Consumerism, Profiteering, Opportunity, Hegemony; -2 with Protectionism.
+[ICON_BULLET][BOLD]Immigrant Labor[\BOLD]: +2 with Consumerism, Profiteering, Opportunity; -2 with Protectionism, Public Welfare, Nativism.
+[ICON_BULLET][BOLD]Labor Unions[\BOLD]: +2 with Public Welfare, Egalitarianism; -2 with Free Enterprise, Libertarianism.
+[ICON_BULLET][BOLD]Mechanization[\BOLD]: +2 with Consumerism, Defense Complex, Hegemony.
+[ICON_BULLET][BOLD]Agrarianism[\BOLD]: +2 with Segregation, Homesteads, Manifest Destiny; -2 with Opportunity.
+[ICON_BULLET][BOLD]Free Enterprise[\BOLD]: +2 with Libertarianism, Opportunity.
+[ICON_BULLET][BOLD]Protectionism[\BOLD]: +2 with Nativism, Decolonization.
+[ICON_BULLET][BOLD]Consumerism[\BOLD]: +2 with Profiteering, Opportunity.
+[ICON_BULLET][BOLD]Defense Complex[\BOLD]: +2 with Nationhood, Hegemony.
+[ICON_BULLET][BOLD]Public Welfare[\BOLD]: +2 with Egalitarianism; -2 with Segregation.
+[ICON_BULLET][BOLD]Libertarianism[\BOLD]: +2 with Homesteads; -2 with Nationhood.
+[ICON_BULLET][BOLD]Profiteering[\BOLD]: +2 with Manifest Destiny.
+[ICON_BULLET][BOLD]Opportunity[\BOLD]: +2 with Assimilation.
+[ICON_BULLET][BOLD]Nativism[\BOLD]: +2 with Nationhood; -2 with Assimilation.
+[ICON_BULLET][BOLD]Egalitarianism[\BOLD]: -2 with Manifest Destiny, Nationhood.
+[NEWLINE][BOLD]Civics: eras and technologies[\BOLD][PARAGRAPH:1]These penalties are separate from civic combinations and accumulate. A list joined by "or" applies its penalty once, even if more than one listed civic is active. Negative era/technology totals are halved for AI civilizations.
+[ICON_BULLET]Industrial era onward: Isolationism receives -3 per era after the Revolutionary era.
+[ICON_BULLET]Industrial era onward: Guilds, Slavery or Bondage -5; Caste System -5; Admiralty -3; Indentured Servitude -2; Mercantilism -3.
+[ICON_BULLET]Revolutionary era onward: Animism -4; Chief -5; Traditionalism -5.
+[ICON_BULLET]After Civil Rights: Guilds, Slavery, Bondage or Caste System -5.
+[ICON_BULLET]After Nationalism: Conquest, Imperialism or Tributaries -5.
+[ICON_BULLET]After Evangelism: Animism or Council -5.
+[NEWLINE][BOLD]FOREIGN[\BOLD][PARAGRAPH:1]Vassal stability, diplomatic relations and defensive pacts contribute to foreign stability. Masters receive -3 for each Collapsing vassal, -1 for each Unstable vassal and +2 for each Solid vassal; Tributaries adds +2 per vassal. A defensive pact with a higher-scoring civilization gives +3. Relations are weighted by relative standing. Isolationism prevents a negative relations score and halves a positive one. Nationhood gives +2 for each neighboring civilization you are at war with.[NEWLINE][BOLD]MILITARY[\BOLD][PARAGRAPH:1]Recent war-success trends contribute positively or negatively, adjusted by overall success against current enemies. Greater war weariness than your enemies imposes a penalty, moderated as wars lengthen. Losses to barbarians impose a penalty capped at -10, which decays over time.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4452,24 +4320,7 @@ Your stability level can change during a stability check. As long it is higher t
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_PAGAN_RELIGIONS_PEDIA</Tag>
-		<English>[H1]Pagan Religions[\H1][PARAGRAPH:2]In Dawn of Civilization, civilizations that have not adopted a major religion as their state religion have a pagan state religion, as opposed to no state religion at all. Unlike major state religions, this pagan religion has no positive effects, and is functionally treated just like having no state religion. Your pagan religion is determined by your civilization, and cannot be changed.[PARAGRAPH:1]Each pagan religion comes with its own variant of the Pagan Temple with a specific name and graphics. For example, the Babylonian pagan religion is Anunnaki, and its pagan temple is the Ziggurat. However, these variants are functionally identical to the default pagan temple.[PARAGRAPH:1]Be aware that since they are not a major religion, pagan religions cannot spread to any cities. Some buildings and wonders can only be built in "pagan" cities. These are all cities with no major religion (except Judaism and Taoism) present and controlled by a civilization with a pagan state religion.[PARAGRAPH:1]Finally, your pagan religion determines the second goal of the pagan Unique Religious Victory.
-[NEWLINE][BOLD]Anunnaki:[\BOLD] make your capital the city with the most wonders in the world
-[BOLD]Asatru:[\BOLD] control five units of level five or higher
-[BOLD]Atua:[\BOLD] control four Pearl resources and 50 Ocean tiles
-[BOLD]Baalism:[\BOLD] make your capital the city with the highest trade income in the world
-[BOLD]Bon:[\BOLD] control 50 peaks
-[BOLD]Druidism:[\BOLD] control 20 Forest and Marsh tiles
-[BOLD]Inti:[\BOLD] have at least half as much gold in your treasury as all other players combined
-[BOLD]Mazdaism:[\BOLD] acquire six Incense resources
-[BOLD]Mugyo:[\BOLD] make your capital the city with the most settled great people in the world
-[BOLD]Olympianism:[\BOLD] control ten wonders that do not require a state religion
-[BOLD]Pesedjet:[\BOLD] be the first to create three different Great People
-[BOLD]Rodnovery:[\BOLD] acquire seven Fur resources
-[BOLD]Shendao:[\BOLD] control 25% of the world's population
-[BOLD]Tengri:[\BOLD] acquire eight Horse resources
-[BOLD]Teotl:[\BOLD] acquire 50 food from combat (Maya) or sacrifice ten slaves (Aztecs)
-[BOLD]Vedism:[\BOLD] have your cities celebrate for 100 turns
-[BOLD]Yoruba:[\BOLD] acquire eight Ivory and six Gem resources</English>
+		<English>[H1]Pagan Religions[\H1][PARAGRAPH:2]Civilizations that have not adopted a major state religion display their own pagan tradition instead. This identity is determined by the civilization; it does not spread between cities like a major religion.[PARAGRAPH:1]Pagan traditions have associated temples with distinct names and graphics. In this mod their effects can differ, including promotions granted to eligible units. Consult the individual temple entries for their actual bonuses.[PARAGRAPH:1]Pagan buildings normally require a city without a major religion. Judaism alone does not prevent construction unless it is the owner's state religion. Other building requirements still apply.[PARAGRAPH:1]The base DoC list of pagan Unique Religious Victory goals does not apply here.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4477,10 +4328,10 @@ Your stability level can change during a stability check. As long it is higher t
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_BIRTH_OF_A_CIVILIZATION_PEDIA</Tag>
-		<English>[H1]Birth of a Civilization[\H1][PARAGRAPH:2]Only the Egyptian, Babylonian, and Harappan civilizations are present on the map at the start of the game in 3000 BC. Other civilizations appear over the course of the game based on their historical start dates. If you have selected one of these civilizations, the game will proceed in autoplay until it is time for your civilization to appear. This is referred to as the birth of a civilization. It follows these rules:
+		<English>[H1]Birth of a Civilization[\H1][PARAGRAPH:2]The civilizations present at the start depend on the scenario. Other civilizations appear over the course of the game based on their historical start dates. If you have selected one of these civilizations, the game will proceed in autoplay until it is time for your civilization to appear. This is referred to as the birth of a civilization. It follows these rules:
 [NEWLINE][BOLD]Birth location and area[\BOLD][PARAGRAPH:2]Every civilization is born on a predefined tile. Its starting units will appear on that tile. In addition to that, there is a wider area affected by the birth of a civilization. It usually encompasses its core, but may also include additional tiles. This area is referred to as its birth area, and labeled as "Rise of [civilization name]" in the tile tooltip.
 [NEWLINE][BOLD]Before birth[\BOLD][PARAGRAPH:2]Five turns before the actual birth date, the birth of a civilization is being prepared. This involves the following steps:
-[NEWLINE][ICON_BULLET][BOLD]Birth prerequisites check:[\BOLD] Some civilizations can only spawn on specific conditions. These are checked at this point, before birth preparations take effect. If they are not met, the birth of the civilization is canceled. You can look up which civilizations are affected by this and what the exact conditions are in the "Conditional Birth" section.
+[NEWLINE][ICON_BULLET][BOLD]Birth prerequisites check:[\BOLD] Some civilizations can only spawn on specific conditions. These are checked at this point, before birth preparations take effect. If they are not met, the birth of the civilization is canceled. You can look up which civilizations are affected by this and what the exact conditions are in the "Conditional Spawns" section.
 [ICON_BULLET][BOLD]Prepare birth circumstances:[\BOLD] For some civilizations, additional resources and other map changes appear at this point.
 [ICON_BULLET][BOLD]Activate birth protection:[\BOLD] The new civilization and all tiles in its birth area are designated as "birth protected". This enables some additional rules and protections for the new civilization while it lasts. They are listed in detail further down.
 [ICON_BULLET][BOLD]Remove minors and barbarians:[\BOLD] All barbarian and independent units within the birth area are moved out to the closest tile at the edge of the birth area. Cities are left in place, and units can remain inside them. As part of the birth protection rules, barbarians cannot reenter the birth area.
@@ -4498,7 +4349,7 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET][BOLD]Flip tiles:[\BOLD] The new civilization then also receives full cultural control of all tiles in the flipped area.
 [ICON_BULLET][BOLD]War on flip:[\BOLD] For every AI civilization that previously controlled one of the flipped cities, there is a chance that they will declare war on the new civ in response. The probability depends on the civilization. If the previous owner is human controlled, they get a popup to decide to go to war instead. Since declaring war on a recently spawned civilization is otherwise impossible, this is the only opportunity to go to war with them.
 [ICON_BULLET][BOLD]Announce flip:[\BOLD] The new civilization receives a notification message listing the new cities that flipped to them.
-[ICON_BULLET][BOLD]Advanced start:[\BOLD] After the flip, some civilizations receive [BOLD]advanced start points[\BOLD]. These points can be used to add improvements to tiles and population, culture or buildings to cities within the civilization's birth area. Any unused advanced start points will be converted into gold in the treasury. Thise phase is skipped for civilizations that do not get advanced start points.
+[ICON_BULLET][BOLD]Advanced start:[\BOLD] After the flip, some civilizations receive [BOLD]advanced start points[\BOLD]. These points can be used to add improvements to tiles and population, culture or buildings to cities within the civilization's birth area. Any unused advanced start points will be converted into gold in the treasury. This phase is skipped for civilizations that do not get advanced start points.
 [NEWLINE][BOLD]Birth protection[\BOLD][PARAGRAPH:2]As mentioned above, recently born civilizations are considered birth protected. Birth protection only applies within the birth area of its civilization, which is marked with "Rise of [civilization name]" in the tile tooltip. The exception are effects that are not tied to a specific location.
 [NEWLINE][ICON_BULLET]Free unit upkeep
 [ICON_BULLET]Their last city is impossible to capture. It can be attacked, but after the last defender is defeated it is impossible to enter the city itself.
@@ -4530,15 +4381,12 @@ Your stability level can change during a stability check. As long it is higher t
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_HISTORICAL_IMPACT_PEDIA</Tag>
-		<English>[H1]Historical Impact[\H1][PARAGRAPH:2]There can be at most 32 active civilizations (including minors) in the game at the same time. If there are currently 32 civilizations in the game, and a new civilization is about to spawn, depending on the civilizations involved the spawn is either canceled or an existing civilization collapses to make room for the new civilization. The idea of this mechanism is to allow for smaller, less historically prominent civilizations to appear in the game without preventing the spawn of more relevant civilizations that are required to make the world feel historically accurate.[PARAGRAPH:2]To determine this outcome, each civilization has an associated historical impact. The levels of historical impact are, in descending order:
+		<English>[H1]Historical Impact[\H1][PARAGRAPH:2]The game has a limited number of active civilization slots, including minor civilizations. If all available slots are occupied when a new civilization is about to spawn, depending on the civilizations involved the spawn is either canceled or an existing civilization collapses to make room for the new civilization. The idea of this mechanism is to allow for smaller, less historically prominent civilizations to appear in the game without preventing the spawn of more relevant civilizations that are required to make the world feel historically accurate.[PARAGRAPH:2]To determine this outcome, each civilization has an associated historical impact. The levels of historical impact are, in descending order:
 [NEWLINE][ICON_BULLET][BOLD]Player[\BOLD]
 [ICON_BULLET][BOLD]Critical[\BOLD]
 [ICON_BULLET][BOLD]Significant[\BOLD]
 [ICON_BULLET][BOLD]Limited[\BOLD]
-[ICON_BULLET][BOLD]Marginal[\BOLD][PARAGRAPH:2]The general rule is that only civilizations of higher historical impact can force the collapse of a civilization with lower historical impact to be able to spawn. However, stability is also taken into account. If any of the civilizations with lower impact are collapsing, one of them is chosen to collapse. If no collapsing civilizations exist, an unstable civilization that is past its historical fall date is chosen instead. If multiple such civilizations exist, the one with the lowest impact and furthest past its fall date is chosen. If none match the criteria, the spawn of the upcoming civilization fails.[PARAGRAPH:2]The [BOLD]Player[\BOLD] impact is special. It is not associated with any particular civilization, but is reserved for the civilization currently controlled by the player. This ensures that the player civilization can always spawn and can never be forcibly collapsed to make room for another civilization. In addition to the player controlled civilization, civilizations that are relevant to their game experience and historical environment are also assigned the [BOLD]Player[\BOLD] impact. These include their neighbours and historical rivals as well as civilizations in control of their victory goal areas, to make sure they are present to provide a challenge and historical verisimilitude to the play experience of the civilization chose by the player.[PARAGRAPH:2]Most civilizations are of the [BOLD]Critical[\BOLD] impact level, and there are enough slots to accomodate all [BOLD]Critical[\BOLD] civilizations. For the other impact levels, the civilizations are:
-[NEWLINE][ICON_BULLET][BOLD]Significant:[\BOLD] Ethiopia, Tamils, Byzantium, Moors, Indonesia, Khmer, Mali, Italy, Thailand, Brazil
-[ICON_BULLET][BOLD]Limited:[\BOLD] Harappa, Tibet, Poland, Congo, Argentina, Mexico, Colombia, Canada
-[ICON_BULLET][BOLD]Marginal:[\BOLD] Polynesia[PARAGRAPH:2]The impact of a civilization can also change over time. Civilizations that can never respawn are regarded as one impact level lower. The same is true if a civilization is past its fall date and it either cannot be resurrected until the end of the game, or their resurrection is only possible after their fall date. Even in these circumstances the impact level cannot be reduced below [BOLD]Marginal[\BOLD], and civilizations with [BOLD]Player[\BOLD] impact are not affected at all.
+[ICON_BULLET][BOLD]Marginal[\BOLD][PARAGRAPH:2]The general rule is that only civilizations of higher historical impact can force the collapse of a civilization with lower historical impact to be able to spawn. However, stability is also taken into account. If any of the civilizations with lower impact are collapsing, one of them is chosen to collapse. If no collapsing civilizations exist, an unstable civilization that is past its historical fall date is chosen instead. If multiple such civilizations exist, the one with the lowest impact and furthest past its fall date is chosen. If none match the criteria, the spawn of the upcoming civilization fails.[PARAGRAPH:2]The [BOLD]Player[\BOLD] impact is special. It is not associated with any particular civilization, but is reserved for the civilization currently controlled by the player. This ensures that the player civilization can always spawn and can never be forcibly collapsed to make room for another civilization. In addition to the player controlled civilization, civilizations that are relevant to their game experience and historical environment are also assigned the [BOLD]Player[\BOLD] impact. These include their neighbours and historical rivals as well as civilizations in control of their victory goal areas, to make sure they are present to provide a challenge and historical verisimilitude to the play experience of the civilization chose by the player.[PARAGRAPH:2]The impact of a civilization can also change over time. Civilizations that can never respawn are regarded as one impact level lower. The same is true if a civilization is past its fall date and it either cannot be resurrected until the end of the game, or their resurrection is only possible after their fall date. Even in these circumstances the impact level cannot be reduced below [BOLD]Marginal[\BOLD], and civilizations with [BOLD]Player[\BOLD] impact are not affected at all.
 		</English>
 	</TEXT>
 	<TEXT>
@@ -4785,7 +4633,7 @@ Your stability level can change during a stability check. As long it is higher t
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_CITY_CONQUEST_PEDIA</Tag>
-		<English>[H1]City Conquest[\H1][PARAGRAPH:2]The rules for conquered cities have been changed. Conquering a city now has a greater impact on how long it is in unrest, how much of its population is killed, and how many buildings are destroyed. However, the damages are no longer immediate on the turn that the city is conquered. Instead, they are gradually applied while it is in unrest. This gives the opportunity to reconquer the city, which immediately stops the unrest and prevents any further loss of population or buildings.[PARAGRAPH:2]The same is true when razing cities as well. Instead of destroying the city immediately, its entire population is gradually killed why it is in unrest. Only when the city population reaches zero, it is finally destroyed. This way, there is time to save a city from outright destruction.[PARAGRAPH:2]These changes also affect how buildings are destroyed. Previously, for every building there was a random chance of whether it will be destroyed on conquest. Now, a specific portion of the buildings present in the city are destroyed. Certain buildings are more susceptible to destruction and are destroyed before less vulnerable ones. Some buildings, especially wonders, will never be destroyed this way. Additionally, defensive buildings like Walls and Castles are always destroyed. The only way to preserve defensive buildings is to conquer a city without damaging its defenses at all.[PARAGRAPH:2]The amount of gold looted when capturing a city is proportional to the damage caused. That also means that cities with more buildings have more loot. There are now two additional options when conquering a city: it can be [BOLD]Sacked[\BOLD], which increases the unrest time, damage to its buildings, the amount of population killed, and the amount of gold looted, while also worsening relations with the previous owner of the city. Alternatively, it can be [BOLD]Spared[\BOLD], which reduces unrest, population loss, and destroyed buildings, at the cost of spending additional gold.
+		<English>[H1]City Conquest[\H1][PARAGRAPH:2]The rules for conquered cities have been changed. Conquering a city now has a greater impact on how long it is in unrest, how much of its population is killed, and how many buildings are destroyed. However, the damages are no longer immediate on the turn that the city is conquered. Instead, they are gradually applied while it is in unrest. This gives the opportunity to reconquer the city, which immediately stops the unrest and prevents any further loss of population or buildings.[PARAGRAPH:2]The same is true when razing cities as well. Instead of destroying the city immediately, its entire population is gradually killed while it is in unrest. Only when the city population reaches zero, it is finally destroyed. This way, there is time to save a city from outright destruction.[PARAGRAPH:2]These changes also affect how buildings are destroyed. Previously, for every building there was a random chance of whether it will be destroyed on conquest. Now, a specific portion of the buildings present in the city are destroyed. Certain buildings are more susceptible to destruction and are destroyed before less vulnerable ones. Some buildings, especially wonders, will never be destroyed this way. Additionally, defensive buildings like Walls and Castles are always destroyed. The only way to preserve defensive buildings is to conquer a city without damaging its defenses at all.[PARAGRAPH:2]The amount of gold looted when capturing a city is proportional to the damage caused. That also means that cities with more buildings have more loot. There are now two additional options when conquering a city: it can be [BOLD]Sacked[\BOLD], which increases the unrest time, damage to its buildings, the amount of population killed, and the amount of gold looted, while also worsening relations with the previous owner of the city. Alternatively, it can be [BOLD]Spared[\BOLD], which reduces unrest, population loss, and destroyed buildings, at the cost of spending additional gold.
 		</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
@@ -4794,7 +4642,7 @@ Your stability level can change during a stability check. As long it is higher t
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_LIMITED_RESOURCE_EFFECTS_PEDIA</Tag>
-		<English>[H1]Limited Resource Effects[\H1][NEWLINE]In Dawn of Civilization, the number of cities a resource can provide health or happiness to is limited. For example, each instance of the Silk only provides happiness to three cities in your empire. It is therefore necessary to secure multiple instances of a resource to supply all cities in a large empire. If a civilization does not control enough instances of a resource to supply all of its cities, the effect is applied to more cultured cities first. In consequence, it is advisable for large empires to focus on obtaining multiple instances of the same resource, while small civilizations should focus on a diverse set of resources. Note that these new rules only apply to health or happiness directly from resources. Health and happiness from resources with buildings remain unaffected, as well as all other resource effects (e.g. enabling units or providing power).</English>
+		<English>[H1]Limited Resource Effects[\H1][NEWLINE]In Dawn of Civilization, the number of cities a resource can provide health or happiness to is limited. Each resource entry shows how many cities one instance can supply. It is therefore necessary to secure multiple instances of a resource to supply all cities in a large empire. If a civilization does not control enough instances of a resource to supply all of its cities, the effect is applied to more cultured cities first. In consequence, it is advisable for large empires to focus on obtaining multiple instances of the same resource, while small civilizations should focus on a diverse set of resources. Note that these new rules only apply to health or happiness directly from resources. Health and happiness from resources with buildings remain unaffected, as well as all other resource effects (e.g. enabling units or providing power).</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
