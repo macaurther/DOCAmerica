@@ -328,6 +328,16 @@
 			<Button>,Art/Interface/Buttons/Buildings/Courthouse.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,2,2</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_YACATAS</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>6</fScale>
+			<fInterfaceScale>1.2</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/Yacatas/Yacatas.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Wonders/Yacatas.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_JAIL</Type>
 			<LSystem>LSYSTEM_2x1</LSystem>
 			<bAnimated>0</bAnimated>
@@ -1541,9 +1551,9 @@
 			<Type>ART_DEF_BUILDING_SACSAYHUAMAN</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>0.75</fScale>
-			<fInterfaceScale>0.9</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/Athos/hilmon.NIF</NIF>
+			<fScale>2.5</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/Sacsayhuaman/Sacsayhuaman.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Sacsayhuaman.dds</Button>
 		</BuildingArtInfo>
@@ -1751,9 +1761,9 @@
 			<Type>ART_DEF_BUILDING_LA_FORTALEZA</Type>
 			<LSystem>LSYSTEM_COAST</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>3.5</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/TorreDeBelem/torre13.nif</NIF>
+			<fScale>12</fScale>
+			<fInterfaceScale>1.5</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/LaFortaleza/LaFortaleza.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/LaFortaleza.dds</Button>
 		</BuildingArtInfo>
@@ -2451,11 +2461,11 @@
 			<Type>ART_DEF_BUILDING_STONEHENGE</Type>
 			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.54</fScale>
-			<fInterfaceScale>0.57</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Stonehenge/Stonehenge.nif</NIF>
+			<fScale>4.5</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/Woodhenge/Woodhenge.nif</NIF>
 			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Stonehenge.dds,Art/Interface/Buttons/Buildings_Atlas.dds,1,7</Button>
+			<Button>Art/Interface/Buttons/Wonders/Woodhenge.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

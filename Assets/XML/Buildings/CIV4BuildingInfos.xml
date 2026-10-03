@@ -8458,7 +8458,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_PUREPECHA_YACATAS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_PUREPECHA_YACATAS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_SACRIFICIAL_ALTAR</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_YACATAS</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_YACATAS</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
