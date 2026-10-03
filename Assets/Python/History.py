@@ -123,7 +123,7 @@ def placeTribes():
 					# Check if queue tribe
 					if iQueuedTribes > 0:
 						if not isTribeAdjacent(x_, y_):
-							spawnTribe(pPlot, pPlot.getRegionID() in lEuropeanRevealed1600AD)
+							spawnTribe(pPlot, scenario() == i1750AD and pPlot.getRegionID() in lEuropeanRevealed1750AD)
 							iQueuedTribes -= 1
 							iQueuedPlotRegion = pPlot.getRegionID()
 							if iQueuedPlotRegion in dRegionMinTribes and dRegionRemainingTribes[iQueuedPlotRegion] > 0:
@@ -142,7 +142,7 @@ def placeTribes():
 						if isTribeAdjacent(x_, y_):
 							iQueuedTribes += 1
 						else:
-							spawnTribe(pPlot, pPlot.getRegionID() in lEuropeanRevealed1600AD)
+							spawnTribe(pPlot, scenario() == i1750AD and pPlot.getRegionID() in lEuropeanRevealed1750AD)
 							if bTrackedRegion:
 								dRegionScore[iPlotRegion] = 0
 								dRegionRemainingTribes[iPlotRegion] -= 1
