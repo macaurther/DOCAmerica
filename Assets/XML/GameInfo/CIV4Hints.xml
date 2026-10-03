@@ -398,9 +398,6 @@
 			<Description>TXT_KEY_HINT_DOC_34</Description>
 		</HintInfo>
 		<HintInfo>
-			<Description>TXT_KEY_HINT_DOC_35</Description>
-		</HintInfo>
-		<HintInfo>
 			<Description>TXT_KEY_HINT_DOC_38</Description>
 		</HintInfo>
 		<HintInfo>
@@ -500,9 +497,6 @@
 			<Description>TXT_KEY_HINT_DOC_72</Description>
 		</HintInfo>
 		<HintInfo>
-			<Description>TXT_KEY_HINT_DOC_73</Description>
-		</HintInfo>
-		<HintInfo>
 			<Description>TXT_KEY_HINT_DOC_74</Description>
 		</HintInfo>
 		<HintInfo>
@@ -582,6 +576,9 @@
 		</HintInfo>
 		<HintInfo>
 			<Description>TXT_KEY_HINT_AMERICA_16</Description>
+		</HintInfo>
+		<HintInfo>
+			<Description>TXT_KEY_HINT_AMERICA_17</Description>
 		</HintInfo>
 	</HintInfos>
 </Civ4Hints>

@@ -11,11 +11,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_2</Tag>
-		<English>Discovering Microbiology will keep you safe from plagues</English>
-		<French>D&#233;couvrir la microbiologie vous prot&#232;gera de la peste.</French>
-		<German>Die Erforschung der "Mikrobiologie" bewahrt Sie vor der Pest.</German>
-		<Italian>Discovering Microbiology will keep you safe from plagues</Italian>
-		<Spanish>Discovering Microbiology will keep you safe from plagues</Spanish>
+		<English>Discovering Biology will keep you safe from plagues.</English>
+		<French>D&#233;couvrir la biologie vous prot&#232;gera de la peste.</French>
+		<German>Die Erforschung der "Biologie" bewahrt Sie vor der Pest.</German>
+		<Italian>Discovering Biology will keep you safe from plagues.</Italian>
+		<Spanish>Discovering Biology will keep you safe from plagues.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_3</Tag>
@@ -83,11 +83,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_11</Tag>
-		<English>Remember that you can always take control of a newborn civ if you don't like the civilization you started with. You can also use this feature to play from 3000BC even when you want to pick a civ that starts later on.</English>
-		<French>N'oubliez pas que vous pouvez toujours prendre le contr&#244;le d'une civilisation &#233;mergente, si la civilisation avec laquelle vous avez commenc&#233; ne vous pla&#238;t pas. Vous pouvez aussi utiliser cette option pour jouer &#224; partir de 3000 av. J.-C., m&#234;me si vous voulez choisir une civilisation qui commence plus tard.</French>
-		<German>Beachten Sie, dass Sie jederzeit eine neu entstandene Zivilisation &#252;bernehmen k&#246;nnen, wenn Sie mit der Zivilisation, die Sie zuerst gew&#228;hlt haben, nicht zufrieden sind. Sie k&#246;nnen diese M&#246;glichkeit auch nutzen, um bereits ab dem Jahr 3000 v. Chr. zu spielen, obwohl Sie sich eigentlich eine Zivilisation ausgesucht haben, die erst sp&#228;ter im Spiel startet.</German>
-		<Italian>Ricorda che puoi sempre assumere il controllo di una civilt&#224; appena sorta, se non ti piace quella con cui hai iniziato. Inoltre puoi usare questa caratteristica per cominciare a giocare dal 3000 a.C. anche se vuoi scegliere una civilt&#224; che comincia pi&#249; tardi.</Italian>
-		<Spanish>Recuerda que siempre puedes asumir el control de una civilizaci&#243;n reciente si no te gusta la civilizaci&#243;n con la que has empezado. Tambi&#233;n puedes aprovechar esta opci&#243;n para jugar desde el a&#241;o 3000 a. C. si deseas jugar con una civilizaci&#243;n que empiece m&#225;s tarde.</Spanish>
+		<English>Remember that you can always take control of a newborn civ if you don't like the civilization you started with. You can also use this feature to play from 1 AD even when you want to pick a civ that starts later on.</English>
+		<French>N'oubliez pas que vous pouvez toujours prendre le contr&#244;le d'une civilisation &#233;mergente, si la civilisation avec laquelle vous avez commenc&#233; ne vous pla&#238;t pas. Vous pouvez aussi utiliser cette option pour jouer &#224; partir de 1 apr. J.-C., m&#234;me si vous voulez choisir une civilisation qui commence plus tard.</French>
+		<German>Beachten Sie, dass Sie jederzeit eine neu entstandene Zivilisation &#252;bernehmen k&#246;nnen, wenn Sie mit der Zivilisation, die Sie zuerst gew&#228;hlt haben, nicht zufrieden sind. Sie k&#246;nnen diese M&#246;glichkeit auch nutzen, um bereits ab dem Jahr 1 n. Chr. zu spielen, obwohl Sie sich eigentlich eine Zivilisation ausgesucht haben, die erst sp&#228;ter im Spiel startet.</German>
+		<Italian>Ricorda che puoi sempre assumere il controllo di una civilt&#224; appena sorta, se non ti piace quella con cui hai iniziato. Inoltre puoi usare questa caratteristica per cominciare a giocare dal 1 d.C. anche se vuoi scegliere una civilt&#224; che comincia pi&#249; tardi.</Italian>
+		<Spanish>Recuerda que siempre puedes asumir el control de una civilizaci&#243;n reciente si no te gusta la civilizaci&#243;n con la que has empezado. Tambi&#233;n puedes aprovechar esta opci&#243;n para jugar desde el a&#241;o 1 d. C. si deseas jugar con una civilizaci&#243;n que empiece m&#225;s tarde.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_13</Tag>
@@ -115,11 +115,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_16</Tag>
-		<English>In Rhye's and Fall of Civilization, vassal states are enabled by the discovery of Contract.</English>
-		<French>Dans Rhye's and Fall of Civilization, la d&#233;couverte du contrat permet les &#201;tats vassaux.</French>
-		<German>In Rhye's and Fall of Civilization werden Vasallenstaaten durch die Entdeckung des "Vertragswesens" verf&#252;gbar.</German>
-		<Italian>In Rhye's and Fall gli stati vassalli sono abilitati dalla scoperta della monarchia.</Italian>
-		<Spanish>En Rhye's and Fall of Civilization los estados vasallos se activan con el descubrimiento de la Monarqu&#237;a.</Spanish>
+		<English>Vassal states are enabled by the discovery of Subjugation.</English>
+		<French>Vassal states are enabled by the discovery of Subjugation.</French>
+		<German>Vassal states are enabled by the discovery of Subjugation.</German>
+		<Italian>Vassal states are enabled by the discovery of Subjugation.</Italian>
+		<Spanish>Vassal states are enabled by the discovery of Subjugation.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_17</Tag>
@@ -315,11 +315,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_6</Tag>
-		<English>Pagan Temples cannot be built in cities that have a religion, and when a religion spreads to a city with a Pagan Temple, it is replaced by that religion's temple instead.</English>
-		<French>Les temples pa&#239;ens ne peuvent &#234;tre construits dans les villes adeptes d'une religion. Lorsqu'une religion se propage dans une ville poss&#233;dant un temple pa&#239;en, ce dernier est remplac&#233; par un lieu de culte de la religion.</French>
-		<German>Pagan Temples cannot be built in cities that have a religion, and when a religion spreads to a city with a Pagan Temple, it is replaced by that religion's temple instead.</German>
-		<Italian>Pagan Temples cannot be built in cities that have a religion, and when a religion spreads to a city with a Pagan Temple, it is replaced by that religion's temple instead.</Italian>
-		<Spanish>Pagan Temples cannot be built in cities that have a religion, and when a religion spreads to a city with a Pagan Temple, it is replaced by that religion's temple instead.</Spanish>
+		<English>Pagan Temples cannot be built in cities that have a religion. When a religion spreads to a city, its Pagan Temple is removed. If the incoming religion is your state religion and its temple can be built there, the Pagan Temple is replaced by that temple.</English>
+		<French>Pagan Temples cannot be built in cities that have a religion. When a religion spreads to a city, its Pagan Temple is removed. If the incoming religion is your state religion and its temple can be built there, the Pagan Temple is replaced by that temple.</French>
+		<German>Pagan Temples cannot be built in cities that have a religion. When a religion spreads to a city, its Pagan Temple is removed. If the incoming religion is your state religion and its temple can be built there, the Pagan Temple is replaced by that temple.</German>
+		<Italian>Pagan Temples cannot be built in cities that have a religion. When a religion spreads to a city, its Pagan Temple is removed. If the incoming religion is your state religion and its temple can be built there, the Pagan Temple is replaced by that temple.</Italian>
+		<Spanish>Pagan Temples cannot be built in cities that have a religion. When a religion spreads to a city, its Pagan Temple is removed. If the incoming religion is your state religion and its temple can be built there, the Pagan Temple is replaced by that temple.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_7</Tag>
@@ -451,11 +451,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_31</Tag>
-		<English>If you run Slavery or Colonialism, you can trade slaves when interacting with other civilizations in the diplomacy interface.</English>
-		<French>Si vous avez adopt&#233; l'esclavage ou le colonialisme, vous pouvez &#233;changer des esclaves dans l'interface de diplomatie avec les autres civilisations.</French>
-		<German>If you run Slavery or Colonialism, you can trade slaves when interacting with other civilizations in the diplomacy interface.</German>
-		<Italian>If you run Slavery or Colonialism, you can trade slaves when interacting with other civilizations in the diplomacy interface.</Italian>
-		<Spanish>If you run Slavery or Colonialism, you can trade slaves when interacting with other civilizations in the diplomacy interface.</Spanish>
+		<English>You can buy slaves through diplomacy if you own a colony or have a city and run a civic that enables slavery.</English>
+		<French>You can buy slaves through diplomacy if you own a colony or have a city and run a civic that enables slavery.</French>
+		<German>You can buy slaves through diplomacy if you own a colony or have a city and run a civic that enables slavery.</German>
+		<Italian>You can buy slaves through diplomacy if you own a colony or have a city and run a civic that enables slavery.</Italian>
+		<Spanish>You can buy slaves through diplomacy if you own a colony or have a city and run a civic that enables slavery.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_33</Tag>
@@ -472,14 +472,6 @@
 		<German>The core of several civilisations expands on certain conditions, such as entering a new era.</German>
 		<Italian>The core of several civilisations expands on certain conditions, such as entering a new era.</Italian>
 		<Spanish>The core of several civilisations expands on certain conditions, such as entering a new era.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_35</Tag>
-		<English>The stability and flip zone maps for all civilizations can be found in the Maps folder.</English>
-		<French>Des cartes montrant pour chaque civilisation les zones de stabilit&#233; et le territoire &#224; la naissance peuvent &#234;tre consult&#233;es dans le dossier Maps.</French>
-		<German>The stability and flip zone maps for all civilizations can be found in the Maps folder.</German>
-		<Italian>The stability and flip zone maps for all civilizations can be found in the Maps folder.</Italian>
-		<Spanish>The stability and flip zone maps for all civilizations can be found in the Maps folder.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_38</Tag>
@@ -507,11 +499,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_41</Tag>
-		<English>DoC adds a new terrain feature, Rainforests. They resemble Jungles, but cause no unhealthiness and can be improved after the discovery of Smelting.</English>
-		<French>DoC adds a new terrain feature, Rainforests. They resemble Jungles, but cause no unhealthiness and can be improved after the discovery of Smelting.</French>
-		<German>DoC adds a new terrain feature, Rainforests. They resemble Jungles, but cause no unhealthiness and can be improved after the discovery of Smelting.</German>
-		<Italian>DoC adds a new terrain feature, Rainforests. They resemble Jungles, but cause no unhealthiness and can be improved after the discovery of Smelting.</Italian>
-		<Spanish>DoC adds a new terrain feature, Rainforests. They resemble Jungles, but cause no unhealthiness and can be improved after the discovery of Smelting.</Spanish>
+		<English>Rainforests cause unhealthiness. Some improvements can be built without clearing them; clearing Rainforests requires Ecology.</English>
+		<French>Rainforests cause unhealthiness. Some improvements can be built without clearing them; clearing Rainforests requires Ecology.</French>
+		<German>Rainforests cause unhealthiness. Some improvements can be built without clearing them; clearing Rainforests requires Ecology.</German>
+		<Italian>Rainforests cause unhealthiness. Some improvements can be built without clearing them; clearing Rainforests requires Ecology.</Italian>
+		<Spanish>Rainforests cause unhealthiness. Some improvements can be built without clearing them; clearing Rainforests requires Ecology.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_42</Tag>
@@ -651,11 +643,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_59</Tag>
-		<English>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</English>
-		<French>Dawn of Civilization poss&#232;de un tout nouvel arbre technologique fait de 141 technologies r&#233;parties sur 7 &#232;res.</French>
-		<German>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</German>
-		<Italian>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</Italian>
-		<Spanish>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</Spanish>
+		<English>Dawn of Civilization: America features 153 technologies spread over 7 eras.</English>
+		<French>Dawn of Civilization: America features 153 technologies spread over 7 eras.</French>
+		<German>Dawn of Civilization: America features 153 technologies spread over 7 eras.</German>
+		<Italian>Dawn of Civilization: America features 153 technologies spread over 7 eras.</Italian>
+		<Spanish>Dawn of Civilization: America features 153 technologies spread over 7 eras.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_62</Tag>
@@ -667,11 +659,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_63</Tag>
-		<English>The presence of non-state religions causes unhappiness in your cities, unless you adopt the Tolerance civic.</English>
-		<French>La pr&#233;sence de religions non officielles cause du malheur dans vos villes, &#224; moins que vous n'adoptiez la doctrine de la tol&#233;rance.</French>
-		<German>The presence of non-state religions causes unhappiness in your cities, unless you adopt the Tolerance civic.</German>
-		<Italian>The presence of non-state religions causes unhappiness in your cities, unless you adopt the Tolerance civic.</Italian>
-		<Spanish>The presence of non-state religions causes unhappiness in your cities, unless you adopt the Tolerance civic.</Spanish>
+		<English>Creolism and Egalitarianism each provide one happiness per non-state religion, helping offset religious unhappiness.</English>
+		<French>Creolism and Egalitarianism each provide one happiness per non-state religion, helping offset religious unhappiness.</French>
+		<German>Creolism and Egalitarianism each provide one happiness per non-state religion, helping offset religious unhappiness.</German>
+		<Italian>Creolism and Egalitarianism each provide one happiness per non-state religion, helping offset religious unhappiness.</Italian>
+		<Spanish>Creolism and Egalitarianism each provide one happiness per non-state religion, helping offset religious unhappiness.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_64</Tag>
@@ -744,14 +736,6 @@
 		<German>Some units are stronger in open terrain. Tiles that are flat, have no features with defensive bonuses, and do not contain a city or fort count as open terrain.</German>
 		<Italian>Some units are stronger in open terrain. Tiles that are flat, have no features with defensive bonuses, and do not contain a city or fort count as open terrain.</Italian>
 		<Spanish>Some units are stronger in open terrain. Tiles that are flat, have no features with defensive bonuses, and do not contain a city or fort count as open terrain.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_73</Tag>
-		<English>In addition to discovering the associated technology, to found a religion you also need to control a city in its historical core region.</English>
-		<French>Pour fonder une religion, vous devez non seulement d&#233;couvrir la technologie appropri&#233;e, mais aussi contr&#244;ler une ville dans le c&#156;ur historique de la religion.</French>
-		<German>In addition to discovering the associated technology, to found a religion you also need to control a city in its historical core region.</German>
-		<Italian>In addition to discovering the associated technology, to found a religion you also need to control a city in its historical core region.</Italian>
-		<Spanish>In addition to discovering the associated technology, to found a religion you also need to control a city in its historical core region.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_74</Tag>
@@ -931,11 +915,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_10</Tag>
-		<English>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) the is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</English>
-		<French>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) the is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</French>
-		<German>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) the is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</German>
-		<Italian>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) the is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</Italian>
-		<Spanish>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) the is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</Spanish>
+		<English>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) that is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</English>
+		<French>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) that is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</French>
+		<German>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) that is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</German>
+		<Italian>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) that is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</Italian>
+		<Spanish>Press "M" to access the Immigration menu! Immigration ([ICON_IMMIGRATION]) is a new commerce type (like [ICON_GOLD]) that is accumulated every turn. Immigrants can be attracted from 5 distant lands to join your civilization - send a ship to go get them!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_11</Tag>
@@ -955,19 +939,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_13</Tag>
-		<English>America and Brazil get expanded core areas when relocating their capitols to Washington, D.C. and Brasilia, respectively.</English>
-		<French>America and Brazil get expanded core areas when relocating their capitols to Washington, D.C. and Brasilia, respectively.</French>
-		<German>America and Brazil get expanded core areas when relocating their capitols to Washington, D.C. and Brasilia, respectively.</German>
-		<Italian>America and Brazil get expanded core areas when relocating their capitols to Washington, D.C. and Brasilia, respectively.</Italian>
-		<Spanish>America and Brazil get expanded core areas when relocating their capitols to Washington, D.C. and Brasilia, respectively.</Spanish>
+		<English>America and Brazil get expanded core areas when relocating their capitals to Washington, D.C. and Brasilia, respectively.</English>
+		<French>America and Brazil get expanded core areas when relocating their capitals to Washington, D.C. and Brasilia, respectively.</French>
+		<German>America and Brazil get expanded core areas when relocating their capitals to Washington, D.C. and Brasilia, respectively.</German>
+		<Italian>America and Brazil get expanded core areas when relocating their capitals to Washington, D.C. and Brasilia, respectively.</Italian>
+		<Spanish>America and Brazil get expanded core areas when relocating their capitals to Washington, D.C. and Brasilia, respectively.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_14</Tag>
-		<English>New Player Help Feature: After selecting a settler, you will see blue circles where cities are recommended (as always), as well as red outlines where there are resouces, even unrevealed resources. Avoid settling there!</English>
-		<French>New Player Help Feature: After selecting a settler, you will see blue circles where cities are recommended (as always), as well as red outlines where there are resouces, even unrevealed resources. Avoid settling there!</French>
-		<German>New Player Help Feature: After selecting a settler, you will see blue circles where cities are recommended (as always), as well as red outlines where there are resouces, even unrevealed resources. Avoid settling there!</German>
-		<Italian>New Player Help Feature: After selecting a settler, you will see blue circles where cities are recommended (as always), as well as red outlines where there are resouces, even unrevealed resources. Avoid settling there!</Italian>
-		<Spanish>New Player Help Feature: After selecting a settler, you will see blue circles where cities are recommended (as always), as well as red outlines where there are resouces, even unrevealed resources. Avoid settling there!</Spanish>
+		<English>New Player Help Feature: After selecting a settler, you will see blue circles where cities are recommended (as always), as well as red outlines where there are resources, even unrevealed resources. Avoid settling there!</English>
+		<French>New Player Help Feature: After selecting a settler, you will see blue circles where cities are recommended (as always), as well as red outlines where there are resources, even unrevealed resources. Avoid settling there!</French>
+		<German>New Player Help Feature: After selecting a settler, you will see blue circles where cities are recommended (as always), as well as red outlines where there are resources, even unrevealed resources. Avoid settling there!</German>
+		<Italian>New Player Help Feature: After selecting a settler, you will see blue circles where cities are recommended (as always), as well as red outlines where there are resources, even unrevealed resources. Avoid settling there!</Italian>
+		<Spanish>New Player Help Feature: After selecting a settler, you will see blue circles where cities are recommended (as always), as well as red outlines where there are resources, even unrevealed resources. Avoid settling there!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_15</Tag>
