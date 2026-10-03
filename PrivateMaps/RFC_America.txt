@@ -660,8 +660,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=0,y=112
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
@@ -1277,7 +1275,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=111
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=10
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -5510,14 +5508,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=8,y=89
-	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=1
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=8,y=90
-	RiverNSDirection=2
-	isWOfRiver
 	BonusType=BONUS_WINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
@@ -6139,14 +6135,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=88
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=6
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=9,y=89
-	RiverWEDirection=3
-	isNOfRiver
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -6808,9 +6802,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=90
-	RiverWEDirection=3
-	isNOfRiver
 	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
 	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_PLAINS
@@ -6856,9 +6850,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=96
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=10,y=97
@@ -6908,12 +6902,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=106
-	TerrainType=TERRAIN_ARCTIC_COAST
-	PlotType=3
+	TerrainType=TERRAIN_MOORLAND
+	PlotType=1
 EndPlot
 BeginPlot
 	x=10,y=107
 	BonusType=BONUS_FISH
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -7500,14 +7495,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=96
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=2
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=11,y=97
-	isNOfRiver
-	RiverWEDirection=3
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -7539,10 +7532,11 @@ BeginPlot
 	BonusType=BONUS_COAL
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=11,y=103
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -7558,6 +7552,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=106
+	FeatureType=FEATURE_STRAIT, FeatureVariety=10
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -8182,6 +8177,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=102
+	FeatureType=FEATURE_STRAIT, FeatureVariety=6
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -15638,8 +15634,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=113
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -16299,14 +16293,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=112
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=24,y=113
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=14
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -16318,14 +16310,12 @@ EndPlot
 BeginPlot
 	x=24,y=115
 	BonusType=BONUS_SEAL
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=9
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=24,y=116
-	RiverNSDirection=2
-	isWOfRiver
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -16963,7 +16953,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=112
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=10
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -16985,9 +16975,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=116
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=13
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -17592,6 +17580,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=104
+	FeatureType=FEATURE_STRAIT, FeatureVariety=17
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -17635,14 +17624,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=112
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=9
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=26,y=113
-	RiverNSDirection=2
-	isWOfRiver
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -17658,8 +17645,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=116
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -18269,6 +18254,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=105
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -18312,8 +18298,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=113
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
@@ -18330,7 +18314,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=116
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=10
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -18341,7 +18325,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=118
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=13
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -18852,8 +18836,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=91
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
@@ -18968,7 +18950,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=112
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=14
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -19005,8 +18987,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=119
-	isNOfRiver
-	RiverWEDirection=3
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
@@ -19486,8 +19466,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=88
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
@@ -19499,7 +19477,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=90
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=6
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -19565,13 +19543,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=101
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=102
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -19642,8 +19619,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=115
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
@@ -20134,7 +20109,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=87
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=6
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -20172,8 +20147,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=94
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
@@ -20222,6 +20195,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=101
+	FeatureType=FEATURE_STRAIT, FeatureVariety=6
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -20301,7 +20275,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=114
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=14
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -20810,14 +20784,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=87
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=1
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=31,y=88
-	isNOfRiver
-	RiverWEDirection=1
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -20845,9 +20817,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=93
-	RiverNSDirection=2
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=22
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -20971,10 +20941,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=114
-	RiverNSDirection=0
-	isWOfRiver
 	BonusType=BONUS_SEAL
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=9
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -20985,16 +20953,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=116
-	isNOfRiver
-	RiverWEDirection=1
-	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=1
+	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=9
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=31,y=117
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -21491,35 +21455,31 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=88
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=32,y=89
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=1
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=32,y=90
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=91
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=32,y=92
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=2
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -21654,7 +21614,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=115
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=18
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -21665,14 +21625,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=117
-	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=1
+	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=14
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=32,y=118
-	isNOfRiver
-	RiverWEDirection=3
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -22111,8 +22069,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=79
-	RiverNSDirection=0
-	isWOfRiver
 	BonusType=BONUS_RICE
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
@@ -22132,7 +22088,7 @@ EndPlot
 BeginPlot
 	x=33,y=82
 	BonusType=BONUS_FISH
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=21
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -22163,15 +22119,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=87
-	isNOfRiver
-	RiverWEDirection=1
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=6
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=33,y=88
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -22183,9 +22136,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=90
-	isNOfRiver
-	RiverWEDirection=3
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=6
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -22318,8 +22269,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=114
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
@@ -22331,14 +22280,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=116
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=22
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=33,y=117
-	isNOfRiver
-	RiverWEDirection=3
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
@@ -22783,9 +22730,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=79
-	isNOfRiver
-	RiverWEDirection=3
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=22
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -22810,16 +22755,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=83
-	isNOfRiver
-	RiverWEDirection=3
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=21
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=34,y=84
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -22832,9 +22773,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=86
-	isNOfRiver
-	RiverWEDirection=1
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=2
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -22987,7 +22926,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=113
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=10
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -23443,7 +23382,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=78
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=22
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -23474,7 +23413,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=83
-	FeatureType=FEATURE_FOREST, FeatureVariety=4
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -23486,9 +23425,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=85
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=19
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -23624,7 +23561,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=109
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=9
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -24163,7 +24100,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=86
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=5
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -24218,9 +24155,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=95
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=21
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -24232,8 +24167,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=97
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
@@ -24308,8 +24241,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=110
-	isNOfRiver
-	RiverWEDirection=3
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
@@ -24342,9 +24273,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=116
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=9
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -24844,14 +24773,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=86
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=37,y=87
-	isNOfRiver
-	RiverWEDirection=3
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
@@ -24909,7 +24836,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=96
-	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=18
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -25001,8 +24928,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=113
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
@@ -25528,14 +25453,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=87
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=1
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=38,y=88
-	RiverNSDirection=2
-	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -25675,7 +25598,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=112
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=14
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -26192,8 +26115,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=87
-	RiverNSDirection=0
-	isWOfRiver
 	BonusType=BONUS_TOBACCO
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -26326,7 +26247,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=110
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=13
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -26859,7 +26780,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=87
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=7
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -26995,8 +26916,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=111
-	isNOfRiver
-	RiverWEDirection=3
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
@@ -27535,15 +27454,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=87
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=41,y=88
-	isNOfRiver
-	RiverWEDirection=3
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=1
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -28208,14 +28125,12 @@ EndPlot
 BeginPlot
 	x=42,y=88
 	BonusType=BONUS_COAL
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=42,y=89
-	isNOfRiver
-	RiverWEDirection=3
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
@@ -28413,14 +28328,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=1
-	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=3
+	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=13
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=43,y=2
-	RiverNSDirection=2
-	isWOfRiver
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -29031,8 +28944,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=109
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
@@ -29116,7 +29027,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=2
-	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=3
+	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=8
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -29149,6 +29060,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=8
+	FeatureType=FEATURE_STRAIT, FeatureVariety=5
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -29160,6 +29072,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=10
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -29730,7 +29643,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=108
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=10
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -29819,17 +29732,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=2
-	RiverNSDirection=0
-	isWOfRiver
 	BonusType=BONUS_SEAL
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=9
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=45,y=3
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=45,y=4
@@ -29860,16 +29771,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=9
-	isNOfRiver
-	RiverWEDirection=3
 	BonusType=BONUS_CLAM
+	FeatureType=FEATURE_STRAIT, FeatureVariety=3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=45,y=10
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -30065,8 +29973,8 @@ BeginPlot
 	x=45,y=45
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	ImprovementType=IMPROVEMENT_CITY_RUINS
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -30374,14 +30282,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=94
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=5
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=45,y=95
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -30555,7 +30461,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=3
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=8
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -30591,6 +30497,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=10
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -31090,14 +30997,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=95
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=1
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=46,y=96
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -31490,14 +31395,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=43
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=17
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=47,y=44
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -31814,9 +31717,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=96
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=17
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -31930,7 +31831,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=115
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=9
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -32491,7 +32392,7 @@ EndPlot
 BeginPlot
 	x=48,y=90
 	BonusType=BONUS_CLAM
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=5
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -32534,9 +32435,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=97
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=21
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -32639,8 +32538,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=116
-	isNOfRiver
-	RiverWEDirection=3
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_FJORD
 	PlotType=3
@@ -32989,25 +32886,26 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=56
+	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=49,y=57
-	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=49,y=58
+	BonusType=BONUS_OIL
+	FeatureType=FEATURE_STRAIT, FeatureVariety=1
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=49,y=59
-	BonusType=BONUS_OIL
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
 EndPlot
 BeginPlot
 	x=49,y=60
@@ -33174,14 +33072,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=90
-	FeatureType=FEATURE_FOREST, FeatureVariety=4
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=49,y=91
-	isNOfRiver
-	RiverWEDirection=3
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
@@ -33228,9 +33124,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=98
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=17
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -33625,8 +33519,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=44
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
@@ -33724,6 +33616,7 @@ BeginPlot
 	x=50,y=59
 	BonusType=BONUS_CRAB
 	BonusVarietyType=BONUS_CRAB_SHRIMP
+	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -33930,7 +33823,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=98
-	FeatureType=FEATURE_FOREST, FeatureVariety=2
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -33970,9 +33863,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=105
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=13
 	TerrainType=TERRAIN_FJORD
 	PlotType=3
 EndPlot
@@ -34308,9 +34199,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=43
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=19
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -34579,6 +34468,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=90
+	FeatureType=FEATURE_FOREST, FeatureVariety=3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -34771,6 +34661,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=2
+	FeatureType=FEATURE_STRAIT, FeatureVariety=13
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -35013,7 +34904,7 @@ BeginPlot
 	x=52,y=43
 	RiverNSDirection=0
 	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -35313,14 +35204,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=95
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=9
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=52,y=96
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -35480,13 +35369,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=2
-	TerrainType=TERRAIN_ARCTIC_COAST
-	PlotType=3
+	TerrainType=TERRAIN_MOORLAND
+	PlotType=1
 EndPlot
 BeginPlot
 	x=53,y=3
-	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
+	FeatureType=FEATURE_STRAIT, FeatureVariety=12
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=53,y=4
@@ -36452,14 +36342,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=44
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=21
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=54,y=45
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -37154,7 +37042,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=44
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -37479,9 +37367,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=103
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=9
 	TerrainType=TERRAIN_FJORD
 	PlotType=3
 EndPlot
@@ -37871,8 +37757,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=45
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
@@ -38183,9 +38067,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=101
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=21
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -38283,9 +38165,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=119
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_ICE, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=9
 	TerrainType=TERRAIN_FJORD
 	PlotType=3
 EndPlot
@@ -38578,7 +38458,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=44
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=18
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -38994,7 +38874,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=120
-	FeatureType=FEATURE_ICE, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=8
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -39297,8 +39177,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=47
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
@@ -39972,23 +39850,19 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=59,y=44
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=21
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=59,y=45
-	isNOfRiver
-	RiverWEDirection=1
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=59,y=46
-	RiverNSDirection=2
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=18
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -40069,14 +39943,11 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=59,y=58
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=59,y=59
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
@@ -40681,7 +40552,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=60,y=45
-	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=18
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -40759,7 +40630,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=60,y=58
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=2
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -42557,17 +42428,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=18
-	isNOfRiver
-	RiverWEDirection=1
 	BonusType=BONUS_CRAB
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=5
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=63,y=19
-	RiverNSDirection=2
-	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -42738,14 +42605,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=45
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=17
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=63,y=46
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -43247,7 +43112,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=64,y=17
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=2
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -43438,7 +43303,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=64,y=46
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=17
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -44121,8 +43986,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=65,y=47
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_STRAIT, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
@@ -44786,9 +44649,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=66,y=46
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=23
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -45451,14 +45312,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=67,y=43
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=17
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=67,y=44
-	isNOfRiver
-	RiverWEDirection=1
 	BonusType=BONUS_SPICES
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
@@ -45472,15 +45331,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=67,y=46
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=67,y=47
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=17
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -46107,15 +45964,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=68,y=43
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=68,y=44
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=21
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -46139,7 +45994,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=68,y=48
-	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=16
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -46812,7 +46667,7 @@ EndPlot
 BeginPlot
 	x=69,y=44
 	BonusType=BONUS_SUGAR
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -48134,9 +47989,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=71,y=46
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=21
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -48148,14 +48001,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=71,y=48
-	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT_ISLANDS, FeatureVariety=5
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=71,y=49
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -48793,14 +48644,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=72,y=47
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=18
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=72,y=48
-	isNOfRiver
-	RiverWEDirection=3
 	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -50031,9 +49880,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=74,y=40
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=1
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -50073,9 +49920,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=74,y=47
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_STRAIT, FeatureVariety=0
+	FeatureType=FEATURE_STRAIT, FeatureVariety=5
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -55083,7 +54928,7 @@ BeginPlot
 	PlotType=3
 EndPlot
 BeginPlot
-	x=82,y=46,
+	x=82,y=46
 	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
