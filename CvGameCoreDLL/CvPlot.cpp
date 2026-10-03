@@ -4720,6 +4720,12 @@ void CvPlot::setArea(int iNewValue)
 
 int CvPlot::getFeatureVariety() const
 {
+	// MacAurther: Straits
+	if (isStrait())
+	{
+		return determineVariety();
+	}
+
 	FAssert((getFeatureType() == NO_FEATURE) || (m_iFeatureVariety < GC.getFeatureInfo(getFeatureType()).getArtInfo()->getNumVarieties()));
 	FAssert(m_iFeatureVariety >= 0);
 	return m_iFeatureVariety;
@@ -5930,6 +5936,18 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 			//gDLL->getEngineIFace()->SetDirty(GlobeTexture_DIRTY_BIT, true);
 
 			updateFeatureSymbol();
+			// MacAurther: Straits
+			if (bWasWater != isWater())
+			{
+				for (int i = 0; i < NUM_DIRECTION_TYPES; ++i)
+				{
+					CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), (DirectionTypes)i);
+					if (pAdjacentPlot != NULL && pAdjacentPlot->isStrait())
+					{
+						pAdjacentPlot->updateFeatureSymbol(true);
+					}
+				}
+			}
 			setLayoutDirty(true);
 			updateRouteSymbol(false, true);
 			updateRiverSymbol(false, true);
@@ -6004,6 +6022,37 @@ int CvPlot::determineVariety(FeatureTypes eFeature) const
 	if (eFeature == NO_FEATURE)
 	{
 		eFeature = getFeatureType();
+	}
+
+	// MacAurther: Straits
+	if (eFeature == FEATURE_STRAIT || eFeature == FEATURE_STRAIT_ISLANDS)
+	{
+		if (!isWater())
+		{
+			return 0;
+		}
+
+		int iMask = 0;
+		for (int i = 0; i < 2; ++i)
+		{
+			int iDX = (i == 0) ? 1 : -1;
+			CvPlot* pOther = plotXY(getX_INLINE(), getY_INLINE(), iDX, 1);
+			CvPlot* pSideX = plotXY(getX_INLINE(), getY_INLINE(), iDX, 0);
+			CvPlot* pSideY = plotXY(getX_INLINE(), getY_INLINE(), 0, 1);
+			if (pOther != NULL && pSideX != NULL && pSideY != NULL &&
+				pOther->isWater() && pOther->isStrait() && !pSideX->isWater() && !pSideY->isWater())
+			{
+				iMask |= 1 << i;
+			}
+		}
+
+		int iTexture = 0;
+		if (isStrait())
+		{
+			iTexture = m_iFeatureVariety / 4;
+		}
+
+		return iTexture * 4 + iMask;
 	}
 
 	if (eFeature == FEATURE_FOREST)
@@ -6190,6 +6239,19 @@ void CvPlot::setFeatureType(FeatureTypes eNewValue, int iVariety)
 
 	if (eOldFeature != eNewValue)
 	{
+		// MacAurther: Straits
+		if (eOldFeature == FEATURE_STRAIT || eOldFeature == FEATURE_STRAIT_ISLANDS || isStrait())
+		{
+			for (int i = 0; i < NUM_DIRECTION_TYPES; ++i)
+			{
+				CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), (DirectionTypes)i);
+				if (pAdjacentPlot != NULL && pAdjacentPlot->isStrait())
+				{
+					pAdjacentPlot->updateFeatureSymbol(true);
+				}
+			}
+		}
+
 		// Leoreth: update culture costs
 		CvPlot* pLoopPlot;
 		for (int iI = 0; iI < NUM_CITY_PLOTS_3; iI++)

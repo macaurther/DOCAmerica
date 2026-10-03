@@ -1803,7 +1803,7 @@
 			<Type>FEATURE_STRAIT</Type>
 			<Description>TXT_KEY_FEATURE_STRAIT</Description>
 			<Civilopedia>TXT_KEY_FEATURE_STRAIT_PEDIA</Civilopedia>
-			<ArtDefineTag>ART_DEF_FEATURE_CAPE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_FEATURE_STRAIT_POC</ArtDefineTag>
 			<YieldChanges/>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
@@ -1923,7 +1923,7 @@
 			<Type>FEATURE_STRAIT_ISLANDS</Type>
 			<Description>TXT_KEY_FEATURE_STRAIT_ISLANDS</Description>
 			<Civilopedia>TXT_KEY_FEATURE_ISLANDS_PEDIA</Civilopedia>
-			<ArtDefineTag>ART_DEF_FEATURE_ISLANDS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_FEATURE_STRAIT_ISLANDS</ArtDefineTag>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>

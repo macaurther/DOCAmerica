@@ -157,4 +157,28 @@
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_STRAIT_SANDY_STRAIGHT</Tag>
+		<English>Sandy - Straight</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_STRAIT_SANDY_MEANDERING</Tag>
+		<English>Sandy - Meandering</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_STRAIT_ROCKY_MEANDERING</Tag>
+		<English>Rocky - Meandering</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_STRAIT_ROCKY_STRAIGHT</Tag>
+		<English>Rocky - Straight</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_STRAIT_MUDDY_STRAIGHT</Tag>
+		<English>Muddy - Straight</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_STRAIT_MUDDY_MEANDERING</Tag>
+		<English>Muddy - Meandering</English>
+	</TEXT>
 </Civ4GameText>
