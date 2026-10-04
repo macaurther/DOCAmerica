@@ -633,7 +633,7 @@
 			<Description>TXT_KEY_BUILDING_KILN</Description>
 			<Civilopedia>TXT_KEY_BUILDING_KILN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_KILN_STRATEGY</Strategy>
-			<Advisor>ADVISOR_GROWTH</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_KILN</ArtDefineTag>
 			<PrereqTech>TECH_MINING</PrereqTech>
 			<ObsoleteTech>TECH_COMPANIES</ObsoleteTech>
@@ -765,6 +765,12 @@
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
 			<ConstructSound>AS2D_BUILD_COLOSSEUM</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_BARRACKS</BuildingClass>
@@ -2182,10 +2188,6 @@
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>2</iFlavor>
 				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>5</iFlavor>
-				</Flavor>
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
@@ -2327,7 +2329,7 @@
 			<Description>TXT_KEY_BUILDING_SCHOOLHOUSE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_SCHOOLHOUSE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SCHOOLHOUSE_STRATEGY</Strategy>
-			<Advisor>ADVISOR_CULTURE</Advisor>
+			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SCHOOLHOUSE</ArtDefineTag>
 			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_EDUCATION</PrereqTech>
@@ -3107,10 +3109,6 @@
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
 			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>6</iFlavor>
-				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>6</iFlavor>
@@ -4633,10 +4631,6 @@
 					<iFlavor>2</iFlavor>
 				</Flavor>
 				<Flavor>
-					<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>5</iFlavor>
 				</Flavor>
@@ -5057,10 +5051,6 @@
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
 					<iFlavor>5</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
-					<iFlavor>2</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -5491,6 +5481,11 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>3</iCommerce>
 			</CommerceChanges>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>50</iCommerce>
+			</CommerceModifiers>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -5719,6 +5714,11 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>3</iCommerce>
 			</CommerceChanges>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>50</iCommerce>
+			</CommerceModifiers>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -6001,6 +6001,11 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>3</iCommerce>
 			</CommerceChanges>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>50</iCommerce>
+			</CommerceModifiers>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -6229,6 +6234,11 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>3</iCommerce>
 			</CommerceChanges>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>50</iCommerce>
+			</CommerceModifiers>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -6457,6 +6467,11 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>3</iCommerce>
 			</CommerceChanges>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>50</iCommerce>
+			</CommerceModifiers>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -6685,6 +6700,11 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>3</iCommerce>
 			</CommerceChanges>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>50</iCommerce>
+			</CommerceModifiers>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -7121,7 +7141,7 @@
 			<Description>TXT_KEY_BUILDING_NATIONAL_MONUMENT</Description>
 			<Civilopedia>TXT_KEY_BUILDING_NATIONAL_MONUMENT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_NATIONAL_MONUMENT_STRATEGY</Strategy>
-			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_NATIONAL_MONUMENT</ArtDefineTag>
 			<PrereqTech>TECH_NATIONALISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
@@ -7162,10 +7182,6 @@
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
 					<iFlavor>4</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -7652,7 +7668,7 @@
 			<Description>TXT_KEY_BUILDING_SUPREME_COURT</Description>
 			<Civilopedia>TXT_KEY_BUILDING_SUPREME_COURT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SUPREME_COURT_STRATEGY</Strategy>
-			<Advisor>ADVISOR_GROWTH</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SUPREME_COURT</ArtDefineTag>
 			<PrereqTech>TECH_JUDICIARY</PrereqTech>
 			<FreeBuilding>BUILDINGCLASS_JAIL</FreeBuilding>
@@ -8638,7 +8654,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_HELP</Help>
-			<Advisor>ADVISOR_GROWTH</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SAO_FRANCISCO_SQUARE</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_SAO_FRANCISCO_SQUARE</MovieDefineTag>
 			<PrereqTech>TECH_URBAN_PLANNING</PrereqTech>
@@ -8787,7 +8803,7 @@
 			<Description>TXT_KEY_BUILDING_INDEPENDENCE_HALL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_INDEPENDENCE_HALL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_INDEPENDENCE_HALL_STRATEGY</Strategy>
-			<Advisor>ADVISOR_GROWTH</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INDEPENDENCE_HALL</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_INDEPENDENCE_HALL</MovieDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
@@ -8831,8 +8847,12 @@
 			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>10</iFlavor>
+					<FlavorType>FLAVOR_ADMIN</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -8934,7 +8954,7 @@
 			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -9766,7 +9786,6 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_EMPIRE_STATE_BUILDING</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_EMPIRE_STATE_BUILDING</MovieDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_EMPIRE_STATE_BUILDING</MovieDefineTag>
 			<PrereqTech>TECH_MACROECONOMICS</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -9811,7 +9830,6 @@
 			<Strategy>TXT_KEY_BUILDING_GOLDEN_GATE_BRIDGE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GOLDEN_GATE_BRIDGE</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_GOLDEN_GATE_BRIDGE</MovieDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_GOLDEN_GATE_BRIDGE</MovieDefineTag>
 			<PrereqTech>TECH_CIVIL_RIGHTS</PrereqTech>
 			<PrereqAdjacentFeature>FEATURE_STRAIT_ISLANDS</PrereqAdjacentFeature>
