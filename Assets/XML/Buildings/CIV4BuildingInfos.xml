@@ -8340,7 +8340,7 @@
 			<Description>TXT_KEY_BUILDING_HUEY_TEOCALLI</Description>
 			<Civilopedia>TXT_KEY_BUILDING_HUEY_TEOCALLI_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_HUEY_TEOCALLI_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HUEY_TEOCALLI</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_HUEY_TEOCALLI</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
@@ -8359,7 +8359,6 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iAsset>12</iAsset>
-			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -8394,7 +8393,7 @@
 			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_RELIGION</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>

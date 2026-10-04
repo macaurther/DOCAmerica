@@ -331,8 +331,8 @@
 			<Type>ART_DEF_BUILDING_YACATAS</Type>
 			<LSystem>LSYSTEM_3x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>6</fScale>
-			<fInterfaceScale>1.2</fInterfaceScale>
+			<fScale>6.2</fScale>
+			<fInterfaceScale>0.65</fInterfaceScale>
 			<NIF>Art/Structures/Wonders/Yacatas/Yacatas.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Yacatas.dds</Button>
@@ -902,7 +902,7 @@
 			<LSystem>LSYSTEM_WATER</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>6</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
+			<fInterfaceScale>0.45</fInterfaceScale>
 			<NIF>Art/Structures/Wonders/FloatingGardens/FloatingGardens.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Floating_Gardens.dds</Button>
@@ -1552,18 +1552,18 @@
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>2.5</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
+			<fInterfaceScale>0.85</fInterfaceScale>
 			<NIF>Art/Structures/Wonders/Sacsayhuaman/Sacsayhuaman.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Sacsayhuaman.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_HUEY_TEOCALLI</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.37</fScale>
-			<fInterfaceScale>0.53</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/eu3_MesoTax/SA_tax.nif</NIF>
+			<fScale>4.1</fScale>
+			<fInterfaceScale>0.72</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/HueyTeocalli/HueyTeocalli.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Huey_Teocalli.dds</Button>
 		</BuildingArtInfo>
@@ -1579,31 +1579,31 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SAO_FRANCISCO_SQUARE</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>0.16</fScale>
-			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/Trafalgar_Square/Trafalgar_square.nif</NIF>
+			<fScale>5.0</fScale>
+			<fInterfaceScale>0.75</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/SaoFranciscoSquare/SaoFranciscoSquare.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Sao_Francisco_Square.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MANZANA_JESUITICA</Type>
-			<LSystem>LSYSTEM_4x4</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.25</fScale>
-			<fInterfaceScale>0.55</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Versailles/Versailles.nif</NIF>
+			<fScale>4.9</fScale>
+			<fInterfaceScale>0.75</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/ManzanaJesuitica/ManzanaJesuitica.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Manzana_Jesuitica.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_INDEPENDENCE_HALL</Type>
-			<LSystem>LSYSTEM_3x1</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/Bourse/konink.nif</NIF>
+			<fScale>6.1</fScale>
+			<fInterfaceScale>0.55</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/IndependenceHall/IndependenceHall.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Independence_Hall.dds</Button>
 		</BuildingArtInfo>
@@ -1672,7 +1672,7 @@
 			<LSystem>LSYSTEM_4x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>3.0</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
 			<NIF>Art/Structures/Wonders/HospicioCabanas/HospicioCabanas.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/HospicioCabanas.dds</Button>
@@ -1682,7 +1682,7 @@
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
 			<NIF>Art/Structures/Wonders/MountVernon/MountVernon.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/MountVernon.dds</Button>
@@ -1692,7 +1692,7 @@
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>0.3</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
+			<fInterfaceScale>0.85</fInterfaceScale>
 			<NIF>Art/Structures/Wonders/Monticello/Monticello.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Monticello.dds</Button>
@@ -1702,7 +1702,7 @@
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
 			<NIF>Art/Structures/Wonders/FortMcHenry/FortMcHenry.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/FortMcHenry.dds</Button>
@@ -1711,19 +1711,19 @@
 			<Type>ART_DEF_BUILDING_BILTMORE_ESTATE</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>0.3</fScale>
-			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Estate/ts_d_gov.nif</NIF>
+			<fScale>5.6</fScale>
+			<fInterfaceScale>0.65</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/BiltmoreEstate/BiltmoreEstate.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/BiltmoreEstate.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_FRENCH_QUARTER</Type>
-			<LSystem>LSYSTEM_2x1</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.5</fScale>
-			<fInterfaceScale>0.67</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/French Salon/french_salon.nif</NIF>
+			<fScale>5.0</fScale>
+			<fInterfaceScale>0.74</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/FrenchQuarter/FrenchQuarter.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/FrenchQuarter.dds</Button>
 		</BuildingArtInfo>
@@ -1742,18 +1742,18 @@
 			<LSystem>LSYSTEM_1x1</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>2.0</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
+			<fInterfaceScale>0.65</fInterfaceScale>
 			<NIF>Art/Structures/Wonders/WashingtonMonument/WashingtonMonument.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/WashingtonMonument.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CENTRAL_PARK</Type>
-			<LSystem>LSYSTEM_4x4</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>10</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/ShalimarGardens/NorthAfricaCityCenter01.nif</NIF>
+			<fScale>5.1</fScale>
+			<fInterfaceScale>0.75</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/CentralPark/CentralPark.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/CentralPark.dds</Button>
 		</BuildingArtInfo>
@@ -1762,7 +1762,7 @@
 			<LSystem>LSYSTEM_COAST</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>12</fScale>
-			<fInterfaceScale>1.5</fInterfaceScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
 			<NIF>Art/Structures/Wonders/LaFortaleza/LaFortaleza.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/LaFortaleza.dds</Button>
@@ -1929,11 +1929,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_ELLIS_ISLAND</Type>
-			<LSystem>LSYSTEM_COAST</LSystem>
+			<LSystem>LSYSTEM_WATER</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.25</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/Tsukiji/tsukiji.nif</NIF>
+			<fScale>5.0</fScale>
+			<fInterfaceScale>0.67</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/EllisIsland/EllisIsland.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Ellis_Island.dds</Button>
 		</BuildingArtInfo>
@@ -2052,18 +2052,18 @@
 			<LSystem>LSYSTEM_4x4</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>2.0</fScale>
-			<fInterfaceScale>2.0</fInterfaceScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Wonders/GreatGeoglyph/GreatGeoglyph.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/GreatGeoglyph.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_YACHAYWASI</Type>
-			<LSystem>LSYSTEM_4x4</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>0.8</fScale>
-			<fInterfaceScale>0.45</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/Alamut/Alamut.nif</NIF>
+			<fScale>2.9</fScale>
+			<fInterfaceScale>0.75</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/Yachaywasi/Yachaywasi.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Coricancha.dds</Button>
 		</BuildingArtInfo>
@@ -2462,7 +2462,7 @@
 			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>4.5</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
+			<fInterfaceScale>0.85</fInterfaceScale>
 			<NIF>Art/Structures/Wonders/Woodhenge/Woodhenge.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Woodhenge.dds</Button>
