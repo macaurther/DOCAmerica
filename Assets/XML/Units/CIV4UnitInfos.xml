@@ -421,10 +421,6 @@
 			<iNukeRange>-1</iNukeRange>
 			<TerrainImpassables>
 				<TerrainImpassable>
-					<TerrainType>TERRAIN_MARSH</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
 					<TerrainType>TERRAIN_TUNDRA</TerrainType>
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
@@ -1083,6 +1079,10 @@
 			</UnitAIs>
 			<Builds>
 				<Build>
+					<BuildType>BUILD_REMOVE_TAIGA</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_ROAD</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -1238,6 +1238,10 @@
 				</UnitAI>
 			</UnitAIs>
 			<Builds>
+				<Build>
+					<BuildType>BUILD_REMOVE_TAIGA</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
 				<Build>
 					<BuildType>BUILD_ROAD</BuildType>
 					<bBuild>1</bBuild>
@@ -1519,16 +1523,12 @@
 			<Type>UNIT_TRACKMAN</Type>
 			<Capture>UNITCLASS_WORKER</Capture>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_ENGINEER</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_TRACKMAN</Description>
 			<Civilopedia>TXT_KEY_UNIT_TRACKMAN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_TRACKMAN_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_WORKER</UnitAIType>
 					<bUnitAI>1</bUnitAI>
@@ -1612,6 +1612,10 @@
 			</UnitAIs>
 			<PrereqTech>TECH_ORGANIZED_LABOR</PrereqTech>
 			<Builds>
+				<Build>
+					<BuildType>BUILD_REMOVE_TAIGA</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
 				<Build>
 					<BuildType>BUILD_ROAD</BuildType>
 					<bBuild>1</bBuild>
@@ -1750,7 +1754,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_LABORER</Class>
 			<Type>UNIT_BRAZILIAN_MADEIREIRO</Type>
-			<Capture>UNITCLASS_WORKER</Capture>
+			<Capture>UNITCLASS_LABORER</Capture>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_BRAZILIAN_MADEIREIRO</Description>
@@ -3912,9 +3916,9 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCityAttack>10</iCityAttack>
 			<iConscription>2</iConscription>
-			<iCultureGarrison>4</iCultureGarrison>
+			<iCultureGarrison>5</iCultureGarrison>
 			<iAsset>2</iAsset>
-			<iPower>5</iPower>
+			<iPower>6</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>
@@ -4019,7 +4023,7 @@
 			<iConscription>1</iConscription>
 			<iCultureGarrison>5</iCultureGarrison>
 			<iAsset>2</iAsset>
-			<iPower>5</iPower>
+			<iPower>6</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>
@@ -5644,7 +5648,7 @@
 			<iConscription>3</iConscription>
 			<iCultureGarrison>6</iCultureGarrison>
 			<iAsset>2</iAsset>
-			<iPower>8</iPower>
+			<iPower>6</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>
@@ -5754,7 +5758,7 @@
 			<iConscription>3</iConscription>
 			<iCultureGarrison>6</iCultureGarrison>
 			<iAsset>2</iAsset>
-			<iPower>8</iPower>
+			<iPower>6</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>
@@ -5951,9 +5955,9 @@
 					<iUnitCombatMod>100</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
-			<iCultureGarrison>7</iCultureGarrison>
+			<iCultureGarrison>8</iCultureGarrison>
 			<iAsset>3</iAsset>
-			<iPower>20</iPower>
+			<iPower>14</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>
@@ -6040,6 +6044,10 @@
 				</FeatureImpassable>
 			</FeatureImpassables>
 			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>25</iUnitCombatMod>
+				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
 					<iUnitCombatMod>50</iUnitCombatMod>
@@ -6680,7 +6688,7 @@
 			<Type>UNIT_LONGBOWMAN</Type>
 			<Combat>UNITCOMBAT_ARCHER</Combat>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_COLLATERAL</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_LONGBOWMAN</Description>
 			<Civilopedia>TXT_KEY_UNIT_LONGBOWMAN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_LONGBOWMAN_STRATEGY</Strategy>
@@ -6787,7 +6795,7 @@
 			<Type>UNIT_PUREPECHA_TARASCAN_ARCHER</Type>
 			<Combat>UNITCOMBAT_ARCHER</Combat>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_COLLATERAL</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_PUREPECHA_TARASCAN_ARCHER</Description>
 			<Civilopedia>TXT_KEY_UNIT_PUREPECHA_TARASCAN_ARCHER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_PUREPECHA_TARASCAN_ARCHER_STRATEGY</Strategy>
@@ -7369,8 +7377,8 @@
 					<iUnitClassMod>25</iUnitClassMod>
 				</UnitClassAttackMod>
 			</UnitClassAttackMods>
-			<iCultureGarrison>7</iCultureGarrison>
-			<iAsset>3</iAsset>
+			<iCultureGarrison>12</iCultureGarrison>
+			<iAsset>4</iAsset>
 			<iPower>24</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
@@ -7970,6 +7978,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>4</iMoves>
+			<iWorkRate>100</iWorkRate>
 			<iNukeRange>-1</iNukeRange>
 			<TerrainImpassables>
 				<TerrainImpassable>
@@ -8506,7 +8515,7 @@
 			<iPlainsAttack>50</iPlainsAttack>
 			<iPlainsDefense>50</iPlainsDefense>
 			<iCultureGarrison>10</iCultureGarrison>
-			<iAsset>3</iAsset>
+			<iAsset>4</iAsset>
 			<iPower>20</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
@@ -8597,8 +8606,8 @@
 			<iWithdrawalProb>50</iWithdrawalProb>
 			<iCollateralDamageLimit>100</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>6</iCollateralDamageMaxUnits>
-			<iCultureGarrison>10</iCultureGarrison>
-			<iAsset>3</iAsset>
+			<iCultureGarrison>12</iCultureGarrison>
+			<iAsset>5</iAsset>
 			<iPower>28</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
@@ -8820,7 +8829,7 @@
 			<iBombardRate>12</iBombardRate>
 			<iCultureGarrison>7</iCultureGarrison>
 			<iAsset>3</iAsset>
-			<iPower>8</iPower>
+			<iPower>10</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>2</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>
@@ -10580,10 +10589,6 @@
 					<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_MISSILE_CARRIER_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_RADIO</PrereqTech>
 			<PrereqBonuses>
@@ -10600,7 +10605,7 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>75</iWithdrawalProb>
 			<iAsset>4</iAsset>
-			<iPower>24</iPower>
+			<iPower>16</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
 				<fMaxSpeed>2.25</fMaxSpeed>
@@ -11923,6 +11928,7 @@
 			<Description>TXT_KEY_UNIT_GREAT_PROPHET</Description>
 			<Civilopedia>TXT_KEY_UNIT_GREAT_PEOPLE</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_GREAT_PROPHET_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_GREAT_PROPHET_HELP</Help>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<bGoldenAge>1</bGoldenAge>
 			<bGreatMission>1</bGreatMission>
@@ -12201,10 +12207,6 @@
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
 			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
 				<TerrainImpassable>
 					<TerrainType>TERRAIN_TUNDRA</TerrainType>
 					<bTerrainImpassable>1</bTerrainImpassable>
