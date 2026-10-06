@@ -9009,6 +9009,17 @@ void CvPlot::updateFeatureSymbolVisibility()
 		{
 			if(GC.getFeatureInfo(getFeatureType()).isVisibleAlways())
 				bVisible = true;
+
+			// Fresol: purely visual - hide the cape once the viewer has Optics.
+			if (getFeatureType() == FEATURE_CAPE)
+			{
+				TeamTypes eViewer = GC.getGameINLINE().getActiveTeam();
+
+				if (eViewer != NO_TEAM)
+				{
+					bVisible = bVisible && !GET_TEAM(eViewer).isHasTech((TechTypes)OPTICS);
+				}
+			}
 		}
 
 		bool wasVisible = !gDLL->getFeatureIFace()->IsHidden(m_pFeatureSymbol);
