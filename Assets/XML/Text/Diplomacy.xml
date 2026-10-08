@@ -20,10 +20,10 @@
 	<TEXT>
 		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_SAN_MARTIN</Tag>
 		<English>Our armies are evenly matched, but I believe in a battle I would win out. So that this does not occur I ask you to meet our demands.</English>
-		<French>Nos arm&#233;es sont de force &#233;gale, mais je crois que je gagnerais en cas de bataille. Afin que cela ne se produise pas, je vous demande de satisfaire nos exigences.</French>
-		<German>Helfen hei?t br?derlich teilen, [CT_NAME].</German>
-		<Italian>Se ci tieni a me, condividi, [CT_NAME].</Italian>
-		<Spanish>Compartir es de generosos, [CT_NAME].</Spanish>
+		<French>Nos arm&#233;es sont de force &#233;gale, mais je crois que nous gagnerions en cas de guerre. Si vous voulez &#233;viter cela, veuillez acc&#233;der &#224; nos demandes.</French>
+		<German>Unsere Armeen sind ebenb&#252;rtig, aber ich denke, ich w&#252;rde einen Kampf gewinnen. Damit das nicht geschieht, solltet Ihr unseren Forderungen nachkommen.</German>
+		<Italian>I nostri eserciti si equivalgono, ma sono sicuro che in una battaglia vincerei io. Affinch&#233; ci&#242; non accada, ti chiedo di soddisfare le nostre richieste.</Italian>
+		<Spanish>Nuestros ej&#233;rcitos est&#225;n a la par, aunque creo que yo ganar&#237;a si lucharan. As&#237; que, para que esto no ocurra, os pido que satisfag&#225;is mis exigencias.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_JUAREZ_1</Tag>
@@ -44,10 +44,10 @@
 	<TEXT>
 		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_SAN_MARTIN</Tag>
 		<English>You are outgunned and outclassed. I suggest you give me what I demand.</English>
-		<French>Vous avez moins d'&#233;quipement que nous. Vous &#234;tes surclass&#233;. Je sugg&#232;re que vous me donniez ce que je veux.</French>
-		<German>Schlagt ein, wenn Ihr kein zweites Gettysburg erleben wollt! </German>
-		<Italian>Dammi ci? che chiedo o proverai l'ira della nostra &amp;quot;terribile e rapida spada.&amp;quot; </Italian>
-		<Spanish>Dadnos esto o sentir?is la c?lera de nuestra &amp;quot;terrible y veloz espada&amp;quot;. </Spanish>
+		<French>Vous &#234;tes inf&#233;rieurs en nombre et en armes. Je vous sugg&#232;re de me donner ce que je veux.</French>
+		<German>Ihr seid uns in jeder Hinsicht unterlegen. Ich schlage vor, Ihr gebt mir, was ich verlange.</German>
+		<Italian>Ti supero in classe ed equipaggiamento. Ti suggerisco di darmi quello che voglio.</Italian>
+		<Spanish>Os superamos en armas y en hombres. Os sugiero que nos deis lo que exijo.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_JUAREZ_1</Tag>
@@ -67,11 +67,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_SAN_MARTIN</Tag>
-		<English>The simplest strategy is for me to ask you for what we need and hope your good will wins out.</English>
-		<French>La strat&#233;gie la plus simple pour moi est de vous demander de nous fournir ce dont nous avons besoin et esp&#233;rer de la bonne volont&#233; de votre part.</French>
-		<German>Ihr werdet einem treuen Freund diese kleine Bitte doch nicht abschlagen, [CT_NAME]?</German>
-		<Italian>Avresti un po' di questi in nome della nostra amicizia, [CT_NAME]?</Italian>
-		<Spanish>&#191;Podr?ais darles esto a unos buenos amigos, [CT_NAME]?</Spanish>
+		<English>The simplest strategy is for me to ask you for what we need and hope your good will wins out. </English>
+		<French>Le plus simple serait de vous demander de nous aider en esp&#233;rant que votre bonne volont&#233; fera le reste.</French>
+		<German>Es ist f&#252;r mich die einfachste Strategie, Euch um das zu bitten, was wir ben&#246;tigen, und darauf zu hoffen, dass Euer guter Wille siegt.</German>
+		<Italian>La strategia pi&#249; semplice per me &#232; chiederti quello che ci serve e sperare nella tua buona volont&#224;. </Italian>
+		<Spanish>La estrategia m&#225;s sencilla para m&#237; es pediros lo que necesitamos y rezar porque vuestra buena voluntad se imponga. </Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_GENERIC</Tag>
@@ -116,10 +116,10 @@
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SAN_MARTIN</Tag>
 		<English>Hello, friend. My name is [OUR_NAME], but you can call me Jose. Or you can call me Francisco. Or you can call me Martin. Just don't call me late for dinner. </English>
-		<French>Bonjour, cher ami. Je m'appelle [OUR_NAME], mais vous pouvez m'appeler Jos&#233;. Ou Francisco. Ou Mart&#237;n. Mais ne m'appelez pas en retard pour d&#238;ner.</French>
-		<German>Hello, friend. My name is [OUR_NAME], but you can call me Jose. Or you can call me Francisco. Or you can call me Martin. Just don't call me late for dinner. </German>
-		<Italian>Hello, friend. My name is [OUR_NAME], but you can call me Jose. Or you can call me Francisco. Or you can call me Martin. Just don't call me late for dinner. </Italian>
-		<Spanish>Hello, friend. My name is [OUR_NAME], but you can call me Jose. Or you can call me Francisco. Or you can call me Martin. Just don't call me late for dinner. </Spanish>
+		<French>Bonjour, mon ami. Je m'appelle [OUR_NAME], mais vous pouvez m'appeler Jos&#233;. Ou Francisco. Ou Martin. Evitez simplement de m'appeler trop tard pour d&#238;ner.</French>
+		<German>Hallo. Ich bin [OUR_NAME], aber Ihr k&#246;nnt mich Jose nennen. Oder nennt mich Francisco. Oder nennt mich Martin. Hauptsache Ihr nennt meinen Namen im Zusammenhang mit einer Einladung zum Essen.</German>
+		<Italian>Salve, amico. Il mio nome &#232; [OUR_NAME], ma puoi chiamarmi Jose. O puoi chiamarmi Francisco. O puoi chiamarmi Martin. Basta che non mi chiami troppo tardi per la cena. </Italian>
+		<Spanish>Hola, amigo. Soy [OUR_NAME], pero pod&#233;is llamarme Jos&#233;, o Francisco, o Mart&#237;n. Pero no me llam&#233;is tarde para la cena. </Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SANTA_ANNA_1</Tag>
@@ -148,10 +148,10 @@
 	<TEXT>
 		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_SAN_MARTIN</Tag>
 		<English>Finally I get to talk to a worthy adversary. What can the [OUR_EMPIRE] do for you?</English>
-		<French>Enfin, je parle &#224; un adversaire digne de ce nom. Qu'est-ce que la [OUR_EMPIRE] peut faire pour vous ?</French>
-		<German>Seid gegr??t, [CT_NAME]. Nehmt Platz und lasst uns ein wenig plaudern.</German>
-		<Italian>Salve, [CT_NAME]. Siediti e parliamo per un po'.</Italian>
-		<Spanish>Saludos, [CT_NAME]. Sentaos y charlemos un rato.</Spanish>
+		<French>Enfin un adversaire &#224; ma mesure ! Que peut faire l'[OUR_EMPIRE] pour vous ?</French>
+		<German>Endlich kann ich mich mit einem w&#252;rdigen Gegner unterhalten. Was kann das [OUR_EMPIRE:2] f&#252;r Euch tun?</German>
+		<Italian>Finalmente parlo con un degno avversario. Cosa pu&#242; fare [OUR_EMPIRE] per te?</Italian>
+		<Spanish>Por fin consigo hablar con un adversario digno. &#191;Qu&#233; puede hacer el [OUR_EMPIRE] por vos?</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_JUAREZ_1</Tag>
@@ -180,10 +180,10 @@
 	<TEXT>
 		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_SAN_MARTIN</Tag>
 		<English>You lack the guile to trick me. Be warned I will not react well to deceit. </English>
-		<French>Vous n'&#234;tes pas assez rus&#233; pour me tromper. Soyez averti que je ne r&#233;agirai pas favorablement si vous essayez.</French>
-		<German>Was verschafft mir die zweifelhafte Ehre Eures Besuchs?</German>
-		<Italian>E a cosa devo il dubbio onore della tua presenza?</Italian>
-		<Spanish>&#191;Y a qu? debemos el dudoso honor de vuestra compa??a?</Spanish>
+		<French>Vous n'&#234;tes pas assez rus&#233; pour me duper. Soyez s&#251;r que je r&#233;agirai tr&#232;s mal &#224; toute trahison.</French>
+		<German>Ihr seid nicht listig genug, um mich hereinzulegen. Ich warne Euch, ich reagiere nicht besonders erfreut auf Betrug.</German>
+		<Italian>Non sei abbastanza furbo per fregarmi. Attento: non reagisco bene agli inganni. </Italian>
+		<Spanish>Os falta astucia para enga&#241;arme. Os lo advierto: las triqui&#241;uelas no son de mi agrado. </Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_NO_PEACE_LEADER_JUAREZ_1</Tag>
@@ -204,10 +204,10 @@
 	<TEXT>
 		<Tag>AI_DIPLO_NO_PEACE_LEADER_SAN_MARTIN</Tag>
 		<English>I knew you would beg for peace eventually, but there will be no peace until you surrender.</English>
-		<French>Je savais que vous finiriez par nous supplier de faire la paix, mais il n'y aura pas de paix avant votre reddition.</French>
-		<German>Wie ein Freund von mir zu sagen pflegte: 'Ich akzeptiere nur die sofortige und bedingungslose Kapitulation'. ?u?erst treffend, nicht wahr?</German>
-		<Italian>Come disse una volta un mio amico: &amp;quot;L'unica cosa accettabile ? una resa incondizionata e immediata.&amp;quot; Conciso, non trovi?</Italian>
-		<Spanish>Como un amigo m?o dijo una vez: &amp;quot;Ninguna condici?n es aceptable, salvo una rendici?n incondicional e inmediata&amp;quot;. Es una l?stima, &#191;no cre?is?</Spanish>
+		<French>Je savais que vous finiriez par me supplier de faire la paix, mais il n'y aura aucune paix avant votre capitulation.</French>
+		<German>Ich wusste, dass Ihr irgendwann um Frieden betteln w&#252;rdet, aber es wird erst Frieden geben, wenn Ihr Euch ergebt.</German>
+		<Italian>Sapevo che mi avresti pregato di stipulare una pace, alla fine, ma non ci sar&#224; pace fino alla tua resa.</Italian>
+		<Spanish>Sab&#237;a que, tarde o temprano, suplicar&#237;ais la paz. Pero no habr&#225; paz hasta que os rind&#225;is.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_JUAREZ_1</Tag>
@@ -227,11 +227,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_SAN_MARTIN</Tag>
-		<English>I will now use my cunning knowledge of tactics to ignore you.</English>
-		<French>Permettez-moi d'user de mes grandes comp&#233;tences tactiques afin de vous ignorer.</French>
-		<German>Fahrt zur H?lle!</German>
-		<Italian>Sparisci.</Italian>
-		<Spanish>Pod?is iros al cuerno.</Spanish>
+		<English>I will now use my cunning knowledge of tactics to ignore you. </English>
+		<French>Je vais maintenant vous d&#233;montrer mes talents de strat&#232;ge en vous ignorant totalement.</French>
+		<German>Ich werde jetzt mein &#252;berragendes taktisches Wissen verwenden und Euch ignorieren.</German>
+		<Italian>Ora user&#242; la mia incredibile conoscenza della tattica per ignorarti. </Italian>
+		<Spanish>Ahora utilizar&#233; mi astuto conocimiento de la t&#225;ctica para hacer caso omiso de vos. </Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_NATIVE_1</Tag>
@@ -395,11 +395,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_ERENDIRA_1</Tag>
-		<English>Tremble before the almighty [OUR_NAME].</English>
-		<French>Tremble before the almighty [OUR_NAME].</French>
-		<German>Tremble before the almighty [OUR_NAME].</German>
-		<Italian>Tremble before the almighty [OUR_NAME].</Italian>
-		<Spanish>Tremble before the almighty [OUR_NAME].</Spanish>
+		<English>I am [OUR_NAME] of [OUR_CIV_SHORT]. You may enter our lands as a guest, [CT_NAME]. Do not mistake that for permission to become our master.</English>
+		<French>I am [OUR_NAME] of [OUR_CIV_SHORT]. You may enter our lands as a guest, [CT_NAME]. Do not mistake that for permission to become our master.</French>
+		<German>I am [OUR_NAME] of [OUR_CIV_SHORT]. You may enter our lands as a guest, [CT_NAME]. Do not mistake that for permission to become our master.</German>
+		<Italian>I am [OUR_NAME] of [OUR_CIV_SHORT]. You may enter our lands as a guest, [CT_NAME]. Do not mistake that for permission to become our master.</Italian>
+		<Spanish>I am [OUR_NAME] of [OUR_CIV_SHORT]. You may enter our lands as a guest, [CT_NAME]. Do not mistake that for permission to become our master.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PACHACUTI_1</Tag>
@@ -411,11 +411,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_KAMEHAMEHA_1</Tag>
-		<English>Aloha! Visitors from afar are welcome, so long as they provide some worth.</English>
-		<French>Aloha! Visitors from afar are welcome, so long as they provide some worth.</French>
-		<German>Aloha! Visitors from afar are welcome, so long as they provide some worth.</German>
-		<Italian>Aloha! Visitors from afar are welcome, so long as they provide some worth.</Italian>
-		<Spanish>Aloha! Visitors from afar are welcome, so long as they provide some worth.</Spanish>
+		<English>Aloha, [CT_NAME]. I am [OUR_NAME]. There is room in my harbors for your ships, if you come to trade.</English>
+		<French>Aloha, [CT_NAME]. I am [OUR_NAME]. There is room in my harbors for your ships, if you come to trade.</French>
+		<German>Aloha, [CT_NAME]. I am [OUR_NAME]. There is room in my harbors for your ships, if you come to trade.</German>
+		<Italian>Aloha, [CT_NAME]. I am [OUR_NAME]. There is room in my harbors for your ships, if you come to trade.</Italian>
+		<Spanish>Aloha, [CT_NAME]. I am [OUR_NAME]. There is room in my harbors for your ships, if you come to trade.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_OCONOSTOTA_1</Tag>
@@ -456,5 +456,1853 @@
 		<German></German>
 		<Italian></Italian>
 		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_LOUVERTURE_1</Tag>
+		<English>I am Toussaint Louverture. [OUR_CIV_SHORT] welcomes commerce and friendship, [CT_NAME], but our people are no longer for sale.</English>
+		<French>I am Toussaint Louverture. [OUR_CIV_SHORT] welcomes commerce and friendship, [CT_NAME], but our people are no longer for sale.</French>
+		<German>I am Toussaint Louverture. [OUR_CIV_SHORT] welcomes commerce and friendship, [CT_NAME], but our people are no longer for sale.</German>
+		<Italian>I am Toussaint Louverture. [OUR_CIV_SHORT] welcomes commerce and friendship, [CT_NAME], but our people are no longer for sale.</Italian>
+		<Spanish>I am Toussaint Louverture. [OUR_CIV_SHORT] welcomes commerce and friendship, [CT_NAME], but our people are no longer for sale.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_BOLIVAR_1</Tag>
+		<English>I am pleased to meet you, [CT_NAME]! I offer you a treaty of peace, I suggest you accept it.</English>
+		<French>C'est un plaisir de faire votre connaissance, [CT_NAME] ! Je vous propose un trait&#233; de paix et je vous sugg&#232;re de l'accepter.</French>
+		<German>Ich freue mich, Euch kennenzulernen, [CT_NAME]! Ich biete Euch einen Friedensvertrag an, den Ihr annehmen solltet.</German>
+		<Italian>Sono contento di incontrarti, [CT_NAME]! Ti offro un trattato di pace... e ti suggerisco di accettarlo.</Italian>
+		<Spanish>Me alegro mucho de conoceros, [CT_NAME]. Os ofrezco un tratado de paz. Os sugiero que lo acept&#233;is.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_DAVIS_1</Tag>
+		<English>I am Jefferson Davis, President of [OUR_CIV_SHORT]. We intend to manage our own affairs, [CT_NAME]. I trust you will manage yours.</English>
+		<French>I am Jefferson Davis, President of [OUR_CIV_SHORT]. We intend to manage our own affairs, [CT_NAME]. I trust you will manage yours.</French>
+		<German>I am Jefferson Davis, President of [OUR_CIV_SHORT]. We intend to manage our own affairs, [CT_NAME]. I trust you will manage yours.</German>
+		<Italian>I am Jefferson Davis, President of [OUR_CIV_SHORT]. We intend to manage our own affairs, [CT_NAME]. I trust you will manage yours.</Italian>
+		<Spanish>I am Jefferson Davis, President of [OUR_CIV_SHORT]. We intend to manage our own affairs, [CT_NAME]. I trust you will manage yours.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_LOUVERTURE_1</Tag>
+		<English>Welcome, [CT_NAME]. Sit down. There is more profit in trading coffee than in trading cannon fire.</English>
+		<French>Welcome, [CT_NAME]. Sit down. There is more profit in trading coffee than in trading cannon fire.</French>
+		<German>Welcome, [CT_NAME]. Sit down. There is more profit in trading coffee than in trading cannon fire.</German>
+		<Italian>Welcome, [CT_NAME]. Sit down. There is more profit in trading coffee than in trading cannon fire.</Italian>
+		<Spanish>Welcome, [CT_NAME]. Sit down. There is more profit in trading coffee than in trading cannon fire.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_LOUVERTURE_1</Tag>
+		<English>You change your promises more often than I have changed uniforms, [CT_NAME]. What is it this time?</English>
+		<French>You change your promises more often than I have changed uniforms, [CT_NAME]. What is it this time?</French>
+		<German>You change your promises more often than I have changed uniforms, [CT_NAME]. What is it this time?</German>
+		<Italian>You change your promises more often than I have changed uniforms, [CT_NAME]. What is it this time?</Italian>
+		<Spanish>You change your promises more often than I have changed uniforms, [CT_NAME]. What is it this time?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_BOLIVAR_1</Tag>
+		<English>It is good to talk to a person that understands the importance of action. Let us discuss how we can strengthen our nations.</English>
+		<French>C'est bon de parler &#224; quelqu'un qui comprend l'importance de l'action. Voyons comment nous pourrions renforcer nos nations.</French>
+		<German>Es ist gut, sich mit jemandem zu unterhalten, der wei&#223;, wie wichtig es ist zu handeln. Lasst uns dar&#252;ber diskutieren, wie wir unsere Nationen st&#228;rken k&#246;nnen.</German>
+		<Italian>&#200; bello parlare con una persona che capisce l'importanza dell'azione. Parliamo di come possiamo rafforzare le nostre nazioni.</Italian>
+		<Spanish>Es bueno hablar con alguien que entiende la importancia de los actos. Charlemos sobre c&#243;mo podemos fortalecer nuestras naciones.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_BOLIVAR_1</Tag>
+		<English>Go on, say what you want. Let us see if it will quell my contempt for you.</English>
+		<French>Allez-y, dites ce que vous avez &#224; dire. Voyons si &#231;a apaisera mon m&#233;pris envers vous.</French>
+		<German>Sagt, was Ihr zu sagen habt. Vielleicht &#228;ndert ja irgendetwas davon meine ver&#228;chtliche Meinung &#252;ber Euch.</German>
+		<Italian>Coraggio, dimmi quello che vuoi. Vediamo se soffocher&#224; il disprezzo che provo per te.</Italian>
+		<Spanish>Adelante, decidme lo que quer&#233;is. Veremos si eso acaba con el desd&#233;n que siento hacia vos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_DAVIS_1</Tag>
+		<English>Welcome, [CT_NAME]. Our ports could use more merchants and fewer gunboats. What business brings you here?</English>
+		<French>Welcome, [CT_NAME]. Our ports could use more merchants and fewer gunboats. What business brings you here?</French>
+		<German>Welcome, [CT_NAME]. Our ports could use more merchants and fewer gunboats. What business brings you here?</German>
+		<Italian>Welcome, [CT_NAME]. Our ports could use more merchants and fewer gunboats. What business brings you here?</Italian>
+		<Spanish>Welcome, [CT_NAME]. Our ports could use more merchants and fewer gunboats. What business brings you here?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_DAVIS_1</Tag>
+		<English>You are not addressing one of your provincial governors, [CT_NAME]. State your business.</English>
+		<French>You are not addressing one of your provincial governors, [CT_NAME]. State your business.</French>
+		<German>You are not addressing one of your provincial governors, [CT_NAME]. State your business.</German>
+		<Italian>You are not addressing one of your provincial governors, [CT_NAME]. State your business.</Italian>
+		<Spanish>You are not addressing one of your provincial governors, [CT_NAME]. State your business.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_LOUVERTURE_1</Tag>
+		<English>You may keep your promises, [CT_NAME]. I have soldiers to attend to.</English>
+		<French>You may keep your promises, [CT_NAME]. I have soldiers to attend to.</French>
+		<German>You may keep your promises, [CT_NAME]. I have soldiers to attend to.</German>
+		<Italian>You may keep your promises, [CT_NAME]. I have soldiers to attend to.</Italian>
+		<Spanish>You may keep your promises, [CT_NAME]. I have soldiers to attend to.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_BOLIVAR_1</Tag>
+		<English>Look, I'm very busy. Why don't you take the kids and go back to the clubhouse?</English>
+		<French>Ecoutez, je suis tr&#232;s occup&#233;. Pourquoi n'iriez-vous pas faire quelques p&#226;t&#233;s de sable ?</French>
+		<German>Seht, ich bin sehr besch&#228;ftigt. Warum nehmt Ihr nicht die Kinder und geht zum Clubhaus zur&#252;ck?</German>
+		<Italian>Senti, sono molto occupato. Perch&#233; non prendi i bambini e te ne torni al circolo?</Italian>
+		<Spanish>Mirad, estoy muy ocupado. &#191;Por qu&#233; no os llev&#225;is a los ni&#241;os y os volv&#233;is al club?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_DAVIS_1</Tag>
+		<English>My cabinet has more pressing business than hearing your objections, [CT_NAME].</English>
+		<French>My cabinet has more pressing business than hearing your objections, [CT_NAME].</French>
+		<German>My cabinet has more pressing business than hearing your objections, [CT_NAME].</German>
+		<Italian>My cabinet has more pressing business than hearing your objections, [CT_NAME].</Italian>
+		<Spanish>My cabinet has more pressing business than hearing your objections, [CT_NAME].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_LOUVERTURE_1</Tag>
+		<English>No peace yet. My soldiers did not break their chains merely to surrender their arms.</English>
+		<French>No peace yet. My soldiers did not break their chains merely to surrender their arms.</French>
+		<German>No peace yet. My soldiers did not break their chains merely to surrender their arms.</German>
+		<Italian>No peace yet. My soldiers did not break their chains merely to surrender their arms.</Italian>
+		<Spanish>No peace yet. My soldiers did not break their chains merely to surrender their arms.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_BOLIVAR_1</Tag>
+		<English>Peace? There will be peace when you surrender!</English>
+		<French>La paix ? Il ne pourra y avoir de paix que lorsque vous vous serez rendu !</French>
+		<German>Frieden? Es gibt erst Frieden, wenn Ihr Euch ergebt!</German>
+		<Italian>Pace? Ci sar&#224; la pace quando ti arrenderai!</Italian>
+		<Spanish>&#191;Paz? &#161;La tendremos cuando os rind&#225;is!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_DAVIS_1</Tag>
+		<English>We shall not sign away at the negotiating table what our armies still hold in the field.</English>
+		<French>We shall not sign away at the negotiating table what our armies still hold in the field.</French>
+		<German>We shall not sign away at the negotiating table what our armies still hold in the field.</German>
+		<Italian>We shall not sign away at the negotiating table what our armies still hold in the field.</Italian>
+		<Spanish>We shall not sign away at the negotiating table what our armies still hold in the field.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_LOUVERTURE_1</Tag>
+		<English>Our treasury is thin, [CT_NAME], but our memory is long. A contribution would not be forgotten.</English>
+		<French>Our treasury is thin, [CT_NAME], but our memory is long. A contribution would not be forgotten.</French>
+		<German>Our treasury is thin, [CT_NAME], but our memory is long. A contribution would not be forgotten.</German>
+		<Italian>Our treasury is thin, [CT_NAME], but our memory is long. A contribution would not be forgotten.</Italian>
+		<Spanish>Our treasury is thin, [CT_NAME], but our memory is long. A contribution would not be forgotten.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_LOUVERTURE_1</Tag>
+		<English>An army cannot march on declarations of liberty. Send these supplies, and spare us both an unpleasant discussion.</English>
+		<French>An army cannot march on declarations of liberty. Send these supplies, and spare us both an unpleasant discussion.</French>
+		<German>An army cannot march on declarations of liberty. Send these supplies, and spare us both an unpleasant discussion.</German>
+		<Italian>An army cannot march on declarations of liberty. Send these supplies, and spare us both an unpleasant discussion.</Italian>
+		<Spanish>An army cannot march on declarations of liberty. Send these supplies, and spare us both an unpleasant discussion.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_LOUVERTURE_1</Tag>
+		<English>My soldiers have driven off greater armies than yours, [CT_NAME]. Meet this demand before they must prove it again.</English>
+		<French>My soldiers have driven off greater armies than yours, [CT_NAME]. Meet this demand before they must prove it again.</French>
+		<German>My soldiers have driven off greater armies than yours, [CT_NAME]. Meet this demand before they must prove it again.</German>
+		<Italian>My soldiers have driven off greater armies than yours, [CT_NAME]. Meet this demand before they must prove it again.</Italian>
+		<Spanish>My soldiers have driven off greater armies than yours, [CT_NAME]. Meet this demand before they must prove it again.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_BOLIVAR_1</Tag>
+		<English>The [OUR_EMPIRE] are in dire need, please help us.</English>
+		<French>L'[OUR_EMPIRE] est en grand d&#233;sarroi.  Je vous en prie, aidez-nous.</French>
+		<German>Das [OUR_EMPIRE:2] leidet gro&#223;e Not, bitte helft uns.</German>
+		<Italian>Abbiamo urgente bisogno, per favore aiutaci.</Italian>
+		<Spanish>El [OUR_EMPIRE] tiene una terrible necesidad. Ayudadnos, por favor.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_BOLIVAR_1</Tag>
+		<English>My people need what you have. How about you give it to them and show that you are interested in peaceful resolutions to problems.</English>
+		<French>Mon peuple a besoin de ce que vous avez. Acc&#233;dez &#224; nos demandes et vous prouverez votre volont&#233; &#224; trouver une solution pacifique aux probl&#232;mes.</French>
+		<German>Mein Volk braucht, was Ihr habt. Wie w&#228;re es, wenn Ihr es ihm gebt und so zeigt, dass Ihr an einer friedlichen L&#246;sung von Problemen interessiert seid?</German>
+		<Italian>La mia gente ha bisogno di quello che hai. Che ne dici di darglielo e mostrare cos&#236; di essere interessato a una soluzione pacifica dei problemi?</Italian>
+		<Spanish>Mi pueblo necesita lo que ten&#233;is. &#191;Qu&#233; tal si se lo dais y demostr&#225;is as&#237; vuestro inter&#233;s en resolver pac&#237;ficamente los problemas?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_BOLIVAR_1</Tag>
+		<English>You are not in a position to negotiate. Give my people what they want.</English>
+		<French>Vous n'&#234;tes pas en position de n&#233;gocier. Donnez &#224; mon peuple ce qu'il veut.</French>
+		<German>Es steht Euch nicht zu, zu verhandeln. Gebt meinem Volk, was es will.</German>
+		<Italian>Non sei nelle condizioni di negoziare. Dai al mio popolo ci&#242; che chiede.</Italian>
+		<Spanish>No est&#225;is en posici&#243;n de negociar. Dadle a mi pueblo lo que quiere.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_DAVIS_1</Tag>
+		<English>Our cotton ought to secure us friends abroad, [CT_NAME]. This assistance would demonstrate that you are one of them.</English>
+		<French>Our cotton ought to secure us friends abroad, [CT_NAME]. This assistance would demonstrate that you are one of them.</French>
+		<German>Our cotton ought to secure us friends abroad, [CT_NAME]. This assistance would demonstrate that you are one of them.</German>
+		<Italian>Our cotton ought to secure us friends abroad, [CT_NAME]. This assistance would demonstrate that you are one of them.</Italian>
+		<Spanish>Our cotton ought to secure us friends abroad, [CT_NAME]. This assistance would demonstrate that you are one of them.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_DAVIS_1</Tag>
+		<English>Let us spare our treasuries the expense of a campaign, [CT_NAME]. Meet this demand.</English>
+		<French>Let us spare our treasuries the expense of a campaign, [CT_NAME]. Meet this demand.</French>
+		<German>Let us spare our treasuries the expense of a campaign, [CT_NAME]. Meet this demand.</German>
+		<Italian>Let us spare our treasuries the expense of a campaign, [CT_NAME]. Meet this demand.</Italian>
+		<Spanish>Let us spare our treasuries the expense of a campaign, [CT_NAME]. Meet this demand.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_DAVIS_1</Tag>
+		<English>Our armies are ready, [CT_NAME]. I suggest you settle this account before they collect it.</English>
+		<French>Our armies are ready, [CT_NAME]. I suggest you settle this account before they collect it.</French>
+		<German>Our armies are ready, [CT_NAME]. I suggest you settle this account before they collect it.</German>
+		<Italian>Our armies are ready, [CT_NAME]. I suggest you settle this account before they collect it.</Italian>
+		<Spanish>Our armies are ready, [CT_NAME]. I suggest you settle this account before they collect it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_MANGAS_COLORADAS_1</Tag>
+		<English>At this time words can resolve nothing.</English>
+		<French>A ce stade, parler ne r&#233;soudra rien.</French>
+		<German>Zu diesem Zeitpunkt k&#246;nnen Worte nichts bewirken.</German>
+		<Italian>A questo punto le parole non possono risolvere nulla.</Italian>
+		<Spanish>A estas alturas, las palabras no pueden resolver nada.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_MANGAS_COLORADAS_1</Tag>
+		<English>After the atrocities you have committed there can be no peace!</English>
+		<French>Apr&#232;s les atrocit&#233;s que vous avez commises, il n'y aura jamais de paix !</French>
+		<German>Nach den unz&#228;hligen Gr&#228;ueltaten, die Ihr verbrochen habt, kann es keinen Frieden geben!</German>
+		<Italian>Dopo le atrocit&#224; che hai commesso non pu&#242; esserci alcuna pace!</Italian>
+		<Spanish>Despu&#233;s de las atrocidades que hab&#233;is cometido, no puede haber paz.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_MANGAS_COLORADAS_1</Tag>
+		<English>It is always good to hear from friends. Let us sit and talk.</English>
+		<French>C'est toujours un plaisir de revoir ses amis ! Asseyons-nous et discutons.</French>
+		<German>Es ist immer sch&#246;n, wenn sich Freunde bei einem melden. Lasst uns in Ruhe reden.</German>
+		<Italian>&#200; sempre bello avere notizie degli amici. Sediamoci e parliamo.</Italian>
+		<Spanish>Siempre es un placer o&#237;r al [CT_EMPIRE]. Sent&#233;monos y hablemos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_MANGAS_COLORADAS_1</Tag>
+		<English>I hope you have come to try to atone for your actions.</English>
+		<French>J'esp&#232;re que vous &#234;tes venu expier vos p&#233;ch&#233;s.</French>
+		<German>Ich hoffe, Ihr seid hier, um Abbitte f&#252;r Eure Taten zu leisten.</German>
+		<Italian>Spero che tu sia qui per cercare di espiare le tue azioni.</Italian>
+		<Spanish>Espero que hay&#225;is venido a intentar enmendar vuestros actos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_MANGAS_COLORADAS_1</Tag>
+		<English>The spirits have told me of your generosity. I hope they are not wrong.</English>
+		<French>Les esprits m'ont parl&#233; de votre g&#233;n&#233;rosit&#233;. J'esp&#232;re qu'ils n'ont pas tort.</French>
+		<German> Die Geister haben mir von Eurer Gro&#223;z&#252;gigkeit erz&#228;hlt. Ich hoffe, dass sie sich nicht geirrt haben.</German>
+		<Italian>Gli spiriti mi hanno parlato della tua generosit&#224;. Spero che non si sbagliassero.</Italian>
+		<Spanish>Los esp&#237;ritus me han hablado de vuestra generosidad. Espero que no se hayan equivocado.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_MANGAS_COLORADAS_1</Tag>
+		<English>We have given you much and asked for nothing in return...until now.</English>
+		<French>Nous vous avons beaucoup donn&#233; sans rien demander en &#233;change... jusqu'&#224; maintenant.</French>
+		<German>Wir haben Euch viel gegeben und im Austausch um nichts gebeten ... bis jetzt.</German>
+		<Italian>Ti abbiamo dato tanto, senza volere nulla in cambio... fino a ora.</Italian>
+		<Spanish>Hasta ahora os hemos dado mucho y no os hemos pedido nada a cambio.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_MANGAS_COLORADAS_1</Tag>
+		<English>It is dangerous for the rabbit to tempt the wolf. Give us what we want.</English>
+		<French>C'est dangereux pour un lapin de tenter le loup. Donnez-nous ce que nous voulons.</French>
+		<German>Es ist f&#252;r das Kaninchen gef&#228;hrlich, den Wolf zu reizen. Gebt uns, was wir wollen.</German>
+		<Italian>&#200; pericoloso, per il coniglio, provocare il lupo. Dacci quello che vogliamo.</Italian>
+		<Spanish>Es peligroso para el conejo provocar al lobo. Dadnos lo que queremos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SITTING_BULL_1</Tag>
+		<English>Greetings, I am [OUR_NAME] of the [OUR_CIV_ADJ]. Let us sit by the fire and talk. </English>
+		<French>Bonjour, je suis [OUR_NAME] des [OUR_CIV_ADJ:3]. Allons discuter autour du feu. </French>
+		<German>Seid gegr&#252;&#223;t, ich bin [OUR_NAME] vom [OUR_CIV_ADJ:2] Volk. Setzt Euch mit mir ans Feuer, damit wir reden k&#246;nnen.</German>
+		<Italian>Saluti, sono [OUR_NAME] della civilt&#224; [OUR_CIV_ADJ]. Sediamoci davanti al fuoco e parliamo. </Italian>
+		<Spanish>Saludos. Soy [OUR_NAME], de los [OUR_CIV_ADJ:3]. Sent&#233;monos alrededor de la hoguera y hablemos. </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_AGUEYBANA_1</Tag>
+		<English>Perhaps you should go back to where you came from, I do not want to talk to you.</English>
+		<French>Vous devriez peut-&#234;tre retourner d'o&#249; vous venez. Je n'ai pas envie de vous parler.</French>
+		<German>Vielleicht solltet Ihr dorthin zur&#252;ckkehren, wo Ihr hergekommen seid. Ich will nicht mit Euch reden.</German>
+		<Italian>Forse dovresti tornartene da dove vieni, non ho intenzione di parlarti.</Italian>
+		<Spanish>Quiz&#225; deber&#237;ais volver por donde hab&#233;is venido. No quiero hablar con vos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_CUNHAMBEBE_1</Tag>
+		<English>I have no time to talk to you. I need to go eat.</English>
+		<French>Je n'ai pas de temps &#224; vous accorder. Je dois aller manger.</French>
+		<German>Ich habe keine Zeit, mit Euch zu reden. Ich muss etwas essen.</German>
+		<Italian>Non ho tempo di parlarti. Devo andare a mangiare.</Italian>
+		<Spanish>No tengo tiempo para hablar con vos. Tengo que ir a comer.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_OCONOSTOTA_1</Tag>
+		<English>You are untrustworthy and do not deserve my attention.</English>
+		<French>Vous n'&#234;tes pas digne de confiance et ne m&#233;ritez pas mon int&#233;r&#234;t.</French>
+		<German>Ihr seid unzuverl&#228;ssig und verdient es nicht, beachtet zu werden.</German>
+		<Italian>Non meriti fiducia e nemmeno la mia attenzione.</Italian>
+		<Spanish>No sois de fiar y no os merec&#233;is mi atenci&#243;n.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_AGUEYBANA_1</Tag>
+		<English>I can't lose, so there is no reason for peace.</English>
+		<French>Je ne peux pas perdre, alors je n'ai aucune raison de faire la paix.</French>
+		<German>Ich kann unm&#246;glich verlieren, also gibt es keinen Grund, Frieden zu schlie&#223;en.</German>
+		<Italian>Non posso perdere, quindi non c'&#232; ragione di firmare una pace.</Italian>
+		<Spanish>No puedo perder, as&#237; que no hay motivo para firmar la paz.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_CUNHAMBEBE_1</Tag>
+		<English>You want us to make peace with you? The very idea makes me lose my appetite.</English>
+		<French>Vous voulez faire la paix avec nous ? J'en perds l'app&#233;tit rien que d'y songer.</French>
+		<German>Ihr wollt, dass wir mit Euch Frieden schlie&#223;en? Der blo&#223;e Gedanke daran verdirbt mir bereits den Appetit.</German>
+		<Italian>Vuoi che facciamo pace? La sola idea mi fa passare la fame.</Italian>
+		<Spanish>&#191;Y ahora quer&#233;is que hagamos las paces? Con solo pensar en ello se me revuelven las tripas.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_OCONOSTOTA_1</Tag>
+		<English>There will be no peace!</English>
+		<French>Il  n'y aura jamais de paix !</French>
+		<German>Es wird keinen Frieden geben!</German>
+		<Italian>Non ci sar&#224; pace!</Italian>
+		<Spanish>No habr&#225; paz.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_AGUEYBANA_1</Tag>
+		<English>Ah, my great friend has come to see me on this wonderful day. How can the  [OUR_CIV_ADJ] be of service.</English>
+		<French>Ah ! Quelle joie de voir mon bon ami, en ce jour merveilleux !</French>
+		<German>Ah, ich bekomme Besuch an diesem wundervollen Tag. Wie kann Euch das [OUR_CIV_ADJ:3] Volk dienlich sein?</German>
+		<Italian>Ah, il mio grande amico &#232; venuto a trovarmi in questo meraviglioso giorno. Come esserti d'aiuto il popolo [OUR_CIV_ADJ]?</Italian>
+		<Spanish>Ah, mi gran amigo ha venido a verme en este maravilloso d&#237;a. &#191;En qu&#233; puede ayudaros el [OUR_CIV_ADJ]?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_CUNHAMBEBE_1</Tag>
+		<English>Welcome, my friend. Let us feast in your honor.</English>
+		<French>Bienvenue, mon ami. Festoyons en votre honneur.</French>
+		<German>Willkommen, mein Freund. Lasst uns zu Euren Ehren feiern.</German>
+		<Italian>Benvenuto, amico mio. Festeggiamo in tuo onore.</Italian>
+		<Spanish>Bienvenido, amigo. Celebremos un banquete en tu honor.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_OCONOSTOTA_1</Tag>
+		<English>Welcome, friend! Let us talk and trade.</English>
+		<French>Bienvenue, mon ami ! Parlons un peu affaires !</French>
+		<German>Willkommen! Lasst uns reden und Handel treiben.</German>
+		<Italian>Benvenuto, amico! Parliamo e commerciamo.</Italian>
+		<Spanish>Bienvenido, amigo. Hablemos y negociemos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_AGUEYBANA_1</Tag>
+		<English>If it is not the worst thing to ever wash in from the Great Sea. What do you want?</English>
+		<French>Si ce n'est pas la pire salet&#233; que la mer ait jamais rejet&#233;e ! Que voulez-vous ?</French>
+		<German>Na wenn das nicht das Schlimmste ist, was das Gro&#223;e Meer jemals angesp&#252;lt hat. Was wollt Ihr?</German>
+		<Italian>Guarda un po' se non &#232; il peggior rifiuto che ci abbia consegnato la marea. Cosa vuoi?</Italian>
+		<Spanish>Vaya, si es la peor cosa que ha tra&#237;do el Gran Mar. &#191;Qu&#233; quer&#233;is?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_CUNHAMBEBE_1</Tag>
+		<English>Whatever it is you want, make it quick. My lunch is getting cold.</English>
+		<French>Quoique vous vouliez, faites vite ! Mon d&#238;ner refroidit.</French>
+		<German>Was Ihr auch wollt, macht schnell. Mein Essen wird kalt.</German>
+		<Italian>Qualsiasi cosa tu voglia, sbrigati. Il pranzo si raffredda.</Italian>
+		<Spanish>Sea lo que sea, sed breve. Se me est&#225; enfriando el almuerzo.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_OCONOSTOTA_1</Tag>
+		<English>You do not deserve my attention. Consider yourself lucky.</English>
+		<French>Vous ne m&#233;ritez pas mon attention. Et tant mieux pour vous.</French>
+		<German>Ihr verdient meine Aufmerksamkeit nicht. Sch&#228;tzt Euch gl&#252;cklich.</German>
+		<Italian>Non meriti la mia attenzione. Considerati fortunato.</Italian>
+		<Spanish>No os merec&#233;is mi atenci&#243;n. Consideraos afortunado.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_AGUEYBANA_1</Tag>
+		<English>The greatest service friends can give to each other is charity. Please help us.</English>
+		<French>Le plus grand service que des amis puissent se rendre, c'est la charit&#233;. Aidez-nous.</French>
+		<German>Der gr&#246;&#223;te Dienst, den ein Freund einem anderen erweisen kann, ist Wohlt&#228;tigkeit. Bitte helft uns.</German>
+		<Italian>Il pi&#249; grande dono che si possono fare degli amici &#232; la carit&#224;. Aiutaci, per favore.</Italian>
+		<Spanish>El mayor servicio que pueden prestarse los amigos es la caridad. Ayudadnos, por favor.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_CUNHAMBEBE_1</Tag>
+		<English>We are in need, but we have nothing to offer except the food on our tables. Please give us what we want and I'll be sure to invite you to our next soiree.</English>
+		<French>Nous sommes dans le besoin, mais nous n'avons rien &#224; vous offrir &#224; part la nourriture qui garnit nos tables. Donnez-nous ce que nous voulons et nous vous inviterons &#224; notre prochaine soir&#233;e.</French>
+		<German>Wir sind in Not, aber wir k&#246;nnen Euch nichts anderes anbieten als das Essen auf unserem Tisch. Gebt uns bitte, was wir ben&#246;tigen, dann lade ich Euch auch bestimmt zu unserer n&#228;chsten Soiree ein.</German>
+		<Italian>Abbiamo bisogno di aiuto ma non abbiamo altro da offrirti se non il cibo sulle nostre tavole. Dacci quello che vogliamo e ti inviteremo al prossimo ricevimento.</Italian>
+		<Spanish>Estamos necesitados, pero no podemos ofreceros m&#225;s que comida en nuestra mesa. Dadnos lo que precisamos, por favor, y me asegurar&#233; de invitaros a nuestra pr&#243;xima velada.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_OCONOSTOTA_1</Tag>
+		<English>Give me what I want and the spirits will watch over you.</English>
+		<French>Donnez-moi ce que je veux et tous les esprits seront &#224; vos c&#244;t&#233;s.</French>
+		<German>Gebt mir, was ich verlange, dann werden die Geister &#252;ber Euch wachen.</German>
+		<Italian>Dammi quello che voglio e gli spiriti veglieranno su di te.</Italian>
+		<Spanish>Dadnos lo que queremos y los esp&#237;ritus velar&#225;n por vosotros.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_AGUEYBANA_1</Tag>
+		<English>The difference between peace and war is often the answer to simple questions. Such as, will you help us?</English>
+		<French>La diff&#233;rence entre la guerre et la paix se trouve souvent dans la r&#233;ponse &#224; de simples questions. Comme par exemple: "voulez-vous nous aider?"</French>
+		<German>Oft entscheidet die Antwort auf eine einfache Frage zwischen Frieden und Krieg. Wie zum Beispiel: Werdet Ihr uns helfen?</German>
+		<Italian>La differenza tra guerra e pace &#232; spesso la risposta a semplici domande. Come, per esempio: ci aiuterai?</Italian>
+		<Spanish>La diferencia entre la paz y la guerra suele estar en c&#243;mo se responde a las preguntas sencillas, preguntas como: "&#191;Nos ayudar&#233;is?"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_CUNHAMBEBE_1</Tag>
+		<English>My tribe needs assistance. If you want to be invited to dinner, then please help.</English>
+		<French>Ma tribu a besoin d'aide. Si vous voulez &#234;tre invit&#233; &#224; d&#238;ner, alors aidez-nous.</French>
+		<German>Mein Stamm braucht Hilfe. Wenn Ihr zum Essen eingeladen werden m&#246;chtet, helft uns bitte.</German>
+		<Italian>La mia trib&#249; ha bisogno di aiuto. Se vuoi essere invitato a cena, dacci una mano.</Italian>
+		<Spanish>Mi tribu necesita ayuda. Si quer&#233;is que os invite a comer, ayudadnos, por favor.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_OCONOSTOTA_1</Tag>
+		<English>Please prove your friendship by giving us what we want.</English>
+		<French>Renforcez votre amiti&#233; envers nous en nous donnant ce que nous voulons.</French>
+		<German>Stellt Eure Freundschaft bitte unter Beweis und gebt uns, was wir verlangen.</German>
+		<Italian>Provaci la tua amicizia dandoci quello che vogliamo.</Italian>
+		<Spanish>Por favor, haced honor a nuestra amistad d&#225;ndonos lo que queremos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_AGUEYBANA_1</Tag>
+		<English>If I was you, I would want to stay on my good side. Give my tribe what it requires.</English>
+		<French>Si j'&#233;tais vous, je pr&#233;f&#232;rerais rester dans mes petits papiers. Donnez &#224; ma tribu ce qu'elle r&#233;clame.</French>
+		<German>Wenn ich an Eurer Stelle w&#228;re, w&#252;rde ich versuchen, mich weiterhin milde zu stimmen. Gebt meinem Stamm das, was er braucht.</German>
+		<Italian>Se fossi in te, non tirerei troppo la corda. Dai alla mia trib&#249; quanto chiede.</Italian>
+		<Spanish>Yo de vos, intentar&#237;a estar a buenas conmigo. Dadle a mi tribu lo que pide.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_CUNHAMBEBE_1</Tag>
+		<English>Give us what we want or you will learn the difference between being invited to dinner and being dinner.</English>
+		<French>Donnez-nous ce que nous voulons ou vous apprendrez la diff&#233;rence entre &#234;tre invit&#233; &#224; d&#238;ner et &#234;tre le d&#238;ner.</French>
+		<German>Gebt uns was wir wollen, sonst lernt Ihr den Unterschied zwischen Essen HABEN und Essen SEIN kennen.</German>
+		<Italian>Dacci quello che vogliamo o conoscerai la differenza tra l'essere invitato a cena e l'essere la cena.</Italian>
+		<Spanish>Dadnos lo que queremos o sabr&#233;is la diferencia entre ser invitado a comer o ser la comida.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_OCONOSTOTA_1</Tag>
+		<English>It is our custom that you give us what we want, and in return we do not destroy you.</English>
+		<French>La tradition exige que vous nous donniez ce que nous voulons. En &#233;change, nous vous laisserons la vie sauve.</French>
+		<German>Es ist bei uns Brauch, dass Ihr uns gebt, was wir verlangen, und wir Euch im Gegenzug nicht zerst&#246;ren.</German>
+		<Italian>&#200; nostra usanza che tu ci dia quello che vogliamo, e in cambio noi non ti distruggeremo.</Italian>
+		<Spanish>Es nuestra costumbre que nos deis lo que queremos y, a cambio, nosotros no acabamos con vosotros.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_LEIF_ERIKSON_1</Tag>
+		<English>I am [OUR_NAME], son of Erik the Red. We have crossed a wide sea to reach these shores. What goods have you to trade?</English>
+		<French>I am [OUR_NAME], son of Erik the Red. We have crossed a wide sea to reach these shores. What goods have you to trade?</French>
+		<German>I am [OUR_NAME], son of Erik the Red. We have crossed a wide sea to reach these shores. What goods have you to trade?</German>
+		<Italian>I am [OUR_NAME], son of Erik the Red. We have crossed a wide sea to reach these shores. What goods have you to trade?</Italian>
+		<Spanish>I am [OUR_NAME], son of Erik the Red. We have crossed a wide sea to reach these shores. What goods have you to trade?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_POPAY_1</Tag>
+		<English>I am [OUR_NAME]. Our pueblos have their own ways and their own councils. If you come as a guest, you will be received as one.</English>
+		<French>I am [OUR_NAME]. Our pueblos have their own ways and their own councils. If you come as a guest, you will be received as one.</French>
+		<German>I am [OUR_NAME]. Our pueblos have their own ways and their own councils. If you come as a guest, you will be received as one.</German>
+		<Italian>I am [OUR_NAME]. Our pueblos have their own ways and their own councils. If you come as a guest, you will be received as one.</Italian>
+		<Spanish>I am [OUR_NAME]. Our pueblos have their own ways and their own councils. If you come as a guest, you will be received as one.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_KAMEHAMEHA_1</Tag>
+		<English>Welcome, [CT_NAME]. Sit with me. A good agreement should last longer than the feast that seals it.</English>
+		<French>Welcome, [CT_NAME]. Sit with me. A good agreement should last longer than the feast that seals it.</French>
+		<German>Welcome, [CT_NAME]. Sit with me. A good agreement should last longer than the feast that seals it.</German>
+		<Italian>Welcome, [CT_NAME]. Sit with me. A good agreement should last longer than the feast that seals it.</Italian>
+		<Spanish>Welcome, [CT_NAME]. Sit with me. A good agreement should last longer than the feast that seals it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_KAMEHAMEHA_1</Tag>
+		<English>You arrive with much ceremony, [CT_NAME]. Have you brought anything besides demands?</English>
+		<French>You arrive with much ceremony, [CT_NAME]. Have you brought anything besides demands?</French>
+		<German>You arrive with much ceremony, [CT_NAME]. Have you brought anything besides demands?</German>
+		<Italian>You arrive with much ceremony, [CT_NAME]. Have you brought anything besides demands?</Italian>
+		<Spanish>You arrive with much ceremony, [CT_NAME]. Have you brought anything besides demands?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_LEIF_ERIKSON_1</Tag>
+		<English>Welcome, [CT_NAME]! Come to the hall and tell us what lies beyond your shores. A sailor can always use another tale.</English>
+		<French>Welcome, [CT_NAME]! Come to the hall and tell us what lies beyond your shores. A sailor can always use another tale.</French>
+		<German>Welcome, [CT_NAME]! Come to the hall and tell us what lies beyond your shores. A sailor can always use another tale.</German>
+		<Italian>Welcome, [CT_NAME]! Come to the hall and tell us what lies beyond your shores. A sailor can always use another tale.</Italian>
+		<Spanish>Welcome, [CT_NAME]! Come to the hall and tell us what lies beyond your shores. A sailor can always use another tale.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_LEIF_ERIKSON_1</Tag>
+		<English>Have you come to bargain, [CT_NAME], or merely to take up room by the fire?</English>
+		<French>Have you come to bargain, [CT_NAME], or merely to take up room by the fire?</French>
+		<German>Have you come to bargain, [CT_NAME], or merely to take up room by the fire?</German>
+		<Italian>Have you come to bargain, [CT_NAME], or merely to take up room by the fire?</Italian>
+		<Spanish>Have you come to bargain, [CT_NAME], or merely to take up room by the fire?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_POPAY_1</Tag>
+		<English>You are welcome, [CT_NAME]. Let us speak plainly, so that neither council misunderstands the other.</English>
+		<French>You are welcome, [CT_NAME]. Let us speak plainly, so that neither council misunderstands the other.</French>
+		<German>You are welcome, [CT_NAME]. Let us speak plainly, so that neither council misunderstands the other.</German>
+		<Italian>You are welcome, [CT_NAME]. Let us speak plainly, so that neither council misunderstands the other.</Italian>
+		<Spanish>You are welcome, [CT_NAME]. Let us speak plainly, so that neither council misunderstands the other.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_POPAY_1</Tag>
+		<English>You have much to say about our affairs, [CT_NAME]. Have you nothing to attend to at home?</English>
+		<French>You have much to say about our affairs, [CT_NAME]. Have you nothing to attend to at home?</French>
+		<German>You have much to say about our affairs, [CT_NAME]. Have you nothing to attend to at home?</German>
+		<Italian>You have much to say about our affairs, [CT_NAME]. Have you nothing to attend to at home?</Italian>
+		<Spanish>You have much to say about our affairs, [CT_NAME]. Have you nothing to attend to at home?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_KAMEHAMEHA_1</Tag>
+		<English>My chiefs have heard enough. There will be no audience today.</English>
+		<French>My chiefs have heard enough. There will be no audience today.</French>
+		<German>My chiefs have heard enough. There will be no audience today.</German>
+		<Italian>My chiefs have heard enough. There will be no audience today.</Italian>
+		<Spanish>My chiefs have heard enough. There will be no audience today.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_LEIF_ERIKSON_1</Tag>
+		<English>There is no place for you at my table today.</English>
+		<French>There is no place for you at my table today.</French>
+		<German>There is no place for you at my table today.</German>
+		<Italian>There is no place for you at my table today.</Italian>
+		<Spanish>There is no place for you at my table today.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_POPAY_1</Tag>
+		<English>Our runners carry messages to people who keep their word. They carry none to you.</English>
+		<French>Our runners carry messages to people who keep their word. They carry none to you.</French>
+		<German>Our runners carry messages to people who keep their word. They carry none to you.</German>
+		<Italian>Our runners carry messages to people who keep their word. They carry none to you.</Italian>
+		<Spanish>Our runners carry messages to people who keep their word. They carry none to you.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_KAMEHAMEHA_1</Tag>
+		<English>No. I have not brought my chiefs together merely to send them home defeated.</English>
+		<French>No. I have not brought my chiefs together merely to send them home defeated.</French>
+		<German>No. I have not brought my chiefs together merely to send them home defeated.</German>
+		<Italian>No. I have not brought my chiefs together merely to send them home defeated.</Italian>
+		<Spanish>No. I have not brought my chiefs together merely to send them home defeated.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_LEIF_ERIKSON_1</Tag>
+		<English>You ask us to abandon the fight? My crew would have something to say about that.</English>
+		<French>You ask us to abandon the fight? My crew would have something to say about that.</French>
+		<German>You ask us to abandon the fight? My crew would have something to say about that.</German>
+		<Italian>You ask us to abandon the fight? My crew would have something to say about that.</Italian>
+		<Spanish>You ask us to abandon the fight? My crew would have something to say about that.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_POPAY_1</Tag>
+		<English>Our pueblos did not stand together merely to bow separately. There will be no peace yet.</English>
+		<French>Our pueblos did not stand together merely to bow separately. There will be no peace yet.</French>
+		<German>Our pueblos did not stand together merely to bow separately. There will be no peace yet.</German>
+		<Italian>Our pueblos did not stand together merely to bow separately. There will be no peace yet.</Italian>
+		<Spanish>Our pueblos did not stand together merely to bow separately. There will be no peace yet.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_KAMEHAMEHA_1</Tag>
+		<English>Your assistance would strengthen our friendship, [CT_NAME]. My harbors are worth having open to you.</English>
+		<French>Your assistance would strengthen our friendship, [CT_NAME]. My harbors are worth having open to you.</French>
+		<German>Your assistance would strengthen our friendship, [CT_NAME]. My harbors are worth having open to you.</German>
+		<Italian>Your assistance would strengthen our friendship, [CT_NAME]. My harbors are worth having open to you.</Italian>
+		<Spanish>Your assistance would strengthen our friendship, [CT_NAME]. My harbors are worth having open to you.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_KAMEHAMEHA_1</Tag>
+		<English>Let us settle this before our warriors must do it for us. Provide what I ask.</English>
+		<French>Let us settle this before our warriors must do it for us. Provide what I ask.</French>
+		<German>Let us settle this before our warriors must do it for us. Provide what I ask.</German>
+		<Italian>Let us settle this before our warriors must do it for us. Provide what I ask.</Italian>
+		<Spanish>Let us settle this before our warriors must do it for us. Provide what I ask.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_KAMEHAMEHA_1</Tag>
+		<English>I have brought rival chiefs under one rule, [CT_NAME]. Do not oblige me to demonstrate how.</English>
+		<French>I have brought rival chiefs under one rule, [CT_NAME]. Do not oblige me to demonstrate how.</French>
+		<German>I have brought rival chiefs under one rule, [CT_NAME]. Do not oblige me to demonstrate how.</German>
+		<Italian>I have brought rival chiefs under one rule, [CT_NAME]. Do not oblige me to demonstrate how.</Italian>
+		<Spanish>I have brought rival chiefs under one rule, [CT_NAME]. Do not oblige me to demonstrate how.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_LEIF_ERIKSON_1</Tag>
+		<English>A little help with our supplies, [CT_NAME], and we may both profit from the next voyage.</English>
+		<French>A little help with our supplies, [CT_NAME], and we may both profit from the next voyage.</French>
+		<German>A little help with our supplies, [CT_NAME], and we may both profit from the next voyage.</German>
+		<Italian>A little help with our supplies, [CT_NAME], and we may both profit from the next voyage.</Italian>
+		<Spanish>A little help with our supplies, [CT_NAME], and we may both profit from the next voyage.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_LEIF_ERIKSON_1</Tag>
+		<English>I would rather load my ships with trade goods than fighting men. Meet this demand and we can keep it that way.</English>
+		<French>I would rather load my ships with trade goods than fighting men. Meet this demand and we can keep it that way.</French>
+		<German>I would rather load my ships with trade goods than fighting men. Meet this demand and we can keep it that way.</German>
+		<Italian>I would rather load my ships with trade goods than fighting men. Meet this demand and we can keep it that way.</Italian>
+		<Spanish>I would rather load my ships with trade goods than fighting men. Meet this demand and we can keep it that way.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_LEIF_ERIKSON_1</Tag>
+		<English>My crew is ready to sail, [CT_NAME]. Shall they come for the goods or must they come for you?</English>
+		<French>My crew is ready to sail, [CT_NAME]. Shall they come for the goods or must they come for you?</French>
+		<German>My crew is ready to sail, [CT_NAME]. Shall they come for the goods or must they come for you?</German>
+		<Italian>My crew is ready to sail, [CT_NAME]. Shall they come for the goods or must they come for you?</Italian>
+		<Spanish>My crew is ready to sail, [CT_NAME]. Shall they come for the goods or must they come for you?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_POPAY_1</Tag>
+		<English>Our people need these supplies, [CT_NAME]. Will your friendship amount to more than words?</English>
+		<French>Our people need these supplies, [CT_NAME]. Will your friendship amount to more than words?</French>
+		<German>Our people need these supplies, [CT_NAME]. Will your friendship amount to more than words?</German>
+		<Italian>Our people need these supplies, [CT_NAME]. Will your friendship amount to more than words?</Italian>
+		<Spanish>Our people need these supplies, [CT_NAME]. Will your friendship amount to more than words?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_POPAY_1</Tag>
+		<English>We can settle this between our councils, or send runners to summon our warriors. I prefer the first.</English>
+		<French>We can settle this between our councils, or send runners to summon our warriors. I prefer the first.</French>
+		<German>We can settle this between our councils, or send runners to summon our warriors. I prefer the first.</German>
+		<Italian>We can settle this between our councils, or send runners to summon our warriors. I prefer the first.</Italian>
+		<Spanish>We can settle this between our councils, or send runners to summon our warriors. I prefer the first.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_POPAY_1</Tag>
+		<English>The knots are counted, [CT_NAME], and our pueblos are ready. Give us what we ask before the runners depart.</English>
+		<French>The knots are counted, [CT_NAME], and our pueblos are ready. Give us what we ask before the runners depart.</French>
+		<German>The knots are counted, [CT_NAME], and our pueblos are ready. Give us what we ask before the runners depart.</German>
+		<Italian>The knots are counted, [CT_NAME], and our pueblos are ready. Give us what we ask before the runners depart.</Italian>
+		<Spanish>The knots are counted, [CT_NAME], and our pueblos are ready. Give us what we ask before the runners depart.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_HIAWATHA_1</Tag>
+		<English>I am [OUR_NAME]. The nations of our longhouse have put aside their quarrels. Let us see whether you and I can do the same.</English>
+		<French>I am [OUR_NAME]. The nations of our longhouse have put aside their quarrels. Let us see whether you and I can do the same.</French>
+		<German>I am [OUR_NAME]. The nations of our longhouse have put aside their quarrels. Let us see whether you and I can do the same.</German>
+		<Italian>I am [OUR_NAME]. The nations of our longhouse have put aside their quarrels. Let us see whether you and I can do the same.</Italian>
+		<Spanish>I am [OUR_NAME]. The nations of our longhouse have put aside their quarrels. Let us see whether you and I can do the same.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SAGUAMANCHICA_1</Tag>
+		<English>I am [OUR_NAME], zipa of [OUR_CIV_SHORT]. Speak your purpose, [CT_NAME]. I welcome merchants more readily than rival claimants.</English>
+		<French>I am [OUR_NAME], zipa of [OUR_CIV_SHORT]. Speak your purpose, [CT_NAME]. I welcome merchants more readily than rival claimants.</French>
+		<German>I am [OUR_NAME], zipa of [OUR_CIV_SHORT]. Speak your purpose, [CT_NAME]. I welcome merchants more readily than rival claimants.</German>
+		<Italian>I am [OUR_NAME], zipa of [OUR_CIV_SHORT]. Speak your purpose, [CT_NAME]. I welcome merchants more readily than rival claimants.</Italian>
+		<Spanish>I am [OUR_NAME], zipa of [OUR_CIV_SHORT]. Speak your purpose, [CT_NAME]. I welcome merchants more readily than rival claimants.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_HIAWATHA_1</Tag>
+		<English>Welcome, [CT_NAME]. There is room by the council fire. Let us put your words beside ours and see where they agree.</English>
+		<French>Welcome, [CT_NAME]. There is room by the council fire. Let us put your words beside ours and see where they agree.</French>
+		<German>Welcome, [CT_NAME]. There is room by the council fire. Let us put your words beside ours and see where they agree.</German>
+		<Italian>Welcome, [CT_NAME]. There is room by the council fire. Let us put your words beside ours and see where they agree.</Italian>
+		<Spanish>Welcome, [CT_NAME]. There is room by the council fire. Let us put your words beside ours and see where they agree.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_HIAWATHA_1</Tag>
+		<English>You speak loudly, [CT_NAME], but a council is not won by drowning out everyone else.</English>
+		<French>You speak loudly, [CT_NAME], but a council is not won by drowning out everyone else.</French>
+		<German>You speak loudly, [CT_NAME], but a council is not won by drowning out everyone else.</German>
+		<Italian>You speak loudly, [CT_NAME], but a council is not won by drowning out everyone else.</Italian>
+		<Spanish>You speak loudly, [CT_NAME], but a council is not won by drowning out everyone else.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_ERENDIRA_1</Tag>
+		<English>Welcome, [CT_NAME]. Leave your threats outside. You will find the conversation much more agreeable.</English>
+		<French>Welcome, [CT_NAME]. Leave your threats outside. You will find the conversation much more agreeable.</French>
+		<German>Welcome, [CT_NAME]. Leave your threats outside. You will find the conversation much more agreeable.</German>
+		<Italian>Welcome, [CT_NAME]. Leave your threats outside. You will find the conversation much more agreeable.</Italian>
+		<Spanish>Welcome, [CT_NAME]. Leave your threats outside. You will find the conversation much more agreeable.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_ERENDIRA_1</Tag>
+		<English>You have already told us what you want, [CT_NAME]. Have you come to hear our answer, or to ignore it again?</English>
+		<French>You have already told us what you want, [CT_NAME]. Have you come to hear our answer, or to ignore it again?</French>
+		<German>You have already told us what you want, [CT_NAME]. Have you come to hear our answer, or to ignore it again?</German>
+		<Italian>You have already told us what you want, [CT_NAME]. Have you come to hear our answer, or to ignore it again?</Italian>
+		<Spanish>You have already told us what you want, [CT_NAME]. Have you come to hear our answer, or to ignore it again?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_SAGUAMANCHICA_1</Tag>
+		<English>Welcome, [CT_NAME]. Shall our merchants settle the accounts today, or must our warriors do it?</English>
+		<French>Welcome, [CT_NAME]. Shall our merchants settle the accounts today, or must our warriors do it?</French>
+		<German>Welcome, [CT_NAME]. Shall our merchants settle the accounts today, or must our warriors do it?</German>
+		<Italian>Welcome, [CT_NAME]. Shall our merchants settle the accounts today, or must our warriors do it?</Italian>
+		<Spanish>Welcome, [CT_NAME]. Shall our merchants settle the accounts today, or must our warriors do it?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_SAGUAMANCHICA_1</Tag>
+		<English>Another demand? You have the manners of a chief who has forgotten whom he is addressing.</English>
+		<French>Another demand? You have the manners of a chief who has forgotten whom he is addressing.</French>
+		<German>Another demand? You have the manners of a chief who has forgotten whom he is addressing.</German>
+		<Italian>Another demand? You have the manners of a chief who has forgotten whom he is addressing.</Italian>
+		<Spanish>Another demand? You have the manners of a chief who has forgotten whom he is addressing.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_HIAWATHA_1</Tag>
+		<English>Your words have reached us. Repeating them will not make them trustworthy.</English>
+		<French>Your words have reached us. Repeating them will not make them trustworthy.</French>
+		<German>Your words have reached us. Repeating them will not make them trustworthy.</German>
+		<Italian>Your words have reached us. Repeating them will not make them trustworthy.</Italian>
+		<Spanish>Your words have reached us. Repeating them will not make them trustworthy.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_ERENDIRA_1</Tag>
+		<English>I have better uses for my breath than answering your boasts.</English>
+		<French>I have better uses for my breath than answering your boasts.</French>
+		<German>I have better uses for my breath than answering your boasts.</German>
+		<Italian>I have better uses for my breath than answering your boasts.</Italian>
+		<Spanish>I have better uses for my breath than answering your boasts.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_SAGUAMANCHICA_1</Tag>
+		<English>The zipa has heard enough. You may leave.</English>
+		<French>The zipa has heard enough. You may leave.</French>
+		<German>The zipa has heard enough. You may leave.</German>
+		<Italian>The zipa has heard enough. You may leave.</Italian>
+		<Spanish>The zipa has heard enough. You may leave.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_HIAWATHA_1</Tag>
+		<English>Peace requires an agreement we can trust. You have not offered one.</English>
+		<French>Peace requires an agreement we can trust. You have not offered one.</French>
+		<German>Peace requires an agreement we can trust. You have not offered one.</German>
+		<Italian>Peace requires an agreement we can trust. You have not offered one.</Italian>
+		<Spanish>Peace requires an agreement we can trust. You have not offered one.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_ERENDIRA_1</Tag>
+		<English>You may find surrender convenient. We do not.</English>
+		<French>You may find surrender convenient. We do not.</French>
+		<German>You may find surrender convenient. We do not.</German>
+		<Italian>You may find surrender convenient. We do not.</Italian>
+		<Spanish>You may find surrender convenient. We do not.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_SAGUAMANCHICA_1</Tag>
+		<English>No. My captains have not finished the campaign, and I will not recall them for your convenience.</English>
+		<French>No. My captains have not finished the campaign, and I will not recall them for your convenience.</French>
+		<German>No. My captains have not finished the campaign, and I will not recall them for your convenience.</German>
+		<Italian>No. My captains have not finished the campaign, and I will not recall them for your convenience.</Italian>
+		<Spanish>No. My captains have not finished the campaign, and I will not recall them for your convenience.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_HIAWATHA_1</Tag>
+		<English>Friendship should be remembered in deeds as well as wampum, [CT_NAME]. Will you help us with this?</English>
+		<French>Friendship should be remembered in deeds as well as wampum, [CT_NAME]. Will you help us with this?</French>
+		<German>Friendship should be remembered in deeds as well as wampum, [CT_NAME]. Will you help us with this?</German>
+		<Italian>Friendship should be remembered in deeds as well as wampum, [CT_NAME]. Will you help us with this?</Italian>
+		<Spanish>Friendship should be remembered in deeds as well as wampum, [CT_NAME]. Will you help us with this?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_HIAWATHA_1</Tag>
+		<English>I would rather bring an agreement before the council than another grievance. Grant what we ask.</English>
+		<French>I would rather bring an agreement before the council than another grievance. Grant what we ask.</French>
+		<German>I would rather bring an agreement before the council than another grievance. Grant what we ask.</German>
+		<Italian>I would rather bring an agreement before the council than another grievance. Grant what we ask.</Italian>
+		<Spanish>I would rather bring an agreement before the council than another grievance. Grant what we ask.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_HIAWATHA_1</Tag>
+		<English>You face the strength of our whole longhouse, [CT_NAME]. Meet this demand before its warriors gather.</English>
+		<French>You face the strength of our whole longhouse, [CT_NAME]. Meet this demand before its warriors gather.</French>
+		<German>You face the strength of our whole longhouse, [CT_NAME]. Meet this demand before its warriors gather.</German>
+		<Italian>You face the strength of our whole longhouse, [CT_NAME]. Meet this demand before its warriors gather.</Italian>
+		<Spanish>You face the strength of our whole longhouse, [CT_NAME]. Meet this demand before its warriors gather.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_ERENDIRA_1</Tag>
+		<English>We need these supplies, [CT_NAME]. Help us, and you will have friends who remember who stood beside them.</English>
+		<French>We need these supplies, [CT_NAME]. Help us, and you will have friends who remember who stood beside them.</French>
+		<German>We need these supplies, [CT_NAME]. Help us, and you will have friends who remember who stood beside them.</German>
+		<Italian>We need these supplies, [CT_NAME]. Help us, and you will have friends who remember who stood beside them.</Italian>
+		<Spanish>We need these supplies, [CT_NAME]. Help us, and you will have friends who remember who stood beside them.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_ERENDIRA_1</Tag>
+		<English>Give us what we ask, [CT_NAME]. Neither people needs another battle to prove its courage.</English>
+		<French>Give us what we ask, [CT_NAME]. Neither people needs another battle to prove its courage.</French>
+		<German>Give us what we ask, [CT_NAME]. Neither people needs another battle to prove its courage.</German>
+		<Italian>Give us what we ask, [CT_NAME]. Neither people needs another battle to prove its courage.</Italian>
+		<Spanish>Give us what we ask, [CT_NAME]. Neither people needs another battle to prove its courage.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_ERENDIRA_1</Tag>
+		<English>A horse does not make its rider invincible, [CT_NAME]. Meet our demand before we have to remind you.</English>
+		<French>A horse does not make its rider invincible, [CT_NAME]. Meet our demand before we have to remind you.</French>
+		<German>A horse does not make its rider invincible, [CT_NAME]. Meet our demand before we have to remind you.</German>
+		<Italian>A horse does not make its rider invincible, [CT_NAME]. Meet our demand before we have to remind you.</Italian>
+		<Spanish>A horse does not make its rider invincible, [CT_NAME]. Meet our demand before we have to remind you.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_SAGUAMANCHICA_1</Tag>
+		<English>Your assistance would be remembered, [CT_NAME]. Even a zipa knows the value of a dependable neighbor.</English>
+		<French>Your assistance would be remembered, [CT_NAME]. Even a zipa knows the value of a dependable neighbor.</French>
+		<German>Your assistance would be remembered, [CT_NAME]. Even a zipa knows the value of a dependable neighbor.</German>
+		<Italian>Your assistance would be remembered, [CT_NAME]. Even a zipa knows the value of a dependable neighbor.</Italian>
+		<Spanish>Your assistance would be remembered, [CT_NAME]. Even a zipa knows the value of a dependable neighbor.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_SAGUAMANCHICA_1</Tag>
+		<English>Our warriors could contest this, [CT_NAME], but tribute is a less costly way to settle the matter.</English>
+		<French>Our warriors could contest this, [CT_NAME], but tribute is a less costly way to settle the matter.</French>
+		<German>Our warriors could contest this, [CT_NAME], but tribute is a less costly way to settle the matter.</German>
+		<Italian>Our warriors could contest this, [CT_NAME], but tribute is a less costly way to settle the matter.</Italian>
+		<Spanish>Our warriors could contest this, [CT_NAME], but tribute is a less costly way to settle the matter.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_SAGUAMANCHICA_1</Tag>
+		<English>Our warriors await my command, [CT_NAME]. Bring what I demand, and I need not give it.</English>
+		<French>Our warriors await my command, [CT_NAME]. Bring what I demand, and I need not give it.</French>
+		<German>Our warriors await my command, [CT_NAME]. Bring what I demand, and I need not give it.</German>
+		<Italian>Our warriors await my command, [CT_NAME]. Bring what I demand, and I need not give it.</Italian>
+		<Spanish>Our warriors await my command, [CT_NAME]. Bring what I demand, and I need not give it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_JACKSON_1</Tag>
+		<English>Come in, [CT_NAME]. I have a chair for you and no patience for ceremony. What shall we settle?</English>
+		<French>Come in, [CT_NAME]. I have a chair for you and no patience for ceremony. What shall we settle?</French>
+		<German>Come in, [CT_NAME]. I have a chair for you and no patience for ceremony. What shall we settle?</German>
+		<Italian>Come in, [CT_NAME]. I have a chair for you and no patience for ceremony. What shall we settle?</Italian>
+		<Spanish>Come in, [CT_NAME]. I have a chair for you and no patience for ceremony. What shall we settle?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_JACKSON_1</Tag>
+		<English>If you have come to lecture me, [CT_NAME], take a number. Congress got here first.</English>
+		<French>If you have come to lecture me, [CT_NAME], take a number. Congress got here first.</French>
+		<German>If you have come to lecture me, [CT_NAME], take a number. Congress got here first.</German>
+		<Italian>If you have come to lecture me, [CT_NAME], take a number. Congress got here first.</Italian>
+		<Spanish>If you have come to lecture me, [CT_NAME], take a number. Congress got here first.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_ROOSEVELT_1</Tag>
+		<English>Bully, [CT_NAME]! Pull up a chair. I trust you have brought a proposal with some backbone to it.</English>
+		<French>Bully, [CT_NAME]! Pull up a chair. I trust you have brought a proposal with some backbone to it.</French>
+		<German>Bully, [CT_NAME]! Pull up a chair. I trust you have brought a proposal with some backbone to it.</German>
+		<Italian>Bully, [CT_NAME]! Pull up a chair. I trust you have brought a proposal with some backbone to it.</Italian>
+		<Spanish>Bully, [CT_NAME]! Pull up a chair. I trust you have brought a proposal with some backbone to it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_ROOSEVELT_1</Tag>
+		<English>Come now, [CT_NAME], enough bluster. There is room for only one of us to pound this desk.</English>
+		<French>Come now, [CT_NAME], enough bluster. There is room for only one of us to pound this desk.</French>
+		<German>Come now, [CT_NAME], enough bluster. There is room for only one of us to pound this desk.</German>
+		<Italian>Come now, [CT_NAME], enough bluster. There is room for only one of us to pound this desk.</Italian>
+		<Spanish>Come now, [CT_NAME], enough bluster. There is room for only one of us to pound this desk.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_KENNEDY_1</Tag>
+		<English>Good to see you, [CT_NAME]. Let us find something we can agree on before our advisers explain why we cannot.</English>
+		<French>Good to see you, [CT_NAME]. Let us find something we can agree on before our advisers explain why we cannot.</French>
+		<German>Good to see you, [CT_NAME]. Let us find something we can agree on before our advisers explain why we cannot.</German>
+		<Italian>Good to see you, [CT_NAME]. Let us find something we can agree on before our advisers explain why we cannot.</Italian>
+		<Spanish>Good to see you, [CT_NAME]. Let us find something we can agree on before our advisers explain why we cannot.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_KENNEDY_1</Tag>
+		<English>You have made your position clear, [CT_NAME]. Repeating it more loudly will not bring us any closer.</English>
+		<French>You have made your position clear, [CT_NAME]. Repeating it more loudly will not bring us any closer.</French>
+		<German>You have made your position clear, [CT_NAME]. Repeating it more loudly will not bring us any closer.</German>
+		<Italian>You have made your position clear, [CT_NAME]. Repeating it more loudly will not bring us any closer.</Italian>
+		<Spanish>You have made your position clear, [CT_NAME]. Repeating it more loudly will not bring us any closer.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_JACKSON_1</Tag>
+		<English>I have vetoed better proposals than anything you are likely to offer. Good day.</English>
+		<French>I have vetoed better proposals than anything you are likely to offer. Good day.</French>
+		<German>I have vetoed better proposals than anything you are likely to offer. Good day.</German>
+		<Italian>I have vetoed better proposals than anything you are likely to offer. Good day.</Italian>
+		<Spanish>I have vetoed better proposals than anything you are likely to offer. Good day.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_ROOSEVELT_1</Tag>
+		<English>I would sooner spend the afternoon wrestling a bear. At least the bear has an honest purpose.</English>
+		<French>I would sooner spend the afternoon wrestling a bear. At least the bear has an honest purpose.</French>
+		<German>I would sooner spend the afternoon wrestling a bear. At least the bear has an honest purpose.</German>
+		<Italian>I would sooner spend the afternoon wrestling a bear. At least the bear has an honest purpose.</Italian>
+		<Spanish>I would sooner spend the afternoon wrestling a bear. At least the bear has an honest purpose.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_KENNEDY_1</Tag>
+		<English>There is little purpose in another meeting until your actions begin to match your assurances.</English>
+		<French>There is little purpose in another meeting until your actions begin to match your assurances.</French>
+		<German>There is little purpose in another meeting until your actions begin to match your assurances.</German>
+		<Italian>There is little purpose in another meeting until your actions begin to match your assurances.</Italian>
+		<Spanish>There is little purpose in another meeting until your actions begin to match your assurances.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_JACKSON_1</Tag>
+		<English>Not while our soldiers can still fight. You will get no surrender out of Old Hickory.</English>
+		<French>Not while our soldiers can still fight. You will get no surrender out of Old Hickory.</French>
+		<German>Not while our soldiers can still fight. You will get no surrender out of Old Hickory.</German>
+		<Italian>Not while our soldiers can still fight. You will get no surrender out of Old Hickory.</Italian>
+		<Spanish>Not while our soldiers can still fight. You will get no surrender out of Old Hickory.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_ROOSEVELT_1</Tag>
+		<English>We did not enter this contest merely to leave before the work is done. No peace yet.</English>
+		<French>We did not enter this contest merely to leave before the work is done. No peace yet.</French>
+		<German>We did not enter this contest merely to leave before the work is done. No peace yet.</German>
+		<Italian>We did not enter this contest merely to leave before the work is done. No peace yet.</Italian>
+		<Spanish>We did not enter this contest merely to leave before the work is done. No peace yet.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_KENNEDY_1</Tag>
+		<English>We are prepared to negotiate, but we are not prepared to accept these terms.</English>
+		<French>We are prepared to negotiate, but we are not prepared to accept these terms.</French>
+		<German>We are prepared to negotiate, but we are not prepared to accept these terms.</German>
+		<Italian>We are prepared to negotiate, but we are not prepared to accept these terms.</Italian>
+		<Spanish>We are prepared to negotiate, but we are not prepared to accept these terms.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_JACKSON_1</Tag>
+		<English>I would rather ask a neighbor than borrow from a banker, [CT_NAME]. Will you help us with this?</English>
+		<French>I would rather ask a neighbor than borrow from a banker, [CT_NAME]. Will you help us with this?</French>
+		<German>I would rather ask a neighbor than borrow from a banker, [CT_NAME]. Will you help us with this?</German>
+		<Italian>I would rather ask a neighbor than borrow from a banker, [CT_NAME]. Will you help us with this?</Italian>
+		<Spanish>I would rather ask a neighbor than borrow from a banker, [CT_NAME]. Will you help us with this?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_JACKSON_1</Tag>
+		<English>Here is what we require, [CT_NAME]. Let us settle it plainly and save ourselves a quarrel.</English>
+		<French>Here is what we require, [CT_NAME]. Let us settle it plainly and save ourselves a quarrel.</French>
+		<German>Here is what we require, [CT_NAME]. Let us settle it plainly and save ourselves a quarrel.</German>
+		<Italian>Here is what we require, [CT_NAME]. Let us settle it plainly and save ourselves a quarrel.</Italian>
+		<Spanish>Here is what we require, [CT_NAME]. Let us settle it plainly and save ourselves a quarrel.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_JACKSON_1</Tag>
+		<English>I have made my demand, [CT_NAME]. Do not mistake this conversation for a vote.</English>
+		<French>I have made my demand, [CT_NAME]. Do not mistake this conversation for a vote.</French>
+		<German>I have made my demand, [CT_NAME]. Do not mistake this conversation for a vote.</German>
+		<Italian>I have made my demand, [CT_NAME]. Do not mistake this conversation for a vote.</Italian>
+		<Spanish>I have made my demand, [CT_NAME]. Do not mistake this conversation for a vote.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_ROOSEVELT_1</Tag>
+		<English>Friendship ought to be a square deal, [CT_NAME]. Here is your opportunity to show it.</English>
+		<French>Friendship ought to be a square deal, [CT_NAME]. Here is your opportunity to show it.</French>
+		<German>Friendship ought to be a square deal, [CT_NAME]. Here is your opportunity to show it.</German>
+		<Italian>Friendship ought to be a square deal, [CT_NAME]. Here is your opportunity to show it.</Italian>
+		<Spanish>Friendship ought to be a square deal, [CT_NAME]. Here is your opportunity to show it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_ROOSEVELT_1</Tag>
+		<English>I am speaking softly, [CT_NAME]. Meet this demand and we can leave the stick out of the discussion.</English>
+		<French>I am speaking softly, [CT_NAME]. Meet this demand and we can leave the stick out of the discussion.</French>
+		<German>I am speaking softly, [CT_NAME]. Meet this demand and we can leave the stick out of the discussion.</German>
+		<Italian>I am speaking softly, [CT_NAME]. Meet this demand and we can leave the stick out of the discussion.</Italian>
+		<Spanish>I am speaking softly, [CT_NAME]. Meet this demand and we can leave the stick out of the discussion.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_ROOSEVELT_1</Tag>
+		<English>You have heard the soft voice, [CT_NAME]. I recommend settling this before we get to the big stick.</English>
+		<French>You have heard the soft voice, [CT_NAME]. I recommend settling this before we get to the big stick.</French>
+		<German>You have heard the soft voice, [CT_NAME]. I recommend settling this before we get to the big stick.</German>
+		<Italian>You have heard the soft voice, [CT_NAME]. I recommend settling this before we get to the big stick.</Italian>
+		<Spanish>You have heard the soft voice, [CT_NAME]. I recommend settling this before we get to the big stick.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_KENNEDY_1</Tag>
+		<English>Our partnership needs more than a statement of goodwill, [CT_NAME]. Can we count on this assistance?</English>
+		<French>Our partnership needs more than a statement of goodwill, [CT_NAME]. Can we count on this assistance?</French>
+		<German>Our partnership needs more than a statement of goodwill, [CT_NAME]. Can we count on this assistance?</German>
+		<Italian>Our partnership needs more than a statement of goodwill, [CT_NAME]. Can we count on this assistance?</Italian>
+		<Spanish>Our partnership needs more than a statement of goodwill, [CT_NAME]. Can we count on this assistance?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_KENNEDY_1</Tag>
+		<English>We both have the strength to make this costly. Let us reach an agreement on these terms instead.</English>
+		<French>We both have the strength to make this costly. Let us reach an agreement on these terms instead.</French>
+		<German>We both have the strength to make this costly. Let us reach an agreement on these terms instead.</German>
+		<Italian>We both have the strength to make this costly. Let us reach an agreement on these terms instead.</Italian>
+		<Spanish>We both have the strength to make this costly. Let us reach an agreement on these terms instead.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_KENNEDY_1</Tag>
+		<English>The balance of power is clear, [CT_NAME]. Accept these terms, and neither of us need test it.</English>
+		<French>The balance of power is clear, [CT_NAME]. Accept these terms, and neither of us need test it.</French>
+		<German>The balance of power is clear, [CT_NAME]. Accept these terms, and neither of us need test it.</German>
+		<Italian>The balance of power is clear, [CT_NAME]. Accept these terms, and neither of us need test it.</Italian>
+		<Spanish>The balance of power is clear, [CT_NAME]. Accept these terms, and neither of us need test it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PERON_1</Tag>
+		<English>I am [OUR_NAME]. [OUR_CIV_SHORT] intends to stand on its own feet, [CT_NAME]. We welcome partners, not patrons.</English>
+		<French>I am [OUR_NAME]. [OUR_CIV_SHORT] intends to stand on its own feet, [CT_NAME]. We welcome partners, not patrons.</French>
+		<German>I am [OUR_NAME]. [OUR_CIV_SHORT] intends to stand on its own feet, [CT_NAME]. We welcome partners, not patrons.</German>
+		<Italian>I am [OUR_NAME]. [OUR_CIV_SHORT] intends to stand on its own feet, [CT_NAME]. We welcome partners, not patrons.</Italian>
+		<Spanish>I am [OUR_NAME]. [OUR_CIV_SHORT] intends to stand on its own feet, [CT_NAME]. We welcome partners, not patrons.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_SANTA_ANNA_1</Tag>
+		<English>Welcome, [CT_NAME]! You find me once again at the service of my country. Some duties simply refuse to remain retired.</English>
+		<French>Welcome, [CT_NAME]! You find me once again at the service of my country. Some duties simply refuse to remain retired.</French>
+		<German>Welcome, [CT_NAME]! You find me once again at the service of my country. Some duties simply refuse to remain retired.</German>
+		<Italian>Welcome, [CT_NAME]! You find me once again at the service of my country. Some duties simply refuse to remain retired.</Italian>
+		<Spanish>Welcome, [CT_NAME]! You find me once again at the service of my country. Some duties simply refuse to remain retired.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_SANTA_ANNA_1</Tag>
+		<English>Have a care, [CT_NAME]. You are addressing the Savior of [OUR_CIV_SHORT], not an army paymaster.</English>
+		<French>Have a care, [CT_NAME]. You are addressing the Savior of [OUR_CIV_SHORT], not an army paymaster.</French>
+		<German>Have a care, [CT_NAME]. You are addressing the Savior of [OUR_CIV_SHORT], not an army paymaster.</German>
+		<Italian>Have a care, [CT_NAME]. You are addressing the Savior of [OUR_CIV_SHORT], not an army paymaster.</Italian>
+		<Spanish>Have a care, [CT_NAME]. You are addressing the Savior of [OUR_CIV_SHORT], not an army paymaster.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_CARDENAS_1</Tag>
+		<English>Welcome, [CT_NAME]. Let us discuss what this agreement will mean for the people who must live with it.</English>
+		<French>Welcome, [CT_NAME]. Let us discuss what this agreement will mean for the people who must live with it.</French>
+		<German>Welcome, [CT_NAME]. Let us discuss what this agreement will mean for the people who must live with it.</German>
+		<Italian>Welcome, [CT_NAME]. Let us discuss what this agreement will mean for the people who must live with it.</Italian>
+		<Spanish>Welcome, [CT_NAME]. Let us discuss what this agreement will mean for the people who must live with it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_CARDENAS_1</Tag>
+		<English>You have explained the interests of your government, [CT_NAME]. You have yet to show any regard for ours.</English>
+		<French>You have explained the interests of your government, [CT_NAME]. You have yet to show any regard for ours.</French>
+		<German>You have explained the interests of your government, [CT_NAME]. You have yet to show any regard for ours.</German>
+		<Italian>You have explained the interests of your government, [CT_NAME]. You have yet to show any regard for ours.</Italian>
+		<Spanish>You have explained the interests of your government, [CT_NAME]. You have yet to show any regard for ours.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_PERON_1</Tag>
+		<English>Welcome, [CT_NAME]! Let us make an agreement that our workers can applaud as warmly as our diplomats.</English>
+		<French>Welcome, [CT_NAME]! Let us make an agreement that our workers can applaud as warmly as our diplomats.</French>
+		<German>Welcome, [CT_NAME]! Let us make an agreement that our workers can applaud as warmly as our diplomats.</German>
+		<Italian>Welcome, [CT_NAME]! Let us make an agreement that our workers can applaud as warmly as our diplomats.</Italian>
+		<Spanish>Welcome, [CT_NAME]! Let us make an agreement that our workers can applaud as warmly as our diplomats.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_PERON_1</Tag>
+		<English>You have the attention of my government, [CT_NAME]. You have not yet earned the confidence of my people.</English>
+		<French>You have the attention of my government, [CT_NAME]. You have not yet earned the confidence of my people.</French>
+		<German>You have the attention of my government, [CT_NAME]. You have not yet earned the confidence of my people.</German>
+		<Italian>You have the attention of my government, [CT_NAME]. You have not yet earned the confidence of my people.</Italian>
+		<Spanish>You have the attention of my government, [CT_NAME]. You have not yet earned the confidence of my people.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_SANTA_ANNA_1</Tag>
+		<English>I shall receive your envoy when he has learned the proper way to address me.</English>
+		<French>I shall receive your envoy when he has learned the proper way to address me.</French>
+		<German>I shall receive your envoy when he has learned the proper way to address me.</German>
+		<Italian>I shall receive your envoy when he has learned the proper way to address me.</Italian>
+		<Spanish>I shall receive your envoy when he has learned the proper way to address me.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_CARDENAS_1</Tag>
+		<English>I have workers and farmers waiting to be heard. Your demands must wait.</English>
+		<French>I have workers and farmers waiting to be heard. Your demands must wait.</French>
+		<German>I have workers and farmers waiting to be heard. Your demands must wait.</German>
+		<Italian>I have workers and farmers waiting to be heard. Your demands must wait.</Italian>
+		<Spanish>I have workers and farmers waiting to be heard. Your demands must wait.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_PERON_1</Tag>
+		<English>There are enough speeches being made against me at home. I have no need to import another.</English>
+		<French>There are enough speeches being made against me at home. I have no need to import another.</French>
+		<German>There are enough speeches being made against me at home. I have no need to import another.</German>
+		<Italian>There are enough speeches being made against me at home. I have no need to import another.</Italian>
+		<Spanish>There are enough speeches being made against me at home. I have no need to import another.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_SANTA_ANNA_1</Tag>
+		<English>No! My next proclamation will announce a victory, not a surrender.</English>
+		<French>No! My next proclamation will announce a victory, not a surrender.</French>
+		<German>No! My next proclamation will announce a victory, not a surrender.</German>
+		<Italian>No! My next proclamation will announce a victory, not a surrender.</Italian>
+		<Spanish>No! My next proclamation will announce a victory, not a surrender.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_CARDENAS_1</Tag>
+		<English>Peace is worth discussing. These terms are not worth accepting.</English>
+		<French>Peace is worth discussing. These terms are not worth accepting.</French>
+		<German>Peace is worth discussing. These terms are not worth accepting.</German>
+		<Italian>Peace is worth discussing. These terms are not worth accepting.</Italian>
+		<Spanish>Peace is worth discussing. These terms are not worth accepting.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_PERON_1</Tag>
+		<English>Our people have not endured this struggle merely to accept your conditions. No peace yet.</English>
+		<French>Our people have not endured this struggle merely to accept your conditions. No peace yet.</French>
+		<German>Our people have not endured this struggle merely to accept your conditions. No peace yet.</German>
+		<Italian>Our people have not endured this struggle merely to accept your conditions. No peace yet.</Italian>
+		<Spanish>Our people have not endured this struggle merely to accept your conditions. No peace yet.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_SANTA_ANNA_1</Tag>
+		<English>A little assistance would be most welcome, [CT_NAME]. Saving a nation is expensive work.</English>
+		<French>A little assistance would be most welcome, [CT_NAME]. Saving a nation is expensive work.</French>
+		<German>A little assistance would be most welcome, [CT_NAME]. Saving a nation is expensive work.</German>
+		<Italian>A little assistance would be most welcome, [CT_NAME]. Saving a nation is expensive work.</Italian>
+		<Spanish>A little assistance would be most welcome, [CT_NAME]. Saving a nation is expensive work.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_SANTA_ANNA_1</Tag>
+		<English>Our armies are evenly matched, [CT_NAME], but surely you would rather pay this than test my generalship.</English>
+		<French>Our armies are evenly matched, [CT_NAME], but surely you would rather pay this than test my generalship.</French>
+		<German>Our armies are evenly matched, [CT_NAME], but surely you would rather pay this than test my generalship.</German>
+		<Italian>Our armies are evenly matched, [CT_NAME], but surely you would rather pay this than test my generalship.</Italian>
+		<Spanish>Our armies are evenly matched, [CT_NAME], but surely you would rather pay this than test my generalship.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_SANTA_ANNA_1</Tag>
+		<English>The army is assembled, the proclamation is written, and only your answer is missing. Will you comply?</English>
+		<French>The army is assembled, the proclamation is written, and only your answer is missing. Will you comply?</French>
+		<German>The army is assembled, the proclamation is written, and only your answer is missing. Will you comply?</German>
+		<Italian>The army is assembled, the proclamation is written, and only your answer is missing. Will you comply?</Italian>
+		<Spanish>The army is assembled, the proclamation is written, and only your answer is missing. Will you comply?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_CARDENAS_1</Tag>
+		<English>Our people need these supplies, [CT_NAME]. Your assistance would help put our plans into practice.</English>
+		<French>Our people need these supplies, [CT_NAME]. Your assistance would help put our plans into practice.</French>
+		<German>Our people need these supplies, [CT_NAME]. Your assistance would help put our plans into practice.</German>
+		<Italian>Our people need these supplies, [CT_NAME]. Your assistance would help put our plans into practice.</Italian>
+		<Spanish>Our people need these supplies, [CT_NAME]. Your assistance would help put our plans into practice.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_CARDENAS_1</Tag>
+		<English>Neither nation benefits from making this a contest of force. Let us settle on this contribution.</English>
+		<French>Neither nation benefits from making this a contest of force. Let us settle on this contribution.</French>
+		<German>Neither nation benefits from making this a contest of force. Let us settle on this contribution.</German>
+		<Italian>Neither nation benefits from making this a contest of force. Let us settle on this contribution.</Italian>
+		<Spanish>Neither nation benefits from making this a contest of force. Let us settle on this contribution.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_CARDENAS_1</Tag>
+		<English>Our patience is not an unlimited concession, [CT_NAME]. Meet this demand before we take further measures.</English>
+		<French>Our patience is not an unlimited concession, [CT_NAME]. Meet this demand before we take further measures.</French>
+		<German>Our patience is not an unlimited concession, [CT_NAME]. Meet this demand before we take further measures.</German>
+		<Italian>Our patience is not an unlimited concession, [CT_NAME]. Meet this demand before we take further measures.</Italian>
+		<Spanish>Our patience is not an unlimited concession, [CT_NAME]. Meet this demand before we take further measures.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_PERON_1</Tag>
+		<English>Friendship must put something on the table, [CT_NAME]. Can we count on this assistance?</English>
+		<French>Friendship must put something on the table, [CT_NAME]. Can we count on this assistance?</French>
+		<German>Friendship must put something on the table, [CT_NAME]. Can we count on this assistance?</German>
+		<Italian>Friendship must put something on the table, [CT_NAME]. Can we count on this assistance?</Italian>
+		<Spanish>Friendship must put something on the table, [CT_NAME]. Can we count on this assistance?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_PERON_1</Tag>
+		<English>Let us reach a practical agreement, [CT_NAME]. Our people would rather see results than another military parade.</English>
+		<French>Let us reach a practical agreement, [CT_NAME]. Our people would rather see results than another military parade.</French>
+		<German>Let us reach a practical agreement, [CT_NAME]. Our people would rather see results than another military parade.</German>
+		<Italian>Let us reach a practical agreement, [CT_NAME]. Our people would rather see results than another military parade.</Italian>
+		<Spanish>Let us reach a practical agreement, [CT_NAME]. Our people would rather see results than another military parade.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_PERON_1</Tag>
+		<English>My government has the means to insist, [CT_NAME]. I suggest you give us no reason to use them.</English>
+		<French>My government has the means to insist, [CT_NAME]. I suggest you give us no reason to use them.</French>
+		<German>My government has the means to insist, [CT_NAME]. I suggest you give us no reason to use them.</German>
+		<Italian>My government has the means to insist, [CT_NAME]. I suggest you give us no reason to use them.</Italian>
+		<Spanish>My government has the means to insist, [CT_NAME]. I suggest you give us no reason to use them.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MACDONALD_1</Tag>
+		<English>I am [OUR_NAME]. Keeping [OUR_CIV_SHORT] together takes patience, railways, and the occasional compromise. Shall we begin with the compromise?</English>
+		<French>I am [OUR_NAME]. Keeping [OUR_CIV_SHORT] together takes patience, railways, and the occasional compromise. Shall we begin with the compromise?</French>
+		<German>I am [OUR_NAME]. Keeping [OUR_CIV_SHORT] together takes patience, railways, and the occasional compromise. Shall we begin with the compromise?</German>
+		<Italian>I am [OUR_NAME]. Keeping [OUR_CIV_SHORT] together takes patience, railways, and the occasional compromise. Shall we begin with the compromise?</Italian>
+		<Spanish>I am [OUR_NAME]. Keeping [OUR_CIV_SHORT] together takes patience, railways, and the occasional compromise. Shall we begin with the compromise?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_GERHARDSEN_1</Tag>
+		<English>I am [OUR_NAME]. [OUR_CIV_SHORT] has work to do, and we would rather build homes than fortifications. What have you come to discuss?</English>
+		<French>I am [OUR_NAME]. [OUR_CIV_SHORT] has work to do, and we would rather build homes than fortifications. What have you come to discuss?</French>
+		<German>I am [OUR_NAME]. [OUR_CIV_SHORT] has work to do, and we would rather build homes than fortifications. What have you come to discuss?</German>
+		<Italian>I am [OUR_NAME]. [OUR_CIV_SHORT] has work to do, and we would rather build homes than fortifications. What have you come to discuss?</Italian>
+		<Spanish>I am [OUR_NAME]. [OUR_CIV_SHORT] has work to do, and we would rather build homes than fortifications. What have you come to discuss?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_MACDONALD_1</Tag>
+		<English>Welcome, [CT_NAME]. If I can bring the provinces to an agreement, surely you and I can manage one.</English>
+		<French>Welcome, [CT_NAME]. If I can bring the provinces to an agreement, surely you and I can manage one.</French>
+		<German>Welcome, [CT_NAME]. If I can bring the provinces to an agreement, surely you and I can manage one.</German>
+		<Italian>Welcome, [CT_NAME]. If I can bring the provinces to an agreement, surely you and I can manage one.</Italian>
+		<Spanish>Welcome, [CT_NAME]. If I can bring the provinces to an agreement, surely you and I can manage one.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_MACDONALD_1</Tag>
+		<English>You have all the objections of a provincial premier, [CT_NAME], and none of the excuse.</English>
+		<French>You have all the objections of a provincial premier, [CT_NAME], and none of the excuse.</French>
+		<German>You have all the objections of a provincial premier, [CT_NAME], and none of the excuse.</German>
+		<Italian>You have all the objections of a provincial premier, [CT_NAME], and none of the excuse.</Italian>
+		<Spanish>You have all the objections of a provincial premier, [CT_NAME], and none of the excuse.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_TRUDEAU_1</Tag>
+		<English>Bonjour, [CT_NAME]. Let us see whether we can agree in one language before we disagree in two.</English>
+		<French>Bonjour, [CT_NAME]. Let us see whether we can agree in one language before we disagree in two.</French>
+		<German>Bonjour, [CT_NAME]. Let us see whether we can agree in one language before we disagree in two.</German>
+		<Italian>Bonjour, [CT_NAME]. Let us see whether we can agree in one language before we disagree in two.</Italian>
+		<Spanish>Bonjour, [CT_NAME]. Let us see whether we can agree in one language before we disagree in two.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_TRUDEAU_1</Tag>
+		<English>I understand your argument perfectly, [CT_NAME]. That is precisely why I reject it.</English>
+		<French>I understand your argument perfectly, [CT_NAME]. That is precisely why I reject it.</French>
+		<German>I understand your argument perfectly, [CT_NAME]. That is precisely why I reject it.</German>
+		<Italian>I understand your argument perfectly, [CT_NAME]. That is precisely why I reject it.</Italian>
+		<Spanish>I understand your argument perfectly, [CT_NAME]. That is precisely why I reject it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_GERHARDSEN_1</Tag>
+		<English>Welcome, [CT_NAME]. Sit down. A useful agreement need not make a grand speech.</English>
+		<French>Welcome, [CT_NAME]. Sit down. A useful agreement need not make a grand speech.</French>
+		<German>Welcome, [CT_NAME]. Sit down. A useful agreement need not make a grand speech.</German>
+		<Italian>Welcome, [CT_NAME]. Sit down. A useful agreement need not make a grand speech.</Italian>
+		<Spanish>Welcome, [CT_NAME]. Sit down. A useful agreement need not make a grand speech.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_GERHARDSEN_1</Tag>
+		<English>You have explained what we should sacrifice, [CT_NAME]. What contribution did you intend to make?</English>
+		<French>You have explained what we should sacrifice, [CT_NAME]. What contribution did you intend to make?</French>
+		<German>You have explained what we should sacrifice, [CT_NAME]. What contribution did you intend to make?</German>
+		<Italian>You have explained what we should sacrifice, [CT_NAME]. What contribution did you intend to make?</Italian>
+		<Spanish>You have explained what we should sacrifice, [CT_NAME]. What contribution did you intend to make?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_MACDONALD_1</Tag>
+		<English>I have a cabinet to keep together. I cannot spend the afternoon taking yours apart.</English>
+		<French>I have a cabinet to keep together. I cannot spend the afternoon taking yours apart.</French>
+		<German>I have a cabinet to keep together. I cannot spend the afternoon taking yours apart.</German>
+		<Italian>I have a cabinet to keep together. I cannot spend the afternoon taking yours apart.</Italian>
+		<Spanish>I have a cabinet to keep together. I cannot spend the afternoon taking yours apart.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_TRUDEAU_1</Tag>
+		<English>I have heard enough constitutional arguments to recognize one that leads nowhere. Good day.</English>
+		<French>I have heard enough constitutional arguments to recognize one that leads nowhere. Good day.</French>
+		<German>I have heard enough constitutional arguments to recognize one that leads nowhere. Good day.</German>
+		<Italian>I have heard enough constitutional arguments to recognize one that leads nowhere. Good day.</Italian>
+		<Spanish>I have heard enough constitutional arguments to recognize one that leads nowhere. Good day.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_GERHARDSEN_1</Tag>
+		<English>I have people waiting for homes and work. This conversation can wait.</English>
+		<French>I have people waiting for homes and work. This conversation can wait.</French>
+		<German>I have people waiting for homes and work. This conversation can wait.</German>
+		<Italian>I have people waiting for homes and work. This conversation can wait.</Italian>
+		<Spanish>I have people waiting for homes and work. This conversation can wait.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_MACDONALD_1</Tag>
+		<English>No. Our country was not joined together merely to be divided at your convenience.</English>
+		<French>No. Our country was not joined together merely to be divided at your convenience.</French>
+		<German>No. Our country was not joined together merely to be divided at your convenience.</German>
+		<Italian>No. Our country was not joined together merely to be divided at your convenience.</Italian>
+		<Spanish>No. Our country was not joined together merely to be divided at your convenience.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_TRUDEAU_1</Tag>
+		<English>We can discuss peace when you bring terms instead of instructions.</English>
+		<French>We can discuss peace when you bring terms instead of instructions.</French>
+		<German>We can discuss peace when you bring terms instead of instructions.</German>
+		<Italian>We can discuss peace when you bring terms instead of instructions.</Italian>
+		<Spanish>We can discuss peace when you bring terms instead of instructions.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_GERHARDSEN_1</Tag>
+		<English>We want peace, but not on terms that leave our people at your mercy.</English>
+		<French>We want peace, but not on terms that leave our people at your mercy.</French>
+		<German>We want peace, but not on terms that leave our people at your mercy.</German>
+		<Italian>We want peace, but not on terms that leave our people at your mercy.</Italian>
+		<Spanish>We want peace, but not on terms that leave our people at your mercy.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_MACDONALD_1</Tag>
+		<English>Nation-building is expensive, [CT_NAME]. A little assistance now could open a great deal of trade later.</English>
+		<French>Nation-building is expensive, [CT_NAME]. A little assistance now could open a great deal of trade later.</French>
+		<German>Nation-building is expensive, [CT_NAME]. A little assistance now could open a great deal of trade later.</German>
+		<Italian>Nation-building is expensive, [CT_NAME]. A little assistance now could open a great deal of trade later.</Italian>
+		<Spanish>Nation-building is expensive, [CT_NAME]. A little assistance now could open a great deal of trade later.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_MACDONALD_1</Tag>
+		<English>Surely we can settle this account without adding military expenses to it. Here is what we require.</English>
+		<French>Surely we can settle this account without adding military expenses to it. Here is what we require.</French>
+		<German>Surely we can settle this account without adding military expenses to it. Here is what we require.</German>
+		<Italian>Surely we can settle this account without adding military expenses to it. Here is what we require.</Italian>
+		<Spanish>Surely we can settle this account without adding military expenses to it. Here is what we require.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_MACDONALD_1</Tag>
+		<English>You may prefer to contest this, [CT_NAME], but I assure you the bill will be larger. Meet our demand.</English>
+		<French>You may prefer to contest this, [CT_NAME], but I assure you the bill will be larger. Meet our demand.</French>
+		<German>You may prefer to contest this, [CT_NAME], but I assure you the bill will be larger. Meet our demand.</German>
+		<Italian>You may prefer to contest this, [CT_NAME], but I assure you the bill will be larger. Meet our demand.</Italian>
+		<Spanish>You may prefer to contest this, [CT_NAME], but I assure you the bill will be larger. Meet our demand.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_TRUDEAU_1</Tag>
+		<English>A partnership must have some practical content, [CT_NAME]. Can we count on this assistance?</English>
+		<French>A partnership must have some practical content, [CT_NAME]. Can we count on this assistance?</French>
+		<German>A partnership must have some practical content, [CT_NAME]. Can we count on this assistance?</German>
+		<Italian>A partnership must have some practical content, [CT_NAME]. Can we count on this assistance?</Italian>
+		<Spanish>A partnership must have some practical content, [CT_NAME]. Can we count on this assistance?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_TRUDEAU_1</Tag>
+		<English>We both have the means to prolong this disagreement. I suggest we exercise our judgment instead.</English>
+		<French>We both have the means to prolong this disagreement. I suggest we exercise our judgment instead.</French>
+		<German>We both have the means to prolong this disagreement. I suggest we exercise our judgment instead.</German>
+		<Italian>We both have the means to prolong this disagreement. I suggest we exercise our judgment instead.</Italian>
+		<Spanish>We both have the means to prolong this disagreement. I suggest we exercise our judgment instead.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_TRUDEAU_1</Tag>
+		<English>I would prefer an agreement, [CT_NAME]. Do not mistake that preference for a lack of alternatives.</English>
+		<French>I would prefer an agreement, [CT_NAME]. Do not mistake that preference for a lack of alternatives.</French>
+		<German>I would prefer an agreement, [CT_NAME]. Do not mistake that preference for a lack of alternatives.</German>
+		<Italian>I would prefer an agreement, [CT_NAME]. Do not mistake that preference for a lack of alternatives.</Italian>
+		<Spanish>I would prefer an agreement, [CT_NAME]. Do not mistake that preference for a lack of alternatives.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_GERHARDSEN_1</Tag>
+		<English>Our people can do the work, [CT_NAME], but these supplies would help. Will you assist us?</English>
+		<French>Our people can do the work, [CT_NAME], but these supplies would help. Will you assist us?</French>
+		<German>Our people can do the work, [CT_NAME], but these supplies would help. Will you assist us?</German>
+		<Italian>Our people can do the work, [CT_NAME], but these supplies would help. Will you assist us?</Italian>
+		<Spanish>Our people can do the work, [CT_NAME], but these supplies would help. Will you assist us?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_GERHARDSEN_1</Tag>
+		<English>Let us settle this reasonably. Neither of us needs to spend more on soldiers to prove a point.</English>
+		<French>Let us settle this reasonably. Neither of us needs to spend more on soldiers to prove a point.</French>
+		<German>Let us settle this reasonably. Neither of us needs to spend more on soldiers to prove a point.</German>
+		<Italian>Let us settle this reasonably. Neither of us needs to spend more on soldiers to prove a point.</Italian>
+		<Spanish>Let us settle this reasonably. Neither of us needs to spend more on soldiers to prove a point.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_GERHARDSEN_1</Tag>
+		<English>We have the strength to insist on these terms, [CT_NAME]. I would rather not have to demonstrate it.</English>
+		<French>We have the strength to insist on these terms, [CT_NAME]. I would rather not have to demonstrate it.</French>
+		<German>We have the strength to insist on these terms, [CT_NAME]. I would rather not have to demonstrate it.</German>
+		<Italian>We have the strength to insist on these terms, [CT_NAME]. I would rather not have to demonstrate it.</Italian>
+		<Spanish>We have the strength to insist on these terms, [CT_NAME]. I would rather not have to demonstrate it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_GUSTAV_1</Tag>
+		<English>I am [OUR_NAME]. You may know the lion by his reputation, [CT_NAME]. Let us see whether you prefer his friendship or his teeth.</English>
+		<French>I am [OUR_NAME]. You may know the lion by his reputation, [CT_NAME]. Let us see whether you prefer his friendship or his teeth.</French>
+		<German>I am [OUR_NAME]. You may know the lion by his reputation, [CT_NAME]. Let us see whether you prefer his friendship or his teeth.</German>
+		<Italian>I am [OUR_NAME]. You may know the lion by his reputation, [CT_NAME]. Let us see whether you prefer his friendship or his teeth.</Italian>
+		<Spanish>I am [OUR_NAME]. You may know the lion by his reputation, [CT_NAME]. Let us see whether you prefer his friendship or his teeth.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_WILLIAM_III_1</Tag>
+		<English>I am [OUR_NAME], Prince of Orange. I prefer a dependable partner to an ambitious neighbor, [CT_NAME]. Which have I received?</English>
+		<French>I am [OUR_NAME], Prince of Orange. I prefer a dependable partner to an ambitious neighbor, [CT_NAME]. Which have I received?</French>
+		<German>I am [OUR_NAME], Prince of Orange. I prefer a dependable partner to an ambitious neighbor, [CT_NAME]. Which have I received?</German>
+		<Italian>I am [OUR_NAME], Prince of Orange. I prefer a dependable partner to an ambitious neighbor, [CT_NAME]. Which have I received?</Italian>
+		<Spanish>I am [OUR_NAME], Prince of Orange. I prefer a dependable partner to an ambitious neighbor, [CT_NAME]. Which have I received?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_GUSTAV_1</Tag>
+		<English>Welcome, [CT_NAME]. Let us conduct our business as promptly as a well-drilled regiment.</English>
+		<French>Welcome, [CT_NAME]. Let us conduct our business as promptly as a well-drilled regiment.</French>
+		<German>Welcome, [CT_NAME]. Let us conduct our business as promptly as a well-drilled regiment.</German>
+		<Italian>Welcome, [CT_NAME]. Let us conduct our business as promptly as a well-drilled regiment.</Italian>
+		<Spanish>Welcome, [CT_NAME]. Let us conduct our business as promptly as a well-drilled regiment.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_GUSTAV_1</Tag>
+		<English>Your proposals are impressive on parade, [CT_NAME]. I doubt they would survive their first engagement.</English>
+		<French>Your proposals are impressive on parade, [CT_NAME]. I doubt they would survive their first engagement.</French>
+		<German>Your proposals are impressive on parade, [CT_NAME]. I doubt they would survive their first engagement.</German>
+		<Italian>Your proposals are impressive on parade, [CT_NAME]. I doubt they would survive their first engagement.</Italian>
+		<Spanish>Your proposals are impressive on parade, [CT_NAME]. I doubt they would survive their first engagement.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_WILLIAM_III_1</Tag>
+		<English>Welcome, [CT_NAME]. Shall we arrange something useful before our respective assemblies discover reasons to object?</English>
+		<French>Welcome, [CT_NAME]. Shall we arrange something useful before our respective assemblies discover reasons to object?</French>
+		<German>Welcome, [CT_NAME]. Shall we arrange something useful before our respective assemblies discover reasons to object?</German>
+		<Italian>Welcome, [CT_NAME]. Shall we arrange something useful before our respective assemblies discover reasons to object?</Italian>
+		<Spanish>Welcome, [CT_NAME]. Shall we arrange something useful before our respective assemblies discover reasons to object?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_WILLIAM_III_1</Tag>
+		<English>Your ambitions are plain enough, [CT_NAME]. You will understand why I am taking precautions.</English>
+		<French>Your ambitions are plain enough, [CT_NAME]. You will understand why I am taking precautions.</French>
+		<German>Your ambitions are plain enough, [CT_NAME]. You will understand why I am taking precautions.</German>
+		<Italian>Your ambitions are plain enough, [CT_NAME]. You will understand why I am taking precautions.</Italian>
+		<Spanish>Your ambitions are plain enough, [CT_NAME]. You will understand why I am taking precautions.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_ALEXANDER_I_1</Tag>
+		<English>Welcome, [CT_NAME]. Let us consider how our two governments might preserve peace without exhausting our treasuries.</English>
+		<French>Welcome, [CT_NAME]. Let us consider how our two governments might preserve peace without exhausting our treasuries.</French>
+		<German>Welcome, [CT_NAME]. Let us consider how our two governments might preserve peace without exhausting our treasuries.</German>
+		<Italian>Welcome, [CT_NAME]. Let us consider how our two governments might preserve peace without exhausting our treasuries.</Italian>
+		<Spanish>Welcome, [CT_NAME]. Let us consider how our two governments might preserve peace without exhausting our treasuries.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_GUSTAV_1</Tag>
+		<English>My officers have useful reports to make. You have none.</English>
+		<French>My officers have useful reports to make. You have none.</French>
+		<German>My officers have useful reports to make. You have none.</German>
+		<Italian>My officers have useful reports to make. You have none.</Italian>
+		<Spanish>My officers have useful reports to make. You have none.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_WILLIAM_III_1</Tag>
+		<English>I have correspondence with more dependable partners to attend to. Good day.</English>
+		<French>I have correspondence with more dependable partners to attend to. Good day.</French>
+		<German>I have correspondence with more dependable partners to attend to. Good day.</German>
+		<Italian>I have correspondence with more dependable partners to attend to. Good day.</Italian>
+		<Spanish>I have correspondence with more dependable partners to attend to. Good day.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_ALEXANDER_I_1</Tag>
+		<English>Your assurances are plentiful, [CT_NAME]. I require something more substantial before we speak again.</English>
+		<French>Your assurances are plentiful, [CT_NAME]. I require something more substantial before we speak again.</French>
+		<German>Your assurances are plentiful, [CT_NAME]. I require something more substantial before we speak again.</German>
+		<Italian>Your assurances are plentiful, [CT_NAME]. I require something more substantial before we speak again.</Italian>
+		<Spanish>Your assurances are plentiful, [CT_NAME]. I require something more substantial before we speak again.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_GUSTAV_1</Tag>
+		<English>No. My army has not marched this far merely to salute and return home.</English>
+		<French>No. My army has not marched this far merely to salute and return home.</French>
+		<German>No. My army has not marched this far merely to salute and return home.</German>
+		<Italian>No. My army has not marched this far merely to salute and return home.</Italian>
+		<Spanish>No. My army has not marched this far merely to salute and return home.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_WILLIAM_III_1</Tag>
+		<English>Not on those terms. I have not spent this effort balancing power merely to place it all in your hands.</English>
+		<French>Not on those terms. I have not spent this effort balancing power merely to place it all in your hands.</French>
+		<German>Not on those terms. I have not spent this effort balancing power merely to place it all in your hands.</German>
+		<Italian>Not on those terms. I have not spent this effort balancing power merely to place it all in your hands.</Italian>
+		<Spanish>Not on those terms. I have not spent this effort balancing power merely to place it all in your hands.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_ALEXANDER_I_1</Tag>
+		<English>A settlement must restore order, not merely give you time to disturb it again. I cannot accept this peace.</English>
+		<French>A settlement must restore order, not merely give you time to disturb it again. I cannot accept this peace.</French>
+		<German>A settlement must restore order, not merely give you time to disturb it again. I cannot accept this peace.</German>
+		<Italian>A settlement must restore order, not merely give you time to disturb it again. I cannot accept this peace.</Italian>
+		<Spanish>A settlement must restore order, not merely give you time to disturb it again. I cannot accept this peace.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_GUSTAV_1</Tag>
+		<English>Even the best-drilled army needs provisions, [CT_NAME]. Your assistance would be remembered.</English>
+		<French>Even the best-drilled army needs provisions, [CT_NAME]. Your assistance would be remembered.</French>
+		<German>Even the best-drilled army needs provisions, [CT_NAME]. Your assistance would be remembered.</German>
+		<Italian>Even the best-drilled army needs provisions, [CT_NAME]. Your assistance would be remembered.</Italian>
+		<Spanish>Even the best-drilled army needs provisions, [CT_NAME]. Your assistance would be remembered.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_GUSTAV_1</Tag>
+		<English>We could test whose formations hold longer, [CT_NAME], or settle this demand without the expense.</English>
+		<French>We could test whose formations hold longer, [CT_NAME], or settle this demand without the expense.</French>
+		<German>We could test whose formations hold longer, [CT_NAME], or settle this demand without the expense.</German>
+		<Italian>We could test whose formations hold longer, [CT_NAME], or settle this demand without the expense.</Italian>
+		<Spanish>We could test whose formations hold longer, [CT_NAME], or settle this demand without the expense.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_GUSTAV_1</Tag>
+		<English>My infantry, horse, and guns are in agreement, [CT_NAME]. I advise you to join them.</English>
+		<French>My infantry, horse, and guns are in agreement, [CT_NAME]. I advise you to join them.</French>
+		<German>My infantry, horse, and guns are in agreement, [CT_NAME]. I advise you to join them.</German>
+		<Italian>My infantry, horse, and guns are in agreement, [CT_NAME]. I advise you to join them.</Italian>
+		<Spanish>My infantry, horse, and guns are in agreement, [CT_NAME]. I advise you to join them.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_WILLIAM_III_1</Tag>
+		<English>Common interests require more than common declarations, [CT_NAME]. Will you provide this assistance?</English>
+		<French>Common interests require more than common declarations, [CT_NAME]. Will you provide this assistance?</French>
+		<German>Common interests require more than common declarations, [CT_NAME]. Will you provide this assistance?</German>
+		<Italian>Common interests require more than common declarations, [CT_NAME]. Will you provide this assistance?</Italian>
+		<Spanish>Common interests require more than common declarations, [CT_NAME]. Will you provide this assistance?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_WILLIAM_III_1</Tag>
+		<English>Neither of us would profit from another costly campaign. Meet this demand and let us settle it here.</English>
+		<French>Neither of us would profit from another costly campaign. Meet this demand and let us settle it here.</French>
+		<German>Neither of us would profit from another costly campaign. Meet this demand and let us settle it here.</German>
+		<Italian>Neither of us would profit from another costly campaign. Meet this demand and let us settle it here.</Italian>
+		<Spanish>Neither of us would profit from another costly campaign. Meet this demand and let us settle it here.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_WILLIAM_III_1</Tag>
+		<English>Your position does not warrant this resistance, [CT_NAME]. Accept the demand while it remains a diplomatic matter.</English>
+		<French>Your position does not warrant this resistance, [CT_NAME]. Accept the demand while it remains a diplomatic matter.</French>
+		<German>Your position does not warrant this resistance, [CT_NAME]. Accept the demand while it remains a diplomatic matter.</German>
+		<Italian>Your position does not warrant this resistance, [CT_NAME]. Accept the demand while it remains a diplomatic matter.</Italian>
+		<Spanish>Your position does not warrant this resistance, [CT_NAME]. Accept the demand while it remains a diplomatic matter.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_ALEXANDER_I_1</Tag>
+		<English>If our friendship is to mean anything, [CT_NAME], it must extend to assistance in a time of need.</English>
+		<French>If our friendship is to mean anything, [CT_NAME], it must extend to assistance in a time of need.</French>
+		<German>If our friendship is to mean anything, [CT_NAME], it must extend to assistance in a time of need.</German>
+		<Italian>If our friendship is to mean anything, [CT_NAME], it must extend to assistance in a time of need.</Italian>
+		<Spanish>If our friendship is to mean anything, [CT_NAME], it must extend to assistance in a time of need.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_ALEXANDER_I_1</Tag>
+		<English>Let us settle this contribution as civilized governments, [CT_NAME], before our generals settle it otherwise.</English>
+		<French>Let us settle this contribution as civilized governments, [CT_NAME], before our generals settle it otherwise.</French>
+		<German>Let us settle this contribution as civilized governments, [CT_NAME], before our generals settle it otherwise.</German>
+		<Italian>Let us settle this contribution as civilized governments, [CT_NAME], before our generals settle it otherwise.</Italian>
+		<Spanish>Let us settle this contribution as civilized governments, [CT_NAME], before our generals settle it otherwise.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_ALEXANDER_I_1</Tag>
+		<English>I would prefer your willing agreement, [CT_NAME]. You should not require an army to appreciate the proposal.</English>
+		<French>I would prefer your willing agreement, [CT_NAME]. You should not require an army to appreciate the proposal.</French>
+		<German>I would prefer your willing agreement, [CT_NAME]. You should not require an army to appreciate the proposal.</German>
+		<Italian>I would prefer your willing agreement, [CT_NAME]. You should not require an army to appreciate the proposal.</Italian>
+		<Spanish>I would prefer your willing agreement, [CT_NAME]. You should not require an army to appreciate the proposal.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_PACHACUTI_1</Tag>
+		<English>Welcome, [CT_NAME]. Let us arrange something worthy of being remembered. My quipu keepers have enough petty accounts already.</English>
+		<French>Welcome, [CT_NAME]. Let us arrange something worthy of being remembered. My quipu keepers have enough petty accounts already.</French>
+		<German>Welcome, [CT_NAME]. Let us arrange something worthy of being remembered. My quipu keepers have enough petty accounts already.</German>
+		<Italian>Welcome, [CT_NAME]. Let us arrange something worthy of being remembered. My quipu keepers have enough petty accounts already.</Italian>
+		<Spanish>Welcome, [CT_NAME]. Let us arrange something worthy of being remembered. My quipu keepers have enough petty accounts already.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_PACHACUTI_1</Tag>
+		<English>You have come a long way to tell me so little, [CT_NAME]. Even my runners carry better messages.</English>
+		<French>You have come a long way to tell me so little, [CT_NAME]. Even my runners carry better messages.</French>
+		<German>You have come a long way to tell me so little, [CT_NAME]. Even my runners carry better messages.</German>
+		<Italian>You have come a long way to tell me so little, [CT_NAME]. Even my runners carry better messages.</Italian>
+		<Spanish>You have come a long way to tell me so little, [CT_NAME]. Even my runners carry better messages.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_COSIJOEZA_1</Tag>
+		<English>Welcome, [CT_NAME]. A good agreement can accomplish what an army cannot. Let us see whether you have brought one.</English>
+		<French>Welcome, [CT_NAME]. A good agreement can accomplish what an army cannot. Let us see whether you have brought one.</French>
+		<German>Welcome, [CT_NAME]. A good agreement can accomplish what an army cannot. Let us see whether you have brought one.</German>
+		<Italian>Welcome, [CT_NAME]. A good agreement can accomplish what an army cannot. Let us see whether you have brought one.</Italian>
+		<Spanish>Welcome, [CT_NAME]. A good agreement can accomplish what an army cannot. Let us see whether you have brought one.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_COSIJOEZA_1</Tag>
+		<English>You bring the demands of a conqueror, [CT_NAME]. Have you also brought an army capable of enforcing them?</English>
+		<French>You bring the demands of a conqueror, [CT_NAME]. Have you also brought an army capable of enforcing them?</French>
+		<German>You bring the demands of a conqueror, [CT_NAME]. Have you also brought an army capable of enforcing them?</German>
+		<Italian>You bring the demands of a conqueror, [CT_NAME]. Have you also brought an army capable of enforcing them?</Italian>
+		<Spanish>You bring the demands of a conqueror, [CT_NAME]. Have you also brought an army capable of enforcing them?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_TACAYNAMO_1</Tag>
+		<English>Welcome, [CT_NAME]. You need not explain where you came from. What you bring is of greater interest.</English>
+		<French>Welcome, [CT_NAME]. You need not explain where you came from. What you bring is of greater interest.</French>
+		<German>Welcome, [CT_NAME]. You need not explain where you came from. What you bring is of greater interest.</German>
+		<Italian>Welcome, [CT_NAME]. You need not explain where you came from. What you bring is of greater interest.</Italian>
+		<Spanish>Welcome, [CT_NAME]. You need not explain where you came from. What you bring is of greater interest.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_TACAYNAMO_1</Tag>
+		<English>You arrive with empty hands and a full list of demands, [CT_NAME]. Our merchants would call that poor business.</English>
+		<French>You arrive with empty hands and a full list of demands, [CT_NAME]. Our merchants would call that poor business.</French>
+		<German>You arrive with empty hands and a full list of demands, [CT_NAME]. Our merchants would call that poor business.</German>
+		<Italian>You arrive with empty hands and a full list of demands, [CT_NAME]. Our merchants would call that poor business.</Italian>
+		<Spanish>You arrive with empty hands and a full list of demands, [CT_NAME]. Our merchants would call that poor business.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_PACHACUTI_1</Tag>
+		<English>I have roads to build and provinces to govern. Your complaints can wait.</English>
+		<French>I have roads to build and provinces to govern. Your complaints can wait.</French>
+		<German>I have roads to build and provinces to govern. Your complaints can wait.</German>
+		<Italian>I have roads to build and provinces to govern. Your complaints can wait.</Italian>
+		<Spanish>I have roads to build and provinces to govern. Your complaints can wait.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_COSIJOEZA_1</Tag>
+		<English>Our sentries will see you out. They have heard enough from you as well.</English>
+		<French>Our sentries will see you out. They have heard enough from you as well.</French>
+		<German>Our sentries will see you out. They have heard enough from you as well.</German>
+		<Italian>Our sentries will see you out. They have heard enough from you as well.</Italian>
+		<Spanish>Our sentries will see you out. They have heard enough from you as well.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_TACAYNAMO_1</Tag>
+		<English>Even the sea knows when to withdraw. Take the hint.</English>
+		<French>Even the sea knows when to withdraw. Take the hint.</French>
+		<German>Even the sea knows when to withdraw. Take the hint.</German>
+		<Italian>Even the sea knows when to withdraw. Take the hint.</Italian>
+		<Spanish>Even the sea knows when to withdraw. Take the hint.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_PACHACUTI_1</Tag>
+		<English>No. The world has begun to turn in our favor, and I do not intend to stop it.</English>
+		<French>No. The world has begun to turn in our favor, and I do not intend to stop it.</French>
+		<German>No. The world has begun to turn in our favor, and I do not intend to stop it.</German>
+		<Italian>No. The world has begun to turn in our favor, and I do not intend to stop it.</Italian>
+		<Spanish>No. The world has begun to turn in our favor, and I do not intend to stop it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_COSIJOEZA_1</Tag>
+		<English>You have not won by force what you now ask me to surrender in peace.</English>
+		<French>You have not won by force what you now ask me to surrender in peace.</French>
+		<German>You have not won by force what you now ask me to surrender in peace.</German>
+		<Italian>You have not won by force what you now ask me to surrender in peace.</Italian>
+		<Spanish>You have not won by force what you now ask me to surrender in peace.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_TACAYNAMO_1</Tag>
+		<English>No. You will not gain our valleys merely by asking me to abandon them.</English>
+		<French>No. You will not gain our valleys merely by asking me to abandon them.</French>
+		<German>No. You will not gain our valleys merely by asking me to abandon them.</German>
+		<Italian>No. You will not gain our valleys merely by asking me to abandon them.</Italian>
+		<Spanish>No. You will not gain our valleys merely by asking me to abandon them.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_PACHACUTI_1</Tag>
+		<English>Our storehouses must supply a great many people, [CT_NAME]. Your assistance would not go unnoticed.</English>
+		<French>Our storehouses must supply a great many people, [CT_NAME]. Your assistance would not go unnoticed.</French>
+		<German>Our storehouses must supply a great many people, [CT_NAME]. Your assistance would not go unnoticed.</German>
+		<Italian>Our storehouses must supply a great many people, [CT_NAME]. Your assistance would not go unnoticed.</Italian>
+		<Spanish>Our storehouses must supply a great many people, [CT_NAME]. Your assistance would not go unnoticed.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_PACHACUTI_1</Tag>
+		<English>Provide what I ask, [CT_NAME]. A tribute agreed upon today is cheaper than a campaign remembered tomorrow.</English>
+		<French>Provide what I ask, [CT_NAME]. A tribute agreed upon today is cheaper than a campaign remembered tomorrow.</French>
+		<German>Provide what I ask, [CT_NAME]. A tribute agreed upon today is cheaper than a campaign remembered tomorrow.</German>
+		<Italian>Provide what I ask, [CT_NAME]. A tribute agreed upon today is cheaper than a campaign remembered tomorrow.</Italian>
+		<Spanish>Provide what I ask, [CT_NAME]. A tribute agreed upon today is cheaper than a campaign remembered tomorrow.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_PACHACUTI_1</Tag>
+		<English>I can receive your tribute or send officials to assess it myself. The first arrangement would suit you better.</English>
+		<French>I can receive your tribute or send officials to assess it myself. The first arrangement would suit you better.</French>
+		<German>I can receive your tribute or send officials to assess it myself. The first arrangement would suit you better.</German>
+		<Italian>I can receive your tribute or send officials to assess it myself. The first arrangement would suit you better.</Italian>
+		<Spanish>I can receive your tribute or send officials to assess it myself. The first arrangement would suit you better.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_COSIJOEZA_1</Tag>
+		<English>A dependable friend is worth more than another wall, [CT_NAME]. Will you help us with these supplies?</English>
+		<French>A dependable friend is worth more than another wall, [CT_NAME]. Will you help us with these supplies?</French>
+		<German>A dependable friend is worth more than another wall, [CT_NAME]. Will you help us with these supplies?</German>
+		<Italian>A dependable friend is worth more than another wall, [CT_NAME]. Will you help us with these supplies?</Italian>
+		<Spanish>A dependable friend is worth more than another wall, [CT_NAME]. Will you help us with these supplies?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_COSIJOEZA_1</Tag>
+		<English>We could spend a season testing each other's defenses, [CT_NAME], or agree to this contribution now.</English>
+		<French>We could spend a season testing each other's defenses, [CT_NAME], or agree to this contribution now.</French>
+		<German>We could spend a season testing each other's defenses, [CT_NAME], or agree to this contribution now.</German>
+		<Italian>We could spend a season testing each other's defenses, [CT_NAME], or agree to this contribution now.</Italian>
+		<Spanish>We could spend a season testing each other's defenses, [CT_NAME], or agree to this contribution now.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_COSIJOEZA_1</Tag>
+		<English>Your defenses will not make your refusal any wiser, [CT_NAME]. Send what we require.</English>
+		<French>Your defenses will not make your refusal any wiser, [CT_NAME]. Send what we require.</French>
+		<German>Your defenses will not make your refusal any wiser, [CT_NAME]. Send what we require.</German>
+		<Italian>Your defenses will not make your refusal any wiser, [CT_NAME]. Send what we require.</Italian>
+		<Spanish>Your defenses will not make your refusal any wiser, [CT_NAME]. Send what we require.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_TACAYNAMO_1</Tag>
+		<English>Our workshops have much to offer, [CT_NAME]. Help us with these supplies and give our friendship a useful beginning.</English>
+		<French>Our workshops have much to offer, [CT_NAME]. Help us with these supplies and give our friendship a useful beginning.</French>
+		<German>Our workshops have much to offer, [CT_NAME]. Help us with these supplies and give our friendship a useful beginning.</German>
+		<Italian>Our workshops have much to offer, [CT_NAME]. Help us with these supplies and give our friendship a useful beginning.</Italian>
+		<Spanish>Our workshops have much to offer, [CT_NAME]. Help us with these supplies and give our friendship a useful beginning.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_TACAYNAMO_1</Tag>
+		<English>Let us agree on this contribution, [CT_NAME]. It would be wasteful to send warriors where merchants could suffice.</English>
+		<French>Let us agree on this contribution, [CT_NAME]. It would be wasteful to send warriors where merchants could suffice.</French>
+		<German>Let us agree on this contribution, [CT_NAME]. It would be wasteful to send warriors where merchants could suffice.</German>
+		<Italian>Let us agree on this contribution, [CT_NAME]. It would be wasteful to send warriors where merchants could suffice.</Italian>
+		<Spanish>Let us agree on this contribution, [CT_NAME]. It would be wasteful to send warriors where merchants could suffice.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_TACAYNAMO_1</Tag>
+		<English>Send the tribute, [CT_NAME]. I would rather receive your goods than have to send men to collect them.</English>
+		<French>Send the tribute, [CT_NAME]. I would rather receive your goods than have to send men to collect them.</French>
+		<German>Send the tribute, [CT_NAME]. I would rather receive your goods than have to send men to collect them.</German>
+		<Italian>Send the tribute, [CT_NAME]. I would rather receive your goods than have to send men to collect them.</Italian>
+		<Spanish>Send the tribute, [CT_NAME]. I would rather receive your goods than have to send men to collect them.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_REAGAN_1</Tag>
+		<English>Well, [CT_NAME], it's good to see a friendly face. I was beginning to think diplomacy was all critics and no audience.</English>
+		<French>Well, [CT_NAME], it's good to see a friendly face. I was beginning to think diplomacy was all critics and no audience.</French>
+		<German>Well, [CT_NAME], it's good to see a friendly face. I was beginning to think diplomacy was all critics and no audience.</German>
+		<Italian>Well, [CT_NAME], it's good to see a friendly face. I was beginning to think diplomacy was all critics and no audience.</Italian>
+		<Spanish>Well, [CT_NAME], it's good to see a friendly face. I was beginning to think diplomacy was all critics and no audience.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_REAGAN_1</Tag>
+		<English>Well, there you go again. Have you brought a proposal, or just another speech about everything we're doing wrong?</English>
+		<French>Well, there you go again. Have you brought a proposal, or just another speech about everything we're doing wrong?</French>
+		<German>Well, there you go again. Have you brought a proposal, or just another speech about everything we're doing wrong?</German>
+		<Italian>Well, there you go again. Have you brought a proposal, or just another speech about everything we're doing wrong?</Italian>
+		<Spanish>Well, there you go again. Have you brought a proposal, or just another speech about everything we're doing wrong?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_REAGAN_1</Tag>
+		<English>My advisers tell me to keep the channels of communication open. Fortunately, they didn't say I had to answer.</English>
+		<French>My advisers tell me to keep the channels of communication open. Fortunately, they didn't say I had to answer.</French>
+		<German>My advisers tell me to keep the channels of communication open. Fortunately, they didn't say I had to answer.</German>
+		<Italian>My advisers tell me to keep the channels of communication open. Fortunately, they didn't say I had to answer.</Italian>
+		<Spanish>My advisers tell me to keep the channels of communication open. Fortunately, they didn't say I had to answer.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_REAGAN_1</Tag>
+		<English>Peace through strength, [CT_NAME]. So far, you've supplied very little of either.</English>
+		<French>Peace through strength, [CT_NAME]. So far, you've supplied very little of either.</French>
+		<German>Peace through strength, [CT_NAME]. So far, you've supplied very little of either.</German>
+		<Italian>Peace through strength, [CT_NAME]. So far, you've supplied very little of either.</Italian>
+		<Spanish>Peace through strength, [CT_NAME]. So far, you've supplied very little of either.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_REAGAN_1</Tag>
+		<English>Think of this as an investment in peace. A very small investment compared with the cost of testing our defenses.</English>
+		<French>Think of this as an investment in peace. A very small investment compared with the cost of testing our defenses.</French>
+		<German>Think of this as an investment in peace. A very small investment compared with the cost of testing our defenses.</German>
+		<Italian>Think of this as an investment in peace. A very small investment compared with the cost of testing our defenses.</Italian>
+		<Spanish>Think of this as an investment in peace. A very small investment compared with the cost of testing our defenses.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_CHAVEZ_1</Tag>
+		<English>I am [OUR_NAME], and the people of [OUR_EMPIRE] will never again take orders from abroad! Now, have you come as a friend, or should I save you a place in my next broadcast?</English>
+		<French>I am [OUR_NAME], and the people of [OUR_EMPIRE] will never again take orders from abroad! Now, have you come as a friend, or should I save you a place in my next broadcast?</French>
+		<German>I am [OUR_NAME], and the people of [OUR_EMPIRE] will never again take orders from abroad! Now, have you come as a friend, or should I save you a place in my next broadcast?</German>
+		<Italian>I am [OUR_NAME], and the people of [OUR_EMPIRE] will never again take orders from abroad! Now, have you come as a friend, or should I save you a place in my next broadcast?</Italian>
+		<Spanish>I am [OUR_NAME], and the people of [OUR_EMPIRE] will never again take orders from abroad! Now, have you come as a friend, or should I save you a place in my next broadcast?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_CHAVEZ_1</Tag>
+		<English>Welcome, my friend! Pull up a chair. I have a few words to say about our friendship... perhaps three or four hours' worth.</English>
+		<French>Welcome, my friend! Pull up a chair. I have a few words to say about our friendship... perhaps three or four hours' worth.</French>
+		<German>Welcome, my friend! Pull up a chair. I have a few words to say about our friendship... perhaps three or four hours' worth.</German>
+		<Italian>Welcome, my friend! Pull up a chair. I have a few words to say about our friendship... perhaps three or four hours' worth.</Italian>
+		<Spanish>Welcome, my friend! Pull up a chair. I have a few words to say about our friendship... perhaps three or four hours' worth.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_CHAVEZ_1</Tag>
+		<English>Ah, [CT_NAME]. I wondered who was responsible for that imperialist smell.</English>
+		<French>Ah, [CT_NAME]. I wondered who was responsible for that imperialist smell.</French>
+		<German>Ah, [CT_NAME]. I wondered who was responsible for that imperialist smell.</German>
+		<Italian>Ah, [CT_NAME]. I wondered who was responsible for that imperialist smell.</Italian>
+		<Spanish>Ah, [CT_NAME]. I wondered who was responsible for that imperialist smell.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_CHAVEZ_1</Tag>
+		<English>You want airtime on my program? Start your own revolution!</English>
+		<French>You want airtime on my program? Start your own revolution!</French>
+		<German>You want airtime on my program? Start your own revolution!</German>
+		<Italian>You want airtime on my program? Start your own revolution!</Italian>
+		<Spanish>You want airtime on my program? Start your own revolution!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_CHAVEZ_1</Tag>
+		<English>The revolution is not taking a commercial break just because your generals are tired.</English>
+		<French>The revolution is not taking a commercial break just because your generals are tired.</French>
+		<German>The revolution is not taking a commercial break just because your generals are tired.</German>
+		<Italian>The revolution is not taking a commercial break just because your generals are tired.</Italian>
+		<Spanish>The revolution is not taking a commercial break just because your generals are tired.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_CHAVEZ_1</Tag>
+		<English>A contribution to the people's cause! Surely you wouldn't want me to explain your refusal to the people personally?</English>
+		<French>A contribution to the people's cause! Surely you wouldn't want me to explain your refusal to the people personally?</French>
+		<German>A contribution to the people's cause! Surely you wouldn't want me to explain your refusal to the people personally?</German>
+		<Italian>A contribution to the people's cause! Surely you wouldn't want me to explain your refusal to the people personally?</Italian>
+		<Spanish>A contribution to the people's cause! Surely you wouldn't want me to explain your refusal to the people personally?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_FRANCO_1</Tag>
+		<English>I am [OUR_NAME]. [OUR_EMPIRE] has endured enough disorder. If your intentions are peaceful, we may find much to discuss. If not, we have very little to discuss.</English>
+		<French>I am [OUR_NAME]. [OUR_EMPIRE] has endured enough disorder. If your intentions are peaceful, we may find much to discuss. If not, we have very little to discuss.</French>
+		<German>I am [OUR_NAME]. [OUR_EMPIRE] has endured enough disorder. If your intentions are peaceful, we may find much to discuss. If not, we have very little to discuss.</German>
+		<Italian>I am [OUR_NAME]. [OUR_EMPIRE] has endured enough disorder. If your intentions are peaceful, we may find much to discuss. If not, we have very little to discuss.</Italian>
+		<Spanish>I am [OUR_NAME]. [OUR_EMPIRE] has endured enough disorder. If your intentions are peaceful, we may find much to discuss. If not, we have very little to discuss.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_FRANCO_1</Tag>
+		<English>Welcome, [CT_NAME]. Let us discuss our common interests. Ideological differences can wait until after the agreement is signed.</English>
+		<French>Welcome, [CT_NAME]. Let us discuss our common interests. Ideological differences can wait until after the agreement is signed.</French>
+		<German>Welcome, [CT_NAME]. Let us discuss our common interests. Ideological differences can wait until after the agreement is signed.</German>
+		<Italian>Welcome, [CT_NAME]. Let us discuss our common interests. Ideological differences can wait until after the agreement is signed.</Italian>
+		<Spanish>Welcome, [CT_NAME]. Let us discuss our common interests. Ideological differences can wait until after the agreement is signed.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_FRANCO_1</Tag>
+		<English>I have survived more dangerous opponents than you, [CT_NAME]. And rather more patient ones.</English>
+		<French>I have survived more dangerous opponents than you, [CT_NAME]. And rather more patient ones.</French>
+		<German>I have survived more dangerous opponents than you, [CT_NAME]. And rather more patient ones.</German>
+		<Italian>I have survived more dangerous opponents than you, [CT_NAME]. And rather more patient ones.</Italian>
+		<Spanish>I have survived more dangerous opponents than you, [CT_NAME]. And rather more patient ones.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_FRANCO_1</Tag>
+		<English>I have considered your request for an audience. You may consider it refused.</English>
+		<French>I have considered your request for an audience. You may consider it refused.</French>
+		<German>I have considered your request for an audience. You may consider it refused.</German>
+		<Italian>I have considered your request for an audience. You may consider it refused.</Italian>
+		<Spanish>I have considered your request for an audience. You may consider it refused.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_FRANCO_1</Tag>
+		<English>You mistake endurance for indecision. I can continue this war longer than you can continue asking me to end it.</English>
+		<French>You mistake endurance for indecision. I can continue this war longer than you can continue asking me to end it.</French>
+		<German>You mistake endurance for indecision. I can continue this war longer than you can continue asking me to end it.</German>
+		<Italian>You mistake endurance for indecision. I can continue this war longer than you can continue asking me to end it.</Italian>
+		<Spanish>You mistake endurance for indecision. I can continue this war longer than you can continue asking me to end it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_FRANCO_1</Tag>
+		<English>A modest concession now will spare you a much less modest settlement later. I suggest you take the long view.</English>
+		<French>A modest concession now will spare you a much less modest settlement later. I suggest you take the long view.</French>
+		<German>A modest concession now will spare you a much less modest settlement later. I suggest you take the long view.</German>
+		<Italian>A modest concession now will spare you a much less modest settlement later. I suggest you take the long view.</Italian>
+		<Spanish>A modest concession now will spare you a much less modest settlement later. I suggest you take the long view.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_VARGAS_1</Tag>
+		<English>I am [OUR_NAME]. [OUR_EMPIRE] is building its own future: its own industries, its own institutions, and its own place in the world. There may be a place for you in our plans.</English>
+		<French>I am [OUR_NAME]. [OUR_EMPIRE] is building its own future: its own industries, its own institutions, and its own place in the world. There may be a place for you in our plans.</French>
+		<German>I am [OUR_NAME]. [OUR_EMPIRE] is building its own future: its own industries, its own institutions, and its own place in the world. There may be a place for you in our plans.</German>
+		<Italian>I am [OUR_NAME]. [OUR_EMPIRE] is building its own future: its own industries, its own institutions, and its own place in the world. There may be a place for you in our plans.</Italian>
+		<Spanish>I am [OUR_NAME]. [OUR_EMPIRE] is building its own future: its own industries, its own institutions, and its own place in the world. There may be a place for you in our plans.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_VARGAS_1</Tag>
+		<English>Welcome, [CT_NAME]. Shall we discuss trade? My workers would appreciate the business, and I would appreciate another factory.</English>
+		<French>Welcome, [CT_NAME]. Shall we discuss trade? My workers would appreciate the business, and I would appreciate another factory.</French>
+		<German>Welcome, [CT_NAME]. Shall we discuss trade? My workers would appreciate the business, and I would appreciate another factory.</German>
+		<Italian>Welcome, [CT_NAME]. Shall we discuss trade? My workers would appreciate the business, and I would appreciate another factory.</Italian>
+		<Spanish>Welcome, [CT_NAME]. Shall we discuss trade? My workers would appreciate the business, and I would appreciate another factory.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_VARGAS_1</Tag>
+		<English>Your advice is noted, [CT_NAME]. Fortunately, our national development plan makes no provision for following it.</English>
+		<French>Your advice is noted, [CT_NAME]. Fortunately, our national development plan makes no provision for following it.</French>
+		<German>Your advice is noted, [CT_NAME]. Fortunately, our national development plan makes no provision for following it.</German>
+		<Italian>Your advice is noted, [CT_NAME]. Fortunately, our national development plan makes no provision for following it.</Italian>
+		<Spanish>Your advice is noted, [CT_NAME]. Fortunately, our national development plan makes no provision for following it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_VARGAS_1</Tag>
+		<English>I have workers, industrialists, and generals waiting outside my door. Somehow, you have united them all in asking me not to see you.</English>
+		<French>I have workers, industrialists, and generals waiting outside my door. Somehow, you have united them all in asking me not to see you.</French>
+		<German>I have workers, industrialists, and generals waiting outside my door. Somehow, you have united them all in asking me not to see you.</German>
+		<Italian>I have workers, industrialists, and generals waiting outside my door. Somehow, you have united them all in asking me not to see you.</Italian>
+		<Spanish>I have workers, industrialists, and generals waiting outside my door. Somehow, you have united them all in asking me not to see you.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_VARGAS_1</Tag>
+		<English>Our industries are only just reaching their full capacity. This seems a poor time to stop production.</English>
+		<French>Our industries are only just reaching their full capacity. This seems a poor time to stop production.</French>
+		<German>Our industries are only just reaching their full capacity. This seems a poor time to stop production.</German>
+		<Italian>Our industries are only just reaching their full capacity. This seems a poor time to stop production.</Italian>
+		<Spanish>Our industries are only just reaching their full capacity. This seems a poor time to stop production.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_VARGAS_1</Tag>
+		<English>Our development requires this contribution. You may call it cooperation; my ministers have already called it policy.</English>
+		<French>Our development requires this contribution. You may call it cooperation; my ministers have already called it policy.</French>
+		<German>Our development requires this contribution. You may call it cooperation; my ministers have already called it policy.</German>
+		<Italian>Our development requires this contribution. You may call it cooperation; my ministers have already called it policy.</Italian>
+		<Spanish>Our development requires this contribution. You may call it cooperation; my ministers have already called it policy.</Spanish>
 	</TEXT>
 </Civ4GameText>
