@@ -42,29 +42,29 @@
 					help="Color to use for the Classical era."/>
 			<list   id="Color_ERA_EXPLORATION" key="ERA_EXPLORATION" 
 					type="color" default="COLOR_GREEN" 
-					get="getMedievalEraColor" set="setMedievalEraColor" dirtyBit="GameData" 
-					label="Medieval Era" 
-					help="Color to use for the Medieval era."/>
+					get="getExplorationEraColor" set="setExplorationEraColor" dirtyBit="GameData" 
+					label="Exploration Era" 
+					help="Color to use for the Exploration era."/>
 			<list   id="Color_ERA_COLONIAL" key="ERA_COLONIAL" 
 					type="color" default="COLOR_CYAN" 
-					get="getRenaissanceEraColor" set="setRenaissanceEraColor" dirtyBit="GameData" 
-					label="Renaissance Era" 
-					help="Color to use for the Renaissance era."/>
-			<list   id="Color_ERA_INDUSTRIAL" key="ERA_INDUSTRIAL" 
+					get="getColonialEraColor" set="setColonialEraColor" dirtyBit="GameData" 
+					label="Colonial Era" 
+					help="Color to use for the Colonial era."/>
+			<list   id="Color_ERA_REVOLUTIONARY" key="ERA_REVOLUTIONARY" 
 					type="color" default="COLOR_BLUE" 
+					get="getRevolutionaryEraColor" set="setRevolutionaryEraColor" dirtyBit="GameData" 
+					label="Revolutionary Era" 
+					help="Color to use for the Revolutionary era."/>
+			<list   id="Color_ERA_INDUSTRIAL" key="ERA_INDUSTRIAL" 
+					type="color" default="COLOR_MAGENTA" 
 					get="getIndustrialEraColor" set="setIndustrialEraColor" dirtyBit="GameData" 
 					label="Industrial Era" 
 					help="Color to use for the Industrial era."/>
-			<list   id="Color_ERA_GLOBAL" key="ERA_GLOBAL" 
-					type="color" default="COLOR_MAGENTA" 
-					get="getGlobalEraColor" set="setGlobalEraColor" dirtyBit="GameData" 
-					label="Global Era" 
-					help="Color to use for the Global era."/>
-			<list   id="Color_ERA_DIGITAL" key="ERA_DIGITAL" 
+			<list   id="Color_ERA_MODERN" key="ERA_MODERN" 
 					type="color" default="COLOR_WHITE" 
-					get="getDigitalEraColor" set="getDigitalEraColor" dirtyBit="GameData" 
-					label="Digital Era" 
-					help="Color to use for the Future era."/>
+					get="getModernEraColor" set="setModernEraColor" dirtyBit="GameData" 
+					label="Modern Era" 
+					help="Color to use for the Modern era."/>
 			<accessor get="getEraColor" set="setEraColor" args="era" id="Color_%s"/>
 			
 			<option id="ShowTime" key="Show Game Clock" 

@@ -30,9 +30,9 @@ class BugNJAGCOptionsTab(BugOptionsTab.BugOptionsTab):
 		self.addColorDropdown(screen, centerPanelL, centerPanelR, "NJAGC__Color_ERA_EXPLORATION", True)
 		self.addColorDropdown(screen, centerPanelL, centerPanelR, "NJAGC__Color_ERA_COLONIAL", True)
 		rightPanelL, rightPanelR = self.addTwoColumnLayout(screen, rightPanel, "ShowEraColor_Column")
+		self.addColorDropdown(screen, rightPanelL, rightPanelR, "NJAGC__Color_ERA_REVOLUTIONARY", True)
 		self.addColorDropdown(screen, rightPanelL, rightPanelR, "NJAGC__Color_ERA_INDUSTRIAL", True)
-		self.addColorDropdown(screen, rightPanelL, rightPanelR, "NJAGC__Color_ERA_GLOBAL", True)
-		self.addColorDropdown(screen, rightPanelL, rightPanelR, "NJAGC__Color_ERA_DIGITAL", True)
+		self.addColorDropdown(screen, rightPanelL, rightPanelR, "NJAGC__Color_ERA_MODERN", True)
 		self.addSpacer(screen, centerPanel, "Clock_Tab")
 		
 		screen.attachHSeparator(upperPanel, upperPanel + "Sep")

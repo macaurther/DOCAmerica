@@ -611,38 +611,6 @@
 		<Spanish>Confiaremos en que la autoridad judicial haga cumplir el texto de la constituci&#243;n.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_DISSIDENT_PRIEST</Tag>
-		<English>A dissident priest from %s2_city is doubting the supreme power of Amun-Re in an unprecedented outbreak of heresy.</English>
-		<French>Un pr&#234;tre dissident de %s2_city a mis en doute la puissance supr&#234;me d'Amon-R&#234;, ouvrant la voie &#224; une nouvelle h&#233;r&#233;sie.</French>
-		<German>Ein kritischer Priester der Stadt %s2_city zweifelt in beispielloser Ketzerei an der Macht des Fruchtbarkeitsgottes.</German>
-		<Italian>Un sacerdote dissidente di %s2_city sta dubitando del potere supremo di Amon-Ra, creando una diffusione di eresie senza precedenti.</Italian>
-		<Spanish>En un brote de herejia sin precedentes, un sacerdote disidente de %s2_city duda del poder supremo de Amun-Re.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_DISSIDENT_PRIEST_1</Tag>
-		<English>That is disgusting and preposterous. The heresy must be dealt with in the name of Amun-Re, even if the locals won't support it.</English>
-		<French>C'est inadmissible et d&#233;prav&#233;. Cette h&#233;r&#233;sie doit &#234;tre contrecarr&#233;e au nom d'Amon-R&#234; m&#234;me si les autochtones n'approuvent pas.</French>
-		<German>Beendet im Namen des Fruchtbarkeitsgottes diese widerliche Ketzerei, notfalls mit Gewalt gegen die Bev&#246;lkerung.</German>
-		<Italian>Tutto ci&#242; &#232; disgustoso e assurdo. Dovremo occuparci di questa eresia nel nome di Amon-Ra, anche se non avremo l'appoggio delle popolazioni locali.</Italian>
-		<Spanish>Eso es lamentable y absurdo. La herejia debe ser tratada con el nombre de Amun-Re, incluso si la poblaci&#243;n local no lo apoya.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_DISSIDENT_PRIEST_2</Tag>
-		<English>We can ignore that nutter, our people will get over it.</English>
-		<French>Ignorons cet imb&#233;cile, notre peuple s'en remettra.</French>
-		<German>Ignoriert den Verr&#252;ckten, das Volk wird dar&#252;ber hinweg kommen.</German>
-		<Italian>Ignoriamo questo pazzo, il nostro popolo si dimenticher&#224; di tutto ci&#242; che ha detto.</Italian>
-		<Spanish>Podemos ignorar esa minucia, nuestra gente se ocupara de ello.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_DISSIDENT_PRIEST_3</Tag>
-		<English>Diversity is good. Allow these beliefs to spread and be recorded, though convincing our people that it's nothing to fear won't be easy.</English>
-		<French>La diversit&#233; est positive. Laissons ces croyances se propager, m&#234;me s'il ne sera pas facile de convaincre notre peuple de leur innocuit&#233; !</French>
-		<German>Der Glaube hat viele Gesichter. Zeichnet die neuen &#220;berzeugungen auf und hindert sie nicht an der Ausbreitung, aber helft den Menschen, ihren Glauben zu wahren.</German>
-		<Italian>La diversit&#224; &#232; un bene.Permettiamo a questa credenza di diffondersi e di essere dichiarata ufficialmente, sebbene convincere i nostri cittadini che non c'&#232; nulla da temere sar&#224; difficile.</Italian>
-		<Spanish>La diversidad es buena. Permitid que esas creencias se difundad y sean preservadas, aunque convencer a nuestra gente de que no hay nada que temer no ser&#225; facil.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_DUSTBOWL_1</Tag>
 		<English>We need that food. Do whatever it takes to figure out how to mitigate the erosion of the soil and end the dust storms.</English>
 		<French>Nous avons besoin de cette nourriture. Faire le n&#233;cessaire pour d&#233;couvrir un moyen d'att&#233;nuer l'&#233;rosion du sol et mettre un terme aux temp&#234;tes de poussi&#232;re.</French>
@@ -4673,14 +4641,6 @@
 		<German>Ein heftiger Wirbelsturm hat in der %s1:2_civ_adjective Stadt %s2_city gew&#252;tet und schwere Sch&#228;den verursacht.</German>
 		<Italian>Un gigantesco ciclone ha colpito la citt&#224; %s1:2_civ_adjective di %s2_city, causando diffusi danni da vento e inondazioni.</Italian>
 		<Spanish>Un cicl&#243;n enorme ha ca&#237;do sobre la ciudad %s1:2_civ de %s2_city, lo que ha provocado fuertes rachas de vientos y grandes da&#241;os.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_DISSIDENT_PRIEST</Tag>
-		<English>A priest from %s2_city is doubting the supreme power of Amun-Re.</English>
-		<French>Un pr&#234;tre de %s2_city a mis en doute le pouvoir supr&#234;me d'Amon-R&#234;.</French>
-		<German>Ein Hohepriester der Stadt %s2_city zweifelt an der Macht des Fruchtbarkeitsgottes.</German>
-		<Italian>Un sacerdote di %s2_city dubita del potere supremo di Amon-Ra.</Italian>
-		<Spanish>Un sacerdote de %s2_city duda del poder supremo de Amun-Re.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DUSTBOWL</Tag>

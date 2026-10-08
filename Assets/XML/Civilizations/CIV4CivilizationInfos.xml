@@ -233,7 +233,6 @@
 			<DerivativeCiv>CIVILIZATION_PUEBLO</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
-			<DerivativeCiv>CIVILIZATION_PUEBLO</DerivativeCiv>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_ARAWAK</Type>
@@ -2146,7 +2145,7 @@
 			<Identifier>LAK</Identifier>
 			<Region>PLA</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>1625</StartingYear>
+			<StartingYear>1650</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>25</LoadingTime>
 				<LoadingTime>10</LoadingTime>
@@ -4150,7 +4149,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_STEEL_MILL</BuildingClassType>
 					<BuildingType>BUILDING_VENEZUELAN_REFINERY</BuildingType>
 				</Building>
 				<Building>

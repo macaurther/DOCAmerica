@@ -299,6 +299,15 @@ bool isPromotionValid(PromotionTypes ePromotion, UnitTypes eUnit, bool bLeader)
 		}
 	}
 
+	// MacAurther: Bombardment promotions require existing city bombardment
+	if (GC.getUnitInfo(eUnit).getBombardRate() == 0)
+	{
+		if (GC.getPromotionInfo(ePromotion).getBombardRateChange() != 0)
+		{
+			return false;
+		}
+	}
+
 	//SuperSpies: TSHEEP - Spy Promotion Override
 	//if (GC.getUnitInfo(eUnit).getInterceptionProbability() == 0)
 	if (GC.getUnitInfo(eUnit).getInterceptionProbability() == 0 && !GC.getUnitInfo(eUnit).isSpy())//SuperSpies: TSHEEP End

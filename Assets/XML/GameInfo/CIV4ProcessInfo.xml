@@ -51,7 +51,7 @@
 		<ProcessInfo>
 			<Type>PROCESS_WEALTH_2</Type>
 			<Description>TXT_KEY_PROCESS_WEALTH_2</Description>
-			<Strategy>TXT_KEY_PROCESS_WEALTH_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_PROCESS_WEALTH_2_STRATEGY</Strategy>
 			<TechPrereq>TECH_ECONOMICS</TechPrereq>
 			<ProductionToCommerceModifiers>
 				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
@@ -65,7 +65,7 @@
 		<ProcessInfo>
 			<Type>PROCESS_RESEARCH_2</Type>
 			<Description>TXT_KEY_PROCESS_RESEARCH_2</Description>
-			<Strategy>TXT_KEY_PROCESS_RESEARCH_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_PROCESS_RESEARCH_2_STRATEGY</Strategy>
 			<TechPrereq>TECH_SCIENTIFIC_METHOD</TechPrereq>
 			<ProductionToCommerceModifiers>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
@@ -79,7 +79,7 @@
 		<ProcessInfo>
 			<Type>PROCESS_CULTURE_2</Type>
 			<Description>TXT_KEY_PROCESS_CULTURE_2</Description>
-			<Strategy>TXT_KEY_PROCESS_CULTURE_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_PROCESS_CULTURE_2_STRATEGY</Strategy>
 			<TechPrereq>TECH_INDOCTRINATION</TechPrereq>
 			<ProductionToCommerceModifiers>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
@@ -121,7 +121,7 @@
 		<ProcessInfo>
 			<Type>PROCESS_WEALTH_3</Type>
 			<Description>TXT_KEY_PROCESS_WEALTH_3</Description>
-			<Strategy>TXT_KEY_PROCESS_WEALTH_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_PROCESS_WEALTH_3_STRATEGY</Strategy>
 			<TechPrereq>TECH_ASSEMBLY_LINE</TechPrereq>
 			<ProductionToCommerceModifiers>
 				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
@@ -135,7 +135,7 @@
 		<ProcessInfo>
 			<Type>PROCESS_RESEARCH_3</Type>
 			<Description>TXT_KEY_PROCESS_RESEARCH_3</Description>
-			<Strategy>TXT_KEY_PROCESS_RESEARCH_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_PROCESS_RESEARCH_3_STRATEGY</Strategy>
 			<TechPrereq>TECH_TELEGRAPH</TechPrereq>
 			<ProductionToCommerceModifiers>
 				<iProductionToCommerceModifier>25</iProductionToCommerceModifier>
@@ -149,7 +149,7 @@
 		<ProcessInfo>
 			<Type>PROCESS_CULTURE_3</Type>
 			<Description>TXT_KEY_PROCESS_CULTURE_3</Description>
-			<Strategy>TXT_KEY_PROCESS_CULTURE_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_PROCESS_CULTURE_3_STRATEGY</Strategy>
 			<TechPrereq>TECH_NATIONALISM</TechPrereq>
 			<ProductionToCommerceModifiers>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
@@ -163,7 +163,7 @@
 		<ProcessInfo>
 			<Type>PROCESS_ESPIONAGE_2</Type>
 			<Description>TXT_KEY_PROCESS_ESPIONAGE_2</Description>
-			<Strategy>TXT_KEY_PROCESS_ESPIONAGE_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_PROCESS_ESPIONAGE_2_STRATEGY</Strategy>
 			<TechPrereq>TECH_JOURNALISM</TechPrereq>
 			<ProductionToCommerceModifiers>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
@@ -177,7 +177,7 @@
 		<ProcessInfo>
 			<Type>PROCESS_IMMIGRATION_2</Type>
 			<Description>TXT_KEY_PROCESS_IMMIGRATION_2</Description>
-			<Strategy>TXT_KEY_PROCESS_IMMIGRATION_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_PROCESS_IMMIGRATION_2_STRATEGY</Strategy>
 			<TechPrereq>TECH_PROGRESSIVISM</TechPrereq>
 			<ProductionToCommerceModifiers>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>

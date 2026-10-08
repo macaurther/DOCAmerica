@@ -11,7 +11,7 @@ lCivilizations = [
 		iGold=1000,
 		lCivics=[iAristocrats, iBureaucracy, iCraftsmen, iRedistribution, iHarmony, iIntegration],
 		techs=techs.column(6).without(iSeafaring),
-		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iCultivation, iCompanionPlanting, iKnapping),
+		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iCultivation, iCompanionPlanting, iKnapping, iMediation),
 	),
 	Civilization(
 		iNorse,

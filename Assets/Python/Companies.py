@@ -36,7 +36,7 @@ def verifyCorporations(iOwner, iPlayer, city):
 	# MacAurther: spread trading companies to acquired city if new owner has Trading Company
 	if has_civic(player(iPlayer), iTradingCompany):
 		for iCorp in lTradingCompanyCorps:
-			if canHaveCompany(iCorp, iPlayer) and getCityValue(city, iCorp) > 0:
+			if isCompanyValid(iCorp) and canHaveCompany(iCorp, iPlayer) and getCityValue(city, iCorp) > 0:
 				city.setHasCorporation(iCorp, True, True, True)
 
 
@@ -46,7 +46,7 @@ def tradingCompanyNewCity(city):
 	iPlayer = city.getOwner()
 	if has_civic(player(iPlayer), iTradingCompany):
 		for iCorp in lTradingCompanyCorps:
-			if canHaveCompany(iCorp, iPlayer) and getCityValue(city, iCorp) > 0:
+			if isCompanyValid(iCorp) and canHaveCompany(iCorp, iPlayer) and getCityValue(city, iCorp) > 0:
 				city.setHasCorporation(iCorp, True, True, True)
 
 
@@ -57,7 +57,7 @@ def tradingCompanyAdopted(iPlayer, iAnarchyTurns, lOldCivics, lNewCivics):
 		return
 	for city in cities.owner(iPlayer):
 		for iCorp in lTradingCompanyCorps:
-			if canHaveCompany(iCorp, iPlayer) and getCityValue(city, iCorp) > 0:
+			if isCompanyValid(iCorp) and canHaveCompany(iCorp, iPlayer) and getCityValue(city, iCorp) > 0:
 				city.setHasCorporation(iCorp, True, True, True)
 
 
@@ -69,7 +69,7 @@ def tradingCompanyTechUnlocked(iTech, iTeam, iPlayer):
 	if has_civic(player(iPlayer), iTradingCompany):
 		for city in cities.owner(iPlayer):
 			for iCorp in lTradingCompanyCorps:
-				if canHaveCompany(iCorp, iPlayer) and getCityValue(city, iCorp) > 0:
+				if isCompanyValid(iCorp) and canHaveCompany(iCorp, iPlayer) and getCityValue(city, iCorp) > 0:
 					city.setHasCorporation(iCorp, True, True, True)
 
 
@@ -153,8 +153,6 @@ def getCityValue(city, iCompany):
 
 	if iCompany == iWestIndiesCompany:
 		iValue += 3
-			
-	elif iCompany == iWestIndiesCompany:
 		if city in cities.region(rCaribbean):
 			iValue += 1
 	

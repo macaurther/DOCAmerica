@@ -224,7 +224,7 @@ BeginPlot
 		CityPopulation=1
 		YearFounded=-200
 		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_BUILDING_GREAT_GEOGLYPH
+		BuildingType=BUILDING_GREAT_GEOGLYPH
 		BeginCulture
 			Civilization=CIVILIZATION_INDEPENDENT1, Culture=100
 		EndCulture

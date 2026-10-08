@@ -1254,6 +1254,14 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_PADDY_FIELD</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_ORCHARD</ImprovementType>
 					<ImprovementYields>
 						<iYield>0</iYield>
@@ -2462,14 +2470,10 @@
 					<DomainType>DOMAIN_LAND</DomainType>
 					<iExperienceModifier>15</iExperienceModifier>
 				</DomainExperienceModifier>
-			</DomainExperienceModifiers>
-			<DomainExperienceModifiers>
 				<DomainExperienceModifier>
 					<DomainType>DOMAIN_AIR</DomainType>
 					<iExperienceModifier>15</iExperienceModifier>
 				</DomainExperienceModifier>
-			</DomainExperienceModifiers>
-			<DomainExperienceModifiers>
 				<DomainExperienceModifier>
 					<DomainType>DOMAIN_SEA</DomainType>
 					<iExperienceModifier>15</iExperienceModifier>

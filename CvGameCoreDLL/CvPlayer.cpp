@@ -10526,7 +10526,17 @@ void CvPlayer::updateProductionToCommerceModifier()
 	{
 		for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 		{
-			pLoopCity->changeProductionToCommerceModifier((CommerceTypes)iI, pLoopCity->getProductionToCommerceModifier((CommerceTypes)iI) * (100 + getProcessModifier()) / 100 - pLoopCity->getProductionToCommerceModifier((CommerceTypes)iI));
+			// MacAurther: Recalculate from the active process so civic bonuses do not accumulate or persist
+			int iProductionToCommerceModifier = 0;
+			if (pLoopCity->isProductionProcess())
+			{
+				iProductionToCommerceModifier = GC.getProcessInfo(pLoopCity->getProductionProcess()).getProductionToCommerceModifier(iI);
+				if (iProductionToCommerceModifier > 0)
+				{
+					iProductionToCommerceModifier += getProcessModifier();
+				}
+			}
+			pLoopCity->changeProductionToCommerceModifier((CommerceTypes)iI, iProductionToCommerceModifier - pLoopCity->getProductionToCommerceModifier((CommerceTypes)iI));
 		}
 	}
 }
@@ -16253,7 +16263,8 @@ bool CvPlayer::doEspionageMission(EspionageMissionTypes eMission, PlayerTypes eT
 	// SuperSpies: glider1 start
 	// Assassinate(Destroy Unit)
 
-	if (kMission.getDestroyUnitCostFactor() > 0)
+	// MacAurther: Defection transfers the specialist separately instead of assassinating them
+	if (kMission.getDestroyUnitCostFactor() > 0 && eMission != ESPIONAGEMISSION_DEFECT)
 	{
 
 		if (pSpyUnit->canAssassin(pPlot, false))
@@ -25828,7 +25839,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_INDUSTRIAL)
 	{
-		if (eCivic == CIVIC_SLAVERY || eCivic == CIVIC_BONDAGE || eCivic == CIVIC_CASTE_SYSTEM)
+		if (eCivic == CIVIC_GUILDS || eCivic == CIVIC_SLAVERY || eCivic == CIVIC_BONDAGE || eCivic == CIVIC_CASTE_SYSTEM)
 		{
 			return true;
 		}
@@ -25850,17 +25861,9 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 		}
 	}
 
-	if (GET_TEAM(getTeam()).isHasTech((TechTypes)ECONOMICS))
-	{
-		if (eCivic == CIVIC_RECIPROCITY || eCivic == CIVIC_MERCHANT_TRADE || eCivic == CIVIC_CRAFTSMEN)
-		{
-			return true;
-		}
-	}
-
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)CIVIL_RIGHTS))
 	{
-		if (eCivic == CIVIC_SLAVERY || eCivic == CIVIC_BONDAGE || eCivic == CIVIC_CASTE_SYSTEM)
+		if (eCivic == CIVIC_GUILDS || eCivic == CIVIC_SLAVERY || eCivic == CIVIC_BONDAGE || eCivic == CIVIC_CASTE_SYSTEM)
 		{
 			return true;
 		}

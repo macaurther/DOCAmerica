@@ -2519,7 +2519,7 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 		CvPlot* pNewPlot = plotDirection(getX_INLINE(), getY_INLINE(), direction);
 
 		// Can't migrate in place
-		if (pNewPlot == plot()) return false;
+		if (pNewPlot == NULL || pNewPlot == plot()) return false;
 
 		// Make sure the player is moving to a valid tile. 6 criteria:
 		//   the tile is not impassible
@@ -4551,7 +4551,13 @@ void CvCity::processProcess(ProcessTypes eProcess, int iChange)
 
 	for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 	{
-		iProductionToCommerceModifier = GC.getProcessInfo(eProcess).getProductionToCommerceModifier(iI) + GET_PLAYER(getOwnerINLINE()).getProcessModifier();
+		// MacAurther: Apply civic process bonuses only to outputs the process produces
+		iProductionToCommerceModifier = GC.getProcessInfo(eProcess).getProductionToCommerceModifier(iI);
+
+		if (iProductionToCommerceModifier > 0)
+		{
+			iProductionToCommerceModifier += GET_PLAYER(getOwnerINLINE()).getProcessModifier();
+		}
 
 		changeProductionToCommerceModifier((CommerceTypes)iI, iProductionToCommerceModifier * iChange);
 	}
@@ -10702,7 +10708,7 @@ int CvCity::getCorporationCommerceByCorporation(CommerceTypes eIndex, Corporatio
 			// Dutch UP: Extra Immigration from Corporations
 			if (getCivilizationType() == NETHERLANDS && eIndex == COMMERCE_IMMIGRATION)
 			{
-				iCommerce += 4;
+				iCommerce += 400;
 			}
 		}
 	}

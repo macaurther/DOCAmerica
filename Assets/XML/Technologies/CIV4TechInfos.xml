@@ -72,7 +72,7 @@
 			<Type>TECH_HERBALISM</Type>
 			<Description>TXT_KEY_TECH_HERBALISM</Description>
 			<Civilopedia>TXT_KEY_TECH_HERBALISM_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iAITradeModifier>100</iAITradeModifier>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -111,7 +111,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>2</iAsset>
-			<iPower>4</iPower>
+			<iPower>0</iPower>
 			<iCultureGroup>0</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -349,7 +349,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>3</iAsset>
-			<iPower>4</iPower>
+			<iPower>0</iPower>
 			<iCultureGroup>0</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -456,7 +456,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>3</iAsset>
-			<iPower>4</iPower>
+			<iPower>0</iPower>
 			<iCultureGroup>0</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -1249,7 +1249,7 @@
 			<Type>TECH_TRADE_ROUTES</Type>
 			<Description>TXT_KEY_TECH_TRADE_ROUTES</Description>
 			<Civilopedia>TXT_KEY_TECH_TRADE_ROUTES_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_SCIENCE</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_CLASSICAL</Era>
@@ -1596,7 +1596,7 @@
 			<Type>TECH_SUBJUGATION</Type>
 			<Description>TXT_KEY_TECH_SUBJUGATION</Description>
 			<Civilopedia>TXT_KEY_TECH_SUBJUGATION_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_CULTURE</Advisor>
+			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>350</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_CLASSICAL</Era>
@@ -2263,12 +2263,12 @@
 			<Type>TECH_EXCHANGE</Type>
 			<Description>TXT_KEY_TECH_EXCHANGE</Description>
 			<Civilopedia>TXT_KEY_TECH_EXCHANGE_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>225</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>36</iAsset>
+			<iPower>0</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -2299,7 +2299,7 @@
 			<Type>TECH_REDUCTIONS</Type>
 			<Description>TXT_KEY_TECH_REDUCTIONS</Description>
 			<Civilopedia>TXT_KEY_TECH_REDUCTIONS_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_SCIENCE</Advisor>
+			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>225</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
@@ -2333,12 +2333,12 @@
 			<Type>TECH_EVANGELISM</Type>
 			<Description>TXT_KEY_TECH_EVANGELISM</Description>
 			<Civilopedia>TXT_KEY_TECH_EVANGELISM_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_RELIGION</Advisor>
 			<iCost>225</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>36</iAsset>
+			<iPower>0</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -2403,12 +2403,12 @@
 			<Type>TECH_TRIANGULAR_TRADE</Type>
 			<Description>TXT_KEY_TECH_TRIANGULAR_TRADE</Description>
 			<Civilopedia>TXT_KEY_TECH_TRIANGULAR_TRADE_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>40</iAsset>
+			<iPower>0</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -2525,7 +2525,7 @@
 			<iCost>250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
-			<iAsset>4</iAsset>
+			<iAsset>40</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -2558,11 +2558,11 @@
 			<Type>TECH_OFFICIALS</Type>
 			<Description>TXT_KEY_TECH_OFFICIALS</Description>
 			<Civilopedia>TXT_KEY_TECH_OFFICIALS_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
-			<iAsset>4</iAsset>
+			<iAsset>40</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -2590,12 +2590,12 @@
 			<Type>TECH_INDOCTRINATION</Type>
 			<Description>TXT_KEY_TECH_INDOCTRINATION</Description>
 			<Civilopedia>TXT_KEY_TECH_INDOCTRINATION_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_RELIGION</Advisor>
 			<iCost>250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>40</iAsset>
+			<iPower>0</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -2633,7 +2633,7 @@
 			<iCost>400</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>28</iAsset>
+			<iAsset>44</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -2699,12 +2699,12 @@
 			<Type>TECH_COLONIZATION</Type>
 			<Description>TXT_KEY_TECH_COLONIZATION</Description>
 			<Civilopedia>TXT_KEY_TECH_COLONIZATION_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>450</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>44</iAsset>
+			<iPower>0</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -2735,7 +2735,7 @@
 			<iCost>400</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>12</iAsset>
+			<iAsset>44</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -2775,7 +2775,7 @@
 			<iCost>400</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>32</iAsset>
+			<iAsset>44</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -2807,12 +2807,12 @@
 			<Type>TECH_CHARTER</Type>
 			<Description>TXT_KEY_TECH_CHARTER</Description>
 			<Civilopedia>TXT_KEY_TECH_CHARTER_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>400</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>44</iAsset>
+			<iPower>0</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -2843,12 +2843,12 @@
 			<Type>TECH_INDENTURES</Type>
 			<Description>TXT_KEY_TECH_INDENTURES</Description>
 			<Civilopedia>TXT_KEY_TECH_INDENTURES_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>400</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>44</iAsset>
+			<iPower>0</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -2885,7 +2885,7 @@
 			<iCost>500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>44</iAsset>
+			<iAsset>48</iAsset>
 			<iPower>5</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -2921,7 +2921,7 @@
 			<iCost>500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>40</iAsset>
+			<iAsset>48</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -2956,13 +2956,13 @@
 			<Type>TECH_EXPLOITATION</Type>
 			<Description>TXT_KEY_TECH_EXPLOITATION</Description>
 			<Civilopedia>TXT_KEY_TECH_EXPLOITATION_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
 			<iFeatureProductionModifier>50</iFeatureProductionModifier>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>48</iAsset>
+			<iPower>0</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -2993,7 +2993,7 @@
 			<iCost>500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>4</iAsset>
+			<iAsset>48</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -3026,12 +3026,12 @@
 			<Description>TXT_KEY_TECH_COMMUNITY</Description>
 			<Civilopedia>TXT_KEY_TECH_COMMUNITY_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_COMMUNITY_HELP</Help>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_RELIGION</Advisor>
 			<iCost>450</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>48</iAsset>
+			<iPower>0</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iExtraPop>1</iExtraPop>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -3067,7 +3067,7 @@
 			<iCost>500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>24</iAsset>
+			<iAsset>48</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -3109,7 +3109,7 @@
 			<iCost>500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>44</iAsset>
+			<iAsset>48</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -3154,7 +3154,7 @@
 			<iCost>650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>4</iAsset>
+			<iAsset>52</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -3189,7 +3189,7 @@
 			<iCost>650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>20</iAsset>
+			<iAsset>52</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -3220,7 +3220,7 @@
 			<iCost>650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>4</iAsset>
+			<iAsset>52</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -3257,7 +3257,7 @@
 			<iCost>650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>44</iAsset>
+			<iAsset>52</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -3292,7 +3292,7 @@
 			<iCost>650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>44</iAsset>
+			<iAsset>52</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -3339,7 +3339,7 @@
 			<iCost>650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>40</iAsset>
+			<iAsset>52</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -3384,7 +3384,7 @@
 			<iCost>650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>48</iAsset>
+			<iAsset>52</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -3456,12 +3456,12 @@
 			<Type>TECH_FREE_MARKET</Type>
 			<Description>TXT_KEY_TECH_FREE_MARKET</Description>
 			<Civilopedia>TXT_KEY_TECH_FREE_MARKET_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>1000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iPower>0</iPower>
 			<iCultureGroup>2</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>0</bTrade>
@@ -3685,7 +3685,7 @@
 			<iCost>750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>36</iAsset>
+			<iAsset>52</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -3727,7 +3727,7 @@
 			<iCost>750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
-			<iAsset>48</iAsset>
+			<iAsset>56</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -3762,12 +3762,12 @@
 			<Type>TECH_NEWSPAPERS</Type>
 			<Description>TXT_KEY_TECH_NEWSPAPERS</Description>
 			<Civilopedia>TXT_KEY_TECH_NEWSPAPERS_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>56</iAsset>
+			<iPower>0</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -3776,12 +3776,20 @@
 			<iGridY>3</iGridY>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
 					<iFlavor>4</iFlavor>
 				</Flavor>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>4</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_ADMIN</FlavorType>
+					<iFlavor>3</iFlavor>
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
@@ -3801,7 +3809,7 @@
 			<iCost>750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
-			<iAsset>48</iAsset>
+			<iAsset>56</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -3837,7 +3845,7 @@
 			<iCost>750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
-			<iAsset>4</iAsset>
+			<iAsset>56</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -3872,7 +3880,7 @@
 			<iCost>750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
-			<iAsset>48</iAsset>
+			<iAsset>56</iAsset>
 			<iPower>2</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -3914,7 +3922,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
 			<FirstFreeUnitClass>UNITCLASS_GREAT_STATESMAN</FirstFreeUnitClass>
-			<iAsset>52</iAsset>
+			<iAsset>56</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -3952,7 +3960,7 @@
 			<iCost>750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
-			<iAsset>40</iAsset>
+			<iAsset>56</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -3994,7 +4002,7 @@
 			<iCost>1000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
-			<iAsset>52</iAsset>
+			<iAsset>60</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -4029,11 +4037,11 @@
 			<Type>TECH_POSTAL_SERVICE</Type>
 			<Description>TXT_KEY_TECH_POSTAL_SERVICE</Description>
 			<Civilopedia>TXT_KEY_TECH_POSTAL_SERVICE_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>1000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
-			<iAsset>4</iAsset>
+			<iAsset>60</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -4070,7 +4078,7 @@
 			<iCost>1000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
-			<iAsset>48</iAsset>
+			<iAsset>60</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4111,7 +4119,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
 			<iTradeRoutes>1</iTradeRoutes>
-			<iAsset>44</iAsset>
+			<iAsset>60</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4142,11 +4150,11 @@
 			<Description>TXT_KEY_TECH_PIONEERING</Description>
 			<Civilopedia>TXT_KEY_TECH_PIONEERING_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_PIONEERING_HELP</Help>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>1000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
-			<iAsset>4</iAsset>
+			<iAsset>60</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -4183,7 +4191,7 @@
 			<iCost>1000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
-			<iAsset>24</iAsset>
+			<iAsset>60</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4217,7 +4225,7 @@
 			<iCost>1000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
-			<iAsset>36</iAsset>
+			<iAsset>60</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4262,7 +4270,7 @@
 			<iCost>1250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>52</iAsset>
+			<iAsset>64</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4296,7 +4304,7 @@
 			<iCost>1250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>52</iAsset>
+			<iAsset>64</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4331,7 +4339,7 @@
 			<iCost>1250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>20</iAsset>
+			<iAsset>64</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -4370,7 +4378,7 @@
 			<iCost>1250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>52</iAsset>
+			<iAsset>64</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4408,7 +4416,7 @@
 			<iCost>1250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>48</iAsset>
+			<iAsset>64</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4444,7 +4452,7 @@
 			<iCost>1250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>52</iAsset>
+			<iAsset>64</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -4488,7 +4496,7 @@
 			<iCost>1250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>44</iAsset>
+			<iAsset>64</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iExtraPop>1</iExtraPop>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -4537,7 +4545,7 @@
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>48</iAsset>
+			<iAsset>68</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4574,7 +4582,7 @@
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>60</iAsset>
+			<iAsset>68</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -4615,7 +4623,7 @@
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>56</iAsset>
+			<iAsset>68</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4654,7 +4662,7 @@
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>56</iAsset>
+			<iAsset>68</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4685,12 +4693,12 @@
 			<Type>TECH_CONSERVATION</Type>
 			<Description>TXT_KEY_TECH_CONSERVATION</Description>
 			<Civilopedia>TXT_KEY_TECH_CONSERVATION_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>68</iAsset>
+			<iPower>0</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4725,7 +4733,7 @@
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>4</iAsset>
+			<iAsset>68</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -4757,12 +4765,12 @@
 			<Type>TECH_PROGRESSIVISM</Type>
 			<Description>TXT_KEY_TECH_PROGRESSIVISM</Description>
 			<Civilopedia>TXT_KEY_TECH_PROGRESSIVISM_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>68</iAsset>
+			<iPower>0</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4802,7 +4810,7 @@
 			<iCost>1750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>56</iAsset>
+			<iAsset>72</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -4841,7 +4849,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
 			<FirstFreeUnitClass>UNITCLASS_GREAT_ENGINEER</FirstFreeUnitClass>
-			<iAsset>56</iAsset>
+			<iAsset>72</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4876,7 +4884,7 @@
 			<iCost>1750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>4</iAsset>
+			<iAsset>72</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -4909,13 +4917,13 @@
 			<Description>TXT_KEY_TECH_TELEGRAPH</Description>
 			<Civilopedia>TXT_KEY_TECH_TELEGRAPH_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_TELEGRAPH_HELP</Help>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>1750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
 			<FirstFreeUnitClass>UNITCLASS_GREAT_SCIENTIST</FirstFreeUnitClass>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>72</iAsset>
+			<iPower>0</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4924,12 +4932,16 @@
 			<iGridY>7</iGridY>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
 					<iFlavor>4</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_ADMIN</FlavorType>
+					<iFlavor>3</iFlavor>
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
@@ -4950,7 +4962,7 @@
 			<iCost>1750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>52</iAsset>
+			<iAsset>72</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -4989,7 +5001,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
 			<iFeatureProductionModifier>50</iFeatureProductionModifier>
-			<iAsset>56</iAsset>
+			<iAsset>72</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -5032,7 +5044,7 @@
 			<iCost>1750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
-			<iAsset>56</iAsset>
+			<iAsset>72</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -5076,7 +5088,7 @@
 			<iCost>2000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>64</iAsset>
+			<iAsset>76</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -5098,9 +5110,7 @@
 					<iFlavor>3</iFlavor>
 				</Flavor>
 			</Flavors>
-			<OrPreReqs>
-				<PrereqTech>TECH_BALLISTICS</PrereqTech>
-			</OrPreReqs>
+			<OrPreReqs/>
 			<AndPreReqs>
 				<PrereqTech>TECH_ASSEMBLY_LINE</PrereqTech>
 				<PrereqTech>TECH_BALLISTICS</PrereqTech>
@@ -5119,7 +5129,7 @@
 			<iCost>2000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>60</iAsset>
+			<iAsset>76</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -5158,7 +5168,7 @@
 			<iCost>2000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>64</iAsset>
+			<iAsset>76</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -5197,7 +5207,7 @@
 			<iCost>2000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>64</iAsset>
+			<iAsset>76</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -5240,7 +5250,7 @@
 			<iCost>2000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>72</iAsset>
+			<iAsset>76</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -5284,7 +5294,7 @@
 			<iCost>2000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>64</iAsset>
+			<iAsset>76</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -5324,7 +5334,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
 			<FirstFreeUnitClass>UNITCLASS_GREAT_SPY</FirstFreeUnitClass>
-			<iAsset>64</iAsset>
+			<iAsset>76</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -5361,7 +5371,7 @@
 			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>68</iAsset>
+			<iAsset>80</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -5400,7 +5410,7 @@
 			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>100</iAsset>
+			<iAsset>80</iAsset>
 			<iPower>1</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -5445,7 +5455,7 @@
 			<iCost>4000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>68</iAsset>
+			<iAsset>80</iAsset>
 			<iPower>5</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -5481,7 +5491,7 @@
 			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>64</iAsset>
+			<iAsset>80</iAsset>
 			<iPower>5</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -5521,7 +5531,7 @@
 			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>60</iAsset>
+			<iAsset>80</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -5561,7 +5571,7 @@
 			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>68</iAsset>
+			<iAsset>80</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iExtraPop>2</iExtraPop>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -5609,7 +5619,7 @@
 			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>68</iAsset>
+			<iAsset>80</iAsset>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
 			<bTrade>1</bTrade>
@@ -5650,7 +5660,7 @@
 			<iCost>4500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>68</iAsset>
+			<iAsset>84</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -5691,7 +5701,7 @@
 			<iCost>4500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>72</iAsset>
+			<iAsset>84</iAsset>
 			<iPower>4</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>
@@ -5768,7 +5778,7 @@
 			<iCost>4500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iAsset>72</iAsset>
+			<iAsset>84</iAsset>
 			<iPower>3</iPower>
 			<iCultureGroup>-1</iCultureGroup>
 			<iHomelandAccess>-1</iHomelandAccess>

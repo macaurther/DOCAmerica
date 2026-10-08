@@ -1664,7 +1664,7 @@
 			<iGroupRand>0</iGroupRand>
 			<bArea>1</bArea>
 			<bHills>0</bHills>
-			<bFlatlands>0</bFlatlands>
+			<bFlatlands>1</bFlatlands>
 			<TerrainBooleans>
 				<TerrainBoolean>
 					<TerrainType>TERRAIN_TUNDRA</TerrainType>

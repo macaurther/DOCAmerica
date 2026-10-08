@@ -411,11 +411,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROJECT_MANHATTAN_PROJECT_STRATEGY</Tag>
-		<English>The [COLOR_PROJECT_TEXT]Manhattan Project[COLOR_REVERT] is required to create [COLOR_PROJECT_TEXT]SDI[COLOR_REVERT]. It also allows you to construct [COLOR_UNIT_TEXT]ICBMs[COLOR_REVERT], [COLOR_UNIT_TEXT]Tactical Nukes[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT].</English>
-		<French>The [COLOR_PROJECT_TEXT]Manhattan Project[COLOR_REVERT] is required to create [COLOR_PROJECT_TEXT]SDI[COLOR_REVERT]. It also allows you to construct [COLOR_UNIT_TEXT]ICBMs[COLOR_REVERT], [COLOR_UNIT_TEXT]Tactical Nukes[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT].</French>
-		<German>The [COLOR_PROJECT_TEXT]Manhattan Project[COLOR_REVERT] is required to create [COLOR_PROJECT_TEXT]SDI[COLOR_REVERT]. It also allows you to construct [COLOR_UNIT_TEXT]ICBMs[COLOR_REVERT], [COLOR_UNIT_TEXT]Tactical Nukes[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT].</German>
-		<Italian>The [COLOR_PROJECT_TEXT]Manhattan Project[COLOR_REVERT] is required to create [COLOR_PROJECT_TEXT]SDI[COLOR_REVERT]. It also allows you to construct [COLOR_UNIT_TEXT]ICBMs[COLOR_REVERT], [COLOR_UNIT_TEXT]Tactical Nukes[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_PROJECT_TEXT]Manhattan Project[COLOR_REVERT] is required to create [COLOR_PROJECT_TEXT]SDI[COLOR_REVERT]. It also allows you to construct [COLOR_UNIT_TEXT]ICBMs[COLOR_REVERT], [COLOR_UNIT_TEXT]Tactical Nukes[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT].</Spanish>
+		<English>The [COLOR_PROJECT_TEXT]Manhattan Project[COLOR_REVERT] enables all civilizations to construct [COLOR_UNIT_TEXT]Nuclear Bombers[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT]. Its builder receives a free Nuclear Bomber.</English>
+		<French>The [COLOR_PROJECT_TEXT]Manhattan Project[COLOR_REVERT] enables all civilizations to construct [COLOR_UNIT_TEXT]Nuclear Bombers[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT]. Its builder receives a free Nuclear Bomber.</French>
+		<German>The [COLOR_PROJECT_TEXT]Manhattan Project[COLOR_REVERT] enables all civilizations to construct [COLOR_UNIT_TEXT]Nuclear Bombers[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT]. Its builder receives a free Nuclear Bomber.</German>
+		<Italian>The [COLOR_PROJECT_TEXT]Manhattan Project[COLOR_REVERT] enables all civilizations to construct [COLOR_UNIT_TEXT]Nuclear Bombers[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT]. Its builder receives a free Nuclear Bomber.</Italian>
+		<Spanish>The [COLOR_PROJECT_TEXT]Manhattan Project[COLOR_REVERT] enables all civilizations to construct [COLOR_UNIT_TEXT]Nuclear Bombers[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT]. Its builder receives a free Nuclear Bomber.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROJECT_SDI_STRATEGY</Tag>

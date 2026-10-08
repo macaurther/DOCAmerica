@@ -2949,14 +2949,6 @@
 		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_VICTORY_NAME_ANDES</Tag>
-		<English>Andes</English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NAME_ATLANTIC_COAST</Tag>
 		<English>the Atlantic Coast</English>
 		<French></French>
@@ -3300,7 +3292,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_DESC_SPREAD_RELIGION</Tag>
-		<English>%s1 Cities or Tribes</English>
+		<English>%s1 Cities or Tribes to your state religion</English>
 		<French></French>
 		<German></German>
 		<Italian></Italian>
@@ -3308,7 +3300,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_PROGR_SPREAD_RELIGION</Tag>
-		<English>successful conversions</English>
+		<English>successful state religion conversions</English>
 		<French></French>
 		<German></German>
 		<Italian></Italian>

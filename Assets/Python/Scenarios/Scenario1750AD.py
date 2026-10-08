@@ -84,7 +84,7 @@ lCivilizations = [
 		iGold=600,
 		iImmigration=300,
 		iStateReligion=iProtestantism,
-		lCivics=[iGovernors, iCommonwealth, iSlavery, iMercantilism, iHaven, iProvidence],
+		lCivics=[iGovernors, iSlavery, iMercantilism, iHaven, iProvidence],
 		techs=techs.column(12),
 		extraTechs=techs.column(2).including(iNorthEuropeAccess),
 		dAttitudes={iFrance: -8, iPortugal: 2}
@@ -106,7 +106,7 @@ lCivilizations = [
 		iGold=800,
 		iImmigration=25,
 		iStateReligion=iProtestantism,
-		lCivics=[iTrustees, iTradingCompany, iSlavery, iMercantilism, iExtraction, iOutposts],
+		lCivics=[iTrustees, iTradingCompany, iSlavery, iMercantilism, iOutposts],
 		techs=techs.column(12),
 		extraTechs=techs.column(2).including(iNorthEuropeAccess),
 		dAttitudes={iFrance: 2, iPortugal: -2}
@@ -116,7 +116,7 @@ lCivilizations = [
 		iGold=50,
 		lCivics=[iChief, iSubsistance, iHarmony, iNomadic],
 		techs=techs.column(4).without(iSmelting),
-		extraTechs=techs.column(0).including(iHunting, iTrapping, iInterpretation, iMediation, iFishing, iContact, iRiding),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iInterpretation, iMediation, iFishing, iContact, iRiding, iCompanionPlanting),
 		dAttitudes={iSpain: -4}
 	),
 	Civilization(
@@ -124,12 +124,12 @@ lCivilizations = [
 		iGold=50,
 		lCivics=[iChief, iSubsistance, iHarmony, iNomadic],
 		techs=techs.column(4).without(iSmelting),
-		extraTechs=techs.column(0).including(iHunting, iTrapping, iInterpretation, iMediation, iFishing, iContact, iRiding),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iInterpretation, iMediation, iFishing, iContact, iRiding, iCompanionPlanting),
 	),
 	Civilization(
 		iHawaii,
 		iGold=250,
-		lCivics=[iMonarch, iClans, iTlacotin, iMerchantTrade, iIsolationism, iConquest],
+		lCivics=[iMonarch, iClans, iTlacotin, iMerchantTrade, iIsolationism],
 		techs=techs.column(4).including(iAstronomy, iTradeRoutes, iSeafaring).without(iSmelting),
 		extraTechs=techs.column(0).including(iKnapping, iDiving, iFishing, iHerbalism, iAsiaAccess),
 	),
@@ -138,7 +138,7 @@ lCivilizations = [
 		iGold=200,
 		iImmigration=15,
 		iStateReligion=iOrthodoxy,
-		lCivics=[iTrustees, iTradingCompany, iIndenturedServitude, iFactoryCivic, iExtraction, iOutposts],
+		lCivics=[iTrustees, iTradingCompany, iIndenturedServitude, iExtraction, iOutposts],
 		techs=techs.column(12),
 		extraTechs=techs.column(2).including(iSiberiaAccess),
 	),

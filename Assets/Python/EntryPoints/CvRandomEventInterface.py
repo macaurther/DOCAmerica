@@ -58,9 +58,9 @@ def canTriggerBlessedSea(argsList):
 		return false
 
 	player = gc.getPlayer(kTriggeredData.ePlayer)
-	if player.getUnitClassCount(CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_GALLEY')) == 0:
+	if player.getUnitClassCount(CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_CANOE')) == 0:
 		if player.getUnitClassCount(CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_CARAVEL')) == 0:
-			if player.getUnitClassCount(CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_GALLEON')) == 0:
+			if player.getUnitClassCount(CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_MERCHANTMAN')) == 0:
 				return false
 			
 	return true
@@ -1416,12 +1416,11 @@ def applyInterstate(argsList):
 	team = gc.getTeam(player.getTeam())
 	
 	iRoad = CvUtil.findInfoTypeNum(gc.getRouteInfo,gc.getNumRouteInfos(),'ROUTE_ROAD')
-	iRomanRoad = CvUtil.findInfoTypeNum(gc.getRouteInfo,gc.getNumRouteInfos(),'ROUTE_ROMAN_ROAD')
 	iHighway = CvUtil.findInfoTypeNum(gc.getRouteInfo, gc.getNumRouteInfos(), 'ROUTE_HIGHWAY')
 	
 	for i in range(gc.getMap().numPlots()):
 		plot = gc.getMap().plotByIndex(i)
-		if plot.isFlatlands() and plot.getOwner() == player.getID() and plot.getRouteType() in [iRoad, iRomanRoad]:
+		if plot.isFlatlands() and plot.getOwner() == player.getID() and plot.getRouteType() == iRoad:
 			plot.setRouteType(iHighway)
 	
 ######## EARTH DAY ###########
@@ -2983,6 +2982,16 @@ def canTriggerPreachingResearcherCity(argsList):
 	city = player.getCity(iCity)
 
 	if city.isHasBuilding(gc.getInfoTypeForString("BUILDING_UNIVERSITY")):
+		return true
+	return false
+
+######## Toxcatl (Aztec event) #########
+
+def canTriggerToxcatl(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if (player.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_AZTEC")):
 		return true
 	return false
 

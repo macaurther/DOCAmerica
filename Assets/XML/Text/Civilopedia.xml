@@ -4590,14 +4590,14 @@ Your stability level can change during a stability check. As long it is higher t
 		<English>[H1]Odds and Ends in DOCA[\H1]
 [H2]Units[\H2]
 [ICON_BULLET]Some units have been reworked, and many units have been added.
-[ICON_BULLET]Certain Seige units, such as Cannon, have been given a ranged attack. Use them to reduce an enemy's strength before attacking.
+[ICON_BULLET]Certain Siege units, such as Cannon, have been given a ranged attack. Use them to reduce an enemy's strength before attacking.
 [ICON_BULLET]Ranged attacks and city bombardment can only be performed if a unit is at full movement.
 [ICON_BULLET]Most units now have at least 2 Movement. This is to reflect the scale of the new DOCA map. Some units (such as the Bombard) still only have 1 movement.
 [ICON_BULLET]Melee and Archery units have a chance to equip advanced weapons and mounts from defeated Gunpowder and Cavalry units.
 [ICON_BULLET]Defeated siege units have a chance to be captured.
 [H2]Terrain[\H2]
 [ICON_BULLET]New Terrains have been added, including [LINK=TERRAIN_PRAIRIE]Prairie[\LINK] and [LINK=TERRAIN_WIDE_RIVER]Wide River[\LINK].
-[ICON_BULLET]The [LINK=TERRAIN_MARSH]Marsh[\LINK] Terrain has been reworked. It has a graphical update, and the Marsh Feature has been removed. Units are no longer restricted to moving into Marsh. Instead, a new feature, [LINK=FEATURE_BOG]Bog[\LINK], has been added. Bogs appear on Marshes and prevent most unit movements. [LINK=TERRAIN_SEMIDESERT]Swamps[\LINK] are another new feature type on Swamps that can be chopped like Forests.
+[ICON_BULLET]The [LINK=TERRAIN_MARSH]Marsh[\LINK] Terrain has been reworked. It has a graphical update, and the Marsh Feature has been removed. Units are no longer restricted to moving into Marsh. Instead, a new feature, [LINK=FEATURE_BOG]Bog[\LINK], has been added. Bogs appear on Marshes and prevent most unit movements. [LINK=FEATURE_SWAMP]Swamps[\LINK] are another feature type on Marsh that can be chopped like Forests.
 [ICON_BULLET][LINK=TERRAIN_WIDE_RIVER]Wide Rivers[\LINK] yield 1[ICON_FOOD] 1 [ICON_PRODUCTION] 2[ICON_COMMERCE], allow ships to navigate, allow naval trade, grant fresh water to adjacent tiles, and allow adjacent tiles to act as if they have a River (ex: Levee bonus).
 [ICON_BULLET]Wide Rivers represent large, navigable rivers, such as the Mississippi, Missouri, Ohio, and Amazon Rivers.
 [ICON_BULLET]Several new [LINK=CONCEPT_TERRAIN_OBSTACLES]movement restrictions[\LINK] relating to terrain have been added

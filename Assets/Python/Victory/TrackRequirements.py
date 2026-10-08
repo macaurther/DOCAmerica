@@ -964,17 +964,27 @@ class ReligionSpreads(TrackRequirement):
 	def __init__(self, *parameters, **options):
 		TrackRequirement.__init__(self, *parameters, **options)
 		
-		self.handle("unitSpreadReligionAttempt", self.increment_religion_spreads)
-		self.handle("cityAcquired", self.increment_religion_spreads_conquest)
+		self.pending_conversions = {}
 		
-	def increment_religion_spreads(self, goal, bSuccess):
-		if bSuccess:
+		self.handle("unitSpreadReligionAttempt", self.increment_religion_spreads)
+		self.handle("cityAcquired", self.record_conquest)
+		self.handle("cityAcquiredAndKept", self.increment_religion_spreads_conquest)
+		
+	def increment_religion_spreads(self, goal, iReligion, unit):
+		if iReligion == player(unit.getOwner()).getStateReligion():
 			self.increment()
 			goal.check()
 	
-	def increment_religion_spreads_conquest(self, goal, city, bConquest):
-		bZealotry = player(city.getOwner()).hasCivic(iPatronato)
-		if bConquest and bZealotry:
+	def record_conquest(self, goal, city, bConquest):
+		self.pending_conversions.pop(location(city), None)
+		owner = player(city)
+		iReligion = owner.getStateReligion()
+		if bConquest and owner.hasCivic(iPatronato) and iReligion != -1 and not city.isHasReligion(iReligion):
+			self.pending_conversions[location(city)] = iReligion
+	
+	def increment_religion_spreads_conquest(self, goal, city):
+		iReligion = self.pending_conversions.pop(location(city), -1)
+		if iReligion != -1 and city.isHasReligion(iReligion):
 			self.increment()
 			goal.check()
 

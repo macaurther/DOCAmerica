@@ -1365,6 +1365,13 @@
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_I</HotKey>
 			<bAltDown>0</bAltDown>
@@ -1424,6 +1431,13 @@
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_I</HotKey>
 			<bAltDown>0</bAltDown>
@@ -1474,6 +1488,13 @@
 					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
@@ -1535,6 +1556,13 @@
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_K</HotKey>
 			<bAltDown>0</bAltDown>
@@ -1594,6 +1622,13 @@
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_W</HotKey>
 			<bAltDown>0</bAltDown>
@@ -1644,6 +1679,13 @@
 					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
@@ -1698,6 +1740,13 @@
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_P</HotKey>
 			<bAltDown>0</bAltDown>
@@ -1748,6 +1797,13 @@
 					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
@@ -1802,6 +1858,13 @@
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_P</HotKey>
 			<bAltDown>0</bAltDown>
@@ -1852,6 +1915,13 @@
 					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
@@ -1908,6 +1978,13 @@
 					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
@@ -1968,6 +2045,13 @@
 					<iTime>400</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_T</HotKey>
