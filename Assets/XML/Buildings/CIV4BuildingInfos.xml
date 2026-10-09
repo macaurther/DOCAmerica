@@ -3391,7 +3391,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_FRENCH_SEIGNEUR_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_FRENCH_SEIGNEUR_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_DUTCH_DIKE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_FRENCH_SEIGNEUR</ArtDefineTag>
 			<PrereqTech>TECH_LOGISTICS</PrereqTech>
 			<bWater>1</bWater>
 			<bRiver>1</bRiver>

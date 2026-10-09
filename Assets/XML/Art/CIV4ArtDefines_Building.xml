@@ -309,11 +309,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CANADIAN_ROYAL_MOUNTED_POLICE</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.8</fScale>
-			<fInterfaceScale>0.61</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Courthouse/Courthouse.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/MountedPolice/MountedPolice.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/rcmp_btn.dds</Button>
 		</BuildingArtInfo>
@@ -909,11 +909,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MEXICAN_CHARREADA</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.85</fScale>
-			<fInterfaceScale>0.75</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Charreada/GruumshTemple.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Charreada/Charreada.nif</NIF>
 			<KFM/>
 			<Button>Art/Structures/Buildings/Charreada/Charreada.dds</Button>
 		</BuildingArtInfo>
@@ -1411,19 +1411,19 @@
 			<Type>ART_DEF_BUILDING_MUISCA_GOLDSMITH</Type>
 			<LSystem>LSYSTEM_2x1</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>0.35</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/blacksmith/blksmith.nif</NIF>
+			<fScale>0.85</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Goldsmith/Goldsmith.nif</NIF>
 			<KFM/>
 			<Button>Art/Structures/Buildings/blacksmith/Goldsmith.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_TEOTIHUACAN_TEMAZCAL</Type>
-			<LSystem>LSYSTEM_2x2</LSystem>
+			<LSystem>LSYSTEM_1x1</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>0.6</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Temazcal/SA_workshop.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.3</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Temazcal/Temazcal.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/temazcal.dds</Button>
 		</BuildingArtInfo>
@@ -1488,12 +1488,12 @@
 			<Button>,Art/Interface/Buttons/Buildings/Lighthouse.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,3,4</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_DUTCH_DIKE</Type>
-			<LSystem>LSYSTEM_COAST</LSystem>
+			<Type>ART_DEF_BUILDING_FRENCH_SEIGNEUR</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Dutch_Dike/Dutch_Dike.nif</NIF>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Seigneur/Seigneur.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/Wall.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,1,8</Button>
 		</BuildingArtInfo>
@@ -1779,21 +1779,21 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_AZTEC_TZOMPANTLI</Type>
-			<LSystem>LSYSTEM_3x1</LSystem>
+			<LSystem>LSYSTEM_2x1</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/eu3_MesoAdmiralty/SA_admiralty.nif</NIF>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tzompantli/Tzompantli.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Tzompantli.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_DUTCH_FACTORIJ</Type>
-			<LSystem>LSYSTEM_WALLS</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Walls/Walls.nif</NIF>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Factorij/Factorij.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Trading_Fort.dds</Button>
 		</BuildingArtInfo>
@@ -1809,11 +1809,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPANISH_MISSION</Type>
-			<LSystem>LSYSTEM_2x3</LSystem>
-			<bAnimated>1</bAnimated>
-			<fScale>2.63</fScale>
-			<fInterfaceScale>0.44</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Monastery/Christian/christian monastery.nif</NIF>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.75</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Mission/Mission.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Mission.dds</Button>
 		</BuildingArtInfo>
@@ -1879,11 +1879,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_STATE_HOUSE</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.35</fScale>
-			<fInterfaceScale>0.67</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/GreatLibrary/GreatLibrary.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.65</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/StateHouse/StateHouse.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/State_House.dds</Button>
 		</BuildingArtInfo>
@@ -1899,11 +1899,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_RODEO</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.85</fScale>
-			<fInterfaceScale>0.75</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Charreada/GruumshTemple.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Rodeo/Rodeo.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Rodeo.dds</Button>
 		</BuildingArtInfo>
@@ -1919,11 +1919,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SUPREME_COURT</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/eu3_Euro_Courthouse/west_courthouse.nif</NIF>
+			<fInterfaceScale>0.85</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/SupremeCourt/SupremeCourt.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Supreme_Court.dds</Button>
 		</BuildingArtInfo>
@@ -1942,8 +1942,8 @@
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/eu3_MesoCourthouse/SA_courthouse.nif</NIF>
+			<fInterfaceScale>1.2</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Kallanka/Kallanka.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Kallanka.dds</Button>
 		</BuildingArtInfo>
@@ -1969,21 +1969,21 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_HAWAIIAN_LUAU</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>5.0</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Marae/wharenui.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Luau/Luau.nif</NIF>
 			<KFM/>
 			<Button>Art/Structures/Buildings/Marae/Button_Marae.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_RUSSIAN_HUNTING_POST</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
+			<LSystem>LSYSTEM_2x1</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>2.38</fScale>
-			<fInterfaceScale>0.48</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Viking Trading Post/Viking_Post.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/HuntingPost/HuntingPost.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/HuntingPost.dds</Button>
 		</BuildingArtInfo>
@@ -2069,13 +2069,13 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MAYA_KUNA</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>0.38</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/ChichenItza/ChichenItza.nif</NIF>
+			<fInterfaceScale>0.85</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Kuna/Kuna.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/Pyramid.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/Kuna.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CHIEFTANS_HUT</Type>
@@ -2109,11 +2109,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_LAKOTA_TIPI</Type>
-			<LSystem>LSYSTEM_1x1</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.26</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Granary/Granary.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tipi/Tipi.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Tipi.dds</Button>
 		</BuildingArtInfo>
@@ -2429,11 +2429,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MEXICAN_MAQUILADORA</Type>
-			<LSystem>LSYSTEM_4x2</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>2.09</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Factory/Factory.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Maquiladora/Maquiladora.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Maquiladora.dds</Button>
 		</BuildingArtInfo>
@@ -2450,10 +2450,10 @@
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_PUREPECHA_COPPERSMITH</Type>
 			<LSystem>LSYSTEM_2x1</LSystem>
-			<bAnimated>1</bAnimated>
-			<fScale>1.31</fScale>
-			<fInterfaceScale>0.47</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Forge/Forge.nif</NIF>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Coppersmith/Coppersmith.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Coppersmith.dds</Button>
 		</BuildingArtInfo>
