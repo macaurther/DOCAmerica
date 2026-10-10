@@ -5564,6 +5564,12 @@ void CvTeam::setHasTech(TechTypes eIndex, bool bNewValue, PlayerTypes ePlayer, b
 
 	if (isHasTech(eIndex) != bNewValue)
 	{
+		// Fresol: nothing else refreshes the feature symbols here.
+		if (bNewValue && eIndex == OPTICS && GC.getGameINLINE().isFinalInitialized())
+		{
+			GC.getMapINLINE().updateVisibility();
+		}
+
 		// Leoreth: update total tech value
 		changeTotalTechValue(bNewValue ? GC.getTechInfo(eIndex).getResearchCost() : -GC.getTechInfo(eIndex).getResearchCost());
 
