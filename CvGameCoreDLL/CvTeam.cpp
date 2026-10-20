@@ -5565,7 +5565,7 @@ void CvTeam::setHasTech(TechTypes eIndex, bool bNewValue, PlayerTypes ePlayer, b
 	if (isHasTech(eIndex) != bNewValue)
 	{
 		// Fresol: nothing else refreshes the feature symbols here.
-		if (bNewValue && eIndex == OPTICS && GC.getGameINLINE().isFinalInitialized())
+		if (bNewValue && eIndex == CARTOGRAPHY && GC.getGameINLINE().isFinalInitialized())
 		{
 			GC.getMapINLINE().updateVisibility();
 		}

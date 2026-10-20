@@ -32534,7 +32534,7 @@ EndPlot
 BeginPlot
 	x=48,y=115
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=48,y=116
@@ -38172,7 +38172,7 @@ EndPlot
 BeginPlot
 	x=56,y=120
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=56,y=121
