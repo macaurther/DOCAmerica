@@ -21,8 +21,8 @@
 			<LSystem>LSYSTEM_WALLS</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Walls/Walls.nif</NIF>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Palisade/Palisade.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Palisade.dds</Button>
 		</BuildingArtInfo>
@@ -1649,11 +1649,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_STONEWORKS</Type>
-			<LSystem>LSYSTEM_KILN</LSystem>
-			<bAnimated>1</bAnimated>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>0.3</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Kiln/Ancient/potteryshop.nif</NIF>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Stoneworks/Stoneworks.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Stoneworks.dds</Button>
 		</BuildingArtInfo>
@@ -1799,11 +1799,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SCHOOLHOUSE</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.2</fScale>
-			<fInterfaceScale>0.58</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Library/Library.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Schoolhouse/Schoolhouse.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Schoolhouse.dds</Button>
 		</BuildingArtInfo>
@@ -1829,21 +1829,21 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_WHEELWRIGHT</Type>
-			<LSystem>LSYSTEM_4x2</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>0.5</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Structures/Improvements/Workshop/Workshop.nif</NIF>
-			<KFM>Art/Structures/Improvements/Workshop/Workshop.kfm</KFM>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Wheelwright/Wheelwright.nif</NIF>
+			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Wheelwright.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SILVERSMITH</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.05</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Glassmaker/ironworks.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Silversmith/Silversmith.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Silversmith.dds</Button>
 		</BuildingArtInfo>
@@ -1869,11 +1869,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_PRINTING_PRESS</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.2</fScale>
-			<fInterfaceScale>0.58</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Library/Library.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/PrintingPress/PrintingPress.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Printing_Press.dds</Button>
 		</BuildingArtInfo>
@@ -2009,11 +2009,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_PERUVIAN_WOOL_MILL</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/eu3_Textile/textile.nif</NIF>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/WoolMill/WoolMill.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/WoolMill.dds</Button>
 		</BuildingArtInfo>
@@ -2441,9 +2441,9 @@
 			<Type>ART_DEF_BUILDING_COMPOUND</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.37</fScale>
-			<fInterfaceScale>0.52</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Compound/Compound.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Compound.dds</Button>
 		</BuildingArtInfo>
