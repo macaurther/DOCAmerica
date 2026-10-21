@@ -80,7 +80,7 @@ lCivilizations = [
 	),
 	Civilization(
 		iEngland,
-		iLeader=iVictoria,
+		iLeader=iGeorgeIII,
 		iGold=600,
 		iImmigration=300,
 		iStateReligion=iProtestantism,

@@ -226,7 +226,7 @@ dStartingLeaders = [
 	iNorse : iGerhardsen,
 	iSpain : iPhilip,
 	iPortugal : iMaria,
-	iEngland : iVictoria,
+	iEngland : iGeorgeIII,
 	iFrance : iNapoleon,
 	iNetherlands : iWilliam,
 }]
@@ -885,9 +885,9 @@ def leader(iPlayer):
 	elif iCiv == iEngland:
 		if year() >= year(1900): return iChurchill
 		
-		if iEra >= iIndustrialEra: return iVictoria
+		if year() >= year(1840): return iVictoria
 		
-		if scenario() == i1750AD: return iVictoria
+		if year() >= year(1760) or scenario() == i1750AD: return iGeorgeIII
 		
 	elif iCiv == iNetherlands:
 		if year() >= year(1650): return iWilliam

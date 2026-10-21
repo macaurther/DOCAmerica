@@ -60,6 +60,7 @@ LEADER_DATES = {
 	iMaria: 1830,
 	# England
 	iElizabeth: 1600,
+	iGeorgeIII: 1760,
 	iVictoria: 1840,
 	iChurchill: 1940,
 	# France

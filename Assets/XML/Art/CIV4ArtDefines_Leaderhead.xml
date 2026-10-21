@@ -590,5 +590,13 @@
 			<NoShaderNIF>Art/LeaderHeads/Davis/Davis.nif</NoShaderNIF>
 			<BackgroundKFM>Art/LeaderHeads/Davis/washington_bg.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_GEORGE_III</Type>
+			<Button>Art/LeaderHeads/GeorgeIII/GeorgeIII.dds</Button>
+			<NIF>Art/LeaderHeads/GeorgeIII/King_English.nif</NIF>
+			<KFM>Art/LeaderHeads/GeorgeIII/King_English.kfm</KFM>
+			<NoShaderNIF>Art/LeaderHeads/GeorgeIII/King_English.nif</NoShaderNIF>
+			<BackgroundKFM>Art/LeaderHeads/GeorgeIII/King_English_BG.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

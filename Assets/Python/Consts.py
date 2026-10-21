@@ -971,12 +971,12 @@ iVictorySecularism = 8
 
 
 #leaders
-iNumLeaders = 69
+iNumLeaders = 70
 # 0				1				2				3				4				5				6				7				8				9
 (iLeaderBarbarian,iNativeLeader,iIndependentLeader,iPacal,		iXoc,			iCosijoeza,		iAtlatlCauac,	iMalkuHuyustus,	iWariCapac,		iUwahcil,		
 iTuskaloosa,	iKochininako,	iPopay,			iSaguamanchica,	iLiefErickson,	iGustav,		iGerhardsen,	iTacaynamo,		iTopiltzin,		iAua,			
 iCunhambebe,	iAgueybana,		iPachacuti,		iHuaynaCapac,	iErendira,		iMontezuma,		iMangasColoradas,iHiawatha,		iSittingBull,   iIsabella,		
-iPhilip,		iFranco,		iOconostota,	iJoao,			iMaria,			iElizabeth,		iVictoria,		iChurchill,		iLouis,			iNapoleon,		
+iPhilip,		iFranco,		iOconostota,	iJoao,			iMaria,			iElizabeth,		iGeorgeIII,		iVictoria,		iChurchill,		iLouis,			iNapoleon,		
 iDeGaulle,		iWillemVanOranje,iWilliam,		iKamehameha,	iCatherine,		iAlexanderI,	iStalin,		iWashington,	iJackson,		iLincoln,		
 iRoosevelt,		iFDR,			iKennedy,		iReagan,		iObama,			iLOuverture,	iSanMartin,		iPeron,			iJuarez,		iSantaAnna,		
 iCardenas,		iBolivar,		iCastilla,		iPedro,			iVargas,		iChavez,		iDavis,			iMacDonald,		iTrudeau) = range(iNumLeaders)

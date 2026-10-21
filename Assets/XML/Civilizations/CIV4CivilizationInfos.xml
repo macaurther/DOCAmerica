@@ -1342,6 +1342,10 @@
 					<LeaderName>LEADER_CHURCHILL</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
+				<Leader>
+					<LeaderName>LEADER_GEORGE_III</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
 			</Leaders>
 			<DerivativeCiv>CIVILIZATION_AMERICA</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_COLONIAL_ENGLAND_SELECT</CivilizationSelectionSound>

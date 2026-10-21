@@ -1334,6 +1334,7 @@ enum LeaderHeadTypes			// Exposed to Python
 
 	// Maya
 	PACAL,
+	XOC,
 
 	// Zapotec
 	COSIJOEZA,
@@ -1372,6 +1373,9 @@ enum LeaderHeadTypes			// Exposed to Python
 	// Inuit
 	AUA,
 
+	// Tupi
+	CUNHAMBEBE,
+
 	// Arawak
 	AGUEYBANA,
 
@@ -1384,6 +1388,9 @@ enum LeaderHeadTypes			// Exposed to Python
 
 	// Aztec
 	MONTEZUMA,
+
+	// Apache
+	MANGAS_COLORADAS,
 
 	// Haudenosaunee
 	HIAWATHA,
@@ -1405,6 +1412,7 @@ enum LeaderHeadTypes			// Exposed to Python
 
 	// England
 	ELIZABETH,
+	GEORGE_III,
 	VICTORIA,
 	CHURCHILL,
 
