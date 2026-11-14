@@ -35,6 +35,8 @@
 			<iConstructPercent>100</iConstructPercent>
 			<iCreatePercent>100</iCreatePercent>
 			<iResearchPercent>100</iResearchPercent>
+			<iTechLeaderCostModifier>0</iTechLeaderCostModifier>
+			<iTechBackwardsCostModifier>0</iTechBackwardsCostModifier>
 			<iBuildPercent>100</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>100</iGreatPeoplePercent>
@@ -95,6 +97,8 @@
 			<iConstructPercent>100</iConstructPercent>
 			<iCreatePercent>100</iCreatePercent>
 			<iResearchPercent>100</iResearchPercent>
+			<iTechLeaderCostModifier>0</iTechLeaderCostModifier>
+			<iTechBackwardsCostModifier>20</iTechBackwardsCostModifier>
 			<iBuildPercent>100</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>100</iGreatPeoplePercent>
@@ -145,6 +149,8 @@
 			<iConstructPercent>100</iConstructPercent>
 			<iCreatePercent>100</iCreatePercent>
 			<iResearchPercent>100</iResearchPercent>
+			<iTechLeaderCostModifier>20</iTechLeaderCostModifier>
+			<iTechBackwardsCostModifier>30</iTechBackwardsCostModifier>
 			<iBuildPercent>100</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>100</iGreatPeoplePercent>
@@ -207,6 +213,8 @@
 			<iConstructPercent>100</iConstructPercent>
 			<iCreatePercent>100</iCreatePercent>
 			<iResearchPercent>100</iResearchPercent>
+			<iTechLeaderCostModifier>25</iTechLeaderCostModifier>
+			<iTechBackwardsCostModifier>40</iTechBackwardsCostModifier>
 			<iBuildPercent>100</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>100</iGreatPeoplePercent>
@@ -273,6 +281,8 @@
 			<iConstructPercent>90</iConstructPercent>
 			<iCreatePercent>90</iCreatePercent>
 			<iResearchPercent>100</iResearchPercent>
+			<iTechLeaderCostModifier>30</iTechLeaderCostModifier>
+			<iTechBackwardsCostModifier>50</iTechBackwardsCostModifier>
 			<iBuildPercent>90</iBuildPercent>
 			<iImprovementPercent>90</iImprovementPercent>
 			<iGreatPeoplePercent>90</iGreatPeoplePercent>
@@ -340,6 +350,8 @@
 			<iConstructPercent>80</iConstructPercent>
 			<iCreatePercent>80</iCreatePercent>
 			<iResearchPercent>100</iResearchPercent>
+			<iTechLeaderCostModifier>40</iTechLeaderCostModifier>
+			<iTechBackwardsCostModifier>60</iTechBackwardsCostModifier>
 			<iBuildPercent>80</iBuildPercent>
 			<iImprovementPercent>80</iImprovementPercent>
 			<iGreatPeoplePercent>80</iGreatPeoplePercent>
@@ -400,6 +412,8 @@
 			<iConstructPercent>70</iConstructPercent>
 			<iCreatePercent>100</iCreatePercent>
 			<iResearchPercent>100</iResearchPercent>
+			<iTechLeaderCostModifier>50</iTechLeaderCostModifier>
+			<iTechBackwardsCostModifier>75</iTechBackwardsCostModifier>
 			<iBuildPercent>70</iBuildPercent>
 			<iImprovementPercent>70</iImprovementPercent>
 			<iGreatPeoplePercent>70</iGreatPeoplePercent>
@@ -463,6 +477,8 @@
 			<iConstructPercent>100</iConstructPercent>
 			<iCreatePercent>100</iCreatePercent>
 			<iResearchPercent>100</iResearchPercent>
+			<iTechLeaderCostModifier>0</iTechLeaderCostModifier>
+			<iTechBackwardsCostModifier>0</iTechBackwardsCostModifier>
 			<iBuildPercent>100</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>100</iGreatPeoplePercent>
@@ -519,6 +535,8 @@
 			<iConstructPercent>100</iConstructPercent>
 			<iCreatePercent>100</iCreatePercent>
 			<iResearchPercent>100</iResearchPercent>
+			<iTechLeaderCostModifier>0</iTechLeaderCostModifier>
+			<iTechBackwardsCostModifier>0</iTechBackwardsCostModifier>
 			<iBuildPercent>100</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>100</iGreatPeoplePercent>
@@ -572,6 +590,8 @@
 			<iConstructPercent>100</iConstructPercent>
 			<iCreatePercent>100</iCreatePercent>
 			<iResearchPercent>100</iResearchPercent>
+			<iTechLeaderCostModifier>0</iTechLeaderCostModifier>
+			<iTechBackwardsCostModifier>0</iTechBackwardsCostModifier>
 			<iBuildPercent>100</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>100</iGreatPeoplePercent>
@@ -631,6 +651,8 @@
 			<iConstructPercent>100</iConstructPercent>
 			<iCreatePercent>100</iCreatePercent>
 			<iResearchPercent>100</iResearchPercent>
+			<iTechLeaderCostModifier>0</iTechLeaderCostModifier>
+			<iTechBackwardsCostModifier>0</iTechBackwardsCostModifier>
 			<iBuildPercent>100</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>100</iGreatPeoplePercent>
@@ -685,6 +707,8 @@
 			<iConstructPercent>100</iConstructPercent>
 			<iCreatePercent>100</iCreatePercent>
 			<iResearchPercent>100</iResearchPercent>
+			<iTechLeaderCostModifier>0</iTechLeaderCostModifier>
+			<iTechBackwardsCostModifier>0</iTechBackwardsCostModifier>
 			<iBuildPercent>100</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>100</iGreatPeoplePercent>
@@ -737,6 +761,8 @@
 			<iConstructPercent>100</iConstructPercent>
 			<iCreatePercent>100</iCreatePercent>
 			<iResearchPercent>100</iResearchPercent>
+			<iTechLeaderCostModifier>0</iTechLeaderCostModifier>
+			<iTechBackwardsCostModifier>0</iTechBackwardsCostModifier>
 			<iBuildPercent>100</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>100</iGreatPeoplePercent>

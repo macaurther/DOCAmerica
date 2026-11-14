@@ -648,7 +648,8 @@ int CvTeamAI::AI_calculatePlotWarValue(TeamTypes eTeam) const
 		{
 			if (!pLoopPlot->isWater() && pLoopPlot->isAdjacentTeam(getID(), true))
 			{
-				iValue += 4;
+				//iValue += 4;
+				iValue += 2 + pLoopPlot->getWarValue(getLeaderID());
 			}
 
 			BonusTypes eBonus = pLoopPlot->getBonusType(getID());
@@ -1948,7 +1949,7 @@ DenialTypes CvTeamAI::AI_surrenderTrade(TeamTypes eTeam, int iPowerMultiplier) c
 			{
 				CvTeamAI& kLoopTeam = GET_TEAM((TeamTypes)iLoopTeam);
 
-				if (kLoopTeam.isAlive())
+				if (kLoopTeam.isAlive() && !kLoopTeam.isVassal(eTeam))
 				{
 					if (kLoopTeam.AI_isLandTarget(getID()))
 					{
@@ -1982,6 +1983,14 @@ DenialTypes CvTeamAI::AI_surrenderTrade(TeamTypes eTeam, int iPowerMultiplier) c
 							{
 								return eDenial;
 							}
+						}
+					}
+					// Leoreth: can only capitulate to neighbor if any
+					else
+					{
+						if (atWar(getID(), (TeamTypes)iLoopTeam) && GET_PLAYER(getLeaderID()).isNeighbor(kLoopTeam.getLeaderID()) && !GET_PLAYER(getLeaderID()).isNeighbor(kMasterTeam.getLeaderID()))
+						{
+							return DENIAL_TOO_FAR;
 						}
 					}
 				}
@@ -2533,17 +2542,9 @@ DenialTypes CvTeamAI::AI_openBordersTrade(TeamTypes eTeam) const
 
 int CvTeamAI::AI_defensivePactTradeVal(TeamTypes eTeam) const
 {
-	//Rhye - start
-	//return ((getNumCities() + GET_TEAM(eTeam).getNumCities()) * 3); //Rhye
-	int iModifier = 280;
-	if (isHasTech((TechTypes)ELECTRICITY) || isHasTech((TechTypes)ASSEMBLY_LINE)) {
-		iModifier = 200;
-	}
-	else if (GC.getGameINLINE().getGameTurn() > getTurnForYear(400)) 
-	{ //the last 100 turns, starting from 1900
-		iModifier = 160;
-	}
-
+	int iModifier = 200;
+	if (isHasTech((TechTypes)ELECTRICITY) || isHasTech((TechTypes)ASSEMBLY_LINE))
+		iModifier += 60;
 	//discount if in a chain of alliances but not directly allied yet
 	for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
 	{

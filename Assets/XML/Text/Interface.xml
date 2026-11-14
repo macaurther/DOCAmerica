@@ -4656,4 +4656,20 @@
 		<Italian>[ICON_BULLET]%D1%%%F2 from %F3_RelIcon</Italian>
 		<Spanish>[ICON_BULLET]%D1%%%F2 from %F3_RelIcon</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DEMO_SCREEN_SURPLUS_TEXT</Tag>
+		<English>Surplus</English>
+		<French>Surplus</French>
+		<German>Surplus</German>
+		<Italian>Surplus</Italian>
+		<Spanish>Surplus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DEMO_SCREEN_EXPANSION_TEXT</Tag>
+		<English>Expansion</English>
+		<French>Expansion</French>
+		<German>Expansion</German>
+		<Italian>Expansion</Italian>
+		<Spanish>Expansion</Spanish>
+	</TEXT>
 </Civ4GameText>

@@ -14390,6 +14390,7 @@ m_bHills(false),
 m_bFlatlands(false),
 m_bNoRiverSide(false),
 m_bNormalize(false),
+m_bStrategic(false),
 m_piYieldChange(NULL),
 m_piImprovementChange(NULL),
 m_pbTerrain(NULL),
@@ -14574,6 +14575,11 @@ bool CvBonusInfo::isNormalize() const
 	return m_bNormalize;
 }
 
+bool CvBonusInfo::isStrategic() const
+{
+	return m_bStrategic;
+}
+
 const TCHAR* CvBonusInfo::getArtDefineTag() const
 {
 	return m_szArtDefineTag;
@@ -14679,6 +14685,7 @@ void CvBonusInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bFlatlands);
 	stream->Read(&m_bNoRiverSide);
 	stream->Read(&m_bNormalize);
+	stream->Read(&m_bStrategic);
 
 	stream->ReadString(m_szArtDefineTag);
 
@@ -14744,6 +14751,7 @@ void CvBonusInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bFlatlands);
 	stream->Write(m_bNoRiverSide);
 	stream->Write(m_bNormalize);
+	stream->Write(m_bStrategic);
 
 	stream->WriteString(m_szArtDefineTag);
 
@@ -14826,6 +14834,7 @@ bool CvBonusInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bFlatlands, "bFlatlands");
 	pXML->GetChildXmlValByName(&m_bNoRiverSide, "bNoRiverSide");
 	pXML->GetChildXmlValByName(&m_bNormalize, "bNormalize");
+	pXML->GetChildXmlValByName(&m_bStrategic, "bStrategic");
 
 	pXML->SetVariableListTagPair(&m_pbTerrain, "TerrainBooleans", sizeof(GC.getTerrainInfo((TerrainTypes)0)), GC.getNumTerrainInfos());
 	pXML->SetVariableListTagPair(&m_pbFeature, "FeatureBooleans", sizeof(GC.getFeatureInfo((FeatureTypes)0)), GC.getNumFeatureInfos());
@@ -20752,7 +20761,9 @@ m_iBuildPercent(0),
 m_iImprovementPercent(0),
 m_iGreatPeoplePercent(0),
 m_iAnarchyPercent(0),
-m_iMaintenanceRangePercent(0),
+m_iMaintenanceRangePercent(0), // Leoreth
+m_iTechLeaderCostModifier(0), // Leoreth
+m_iTechBackwardsCostModifier(0), // Leoreth
 m_iEventChancePerTurn(0),
 m_iSoundtrackSpace(0),
 m_iNumSoundtracks(0),
@@ -20863,6 +20874,18 @@ int CvEraInfo::getMaintenanceRangePercent() const
 	return m_iMaintenanceRangePercent;
 }
 
+// Leoreth
+int CvEraInfo::getTechLeaderCostModifier() const
+{
+	return m_iTechLeaderCostModifier;
+}
+
+// Leoreth
+int CvEraInfo::getTechBackwardsCostModifier() const
+{
+	return m_iTechBackwardsCostModifier;
+}
+
 int CvEraInfo::getEventChancePerTurn() const
 {
 	return m_iEventChancePerTurn;
@@ -20957,7 +20980,9 @@ bool CvEraInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iImprovementPercent, "iImprovementPercent");
 	pXML->GetChildXmlValByName(&m_iGreatPeoplePercent, "iGreatPeoplePercent");
 	pXML->GetChildXmlValByName(&m_iAnarchyPercent, "iAnarchyPercent");
-	pXML->GetChildXmlValByName(&m_iMaintenanceRangePercent, "iMaintenanceRangePercent");
+	pXML->GetChildXmlValByName(&m_iMaintenanceRangePercent, "iMaintenanceRangePercent"); // Leoreth
+	pXML->GetChildXmlValByName(&m_iTechLeaderCostModifier, "iTechLeaderCostModifier"); // Leoreth
+	pXML->GetChildXmlValByName(&m_iTechBackwardsCostModifier, "iTechBackwardsCostModifier"); // Leoreth
 	pXML->GetChildXmlValByName(&m_iEventChancePerTurn, "iEventChancePerTurn");
 	pXML->GetChildXmlValByName(&m_iSoundtrackSpace, "iSoundtrackSpace");
 	pXML->GetChildXmlValByName(&m_bFirstSoundtrackFirst, "bFirstSoundtrackFirst");

@@ -150,18 +150,20 @@ public:
 	int AI_corporationBonusVal(BonusTypes eBonus) const;
 
 	// Leoreth: determine value provided by additional resource instances
-	int AI_bonusEffectVal(BonusTypes eBonus, int iChange) const;
+	int AI_bonusEffectVal(BonusTypes eBonus, int iChange, bool bNoBonuses = false) const;
 
-	int AI_bonusHappinessChange(BonusTypes eBonus, int iChange) const;
-	int AI_bonusHealthChange(BonusTypes eBonus, int iChange) const;
+	int AI_bonusHappinessChange(BonusTypes eBonus, int iChange, bool bNoBonuses = false) const;
+	int AI_bonusHealthChange(BonusTypes eBonus, int iChange, bool bNoBonuses = false) const;
 
-	int AI_bonusBuildingHappinessChange(BonusTypes eBonus, int iChange) const;
-	int AI_bonusBuildingHealthChange(BonusTypes eBonus, int iChange) const;
+	int AI_bonusBuildingHappinessChange(BonusTypes eBonus, int iChange, bool bNoBonuses = false) const;
+	int AI_bonusBuildingHealthChange(BonusTypes eBonus, int iChange, bool bNoBonuses = false) const;
 
-	int AI_bonusAffectedCitiesChange(BonusTypes eBonus, int iChange) const;
+	int AI_bonusAffectedCitiesChange(BonusTypes eBonus, int iChange, bool bNoBonuses = false) const;
 
 	int AI_bonusActualHappinessChange(BonusTypes eBonus, int iChange) const;
 	int AI_bonusActualHealthChange(BonusTypes eBonus, int iChange) const;
+
+	bool AI_isStrategicBonus(BonusTypes eBonus) const;
 
 	int AI_cityTradeVal(CvCity* pCity) const;
 	DenialTypes AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const;
@@ -329,6 +331,7 @@ public:
 	
 	void AI_recalculateFoundValues(int iX, int iY, int iInnerRadius, int iOuterRadius) const;
 	
+	bool AI_canUpdateCitySites() const;
 	void AI_updateCitySites(int iMinFoundValueThreshold, int iMaxSites) const;
 	void AI_invalidateCitySites(int iMinFoundValueThreshold) const;
 	bool AI_isPlotCitySite(CvPlot* pPlot) const;

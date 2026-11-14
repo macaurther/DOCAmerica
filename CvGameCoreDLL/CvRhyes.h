@@ -139,8 +139,6 @@ enum Homelands
 
 #endif	// CVRHYES_H
 
-static const int lTechLeaderPenalty[NUM_ERAS] = {0, 0, 20, 25, 30, 40, 50};
-static const int lTechBackwardsBonus[NUM_ERAS] = {0, 20, 30, 40, 50, 60, 75};
 
 // Leoreth: order of persecution
 static const int persecutionOrder[NUM_RELIGIONS][NUM_RELIGIONS-1] = 

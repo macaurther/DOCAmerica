@@ -1138,8 +1138,8 @@ void CvCity::kill(bool bUpdatePlotGroups)
 
 	CvEventReporter::getInstance().cityLost(this);
 
-	GET_PLAYER(getOwnerINLINE()).deleteCity(getID());
-	GET_PLAYER(getOwnerINLINE()).updateCultureRanks();
+	GET_PLAYER(eOwner).deleteCity(getID());
+	GET_PLAYER(eOwner).updateCultureRanks();
 
 	pPlot->updateCulture(true, false);
 
@@ -1509,12 +1509,14 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		else
 		{
 			CvPlot* pPlot = plot();
+			PlayerTypes eOldOwner = getOwner();
+			CivilizationTypes eOldPreviousCiv = getPreviousCiv();
 			GET_PLAYER((PlayerTypes)iData1).acquireCity(this, false, true, true);
-			GET_PLAYER(getOwnerINLINE()).updateMaintenance(); // Leoreth
 
 			if (pPlot->isCity())
 			{
-				CvEventReporter::getInstance().cityGifted(pPlot->getPlotCity());
+				GET_PLAYER(pPlot->getPlotCity()->getOwnerINLINE()).updateMaintenance();
+				CvEventReporter::getInstance().cityGifted(pPlot->getPlotCity(), eOldOwner, eOldPreviousCiv);
 			}
 		}
 		break;
@@ -17386,7 +17388,7 @@ void CvCity::liberate(bool bConquest)
 
 	if (NO_PLAYER != ePlayer)
 	{
-		CvEventReporter::getInstance().cityLiberated(this);
+		CivilizationTypes eOldPreviousCiv = getPreviousCiv();
 
 		int iOldOwnerCulture = getCultureTimes100(eOwner);
 		int iOldMasterLand = 0;
@@ -17413,6 +17415,9 @@ void CvCity::liberate(bool bConquest)
 		GET_PLAYER(ePlayer).acquireCity(this, false, true, true);
 		GET_PLAYER(ePlayer).AI_changeMemoryCount(eOwner, MEMORY_LIBERATED_CITIES, 1);
 
+		if (pPlot->isCity())
+			CvEventReporter::getInstance().cityLiberated(pPlot->getPlotCity(), eOwner, eOldPreviousCiv);
+
 		if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isVassal(GET_PLAYER(eOwner).getTeam()))
 		{
 			int iNewMasterLand = GET_TEAM(GET_PLAYER(eOwner).getTeam()).getTotalLand();
@@ -17431,7 +17436,7 @@ void CvCity::liberate(bool bConquest)
 				pCity->setCultureTimes100(eOwner, iOldOwnerCulture / 2, true, true); // Leoreth: overall culture remains constant
 			}
 
-			if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isAVassal())
+			if (pCity != NULL && GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isAVassal())
 			{
 				for (int i = 0; i < GC.getDefineINT("COLONY_NUM_FREE_DEFENDERS"); ++i)
 				{
@@ -17458,84 +17463,78 @@ PlayerTypes CvCity::getLiberationPlayer(bool bConquest) const
 
 	for (int iPlayer = 0; iPlayer < MAX_CIV_PLAYERS; ++iPlayer)
 	{
-		CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes)iPlayer);
+		PlayerTypes ePlayer = (PlayerTypes)iPlayer;
+		CvPlayer& kLoopPlayer = GET_PLAYER(ePlayer);
 
 		if (kLoopPlayer.isMinorCiv())
-		{
 			continue;
+		if (getOwner() == ePlayer)
+			continue;
+		if (!kLoopPlayer.isAlive())
+			continue;
+		if (!kLoopPlayer.canReceiveTradeCity())
+			continue;
+		if (plot()->getSettlerValue(ePlayer) == 0 && getCultureTimes100(ePlayer) * 5 < countTotalCultureTimes100() && !isPreviousOwner(ePlayer))
+			continue;
+
+		CvCity* pCapital = kLoopPlayer.getCapitalCity();
+		if (pCapital == NULL)
+			continue;
+
+		int iCapitalDistance = ::plotDistance(getX_INLINE(), getY_INLINE(), pCapital->getX_INLINE(), pCapital->getY_INLINE());
+		if (area() != pCapital->area())
+		{
+			iCapitalDistance *= 2;
 		}
 
-		if (kLoopPlayer.isAlive())
+		int iCultureTimes100 = getCultureTimes100((PlayerTypes)iPlayer);
+
+		if (bConquest)
 		{
-			if (kLoopPlayer.canReceiveTradeCity())
+			if (isOriginalOwner(ePlayer))
 			{
-				CvCity* pCapital = kLoopPlayer.getCapitalCity();
-				if (NULL != pCapital)
-				{
-					int iCapitalDistance = ::plotDistance(getX_INLINE(), getY_INLINE(), pCapital->getX_INLINE(), pCapital->getY_INLINE());
-					if (area() != pCapital->area())
-					{
-						iCapitalDistance *= 2;
-					}
-
-					int iCultureTimes100 = getCultureTimes100((PlayerTypes)iPlayer);
-
-					if (bConquest)
-					{
-						if (isOriginalOwner((PlayerTypes)iPlayer))
-						{
-							iCultureTimes100 *= 3;
-							iCultureTimes100 /= 2;
-						}
-					}
-
-					if (GET_PLAYER((PlayerTypes)iPlayer).getTeam() == getTeam()
-						|| GET_TEAM(GET_PLAYER((PlayerTypes)iPlayer).getTeam()).isVassal(getTeam())
-						|| GET_TEAM(getTeam()).isVassal(GET_PLAYER((PlayerTypes)iPlayer).getTeam()))
-					{
-						iCultureTimes100 *= 2;
-						iCultureTimes100 = (iCultureTimes100 + iTotalCultureTimes100) / 2;
-					}
-
-					int iValue = std::max(100, iCultureTimes100) / std::max(1, iCapitalDistance);
-
-					// Leoreth: better value for core and historical tiles
-					if (plot()->isCore())
-					{
-						iValue *= 3;
-					}
-					else if (plot()->getSettlerValue(getOwner()) > 0)
-					{
-						iValue *= 2;
-					}
-
-					if (iValue > iBestValue)
-					{
-						iBestValue = iValue;
-						eBestPlayer = (PlayerTypes)iPlayer;
-					}
-				}
+				iCultureTimes100 *= 3;
+				iCultureTimes100 /= 2;
 			}
 		}
-	}
 
-	if (NO_PLAYER != eBestPlayer)
-	{
-		if (getOwnerINLINE() == eBestPlayer)
+		if (GET_PLAYER(ePlayer).getTeam() == getTeam()
+			|| GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isVassal(getTeam())
+			|| GET_TEAM(getTeam()).isVassal(GET_PLAYER(ePlayer).getTeam()))
 		{
-			return NO_PLAYER;
+			iCultureTimes100 *= 2;
+			iCultureTimes100 = (iCultureTimes100 + iTotalCultureTimes100) / 2;
 		}
 
-		for (int iPlot = 0; iPlot < NUM_CITY_PLOTS; ++iPlot)
-		{
-			CvPlot* pLoopPlot = ::plotCity(getX_INLINE(), getY_INLINE(), iPlot);
+		int iValue = std::max(100, iCultureTimes100) / std::max(1, iCapitalDistance);
 
-			if (NULL != pLoopPlot)
+		// Leoreth: better value for core and historical tiles
+		if (plot()->isCore(ePlayer))
+		{
+			iValue *= 3;
+		}
+		else if (plot()->getSettlerValue(ePlayer) > 0)
+		{
+			iValue *= 2;
+		}
+
+		if (iValue > iBestValue)
+		{
+			bool bVisibleEnemyUnit = false;
+			for (int iPlot = 0; iPlot < NUM_CITY_PLOTS && !bVisibleEnemyUnit; ++iPlot)
 			{
-				if (pLoopPlot->isVisibleEnemyUnit(eBestPlayer))
-				{
-					return NO_PLAYER;
-				}
+				CvPlot* pLoopPlot = ::plotCity(getX_INLINE(), getY_INLINE(), iPlot);
+				if (pLoopPlot == NULL)
+					continue;
+
+				if (pLoopPlot->isVisibleEnemyUnit(ePlayer))
+					bVisibleEnemyUnit = true;
+			}
+
+			if (!bVisibleEnemyUnit)
+			{
+				iBestValue = iValue;
+				eBestPlayer = ePlayer;
 			}
 		}
 	}

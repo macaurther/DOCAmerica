@@ -149,6 +149,9 @@ class Victory(object):
 		
 		message(self.iPlayer, "TXT_KEY_VICTORY_INTERMEDIATE", color=iPurple)
 
+	def plague_protected(self):
+		return any(goal.plague_protected() for goal in self.goals)
+
 
 class HistoricalVictory(Victory):
 

@@ -1021,6 +1021,8 @@
 	<ElementType name="iCulturePercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iAnarchyPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iMaintenanceRangePercent" content="textOnly" dt:type="int"/>
+	<ElementType name="iTechLeaderCostModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iTechBackwardsCostModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iEventChancePerTurn" content="textOnly" dt:type="int"/>
 	<ElementType name="iBarbPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iInflationOffset" content="textOnly" dt:type="int"/>
@@ -1320,6 +1322,8 @@
 		<element type="iConstructPercent"/>
 		<element type="iCreatePercent"/>
 		<element type="iResearchPercent"/>
+		<element type="iTechLeaderCostModifier" minOccurs="0"/>
+		<element type="iTechBackwardsCostModifier" minOccurs="0"/>
 		<element type="iBuildPercent"/>
 		<element type="iImprovementPercent"/>
 		<element type="iGreatPeoplePercent"/>

@@ -515,7 +515,7 @@ void CvPlayerAI::AI_doTurnUnitsPost()
 				bool bKilled = false;
 				if (!bNoDisband)
 				{
-					if (pLoopUnit->canFight() && !pLoopUnit->isFound()) // Leoreth: do not disband pioneers
+					if (pLoopUnit->canFight() && !pLoopUnit->isFound() && !isMinorCiv()) // Leoreth: do not disband pioneers
 					{
 						int iExp = pLoopUnit->getExperience();
 						CvCity* pPlotCity = pLoopUnit->plot()->getPlotCity();
@@ -907,7 +907,7 @@ void CvPlayerAI::AI_updateFoundValues(bool bStartingLoc) const
 			GC.getMapINLINE().plotByIndexINLINE(iI)->setFoundValue(getID(), -1);
 		}
 	}
-	else
+	else if (AI_canUpdateCitySites())
 	{
 		if (!isBarbarian())
 		{
@@ -4762,6 +4762,19 @@ bool CvPlayerAI::AI_isWillingToTalk(PlayerTypes ePlayer) const
 			iRefuseDuration /= 100;
 		}
 
+		// Leoreth: desperation
+		if (getNumCities() == 1)
+		{
+			CvCity* pCapital = getCapitalCity();
+			if (pCapital != NULL)
+			{
+				if (pCapital->plot()->getNumDefenders(getID()) <= 1 && AI_isPlotThreatened(pCapital->plot(), 1, false))
+				{
+					return true;
+				}
+			}
+		}
+
 		//Rhye
 		if (AI_getMemoryCount(ePlayer, MEMORY_NUKED_US) > 0)
 		{
@@ -6579,12 +6592,7 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 						{
 							if (GET_PLAYER(ePlayer).getNumTradeableBonuses((BonusTypes)(pNode->m_data.m_iData)) > 1)
 							{
-								/*if (GET_PLAYER(ePlayer).AI_corporationBonusVal((BonusTypes)(pNode->m_data.m_iData)) == 0)
-								{
-									iWeight += AI_bonusTradeVal(((BonusTypes)(pNode->m_data.m_iData)), ePlayer, 1);
-									pabBonusDeal[pNode->m_data.m_iData] = true;
-								}*/
-								iWeight += AI_bonusTradeVal(((BonusTypes)(pNode->m_data.m_iData)), ePlayer, 1);
+								iWeight += GET_PLAYER(ePlayer).AI_bonusTradeVal(((BonusTypes)(pNode->m_data.m_iData)), getID(), 1);
 								pabBonusDeal[pNode->m_data.m_iData] = true;
 							}
 						}
@@ -7128,11 +7136,11 @@ int CvPlayerAI::AI_bonusActualHealthChange(BonusTypes eBonus, int iChange) const
 }
 
 // Leoreth
-int CvPlayerAI::AI_bonusAffectedCitiesChange(BonusTypes eBonus, int iChange) const
+int CvPlayerAI::AI_bonusAffectedCitiesChange(BonusTypes eBonus, int iChange, bool bNoBonuses) const
 {
 	CvBonusInfo& kBonus = GC.getBonusInfo(eBonus);
 
-	int iNumBonuses = getNumAvailableBonuses(eBonus);
+	int iNumBonuses = bNoBonuses ? 0 : getNumAvailableBonuses(eBonus);
 	int iNumCities = getNumCities();
 
 	int iCurrentAffectedCities = std::min(iNumBonuses * kBonus.getAffectedCities(), iNumCities);
@@ -7145,21 +7153,21 @@ int CvPlayerAI::AI_bonusAffectedCitiesChange(BonusTypes eBonus, int iChange) con
 }
 
 // Leoreth
-int CvPlayerAI::AI_bonusHappinessChange(BonusTypes eBonus, int iChange) const
+int CvPlayerAI::AI_bonusHappinessChange(BonusTypes eBonus, int iChange, bool bNoBonuses) const
 {
-	return GC.getBonusInfo(eBonus).getHappiness() * AI_bonusAffectedCitiesChange(eBonus, iChange);
+	return GC.getBonusInfo(eBonus).getHappiness() * AI_bonusAffectedCitiesChange(eBonus, iChange, bNoBonuses);
 }
 
 // Leoreth
-int CvPlayerAI::AI_bonusHealthChange(BonusTypes eBonus, int iChange) const
+int CvPlayerAI::AI_bonusHealthChange(BonusTypes eBonus, int iChange, bool bNoBonuses) const
 {
-	return GC.getBonusInfo(eBonus).getHealth() * AI_bonusAffectedCitiesChange(eBonus, iChange);
+	return GC.getBonusInfo(eBonus).getHealth() * AI_bonusAffectedCitiesChange(eBonus, iChange, bNoBonuses);
 }
 
 // Leoreth
-int CvPlayerAI::AI_bonusBuildingHappinessChange(BonusTypes eBonus, int iChange) const
+int CvPlayerAI::AI_bonusBuildingHappinessChange(BonusTypes eBonus, int iChange, bool bNoBonuses) const
 {
-	int iNumBonuses = getNumAvailableBonuses(eBonus);
+	int iNumBonuses = bNoBonuses ? 0 : getNumAvailableBonuses(eBonus);
 
 	if (iChange == 0 || (iChange > 0 && iNumBonuses > 0) || (iChange < 0 && iNumBonuses + iChange > 0))
 	{
@@ -7191,9 +7199,10 @@ int CvPlayerAI::AI_bonusBuildingHappinessChange(BonusTypes eBonus, int iChange) 
 }
 
 // Leoreth
-int CvPlayerAI::AI_bonusBuildingHealthChange(BonusTypes eBonus, int iChange) const
+int CvPlayerAI::AI_bonusBuildingHealthChange(BonusTypes eBonus, int iChange, bool bNoBonuses) const
 {
-	int iNumBonuses = getNumAvailableBonuses(eBonus);
+	int iNumBonuses = bNoBonuses ? 0 : getNumAvailableBonuses(eBonus);
+
 	if (iChange == 0 || (iChange > 0 && iNumBonuses > 0) || (iChange < 0 && iNumBonuses + iChange > 0))
 	{
 		return 0;
@@ -7226,15 +7235,20 @@ int CvPlayerAI::AI_bonusBuildingHealthChange(BonusTypes eBonus, int iChange) con
 // Leoreth
 // note: the returned value is always positive, even if iChange is negative
 // this is because negative value is being used when we calculate the value of our bonus we trade away
-int CvPlayerAI::AI_bonusEffectVal(BonusTypes eBonus, int iChange) const
+int CvPlayerAI::AI_bonusEffectVal(BonusTypes eBonus, int iChange, bool bNoBonus) const
 {
 	int iHappinessValue = 50;
 	int iHealthValue = 30;
 
-	int iHappinessChange = AI_bonusHappinessChange(eBonus, iChange) + AI_bonusBuildingHappinessChange(eBonus, iChange);
-	int iHealthChange = AI_bonusHealthChange(eBonus, iChange) + AI_bonusBuildingHealthChange(eBonus, iChange);
+	int iHappinessChange = AI_bonusHappinessChange(eBonus, iChange, bNoBonus) + AI_bonusBuildingHappinessChange(eBonus, iChange, bNoBonus);
+	int iHealthChange = AI_bonusHealthChange(eBonus, iChange, bNoBonus) + AI_bonusBuildingHealthChange(eBonus, iChange, bNoBonus);
 
 	return iHappinessValue * iHappinessChange + iHealthValue * iHealthChange;
+}
+
+bool CvPlayerAI::AI_isStrategicBonus(BonusTypes eBonus) const
+{
+	return GC.getBonusInfo(eBonus).isStrategic();
 }
 
 //Value sans corporation
@@ -7617,11 +7631,43 @@ int CvPlayerAI::AI_corporationBonusVal(BonusTypes eBonus) const
 
 int CvPlayerAI::AI_bonusTradeVal(BonusTypes eBonus, PlayerTypes ePlayer, int iChange) const
 {
-	int iValue;
-
 	FAssertMsg(ePlayer != getID(), "shouldn't call this function on ourselves");
 
-	iValue = AI_bonusVal(eBonus, iChange);
+	int iValue = AI_baseBonusVal(eBonus, iChange);
+
+	if (AI_isStrategicBonus(eBonus))
+	{
+		if (getNumAvailableBonuses(eBonus) <= 0)
+		{
+			int iMinValue = GC.getDefineINT("MIN_STRATEGIC_RESOURCE_VALUE") * 200;
+			iMinValue /= std::max(1, GC.getBonusInfo(eBonus).getAITradeModifier() + 100);
+
+			if (iValue < iMinValue)
+			{
+				iValue = iMinValue;
+			}
+		}
+
+		if (!isHuman())
+		{
+			iValue /= 2;
+		}
+	}
+
+	if (isHuman() && !GET_PLAYER(ePlayer).isHuman())
+	{
+		int iOwnValue = AI_bonusEffectVal(eBonus, 1, true) / 10;
+		if (iValue < iOwnValue)
+		{
+			iValue = iOwnValue;
+		}
+	}
+
+	if (GET_PLAYER(ePlayer).AI_corporationBonusVal(eBonus) > 0)
+	{
+		iValue *= 3;
+		iValue /= 2;
+	}
 
 	// Leoreth: bonuses mostly affect a set number of cities now, so no scaling by empire size required
 	//iValue *= ((std::min(getNumCities(), GET_PLAYER(ePlayer).getNumCities()) + 3) * 30);
@@ -7643,11 +7689,12 @@ DenialTypes CvPlayerAI::AI_bonusTrade(BonusTypes eBonus, PlayerTypes ePlayer) co
 {
 	PROFILE_FUNC();
 
-	AttitudeTypes eAttitude;
 	bool bStrategic;
 	int iI, iJ;
 
 	FAssertMsg(ePlayer != getID(), "shouldn't call this function on ourselves");
+
+	AttitudeTypes eAttitude = AI_getAttitude(ePlayer);
 
 	if (isHuman() && GET_PLAYER(ePlayer).isHuman())
 	{
@@ -7689,59 +7736,33 @@ DenialTypes CvPlayerAI::AI_bonusTrade(BonusTypes eBonus, PlayerTypes ePlayer) co
 		return DENIAL_JOKING;
 	}*/
 
-	if (GET_PLAYER(ePlayer).AI_corporationBonusVal(eBonus) > AI_corporationBonusVal(eBonus) * 2)
+	if (GET_PLAYER(ePlayer).AI_corporationBonusVal(eBonus) > AI_corporationBonusVal(eBonus) &&
+		eAttitude <= GC.getLeaderHeadInfo(getPersonalityType()).getStrategicBonusRefuseAttitudeThreshold())
 	{
 		return DENIAL_JOKING;
 	}
 
-	bStrategic = false;
-
-	for (iI = 0; iI < GC.getNumUnitInfos(); iI++)
+	if (GET_PLAYER(ePlayer).getNumAvailableBonuses(eBonus) > 0
+		&& AI_corporationBonusVal(eBonus) > 0
+		&& GET_PLAYER(ePlayer).AI_corporationBonusVal(eBonus) <= 0)
 	{
-		if (GC.getUnitInfo((UnitTypes) iI).getPrereqAndBonus() == eBonus)
-		{
-			bStrategic = true;
-		}
-
-		for (iJ = 0; iJ < GC.getNUM_UNIT_PREREQ_OR_BONUSES(); iJ++)
-		{
-			if (GC.getUnitInfo((UnitTypes) iI).getPrereqOrBonuses(iJ) == eBonus)
-			{
-				bStrategic = true;
-			}
-		}
+		return DENIAL_JOKING;
 	}
 
-	for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
+	if (AI_isStrategicBonus(eBonus))
 	{
-		if (GC.getBuildingInfo((BuildingTypes) iI).getPrereqAndBonus() == eBonus)
-		{
-			bStrategic = true;
-		}
-
-		for (iJ = 0; iJ < GC.getNUM_BUILDING_PREREQ_OR_BONUSES(); iJ++)
-		{
-			if (GC.getBuildingInfo((BuildingTypes) iI).getPrereqOrBonuses(iJ) == eBonus)
-			{
-				bStrategic = true;
-			}
-		}
-	}
-
-	if (bStrategic)
-	{
-		if (AI_bonusVal(eBonus, -1) == 0)
+		if (GET_PLAYER(ePlayer).getNumAvailableBonuses(eBonus) > 0
+			&& GET_PLAYER(ePlayer).AI_corporationBonusVal(eBonus) <= 0
+			&& GET_PLAYER(ePlayer).AI_bonusEffectVal(eBonus, 1) <= 0)
 		{
 			return DENIAL_JOKING;
 		}
-	}
 
-	// XXX marble and stone???
+		if (getNumAvailableBonuses(eBonus) <= 1)
+		{
+			return DENIAL_JOKING;
+		}
 
-	eAttitude = AI_getAttitude(ePlayer);
-
-	if (bStrategic)
-	{
 		if (eAttitude <= GC.getLeaderHeadInfo(getPersonalityType()).getStrategicBonusRefuseAttitudeThreshold())
 		{
 			return DENIAL_ATTITUDE;
@@ -7939,9 +7960,9 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 					return DENIAL_UNKNOWN;
 				}
 
-				if (!pCity->isPreviousOwner(getID()))
+				if (!pCity->isPreviousOwner(ePlayer))
 				{
-					if (pCity->plot()->getSettlerValue(getID()) == 0 && pCity->plot()->getWarValue(getID()) == 0)
+					if (pCity->plot()->getSettlerValue(ePlayer) == 0 && pCity->plot()->getWarValue(ePlayer) == 0)
 					{
 						return DENIAL_UNKNOWN;
 					}
@@ -8889,13 +8910,15 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 		break;
 
 	case UNITAI_WORKER:
-		for (iI = 0; iI < GC.getNumBuildInfos(); iI++)
+		/*for (iI = 0; iI < GC.getNumBuildInfos(); iI++)
 		{
 			if (GC.getUnitInfo(eUnit).getBuilds(iI))
 			{
 				iValue += 50;
 			}
-		}
+		}*/
+		// Leoreth: disregard builds and focus on work rate
+		iValue += GC.getUnitInfo(eUnit).getWorkRate() * 2;
 		iValue += (GC.getUnitInfo(eUnit).getMoves() * 100);
 		break;
 
@@ -10628,7 +10651,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 
 		for (iJ = 0; iJ < GC.getNumImprovementInfos(); iJ++)
 		{
-			iTempValue += ((GC.getImprovementInfo((ImprovementTypes)iJ).getYieldChange(YIELD_FOOD) > 0 ? 2 : 1) * AI_averageYieldMultiplier((YieldTypes)iI) * (kCivic.getImprovementYieldChanges(iJ, iI) * (getImprovementCount((ImprovementTypes)iJ) /*+ getNumCities() * 2*/))) / 100;
+			iTempValue += ((GC.getImprovementInfo((ImprovementTypes)iJ).getYieldChange(YIELD_FOOD) > 0 ? 2 : 1) * AI_averageYieldMultiplier((YieldTypes)iI) * (100 + GC.getLeaderHeadInfo(getPersonalityType()).getImprovementWeightModifier((ImprovementTypes)iJ)) * (kCivic.getImprovementYieldChanges(iJ, iI) * (getImprovementCount((ImprovementTypes)iJ) /*+ getNumCities() * 2*/))) / 10000;
 		}
 
 		// Leoreth: specialist specific yield changes
@@ -18668,6 +18691,21 @@ int CvPlayerAI::AI_getMinFoundValue() const
 	}
 
 	return iValue;
+}
+
+bool CvPlayerAI::AI_canUpdateCitySites() const
+{
+	CvPlot* pCitySitePlot;
+	for (int iI = 0; iI < AI_getNumCitySites(); iI++)
+	{
+		pCitySitePlot = AI_getCitySite(iI);
+		if (AI_plotTargetMissionAIs(pCitySitePlot, MISSIONAI_FOUND) > 0 && canFound(pCitySitePlot->getX(), pCitySitePlot->getY()))
+		{
+			return false;
+		}
+	}
+
+	return true;
 }
 
 void CvPlayerAI::AI_updateCitySites(int iMinFoundValueThreshold, int iMaxSites) const

@@ -179,6 +179,14 @@ def giftedCityDefenders(city):
 		iNumDefenders = max(2, 1 + player(city).getCurrentEra() / 2)
 		createGarrisons(city, city.getOwner(), iNumDefenders)
 
+@handler("cityLiberated")
+def liberatedCityDefenders(city):
+	if not is_minor(city):
+		return
+
+	iNumDefenders = 1 + (game.getCurrentEra() + 1) / 2
+	ensureDefenders(city.getOwner(), city, iNumDefenders)
+
 ### GOODY RECEIVED ###
 @handler("goodyReceived")
 # Assimilation Civic
@@ -534,7 +542,7 @@ def isBribableUnit(iPlayer, unit):
 
 def getPossibleBribes(iPlayer, location):
 	iTreasury = player(iPlayer).getGold()
-	targets = [(unit, infos.unit(unit).getProductionCost() * 3 / 2) for unit in units.at(location).owner(iIndigenous)]	# MacAurther: Can bribe indigenous instead of Barbs
+	targets = [(unit, scale(infos.unit(unit).getProductionCost()) * 3 / 2) for unit in units.at(location).owner(iIndigenous)]	# MacAurther: Can bribe indigenous instead of Barbs
 	print("Targets: " + str(targets))
 	return [(unit, iCost) for unit, iCost in targets if isBribableUnit(iPlayer, unit) and iCost <= iTreasury]
 

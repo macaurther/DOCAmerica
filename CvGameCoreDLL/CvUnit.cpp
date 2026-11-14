@@ -547,7 +547,7 @@ void CvUnit::convert(CvUnit* pUnit)
 */
 		// From Mongoose SDK
 		// Check cargo types and capacity when upgrading transports
-		if (cargoSpaceAvailable(aCargoUnits[i]->getSpecialUnitType(), aCargoUnits[i]->getDomainType()) > 0)
+		if (AI_getUnitAIType() != UNITAI_EXPLORE_SEA && cargoSpaceAvailable(aCargoUnits[i]->getSpecialUnitType(), aCargoUnits[i]->getDomainType()) > 0)
 		{
 			aCargoUnits[i]->setTransportUnit(this);
 		}
@@ -5099,6 +5099,9 @@ bool CvUnit::pillage()
 			//Rhye - end UP
 
 
+			iPillageGold *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getResearchPercent();
+			iPillageGold /= 100;
+
 			if (iPillageGold > 0)
 			{
 				GET_PLAYER(getOwnerINLINE()).changeGold(iPillageGold);
@@ -7775,12 +7778,14 @@ bool CvUnit::upgradeAvailable(UnitTypes eFromUnit, UnitClassTypes eToUnitClass, 
 
 bool CvUnit::canUpgrade(UnitTypes eUnit, bool bTestVisible) const
 {
+
+
 	if (eUnit == NO_UNIT)
 	{
 		return false;
 	}
 
-	if(!isReadyForUpgrade())
+	if (!isReadyForUpgrade())
 	{
 		return false;
 	}
@@ -8014,7 +8019,7 @@ CvCity* CvUnit::getUpgradeCity(UnitTypes eUnit, bool bSearch, int* iSearchValue)
 	else
 	{
 		// find the closest city
-		CvCity* pClosestCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), NO_PLAYER, getTeam(), true, bCoastalOnly);
+		CvCity* pClosestCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), NO_PLAYER, getTeam(), false, bCoastalOnly);
 		if (pClosestCity != NULL)
 		{
 			// if we can train, then return this city (otherwise it will return NULL)
@@ -8054,7 +8059,7 @@ void CvUnit::upgrade(UnitTypes eUnit)
 	UnitAITypes eUnitAIType = AI_getUnitAIType();
 
 	// Leoreth: make sure that upgrading to sea explore units actually makes a sea explore unit
-	if (GC.getUnitInfo(eUnit).getDefaultUnitAIType() == UNITAI_EXPLORE_SEA)
+	if (!isHuman() && GC.getUnitInfo(eUnit).getDefaultUnitAIType() == UNITAI_EXPLORE_SEA && GET_PLAYER(getOwnerINLINE()).AI_totalUnitAIs(UNITAI_EXPLORE_SEA) == 0)
 	{
 		eUnitAIType = UNITAI_EXPLORE_SEA;
 	}

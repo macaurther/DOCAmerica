@@ -24,13 +24,11 @@ def getTechPreferences(iPlayer):
 	dPreferences = defaultdict({}, 0)
 	iCivilization = civ(iPlayer)
 	
-	if iCivilization not in dTechPreferences:
-		return dPreferences
 		
-	for iTech, iValue in dTechPreferences[iCivilization].items():
+	for iTech, iValue in dTechPreferences.get(iCivilization, {}).items():
 		dPreferences[iTech] = iValue
 		
-	for iTech, iValue in dTechPreferences[iCivilization].items():
+	for iTech, iValue in dTechPreferences.get(iCivilization, {}).items():
 		for i in range(4):
 			iOrPrereq = infos.tech(iTech).getPrereqOrTechs(i)
 			iAndPrereq = infos.tech(iTech).getPrereqAndTechs(i)
@@ -40,6 +38,19 @@ def getTechPreferences(iPlayer):
 			updatePrereqPreference(dPreferences, iOrPrereq, iValue)
 			updatePrereqPreference(dPreferences, iAndPrereq, iValue)
 	
+	for iBuilding, iValue in dBuildingPreferences.get(iCivilization, {}).items():
+		if iValue <= 0:
+			continue
+
+		iTech = infos.building(iBuilding).getPrereqAndTech()
+		if iTech >= 0:
+			dPreferences[iTech] += max(iValue, 50) / 2
+
+		for i in range(4):
+			iTech = infos.building(iBuilding).getPrereqAndTechs(i)
+			if iTech >= 0:
+				dPreferences[iTech] += max(iValue, 50) / 3
+
 	return dPreferences
 	
 def updatePrereqPreference(dPreferences, iPrereqTech, iValue):

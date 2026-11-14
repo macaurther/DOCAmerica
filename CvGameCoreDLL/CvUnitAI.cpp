@@ -4347,14 +4347,7 @@ void CvUnitAI::AI_ICBMMove()
 //		}
 //	}
 
-	if (airRange() > 0)
-	{
-		if (AI_nukeRange(airRange()))
-		{
-			return;
-		}
-	}
-	else if (AI_nuke())
+	if (AI_nuke())
 	{
 		return;
 	}
@@ -5433,8 +5426,7 @@ void CvUnitAI::AI_settlerSeaMove()
 	int iSettlerCount = getUnitAICargo(UNITAI_SETTLE);
 	int iWorkerCount = getUnitAICargo(UNITAI_WORKER);
 
-	if ((iSettlerCount > 0) && (isFull() ||
-			 (GET_PLAYER(getOwnerINLINE()).AI_unitTargetMissionAIs(this, MISSIONAI_LOAD_SETTLER) == 0)))
+	if ((iSettlerCount > 0) && (isFull() || (GET_PLAYER(getOwnerINLINE()).AI_unitTargetMissionAIs(this, MISSIONAI_LOAD_SETTLER) == 0)))
 	{
 		if (AI_settlerSeaTransport())
 		{
@@ -5449,30 +5441,7 @@ void CvUnitAI::AI_settlerSeaMove()
 		}
 	}
 
-	if (plot()->isCity() && !hasCargo())
-	{
-		AreaAITypes eAreaAI = area()->getAreaAIType(getTeam());
-		if ((eAreaAI == AREAAI_ASSAULT) || (eAreaAI == AREAAI_ASSAULT_MASSING))
-		{
-			CvArea* pWaterArea = plot()->waterArea();
-			FAssert(pWaterArea != NULL);
-			if (pWaterArea != NULL)
-			{
-				if (GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_SETTLER_SEA) > 1)
-				{
-					if (GET_PLAYER(getOwnerINLINE()).AI_unitValue(getUnitType(), UNITAI_ASSAULT_SEA, pWaterArea) > 0)
-					{
-						AI_setUnitAIType(UNITAI_ASSAULT_SEA);
-						AI_assaultSeaMove();
-						return;
-					}
-				}
-			}
-		}
-	}
-
-	if ((iWorkerCount > 0)
-		&& GET_PLAYER(getOwnerINLINE()).AI_unitTargetMissionAIs(this, MISSIONAI_LOAD_SETTLER) == 0)
+	if ((iWorkerCount > 0) && GET_PLAYER(getOwnerINLINE()).AI_unitTargetMissionAIs(this, MISSIONAI_LOAD_SETTLER) == 0)
 	{
 		if (isFull() || (iSettlerCount == 0))
 		{
@@ -5480,6 +5449,15 @@ void CvUnitAI::AI_settlerSeaMove()
 			{
 				return;
 			}
+		}
+	}
+
+	// Leoreth: if we have a settler, pick up a worker - but only if enough space for a defender
+	if (iSettlerCount > 0 && iWorkerCount == 0 && cargoSpaceAvailable() > 1)
+	{
+		if (AI_pickup(UNITAI_WORKER))
+		{
+			return;
 		}
 	}
 
@@ -5513,10 +5491,33 @@ void CvUnitAI::AI_settlerSeaMove()
 			}
 		}
 	}
-
 	if (AI_pickup(UNITAI_WORKER))
 	{
 		return;
+	}
+
+	if (plot()->isCity() && !hasCargo())
+	{
+		AreaAITypes eAreaAI = area()->getAreaAIType(getTeam());
+		if ((eAreaAI == AREAAI_ASSAULT) || (eAreaAI == AREAAI_ASSAULT_MASSING))
+		{
+			CvArea* pWaterArea = plot()->waterArea();
+			FAssert(pWaterArea != NULL);
+			if (pWaterArea != NULL)
+			{
+				int iSettlerSeaNeeded = std::max(1, GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_SETTLE));
+
+				if (GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_SETTLER_SEA) > iSettlerSeaNeeded)
+				{
+					if (GET_PLAYER(getOwnerINLINE()).AI_unitValue(getUnitType(), UNITAI_ASSAULT_SEA, pWaterArea) > 0)
+					{
+						AI_setUnitAIType(UNITAI_ASSAULT_SEA);
+						AI_assaultSeaMove();
+						return;
+					}
+				}
+			}
+		}
 	}
 
 	if (AI_retreatToCity(true))
@@ -8065,6 +8066,9 @@ bool CvUnitAI::AI_guardCity(bool bLeave, bool bSearch, int iMaxPath)
 
 			if (pEjectedUnit != NULL)
 			{
+				// Leoreth: this unit should become a defender
+				pEjectedUnit->AI_setUnitAIType(UNITAI_CITY_DEFENSE);
+
 				pEjectedUnit->getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, MISSIONAI_GUARD_CITY, NULL);
 				if (pEjectedUnit->getGroup() == pOldGroup || pEjectedUnit == this)
 				{
@@ -16996,127 +17000,6 @@ CvCity* CvUnitAI::AI_offensiveSatelliteTarget() const
 }
 
 
-bool CvUnitAI::AI_nukeRange(int iRange)
-{
-	CvPlot* pBestPlot = NULL;
-	int iBestValue = 0;
-	for (int iDX = -(iRange); iDX <= iRange; iDX++)
-	{
-		for (int iDY = -(iRange); iDY <= iRange; iDY++)
-		{
-			CvPlot* pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
-
-			if (pLoopPlot != NULL)
-			{
-				if (canNukeAt(plot(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()))
-				{
-					int iValue = -99;
-
-					for (int iDX2 = -(nukeRange()); iDX2 <= nukeRange(); iDX2++)
-					{
-						for (int iDY2 = -(nukeRange()); iDY2 <= nukeRange(); iDY2++)
-						{
-							CvPlot* pLoopPlot2 = plotXY(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), iDX2, iDY2);
-
-							if (pLoopPlot2 != NULL)
-							{
-								int iEnemyCount = 0;
-								int iTeamCount = 0;
-								int iNeutralCount = 0;
-								int iDamagedEnemyCount = 0;
-
-								CLLNode<IDInfo>* pUnitNode;
-								CvUnit* pLoopUnit;
-								pUnitNode = pLoopPlot2->headUnitNode();
-								while (pUnitNode != NULL)
-								{
-									pLoopUnit = ::getUnit(pUnitNode->m_data);
-									pUnitNode = pLoopPlot2->nextUnitNode(pUnitNode);
-
-									if (!pLoopUnit->isNukeImmune())
-									{
-										if (pLoopUnit->getTeam() == getTeam())
-										{
-											iTeamCount++;
-										}
-										else if (!pLoopUnit->isInvisible(getTeam(), false))
-										{
-											if (isEnemy(pLoopUnit->getTeam()))
-											{
-												iEnemyCount++;
-												if (pLoopUnit->getDamage() * 2 > pLoopUnit->maxHitPoints())
-												{
-													iDamagedEnemyCount++;
-												}
-											}
-											else
-											{
-												iNeutralCount++;
-											}
-										}
-									}
-								}
-
-								iValue += (iEnemyCount + iDamagedEnemyCount) * (pLoopPlot2->isWater() ? 25 : 12);
-								iValue -= iTeamCount * 15;
-								iValue -= iNeutralCount * 20;
-
-
-								int iMultiplier = 1;
-								if (pLoopPlot2->getTeam() == getTeam())
-								{
-									iMultiplier = -2;
-								}
-								else if (isEnemy(pLoopPlot2->getTeam()))
-								{
-									iMultiplier = 1;
-								}
-								else if (!pLoopPlot2->isOwned())
-								{
-									iMultiplier = 0;
-								}
-								else
-								{
-									iMultiplier = -10;
-								}
-
-								if (pLoopPlot2->getImprovementType() != NO_IMPROVEMENT)
-								{
-									iValue += iMultiplier * 10;
-								}
-
-								if (pLoopPlot2->getBonusType() != NO_BONUS)
-								{
-									iValue += iMultiplier * 20;
-								}
-
-								if (pLoopPlot2->isCity())
-								{
-									iValue += std::max(0, iMultiplier * (-20 + 15 * pLoopPlot2->getPlotCity()->getPopulation()));
-								}
-							}
-						}
-					}
-
-					if (iValue > iBestValue)
-					{
-						iBestValue = iValue;
-						pBestPlot = pLoopPlot;
-					}
-				}
-			}
-		}
-	}
-
-	if (pBestPlot != NULL)
-	{
-		getGroup()->pushMission(MISSION_NUKE, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE());
-		return true;
-	}
-
-	return false;
-}
-
 bool CvUnitAI::AI_trade(int iValueThreshold)
 {
 	CvCity* pLoopCity;
@@ -18542,7 +18425,7 @@ bool CvUnitAI::AI_choke(int iRange)
 			CvPlot* pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iX, iY);
 			if (pLoopPlot != NULL)
 			{
-				if (isEnemy(pLoopPlot->getTeam()))
+				if (pLoopPlot->isWater() == plot()->isWater() && pLoopPlot->isOwned() && !GET_PLAYER(pLoopPlot->getOwner()).isMinorCiv() && isEnemy(pLoopPlot->getTeam()))
 				{
 					CvCity* pWorkingCity = pLoopPlot->getWorkingCity();
 					if ((pWorkingCity != NULL) && (pWorkingCity->getTeam() == pLoopPlot->getTeam()))
