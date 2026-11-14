@@ -71,6 +71,7 @@ BeginPlot
 		CityPopulation=2
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SMOKEHOUSE
+		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=15
 		EndCulture
@@ -134,6 +135,7 @@ BeginPlot
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SMOKEHOUSE
 		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
+		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=20
 		EndCulture
@@ -3808,7 +3810,7 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
-		CityName=Rio de Janiero
+		CityName=Rio de Janeiro
 		CityPopulation=6
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_TANNERY
