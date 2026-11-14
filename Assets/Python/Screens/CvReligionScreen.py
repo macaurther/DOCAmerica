@@ -320,8 +320,11 @@ class CvReligionScreen:
 				iMonastery[iReligion] = cities.owner(self.iActivePlayer).count(lambda city: city.isHasRealBuilding(monastery(iReligion)))
 
 				iMissionary = missionary(iReligion)
-				iMissionaries_Active[iReligion] = player(self.iActivePlayer).getUnitClassCount(infos.unit(iMissionary).getUnitClassType())
-				iMissionaries_Construct[iReligion] = player(self.iActivePlayer).getUnitClassMaking(infos.unit(iMissionary).getUnitClassType())
+				# MacAurther: Some religions have no missionary unit.
+				if iMissionary is not None:
+					iUnitClass = infos.unit(iMissionary).getUnitClassType()
+					iMissionaries_Active[iReligion] = player(self.iActivePlayer).getUnitClassCount(iUnitClass)
+					iMissionaries_Construct[iReligion] = player(self.iActivePlayer).getUnitClassMaking(iUnitClass)
 
 			# number of cities...
 			iY = self.Y_INFLUENCE + 20
