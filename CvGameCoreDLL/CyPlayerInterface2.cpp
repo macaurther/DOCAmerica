@@ -149,6 +149,7 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		.def("AI_unitUpdate", &CyPlayer::AI_unitUpdate, "void ()")
 		.def("separateAttackCitySelectionGroups", &CyPlayer::separateAttackCitySelectionGroups, "void ()")
 		.def("getModifiedCommerceRate", &CyPlayer::getModifiedCommerceRate, "int (CommerceTypes eCommerce)")
+		.def("getReligionEffectModifier", &CyPlayer::getReligionEffectModifier, "int (int eReligion)")
 		.def("canBuySlaves", &CyPlayer::canBuySlaves, "bool ()")
 		.def("isUnitCombatFoodProduction", &CyPlayer::isUnitCombatFoodProduction, "bool (int eUnitCombat)")
 

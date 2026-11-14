@@ -325,4 +325,28 @@
 		<Italian>The [COLOR_BUILDING_TEXT]Supreme Court[COLOR_REVERT] greatly increases a city's espionage rate and provides a free [COLOR_BUILDING_TEXT]Jail[COLOR_REVERT] in every city. It also allows you to hire three [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</Italian>
 		<Spanish>The [COLOR_BUILDING_TEXT]Supreme Court[COLOR_REVERT] greatly increases a city's espionage rate and provides a free [COLOR_BUILDING_TEXT]Jail[COLOR_REVERT] in every city. It also allows you to hire three [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SANCTUARY</Tag>
+		<English>Sanctuary</English>
+		<French>Sanctuary</French>
+		<German>Sanctuary</German>
+		<Italian>Sanctuary</Italian>
+		<Spanish>Sanctuary</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SANCTUARY_HELP</Tag>
+		<English>[ICON_BULLET]+1 [ICON_GOLD] from [LINK=literal]Pagan Temple[\LINK]</English>
+		<French>[ICON_BULLET]+1 [ICON_GOLD] from [LINK=literal]Pagan Temple[\LINK]</French>
+		<German>[ICON_BULLET]+1 [ICON_GOLD] from [LINK=literal]Pagan Temple[\LINK]</German>
+		<Italian>[ICON_BULLET]+1 [ICON_GOLD] from [LINK=literal]Pagan Temple[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_GOLD] from [LINK=literal]Pagan Temple[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SANCTUARY_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Sanctuary[COLOR_REVERT] requires Paganism and provides additional gold output from [COLOR_BUILDING_TEXT]Pagan Temples[COLOR_REVERT] as well as an additional [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] slot.</English>
+		<French>The [COLOR_BUILDING_TEXT]Sanctuary[COLOR_REVERT] requires Paganism and provides additional gold output from [COLOR_BUILDING_TEXT]Pagan Temples[COLOR_REVERT] as well as an additional [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] slot.</French>
+		<German>The [COLOR_BUILDING_TEXT]Sanctuary[COLOR_REVERT] requires Paganism and provides additional gold output from [COLOR_BUILDING_TEXT]Pagan Temples[COLOR_REVERT] as well as an additional [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] slot.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Sanctuary[COLOR_REVERT] requires Paganism and provides additional gold output from [COLOR_BUILDING_TEXT]Pagan Temples[COLOR_REVERT] as well as an additional [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] slot.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Sanctuary[COLOR_REVERT] requires Paganism and provides additional gold output from [COLOR_BUILDING_TEXT]Pagan Temples[COLOR_REVERT] as well as an additional [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] slot.</Spanish>
+	</TEXT>
 </Civ4GameText>

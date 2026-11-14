@@ -240,6 +240,7 @@ public:
 /************************************************************************************************/
 /* UNOFFICIAL_PATCH                        END                                                  */
 /************************************************************************************************/
+	int getNumActiveNationalWonders() const;
 
 	int getReligionCount(bool bCountLocalReligions = true) const;																						// Exposed to Python  
 	int getCorporationCount() const;																						// Exposed to Python  
@@ -762,7 +763,7 @@ public:
 // BUG - Specialist Additional Commerce - end
 
 
-	int getReligionCommerce(CommerceTypes eIndex) const;																				// Exposed to Python
+	int getReligionBuildingCommerce(CommerceTypes eIndex) const;																				// Exposed to Python
 	int getReligionCommerceByReligion(CommerceTypes eIndex, ReligionTypes eReligion) const;			// Exposed to Python
 	void updateReligionCommerce(CommerceTypes eIndex);
 	void updateReligionCommerce();
@@ -1212,6 +1213,20 @@ public:
 
 	bool rebuild(EraTypes eEra = NO_ERA);
 
+	int getStateReligionSpecialistCount(ReligionTypes eReligion, SpecialistTypes eSpecialist) const;
+	void setStateReligionSpecialistCount(ReligionTypes eReligion, SpecialistTypes eSpecialist, int iNewValue);
+	void changeStateReligionSpecialistCount(ReligionTypes eReligion, SpecialistTypes eSpecialist, int iChange);
+
+	int getStateReligionCommerceRateModifier(ReligionTypes eReligion, CommerceTypes eCommerce) const;
+	void setStateReligionCommerceRateModifier(ReligionTypes eReligion, CommerceTypes eCommerce, int iNewValue);
+	void changeStateReligionCommerceRateModifier(ReligionTypes eReligion, CommerceTypes eCommerce, int iChange);
+
+	int getReligionTradeRouteModifier(ReligionTypes eReligion) const;
+	void changeReligionTradeRouteModifier(ReligionTypes eReligion, int iChange);
+
+	bool isStateReligionEffect(ReligionTypes eReligion) const;
+	int getReligionEffectModifier(ReligionTypes eReligion) const;
+
 	DllExport int getMusicScriptId() const;
 	DllExport int getSoundscapeScriptId() const;
 	DllExport void cheat(bool bCtrl, bool bAlt, bool bShift);
@@ -1456,7 +1471,7 @@ protected:
 	int* m_aiProductionToCommerceModifier;
 	int* m_aiBuildingCommerce;
 	int* m_aiSpecialistCommerce;
-	int* m_aiReligionCommerce;
+	int* m_aiReligionBuildingCommerce;
 	int* m_aiCorporationCommerce;
 	int* m_aiCommerceRateModifier;
 	int* m_aiPowerCommerceRateModifier; // Leoreth
@@ -1502,6 +1517,7 @@ protected:
 	int* m_paiImprovementHappinessPercentChange; // Leoreth
 	int* m_paiReligionInfluence;
 	int* m_paiStateReligionHappiness;
+	int* m_paiReligionTradeRouteModifier; // Leoreth
 	int* m_paiUnitCombatFreeExperience;
 	int* m_paiFreePromotionCount;
 	int* m_paiNumRealBuilding;
@@ -1514,6 +1530,8 @@ protected:
 
 	// Leoreth
 	int** m_ppaiBonusYield;
+	int** m_ppaiStateReligionSpecialistCount;
+	int** m_ppaiStateReligionCommerceRateModifier;
 
 	IDInfo* m_paTradeCities;
 

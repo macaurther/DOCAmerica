@@ -735,7 +735,7 @@ iNumBonusVarieties = 10
 (iDyeCochineal, iSpicesVanilla, iGemsTurquoise, iGemsDiamonds,	iGemsEmeralds,	iSheepBlack,	iCowBrown,		iPigFurry,		iCitrusOranges, iCrabShrimp) = range(iNumBonuses, iNumBonuses + iNumBonusVarieties)
 
 # Buildings
-iNumBuildings = 212
+iNumBuildings = 227
 # Buildings (117)
 # 0				1				2				3				4				5				6				7				8				9
 (iPalace,		iZapotecPalace,	iChieftansHut,	iGovernorsMansion,iCapitol,		iGranary,		iQollqa,		iSmokehouse,	iLuau,			iTipi,			
@@ -750,11 +750,18 @@ iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iRefrigerationPlant,i
 iWoolMill,		iSteelMill,		iRefinery,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		iNewspaper,		iSupermarket,	iHospital,		
 iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,iFactory,		iMaquiladora,	iCoalPlant,		iHydroPlant,	
 iIndustrialPark,iNuclearPlant,	iPark,			iStadium,		iBunker,		iLaboratory,	iBroadcastTower,
-# Religious Buildings (29)
-# 0				1				2				3				4				5				6				7				8				9
-iJewishTemple, iJewishCathedral,iJewishMonastery,iJewishShrine, iOrthodoxTemple,iOrthodoxCathedral,iOrthodoxMonastery,iOrthodoxShrine,iCatholicTemple,iCatholicCathedral, 
-iCatholicMonastery,iMission,	iCatholicShrine,iProtestantTemple,iProtestantCathedral,iProtestantMonastery,iProtestantShrine,iIslamicTemple,iIslamicCathedral,iIslamicMonastery, 
-iIslamicShrine, iHinduTemple, 	iHinduCathedral, iHinduMonastery,iHinduShrine, iBuddhistTemple, iBuddhistCathedral,iBuddhistMonastery,iBuddhistShrine,
+# Religious Buildings (43)
+# 0						1						2						3						4						5						6
+iJewishTemple,			iJewishMonastery,		iJewishCathedral,		iJewishReliquary,		iJewishHolySite,		iJewishShrine,
+iOrthodoxTemple,		iOrthodoxMonastery,		iOrthodoxCathedral,		iOrthodoxReliquary,		iOrthodoxHolySite,		iOrthodoxShrine,
+iCatholicTemple,		iCatholicMonastery,		iMission,				iCatholicCathedral,		iCatholicReliquary,		iCatholicHolySite,		iCatholicShrine,
+iProtestantTemple,		iProtestantMonastery,	iProtestantCathedral,	iProtestantReliquary,	iProtestantHolySite,	iProtestantShrine,
+iIslamicTemple,			iIslamicMonastery,		iIslamicCathedral,		iIslamicReliquary,		iIslamicHolySite,		iIslamicShrine,
+iHinduTemple,			iHinduMonastery,		iHinduCathedral,		iHinduReliquary,		iHinduHolySite,			iHinduShrine,
+iBuddhistTemple,		iBuddhistMonastery,		iBuddhistCathedral,		iBuddhistReliquary,		iBuddhistHolySite,		iBuddhistShrine,
+# Pagan national wonder
+# 0
+iSanctuary,
 # Great Buildings (6)
 # 0				1				2				3				4				5				6				7				8				9
 iAcademy, 		iAdministrativeCenter, iManufactory, iArmoury, 	iMuseum, 		iStockExchange, 

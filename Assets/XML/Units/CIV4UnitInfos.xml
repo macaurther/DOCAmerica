@@ -11144,7 +11144,15 @@
 			</GreatPeoples>
 			<Buildings>
 				<Building>
+					<BuildingType>BUILDING_JEWISH_HOLY_SITE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
 					<BuildingType>BUILDING_JEWISH_SHRINE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ORTHODOX_HOLY_SITE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
@@ -11152,7 +11160,15 @@
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
+					<BuildingType>BUILDING_CATHOLIC_HOLY_SITE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
 					<BuildingType>BUILDING_CATHOLIC_SHRINE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_PROTESTANT_HOLY_SITE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
@@ -11160,7 +11176,15 @@
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
+					<BuildingType>BUILDING_ISLAMIC_HOLY_SITE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
 					<BuildingType>BUILDING_ISLAMIC_SHRINE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_HINDU_HOLY_SITE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
@@ -11168,7 +11192,15 @@
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
+					<BuildingType>BUILDING_BUDDHIST_HOLY_SITE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
 					<BuildingType>BUILDING_BUDDHIST_SHRINE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_SANCTUARY</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 			</Buildings>

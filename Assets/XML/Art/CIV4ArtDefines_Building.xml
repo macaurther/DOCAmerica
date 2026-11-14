@@ -368,6 +368,16 @@
 			<Button>,Art/Interface/Buttons/Buildings/Temple_Jewish.dds,Art/Interface/Buttons/Buildings_Atlas.dds,8,14</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_JEWISH_MONASTERY</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>2.25</fScale>
+			<fInterfaceScale>0.71</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Monastery/Jewish/jewish_monastery.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Monastery_Jewish.dds,Art/Interface/Buttons/Buildings_Atlas.dds,6,14</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_JEWISH_CATHEDRAL</Type>
 			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
@@ -378,14 +388,24 @@
 			<Button>,Art/Interface/Buttons/Buildings/Cathedral_Jewish.dds,Art/Interface/Buttons/Buildings_Atlas.dds,5,14</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_JEWISH_MONASTERY</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>1</bAnimated>
-			<fScale>2.25</fScale>
-			<fInterfaceScale>0.71</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Monastery/Jewish/jewish_monastery.nif</NIF>
+			<Type>ART_DEF_BUILDING_JEWISH_RELIQUARY</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>5.0</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Jewish_Reliquary/CyrusTomb.nif</NIF>
 			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Monastery_Jewish.dds,Art/Interface/Buttons/Buildings_Atlas.dds,6,14</Button>
+			<Button>Art/Interface/Buttons/Buildings/JewishReliquary.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_JEWISH_HOLY_SITE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.7</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Holy_Site/jewish.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Holy_Site/jewish_holy_site.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_JEWISH_SHRINE</Type>
@@ -398,44 +418,64 @@
 			<Button>,Art/Interface/Buttons/Buildings/Shrine_Jewish.dds,Art/Interface/Buttons/Buildings_Atlas.dds,7,14</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_PROTESTANT_TEMPLE</Type>
+			<Type>ART_DEF_BUILDING_ORTHODOX_TEMPLE</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.20</fScale>
-			<fInterfaceScale>0.42</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Cathedrals/christian cathedral.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/ProtestantTemple.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_PROTESTANT_CATHEDRAL</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>2.00</fScale>
-			<fInterfaceScale>0.65</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Christian_Cathedral/kathedrale.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/ProtestantCathedral.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_PROTESTANT_MONASTERY</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>1</bAnimated>
-			<fScale>2.63</fScale>
-			<fInterfaceScale>0.44</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Monastery/Christian/christian monastery.nif</NIF>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Orthodox Temple/LavraBelltower.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/ProtestantMonastery.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/orthodox_temple.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_PROTESTANT_SHRINE</Type>
+			<Type>ART_DEF_BUILDING_ORTHODOX_MONASTERY</Type>
+			<LSystem>LSYSTEM_ORTHODOX_MONASTERY</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Orthodox Monastery/christian monastery.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/orthodox_monastery.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ORTHODOX_CATHEDRAL</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.7</fScale>
+			<fInterfaceScale>3.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Orthodox Cathedral/cathedral.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/orthodox_cathedral.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ORTHODOX_RELIQUARY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.4</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Orthodox_Reliquary/LavraBelltower.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/OrthodoxReliquary.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ORTHODOX_HOLY_SITE</Type>
+			<LSystem>LSYSTEM_4x4</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.3</fScale>
+			<fInterfaceScale>0.45</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Christian_Holy_Site/mission5.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Christian_Holy_Site/orthodox_holy_site.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ORTHODOX_SHRINE</Type>
 			<LSystem>LSYSTEM_2x4</LSystem>
-			<bAnimated>1</bAnimated>
-			<fScale>3.0</fScale>
-			<fInterfaceScale>0.3</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/Protestant Shrine/WittenbergChurch.nif</NIF>
+			<bAnimated>0</bAnimated>
+			<fScale>1.31</fScale>
+			<fInterfaceScale>0.48</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Shrine/christian shrine.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/Wittenberg.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/Orthodox_Shrine.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CATHOLIC_TEMPLE</Type>
@@ -448,6 +488,16 @@
 			<Button>Art/Interface/Buttons/Buildings/catholic_temple.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CATHOLIC_MONASTERY</Type>
+			<LSystem>LSYSTEM_2x3</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>2.63</fScale>
+			<fInterfaceScale>0.44</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Monastery/Christian/christian monastery.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/catholic_monastery.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CATHOLIC_CATHEDRAL</Type>
 			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
@@ -458,14 +508,24 @@
 			<Button>Art/Interface/Buttons/Buildings/catholic_cathedral.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_CATHOLIC_MONASTERY</Type>
-			<LSystem>LSYSTEM_2x3</LSystem>
+			<Type>ART_DEF_BUILDING_CATHOLIC_RELIQUARY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
 			<bAnimated>1</bAnimated>
-			<fScale>2.63</fScale>
-			<fInterfaceScale>0.44</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Monastery/Christian/christian monastery.nif</NIF>
+			<fScale>2.0</fScale>
+			<fInterfaceScale>0.45</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Temple/christian/christian temple.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/catholic_monastery.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/CatholicReliquary.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CATHOLIC_HOLY_SITE</Type>
+			<LSystem>LSYSTEM_4x4</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.3</fScale>
+			<fInterfaceScale>0.45</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Christian_Holy_Site/mission.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Christian_Holy_Site/catholic_holy_site.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CATHOLIC_SHRINE</Type>
@@ -478,6 +538,66 @@
 			<Button>Art/Interface/Buttons/Buildings/ApostolicPalace.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_PROTESTANT_TEMPLE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.20</fScale>
+			<fInterfaceScale>0.42</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Cathedrals/christian cathedral.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/ProtestantTemple.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_PROTESTANT_MONASTERY</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>2.63</fScale>
+			<fInterfaceScale>0.44</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Monastery/Christian/christian monastery.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/ProtestantMonastery.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_PROTESTANT_CATHEDRAL</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>2.00</fScale>
+			<fInterfaceScale>0.65</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Christian_Cathedral/kathedrale.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/ProtestantCathedral.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_PROTESTANT_RELIQUARY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>2.0</fScale>
+			<fInterfaceScale>0.45</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Temple/christian/christian temple.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/ProtestantReliquary.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_PROTESTANT_HOLY_SITE</Type>
+			<LSystem>LSYSTEM_4x4</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.3</fScale>
+			<fInterfaceScale>0.45</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Christian_Holy_Site/mission2.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Christian_Holy_Site/protestant_holy_site.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_PROTESTANT_SHRINE</Type>
+			<LSystem>LSYSTEM_2x4</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>3.0</fScale>
+			<fInterfaceScale>0.3</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/Protestant Shrine/WittenbergChurch.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/Wittenberg.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_ISLAMIC_TEMPLE</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>1</bAnimated>
@@ -486,6 +606,16 @@
 			<NIF>Art/Structures/Buildings/Temple/islamic/islamic_temple.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/Temple_Islamic.dds,Art/Interface/Buttons/Buildings_Atlas.dds,4,14</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ISLAMIC_MONASTERY</Type>
+			<LSystem>LSYSTEM_3x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>2.5</fScale>
+			<fInterfaceScale>0.56</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Monastery/Islamic/islamic_monastery.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Monastery_Islamic.dds,Art/Interface/Buttons/Buildings_Atlas.dds,2,14</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_ISLAMIC_CATHEDRAL</Type>
@@ -498,14 +628,24 @@
 			<Button>,Art/Interface/Buttons/Buildings/Cathedral_Islamic.dds,Art/Interface/Buttons/Buildings_Atlas.dds,1,14</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_ISLAMIC_MONASTERY</Type>
-			<LSystem>LSYSTEM_3x1</LSystem>
+			<Type>ART_DEF_BUILDING_ISLAMIC_RELIQUARY</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>1</bAnimated>
-			<fScale>2.5</fScale>
-			<fInterfaceScale>0.56</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Monastery/Islamic/islamic_monastery.nif</NIF>
+			<fScale>2.4</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Islamic_Reliquary/muslim.nif</NIF>
 			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Monastery_Islamic.dds,Art/Interface/Buttons/Buildings_Atlas.dds,2,14</Button>
+			<Button>Art/Interface/Buttons/Buildings/IslamicReliquary.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ISLAMIC_HOLY_SITE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.8</fScale>
+			<fInterfaceScale>0.67</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Islamic_Holy_Site/imamreza.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Islamic_Holy_Site/islamic_holy_site.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_ISLAMIC_SHRINE</Type>
@@ -528,6 +668,16 @@
 			<Button>,Art/Interface/Buttons/Buildings/Temple_Hindu.dds,Art/Interface/Buttons/Buildings_Atlas.dds,8,12</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_HINDU_MONASTERY</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>2.55</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Monastery/Hindu/Hindu_monastery.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Monastery_Hindu.dds,Art/Interface/Buttons/Buildings_Atlas.dds,6,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_HINDU_CATHEDRAL</Type>
 			<LSystem>LSYSTEM_4x4</LSystem>
 			<bAnimated>0</bAnimated>
@@ -538,14 +688,24 @@
 			<Button>,Art/Interface/Buttons/Buildings/Cathedral_Hindu.dds,Art/Interface/Buttons/Buildings_Atlas.dds,5,12</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_HINDU_MONASTERY</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
+			<Type>ART_DEF_BUILDING_HINDU_RELIQUARY</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>1</bAnimated>
-			<fScale>2.55</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Monastery/Hindu/Hindu_monastery.nif</NIF>
+			<fScale>2.0</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Hindu_Reliquary/hindu.nif</NIF>
 			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Monastery_Hindu.dds,Art/Interface/Buttons/Buildings_Atlas.dds,6,12</Button>
+			<Button>Art/Interface/Buttons/Buildings/HinduReliquary.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_HINDU_HOLY_SITE</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>10.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Hindu_Holy_Site/mahabodhi.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/Hindu_Holy_Site.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_HINDU_SHRINE</Type>
@@ -568,6 +728,16 @@
 			<Button>,Art/Interface/Buttons/Buildings/Temple_Buddhist.dds,Art/Interface/Buttons/Buildings_Atlas.dds,4,13</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_BUDDHIST_MONASTERY</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>2.8</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Monastery/Buddhist/Buddhist_monastery.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Monastery_Buddhist.dds,Art/Interface/Buttons/Buildings_Atlas.dds,2,13</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_BUDDHIST_CATHEDRAL</Type>
 			<LSystem>LSYSTEM_4x4</LSystem>
 			<bAnimated>0</bAnimated>
@@ -578,14 +748,24 @@
 			<Button>,Art/Interface/Buttons/Buildings/Cathedral_Buddhist.dds,Art/Interface/Buttons/Buildings_Atlas.dds,1,13</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_BUDDHIST_MONASTERY</Type>
+			<Type>ART_DEF_BUILDING_BUDDHIST_RELIQUARY</Type>
 			<LSystem>LSYSTEM_3x2</LSystem>
-			<bAnimated>1</bAnimated>
-			<fScale>2.8</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Monastery/Buddhist/Buddhist_monastery.nif</NIF>
+			<bAnimated>0</bAnimated>
+			<fScale>2.0</fScale>
+			<fInterfaceScale>0.55</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Shrine/Buddhist_shrine.nif</NIF>
 			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Monastery_Buddhist.dds,Art/Interface/Buttons/Buildings_Atlas.dds,2,13</Button>
+			<Button>Art/Interface/Buttons/Buildings/BuddhistReliquary.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_BUDDHIST_HOLY_SITE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>6.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Buddhist_Holy_Site/buddha.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Buddhist_Holy_Site/BuddhistHolySite.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_BUDDHIST_SHRINE</Type>
@@ -597,6 +777,17 @@
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/Shrine_Buddhist.dds,Art/Interface/Buttons/Buildings_Atlas.dds,3,13</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SANCTUARY</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>2.5</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Olympian_Sanctuary/Necromanteion.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Olympian_Sanctuary/Sanctuary.dds</Button>
+		</BuildingArtInfo>
+
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_NATIONAL_THEATRE</Type>
 			<LSystem>LSYSTEM_3x3</LSystem>
@@ -647,16 +838,7 @@
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/ScotlandYard.dds,Art/Interface/Buttons/Buildings_Atlas.dds,5,11</Button>
 		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_ORTHODOX_SHRINE</Type>
-			<LSystem>LSYSTEM_2x4</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.31</fScale>
-			<fInterfaceScale>0.48</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Shrine/christian shrine.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/Orthodox_Shrine.dds</Button>
-		</BuildingArtInfo>
+
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</Type>
 			<LSystem>LSYSTEM_3x3</LSystem>
@@ -867,36 +1049,7 @@
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Civilizations/Barbarian.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,4,5</Button>
 		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_ORTHODOX_TEMPLE</Type>
-			<LSystem>LSYSTEM_2x2</LSystem>
-			<bAnimated>1</bAnimated>
-			<fScale>1.2</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Orthodox Temple/LavraBelltower.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/orthodox_temple.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_ORTHODOX_CATHEDRAL</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.7</fScale>
-			<fInterfaceScale>3.0</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Orthodox Cathedral/cathedral.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/orthodox_cathedral.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_ORTHODOX_MONASTERY</Type>
-			<LSystem>LSYSTEM_ORTHODOX_MONASTERY</LSystem>
-			<bAnimated>1</bAnimated>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>1.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Orthodox Monastery/christian monastery.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/orthodox_monastery.dds</Button>
-		</BuildingArtInfo>
+
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_FLOATING_GARDENS</Type>
 			<LSystem>LSYSTEM_WATER</LSystem>
@@ -2467,5 +2620,6 @@
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Woodhenge.dds</Button>
 		</BuildingArtInfo>
+
 	</BuildingArtInfos>
 </Civ4ArtDefines>

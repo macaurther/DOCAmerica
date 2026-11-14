@@ -1427,6 +1427,8 @@ public:
 	int getCapitalBuildingProductionModifier() const; // Leoreth
 	int getShrineIncomeLimitChange() const; // Leoreth
 	int getOccupationTimeChange() const; // Leoreth
+	int getStateReligionEffectModifier() const; // Leoreth
+	int getReligiousBuildingCommerceModifier() const; // Leoreth
 
 	bool isMilitaryFoodProduction() const;				// Exposed to Python
 	bool isNoUnhealthyPopulation() const;				// Exposed to Python
@@ -1442,6 +1444,9 @@ public:
 	bool isColonialSlavery() const; // Leoreth
 	bool isFreeImprovementUpgrade() const; // Leoreth
 	bool isNoStateReligionAnarchy() const; // Leoreth
+	bool isOtherReligionEffect() const; // Leoreth
+	bool isAllReligionEffect() const; // Leoreth
+	bool isNoReligiousBuildingExpiration() const; // Leoreth
 
 	std::wstring pyGetWeLoveTheKing() { return getWeLoveTheKing(); }			// Exposed to Python
 	const wchar* getWeLoveTheKing();
@@ -1550,6 +1555,8 @@ protected:
 	int m_iCapitalBuildingProductionModifier; // Leoreth
 	int m_iShrineIncomeLimitChange; // Leoreth
 	int m_iOccupationTimeChange; // Leoreth
+	int m_iStateReligionEffectModifier; // Leoreth
+	int m_iReligiousBuildingCommerceModifier; // Leoreth
 
 	bool m_bMilitaryFoodProduction;
 	bool m_bNoUnhealthyPopulation;
@@ -1565,6 +1572,9 @@ protected:
 	bool m_bColonialSlavery; // Leoreth
 	bool m_bFreeImprovementUpgrade; // Leoreth
 	bool m_bNoStateReligionAnarchy; // Leoreth
+	bool m_bOtherReligionEffect; // Leoreth
+	bool m_bAllReligionEffect; // Leoreth
+	bool m_bNoReligiousBuildingExpiration; // Leoreth
 
 	CvWString m_szWeLoveTheKingKey;
 
@@ -1822,6 +1832,7 @@ public:
 	bool isStateReligion() const;				// Exposed to Python
 	bool isAllowsNukes() const;				// Exposed to Python
 	bool isNoResistance() const; // Leoreth
+	bool isOtherReligionEffect() const; // Leoreth
 
 	// MacAurther: Geographic prerequisites
 	int getPrereqPlotTerrain() const;
@@ -1918,6 +1929,17 @@ public:
 	int getPrereqBuildingClassPercent(int i) const;
 	int getImprovementHappinessPercent(int i) const;
 	int getImprovementHealthPercent(int i) const;
+
+	int getStateReligionSpecialistCount(SpecialistTypes eSpecialist) const;
+	int getStateReligionCommerceRateModifier(CommerceTypes eCommerce) const;
+	int* getStateReligionCommerceRateModifierArray() const;
+
+	int getReligionCommerce(CommerceTypes eCommerce) const;
+	int* getReligionCommerceArray() const;
+
+	int getReligionTradeRouteModifier() const;
+	int getStateReligionEffectModifier() const;
+	int getStateReligionBuildingCommerceModifier() const;
 
 	BuildingClassTypes getBuildingClass() const;
 
@@ -2037,6 +2059,11 @@ protected:
 	int m_iMissionType;
 	int m_iVoteSourceType;
 
+	// Leoreth
+	int m_iReligionTradeRouteModifier;
+	int m_iStateReligionEffectModifier;
+	int m_iStateReligionBuildingCommerceModifier;
+
 	float m_fVisibilityPriority;
 
 	bool m_bTeamShare;
@@ -2062,6 +2089,7 @@ protected:
 	bool m_bStateReligion;
 	bool m_bAllowsNukes;
 	bool m_bNoResistance; // Leoreth
+	bool m_bOtherReligionEffect; // Leoreth
 
 	// MacAurther: Geographic prerequisites
 	int m_iPrereqPlotTerrain;
@@ -2118,6 +2146,9 @@ protected:
 	int* m_piReligionYieldChange;
 	int* m_piImprovementHappinessPercent;
 	int* m_piImprovementHealthPercent;
+	int* m_piStateReligionSpecialistCount;
+	int* m_piStateReligionCommerceModifier;
+	int* m_piReligionCommerce;
 
 	bool* m_pbCommerceFlexible;
 	bool* m_pbCommerceChangeOriginalOwner;

@@ -1459,7 +1459,9 @@ void CvXMLLoadUtility::LoadGlobalClassInfo(std::vector<T*>& aInfos, const char* 
 
 	if (NULL != pArgFunction)
 	{
-		pCache = (gDLL->*pArgFunction)(CvString::format("%s.dat", szFileRoot));	// cache file name
+		// Religion parity changes info layouts and building counts in dependent caches.
+		// Use a mod-specific namespace rather than reading incompatible older cache files.
+		pCache = (gDLL->*pArgFunction)(CvString::format("%s_DOCAmerica_ReligionParity2.dat", szFileRoot));
 
 		if (gDLL->cacheRead(pCache, CvString::format("xml\\\\%s\\\\%s.xml", szFileDirectory, szFileRoot)))
 		{

@@ -100,6 +100,7 @@ CvPlayer::CvPlayer()
 	m_paiUpkeepCount = NULL;
 	m_paiSpecialistValidCount = NULL;
 	m_paiTechPreferences = NULL; // Leoreth
+	m_paiReligionEffectModifier = NULL; // Leoreth
 
 	m_pabResearchingTech = NULL;
 	m_pabLoyalMember = NULL;
@@ -110,6 +111,7 @@ CvPlayer::CvPlayer()
 
 	m_ppaaiSpecialistExtraYield = NULL;
 	m_ppaaiImprovementYieldChange = NULL;
+	m_ppaaiReligionBuildingCommerce = NULL; // Leoreth
 
 	//Rhye (jdog) - start ---------------------
 	CvWString m_szName;
@@ -371,6 +373,7 @@ void CvPlayer::uninit()
 	SAFE_DELETE_ARRAY(m_paiUpkeepCount);
 	SAFE_DELETE_ARRAY(m_paiSpecialistValidCount);
 	SAFE_DELETE_ARRAY(m_paiTechPreferences); // Leoreth
+	SAFE_DELETE_ARRAY(m_paiReligionEffectModifier); // Leoreth
 
 	SAFE_DELETE_ARRAY(m_pabResearchingTech);
 	SAFE_DELETE_ARRAY(m_pabLoyalMember);
@@ -401,6 +404,16 @@ void CvPlayer::uninit()
 			SAFE_DELETE_ARRAY(m_ppaaiImprovementYieldChange[iI]);
 		}
 		SAFE_DELETE_ARRAY(m_ppaaiImprovementYieldChange);
+	}
+
+	// Leoreth
+	if (m_ppaaiReligionBuildingCommerce != NULL)
+	{
+		for (int iI = 0; iI < GC.getNumReligionInfos(); iI++)
+		{
+			SAFE_DELETE_ARRAY(m_ppaaiReligionBuildingCommerce[iI]);
+		}
+		SAFE_DELETE_ARRAY(m_ppaaiReligionBuildingCommerce);
 	}
 
 	m_groupCycle.clear();
@@ -600,6 +613,12 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iExtraPop = 0; // MacAurther
 	m_iGoodyBoost = 0; // MacAurther
 
+	m_iStateReligionEffectModifier = 0;
+	m_iReligiousBuildingCommerceModifier = 0;
+	m_iAllReligionEffectCount = 0;
+	m_iOtherReligionEffectCount = 0;
+	m_iNoReligiousBuildingExpirationCount = 0;
+
 	m_eID = eID;
 	updateTeamType();
 	updateHuman();
@@ -797,9 +816,11 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 
 		FAssertMsg(m_paiHasReligionCount==NULL, "about to leak memory, CvPlayer::m_paiHasReligionCount");
 		m_paiHasReligionCount = new int[GC.getNumReligionInfos()];
-		for (iI = 0;iI < GC.getNumReligionInfos();iI++)
+		m_paiReligionEffectModifier = new int[GC.getNumReligionInfos()];
+		for (iI = 0;iI < GC.getNumReligionInfos(); iI++)
 		{
 			m_paiHasReligionCount[iI] = 0;
+			m_paiReligionEffectModifier[iI] = 0; // Leoreth
 		}
 
 		FAssertMsg(m_paiHasCorporationCount==NULL, "about to leak memory, CvPlayer::m_paiHasReligionCount");
@@ -878,6 +899,18 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 			for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 			{
 				m_ppaaiImprovementYieldChange[iI][iJ] = 0;
+			}
+		}
+
+		// Leoreth
+		FAssertMsg(m_ppaaiReligionBuildingCommerce == NULL, "about to leak memory, CvPlayer::m_ppaaiReligionBuildingCommerce");
+		m_ppaaiReligionBuildingCommerce = new int*[GC.getNumReligionInfos()];
+		for (iI = 0; iI < GC.getNumReligionInfos(); iI++)
+		{
+			m_ppaaiReligionBuildingCommerce[iI] = new int[NUM_COMMERCE_TYPES];
+			for (iJ = 0; iJ < NUM_COMMERCE_TYPES; iJ++)
+			{
+				m_ppaaiReligionBuildingCommerce[iI][iJ] = 0;
 			}
 		}
 
@@ -7237,7 +7270,8 @@ void CvPlayer::processBuilding(BuildingTypes eBuilding, int iChange, CvArea* pAr
 	pArea->changeCleanPowerCount(getTeam(), ((GC.getBuildingInfo(eBuilding).isAreaCleanPower()) ? iChange : 0));
 	pArea->changeBorderObstacleCount(getTeam(), ((GC.getBuildingInfo(eBuilding).isAreaBorderObstacle()) ? iChange : 0));
 	changeNoResistanceCount(GC.getBuildingInfo(eBuilding).isNoResistance() ? iChange : 0);
-
+	changeReligiousBuildingCommerceModifier(GC.getBuildingInfo(eBuilding).getStateReligionBuildingCommerceModifier() * iChange);
+	changeOtherReligionEffectCount(GC.getBuildingInfo(eBuilding).isOtherReligionEffect() ? iChange : 0);
 	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 		changeSeaPlotYield(((YieldTypes)iI), (GC.getBuildingInfo(eBuilding).getGlobalSeaPlotYieldChange(iI) * iChange));
@@ -7271,12 +7305,23 @@ void CvPlayer::processBuilding(BuildingTypes eBuilding, int iChange, CvArea* pAr
 		}
 	}
 
+	ReligionTypes eReligion = (ReligionTypes)GC.getBuildingInfo(eBuilding).getReligionType();
+	if (eReligion != NO_RELIGION)
+	{
+		changeReligionEffectModifier(eReligion, GC.getBuildingInfo(eBuilding).getStateReligionEffectModifier() * iChange);
+
+		for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+		{
+			changeReligionBuildingCommerce(eReligion, (CommerceTypes)iI, GC.getBuildingInfo(eBuilding).getReligionCommerce((CommerceTypes)iI) * iChange);
+		}
+	}
+
 	// Leoreth: special wonder effects
 	CvCity* pLoopCity;
 	int iLoop;
 
 	// Las Lajas Sanctuary
-	if (eBuilding == (BuildingTypes)BUILDING_LAS_LAJAS_SANCTUARY)
+	if (eBuilding == (BuildingTypes)BUILDING_LAS_LAJAS_SANCTUARY || GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == SPECIALBUILDING_SANCTUARY)
 	{
 		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 		{
@@ -7292,6 +7337,10 @@ void CvPlayer::processBuildingForCity(BuildingTypes eBuilding, CvCity* pCity, in
 	if (eBuilding == BUILDING_LAS_LAJAS_SANCTUARY)
 	{
 		pCity->changeHealRate(10 * iChange);
+	}
+	else if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == SPECIALBUILDING_SANCTUARY)
+	{
+		pCity->changeBuildingCommerceChange((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_PAGAN_TEMPLE"), COMMERCE_GOLD, iChange);
 	}
 }
 
@@ -11148,6 +11197,11 @@ void CvPlayer::changeStateReligionCount(int iChange)
 			{
 				updateReligionYieldChange(getLastStateReligion(), (YieldTypes)iI, (isStateReligion() ? 1 : -1) * getReligionYieldChange((YieldTypes)iI));
 			}
+
+			if (getLastStateReligion() != NO_RELIGION)
+			{
+				changeReligionEffectModifier(getLastStateReligion(), (isStateReligion() ? 1 : -1) * getStateReligionEffectModifier());
+			}
 		}
 
 		updateMaintenance();
@@ -12425,6 +12479,16 @@ void CvPlayer::setLastStateReligion(ReligionTypes eNewValue)
 		{
 			updateReligionYieldChange(eOldReligion, (YieldTypes)iI, -getReligionYieldChange((YieldTypes)iI));
 			updateReligionYieldChange(eNewValue, (YieldTypes)iI, getReligionYieldChange((YieldTypes)iI));
+		}
+
+		if (eOldReligion != NO_RELIGION)
+		{
+			changeReligionEffectModifier(eOldReligion, -getStateReligionEffectModifier());
+		}
+
+		if (eNewValue != NO_RELIGION)
+		{
+			changeReligionEffectModifier(eNewValue, getStateReligionEffectModifier());
 		}
 
 		updateMaintenance();
@@ -14228,6 +14292,23 @@ void CvPlayer::changeImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes
 
 		updateYield();
 	}
+}
+
+
+int CvPlayer::getReligionBuildingCommerce(ReligionTypes eReligion, CommerceTypes eCommerce) const
+{
+	return m_ppaaiReligionBuildingCommerce[eReligion][eCommerce];
+}
+
+
+void CvPlayer::changeReligionBuildingCommerce(ReligionTypes eReligion, CommerceTypes eCommerce, int iChange)
+{
+	if (iChange == 0)
+		return;
+
+	m_ppaaiReligionBuildingCommerce[eReligion][eCommerce] += iChange;
+
+	updateCommerce();
 }
 
 
@@ -18530,6 +18611,11 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	changeShrineIncomeLimitChange(GC.getCivicInfo(eCivic).getShrineIncomeLimitChange() * iChange); // Leoreth
 	changeNoStateReligionAnarchyCount(GC.getCivicInfo(eCivic).isNoStateReligionAnarchy() ? iChange : 0); // Leoreth
 	changeOccupationTimeChange(GC.getCivicInfo(eCivic).getOccupationTimeChange() * iChange); // Leoreth
+	changeStateReligionEffectModifier(GC.getCivicInfo(eCivic).getStateReligionEffectModifier() * iChange); // Leoreth
+	changeReligiousBuildingCommerceModifier(GC.getCivicInfo(eCivic).getReligiousBuildingCommerceModifier() * iChange); // Leoreth
+	changeAllReligionEffectCount(GC.getCivicInfo(eCivic).isAllReligionEffect() ? iChange : 0); // Leoreth
+	changeOtherReligionEffectCount(GC.getCivicInfo(eCivic).isOtherReligionEffect() ? iChange : 0); // Leoreth
+	changeNoReligiousBuildingExpirationCount(GC.getCivicInfo(eCivic).isNoReligiousBuildingExpiration() ? iChange : 0); // Leoreth
 
 	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
@@ -18906,6 +18992,11 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iReligiousTolerance);
 
 	pStream->Read(&m_iFreeTechsOnDiscovery);
+	pStream->Read(&m_iStateReligionEffectModifier);
+	pStream->Read(&m_iReligiousBuildingCommerceModifier);
+	pStream->Read(&m_iAllReligionEffectCount);
+	pStream->Read(&m_iOtherReligionEffectCount);
+	pStream->Read(&m_iNoReligiousBuildingExpirationCount);
 
 	pStream->Read((int*)&m_eID);
 	pStream->Read((int*)&m_ePersonalityType);
@@ -18971,6 +19062,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(GC.getNumCivicOptionInfos(), m_paiHasCivicOptionCount);
 	pStream->Read(GC.getNumCivicOptionInfos(), m_paiNoCivicUpkeepCount);
 	pStream->Read(GC.getNumReligionInfos(), m_paiHasReligionCount);
+	pStream->Read(GC.getNumReligionInfos(), m_paiReligionEffectModifier); // Leoreth
 	pStream->Read(GC.getNumCorporationInfos(), m_paiHasCorporationCount);
 	pStream->Read(GC.getNumUpkeepInfos(), m_paiUpkeepCount);
 	pStream->Read(GC.getNumSpecialistInfos(), m_paiSpecialistValidCount);
@@ -18996,6 +19088,11 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	for (iI=0;iI<GC.getNumImprovementInfos();iI++)
 	{
 		pStream->Read(NUM_YIELD_TYPES, m_ppaaiImprovementYieldChange[iI]);
+	}
+
+	for (iI = 0; iI < GC.getNumReligionInfos(); iI++)
+	{
+		pStream->Read(NUM_COMMERCE_TYPES, m_ppaaiReligionBuildingCommerce[iI]);
 	}
 
 	m_groupCycle.Read(pStream);
@@ -19347,6 +19444,11 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iReligiousTolerance);
 
 	pStream->Write(m_iFreeTechsOnDiscovery);
+	pStream->Write(m_iStateReligionEffectModifier);
+	pStream->Write(m_iReligiousBuildingCommerceModifier);
+	pStream->Write(m_iAllReligionEffectCount);
+	pStream->Write(m_iOtherReligionEffectCount);
+	pStream->Write(m_iNoReligiousBuildingExpirationCount);
 
 	pStream->Write(m_eID);
 	pStream->Write(m_ePersonalityType);
@@ -19411,6 +19513,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(GC.getNumCivicOptionInfos(), m_paiHasCivicOptionCount);
 	pStream->Write(GC.getNumCivicOptionInfos(), m_paiNoCivicUpkeepCount);
 	pStream->Write(GC.getNumReligionInfos(), m_paiHasReligionCount);
+	pStream->Write(GC.getNumReligionInfos(), m_paiReligionEffectModifier); // Leoreth
 	pStream->Write(GC.getNumCorporationInfos(), m_paiHasCorporationCount);
 	pStream->Write(GC.getNumUpkeepInfos(), m_paiUpkeepCount);
 	pStream->Write(GC.getNumSpecialistInfos(), m_paiSpecialistValidCount);
@@ -19436,6 +19539,11 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	for (iI=0;iI<GC.getNumImprovementInfos();iI++)
 	{
 		pStream->Write(NUM_YIELD_TYPES, m_ppaaiImprovementYieldChange[iI]);
+	}
+
+	for (iI = 0; iI < GC.getNumReligionInfos(); iI++)
+	{
+		pStream->Write(NUM_COMMERCE_TYPES, m_ppaaiReligionBuildingCommerce[iI]);
 	}
 
 	m_groupCycle.Write(pStream);
@@ -25259,7 +25367,7 @@ bool CvPlayer::isTolerating(ReligionTypes eReligion) const
 ReligionSpreadTypes CvPlayer::getSpreadType(CvPlot* pPlot, ReligionTypes eReligion, bool bDistant, bool bRemove) const
 {
 	bool bStateReligion = getStateReligion() == eReligion;
-	bool bPromoted = bStateReligion || (isTolerating(eReligion) && isStateReligion());
+	//bool bPromoted = bStateReligion || (isTolerating(eReligion) && isStateReligion());
 	int iSpreadFactor = pPlot->getSpreadFactor(eReligion);
 
 	if (!bRemove && !bStateReligion && isNoNonStateReligionSpread()) return RELIGION_SPREAD_NONE;
@@ -25274,14 +25382,14 @@ ReligionSpreadTypes CvPlayer::getSpreadType(CvPlot* pPlot, ReligionTypes eReligi
 	if (iCurrentTurn - iFoundingTurn <= getTurns(GC.getDefineINT("RELIGION_FOUNDING_SPREAD_TURNS")))
 	{
 		if (iSpreadFactor == REGION_SPREAD_CORE) return RELIGION_SPREAD_FAST;
-		if (iSpreadFactor == REGION_SPREAD_HISTORICAL && GC.getReligionInfo(eReligion).isProselytizing() && (bPromoted || getStateReligion() == NO_RELIGION)) return RELIGION_SPREAD_FAST;
+		if (iSpreadFactor == REGION_SPREAD_HISTORICAL && GC.getReligionInfo(eReligion).isProselytizing() && (bStateReligion || getStateReligion() == NO_RELIGION)) return RELIGION_SPREAD_FAST;
 	}
 
 	switch (iSpreadFactor)
 	{
 		case REGION_SPREAD_CORE: return RELIGION_SPREAD_NORMAL;
-		case REGION_SPREAD_HISTORICAL: return bPromoted ? RELIGION_SPREAD_NORMAL : RELIGION_SPREAD_MINORITY;
-		case REGION_SPREAD_PERIPHERY: return bPromoted ? RELIGION_SPREAD_NORMAL : RELIGION_SPREAD_NONE;
+		case REGION_SPREAD_HISTORICAL: return bStateReligion ? RELIGION_SPREAD_NORMAL : RELIGION_SPREAD_MINORITY;
+		case REGION_SPREAD_PERIPHERY: return bStateReligion ? RELIGION_SPREAD_NORMAL : RELIGION_SPREAD_NONE;
 		case REGION_SPREAD_MINORITY: return RELIGION_SPREAD_MINORITY;
 		case REGION_SPREAD_NONE: return bStateReligion ? RELIGION_SPREAD_MINORITY : RELIGION_SPREAD_NONE;
 		default: return RELIGION_SPREAD_NONE;
@@ -25506,6 +25614,95 @@ TechTypes CvPlayer::getFreeTechChosen() const
 void CvPlayer::setFreeTechChosen(TechTypes eNewValue)
 {
 	m_eFreeTechChosen = eNewValue;
+}
+
+int CvPlayer::getStateReligionEffectModifier() const
+{
+	return m_iStateReligionEffectModifier;
+}
+
+void CvPlayer::changeStateReligionEffectModifier(int iChange)
+{
+	if (iChange == 0)
+		return;
+
+	m_iStateReligionEffectModifier += iChange;
+
+	if (getLastStateReligion() != NO_RELIGION)
+	{
+		changeReligionEffectModifier(getLastStateReligion(), iChange);
+	}
+
+	updateCommerce();
+}
+
+int CvPlayer::getReligiousBuildingCommerceModifier() const
+{
+	return m_iReligiousBuildingCommerceModifier;
+}
+
+void CvPlayer::changeReligiousBuildingCommerceModifier(int iChange)
+{
+	m_iReligiousBuildingCommerceModifier += iChange;
+}
+
+int CvPlayer::getAllReligionEffectCount() const
+{
+	return m_iAllReligionEffectCount;
+}
+
+bool CvPlayer::isAllReligionEffect() const
+{
+	return getAllReligionEffectCount() > 0;
+}
+
+void CvPlayer::changeAllReligionEffectCount(int iChange)
+{
+	m_iAllReligionEffectCount += iChange;
+}
+
+int CvPlayer::getOtherReligionEffectCount() const
+{
+	return m_iOtherReligionEffectCount;
+}
+
+bool CvPlayer::isOtherReligionEffect() const
+{
+	return getOtherReligionEffectCount() > 0;
+}
+
+void CvPlayer::changeOtherReligionEffectCount(int iChange)
+{
+	m_iOtherReligionEffectCount += iChange;
+}
+
+int CvPlayer::getNoReligiousBuildingExpirationCount() const
+{
+	return m_iNoReligiousBuildingExpirationCount;
+}
+
+bool CvPlayer::isNoReligiousBuildingExpiration() const
+{
+	return getNoReligiousBuildingExpirationCount() > 0;
+}
+
+void CvPlayer::changeNoReligiousBuildingExpirationCount(int iChange)
+{
+	bool bPrevious = isNoReligiousBuildingExpiration();
+
+	m_iNoReligiousBuildingExpirationCount += iChange;
+
+	if (bPrevious == isNoReligiousBuildingExpiration())
+		return;
+
+	int iObsoleteChange = isNoReligiousBuildingExpiration() ? -1 : 1;
+	for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
+	{
+		if (GC.getBuildingInfo((BuildingTypes)iI).getReligionType() != NO_RELIGION)
+		{
+			GET_TEAM(getTeam()).changeObsoleteBuildingCount((BuildingTypes)iI, iObsoleteChange);
+		}
+	}
 }
 
 bool CvPlayer::canBuySlaves() const
@@ -25956,6 +26153,24 @@ int CvPlayer::getModifiedCommerceRate(CommerceTypes eCommerce) const
 	return getModifiedCommerceRateTimes100(eCommerce) / 100;
 }
 
+int CvPlayer::getReligionEffectModifier(ReligionTypes eReligion) const
+{
+	if (eReligion < 0 || eReligion >= GC.getNumReligionInfos()) return 0;
+	return m_paiReligionEffectModifier[eReligion] + 100;
+}
+
+void CvPlayer::setReligionEffectModifier(ReligionTypes eReligion, int iNewValue)
+{
+	m_paiReligionEffectModifier[eReligion] = iNewValue;
+}
+
+void CvPlayer::changeReligionEffectModifier(ReligionTypes eReligion, int iChange)
+{
+	if (iChange == 0) return;
+	m_paiReligionEffectModifier[eReligion] += iChange;
+	updateCommerce();
+	AI_makeAssignWorkDirty();
+}
 void CvPlayer::killForts()
 {
 	CvPlot* pLoopPlot;

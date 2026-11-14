@@ -2833,3 +2833,8 @@ bool CyPlayer::canBuySlaves() const
 {
 	return m_pPlayer ? m_pPlayer->canBuySlaves() : false;
 }
+
+int CyPlayer::getReligionEffectModifier(int eReligion)
+{
+	return m_pPlayer ? m_pPlayer->getReligionEffectModifier((ReligionTypes)eReligion) : -1;
+}

@@ -27,6 +27,16 @@
 			<Button>Art/Interface/Buttons/Buildings/catholic_temple.dds</Button>
 		</SpecialBuildingInfo>
 		<SpecialBuildingInfo>
+			<Type>SPECIALBUILDING_MONASTERY</Type>
+			<Description>TXT_KEY_SPECIALBUILDING_MONASTERY</Description>
+			<ObsoleteTech>TECH_CIVIL_LIBERTIES</ObsoleteTech>
+			<TechPrereq>TECH_INDOCTRINATION</TechPrereq>
+			<TechPrereqAnyone>NONE</TechPrereqAnyone>
+			<bValid>1</bValid>
+			<ProductionTraits/>
+			<Button>Art/Interface/Buttons/Buildings/catholic_monastery.dds</Button>
+		</SpecialBuildingInfo>
+		<SpecialBuildingInfo>
 			<Type>SPECIALBUILDING_CATHEDRAL</Type>
 			<Description>TXT_KEY_SPECIALBUILDING_CATHEDRAL</Description>
 			<ObsoleteTech>NONE</ObsoleteTech>
@@ -37,14 +47,35 @@
 			<Button>Art/Interface/Buttons/Buildings/Cathedral.dds</Button>
 		</SpecialBuildingInfo>
 		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_MONASTERY</Type>
-			<Description>TXT_KEY_SPECIALBUILDING_MONASTERY</Description>
-			<ObsoleteTech>TECH_CIVIL_LIBERTIES</ObsoleteTech>
+			<Type>SPECIALBUILDING_RELIQUARY</Type>
+			<Description>TXT_KEY_SPECIALBUILDING_RELIQUARY</Description>
+			<ObsoleteTech>TECH_TELEVISION</ObsoleteTech>
+			<TechPrereq>TECH_COMMUNITY</TechPrereq>
+			<TechPrereqAnyone>NONE</TechPrereqAnyone>
+			<bValid>1</bValid>
+			<ProductionTraits />
+			<Button>Art/Interface/Buttons/Buildings/Reliquary.dds</Button>
+		</SpecialBuildingInfo>
+		<SpecialBuildingInfo>
+			<Type>SPECIALBUILDING_HOLY_SITE</Type>
+			<Description>TXT_KEY_SPECIALBUILDING_HOLY_SITE</Description>
+			<ObsoleteTech>TECH_SCIENTIFIC_METHOD</ObsoleteTech>
 			<TechPrereq>TECH_INDOCTRINATION</TechPrereq>
 			<TechPrereqAnyone>NONE</TechPrereqAnyone>
 			<bValid>1</bValid>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/catholic_monastery.dds</Button>
+			<ProductionTraits />
+			<Button>Art/Structures/Buildings/Christian_Holy_Site/catholic_holy_site.dds</Button>
 		</SpecialBuildingInfo>
+		<SpecialBuildingInfo>
+			<Type>SPECIALBUILDING_SANCTUARY</Type>
+			<Description>TXT_KEY_SPECIALBUILDING_SANCTUARY</Description>
+			<ObsoleteTech>TECH_SCIENTIFIC_METHOD</ObsoleteTech>
+			<TechPrereq>TECH_MYTHOLOGY</TechPrereq>
+			<TechPrereqAnyone>NONE</TechPrereqAnyone>
+			<bValid>1</bValid>
+			<ProductionTraits />
+			<Button>Art/Structures/Buildings/Olympian_Sanctuary/Sanctuary.dds</Button>
+		</SpecialBuildingInfo>
+
 	</SpecialBuildingInfos>
 </Civ4SpecialBuildingInfos>

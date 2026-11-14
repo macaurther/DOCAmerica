@@ -3932,8 +3932,8 @@ It is fine for a human player mouse-over (which is what it is used for).
 void createTestFontString(CvWStringBuffer& szString)
 {
 	int iI;
-	szString.assign(L"!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[�]^_`abcdefghijklmnopqrstuvwxyz\n");
-	szString.append(L"{}~\\������������������������������ޟ�������������������������������������������������������");
+	szString.assign(L"!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[?]^_`abcdefghijklmnopqrstuvwxyz\n");
+	szString.append(L"{}~\\??????????????????????????????????????????????????????????????????????????????????????");
 	for (iI=0;iI<NUM_YIELD_TYPES;++iI)
 		szString.append(CvWString::format(L"%c", GC.getYieldInfo((YieldTypes) iI).getChar()));
 
@@ -7740,6 +7740,20 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 		}
 	}
 
+	// State Religion Effect Modifier
+	if (GC.getCivicInfo(eCivic).getStateReligionEffectModifier() != 0)
+	{
+		szHelpText.append(NEWLINE);
+		if (bPlayerContext && GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getStateReligion() != NO_RELIGION)
+		{
+			szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_REL_EFFECT_MODIFIER", GC.getReligionInfo(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getStateReligion()).getChar(), GC.getCivicInfo(eCivic).getStateReligionEffectModifier()));
+		}
+		else
+		{
+			szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_STATE_REL_EFFECT_MODIFIER", GC.getCivicInfo(eCivic).getStateReligionEffectModifier()));
+		}
+	}
+
 	//	State Religion Free Experience
 	if (GC.getCivicInfo(eCivic).getStateReligionFreeExperience() != 0)
 	{
@@ -7753,6 +7767,13 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 			szHelpText.append(NEWLINE);
 			szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_STATE_REL_FREE_XP", GC.getCivicInfo(eCivic).getStateReligionFreeExperience()));
 		}
+	}
+
+	// Religious Building Extra Commerce Modifier
+	if (GC.getCivicInfo(eCivic).getReligiousBuildingCommerceModifier() != 0)
+	{
+		szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_RELIGIOUS_BUILDING_COMMERCE_MODIFIER", GC.getCivicInfo(eCivic).getReligiousBuildingCommerceModifier()));
 	}
 
 	if (GC.getCivicInfo(eCivic).isNoNonStateReligionSpread())
@@ -7790,6 +7811,31 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	{
 		szHelpText.append(NEWLINE);
 		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_SHRINE_INCOME_LIMIT_CHANGE", GC.getCivicInfo(eCivic).getShrineIncomeLimitChange()));
+	}
+
+	if (GC.getCivicInfo(eCivic).isOtherReligionEffect())
+	{
+		szHelpText.append(NEWLINE);
+		if (bPlayerContext && GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getStateReligion() != NO_RELIGION)
+		{
+			szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_OTHER_RELIGION_EFFECT", GC.getReligionInfo(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getStateReligion()).getChar()));
+		}
+		else
+		{
+			szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_OTHER_STATE_RELIGION_EFFECT"));
+		}
+	}
+
+	if (GC.getCivicInfo(eCivic).isAllReligionEffect())
+	{
+		szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_ALL_RELIGION_EFFECT"));
+	}
+
+	if (GC.getCivicInfo(eCivic).isNoReligiousBuildingExpiration())
+	{
+		szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_NO_RELIGIOUS_BUILDING_EXPIRATION"));
 	}
 
 	// State Religion yield change
@@ -9117,10 +9163,34 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 
 	bFirst = true;
 
+	// Leoreth: consolidate Holy Site into its special building
+	for (iI = 0; iI < GC.getNumSpecialBuildingInfos(); ++iI)
+	{
+		for (int iJ = 0; iJ < GC.getNumBuildingInfos(); ++iJ)
+		{
+			if (GC.getBuildingInfo((BuildingTypes)iJ).getSpecialBuildingType() != iI)
+				continue;
+
+			if (GC.getUnitInfo(eUnit).getBuildings(iJ) || GC.getUnitInfo(eUnit).getForceBuildings(iJ))
+			{
+				szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_UNIT_CAN_CONSTRUCT").c_str());
+				CvWString szBuildingLink = CvWString::format(L"<link=%s>%s</link>", GC.getBuildingInfo((BuildingTypes)iJ).getTextKeyWide(), GC.getSpecialBuildingInfo((SpecialBuildingTypes)iI).getDescription());
+				setListHelp(szBuffer, szTempBuffer, szBuildingLink.GetCString(), L", ", bFirst);
+				bFirst = false;
+				break;
+			}
+		}
+	}
+
 	for (iI = 0; iI < GC.getNumBuildingInfos(); ++iI)
 	{
 		if (GC.getUnitInfo(eUnit).getBuildings(iI) || GC.getUnitInfo(eUnit).getForceBuildings(iI))
 		{
+			if (GC.getBuildingInfo((BuildingTypes)iI).isGraphicalOnly())
+				continue;
+			if (GC.getBuildingInfo((BuildingTypes)iI).getSpecialBuildingType() != NO_SPECIALBUILDING)
+				continue;
+
 			szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_UNIT_CAN_CONSTRUCT").c_str());
 			CvWString szBuildingLink = CvWString::format(L"<link=literal>%s</link>", GC.getBuildingInfo((BuildingTypes) iI).getDescription());
 			setListHelp(szBuffer, szTempBuffer, szBuildingLink.GetCString(), L", ", bFirst);
@@ -10512,7 +10582,7 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 	}
 
 	CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
-
+	ReligionTypes eReligion = (ReligionTypes)kBuilding.getReligionType();
 
 	if (pCity != NULL)
 	{
@@ -10896,6 +10966,20 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 	}
 
 	// Leoreth
+	if (kBuilding.isOtherReligionEffect())
+	{
+		szBuffer.append(NEWLINE);
+		if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getStateReligion() != NO_RELIGION)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_OTHER_RELIGION_EFFECT", GC.getReligionInfo(GET_PLAYER(ePlayer).getStateReligion()).getChar()));
+		}
+		else
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_OTHER_STATE_RELIGION_EFFECT"));
+		}
+	}
+
+	// Leoreth
 	if (kBuilding.getBuildingUnhealthModifier() != 0)
 	{
 		szBuffer.append(NEWLINE);
@@ -11124,14 +11208,22 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_HAPPY_CHANGE_ALL_CITIES", abs(kBuilding.getGlobalHappiness()), ((kBuilding.getGlobalHappiness() > 0) ? gDLL->getSymbolID(HAPPY_CHAR) : gDLL->getSymbolID(UNHAPPY_CHAR))));
 	}
 
-	if (kBuilding.getStateReligionHappiness() != 0)
+	if (eReligion != NO_RELIGION)
 	{
-		if (kBuilding.getReligionType() != NO_RELIGION)
+		int iHappiness = kBuilding.getStateReligionHappiness();
+		if (pCity != NULL)
+		{
+			iHappiness *= pCity->getReligionEffectModifier(eReligion);
+			iHappiness /= 100;
+		}
+
+		if (iHappiness != 0)
 		{
 			szBuffer.append(NEWLINE);
-			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_RELIGION_HAPPINESS", abs(kBuilding.getStateReligionHappiness()), ((kBuilding.getStateReligionHappiness() > 0) ? gDLL->getSymbolID(HAPPY_CHAR) : gDLL->getSymbolID(UNHAPPY_CHAR)), GC.getReligionInfo((ReligionTypes)(kBuilding.getReligionType())).getChar()));
+			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_RELIGION_HAPPINESS", abs(iHappiness), ((iHappiness > 0) ? gDLL->getSymbolID(HAPPY_CHAR) : gDLL->getSymbolID(UNHAPPY_CHAR)), GC.getReligionInfo(eReligion).getChar()));
 		}
 	}
+
 /************************************************************************************************/
 /* UNOFFICIAL_PATCH                        END                                                  */
 /************************************************************************************************/
@@ -11194,6 +11286,15 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_FOREIGN_TRADE_ROUTE_MOD", kBuilding.getForeignTradeRouteModifier()));
+	}
+
+	if (kBuilding.getReligionTradeRouteModifier() != 0)
+	{
+		if (eReligion != NO_RELIGION)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_RELIGION_TRADE_ROUTE_MOD", kBuilding.getReligionTradeRouteModifier(), GC.getReligionInfo(eReligion).getChar()));
+		}
 	}
 
 	if (kBuilding.getGlobalPopulationChange() != 0)
@@ -11263,6 +11364,23 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 /************************************************************************************************/
 	}
 
+	// Leoreth
+	if (kBuilding.getStateReligionEffectModifier())
+	{
+		if (eReligion != NO_RELIGION)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_STATE_RELIGION_EFFECT_MODIFIER", kBuilding.getStateReligionEffectModifier(), GC.getReligionInfo(eReligion).getChar()));
+		}
+	}
+
+	// Leoreth
+	if (kBuilding.getStateReligionBuildingCommerceModifier() != 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_STATE_RELIGION_BUILDING_COMMERCE_MODIFIER", kBuilding.getStateReligionBuildingCommerceModifier()));
+	}
+
 	setYieldChangeHelp(szBuffer, gDLL->getText("TXT_KEY_BUILDING_WATER_PLOTS").c_str(), L": ", L"", kBuilding.getSeaPlotYieldChangeArray());
 
 	setYieldChangeHelp(szBuffer, gDLL->getText("TXT_KEY_BUILDING_RIVER_PLOTS").c_str(), L": ", L"", kBuilding.getRiverPlotYieldChangeArray());
@@ -11305,6 +11423,18 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 
 	setCommerceChangeHelp(szBuffer, L"", L"", gDLL->getText(bCleanPower ? "TXT_KEY_BUILDING_WITH_CLEAN_POWER" : "TXT_KEY_BUILDING_WITH_POWER").c_str(), kBuilding.getPowerCommerceModifierArray(), true);
 
+	if (eReligion != NO_RELIGION)
+	{
+		int iEffectModifier = pCity != NULL ? pCity->getReligionEffectModifier(eReligion) : 100;
+		int aiCommerceModifiers[NUM_COMMERCE_TYPES];
+		for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+		{
+			aiCommerceModifiers[iI] = kBuilding.getStateReligionCommerceRateModifier((CommerceTypes)iI) * iEffectModifier / 100;
+		}
+
+		setCommerceChangeHelp(szBuffer, L"", L"", gDLL->getText("TXT_KEY_BUILDING_WITH_STATE_RELIGION", GC.getReligionInfo(eReligion).getChar()).c_str(), aiCommerceModifiers, true);
+	}
+
 	setCommerceChangeHelp(szBuffer, L"", L"", gDLL->getText("TXT_KEY_BUILDING_PER_CULTURE_LEVEL").c_str(), kBuilding.getCultureCommerceModifierArray(), true);
 
 	setYieldChangeHelp(szBuffer, L"", L"", gDLL->getText("TXT_KEY_BUILDING_ALL_CITIES_THIS_CONTINENT").c_str(), kBuilding.getAreaYieldModifierArray(), true);
@@ -11324,6 +11454,11 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 		szTempBuffer = gDLL->getText("TXT_KEY_BUILDING_STATE_REL_BUILDINGS");
 	}
 	setCommerceChangeHelp(szBuffer, L"", L"", szTempBuffer, kBuilding.getStateReligionCommerceArray());
+
+	if (eReligion != NO_RELIGION)
+	{
+		setCommerceChangeHelp(szBuffer, L"", L"", gDLL->getText("TXT_KEY_BUILDING_REL_BUILDINGS", GC.getReligionInfo(eReligion).getChar()).c_str(), kBuilding.getReligionCommerceArray());
+	}
 
 	// Leoreth
 	if (kBuilding.getCultureHappiness() != 0)
@@ -11394,6 +11529,29 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 			{
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZENS_INTO", kBuilding.getSpecialistCount(iI), GC.getSpecialistInfo((SpecialistTypes) iI).getTextKeyWide()));
+			}
+		}
+
+		if (kBuilding.getStateReligionSpecialistCount((SpecialistTypes)iI) > 0)
+		{
+			if (eReligion != NO_RELIGION)
+			{
+				int iSpecialistCount = kBuilding.getStateReligionSpecialistCount((SpecialistTypes)iI);
+				if (pCity != NULL)
+				{
+					iSpecialistCount *= pCity->getReligionEffectModifier(eReligion);
+					iSpecialistCount /= 100;
+				}
+
+				if (iSpecialistCount > 0) szBuffer.append(NEWLINE);
+				if (iSpecialistCount == 1)
+				{
+					szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZEN_INTO_WITH_RELIGION", GC.getSpecialistInfo((SpecialistTypes)iI).getTextKeyWide(), GC.getReligionInfo(eReligion).getChar()));
+				}
+				else if (iSpecialistCount > 1)
+				{
+					szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZENS_INTO_WITH_RELIGION", iSpecialistCount, GC.getSpecialistInfo((SpecialistTypes)iI).getTextKeyWide(), GC.getReligionInfo(eReligion).getChar()));
+				}
 			}
 		}
 
@@ -14318,7 +14476,7 @@ void CvGameTextMgr::setReligionHelpCity(CvWStringBuffer &szBuffer, ReligionTypes
 
 	if (eStateReligion == eReligion || bForceState)
 	{
-		iHappiness = (pCity->getStateReligionHappiness(eReligion) + GET_PLAYER(pCity->getOwnerINLINE()).getStateReligionHappiness());
+		iHappiness = (pCity->getStateReligionHappiness(eReligion) * pCity->getReligionEffectModifier(eReligion) / 100 + GET_PLAYER(pCity->getOwnerINLINE()).getStateReligionHappiness());
 
 		if (iHappiness != 0)
 		{
@@ -17597,7 +17755,7 @@ void CvGameTextMgr::setProductionHelp(CvWStringBuffer &szBuffer, CvCity& city)
 			// Religion
 			if (NO_PLAYER != city.getOwnerINLINE() && NO_RELIGION != GET_PLAYER(city.getOwnerINLINE()).getStateReligion())
 			{
-				if (city.isHasReligion(GET_PLAYER(city.getOwnerINLINE()).getStateReligion()))
+				if (city.isHasReligion(GET_PLAYER(city.getOwnerINLINE()).getStateReligion()) && !isWorldWonderClass((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType()))
 				{
 					int iReligionMod = GET_PLAYER(city.getOwnerINLINE()).getStateReligionBuildingProductionModifier();
 					if (0 != iReligionMod)
@@ -18059,7 +18217,7 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 // BUG - Base Commerce - end
 	}
 
-	int iReligionCommerce = city.getReligionCommerce(eCommerceType);
+	int iReligionCommerce = city.getReligionBuildingCommerce(eCommerceType);
 	if (0 != iReligionCommerce)
 	{
 		szBuffer.append(NEWLINE);
@@ -18179,6 +18337,18 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 		}
 	}
 
+
+	// State Religion
+	for (int iI = 0; iI < GC.getNumReligionInfos(); iI++)
+	{
+		int iStateReligionMod = city.getStateReligionCommerceRateModifier((ReligionTypes)iI, eCommerceType) * city.getReligionEffectModifier((ReligionTypes)iI) / 100;
+		if (0 != iStateReligionMod)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_STATE_RELIGION", iStateReligionMod, info.getChar(), GC.getReligionInfo((ReligionTypes)iI).getChar()));
+			iModifier += iStateReligionMod;
+		}
+	}
 
 	// Trait
 	for (int i = 0; i < GC.getNumTraitInfos(); i++)
@@ -20021,6 +20191,15 @@ void CvGameTextMgr::setTradeRouteHelp(CvWStringBuffer &szBuffer, int iRoute, CvC
 				{
 					iNewMod = pCity->getNumActiveBuilding((BuildingTypes)iBuilding) * GC.getBuildingInfo((BuildingTypes)iBuilding).getTradeRouteModifier();
 					iNewMod += pCity->getNumActiveBuilding((BuildingTypes)iBuilding) * GC.getBuildingInfo((BuildingTypes)iBuilding).getCultureTradeRouteModifier() * pCity->getCultureLevel();
+
+					if (GC.getBuildingInfo((BuildingTypes)iBuilding).getReligionType() != NO_RELIGION)
+					{
+						if (pOtherCity->isHasReligion((ReligionTypes)GC.getBuildingInfo((BuildingTypes)iBuilding).getReligionType()))
+						{
+							iNewMod += pCity->getNumActiveBuilding((BuildingTypes)iBuilding) * GC.getBuildingInfo((BuildingTypes)iBuilding).getReligionTradeRouteModifier();
+						}
+					}
+
 					if (0 != iNewMod)
 					{
 						szBuffer.append(NEWLINE);

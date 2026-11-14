@@ -214,25 +214,33 @@ def isTemple(info, iReligion):
 	"""
 	Returns True if <info> is the Temple for <iReligion>.
 	"""
-	return info.getHappiness() > 0
+	return info.getSpecialBuildingType() == gc.getInfoTypeForString("SPECIALBUILDING_TEMPLE")
 
 def isCathedral(info, iReligion):
 	"""
 	Returns True if <info> is the Cathedral for <iReligion>.
 	"""
-	return info.getCommerceModifier(CommerceTypes.COMMERCE_CULTURE) > 0
+	return info.getSpecialBuildingType() == gc.getInfoTypeForString("SPECIALBUILDING_CATHEDRAL")
 
 def isMonastery(info, iReligion):
 	"""
 	Returns True if <info> is the Monastery for <iReligion>.
 	"""
-	return info.getCommerceModifier(CommerceTypes.COMMERCE_RESEARCH) > 0
+	return info.getSpecialBuildingType() == gc.getInfoTypeForString("SPECIALBUILDING_MONASTERY")
+
+def isReliquary(info, iReligion):
+	return info.getSpecialBuildingType() == gc.getInfoTypeForString("SPECIALBUILDING_RELIQUARY")
+
+
+def isHolySite(info, iReligion):
+	return info.getSpecialBuildingType() == gc.getInfoTypeForString("SPECIALBUILDING_HOLY_SITE")
+
 
 def isShrine(info, iReligion):
 	"""
 	Returns True if <info> is the Shrine for <iReligion>.
 	"""
-	return info.getGlobalReligionCommerce() != -1
+	return info.getHolyCity() == iReligion
 
 # MOD: Add a tester function for each new religious building type you define
 #      You tie these to a description and icon in init()
@@ -366,6 +374,8 @@ def init():
 	BuildingType("Cathedral", FontUtil.getChar("commerce culture"), isCathedral)
 	BuildingType("Monastery", FontUtil.getChar("commerce research"), isMonastery)
 	BuildingType("Shrine", FontUtil.getChar("commerce gold"), isShrine)
+	BuildingType("Reliquary", FontUtil.getChar("commerce gold"), isReliquary)
+	BuildingType("Holy Site", FontUtil.getChar("commerce culture"), isHolySite)
 # MOD: Add a BuildingType() call for each new religious building type you define
 #	BuildingType("Inquisition Office", FontUtil.getChar("cancel"), isInquisitionOffice)
 	

@@ -628,6 +628,8 @@ public:
 
 	bool isUnitCombatFoodProduction(int eUnitCombat) const;
 
+	int getReligionEffectModifier(int eReligion);
+
 private:
 	CvPlayer* m_pPlayer;
 };
