@@ -1484,6 +1484,8 @@ public:
 	bool isSpecialBuildingNotRequired(int i) const;			// Exposed to Python
 	bool isSpecialistValid(int i) const;								// Exposed to Python
 
+	bool isUnitCombatFoodProduction(UnitCombatTypes eUnitCombat) const; // Leoreth
+
 	int getImprovementYieldChanges(int i, int j) const;				// Exposed to Python
 	int getSpecialistTypeExtraYield(int i, int j) const;
 
@@ -1591,6 +1593,8 @@ protected:
 	bool* m_pabHurry;
 	bool* m_pabSpecialBuildingNotRequired;
 	bool* m_pabSpecialistValid;
+
+	bool* m_pabUnitCombatFoodProduction; // Leoreth
 
 	int** m_ppiImprovementYieldChanges;
 	int** m_ppiSpecialistTypeExtraYields; // Leoreth

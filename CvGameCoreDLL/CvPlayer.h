@@ -906,6 +906,7 @@ public:
 	void changeBuildingClassMaking(BuildingClassTypes eIndex, int iChange);
 	int getBuildingClassCountPlusMaking(BuildingClassTypes eIndex) const;															// Exposed to Python
 
+	bool isUnitCombatFoodProduction(UnitCombatTypes eUnitCombat) const;
 	int getHurryCount(HurryTypes eIndex) const;																												// Exposed to Python
 	DllExport bool canHurry(HurryTypes eIndex) const;																									// Exposed to Python
 	bool canPopRush();

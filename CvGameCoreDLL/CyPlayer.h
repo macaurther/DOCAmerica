@@ -626,6 +626,8 @@ public:
 	int getModifiedCommerceRate(CommerceTypes eCommerce);
 	bool canBuySlaves() const;
 
+	bool isUnitCombatFoodProduction(int eUnitCombat) const;
+
 private:
 	CvPlayer* m_pPlayer;
 };

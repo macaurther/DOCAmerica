@@ -3502,7 +3502,7 @@ void CvUnitAI::AI_prophetMove()
 {
 	PROFILE_FUNC();
 
-	if (AI_construct(1))
+	if (AI_construct(100))
 	{
 		return;
 	}
@@ -3517,10 +3517,10 @@ void CvUnitAI::AI_prophetMove()
 		return;
 	}
 
-	if (AI_construct(3))
+	/*if (AI_construct(3))
 	{
 		return;
-	}
+	}*/
 
 	if (AI_greatMission(70))
 	{
@@ -10075,34 +10075,33 @@ bool CvUnitAI::AI_construct(int iMaxCount, int iMaxSingleBuildingCount, int iThr
 							BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI);
 
 							if (NO_BUILDING != eBuilding)
-						{
-							bool bDoesBuild = false;
-							if ((m_pUnitInfo->getForceBuildings(eBuilding))
-								|| (m_pUnitInfo->getBuildings(eBuilding)))
 							{
-								bDoesBuild = true;
-							}
-
-							if (bDoesBuild && (pLoopCity->getNumBuilding(eBuilding) > 0))
-							{
-								iCount++;
-								if (iCount >= iMaxCount)
+								bool bDoesBuild = false;
+								if ((m_pUnitInfo->getForceBuildings(eBuilding)) || (m_pUnitInfo->getBuildings(eBuilding)))
 								{
-									return false;
+									bDoesBuild = true;
 								}
-							}
 
-							if (bDoesBuild && GET_PLAYER(getOwnerINLINE()).getBuildingClassCount((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType()) < iMaxSingleBuildingCount)
-							{
-								if (canConstruct(pLoopCity->plot(), eBuilding))
+								if (bDoesBuild && (pLoopCity->getNumBuilding(eBuilding) > 0))
 								{
-									iValue = pLoopCity->AI_buildingValue(eBuilding);
-
-									if ((iValue > iThreshold) && (iValue > iBestValue))
+									iCount++;
+									if (iCount >= iMaxCount)
 									{
-										iBestValue = iValue;
-										pBestPlot = getPathEndTurnPlot();
-										pBestConstructPlot = pLoopCity->plot();
+										return false;
+									}
+								}
+
+								if (bDoesBuild && GET_PLAYER(getOwnerINLINE()).getBuildingClassCount((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType()) < iMaxSingleBuildingCount)
+								{
+									if (canConstruct(pLoopCity->plot(), eBuilding))
+									{
+										iValue = pLoopCity->AI_buildingValue(eBuilding);
+
+										if ((iValue > iThreshold) && (iValue > iBestValue))
+										{
+											iBestValue = iValue;
+											pBestPlot = getPathEndTurnPlot();
+											pBestConstructPlot = pLoopCity->plot();
 											eBestBuilding = eBuilding;
 										}
 									}
@@ -13353,24 +13352,21 @@ bool CvUnitAI::AI_foundRange(int iRange, bool bFollow)
 				{
 					if (canFound(pLoopPlot))
 					{
-						if (GET_PLAYER(getOwnerINLINE()).isMinorCiv() || isBarbarian())
-						{
-							iValue = pLoopPlot->getFoundValue(getOwnerINLINE());
+						iValue = pLoopPlot->getFoundValue(getOwnerINLINE());
 
-							if (iValue > iBestValue)
+						if (iValue > iBestValue)
+						{
+							if (!(pLoopPlot->isVisibleEnemyUnit(this)))
 							{
-								if (!(pLoopPlot->isVisibleEnemyUnit(this)))
+								if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_FOUND, getGroup(), 3) == 0)
 								{
-									if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_FOUND, getGroup(), 3) == 0)
+									if (generatePath(pLoopPlot, MOVE_SAFE_TERRITORY, true, &iPathTurns))
 									{
-										if (generatePath(pLoopPlot, MOVE_SAFE_TERRITORY, true, &iPathTurns))
+										if (iPathTurns <= iRange)
 										{
-											if (iPathTurns <= iRange)
-											{
-												iBestValue = iValue;
-												pBestPlot = getPathEndTurnPlot();
-												pBestFoundPlot = pLoopPlot;
-											}
+											iBestValue = iValue;
+											pBestPlot = getPathEndTurnPlot();
+											pBestFoundPlot = pLoopPlot;
 										}
 									}
 								}

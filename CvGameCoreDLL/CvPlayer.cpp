@@ -5235,7 +5235,7 @@ void CvPlayer::findNewCapital()
 	
 	if (pOldCapital != NULL)
 	{
-		pOldCapital->getArea();
+		iOldCapitalArea = pOldCapital->getArea();
 	}
 
 	iBestValue = 0;
@@ -13530,6 +13530,23 @@ void CvPlayer::changeBuildingClassMaking(BuildingClassTypes eIndex, int iChange)
 int CvPlayer::getBuildingClassCountPlusMaking(BuildingClassTypes eIndex) const
 {
 	return (getBuildingClassCount(eIndex) + getBuildingClassMaking(eIndex));
+}
+
+
+bool CvPlayer::isUnitCombatFoodProduction(UnitCombatTypes eUnitCombat) const
+{
+	if (eUnitCombat < 0 || eUnitCombat >= NUM_UNITCOMBATS)
+		return false;
+
+	// Derived from civics so loading saves does not require another player field.
+	for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+	{
+		CivicTypes eCivic = getCivics((CivicOptionTypes)iI);
+		if (eCivic != NO_CIVIC && GC.getCivicInfo(eCivic).isUnitCombatFoodProduction(eUnitCombat))
+			return true;
+	}
+
+	return false;
 }
 
 

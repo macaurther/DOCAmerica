@@ -513,7 +513,7 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
 			}
 		}
 
-        if (!isHuman() && (iCurrentEra <= ((iTotalEras * 2) / 3)) && getGreatPeopleRateModifier() > 0)
+        if (!isHuman() && (iCurrentEra <= ((iTotalEras * 2) / 3)) /* && getGreatPeopleRateModifier() > 0*/)
         {
             // try to spawn a prophet for any shrines we have yet to build
             bool bNeedProphet = false;
@@ -524,7 +524,7 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
             {
                 ReligionTypes eReligion = (ReligionTypes) iJ;
 
-                if (isHolyCity(eReligion) && !hasShrine(eReligion)
+                if (GET_PLAYER(getOwnerINLINE()).hasHolyCity(eReligion) && !GET_PLAYER(getOwnerINLINE()).hasShrine(eReligion)
                 	&& ((iCurrentEra < iTotalEras / 2) || GC.getGameINLINE().countReligionLevels(eReligion) >= 10))
                 {
 					CvCivilizationInfo* pCivilizationInfo = &GC.getCivilizationInfo(getCivilizationType());
@@ -555,7 +555,7 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
 
 			if (bNeedProphet)
             {
-                iTempValue += ((iGreatPeopleRate * iBestSpreadValue));
+                iTempValue += ((iGreatPeopleRate * iBestSpreadValue)) * getMaxSpecialistCount(eSpecialist);
             }
 		}
 
@@ -3059,7 +3059,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 	CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
 	BuildingClassTypes eBuildingClass = (BuildingClassTypes) kBuilding.getBuildingClassType();
 	int iLimitedWonderLimit = limitedWonderClassLimit(eBuildingClass);
-	bool bIsLimitedWonder = (iLimitedWonderLimit >= 0);
+	bool bIsLimitedWonder = iLimitedWonderLimit >= 0 && kBuilding.getProductionCost() >= 0; // Leoreth: not for unbuildable buildings - selection of GP action targets should not be impacted
 
 	int iBuildingWeight = AI_buildingWeight(eBuilding);
 
@@ -4248,8 +4248,8 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 						{
 							aiCommerceRank[iI] = findCommerceRateRank((CommerceTypes) iI);
 						}
-						if (bIsLimitedWonder && ((aiCommerceRank[iI] > (3 + iLimitedWonderLimit)))
-							|| (bCulturalVictory1 && (iI == COMMERCE_CULTURE) && (aiCommerceRank[iI] == 1)))
+
+						if (bIsLimitedWonder && ((aiCommerceRank[iI] > (3 + iLimitedWonderLimit))) || (bCulturalVictory1 && (iI == COMMERCE_CULTURE) && (aiCommerceRank[iI] == 1)))
 						{
 							iTempValue *= -1;
 
@@ -10220,31 +10220,37 @@ BuildingTypes CvCityAI::AI_bestAdvancedStartBuilding(int iPass)
 	return AI_bestBuildingThreshold(iFocusFlags, 0, std::max(0, 20 - iPass * 5));
 }
 
-// Leoreth: return first non-state religion to make it work for now
 ReligionTypes CvCityAI::AI_getPersecutionReligion(ReligionTypes eIgnoredReligion)
 {
+	ReligionTypes eBestReligion = NO_RELIGION;
+	int iBestValue = -1;
+
 	for (int iI = 0; iI < GC.getNumReligionInfos(); iI++)
 	{
 		if (eIgnoredReligion == iI)
-		{
 			continue;
-		}
 
-		if (GET_PLAYER(getOwner()).getStateReligion() != iI)
+		if (GET_PLAYER(getOwner()).getStateReligion() == iI)
+			continue;
+
+		if (!isHasReligion((ReligionTypes)iI))
+			continue;
+
+		if (isHolyCity((ReligionTypes)iI))
+			continue;
+
+		int iValue = GET_PLAYER(getOwner()).AI_getPersecutionValue((ReligionTypes)iI);
+		if (iValue < 0)
+			continue;
+
+		if (iValue > iBestValue)
 		{
-			if (GET_PLAYER(getOwner()).AI_getPersecutionValue((ReligionTypes)iI) < 0)
-			{
-				break;
-			}
-
-			if (isHasReligion((ReligionTypes)iI) && !isHolyCity((ReligionTypes)iI))
-			{
-				return (ReligionTypes)iI;
-			}
+			eBestReligion = (ReligionTypes)iI;
+			iBestValue = iValue;
 		}
 	}
 
-	return NO_RELIGION;
+	return eBestReligion;
 }
 
 // Leoreth: building AI weights, civ specific preferences and special conditions for some wonders

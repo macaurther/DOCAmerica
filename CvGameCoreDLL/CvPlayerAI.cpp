@@ -10833,6 +10833,15 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		iValue += (kCivic.getDomainProductionModifier(iI) * getNumCities() * iWarmongerPercent) / (iDomainDivisor * (bWarPlan ? 300 : 500));
 	}
 
+	// Leoreth: unit combat food production
+	for (iI = 0; iI < NUM_UNITCOMBATS; iI++)
+	{
+		if (kCivic.isUnitCombatFoodProduction((UnitCombatTypes)iI))
+		{
+			iValue += (AI_yieldWeight(YIELD_PRODUCTION) * 10 * getNumCities() * iWarmongerPercent) / (bWarPlan ? 30000 : 50000);
+		}
+	}
+
 	// Leoreth: capture workers
 	if (kCivic.isSlavery())
 	{

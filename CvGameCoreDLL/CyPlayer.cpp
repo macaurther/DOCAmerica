@@ -2824,6 +2824,11 @@ int CyPlayer::getModifiedCommerceRate(CommerceTypes eIndex)
 	return m_pPlayer ? m_pPlayer->getModifiedCommerceRate(eIndex) : -1;
 }
 
+bool CyPlayer::isUnitCombatFoodProduction(int eUnitCombat) const
+{
+	return m_pPlayer ? m_pPlayer->isUnitCombatFoodProduction((UnitCombatTypes)eUnitCombat) : false;
+}
+
 bool CyPlayer::canBuySlaves() const
 {
 	return m_pPlayer ? m_pPlayer->canBuySlaves() : false;

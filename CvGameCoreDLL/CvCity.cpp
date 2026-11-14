@@ -3089,6 +3089,15 @@ bool CvCity::isFoodProduction(UnitTypes eUnit) const
 		}
 	}
 
+	// Leoreth
+	if (GC.getUnitInfo(eUnit).getUnitCombatType() != NO_UNITCOMBAT)
+	{
+		if (GET_PLAYER(getOwnerINLINE()).isUnitCombatFoodProduction((UnitCombatTypes)GC.getUnitInfo(eUnit).getUnitCombatType()))
+		{
+			return true;
+		}
+	}
+
 	return false;
 }
 
@@ -14262,6 +14271,8 @@ void CvCity::doGrowth()
 		{
 			changePopulation(-1);
 		}
+
+		changeDefenseDamage(GC.getDefineINT("CITY_DEFENSE_STARVATION_DAMAGE_RATE"));
 	}
 }
 
@@ -14400,7 +14411,7 @@ void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate, 
 											continue;
 										}
 
-										if (pLoopPlot->isCore((PlayerTypes)iI))
+										if (pLoopPlot->isCore((PlayerTypes)iI) && pLoopPlot->getCultureRangeCities((PlayerTypes)iI, iCultureRange) > 0)
 										{
 											if (plot()->isCore((PlayerTypes)iI))
 											{

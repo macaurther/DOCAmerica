@@ -4512,4 +4512,12 @@
 		<Italian>Your settler is within a land that will soon flip to another civilization.</Italian>
 		<Spanish>Your settler is within a land that will soon flip to another civilization.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_UNIT_COMBAT_FOOD</Tag>
+		<English>[ICON_BULLET][LINK=literal]%s1[\LINK] Produced with [ICON_FOOD]</English>
+		<French>[ICON_BULLET][LINK=literal]%s1[\LINK] Produced with [ICON_FOOD]</French>
+		<German>[ICON_BULLET][LINK=literal]%s1[\LINK] Produced with [ICON_FOOD]</German>
+		<Italian>[ICON_BULLET][LINK=literal]%s1[\LINK] Produced with [ICON_FOOD]</Italian>
+		<Spanish>[ICON_BULLET][LINK=literal]%s1[\LINK] Produced with [ICON_FOOD]</Spanish>
+	</TEXT>
 </Civ4GameText>
