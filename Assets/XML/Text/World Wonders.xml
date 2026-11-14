@@ -975,19 +975,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_YACHAYWASI_HELP</Tag>
-		<English>[ICON_BULLET]+2[ICON_RESEARCH] per Peak in City Radius</English>
-		<French>[ICON_BULLET]+2[ICON_RESEARCH] par montagne dans les environs de la ville</French>
-		<German>[ICON_BULLET]+2[ICON_RESEARCH] per Peak in City Radius</German>
-		<Italian>[ICON_BULLET]+2[ICON_RESEARCH] per Peak in City Radius</Italian>
-		<Spanish>[ICON_BULLET]+2[ICON_RESEARCH] per Peak in City Radius</Spanish>
+		<English>[ICON_BULLET]+1[ICON_RESEARCH] per Peak in City Radius</English>
+		<French>[ICON_BULLET]+1[ICON_RESEARCH] par montagne dans les environs de la ville</French>
+		<German>[ICON_BULLET]+1[ICON_RESEARCH] per Peak in City Radius</German>
+		<Italian>[ICON_BULLET]+1[ICON_RESEARCH] per Peak in City Radius</Italian>
+		<Spanish>[ICON_BULLET]+1[ICON_RESEARCH] per Peak in City Radius</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_YACHAYWASI_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</English>
-		<French>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</French>
-		<German>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</German>
-		<Italian>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 2 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 1 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</English>
+		<French>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 1 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</French>
+		<German>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 1 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</German>
+		<Italian>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 1 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Machu Picchu[COLOR_REVERT] provides 1 [ICON_RESEARCH] for every [COLOR_HIGHLIGHT_TEXT]Peak[COLOR_REVERT] in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ALCATRAZ</Tag>

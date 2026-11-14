@@ -20,10 +20,12 @@ def mountVernonEffect(unit, iPlayer):
 				player(iPlayer).createGreatPeople(iGreatPerson, False, False, city.getX(), city.getY())
 
 # Empire State Building effect: +1 Gold per population
-@handler("cityGrowth")
-def empireStateBuildingOnGrowth(city):
-	if city.isHasBuildingEffect(iEmpireStateBuilding):
-		empireStateBuildingEffect(city)
+@handler("EndPlayerTurn")
+def empireStateBuildingOnEndTurn(iGameTurn, iPlayer):
+	if player(iPlayer).isHasBuildingEffect(iEmpireStateBuilding):
+		wonder_city = cities.owner(iPlayer).building(iEmpireStateBuilding).one()
+		if wonder_city:
+			empireStateBuildingEffect(wonder_city)
 	
 @handler("buildingBuilt")
 def empireStateBuildingWhenBuilt(city, iBuilding):

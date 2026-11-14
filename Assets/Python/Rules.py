@@ -153,10 +153,10 @@ def pioneeringAbility(city):
 		createRoleUnit(iPlayer, city, iWork, 1)
 
 @handler("cityBuilt")
-# Providence and Manifest Destiny civics
+# Outposts and Manifest Destiny founding culture; Providence founding religion
 def extraCultureOnFound(pCity):
 	iExpansionCivic = player(pCity).getCivics(iCivicsExpansion)
-	if iExpansionCivic in [iProvidence, iManifestDestiny]:
+	if iExpansionCivic in [iOutposts, iManifestDestiny]:
 		pCity.changeCulture(pCity.getOwner(), scale(50), True)
 	
 	if iExpansionCivic in [iProvidence]:

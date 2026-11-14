@@ -754,11 +754,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ROYAL_COLONY_STRATEGY</Tag>
-		<English>No colony maintenance; military garrisons provide [ICON_HAPPY]</English>
-		<French>No colony maintenance; military garrisons provide [ICON_HAPPY]</French>
-		<German>No colony maintenance; military garrisons provide [ICON_HAPPY]</German>
-		<Italian>No colony maintenance; military garrisons provide [ICON_HAPPY]</Italian>
-		<Spanish>No colony maintenance; military garrisons provide [ICON_HAPPY]</Spanish>
+		<English>No colony maintenance; military garrisons provide [ICON_HAPPY]; +100% state religion effects from religious buildings</English>
+		<French>No colony maintenance; military garrisons provide [ICON_HAPPY]; +100% state religion effects from religious buildings</French>
+		<German>No colony maintenance; military garrisons provide [ICON_HAPPY]; +100% state religion effects from religious buildings</German>
+		<Italian>No colony maintenance; military garrisons provide [ICON_HAPPY]; +100% state religion effects from religious buildings</Italian>
+		<Spanish>No colony maintenance; military garrisons provide [ICON_HAPPY]; +100% state religion effects from religious buildings</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CHARTER_COLONY</Tag>
@@ -1094,19 +1094,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_OUTPOSTS_STRATEGY</Tag>
-		<English>Extra gold from Camps, Forts; faster productoin of Trading Post</English>
-		<French>Extra gold from Camps, Forts; faster productoin of Trading Post</French>
-		<German>Extra gold from Camps, Forts; faster productoin of Trading Post</German>
-		<Italian>Extra gold from Camps, Forts; faster productoin of Trading Post</Italian>
-		<Spanish>Extra gold from Camps, Forts; faster productoin of Trading Post</Spanish>
+		<English>Extra commerce from Camps and Forts; faster production of Trading Posts; extra [ICON_CULTURE] in newly founded cities; faster Tribe Contact</English>
+		<French>Extra commerce from Camps and Forts; faster production of Trading Posts; extra [ICON_CULTURE] in newly founded cities; faster Tribe Contact</French>
+		<German>Extra commerce from Camps and Forts; faster production of Trading Posts; extra [ICON_CULTURE] in newly founded cities; faster Tribe Contact</German>
+		<Italian>Extra commerce from Camps and Forts; faster production of Trading Posts; extra [ICON_CULTURE] in newly founded cities; faster Tribe Contact</Italian>
+		<Spanish>Extra commerce from Camps and Forts; faster production of Trading Posts; extra [ICON_CULTURE] in newly founded cities; faster Tribe Contact</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_OUTPOSTS_HELP</Tag>
-		<English>[ICON_BULLET]+100% Tribe Contact speed</English>
-		<French>[ICON_BULLET]+100% Tribe Contact speed</French>
-		<German>[ICON_BULLET]+100% Tribe Contact speed</German>
-		<Italian>[ICON_BULLET]+100% Tribe Contact speed</Italian>
-		<Spanish>[ICON_BULLET]+100% Tribe Contact speed</Spanish>
+		<English>[ICON_BULLET]+100% Tribe Contact speed[NEWLINE][ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</English>
+		<French>[ICON_BULLET]+100% Tribe Contact speed[NEWLINE][ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</French>
+		<German>[ICON_BULLET]+100% Tribe Contact speed[NEWLINE][ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</German>
+		<Italian>[ICON_BULLET]+100% Tribe Contact speed[NEWLINE][ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</Italian>
+		<Spanish>[ICON_BULLET]+100% Tribe Contact speed[NEWLINE][ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_EXPEDITION</Tag>
@@ -1350,11 +1350,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SUBSISTANCE_STRATEGY</Tag>
-		<English>Extra [ICON_FOOD] and less [ICON_COMMERCE] from no improvement</English>
-		<French>Extra [ICON_FOOD] and less [ICON_COMMERCE] from no improvement</French>
-		<German>Extra [ICON_FOOD] and less [ICON_COMMERCE] from no improvement</German>
-		<Italian>Extra [ICON_FOOD] and less [ICON_COMMERCE] from no improvement</Italian>
-		<Spanish>Extra [ICON_FOOD] and less [ICON_COMMERCE] from no improvement</Spanish>
+		<English>Extra [ICON_FOOD] and less [ICON_COMMERCE] from unimproved tiles; Archery units are built with [ICON_FOOD]</English>
+		<French>Extra [ICON_FOOD] and less [ICON_COMMERCE] from unimproved tiles; Archery units are built with [ICON_FOOD]</French>
+		<German>Extra [ICON_FOOD] and less [ICON_COMMERCE] from unimproved tiles; Archery units are built with [ICON_FOOD]</German>
+		<Italian>Extra [ICON_FOOD] and less [ICON_COMMERCE] from unimproved tiles; Archery units are built with [ICON_FOOD]</Italian>
+		<Spanish>Extra [ICON_FOOD] and less [ICON_COMMERCE] from unimproved tiles; Archery units are built with [ICON_FOOD]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MITA</Tag>
@@ -1382,11 +1382,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CALPULLI_STRATEGY</Tag>
-		<English>Extra [ICON_FOOD] from citizens, faster production of Tannery, reduced [ICON_COMMERCE] in all cities</English>
-		<French>Extra [ICON_FOOD] from citizens, faster production of Tannery, reduced [ICON_COMMERCE] in all cities</French>
-		<German>Extra [ICON_FOOD] from citizens, faster production of Tannery, reduced [ICON_COMMERCE] in all cities</German>
-		<Italian>Extra [ICON_FOOD] from citizens, faster production of Tannery, reduced [ICON_COMMERCE] in all cities</Italian>
-		<Spanish>Extra [ICON_FOOD] from citizens, faster production of Tannery, reduced [ICON_COMMERCE] in all cities</Spanish>
+		<English>Extra [ICON_FOOD] from Citizens; faster production of Tanneries; reduced gold in all cities; Melee units are built with [ICON_FOOD]</English>
+		<French>Extra [ICON_FOOD] from Citizens; faster production of Tanneries; reduced gold in all cities; Melee units are built with [ICON_FOOD]</French>
+		<German>Extra [ICON_FOOD] from Citizens; faster production of Tanneries; reduced gold in all cities; Melee units are built with [ICON_FOOD]</German>
+		<Italian>Extra [ICON_FOOD] from Citizens; faster production of Tanneries; reduced gold in all cities; Melee units are built with [ICON_FOOD]</Italian>
+		<Spanish>Extra [ICON_FOOD] from Citizens; faster production of Tanneries; reduced gold in all cities; Melee units are built with [ICON_FOOD]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_REDISTRIBUTION</Tag>
@@ -1526,11 +1526,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ACCULTURATION_STRATEGY</Tag>
-		<English>Extra [ICON_HAPPY] from State Religion; faster production of buildings in cities with your State Religion</English>
-		<French>Extra [ICON_HAPPY] from State Religion; faster production of buildings in cities with your State Religion</French>
-		<German>Extra [ICON_HAPPY] from State Religion; faster production of buildings in cities with your State Religion</German>
-		<Italian>Extra [ICON_HAPPY] from State Religion; faster production of buildings in cities with your State Religion</Italian>
-		<Spanish>Extra [ICON_HAPPY] from State Religion; faster production of buildings in cities with your State Religion</Spanish>
+		<English>+100% state religion effects from religious buildings; faster production of buildings in cities with your state religion</English>
+		<French>+100% state religion effects from religious buildings; faster production of buildings in cities with your state religion</French>
+		<German>+100% state religion effects from religious buildings; faster production of buildings in cities with your state religion</German>
+		<Italian>+100% state religion effects from religious buildings; faster production of buildings in cities with your state religion</Italian>
+		<Spanish>+100% state religion effects from religious buildings; faster production of buildings in cities with your state religion</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SETTLEMENT</Tag>
@@ -1558,11 +1558,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NOMADIC_STRATEGY</Tag>
-		<English>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</English>
-		<French>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</French>
-		<German>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</German>
-		<Italian>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</Italian>
-		<Spanish>Military units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</Spanish>
+		<English>Light Cavalry units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</English>
+		<French>Light Cavalry units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</French>
+		<German>Light Cavalry units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</German>
+		<Italian>Light Cavalry units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</Italian>
+		<Spanish>Light Cavalry units are built with [ICON_FOOD]; cities can migrate, granting [ICON_FOOD]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NOMADIC_HELP</Tag>
@@ -1678,11 +1678,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PENAL_COLONY_STRATEGY</Tag>
-		<English>Reduced [ICON_IMMIGRATION] cost of Immigrants; reduced [ICON_CULTURE] in all cities</English>
-		<French>Reduced [ICON_IMMIGRATION] cost of Immigrants; reduced [ICON_CULTURE] in all cities</French>
-		<German>Reduced [ICON_IMMIGRATION] cost of Immigrants; reduced [ICON_CULTURE] in all cities</German>
-		<Italian>Reduced [ICON_IMMIGRATION] cost of Immigrants; reduced [ICON_CULTURE] in all cities</Italian>
-		<Spanish>Reduced [ICON_IMMIGRATION] cost of Immigrants; reduced [ICON_CULTURE] in all cities</Spanish>
+		<English>Reduced [ICON_IMMIGRATION] cost of Immigrants; reduced [ICON_CULTURE] in all cities; Gunpowder units are built with [ICON_FOOD]</English>
+		<French>Reduced [ICON_IMMIGRATION] cost of Immigrants; reduced [ICON_CULTURE] in all cities; Gunpowder units are built with [ICON_FOOD]</French>
+		<German>Reduced [ICON_IMMIGRATION] cost of Immigrants; reduced [ICON_CULTURE] in all cities; Gunpowder units are built with [ICON_FOOD]</German>
+		<Italian>Reduced [ICON_IMMIGRATION] cost of Immigrants; reduced [ICON_CULTURE] in all cities; Gunpowder units are built with [ICON_FOOD]</Italian>
+		<Spanish>Reduced [ICON_IMMIGRATION] cost of Immigrants; reduced [ICON_CULTURE] in all cities; Gunpowder units are built with [ICON_FOOD]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PENAL_COLONY_HELP</Tag>
@@ -1766,24 +1766,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROVIDENCE_STRATEGY</Tag>
-		<English>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; cities convert on founding</English>
-		<French>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; cities convert on founding</French>
-		<German>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; cities convert on founding</German>
-		<Italian>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; cities convert on founding</Italian>
-		<Spanish>Extra [ICON_CULTURE] in new cities; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; cities convert on founding</Spanish>
+		<English>+100% commerce output from religious buildings; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; founded cities convert to your state religion</English>
+		<French>+100% commerce output from religious buildings; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; founded cities convert to your state religion</French>
+		<German>+100% commerce output from religious buildings; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; founded cities convert to your state religion</German>
+		<Italian>+100% commerce output from religious buildings; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; founded cities convert to your state religion</Italian>
+		<Spanish>+100% commerce output from religious buildings; extra [ICON_FOOD] and [ICON_COMMERCE] from Priest and Great Prophet specialists; founded cities convert to your state religion</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROVIDENCE_HELP</Tag>
-		<English>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
-[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</English>
-		<French>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
-[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</French>
-		<German>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
-[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</German>
-		<Italian>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
-[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</Italian>
-		<Spanish>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities
-[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</Spanish>
+		<English>[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</English>
+		<French>[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</French>
+		<German>[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</German>
+		<Italian>[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</Italian>
+		<Spanish>[ICON_BULLET]Founded cities convert to state [ICON_RELIGION]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_STRONGMAN</Tag>
@@ -1971,11 +1966,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_LIBERTARIANISM_STRATEGY</Tag>
-		<English>Increased [ICON_GREATPEOPLE] birth rate; reduced maintenance from number of cities</English>
-		<French>Increased [ICON_GREATPEOPLE] birth rate; reduced maintenance from number of cities</French>
-		<German>Increased [ICON_GREATPEOPLE] birth rate; reduced maintenance from number of cities</German>
-		<Italian>Increased [ICON_GREATPEOPLE] birth rate; reduced maintenance from number of cities</Italian>
-		<Spanish>Increased [ICON_GREATPEOPLE] birth rate; reduced maintenance from number of cities</Spanish>
+		<English>Reduced maintenance from number of cities; improvements upgrade without being worked and upgrade faster when worked; +50% commerce output from religious buildings</English>
+		<French>Reduced maintenance from number of cities; improvements upgrade without being worked and upgrade faster when worked; +50% commerce output from religious buildings</French>
+		<German>Reduced maintenance from number of cities; improvements upgrade without being worked and upgrade faster when worked; +50% commerce output from religious buildings</German>
+		<Italian>Reduced maintenance from number of cities; improvements upgrade without being worked and upgrade faster when worked; +50% commerce output from religious buildings</Italian>
+		<Spanish>Reduced maintenance from number of cities; improvements upgrade without being worked and upgrade faster when worked; +50% commerce output from religious buildings</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NATIVISM</Tag>
@@ -1987,11 +1982,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NATIVISM_STRATEGY</Tag>
-		<English>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; reduced [ICON_FOOD] from immmigrants</English>
-		<French>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; reduced [ICON_FOOD] from immmigrants</French>
-		<German>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; reduced [ICON_FOOD] from immmigrants</German>
-		<Italian>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; reduced [ICON_FOOD] from immmigrants</Italian>
-		<Spanish>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; reduced [ICON_FOOD] from immmigrants</Spanish>
+		<English>+200% state religion effects from religious buildings; religious buildings do not expire; -75% [ICON_IMMIGRATION] in all cities</English>
+		<French>+200% state religion effects from religious buildings; religious buildings do not expire; -75% [ICON_IMMIGRATION] in all cities</French>
+		<German>+200% state religion effects from religious buildings; religious buildings do not expire; -75% [ICON_IMMIGRATION] in all cities</German>
+		<Italian>+200% state religion effects from religious buildings; religious buildings do not expire; -75% [ICON_IMMIGRATION] in all cities</Italian>
+		<Spanish>+200% state religion effects from religious buildings; religious buildings do not expire; -75% [ICON_IMMIGRATION] in all cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_EGALITARIANISM</Tag>
@@ -2003,11 +1998,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_EGALITARIANISM_STRATEGY</Tag>
-		<English>No State Religion; double slots for Artist, Scientist; extra [ICON_RESEARCH] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</English>
-		<French>No State Religion; double slots for Artist, Scientist; extra [ICON_RESEARCH] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</French>
-		<German>No State Religion; double slots for Artist, Scientist; extra [ICON_RESEARCH] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</German>
-		<Italian>No State Religion; double slots for Artist, Scientist; extra [ICON_RESEARCH] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</Italian>
-		<Spanish>No State Religion; double slots for Artist, Scientist; extra [ICON_RESEARCH] from specialists; extra [ICON_HAPPY] from [ICON_RELIGION]</Spanish>
+		<English>No state religion; all religions provide their religious building effects; unlimited Artist and Scientist specialists; extra [ICON_RESEARCH] from specialists; no slavery</English>
+		<French>No state religion; all religions provide their religious building effects; unlimited Artist and Scientist specialists; extra [ICON_RESEARCH] from specialists; no slavery</French>
+		<German>No state religion; all religions provide their religious building effects; unlimited Artist and Scientist specialists; extra [ICON_RESEARCH] from specialists; no slavery</German>
+		<Italian>No state religion; all religions provide their religious building effects; unlimited Artist and Scientist specialists; extra [ICON_RESEARCH] from specialists; no slavery</Italian>
+		<Spanish>No state religion; all religions provide their religious building effects; unlimited Artist and Scientist specialists; extra [ICON_RESEARCH] from specialists; no slavery</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DISPLACEMENT</Tag>
@@ -2261,11 +2256,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CREOLISM_STRATEGY</Tag>
-		<English>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]; nearby tribes do not spawn raiders</English>
-		<French>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]; nearby tribes do not spawn raiders</French>
-		<German>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]; nearby tribes do not spawn raiders</German>
-		<Italian>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]; nearby tribes do not spawn raiders</Italian>
-		<Spanish>Increased [ICON_CULTURE] in every city; no state [ICON_RELIGION]; extra [ICON_HAPPY] per [ICON_RELIGION]; nearby tribes do not spawn raiders</Spanish>
+		<English>Increased [ICON_CULTURE] in every city; all religions provide their religious building effects in cities with your state religion; nearby tribes do not spawn raiders</English>
+		<French>Increased [ICON_CULTURE] in every city; all religions provide their religious building effects in cities with your state religion; nearby tribes do not spawn raiders</French>
+		<German>Increased [ICON_CULTURE] in every city; all religions provide their religious building effects in cities with your state religion; nearby tribes do not spawn raiders</German>
+		<Italian>Increased [ICON_CULTURE] in every city; all religions provide their religious building effects in cities with your state religion; nearby tribes do not spawn raiders</Italian>
+		<Spanish>Increased [ICON_CULTURE] in every city; all religions provide their religious building effects in cities with your state religion; nearby tribes do not spawn raiders</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CREOLISM_HELP</Tag>

@@ -312,6 +312,12 @@
 				<iYield>0</iYield>
 				<iYield>-1</iYield>
 			</UnimprovedTileYields>
+			<UnitCombatFoodProductions>
+				<UnitCombatFoodProduction>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<bFoodProduction>1</bFoodProduction>
+				</UnitCombatFoodProduction>
+			</UnitCombatFoodProductions>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
@@ -503,6 +509,12 @@
 			<CommerceModifiers>
 				<iCommerce>-25</iCommerce>
 			</CommerceModifiers>
+			<UnitCombatFoodProductions>
+				<UnitCombatFoodProduction>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<bFoodProduction>1</bFoodProduction>
+				</UnitCombatFoodProduction>
+			</UnitCombatFoodProductions>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_TANNERY</BuildingType>
@@ -770,8 +782,8 @@
 			<Button>,Art/Interface/Buttons/Civics/Assimilation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
-			<iStateReligionHappiness>1</iStateReligionHappiness>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iStateReligionEffectModifier>100</iStateReligionEffectModifier>
 			<bStateReligion>1</bStateReligion>
 			<iStateReligionBuildingProductionModifier>25</iStateReligionBuildingProductionModifier>
 		</CivicInfo>
@@ -815,7 +827,12 @@
 			<iCultureGroup>0</iCultureGroup>
 			<iWorkerSpeedModifier>-50</iWorkerSpeedModifier>
 			<Upkeep>UPKEEP_LOW</Upkeep>
-			<bMilitaryFoodProduction>1</bMilitaryFoodProduction>
+			<UnitCombatFoodProductions>
+				<UnitCombatFoodProduction>
+					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<bFoodProduction>1</bFoodProduction>
+				</UnitCombatFoodProduction>
+			</UnitCombatFoodProductions>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -1148,6 +1165,7 @@
 			<Button>,Art/Interface/Buttons/Civics/RoyalColony.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,3,3</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
+			<iStateReligionEffectModifier>100</iStateReligionEffectModifier>
 			<iColonyMaintenanceModifier>-100</iColonyMaintenanceModifier>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
@@ -1316,6 +1334,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>-50</iCommerce>
 			</CommerceModifiers>
+			<UnitCombatFoodProductions>
+				<UnitCombatFoodProduction>
+					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+					<bFoodProduction>1</bFoodProduction>
+				</UnitCombatFoodProduction>
+			</UnitCombatFoodProductions>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
@@ -1688,8 +1712,9 @@
 			<Button>,Art/Interface/Buttons/Civics/Creolism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
-			<iNonStateReligionHappiness>1</iNonStateReligionHappiness>
 			<Upkeep>UPKEEP_LOW</Upkeep>
+			<bOtherReligionEffect>1</bOtherReligionEffect>
+			<bStateReligion>1</bStateReligion>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -1805,6 +1830,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iReligiousBuildingCommerceModifier>100</iReligiousBuildingCommerceModifier>
 			<SpecialistTypeExtraYields>
 				<SpecialistTypeExtraYield>
 					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
@@ -2527,6 +2553,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Libertarianism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
+			<iReligiousBuildingCommerceModifier>50</iReligiousBuildingCommerceModifier>
 			<iNumCitiesMaintenanceModifier>-25</iNumCitiesMaintenanceModifier>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
@@ -2629,25 +2656,16 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
+			<iStateReligionEffectModifier>200</iStateReligionEffectModifier>
+			<bNoReligiousBuildingExpiration>1</bNoReligiousBuildingExpiration>
 			<bStateReligion>1</bStateReligion>
-			<YieldModifiers>
-				<iYield>10</iYield>
-			</YieldModifiers>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>-25</iCommerce>
+				<iCommerce>-75</iCommerce>
 			</CommerceModifiers>
-			<SpecialistTypeExtraYields>
-				<SpecialistTypeExtraYield>
-					<SpecialistType>SPECIALIST_IMMIGRANT</SpecialistType>
-					<YieldChanges>
-						<iYield>-1</iYield>
-					</YieldChanges>
-				</SpecialistTypeExtraYield>
-			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -2660,8 +2678,8 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<bAllReligionEffect>1</bAllReligionEffect>
 			<bNoSlavery>1</bNoSlavery>
-			<iNonStateReligionHappiness>1</iNonStateReligionHappiness>
 			<SpecialistValids>
 				<SpecialistValid>
 					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>

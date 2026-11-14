@@ -10353,7 +10353,7 @@ int CvCity::getBuildingCommerceByBuilding(CommerceTypes eIndex, BuildingTypes eB
 				// Leoreth: Guadalupe Basilica effect
 				if (eBuilding == (BuildingTypes)BUILDING_GUADALUPE_BASILICA && eIndex == COMMERCE_GOLD)
 				{
-					iCommerce += std::min(iShrineLimit, GC.getMap().getArea(getArea())->countHasReligion(CATHOLICISM));
+					iCommerce += std::min(GET_PLAYER(getOwnerINLINE()).getShrineIncomeLimit(), GC.getMap().getArea(getArea())->countHasReligion(CATHOLICISM));
 				}
 
 				// MacAurther: Mexico UP - +1 Gold from State Religion Buildlings
