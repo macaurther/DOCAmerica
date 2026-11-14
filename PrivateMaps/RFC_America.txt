@@ -52826,23 +52826,23 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=79,y=0
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=79,y=1
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=79,y=2
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=79,y=3
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=79,y=4
@@ -53444,23 +53444,23 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=80,y=0
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=80,y=1
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=80,y=2
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=80,y=3
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=80,y=4
@@ -54065,23 +54065,23 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=81,y=0
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=81,y=1
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=81,y=2
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=81,y=3
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=81,y=4
@@ -54684,24 +54684,23 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=82,y=0
-	RouteType=ROUTE_ROAD
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=82,y=1
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=82,y=2
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=82,y=3
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_DEEP_OCEAN
+	PlotType=3
 EndPlot
 BeginPlot
 	x=82,y=4

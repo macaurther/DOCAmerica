@@ -14994,9 +14994,14 @@ bool CvCity::canSpread(ReligionTypes eReligion, bool bMissionary) const
 
 	if (eSpread == RELIGION_SPREAD_MINORITY && getReligionCount() == 0) return false;
 
-	if (GC.getReligionInfo(eReligion).isLocal() && GC.getGameINLINE().isReligionFounded(eReligion) && GET_PLAYER(GC.getGameINLINE().getHolyCity(eReligion)->getOwnerINLINE()).isMinorCiv())
+	// MacAurther: Local Old World religions retain their spread restriction.
+	if (GC.getReligionInfo(eReligion).isLocal() && GC.getGameINLINE().isReligionFounded(eReligion))
 	{
-		return false;
+		CvCity* pHolyCity = GC.getGameINLINE().getHolyCity(eReligion);
+		if (GC.getReligionInfo(eReligion).isOldWorldHolyCity() || (pHolyCity != NULL && GET_PLAYER(pHolyCity->getOwnerINLINE()).isMinorCiv()))
+		{
+			return false;
+		}
 	}
 
 	return true;

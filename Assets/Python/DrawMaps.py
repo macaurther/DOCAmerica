@@ -34,12 +34,12 @@ def appenddict(dict):
 iWorldX = 85
 iWorldY = 122
 
-iNumCivs = 38
+iNumCivs = 37
 # 0				1				2				3				4				5				6				7				8				9
 (iAmerica, 		iArgentina, 	iAztec, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iEngland, 		iFrance, 		iHaiti,			
 iHaudenosaunee,	iHawaii,		iInca,			iInuit,			iLakota,		iMaya,			iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	
 iNorse,			iPeru,			iPortugal, 		iPueblo,		iPurepecha,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		
-iWari,			iZapotec,		iIndependent1, 	iIndependent2, 	iIndependent3,	iIndigenous,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+iWari,			iZapotec,		iIndependent1, 	iIndependent2, 	iIndigenous,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 iNumRegions = 52
 # 0				1				2				3				4				5				6				7				8				9

@@ -153,11 +153,6 @@ lCivilizations = [
 		techs=techs.column(15)
 	),
 	Civilization(
-		iIndependent3,
-		iGold=500,
-		techs=techs.column(15)
-	),
-	Civilization(
 		iIndigenous,
 		iGold=300,
 		techs=techs.column(8)

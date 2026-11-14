@@ -268,6 +268,9 @@ class EventHandlerRegistry(object):
 	
 	def religionFounded(self, goal, applicable, func):
 		def religionFounded((iReligion, iPlayer)):
+			# MacAurther: Old World founding cannot be credited to a local player.
+			if iPlayer < 0:
+				return
 			if applicable(goal, iPlayer):
 				func(goal, iReligion)
 		

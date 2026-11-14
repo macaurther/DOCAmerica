@@ -23,13 +23,13 @@ def getCatholicPreference(iPlayer):
 @handler("BeginGameTurn")
 def foundReligions():
 	if turn() == year(30):
-		foundReligion(tHolyCity, iCatholicism)
+		foundReligion(None, iCatholicism)
 	if turn() == year(33):
-		foundReligion(tHolyCity, iOrthodoxy)
+		foundReligion(None, iOrthodoxy)
 	if turn() == year(610):
-		foundReligion(tHolyCity, iIslam)
+		foundReligion(None, iIslam)
 	if turn() == year(1521):
-		foundReligion(tHolyCity, iProtestantism)
+		foundReligion(None, iProtestantism)
 
 @handler("BeginGameTurn")
 def spreadChristianityIceland():
@@ -57,6 +57,13 @@ def replacePaganTemple(iReligion, iPlayer, city):
 
 
 def foundReligion(location, iReligion):
+	# MacAurther: Old World founding does not require a map location.
+	if infos.religion(iReligion).isOldWorldHolyCity():
+		if game.isReligionFounded(iReligion):
+			return False
+		game.foundOldWorldReligion(iReligion, turn(), True)
+		return True
+
 	if not location:
 		return False
 
@@ -110,6 +117,9 @@ def checkLateReligionFounding(iReligion, iTech):
 
 
 def foundReligionInCore(iReligion):
+	if infos.religion(iReligion).isOldWorldHolyCity():
+		return foundReligion(None, iReligion)
+
 	city = cities.all().where(lambda c: c.plot().getSpreadFactor(iReligion) == RegionSpreadTypes.REGION_SPREAD_CORE).random()
 	if city:
 		foundReligion(location(city), iReligion)

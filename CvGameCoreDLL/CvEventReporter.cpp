@@ -398,7 +398,11 @@ void CvEventReporter::techSelected(TechTypes eTech, PlayerTypes ePlayer)
 void CvEventReporter::religionFounded(ReligionTypes eType, PlayerTypes ePlayer)
 {
 	m_kPythonEventMgr.reportReligionFounded(eType, ePlayer);
-	m_kStatistics.religionFounded(eType, ePlayer);
+	// MacAurther: Old World founding has no local player statistics.
+	if (ePlayer != NO_PLAYER)
+	{
+		m_kStatistics.religionFounded(eType, ePlayer);
+	}
 }
 
 void CvEventReporter::religionSpread(ReligionTypes eType, PlayerTypes ePlayer, CvCity* pSpreadCity)

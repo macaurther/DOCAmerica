@@ -146,7 +146,9 @@ class WBReligionScreen:
 			iRow = screen.appendTableRow("WBHolyCity")
 			screen.setTableText("WBHolyCity", 0, iRow, "", gc.getReligionInfo(i).getButton(), WidgetTypes.WIDGET_HELP_RELIGION, i, 1, CvUtil.FONT_LEFT_JUSTIFY)
 			pHolyCity = CyGame().getHolyCity(i)
-			if not pHolyCity.isNone():
+			if gc.getReligionInfo(i).isOldWorldHolyCity() and CyGame().isReligionFounded(i):
+				screen.setTableText("WBHolyCity", 2, iRow, "<font=3>" + CyTranslator().getText("TXT_KEY_RELIGION_SCREEN_OLD_WORLD", ()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+			elif not pHolyCity.isNone():
 				iPlayerX = pHolyCity.getOwner()
 				pPlayerX = gc.getPlayer(iPlayerX)
 				sColor = u"<color=%d,%d,%d,%d>" %(pPlayerX.getPlayerTextColorR(), pPlayerX.getPlayerTextColorG(), pPlayerX.getPlayerTextColorB(), pPlayerX.getPlayerTextColorA())

@@ -493,6 +493,10 @@ def onTechSelected(iTechType, iPlayer):
 
 @handler("religionFounded")
 def onReligionFounded(iReligion, iFounder):
+	# MacAurther: Old World founding has no local city or movie.
+	if iFounder < 0 or gc.getReligionInfo(iReligion).isOldWorldHolyCity():
+		return
+
 ## Platy Builder ##
 	if CyGame().GetWorldBuilderMode() and not CvPlatyBuilderSettings.bPython: return
 ## Platy Builder ##

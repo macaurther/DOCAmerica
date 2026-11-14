@@ -273,7 +273,10 @@ class CvReligionScreen:
 		for iRel in self.RELIGIONS:
 			if (gc.getGame().getReligionGameTurnFounded(iRel) >= 0):
 				pHolyCity = gc.getGame().getHolyCity(iRel)
-				if pHolyCity.isNone():
+				if gc.getReligionInfo(iRel).isOldWorldHolyCity():
+					szFounded = localText.getText("TXT_KEY_RELIGION_SCREEN_OLD_WORLD", ())
+					screen.setLabelAt("", szArea, szFounded, CvUtil.FONT_CENTER_JUSTIFY, xLoop, self.Y_HOLY_CITY, self.DZ, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+				elif pHolyCity.isNone():
 					szFounded = localText.getText("TXT_KEY_NONE", ())
 					screen.setLabelAt("", szArea, szFounded, CvUtil.FONT_CENTER_JUSTIFY, xLoop, self.Y_HOLY_CITY, self.DZ, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				elif not pHolyCity.isRevealed(gc.getPlayer(self.iActivePlayer).getTeam(), False):

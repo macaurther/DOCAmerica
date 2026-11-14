@@ -4672,4 +4672,20 @@
 		<Italian>Expansion</Italian>
 		<Spanish>Expansion</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_SCREEN_OLD_WORLD</Tag>
+		<English>Old World</English>
+		<French>Ancien Monde</French>
+		<German>Alte Welt</German>
+		<Italian>Vecchio Mondo</Italian>
+		<Spanish>Viejo Mundo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_REL_FOUNDED_OLD_WORLD</Tag>
+		<English>%s1_Religion has been founded in the Old World!</English>
+		<French>%s1_Religion has been founded in the Old World!</French>
+		<German>%s1_Religion has been founded in the Old World!</German>
+		<Italian>%s1_Religion has been founded in the Old World!</Italian>
+		<Spanish>%s1_Religion has been founded in the Old World!</Spanish>
+	</TEXT>
 </Civ4GameText>

@@ -1316,7 +1316,6 @@ enum CivilizationTypes		// Exposed to Python
 
 	INDEPENDENT1,	// Urban Natives
 	INDEPENDENT2,	// Nations
-	INDEPENDENT3,	// Player for Holy City AND NOTHING ELSE
 	INDIGENOUS,		// Tribal Natives
 	MINOR_CIV,
 	BARBARIAN_CIV,

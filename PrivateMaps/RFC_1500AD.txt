@@ -3625,41 +3625,4 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=82,y=0
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA
-		UnitOwner=CIVILIZATION_INDEPENDENT3
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA
-		UnitOwner=CIVILIZATION_INDEPENDENT3
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA
-		UnitOwner=CIVILIZATION_INDEPENDENT3
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_INDEPENDENT3
-		CityName=Holy City
-		CityPopulation=1
-		BuildingType=BUILDING_CAPITOL
-		BuildingType=BUILDING_BARRACKS
-		ReligionType=RELIGION_JUDAISM
-		HolyCityReligionType=RELIGION_JUDAISM
-		ReligionType=RELIGION_ORTHODOXY
-		HolyCityReligionType=RELIGION_ORTHODOXY
-		ReligionType=RELIGION_CATHOLICISM
-		HolyCityReligionType=RELIGION_CATHOLICISM
-		ReligionType=RELIGION_ISLAM
-		HolyCityReligionType=RELIGION_ISLAM
-		ReligionType=RELIGION_HINDUISM
-		HolyCityReligionType=RELIGION_HINDUISM
-		ReligionType=RELIGION_BUDDHISM
-		HolyCityReligionType=RELIGION_BUDDHISM
-		BeginCulture
-			Civilization=CIVILIZATION_INDEPENDENT3, Culture=463
-		EndCulture
-		YearFounded=1500
-		PreviousOwner=CIVILIZATION_INDEPENDENT3
-	EndCity
 EndPlot

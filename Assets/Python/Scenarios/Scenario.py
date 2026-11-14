@@ -123,7 +123,7 @@ RELIGION_FOUNDING_DATES = {
 	iProtestantism: 1521,
 	iIslam: 622,
 	iHinduism: -1500,
-	iBuddhism: 80,
+	iBuddhism: -480,
 }
 
 WONDER_ORIGINAL_BUILDERS = {
@@ -318,6 +318,8 @@ class Scenario(object):
 	
 	def adjustReligions(self):
 		for iReligion, iFoundingYear in RELIGION_FOUNDING_DATES.items():
+			if infos.religion(iReligion).isOldWorldHolyCity() and iFoundingYear <= self.iStartYear:
+				game.foundOldWorldReligion(iReligion, year(iFoundingYear), False)
 			if game.isReligionFounded(iReligion):
 				game.setReligionGameTurnFounded(iReligion, year(iFoundingYear))
 		

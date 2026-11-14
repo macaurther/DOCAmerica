@@ -250,6 +250,7 @@ void CyInfoPythonInterface3()
 
 		.def("isProselytizing", &CvReligionInfo::isProselytizing, "bool ()")
 		.def("isLocal", &CvReligionInfo::isLocal, "bool ()")
+		.def("isOldWorldHolyCity", &CvReligionInfo::isOldWorldHolyCity, "bool ()")
 
 		// Arrays
 

@@ -205,6 +205,7 @@ public:
 
 	int getReligionGameTurnFounded(int /*ReligionTypes*/ eIndex);
 	void setReligionGameTurnFounded(int eReligion, int iGameTurn);
+	void foundOldWorldReligion(int eReligion, int iFoundingTurn, bool bAnnounce);
 	bool isReligionFounded(int /*ReligionTypes*/ eIndex);
 	bool isReligionSlotTaken(int /*ReligionTypes*/ eIndex);
 	int getCorporationGameTurnFounded(int /*CorporationTypes*/ eIndex);

@@ -1791,7 +1791,7 @@ class PlayerFactory:
 		return self.civs(*dCivGroups[iGroup])
 		
 	def independent(self):
-		return self.civs(iIndependent1, iIndependent2, iIndependent3)
+		return self.civs(iIndependent1, iIndependent2)
 		
 	def barbarian(self):
 		return self.civs(iBarbarian)

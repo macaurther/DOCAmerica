@@ -4070,21 +4070,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=82,y=0
-	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_INDEPENDENT3
-		CityName=Holy City
-		CityPopulation=1
-		BuildingType=BUILDING_CAPITOL
-		ReligionType=RELIGION_JUDAISM
-		HolyCityReligionType=RELIGION_JUDAISM
-		ReligionType=RELIGION_HINDUISM
-		HolyCityReligionType=RELIGION_HINDUISM
-		ReligionType=RELIGION_BUDDHISM
-		HolyCityReligionType=RELIGION_BUDDHISM
-		YearFounded=0
-		PreviousOwner=CIVILIZATION_INDEPENDENT3
-	EndCity
 EndPlot
 BeginPlot
 	x=5,y=115

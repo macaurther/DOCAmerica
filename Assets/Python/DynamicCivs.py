@@ -172,7 +172,6 @@ dStartingLeaders = [
 {
 	iIndependent1 : iIndependentLeader,
 	iIndependent2 : iIndependentLeader,
-	iIndependent3 : iIndependentLeader,
 	iIndigenous : iNativeLeader,
 	iMaya : iPacal,
 	iZapotec : iCosijoeza,
@@ -329,6 +328,9 @@ def onPeriodChange(iPlayer, iPeriod):
 
 @handler("religionFounded")
 def onReligionFounded(_, iPlayer):
+	if iPlayer < 0:
+		return
+
 	if turn() == scenarioStartTurn():
 		return
 

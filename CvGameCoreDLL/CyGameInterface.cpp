@@ -194,6 +194,7 @@ void CyGamePythonInterface()
 
 		.def("getReligionGameTurnFounded", &CyGame::getReligionGameTurnFounded)
 		.def("setReligionGameTurnFounded", &CyGame::setReligionGameTurnFounded, "void (int eReligion, int iGameTurn)")
+		.def("foundOldWorldReligion", &CyGame::foundOldWorldReligion, "void (int eReligion, int iFoundingTurn, bool bAnnounce)")
 		.def("isReligionFounded", &CyGame::isReligionFounded, "bool (ReligionID) - is religion founded?")
 		.def("isReligionSlotTaken", &CyGame::isReligionSlotTaken, "bool (ReligionID) - is religion in that tech slot founded?")
 		.def("getCorporationGameTurnFounded", &CyGame::getCorporationGameTurnFounded)

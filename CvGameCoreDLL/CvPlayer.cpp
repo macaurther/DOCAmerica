@@ -2661,7 +2661,7 @@ bool CvPlayer::isBarbarian() const
 // Leoreth
 bool CvPlayer::isIndependent() const
 {
-	return getCivilizationType() == INDEPENDENT1 || getCivilizationType() == INDEPENDENT2 || getCivilizationType() == INDEPENDENT3;
+	return getCivilizationType() == INDEPENDENT1 || getCivilizationType() == INDEPENDENT2;
 }
 
 
@@ -8666,6 +8666,14 @@ void CvPlayer::foundReligion(ReligionTypes eReligion, ReligionTypes eSlotReligio
 		*/
 		//Rhye - end comment (bugfix)
 
+		return;
+	}
+
+	// MacAurther: Old World religions do not select a local holy city.
+	if (GC.getReligionInfo(eReligion).isOldWorldHolyCity())
+	{
+		GC.getGameINLINE().setReligionSlotTaken(eSlotReligion, true);
+		GC.getGameINLINE().foundOldWorldReligion(eReligion, GC.getGameINLINE().getGameTurn(), true);
 		return;
 	}
 

@@ -11,7 +11,6 @@ tDC = (45, 88)
 tBrazilia = (69, 34)
 
 # Religions
-tHolyCity = (82, 0)	# MacAurther: faux city to be the Holy City for all old world religions (in the bottom left of the map surrounded by peaks)
 
 # Lake Texcoco
 tLakeTexcocoTL = (24, 67)

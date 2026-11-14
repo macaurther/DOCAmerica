@@ -5715,7 +5715,14 @@ void CvGame::makeReligionFounded(ReligionTypes eIndex, PlayerTypes ePlayer)
 		FAssertMsg(getGameTurn() != -1, "getGameTurn() is not expected to be equal with -1");
 		setReligionGameTurnFounded(eIndex, getGameTurn());
 
+		// MacAurther: Old World religions have no local founding player.
+		if (GC.getReligionInfo(eIndex).isOldWorldHolyCity())
+		{
+			ePlayer = NO_PLAYER;
+			setReligionSlotTaken(eIndex, true);
+		}
 		CvEventReporter::getInstance().religionFounded(eIndex, ePlayer);
+		if (ePlayer == NO_PLAYER) return;
 
 		// Sanguo Mod Performance start, added by poyuzhe 07.26.09
 		for (int iI = 0; iI < GC.getMAX_PLAYERS(); iI++)
@@ -5727,6 +5734,28 @@ void CvGame::makeReligionFounded(ReligionTypes eIndex, PlayerTypes ePlayer)
 			}
 		}
 		// Sanguo Mod Performance, end
+	}
+}
+
+// MacAurther: Found Old World religions without creating a city.
+void CvGame::foundOldWorldReligion(ReligionTypes eReligion, int iFoundingTurn, bool bAnnounce)
+{
+	if (!GC.getReligionInfo(eReligion).isOldWorldHolyCity() || isReligionFounded(eReligion)) return;
+
+	makeReligionFounded(eReligion, NO_PLAYER);
+	setReligionGameTurnFounded(eReligion, iFoundingTurn);
+
+	if (bAnnounce && isFinalInitialized() && !gDLL->GetWorldBuilderMode())
+	{
+		CvWString szMessage = gDLL->getText("TXT_KEY_MISC_REL_FOUNDED_OLD_WORLD", GC.getReligionInfo(eReligion).getTextKeyWide());
+		addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, NO_PLAYER, szMessage, -1, -1, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+		for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+		{
+			if (GET_PLAYER((PlayerTypes)iPlayer).isAlive())
+			{
+				gDLL->getInterfaceIFace()->addMessage((PlayerTypes)iPlayer, false, GC.getDefineINT("EVENT_MESSAGE_TIME_LONG"), szMessage, GC.getReligionInfo(eReligion).getSound(), MESSAGE_TYPE_MAJOR_EVENT, GC.getReligionInfo(eReligion).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+			}
+		}
 	}
 }
 
@@ -5892,6 +5921,13 @@ void CvGame::setHolyCity(ReligionTypes eIndex, CvCity* pNewValue, bool bAnnounce
 
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumReligionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
+
+	// MacAurther: Old World holy cities cannot be placed on the map.
+	if (pNewValue != NULL && GC.getReligionInfo(eIndex).isOldWorldHolyCity())
+	{
+		makeReligionFounded(eIndex, NO_PLAYER);
+		return;
+	}
 
 	pOldValue = getHolyCity(eIndex);
 

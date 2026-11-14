@@ -13,13 +13,13 @@ iWorldY = 122
 iNumPlayers = gc.getMAX_PLAYERS()
 
 # civilizations, not players
-iNumCivs = 44
+iNumCivs = 43
 # 0				1				2				3				4				5				6				7				8				9
 (iAmerica, 		iApache,		iArawak,		iArgentina, 	iAztec, 		iBrazil, 		iCanada, 		iCherokee,		iChimu,			iColombia, 		
 iCSA,			iEngland, 		iFrance, 		iHaiti,			iHaudenosaunee,	iHawaii,		iInca,			iInuit,			iLakota,		iMaya,			
 iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	iNorse,			iPeru,			iPortugal, 		iPueblo,		iPurepecha,		iRussia,		
 iSpain, 		iTeotihuacan,	iTiwanaku,		iToltec,		iTupi,			iVenezuela,		iWari,			iZapotec,		iIndependent1, 	iIndependent2, 	
-iIndependent3,	iIndigenous,	iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+iIndigenous,	iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 lBirthOrder = [
 	iMaya,
@@ -65,7 +65,6 @@ lBirthOrder = [
 lCivOrder = lBirthOrder + [
 	iIndependent1,
 	iIndependent2,
-	iIndependent3,
 	iIndigenous,
 	iBarbarian
 ]

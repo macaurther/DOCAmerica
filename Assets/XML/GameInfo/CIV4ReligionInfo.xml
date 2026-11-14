@@ -16,6 +16,7 @@
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>50</iSpreadFactor>
 			<bLocal>1</bLocal>
+			<bOldWorldHolyCity>1</bOldWorldHolyCity>
 			<GlobalReligionCommerces>
 				<iGlobalReligionCommerce>1</iGlobalReligionCommerce>
 				<iGlobalReligionCommerce>0</iGlobalReligionCommerce>
@@ -50,6 +51,7 @@
 			<iFreeUnits>1</iFreeUnits>
 			<iSpreadFactor>70</iSpreadFactor>
 			<bProselytizing>1</bProselytizing>
+			<bOldWorldHolyCity>1</bOldWorldHolyCity>
 			<GlobalReligionCommerces>
 				<iGlobalReligionCommerce>1</iGlobalReligionCommerce>
 				<iGlobalReligionCommerce>0</iGlobalReligionCommerce>
@@ -84,6 +86,7 @@
 			<iFreeUnits>1</iFreeUnits>
 			<iSpreadFactor>100</iSpreadFactor>
 			<bProselytizing>1</bProselytizing>
+			<bOldWorldHolyCity>1</bOldWorldHolyCity>
 			<GlobalReligionCommerces>
 				<iGlobalReligionCommerce>1</iGlobalReligionCommerce>
 				<iGlobalReligionCommerce>0</iGlobalReligionCommerce>
@@ -118,6 +121,7 @@
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>100</iSpreadFactor>
 			<bProselytizing>1</bProselytizing>
+			<bOldWorldHolyCity>1</bOldWorldHolyCity>
 			<GlobalReligionCommerces>
 				<iGlobalReligionCommerce>1</iGlobalReligionCommerce>
 				<iGlobalReligionCommerce>0</iGlobalReligionCommerce>
@@ -152,6 +156,7 @@
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>150</iSpreadFactor>
 			<bProselytizing>1</bProselytizing>
+			<bOldWorldHolyCity>1</bOldWorldHolyCity>
 			<GlobalReligionCommerces>
 				<iGlobalReligionCommerce>1</iGlobalReligionCommerce>
 				<iGlobalReligionCommerce>0</iGlobalReligionCommerce>
@@ -185,6 +190,7 @@
 			<FreeUnitClass>UNITCLASS_ORTHODOX_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>80</iSpreadFactor>
+			<bOldWorldHolyCity>1</bOldWorldHolyCity>
 			<GlobalReligionCommerces>
 				<iGlobalReligionCommerce>1</iGlobalReligionCommerce>
 				<iGlobalReligionCommerce>0</iGlobalReligionCommerce>
@@ -219,6 +225,7 @@
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>140</iSpreadFactor>
 			<bProselytizing>1</bProselytizing>
+			<bOldWorldHolyCity>1</bOldWorldHolyCity>
 			<GlobalReligionCommerces>
 				<iGlobalReligionCommerce>1</iGlobalReligionCommerce>
 				<iGlobalReligionCommerce>0</iGlobalReligionCommerce>

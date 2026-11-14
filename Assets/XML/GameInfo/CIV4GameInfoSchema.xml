@@ -229,6 +229,7 @@
 	<ElementType name="Sound" content="textOnly"/>
 	<ElementType name="bProselytizing" content="textOnly"/>
 	<ElementType name="bLocal" content="textOnly"/>
+	<ElementType name="bOldWorldHolyCity" content="textOnly" dt:type="boolean"/>
 	<ElementType name="ReligionInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Description"/>
@@ -240,6 +241,7 @@
 		<element type="iSpreadFactor"/>
 		<element type="bProselytizing" minOccurs="0"/>
 		<element type="bLocal" minOccurs="0"/>
+		<element type="bOldWorldHolyCity" minOccurs="0"/>
 		<element type="GlobalReligionCommerces"/>
 		<element type="HolyCityCommerces"/>
 		<element type="StateReligionCommerces"/>

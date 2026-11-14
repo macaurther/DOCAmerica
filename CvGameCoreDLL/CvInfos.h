@@ -4376,6 +4376,8 @@ public:
 	bool isProselytizing() const;
 	bool isLocal() const;
 
+	bool isOldWorldHolyCity() const;
+
 	const TCHAR* getTechButton() const;				// Exposed to Python
 	void setTechButton(const TCHAR* szVal);
 	const TCHAR* getGenericTechButton() const;				// Exposed to Python
@@ -4418,6 +4420,7 @@ protected:
 	// Leoreth
 	bool m_bProselytizing;
 	bool m_bLocal;
+	bool m_bOldWorldHolyCity;
 
 	CvString m_szTechButton;
 	CvString m_szGenericTechButton;
