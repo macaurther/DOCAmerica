@@ -137,7 +137,7 @@
 			<ShortDescription>TXT_KEY_CIV_APACHE_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_APACHE_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_APACHE_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_PEACH</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_APACHE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_APACHE</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_PLAINS</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_PUEBLO</UnitArtStyleType>
@@ -240,7 +240,7 @@
 			<ShortDescription>TXT_KEY_CIV_ARAWAK_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_ARAWAK_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_ARAWAK_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_ARAWAK</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ARAWAK</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN_NATIVE</UnitArtStyleType>
@@ -885,7 +885,7 @@
 			<ShortDescription>TXT_KEY_CIV_CHIMU_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_CHIMU_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_CHIMU_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_DARK_CYAN</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_CHIMU</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_CHIMU</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_INCAN</UnitArtStyleType>
@@ -1070,7 +1070,7 @@
 			<ShortDescription>TXT_KEY_CIV_CSA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_CSA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_CSA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_GRAY</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_CSA</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_CSA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BRITAIN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -2140,7 +2140,7 @@
 			<ShortDescription>TXT_KEY_CIV_LAKOTA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_LAKOTA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_LAKOTA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_CREAM</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_LAKOTA</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_LAKOTA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_PLAINS</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SIOUX</UnitArtStyleType>
@@ -2596,7 +2596,7 @@
 			<ShortDescription>TXT_KEY_CIV_MUISCA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_MUISCA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_MUISCA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_DARK_INDIGO_AND_WHITE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_MUISCA</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MUISCA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN_NATIVE</UnitArtStyleType>
@@ -3373,7 +3373,7 @@
 			<ShortDescription>TXT_KEY_CIV_PUREPECHA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_PUREPECHA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_PUREPECHA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_YELLOWISH_JADE_GREEN</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_PUREPECHA</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_PUREPECHA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_AZTEC</UnitArtStyleType>
@@ -3780,7 +3780,7 @@
 			<ShortDescription>TXT_KEY_CIV_TEOTIHUACAN_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_TEOTIHUACAN_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_TEOTIHUACAN_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_DARK_PURPLE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_TEOTIHUACAN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TEOTIHUACAN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_AZTEC</UnitArtStyleType>
@@ -3861,7 +3861,7 @@
 			<ShortDescription>TXT_KEY_CIV_TIWANAKU_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_TIWANAKU_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_TIWANAKU_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_GREYISH_GREEN</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_TIWANAKU</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TIWANAKU</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_INCAN</UnitArtStyleType>
@@ -4025,7 +4025,7 @@
 			<ShortDescription>TXT_KEY_CIV_TUPI_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_TUPI_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_TUPI_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_JADE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_TUPI</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TUPI</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_WOODLAND</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_BRAZILIAN_NATIVE</UnitArtStyleType>
@@ -4213,7 +4213,7 @@
 			<ShortDescription>TXT_KEY_CIV_WARI_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_WARI_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_WARI_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_ITALY</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_WARI</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_WARI</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_INCAN</UnitArtStyleType>
@@ -4301,7 +4301,7 @@
 			<ShortDescription>TXT_KEY_CIV_ZAPOTEC_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_ZAPOTEC_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_ZAPOTEC_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_ORANGE_AND_GREEN</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_ZAPOTEC</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ZAPOTEC</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_AZTEC</UnitArtStyleType>

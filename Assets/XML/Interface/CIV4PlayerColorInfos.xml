@@ -37,7 +37,7 @@
 			<TextColorType>COLOR_PLAYER_DARK_BLUE_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_DARK_CYAN</Type> <!-- Chimu -->
+			<Type>PLAYERCOLOR_DARK_CYAN</Type>
 			<ColorTypePrimary>COLOR_PLAYER_DARK_CYAN</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_CYAN_TEXT</TextColorType>
@@ -103,7 +103,7 @@
 			<TextColorType>COLOR_PLAYER_ORANGE_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_PEACH</Type>	<!-- Apache -->
+			<Type>PLAYERCOLOR_PEACH</Type>
 			<ColorTypePrimary>COLOR_PLAYER_PEACH</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_PEACH_TEXT</TextColorType>
@@ -145,7 +145,7 @@
 			<TextColorType>COLOR_PLAYER_LIGHT_GREEN_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_LIGHT_BLUE</Type>	<!-- Arawak -->
+			<Type>PLAYERCOLOR_LIGHT_BLUE</Type>
 			<ColorTypePrimary>COLOR_PLAYER_LIGHT_BLUE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_LIGHT_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_LIGHT_BLUE_TEXT</TextColorType>
@@ -440,9 +440,9 @@
 		</PlayerColorInfo>
 		<PlayerColorInfo>
 			<Type>PLAYERCOLOR_MISSISSIPPI</Type> <!-- Mississippi -->
-			<ColorTypePrimary>COLOR_CIVILIZATION_LEMON</ColorTypePrimary>
-			<ColorTypeSecondary>COLOR_CIVILIZATION_KHAKI</ColorTypeSecondary>
-			<TextColorType>COLOR_CIVILIZATION_LEMON_TEXT</TextColorType>
+			<ColorTypePrimary>COLOR_PLAYER_MISSISSIPPI_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_MISSISSIPPI_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MISSISSIPPI_EMBLEM</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
 			<Type>PLAYERCOLOR_INUIT</Type> <!-- Inuit -->
@@ -469,28 +469,28 @@
 			<TextColorType>COLOR_PLAYER_OCHRE</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_VENEZUELA</Type> <!-- Venezuela -->
-			<ColorTypePrimary>COLOR_PLAYER_GOLDENROD</ColorTypePrimary>
-			<ColorTypeSecondary>COLOR_PLAYER_BLUE</ColorTypeSecondary>
-			<TextColorType>COLOR_PLAYER_GOLDENROD</TextColorType>
+			<Type>PLAYERCOLOR_VENEZUELA</Type>
+			<ColorTypePrimary>COLOR_PLAYER_VENEZUELA_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_VENEZUELA_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_VENEZUELA_FIELD</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
 			<Type>PLAYERCOLOR_PERU</Type> <!-- Peru -->
-			<ColorTypePrimary>COLOR_PLAYER_WHITE</ColorTypePrimary>
-			<ColorTypeSecondary>COLOR_PLAYER_MAROON</ColorTypeSecondary>
-			<TextColorType>COLOR_PLAYER_WHITE_TEXT</TextColorType>
+			<ColorTypePrimary>COLOR_PLAYER_PERU_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_PERU_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_PERU_FIELD</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_HAITI</Type> <!-- Haiti -->
-			<ColorTypePrimary>COLOR_PLAYER_DARK_GREEN</ColorTypePrimary>
-			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
-			<TextColorType>COLOR_PLAYER_DARK_GREEN</TextColorType>
+			<Type>PLAYERCOLOR_HAITI</Type>
+			<ColorTypePrimary>COLOR_PLAYER_HAITI_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_HAITI_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_HAITI_FIELD</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
 			<Type>PLAYERCOLOR_ZAPOTEC</Type>
-			<ColorTypePrimary>COLOR_X_FIREBRICK</ColorTypePrimary>
-			<ColorTypeSecondary>COLOR_PLAYER_ROYAL_BLUE</ColorTypeSecondary>
-			<TextColorType>COLOR_X_FIREBRICK</TextColorType>
+			<ColorTypePrimary>COLOR_PLAYER_ZAPOTEC_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_ZAPOTEC_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_ZAPOTEC_FIELD</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
 			<Type>PLAYERCOLOR_YELLOWISH_JADE_GREEN</Type> <!-- Purepecha -->
@@ -499,16 +499,82 @@
 			<TextColorType>COLOR_PLAYER_YELLOWISH_JADE_GREEN</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_CREAM</Type> <!-- Lakota -->
+			<Type>PLAYERCOLOR_CREAM</Type>
 			<ColorTypePrimary>COLOR_PLAYER_CREAM</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_X_BROWN</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_CREAM</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_JADE</Type>	<!-- Tupi -->
+			<Type>PLAYERCOLOR_JADE</Type>
 			<ColorTypePrimary>COLOR_CIVILIZATION_JADE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_CIVILIZATION_DARK_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_CIVILIZATION_JADE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MUISCA</Type>
+			<ColorTypePrimary>COLOR_PLAYER_MUISCA_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_MUISCA_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MUISCA_FIELD</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_PUREPECHA</Type>
+			<ColorTypePrimary>COLOR_PLAYER_PUREPECHA_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_PUREPECHA_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_PUREPECHA_FIELD</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_TIWANAKU</Type>
+			<ColorTypePrimary>COLOR_PLAYER_GREYISH_GREEN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_TIWANAKU_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_GREYISH_GREEN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_WARI</Type>
+			<ColorTypePrimary>COLOR_PLAYER_WARI_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WARI_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_WARI_FIELD</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_LAKOTA</Type>
+			<ColorTypePrimary>COLOR_PLAYER_LAKOTA_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_LAKOTA_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_LAKOTA_EMBLEM</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_TEOTIHUACAN</Type>
+			<ColorTypePrimary>COLOR_PLAYER_TEOTIHUACAN_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_TEOTIHUACAN_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_TEOTIHUACAN_FIELD</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_CSA</Type>
+			<ColorTypePrimary>COLOR_PLAYER_CSA_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_CSA_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_CSA_EMBLEM</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_APACHE</Type>
+			<ColorTypePrimary>COLOR_PLAYER_APACHE_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_APACHE_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_APACHE_FIELD</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_TUPI</Type>
+			<ColorTypePrimary>COLOR_PLAYER_TUPI_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_TUPI_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_TUPI_EMBLEM</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_ARAWAK</Type>
+			<ColorTypePrimary>COLOR_PLAYER_ARAWAK_FIELD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_ARAWAK_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_ARAWAK_FIELD</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_CHIMU</Type>
+			<ColorTypePrimary>COLOR_PLAYER_DARK_CYAN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_CHIMU_EMBLEM</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_CYAN_TEXT</TextColorType>
 		</PlayerColorInfo>
 	</PlayerColorInfos>
 </Civ4PlayerColorInfos>

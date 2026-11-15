@@ -153,18 +153,18 @@
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_WARI</Type>
 			<Button>Art/Interface/Buttons/Civilizations/Wari.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Condor.dds</Path>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Wari.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_CHIMU</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Inca.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,3,7</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Tumi.dds</Path>
+			<Button>Art/Interface/Buttons/Civilizations/Chimu.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Chimu.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_MISSISSIPPI</Type>
-			<Button>Art/Interface/Buttons/Civilizations/Button_Mississippi.dds</Button>
+			<Button>Art/Interface/Buttons/Civilizations/Mississippi.dds</Button>
 			<Path>Art/Interface/TeamColor/FlagDECAL_Mississippi.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
@@ -176,7 +176,7 @@
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_MUISCA</Type>
-			<Button>,Art/Interface/Buttons/Btn_LH_Mesoamerica_muisca.dds,Art/Interface/Buttons/MesoamericaFlagAtlas.dds,6,1</Button>
+			<Button>Art/Interface/Buttons/Civilizations/Muisca.dds</Button>
 			<Path>Art/Interface/TeamColor/FlagDECAL_Muisca.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
@@ -218,21 +218,21 @@
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_ZAPOTEC</Type>
-			<Button>,Art/Interface/Buttons/Btn_LH_Mesoamerica_zapotec.dds,Art/Interface/Buttons/MesoamericaFlagAtlas.dds,4,1</Button>
+			<Button>Art/Interface/Buttons/Civilizations/Zapotec.dds</Button>
 			<Path>Art/Interface/TeamColor/FlagDECAL_Zapotec.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_PUREPECHA</Type>
-			<Button>Art/Interface/Buttons/Civilizations/olmec.dds</Button>
-			<Path>Art/Interface/TeamColor/flagdecal_olmec.dds</Path>
+			<Button>Art/Interface/Buttons/Civilizations/Purepecha.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Purepecha.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
             <Type>ART_DEF_CIVILIZATION_LAKOTA</Type>
             <Button>Art/Interface/Buttons/Civilizations/Lakota.dds</Button>
             <Path>Art/Interface/TeamColor/FlagDECAL_Lakota.dds</Path>
-            <bWhiteFlag>1</bWhiteFlag>
+            <bWhiteFlag>0</bWhiteFlag>
         </CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_TOLTECS</Type>
