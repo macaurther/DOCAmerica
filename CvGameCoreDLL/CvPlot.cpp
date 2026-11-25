@@ -9011,7 +9011,7 @@ void CvPlot::updateFeatureSymbolVisibility()
 				bVisible = true;
 
 			// Fresol: purely visual - hide the cape once the viewer has Cartography
-			if (getFeatureType() == CARTOGRAPHY)
+			if (getFeatureType() == FEATURE_CAPE)
 			{
 				TeamTypes eViewer = GC.getGameINLINE().getActiveTeam();
 

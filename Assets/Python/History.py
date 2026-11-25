@@ -220,7 +220,7 @@ def defendTribes(iGameTurn):
 					if(pPlot.getTribeThreatenTurn() + 8 < iGameTurn):
 						for i in range(pPlot.getNumUnits()-1, -1, -1):
 							pUnit = pPlot.getUnit(i)
-							if civ(pUnit) == iIndigenous:
+							if civ(pUnit) == iIndigenous and pUnit.getUnitAIType() == UnitAITypes.UNITAI_SIT_FOREVER:
 								pUnit.kill(False, -1)
 								pPlot.setTribeStoredUnits(pPlot.getTribeStoredUnits() + 1)
 

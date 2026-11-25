@@ -581,6 +581,14 @@ def year(year=None):
 	return Turn(getTurnForYear(year))
 
 
+def isBefore(iYear):
+	return year() < year(iYear)
+
+
+def isAfter(iYear):
+	return year() > year(iYear)
+
+
 def turn(turn = None):
 	return year(turn)
 

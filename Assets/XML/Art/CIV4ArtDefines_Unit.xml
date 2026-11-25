@@ -4686,13 +4686,55 @@
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_IMMIGRANT</Type>
 			<Button>Art/Interface/Buttons/Units/Immigrant.dds</Button>
-			<fScale>0.47</fScale>
+			<fScale>0.50</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Settler_European/Settler_European_Female.nif</NIF>
-			<KFM>Art/Units/Settler_European/Settler_Female.kfm</KFM>
-			<SHADERNIF>Art/Units/Settler_European/Settler_European_Female_FX.nif</SHADERNIF>
+			<NIF>Art/Units/Immigrants/Free_Colonist/Free_Colonist.nif</NIF>
+			<KFM>Art/Units/Immigrants/Free_Colonist/Free_Colonist.kfm</KFM>
+			<SHADERNIF>Art/Units/Immigrants/Free_Colonist/Free_Colonist.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_IMMIGRANT_SUGAR_PLANTER</Type>
+			<Button>Art/Interface/Buttons/Units/Immigrant.dds</Button>
+			<fScale>0.43</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Immigrants/Expert_Sugar_Planter/Expert_Sugar_Planter.nif</NIF>
+			<KFM>Art/Units/Immigrants/Expert_Sugar_Planter/Expert_Sugar_Planter.kfm</KFM>
+			<SHADERNIF>Art/Units/Immigrants/Expert_Sugar_Planter/Expert_Sugar_Planter.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_IMMIGRANT_NATIVE</Type>
+			<Button>Art/Interface/Buttons/Units/Immigrant.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Explorers/Native Explorer/Converted_Native.nif</NIF>
+			<KFM>Art/Units/Explorers/Native Explorer/Converted_Native.kfm</KFM>
+			<SHADERNIF>Art/Units/Explorers/Native Explorer/Converted_Native.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>

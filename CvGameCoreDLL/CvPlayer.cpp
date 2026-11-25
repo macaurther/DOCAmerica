@@ -5807,7 +5807,12 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 
 		if (eUnit != NO_UNIT)
 		{
-			initUnit(eUnit, pPlot->getX_INLINE(), pPlot->getY_INLINE());
+			// MacAurther: Apply Indigenous art to the goody reward unit
+			CvUnit* pRewardUnit = initUnit(eUnit, pPlot->getX_INLINE(), pPlot->getY_INLINE());
+			if (pRewardUnit != NULL)
+			{
+				pRewardUnit->setVisualCiv(INDIGENOUS);
+			}
 		}
 	}
 

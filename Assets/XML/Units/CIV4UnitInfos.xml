@@ -2270,7 +2270,7 @@
 			<iAsset>2</iAsset>
 			<iGreatWorkCulture>50</iGreatWorkCulture>
 			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
+				<iGroupSize>2</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>
 				<fPadTime>1</fPadTime>
 				<iMeleeWaveSize>1</iMeleeWaveSize>
@@ -2279,8 +2279,12 @@
 					<iRequired>1</iRequired>
 					<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT</EarlyArtDefineTag>
 				</UnitMeshGroup>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_SUGAR_PLANTER</EarlyArtDefineTag>
+				</UnitMeshGroup>
 			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<FormationType>FORMATION_TYPE_IMMIGRANT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SCOUT</Class>

@@ -244,6 +244,19 @@
 			<Type>UNIT_ARTSTYLE_POLYNESIAN</Type>
 			<StyleUnits>
 				<StyleUnit>
+					<UnitType>UNIT_IMMIGRANT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MALE_PACIFIC</EarlyArtDefineTag>
@@ -498,6 +511,19 @@
 		<UnitArtStyleTypeInfo>
 			<Type>UNIT_ARTSTYLE_IROQUOIS</Type>
 			<StyleUnits>
+				<StyleUnit>
+					<UnitType>UNIT_IMMIGRANT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup>
@@ -754,6 +780,19 @@
 			<Type>UNIT_ARTSTYLE_SIOUX</Type>
 			<StyleUnits>
 				<StyleUnit>
+					<UnitType>UNIT_IMMIGRANT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MALE_NATIVE</EarlyArtDefineTag>
@@ -1000,6 +1039,19 @@
 		<UnitArtStyleTypeInfo>
 			<Type>UNIT_ARTSTYLE_MISSISSIPPIAN</Type>
 			<StyleUnits>
+				<StyleUnit>
+					<UnitType>UNIT_IMMIGRANT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup>
@@ -1256,6 +1308,19 @@
 			<Type>UNIT_ARTSTYLE_PUEBLO</Type>
 			<StyleUnits>
 				<StyleUnit>
+					<UnitType>UNIT_IMMIGRANT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MALE_NATIVE</EarlyArtDefineTag>
@@ -1502,6 +1567,19 @@
 		<UnitArtStyleTypeInfo>
 			<Type>UNIT_ARTSTYLE_AZTEC</Type>
 			<StyleUnits>
+				<StyleUnit>
+					<UnitType>UNIT_IMMIGRANT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup>
@@ -1758,6 +1836,19 @@
 			<Type>UNIT_ARTSTYLE_MAYA</Type>
 			<StyleUnits>
 				<StyleUnit>
+					<UnitType>UNIT_IMMIGRANT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MALE_MESOAMERICAN</EarlyArtDefineTag>
@@ -2004,6 +2095,19 @@
 		<UnitArtStyleTypeInfo>
 			<Type>UNIT_ARTSTYLE_INCAN</Type>
 			<StyleUnits>
+				<StyleUnit>
+					<UnitType>UNIT_IMMIGRANT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup>
@@ -2259,6 +2363,19 @@
 		<UnitArtStyleTypeInfo>
 			<Type>UNIT_ARTSTYLE_BRAZILIAN_NATIVE</Type>
 			<StyleUnits>
+				<StyleUnit>
+					<UnitType>UNIT_IMMIGRANT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMIGRANT_NATIVE</LateArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup>
